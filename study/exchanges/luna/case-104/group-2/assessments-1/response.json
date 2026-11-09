@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the same visible category cards, imagery, labels, recommendations/sign-in area, and footer content as the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and consistently arranged in both supplied regions, with no material overlap or clipping.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible card arrows, sign-in and start-here links, and back-to-top control are present and identifiable; no essential control defect is evident.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target regions match directly at both supplied scroll positions and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Category labels and imagery convey a coherent shopping-page purpose, and the recommendation and footer sections remain understandable.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10547,
+    "completion_tokens": 184,
+    "total_tokens": 10731,
+    "cost": 0.0014103,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10544,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014103,
+      "upstream_inference_prompt_cost": 0.0013183,
+      "upstream_inference_completions_cost": 9.2e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

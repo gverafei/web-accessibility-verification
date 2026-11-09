@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible NIST heading, description, navigation, and lower-page \u201cWhat we do\u201d content. The hero\u2019s historical image collage differs from the reference\u2019s black background, but the page\u2019s core information remains intact; this is not material content loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and sections are legible and coherently arranged in the supplied views. The target hero collage appears behind the overlaid text without obscuring it. The time widget\u2019s \u201cconnecting\u201d state is auxiliary and does not impair the page.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, and \u201cSee more topics\u201d controls have understandable labels or icons. No essential visible control is materially missing or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent corresponding NIST page states. The differing hero background and auxiliary time-widget state do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s visible headings, explanatory text, topic links, and labels convey a coherent NIST page purpose. The hero imagery change does not undermine that meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Examining target elements**\n\nI need to take note that the target top is different because the hero has an actual background collage, and we can't access the video frame right now. The target text should remain coherent, while everything else stays the same. I'm looking into connecting a minor widget to ensure it all meets expectations. The controls should be visible for navigation and searching, but there\u2019s no hero control at the top. Overall, it seems to keep coherence, so I\u2019ll focus on the rationale in JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Examining target elements**\n\nI need to take note that the target top is different because the hero has an actual background collage, and we can't access the video frame right now. The target text should remain coherent, while everything else stays the same. I'm looking into connecting a minor widget to ensure it all meets expectations. The controls should be visible for navigation and searching, but there\u2019s no hero control at the top. Overall, it seems to keep coherence, so I\u2019ll focus on the rationale in JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Be84YoGeXr4HYz9srD4gRRkbirgOMUTFhRsG92UcjJfsPNBGTlq2lh4TCmRTuVpp2iVOhQPoLl-W2k2-2jwvzC7R1o4_PE1CGNzqvK-KimZ-Bt3Dyou2CcO88d3XcaUSRUBpaDmddzxGQCEMbiRs-y-wDIPAXP4RFGg5eJ0NkBe3cvuakxqCju1CjaORNv8HGF8niiKQKXfPpgWKJjPae4B91kNEUSt0lI3tA6xzc8VTmGCJWhHvO0WLRG8IijO8uFyMu_SqiusH6dg782UvXIOCfMimfe2s2ZxUkZugUsKWedNGB3lXugACd80WhByXwmAhPf7nZ6wSOr4XE1ubfV05ZLqWBXsSAdSxwJk3X__SyxnTwCHl6Jnr_QY-7KSBypOQugP8vJGcxezOpm7wDptMCrXkpYvOf8AxaHQPyE23-0R7QeCYJdLTveG1It-mJeFUreY___W6I4WSvqNubfWi-e5tcyn2flqfYL95BflVlO2IIZjQpb5STG8-qlekWuamHf1dG4EPLv4Y1LJYtj3Fmht8YD2WcCog_1vzojigTsZ-L4fv0brzslOBybW9554kappEtFL1_HsfN3ZGNaLkNi4-FENbLc9mIWaRcWLpZv0sZaF4I85cpFvs1nIw36jgFhGjZgKg98u3EzHuTzc_4eRsOzJY5xf310RCvrqgUDEvPpywrQMIlWmgz1CvqPz-U2lvouIMU4hrZazhZNirp7ZszeJ_eu_q0W7T292NxQKJ6d_lPuqb2uD6KkqmFpxEHH7i4TMHddM7jgn7e_3_v-edaaDmQIzaN506a3h6cNxQH816SbLDBpz0vJ9SOVZNQ0NgP8Q0bYxtOFSOWoDuayjTSWeISwEozYdt2A1DW5krjUbVhVdgn3iJKolc2x89ivVQbxp73PrGwSLx9XkxhgV6TvRMKpLef47qGWl4FH-v65l86dj7T-MeZX8YorDi1NPVy7p8d3FJmoaDCbvMSKYdnCnBtrU-rR8fLKrcyceRxHF_boYVPE7hnDwbVDFpSiZahy4GO9e_darRswGgebITfjqUKw2ozxEf13AkSsy4QVmGYlUIrgxVz_VqRmz4opbIgLexKgBBq9Dmw7F_UCmRyjMz25V-WfP_iiGO7_teS16WSzSqbt4kACMUA_vpHirgPmR3inCeMHSIqsnNQgVNM6oayVwXd_gDphi4PqsyJBvaHXdQBt7Pzb99EHqEYr6z0NpG5YknYw8wuuvNBs3LTjg9BOW_2kXSWvBJGJFP8POBX4_YpWnAY4Fy9CjKyiYXZoSIS6zKjQazrvixpsNOh6WqK8gdFpfa2BEQiK7wcMwUKr2L2AKfNJccc93G0rXss0QPpfqlPVzDHWwbjNIk7u2SxJgYOevtUn4C-VLwKtV6PC3PLnBZ8Euo1Be5hcbYWPun4HLsqwcEGY7Ka_-q1pcgbj9J5nGi0v2CmYlPBSM0RAGvcbHZ7X92GAPfazlhLM-5yIl1WGy9PFl9nR2QEblVq5nBxKCn3s6PqaNT6HXDKOVvLDFH0WUMyHj60fv-xlbgZ2KTZlkSi-IC1cVJvITIQHE95kE2U8VKSS-DVyIOdl_V3lQXLKX8eK674iH0JxGSW9wjnCiwjhiDUxjhd6VWNy7SM6ucmwjpPD6MSMUReBpOKKCz_Xesd2h-x3d5sxfwwF5tIDFm6ve0QpsaQa2AsF2PXdYCKi1XyA6HEfYCvLBeICVETbJGh0wdnFfT1kixjkQa_NTrlGspIdx1zv56k1m8mLHqH6nswbhB7G1jpBKOx1jOU-HdLKtmcM_v4jqx-N1sYY0ZnNYoZBcWTky_Y_xV8ytVd7gkyygzqr9BDu6llawhZTKnyvezAzbxez896NY3FYknrJ6cHdb0Y_rGcRVOmZnT2jaWPgXoQDXkKHU3SJgpN9oia0VMh9AA1JKdgp3js8H_HNv4h9pvPoDby-WSdSosw75JoLxu9Qz7RlfluS92wYfZzE2eqc284pgoetMKWGxEbfpQEPKIugIRc0Me1GDGbSY_6z-3fSUu5_9SpdrlCyhthjb5lPDXLAOPMXeCvnjLfcYiPMN2rsgIFxzNaXEjjqZFJb122IEkGS8w3zstHBeru5edBIDYorSEiTheH1nEPjjiPcTrH5CSMzA-UcRHiJXsjwk-jVPL9WbXzVXUWyS8JJO_02IVSHaCVmZHKx8sqkSoWa7V6NigC79yDlvg6ERsJoO1E8SzlMH8aQ7jVEmfg_kWYMkYbFAOlqfxn9FKfumZPKyEnsQby23NW4-pyzLBuePiL6rZx14ZjuPvY-TV2_a14KR6wQLh47USqFct1wCS1jT6epTF2vUewJhYKCQp-lSHbGsZKs7p6XifP-qPQ3IvbD977BbgffGbgicjHMimANtcG0vwgdYwTvUj9Apq9wszCmSd_OcEmT6aTS-2y3TIUSzo-Ff44LtWzU6l1T_0vfAxwBYtc_-g3WfHYCiTPLrQBwp1F-AzmkJ8RkrgVWnOXo3dxiDJkJvg2Q7YEBuGw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07d515038bea0963016ae817ba4d8c87d1a0acbc177d27bb5c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10325,
+    "completion_tokens": 383,
+    "total_tokens": 10708,
+    "cost": 0.00148205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10322,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00148205,
+      "upstream_inference_prompt_cost": 0.00129055,
+      "upstream_inference_completions_cost": 0.0001915
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

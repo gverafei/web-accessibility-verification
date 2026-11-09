@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible page content and organization match across the corresponding windows. The large blank area is present in both reference and target, and the customer-stories region and persistent cookie notice are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and arranged coherently. No material clipping, overlap, or target-specific presentation defect is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, contact, cookie-consent, and dismiss controls remain identifiable. The contact button\u2019s text color differs slightly, but its label remains readable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views depict corresponding regions and form a coherent comparison. Their visible content and states are substantially consistent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible branding, customer-stories context, navigation, contact action, and cookie notice convey coherent meaning for the page. No material semantic loss is evident.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing image details**\n\nI need to evaluate the images, which mostly show blank white references. One has a logo in y3000 that says \"Pub,\" but it\u2019s truncated. The target image shows a customer stories header and a blank section, likely for video or animation, which matches the one at y3000. There\u2019s a minor color change, with the target contact text being dark compared to the reference's white. I need to ensure all the evidence is coherent and prepare the exact JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing image details**\n\nI need to evaluate the images, which mostly show blank white references. One has a logo in y3000 that says \"Pub,\" but it\u2019s truncated. The target image shows a customer stories header and a blank section, likely for video or animation, which matches the one at y3000. There\u2019s a minor color change, with the target contact text being dark compared to the reference's white. I need to ensure all the evidence is coherent and prepare the exact JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B4JXXtQFbwz912dvECrETaxEbDKSXWjjwVb5sRi2hRC5LTdo-NtVwj7TmqWvxhPHwey7GJ_R0nSv_Yc8_nSgLUpZAEJGVGWl1b_k0GtVddpYUhPx4TB6cG60k5mza1Dk2pYUFTdiNtycNkVVVKEbcepv2dSMSxhCfJ99-34rHchRVSL8uPM10uCLsf5xujmUn6AcMl6I3P6Kj7a8K7G8GXtTSq4rYopsBCRXi6wSxzFa61qXc0AjAccFRCSqo0EebfbLTFVRBZK_ajOr3U4Rk6qi4YEztYMpH3E81k3xbHM2T-iBQBZ7pwOEC_Y2b2Ota279tYu1spYSay6qNbjUInKlFJdp7u1bsAydKmJhlf4cfSBrwF-Z7nvo6x5ZCIwn0AE3WcGC8CMB2tjBjfvCLLfWnKjOCcOLuaIDVk2XYMyZqN4vwZ-7I3JpMuRqZxuybbRQWr2fW0mPJdt6l4kVrH4JbvyHDE1HHY85v9CW8jt6QB4oIVyGw6_-aYjyX5_F_RRxy9K3obeFwK56WmeUz0osD8AXx10JYKvB8jjZFBze1Mxe--OgDimKXBPZmOranJKsAxbr4OyUb3qd8o1t86r524DL741ZeQCweTH1woUDqFZITp2jl8GoKi9EuT8UDNxR1-Um5uj6eSK7-UFgWINpN0Q_PMaJgv5K4mOa5Q8FlfSL6PBpDhMU581ohObqlNDMp23R5xofZWk8GiyduMywdTnfbz-8cktoftUyX-OFbYxzza8OoA2y_iPI5lqWLfIgEEq0CFLTOs1_70G9iZKIcmA-nwXa6_AGBSS6Rovbiysr577UL6q85LEzpIFETjodf7TALH13Or5S6XJDitdBV-WV1u-eAAXiuIT5fwUxPjfGOQIo5QikzU_W3njEJcJnhlhpEvAN1i2c7WbXAteHkeP55f9Q3RCpecqsXrKljUpFric0CPIRiOZ3nqr5rk6ya9NZlH0CjTEFU7uR61uh52bfOKQ3KNVlagGWZrV3hOCmv34PocP4WmOMJQ-KdMG37_7ZxX3o95SnVpE6bv7ZSdN5b3-iYcf_0TU1EWnG11mYgYjLuf-9ULpFuBoXAjqcUhaAtp-fNOgTK0agEFCR3tKQdMvn_PFfcwH7IrrOPCh_tYJgLCxh5s1RYp7GlwCy5_V5k-d82DMCgRO0ydjUT1wKJQWjXdXftfxyGU1oft_zqoXftAhLVkkPp_zqoIU_XssIlYpv6fcYQvuCFsnV46UzD0yQNlDOXiWe3EO9UuO7orUTflbAMA-27EDPezSm5g_-JnV69AwaW9L-U6yOedgihEHxS0EWCWSbE-0aj7e2Eye4-5Ua1cUGkCBpH2S8_XhPcpbw4aI_Y8N4dhTXz45CtINJYilV0MxWp7OfsS_5zaeNGBZt-1p9R0NK-QH28niVIW7N0uGs2_J5ouT-Vspwyp2J0x-_r5LnnP8a0FViIVpF0wXGgp1yhMADSFRBzb_4KEjwIJxBuvtjCrKCA81mGUCV8en-ifdlVTSqdORMrAfENtpSVlZd1u7hEVOYuACvmMZo2r5McO0PM7Lv-YrH6oyQtkrE5p5Vh9LbzZis1fC0YLX3EggyTUWlI_hktJ1VWqoZ0lAlOJp5T6YkXt0C0vLF24S0TbyRy1uBkiKMLnTrqjEB5m7D7IoAj2tvW4K5aM_vuts_34HqWRhLt64UbhpMK955AqrST5HzNQcR0EwND0hlb0wiYZ4WL8AmrXPpKM3z1wmYU1DmPo2zDvOfFe3QHJ3o3BgujLh_8NZSlq91gQs3xAy3pg8Xql9D8j4Q70uwzfoS3xl_3eI1P49V5Vf2Ibrn7rIdWDD7TJ5BXiR6qjzPlpE3bLdbWc3I7INsnBrIs2apNtDxdKlq1EBjUotHQUhuGrScW4-FS8P2KeMYjWE3udTACnkZ3jPHj39mOdHSxX38Cfm5H57a2uXeEFzk8zR0xy1xXanWI6Nhuo9xI33N6s2VuKeLqxk0FksvIvdt9iJHbXMx3MZ9P3PmJPRzHiFP3X1TJg5PovzQcMqDcXG88p7FzzY2oSX96UCQGT-JQ8A32HpAC7wHM-IjYZIkcil0HE04gsUNxP1GfLOIcAB3EQQRkNjglPGchXKf-gfBA_wOcSS4mHobetcYsoYa5lR7G2LEJSVNg1osOE8OYkq-1QGwo4rDxKDbVoelhMosg7tKE4TePsvWxusG4zcXsZK3eAfDDGwV4D8s-Rthcf4lSCxl_3n6vShkEyO-quh6QbQp-U8NcF5Q5xE-FwzpSZFS5IG9s1nMeGorJnGvb306FG6rpiAWz6MXNaxK0fMDgi8MfJj4ij0v72C3jDRzvn2_7A_W_nCBOfgVe97ZtYnHAb-Z6Zxr43OGQtKUHmQZehBczGnFtKn2lGgoVhlvMCnfdP3hhZ2VXG1IyFkmHjke-6fE6JE0A9iuodr_zSdC6AtQqervNUFXVmqgma1OTw20v3HKVkTFwzj2pjq0InEynvc7seiVZ23YPxJ9ozvYfeKmFszMcBhdBHspRwl22-bQ94G_CEYTEwZlaDoaWkeSrNYV-aeP9IZx6zYMTSpPOKQZr323hCxWJt_3GkZNcDlfRMKF7uyGzc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0220d81b479a25a6016ae81e076c5487d1bd36d90c219590dd",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11818,
+    "completion_tokens": 351,
+    "total_tokens": 12169,
+    "cost": 0.001652675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11815,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001652675,
+      "upstream_inference_prompt_cost": 0.001477175,
+      "upstream_inference_completions_cost": 0.0001755
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

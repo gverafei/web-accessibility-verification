@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots are visually identical across both supplied page regions, retaining the same shopping content and organization.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible cards, images, headings, and labels are legible and coherently arranged in both regions.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, search, carousel, and card affordances appear unchanged and identifiable; no interaction beyond the screenshots is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The corresponding reference and target captures form a coherent comparison and match in the supplied regions.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The category headings, product imagery, and labels convey a coherent shopping-page purpose and meaning.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10556,
+    "completion_tokens": 174,
+    "total_tokens": 10730,
+    "cost": 0.001406425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10553,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001406425,
+      "upstream_inference_prompt_cost": 0.001319425,
+      "upstream_inference_completions_cost": 8.7e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

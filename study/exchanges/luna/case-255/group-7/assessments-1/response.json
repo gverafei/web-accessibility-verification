@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same category links, footer content, and tracker-settings notice across the supplied views.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and coherently arranged; the notice and page content are not materially obscured.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including navigation, the contact link, and tracker-settings actions, retain understandable labels or recognizable icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views align and show matching reference and target states at both scroll positions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible labels and notice text convey coherent meaning for the site\u2019s navigation and consent-settings context.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Ensuring image consistency**\n\nI need to confirm that the image pairs are exactly identical. It seems I should mention something about the differences within the scroll boundary. Looking at images 1 and 2, they should be identical, while images 3 and 4 should also be identical. The DOM structure has to be the same across them, including the footer and other elements. I\u2019ll need to provide this as a JSON format to clearly outline these requirements.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Ensuring image consistency**\n\nI need to confirm that the image pairs are exactly identical. It seems I should mention something about the differences within the scroll boundary. Looking at images 1 and 2, they should be identical, while images 3 and 4 should also be identical. The DOM structure has to be the same across them, including the footer and other elements. I\u2019ll need to provide this as a JSON format to clearly outline these requirements.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B22aolSAMLYeMUhgr6ONGTdSsEfFL6HPimo2sYzizpD4IR923IUCw3eawdrBIOk5IqqBM2T8U0PwdrcoDpCh_SmCtyorOfo7K09-XVBFbxvhaLlYT_gWYTMXk9whHtmvsdTrLdSfZvK_xaXDMiMaLnHV9emeeEji8_oQgstT6pYd9v26F5Kusf50MLKaOYccWKLzz9YDolGlo0fDTzxloFhBqj-vnSVMeno-fto1-rO0Yztey0gezZYr3pM0eptM3Yi9fnFFvdpc2dPlM5u5mcexa6UIMwRDmmX8QKF9EKHtjyT0c3iQqysem8WtKDmjGBzt4-vGi0S3SHsyseGcQaEsXGIGuy7u_xAMpO6da7KP3j9fpdekb3_WuWl6bui4DBjfKLAykheXOaJTbN8zSDhxM59DxDsC-SioteWY36NADKx_SS-O0OUuNHtvJ9kuBXhZaN97xUZEiJ4EuPMzLFfkc3wI5UIS-xC7u8T07XS8EjVH1N-PvrlB_Ycd231JiV_A-u_i0b85slmvpU0j2v-_4LqsRX3okA8jTDuhV63Qxc3YhR6mE5NrAK7xI3plY-_XYoU_wfrUF8ursUVWC3Gbt-EC0ZFrhv_y4RvIPXXu300Qr_hE0SlB0YGG6vMVI9A70G-cbI0xmwz2cANzjiyBPIg12dz5pghQ9kDhaHY3bgEYtT1Q_IZuGOkFJZgsmeLDF3JzN6BH5jt6rMAti5aphkXRxyn9KUVXljmUrlWFdlN86Kd8fjej2GR3-S5zo2lM6KrA_WOemSM5wvi6-YGborHafHFP_5vbZZXXZoxAWTnQEubUxmefUc8ccFcAjpu1rWMKu_oS37Phj_xfcqqun_y4Zdv2YCpAB6rF3y4Cb3rQaxVmVMeG17zOrRPA3tOOYbYRgeA6Cqw0R0GQH28GbzmQYimUSOmq0Tq6OBBUAjOOGU2p-rwXBpPgWKLFcSdAJ2B2tvA5C0iC3OC3h2vdqC7Bp4ODUxdZsTw3a8e-4ICVBlV_S76STBsKuu36MJDswcfSr75Y9vO1e0rrG9aS_jxxp070SOvVmlwCODzMuf5r_SX7Gi2e87Xj92W8fibZb5U3AZ3mH27Vgeoua9KvxMFXiE8SsuWaeuCn_XxYaR7KrHKJx-D8u0cg9eKogYJ8v9jyx_HWgGIlUNGY0XzfUARzeebWzHUcibv1uutfRqOaI-3BQBqrlcnx01Qw_UKwc5_uUSAWvqofCjQlm0WWJnLGkkGCjgjinlRkoa_ARqwz5Kc43zugQzvpw2WjibruqAbAWiFbFHLbmLnaENO7PHswtVUYiUi-jhkUzq8Rw9lsMTWfNwUUNl0Xn-l-45Y1aDqm6dfkRAfxhXrxp74N-Fox6uqNqFSbb-z3Q2fZaQiRu_4povsE0RPcEz3D0fhv3czIN6WOf6s0zizf6H_RBznA-qEUXmtDRLo4VJt4ZjTqEAJeKuI2tan_0iPM48uwQf4aibBKBH6_hnjh69htENh4HQAe3RcmsDRbHVkWaH0iHGvJXeyJCaOR7OPdRz-VzRnjjNxq20t_tOkrl73CjKWsgFQk0BtxP3UE3LlhF23WgwD9qv4kafUjiECPnWv0dpSmKnRj3FjAmfxDHGHqIItwzer_2IxqIOVkNGTo87Tng8VAFRzG-8FJMuI1c67wqOrRFEvyVOPlPMIrch-gC5bSGlruhMBvjjjIrYczca8s_q9b83E75UhGyTLXLqCB5c2MqwhX3tV7XoHqXqumW4Ezf_J9kN_KByXeX8gV-lycQ4aUNbe_bXqJBKXaMzF3QZsDM9zYzGq6VavhseCnQ8mEdalR8C_chJcWrEXciV2NoAUEr5vO3y0ZBTjtZN2ipVK9-caybk4NJYbueWAN44n1ZHATVVMvxZkFvT_5k9h9lR6MRfY6VfFhMIxXaBkAa35AHM1OfD8_4ounHU8R_vpa6kRmZor-TTUaOHG26D6GmnstTNhtBVo1U0Ie86Ffp7s2dlcpDzKdYKcgTkQrA9M5YuMOUljo7k6STd1COhV9ncKyEkOtc3CJAMgRLT0H3PqGAJmbIOqIu7KydOu3Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_034734a691afbbd8016ae81db5457487d19376fe5295454615",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10301,
+    "completion_tokens": 269,
+    "total_tokens": 10570,
+    "cost": 0.00023778,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10298,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00023778,
+      "upstream_inference_prompt_cost": 0.00010328,
+      "upstream_inference_completions_cost": 0.0001345
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

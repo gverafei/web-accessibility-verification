@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent PHP news entries with headlines, dates, and summaries, consistent with the reference\u2019s PHP release-news purpose. A regenerated page need not reproduce the specific older entries shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target content is legible and arranged into distinct news cards, followed by a documentation section and footer. No substantial clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and controls, including the news headlines, \u201cOlder news entries,\u201d documentation topics, footer navigation, and \u201cBack to top,\u201d have understandable labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target both show a PHP site with news content. Their different layouts and visible entries are coherent for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text and labels clearly communicate PHP release news and provide relevant documentation navigation.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing news layout**\n\nI need to assess the regenerated target against the broader PHP news page. The target includes coherent cards, documents, and footer, while also controlling older entries and links to keep things readable. I noticed the target shows the latest two cards at the bottom with dates that seem oddly futuristic, but that doesn't concern me too much as long as the information remains factual. I want the references to older news entries to be coherent and semantically adequate, so I'll need to take care of that and ensure it\u2019s in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing news layout**\n\nI need to assess the regenerated target against the broader PHP news page. The target includes coherent cards, documents, and footer, while also controlling older entries and links to keep things readable. I noticed the target shows the latest two cards at the bottom with dates that seem oddly futuristic, but that doesn't concern me too much as long as the information remains factual. I want the references to older news entries to be coherent and semantically adequate, so I'll need to take care of that and ensure it\u2019s in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bs0B8b0ZmQKIaj8WQcH70lhDUAuTPI-oqAWUVabWoUT5IG45fccrY1ZqET6mg_G05l19PNMtOCq2fbPFnNdQUCFULyyRhkCZpTX6tI7wnQrKGLfDzkMWGlehWozm3k3Pcck-o6zCMpVhC2Hgl-30ILzQk_Y7o8MUfNbAdAQHawilPbIu2a5vqaCVKlb8aWS4M3HCHl4wr3Nv0WVIhOnRB4ogj4OeLvYW8CsPGj1tkO5BNCUaonaGr9qcYG04EDp9xLlhvfT7-lTzRxUufvi1hgVW5mbTCfBooxk4Rxhjdm-tCSlSQTKR2a2dszhPJa1NJFpv0YR5GW_njt6Mvg3taoxDWcBweA01WZgjpypw-86uB6CTKxXj0T6dFK4dBOofmBNurFCs116MuhVuE_tnQzz8_cWPb2W5bFFDPz0RaeyJHq61SAiBa603OseqqLJ_NG_3-j_YOj3PR81qYq5A1l5Z_FPnQsc-HRHB9ErHfFFRclbMbfBNDoxAS8uShs17OFtC76JpFQ94juChALtT1Fh9SgIzWYm_gHmcIdQjB1IKQJohG0OrVIYiDqnYVpA7Zom3KfULpqbj0fDIFUaQNEeEn2eQV3msk_Jo-v1O43NiubCuikM4ILED3vIXzrwPHHQviGI5_6B777ZvOWFgBhQ1O1c4HeqyNAQp9ukEGH6Gy-JarbIhOG9jS_8k6gzM91cprJAcbtWftejhzM-vjI2ZfUpbvRMy4k2mj7VxIAd9dYjpxdl6Nh2dysskQn4yKyuSH1jJ5BJOtmYYGnwJXenLdY2jytoFRNQioevWvcGxWuAipNwGe-gYtBt6jbmnxPHRKt9KI4Lq3uoBPAMrDWmOn0o90DSy-kc-T7oxjXNJexvUlErBLVvZ-ZeIsMRmpk_KMkv4OK3lkJlxftuJh-5N2fzJhhGTXM8oGt4ilpa5HGuPI45EtxvLxQK5w3PL7UqGufV7k-AWZQ4EKhLNY9GdhHnmXgN9Bqi469ob1oFPAHJpQ_s20Vq1T2x_UAklOr2l2TWPNn2ZY2bggn14doVEBPS4jE1JL7ePbAGLroBLlh9RT625EH69unxpzvYpN1s5nbh-jmra8XVPGNODkStN4id8HNnRFifOuFbYbe7G4ROZMM64aL6rgqZ_B-fimlCoZolVnN6fAInk5s4zp_c-FrO7jC_9dPIMQvRujkhB_2Ik_z1yNXzJMnKRaNAL2SpTqXBo_iQ0jOkanJaSpkli-AcAczTFNZ2PGLyvWyYNe4PIVjYUV2ZPyV8DjYXJKAhvZzxmRPFqgW8ytxmroOtVytotUyLq6ncQJJuDkzlL1w2FzvQ-g6JD3QQjsIbhz6gVc4bcWasw7HXlwrZSEyZjxpMOfuK3LcgK25J4YRQpegCmvtqKdYISid79IXlL4U-WKXDIFRM3_9BqAX8ZQ3m92SbbSEoFCuADTzQEtrglv5M7QAnAJd7H1U8YeYswMcRDwZJjPLPTwq4kKiiRzAX_uQAJwGlbeLvkAPk2MOM50bs5Zi29XfF9YdwDBSOih_difv-zzppuovRwvYh-MmNxOk62N_XQ1H0JlXGTaU0GtquutZ1nMqsafAvl5r13ys7vbOuYAosqK4Vh-Znd83nPANzkuU8rwp7o4WHWf_1gttLbjIEIOEVS_hUUXTkr4bGGLkBYwACHq-1vtHNcqYfm3oJdMkWzU9cT1akDBUIYg0xxbBls4bL9xQp6nw7ucVUEJMBQZcmS9BbsW6uvmf331HMcPiNgO2SEQG4p30NTq6OjXWm2_XWy9DnF8DtfwqxDWSZuRNRcDqnlHThFFfQqnm_m3YYODOvIgV33-ELnJPrk_H4OVCwLymd49rS-dotbDTm_vapSHmMI8UPlk_Rs1IwUEvZ6Ks5qQGw6pngQxr_0x-F50o8zK-iYPGcCfk1WXQafVmRdjqY6UuLIhfKUGPwe1kt6Cc1QtxTkGm8VeLR_k3hLtwhFCUOaz1VrAqhjfUaA8AO2QT2WenD70rF8tOu5UMldt9qV9oJ4RBUp5jHgPs2i9TH-GS49YacZsHhQQUWiH-CbZalONv3vxKjZbG310IwcQsVIN3u7sHmzoL2srnUs8Dk8PluWO9tLlK3RMMa7ZZR0hxU5zluDB2CBqycCCaqOQL2HoYdXe69SleF0-36k8VJ40ABNjcSYdPJMT9vSusunWM5Y61RmdOpoFc1xiK1LUpY7iKCrUqIY9px2nj-tdrsgXYxyL39ILqx4C7rwENiKbXUWT-VsOa8q11rQYXL09V84xDefs0eNd6JfxlMT_bQht2xnFxSCf98yhyirTWVMbbKNsYduBV4XfpexoV0wdcHT_ZlVgZzFIgSzN0zjyZehrgM1LhVWG-woKFsxmKr1niCdeebdgRKO5XytcQRGt2Y7xZp0W6wM-sud10ckDrqswaxa2SH4b6SI146nld7UpU_gnF5ax7rHg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0bfd24554acacfab016ae81b321bc487d1842bcb08dc0f1229",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8476,
+    "completion_tokens": 333,
+    "total_tokens": 8809,
+    "cost": 0.001225925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8473,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001225925,
+      "upstream_inference_prompt_cost": 0.001059425,
+      "upstream_inference_completions_cost": 0.0001665
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

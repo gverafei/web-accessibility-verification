@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target footer regions are visually identical, retaining the visible site links, contact details, language selector, and legal footer.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Footer text and columns are clearly legible and coherently arranged in both images.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation links, header actions, and the language selector remain identifiable and understandable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied images show matching corresponding footer content and form a coherent reference-target comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible labels and information communicate the footer\u2019s navigation, contact, language, and legal purposes.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11888,
+    "completion_tokens": 166,
+    "total_tokens": 12054,
+    "cost": 0.001568925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11885,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001568925,
+      "upstream_inference_prompt_cost": 0.001485925,
+      "upstream_inference_completions_cost": 8.3e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

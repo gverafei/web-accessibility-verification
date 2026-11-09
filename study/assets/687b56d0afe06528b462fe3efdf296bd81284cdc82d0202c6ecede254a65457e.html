@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#000e9c" name="theme-color"/>
+<title>Roubaix — OVHcloud Network Speedtest</title>
+<meta content="Test your connection bandwidth with OVHcloud infrastructure" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="OVHcloud Network Speedtest" property="og:site_name"/>
+<meta content="Roubaix — OVHcloud Network Speedtest" property="og:title"/>
+<meta content="Test your connection bandwidth with OVHcloud infrastructure" property="og:description"/>
+<meta content="https://lil1-rbx.speedtest.network.ovh.net/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- Served locally like the fonts: no third-party fetch at load time on a
+         throughput-measuring page. Official OVHcloud marks, unaltered; the .ico
+         is the fallback and answers the implicit /favicon.ico request. -->
+<link href="https://proof.ovh.net/icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://proof.ovh.net/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="https://proof.ovh.net/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link as="font" crossorigin="" href="https://proof.ovh.net/fonts/source-sans-pro-v23-latin-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://proof.ovh.net/fonts/jetbrains-mono-v24-latin-400-800.woff2" rel="preload" type="font/woff2"/>
+<link href="https://proof.ovh.net/style.css" rel="stylesheet"/>
+<!-- A classic script in <head> and not deferred: the vhost declares `script-src 'self'`, so
+       nothing can be inline, and a deferred script could paint the light theme over a visitor
+       who chose the dark one. See roles/speedtest/files/html/js/main.js. -->
+<script src="https://proof.ovh.net/js/main.js"></script>
+</head>
+<body data-current="rbx.proof.ovh.net" data-fleet='["bom.proof.ovh.net", "rbx.proof.ovh.net", "gra.proof.ovh.net", "eri.proof.ovh.net", "par3-cch.speedtest.network.ovh.net", "par3-ieb.speedtest.network.ovh.net", "par3-mr9.speedtest.network.ovh.net", "hil.proof.ovh.us", "sgp.proof.ovh.net", "sbg.proof.ovh.net", "syd.proof.ovh.net", "vin.proof.ovh.us", "bhs.proof.ovh.ca"]' data-generic='["proof.ovh.net", "proof.ovh.ca", "proof.ovh.us", "speedtest.network.ovh.net"]' data-ipv4='{"bhs.proof.ovh.ca": "ipv4-ymq1-bhs.speedtest.network.ovh.net", "bom.proof.ovh.net": "ipv4-bom1-ynm1.speedtest.network.ovh.net", "eri.proof.ovh.net": "ipv4-lon1-eri.speedtest.network.ovh.net", "gra.proof.ovh.net": "ipv4-lil2-gra.speedtest.network.ovh.net", "hil.proof.ovh.us": "ipv4-pdx1-hil.speedtest.network.ovh.net", "par3-cch.speedtest.network.ovh.net": "ipv4-par3-cch.speedtest.network.ovh.net", "par3-ieb.speedtest.network.ovh.net": "ipv4-par3-ieb.speedtest.network.ovh.net", "par3-mr9.speedtest.network.ovh.net": "ipv4-par3-mr9.speedtest.network.ovh.net", "rbx.proof.ovh.net": "ipv4-lil1-rbx.speedtest.network.ovh.net", "sbg.proof.ovh.net": "ipv4-sxb1-sbg.speedtest.network.ovh.net", "sgp.proof.ovh.net": "ipv4-sin1-sgp.speedtest.network.ovh.net", "syd.proof.ovh.net": "ipv4-syd1-sy2.speedtest.network.ovh.net", "vin.proof.ovh.us": "ipv4-was1-vin.speedtest.network.ovh.net"}' data-links='{"bhs.proof.ovh.ca": "ymq1-bhs.speedtest.network.ovh.net", "bom.proof.ovh.net": "bom1-ynm1.speedtest.network.ovh.net", "eri.proof.ovh.net": "lon1-eri.speedtest.network.ovh.net", "gra.proof.ovh.net": "lil2-gra.speedtest.network.ovh.net", "hil.proof.ovh.us": "pdx1-hil.speedtest.network.ovh.net", "rbx.proof.ovh.net": "lil1-rbx.speedtest.network.ovh.net", "sbg.proof.ovh.net": "sxb1-sbg.speedtest.network.ovh.net", "sgp.proof.ovh.net": "sin1-sgp.speedtest.network.ovh.net", "syd.proof.ovh.net": "syd1-sy2.speedtest.network.ovh.net", "vin.proof.ovh.us": "was1-vin.speedtest.network.ovh.net"}' data-public-host="lil1-rbx.speedtest.network.ovh.net" data-regions='{"bhs": "ca-east-bhs", "bhs.proof.ovh.ca": "ca-east-bhs", "bom": "ap-south-mum", "bom.proof.ovh.net": "ap-south-mum", "bom1-ynm1.speedtest.network.ovh.net": "ap-south-mum", "eri": "eu-west-eri", "eri.proof.ovh.net": "eu-west-eri", "gra": "eu-west-gra", "gra.proof.ovh.net": "eu-west-gra", "hil": "us-west-hil", "hil.proof.ovh.us": "us-west-hil", "lil1-rbx.speedtest.network.ovh.net": "eu-west-rbx", "lil2-gra.speedtest.network.ovh.net": "eu-west-gra", "lim": "eu-west-lim", "lon1-eri.speedtest.network.ovh.net": "eu-west-eri", "mil": "eu-south-mil", "par": "eu-west-par", "par3-cch": "eu-west-par-a", "par3-cch.speedtest.network.ovh.net": "eu-west-par-a", "par3-ieb": "eu-west-par-b", "par3-ieb.speedtest.network.ovh.net": "eu-west-par-b", "par3-mr9": "eu-west-par-c", "par3-mr9.speedtest.network.ovh.net": "eu-west-par-c", "pdx1-hil.speedtest.network.ovh.net": "us-west-hil", "rbx": "eu-west-rbx", "rbx.proof.ovh.net": "eu-west-rbx", "sbg": "eu-west-sbg", "sbg.proof.ovh.net": "eu-west-sbg", "sgp": "ap-southeast-sgp", "sgp.proof.ovh.net": "ap-southeast-sgp", "sin1-sgp.speedtest.network.ovh.net": "ap-southeast-sgp", "sxb1-sbg.speedtest.network.ovh.net": "eu-west-sbg", "syd": "ap-southeast-syd", "syd.proof.ovh.net": "ap-southeast-syd", "syd1-sy2.speedtest.network.ovh.net": "ap-southeast-syd", "vin": "us-east-vin", "vin.proof.ovh.us": "us-east-vin", "was1-vin.speedtest.network.ovh.net": "us-east-vin", "waw": "eu-central-waw", "ymq1-bhs.speedtest.network.ovh.net": "ca-east-bhs", "yyz": "ca-east-tor"}' data-self='["rbx.proof.ovh.net", "proof.ovh.net", "speedtest.network.ovh.net", "lil1-rbx.speedtest.network.ovh.net", "ipv4-lil1-rbx.speedtest.network.ovh.net", "ipv4.rbx.proof.ovh.net"]' data-sitehosts='{"bhs": "bhs.proof.ovh.ca", "bom": "bom.proof.ovh.net", "eri": "eri.proof.ovh.net", "gra": "gra.proof.ovh.net", "hil": "hil.proof.ovh.us", "par3-cch": "par3-cch.speedtest.network.ovh.net", "par3-ieb": "par3-ieb.speedtest.network.ovh.net", "par3-mr9": "par3-mr9.speedtest.network.ovh.net", "rbx": "rbx.proof.ovh.net", "sbg": "sbg.proof.ovh.net", "sgp": "sgp.proof.ovh.net", "syd": "syd.proof.ovh.net", "vin": "vin.proof.ovh.us"}' data-sites='{"bhs": "Beauharnois", "bhs.proof.ovh.ca": "Beauharnois", "bom": "Mumbai", "bom.proof.ovh.net": "Mumbai", "bom1-ynm1.speedtest.network.ovh.net": "Mumbai", "eri": "Erith", "eri.proof.ovh.net": "Erith", "gra": "Gravelines", "gra.proof.ovh.net": "Gravelines", "hil": "Hillsboro", "hil.proof.ovh.us": "Hillsboro", "lil1-rbx.speedtest.network.ovh.net": "Roubaix", "lil2-gra.speedtest.network.ovh.net": "Gravelines", "lon1-eri.speedtest.network.ovh.net": "Erith", "par": "Paris", "par3-cch": "Paris AZ1 (CCH)", "par3-cch.speedtest.network.ovh.net": "Paris AZ1 (CCH)", "par3-ieb": "Paris AZ2 (IEB)", "par3-ieb.speedtest.network.ovh.net": "Paris AZ2 (IEB)", "par3-mr9": "Paris AZ3 (MR9)", "par3-mr9.speedtest.network.ovh.net": "Paris AZ3 (MR9)", "pdx1-hil.speedtest.network.ovh.net": "Hillsboro", "rbx": "Roubaix", "rbx.proof.ovh.net": "Roubaix", "sbg": "Strasbourg", "sbg.proof.ovh.net": "Strasbourg", "sgp": "Singapour", "sgp.proof.ovh.net": "Singapour", "sin1-sgp.speedtest.network.ovh.net": "Singapour", "sxb1-sbg.speedtest.network.ovh.net": "Strasbourg", "syd": "Sydney", "syd.proof.ovh.net": "Sydney", "syd1-sy2.speedtest.network.ovh.net": "Sydney", "vin": "Vint Hill", "vin.proof.ovh.us": "Vint Hill", "was1-vin.speedtest.network.ovh.net": "Vint Hill", "ymq1-bhs.speedtest.network.ovh.net": "Beauharnois"}'>
+<noscript><p><strong>JavaScript is off.</strong> The speed test, the closest-server
+    picker and your connection details need it. Downloading test files still works:
+    see the <a href="https://proof.ovh.net/files/">files page</a>, or use <code>curl -O</code> /
+    <code>iperf3 -c</code> from a terminal.</p></noscript>
+<a class="skip-link" href="#main">Skip to the test</a>
+<aside class="sidebar">
+<div class="sidebar-top">
+<div class="sidebar-identity">
+<a class="brand" href="https://www.ovhcloud.com" rel="noopener" target="_blank">
+<img alt="OVHcloud" class="logo" src="https://proof.ovh.net/logo_com.png"/>
+</a>
+<p class="sidebar-subtitle">Network speed test</p>
+</div>
+<button aria-label="Switch to dark theme" class="theme-toggle" id="themeToggle" title="Switch to dark theme" type="button">
+<svg aria-hidden="true" class="icon icon-moon" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+<svg aria-hidden="true" class="icon icon-sun" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+</button>
+</div>
+<nav aria-label="Fleet servers" class="servers">
+<p class="side-label">Servers</p>
+<label class="server-select-mobile" for="serverSelectMobile">
+<select aria-label="Choose a speedtest server" id="serverSelectMobile">
+<optgroup label="Europe">
+<option value="lon1-eri.speedtest.network.ovh.net">eu-west-eri · 5Gb/s</option> <option value="lil2-gra.speedtest.network.ovh.net">eu-west-gra · 4Gb/s</option> <option value="par3-cch.speedtest.network.ovh.net">eu-west-par-a · 2Gb/s</option> <option value="par3-ieb.speedtest.network.ovh.net">eu-west-par-b · 2Gb/s</option> <option value="par3-mr9.speedtest.network.ovh.net">eu-west-par-c · 2Gb/s</option> <option selected="" value="lil1-rbx.speedtest.network.ovh.net">eu-west-rbx · 20Gb/s</option> <option value="sxb1-sbg.speedtest.network.ovh.net">eu-west-sbg · 4Gb/s</option> </optgroup>
+<optgroup label="North America">
+<option value="ymq1-bhs.speedtest.network.ovh.net">ca-east-bhs · 4Gb/s</option> <option value="pdx1-hil.speedtest.network.ovh.net">us-west-hil · 4Gb/s</option> <option value="was1-vin.speedtest.network.ovh.net">us-east-vin · 4Gb/s</option> </optgroup>
+<optgroup label="Asia-Pacific">
+<option value="bom1-ynm1.speedtest.network.ovh.net">ap-south-mum · 1Gb/s</option> <option value="sin1-sgp.speedtest.network.ovh.net">ap-southeast-sgp · 1Gb/s</option> <option value="syd1-sy2.speedtest.network.ovh.net">ap-southeast-syd · 1Gb/s</option> </optgroup>
+</select>
+</label>
+<button aria-controls="serverPickerPanel" aria-expanded="false" class="server-picker-btn" hidden="" id="serverPickerBtn" type="button">
+<span class="server-site">eu-west-rbx<span class="server-flag">🇫🇷</span></span>
+<span class="server-cap"><span class="visually-hidden">Link capacity </span>20Gb/s</span> <svg aria-hidden="true" class="server-picker-chev" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg>
+</button>
+<div class="server-picker-panel" id="serverPickerPanel">
+<input aria-label="Filter the server list by site, hostname, region or country" autocomplete="off" class="server-search" id="serverSearch" placeholder="Filter servers by name, city or country" type="search"/>
+<p class="server-search-empty" hidden="" id="serverSearchEmpty">No server matches.</p>
+<details class="region" data-region="Europe" open="">
+<summary class="region-label">Europe<svg aria-hidden="true" class="region-chev" fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="11" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg></summary>
+<div class="region-body">
+<ul class="server-list">
+<li><a class="server" data-country="United Kingdom" data-country-code="gb" href="https://lon1-eri.speedtest.network.ovh.net" title="lon1-eri.speedtest.network.ovh.net"><span class="server-site">eu-west-eri<span class="server-flag">🇬🇧</span></span><span class="visually-hidden">Erith</span><span class="visually-hidden">lon1-eri.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 5Gb/s"><span class="visually-hidden">Link capacity </span>5Gb/s</span></a></li><li><a class="server" data-country="France" data-country-code="fr" href="https://lil2-gra.speedtest.network.ovh.net" title="lil2-gra.speedtest.network.ovh.net"><span class="server-site">eu-west-gra<span class="server-flag">🇫🇷</span></span><span class="visually-hidden">Gravelines</span><span class="visually-hidden">lil2-gra.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 4Gb/s"><span class="visually-hidden">Link capacity </span>4Gb/s</span></a></li><li><a aria-current="page" class="server" data-country="France" data-country-code="fr" href="https://lil1-rbx.speedtest.network.ovh.net" title="lil1-rbx.speedtest.network.ovh.net"><span class="server-site">eu-west-rbx<span class="server-flag">🇫🇷</span></span><span class="visually-hidden">Roubaix</span><span class="visually-hidden">lil1-rbx.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 20Gb/s"><span class="visually-hidden">Link capacity </span>20Gb/s</span></a></li><li><a class="server" data-country="France" data-country-code="fr" href="https://sxb1-sbg.speedtest.network.ovh.net" title="sxb1-sbg.speedtest.network.ovh.net"><span class="server-site">eu-west-sbg<span class="server-flag">🇫🇷</span></span><span class="visually-hidden">Strasbourg</span><span class="visually-hidden">sxb1-sbg.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 4Gb/s"><span class="visually-hidden">Link capacity </span>4Gb/s</span></a></li> </ul>
+<details class="dc" data-dc="Paris eu-west-par">
+<summary class="dc-label"><span class="server-site">eu-west-par<span class="server-flag">🇫🇷</span></span><svg aria-hidden="true" class="dc-chev" fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="11" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg></summary>
+<ul class="server-list">
+<li><a class="server" data-country="France" data-country-code="fr" href="https://par3-cch.speedtest.network.ovh.net" title="par3-cch.speedtest.network.ovh.net"><span class="server-site">eu-west-par-a<span class="server-flag">🇫🇷</span></span><span class="visually-hidden">Paris AZ1 (CCH)</span><span class="visually-hidden">par3-cch.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 2Gb/s"><span class="visually-hidden">Link capacity </span>2Gb/s</span></a></li>
+<li><a class="server" data-country="France" data-country-code="fr" href="https://par3-ieb.speedtest.network.ovh.net" title="par3-ieb.speedtest.network.ovh.net"><span class="server-site">eu-west-par-b<span class="server-flag">🇫🇷</span></span><span class="visually-hidden">Paris AZ2 (IEB)</span><span class="visually-hidden">par3-ieb.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 2Gb/s"><span class="visually-hidden">Link capacity </span>2Gb/s</span></a></li>
+<li><a class="server" data-country="France" data-country-code="fr" href="https://par3-mr9.speedtest.network.ovh.net" title="par3-mr9.speedtest.network.ovh.net"><span class="server-site">eu-west-par-c<span class="server-flag">🇫🇷</span></span><span class="visually-hidden">Paris AZ3 (MR9)</span><span class="visually-hidden">par3-mr9.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 2Gb/s"><span class="visually-hidden">Link capacity </span>2Gb/s</span></a></li>
+</ul>
+</details>
+</div>
+</details>
+<details class="region" data-region="North America">
+<summary class="region-label">North America<svg aria-hidden="true" class="region-chev" fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="11" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg></summary>
+<div class="region-body">
+<ul class="server-list">
+<li><a class="server" data-country="Canada" data-country-code="ca" href="https://ymq1-bhs.speedtest.network.ovh.net" title="ymq1-bhs.speedtest.network.ovh.net"><span class="server-site">ca-east-bhs<span class="server-flag">🇨🇦</span></span><span class="visually-hidden">Beauharnois</span><span class="visually-hidden">ymq1-bhs.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 4Gb/s"><span class="visually-hidden">Link capacity </span>4Gb/s</span></a></li><li><a class="server" data-country="United States" data-country-code="us" href="https://pdx1-hil.speedtest.network.ovh.net" title="pdx1-hil.speedtest.network.ovh.net"><span class="server-site">us-west-hil<span class="server-flag">🇺🇸</span></span><span class="visually-hidden">Hillsboro</span><span class="visually-hidden">pdx1-hil.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 4Gb/s"><span class="visually-hidden">Link capacity </span>4Gb/s</span></a></li><li><a class="server" data-country="United States" data-country-code="us" href="https://was1-vin.speedtest.network.ovh.net" title="was1-vin.speedtest.network.ovh.net"><span class="server-site">us-east-vin<span class="server-flag">🇺🇸</span></span><span class="visually-hidden">Vint Hill</span><span class="visually-hidden">was1-vin.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 4Gb/s"><span class="visually-hidden">Link capacity </span>4Gb/s</span></a></li> </ul>
+</div>
+</details>
+<details class="region" data-region="Asia-Pacific">
+<summary class="region-label">Asia-Pacific<svg aria-hidden="true" class="region-chev" fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="11" xmlns="http://www.w3.org/2000/svg"><path d="m9 18 6-6-6-6"></path></svg></summary>
+<div class="region-body">
+<ul class="server-list">
+<li><a class="server" data-country="India" data-country-code="in" href="https://bom1-ynm1.speedtest.network.ovh.net" title="bom1-ynm1.speedtest.network.ovh.net"><span class="server-site">ap-south-mum<span class="server-flag">🇮🇳</span></span><span class="visually-hidden">Mumbai</span><span class="visually-hidden">bom1-ynm1.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 1Gb/s"><span class="visually-hidden">Link capacity </span>1Gb/s</span></a></li><li><a class="server" data-country="Singapore" data-country-code="sg" href="https://sin1-sgp.speedtest.network.ovh.net" title="sin1-sgp.speedtest.network.ovh.net"><span class="server-site">ap-southeast-sgp<span class="server-flag">🇸🇬</span></span><span class="visually-hidden">Singapour</span><span class="visually-hidden">sin1-sgp.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 1Gb/s"><span class="visually-hidden">Link capacity </span>1Gb/s</span></a></li><li><a class="server" data-country="Australia" data-country-code="au" href="https://syd1-sy2.speedtest.network.ovh.net" title="syd1-sy2.speedtest.network.ovh.net"><span class="server-site">ap-southeast-syd<span class="server-flag">🇦🇺</span></span><span class="visually-hidden">Sydney</span><span class="visually-hidden">syd1-sy2.speedtest.network.ovh.net</span><span class="server-cap" title="Link capacity 1Gb/s"><span class="visually-hidden">Link capacity </span>1Gb/s</span></a></li> </ul>
+</div>
+</details>
+</div>
+</nav>
+<div class="closest">
+<button class="closest-btn" hidden="" id="closestBtn" type="button">
+<svg aria-hidden="true" class="closest-icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3"></path><path d="M12 19v3"></path><path d="M2 12h3"></path><path d="M19 12h3"></path></svg>
+      Find the closest server
+    </button>
+<span aria-live="polite" class="visually-hidden" id="closestStatus" role="status"></span>
+<div aria-live="polite" class="closest-result" id="closestResult" role="status">
+<span aria-hidden="true" class="closest-result-icon">
+<svg class="icon-target" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 1v3"></path><path d="M12 20v3"></path><path d="M1 12h3"></path><path d="M20 12h3"></path></svg>
+<svg class="icon-check" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9"></circle><path d="m8 12.4 2.6 2.6L16 9.6"></path></svg>
+</span>
+<div class="closest-result-body">
+<span class="closest-result-text" id="closestResultText"></span>
+<button class="closest-move" hidden="" id="closestMoveBtn" type="button">Move to …</button>
+</div>
+<button aria-label="Dismiss message" class="closest-result-close" hidden="" id="closestResultClose" type="button">×</button>
+</div>
+</div>
+</aside>
+<div class="content">
+<main id="main" tabindex="-1">
+<div class="banner" hidden="" id="autoRedirectBanner" role="status">
+<svg aria-hidden="true" class="banner-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+<p class="banner-text">You are on the closest server, <strong id="autoRedirectName"></strong><span class="banner-from"> — redirected from <code id="autoRedirectFrom"></code></span>. Pick another one in the list if you would rather test somewhere else.</p>
+<button aria-label="Dismiss" class="banner-close" id="autoRedirectClose" type="button">×</button>
+</div>
+<section class="hero">
+<h1>Network speed test</h1>
+<p class="subtitle subtitle-lead">Measure your bandwidth and diagnose your route against
+      OVHcloud infrastructure.</p>
+<p class="subtitle">
+            You're currently connected to
+      <strong>Roubaix</strong><span class="server-flag">🇫🇷</span>.</p>
+<!-- The visitor's address row: /whoami answers from nginx's own variables, /rdns adds the PTR resolved on
+             this host, and the ASN's organisation comes from the local MMDB, so no third party appears in a page
+             that measures throughput. Never the PTR alone: a reverse name is a hostname and not a network. -->
+<dl class="connbar">
+<div class="conn-item"><dt>Your IP</dt><dd><span id="connIp">…</span><button aria-describedby="connPtrTip" class="conn-info" hidden="" id="connPtr" type="button"><span aria-hidden="true">i</span><span class="visually-hidden">Reverse DNS</span></button><span class="conn-tip" hidden="" id="connPtrTip" role="tooltip"></span></dd></div>
+<div class="conn-item"><dt>IP version</dt><dd><span id="connProto">…</span><a class="conn-v4" hidden="" href="https://ipv4-lil1-rbx.speedtest.network.ovh.net/" id="connV4" referrerpolicy="no-referrer">Fallback to IPv4</a></dd></div>
+<div class="conn-item" hidden="" id="connProtocolItem"><dt>Protocol</dt><dd><span id="connProtocol">…</span><button aria-describedby="connCipherTip" class="conn-info" hidden="" id="connCipher" type="button"><span aria-hidden="true">i</span><span class="visually-hidden">Cipher suite</span></button><span class="conn-tip" hidden="" id="connCipherTip" role="tooltip"></span></dd></div>
+<div class="conn-item" hidden="" id="connNetworkItem"><dt>Network</dt><dd id="connNetwork">…</dd></div>
+</dl>
+</section>
+<section class="section">
+<h2>Bandwidth test</h2>
+<div class="panel">
+<iframe allow="clipboard-write" id="speedtestFrame" src="https://proof.ovh.net/speedtest/" title="OpenSpeedTest — bandwidth test"></iframe>
+</div>
+</section>
+<section class="section">
+<h2>Other tools</h2>
+<button aria-controls="otherTools" aria-expanded="false" class="tools-toggle" id="toolsToggle" type="button">
+      Show more tools for your desktop
+    </button>
+<div class="grid tools-grid" id="otherTools">
+<div class="card">
+<div class="card-header">
+<h3>Download test files</h3>
+<span class="badge">curl / wget</span>
+</div>
+<p>Static files from 1 MiB to 10 GiB, downloaded to <code>/dev/null</code> so nothing is written to disk.</p>
+<div class="cmd">
+<code class="cmd-text" data-cmd="curl -o /dev/null https://{host}/files/100Mb.dat">curl -o /dev/null https://lil1-rbx.speedtest.network.ovh.net<wbr/>/files<wbr/>/100Mb.dat</code>
+<button aria-label="Copy command" class="copy-btn" title="Copy command" type="button">
+<svg aria-hidden="true" class="icon-copy" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+<svg aria-hidden="true" class="icon-check" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+</button>
+</div>
+<p class="card-more">Other test files with different size are available
+          <a href="https://proof.ovh.net/files/">here</a>.</p>
+</div>
+<div class="card">
+<div class="card-header">
+<h3>iperf3 server</h3>
+<span class="badge">iperf3</span>
+</div>
+<p>TCP throughput from the command line. <code>-R</code> measures download (server to you);
+          drop it to measure upload.</p>
+<div class="cmd">
+<code class="cmd-text" data-cmd="iperf3 -c {host} -p {port} -R" data-ports="5201-5210">iperf3 -c lil1-rbx.speedtest.network.ovh.net -p 5201 -R</code>
+<button aria-label="Copy command" class="copy-btn" title="Copy command" type="button">
+<svg aria-hidden="true" class="icon-copy" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+<svg aria-hidden="true" class="icon-check" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+</button>
+</div>
+<p class="ports">ports 5201–5210, one test at a time per port: if it says "busy", try another</p>
+</div>
+<div class="card">
+<div class="card-header">
+<h3>Network diagnostics</h3>
+<span class="badge">diagnostics</span>
+</div>
+<p>From the command line, no account or install required.</p>
+<div class="cmd">
+<code class="cmd-text" data-cmd="mtr -rwc 10 {host}">mtr -rwc 10 lil1-rbx.speedtest.network.ovh.net</code>
+<button aria-label="Copy command" class="copy-btn" title="Copy command" type="button">
+<svg aria-hidden="true" class="icon-copy" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+<svg aria-hidden="true" class="icon-check" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+</button>
+</div>
+<div class="cmd">
+<code class="cmd-text" data-cmd="ping -c 10 {host}">ping -c 10 lil1-rbx.speedtest.network.ovh.net</code>
+<button aria-label="Copy command" class="copy-btn" title="Copy command" type="button">
+<svg aria-hidden="true" class="icon-copy" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+<svg aria-hidden="true" class="icon-check" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+</button>
+</div>
+<div class="cmd">
+<code class="cmd-text" data-cmd="traceroute {host}">traceroute lil1-rbx.speedtest.network.ovh.net</code>
+<button aria-label="Copy command" class="copy-btn" title="Copy command" type="button">
+<svg aria-hidden="true" class="icon-copy" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+<svg aria-hidden="true" class="icon-check" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<code class="footer-server" title="lil1-rbx.speedtest.network.ovh.net">Roubaix</code> — OVHcloud network speed test
+    <div class="footer-attr">IP‑to‑ASN and country data from <a href="https://db-ip.com/" rel="noopener">DB-IP</a>, licensed under CC BY 4.0.</div>
+</footer>
+</main>
+</div>
+</body>
+</html>

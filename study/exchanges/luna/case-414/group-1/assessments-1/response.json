@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target retains the hero image, wording, navigation, and download controls, but the hero heading and supporting text have changed from high-contrast white to very dark text over a dark portion of the image, materially compromising this prominent core message.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The hero heading and description are substantially less legible against the image than in the reference; the rest of the observed layout remains coherent.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible navigation, Log In, and Download controls are clearly labeled and recognizable. No essential control defect is evident.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots show corresponding WhatsApp page regions, and the lower reference and target views match. The hero text contrast issue is a localized defect, not an incoherent evidence set.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The intended hero message remains present, but its low contrast makes the main heading and supporting description difficult to read, impairing their communication of the page purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating visibility issues**\n\nI'm noticing that the hero text is dark and almost invisible over the image, which makes the heading and description unreadable. The download control seems okay, but the material presentation and content information is low contrast, making it barely legible. I wonder if this affects the semantic meaning, as the core text is difficult to read. While the controls work well enough, the overall presentation lacks coherence due to these visibility issues.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating visibility issues**\n\nI'm noticing that the hero text is dark and almost invisible over the image, which makes the heading and description unreadable. The download control seems okay, but the material presentation and content information is low contrast, making it barely legible. I wonder if this affects the semantic meaning, as the core text is difficult to read. While the controls work well enough, the overall presentation lacks coherence due to these visibility issues.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CAJNcgrMoEH4d50rLHhCKRuzwOapDf-5CcV-sRFbzl2_abVreqYCHOKVe6QkULJxi-FHcev6slMKuZYng0WIIVdV0MdC9x2Y2QDpPtDYODvYjuHq9HOUYBoE8ITLxYZOc9L1rPxO8_8zpjwvu9unsrNep_Tc2wRJMZ_WpDC2w5ijUzVjDHypN6dWHpkPE1O2zo5qUJfidJeMMrevYNUMe1kKC1SGwdrqiOkxIdl1RS2uiSUOguv7kNTZuE84gVFxdS9eKQzO5xJXYH3hEqbpGXXTvFRGEUQA5kGxoB1Z8YqFB1VszGc9AAXPfKWfXn6ZlXSsS-rGOtakJ1Uw3y-Fvg5jNLi2hVjI4rInVvALph2IrXeoCjeGAgTr8pe9qAATT4AEGYLWeAxNeJ7GNRoNeaPECU0D7zmhxjl3_9q24B3OjR49pY51163SBEwUntL_1JXJV_lrijF95doaZf-LasCIcXHuRqzTSrJj1X6z2IctpOSTzgz8vnt-fykOgafiH3iNtyxhgxupnPRWWSsRUjswWM_IiSYcMaG-7CafJhpASUjYEom-63l7Ws4xpNX6Q-qWzieKL8ZNKHBWH0Jo0oWRIfj2HypKscjPshefqnTwrPYPGcIXvtzfsSkoTG6T_2QrjCzejC8H4GwW-wYk-5CIuoh86enPyv3Nc1YXmEXOCEgu0XJXja5c6ww9ro6Ppi16HJY6w185wE8h2KeoCCPWxnS1GKe2--cYPJt88jKmOFys4QeJf2Qe3pIUvv1nXWrOqp8uDeHGlrweVc6d8A9CY9_8cFOFJceSLmVm5p0CzI9g7PzmsBVSTzOFjUvddSx0sGR-vD3uitrrDDtNNPRF2MEEkr-34vlgAnYTkgLIZCgN3txAQk0f9rOrnsTG8-__QEo-vk5xCW8-oeH89Z-Gemo4xawj22OKNJ_Ify-IOYmx6gdWVD5SpX2JBrbygAfA8RhqUFaQKcKdsr3IbxVzC9-Qz2iWIMcWtEvvAOVtiVbSN22yR6wHW8hzScIzE93_2dj4vkpjspCbvHoClR4F_7s5zrxMSKRvFMPwp2xyYOAz0vhcACuhX6S-5JOumuj5UZGgWCWlDHGewcWElZENS-enRuWqqtSS240ev07DrE5L0BKN4VaeIA6OYScyXE6vu4Eke201Ny75NRRqNUBp4bq-7Yf3Gq9Tt50_5TLn57vrAlFjQoxCTM_1K1RKF6pAMY9rp3cqE95O_aKkOn6hUIizUIzdlra1t1RVVylMJkbESpdvHJMACM6CZeI0URgDleJ0I535JNWoSE9Nkdz9JfFrZzIQ8RvBSSIl0xwib9y-9SfrA_8LW03dO6s-1OfcPBiGqkU0Bgly7htwq6cp9xd95Ir_JUBVQHl5IFkgi7lt8AswRxk0ryaevQ1l8xOwrtoA5WY0WdO-mXX4MqmnlcfBY8Q2PFp7alajkM9OUkkn5bz-iwRRZrfAkvpSRxQGQccvWwc0skSGSbpFmGt1IcAYjiXxCP99274aMi5qZOXnmIcuE5AbA5kpQRwUTtp2wKIjTJKSz0CjMFRGJqgRGOHTpcG3_Mk3bQfs3l3VzT8RBwlev_buXvdbCCO94aAL-5U8g67Wh8gpnLTpj8AOt6uJNnMdtFoMPqo2m2OwUCDeKM4yCXSUaL6D0U50tbiNOYoaGsvLG9neuyiZztIWBByyaeaQ3g1Jc4u0pUCb2OXyXGvfofB7KNa9mn9Hy0agSGoJfgFnvbcGL8xSQ-1odtRn-W-XMHZJFtGo8nl_yCKTxTmLIOwxg4wIJv-Uw_Sm3muXCxJzV9_rjL0y_8T1vbW2mIHF9vX6jfvIZGlXT1oTfQIC-YWaFDRTxJqfj3ZGBkpKG5fee-1aUC1F67PkQubbAtSm-x46SohdGNxJQ8uTqwxzZF_ij17Afkz2DUThuXjQESIxrRLmKsusZ3vep-ejsAcoZYImzWmxMBkS4kj1G2FfE5TJ9PIpzmPkCyEL3PGfNH6TCrBJWu0tGmr2RiSkvnyy7SLCtgQDrvaWv-0NAOWJ45FXX4PAl6r6K1Lhsf93YIVzrH5TLpozJyUYHGfKGiWYrUccw4YTLYh5j_hCWGnRkCQT4BsygWzn-aw7GLtB4CkzwvEdG1KXuc1w2WY_FxkK0G4RLGHWdKzop-77n4HUZkthVKEHKRHbL0tcV06F1IuDief2cBqYpSCgfiew2B46cTglaJpws-o3TWvf2c5aZ1Zs5PPMRbyIcd_0EXXR1nnjJyUOtgUPYVhRowLY4v6bYSL-oNSgiD6Re1GX3oZIpH5iNGnPyWSoilo5pHE02ty3G-Glw21iVCYCGsKYw5_c6Cia3uTnS6qTdbqGJfopr-MLJHz8eM6xO1QNElf6QVZgtCrqEV1-QUw7Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0325a0d05ae6a083016ae82007721087d1ba7c817b81f94482",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10023,
+    "completion_tokens": 298,
+    "total_tokens": 10321,
+    "cost": 0.0014018,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10020,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014018,
+      "upstream_inference_prompt_cost": 0.0012528,
+      "upstream_inference_completions_cost": 0.000149
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

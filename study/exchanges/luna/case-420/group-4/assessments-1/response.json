@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible event cards, news section, statistics, supporting text, and About Us section are preserved. The differences in card shading and navigation appearance do not materially alter the information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core content is legible and coherently arranged in both target views. No substantial clipping or overlap impairs the page.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Contact Us, View All Events, About Us, and cookie-consent controls remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views show corresponding regions of the same page and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target text, imagery, and labels convey the same coherent events, news, and company-scale information as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing visual differences**\n\nI need to carefully assess the images since their content is nearly identical. I\u2019m noticing that the target shows a dark navigation bar, while the reference has a faint white one, possibly due to animation or transparency effects? At a certain point, around Y7000, the reference header nav appears nearly white, while the target is visible in black, but that seems harmless. There's also something different about the shading in the events card, but overall, the content is preserved. The cookie controls and about us sections appear the same, so the evidence looks coherent. JSON supports this.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing visual differences**\n\nI need to carefully assess the images since their content is nearly identical. I\u2019m noticing that the target shows a dark navigation bar, while the reference has a faint white one, possibly due to animation or transparency effects? At a certain point, around Y7000, the reference header nav appears nearly white, while the target is visible in black, but that seems harmless. There's also something different about the shading in the events card, but overall, the content is preserved. The cookie controls and about us sections appear the same, so the evidence looks coherent. JSON supports this.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CA5tawiSJZzKMXJBmZ7JFYlqefIWGODECgBCtCkycnI3ZnerI9yE5K7iOjZz8AIVCNqi41X-xlXbX8OuPL_Bnq1Y3TXIjZFHbNkcvpMR7tY2XCNQAV1NjLaPiighRghU99L3LdTTC-DxScJReWVDgoOy1oBISwVJrsPUieOMCg5ZmS8Ck2mg-VIiZB5CVTCTALSQRJtRfPV2s4hOTTfrnosRzfCGdi5krTUqY5xOOFFPT4nxVTcgxt-eW9HN_X5D1w2zsqdoa07W37od41CCDPLNHJlL8Z-zdDOOEHr5arWuRkpCxs_49m9DdYIWnFPEz1tZ5OZKYDvmSBuB5Oxi0ieztTGH5ujw38w7kU4mD3GXoqXoUTjniWboNzRbJEUxyhZ0nAwY1uL3JVmzoQqGH0zJCb3wILOcTx6OAtw8cnKljfSM29c4tT905h9ZjPDx70YQPtU3AoYs1W0BQTIrBlUeXhl1pxD8Ma28GvLbqT6FRZPFX7WRVpNJyZZwgjtnMe3vspawEnmKDsg7CwiZ3c6dhlW_6Oqrn7csmfJdHGsSrlxUugwLYqBcADB3NAUPg1zdyXDXwGUyIO4-8ZxD1S1kSbzj2bHZaKnH4W4dxmS19zVjiK6XwvgaQTVSTPdDvBBBoOz6BHBdN4tYLicge3GSwuwl2znBVQ1gZctsk1NL7YSPPP8M3rtEd_pNwiC-6wrzlLXkQ1WfMGXdfxi3KGbkbkojQKhmXhP2s3rqESlYI0-HkH8pt5gKhju2pX8w0YU2kKrB2gSfEzLJQOn3S2zzVah3KIjNS7h6V3GDxA9cvjUAD0AoGFjFD45qgBIAjID3an5xnO3hV_B49TxpBAvTWTlKbxZzEPhX5az82Ybb2QEMUsocWCpZZLgyR-KFyA8eX0ZNhCnYp_Po0FnC_wSpDprZgzfUpuhpYDRkagAP1Kg64d7SkDsmck8paAXUAM7ItBup8CDdsDE5LOYn3yfFuSdkFtrh3OMqIxYL8Re4MLHiysNdSP563CREhO06sSmVgIX2x8iiN35_DjHctjpwzBXcKnMHFgMuk2ljSvzIJvW72CCYncbmqRGVO7g-BVYgq3bG8BagPlj9KE3d_vrgSPAbU12XBP6JSK3JV2GwpTto-QiahdUcsV8cGNQqNvos637Xnq6RfHBO4dVfzR7iQ6Z8xX3SSp1zqM8lMHlF7DLaYIHaCY88wNqsjIa6uwBWdTcHtTD_CbKHKZzFwl-YbFLo4kVSYzArFqCYyLUIGA1pGNKvGj3iyoH7gyGHmm8XC1MC1KuEDujAehRPIbdsYZkcThTqbPvibXt_S0j8nITIpngPXVBHPlj57W4IZ8NEPV_4xKEtLc1_NB8xfChF_L6arYYM1Pzv8o33oZ68p5PxrGKHlHLO-twHqXAS1QUZ8dbiypXCnOwPQlSBsCyZYFORllNYxGq4wBMUy-hnH5GlNwBgkt2iukbHFeULzCqS28vM6gU-cCc-0EbczDs_7ZCjElIW6tE_00m355GsYalV9SXDP9ACe0bXnVSnsdyQfAz2dRJ0skHy2Jq3M0NXylf1mWFCGoHKMbXAdEdTna2VqHWgqZZsyjj8l_tzlOX9VxSP_nJf_4gqIRM3Ec4UcPEn2lkSF3lxxyzhuzvBx3OfZsgg_cQ6cjlXanLt3_SsAbZFoPYuGOYvJgrC8C53xgUhNe_irJ3u5EN1i4r3Pc-5qhckVd_4zSxkgCoTHgxhBjKecAqFUB92q8c-jWT4Ep5ZXQUdh60BwsZmbqkP25f2AqsS1IBX8vixFe34kqS26sK4BVwsKE88OnP3zSdEwdiImQpBLNVWIHloLvZoecen2OuocgOF_-mC_FbnZSanRV2LihCJmF4NpKqKAKwCZKm3jdM4qLPPIWmkCGyocrzsrdvOWfVCBKS6FbNAy7RMxfRJDJJXDSu87Dj93cqBITuqGQdhPlWHE2MrV5h9Sj-uPXUz9J0IJcPxRHQ8X0LeUFA_20Iugg4F8aUyAsOH2tErAq4mQg3jH1rpiTk7ECBjfmIxOrkWf8CnaQm8bsxFsDQSrDAVUN3vSgXNQafIqVHvd8iTTEqXdPVEfrqJ48qC0ADId4stgDZ_JqNfFZgrdDC-flvGWH4O86CZYeFSGlpTUJwSUFBibO8q6c5vE6Y7_N40tw7WG0ibfnUqBeA7ZMM31qcpsYjCLnUQa-Sydv2OuY9dOupPdTIT2FYHJL6hOnLCbBV63QHLjIuFrBPZzARZM6FtLl-tc-JNB2_XTlLVe4ovMx9hWhr7X_yrq-RExj8VT6jy1rR88VK3EKH8rGjA5F_eLnet3J6ZeFQnHmEcaPE5iZYlEzIjy2VIV6T4EZgBJmpivB5MxVm6gKH4BKbMHMeRFz1VU9KKvRX6QbIrl-iO7UuUobn2xOjYOT52Ng304kkOZNyHyVtaJmMe-YM0yD7HtLcoIjWGMP78A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0a897d1bd04c577d016ae82037a6d087d1bf11f8429987fcf3",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11823,
+    "completion_tokens": 317,
+    "total_tokens": 12140,
+    "cost": 0.0016363,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11820,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016363,
+      "upstream_inference_prompt_cost": 0.0014778,
+      "upstream_inference_completions_cost": 0.0001585
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

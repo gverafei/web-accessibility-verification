@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent event-discovery page with U.S. city destinations, related city links, an option to explore events by state, and supporting site links. These communicate the broad purpose without requiring the reference\u2019s exact content or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, destination cards, links, accordion label, and footer text are legible and arranged clearly. The partial content at the top is consistent with a viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible destination labels and the \u201cExplore events by state\u201d control have understandable purposes. No essential visible control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent reference and target event-discovery pages, including corresponding lower-page destination and footer regions. Their differing layouts do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text and city imagery clearly convey destination-based event discovery and supporting site navigation.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating web design elements**\n\nI'm looking at the target destination section to see if it\u2019s coherent. The visible links are there, but the \"Explore events by state\" accordion is collapsed, along with the footer. The reference includes state and local sections, focusing on broader US destinations, and the text seems legible. I wonder if the destination image cards are clickable\u2014clear labels could help there. Also, I think the accordion control is understandable, and everything seems to match up well. There's a need for JSON exactly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating web design elements**\n\nI'm looking at the target destination section to see if it\u2019s coherent. The visible links are there, but the \"Explore events by state\" accordion is collapsed, along with the footer. The reference includes state and local sections, focusing on broader US destinations, and the text seems legible. I wonder if the destination image cards are clickable\u2014clear labels could help there. Also, I think the accordion control is understandable, and everything seems to match up well. There's a need for JSON exactly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B_F7NaGnDpakM71kCtCTuToeMKYq9mhjLiVAOAhmwsaDm1QHh7M8RXRCjqbUuYSbehsPkil_sBQ99D8CF5aYuLc7FNDTeSwl-QCmETda3-HBL5YPe1jcHO4jTAP59re2w8xlX_ptLjXGsolMGEdEyBwpddhORG8Ckjq8mBq-QGH_VvlGeOfEuiPQDYvpAIYfySEoTaGJlM4NIFLEZke0qqjRbK7dfbxqFQuz4ZnoYXDZmVKpBvIfHefXRRqotorLtYZUsG985tiTm-vrnVSD7OkBsR7mfOz66JlmGKz99WuiIWh92SF7mxJZ3BLiLujokmGHiUDbtW0jcoZEefHu757wyNetAtjUnAsnEtZ2QnPJCQY2nx5zFY4425TNU9MvJUASYm3PhxDXUUekPjF9PFpYyruqDaUHy77R0Scjfyar_ShImZIvj-0ly-JkKFuMntM6Sg9_aik53UuDM884fVEN_RuF3A5UeMo_iUGy0XrVxr1AgpnRDvb3Ju2RnZ_peyXabQ7NMQ-X1CEpS-0XJ6wRLt_b0wOTPxxRFOVtu70RCjGpXs8GNsB5XNX4b4JEOzUFLHBJDKq_H_Nhee9UukLjlecMuNHnTej9YVlvx9UCmE59nyz74IQYR4N3XuytXR8n5kl9togGzOUbktKqCWM-0tm2NBk6ou5Vn0TJMkHsPbTXIz8IIVCyS8jgkr_IMv0rWpETem1Pr1E7_grAWrsswSC7eY_ZwY1QXmbv6XF33R8eCaf6cZ3JhqxqNW2-4LDueqJ1Xkb_8qqGJ6jToeKtlACyzMEhniUavOPcz-kAh_gFi_0XJQNWiPwzIG7kZ_uclVnInd6juKCCeLZaJo4tt1fyPDpm7n4-dt-76vckUw_ru0ctk8bRdzLejLNKpyH5fwXRrPgPZYzv9y4pLsoJfHqYdLkTD9GgoLYUtB0K42jpix5lrw_2-tZH6rnSyEtFQIa0vN-C0k3jf4ljr4s0ObpszZTgZtRKw9zx-gXWZ7unE4fNqOmX-DpWVsPMRdCp5QxukqT0ZYOFplOclOEd_KEf1HKpQy_bMDkgTMxCuKrVe_4HrBl5pBMX7nmUDXN4CLAw80DjJRQzlK9S_cQWqdCR2Pq06ETURRgkoQAtoC3KBVcb-viV7jjh1a7kTkGthBmRidI7QcKVB2WA-26BYpXeMi2DI7BvIglR75oK09K8q_oTfJZLEcaWxgbjOhJY34kt0gxFYtrkFuR9E4NiYEX7hm05yFtGvX0id1K93jezAQFvh5XAuMCgcyudwh-7y8Cr4NsHUwjgozppbIo-ulyUFb_hgEjMoMtKzBDF1Dsv4dpaGwurWdcF7XYThRLdDXRrPcTaQfGEEwqjCnnLc4q9_Q_ti9uAkw7FCqL9HBNrt2HkRXI2_Ez_YZFkgToeJt9m4HU5EuEdA-bQsbS6aBQCGTtQ_jSRrWqSjYh90Rt_0G0coc0m2d1NVGTYLYz3IzWNXPoVtKJH3UzirBZRoYEAWGZ8mbN1dpDwPdbuAZgg132DhUPEFSHHpY0rstLXlkA8IiW85855zz_2axvEoLVTokoNTqU39gZzC2fFfV4Ec9HLoCnHmW3yy1SOmFhiX1uyaV8zEICgjATZNqRygVCcW9h-86J6jQtxHXo2EgOlIgwAQl31utfV950ji_Tl1ip3G44HRFQ63asrIxOHbEkHpgWt6w0LxNHnAhy1WJuCXsg25X-Z3BLowmk04HdGeLG1hld_B0Vw3kV6tRDbXlj7_uq_KSH2QJm-BEhN-olOjdz3yg2iGt3Bp99NCaRk4OqZeGUTheKrX6Un4Ikxk-5pO5IXd0FjpBlhnLZgIw2_QI-lW9IsFdWluvYTFdWZwucFIZsksyeVSqrOQgPFvPuscJNUMCvLtPfTo4mzXvXjYV8yHXHj3eDV3hyIguwyOeNv0bnbyvjGzQ3NrZrzsLi0F9HSnYwbFas72VH0J4pA-WWl6TwoP9w8UjO_7cUca3N79TG8WWviBIzw5JdmkCoQi77oiO1AU_NC4eYu-ZnoFNv9aZyRQx9Y5R2pgP1jYTB3Zgx19_cs-Lhfi-kAGmBbCCV0b8OXnEn4QdO4cv1hVBl6bTqbdhyXrfkQS3R2xguieeMMrlQJTbwdblziI0OAn_ai9OWxeNYXCj7sJNHG1dkALF9B8tPmQwMXQ2J3CXbyFZEaZKfrXdW9xQCfylLIRzfxf5SVVgi2eB0KW4Y7C_eRIgDe5rXEokySf1oRWXADSEyGJOHXB0b3J2Cb09D4aAB25XHvQhr1zFBxujHaPuFxkF9TFlqwNulWXa87UuSQOSyVBum79EnrDuRXyt_Ib3Xp8nEVYs-bQLBFzdqL7BZCt98FXrZvck9hZGmJNzqUieRdwaV8N2yOBAIQzpi3-Y42cxVrJT_N1UZqj77a1FRCvud1oHi-nLFshjM841IokCLGZ7-lAxh7v5tKDXcJEix0saI1n3jrQxn2LWTOxr8zgcT29v5YAhaAX1S1oORVT5kk-UtoLyhyhgVydG4S9wXm39ioJR_bvLy9DWcneRaUC9KCa4hYg6hVQXN5M9M1QW0QYPLPIhYSpJZn7voxUt2H0WpLQ2EhZ_OpSdHZKNn7-hbW2zjdYalzmGJ73sqC1D63REc6gAqNZGkTcQV3CV04o9NhMiYE4cbM50Eph8_cEu5v7Ym49EviIb3eAFmHVS4sAdscQntACWLPjThM-nmLWVWrWOpHMgIUYwIAQSm4--KxL5KJd5i2aUQ3zAIAjl4MjoVYbHYhpHHdmOV5Vw5HmBdd4Xjn-i1oive-EfQ44C8aj7Nvi3L-jv9SKS5oukCgNHwAgX8f9f3lrMR_1BQUm3NGMDMr3rrf0vNisnfedkasb0Kah7ZvJMtM5_KTItmZIxTC_9OiZujtTrHQFhiI53gd-HZqWt1tXcTtNMOm6myeEjlyoH_4NHjnyEp3ZN7Cmx-JmymZ2q8_QK1WfFWrUzuJ-EFXXJ59IfeNyQKCyo4lgeO0ggeLRyZ.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0034d117e35a25bd016ae81fc346fc87d1a569ab42ffd7c066",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8918,
+    "completion_tokens": 384,
+    "total_tokens": 9302,
+    "cost": 0.001306675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8915,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001306675,
+      "upstream_inference_prompt_cost": 0.001114675,
+      "upstream_inference_completions_cost": 0.000192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 100,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

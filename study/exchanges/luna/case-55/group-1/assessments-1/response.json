@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target preserves the main feature and much of the surrounding content, but the reference\u2019s visible Trending Stories headlines and bylines are replaced by a \u201cCURATING...\u201d label and placeholder bars. This removes meaningful editorial information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s text remains readable, but the prominent right-hand editorial column is rendered as an unfinished placeholder rather than a coherent content module. The target also uses substantially different, less compact typography, though that alone would not be material.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation and page controls remain identifiable. The missing trending-story content is not itself an essential visible control, and no unobserved interactions are inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent corresponding WIRED homepage states and can be assessed. The missing editorial module is a localized defect, not evidence of a mismatched comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The main feature and other visible headlines convey coherent meaning, but the placeholder right-hand module does not convey the trending stories shown in the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Identifying presentation issues**\n\nI\u2019m noticing that the controls, especially the navigation header, might be missing a subscribe link, which seems essential. The usual navigation isn't in its regular place, and while carousel arrows are visible in the reference, the content doesn't seem positioned consistently. The layout and typography are less polished, making some content hard to read. Also, the absence of trending content creates a presentation defect that affects coherence and semantic clarity. It seems like there's a material defect in presentation that needs addressing.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Identifying presentation issues**\n\nI\u2019m noticing that the controls, especially the navigation header, might be missing a subscribe link, which seems essential. The usual navigation isn't in its regular place, and while carousel arrows are visible in the reference, the content doesn't seem positioned consistently. The layout and typography are less polished, making some content hard to read. Also, the absence of trending content creates a presentation defect that affects coherence and semantic clarity. It seems like there's a material defect in presentation that needs addressing.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BkYy5Zfyh1XKKVBbxND03cUb59HIeNWO-WW8hAzoVVw9JKcKFy7G-bg_xylmVNIzq8L53yj1WNQULuDoX3N2c51Yyf6QVGPA99aC7QmEbcyyDzkp6hD8CUDx2glVTSeM-Y7G-049KdKyQ61j7fgpptIQXy1SummIEBHhRMxKH277K5eejkyUr-b_vA9e4zQcJSxe8ILbqYwHA4ylJgJdj074hDO1xQ9c047DkLKH9dopAt2uxMhPPikeJerUQkCwKdhasO1h3_XnbMta4EbWReHsWRoVJNKhX60UZoAk1apzBmLj0bMuNBhIDBTwZU-Gt3ugePCMGqfCM8QF6UASwuGZdpIVF8cYImSs8avNiTWSesm6OuK1JZhEiryrdChnNkgnb6RKzWALhtChKNR2W56vW8WzksWI7vDaatyR05lnD_fInS3R3H40sPlHj7HUVyClY_QUVlxp7dWt8INfF7jXP10xBRNsWPd3Ghl9pHCA6EypfqQisMkTwXnJx3mTfY2Ewy3Hf4enmhcbJh0HSjtqs5aq7UtzwIRy1NjJQhX8KawS0R2AVcUwyViCK5hpeBOBpB_Ux93HPfa2RliZsbZpc4h_Y8I-FkxJyNluRZ7KjiVP4YyrsfWG-saTAZq_Ig3k7IKBeDtq73S4er-8TpfKKGBn6KvcvCMaglCbEGK6Twixs47_5IUbaJHfgAZEdVj2kLXcb5tfWaVmyzFouCQP6V-40S0S1bpCQq-4gD1OJ-GOKemc0Z1Xf9ZqhHixAoOqz8Rl-mk52xPP4w84xpIS92igKFtVhN_kpQRDz1Sfy9bq-CQ9-C041-rUuTjIktaaCpNUroIljJYGoz1-okjvE3CWQ5ocSRvyOkxdTYTI7tHRbTi0bA9A4SspyNXW2XXp9uLDY5YU_mNUaJkEvpx9EVaDFlCFYcFlQg9xjmWKiWUnbzne3Gov96rmz_lwB7Nkp0GMFw7v1HUm7R9mov8rxy_dGLzmmMEvGx18-9XFVEIf5up52PoTBRCzCh1zjwPAyScWDOZfiVmoRxohXoF4XYO1V0iDR3RPJRlFkBQhBvvk7UlvBoRaGOisCNdDhv9E44BZREi8ANACOW6px_9yXE5cbX5gSBhbLFnOY_zznFcI1MP8h3rwjSYNKI5akXpHq0g_rm_4rdz9D_4E7tJcqXlflJD1SoI-IFhWftAnDsxpylxiy6U4-YwXu8So31RyjkmU0yf49fWPu8GoLdRVmKqr50JAkeHKtH7FQ9WmKSgLrMhalwifyyqbwf-2aA_lCHDXms8PzH9lqKf0aL-F0MkLHXDafjdtNhSmAWLWzreaEv-70ir4lOekJXT73zsBqOZtz82SmPZBCgKRqYhN0Wp3jEf4RQbJj2Cx3-NBdnzh-ZTtYKdM2Kc2JHZ9cWgCvI-LrrDqKPLZz8_Mu-YpCO3-4ezF3Gk6r9PMcE-LcnsVA-55YaK0Otms2aFJSc7dY8DdgCfcbNVdYIGubMkbu3gBM3_zoeGQuynFchNP4H5pjj-ONvs_f_kSLG_kL4E3kWy6zscPxboDViSCe-64I8x7lGHrRPX7Y7jXYiWWhMwgzt5Ix48ixQM7RixYRAoAZq_0NRkLcdegtLZ9sErF4oYCU_opGMZbSVaeiX8AhfNmczMGwZFiCSy2xlQ1tujOJ5rBQzcZMi4M81pElfwWVs_da9hskWXt4acim_CWnklndtECBmkLFdOAhWLF5FwkKVQTHOhkg0_YLN8QcvIBYsqCemuq7E03VITbwzlVWX6Qn8X3-76SoVzSGpxrxchO-Sia-vbeQM4pyjiCboN5EtMdCG3BkfkA437P58dPxeIKhpkgsvpZjEMijSWOdG1zviAIjxpzB7QnJuWTFxL0kG7HmFf0jKiPtQxDrhyR8KQ_8miNZ_Z9m72Jgt3oyqnGlo5ekEg7RjfyfASrWhpXTwQLVuYVa1VSsdmWA5qwGxP-mjhjXZKyVT7WGl0VUZ2jWl3BBUZrUV3rkatA_GtLmBHWlphsuiVKc0SbPb-kAh5SJZOQba4Oe5AFwCKE8w36uccEq5tJzmjsErflnqbWq4OAuxzUi0nNRtDM23TjfCJGTbn3NguamplLf7lh_OQBOps8eptPERSm2lOoKQAk2Eno9jZOhBKvwqN-6zxqVx42voD0grSAI6porPUL-ttmIwDHDX-ADjXcWRLlbOHg7BNnLlfM-2TJ_84P180hol3DGfFDHV2Ol084HmaORp_FrF3pz4LilE3l9j1e8VWmgTSdEOoSY1FIDOAq54xfv9jYCikPqKgybp9jKJF51koq1f63dXumYWXnBhwT1JFCHx5v_4YI_6xgeYFI_0OKRltsqsNo_f7u2UmxTB0rj-fliIFavucoavPBLSpSMziBHHGWNl0D8o1eA6i-BeGFASH5KuLBLqbS7PZ5lkhlHzwkjk_vtndxMmRYvbyCdzAgnwyM-8tZc3msqZowRshZuLfkps-OyPXR4KluuhhVf1Rho_oLuZCYPcV_zJQ9d1FPBuGZxQD5zTrGZx3b6CKdMxu3go7ZRcmDJzocllUMeGFAMJWpAWdX8_cRbH3CLLiGp3DAtByQZN_COQ7vn5nEKW9FV9sx2LoL5wl2pwGDJcyn-aktb9RRE6lvDUE4X1zfprzenumtGhWM7dlA9Hw6AyjcYOlLUH0TDlxNa7_0hC_Aadt0j_Mz0Qq0a8zpjs9RnL7tKEKN4sfvuVLDzMd7v1KNxGyBov668eZGpUAiHWAnpHihWckjaQbEj3oFV71btcinBX7d27PT9hBSLNL5yHeQxINGKHZ8OZzuI6vNXoiBQvls_F_AhyOq0juDPcrOjY7G6q4H0RwIwa4FemFtgFHp4Ro4NBxqgoux7QceslVGaD9VF6fVpPUo5OmEcjCEYTD9l9cOmj6sg90PSDZyCM5iR8Tguz2gvA8ve0uMdjH57-dxIHCoSvWXDuVJYSyVKJo43SfWkmekU46SdvEp-MTNjHavoQ0QZCLOuf0qPlDBRmU9WFeYZaYWjiAdD-e27aIQNezWVer0ZsKuZ7O_E9WwHaXjxHRC1137uepu6lZp3MLwnrrvxplIb_unXnbWNAsKOuZ7W6n1Ahn8bquWaaETVTHXEtK1HaAoTUouoZYQWMl6KY4DD8Hcy3kxJu0M1Mh2wwwqqvYrKmLk1nspdd_QDaTNxMPFznyYmVAz4_GsbAzwlIaj9acaGT4s5NyWmdSvztxvVdk_W8DTgMWF2Q1NtYZqEWYrc3-GzK_xTJOIoTs81GJC7tEaWLPEtiwG8u-jMVWM9NRkhj9eDZauRDngeJlsYAj0gyXbQAL9ZeFO5hGcCcj4-fAlT9aNnk6M-SNrzFGNxT4ATMNkZ3ZAKubtp-UNFPVnE4uP0Tur0Q_5AxaG2Qdhc1yRpqaPkQwxyrDDfaPB2yS9OHRai5onFvaElPz9xGJKnNXBAKe77WW2hFzQl-3G9uThOq5qdkiKzKxEmIJHaXIvnUWUtj0RokrH9MFS1Kvt9QNuw4G_Wu3aG5fuigCzD6QgN5qEiLMmsEVCFYJT5aM58KrUFHLTGLbi2RKEAIB32F1PJsY1zRDFhwDa_IWmC94i-m5yC2eotLzXwYX99sFwvHIJIJAv5q1rlelFUoFDifV4SqaZqaShSA3D-7mgNddGfaD9hXAS8irJAc_vQWhlPjPVwhLyQemNfF97eiuMzy648-Ik8am2OgYYICVx_WibQ-KU-65jtb8BcfOv84BQ8BPGPnXALcQQGdAY67W8oXAJYtlHLTZye0T472703xPpUSS4dSpIbbQIl5zXWzJ7kEXsseyi9OPM8mtm3gICvg_dtQ6Js5nNLxNuVZQLaGVxTxUWIEyH2bhKZqj7r3lf2qJpPK-S13mg-pVgwvvAvqDg9_d15qx71o6uH1BPWsEZywnzQqbggU2qBi9-q5lkQUDH2NZbJ8P8hZN5aT24RwVavfplyuRSs5CFIUItFFCpnKlH3UIIjjw4wIYRJXVnl4Nq-i4iz1WmLLxlBcfQiz_wn6pgvCn3LvUnN7nXv_iUJi5YsKpe_aNokhD0B7IjhHUQKZ-cw6O2YHIEyZXnL-MFk6usS_t3D8PBx8t-63xkS4VkK7OqM1f0rOWaHfIK2-59smRZVaKg4PWNbozbN0HLRZ0F17kyuAWHSsqebmnI6P-hQLvBJ0a9fm9thMPv8_ChP-boZvu687ZTanSbQvpxzm3am0TxekrY6JapmFYBX8ZN2gYscaBu48ugt7Oslxq9ookJZg-LqRh_wmzjw_hYFGxaAtV7690kqBAuLJ4gMoqV3PChNE5Ib5JLlfuDbEg1uuyZw-DOvmxJ59XqxV779mRtjjUKrtlbNWDPCGIEE1h-kWKC-tujVDIJ98mnl-XiD4TXx9pF-5pNcvHJhvmu19dQc8i4K6VBdmoIdPabLkawtAk83QrVvy6K2Dv3GocQiLs8XagJN-ePg4eSukNQl4qJfl5UbSvynBMVq8s0vTb_7cKn_DFxHzpbn-vTajddDfw7v7-JGADX642C1vpromfaOIGb0-UTFfPYVwCuecVP103EQXdk-qyvb_UfPIM-qwDmgv3suMUxna4SMOmq-pALhGmUhfkWxW9jpKA9yWHG_rstIuNVHc-1mXc-knnoUkXzzVBLR7BXvItSAVpT7u-jrJNsE1dshsLSfeCjG6OTErijQZo9V-0kvNznsYEl9_yQ2nBhaqpRdsRLqc6oE6ecCtBcLsgV40rtk_5I8u2vjSR7_qJrBYgA9y3crrRm82MK-ANg5SaofcGcDdLexbt-S53vULa1VyMh-YK_yHzFQGvJrotXgis4BUrIWpOj4H1Wdo-_I0U1nUU2lipvQoGvhySR-I2-Kty0uYRiW1w9rMgFbBBE-PLkZFlp26F5KzObl7JDqJYqLX4N4X3lwtRJbsfJYU-vR4NkwQ8L8SAaj3CrDeHijH2NZJG42HWAqU25jpVpxTD0lSAN1coEe2-ZX_3JdcNefG40L7q1qfMYThdbnagAALrSZcRRO8vWFdvqlc3zgQHnFCSO34ckbm4pqx7s_mlrF7iM81bwvHajtFdOQTp7gE7WT0rczaCAzJQigKUKtPAzuL_To-16iwcHvsh3165LGgxXD_1JEzVn5c99cjWpWQRU7wxq_rFPJMDl8otz1Ojc5skjY9wX8kY9jtfFaGYEIsARTiPkDI1-_rMkHnSARg_blPuJYH0oP36pzIK4sXavkymuCgW58DRBMcUzwMAANUUbl-VAHCHe0nzLc8-TEXqTGl5KGkIAbU0TE4fJaWag46uR8qgUPKz92fticzXhxmmk45Gaw8pDZKArJHcg0g8IoaSz9ltELX617OBmR_jXTPA_RNN-7Q9lHObsOrbPDRGVzLsJxMlN7I7yECLj-Fw8504NvNUfqukgicNNq6gL7eazH_o-F8UGp7NK6hF6snmNRkn7EAZVpG39uV9X4lLdWwp5rvBYvTm501W1xUmMqx8og5zmPv9arxEFfYMXGd7uea8uekSV5iOxwK0AWaWk4BORmjzrIVPwL1LBWef5WqJ5I-og5JHKAC4So6MeyMn6FKf7VTH0DtX2cdVEV4w4vSl3IItEO7-s5oU_OMzKHhHlwzim-R4CtyCjaUTX_0D75RqLi-Tr9rWAHGbpIsDOGGO0btWeU9DvfnkBk5zLOQtJL-NdSPQagvYzwJTT54LQOWi6eOLNiiAeZd38GklerciYQxyZSE1VUX-7svx_SMgoHi1U1aO6UFOgFs8KSBdtn4oVQTTZG2k2I-hwp_InhXqEHFmXshMJ3u2uz3uR88I8CMxAd3yeTUUVsSHyDeyMpJ1PlxTAhyeZQb4S9lLW8JlpMeAL36vWU4frs1_yHiI3uZu_F9Uo4J8EcbZkBWllDJaYXaTmd5GuSuRUwPdhuueYWZhzknqk4Y=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0702eb17e48fa2de016ae819132f7087d1ac0e2d98faf32890",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14784,
+    "completion_tokens": 611,
+    "total_tokens": 15395,
+    "cost": 0.002153425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14781,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002153425,
+      "upstream_inference_prompt_cost": 0.001847925,
+      "upstream_inference_completions_cost": 0.0003055
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 303,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible footer links, columns, legal links, and banner content are substantially preserved. The ticker\u2019s differing partial text at the left edge is consistent with a changing marquee state, not meaningful content loss.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Footer text and links are legible and coherently arranged. No substantial clipping or overlap is visible; the ticker difference does not impair the page.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, footer links, and top-page actions have understandable labels or recognizable icons. No essential control appears materially obscured or unreadable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The target and reference show corresponding Cloudflare page regions in coherent states. Their small layout and ticker differences do not make the comparison incoherent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible text and organization clearly communicate the footer\u2019s navigation and informational roles, while the banner remains coherent.\"}}",
+        "refusal": null,
+        "reasoning": "**Comparing footer segments**\n\nI'm comparing the segment footers. The target ticker on the left starts with a clipped partial text \"stantly\" before it matches the items, while the reference ticker starts shielded and shows the first complete text. The footer links are the same, but there's a slight vertical layout difference of 2px. The target navigation opacity is set to 0 in the DOM, but it's visible in screenshots. I\u2019ll need to ensure the JSON is exactly right for this.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Comparing footer segments**\n\nI'm comparing the segment footers. The target ticker on the left starts with a clipped partial text \"stantly\" before it matches the items, while the reference ticker starts shielded and shows the first complete text. The footer links are the same, but there's a slight vertical layout difference of 2px. The target navigation opacity is set to 0 in the DOM, but it's visible in screenshots. I\u2019ll need to ensure the JSON is exactly right for this.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6ABqxrP_Qkh90WHqZVUo_NkbRatPWhs_LvWISuE4lrwRFbNd9iSS65Vw71EfA0lJ78sfPQ9nSHL1z1WYW0Emrw5PUvIdNEOsipWFrZGybThxvZVd-WoA9UdAjDxBLRjP5Y3tTA8IsRkHLa89WiLPryuAn1EiP1vAcMPl5P2QrG7zKTmb5ao5rcLHZtelUgBrjcGa7FklwkQJ4e8WS5bg9-26GEbF1HQEv3m_V-mDzo131c2xS37IJ5JGgczW31R1XYCUoiNMYjgt0dC4Pw_t4yH44W3YjTDK4iuzSWPuwAFxFO5mSsrmnsGXG4nzCtRJP_gDlxRnp3rz4EP_OdtGKV2NLdPQhxE2GxTaa3hPuU6EZWDcF7tOFmTgkioMTvRniapFusqG0Jea7PnJduPH5Z0CUWogR1z2i2sU-TvvX1hDrnX_xB_z9ybw8BCgROAPlNfdN408AdYvBW23g-cQw4d85irdj9N5E0dFuzlZyVKA0CfhEiqGBZ9UVShZp8jEe3uz8KZOATBUBvcsMeLQ4LrhrEGlxDpOL4uo9Z-jCcWlWo3WTMMlZ7WCNE5lUn5ebVW8k1cI99B1L56GzxlyeMQuTwOc65Dk47AKjPQW8AT__-z0OD1shNgLi1PPnimGKSllYg7KTJcCD7z7sQIFZ6KpTnK3G1xNTxwUHq5GdHD1KQ1jBIbadpEG2wPaKdIsfD8PEyJojlnriDINyVyqk3cpTJIRAUB_HvEuXMNrpwbmmV0ql58B3TIje-aEdy6sBstQFH_kFE0Ms-noMrkUOruHGbItrjcw5nK6pZ-9CZdVFGBlu5ZMqJnT9faX80PRdKNsmNInXp8CNTnv3Tc6CjUChAoCOUfu-_1iq4-TCyRxi2RfzqYsKdoXJa1nbpKLVBoSKwLae-HWQPFxgM8BJBE6meIQOe2Hor0jkjYkHCJLRGxL-4S0QemyzLi3yzjO5vNKvb96bMQ7HP6kspGnxkX1EHjAZDmxrni8ZsRwTDQRJ6h-98C9N-n3cG1e38P4Z3v0sOsXxB1oV9MF6QSbexLGcWoSNkHOWlZ7HW9c5milq9TYcosJ1tnJl1_ubww9SXYrWkMlUNQvIHm-0WQoZSmdvg4EnbSkIp-Gw4AKACsvrUw-dQdDpuOS9j_4J3vbpmG3zR1FIv1wey_3wVBYm49IZqEtTdOfjaPhROzDfrrmzhZ85hWfvngPHVesDRtzmPsOeFUvi8ufW7BmYMrGCGYMmPY9SxhVwpqfiT4Inu4lg8bJDTTeBldLMN1i2XXbgrcFzcq5Lc9CjONrpPSKQPEYT4vTGTS8msISN9WLsz0iaNXwnjV-g3ldXXfaN90z22uAYHswzZbz5plXP0WWpGDhA-bsZrxMRBmW5TysvBgh3U2tfbg8KewI_uJ7wMtR3vXNL9HnFE7ZEWYRiu-TCMjIN1kKZ5V6jxZqmfzawciu5vxB-au7eACRMAQH20apqCsDEIZvrIZT5R38HTV99HLoTvdWyaDqQJMymqz8G-fJu77ky02CXYRtFMydWIAGkp6mRwMoMw-8f48OEJY62hHuDL-tpKBAM0CKe24A1xLDtik24hYoV4jt_ZvsZvt4ZVDgwSe_bwLtJZXuXNagyXC0CFiPMExbpAT4f5YOej5Yc6aKMNW4dNceWJP8OEU9KTH8fWjkNRIHoLG4EgFa4WckWUcBOgnrmtRglDpZQPk5UfzVIaAaulonh5iDHigeNmb5ihzOKDgvIPeDLGSQS6zJbtWh3U-0SE1ujTudI7hGvOrtw7pKZMOrFA7MRtkgcJFOXBAc1SQUhAQL83U_mu1cJ3j04fCc93rNNOOiEd8iImCnALYSS7ckYc4PqYhrG-jEY8WCBZcJvP-VGCNPO0QkV-M7E_i1Lv12cA7xouql1_jnwK_oq-7DZ85gblrAoruHnQqm1fhrDH1XZGtnz7gimgKJSBt8nycujnYF5W6IkVCexHdmDAEPuLxIllQAE4uHsUGnkWTAUidMOBoNHYipcKM_JAks1i1-LNI5w38OT4cInQXjbsQhihd41GgmCVjL8mHb40c9IRQndWTkJeet73zl3KzUPAvFQscb1TofldlpPspDNbBo0bcaVNP4XLetlo8E9uhNnCQKppvQphiJcfQXft9xtw70l0kxps-X_tm-UfoLAE7YsJERmj7qrEQEdSfWN7aAPR3QLJZI8Ht1sw5QtJk8bAgma6jnuqKN5pZe1tzNkb2radIGa6KAHK8XOqX4mbRsskckr7fd8JkIfIRHdDk7ne3gCYAmNMSOaeq-1BVUUbgvZjelgtDEoq0PlwvYaeiwV5toQjlEZ3WYk-8b-h0rXEVIylsVmtrhjSEzmojirzQg0cCNaSkD5sgcsG2Ysmb1cjq2WX-uHvtwoXgtuKfZGwZ5ENCyOYApd-7-NuidFYmn2CqSXm4lV6Io44CdYu1ddullMjSlbtWv13bEL_41KiwWRd1qL5KLF4A7o8bWRM2BJOpWzrfMFS4jJ6zZfBZEmrHzVIt8CMvJGa6FIxnbfwf87h42KBk6XYCJ_3qCAPJ7kHf8XqH3KiYJgiRutaAcr-n3QCuQyPl6H8r0r7TELbfyZHC29otO4qJqhtfUCshidebi7cI65jBZdJP1n6YtGeTg4aGMw_8OrUKedBBqO63QpUbcElYwRL7JRNHmzNKtjVHB-qXfWb5fidAaH0m9kzFrhnHPKZ_BZQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0243b24b0e4f08a6016ae80067f93887d185f7aef35425cdd6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8769,
+    "completion_tokens": 305,
+    "total_tokens": 9074,
+    "cost": 0.00124855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8766,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00124855,
+      "upstream_inference_prompt_cost": 0.00109605,
+      "upstream_inference_completions_cost": 0.0001525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 84,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

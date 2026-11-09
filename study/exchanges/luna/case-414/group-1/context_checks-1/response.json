@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The hero heading and supporting copy in the target are rendered in very low-contrast dark text over the dark photograph, unlike the legible white text in the reference. The copy is still present, but its meaning is materially hard to read.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target\u2019s hero text has poor contrast against the image and is substantially less legible than the reference. The other shown sections are coherently arranged and legible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible Download controls, navigation, and lower-section links remain identifiable and understandable; no essential control defect is evident.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding page regions and coherent states. The defect is localized to the hero text presentation, not a mismatch in the evidence set.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The hero\u2019s core message is difficult to discern because of the target\u2019s low-contrast text, although the other visible content conveys coherent meaning.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13700,
+    "completion_tokens": 238,
+    "total_tokens": 13938,
+    "cost": 0.001831425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 13697,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001831425,
+      "upstream_inference_prompt_cost": 0.001712425,
+      "upstream_inference_completions_cost": 0.000119
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents recognizable shopping categories and a personalized-recommendations sign-in area, supporting the broad purpose of a retail storefront. Its content need not reproduce the reference\u2019s exact category cards.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible category images and labels are legible and arranged coherently. The sign-in panel and footer are also readable; viewport boundaries do not indicate a layout defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Sign in button, Start here link, footer links, and Back to top control have understandable labels or purposes.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference views form a coherent comparison of retail storefront pages. Their differing layouts and category selections are permissible for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s category labels, imagery, recommendations prompt, and account controls communicate a coherent shopping and account-oriented purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target visibility**\n\nI need to evaluate the target, focusing only on what's visibly lower. The reference should match the categories on the shopping home page, and everything has to be coherent. The lower target shows category tiles, images, a footer, and a sign-in button. I should inspect the top area which is cropped in the grid. It seems fine on the controls and likely meets the requirements. The coherence appears to be there, and I should regenerate the JSON to ensure content fidelity. The footer layout also gets clipped at the viewport bottom, which is normal.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target visibility**\n\nI need to evaluate the target, focusing only on what's visibly lower. The reference should match the categories on the shopping home page, and everything has to be coherent. The lower target shows category tiles, images, a footer, and a sign-in button. I should inspect the top area which is cropped in the grid. It seems fine on the controls and likely meets the requirements. The coherence appears to be there, and I should regenerate the JSON to ensure content fidelity. The footer layout also gets clipped at the viewport bottom, which is normal.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BlH81NgA1Sy5SS0MTvZEaeNiKZQ5U9MdWPCN9MnPwevK6_KWHrEMB1AJ_WT8LwNTWwf0eotqCmE7uOWNxSqCpe7DZq50Jnzah7OpkcnVPUZC2ocYDUIvzyCIVNaAXzUNBeULiPiViB_9r-vdHuZ5kzRNMLjnjdWRW_3sLOKFrqLVMjBNP_pkiw3VIR6SDxkEZlj9UBzesXV7053Dg2oDLx-1Ese5tpgqRa5uOzntttS_AIf35xFyR-Qw0pZyhAEZJF0oQsjMyUgF9fKSaE728FtUkfVPQkjiu0bwbTbW_3FHuJ7vzx_Leq4JmgSINbwozc5_i5r5FGgXcT-pRLEBDP0lZYYwiXMERqff_LIc0wHlWsGS-B2PwCIFl2xbuw588bfYzpCyro19rZ5Nuk1cicmz9xFj_Y3EI35lTX7GqzCtrDSXfx7lPqOSd9d1xVRrah2T_YjZxh3R-4bEdfP-YO5uQA6_bOZfmHBTsSWYnvj3hlxAVE9M1CV7zR_QNvhKw5MXdK-y0pfZcz6v09tS-nNzz6eGf0bBewlYIGSnIfGw4fn4SOemWqMPTJS1vV1JbbsJ5M1tyt1fSe4nNKcWNTDot1gwennHWoAO4uFw11IjlVH4zPmHLkhmLVpLZ9rrNIbv6WkH5Gab2xZ__rpHmPfkNvAfZa3_8XXVH7Op-Mp1yqsClJvDCrSN5lb8bM-XTHjYe3A2G7mJ0xkPSKghpef4ovbNL9zTlA9twe36bJixr7_QoO_819q-Ww5iBCf7sKYAcnZbgyaGeDkLYfH_lFHe8JPVs4r25dEO1t6WhmBMI7v5ghxbqvRl64_vlzq3F2nVolUzjFhDCdLsJ4biVksAh_xcmTeOsUZ7IcOXeREBmVa3cyjrMdEo_cHI8eGfxK2voGngvFkanzDARIuuz1a8bhnPm8JTBk61rGwzA4eTKfRgkgrxLMHX2x3fstjAuL6VEAXjc1zvcCDLKsoWsG1gTkZXL2x9x-qSzdJhoE_dzZ2Qewmy6yyH97h03zWrE1NWyHqlcjk7RKu7a_bv4ZLsoqIgSrktTIebIBRe8KT4I7EaYEjeYOq6uN9mdSl2y80n-V7vsUrdaQxXBE4NADYARmr2BH6zcf-Iehdl9rfsaCNUoR4g_EyrMe88xrAE5ETwwU3NT2jhy4Rk1fHNLUz7bdaSm1F_qlOW0jWAsYK_FPec34-CKiD6WCdPzzLRMt52CjsjPvwk_pCFckHtB07useJo81eDW8dfb8GGyrwhJFXh91ISrdEY_Lz8aDO1bDPjkHNcq9fhlJzAxiRaMjx0PZXZhYoj8SfJXYlzG6Pj7jA5Pu1ZP2021BVPv2UuG8yFj0X5S05uIYvBhpbKOJoDQtEn8O6mOmdsJ8yLQq8z6f6vFDm9SOS_s6PEZOyW6utuklSW3Qr_dEjp1ZOzzCHAJ91SqbmMwTdYwwfMPc3I9MPTYkJQ2xWE783wCgppX40WIyXmdfkpH8cwfRkf3kKdYB8xIAhB7CHFR2YbX5kk-P8JSZE4iNrTRHfgJ74fl1f6trg1E6T2m9nQ5G5MCzZrPS5ImY9c5r2G36MkIEfnswewu--7vvQ3W9ws-YtC1uz65LwgW56P807-04CjyDN8rt2yQ8Ao1qF_Qm6IWgXFJ1t6qbItRuEFr2UzHFFWGmGMpiX9t4UHPPfrO5oyaSN_xReDk49wYLT6uwfZ6t8Vowp_v1uipphRGoZGHl2WK9EJYglnSUSgf0UnvKLLwyxdfY3IwoCUp-wuQG8HJfThGssK53pIYvaeqMp9TFDW-Z6jjKBVFF4Wpvpu7cqnpNPQvGQqx53ZOKXr00-CEexgt3mFas1WMV47gzEdr8Qleylw2Kh1XG9IhduGbSMdB-iuXJunPw8wSleXSbBdv9LuWXjKyZmEsMp_YLGYQT7cK6zcxyWJjCF0cYBGaSzg4xvcAkhmnWKDPE0PYEwWbbiIrmbY04eI2_eYTNyTrV4Hf8FqgFVWXxLKkdmyYUC4E5biP-7X-CeanVLm-HPs_BpMTwRLOfPkUejGKYIbWYsg7p9to5b467k_IllznjNG8idovtP7gNsN5k9zZLzt0eu5R4nEHygx0SUVFkpJjaRCNMGVzLya0i-RKTNgRXYycrOxpjo5y0bJQ68BKj--ZuoutdwZGtT6Bdln1RgKLvIZ8McpRTPAq4tIUHPDGx01G7fL8pE9ZMLAFtcVPSFNkNn_qQIe4ONO8qgUq73bEO2LmzIVXeXPg2Hy5eT1mgWnvImIpla1p-_zdCTLq6ONXl6JCo7I_7Wrs60YHhw3iXVYXCpsw4Ry8_JK5g5siUBR1__KCaUeb_vqvaX0MkSEGLL8GhY7FQFwFN5DMTnp24Aezgm1D2HYH99IKJNcYzQ2AvxGHD1lOD6y3mTiXAzwDs8CFrZzo8OAwDss64dHc4J0vP2p5onJFWmgn5U4tSpC67M07dGVV0RQWL6477e-cKaupGkMp5ZUTRTeCkO2U1VmyXSaHzZfbfv7MINNCwfQK97f9WEpo21WymJaT0YrwE3wGXJlbBkKc1H3nuLbZwnvirdD4KxjRxAWo3TYMsEe56JatEm5KjKyTqTTU8mtZercWEq32cEIlAdHVWe9aEiFSYmm64TYq2oBH8tHaYeNy9tXgHHhJYIaqYCPFdq-28-mnh30edpEsgeCA7hnL5VrkUERFR8JJaio3rTKgKhGI7Lkr7DRk4PY9qy_KfmbhgUTMJecd4uUMdquMi3sGGrcf65c9844WaIEbwNA0-h4-RYcvG7YjNkxVCulu30x6qTnhrrQBpxpAO2lT2Tf-wdHRLgv-b11z5rcvlG-0T9ygg3bFsTAKtCfKqfdIZRzERsMoVpdQ7ycz65b5ek-WLE1qdhqIHRAO6NG0FWuCvMGAuGY8JbuitYk2KzeucXhWvRIazhEAPSAeUwHnZniRXieQ7j.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c6021ba5c2c14e5016ae819448cd487d18ebe5e9ebbdca54e",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8470,
+    "completion_tokens": 368,
+    "total_tokens": 8838,
+    "cost": 0.001242675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8467,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001242675,
+      "upstream_inference_prompt_cost": 0.001058675,
+      "upstream_inference_completions_cost": 0.000184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 98,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

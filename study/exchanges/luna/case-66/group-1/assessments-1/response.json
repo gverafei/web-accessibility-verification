@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s large black hero is empty, removing the visible product information and imagery that make the storefront\u2019s main offering understandable. Later content is also largely offscreen to the right.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target has extensive blank space and severe horizontal overflow: lower page content appears as a narrow, clipped strip at the far right, making the page materially difficult to view.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Top navigation is readable, but the main hero has no visible product actions or understandable content controls, and the partially visible lower-page action is clipped at the right edge.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target are coherent, assessable states of an Apple storefront. The target\u2019s layout and content defects do not make the comparison mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The empty hero and severely clipped lower content leave too little visible product information to convey the page\u2019s storefront purpose adequately.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating layout issues**\n\nI need to assess the layout, particularly about catastrophic horizontal overflow and blank sections. The hero area is blank, making the title and product image hard to reference. There\u2019s a broad layout issue where the main region appears empty, and the lower section has clipped cards, making content unreadable. While the navigation is somewhat readable, the core product actions are missing or clipped. It all points to a coherence problem similar to the Apple homepage, but semantically inadequate. I'll opt for JSON representation.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating layout issues**\n\nI need to assess the layout, particularly about catastrophic horizontal overflow and blank sections. The hero area is blank, making the title and product image hard to reference. There\u2019s a broad layout issue where the main region appears empty, and the lower section has clipped cards, making content unreadable. While the navigation is somewhat readable, the core product actions are missing or clipped. It all points to a coherence problem similar to the Apple homepage, but semantically inadequate. I'll opt for JSON representation.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AgDtCGg5a7H4S6Io1oFCKkW4wewcY5W5BTjHIRM2UxDGbDDSuoH4GY4TSPc123agoNsaeRGoY_O-v9Mj1sRE-w2Cz-g1d_pMvhwNC_eL81XFrKkG2W2XjPmWATXCde8x4aE2PPiBM990RyBgte8TxoJf6pueq-BKB0cRVCG2S3BG5mOVC_Qdw3p8-G60OC5W7hj_VC4PLP_3Ud1dCDrBhVWXExjPM5SjRHBmITIE1ud72YE6X2TgX_2oYfqvjf467H_TAfmcq2-TsnknqDi0uzPMA61l7OonMNElzdK__Ie5sTvBhW0PE7WmgOE_T5tI90JzBfrDaFg8RmdyPhRYPxOfThYRchag2ZaJMnh9jFqURjoeo6IvYK-Y7A_zka0fszTfYKC_NT2sO0XsaoQDkZNvqKn8ZkSvqcW1cQhTfdWDaHcRGLVKnedKGjwMdy1ZsivKgXgKjgQAj-fsxXH7vRuVp0zgAPn_M5N9AM4Um89KFc4_nT9eWOruvxzfiCP5GHwudX1UZOfOHYMkWGQWFzkBM0dp6KGLKkj0YOIphqE8GUYvSFib3vYenQcDM00yvGSv9stVs6ObDZtXLK0gIICG0aSPVZQhZVNZLwL10JLQNWyyJATgXOSD39UixRd8eMjSUZDHUOxspVqEE8lMhH5_Snpr4R7_YMkw8fhtCJZR1TYC9tkJyMs5l-TzbUXUXtZoMSmF51FWOJSRc34fvVvAWiWrL9_NJ2dPWPI0kxmGhCGjRQkdDLRFBRgowi1UGQ84kFyWXnTbrCWAmQlp6BLeG8pbJB7ivJv3f8NSpxBXBMqTwupcBIVeJh0WFtxD_BrAGkrKhACkCSK4X4v16beVSXBpyUqV4N2-A10OeyFGfMio_IduwUrnBmI72gnEojAsNdsC8BrP9YT8yyTRSCyHHJK1vnlcZURr7EFEOLjrUcnBHTikBDmdpDQG0sbVhCkyi_F8_dl24gPASaFU1gH1h6T8zJ4NaDLl4jPWlYIJYAgQeApbZrhoGTdz0JmdpKV63urqVkXp9OR8Ahe2gDC3JtiC40b0WGkkaOXZBBX8V4aLgjJQHGPfQd3mCU1Sv9akBY6tVMjMDkLf-UK3Nq76CCkLxaqgchTK0mvlucc8-_5v9DVimviVvKubCCDPygFakaQklAa5YPx_cZn9A3hxQeNq_wmrCuVBn_2RmMhBQm8MsWsbVR1n5Aegs_-mgGxPwtS_I9qOpZeQ_pGzn9GVvv6DdYxwbKwUjcba8WRqX7Bu2uKikZKPrAvGX21buayYTGPTZBMg5JuU1S_PArEz0s86b75no-rMLvwxldIAA-H7rVRrNBCp1qH4NxYtnpvDa4yE1HTKteWNBdVfOyb6e3rGq3va9189Mx-1d7cEUGnNiB1eP7hx9LjCn42v09Vq4Edsn0OKCyniBRhIcdicvEAH1T5P8fFc24Te8_91bSqKb4yZ-pcenGYpA7ULlgdKbiIwgAN55PVLU4tQpK0dAYUDPlnNovvxtxx-Jtb9EyGmNnj6-JV1F-Fl4oeqjzKmvxTxWCet374mgNIZhQIXLP7g1LIrPDzaUo4Os_pWMUDGZ2w4ccM_7giysmBdmqHH3HNvnkA-uPhs7g7P-0rK7o4MHUNXqnImM2eu2hjbnWUZB9Sal1T8puLI_uDgaeYClua_DDwi7ykm3b_p3_w0F-gzLVFDwdo0CtkrfFIDNA-dLeUCpdEQwmo9M5odzwq2ntmKDtda0imK7ibDHWwUPjPdaLDMmsVPp45ZmIJoopPjBHbQyo1ofPaQFogL2jsSuZe4r4WNcEXwFgSwFQi8pLZCFG11yVlZSTZIZBD4suHTe6A508wdUJbBIODH586pks3aRFOeQwIesoKUNlkWruH42LyRmtLbCJ-tk9S-TPQJ5tD2RGwZm_X1mxFBcYEzqrQPS43Fx7HfH_i9jUujWv8UW-_qmllVRzExZI-jFDaUmYbAWXuGKmpYN052VPFmtIqGpK_EpEOkp_XwrPYpi2jPwEjdF4J2dqznbtaBl7Bj8IGxLJQlLV9iNVnZSPo7SgIVONHAtUDhqtZn_can-UowfrwrsK83PY5-M8l5JMjMb_2Ey56GGDGeZ-JQmpvCRhOQPj4MoWKgI-lP7-wm3pOSNDXzGOR4i_htP3aB4RaWgdqIzt1SUfjGYHLIwyQGX9XA_oXKZriKyGPNxoJ5sGvXQCE4x0PFTMl5R5KqcR6QRMM6AAjfWmPCkTZhh_TzI5OKV4lhHO97EZXKezb2uKx5eYfaLIDdwJBEZMVwIFXdfL_310p8e6PdD4pWWhC4nM9d5rSQY1r82qjxqDowm6tuEa0wg-zmOS0srv2MErVestPNxA_mRPlmImNwaoiyIGAjKRm-18NJKaFjc6MXCiCUPOTEZsv53r596r8DEk7D--T6buogjWRMFXCXnPLoQIzC07hn7usfybZ60hNVfh3YJIY5w4_9BiEW0X6moPkn2fKbXYgu9iodz6MFMplzGe8tOllxIXMeGzCPOr8aEUvGP92z_6rNqrCucTsnlgZTf8MP4FfNYxYw_zerOXRtzZT3uC3eEUz6hXWCelCo_1ImqruISYuWZTw0L_0hqCrLyIZYxoN_nxB3sZGo_0TxCgV4lJBjS8yJBgJDasAAyOs5DUuYm5G3d6g0Ve__pm_jc0eVOUYRipVcZhQ3X3Ng04MRWIpN5YhVGzYQdHklTnx_IUA6quchsbSvUrZBWJ-iW4Hsm2c1NAD19F8x0_qPpdZAe8T-siFSHSTbMF9bfAYCc8ZxrPzGPjFgpXj2R6qp3EBbtPYZGEGluc5uC-YmuHV6-ElaClVLCX_PVu0uFM04YKRC690Z0RulB9tVOo0Muxkj_q1ZiYQ1VkrBSGNUacIRaMwJXTT7fAbwEHvDP5Bqe-9ywyCV6ViESAyJMAbrfWCk7tlFdapgcssJzANFkjKzmJToSyTeJVVUgA0eE-tHOTApjO_69tyglmKo8E0WTy6v_1l_I9585UuA50Qm9xsDJN7rieLCy2Vpmmf_xZ2d-Q6sNAuXxWVH1knZN9m6a1D4Rraw8IjOgeaFEr1RLBIsPQWjCSRbDrRqLkQ19zVquR_dHqU9fnEdVzoDrSGsnd0NqvtdnH79t5D1VSLrFrN_wsMqTB4-K4HlNONXQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f130546561b60ba016ae8080052b487d1812bf1a999ad33e6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10125,
+    "completion_tokens": 394,
+    "total_tokens": 10519,
+    "cost": 0.00146255,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10122,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00146255,
+      "upstream_inference_prompt_cost": 0.00126555,
+      "upstream_inference_completions_cost": 0.000197
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 108,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

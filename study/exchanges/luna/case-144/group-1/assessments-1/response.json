@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the nginx introduction, latest news, project descriptions, and navigation shown in the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and links remain legible and coherently arranged. The small vertical spacing and alignment differences are harmless.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links and navigation labels are readable and retained.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding page content at matching viewport positions and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target's headings, descriptions, news, and labels convey the same coherent nginx-related meaning as the reference.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9754,
+    "completion_tokens": 164,
+    "total_tokens": 9918,
+    "cost": 0.001301175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9751,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001301175,
+      "upstream_inference_prompt_cost": 0.001219175,
+      "upstream_inference_completions_cost": 8.2e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

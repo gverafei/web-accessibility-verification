@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent telecom-service homepage with clear mobile, payment, roaming, eSIM, 5G and shopping content. Its reorganized content still serves the broad purpose.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Two visibly broken image resources stand out: the Internet-shop shortcut icon and the 5G banner image, whose alt text appears in the banner. The surrounding text remains readable, but the broken resources are observable presentation defects.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation and action labels are readable and understandable. The shortcut with the broken icon still has the clear label \u00ab\u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u00bb.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target views form a coherent comparison of telecom-service homepages. The different layouts and scroll alignment do not make the evidence inconsistent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Headings, descriptions, shortcut labels and product content convey coherent meaning. The broken images do not make the page\u2019s main purpose or visible actions unintelligible.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing target defects**\n\nI need to evaluate the defects related to the images on the target website. There's a broken internet shop icon and a broken 5G image in the shortcuts. The screenshot reveals a broken image but with visible text. I'm wondering if it's just that one icon that's broken, and it seems to be localized. The main content appears intact, so while the broken icon is noticeable, the overall presentation might still meet expectations without it being core to functionality. I\u2019ll need to compile info in JSON format too.**Evaluating broken images**\n\nIt looks like the 5G banner image is broken, but the textual title and description are still visible, which is good for maintaining meaning. The banner is key for promotion, but its absence doesn't entirely lose its significance. There are two broken images total: the main promo image and an icon for the internet shop shortcut. The presentation seems questionable due to multiple broken resources, but the semantic meaning and content fidelity are still adequate. I\u2019ll classify this as a presentation defect.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing target defects**\n\nI need to evaluate the defects related to the images on the target website. There's a broken internet shop icon and a broken 5G image in the shortcuts. The screenshot reveals a broken image but with visible text. I'm wondering if it's just that one icon that's broken, and it seems to be localized. The main content appears intact, so while the broken icon is noticeable, the overall presentation might still meet expectations without it being core to functionality. I\u2019ll need to compile info in JSON format too.**Evaluating broken images**\n\nIt looks like the 5G banner image is broken, but the textual title and description are still visible, which is good for maintaining meaning. The banner is key for promotion, but its absence doesn't entirely lose its significance. There are two broken images total: the main promo image and an icon for the internet shop shortcut. The presentation seems questionable due to multiple broken resources, but the semantic meaning and content fidelity are still adequate. I\u2019ll classify this as a presentation defect.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BypScGPizK46y11xZDtPiJ5SyzsLulrJVXRMfgyMGVSom0O3VSH2eDbOyKmB-V6JYXGLDe5KNobjKDchTFq4Sz1xFfpMsTDHfeZm7UosGKfrmds7c6EwChQaeKHm8R_0t8TRdMTVfdtY-iMZE-Di1zrQxSIkRJmKEZXzxmQa3BCazk_j1gho0JJm7-HKLvMbD8z7j3p1VYhfnVU1crGLrLPk8QHBx-rY-qe_TBkilp1dAoityk_bVsdgGbkDflAZKEQ8HkLIOzfITRxb9oSr_ByF0pZ7PZg7LSa2FIQGODplyH9UNRiWdnjrJEa1AaCfqUGRW6l-F7guq00tJceGS0EqDCmmj1DIBgYIT6C2-aqX7R_avqsaCWmgNRK8KC9iRe8TSQu8-6FfbFm37SHLF3VhbLAPRV6fOXslvIQ5_q_q-ssPFaT29k8G3bde_QZtU-UoLSkF46FvqUA8BEHjLAp9SN-3WXZgdLWUn9yqDOEGsYuZHt3M5eHql-rcm8s6i68_cNF5MhKWjOagT8rKJuMKeKiXJQM0WMlh9nw2ymMEj7Ov_5-KQUzt9l-WzuBRXO6iC9KR93bhArXtN-csRF1LZE8ABZpIGvb5CxXeEv33ZhkQc8PfXIa2sjYtWD2hFK8xBMu_rJjU10T6Br5hjGcHNxdvYoh_mD-4B32N65HBjqKOuzyqwSIkdgvaxINW2yTOEhfSs7PRPtR0mIBp45fXLyoUrDoghVeS--bBBvRUer4uTDQ92hm6i4m1wAh2nUnZobFkmPoJWl21WEnnlFslsjIxj7YdxUVWPWN6jhFLIilMzIuOwo8F9OF2jbke8Irdx11eD4CCawbEYxyvVQ2jXXKlsW90Q7tTn1vWGqXyc3pHGXq_TI0ntjLVX0IrPHk8CF7WiqDsyKuO9tozx0PeF01SmVX85EiJrWCzlTMvWEmqGUzTAT_fI4nnXBaV0HWNCpA1D7zB7lsiCdu51wEGed9Ox6yhULBZQ9QaxCJKfQ1mqNPoW7uRc4cxRAqZzkwfaSuGONvnisv7k_WniDxA451EJ1qjlYHjyaC-TD9GdnW4t-Qv5PKTsF7r-CEWeM2-1OAXSbTHiGhCzv7WCSA0bqq-BbJNQYaHPrRsOQgquBrQ5e9Degkr3ldt--4Xo-BQq6qdxU1CRwID8kI8MfNte_mXaZzCQqqKLG87XMx2D1y4FKGIKKxwAXhtBLSxJsZTLMkf68jFxccbgsETgKeKBSDulKFPgOMs8w9Am_8R-X7lKtO1bZ-jtWMjk4HIkcezTPxr_9Lzv8VCGTPsZ5mZnx3eqgwJuxZwbthqMrx8VjqoSB8yzp3L1WRWlYGQwMYjW-esOtLVQo8pa1v6ewRzJ1QWWjTmWzhPv0Qhir6_v4N5fh_zEjln8sYeMf3YzGeaXqiqJjmepQMo0-AYSJ0J_L4IRdscpoozuvT1bUZyFx96yDVK0rrtxNkSMlxa9rnxjyHdlgzth79MQb5j1lCkrVawbnuam1JYkkJuzqhtXkkO9Ht60dJ7H-XXpfWJgyJsMjNrA7bqTP88QuhguC7tQjU04OwNWReN3lFgmWMwREtwaaseQr6q3b9gCeJYkFfUq5b5b2Td0v-bVK5NvRxug1nNvpIIIzVcS3PSryq3CqDkSTxX7R8eWj_7XcF0Kym9tK19BTCBp8XhqA8JDLFsZns7l75qflF7TvF26F9RvI-Om9qmGDuQGAsbBriM1xJ5jOoGcoo8yjNomy4wxeL36dPnCqtc1F3o2cpdOgo9cDdSxDbQUwmnisXM8Qa8sd4yU3hNomQJOGQAE8bY73y7nT9qTCygN3EtZhWrrluk7kAvbLPLiNnwKz8NtUBB_nKM503qZYRgh49GuNTvgTXpwcc_rGmDl_LrfXPjRt3XQoe_e3nSBWylETM_2TKUvhDl2DSqf-vxQcHOIrRwxzOuH52mqe276kT-QtxPwFi9xGrS2JOzRumUWf-Hlage9vPomr8t1wl8bm2Orrn0YCUQqWeSbigs0jLUFhVBCNmlXOFrmaOxL4K_C47eqAKcv03vzLriHan1Qaniv6uMJ_NEuMtZjOAr6Nz7GUpw_RSfDsQ8SCTcuyRQfnD-Kov8BI9mJAGrSSQCSxp_RH_Mo6Na12ZOo5jcdMWYyaYc_URC1JoWjhCGTzbbmA4ndeKCslwJwxXDrNinrZPmYBBlR10pb0EdI5iHJst5i56-TzjWnTjBcH1PbZQuj2TxrXm4Iut1vXUPjWHLpogavsJMuJHfsXunTFhuUvLn-ANprjeMN-CWTXxexSEgJDzWZW7zGXjvZlVtjslsUcZ8Eb3wMPNgkrdpwB06tQJdNhADMoyHonDsYT7s4daDu4MOaCH0jngP5JmwuNZiIVzbn7tL0y3cNJEZvvQUL_vpJyjMALJN15Rc_NCtiluIqs24fXk0YKNRCwdU_-6L0y97xWdtQd_qCpROCgiNTwNvj6WILqvMjXQQO6k0Vjdi4AC2kqMF_la4WFedM-lGMi5w1PwdWMOInCPDiu7K-MUudLLkTOsD1sEgh4KFAzojNgUrnhx4fG86J4fWUk9NcpGzb1CnCh2AXzk_1bwC_0e737F2agYC9jl-O06bnU0-0tfDEVvhmUbP3FcmtK0drDBGb5TpZDEKKb_NmrPhAgmsTxp1XaLSHCanF2NbC8PuxiyUTBI1ixlJWbBIOiP5JM2Xv8IrnJ1hCCHQa4WG2MVvlmeauSM48kmdNCkugon8D60KLIrpRL88N58Vimxh4LMVwTcpFf56gzEHEjfnpS-T0Jup_W4iDiKcUYs9QCdnb2M2R54NTwdjeAkmjE_z_a9t5te4gfjL2QoYiiePAV6tBkHZh_N7jK3DqWzByWxuJCE7wKNznlR9GNsnuFHkpIjLUcMqbSCQT9ZqwuT0BzCSZQnxNE-rEF1CR-lIpl460_gtab1d57_TeGH1hSaP9BHngITADsKO-uthj-ojusNH2qGZj3gNLyCAC6YkDAKEWfS3Mnycmev8Chkvw7kHwwhVynUfylBmUfArksO8hVloicKQkp264YRAZOakOlWI_pzziqrGMRnGoCIhlWVV2F9zf2We75Q3g_zEWnCKflXrEeidyHCJMDgw3EggO2PBM0jQMVb5hX6QT2LC2G93KceWGre9q7G7lTuUDOOiu_tMC5pxDo6voNkeS5z8A1xchS5Lafxgda1RjoC1WtH4gtZ00yd3IEGsJvuxxH5bnR-xBsGN6z9lQHpI7MyB4y76B3Petx5C42n6t0CXQRoZRfO4czsal5bFYa9SN4tttaFe4YV5FZdLcGKrh4LCzLO5JqS0H-EpZH-h0-d-EKbQsGTZCTw_wIyirw8A8ODdomLgecOUjbbPAPnFNVRwzkyMBkuaHK_ILQB_LBHZJ6VIQusEi5xCOca9OJbOvBNzmmYx5cLQAVjgLMMSPBye-NiEtVq1DrkC6dy75k3F1XkpSOBx8nxT52OjJ13iNrAX4BbD4H1sgXCqvZjv11dg3CvFJm9EuSXiUPMyZGYCcyKq77myO2XRKDEVlbbJpX55YvNKYMUfbRVczABd8bvNv_GVXMgpGcbb4yWR1m4t7QOC1CqVqP3e4lxUsx681yxpcQGpGWNvhmftbYNlDNvJiXWKtUCAM0gs2qPIcZaT_r-YXNZq29GXlbQnQyQtavWkkwyWuAcYiiFES3oaXeDhATBCupSO1Z5pCiRZ6BT6ws_Z5h6j7ImbuRO7_grI1ZbI_yfPCjIrlL1aTRvr99MmxcEBUf2I8LqLw06gnIVPFvTN-PTRHKo_ZZcvKrm_nN3JPzrKa2EhIFD2PztA35WZyYq4doyGpRJ8LuRS25Runj7cjojZhId_f33PlDyk_fw-XwWEoqyBh6H1DzvfR3eoXcyIKrGOKuyEI_oXRGT5WDFYZutlhtQY-mJRk0t2h30CKIO7z52-F-CXNJdGdn_WDuGqWmQ51WWIBPuk_zafLY6_H7MOV918oZ6gI_qRmMf1VpO3icOoSC7rPDqwL0TLnaUshBWCnK1Jq-wGEkekDmPQLlJO-uWexeY9UmN7TeTRPDvJ3j1hNk-qcOFZjCDcLBpgd0iOtfvV2weyNOFo-VGRgBqU2I3ZVK-BzXmB5Glx54dtwTdGB0S2s31_QCxKlUQs-hLS9Xw46fq_2F9EDhRlzL3basFGnp2B9uWHtRDWp5E1N2_PjpaTl3QuXBC1Vc4tP34PK7FgvQ-ap2UKhJvtz8nC9odpxYE1Ompdd_clSW5lKFVLVKDOMcbeuPMDflI1UrB5klomKPlEdlBrsPQ-yQPcrOHlj965Jt3sQ6CsMZh_V3l1INSSCC-VOhmccVPG0pRioAlZHwr8uKoqU5jIMHsNMfqyx5ViPBSzuRk5mFhPeXfS-bi1tsejd_z2uy3ESUXxCWzDw6ZnqZ2OALxkAQr5uHrrhTZMSWWRQxzoofNZochUXmzo4PvfStci1NnEA0IqumGz7XneG5qUmBTYtkZWeXCuEXJemGXyuHARo6mzjefOJoZbBfw8M8LjjB8iUJ01Tw7hqYrHimNuuUP8c_HoSMwNhcIqoqQUSF4WDq4Xy49fw14u44zbuXWzq-7cIX5drMUrDURx6w9rNjB9-APSSIjf84xjf298hIkgHoOF9fcaPn6ICey9smvDiPjEQu-s_T3RmZOjWz_U2xqGQngg974td6E9Kt5A2yny4fUGPAeKeQGir97fz58vnnQgkp_AFpGAfYnGgJC9pZJwzsRNHpYUCSxIWpL-L5NHP3mzXrANhunuQAJirlWhoxSEEGmtoP-koKdNs5CW-GtTw2zIFU-ipWUske98E_609Lgiy0-po9Wxsa8E7PbHAHIo7tmC-seucc5In9wkWhsX1cdFIeoWx6OOruUhZObE7NrXLYxR9N7afr4wFHFzdPNJa50ybUwM8dyL-3MzH7L6F7lJspcbzpWqBr71S5HpOV4x0G_AdOcS3sz7pxMvekUWBddIk4mSoKxksIZ-1Q04ZsM3PJnf_tJC6a9F2SZZ9-4HQK2kY4UjnG-bxA5HAR1pxGdodKaelqmL_eAHSPEY0_dKJlmCbMHfc9YcCdzMZqOhZkNdJXcK0ZZUdEpN5eeQf5Oc0nloNEjyD4l-yqipaj49bqhj1FWO8YHvoorCidg-1oUP0JkcNIVmZod2D0Igpwbu8KJQwjsFUpVd_sgWd19sEEYWiL04przZREGQ0v5yUL15voXvXRUKFPOF-oQgS__PQc0p2YjyjTlc8N-ga4CgF7Vn2Hb8KF7s6nrsn-ZaFgIi2tlTrM0xNU4gsV1YkEVPb1n0jN0qgxQ2XpQgGmX34ygnnUOHOp7WF6AUhi_td156wCiJW9AHcPIe5rLLACApXpGt3OMPMjsufL0IjLLeE-3B7n1J91uU23pZh_dmE3vbvTHvZTVcHAsV0Mcie2O2KqRyWGG9BoHqUyT2g3XivSxrbL_BPQoxgxvyU1nrcjwYnfgV6gIsesVFm_CFVAP_1SKo7ThnZ_MQ8tyWMa4ueztz4Iw1MrasKCj2bUMs2ursXhbaBXlsKihgb02VuX94804SZiVnT_CQzsROdhBa3KjMGctNL9_b0uedn1CFKkiVvtLllqEx_KfahfC8r-sh5-ncCNralODMK0JeaEBa0OLFwIvYcnrOhT2x9EZk715uMpdEW7N9RseA4CNiPiwCH6rRTu7oZncmVRXJ5HPGgS5LClPb7U2QV-Hr80vf7Uo1T41htebFcadrVtvd7T3w65t58crGRZxx4szW64JocTs_IhQmIpksI0D2AKv-xlz_gUaROc-UICAHQD_2S2IZuS9Ik8dTOxegeztrmG1IbCdIkfV954NZHmfQVaD3zRqLQe-GL5AlyCe-L0pS3Y3f3PKDwtfMy_yvGlhWbSnFpdDQen2eVZoW5_nvcNZXf3OcTSkT54mnWmsB-OO82758n82i7bMH7xUrJ6YrxqjoeNQmVaIJbn3pmQOGFOinQB7JcOmCxlcY2fsyhCgWTiZ__nHSmzM0nehrvcGrc0fvvqbA34fIXPSn5pDsbmiHbC3VPmBl9kTWDgw-kNQMdK9tXnEy0yyBXp-AqpLfDS7ENhSg_bbdVWTpdkApEo015mh3bApZ5egZaPqXe5K4mastdlCazkAEBENPwUMkTHHeFPlRRtH8A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03d0c9ac1f78a9d6016ae81ca4fbc087d1b476ac70bceeb728",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11881,
+    "completion_tokens": 566,
+    "total_tokens": 12447,
+    "cost": 0.00176805,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11878,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00176805,
+      "upstream_inference_prompt_cost": 0.00148505,
+      "upstream_inference_completions_cost": 0.000283
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 321,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

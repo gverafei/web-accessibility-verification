@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible article cards, headlines, images, and footer content are preserved. Differences in advertising are excluded.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target content is legible and arranged coherently, with no material overlap or clipping beyond normal viewport boundaries.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible header controls, search field, and footer links remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show corresponding regions of the same AOL page and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible article headlines, imagery, navigation, and footer convey coherent meaning and support the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing window consistency**\n\nI need to check if the supplied windows are essentially identical. My focus is on slight differences in the content, as all ads should be excluded but the page footer remains intact. It\u2019s crucial that the header controls are legible. I also need to confirm that all dimensions match. Content fidelity is key, ensuring that the target articles are visible, including the footer. The search text appears tiny, indicating a difference, but the overall coherence seems consistent. I'll check the JSON for exact matches.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing window consistency**\n\nI need to check if the supplied windows are essentially identical. My focus is on slight differences in the content, as all ads should be excluded but the page footer remains intact. It\u2019s crucial that the header controls are legible. I also need to confirm that all dimensions match. Content fidelity is key, ensuring that the target articles are visible, including the footer. The search text appears tiny, indicating a difference, but the overall coherence seems consistent. I'll check the JSON for exact matches.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgYGzZKT0xXWILLJW9W2Mynxq0xqMVIf7Lc-FhiimWSc9l-nWzPmlwVFYvyYccVolO0WvPlNJYW_AeNBPCTqX5HU5N-ikDWSRrt58kGYNb5nvTUh0pMr6ebD1j7G3PioRibo4fRgKBpMPSxyflwIkhvtNpsuWnUGUczD_VfwXL9hP-Wzyl7iqdXIyYyUVgQ55EaYL97PjSOmDu99x5E06nrqfVY23tt39GCWq1zqFkSOja785cjvWsvloJTZvM67AtHD8p3mMvKlAjhQ_J4UHG1VyaXu6884ALi1gu7nsIKvOYnLXCRfTJrMsx6_DantVDhc-G5YwY54PrEWbN5_J3smvex__SVfVMV8Q6jqUyTY-Iiup0cAJmxqJv4NvH9MueqX-CTBrZYOh2oWng2e2M24tgbz0NXljdar_EGGwVDRRf7EiA4Wji85OarCfg2yapHR506bFokvbjwqxPEU8hv2yg1OkWao1Qa7UtDG_yHRIq8GKKxqQkrLVUPSTHrGcPRWfK1f4XXc9yC9L2upZl-app9o2-nL--bUHqLH6P1LDaQRDb0Rd483_KhWk2-jLd7x3nX9u3SVZx5ztg6Fqg5Iw3Ehr5DbMLCVzbQ_jp3AQ30tJrJDlTwQ0kKefKXamDxFTwkm1813uKEeILpfShfdZbAjV2NvH4NO0N5V2RPVh3olYdYUWnUmuO2AQ9kaRhiWd4ycdGIUoxuxPxK5JT7qxON061kYgX-sLakXTw4Zh3WJoBD4xBQfiBvlAw9O3Aq-Oo5Hu8cd_bK3p6yBCPs9OUJnr5cobmj_ZpZyJPNsza3SVT3usJqVHBPwOEl1i8J2SJCGawYkDLZcNNyuq9f799EDq_LwIUp9y1nm0dpvnCQATqI0Rkb9sb90lAvhiv4NZqpAI7uRvLvO6_3QSqw6hsGRlh2m1I2XOLBYCa-n77ZoifaWIaHUS6WwecySzTgigm45UNNlhBdtlPjYUpf2Jl4QoURQqTXG_44TDNLu-cD9bQW-6J7VbpedQWrbTOh8bY7pTdG8vpJMpfxp4uXoPjUDWsXvhHq7oSmJEKxiLV6aluIxPTQuAkTjUkO2R7K6EXX239bhQ04oTsJzS0KEUqggyENS79Gt2RcBfuF7_R5xD3kv_ctLN2DXOzpkKazr3jIHE3IaQVHttQamPtSsqxRGTRWrx3a4pdxfh30VN0Xqv8DibwuiXwQRBLBm7v8AM3yPnfeUJMtswbjAHg6tx8GreTUTQbZ_L5gkuqpj4kZKMezopi9Ch_YF6BhHraAmjUU9PE3oX85HZZ4hsZZkmpnzHKN01Qx5YDwSY4q89pt9YuVxIUVJ07v-JHhviKdvjo3GykOXmTv09obzPup_tsnQT5EwVRISvEh3G6IhchI21ksaJoX1ttsxt6VaQhJEcnhOxAz6amMuWTQVzYIawzuzppzlrDAUEP_m_e3UuWHrwDMg_ByMvg3hiXSA8a15tEpSIQnL08wRNLze8tuzVmF4Cgm-yhpuzwTT_678nwkoZ92GpKKWXQyJxwwkCY0q0LOxzCI7tshKgAgV02okqP5Qh6jJhAdeKyM1lGXXPVeQ-IqTFBZhCsS4WW6z1wUAbNcrv0Id_-gDSlER681lgkOoblxgQpK4xXBaazRXZgrxPaMHmGFmwEYjZD83--QjK0kNb0zObt8LNo0yeFp6Chij8cayYqetvvqmErjMh3ddQ1g08pgYWlFystHQH0-1cmlFy4RdyJXocHg7hmxgwTBu_AAKd3s0DUrkQ5RQdMHL-pWV81-L7TY1ZzIbAEcVnzy--YnNi0SuSzThwpPgIy5LSCN2fOKQgz5Cfzrz_w4uZK__zTzXNjU9TAfSxIVITRTAki-BAaj7ONCB-gBwoaNdbnbx3OVs8GrBiOyqnaQ9HBDqBKdSxu7CiaVzwHUfPAutrx5nf8BPtBr2VY69pHv8QXjCS6jfKGMRq4UYOCeIpi_7sPxsw1XQUfD5U46CTaEsAKHzN2diaMW_Y2Maup1gLre5iVygCzB-46z2llV6up-d2HUrWLhmVLP2T45qCnUSEhW4fpCz3FmVXXo_014gtUK0vFLWiJK2t-y2uybGnXcYYQ-aGeV4-exXY50xbTH5cwJObTJOdSh75j4fgv_CZ4W9CAvfONHzuFMlxs-NiPSAIenU2oQM8F5XbWwboJ1KqA5gnR89nVkUS24vCHm5z_lSDmPZWAmO8hyIjSL2_t8qq2wO7TrogIxDkYEXQBpnji_oSC4v6dy6UbqKbJ6Rlw4RpsOr9PX03Is6-KzDHlUf26tlYorRotDDlb0qCAKQQc_QUCKxG-XgFIXDHD-wTiOk7_whI-Qqx_c8D4LuNq2BXgQ6MB9Uv80hpiZjLS_lCRvAXUi5JNjyqnxIXVF3us_Ghu37Z_KEJo_MLen6nQSV2wVTLeuroksZJJw.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0a06ea443c2f7c26016ae8181659d887d1af0d2026c3c981af",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18833,
+    "completion_tokens": 283,
+    "total_tokens": 19116,
+    "cost": 0.00249555,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18830,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00249555,
+      "upstream_inference_prompt_cost": 0.00235405,
+      "upstream_inference_completions_cost": 0.0001415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

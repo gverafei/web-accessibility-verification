@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The reference shows a Twitch browse page with live-stream cards and category sections across the main area. In the target, nearly the entire main content area is blank, so core browse content is materially lost.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target layout is substantially broken: visible sidebar items are unstyled, crowded into a narrow column, and the rest of the viewport is empty. This makes the page materially less usable than the coherent reference.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"Essential browse and account controls visible in the reference, including search and the top navigation actions, are missing or not meaningfully rendered in the target. The few visible sidebar links do not compensate for those absent controls.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots and saved component context form a coherent reference/target comparison of the same Twitch browse page. The target\u2019s rendering defects are assessable defects, not evidence mismatch.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The target preserves some channel names and stream metadata in the sidebar, but the missing main browse content and severely disrupted organization prevent it from conveying the reference page\u2019s core purpose adequately.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating presentation issues**\n\nI need to assess the target for catastrophic rendering, as it's mostly blank with a raw broken layout in the left navigation. The reference has main content cards, but the target is mainly blank. There's a core loss in presentation since essential controls like navigation, search, and login are mostly absent or corrupt. The evidence does show coherence, so that comparison is valid, but there's no semantic clarity here.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating presentation issues**\n\nI need to assess the target for catastrophic rendering, as it's mostly blank with a raw broken layout in the left navigation. The reference has main content cards, but the target is mainly blank. There's a core loss in presentation since essential controls like navigation, search, and login are mostly absent or corrupt. The evidence does show coherence, so that comparison is valid, but there's no semantic clarity here.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BjSqXG_BGGjmz5RKwXiE4IknqvZWRLEbBIPvajAeC4JLdP2ACATmvpNeky2aE0m_UH7e5yskS62cWAjPKHi-8nUB1AgxsZtSYcPuUiNqdFEhKhNNSIIBlYu2UHSIEZmCsbcETZMu3gG0VzqQhjrOiQgoABA5XGDspvJsKJpZNPi5l9JjvDtM2pGStqdqmUQCnFyeFZSr8RbT4UxdXg0jI0NiDZWciur2-o-qpLrNdlm99bqKJsX52K5sMgZ6ACGijy2rtu_K78QPOthxksw3tDYQt_iMBkE8DqbZEv6q4yNF_6vMUiuuUBgo1TTm4_LigLrYPuqhPcpYLCM_uDFE5CwLeGvLr3KpOYJSLdgR0pHCnnB9Hrg6WVNTWyB0ulsxGYmR6SqfQB2t1hASf7NtIKWLwFQtBUh-eW9bXgUrdiyzKfxxTCa_sEdLni70fFt08JBZTDmr9O_gVPMO6YifVdLwctfiRqGZDevSl3tNGzw-cE7j6dJXIFQ3JmIluqLX0Jczlg2ClHZ1yq7N0rqg3kpRmT0EGoLYdBKQ5kRA_BAtGyNp0qF4pJM2sTFX6iTUOVNOkEXhLb9A2gHKEeNGG498cBZU5VESXonV6aE2A0ZDOIVPYSbjZzevQ6htjG30_cXCaxRXryT-nZw1KTm2Nu9sc2wga0PH6xrHIWkDuLg6Vh2eh601ElxW46m2SWA_lTQXnQ3pXC7Vk_ftdLSNatOQDcFI0JsN3pzo6EJExykuNReN9gfDmnl0jsH5XPLiDg4A1DceB8fK746DUe-Vl0BUcaS9VJOzUB5lFngPy3Y5yEeCuB0LwHEU56TDiKEJ9uHsZZZBADoxVAZ0NJ6uTf145Do4STjXXZ23LzmKdHZOP9HUbJPuUY8ouQIGjbTxkYc4hJRpHnIYOWASqVO64t7EDPRqHAIWeWa3i1lv4Mt1bwkoNQcTe2yOy2J4c0zWkZ4qb11sFKpkuNa2ex4Ibp7j3n_mX0BcrQzKkSnUqLQMvvbhfDsU6001eR0icSEC7bbAFacjDCjion-vw3AHk3bbzDLiOf1EcHAerufbh5Z4XOOXz3guTlSRgGkxtb_7U46A1NDTyeoKuOAeLfdBmqtMtnbB5tMuzjjBS_xD6i_h1MBKN9F8QmdMDfxctvLseGvlBcRMR0plxbM1ugTly6xhgz_9qicerBa72ob3vYcvFCEZ-IOge1SvTNEg0w5zD3IPTvt34V1mADeP28yje_P4y-nfgWW-N_XNqoJJkZjp019WXlo4Hy7J9ZqA75aEzWK9UHVg3Xe9kd_szfNBAxJmd0cahZFjStUTpL5ztiES-7qLrHRGeZhA8Z7gB_McidcPvcjCf4WymeLgBFX5UDPVtE6rHPfAg0IrdKrBqizTWq_wuJ_YYI96rQEy5P2VOsI20w4Sj-xBhbWD8NYzEGMcHEBV7yl6RUpg9T-w6MV1uwVOsAcm1LF10i0oq5D1GzQRmnWaFPiHjaDN3KTmczC6IEZobVsXv2GALfqto64vJ5o7JrnjhjSFsuJxxbbYD_htv5Vlrk4h1e9m2iKOqBBDUep1PQQH_MYVuD-U2gUuueGdNrNcnA49zZ37p2aMj43j_7_0Xirz7DfW6GGh8qgo18fXbBmKdHfFdEuQAWqxzQ3IdRkU49WYdd1cR-GoA_ZfLgodYi9qE8C0jbqpUDyIhe-pkG_dsOcoHpmpR7FWUUfkGkKEmGYRXzo1929XRaYQFEB5p5PF29vQ-xJZlaR8TeyEU021hIQZ9VoPDdedq0LjPkQn4gB1d5o26ECrgLrKwif8YBDUunug5aVhxOWkzulCRK8u4HGkeKkQ6fqlWfMhuvLAJg1z8mKkwPGtK2CafdO4PV21RBZE2y74Svwy2i0u_9TqZI4MZu435RFMBlUe22kz7n2ZiZR9YRAViJRtoD0AqCr7B-umHvCtZcW1zryhzm5PMaPkYt_PO7CnZAHvJXihYLc17pY5lM5eTPi-fp6zuZeKq3P-WKOkU0FtUgIwh0qN-wLC7hSix1PYt5_k_gD7f6CWecEH559klKyP7X44zfEBdlx4vUuHFgy1L1tGamHapN8XeeGQoTqbqzeXqwWhu9CvEBK0PD7QLbfz9Y-32nXfuOHNSHH8Jf7AineuPWa0QgMvXmw3qN86OzTW3DQDZZ6iC1iCb75hkoygXbNnJdyM5YUSWfhQ-hlKX7-Ug19NGSAqewYTSauoyhuyRNhNwmiCTzKwGQqaSxMNXrtHXonnLkK-_xya_-hsXYTHseMNsyVe6N5FH9eXciEqbabwrLR3h5LGxSK1C0oqy7qQIzUyESJwvy6bE1zDOhZfYci0bJdBMYrX-naitqQGWwd15VjuJ-aV5RLQBn-nOMbjyp_ECrOz_66H0kNgw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_017766268c1346fb016ae818d072c087d1ab159f4c69764590",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13165,
+    "completion_tokens": 328,
+    "total_tokens": 13493,
+    "cost": 0.00180955,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 13162,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00180955,
+      "upstream_inference_prompt_cost": 0.00164555,
+      "upstream_inference_completions_cost": 0.000164
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible Debian project news heading, subtitle, five dated announcements, and footer information. No meaningful content loss is apparent.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged. The target has modest spacing and alignment differences, but no substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links, the language selector, and the news/RSS controls remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both images show the same Debian page in corresponding lower-page regions; the small layout shifts do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The news entries and supporting labels convey coherent meaning consistent with the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6054,
+    "completion_tokens": 235,
+    "total_tokens": 6289,
+    "cost": 0.000874175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6051,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000874175,
+      "upstream_inference_prompt_cost": 0.000756675,
+      "upstream_inference_completions_cost": 0.0001175
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

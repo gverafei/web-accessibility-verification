@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#242220" name="theme-color"/>
+<meta content="Explore enterprise open source with Ubuntu. Talk to Canonical about security, support and managed services." name="description"/>
+<title>Enterprise open source | Ubuntu</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #242220;
+      --ink-soft: #56514d;
+      --paper: #f7f5f2;
+      --white: #fff;
+      --line: #dedbd7;
+      --orange: #e95420;
+      --orange-dark: #b93e16;
+      --focus: #155eef;
+      --content: 1200px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); line-height: 1.6; }
+    a { color: inherit; text-underline-offset: .18em; }
+    a:hover { color: var(--orange-dark); }
+    button, input, select, textarea { font: inherit; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .skip-link {
+      position: absolute; z-index: 10; top: .5rem; left: .5rem;
+      padding: .7rem 1rem; background: white; color: var(--ink);
+      transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .site-header { background: #2d2b29; color: #fff; }
+    .nav-wrap {
+      max-width: var(--content); min-height: 72px; margin: auto; padding: .8rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: .65rem; color: white;
+      text-decoration: none; white-space: nowrap; font-size: 1.15rem; font-weight: 650;
+    }
+    .brand:hover { color: white; }
+    .brand img { display: block; width: 31px; height: 31px; }
+    .nav-links { display: flex; align-items: center; gap: clamp(.8rem, 2vw, 1.8rem); }
+    .nav-links a { color: #f4f1ee; text-decoration: none; font-size: .94rem; }
+    .nav-links a:hover { color: #ffb69b; }
+    .nav-links .nav-cta {
+      border: 1px solid #a9a39e; border-radius: 3px; padding: .42rem .8rem;
+    }
+
+    .hero {
+      position: relative; overflow: hidden; background: var(--ink); color: white;
+      border-bottom: 5px solid var(--orange);
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; border: 1px solid rgba(255,255,255,.09);
+      border-radius: 50%; pointer-events: none;
+    }
+    .hero::before { width: 420px; height: 420px; right: -110px; top: -250px; }
+    .hero::after { width: 300px; height: 300px; right: -55px; top: -190px; }
+    .hero-inner {
+      position: relative; z-index: 1; max-width: var(--content); margin: auto; padding: 4rem 1.5rem 4.5rem;
+      display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
+      gap: clamp(2rem, 6vw, 5.5rem); align-items: center;
+    }
+    .eyebrow {
+      margin: 0 0 .8rem; color: #ffb69b; font-size: .8rem; font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 700px; margin-bottom: 1rem; font-size: clamp(2.5rem, 5vw, 4.35rem); line-height: 1.07; letter-spacing: -.045em; }
+    .hero-copy { max-width: 620px; color: #e2dfdc; font-size: 1.12rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; margin-top: 1.8rem; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 46px;
+      padding: .65rem 1.15rem; border: 1px solid transparent; border-radius: 3px;
+      background: var(--orange); color: white; font-weight: 650; text-decoration: none;
+    }
+    .button:hover { color: white; background: var(--orange-dark); }
+    .button.secondary { border-color: #aba5a0; background: transparent; color: white; }
+    .button.secondary:hover { background: #393633; }
+    .hero-photo {
+      display: block; width: 100%; aspect-ratio: 1.36; object-fit: cover;
+      border-radius: 4px; box-shadow: 18px 18px 0 rgba(233,84,32,.9);
+    }
+    .hero-note { margin: 1.5rem 0 0; color: #d2cdca; font-size: .9rem; }
+
+    .trust-strip { background: white; border-bottom: 1px solid var(--line); }
+    .trust-inner {
+      max-width: var(--content); margin: auto; padding: 1rem 1.5rem;
+      display: flex; flex-wrap: wrap; gap: .7rem 2rem; align-items: center;
+      color: var(--ink-soft); font-size: .93rem;
+    }
+    .trust-inner strong { color: var(--ink); }
+    .trust-inner span::before { content: "•"; color: var(--orange); margin-right: .55rem; font-weight: 800; }
+
+    .contact-section { padding: clamp(3rem, 6vw, 5.5rem) 1.5rem; }
+    .contact-layout {
+      max-width: var(--content); margin: auto; display: grid;
+      grid-template-columns: minmax(230px, .72fr) minmax(0, 1.55fr);
+      gap: clamp(2rem, 6vw, 5.5rem); align-items: start;
+    }
+    .contact-aside { position: sticky; top: 1.5rem; }
+    .contact-aside h2 { margin-bottom: .85rem; font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.12; letter-spacing: -.035em; }
+    .contact-aside > p { color: var(--ink-soft); }
+    .aside-rule { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+    .aside-links { padding: 0; margin: 0; list-style: none; }
+    .aside-links li { padding: .58rem 0; border-bottom: 1px solid var(--line); }
+    .aside-links a { color: var(--ink); font-weight: 600; }
+    .aside-links a::after { content: " ↗"; color: var(--orange); }
+    .privacy-note { color: #68625d; font-size: .86rem; }
+
+    .form-card {
+      padding: clamp(1.25rem, 3vw, 2.25rem); background: white;
+      border: 1px solid var(--line); border-radius: 5px;
+      box-shadow: 0 12px 36px rgba(44, 37, 32, .07);
+    }
+    .form-card h3 { margin-bottom: .35rem; font-size: 1.45rem; }
+    .form-intro { margin-bottom: 1.4rem; color: var(--ink-soft); }
+    .form-section-title {
+      margin: 1.8rem 0 .85rem; padding-top: 1.35rem; border-top: 1px solid var(--line);
+      font-size: 1.07rem; line-height: 1.35;
+    }
+    .field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .field { min-width: 0; }
+    .field.full { grid-column: 1 / -1; }
+    label, legend { font-weight: 650; }
+    .field > label { display: block; margin-bottom: .35rem; }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%; min-height: 44px; padding: .65rem .75rem; border: 1px solid #8b8580;
+      border-radius: 3px; background: white; color: var(--ink);
+    }
+    textarea { min-height: 116px; resize: vertical; }
+    input::placeholder, textarea::placeholder { color: #68625d; opacity: 1; }
+    fieldset {
+      min-width: 0; margin: 1.2rem 0 0; padding: 0; border: 0;
+    }
+    fieldset legend { margin-bottom: .55rem; }
+    .group-help { margin: -.2rem 0 .65rem; color: #68625d; font-size: .88rem; }
+    .choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .48rem .8rem; }
+    .choice {
+      display: flex; align-items: flex-start; gap: .55rem; padding: .45rem .5rem;
+      border: 1px solid #e3e0dc; border-radius: 3px; background: #fff;
+      font-size: .93rem; font-weight: 450; cursor: pointer;
+    }
+    .choice:hover { border-color: #a9a29c; background: #faf9f8; }
+    .choice input { flex: 0 0 auto; width: 1.05rem; height: 1.05rem; margin: .16rem 0 0; accent-color: var(--orange); }
+    .consent { display: flex; gap: .6rem; align-items: flex-start; margin: 1.35rem 0 .75rem; font-size: .92rem; font-weight: 450; }
+    .consent input { width: 1.05rem; height: 1.05rem; flex: 0 0 auto; margin-top: .22rem; accent-color: var(--orange); }
+    .form-privacy { margin: 0 0 1.25rem; color: #68625d; font-size: .86rem; }
+    .form-privacy a { color: #48423d; }
+    .submit-row { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    .submit-row button { cursor: pointer; }
+    .submit-note { max-width: 350px; margin: 0; color: #68625d; font-size: .83rem; }
+
+    .solutions { padding: clamp(3rem, 6vw, 5rem) 1.5rem; background: #eeece9; }
+    .solutions-inner { max-width: var(--content); margin: auto; }
+    .section-heading { max-width: 700px; margin-bottom: 1.8rem; }
+    .section-heading h2 { margin-bottom: .55rem; font-size: clamp(1.9rem, 3.4vw, 2.7rem); line-height: 1.15; letter-spacing: -.03em; }
+    .section-heading p { color: var(--ink-soft); }
+    .solution-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .solution-card {
+      padding: 1.4rem; background: white; border: 1px solid var(--line); border-radius: 4px;
+    }
+    .solution-card .card-mark {
+      display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 1rem;
+      border-radius: 50%; background: #fff0e9; color: var(--orange-dark); font-weight: 800;
+    }
+    .solution-card h3 { margin-bottom: .45rem; font-size: 1.2rem; }
+    .solution-card p { margin-bottom: .85rem; color: var(--ink-soft); font-size: .94rem; }
+    .solution-card a { color: var(--orange-dark); font-weight: 650; }
+
+    .site-footer { background: #242220; color: #e5e1de; }
+    .footer-inner { max-width: var(--content); margin: auto; padding: 2.3rem 1.5rem; }
+    .footer-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; align-items: flex-start; }
+    .footer-brand { color: white; font-weight: 650; text-decoration: none; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: .75rem 1.35rem; }
+    .footer-links a { color: #e5e1de; font-size: .92rem; }
+    .footer-legal { margin: 1.5rem 0 0; padding-top: 1rem; border-top: 1px solid #514c48; color: #c1bbb6; font-size: .82rem; }
+    .footer-legal a { color: #e5e1de; }
+
+    @media (max-width: 760px) {
+      .nav-wrap { align-items: flex-start; flex-direction: column; gap: .8rem; padding: .85rem 1rem; }
+      .nav-links { width: 100%; flex-wrap: wrap; gap: .45rem 1rem; }
+      .nav-links a { font-size: .88rem; }
+      .hero-inner { grid-template-columns: 1fr; padding: 3rem 1.25rem 3.4rem; gap: 2rem; }
+      .hero-photo { max-width: 580px; }
+      .trust-inner { padding: 1rem 1.25rem; gap: .45rem 1rem; }
+      .contact-section, .solutions { padding-left: 1.1rem; padding-right: 1.1rem; }
+      .contact-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+      .contact-aside { position: static; }
+      .aside-links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 1rem; }
+      .solution-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 2.45rem; }
+      .field-grid, .choice-grid { grid-template-columns: 1fr; }
+      .choice { min-height: 44px; }
+      .footer-top { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+<style data-warp-repair="true">.button[href$="#contact-form"] { background-color: #b93e16; }</style><style data-warp-repair="true">div.form-card > form > div.submit-row > button.button { background-color: #b93e16; }</style></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="nav-wrap">
+<a aria-label="Ubuntu home" class="brand" href="https://ubuntu.com/">
+<img alt="" src="https://assets.ubuntu.com/v1/82818827-CoF_white.svg"/>
+<span>Ubuntu</span>
+</a>
+<nav aria-label="Main navigation" class="nav-links">
+<a href="https://ubuntu.com/navigation#products-navigation">Products</a>
+<a href="#solutions">Use cases</a>
+<a href="https://ubuntu.com/support">Support</a>
+<a href="https://ubuntu.com/community">Community</a>
+<a href="https://ubuntu.com/download">Get Ubuntu</a>
+<a class="nav-cta" href="#contact-form">Contact an expert</a>
+<a href="https://ubuntu.com/search">Search</a>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="hero-inner">
+<div>
+<p class="eyebrow">Enterprise open source</p>
+<h1 id="hero-title">Open source for every part of your enterprise.</h1>
+<p class="hero-copy">Ubuntu is the modern open source operating system for enterprise servers, desktops, cloud and IoT. Canonical certifies, secures and enables enterprise open source on Ubuntu.</p>
+<div class="hero-actions">
+<a class="button" href="#contact-form">Talk to our experts</a>
+<a class="button secondary" href="https://ubuntu.com/pro">Explore Ubuntu Pro</a>
+</div>
+<p class="hero-note">Security, support and managed services from the publisher of Ubuntu.</p>
+</div>
+<div>
+<img alt="A person working at a computer" class="hero-photo" fetchpriority="high" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_600/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2Fa0ca630d-woman-computer%401x.jpg"/>
+</div>
+</div>
+</section>
+<div aria-label="Ubuntu enterprise strengths" class="trust-strip">
+<div class="trust-inner">
+<strong>Designed for enterprise open source</strong>
+<span>Security across the stack</span>
+<span>Long-term support</span>
+<span>Cloud to edge</span>
+</div>
+</div>
+<section aria-labelledby="contact-heading" class="contact-section" id="contact-form">
+<div class="contact-layout">
+<aside class="contact-aside">
+<p class="eyebrow" style="color: var(--orange-dark)">The Ubuntu experts</p>
+<h2 id="contact-heading">Tell us about your project</h2>
+<p>Share a little about your environment and what you are looking for. A Canonical team member can use these details to understand your open source needs.</p>
+<hr class="aside-rule"/>
+<p><strong>Explore enterprise services</strong></p>
+<ul class="aside-links">
+<li><a href="https://ubuntu.com/security">Security</a></li>
+<li><a href="https://ubuntu.com/cloud/public-cloud">Public cloud</a></li>
+<li><a href="https://ubuntu.com/kubernetes">Kubernetes</a></li>
+<li><a href="https://ubuntu.com/support">Support</a></li>
+</ul>
+<p class="privacy-note" style="margin-top: 1.4rem">For information about how contact details are handled, see Canonical’s <a href="https://canonical.com/legal/data-privacy">data privacy policy</a>.</p>
+</aside>
+<div class="form-card">
+<h3>Start a conversation</h3>
+<p class="form-intro">Tell us what you are working on and how we can get in touch.</p>
+<form action="https://ubuntu.com/marketo/submit" method="post">
+<div class="field-grid">
+<div class="field">
+<label for="firstName">First name</label>
+<input autocomplete="given-name" id="firstName" name="firstName" type="text"/>
+</div>
+<div class="field">
+<label for="lastName">Last name</label>
+<input autocomplete="family-name" id="lastName" name="lastName" type="text"/>
+</div>
+<div class="field">
+<label for="email">Email</label>
+<input autocomplete="email" id="email" name="email" type="email"/>
+</div>
+<div class="field">
+<label for="company">Company</label>
+<input autocomplete="organization" id="company" name="company" type="text"/>
+</div>
+<div class="field">
+<label for="title">Job title</label>
+<input autocomplete="organization-title" id="title" name="title" type="text"/>
+</div>
+<div class="field">
+<label for="country">Country</label>
+<select autocomplete="country-name" id="country" name="country">
+<option value="">Select a country</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Japan">Japan</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States of America">United States of America</option>
+<option value="Australia">Australia</option>
+<option value="Canada">Canada</option>
+<option value="India">India</option>
+<option value="Ireland">Ireland</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Other">Other</option>
+</select>
+</div>
+</div>
+<h4 class="form-section-title">About your environment</h4>
+<fieldset>
+<legend>What kind of device are you using?</legend>
+<div class="choice-grid">
+<label class="choice"><input name="kind-of-device" type="checkbox" value="desktop/workstation"/>Desktop workstation</label>
+<label class="choice"><input name="kind-of-device" type="checkbox" value="physical/server"/>Physical server</label>
+<label class="choice"><input name="kind-of-device" type="checkbox" value="public/cloud"/>Public cloud</label>
+<label class="choice"><input name="kind-of-device" type="checkbox" value="virtual/machine"/>Virtual machine</label>
+<label class="choice"><input name="kind-of-device" type="checkbox" value="iot/edge device"/>IoT / edge device</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>How many devices?</legend>
+<div class="choice-grid">
+<label class="choice"><input name="_radio_how-many-machines-do-you-have" type="radio" value="less than 5"/>Less than 5 machines</label>
+<label class="choice"><input name="_radio_how-many-machines-do-you-have" type="radio" value="5 to 15 machines"/>5–15 machines</label>
+<label class="choice"><input name="_radio_how-many-machines-do-you-have" type="radio" value="15 to 50 machines"/>15–50 machines</label>
+<label class="choice"><input name="_radio_how-many-machines-do-you-have" type="radio" value="50 to 100 machines"/>50–100 machines</label>
+<label class="choice"><input name="_radio_how-many-machines-do-you-have" type="radio" value="greater than 100"/>More than 100 machines</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>How do you consume open source?</legend>
+<div class="choice-grid">
+<label class="choice"><input name="how-do-you-consume-open-source" type="checkbox" value="Ubuntu repositories"/>Ubuntu repositories</label>
+<label class="choice"><input name="how-do-you-consume-open-source" type="checkbox" value="GitHub/Upstream"/>GitHub / upstream</label>
+<label class="choice"><input name="how-do-you-consume-open-source" type="checkbox" value="Internally approved repository"/>Internally approved repository</label>
+<label class="choice"><input name="how-do-you-consume-open-source" type="checkbox" value="I don't know"/>I don’t know</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Do you have specific compliance or hardening requirements?</legend>
+<div class="choice-grid">
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="PCI-DSS"/>PCI-DSS</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="HIPAA"/>HIPAA</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="FISMA"/>FISMA</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="FIPS 140"/>FIPS 140</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="NCSC"/>NCSC</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="DISA-STIG"/>DISA-STIG</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="FedRAMP"/>FedRAMP</label>
+<label class="choice"><input name="hardening-requirements" type="checkbox" value="CIS Benchmark"/>CIS Benchmark</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Who is responsible for tracking, testing and applying CVE patches?</legend>
+<div class="choice-grid">
+<label class="choice"><input name="responsible-for-tracking" type="checkbox" value="Individual developers"/>Individual developers</label>
+<label class="choice"><input name="responsible-for-tracking" type="checkbox" value="The project team"/>The project team</label>
+<label class="choice"><input name="responsible-for-tracking" type="checkbox" value="Third-party vendor"/>Third-party vendor</label>
+<label class="choice"><input name="responsible-for-tracking" type="checkbox" value="I don't know"/>I don’t know</label>
+</div>
+</fieldset>
+<h4 class="form-section-title">What would you like help with?</h4>
+<div class="field">
+<label for="comments">Tell us about your project and what advice you are looking for</label>
+<textarea id="comments" name="Comments_from_lead__c"></textarea>
+</div>
+<label class="consent" for="updates">
+<input id="updates" name="canonicalUpdatesOptIn" type="checkbox" value="yes"/>
+<span>I agree to receive information about Canonical’s products and services.</span>
+</label>
+<p class="form-privacy">By submitting this form, I confirm that I have read and agree to <a href="https://canonical.com/legal/data-privacy/contact">Canonical’s Privacy Notice</a> and <a href="https://canonical.com/legal/data-privacy">Privacy Policy</a>.</p>
+<div class="submit-row">
+<button class="button" type="submit">Submit enquiry</button>
+<p class="submit-note">Submitting shares the information in this form with Canonical.</p>
+</div>
+<input name="phone" type="hidden" value=""/>
+<input name="formid" type="hidden" value="1257"/>
+<input name="Consent_to_Processing__c" type="hidden" value="yes"/>
+<input name="utm_campaign" type="hidden" value=""/>
+<input name="utm_medium" type="hidden" value=""/>
+<input name="utm_source" type="hidden" value=""/>
+<input name="utm_content" type="hidden" value=""/>
+<input name="utm_term" type="hidden" value=""/>
+<input name="GCLID__c" type="hidden" value=""/>
+<input name="Facebook_Click_ID__c" type="hidden" value=""/>
+<input name="preferredLanguage" type="hidden" value="en"/>
+<div aria-hidden="true" hidden="">
+<label for="website">Website</label>
+<input autocomplete="off" id="website" name="website" tabindex="-1" type="text"/>
+<label for="name">Name</label>
+<input autocomplete="off" id="name" name="name" tabindex="-1" type="text"/>
+</div>
+</form>
+</div>
+</div>
+</section>
+<section aria-labelledby="solutions-heading" class="solutions" id="solutions">
+<div class="solutions-inner">
+<div class="section-heading">
+<p class="eyebrow" style="color: var(--orange-dark)">Ubuntu across your stack</p>
+<h2 id="solutions-heading">Open source that moves with your business</h2>
+<p>From security maintenance to cloud-native infrastructure, Ubuntu supports workloads from the data center to the edge.</p>
+</div>
+<div class="solution-grid">
+<article class="solution-card" id="security">
+<div aria-hidden="true" class="card-mark">01</div>
+<h3>Security and compliance</h3>
+<p>Ubuntu Pro provides security maintenance for the full stack, with options including Livepatch, FIPS and CIS hardening.</p>
+<a href="https://ubuntu.com/security">Discover Ubuntu security</a>
+</article>
+<article class="solution-card">
+<div aria-hidden="true" class="card-mark">02</div>
+<h3>Cloud and Kubernetes</h3>
+<p>Run Kubernetes across public cloud, private cloud and bare metal, with managed services and support options.</p>
+<a href="https://ubuntu.com/kubernetes">Explore Kubernetes</a>
+</article>
+<article class="solution-card">
+<div aria-hidden="true" class="card-mark">03</div>
+<h3>Devices and the edge</h3>
+<p>Ubuntu Core supports embedded Linux with transactional updates, device recovery and long-term security maintenance.</p>
+<a href="https://ubuntu.com/core">Explore Ubuntu Core</a>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-top">
+<a class="footer-brand" href="https://ubuntu.com/">Ubuntu</a>
+<nav aria-label="Footer navigation" class="footer-links">
+<a href="https://ubuntu.com/about">About us</a>
+<a href="https://ubuntu.com/community">Community</a>
+<a href="https://ubuntu.com/blog">Blog</a>
+<a href="https://ubuntu.com/engage">Resources</a>
+<a href="https://ubuntu.com/contact-us">Contact us</a>
+<a href="https://www.canonical.com/careers">Careers</a>
+</nav>
+</div>
+<p class="footer-legal">© 2026 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.   <a href="https://canonical.com/legal">Legal information</a> · <a href="https://canonical.com/legal/data-privacy">Data privacy</a></p>
+</div>
+</footer>
+</body>
+</html>

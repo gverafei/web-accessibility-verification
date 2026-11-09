@@ -1,0 +1,49 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference shows a populated \u201cWhat\u2019s happening\u201d section with several editorial/news cards, while the target shows a large empty area beneath the heading and carousel arrows. This is a substantial loss of visible page content, not just a different carousel frame.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s news section is conspicuously blank where the reference displays multiple cards, leaving the section visibly incomplete.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The carousel\u2019s left and right arrow controls remain visible and recognizable. No interaction failure is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding regions of the same page, and the difference is assessable as a localized content and presentation defect.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target retains the section heading but omits the visible news-card content that gives the section its editorial meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AJX42w_kAPnt2arM1W2nFJK4IebLV9KkwJadYxxNGco9XWeBSoLs67OdzG0Mgtzf5-MBMlKVa-pLWLOs9ysx0uBjWxzBcoM2IKr0aUY2sFBfQnOkFSWeYlEPiEGMH0yZsXLuY6S7uwpM0u1oDRoS8KkQ4gLuzZdAMsGAQ1e3qDzHGjXG3Iww8Xp-RJ3_TCXvMy5x1_VB9kqRVEOXNQrJ4GdgRDJh1kvsYy0eNiy4h5top1l9OsKmRbIKbpUxMLiECa3jY5LeIHE-2jq5CkUZ8dhWbKB4xcKqt0WINUs4dery3rdV2jUagyiuW7j5vS3DmyW1ZSJmy_boTrV9-jtuxL3Xzy0cX9qqlTb3megjTzjP2Q0ctCuEg2QbFcz7HzA-cDCe765yFi9ibqLn9hQQb-L3xnQAmFN0yK3bGXw3QQ8B6l_qkiGz2QyjwbsRf3lLhxSX2SoWq-72g8fdzRn9NV46H304s0JSybIz6dy25ZhOO1SCTpUDLBK3il23W1jnMLPV2puE9WLsgZoQF7CtLZff8Hc8p14p3guehx6ew92vcVeuXbzNx58EeRNvU6CIzXZtl7h49HGXCB_D-_bWS-ccKUKtP-H2vChqxsCSAp_DDJvpBuoChSqzSBrX9NOPFEpCLOG-3ofG33b78xMG2IBnzpqD7JQndI-0it9qr2Mgq54-rxmEEBbdgrCjK30Zmm1drTt7WDoAYFYMbXEh5xoblABFYy__By3slQc2dy0aBwSzg134v9pibkHiChmCrhcmDCmfc6gGBlr0gAfvFoVOiSrCj6xkFnrK5cJ2svjlNzd_IbEhWx7WbltGFPvRu3MD_fh5-W7g5zjA2VSyr_wLE4vb3gWfPjHl12dJEtXGFd8j7i4R2bAgSgrdD328Pq_zsopmB2dTOOBR0Z3PQuzqDSKYV-XlZpeG9qtaXzHTBZ_W09ANjfti1n1oMNRsaKlLTNoP6JUSEAGXVtcS4XrSgMUaSLuVsK7HXeT5Bnpunm-w4S3d4yQsJ49tNFdYPmIr7LgV1DYqqvCNWNM0P68Hy8iwF5BI-JFLJloKMv5jdCqxvufb2Z5kj_5WXqiloFMgtyHTeZZgadWY_1FiVv3cnDWt3NaIT0gog2jJQPOjWeLTw5LH1NCtrpybKikLuKialQPaYK9O8LgWhMsGuoOxxqtNzal9_psONNKzpo8iFWtsxuH1MT4RcWMZW4IJQbb4xG_Gkz3qwSvJoccJ6PwT5ICTVMNhHXF4pctGgRg2lrW2B4AwgtAQryLSdX0UaClG6nbfOrv1K7VXXxRRNai_-KHEwrcyHh-A5vewMCOsCuuyplP_oGbLhpd9iR62-TLjZVVM-CQNNUWCDE5ljen99XU0BAwADqNAMNbeHbrz_QBiPHMq3hSg0-9H88Fi1U22wkUSG27Q3vm-YAAsOwEIZqBaT34KUTfw9xCz1NsBl4iAhu2d4fpSgxpD3S8Up4vhEF-5X9aW-4oWpoGaaP1tSjFTxVE17tNzM2x-FYLsQM58mdF6p5BMhg2vkXR7GvE32tec7JyXFBQWV2yP7am5dQ06ezTk4rRGmZrT54XG5voRzldP-WchVGNmoBq2ptPWmQMdg6NGuhHnmzWjXGsKM2kfu8G7erCGQo5ldxilrFAEdS1kiGPeLYjaN4rkxGi7e1fZeGbDh9h6YBlxEyvxDs8h-TV1QXeaLxLjYAHx5IiU0Z6CYKCZQNtS-B_jjpgme0zv7xgMlNKu4j-FP5KUglUdxGop2Y9MNHBOoDYFH_huKlx9YJMjgzGDhe_vNWsd1yI1xFXYQgryDcsBwPAbj0NU3C5WW4HiYfvoxlfsvtKzsHCYl7M4iY6zi2wpBAWWcqEJEHWQLevNQI7TyePQNC6jFbohl4-uiC45RGew6sEyKlM1k9qjVCqCI598zm89Sj9DiDjR6W_MLeEOynUsn3mfrRwwVA5U9HuIKOVJVNQJT0wfB3zXrJZKptHeARR0qXJNn1_Jn5ooK2QDvYs3YMns8vQexBtX5tmlVWRzCYASSkf7jHJER88VYLcnaQv3NuLP2SrJq5JUZdX0_EiDvIquKiD4-a9gdAn_gU0UGPuZYKEQ8F96btzeBHFjppKGPpfwUYux5xPUVECES9hjeIJTbjvZlZCky-0lqVqu3j6mh_sIjTx9Zp_QqmhtGEKtLhM9hg9W1YpVX97ZljvB1X7aomquqfTm7ZnyPhRN-5UiMku1q2h9An8eQ5FGBtKE4Kv_McSk6Q4q7ADR5MQ2NPSRACbauTB2H8EDvEindCrEPma3OGOiQCymBvh1h1kSONMR6XBl-ShtNq7UPe-zV2vCkWCeA_nZriorzvaWDmZq1q8MT7pw6HAXT551cNpOxdOo5FlIZMbkqMm__8kl-fs29rEEAAtF_h7DozgqJABqjdjdZvbM1GJUfNW_YOpbUWZRMZlvvexFUhqstYVLqKMmCtAxKUohl4APKXWw20tql47GNqaE56b-j0-veqUQu6xw3FL5bUSJex8YiK1wmYU3LQOKsVL5m1Nv44pVchv1O3Mfx8agldal4q-O5SwmONTOq_Pn1EBkN1xIYHutlhngTaUrgg2r9f34wuUI0lv6hK3o3vA8VkvULZG2us8IicP7MdMnTG50lvsd7VMkuw2QB92dzjwgHDOwB9yTN36k8nHlKsEfkl0Jp9qvo92q6IffuLYEneXFddNL7wxs2Kt3sdVd3_UH_cTHBt7DI_FYot8-Jg4EoUpoO83ztGMhIlsD60-kbM4rHYBCEEn6pNnHN_WR70dLf_RLgYIVZnpvVjeTQob0qBLFIaJguuycv3Yy3GbrRsXTkSjvAERuxJO261Hydeb9epUt7oMQYF7wZ9-LOl48PfT25Rv58Z4HMSERXeH-PTj7kq4qmnCVgzMwvy_6pN8HvQaVYVMoxYZTnopT-kps-zwnrJrb9vOCMXLp79y12M4uSQJROzSUvrx0UkOukvuGc6qtEH3Yf2rrRp2fT00p9EapDh9yGsiOzaWNZcdFwklcF_OcbkBhz6JsADTOH8FpqH1IJlsNljEzSMEih5SyDgPQwW8JAVFxu8ThTvrGvU8IfQUdrJerSiIKgwTK4trG6IUpVPnYjBqNGjy6tfGUuFAimpHRoajcPc-KfuSkvYE3o4XZkSDX4MMSuChICU1LKuluRreDqQQSrnvH11PotjViS85arTodI9h_gF_XvBgzWasZNt3ElN4cpdcEH4zhj4nFiAEdFbpq4rV-RkC7SfibYNKiYwHAVwnE2LhdXhdjSWIdl-0FrN0aWlMwDfR5vnV1zoB4f2t8n_Fm9xuqVQCZroBnsjOVHNRdCmxR8E-5X_UuBz_tRaI2_t4D85IDz_Tl_h9o_kKNgcko2k8x5B-Y75gIU2ksp2zA6tfTiDwUCc2_DXmfJP44_cIWbg8Ho2CA_j4NX_Z7682tVqU6mERzmIUScn6JF0E9coJGt1tA_-_1hTmLoM8ALD6ne3ExVabhohZm6CZMyaM10rp8MdIH5OnMgzu3HxPx0ue2E5YxFQ66i0_EEJ3-VZzs9mTRXt2Uf4elqUAh708JH6K78mTZW-3mxpkPnFUQ9SmkJjJfDCKiEwaqW1BPu6eFVVxcYWRtas0Tsl5TFpD1XwgVMfA45WnzCDiK7BGFYtlLRuT10IKwAgl6cRwyV9qIonl_ro0wcLAyrNNsr-N0hb2MioGjatKbm77A4XQYc_eovjUPrWm-Av3M9J3ARMMpECAge6bEAJsMnWC4TL_hsTgZfTZZ1DnfygPQRJRslxNFP2r8fnsZiaEEgOXiRsuczS2JtTMxhFMtZ99hkb7xW82bX9aijqUrlpDvoRmzU_ABjvYYGlbQniZ7f1l91SGTIUoHDLCqKyOpXE=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07e454a1620549b3016ae802545b7887d1bd32fb263ceb804a",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11012,
+    "completion_tokens": 428,
+    "total_tokens": 11440,
+    "cost": 0.001590425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11009,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001590425,
+      "upstream_inference_prompt_cost": 0.001376425,
+      "upstream_inference_completions_cost": 0.000214
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 160,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

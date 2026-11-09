@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible reference content and organization, including the company metrics, description, image, footer, and cookie notice. The screenshots are visually identical.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core text and imagery are legible and coherently arranged. The footer and cookie notice overlap in the same way in both captures, without indicating a target-specific defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, contact, About Us, social, and cookie-consent controls retain understandable labels or recognizable icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same coherent page state and matching visual content.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, image, metrics, and labels convey a coherent company overview and footer context.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8168,
+    "completion_tokens": 244,
+    "total_tokens": 8412,
+    "cost": 0.001142925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8165,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001142925,
+      "upstream_inference_prompt_cost": 0.001020925,
+      "upstream_inference_completions_cost": 0.000122
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

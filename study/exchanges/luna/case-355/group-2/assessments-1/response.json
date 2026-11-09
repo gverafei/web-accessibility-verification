@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The shown reference and target regions are visually identical. Core page information, the discovery prompt, feature descriptions, news area, and footer content are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and arranged coherently in both corresponding views, with no material overlap or clipping beyond the normal viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, login and join controls, and footer actions retain understandable labels or recognizable icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show matching regions of the same page and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, imagery, and labels coherently communicate the art-community page's purpose and offerings.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Clarifying JSON requirements**\n\nI need to create a JSON structure where the images must have identical checksums and look exactly the same. It\u2019s important to mention all the exact controls like Join, nav, and login, along with the footer buttons being the same. I want to ensure everything is semantic and follows the proper JSON schema. This attention to detail is crucial for the task at hand! Let's make sure I tick all the boxes here.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Clarifying JSON requirements**\n\nI need to create a JSON structure where the images must have identical checksums and look exactly the same. It\u2019s important to mention all the exact controls like Join, nav, and login, along with the footer buttons being the same. I want to ensure everything is semantic and follows the proper JSON schema. This attention to detail is crucial for the task at hand! Let's make sure I tick all the boxes here.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B9s733AErW9sk5jBOWuUtyb9LZrvgozVqYdqtAODOMO2isDd0_JoKXDX9NMv-tElwrU7iZLl0e2cZBWJQlwGM0H36kxvsnxiw3OrGy_25nCGInCgyeA2s5joRcdY0y_KFV4ZWTPHb83bTw8BDpYFaqSDXKAHn7yMjWHrCU5pZnpf8vgVMtSefbEywBFDqqx13aNQtX7e_gv4MQwEZHghFgH-eIiJmGiTsJe_Ro1nt0YpvG9cgAOUGC9ybcT1OpL0m1O8qReLF0JAmK0oKF50ZIBmSFsHuXSAoIF0ZvVGe3Op2S28tIwyDlx1NDRJbrc3JbLSRZCNc3Kcy1MSH3nJ1VryykMdaiCUsZyU4C731r-M_Ms9Tvw_cht1QnpOJ-NyN9eONx4plNIkxis-n0tfO1bdm0urAoMWPFLJuVarz9fBbQsBvaDYDQDnn7CxCu0rKm-fvmOxuh-gb-WED3DfKnVE7grT6gwc4pqweOVMPRCmFowAvjJArfLyspkvuLVqsGG_5-ovMuRDc_0ESChVdikaZBOV5wHaLpTgh3iL61LjF_K4LvPhEpg3S88efz0NXme65TDvgcxMdQrEkjf2xVOvxDBkFC9tYr12NlJnT2xT69aODKKEwxLgRighUPI_kGqfbXlWPPr7h5C5AY658HiUvIU00O3HQPSVkO2_FGV6bN-Dv8jP34jz7KcMgITQf29GjnNL2jevceY9edppbtQZBS8XYL-FlnDYm_Q6k0meJqA4zd8K3dsdCo7ys4zJSEf7p2SuV6pNylEtCWTjz0GaXP4zuEsve9OuiHd2dt7YKzTlOpGy3aUvXCtR-0VJiYhX5qvVk1NJzarYEEAJW6n2E0febq_JcyOTvbG-bv6AEpoZ_hUPMnCkO1bqMIDQbOTUO1eGtQBW5j3_Z01MTlSyT1-R0fxiNXbBg4atknO6xhNYRQtCk-3A7mHnPiyc5PSSAw9_xH_QR0uByq15oBKJuwt1KtUz4MxBv522UODdCh2ByRTKGWAcBZovdu6aQqWVxsNR_GksJD6GQXzRiUdEH5EIfxnAMSPNqpeV2cz3KrOIZNdnUEEwflxtWKid7PA7hoKmI3lUmXzyN7yR576HVv1tIi13yBEab2b4u1WJ4DUDwpCQf4db8QbpB0f36qstfQcs5gUIHthK8lv99Q5-hH2ovHdt2pKSbujxYXwDOIirqRq7KthhdiI_s47GbYYLdLE3OREqNl6owMWqhODnFqGf2zzEYClJ-411B1vTfvOcxg06bKKYdWeyeknwy51X4FtSL2VMeOKe8xMpOsuqqnqRNNa-wrCQ2OSZK5QOgXsabR2me7loxg4Y3L9U-i380ywzuZ2KzR8hzPfK2Vb-GLteSE_HGmTmKu9Gv4dF3TkghKwE41W1MTcTLYQItFZePr6bB9ZXjJBJrAO7DjOLDEVRdshhpZvi726BK3vitJ7VKletgoPnXQNIrH_Abbu4T1-b3bfQVbSOGFurloGsh5D2imRY9m36HWexnqIwuuGggWmJ4CDP5FAC3-yYea6o0AWUdXOc4hA1vJR714IQnwmUR-uk7iicEaFA3doBjDYyvOW_uUM7inSjGLYhh5plCrI12_PB8aDXb6-yqOjFMjEC7ZeUKxk_UCH6qhAmGS4Dcd050OGCa2ckSjEM-KSYq7x7S-WZ6lU3M1SM_oCnKAKQRL0XnEXukTwDrGtI3bvbQ6pCyphNRDP1whAOS5KXN-u_QSBNWmu4fRJZQAvmDKXZYn-_pL_saPsP3v7LU9bvwki9Bj9bE5h3YJMWQ746YosXbSrWJXbsWMBy9yMiKixRR6_R1C7d1m_F-31Yba7l48riBZ7H4sZ7TewYolsUzpqWMwvApZg1-oQvjIU2-hPbHl_3NW4A4EvLbKDBdsJmL7J22BtyOUoMOCh4RGAOpSpFU7oL-D8ZHgH7aTNimwCTUzYQIQsW0l2w9i8myp1Mcd5JY00d9q9GekPxKAQ0RP9u_zsc5w1Nf08WLS6iYLo5oHy70kv_gfb2zq2Awc5_WsvtZ-vaIKCNVV-hlCMtGnQC6Y12eA82tblWNPnbcXxm9Vhji4aB9tWMVpVSmwK-PgBDY4tb_prBrohUBZ7U1UAYpoKqSsFsbbkjjArMw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03176df54c606e20016ae81f6b015487d1813afaf96c7bd9a9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9844,
+    "completion_tokens": 279,
+    "total_tokens": 10123,
+    "cost": 0.001369925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9841,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001369925,
+      "upstream_inference_prompt_cost": 0.001230425,
+      "upstream_inference_completions_cost": 0.0001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 44,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

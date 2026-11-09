@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show the same footer disclaimers, navigation columns, copyright and locale/social links in both supplied windows.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text and footer sections are legible and consistently arranged; the empty outlined boxes below the footer appear identically in both states.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible footer links, locale, cookie-preferences control and social icons are present and identifiable in both reference and target.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired reference and target windows align and match, forming a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The Spanish footer labels and links convey coherent navigation, legal and company information.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12162,
+    "completion_tokens": 176,
+    "total_tokens": 12338,
+    "cost": 0.00020989,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12159,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00020989,
+      "upstream_inference_prompt_cost": 0.00012189,
+      "upstream_inference_completions_cost": 8.8e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

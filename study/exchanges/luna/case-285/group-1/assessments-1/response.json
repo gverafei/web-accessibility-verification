@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent car-sales page with vehicle listings, dealer categories, and brand search. The visible listing details and key information are available; differences from the reference and excluded advertising do not amount to material loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page is legible and consistently arranged. Vehicle cards, dealer categories, and brand options are visible and understandable; no substantial overlap or unreadable core content is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, location links, listing links, and the vehicle-sale action have understandable labels. The brand and dealer-category choices are clearly presented.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent comparison of car-sales pages. Their differing layouts and content arrangements do not make the evidence mismatched or unassessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s Russian headings, vehicle details, dealer categories, and brand names convey a clear meaning consistent with a car marketplace.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Analyzing image clipping**\n\nI need to evaluate the target images in the cards. The first-row price \"3 510 990\" seems to have its first digit clipped on the left edge, maybe because the card content starts at x132 while the price text does too. It looks like the price might be partially cropped due to rendering issues. Other cards also show similar clipping, with prices like \"1 550 000\" and \"5 100 000,\" leading me to think this is a recurring problem due to horizontal offset.**Evaluating card layout**\n\nI\u2019m analyzing the target images, noting that the content seems to start at x132, where both the card images and price text align. It looks like the first glyph of the price might be cut off, possibly indicating an overlay issue. The overall design seems coherent, especially for a used car homepage. The lower rows are readable, though the first glyph may still be slightly clipped. The interface overall appears structured well with recognizable categories and controls.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing image clipping**\n\nI need to evaluate the target images in the cards. The first-row price \"3 510 990\" seems to have its first digit clipped on the left edge, maybe because the card content starts at x132 while the price text does too. It looks like the price might be partially cropped due to rendering issues. Other cards also show similar clipping, with prices like \"1 550 000\" and \"5 100 000,\" leading me to think this is a recurring problem due to horizontal offset.**Evaluating card layout**\n\nI\u2019m analyzing the target images, noting that the content seems to start at x132, where both the card images and price text align. It looks like the first glyph of the price might be cut off, possibly indicating an overlay issue. The overall design seems coherent, especially for a used car homepage. The lower rows are readable, though the first glyph may still be slightly clipped. The interface overall appears structured well with recognizable categories and controls.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B5TgRxwoBU-7wblfEWwmqrqqsIm8bjkxn_5QdoouF485Auih370qoYd01UGn8j4u4ADSeSuSVgXKbDx8EYHT6TaoyQE3mhGGQdNmsnafOfu9bup_AdnVmWCYaHNcMyxghTQr07nhp2lkMsda2NJiV-uxx2pJV8zDEJ0m6diPVp_VP5UCaSpqcJic1mTfGMAdU5qy_xGnIQGShZOPm8qEziJ_yEFlSWSSYZiYLwR5wZur8gItW2gUH6CFm3ek8opet3z_2hYJJX0OPuNBVwrrYJXeY9Ii-vb2njrS8LEjKMlYF4RMw-MvCLQtXlfwpgjEkPwAvXDAZEJQNXN8UpFg72EzfPnzLhkmArTPITUyEtTdNTuCjoArlETkzQh4IKMS3v0ZQUkUUuC1KRaZwOyXgR74e7E-OD_gXWBYuzVlnZ5a9ZyYdvt43KOozdDP3i_3OLR-BZg5xJderrzCB4XiCv2jxE8gDCVt0B52nwG8NnU60H1P_FGGfViTiL9mUdYE_1DHyYrEYWq3OjK9PNU9cu_vLQyJexCulO2bGnhmX3Ghoc3nwsXbr1H-dEBWspQCB90HjMfP0blcsBKL-UZBdl6kS1eWUAVaYNyIZIE2g5Waav6sK04J0rM4tcy2VQ7EVpKFWFk-ZXeiN-b-j-ErfLUGCLIvl4jr4dnHZoSwDdaQ8nrUHUvEWx1RfQaSXHkDI8EGHocuBKS3hK9oDfYCv_8BGiiJvu2xCEEOBWKtdVw5IHgAn_jSIptvD6tjLsNxcOiMzGPLpTeWnGmVRYmcb7dwS9KqzwoMs8-hdIzTbHK0PFWJt7-gi3v70hmj9H0iybkeRprQJmKyZNQpIewMv7D9TCjm4lqd98Yf-o6bbDSLMktewZRy9hBJzDbvJ9v_mR2wfD7v26gWijAyRoHiMwlOH_rV56ryQXu63dM8hEL_TPeoT7eUUhQd1CMG7IlqXPA-pVhvlotNf0YgdkNDmuwQu9mze3q6GzPvRAmmXP9xeuD_Bvzley7e-p1J58AwXMJ9_V6ND9bwXOA2mYxfk5pxSl8A92ATjXYrmSy0GOmFiaX9Ozi5XukK9aht6WAejfExzNSfwcbBhr5bIIjiJTO5U2R7Iqwil2DLEJ0v2evATYKrbixqCARGjtQzirSVkAwPZ-BcGe9mfPCt2eh7eKrmeico1preGOIpQ3TpF30ss6NGXnJKn9s3h7gKwdOB1U6DuTkuYvRzk_eeNlJT9pu7NHPxhkoeavAfmiewzljd0RqRHJFIfbBrg1F9ErxKQNPZ0_X0_UN_oFRUf0bdBtzdckxPdFd9_D-lsEIKLcbjmBQOEOzd8DScZnke7F4bTVUywzGDnhdx5iCU-lgLDGnTwEnG5OmzyHdXyztGgpdKb1fqwyLlSZx42xCyoyivuT3rp8U9VAn8tG_9IJw3mzMJoTP7Pldq51fmsuvD3woWDyfylmXIuyIlnOkQnPC4zASLd4GX69H6enCrNOQmXmCu6ZxwHvJLD1nm18tel7WyyE8GIxNMJQUV4ox6UICTPx4SQRDgsmtkvniCC463bTFpCQP6IjMBH9elaDIRPd_tbj0RmozWbaKTJsOf-m2t8YdbTdZCMu2fBwAbOJ1YQI3kGM4oFjtHwwri_FZ--yUNiC089-ZmNHirOdLF8-zdGvieg5fR9auMi1a28HIGE40FrDTQu4Tw_YyWHbVAvy72LZpMq-t_7fE9KRd94ZWFL9On_WGZSPbIXd_YxSBXZNNgrNNVLQYhv_pzvUStRn11BhI_KyJD4xct3WvOIg54BAJOQ9eHWE9v5vfzfaHed7U0D3T1kVyC9kZjlX0D4D3rMus96Gr1l_nsMYrJb187j1wVU8H61TgMcJl7mq7y0G7JKmBTMETUsNN3_kRTiGZuhmDXAdK3j7KgZ4-jdS0hec43worpSnp-x05P-tJEWQec7LNIlp5fVWlT_e5QTrwIYGzfBakYA3egU0WTtpxMcGJivLpdU4q002Oxr3x8gMKfqsuCblJtYHC_4XqL2Be-VUGj0ZoxFHynioLV6djRvPWMhEpfbA1wWshetunZI2ntB-K0lic7IneITXCF-Y7ki961QjXb_rntXtfi9mKFdUx7u3y6z9-W2TmZN_EHFU-x7_jfsT_WIzcx6WmyxwE487bkSWwK2rkI4xBf_I381OWymcA2g6gBNqNfQmNUmaQ3oFE94KV74rML201JA94bPQIrMruAwAZtXXKqZybhWR8rVLZTQ9SndPI1cI4IfgHMCDsLkUpQGgrFYQ_nLM9f9DFyqZW1tc4Wj5OY3FJFivFLSBG-jRvCR-yHlh1eNzgmC8PD61F0BzUOiCEB2eSfFaC7glyqKKeK_GovdW-l5D7WvoXhbXmIdyxhh8Uv448gkedls4DWzsxOnSwcrrOvDMQ8QikJHegglBu_o4K5hrpCPHL-r34pxjR4TViBF1XSUNt8bBVg57phmPqjqEl1scmpYYX6npqEVDvPYx0mK7z1HUxTzzuZAPytDswMI07Z0oNGV-J4HIYaezhRtmhgUFMKS4LyWWiNdx5PuRBH35FnhH1pNvV4yNs3zH8KlSAwLyFed-qRvFud72fTQfZDdNhJuHKbRfgo_6dt9KVS2eWpB1UqaY02vG8MZNxnk1Fy6r79XQ9RHh497cuYepQfYIDyTTWe0aKJHs-A9M93f-lix5921JA_ZmgJ-pNkWX-4BupXbwq3od_C_4qnICHef5wxofd7fsMwS2Dn8ssEFbzMgYuNrIn9PNWztVgg55jHHdkjA3sFUFDMWHvpQoNkT0RcfXnyMt3FR5jEMfNieA7I69RcX1zOLl1a3eAN2Ts-pFF4GeeuG9DjeJRC3I5xVvImfEz5Ym-6asWTpEr7CQ61PDWj5WLloqs8peDhEpQwNFfmq0lCAM3VIpaWNAKJPTugkJSMV3j8GoUgvD_rdkasS-dBFywANZWcYZd8wMPLNFwrWZQcxKc0jEceYEEWhI0Y83O63R9YWs5XEHyXimZ2Iqj6UI_eQiu5qL34Nbwemrri1L3dWTcnkEvmcaaL1xtu-JOPJyaSvXJ5AjCerQB8CAjAG-3gf4VyxkAEQynEg_3yxE-pa0Hv0FEiT4VE1dfYI107bpkArvy6I3ADIXb_H6jX5vqZaHJMLzKhRxBQngjoF8hWpbKYWJtyS0djWTseSlkfpIBrP26jH0pUyIglzzeoebA0vY5cCLg8Xlwiq_m8-b3xpIdsVnigO1ptG4JCnDiqMTtRWF4OFsoj0es3ELJM1Ur6KVg1k-maavsz0EsD2cZYQL1g0-35my3nN7YWnSBKetST185x7dGmIkOoj2eGtT8eMDrncxcbqZ9a8DaVuzQXALYEcuP_-2ZWf3-C6kJ702gcCS0YRPB2EE2QRxFEbKgFHDbWhQntDSwspilG-FYeaCTb2UBfqhR-N_TvvdArSCokd5mPXEpB3Xz186odCZho9IVch4uAftv6LN8x1T-P06gnh7pHdJjzkSHfeQEVbWxk2yEzaEpvRGLS-0k80x5PsdpPp0GhwWsJ41y0_0jRtUfk9omm55z3GZp7EpYa7oat3uFMC5-sjatUyNf1IazAnUBAaPzpC9oixZoSN4BOQ99zQV6_Wa36WSiogah5b0rkXoxfqEPfbQPQbnW1kczUFVhh_tXtNpksdTBatez7ZaI2CxCSIZbuPa_Byg-AF3OZ3JFqDchYWSl5thLwOJ60uKOBoDsNI1m_z4A_yAtOImqZ0lIdVpF3l-sdVgQDRKqBvMa_LziHMX6gpt1QVgnoNQdJwDt9ZlfvFk_1upktrme_dQmZYaqgumHq3jWYEqwEBrjoExreaqct2n48ljgeEXiI8JkibsuexF9gVOwIHW6yrYjOkEu2nGUy3GvG3pbXPWpDqKISeUKJutRuyiDC3gyQrf7bGisqOlGOhGakdusxc7Ht_b5A8ojxXx-cXGaGu1f3cHgHOJ8hE4RdFv6XlvdcuNl97qSI2449i1SNGsxs_9KjdtFIsQlqL_Z1bjoQPfDMmNiwTy_I0E0V9enR0q68ALULWlZSK8nsMs7q_CgVuL06bXePZgKNscc388Kx_f0XrAFZ0kp8zzfo2D0D223NVlCpEnMKcqNku_jbDWISYBjT1Oq1R6ecr5F1aksiabhpDDrdaOk5fIvcI0ccY3aE0hHZ4nZLn6cVZWMPbIVinpJZuiDywrPHHF02a6WPZfp1NsGs42AyQuxtgNo9glI1aoBb7Vna8xWMellmjOYCfZ9K-TvFPeaZvNVCsCOwCZ2xvnFmlEYAK3ty-clOsyJ0WetAlPFbIpBA-khALEVfxHeDmzWW4H_wfVk1buzSjzjY_If_Ib7jyXRYLTbfGCy1GO6LvpkHjclcEoiYaF0UZQx44UCiRueUzPIPU8Ht-EHWVvtZfiIFZiNWC5CWLZCmMO8yAVO8ynp1DTRHfihkuLQ61tR36SwpuB2gLJhoV-aYlfzhlOUmrHsNoOnkYDH6qA2jPqTQiEPTWod7AzxJ60aUAAyJMWMTDoi5U2-GuOaRqFKhqsU-45vND6P8sEd05EzA4UZ5UvrjUUpRwJXXZMMq0E_-u8qKRwOiVojAkDAUdN2EnrrnJosTjEVhYMLty-zqcL0viFCl-W8ocjIfEh7uI0BmQXlvhVxDPKAhRwDEy47uUrJFLuIRg_YkfDS3qHOuA6I8cKPLtGGjiMrSCnJcMLkEGLCEnWzAgRxMZloFwLEuTmJiILbkG2Sz1WNqHu0LE7hlDrmnyyrmyjiTmZwj4Uo4nTdlDe3ZjqT2MVEm-JQbp__5F3B_O5eQPilD1emN7WqD73Eu0A8aTukgl5THfZQ3XMU_hlA8KJNw4uwVz2tRiCJFx_73zwjNqhQYHEvzmDaMoCj6NCbhdxF06iOKXjko8PxJBDkELYiNF__1zvgAaB4cpWWPd3u5uzrPOehNJQ024yBuWp6I7ZZ6_yOsdLcVQ1gXiZqzIvdKUGAgGLlaWD9zaNYIgg16VOMhp4eOtRAuqQVeHWt7SDIi4zifHP8bxksgho2Ky-bp7fk7BHPO4TwDDzKgeqwMvM1uDJoKxh-byo6pne8WPdY-wnM6YUfBRniQfHf1wI49zxc7toHzRpM11x8qs9e7aukU365Q2YIP-bLGr_LwO_jw4_yJuAy1JFwvbz2SIqROTy0eJ6YduYvFRAo-ZctD-bnGayZLMIK18U1uNfxbIWK1xerspnezslDWHhs7H8Q32t2I7pUDhPcYLA1oNJmo4yjqYGYVS3sux4zjxs1mRbEAKp3X_IDBTKO0gjaNZiXkAw-8A_4ApyQ6r3FXvH4I3ld69b1qqaiy-c5ld2wXyf099VuVadDoPPN3-YsBW7-RujBSzyous57uzT7Y2TIVK7twnvRQbLVDaztRsxgO1vcrP4tj73je0oE1q1kr5vnqv7e1SrK9d1IAH1XkZvJQgYUeieS1ttfLAKGMcC7Jw7DIh3ahsX5H_HECW63h7Y1iLhwXhSpfnmaKEfRHIv8tCzx2Bg5VCCX8ejd1zki-a7wVVEXr4J7YRJn2-R0UqRG7i-dcRQjTOLrBhtoo_nvECAb7F_ilOEusXesXlgYQ-79shcLY8YLGInxiwhWlcVhcHUxR64cq5KXtMGmVUZ0WrPd_WdZlLB15kvpXuiJY41RsAStr-RPvatsphHCmiYvgsNO563rLLdUkdaRBUkG-vEoMIEYcFw_O30mdZJyiyNAkb5xPEu2U0w=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_092f32ae54f6d012016ae81e4eea1087d19dfd144c1fd97f6a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10378,
+    "completion_tokens": 609,
+    "total_tokens": 10987,
+    "cost": 0.001601675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10375,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001601675,
+      "upstream_inference_prompt_cost": 0.001297175,
+      "upstream_inference_completions_cost": 0.0003045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 319,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

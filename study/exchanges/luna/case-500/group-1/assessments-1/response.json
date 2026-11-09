@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent TIME news homepage with current stories, headlines, summaries, topic links, a newsletter section, and featured content. Its regenerated layout and story ordering differ from the reference, but the core news purpose is preserved.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and arranged in distinct sections. The lower target view continues naturally from the upper view; no substantial overlap or clipping makes core content unreadable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, the AI question field and Ask button, and the newsletter email field and Sign up button have understandable labels or purposes. No essential visible control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied states form a coherent comparison: the reference shows a TIME news homepage and the target shows a usable regenerated news homepage. The layout and content differences do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, article titles, summaries, and controls communicate a clear news and journalism purpose. Nothing visible is materially incoherent or unintelligible.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing news page coherence**\n\nI need to evaluate a coherent news page. The screenshots look good, and I should note the AI form, top stories, newsletter, and featured sections. There might be some clipping at the target y=700 where things overlap, but the content seems coherent overall. I\u2019ll check controls like input requests, newsletter sign-ups, and links. No major issues should arise. I can refer to the TIME homepage as evidence for coherence. JSON is involved too.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing news page coherence**\n\nI need to evaluate a coherent news page. The screenshots look good, and I should note the AI form, top stories, newsletter, and featured sections. There might be some clipping at the target y=700 where things overlap, but the content seems coherent overall. I\u2019ll check controls like input requests, newsletter sign-ups, and links. No major issues should arise. I can refer to the TIME homepage as evidence for coherence. JSON is involved too.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B48cWnM_z6P3MoQ3YdKdyr2HJe504HC29GC--3DpE2kE-kRzw_aJ0WPIKp9b1f89u_P2v6RPiWI9bJhl49Prmb7QlrNFwvcTeccx-GQMelkreODliLAsUaiSDv07vRt8Jkqtuns2nozncq-QHJ0vRnsdzyQKz8nqKJsqou2qYew4xuQTjj8GTPf0XSMHom9ATM2_orir0T-iHGv3Cp8JOOBBICOZGTg7lBdicoFyTINvz34KLQDVPeETDZirGv3uYv8ZYzA7rd64If0BY4aCxeodvZT79uTe4Ga_lbfVG94kWqP_BzsobtUNX-Usd-1oKfGCsclgsSnhBgNv_LpvKudqQEIoghHAHHrpRyD2B_hBQEVT745KFo1MzwB4FyKtUIqLHd2eoT19eEP-IgUAcGxhwa6DECDu_eF4p8MV2Y2RcPtSYEpBw1BnMxKnWI_rfuqcw1vfR6o0dCROlECmEuKnq_-CzfBZx5QxFI8PlK5AoXf21ezqmV10Gtb9OpQTaEVykJfyl6dxdeT7iduW_vHBW1xDcMKv87SdUfzdT_cNrADwBaC4zu3U0Ibb4ORzSWppgB8tGY2pWZfIf6iCLQgSBbljkN94SckYGYCSyqHVjViGP234je8bFoUaVoCa-j2kf3OCFAp9W7j0Qc4h4b2fltw1VEbQOM10-zIUzE9Pgs1zaEMiu5xkbYJskWzYDh9qM_OhkCxH6CS73rNO1O2_h3nJPZhBP3XtTvS5YcwXNw18pURPYCD7sOhz5yK-02dCW6-iKb6EaTslz8vvXsTfYmqDjgKQXyVBi4sbhminbjnKciOBZQ8okMCDvTIf8cdRmZ8YiAc1YnjYjHHIsX7ZYChnFczdw3OUlJ7rcFzj_b_JwWH1JNdQcLDj2OxhaO5Iusf6WKbHGPyr26tl0BeBVyvefrHpL3Te_RQ4V2PcyyF_33hGm7NpHXVfDP2msYcE-t7wHppdrbi-9zh_uS1fczsZ037N4uWGq3H6O0aCwfCs0obEnDm4hOuJCcsHkwJMUXKBbnYaTsD-pd0QKBdoZJWtN0UbcGbrWNDBi1WZdnFhMA0ts5Bb3GHqFiLxO1gLjmO4N0_glL6Dbx2Pi8DDBQFsAeSAoaM87RhUSU9SPr8g3jrZbQ92lPEw9PJKAW7cyjG2LNzn2QCKDD__uqAIL3GlSEkNUltpCT0nUxmI_KIIfXBISL4G1jiGWMuMz7vwl4YdpNqjo6AcH2BPBSlxVN_6vpcPoCGGj6bnDZPk8v7HHo47mfEqYFe8kRy_lw1IRQ24fw-TzySzkbRvY7g1IzS5EbydVGSJia_l8v9UKb_03YTIjbG9IBC1wLOzoxJkSFyN_2_rLMhyKzFA8i6cERbpHjokbHBQ6tO65xuD1bQPVo5FdHfXn33nwSVnc_fQedd9-X4143xEfa8hcsXOgvHy-6mOIYiV7nn3NYla1J6IWFNBZFfT0rvHW9n9sBI6PpUOoMfV0sTjwNI2VIOOOU3cT_Toml4_IBh42-tgMszgscAKxujkMxuntYEtqhw1hNKmj_aZi_zAPH_vCS6Evhjdfbv2LYo8_AeAC6tOsKI3kyRedI8CzmplhTjq6QuVHWdwCQp9U-aRjKRx-u--lepy9OTGuwABoWzNZt-NmplgfYhwZnr9-qeWD_Q5VmDJW-6oTr081alY7uxCPKcT_njtzM80M8hu3duTvMFl1bPbLgM16KATCYh7JzHPVw4LkQVcsZqNFE30D3Ok49qM9E4EMKH0ggTZma4m2PauKe9sqUc6Rk0awfHDL9tkF69PQK1mRqxvTBqkbjfoK4gGZn-X7GjnDpFyncBFwbt4VVU53Wa3cqBAXEi5hpFvF6pm2kfOxbEp7Qfn3Z7uduxD0wGOJbJpbMHrl1oHytLpJuxW4PppAIJU_vDROXlEVkVj4Mv9JLUJBoENTlUwaNinFx7oajy9oiuVh4rdzQfjdLlcWZLAcrT_OUs0c-gpm71Vh9WLyJe1K30vfQngbEBeyJVDeoBJl5u2qMp7VpNLHBfIcYsw-cHVMbUsawdIuyVupBgISzfHykRQndKeSog45pcVz-P9Wi61UgUvWiRmrmNIl4sTdwlnKo8RyDvhLzIpD79GNB9cp0z1Op0luPDTtibsjZnhY6BrHci5Yau-v-g0_tqAIN-OYYyGYg2qetAtChAKwZzetXcemRK1qwY2zdtsj-U58BHGOsvhHqaUZKV2zIl-9aNhMIn_cmiOOu6oaXvMkYSQEGhE8v68WHNB4SBLA1t3uRY1nFZ99Vy1OEeTLDOpco1VgxDWbMLhQ5KgC6cdjbSzXAC2iBPfPhS-A_bxskuFZdbwKW1lKbUxzWU4mj8PwLSKTNWYdp-UlgjPQrY0Seg4LpjnYly4YVI6xPW1_KZtJdYTLB_cFIZwkr8ezrlbmTQ3tzKJrjz6evyBrYBSiqrdVSVV3pbwhZTBtAWtDPr3GwD6MCD3bgrX-8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0414ce969912a9de016ae81e3b0dac87d18ab541c3e2e6e3c7",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14463,
+    "completion_tokens": 380,
+    "total_tokens": 14843,
+    "cost": 0.0019978,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14460,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019978,
+      "upstream_inference_prompt_cost": 0.0018078,
+      "upstream_inference_completions_cost": 0.00019
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

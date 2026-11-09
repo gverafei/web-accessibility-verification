@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent TIME editorial stories, games, and site information. Its footer differs from the reference, but the regenerated page remains adequate for the broad purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cards, text, links, and footer are legible and coherently arranged. The partial story imagery at the top is consistent with the viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible story and game actions have readable labels, and the footer provides understandable navigation and subscription links.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both states show a TIME publication interface; the target\u2019s different layout and footer content are coherent with a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s story headlines, game descriptions, navigation, and subscription information convey clear meaning for a news publication.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer usability**\n\nI\u2019m assessing the lower page cards and footer for coherence\u2014the footer needs to be usable. The controls and game labels should be readable, and the evidence shows good coherence across the site. It seems semantically sound too. We need content that aligns with the broad purpose of the regenerated homepage. The footer and cards have a meaningful presentation. However, I noticed that the top of the cards is clipped due to the viewport boundary, although the text remains legible. All game illustrations are fine, no defects detected. I should return this in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer usability**\n\nI\u2019m assessing the lower page cards and footer for coherence\u2014the footer needs to be usable. The controls and game labels should be readable, and the evidence shows good coherence across the site. It seems semantically sound too. We need content that aligns with the broad purpose of the regenerated homepage. The footer and cards have a meaningful presentation. However, I noticed that the top of the cards is clipped due to the viewport boundary, although the text remains legible. All game illustrations are fine, no defects detected. I should return this in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B3yc1z4nIP-bil-CV6iKR-EH65AVPcnNfwsA1Tu3Tl1xyZISt_K2SEbUNG5m2f9ni3Y5kTWUXE8hKbpl1WEDnalM39h-s67hVC3WJ_zxyuj8SqtqZOtA8UgBM63dGKl-qanQFR1C_Oj107S12706QPcscas3hvEQUUxU9sciDPhIZz6xolGVjDkP2PTXJHdq0aQJhg_wPLaTUxazLGP_l5PGq6-QTiGSTiDu9YSKj7j19GXbz9qvYR1PNYodzu_MChFPXReKeWiWN4cGoVo1dw2qy7Tp2hTcou0YboVq6sCyUzGt-XTpHIS5ZEWryWqzuSv8YWqoPNH9INswS9diLJ4E_fODxADurAQsZkM_iHUzo7IuuRxcVYlTdmAD3wjBeCLKHbwjHsWJPXFLCSJZs-Mp6Tf9obRlnaWVtWvmUKCls86H2Ee8pxGE8Y7ZkCPs4kLgqI1CNC4yRWVh9iEFu_f2Je_sEuRHpTc41kWq0j6USKMdJviTVJd8-hvotFnavG4vOl69vl2GWjOb8JtxBDP_u6CUkEvixoPqiwzC3AXhEKbYfeqezQMv7Fxe6F0LlTetgSbGgKkitcaWoqQDynApxJWHw4OvVGPjPL4GTj6XWdBNrFiPtfYCEm-rbxrAo2riBUZvPs1TEQxaydP2ehkuum1BV1ybGvgCvXyfgdRWHAajiWh7Ev8bdOxogjiWsOKs6XaawC8CwBP2ax4BfQ6Wa6iiHIDvqJktks8F2czVmYiBG4Jp4AHFi3eC8LQXxbvf9KnJy3Bmqx3jzPAXJzdNJIaaqdCGE8bCqFMpH8znVsjp-eXZO14nIcNEc94A1bCV2tPlmGZBfVykBenapYWDBZvusYDzuWWg3SK6QHbu1vbgyfbjpo8iFQMSrJ44VXCLR82uDUFzukdlK8QvfWycztH7F6hGHfuz1ICqjsWfdCASzmbvuiHhyUSA3L0nh8Spr9NcRbKDp6Tr8ktmwkoKgCojfmdfLVkMq0FEhWmDXr7AV6Q1063hGRcqEk5nA7H8uPi8A8mtPS3Z6Ns62r9wNt0XEK-CuRw-hfERTz632-9U8-5pmAWOjACGHs38fCom7JUCxvRgR7Z49QapWXRJ3IUERS4Ll2-hApQQqrpQzmajWDnMKqKmjdzrMhiNh_eyrSAIZKYNjmwosBN8UwsZyayh1luFeUYqYKbl7zVK0l4h01cqarVV7bxGiCbIuheAc8Xe-80Ds4Eewp_fAPf7CheZIUDqVaNEglZYpHBh5b3Zvfnr7G2YMCuuWtQfLGPS_BQKUMdG8HG1TKSue8ucDZzuphmJWAhPz1jYOZM-Q7fRJK9WzRYKqXe-SygbI-NAAuWjjJ-RCaPEqyet2B6J6x8tr6FOqH3uqwDBxIu9EpRDt1nKKRDTgtx0KTxUmFbuQo58llDdd_MSbAbIcEG90duuzXhz7lWtVp0UN1BSEZS0XNeMLTdJSA7OSIq4TnBOt9f2ZQy8KMLN5hYSoXdH9W9qThNgY3O9o0gbTLeDMReHIneVUzB0_q5CLBGBMNVxIGzoJP89M1f_ksggv7Dq_LIv8Qutj7GU1fwNaRlKWNSLkCM_6RmazQWwC7Q0-fSnlsmIPoXd2ahjYu8rFL_ic3lKsW8Zo_sWn93vC5h4c7QyYFH_x2Y2P4uNTRvp9YTwQTw0APL2nFKXxC5aDfzn54ziuZs37lhWbikGn15OOtI1dk5G78x5LGVLtDekcrB9NjZQ-q-6vRptGhPYwmBnLZ2mce1ZExGYBTTtSkhsjdlpzBEyfeEUrFM-QkWgrWVpUjLlfZPpRm-FieN2vh-Gp-cX0eA_iPJYK93mpUVHXQoT6G986iQ8hb7Mh6ED-PvKYZr1xM5f1lnr-BvfzbSlTBkBgTL4nV07ftvax7-ieof6dbJA9jKwvIXClcd7Ln895DHH86wDSBUGUbZcdRNczfWvQ6jcESnZM_VMLfQic1LvB5-vCqEPwZjE8oifKo3Ruk46g6dJ16nnhYDFTmUgT-gc1OMxmBbAzYg9o_wbuIF2choqcj9U0rl2YmgWXitZ5N9gjyilA86Gtz5u-VeH7fpqGyoxkB9ZDIUbtBlpBlCyslmw4ernBbKT8d7lzsFVw23QJ33MHsSshxzfpGPsit58odlCtKCVL89oMTjxOAbqD53PEr9ptr59e5cDlX3j6wvfPVUmai7OyZWTsnpvVkGoLAQpd4NXpjfut_MfC0LV6P1ZkVh4wectd37jjx8EGxpftIh9GMqTmSnnoOzdcNd6nKR9Ygw_MPSALjBVcjmn6o9t9fH9lubppzyAlUp2HfJaxHnDiVmiDEWVWtSnTkpbseiCuCNYpODMCJfk2tuw8Oat6wLCVj4Zy1vdKdWH820136lgonv8kKoddb-kw4mLhBXcM9XBlPsY_4NNchfhAiqL2tNen0jRW_mu2OsoRSwX0qJyPZuvIuheLWdvgp17O9BJSxWTr_XncywZI97uuLC2lfvFr5Fm3s9biJ-k5blR-IgT8WHvAkHZsTpgcq9dRwHwrI-mtpFotak_WPdE9VE6WPlTubR72N8VMLrtq15GShm-UTcbhQewE4Y448TWK0WnVCrcG3P51ogffTkG_xk-_foVUIiaFrzCMA-zYvMj3FhGaMCEv9a-5vkDgy_Apdi5-xzX2jzx-ZywUSUJWitmGr0LweN2i9-gUhGI6Z9Od9bc9K4QcrKs1X33Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e7deeeb42c98b82016ae81df06de087d1b7e3bb865fe82365",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10823,
+    "completion_tokens": 332,
+    "total_tokens": 11155,
+    "cost": 0.0015188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10820,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015188,
+      "upstream_inference_prompt_cost": 0.0013528,
+      "upstream_inference_completions_cost": 0.000166
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

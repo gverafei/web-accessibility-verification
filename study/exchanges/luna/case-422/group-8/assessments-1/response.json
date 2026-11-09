@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent climate-story headlines, a games section, and footer information. These support the broad purpose of a news site; the regenerated page need not reproduce the reference footer\u2019s exact inventory.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and cards are legible and arranged clearly. The illustrations in the games section are understandable, and the footer is not substantially clipped or obscured.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and game actions have readable labels, and the footer navigation is legible. No essential visible control has an unclear purpose.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The evidence coherently compares a regenerated TIME news page with a reference footer. Differences in layout and footer contents do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s climate headlines, games, navigation, and TIME branding convey a coherent news-site meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing design coherence**\n\nI need to evaluate the window target for bottom climate games and refer to the footer for prompts. The regenerated design seems adequate; the text on the target cards and controls is readable. The game illustrations look fine, and the footer is coherent. I\u2019m noticing it has a distinct design that feels relevant. Evidence shows there\u2019s good coherence. Overall, everything seems to meet the requirements, but I still need to create a JSON rationale.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing design coherence**\n\nI need to evaluate the window target for bottom climate games and refer to the footer for prompts. The regenerated design seems adequate; the text on the target cards and controls is readable. The game illustrations look fine, and the footer is coherent. I\u2019m noticing it has a distinct design that feels relevant. Evidence shows there\u2019s good coherence. Overall, everything seems to meet the requirements, but I still need to create a JSON rationale.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBOJoS1XuC7nD46TFUe6In17EEpBzFt4_W8f9vVdq1T2j3nK0HXJa5c4WjWcASejZ0Nlw8EZHGjgemJIIRCAZ8t94KwtJbxbZYmM8CXyo63XD8KqSxjBKt2PdOMmkwqUlDX-rFpkNDlV_6oHu6ogufT9Z7xD_GC40ohMGmkbD-c6DtSu32LDRAMbn0jVWxmnGi4OMCAeOh7S_ir-Ws5vS4CSrg0PZNJ1jONh5srKxEeP0zqAn4bk5dxq4MitBLnf1f9XYNrGpeSjrNRRiQzUDd2KycrKLljoxdMJC3GFROG_PGg1ka_S9QyuLmfZJBuOo9sagtBmDPk-W25hfhiL2PZQJ1A4o_O1dUQPMch9zJ0SuBARFVivFcgYNwdqzK9UEz4pfLV0BeiSm6RPM39nPBZYGhiJwpITP7hMCWoVKZu79t0QxeNTiw_1lfasJ8sHdBAiVFGJtkkrZHSvoRtx5QXQvi7w3ePDhWNMvIGkKXKVT0wMiHscvj08nyqv33G_ipYoMKhnhWKbqD_02O2yZpMQ8HW71VQjuNS4VdcBkRKdCsVCVcSUUuyJ35zmCbMUkS038sZs3JrgtumDWGVAGDiaJ4ABK4QKCVD5iOobn2dOVMaFLJf97v90dhPvoq7EkF3KPqMW15blG1_NAgv1jzGM0MEUkPxCP6UDSonywfsA7qyP8tY9eYC4rxMvtYg5uWmXYljZbIwiugf2tU_LBNPPMSqbKmIlh5a-OEDPRUSyBL1QQTqtSU4Th5TlLZJngYBLFitzmPv8yvmXoe5kb0Put0I6kJ4QEcq0lUP4Cm0FnvkzzI7XFQUDed0qm0OUptJy_lNBdlWffAfEuT8uKTiQ1k_il_5aIQ38Z-mXltIwgNuOeSxXF1KloEVsAkYtsekt_R_EYGb44cIk2Nrh8cH9tm6nzRjIioQrHtV8GK8HHkW4CDD84xq7CP7_7k5G9xB9mUsHDwXqo20kdBML46A5JjMOQKiww7G_O5T-YAywkVdTIAJha4WQGpZNtHBtOM0r7lO3MCFW9yUVWh85urD-wOcX8ZHZGfJ0N6hNNMNa4fZ5POet6WUpn8uadjaEMI6G80gAKYBv5Eo0JkRDSjPF20tmaQ7PxEdLMjtnR_0h0mgWStHwK2zu8kXjvkADdtkRYJq3zVcHnqFzDSpgt97CiWrkmB-YAo-tn3hwTjW1nXxQgvyIU9X_IUCTYvWgm4A9CTNxy37wAZUPB51Ks8XQuTEAMzVLltFtWeNgLsczJwxZUfQexYN_RSx0Sh7A4S8GsUVB1qz_D3N4icKTagAFzpMDN7MsoCv82fDRmgIBPAqPzqq_I6GFtY0aWYltubaw-SjDmBAk40A6oC_5worX-mtD_3o4RqtZILuC7HoLJbUNgR45iD7o5hS1qDYngzXJZXP_W_4mVxbNmnywk9b-vhIxSxs7wpRIMv6cFKg1rJ75COH6AkJ10JRMOhobFYVWAWDmuw1cs0Gb3PJwmG5iaUvOXYuqGhQY2M4clWpe6FFjwPdbiA4mqV73SSy9nd8FF9INPKGcIwwvp08lQSZBGSZEP3U4Tc9cWbQTwyQFwCJ2-I6fUi3_8cKrdNdMddixVhlwsyuvOWfvCQmf7n4Tk3oYodTXC0AJFvpq6yjcLZsN3yv9JzCIg0IArfuiPET6M08avFrV0bT2-oZm7fa8VA3xCh_WxKaLhWoXFlm4EmS1OAc2bCM3nVeW8OwPVU4UuqEb7u9Xo3d5RGJ8X5ZCYUa37qYGK0SYnh_QG5bW2UUVZt_4X-_l_hvdY1r_-O-6wtQvSFFzfjE4ZZ0kkMEaPUEvr3vpmiqflQELb9oFkdn3BxgrME5I_ERId9LIpTd2C04AcXn5WOCvDemKGRz8ulicgX-Q29Ji5ftGYYT1-TGxrXv08pk0jaw2skoX367UOBZWaNrqcW2YhRwtll4PhYeJRaH59LavJBoLMIog5xNyejcovGbzXZPN7CNyVoyFVaFXjieOR3ar2T0YnkuKakeLpALSjVOg3kOb8NI800rG5_vFWI7-FStViH0RvTZZ8FRssFiRDWvR2XoMkzoUxXo6d8ZhKa7Dr0Ttz-HNbCJiBI7UTESJXfgTZHMfljK6O9XYViguFu02MFLxpLa78q6PSvq6SqyHHWbqiji9ARa1w552a5vKrKO7qp_--8Wnlys4BBDtCmWPJewkg01BYcX-71Z_R2hfEyZXlnQjhxmjZJ7eyN6o8OnAouj6FmXr5bsAdc89kJB9kmGki9oda-M6cw1vbfBMnf4z0NQw1nSrXgWScn7GBgCepBp2dR4uYjmpDLILIZFqt07Phxjj1pt7rJopUaBpMT1xIAC9JqdVdCKtEeU__QTcetlgMWFvZtxazVx-5OSUfY5kWnYud8gBzQWt1uLNrctnHFUb_NMvkmNgsPxVbMHYfOPtk8c7bAOr76zrZ9aN6YRdGwNeaI2DJKwIluifnTKVTq9LBk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f2a5837c9df634c016ae8204d60b487d1a33fd36390f234cb",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10825,
+    "completion_tokens": 334,
+    "total_tokens": 11159,
+    "cost": 0.00152005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10822,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00152005,
+      "upstream_inference_prompt_cost": 0.00135305,
+      "upstream_inference_completions_cost": 0.000167
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

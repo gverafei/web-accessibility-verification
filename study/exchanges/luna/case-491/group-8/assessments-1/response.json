@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent TIME editorial content and footer information. Its footer differs from the reference, but the regenerated-page contract does not require matching the reference\u2019s exact links or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible article titles, newsletter copy, footer links, and legal text are legible and arranged coherently. No material clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The newsletter email field is labeled and the SIGN UP button has a clear, readable purpose. Footer links are also legible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show assessable TIME page regions. The target\u2019s regenerated footer and newsletter section are coherent differences, not evidence of a mismatched comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible editorial titles, newsletter description, navigation labels, and subscription links convey clear meaning appropriate to a news publication.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer coherence**\n\nI'm checking if the target footer is coherent and serves its purpose, even though it's different from the reference. The newsletter form is visible and clearly labeled for email signup, which is great. I see that some adjacent articles are visible, making it usable overall, and everything works with no defects. The controls for the signup button are clear. Overall, the evidence seems coherent despite differences in the footer\u2019s semantics. I'll provide a JSON for it.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer coherence**\n\nI'm checking if the target footer is coherent and serves its purpose, even though it's different from the reference. The newsletter form is visible and clearly labeled for email signup, which is great. I see that some adjacent articles are visible, making it usable overall, and everything works with no defects. The controls for the signup button are clear. Overall, the evidence seems coherent despite differences in the footer\u2019s semantics. I'll provide a JSON for it.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzLZDcN3_ynAyYl8WIvSTilzUxl40Od-CSqbMBtW6lmFL15pel5Cawqgf7aJerq5AqTN5MoDqOPyiFBWezvP7Dt-R7Jdm3iQwH0XQf5-wwEtX4B7yEDLJibGSnaSPg0TrIuNN5-9_X0H2RQRGNfjrIORED3OJDj7fnSKiSu74ZrkMrSvuy5A--BRvKe9FbsBko_ul9YiHGwhUgitzrqYPbpq4Z48NW4MN-O4Gt1qhPGZvK1swh3lbS-kndMEfjDR0lvGUdqX2FB07hh2v1FZPJjds4SfrO2ce4tPUSp5SIMlMYH7mFwYsyo8Fz3mDmaj8Dc_GJtDxCHLIMrzriUFfcqG8yMCddul_cEmybJWNatEEkYDZ1139Q7SCv49wxSqWrCx-Z8KClplCNkiki6LlE_FQ-erktlpugAB5WGTKuog4ym4GWhXAAQKTXwuJkAc2pWW7xT5kimUsg5P35WqIaV2avPKRMp-fcytSPVCL3GnTA8WkCd7ohyWxnemcIjO_UDZ24wPf6ygH16iPD2L5FkbVSjMUp6LGb-7NQ2rqBrZKKFu786x97VBEyTceIN7MH2npLGhvP4SzhzVeetDmGIJ_l6jYkoHUJyyHoWDzu_s5Ur7Sh60scMzEPDTGDDQVk8nKozdRffZKWBRGKDAyU2ZjnEDC3j4yyYhD4F456B5AY1LGXgFCp5DaVz-WwrZ-nJ9PmzLbfB6cUjVq9HTETTkwVJMFFRlmsr-8LfIZtG_Mn8qorQZkOTBPC651LW8ThiliD2PfvAvAE-gzhhdrSYWerVbtDuP0TOylqcuc-PobFXty9t-OLrYYYalJCeE-LH6YbSi00mbuwGU4tA7sPQe--vfZeIs6zjoSFyq5VPWknOw651-yrhF5gS7JXsgYLWHWV94z2FHGOcScReEuaQGTNaUcdymbCyc-NPKvLwqMZmWlNXNLWrwwk1q26nW5RhW6g3YDS0xZ3PyIM8tqfd8sgGCjkLT4jo88TqAo84dCU-XCy0X1Uolwu6KWJ5dNtPYibpc3JkJoGB1l2yg9umPbG7uwLnyqJQLBAIjDZDNlXkGBgTJ1vhQD_xh_Vb4sFiSkNdQleRGAKp0YGAG7yAiZDJUvqeVUvalxS-nZ1v4XRhHKs-u9WM1Ea2TdfGL5q5D3m0KXOL8XnD0-2bTkQNVjPBMwJCRFwHurwE7S3AL7F3ZJzAStJAU29bplV3ggFWsiufFQF7iJD1bYRzGVI_mB1obMI9xkpBTxkxQAPvsR0hPAW7RAJiKe2NMMSgmmX0-fl6Vr2A2fFrj4g5-KvvrAH0NDIWX8_ekrd7hg0eUj2XeGwWbJhC5obL8NhRRd2pJRp4fkEg01PJSR4hIEjYkDjDBMh5dbaUNumoiCQcTthJMiqvEgUfRFYx-FSXcFkGSJvm4_r9io2DgAfrJfIG3mP7IcS4u-ljJ5agD4RWtfDpSYM61nz7wYsOwmV9prwAfZQNRSKDRRjDDGeX4HL9jgCMK8LXvzMq58SQRJ7KWuCf8de7RppxWUU43MMLK1qf2Ilj2Cl4CyP0ig67Rr8sxr7bawzUv3ER3OZZEFr16hd8MIuEQvP-yJERHyJCFdMsn1Y21viVlSRoZfSljMdR-EVl34w3WyyTqT0kp1LXEuQFIXGU-C49ZtNWKvKeUMh0jZc7kb_cw0JnL3VJk92kj78NwNwEIB5LhTusMQwuaWsBf7g4Yz-ul7S4GVNn4Wghag4p_ixNjLlZe8GjWgKWcXemrO8H0sfiH1lubKYk4l8IuBXyRBJHvx4XRr-i-P0sLY0l1FOF1Z4RXTk985Ga2l2YivtsZwqokoyHHwhnOvIQpGYqFs1SyNDNJJiTTTaPy0g-3HVjy8wOTONpQT58ix4_gWrdu9g5BnzfdCaZHt-js9poQVDoW1OdtwEeTowrpLKwPPelZQ-FKLPY3-R73zeTSxby-GH1sP8177L2UlNep6K4fACX2EXXOCEIZ0fwI0HrVEleL6hDcAtDLv2BhqfSbRKxjnTws_Y5XUohEg3xJCL3xlgyHoV_sPrx0RyF7NU17l02PljLuSbTHCGlvHv0a1VmOeM6jSvy06dmA0BCn1Uic2TVYOe8oGtOcp66eHBJ9NvwmpFyPCd141NmOUwzj7RINcPuj_D7c72SOvQrCnjaWIg5ALVX0Ue8hLE4hF1q36DEJ7tY-XhWUs7qRn_s_gq4BqGNBhr6NPhLZPZD0WJ5_zsCSGPyloJ5g-9KFszk0qPXUdKPyWEQUxN4R_5KE3sSo4v3oXzypfVp7OMZrf8rSRcaF20EDgx6oL_pSDlkMsWZADfXYFLAcY3IXn5JRRswyu9VM6qoxSCiQJY=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00abe590e43673b3016ae81cc9ff4487d1afa25939474762a4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10859,
+    "completion_tokens": 321,
+    "total_tokens": 11180,
+    "cost": 0.0015178,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10856,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015178,
+      "upstream_inference_prompt_cost": 0.0013573,
+      "upstream_inference_completions_cost": 0.0001605
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent TIME news homepage with a lead story, supporting briefings, and archive-oriented content. The layout and article selection differ from the reference, but the target is adequate for the broad news-and-perspective purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible target text and imagery are legible and arranged coherently. The lower view continues the lead story and archive panel without substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Vault, and Subscribe controls have understandable labels. No essential visible action control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views form a coherent comparison of a TIME homepage and a regenerated TIME homepage. Their differences in layout and page content do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, article titles, bylines, and archive description clearly communicate a news publication and its subject matter.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14487,
+    "completion_tokens": 276,
+    "total_tokens": 14763,
+    "cost": 0.0019488,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14484,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019488,
+      "upstream_inference_prompt_cost": 0.0018108,
+      "upstream_inference_completions_cost": 0.000138
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

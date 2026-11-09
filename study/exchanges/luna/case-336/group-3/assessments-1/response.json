@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent Brave FAQ with relevant browser questions and a footer of useful site links. Its question set and footer differ from the reference, but the regenerated page need not reproduce the source inventory.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible FAQ rows and footer content are legible and arranged clearly. The different layout and styling do not materially impair use.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"FAQ questions have clear labels and recognizable plus icons; footer links are readable. No essential visible control appears unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views show corresponding FAQ/footer regions in a coherent comparison. Their layout differences are consistent with regeneration.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, questions, and footer labels convey a clear browser-help and site-navigation purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating FAQ coherence**\n\nI'm checking the target FAQ and footer for readability and coherence. Compared to the reference FAQ, which has a larger list, the target offers 8 questions, which seems sufficient. The controls are clear and recognizable, and there's no issue with the footer. The content aligns with its intended purpose. Evidence suggests coherence is present, but I still need to ensure it's formatted in JSON. That will be important for clarity!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating FAQ coherence**\n\nI'm checking the target FAQ and footer for readability and coherence. Compared to the reference FAQ, which has a larger list, the target offers 8 questions, which seems sufficient. The controls are clear and recognizable, and there's no issue with the footer. The content aligns with its intended purpose. Evidence suggests coherence is present, but I still need to ensure it's formatted in JSON. That will be important for clarity!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B8lUI-24Hny2IIZeIXU3s_CRM4euJ3ZkUKl7NfduG1PyKUkEK9tYBvyokNM5aC1XPZrK6LAj6eVKl-wVMTEBTuoXdLHuAN21nKIGRv9Ni-eHblRtrO3pK3KiAD6kcEvnipG3WAHsZLalqZhybrxyAGHxF4qeXwEY9IRcg2uRXw3dioSRct-HhiGZrGtUzbPaRcqtV_bQSN4c3ND9O93RaRJmf6nsiYzz7Sb5hgNxB9G8l8qwNQMiq61Vnoos8iByAoNQp8Gb6wwzNo5IbpYlr72XtKhRfjHO6VMoC3SF7GucDtQ_wmlG0Zir_4HzKt4Gb5SKpz4lqmzJkeN6cnbjYmfY_ORlgLM_Jzg6xiJr2y8u9_saztYA8P8dvIlBpylowzzME4E9gI7K0D-H6jJYb2MLoMHfNeUtxPGAaVBZpFlVROr2bv8Fh0NOJQhwtqPPgfWYRir5sGR0EqzDnXaoz5Sp0i73SgR6hvJiPB9iOjiT9njFJgnzI9Kkyr1hsu_KD0TAv3QkTLmM1Ukquwof4AypGNWi6bQmQUdVAMIZrLxIbhs1rZDKozRm4nMX4FiYLTP5RnjFZN43sDuaqv0aARyZ2BfGNA8PLQe3WEKZktgRdV1DSxY_jmYzt_1iqnh_mA-Msr4Jpb1Y1Hho8ePj2JBC8sdKY3LKyIUa_WcqQ2g4JixTaqsCEmaB-z5P5uOdKgAKRFrXB0qPbeloBxz8thAOTtE_uWuBdTmyeIAAN1fsZb3zkDwlVxnjwZ4iDKz4m8lkfxRKYvTxbQSE5XXHWLZAve4Z4E7AACUXwiBn_G4ssBtXEtCmYzqCXGZYTC-yfhZGulrMAusp-yMBZc0gaUl0t0X30RAndvMHVGQjgrg__NagFVrhjFU4y2Z5sF32PdwVRlon94fDA2lzaA8zZpQYyg3PiQ4GLttncLtCf_23Y9K-6bziL-YdHZDcsLS74Q_TmF8XqUYaFQZgDmmLLyJxCBgOrEbWuh1eB4B4Ka_eNEIeaKIfYoYBZwyxS0WLKbxp_VUem4VRP8iM3WmIguZL3gZ8kiLt3Vea6CBWQOte8qPG2EUKcAtUYzwE-CQAkO3l7CkiuSJrOj2NfqkPUzB5Pmg4O79S-5ICcEIKs4o7tqf08_mpYEUZRs_zUhmAMtTIkmq8AFVf3yqvYnMu7NFyuBj23Y4zbLqCsFX-CJti1ODUSKvio-e1T6R6jGu8GxYqCcmvnaa7IumbGdgywrwaboJFr3qk4Q0Z40WhH4P4MxjU9frRU6fXViTS42aLnLW8sfocqUmL4XZHMvS7fkCy6HSgkc5cP1_KBFz_R6teaFtgQYohGQviIQxKM-89_4CswvR7SjFPQZWz_NNJET7jnfOcje-DBzyP4BSDd9puD-EcuSni50kKouAB0NHkt1IUOyTBR4KTXNlzxfe1EG2N7axnC7bOir20R0C2Rlmn97ADQqQvwrmkuMQfRo6NCeEQsHl0DFe5mqc9McfScQImy548pYD1Bl6OuBrAl7hV6DEla_GgyVJgQkyBMwwzMg9B-vmrqMG38knJuHs014zxzBKfL2xRxCtaoZopQuG9OnvOfSpUAcU8RI1S3xTLxL_ZkuHfx2lskY5E73ydiM-CLcaOIbqjWOou0h4-l55tF0Y1khADg-p4ymlWAeOAUkLH87UKt745Oo2qOp3vbk1jk7Je2noT2HRWZ9MwNNi7G3CJCrqFTGEbLupWEkOgrCLBXjMNIkGP2s9mlkQ5_0FA0Pw8CIXe_9UJ7bXka-9mk-1U79wCPm3Ju_D5aVvRlOUiUVerbuIAxy5v2mlk1en4S3vFUPlcoGrD_cfyiDzuZIUPKZOemwIlEBEsbJYg26bY_9ipbLq94MlZstKXrXibo2YpaYYP_3yGtbZXJYLXd8uIhTfop6NErlIWOzQoczGXVrrf6aEMne3MjO9ikFU1YwBB9utnwxwZM8z5RhdCLvBhtlqMYiAUSSFc257PN7TkCgZJAASV5g9UodIu0doHe_02y2IKpfHUW5pTnAYFsvcwKwhEvMmiTbMsGfrFlcN7AYcFx30rrVYMRXHsWAfZZcFLdn0ekEjPaCMI48wmy9z3hI4DUAcxa-yincDpBKvNwWqFNcEV0uglRvnvU7d5TcfpjHgQpl-lMYWVT2LnJYjh_qfo9J0b2Jxy3pJ6XfScEbFW3gCBVywR-XMhhgytaJgkIV6AbmGxcA4GGOT7tRLkBEASNq0nYuHker3ckzv4Ogr1XBvYIOFHJoKSOgR1nia3uO0NA9bNEcg-1CD9EhqO3YM_CvpllAda5_fXM_sLq5P40CN6ORpMohzFGnQ5Jt5Sk0nqTWE_PyVc4ZQCkk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0bbdea07b23f9535016ae81f23540487d18e0210125b11f5ad",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10513,
+    "completion_tokens": 313,
+    "total_tokens": 10826,
+    "cost": 0.00147055,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10510,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00147055,
+      "upstream_inference_prompt_cost": 0.00131405,
+      "upstream_inference_completions_cost": 0.0001565
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

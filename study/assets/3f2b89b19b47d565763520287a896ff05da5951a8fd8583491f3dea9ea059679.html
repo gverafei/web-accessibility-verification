@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Ubuntu is the modern, open source operating system on Linux for enterprise servers, desktops, cloud and IoT." name="description"/>
+<title>Enterprise Open Source and Linux | Ubuntu</title>
+<style>
+    :root {
+      color-scheme: dark;
+      --ink: #f7f5f2;
+      --muted: #c3bfba;
+      --background: #1d1d1d;
+      --surface: #282725;
+      --line: #484643;
+      --orange: #f15b35;
+      --orange-hover: #ff784f;
+      --blue: #a9c6e8;
+      --max: 1200px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 400 1rem/1.6 Ubuntu, "Segoe UI", Arial, sans-serif;
+    }
+    a { color: var(--blue); text-underline-offset: .2em; }
+    a:hover { color: #d2e4fb; }
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid #ffd166;
+      outline-offset: 4px;
+    }
+    .skip-link {
+      position: absolute;
+      z-index: 10;
+      top: .5rem;
+      left: .5rem;
+      transform: translateY(-150%);
+      padding: .7rem 1rem;
+      background: white;
+      color: #111;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .wrap { width: min(var(--max), calc(100% - 3rem)); margin-inline: auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #242322;
+    }
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 1.1rem;
+      white-space: nowrap;
+    }
+    .brand img { width: 31px; height: 31px; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: clamp(.8rem, 2vw, 1.8rem);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: .93rem;
+    }
+    .nav-links a:hover { color: #ff9b7d; }
+    .announcement {
+      background: #111;
+      border-bottom: 1px solid #343230;
+    }
+    .announcement-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: .9rem;
+    }
+    .announcement p { margin: 0; }
+    .announcement strong { margin-right: .65rem; }
+    .hero {
+      padding: clamp(4.5rem, 10vw, 8rem) 0 5rem;
+      background:
+        radial-gradient(ellipse at 85% 28%, rgba(241,91,53,.17), transparent 33%),
+        linear-gradient(115deg, #252321 0%, #1b1b1b 68%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(250px, .8fr);
+      align-items: center;
+      gap: 4rem;
+    }
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: #ff9a7a;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { line-height: 1.13; letter-spacing: -.025em; }
+    h1 { max-width: 780px; margin: 0; font-size: clamp(2.7rem, 6.5vw, 5.3rem); font-weight: 500; }
+    .hero-copy { max-width: 640px; color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.3rem); }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 2rem; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: .75rem 1.2rem;
+      border: 1px solid var(--orange);
+      border-radius: 3px;
+      background: var(--orange);
+      color: #191715;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button:hover { border-color: var(--orange-hover); background: var(--orange-hover); color: #171514; }
+    .hero-art {
+      display: grid;
+      min-height: 270px;
+      place-items: center;
+      position: relative;
+    }
+    .orbit {
+      width: min(100%, 350px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(241,91,53,.16), rgba(241,91,53,.02) 65%, transparent 66%);
+    }
+    .orbit::before, .orbit::after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--orange);
+      box-shadow: 0 0 22px rgba(241,91,53,.65);
+    }
+    .orbit::before { transform: translate(132px, -93px); }
+    .orbit::after { transform: translate(-145px, 74px); width: 8px; height: 8px; }
+    .orbit img { width: 150px; height: 150px; object-fit: contain; }
+    .notice {
+      margin: 2rem 0 0;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid #78a9d8;
+      background: #292827;
+    }
+    .notice a { font-weight: 600; }
+    .notice p { margin: 0; }
+    section.content-section { padding: 4.5rem 0; border-bottom: 1px solid var(--line); }
+    .section-head { max-width: 760px; margin-bottom: 2.2rem; }
+    h2 { margin: 0 0 .8rem; font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 450; }
+    .section-head > p { margin: 0; color: var(--muted); font-size: 1.15rem; }
+    .pro-panel {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 2rem;
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .pro-panel p { max-width: 650px; margin: .5rem 0 0; color: var(--muted); }
+    .pro-panel h3 { margin: 0; font-size: 1.55rem; font-weight: 500; }
+    .button.secondary { background: transparent; border-color: #a6a19a; color: var(--ink); }
+    .button.secondary:hover { background: #383633; color: white; }
+    .grid-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .card {
+      min-height: 205px;
+      padding: 1.5rem;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .card .number { color: var(--orange); font: 700 1rem/1.3 "Ubuntu Mono", monospace; }
+    .card h3 { margin: 1.1rem 0 .65rem; font-size: 1.35rem; font-weight: 500; }
+    .card p { margin: 0; color: var(--muted); }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: clamp(2rem, 7vw, 6rem);
+    }
+    .split img {
+      display: block;
+      width: 100%;
+      max-height: 430px;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+    .check-list { margin: 1.5rem 0; padding: 0; list-style: none; }
+    .check-list li { padding: .65rem 0 .65rem 1.9rem; border-bottom: 1px solid var(--line); position: relative; }
+    .check-list li::before { content: "✓"; position: absolute; left: 0; color: #ff9a7a; font-weight: 700; }
+    .news-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .news-card { padding: 1.3rem 0; border-top: 2px solid #77716b; }
+    .news-card time { color: var(--muted); font-size: .88rem; }
+    .news-card h3 { margin: .75rem 0 0; font-size: 1.25rem; font-weight: 500; }
+    .news-card a { color: var(--ink); text-decoration-thickness: 1px; }
+    .news-card a:hover { color: #ff9b7d; }
+    footer { padding: 3rem 0; background: #242322; }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; }
+    footer p { margin: 0; color: var(--muted); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 2rem, var(--max)); }
+      .nav { align-items: flex-start; flex-direction: column; gap: .7rem; padding: 1rem 0; }
+      .nav-links { gap: .65rem 1.1rem; }
+      .announcement-inner { align-items: flex-start; flex-direction: column; padding: .8rem 0; }
+      .hero-grid, .split { grid-template-columns: 1fr; gap: 2rem; }
+      .hero { padding-top: 4rem; }
+      .hero-art { min-height: 210px; }
+      .orbit { width: 210px; }
+      .orbit img { width: 112px; height: 112px; }
+      .orbit::before { transform: translate(78px, -65px); }
+      .orbit::after { transform: translate(-84px, 54px); }
+      .pro-panel { grid-template-columns: 1fr; }
+      .grid-cards, .news-list { grid-template-columns: 1fr; }
+      section.content-section { padding: 3.25rem 0; }
+      .split img { max-height: 320px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">.grid-cards > .card > .number { color: #ff684a; }</style></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="wrap nav">
+<a aria-label="Canonical Ubuntu home" class="brand" href="https://ubuntu.com/">
+<img alt="" src="https://assets.ubuntu.com/v1/82818827-CoF_white.svg"/>
+<span>Canonical Ubuntu</span>
+</a>
+<nav aria-label="Main navigation">
+<ul class="nav-links">
+<li><a href="https://ubuntu.com/navigation#products-navigation">Products</a></li>
+<li><a href="https://ubuntu.com/navigation#use-case-navigation">Use cases</a></li>
+<li><a href="https://ubuntu.com/support">Support</a></li>
+<li><a href="https://ubuntu.com/community">Community</a></li>
+<li><a href="https://ubuntu.com/download">Get Ubuntu</a></li>
+<li><a href="https://ubuntu.com/login">Sign in</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<aside aria-label="Announcement" class="announcement">
+<div class="wrap announcement-inner">
+<p><strong>Ubuntu Summit 26.10</strong> Live on Nov 12–13. Join us in celebrating the world of open source.</p>
+<a href="https://ubuntu.com/summit?utm_source=announcebar&amp;utm_medium=referral&amp;utm_campaign=701N100000qk8UUIAY">Learn more <span aria-hidden="true">→</span></a>
+</div>
+</aside>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div>
+<p class="eyebrow">Open source, built for what’s next</p>
+<h1 id="hero-title">Real-world SysAdmin qualification</h1>
+<p class="hero-copy">Prove your ability to manage complex Linux environments with real-world, performance-based examinations.</p>
+<div class="actions">
+<a class="button" href="https://canonical.com/academy?utm_source=takeover">Get your badge</a>
+<a href="https://canonical.com/academy/exam-content?utm_source=takeover">Explore exam content <span aria-hidden="true">→</span></a>
+</div>
+</div>
+<div aria-hidden="true" class="hero-art">
+<div class="orbit">
+<img alt="" src="https://assets.ubuntu.com/v1/66f575a1-Digital%20sovereignty.svg"/>
+</div>
+</div>
+</div>
+</section>
+<div class="wrap">
+<aside aria-label="Ubuntu 20.04 support notice" class="notice">
+<p><a href="https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare">The Standard Support period for Ubuntu 20.04 LTS has ended. Discover your options.</a> Take action today.</p>
+</aside>
+</div>
+<section aria-labelledby="enterprise-title" class="content-section">
+<div class="wrap">
+<div class="pro-panel">
+<div>
+<p class="eyebrow">For enterprise</p>
+<h2 id="enterprise-title">Modern enterprise open source</h2>
+<p>Security, support and managed services from the publisher of Ubuntu. One subscription for security maintenance, support, FIPS and other compliance certifications.</p>
+</div>
+<div class="actions">
+<a class="button" href="https://ubuntu.com/pro">Get Ubuntu Pro</a>
+<a href="https://ubuntu.com/pro/free-trial">Try it free for 30 days <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="coverage-title" class="content-section">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">One platform, many possibilities</p>
+<h2 id="coverage-title">From cloud to edge</h2>
+<p>Ubuntu supports modern software infrastructure across public cloud, data centres, workstations and connected devices.</p>
+</div>
+<div class="grid-cards">
+<article class="card">
+<span class="number">01 / CLOUD</span>
+<h3><a href="https://ubuntu.com/cloud/public-cloud">Public cloud optimization</a></h3>
+<p>Optimized kernels, enterprise support and security maintenance across leading cloud providers.</p>
+</article>
+<article class="card">
+<span class="number">02 / CONTAINERS</span>
+<h3><a href="https://ubuntu.com/kubernetes">Kubernetes, your way</a></h3>
+<p>Run Kubernetes across public cloud, private infrastructure and bare metal.</p>
+</article>
+<article class="card">
+<span class="number">03 / DEVICES</span>
+<h3><a href="https://ubuntu.com/core">Secure embedded Linux</a></h3>
+<p>Ubuntu Core brings transactional updates and long-term security maintenance to devices.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="security-title" class="content-section">
+<div class="wrap split">
+<div>
+<p class="eyebrow">Built for trust</p>
+<h2 id="security-title">Open source security, end to end</h2>
+<p>Ubuntu Pro helps secure open source applications and patch the full stack, from kernel to libraries and applications.</p>
+<ul class="check-list">
+<li>Up to 15 years of security maintenance</li>
+<li><a href="https://ubuntu.com/livepatch">Kernel Livepatch</a> for patching without downtime</li>
+<li>Expanded security for infrastructure and applications</li>
+<li>FIPS, CIS and DISA/STIG security options</li>
+</ul>
+<a class="button secondary" href="https://ubuntu.com/security">Discover Ubuntu security</a>
+</div>
+<img alt="A person working at a computer" loading="lazy" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_600/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2Fa0ca630d-woman-computer%401x.jpg"/>
+</div>
+</section>
+<section aria-labelledby="engineers-title" class="content-section">
+<div class="wrap split">
+<img alt="Illustration representing Kubernetes and containers across cloud environments" loading="lazy" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1132/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2F1cbb17af-Multi-cloud%20Kubernetes%20%20and%20containers.png"/>
+<div>
+<p class="eyebrow">For your teams</p>
+<h2 id="engineers-title">Energize your engineers</h2>
+<p>Better security. More packages. Newer tools. All your open source, from cloud to edge.</p>
+<ul class="check-list">
+<li>Authentically open source</li>
+<li>Secure by design</li>
+<li>A release cadence you can depend on</li>
+<li>Stability through long-term support</li>
+</ul>
+<p><a href="https://ubuntu.com/engage/adopting-secure-enterprise-linux-desktop">Read our guide to adopting Linux securely in your enterprise <span aria-hidden="true">→</span></a></p>
+<p><a href="https://ubuntu.com/ai">Build your AI models on Ubuntu <span aria-hidden="true">→</span></a></p>
+</div>
+</div>
+</section>
+<section aria-labelledby="news-title" class="content-section">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">From the Ubuntu blog</p>
+<h2 id="news-title">Latest news</h2>
+<p>Updates from across Ubuntu and open source.</p>
+</div>
+<div class="news-list">
+<article class="news-card">
+<time datetime="2026-10-16">16 October 2026</time>
+<h3><a href="https://ubuntu.com/blog/lower-android-development-cost">How to lower Android™ development costs by removing hardware from the critical path</a></h3>
+</article>
+<article class="news-card">
+<time datetime="2026-10-14">14 October 2026</time>
+<h3><a href="https://ubuntu.com/blog/curl-vulnerabilities-fixes-available">Fixes available for CVE-2026-92392 and other curl vulnerabilities</a></h3>
+</article>
+<article class="news-card">
+<time datetime="2026-10-12">12 October 2026</time>
+<h3><a href="https://ubuntu.com/blog/myna-speech-to-text-technology-preview-available">Myna speech-to-text is now available as a technology preview</a></h3>
+</article>
+</div>
+<p><a href="https://ubuntu.com/blog">Visit the Ubuntu blog <span aria-hidden="true">→</span></a></p>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="content-section">
+<div class="wrap pro-panel">
+<div>
+<p class="eyebrow">Talk to the Ubuntu experts</p>
+<h2 id="contact-title">Planning your next open source project?</h2>
+<p>Canonical certifies, secures and enables enterprise open source on Ubuntu. Tell the team about your project.</p>
+</div>
+<a class="button" href="https://ubuntu.com/contact-us">Contact us</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap footer-inner">
+<p>© 2026 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+<nav aria-label="Footer navigation" class="footer-links">
+<a href="https://ubuntu.com/about">About us</a>
+<a href="https://ubuntu.com/community">Community</a>
+<a href="https://ubuntu.com/download">Downloads</a>
+<a href="https://canonical.com/legal">Legal information</a>
+<a href="https://canonical.com/legal/data-privacy">Data privacy</a>
+</nav>
+</div>
+</footer>
+</body>
+</html>

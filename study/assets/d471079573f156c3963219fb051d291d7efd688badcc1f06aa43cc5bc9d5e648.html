@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#101114" name="theme-color"/>
+<meta content="DeviantArt is where art and community thrive. Explore over 650 million pieces of art while connecting to fellow artists and art enthusiasts." name="description"/>
+<title>DeviantArt — The Largest Online Art Gallery and Community</title>
+<style>
+    :root {
+      color-scheme: dark;
+      --bg: #101114;
+      --panel: #191b20;
+      --panel-hover: #22252b;
+      --line: #30333a;
+      --text: #f4f5f7;
+      --muted: #b8bbc4;
+      --green: #00e59b;
+      --green-dark: #003d2b;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    a:focus-visible, input:focus-visible, button:focus-visible {
+      outline: 3px solid var(--green);
+      outline-offset: 3px;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; border-radius: 8px; background: var(--green);
+      color: #06140e; font-weight: 700;
+    }
+    .skip-link:focus { top: 1rem; }
+    .site-header {
+      position: sticky; top: 0; z-index: 5;
+      background: rgba(16,17,20,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      width: min(1480px, 100%);
+      margin: auto; min-height: 68px; padding: 10px 28px;
+      display: flex; align-items: center; gap: 26px;
+    }
+    .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
+    .brand img { display: block; width: 112px; height: auto; }
+    .primary-nav { display: flex; align-items: center; gap: 20px; }
+    .primary-nav a, .account-actions a {
+      text-decoration: none; font-weight: 650; font-size: .94rem;
+    }
+    .primary-nav a:hover, .footer-links a:hover { color: var(--green); }
+    .search {
+      flex: 1; max-width: 480px; margin-left: auto; position: relative;
+    }
+    .search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+    .search input {
+      width: 100%; min-height: 42px; border: 1px solid #41444b;
+      border-radius: 8px; background: #1b1d22; color: var(--text);
+      padding: 9px 14px 9px 40px; font: inherit;
+    }
+    .search::before {
+      content: "⌕"; position: absolute; left: 14px; top: 5px;
+      color: var(--muted); font-size: 1.5rem; pointer-events: none;
+    }
+    .account-actions { display: flex; align-items: center; gap: 10px; }
+    .account-actions a { padding: 8px 15px; border-radius: 8px; }
+    .login { border: 1px solid #62656c; }
+    .join, .button-primary {
+      background: var(--green); color: #06140e !important;
+      font-weight: 750 !important;
+    }
+    .layout {
+      display: grid; grid-template-columns: 66px minmax(0, 1fr);
+      max-width: 1600px; margin: auto; min-height: calc(100vh - 68px);
+    }
+    .rail {
+      border-right: 1px solid var(--line); padding: 22px 10px;
+    }
+    .rail a {
+      display: grid; place-items: center; width: 42px; height: 42px;
+      margin: 0 auto 12px; color: var(--muted); border-radius: 10px;
+      text-decoration: none; font-size: 1.25rem;
+    }
+    .rail a:hover, .rail a[aria-current="page"] { color: var(--green); background: #202329; }
+    main { min-width: 0; padding: 30px clamp(18px, 3.1vw, 48px) 64px; }
+    .intro {
+      display: flex; justify-content: space-between; align-items: end;
+      gap: 24px; margin-bottom: 24px;
+    }
+    h1 { margin: 0 0 4px; font-size: clamp(1.75rem, 3vw, 2.3rem); letter-spacing: -.035em; }
+    .intro p { margin: 0; color: var(--muted); max-width: 660px; }
+    .create-links { display: flex; flex-wrap: wrap; gap: 9px; }
+    .create-links a {
+      border: 1px solid var(--line); border-radius: 8px;
+      padding: 9px 12px; font-size: .88rem; font-weight: 650;
+      text-decoration: none; white-space: nowrap; background: var(--panel);
+    }
+    .create-links a:hover { border-color: var(--green); color: var(--green); }
+    .topics {
+      display: flex; gap: 8px; overflow-x: auto; padding: 2px 1px 14px;
+      margin-bottom: 16px; scrollbar-width: thin;
+    }
+    .topics a {
+      flex: 0 0 auto; padding: 8px 13px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--panel); text-decoration: none;
+      color: #e6e7eb; font-size: .9rem;
+    }
+    .topics a:hover, .topics a[aria-current="page"] {
+      border-color: var(--green); color: var(--green);
+    }
+    .section-heading {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin: 16px 0 15px;
+    }
+    .section-heading h2 { margin: 0; font-size: 1.25rem; }
+    .section-heading a { color: var(--green); text-decoration: none; font-size: .9rem; }
+    .gallery {
+      columns: 5 210px; column-gap: 16px;
+    }
+    .art-card {
+      display: inline-block; width: 100%; margin: 0 0 16px;
+      overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--panel); break-inside: avoid;
+    }
+    .art-image { display: block; overflow: hidden; background: #25272d; }
+    .art-image img {
+      display: block; width: 100%; height: auto; max-height: 390px;
+      object-fit: cover; transition: transform .25s ease;
+    }
+    .art-image:hover img { transform: scale(1.025); }
+    .art-info { padding: 12px 13px 14px; }
+    .art-title {
+      display: block; margin-bottom: 5px; font-size: .98rem; font-weight: 700;
+      text-decoration: none; line-height: 1.35;
+    }
+    .art-title:hover { color: var(--green); }
+    .artist { color: var(--muted); font-size: .87rem; text-decoration: none; }
+    .artist:hover { color: var(--text); text-decoration: underline; }
+    .feature {
+      margin-top: 36px; padding: clamp(22px, 4vw, 38px);
+      border: 1px solid #3a3d44; border-radius: 16px;
+      background: linear-gradient(115deg, #1b2630 0%, #1b1b23 56%, #252031 100%);
+    }
+    .feature h2 { margin: 0 0 8px; font-size: clamp(1.4rem, 2.6vw, 2rem); }
+    .feature p { margin: 0 0 18px; color: #d1d3d9; max-width: 760px; }
+    .button-primary { display: inline-block; padding: 10px 17px; border-radius: 8px; text-decoration: none; }
+    .benefits { padding: 42px 0 10px; }
+    .benefits h2 { font-size: 1.55rem; margin: 0 0 20px; }
+    .benefit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .benefit {
+      border: 1px solid var(--line); border-radius: 12px; padding: 19px;
+      background: var(--panel);
+    }
+    .benefit h3 { margin: 0 0 7px; font-size: 1rem; }
+    .benefit p { margin: 0; color: var(--muted); font-size: .92rem; }
+    footer {
+      border-top: 1px solid var(--line); background: #0c0d10;
+      padding: 32px 24px 24px;
+    }
+    .footer-inner { max-width: 1400px; margin: auto; }
+    .footer-top { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+    .footer-brand { color: var(--muted); max-width: 390px; }
+    .footer-brand strong { display: block; margin-bottom: 8px; color: var(--text); font-size: 1.05rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px 22px; max-width: 620px; }
+    .footer-links a { color: var(--muted); font-size: .9rem; text-decoration: none; }
+    .copyright { color: #9599a3; font-size: .82rem; margin-top: 26px; }
+    @media (max-width: 900px) {
+      .header-inner { gap: 16px; padding-inline: 18px; }
+      .primary-nav { display: none; }
+      .layout { grid-template-columns: 54px minmax(0,1fr); }
+      main { padding-inline: 20px; }
+      .intro { align-items: start; flex-direction: column; }
+      .benefit-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery { columns: 4 190px; }
+    }
+    @media (max-width: 560px) {
+      .header-inner { min-height: 60px; gap: 12px; padding-inline: 12px; }
+      .brand img { width: 88px; }
+      .account-actions { gap: 3px; }
+      .account-actions a { padding: 7px 9px; font-size: .82rem; }
+      .search { max-width: none; }
+      .search input { min-height: 38px; padding-left: 34px; }
+      .layout { display: block; }
+      .rail { display: none; }
+      main { padding: 22px 14px 42px; }
+      .gallery { columns: 2; column-gap: 10px; }
+      .art-card { margin-bottom: 10px; border-radius: 9px; }
+      .art-info { padding: 9px; }
+      .art-title { font-size: .9rem; }
+      .artist { font-size: .8rem; }
+      .create-links a { font-size: .82rem; }
+      .benefit-grid { grid-template-columns: 1fr; }
+      footer { padding-inline: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to artwork</a>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="DeviantArt home" class="brand" href="https://www.deviantart.com/">
+<img alt="DeviantArt" src="https://st.deviantart.net/eclipse/promos/seasonal/halloween/logo-dark.png"/>
+</a>
+<nav aria-label="Main navigation" class="primary-nav">
+<a href="https://www.deviantart.com/shop">Shop</a>
+<a href="https://www.deviantart.com/studio/video">Create a video</a>
+</nav>
+<form action="https://www.deviantart.com/search" class="search" method="get" role="search">
+<label for="search-field">Search DeviantArt</label>
+<input id="search-field" name="q" placeholder="Search art and artists" type="search"/>
+</form>
+<div aria-label="Account" class="account-actions">
+<a class="login" href="https://www.deviantart.com/users/login">Log In</a>
+<a class="join" href="https://www.deviantart.com/join/">Join</a>
+</div>
+</div>
+</header>
+<div class="layout">
+<nav aria-label="Explore" class="rail">
+<a aria-current="page" aria-label="Home" href="https://www.deviantart.com/">⌂</a>
+<a aria-label="Daily Challenges" href="https://www.deviantart.com/dailychallenges">ϟ</a>
+<a aria-label="DreamUp" href="https://www.deviantart.com/dreamup">✦</a>
+</nav>
+<main id="main-content">
+<section aria-labelledby="home-title" class="intro">
+<div>
+<h1 id="home-title">Home</h1>
+<p>DeviantArt is where art and community thrive. Explore over 650 million pieces of art while connecting to fellow artists and art enthusiasts.</p>
+</div>
+<nav aria-label="Create and sell" class="create-links">
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_submit&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fstudio%3Fnew%3D1&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">＋ Submit Your Art</a>
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_du&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fdreamup&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">✦ Create AI Art</a>
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_vc&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fstudio%2Fvideo&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">▷ Try Video Creator</a>
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_sell&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fshop%2Fsell&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">Sell Your Art</a>
+</nav>
+</section>
+<nav aria-label="Browse art by topic" class="topics">
+<a aria-current="page" href="https://www.deviantart.com/">All</a>
+<a href="https://www.deviantart.com/tag/imp">Imp</a>
+<a href="https://www.deviantart.com/tag/digitalart">Digital Art</a>
+<a href="https://www.deviantart.com/tag/fanart">Fan Art</a>
+<a href="https://www.deviantart.com/tag/photography">Photography</a>
+<a href="https://www.deviantart.com/tag/fantasyart">Fantasy</a>
+<a href="https://www.deviantart.com/tag/anime">Anime and Manga</a>
+<a href="https://www.deviantart.com/tag/cosplay">Cosplay</a>
+<a href="https://www.deviantart.com/tag/adoptable">Adoptables</a>
+<a href="https://www.deviantart.com/tag/characterdesign">Character Design</a>
+<a href="https://www.deviantart.com/tag/comic">Comics</a>
+<a href="https://www.deviantart.com/tag/conceptart">Concept Art</a>
+<a href="https://www.deviantart.com/tag/game">Game Art</a>
+<a href="https://www.deviantart.com/tag/scifi">Science Fiction</a>
+<a href="https://www.deviantart.com/tag/superhero">Superheroes</a>
+<a href="https://www.deviantart.com/tag/traditionalart">Traditional Art</a>
+<a href="https://www.deviantart.com/tag/3d">3D Art</a>
+</nav>
+<section aria-labelledby="artwork-heading">
+<div class="section-heading">
+<h2 id="artwork-heading">Art to discover</h2>
+<a href="https://www.deviantart.com/tag/digitalart">Explore topics →</a>
+</div>
+<div class="gallery">
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/ericklopezfoto/art/Xy8a6314-1010795089">
+<img alt="Xy8a6314" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/facffb06-b43d-49be-93cb-34dfee0c4f01/dgpsuhd-d31b90d1-fd87-4705-9215-13116c19705e.jpg/v1/fit/w_375,h_250,q_70,strp/xy8a6314_by_ericklopezfoto_dgpsuhd-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6Ii9mL2ZhY2ZmYjA2LWI0M2QtNDliZS05M2NiLTM0ZGZlZTBjNGYwMS9kZ3BzdWhkLWQzMWI5MGQxLWZkODctNDcwNS05MjE1LTEzMTE2YzE5NzA1ZS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kZ1G6Tk-QLjUuPYJv7j8EeRyOHX2lJJj3K2mNqc3JP4"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/ericklopezfoto/art/Xy8a6314-1010795089">Xy8a6314</a><a class="artist" href="https://www.deviantart.com/ericklopezfoto">by ErickLopezFoto</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/skekla/art/DRUID-BEAR--Commission-1380413312">
+<img alt="DRUID BEAR- Commission" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22f0ea7d-253e-4899-9dc2-84c5430cc205/dmtv1q8-09130e1f-7682-46b6-b54d-6152c8894266.jpg/v1/fill/w_179,h_250,q_70,strp/druid_bear_commission_by_skekla_dmtv1q8-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJwYXRoIjoiL2YvMjJmMGVhN2QtMjUzZS00ODk5LTlkYzItODRjNTQzMGNjMjA1L2RtdHYxcTgtMDkxMzBlMWYtNzY4Mi00NmI2LWI1NGQtNjE1MmM4ODk0MjY2LmpwZyIsImhlaWdodCI6Ijw9MTI1NyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzIyZjBlYTdkLTI1M2UtNDg5OS05ZGMyLTg0YzU0MzBjYzIwNS9za2VrbGEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.qr0YZJ8cKtHw53WI7foPGWxiWoAMbMAIFF3weAczUTo"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/skekla/art/DRUID-BEAR--Commission-1380413312">DRUID BEAR- Commission</a><a class="artist" href="https://www.deviantart.com/skekla">by SkekLa</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/jemgirl/art/Poolside-Tile-1384279921">
+<img alt="Poolside Tile" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c4755ee-1fe8-4d7a-a844-0d8afbed122b/dmw5x81-5b47c3d5-c2c0-4f70-820a-dc57bc92f40a.jpg/v1/fill/w_333,h_250,q_70,strp/poolside_tile_by_jemgirl_dmw5x81-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJoZWlnaHQiOiI8PTkwMCIsInBhdGgiOiIvZi82YzQ3NTVlZS0xZmU4LTRkN2EtYTg0NC0wZDhhZmJlZDEyMmIvZG13NXg4MS01YjQ3YzNkNS1jMmMwLTRmNzAtODIwYS1kYzU3YmM5MmY0MGEuanBnIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.PFZ0RruNSd8b2JcvWJCk33EMbnQawIKVEXZieroqlxE"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/jemgirl/art/Poolside-Tile-1384279921">Poolside Tile</a><a class="artist" href="https://www.deviantart.com/jemgirl">by jemgirl</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/shakhbatadesign/art/Gateway-to-the-Mind-%7C-Surreal-Dimensional-Portal-1371220683">
+<img alt="Gateway to the Mind | Surreal Dimensional Portal" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9972d5e5-03fd-43a2-9e34-3013e950b6ec/dmoe0nf-1b526e4d-57b9-4648-b917-67877e6c070c.png/v1/crop/w_166,h_250,x_0,y_0,scl_0.16324535679374,q_70,strp/gateway_to_the_mind_surreal_dimensional_portal_by_shakhbatadesign_dmoe0nf-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJwYXRoIjoiL2YvOTk3MmQ1ZTUtMDNmZC00M2EyLTllMzQtMzAxM2U5NTBiNmVjL2Rtb2UwbmYtMWI1MjZlNGQtNTdiOS00NjQ4LWI5MTctNjc4NzdlNmMwNzBjLnBuZyIsImhlaWdodCI6Ijw9MTM1MyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzk5NzJkNWU1LTAzZmQtNDNhMi05ZTM0LTMwMTNlOTUwYjZlYy9zaGFraGJhdGFkZXNpZ24tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.fIiJxGHgTNktUwX6dtzzywyMGF7lSNqdOa7PU-Nj6mI"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/shakhbatadesign/art/Gateway-to-the-Mind-%7C-Surreal-Dimensional-Portal-1371220683">Gateway to the Mind | Surreal Dimensional Portal</a><a class="artist" href="https://www.deviantart.com/shakhbatadesign">by ShakhbataDesign</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/allisonchinart/art/Coral-Tower-1385651169">
+<img alt="Coral Tower" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0dce719a-cfab-4cbd-b5f0-6305626028e6/dmwzba9-d4b67e79-a197-4a4b-a05d-a92b2ecbdd58.png/v1/fill/w_200,h_250/coral_tower_by_allisonchinart_dmwzba9-250t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJoZWlnaHQiOiI8PTEzNTAiLCJwYXRoIjoiL2YvMGRjZTcxOWEtY2ZhYi00Y2JkLWI1ZjAtNjMwNTYyNjAyOGU2L2Rtd3piYTktZDRiNjdlNzktYTE5Ny00YTRiLWEwNWQtYTkyYjJlY2JkZDU4LnBuZyIsIndpZHRoIjoiPD0xMDgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.KKlflXrWGEfH59zmm1nEEiTyDYh5tNxd_4EiSV70rM4"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/allisonchinart/art/Coral-Tower-1385651169">Coral Tower</a><a class="artist" href="https://www.deviantart.com/allisonchinart">by allisonchinart</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/akemidl/art/Fish-Rain-1384204642">
+<img alt="Fish Rain" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f8c16bf2-be70-4543-8500-04d2f6d10f4e/dmw4b4y-5a8e687a-b6d9-4c4d-a352-4dbf3a2a5e34.png/v1/fill/w_279,h_350,q_70,strp/fish_rain_by_akemidl_dmw4b4y-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJoZWlnaHQiOiI8PTE2MDQiLCJwYXRoIjoiL2YvZjhjMTZiZjItYmU3MC00NTQzLTg1MDAtMDRkMmY2ZDEwZjRlL2RtdzRiNHktNWE4ZTY4N2EtYjZkOS00YzRkLWEzNTItNGRiZjNhMmE1ZTM0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifQ.vqF6pC7zaAKb57uiVfnEKFUZzM_tTt8er-SBB5J5nx8"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/akemidl/art/Fish-Rain-1384204642">Fish Rain</a><a class="artist" href="https://www.deviantart.com/akemidl">by AkemiDL</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/memuii/art/Making-Of-Winter-Night-1387179958">
+<img alt="Making Of Winter Night" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b5c2d1f6-c608-4b48-a94d-9333e8807e96/dmxw2wm-bc59efbd-264c-4a0a-870f-aff23ad4b3b5.png/v1/fit/w_300,h_900/making_of_winter_night_by_memuii_dmxw2wm-300w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJoZWlnaHQiOiI8PTEwNzA3IiwicGF0aCI6Ii9mL2I1YzJkMWY2LWM2MDgtNGI0OC1hOTRkLTkzMzNlODgwN2U5Ni9kbXh3MndtLWJjNTllZmJkLTI2NGMtNGEwYS04NzBmLWFmZjIzYWQ0YjNiNS5wbmciLCJ3aWR0aCI6Ijw9MjIwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIn19.hNEgxLXoUHd-DfIFgQoG5pVYmdNlspU7HcPVIsHkuGc"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/memuii/art/Making-Of-Winter-Night-1387179958">Making Of Winter Night</a><a class="artist" href="https://www.deviantart.com/memuii">by Memuii</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/shiroku96/art/Betta---Recoloured-2026-1387327264">
+<img alt="Betta - Recoloured 2026" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bb995442-f106-40c5-b9ec-57c0881b0c8f/dmxz8kg-afcec1a7-8b31-4b14-9921-dd581094b51d.jpg/v1/crop/w_262,h_350,x_0,y_0,scl_0.15720263000598,q_70,strp/betta_recoloured_2026_by_shiroku96_dmxz8kg-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJoZWlnaHQiOiI8PTE3MDciLCJwYXRoIjoiL2YvYmI5OTU0NDItZjEwNi00MGM1LWI5ZWMtNTdjMDg4MWIwYzhmL2RteHo4a2ctYWZjZWMxYTctOGIzMS00YjE0LTk5MjEtZGQ1ODEwOTRiNTFkLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifQ.Dfbl0A-xlDXNhqAlxEoxngap2I_qYAJRkMnlGSf51Q0"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/shiroku96/art/Betta---Recoloured-2026-1387327264">Betta - Recoloured 2026</a><a class="artist" href="https://www.deviantart.com/shiroku96">by Shiroku96</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/vielo/art/The-crow-1383483860">
+<img alt="The crow" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be29865a-f070-4fc4-b9f8-91f0a1d2ab18/dmvouz8-1c0cca60-eb41-4897-932c-f6dffeacb1de.jpg/v1/fit/w_414,h_293,q_70,strp/the_crow_by_vielo_dmvouz8-414w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJwYXRoIjoiL2YvYmUyOTg2NWEtZjA3MC00ZmM0LWI5ZjgtOTFmMGExZDJhYjE4L2Rtdm91ejgtMWMwY2NhNjAtZWI0MS00ODk3LTkzMmMtZjZkZmZlYWNiMWRlLmpwZyIsImhlaWdodCI6Ijw9OTA1Iiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtL2JlMjk4NjVhLWYwNzAtNGZjNC1iOWY4LTkxZjBhMWQyYWIxOC92aWVsby00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.__CEFqzI8ikjSp_E4pEc83IPFMoA1rceDGdRjtB56wk"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/vielo/art/The-crow-1383483860">The crow</a><a class="artist" href="https://www.deviantart.com/vielo">by Vielo</a></div>
+</article>
+<article class="art-card">
+<a class="art-image" href="https://www.deviantart.com/inkgladiator/art/Pieberry---Witch-Spring-R-1011004883">
+<img alt="Pieberry - Witch Spring R" loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/365378ff-c8e4-467c-b14d-aaf8ce1f6c10/dgpxccz-6f7d6e66-cd18-40a0-9127-1d6b1dc4c15b.png/v1/fill/w_295,h_350/pieberry_witch_spring_r_by_inkgladiator_dgpxccz-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2FpIjpbeyJoZWlnaHQiOiI8PTUxMzEiLCJwYXRoIjoiL2YvMzY1Mzc4ZmYtYzhlNC00NjdjLWIxNGQtYWFmOGNlMWY2YzEwL2RncHhjY3otNmY3ZDZlNjYtY2QxOC00MGEwLTkxMjctMWQ2YjFkYzRjMTViLnBuZyIsIndpZHRoIjoiPD00MzIwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifQ.VwYhrhD2AO2A_5Gcj2q4t4GqAC91nM3MlsMJAtCcn9Q"/>
+</a>
+<div class="art-info"><a class="art-title" href="https://www.deviantart.com/inkgladiator/art/Pieberry---Witch-Spring-R-1011004883">Pieberry - Witch Spring R</a><a class="artist" href="https://www.deviantart.com/inkgladiator">by InkGladiator</a></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="join-heading" class="feature">
+<h2 id="join-heading">There’s so much more art to discover.</h2>
+<p>Join the world’s biggest online art community and connect with artists and art lovers from around the world.</p>
+<a class="button-primary" href="https://www.deviantart.com/join/?joinpoint=browse_anon_pagination_blocker&amp;referer=http%3A%2F%2Fwww.deviantart.com%2F">Join DeviantArt</a>
+</section>
+<section aria-labelledby="benefits-heading" class="benefits">
+<h2 id="benefits-heading">A community for creativity</h2>
+<div class="benefit-grid">
+<article class="benefit"><h3>Share your art</h3><p>Upload your works, get feedback, and get discovered in the world's largest creative gallery.</p></article>
+<article class="benefit"><h3>Browse unlimited art</h3><p>Follow artists, save the work that inspires you, and discover new favorites through recommendations built around your taste.</p></article>
+<article class="benefit"><h3>Find your people</h3><p>Join groups, dive into fandoms, and connect with artists who love what you love.</p></article>
+<article class="benefit"><h3>Draw right in your browser</h3><p>Your new favorite online drawing tool is right in your browser with DeviantArt Draw.</p></article>
+<article class="benefit"><h3>Create AI images and video</h3><p>Use DreamUp and the Video Creator to brainstorm, experiment, and bring your ideas to life with an AI assistant.</p></article>
+<article class="benefit"><h3>Earn from your art</h3><p>Turn your passion into profit by offering subscriptions, exclusive downloads, and more.</p></article>
+</div>
+</section>
+</main>
+</div>
+<footer>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<strong>DeviantArt</strong>
+          Founded in 2000, DeviantArt is the largest online community for artists and art lovers, with over 100 million registered members and over 650 million pieces of art.
+        </div>
+<nav aria-label="Footer" class="footer-links">
+<a href="https://www.deviantart.com/about">About</a>
+<a href="https://www.deviantartsupport.com/en/article/how-do-i-contact-deviantart">Contact</a>
+<a href="https://www.deviantart.com/core-membership">Core Membership</a>
+<a href="https://www.deviantart.com/shop/sell">Sell Your Art</a>
+<a href="https://www.deviantart.com/developers">Developers</a>
+<a href="https://deviantartads.com">Advertise</a>
+<a href="https://www.deviantartsupport.com/en/">Help Center</a>
+<a href="https://www.deviantart.com/about/policy/service">Terms of Service</a>
+<a href="https://www.deviantart.com/about/policy/copyright/">Copyright Policy</a>
+<a href="https://www.deviantart.com/about/policy/privacy">Privacy Policy</a>
+<a href="https://www.deviantart.com/about/policy/etiquette">Etiquette</a>
+<a href="https://www.deviantart.com/community">Community</a>
+</nav>
+</div>
+<p class="copyright">© 2026 DeviantArt · All rights reserved</p>
+</div>
+</footer>
+</body>
+</html>

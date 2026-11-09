@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible article cards and footer information, including subscription, social links, navigation, and locale, are retained. No material core content is missing.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged. The small vertical position differences between the reference and target are harmless local layout changes.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible subscription field and registration button, social icons, footer links, and locale control remain identifiable; no essential visible control has an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding portions of the same page and form a coherent comparison. The target views are consistent with one another.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The Spanish article and footer text, labels, and recognizable icons retain coherent meaning for the page.\"}}",
+        "refusal": null,
+        "reasoning": "**Comparing output elements**\n\nI need to generate output in JSON format. I\u2019m looking at two near-identical outputs and comparing them. The target has minor vertical shifts; the footer elements are the same, with differences in the footer's top position\u2014y637 versus target y629. The content positions vary by about 7-10 pixels, and the target shows slight vertical differences due to offsets. I want to ensure everything is coherent. I need to mention that 3 frames show the same state\u2014so all criteria are met.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Comparing output elements**\n\nI need to generate output in JSON format. I\u2019m looking at two near-identical outputs and comparing them. The target has minor vertical shifts; the footer elements are the same, with differences in the footer's top position\u2014y637 versus target y629. The content positions vary by about 7-10 pixels, and the target shows slight vertical differences due to offsets. I want to ensure everything is coherent. I need to mention that 3 frames show the same state\u2014so all criteria are met.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B6nTOO-dDPaLTMADmvPpk6xtAzlwrkrcPN9R2DjsDePYzXpaiqt_uvs1_vD6mtpqho6jhUXzPa8Md0JBo_v87IjEKyPR2LWorRtIsptEltv7cMyucxTCMJPfQev-p_Lnzp0PVX7KKp0o7z9eHFSKuaALl9QdCQpg7hQnxroN7dYEGYItMCzBoTKWkIBy8l8T8gJdjahbmyuVqg_KQ-EM1j-cTLGKclxyuHOR3kTMR_jfH6adufZFiqebQJ8HTvLVPL0GHJSI1LKp91JUGCpxZHm3szkcFa89uEkOKePm1wiE6WpnA0xAwRxA_2OOaQ1y9-Gs7xsjJsnDniBbKI3pHQ7bM03-tP13jPwdDEEFx73VYj1lUDWOLQBG7s5IzzQEYRBmI65TLv6zMgz4rECwMtkNZ87c_C-m8E2xOBelKL551EqEwRrPw_TWrK4u3081IZ93_HcfvT3TfkefdOix5gPWl0zfZ2Qq7qeQbEdP45FuBvnMY4EESmhxSOtn4rrNIJk4LyUtujb7ThtbDpbB5uX9gp0_-NpIQsJN1xKktlnAx3gbuw_PvGBRMODD4EOi3ZNYii26WI7biX1mHY9Mr17GTDy8XBmEVP6_0o6G-eLpDwBGahtuoXLpw8jdHytEOJb2PKAPeDb8riNm3ED0UkTpW19gZGsXVq5G5WFgxdV4hlyvcBEkkoPEOgDpjj_VxBi1CaOOdTofdmI9O1-y8NB7tU1eKRutDftPc7PlBRTxYLan70MFe4etZwoJ-dUrG2IMqxyDvqnNAZoR2nDsp9Q255t4uIxM1jQTCkn92G2j4itTVKWqwDF3XQ6v5-kjJQNTAFRySGag6tI6Pzx5iLWVCfl9Dj-D8uKAYeevePYvw-G2HMZNgV9gt9jfGbK-OO4PiqLkKYmc3ObWWAuaF6KWwLhsTivHpBf23ssSyMdoW8vxqb0TA3oLncZ3-0yLeY3GQIVsRrO2K_9KohogOkLtjPGmhcxLR_FmL1idgR7D1vNqa-RWsPcHOzqnegOy5GR64Y5ZfaJ0e1W1Yv7mMXaBWBRxayFSqmSC70I4Xgj4DotYo2W8Gu-JynNMadWNMnC4y8YKJM0hIWjFfzCn42Y9Z08V9LYDII_7JaCClvZ9HfwZ76KgIr4XCBM2IfaI3Xwr3RolKxaRm7OsDpmaGTSvX85NsXKHe-1KMMtEf1cv_B7_HJjwRabBFRwUteWpR7Y2OuKH1Y5AY8F-aLtCWywqM0T78YH4nlIQFFW_RErGPV2U4-h6kgDaPR2tU32P6ILEgS7G3hATFSp60wS5F7LVQ05M59toJFb_pEbaRgeXkxo7vgwqkaZD4GycaJgew6nyZbGeCJvVp6ulBpwxASmKLhYDviXJh2YModD3OLlx6Y3WgqY69PAvNNuqqjM64cIhv4xUttQvw2f3osat1xaqiyJZHLnsLaABt_TI-_wvgL5wtLhzDaGdaWM11cpCf10hWPlvroPMmcPDiZmuFwedyB389sobZLqUPKE0xC0xXpQGqke_SVahXMnpyC9pAOelB1KGopA0PcF0VQ6dnQbfhyX2byQFnj5TavMqo9V1MyR_BG48J7icm03hCL73RASPRqQJStAuBFxljI58YPpF7GBCdBq0WoTAjWDT12ZM2eI_f974vER_tB8A63pSjuuOKkndEjqkE5Z3EIcKWHmgYiXXMsfrVlWBPRuiHaxWY0qyx6bqpkfSkD31PsIcH1JLpuHIXpDM5o94P84U819NBolFrRf-gQVNESYy5uyVPCK0JExKzXP37uoq3aPU0N11pF4R6rvFmXSFIqfC9x2YVaM7QwJtly1sg1UNfAqTElX0vvJRw13yPyyemtc1aXEmPjV1J6R3uFJml48LUoqThfVLYKNIhDq9x6KNWreZb5xT1x0gd9ig6Q4wVkB4gakrdCPldrEV2TN2iUdFA0pQwiQtA-HsUdpdKN9A-6XQoSsOOpVmSS0b4N8cQwZlNM_hHuswTmvFkg-KxDeTpEKYnI20t0RsrX1QAHlXQhOOVTKooNf1v11SUrywbZAOcyzsukvh8Hih4TijxxNFuo41AqT6AyFZy907xHP6SoNxlvNecL-hyipVnPujs-oHs982WGbOAh6PAyOgRAOjo_lidZ6HB3GoXLI3L-oPY8ZdA8yVmmp1r6pa9nbSVLVbu-4GEvCd-vM5K3MLFB_XrjMbrH_dIWx_16D5f1Mw7Of-KIdwu7-egpx-i1RYYqC9aEA50kokv05go6WAi2v75oTmXuAon15WAJxAYFOpJ1D4yzlOgJhP7Eg8OGxSXxjJqm-rfiWVfoPaSkq-Od7sl4CNsPEeKbJah_OCR-7KL_PJBOUUvCpQhZXV5sKlUGHqe6AC3V2bm5vJnhJKUO5S8XwNUoynFTPKA2kX7mWgptQVTG-D9knV1AkvpDvv98RM-i5H1zfmhDfpOtfhqMuL8gl9A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c41e0ea969d59b7016ae81ea55ed487d19e30c9321ce95292",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8074,
+    "completion_tokens": 270,
+    "total_tokens": 8344,
+    "cost": 0.001144175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8071,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001144175,
+      "upstream_inference_prompt_cost": 0.001009175,
+      "upstream_inference_completions_cost": 0.000135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

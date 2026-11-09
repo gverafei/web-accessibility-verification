@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent automotive news, owner reviews, travel stories, and site links. The layout and selection differ from the reference, but the target remains meaningful for the broad automotive-page purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cards, labels, and footer content are legible and arranged in a usable layout. Cropping at the viewport edges is consistent with the recorded scroll position.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and content links have understandable text labels. No essential visible control appears obscured or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference are coherent views of an automotive site, and the observed layout/content differences are compatible with regeneration.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, card titles, reviews, travel stories, and footer links convey understandable meaning consistent with the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content coherence**\n\nI need to assess the target region, focusing on lower page cards and the reviews/travel footer. The content should be coherent and readable, especially for the regenerated Drom auto page. I\u2019ll pay attention to controls and links, assessing any differences as long as they maintain coherence.\n\nIt's vital to have semantic adequacy and ensure I have an exact JSON format. I\u2019ve noted that some images in the target content might get cut off at the top card due to viewport boundaries, but that seems normal. I'll also make sure the footer meets requirements.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content coherence**\n\nI need to assess the target region, focusing on lower page cards and the reviews/travel footer. The content should be coherent and readable, especially for the regenerated Drom auto page. I\u2019ll pay attention to controls and links, assessing any differences as long as they maintain coherence.\n\nIt's vital to have semantic adequacy and ensure I have an exact JSON format. I\u2019ve noted that some images in the target content might get cut off at the top card due to viewport boundaries, but that seems normal. I'll also make sure the footer meets requirements.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B5Oqghw-MuvhQOiDe4wqmuw4aKtNsYdH8ScGD2XDsQROSX3G1YM28GHwUvBCxeZEmpJt3_7XY_XJR34RMZ9q4O-EHV1vzEpFFZS95Jr7C-dzqeojMThu_2PirSRS9lU_RcmcjK5wP_lIMFu8aYSBZtDAPvVje-Wodiwj-0WxYff3H0amx5wDc3n-2q2tTUSDIKCEIRqfwRYMvRN0W-3j1g7VuchRxFItg-RQVZdZZZDlQJx8QXgER1LG_gMaBnXIz8RfFPg3VQ1co_EJHvbGqMmlmsyTN4NI47i5x4fkVatSj7Hf8fLLV-ddL8Azq_8iAWnmyLmEZNFBUTQQnQDmXpsdPmcylkfy7xDS27bca37aUkhXV10AYGCYe9fCc-DVpR16xx23I9J5QR3dzW5ZhBzIDQdNsp8wPEY4bM7LZFRTtX4qclsr41mMXkrOToEa_j3k_ijOxz-6ex8IzPQXaFcIYsE6267ZtmRpqA1gqQJvaG_yo_dL-cRI0JhPOULuDCUV9DHwaxPraV1VFhl8_hLG3TfuVtYkhtWQ8zUH8jsKTkhoMmjyUbeTiN5q54pRzqGuyvXwmML2eZhcaLMR7E0j3mz_Sgr-qG53h7ZohrS-AOMgAUi-a1eDvc9nt8mFRipcR7TCWzz_ITmgJdDTVTgtcidvv_cDKLxZH8Fe094RWxglKeK9M3LFEeHUtufoscC-YRw6thkcbEE6iVlDZwUczy-cenvwd0u4n6zYuFvIk4KzYzarguvt3CrFOw_fi9BJBWM1cvOOtNsdxKJdXeMYQJLCDE41kHVoZ5gQ4npLDyC4JcaAVHdeilen-M3uHYNsXmFu7p6qLNzTnj0HokmeXHzOC2fhv8v74XrElCQuhRM5JsVJ9nDqyQ5i6eUd9U_MmXj-IzvVfqQiO1iluoA5NUfojv5xotd8xTFH1__uTgBAjuJ-JrcfEfFFBY_NP0kplKm-NHm2bZWquFEaEqw349Y67TlhwO18cgHcI15-sOwjaynL1Tw35R-o8BrQsOiNlPfphvt7bu8U4Y8FRAVWJ19WR3KmFQwXqL7Qt5km_RnaTkmxo6_IjJyBOBN1W4MPgeJZ5YCGPJExSKz3d9mQu8Gey6R18gYa793Jjy98rdcmKmBvQYkzBpv6-SqLThBNd6BbZ-j5_IxnbLS5mB0sa5Slo9rV4md4yQZtN3A7WyKhB-_FmEY67jNe3qtQcP4z8uOXAi-P0wghSTmuH3Ww848tDIFYnJzXK4J97ccnPcGcFf7nYZJoFw26x3bLQwmaRNIokBtZGVo7x_qlpx96wTc5QhJ2dyC7RHDTnsrSFY0cROX1qY0p_eSodkX_zrdfLsmrdzABCcFJ9GucgHjVmMTTlo1IjJ3YyKiUMJiWAYqi5iKOzRPkCrHabO0Y8lRbFFrucsL3Ncw6s92dtnpb-j_Qhg3rYa1LPziwYI-ATgS9juaD61GaBQ7ClPkMy68jfijC-7NPAvSOTsgUG5NpKP4Bz6Wy-3HJsOrxwMmTxGRo0jfhnwE5AStSQ4eZTscSRz0F6O12FitffKFT6xSQci4P21BR6AsrDP3VyV49uPr588NKsIGAKYK1P4o9_GZgksKZhlIuL_VELlzDtmNFGKQJ47f3QvnDfJfOnPBzc2QiKxq_yCtvMeZ5R6ayoCFzOd63-5hAXS83nVCnQWvCybQfW7ZDwbCWoteZSoTy396l-CAoca37UZoy8OHhw-JG8tyCq4QcRTVC4-jTCRdD3pBNPpgKCOypTDeuUwn914XDsLBJHwGcqlmLWzM8jInjNS69lf7Q8CERq2jTXfKFeZzAR94yl-BcAT8-b_1AP5DWTtZgIZD9Fx4x8NYeLesif1AK_fdIu_vI8uDHZruvUEIsCUdscO2Pe60OE3Tt45tHDZ2e4Nl-RAkVD4u8L-8CzIC4YgfIBsRkXFhQ6QVQqq9reZRnoVzezhx2BeT0u-3ElLCI_JKaGcZ8kY7toKWtEZQLic19gF9VDAr4qvFrEF4gXPWDL7ORefD6VAUy_-n_PoqsDsUlHrLoWqWg2KHqiJLDFgdJt-Aq7oZASuzVjUz6SqykpZmzJXpMIyUXtz0sAK7yVrx0cGI0-g2duokir2EvSCIQe8PmiS50P0Dl0-TFiAnPR7X1CUKWwz9hyIsy6bwVN0uQQGSdPpVfq_wzIhAjsgcvnCgj9H25YMLGMYEpVYENJNk4I1gQmFk0XVYPmiCkCNkeMP1TmP20N90Sy_MLXSvHzk1VjMVWxHXY5YDc5fPpI4cnohbAEwfftPBKhYrXy8Jer0f_7DC6lCYO3pelWHczW-V0jyXzbRo4BBUFqBOKGuGzZGqPKvlYr_Bp3Qx4beLWv5QefVBJFbxPDD2WKywBZad3svIPdain4KUCqwERlx2LoCUtwr7EI9wOuN9MVUXNLMIWZTY5vQn5SzFP2PIUyNWmVPJzS3zhRQTPddstFWWpEDswZSx08lL7XhqI_VL-J6TbnuuQXeI.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0228657419728829016ae81e4c51dc87d18ecaed67d52cac5a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8423,
+    "completion_tokens": 332,
+    "total_tokens": 8755,
+    "cost": 0.0012188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8420,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012188,
+      "upstream_inference_prompt_cost": 0.0010528,
+      "upstream_inference_completions_cost": 0.000166
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent news sections and article cards, followed by a TIME Games area. Its content serves the broad news-and-content purpose; it need not reproduce the reference\u2019s specific stories or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible article imagery, headlines, bylines, and game cards are clearly arranged and legible. The viewport cuts through content normally, without substantial overlap or unreadable material.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible section links and game actions have understandable labels such as \u201cMore AI stories,\u201d \u201cAll games,\u201d and \u201cPlay now.\u201d No essential visible control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied states form a coherent reference-and-regenerated-target comparison. Their differing page content and layouts are permitted under the contract.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s article titles, bylines, section headings, imagery, and game descriptions communicate coherent meaning for a news and media homepage.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing target images**\n\nI need to evaluate the lower region of the target images. The controls, like \"Play now,\" should be easy to understand. I also want to make sure the headlines and other references correspond clearly to different locations, especially for the regenerated homepage news. It's important to note that the second target image has cropped cards at the bottom, but the controls are visible without defects. Additionally, I'll check that the games' labels and card images contain text, so everything is fine to format in JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing target images**\n\nI need to evaluate the lower region of the target images. The controls, like \"Play now,\" should be easy to understand. I also want to make sure the headlines and other references correspond clearly to different locations, especially for the regenerated homepage news. It's important to note that the second target image has cropped cards at the bottom, but the controls are visible without defects. Additionally, I'll check that the games' labels and card images contain text, so everything is fine to format in JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B4Yur86NXNERIJNRG_9VA5RFqpmgjrFSVgSdbdR2UOa7AwUzBXfw6qLj9V5a9EB8KfUegYe-oS7dYfuoLP9xSLBjxXsP-21T16aEnnwdXP4pcK2bnsX7JvxWiQtLLroxyTI8Vqa8CqbKefsgafEIFEu6RqFF4UtGw62vEGtEhYfzbtjQ-Qz1UZteDSYzRBJ-BAaLyDJ6qAerhloQDuLWhxRbt7Y1KyStKEUDY9X5X4jtNIylDRi1DLWx6I1IKHIXJ3KTy6U3v-XTouD6MhvDYTZ9U_ociTFObeopHOOdTTbsrFY4xKCkmifYP7ILp-pVbKscYqlP8t99wVGIvAizl07jD6uSnsG02n9RVN9yB2cFN-VIzysQNcV9-IxDtcZCv52TenAaLpbnjkB-Fsra7xmlR2FT9w9TUk09e84LqhxV5GkiX7Mfolg22mYOrf7erxJrOGdeGmm6WTqZUZc-N9ButQyI5v7q9a2ftudec0D5hEwLfIOsdbNgfJX155RuNGe5ZRS0x1_etCAU55Eh3YtAIAserHg9LH_pwCQWu8ac3URv9y5LT8eH--pPndBI7rbRiVD-ez2zAByLiDRllmI_g2ta_bZOz1PM91-4O8DKK6qf1tvZULL_JMGZmLiaJnp4YpBOG_i6qpnoAFf9-WPe5x9h3lvRq-5gF99hx9Rgstp3_FzNlIyzS-PtUfAF6-aUji1n5MpJXNeFVvcf79rrohgHJ2oXIytVZJjHoV357s4N9-0kPKB3l2sYPZ5a39w5TmNd2oq_B9jkJM7wBGlF-BfxR5jLDQalHZ8ii62U4USCT8AFVsxtJGh9eVLysLTbn9CzSRcVUSpJ4CbhMgweDlH_4KYT9mzqyGBIkx2GeMTzg73h5e_Ch0vuy6FxJLW7XbjdzAay0id3JSDp8NYpqLziUzvrR0aLOogaOQLMab2Il6IPxqtOUr2dFmUuqfGWFhZC63_BtzQ6doxBmPMWwRvUItzZ9DkEgkJXxu_nHwUtj1IAhmnOJczZ86a1h4CtdA5EnjXRUvLTSSwReb_H5QaMBRfsQremU_j3sF9E4sF7I69AhkMND132P-ecJdg7RpOkjC9wXMDWVPjgtMoqUJr5246hEWZQ1xCZhuv_Dn48zAS4kONYRr6sx6iLZFXkftS7qe7Vw3HBK1MZGnr5zwNh5caPeEDBPWpaIaMA1cP70l4BnTYxSDn9uJJb12Us0pwR6BukycONKHSl8b5zexI-RQF4vNjYRwlZu10W99CuQ3NQvk7viL5Z3pWeIpnitDG72ULjhYAuJN3twZY_1mpjl6sZw3uRe41p_lwElzfQD3PmIHDyw4wnjWifAmPcygIrHOZsDI4kbs_dojDZDqZ8OKMn_DaZb5Zg43hNP07-MuPj9CK_1CyAsssnlB01aqZZcVc_CnH84h4SdciT1tSIgZUPYwu9VCmnPHnR2z5AeISxbBrvwCNKWhecBbafNElfw9pjSEZVkkiSiL95FyC0-2BDhna-RL-VqtJJ4wc3XRMh_3n54DUJUJ-Ul-lDbnMY3s67_mDn-BFmsuToopUBteO52Uxue1gLB-jUZBFgPaL8DVnjtG-rdkjlFySWNqKUjhfdfuYQFkHS_wHr6Rplc0Kt57pp2qq3ufu8PUYbmPT46SZtFbxAm5Wu9imrU1FLpacIc77tnpqb-EpynNUzc_cp4Kl6rJzRcximql-fI7p6ioEkPftzIzK9iHMQvVm_oDzOZvrMz3LqBqpHIDW_klUdasN15WsI93a5JbMAgY9uQVmHFdf4gJUiD9UyvYhpj5e01670enCvoN0ZN6TyPbg9BY56uqeKv-VCA9UaFJQOE4ktKW16z7b2dYxhAD1NdEV2Dm9cnHC8SAsU6Rx3LnujxUqNUlJM4OGfEaOpyzv4hUB-J6CtAo09OMgh7Ep4320eV2s64srTF40-lnRVgSo2cqx2JOcorrurltLxhpDiCgDQ-uyHxzYYyXvO6I50s0Vd0VANFYWpElR0NPVDf8_9_nL4kD4_jk0nOvszMu6GBkHeNQBPb6NdH-Y1w6G5uc8fDkvi3XudIlqJkQJynUjr_RYTvFXjJ84BzuvPvYix7yR6CigP5JT3raN_qMNfY-2PVY-o6G2ywNJJDHVCufaLYDWx-92cZUJ_MUlffvoXA6sEJQodjfSFQzLIIggr74NIoS_aQh_P3zvjrY9eqE2TPRzrkClAWYEK0wFmQNqEW0jBVRorMa1q9TwFBx24l4HFZN0rNSGayYzlPU8-eg1MCAdr7rnAe2qlJD_e2zYj7F4puc5THoP1Dk5UiMvDqwXPMpikUQbsATzRHWrEaTULLU6GYh4mgVFVgjlWnSkyt9OaMWlZ9A7WBjKBvM75DBZoOzfHbWcxU21TDrZUQCD_zpi_O0Rq9h0wsNhzs_YC0Y3PJ21smDWij8AACPabc56m4zsV5LAAUoLFksm1NvKfgLdeFF6RrSQF0FVz-4AO-9CKSHxAd5UKP36HlMx7BIfBhg18OQRuaGY0Ijf-WAFIhtdzqwhM0dEFliJBW6uBKv0Cpj3cD4GtqV8k9RkdSzlPmV1YQoGsK7pCw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0bfc2551fce2423f016ae81e16cd3c87d1a8f7fefbc23b6329",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14599,
+    "completion_tokens": 359,
+    "total_tokens": 14958,
+    "cost": 0.0020043,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14596,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020043,
+      "upstream_inference_prompt_cost": 0.0018248,
+      "upstream_inference_completions_cost": 0.0001795
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 72,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

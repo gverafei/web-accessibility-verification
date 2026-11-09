@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#fff" name="theme-color"/>
+<meta content="Descubre equipos TP-Link para conectar y cuidar tu hogar o negocio." name="description"/>
+<title>TP-Link México – Equipos de Red Wi-Fi para el hogar y empresas</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #202a31;
+      --muted: #52616b;
+      --blue: #087da5;
+      --blue-dark: #075b79;
+      --pale: #f3f8fa;
+      --line: #d8e1e5;
+      --page: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    a { color: var(--blue-dark); }
+    a:hover { color: #034963; }
+    :focus-visible { outline: 3px solid #e79b00; outline-offset: 3px; }
+    .skip {
+      position: absolute; left: 1rem; top: -5rem; z-index: 5;
+      padding: .75rem 1rem; background: white; border: 2px solid var(--blue);
+    }
+    .skip:focus { top: 1rem; }
+    .wrap { width: min(calc(100% - 2.5rem), var(--page)); margin-inline: auto; }
+    .utility { background: #25343c; color: #fff; font-size: .85rem; }
+    .utility .wrap { display: flex; justify-content: space-between; align-items: center; min-height: 40px; gap: 1rem; }
+    .brand-links, .utility-links, .main-nav, .social-links {
+      display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;
+    }
+    .utility a { color: #fff; text-decoration: none; }
+    .brand-links a { font-weight: 750; letter-spacing: .04em; }
+    header { border-bottom: 1px solid var(--line); }
+    .main-head { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 76px; }
+    .logo { color: var(--blue-dark); font-size: 1.65rem; font-weight: 800; text-decoration: none; letter-spacing: -.06em; }
+    .logo span { color: #23a9b5; }
+    .main-nav { gap: clamp(.8rem, 2vw, 2rem); }
+    .main-nav a { color: var(--ink); text-decoration: none; font-weight: 650; }
+    .search { display: flex; gap: .5rem; }
+    .search input {
+      width: 170px; min-width: 0; padding: .6rem .75rem;
+      border: 1px solid #87949b; border-radius: 5px; font: inherit;
+    }
+    button, .button {
+      border: 0; border-radius: 5px; padding: .68rem 1rem;
+      background: var(--blue); color: #fff; font: inherit; font-weight: 700;
+      text-decoration: none; cursor: pointer;
+    }
+    button:hover, .button:hover { background: var(--blue-dark); color: #fff; }
+    .hero {
+      background: #eff7fa;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-inner {
+      min-height: 390px; display: grid; grid-template-columns: 1fr 1.15fr;
+      align-items: center; gap: 2rem; padding-block: 2.5rem;
+    }
+    .eyebrow { color: var(--blue-dark); font-weight: 750; letter-spacing: .08em; text-transform: uppercase; font-size: .82rem; }
+    h1 { max-width: 560px; margin: .4rem 0 1rem; font-size: clamp(2.2rem, 4.5vw, 4rem); line-height: 1.08; letter-spacing: -.045em; }
+    .hero p { max-width: 500px; color: var(--muted); font-size: 1.12rem; }
+    .hero img { display: block; width: 100%; max-height: 330px; object-fit: cover; border-radius: 16px; }
+    section { padding-block: 4rem; }
+    .section-heading { margin-bottom: 1.5rem; }
+    h2 { margin: 0 0 .35rem; font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.2; letter-spacing: -.025em; }
+    .section-heading p { margin: 0; color: var(--muted); }
+    .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .category {
+      display: block; padding: 1.2rem; border: 1px solid var(--line); border-radius: 10px;
+      color: var(--ink); text-decoration: none; background: #fff;
+    }
+    .category:hover { border-color: var(--blue); box-shadow: 0 5px 18px #18384415; }
+    .category strong { display: block; font-size: 1.1rem; }
+    .category span { color: var(--muted); font-size: .94rem; }
+    .products { background: var(--pale); }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .product {
+      overflow: hidden; border: 1px solid var(--line); border-radius: 10px;
+      background: white; display: flex; flex-direction: column;
+    }
+    .product img { width: 100%; height: 190px; object-fit: contain; padding: 1rem; background: #fff; }
+    .product-copy { display: flex; flex: 1; flex-direction: column; padding: 1rem; }
+    .product h3 { margin: 0 0 .35rem; font-size: 1.12rem; }
+    .product p { margin: 0 0 1rem; color: var(--muted); font-size: .94rem; }
+    .product .button { margin-top: auto; align-self: flex-start; }
+    .latest-link { display: inline-block; margin-top: 1.5rem; font-weight: 700; }
+    .updates { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .article-list { margin: .75rem 0 0; padding-left: 1.25rem; }
+    .article-list li { padding: .45rem 0; }
+    .subscribe {
+      padding: 1.5rem; background: var(--pale); border: 1px solid var(--line); border-radius: 10px;
+    }
+    .subscribe p { color: var(--muted); }
+    .subscribe label { display: block; margin-bottom: .35rem; font-weight: 700; }
+    .subscribe-row { display: flex; gap: .6rem; }
+    .subscribe input {
+      flex: 1; min-width: 0; padding: .7rem .8rem; border: 1px solid #87949b;
+      border-radius: 5px; font: inherit;
+    }
+    footer { padding: 2.5rem 0; background: #202d34; color: #fff; }
+    footer a { color: #fff; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .footer-grid h2 { font-size: 1.15rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: .65rem 1.2rem; margin-top: .8rem; }
+    .copyright { border-top: 1px solid #ffffff35; margin-top: 2rem; padding-top: 1rem; font-size: .9rem; color: #d5e0e4; }
+    @media (max-width: 850px) {
+      .main-head { align-items: flex-start; flex-wrap: wrap; padding-block: 1rem; }
+      .main-nav { order: 3; width: 100%; }
+      .hero-inner { grid-template-columns: 1fr 1fr; }
+      .category-grid, .product-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 580px) {
+      .wrap { width: min(calc(100% - 1.5rem), var(--page)); }
+      .utility .wrap { align-items: flex-start; flex-direction: column; padding-block: .55rem; }
+      .utility-links { gap: .6rem 1rem; }
+      .main-head { gap: .8rem; }
+      .main-nav { gap: .55rem 1rem; }
+      .search { width: 100%; }
+      .search input { flex: 1; width: auto; }
+      .hero-inner { grid-template-columns: 1fr; gap: 1.25rem; }
+      .hero img { max-height: 230px; }
+      section { padding-block: 2.75rem; }
+      .category-grid, .product-grid, .updates, .footer-grid { grid-template-columns: 1fr; }
+      .subscribe-row { flex-direction: column; }
+      .subscribe-row button { align-self: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido principal</a>
+<div class="utility">
+<div class="wrap">
+<div aria-label="Marcas TP-Link" class="brand-links">
+<a href="https://www.tapo.com/mx/">tapo</a>
+<a href="https://www.omadanetworks.com/mx/">omada</a>
+</div>
+<nav aria-label="Enlaces de ayuda" class="utility-links">
+<a href="https://partner.tp-link.com/mx/">Partner Program</a>
+<a href="https://www.tp-link.com/mx/support/">Soporte</a>
+<a href="https://www.tp-link.mx/CursosTPLink/index.html">Cursos</a>
+<a href="https://community.tp-link.com/mx">Comunidad</a>
+<a href="https://www.tp-link.com/mx/choose-your-location/">México / Español</a>
+</nav>
+</div>
+</div>
+<header>
+<div class="wrap main-head">
+<a aria-label="TP-Link México, inicio" class="logo" href="https://www.tp-link.com/mx/"><span>✚</span> tp-link</a>
+<nav aria-label="Navegación principal" class="main-nav">
+<a href="https://www.tp-link.com/mx/home-networking/wifi-router/">Hogar</a>
+<a href="https://www.tp-link.com/mx/home-networking/cloud-camera/">Hogar inteligente</a>
+<a href="https://www.omadanetworks.com/mx/">Negocios</a>
+<a href="https://service-provider.tp-link.com">Service Provider</a>
+</nav>
+<form action="https://www.tp-link.com/mx/search/" class="search" method="get" role="search">
+<label class="visually-hidden" for="site-search">Buscar en TP-Link</label>
+<input id="site-search" name="q" placeholder="Buscar productos" type="search"/>
+<button type="submit">Buscar</button>
+</form>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-inner">
+<div>
+<div class="eyebrow">Conectividad para cada espacio</div>
+<h1 id="hero-title">Una vida más conectada empieza en casa</h1>
+<p>Explora soluciones de red, hogar inteligente y conectividad para empresas de TP-Link México.</p>
+<a class="button" href="https://www.tp-link.com/mx/whole-home-mesh/">Descubre Deco Mesh</a>
+</div>
+<a aria-label="Conoce la nueva gama WiFi 8, próximamente" href="https://www.tp-link.com/en/wifi8/">
+<img alt="Nueva gama WiFi 8 de TP-Link" src="https://static.tp-link.com/upload/banner/Archer_8_Ultra_Deco_8_Ultra_menos_500KB_20260904034824d.jpg"/>
+</a>
+</div>
+</section>
+<section aria-labelledby="categories-title" class="wrap">
+<div class="section-heading">
+<h2 id="categories-title">Encuentra lo que necesitas</h2>
+<p>Soluciones para el hogar, el hogar inteligente y los negocios.</p>
+</div>
+<div class="category-grid">
+<a class="category" href="https://www.tp-link.com/mx/home-networking/deco/">
+<strong>Sistemas Wi-Fi Mesh</strong><span>Conecta cada rincón de tu hogar.</span>
+</a>
+<a class="category" href="https://www.tp-link.com/mx/home-networking/wifi-router/">
+<strong>Routers</strong><span>Explora routers Wi-Fi para tu red.</span>
+</a>
+<a class="category" href="https://www.tp-link.com/mx/home-networking/cloud-camera/">
+<strong>Cámaras Cloud</strong><span>Vigila lo más importante para ti.</span>
+</a>
+<a class="category" href="https://www.tp-link.com/mx/business-networking/all-omada/">
+<strong>Soluciones Omada</strong><span>Redes profesionales para empresas.</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="products-title" class="products">
+<div class="wrap">
+<div class="section-heading">
+<h2 id="products-title">Recomendados</h2>
+<p>Descubre algunos productos destacados de TP-Link.</p>
+</div>
+<div class="product-grid">
+<article class="product">
+<img alt="Cámara Tapo C410 KIT" src="https://static.tp-link.com/upload/image-header/1-pack_normal_20240328085740p.png"/>
+<div class="product-copy">
+<h3>Tapo C410 KIT</h3>
+<p>Cámara de vigilancia Wi-Fi con batería recargable de panel solar.</p>
+<a class="button" href="https://www.tp-link.com/mx/home-networking/cloud-camera/tapo-c410-kit/">Conoce más</a>
+</div>
+</article>
+<article class="product">
+<img alt="Timbre inteligente Tapo D210" src="https://static.tp-link.com/upload/image-header/01_normal_20240605225345w.png"/>
+<div class="product-copy">
+<h3>Tapo D210</h3>
+<p>Timbre inteligente IP65 con cámara 3 MP y visión nocturna a color.</p>
+<a class="button" href="https://www.tp-link.com/mx/home-networking/smart-plug/tapo-d210/">Conoce más</a>
+</div>
+</article>
+<article class="product">
+<img alt="Timbre inteligente Tapo D235" src="https://static.tp-link.com/upload/image-header/Tapo_D235_UN_1.0_overview_normal_20241226225847q.png"/>
+<div class="product-copy">
+<h3>Tapo D235</h3>
+<p>Timbre inteligente IP66 con visión 5 MP y alimentación por batería o cable.</p>
+<a class="button" href="https://www.tp-link.com/mx/home-networking/smart-plug/tapo-d235/">Conoce más</a>
+</div>
+</article>
+<article class="product">
+<img alt="Punto de acceso EAP723" src="https://static.tp-link.com/upload/image-header/画板_3_normal_20250208034404c.png"/>
+<div class="product-copy">
+<h3>EAP723</h3>
+<p>Punto de acceso Wi-Fi 7 BE5000 de montaje en techo.</p>
+<a class="button" href="https://www.tp-link.com/mx/business-networking/omada-wifi-ceiling-mount/eap723/">Conoce más</a>
+</div>
+</article>
+</div>
+<a class="latest-link" href="https://www.tp-link.com/mx/business-networking/omada-switch-agile/es210gp/">Conoce ES210GP, un switch Omada de 10 puertos →</a>
+</div>
+</section>
+<section aria-label="Noticias y suscripción" class="wrap updates">
+<div>
+<div class="section-heading">
+<h2>Mantente actualizado</h2>
+<p>Noticias, consejos y novedades de TP-Link.</p>
+</div>
+<ul class="article-list">
+<li><a href="https://www.tp-link.com/mx/blog/2089/cámaras-de-seguridad-para-el-hogar-para-interior-o-exterior-cuál-debería-elegir-/">Cámaras de seguridad para el hogar: ¿interior o exterior?</a></li>
+<li><a href="https://www.tp-link.com/mx/blog/2088/-qué-tan-seguros-son-los-dispositivos-tapo-/">¿Qué tan seguros son los dispositivos Tapo?</a></li>
+<li><a href="https://www.tp-link.com/mx/press/news/">Ver noticias de TP-Link</a></li>
+<li><a href="https://www.tp-link.com/mx/blog/">Visitar el blog</a></li>
+</ul>
+</div>
+<div class="subscribe">
+<h2>Suscríbete</h2>
+<p>Recibe novedades, actualizaciones de productos y promociones de TP-Link.</p>
+<form action="https://www.tp-link.com/mx/register-mailchimp.html" method="post">
+<label for="email">Dirección de correo</label>
+<div class="subscribe-row">
+<input autocomplete="email" id="email" name="email" required="" type="email"/>
+<button type="submit">Regístrate</button>
+</div>
+</form>
+<p><small>Al suscribirte, consulta la <a href="https://privacy.tp-link.com/web/official/privacy-policy?region=MX">Política de privacidad</a>.</small></p>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h2>Acerca de TP-Link</h2>
+<div class="footer-links">
+<a href="https://www.tp-link.com/mx/about-us/corporate-profile/">Perfil corporativo</a>
+<a href="https://www.tp-link.com/mx/about/about-us/">Sobre nosotros</a>
+<a href="https://www.tp-link.com/mx/sustainability/">Sostenibilidad</a>
+<a href="https://www.tp-link.com/mx/about-us/contact/">Contáctanos</a>
+<a href="https://www.tp-link.com/mx/support/replacement-warranty/">Políticas de garantía</a>
+</div>
+</div>
+<div>
+<h2>Soporte</h2>
+<div class="footer-links">
+<a href="https://www.tp-link.com/mx/support/">Centro de soporte</a>
+<a href="https://www.tp-link.com/mx/support/download/">Descargas</a>
+<a href="https://www.tp-link.com/mx/support/faq/">Preguntas frecuentes</a>
+<a href="https://www.tp-link.com/mx/support/contact-technical-support/">Asistencia técnica</a>
+<a href="https://www.tp-link.com/mx/learning-center/">Technology Library</a>
+</div>
+</div>
+</div>
+<div class="copyright">
+<p>Copyright © 2026 por TP-LINK TECHNOLOGIES DE MEXICO S.A. de C.V. Todos los derechos reservados.</p>
+<p><a href="https://www.tp-link.com/mx/choose-your-location/">México / Español</a></p>
+</div>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>

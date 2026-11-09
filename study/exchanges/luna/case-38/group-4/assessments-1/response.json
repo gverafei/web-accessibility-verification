@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference shows three hosting-plan cards with prices, renewal details, features, and Sign Up Now actions. These are absent from the target\u2019s corresponding pricing area, which is largely blank. This removes important pricing information and purchase options.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target has a large empty area where the reference presents the pricing cards. Although the remaining headings and lower content are legible and arranged coherently, the missing central section materially impairs the page\u2019s usable presentation.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference\u2019s visible Sign Up Now and View More controls for hosting plans are not present in the target pricing area. The target retains global navigation and other content, but those missing plan actions are essential to the pricing section.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show corresponding portions of the same DreamHost page, with consistent navigation, pricing context, and the following Pro Services section. The missing pricing content is a localized target defect, not evidence of a mismatched comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target retains the pricing section\u2019s heading and introductory text, but omits the plan names, prices, descriptions, and features needed to understand the available hosting options.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating pricing presentation**\n\nI\u2019m assessing localized pricing cards, and at y6000, there\u2019s a target with a large blank section and a missing pricing card. However, y7000 has a trust strip and pro services, but the pricing cards are still absent. The lack of core info and sign-up controls at y6000 is concerning. While the presentation seems coherent, the absence of pricing content is severe. It seems there\u2019s a consistent issue with missing critical pricing information.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating pricing presentation**\n\nI\u2019m assessing localized pricing cards, and at y6000, there\u2019s a target with a large blank section and a missing pricing card. However, y7000 has a trust strip and pro services, but the pricing cards are still absent. The lack of core info and sign-up controls at y6000 is concerning. While the presentation seems coherent, the absence of pricing content is severe. It seems there\u2019s a consistent issue with missing critical pricing information.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgbNBBDQBYkXIThcU_kJWLVNF4bhLgD_itow2-qHfsNcGzqt1pitVZanY4kPcOSnCwfM2dD88LP02Y7QgSReGNE2zxiXPVkCZ6M9vqcaQTPdWEQ4X_YMssmoMz4eHjAn_Nt5ETESmXJf64MUCy-M_Q_H910ekIIPlV3U0hGwz_8PDTOXe4pcn92IQTMZiuhZbs0ZBtGv_lcHrutg2qNOiGm0Qi1NXQi6xb7ulHMtFf5ZZcEsHTiZLlbAnSEUftAqgRBuTrBAO8m3VA0hs6tBg-81TwLB2fKab0aMFdp2AiO6CSakFHr-gUMW0MDpsEw-4tdRlwxtsGgRtNrncJEOG-pVhIYAV8_1HdsjvnlQDpNoLe4ozVfH7oAlC_PQuoiaqOumUiRFy08ppq2O1UQsRUVWx3JHZoam2cgSnDcYGNmDyMU71i7kLAUJfiKa-8M0vhHxeCICbgLsaGCsGf2L3Ob6Q2RrFajjJKuXd93ME_65LyBNIqFZDXasSN_zgcsMAIeT9KH2vQaWvG3W7sE3LbG7jgy32V_IWOOcbuz0Xehj1Tf87Hh3KoFlZS4qFf2-0sqdhElOe3EKvMt5V8ChM2rcdcwyPx63yOWgzgietm1zkdokIw-0eGcnTb07nkytRm6LQ6idCT7nm_JK49Cz6EBmZORnWragul3O3dNt3u336W2Ewhzhy0PnhYkWtkx0AcKEuZA9GR1xnKtc7Y56C4kXMKQt71oj5RUvCOuwT4d6AKsdIC_JOkMM9IUIA2Jqdr0jLEH9LW9TEtdmT_kxM8IpROl75N8xNMsXHJPNsZ2zvuGs_9BdOKdd2WsDBXBGa89ajLa0awSQgnX8_FON_oYpV4FSFrIjiENlkVAyMWQEjbnmUimLo41icOHYeZoh_BZwswuczfp_KIkOhEElgZGVNZAHV8WVt5aosiQVoIdAQAyWFAEYVhWrAxkSCxM09z7f1Vk54rRKqWFmkAv22aCNJSvGpOp7WlkeIkCcVpt0eHMX0RxIp-VdQ8L7J40tXWxqMW2ZyEhZFbeB6PFKTM29Qx2ZftxfxLsLznmLpM8G0A-Rv9gkjnL7W0mlOJAL1P3NmGeRb4uGhxHKDUW_AzxpjDTXV4BaZubZd44CaRWqVMZcF-i0FslEmPCehnCCcDsanrOssPt0i_HNmTtYMj6mZfzpZqBpusC5iqj1Kxxz5nz8cO2U0cldaowzTJIpimRpt0i4BgI9PvJR3JBUqsoUftawPh60Zs8nq35vxsoTTm7MR1ilZOJLS5ZlidyZR_4Xqe8X12VJ2V4zeMIkYEO_ISjNoqHSYSSUJf7ycluTgnusmsLr7TMtYEt6SW9tyKl_Zu58_PlaFX_3UeKHG2wy8Df0l2UWc5p6e9vubZDk6qHDZPaYhlmmMbyT4Yi4M_TCtYOCJKLgxdr30I67LCn3bgyzupFTsTdFC36C4Q9LrL8Id8wSu6_-zy7pR2E2QugGJRgd0f_JOJpCv6-3BlIZAFs2aO8chAOt8bvX67UQNpjKXj4PJmUv7S3f8EDv_9DBQg7-0gtuWBGL15UAZgm6PTNly32WY_Z9DxcsBz4czAU9_rjomKjbwWKnWVmC8oyTRNblFgFCo-ZUO7g-GkVFYq6iUyd4p-f6hT-DE3sgLc_-lfikv32w1VdjYJEXoB3uhpnClzjHV8m5ofg3bQ72VfJVSgrF-YgdWk6oIXmP5DUQQadm53QzbfKKNz21XG6zm932QIlXSf77cMJLNP2LR9rc8rnQ57QbRujxYleUgW5k4wm_W2--h9Yl2VfaE6dW-eHVG1n0aCfUiw9-aO-hKmG-C4UOXIMUZsUhD6_N2kEi5M9--QK7CaQj2cgsREbJ7l3prfzWL7d2mmJem7ZVQBdkNGurchCkZ0fyQO7S5Vd2pGiD2S_zs3AMXrY2Troz4rt3Knn0C-hUvolrzyJVKZewsmM8TMNnc7JWH0gr91vDeeKJ-5Id2DTRY1bCnlr0BRIxBtpDGoLJNjV__OAh-DMNQQlgWtRMzdTX-iIETMzBx0ttvwUSKTqY93PBBizjwtwjUgM0CEvvfUU6R0mJaPZOxHNAVHZplV97rQgVOeYNq0m3xBWQErAnq5FI3IOIlmaBwrBKk9Y5fOAIxmqnajm7wAlaA7Gqs3WE9iSSeM7dlpJhSJUceKxsS4kJnLyYYxvW0L6vseysXCM7KYkf-pGCiLk8KDK7q0S0jaTaIvn7uaiA0S-O6Yd_Dl6uMTRg04JfarhCgiWo8EB4J3o59-IqahppJY_rNQXOA9iPUCLOfgPZ6g62WWokNn4BoQz7-i6oL0x7sXKQXfY0xBbNkAiLv0qnnR8mBVvud7MAXZXEWk5w81hA4WgGuxqrRrLKdLX5oGnRD-ukAZXzInaB1HzujCUEjROreWQe3-C1S1SGDsuytWmeGiwbA6g5SKv7j_FtjEv6BNvlAhfxEDryHdqu4ZmEBiI8cjwWXTHV3AXw2glnbysJoDI0UKAaVd3MPQt7Uisj8kZpzZul9zN8dFUY--x8zOC0-M9DpJ_f5L_p60keXruHAKyFqtvU6PdNEiYuGumHe-_AcaIsCaAdd0qW297UBO4BoYCru8HR1ZwMsY3j7YNmy21_4RSnNsW2Nnv1_pBVgyWkcwN9lf6UnSBkEJRdxDJbFllMJ_lAHQxQ_juTgxym8zb_TwFLdNAjSTZNHHteO-DMJHtG_74dqK0-Pgi7o2BbgdVH45qA0hV6O1v7nB_N3Cj6kvBcV6hA5c0vVyY9muB8K1I779VM2SXP22D1IW-kuez4eyj_0IKUxAWtz0Vu3vTVnxv2DW0D_X95Pkb416uEY-K_KYpYlGXCOoG7XaJIIsX5LWe8kO0EaXmIy6nt0P9a3TBjBNnagir77DBwyyjUd5rGWUOtXs1X5k3oUNbN1h07m5kXnGWrI0crPJvyKMx8e4TAfLr4CSVjx0vhHNIhsbHll86Mx7c1AREFoapcLOUa8HJq6MNaJ4Mcx6WAkvuHq3ee8Vg6x7FC7RaHcWTUGH7y-ZmLw1mklYBxTlLOj0ixIUtvgQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_098f48f276e780b8016ae81819863087d18137023dd2a9c971",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10915,
+    "completion_tokens": 449,
+    "total_tokens": 11364,
+    "cost": 0.0015888,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10912,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015888,
+      "upstream_inference_prompt_cost": 0.0013643,
+      "upstream_inference_completions_cost": 0.0002245
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 109,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

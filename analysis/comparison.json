@@ -1,0 +1,6642 @@
+{
+  "case_count": 534,
+  "bootstrap": {
+    "unit": "source domain",
+    "replicates": 10000,
+    "seed": 20261031
+  },
+  "routes": {
+    "decisions": {
+      "all": {
+        "n": 534,
+        "pairs": {
+          "automatic_r1": {
+            "n": 534,
+            "equal": 533,
+            "agreement": 0.99812734082397,
+            "matrix": [
+              [
+                475,
+                1
+              ],
+              [
+                0,
+                58
+              ]
+            ],
+            "kappa": 0.9904015530071538,
+            "reference_classes": {
+              "accepted_n": 475,
+              "rejected_n": 59,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.9830508474576272,
+              "balanced_agreement": 0.9915254237288136,
+              "always_accept_agreement": 0.8895131086142322
+            },
+            "ci95": [
+              99.38398357289527,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 534,
+            "equal": 531,
+            "agreement": 0.9943820224719101,
+            "matrix": [
+              [
+                475,
+                1
+              ],
+              [
+                2,
+                56
+              ]
+            ],
+            "kappa": 0.9707653563998685,
+            "reference_classes": {
+              "accepted_n": 477,
+              "rejected_n": 57,
+              "accept_agreement": 0.9958071278825996,
+              "reject_agreement": 0.9824561403508771,
+              "balanced_agreement": 0.9891316341167384,
+              "always_accept_agreement": 0.8932584269662921
+            },
+            "ci95": [
+              98.68173258003766,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 534,
+            "equal": 530,
+            "agreement": 0.9925093632958801,
+            "matrix": [
+              [
+                474,
+                1
+              ],
+              [
+                3,
+                56
+              ]
+            ],
+            "kappa": 0.9613169618602628,
+            "reference_classes": {
+              "accepted_n": 477,
+              "rejected_n": 57,
+              "accept_agreement": 0.9937106918238994,
+              "reject_agreement": 0.9824561403508771,
+              "balanced_agreement": 0.9880834160873883,
+              "always_accept_agreement": 0.8932584269662921
+            },
+            "ci95": [
+              98.42825765435641,
+              99.8316569051863
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 476,
+          "not_accepted": 58
+        },
+        "domains": 70,
+        "triplets": {
+          "all_agree": 530,
+          "humans_differ": 4
+        },
+        "resources": {
+          "completed_cases": 534,
+          "completed_calls": 2391,
+          "recovery_calls": 1857,
+          "cost_usd": 2.4752066,
+          "mean_cost_usd": 0.0046352183520599255,
+          "request_seconds_sum": 3186.6587888462236,
+          "seconds_median": 4.353429435999715,
+          "seconds_p95": 13.484452816432167
+        }
+      },
+      "acquired": {
+        "n": 69,
+        "pairs": {
+          "automatic_r1": {
+            "n": 69,
+            "equal": 69,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                48,
+                0
+              ],
+              [
+                0,
+                21
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 48,
+              "rejected_n": 21,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6956521739130435
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 69,
+            "equal": 68,
+            "agreement": 0.9855072463768116,
+            "matrix": [
+              [
+                48,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "kappa": 0.9653092006033184,
+            "reference_classes": {
+              "accepted_n": 49,
+              "rejected_n": 20,
+              "accept_agreement": 0.9795918367346939,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9897959183673469,
+              "always_accept_agreement": 0.7101449275362319
+            },
+            "ci95": [
+              95.65217391304348,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 69,
+            "equal": 68,
+            "agreement": 0.9855072463768116,
+            "matrix": [
+              [
+                48,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "kappa": 0.9653092006033184,
+            "reference_classes": {
+              "accepted_n": 49,
+              "rejected_n": 20,
+              "accept_agreement": 0.9795918367346939,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9897959183673469,
+              "always_accept_agreement": 0.7101449275362319
+            },
+            "ci95": [
+              95.65217391304348,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 48,
+          "not_accepted": 21
+        },
+        "domains": 69,
+        "triplets": {
+          "all_agree": 68,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 69,
+          "completed_calls": 379,
+          "recovery_calls": 310,
+          "cost_usd": 0.41271050000000004,
+          "mean_cost_usd": 0.005981311594202899,
+          "request_seconds_sum": 446.7909654940304,
+          "seconds_median": 4.675008126010653,
+          "seconds_p95": 17.350247307802764
+        }
+      },
+      "remediated": {
+        "n": 465,
+        "pairs": {
+          "automatic_r1": {
+            "n": 465,
+            "equal": 464,
+            "agreement": 0.9978494623655914,
+            "matrix": [
+              [
+                427,
+                1
+              ],
+              [
+                0,
+                37
+              ]
+            ],
+            "kappa": 0.9854973021863204,
+            "reference_classes": {
+              "accepted_n": 427,
+              "rejected_n": 38,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.9736842105263158,
+              "balanced_agreement": 0.986842105263158,
+              "always_accept_agreement": 0.9182795698924732
+            },
+            "ci95": [
+              99.3103448275862,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 465,
+            "equal": 463,
+            "agreement": 0.9956989247311828,
+            "matrix": [
+              [
+                427,
+                1
+              ],
+              [
+                1,
+                36
+              ]
+            ],
+            "kappa": 0.9706365243748423,
+            "reference_classes": {
+              "accepted_n": 428,
+              "rejected_n": 37,
+              "accept_agreement": 0.9976635514018691,
+              "reject_agreement": 0.972972972972973,
+              "balanced_agreement": 0.985318262187421,
+              "always_accept_agreement": 0.9204301075268817
+            },
+            "ci95": [
+              98.83720930232558,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 465,
+            "equal": 462,
+            "agreement": 0.9935483870967742,
+            "matrix": [
+              [
+                426,
+                1
+              ],
+              [
+                2,
+                36
+              ]
+            ],
+            "kappa": 0.956491906558962,
+            "reference_classes": {
+              "accepted_n": 428,
+              "rejected_n": 37,
+              "accept_agreement": 0.9953271028037384,
+              "reject_agreement": 0.972972972972973,
+              "balanced_agreement": 0.9841500378883556,
+              "always_accept_agreement": 0.9204301075268817
+            },
+            "ci95": [
+              98.511153054221,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 428,
+          "not_accepted": 37
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 462,
+          "humans_differ": 3
+        },
+        "resources": {
+          "completed_cases": 465,
+          "completed_calls": 2012,
+          "recovery_calls": 1547,
+          "cost_usd": 2.0624961,
+          "mean_cost_usd": 0.004435475483870968,
+          "request_seconds_sum": 2739.867823352193,
+          "seconds_median": 4.286352458962938,
+          "seconds_p95": 13.34679876794106
+        }
+      },
+      "patched": {
+        "n": 257,
+        "pairs": {
+          "automatic_r1": {
+            "n": 257,
+            "equal": 257,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                247,
+                0
+              ],
+              [
+                0,
+                10
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 247,
+              "rejected_n": 10,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9610894941634242
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 257,
+            "equal": 255,
+            "agreement": 0.9922178988326849,
+            "matrix": [
+              [
+                246,
+                1
+              ],
+              [
+                1,
+                9
+              ]
+            ],
+            "kappa": 0.895951417004049,
+            "reference_classes": {
+              "accepted_n": 247,
+              "rejected_n": 10,
+              "accept_agreement": 0.9959514170040485,
+              "reject_agreement": 0.9,
+              "balanced_agreement": 0.9479757085020243,
+              "always_accept_agreement": 0.9610894941634242
+            },
+            "ci95": [
+              98.02371541501977,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 257,
+            "equal": 255,
+            "agreement": 0.9922178988326849,
+            "matrix": [
+              [
+                246,
+                1
+              ],
+              [
+                1,
+                9
+              ]
+            ],
+            "kappa": 0.895951417004049,
+            "reference_classes": {
+              "accepted_n": 247,
+              "rejected_n": 10,
+              "accept_agreement": 0.9959514170040485,
+              "reject_agreement": 0.9,
+              "balanced_agreement": 0.9479757085020243,
+              "always_accept_agreement": 0.9610894941634242
+            },
+            "ci95": [
+              98.02371541501977,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 247,
+          "not_accepted": 10
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 255,
+          "humans_differ": 2
+        },
+        "resources": {
+          "completed_cases": 257,
+          "completed_calls": 1017,
+          "recovery_calls": 760,
+          "cost_usd": 1.0649183,
+          "mean_cost_usd": 0.004143650972762646,
+          "request_seconds_sum": 1330.1636775663937,
+          "seconds_median": 4.083394666959066,
+          "seconds_p95": 10.147123632987485
+        }
+      },
+      "generated": {
+        "n": 208,
+        "pairs": {
+          "automatic_r1": {
+            "n": 208,
+            "equal": 207,
+            "agreement": 0.9951923076923077,
+            "matrix": [
+              [
+                180,
+                1
+              ],
+              [
+                0,
+                27
+              ]
+            ],
+            "kappa": 0.9790491539081386,
+            "reference_classes": {
+              "accepted_n": 180,
+              "rejected_n": 28,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.9642857142857143,
+              "balanced_agreement": 0.9821428571428572,
+              "always_accept_agreement": 0.8653846153846154
+            },
+            "ci95": [
+              98.38709677419355,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 208,
+            "equal": 208,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                181,
+                0
+              ],
+              [
+                0,
+                27
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 181,
+              "rejected_n": 27,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8701923076923077
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 208,
+            "equal": 207,
+            "agreement": 0.9951923076923077,
+            "matrix": [
+              [
+                180,
+                0
+              ],
+              [
+                1,
+                27
+              ]
+            ],
+            "kappa": 0.9790491539081386,
+            "reference_classes": {
+              "accepted_n": 181,
+              "rejected_n": 27,
+              "accept_agreement": 0.994475138121547,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9972375690607735,
+              "always_accept_agreement": 0.8701923076923077
+            },
+            "ci95": [
+              98.38709677419355,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 181,
+          "not_accepted": 27
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 207,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 208,
+          "completed_calls": 995,
+          "recovery_calls": 787,
+          "cost_usd": 0.9975778,
+          "mean_cost_usd": 0.004796047115384615,
+          "request_seconds_sum": 1409.7041457857995,
+          "seconds_median": 4.6380638550181175,
+          "seconds_p95": 17.632725174052723
+        }
+      }
+    },
+    "luna": {
+      "all": {
+        "n": 534,
+        "pairs": {
+          "automatic_r1": {
+            "n": 534,
+            "equal": 514,
+            "agreement": 0.9625468164794008,
+            "matrix": [
+              [
+                472,
+                17
+              ],
+              [
+                3,
+                42
+              ]
+            ],
+            "kappa": 0.7873611277027835,
+            "reference_classes": {
+              "accepted_n": 475,
+              "rejected_n": 59,
+              "accept_agreement": 0.9936842105263158,
+              "reject_agreement": 0.711864406779661,
+              "balanced_agreement": 0.8527743086529884,
+              "always_accept_agreement": 0.8895131086142322
+            },
+            "ci95": [
+              94.87179487179488,
+              97.61904761904762
+            ]
+          },
+          "automatic_r2": {
+            "n": 534,
+            "equal": 512,
+            "agreement": 0.9588014981273408,
+            "matrix": [
+              [
+                472,
+                17
+              ],
+              [
+                5,
+                40
+              ]
+            ],
+            "kappa": 0.7618873890307674,
+            "reference_classes": {
+              "accepted_n": 477,
+              "rejected_n": 57,
+              "accept_agreement": 0.989517819706499,
+              "reject_agreement": 0.7017543859649122,
+              "balanced_agreement": 0.8456361028357056,
+              "always_accept_agreement": 0.8932584269662921
+            },
+            "ci95": [
+              94.39417113112842,
+              97.31664775950085
+            ]
+          },
+          "r1_r2": {
+            "n": 534,
+            "equal": 530,
+            "agreement": 0.9925093632958801,
+            "matrix": [
+              [
+                474,
+                1
+              ],
+              [
+                3,
+                56
+              ]
+            ],
+            "kappa": 0.9613169618602628,
+            "reference_classes": {
+              "accepted_n": 477,
+              "rejected_n": 57,
+              "accept_agreement": 0.9937106918238994,
+              "reject_agreement": 0.9824561403508771,
+              "balanced_agreement": 0.9880834160873883,
+              "always_accept_agreement": 0.8932584269662921
+            },
+            "ci95": [
+              98.42825765435641,
+              99.8316569051863
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 489,
+          "not_accepted": 45
+        },
+        "domains": 70,
+        "triplets": {
+          "all_agree": 511,
+          "humans_oppose": 19,
+          "humans_differ": 4
+        },
+        "resources": {
+          "completed_cases": 534,
+          "completed_calls": 2355,
+          "recovery_calls": 1821,
+          "cost_usd": 3.56041556,
+          "mean_cost_usd": 0.006667444868913857,
+          "request_seconds_sum": 15205.66938516291,
+          "seconds_median": 21.749509687011596,
+          "seconds_p95": 69.34757653413544
+        }
+      },
+      "acquired": {
+        "n": 69,
+        "pairs": {
+          "automatic_r1": {
+            "n": 69,
+            "equal": 66,
+            "agreement": 0.9565217391304348,
+            "matrix": [
+              [
+                47,
+                2
+              ],
+              [
+                1,
+                19
+              ]
+            ],
+            "kappa": 0.8959276018099548,
+            "reference_classes": {
+              "accepted_n": 48,
+              "rejected_n": 21,
+              "accept_agreement": 0.9791666666666666,
+              "reject_agreement": 0.9047619047619048,
+              "balanced_agreement": 0.9419642857142857,
+              "always_accept_agreement": 0.6956521739130435
+            },
+            "ci95": [
+              89.85507246376811,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 69,
+            "equal": 65,
+            "agreement": 0.9420289855072463,
+            "matrix": [
+              [
+                47,
+                2
+              ],
+              [
+                2,
+                18
+              ]
+            ],
+            "kappa": 0.8591836734693877,
+            "reference_classes": {
+              "accepted_n": 49,
+              "rejected_n": 20,
+              "accept_agreement": 0.9591836734693877,
+              "reject_agreement": 0.9,
+              "balanced_agreement": 0.9295918367346938,
+              "always_accept_agreement": 0.7101449275362319
+            },
+            "ci95": [
+              88.40579710144928,
+              98.55072463768116
+            ]
+          },
+          "r1_r2": {
+            "n": 69,
+            "equal": 68,
+            "agreement": 0.9855072463768116,
+            "matrix": [
+              [
+                48,
+                0
+              ],
+              [
+                1,
+                20
+              ]
+            ],
+            "kappa": 0.9653092006033184,
+            "reference_classes": {
+              "accepted_n": 49,
+              "rejected_n": 20,
+              "accept_agreement": 0.9795918367346939,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9897959183673469,
+              "always_accept_agreement": 0.7101449275362319
+            },
+            "ci95": [
+              95.65217391304348,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 49,
+          "not_accepted": 20
+        },
+        "domains": 69,
+        "triplets": {
+          "all_agree": 65,
+          "humans_oppose": 3,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 69,
+          "completed_calls": 360,
+          "recovery_calls": 291,
+          "cost_usd": 0.59442293,
+          "mean_cost_usd": 0.008614825072463769,
+          "request_seconds_sum": 2555.559548043122,
+          "seconds_median": 21.899861874990165,
+          "seconds_p95": 119.26839810942172
+        }
+      },
+      "remediated": {
+        "n": 465,
+        "pairs": {
+          "automatic_r1": {
+            "n": 465,
+            "equal": 448,
+            "agreement": 0.9634408602150538,
+            "matrix": [
+              [
+                425,
+                15
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "kappa": 0.711443694104764,
+            "reference_classes": {
+              "accepted_n": 427,
+              "rejected_n": 38,
+              "accept_agreement": 0.9953161592505855,
+              "reject_agreement": 0.6052631578947368,
+              "balanced_agreement": 0.8002896585726611,
+              "always_accept_agreement": 0.9182795698924732
+            },
+            "ci95": [
+              94.8024948024948,
+              97.84695426248906
+            ]
+          },
+          "automatic_r2": {
+            "n": 465,
+            "equal": 447,
+            "agreement": 0.9612903225806452,
+            "matrix": [
+              [
+                425,
+                15
+              ],
+              [
+                3,
+                22
+              ]
+            ],
+            "kappa": 0.6897702001482581,
+            "reference_classes": {
+              "accepted_n": 428,
+              "rejected_n": 37,
+              "accept_agreement": 0.9929906542056075,
+              "reject_agreement": 0.5945945945945946,
+              "balanced_agreement": 0.793792624400101,
+              "always_accept_agreement": 0.9204301075268817
+            },
+            "ci95": [
+              94.60671826192363,
+              97.60348583877996
+            ]
+          },
+          "r1_r2": {
+            "n": 465,
+            "equal": 462,
+            "agreement": 0.9935483870967742,
+            "matrix": [
+              [
+                426,
+                1
+              ],
+              [
+                2,
+                36
+              ]
+            ],
+            "kappa": 0.956491906558962,
+            "reference_classes": {
+              "accepted_n": 428,
+              "rejected_n": 37,
+              "accept_agreement": 0.9953271028037384,
+              "reject_agreement": 0.972972972972973,
+              "balanced_agreement": 0.9841500378883556,
+              "always_accept_agreement": 0.9204301075268817
+            },
+            "ci95": [
+              98.511153054221,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 440,
+          "not_accepted": 25
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 446,
+          "humans_oppose": 16,
+          "humans_differ": 3
+        },
+        "resources": {
+          "completed_cases": 465,
+          "completed_calls": 1995,
+          "recovery_calls": 1530,
+          "cost_usd": 2.96599263,
+          "mean_cost_usd": 0.006378478774193549,
+          "request_seconds_sum": 12650.109837119788,
+          "seconds_median": 21.737721249024617,
+          "seconds_p95": 65.87185004056664
+        }
+      },
+      "patched": {
+        "n": 257,
+        "pairs": {
+          "automatic_r1": {
+            "n": 257,
+            "equal": 256,
+            "agreement": 0.9961089494163424,
+            "matrix": [
+              [
+                246,
+                0
+              ],
+              [
+                1,
+                10
+              ]
+            ],
+            "kappa": 0.9503573498164962,
+            "reference_classes": {
+              "accepted_n": 247,
+              "rejected_n": 10,
+              "accept_agreement": 0.9959514170040485,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9979757085020242,
+              "always_accept_agreement": 0.9610894941634242
+            },
+            "ci95": [
+              98.80478087649402,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 257,
+            "equal": 256,
+            "agreement": 0.9961089494163424,
+            "matrix": [
+              [
+                246,
+                0
+              ],
+              [
+                1,
+                10
+              ]
+            ],
+            "kappa": 0.9503573498164962,
+            "reference_classes": {
+              "accepted_n": 247,
+              "rejected_n": 10,
+              "accept_agreement": 0.9959514170040485,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9979757085020242,
+              "always_accept_agreement": 0.9610894941634242
+            },
+            "ci95": [
+              98.81422924901186,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 257,
+            "equal": 255,
+            "agreement": 0.9922178988326849,
+            "matrix": [
+              [
+                246,
+                1
+              ],
+              [
+                1,
+                9
+              ]
+            ],
+            "kappa": 0.895951417004049,
+            "reference_classes": {
+              "accepted_n": 247,
+              "rejected_n": 10,
+              "accept_agreement": 0.9959514170040485,
+              "reject_agreement": 0.9,
+              "balanced_agreement": 0.9479757085020243,
+              "always_accept_agreement": 0.9610894941634242
+            },
+            "ci95": [
+              98.02371541501977,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 246,
+          "not_accepted": 11
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 255,
+          "humans_differ": 2
+        },
+        "resources": {
+          "completed_cases": 257,
+          "completed_calls": 1018,
+          "recovery_calls": 761,
+          "cost_usd": 1.47062353,
+          "mean_cost_usd": 0.005722270544747081,
+          "request_seconds_sum": 5682.2955909211305,
+          "seconds_median": 17.49273533298401,
+          "seconds_p95": 59.10041807454541
+        }
+      },
+      "generated": {
+        "n": 208,
+        "pairs": {
+          "automatic_r1": {
+            "n": 208,
+            "equal": 192,
+            "agreement": 0.9230769230769231,
+            "matrix": [
+              [
+                179,
+                15
+              ],
+              [
+                1,
+                13
+              ]
+            ],
+            "kappa": 0.5814889336016098,
+            "reference_classes": {
+              "accepted_n": 180,
+              "rejected_n": 28,
+              "accept_agreement": 0.9944444444444445,
+              "reject_agreement": 0.4642857142857143,
+              "balanced_agreement": 0.7293650793650794,
+              "always_accept_agreement": 0.8653846153846154
+            },
+            "ci95": [
+              88.70967741935483,
+              95.21739130434783
+            ]
+          },
+          "automatic_r2": {
+            "n": 208,
+            "equal": 191,
+            "agreement": 0.9182692307692307,
+            "matrix": [
+              [
+                179,
+                15
+              ],
+              [
+                2,
+                12
+              ]
+            ],
+            "kappa": 0.5450334534225422,
+            "reference_classes": {
+              "accepted_n": 181,
+              "rejected_n": 27,
+              "accept_agreement": 0.988950276243094,
+              "reject_agreement": 0.4444444444444444,
+              "balanced_agreement": 0.7166973603437692,
+              "always_accept_agreement": 0.8701923076923077
+            },
+            "ci95": [
+              88.17204301075269,
+              94.84927035330249
+            ]
+          },
+          "r1_r2": {
+            "n": 208,
+            "equal": 207,
+            "agreement": 0.9951923076923077,
+            "matrix": [
+              [
+                180,
+                0
+              ],
+              [
+                1,
+                27
+              ]
+            ],
+            "kappa": 0.9790491539081386,
+            "reference_classes": {
+              "accepted_n": 181,
+              "rejected_n": 27,
+              "accept_agreement": 0.994475138121547,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9972375690607735,
+              "always_accept_agreement": 0.8701923076923077
+            },
+            "ci95": [
+              98.38709677419355,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 194,
+          "not_accepted": 14
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 191,
+          "humans_oppose": 16,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 208,
+          "completed_calls": 977,
+          "recovery_calls": 769,
+          "cost_usd": 1.4953691,
+          "mean_cost_usd": 0.007189274519230769,
+          "request_seconds_sum": 6967.814246198657,
+          "seconds_median": 27.874663207985577,
+          "seconds_p95": 74.15320261066807
+        }
+      }
+    }
+  },
+  "strategies": {
+    "Minimal patches": {
+      "decisions": {
+        "n": 122,
+        "pairs": {
+          "automatic_r1": {
+            "n": 122,
+            "equal": 122,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                118,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 118,
+              "rejected_n": 4,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9672131147540983
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 122,
+            "equal": 122,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                118,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 118,
+              "rejected_n": 4,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9672131147540983
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 122,
+            "equal": 122,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                118,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 118,
+              "rejected_n": 4,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9672131147540983
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 118,
+          "not_accepted": 4
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 122
+        },
+        "resources": {
+          "completed_cases": 122,
+          "completed_calls": 483,
+          "recovery_calls": 361,
+          "cost_usd": 0.5074797,
+          "mean_cost_usd": 0.004159669672131147,
+          "request_seconds_sum": 661.7637713689764,
+          "seconds_median": 4.193234228980145,
+          "seconds_p95": 11.148445908197024
+        }
+      },
+      "luna": {
+        "n": 122,
+        "pairs": {
+          "automatic_r1": {
+            "n": 122,
+            "equal": 122,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                118,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 118,
+              "rejected_n": 4,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9672131147540983
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 122,
+            "equal": 122,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                118,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 118,
+              "rejected_n": 4,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9672131147540983
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 122,
+            "equal": 122,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                118,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 118,
+              "rejected_n": 4,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9672131147540983
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 118,
+          "not_accepted": 4
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 122
+        },
+        "resources": {
+          "completed_cases": 122,
+          "completed_calls": 485,
+          "recovery_calls": 363,
+          "cost_usd": 0.7014691,
+          "mean_cost_usd": 0.005749746721311475,
+          "request_seconds_sum": 2759.927684278169,
+          "seconds_median": 17.639033354003914,
+          "seconds_p95": 55.5848351051201
+        }
+      }
+    },
+    "Structural patches": {
+      "decisions": {
+        "n": 129,
+        "pairs": {
+          "automatic_r1": {
+            "n": 129,
+            "equal": 129,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                124,
+                0
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 124,
+              "rejected_n": 5,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9612403100775194
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 129,
+            "equal": 127,
+            "agreement": 0.9844961240310077,
+            "matrix": [
+              [
+                123,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "kappa": 0.7919354838709672,
+            "reference_classes": {
+              "accepted_n": 124,
+              "rejected_n": 5,
+              "accept_agreement": 0.9919354838709677,
+              "reject_agreement": 0.8,
+              "balanced_agreement": 0.8959677419354839,
+              "always_accept_agreement": 0.9612403100775194
+            },
+            "ci95": [
+              96.09375,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 129,
+            "equal": 127,
+            "agreement": 0.9844961240310077,
+            "matrix": [
+              [
+                123,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "kappa": 0.7919354838709672,
+            "reference_classes": {
+              "accepted_n": 124,
+              "rejected_n": 5,
+              "accept_agreement": 0.9919354838709677,
+              "reject_agreement": 0.8,
+              "balanced_agreement": 0.8959677419354839,
+              "always_accept_agreement": 0.9612403100775194
+            },
+            "ci95": [
+              96.09375,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 124,
+          "not_accepted": 5
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 127,
+          "humans_differ": 2
+        },
+        "resources": {
+          "completed_cases": 129,
+          "completed_calls": 509,
+          "recovery_calls": 380,
+          "cost_usd": 0.534635,
+          "mean_cost_usd": 0.004144457364341085,
+          "request_seconds_sum": 641.7663669903704,
+          "seconds_median": 3.953017126012128,
+          "seconds_p95": 9.236102492042116
+        }
+      },
+      "luna": {
+        "n": 129,
+        "pairs": {
+          "automatic_r1": {
+            "n": 129,
+            "equal": 128,
+            "agreement": 0.9922480620155039,
+            "matrix": [
+              [
+                123,
+                0
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "kappa": 0.9050772626931566,
+            "reference_classes": {
+              "accepted_n": 124,
+              "rejected_n": 5,
+              "accept_agreement": 0.9919354838709677,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9959677419354839,
+              "always_accept_agreement": 0.9612403100775194
+            },
+            "ci95": [
+              97.58064516129032,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 129,
+            "equal": 128,
+            "agreement": 0.9922480620155039,
+            "matrix": [
+              [
+                123,
+                0
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "kappa": 0.9050772626931566,
+            "reference_classes": {
+              "accepted_n": 124,
+              "rejected_n": 5,
+              "accept_agreement": 0.9919354838709677,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9959677419354839,
+              "always_accept_agreement": 0.9612403100775194
+            },
+            "ci95": [
+              97.61904761904762,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 129,
+            "equal": 127,
+            "agreement": 0.9844961240310077,
+            "matrix": [
+              [
+                123,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "kappa": 0.7919354838709672,
+            "reference_classes": {
+              "accepted_n": 124,
+              "rejected_n": 5,
+              "accept_agreement": 0.9919354838709677,
+              "reject_agreement": 0.8,
+              "balanced_agreement": 0.8959677419354839,
+              "always_accept_agreement": 0.9612403100775194
+            },
+            "ci95": [
+              96.09375,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 123,
+          "not_accepted": 6
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 127,
+          "humans_differ": 2
+        },
+        "resources": {
+          "completed_cases": 129,
+          "completed_calls": 508,
+          "recovery_calls": 379,
+          "cost_usd": 0.73484368,
+          "mean_cost_usd": 0.005696462635658915,
+          "request_seconds_sum": 2815.6629551879305,
+          "seconds_median": 17.38466933404561,
+          "seconds_p95": 62.826130800787354
+        }
+      }
+    },
+    "Minimal + structural patches": {
+      "decisions": {
+        "n": 6,
+        "pairs": {
+          "automatic_r1": {
+            "n": 6,
+            "equal": 6,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 5,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8333333333333334
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 6,
+            "equal": 6,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 5,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8333333333333334
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 6,
+            "equal": 6,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 5,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8333333333333334
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "not_accepted": 1,
+          "accepted": 5
+        },
+        "domains": 6,
+        "triplets": {
+          "all_agree": 6
+        },
+        "resources": {
+          "completed_cases": 6,
+          "completed_calls": 25,
+          "recovery_calls": 19,
+          "cost_usd": 0.0228036,
+          "mean_cost_usd": 0.0038006,
+          "request_seconds_sum": 26.63353920704685,
+          "seconds_median": 4.197198584006401,
+          "seconds_p95": 6.735037467486109
+        }
+      },
+      "luna": {
+        "n": 6,
+        "pairs": {
+          "automatic_r1": {
+            "n": 6,
+            "equal": 6,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 5,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8333333333333334
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 6,
+            "equal": 6,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 5,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8333333333333334
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 6,
+            "equal": 6,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                5,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 5,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8333333333333334
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "not_accepted": 1,
+          "accepted": 5
+        },
+        "domains": 6,
+        "triplets": {
+          "all_agree": 6
+        },
+        "resources": {
+          "completed_cases": 6,
+          "completed_calls": 25,
+          "recovery_calls": 19,
+          "cost_usd": 0.03431075,
+          "mean_cost_usd": 0.005718458333333333,
+          "request_seconds_sum": 106.70495145503082,
+          "seconds_median": 16.321706166490912,
+          "seconds_p95": 23.950008676270954
+        }
+      }
+    },
+    "HTML regeneration": {
+      "decisions": {
+        "n": 93,
+        "pairs": {
+          "automatic_r1": {
+            "n": 93,
+            "equal": 92,
+            "agreement": 0.989247311827957,
+            "matrix": [
+              [
+                78,
+                1
+              ],
+              [
+                0,
+                14
+              ]
+            ],
+            "kappa": 0.9591567852437418,
+            "reference_classes": {
+              "accepted_n": 78,
+              "rejected_n": 15,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.9333333333333333,
+              "balanced_agreement": 0.9666666666666667,
+              "always_accept_agreement": 0.8387096774193549
+            },
+            "ci95": [
+              96.7741935483871,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 93,
+            "equal": 93,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                79,
+                0
+              ],
+              [
+                0,
+                14
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 79,
+              "rejected_n": 14,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8494623655913979
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 93,
+            "equal": 92,
+            "agreement": 0.989247311827957,
+            "matrix": [
+              [
+                78,
+                0
+              ],
+              [
+                1,
+                14
+              ]
+            ],
+            "kappa": 0.9591567852437418,
+            "reference_classes": {
+              "accepted_n": 79,
+              "rejected_n": 14,
+              "accept_agreement": 0.9873417721518988,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9936708860759493,
+              "always_accept_agreement": 0.8494623655913979
+            },
+            "ci95": [
+              96.7741935483871,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 79,
+          "not_accepted": 14
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 92,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 93,
+          "completed_calls": 406,
+          "recovery_calls": 313,
+          "cost_usd": 0.3817288,
+          "mean_cost_usd": 0.004104610752688172,
+          "request_seconds_sum": 519.9601084988681,
+          "seconds_median": 4.178071334026754,
+          "seconds_p95": 12.297548324591464
+        }
+      },
+      "luna": {
+        "n": 93,
+        "pairs": {
+          "automatic_r1": {
+            "n": 93,
+            "equal": 85,
+            "agreement": 0.9139784946236559,
+            "matrix": [
+              [
+                77,
+                7
+              ],
+              [
+                1,
+                8
+              ]
+            ],
+            "kappa": 0.6207951070336389,
+            "reference_classes": {
+              "accepted_n": 78,
+              "rejected_n": 15,
+              "accept_agreement": 0.9871794871794872,
+              "reject_agreement": 0.5333333333333333,
+              "balanced_agreement": 0.7602564102564102,
+              "always_accept_agreement": 0.8387096774193549
+            },
+            "ci95": [
+              86.02150537634408,
+              95.6989247311828
+            ]
+          },
+          "automatic_r2": {
+            "n": 93,
+            "equal": 84,
+            "agreement": 0.9032258064516129,
+            "matrix": [
+              [
+                77,
+                7
+              ],
+              [
+                2,
+                7
+              ]
+            ],
+            "kappa": 0.5564387917329091,
+            "reference_classes": {
+              "accepted_n": 79,
+              "rejected_n": 14,
+              "accept_agreement": 0.9746835443037974,
+              "reject_agreement": 0.5,
+              "balanced_agreement": 0.7373417721518987,
+              "always_accept_agreement": 0.8494623655913979
+            },
+            "ci95": [
+              84.94623655913979,
+              95.6989247311828
+            ]
+          },
+          "r1_r2": {
+            "n": 93,
+            "equal": 92,
+            "agreement": 0.989247311827957,
+            "matrix": [
+              [
+                78,
+                0
+              ],
+              [
+                1,
+                14
+              ]
+            ],
+            "kappa": 0.9591567852437418,
+            "reference_classes": {
+              "accepted_n": 79,
+              "rejected_n": 14,
+              "accept_agreement": 0.9873417721518988,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9936708860759493,
+              "always_accept_agreement": 0.8494623655913979
+            },
+            "ci95": [
+              96.7741935483871,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 84,
+          "not_accepted": 9
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 84,
+          "humans_oppose": 8,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 93,
+          "completed_calls": 402,
+          "recovery_calls": 309,
+          "cost_usd": 0.58628435,
+          "mean_cost_usd": 0.006304132795698925,
+          "request_seconds_sum": 2903.231594533281,
+          "seconds_median": 23.924766792013543,
+          "seconds_p95": 71.33353319016165
+        }
+      }
+    },
+    "Markdown regeneration": {
+      "decisions": {
+        "n": 115,
+        "pairs": {
+          "automatic_r1": {
+            "n": 115,
+            "equal": 115,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                102,
+                0
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 102,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8869565217391304
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 115,
+            "equal": 115,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                102,
+                0
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 102,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8869565217391304
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 115,
+            "equal": 115,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                102,
+                0
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 102,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8869565217391304
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 102,
+          "not_accepted": 13
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 115
+        },
+        "resources": {
+          "completed_cases": 115,
+          "completed_calls": 589,
+          "recovery_calls": 474,
+          "cost_usd": 0.615849,
+          "mean_cost_usd": 0.005355208695652174,
+          "request_seconds_sum": 889.7440372869314,
+          "seconds_median": 4.954438876011409,
+          "seconds_p95": 18.970103736006415
+        }
+      },
+      "luna": {
+        "n": 115,
+        "pairs": {
+          "automatic_r1": {
+            "n": 115,
+            "equal": 107,
+            "agreement": 0.9304347826086956,
+            "matrix": [
+              [
+                102,
+                8
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "kappa": 0.5257731958762886,
+            "reference_classes": {
+              "accepted_n": 102,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.38461538461538464,
+              "balanced_agreement": 0.6923076923076923,
+              "always_accept_agreement": 0.8869565217391304
+            },
+            "ci95": [
+              88.17204301075269,
+              96.7741935483871
+            ]
+          },
+          "automatic_r2": {
+            "n": 115,
+            "equal": 107,
+            "agreement": 0.9304347826086956,
+            "matrix": [
+              [
+                102,
+                8
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "kappa": 0.5257731958762886,
+            "reference_classes": {
+              "accepted_n": 102,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.38461538461538464,
+              "balanced_agreement": 0.6923076923076923,
+              "always_accept_agreement": 0.8869565217391304
+            },
+            "ci95": [
+              88.17204301075269,
+              96.7741935483871
+            ]
+          },
+          "r1_r2": {
+            "n": 115,
+            "equal": 115,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                102,
+                0
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 102,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8869565217391304
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 110,
+          "not_accepted": 5
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 107,
+          "humans_oppose": 8
+        },
+        "resources": {
+          "completed_cases": 115,
+          "completed_calls": 575,
+          "recovery_calls": 460,
+          "cost_usd": 0.90908475,
+          "mean_cost_usd": 0.007905084782608696,
+          "request_seconds_sum": 4064.582651665376,
+          "seconds_median": 29.535635375010315,
+          "seconds_p95": 74.25083105812664
+        }
+      }
+    }
+  },
+  "generators": {
+    "GPT-6 Luna \u00b7 Light": {
+      "decisions": {
+        "n": 125,
+        "pairs": {
+          "automatic_r1": {
+            "n": 125,
+            "equal": 125,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                117,
+                0
+              ],
+              [
+                0,
+                8
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 117,
+              "rejected_n": 8,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.936
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 125,
+            "equal": 125,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                117,
+                0
+              ],
+              [
+                0,
+                8
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 117,
+              "rejected_n": 8,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.936
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 125,
+            "equal": 125,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                117,
+                0
+              ],
+              [
+                0,
+                8
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 117,
+              "rejected_n": 8,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.936
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 117,
+          "not_accepted": 8
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 125
+        },
+        "resources": {
+          "completed_cases": 125,
+          "completed_calls": 523,
+          "recovery_calls": 398,
+          "cost_usd": 0.5119535,
+          "mean_cost_usd": 0.004095628,
+          "request_seconds_sum": 706.8194674437691,
+          "seconds_median": 4.0809100000187755,
+          "seconds_p95": 11.433233908197144
+        }
+      },
+      "luna": {
+        "n": 125,
+        "pairs": {
+          "automatic_r1": {
+            "n": 125,
+            "equal": 122,
+            "agreement": 0.976,
+            "matrix": [
+              [
+                116,
+                2
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "kappa": 0.7872943845717526,
+            "reference_classes": {
+              "accepted_n": 117,
+              "rejected_n": 8,
+              "accept_agreement": 0.9914529914529915,
+              "reject_agreement": 0.75,
+              "balanced_agreement": 0.8707264957264957,
+              "always_accept_agreement": 0.936
+            },
+            "ci95": [
+              94.44444444444444,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 125,
+            "equal": 122,
+            "agreement": 0.976,
+            "matrix": [
+              [
+                116,
+                2
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "kappa": 0.7872943845717526,
+            "reference_classes": {
+              "accepted_n": 117,
+              "rejected_n": 8,
+              "accept_agreement": 0.9914529914529915,
+              "reject_agreement": 0.75,
+              "balanced_agreement": 0.8707264957264957,
+              "always_accept_agreement": 0.936
+            },
+            "ci95": [
+              94.44444444444444,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 125,
+            "equal": 125,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                117,
+                0
+              ],
+              [
+                0,
+                8
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 117,
+              "rejected_n": 8,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.936
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 118,
+          "not_accepted": 7
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 122,
+          "humans_oppose": 3
+        },
+        "resources": {
+          "completed_cases": 125,
+          "completed_calls": 522,
+          "recovery_calls": 397,
+          "cost_usd": 0.75002032,
+          "mean_cost_usd": 0.00600016256,
+          "request_seconds_sum": 3366.0831773275277,
+          "seconds_median": 22.409867540962296,
+          "seconds_p95": 63.16433018320822
+        }
+      }
+    },
+    "GPT-6 Luna \u00b7 High": {
+      "decisions": {
+        "n": 177,
+        "pairs": {
+          "automatic_r1": {
+            "n": 177,
+            "equal": 177,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                165,
+                0
+              ],
+              [
+                0,
+                12
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 165,
+              "rejected_n": 12,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9322033898305084
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 177,
+            "equal": 175,
+            "agreement": 0.9887005649717514,
+            "matrix": [
+              [
+                164,
+                1
+              ],
+              [
+                1,
+                11
+              ]
+            ],
+            "kappa": 0.9106060606060605,
+            "reference_classes": {
+              "accepted_n": 165,
+              "rejected_n": 12,
+              "accept_agreement": 0.9939393939393939,
+              "reject_agreement": 0.9166666666666666,
+              "balanced_agreement": 0.9553030303030303,
+              "always_accept_agreement": 0.9322033898305084
+            },
+            "ci95": [
+              97.20670391061452,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 177,
+            "equal": 175,
+            "agreement": 0.9887005649717514,
+            "matrix": [
+              [
+                164,
+                1
+              ],
+              [
+                1,
+                11
+              ]
+            ],
+            "kappa": 0.9106060606060605,
+            "reference_classes": {
+              "accepted_n": 165,
+              "rejected_n": 12,
+              "accept_agreement": 0.9939393939393939,
+              "reject_agreement": 0.9166666666666666,
+              "balanced_agreement": 0.9553030303030303,
+              "always_accept_agreement": 0.9322033898305084
+            },
+            "ci95": [
+              97.20670391061452,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 165,
+          "not_accepted": 12
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 175,
+          "humans_differ": 2
+        },
+        "resources": {
+          "completed_cases": 177,
+          "completed_calls": 719,
+          "recovery_calls": 542,
+          "cost_usd": 0.7422993,
+          "mean_cost_usd": 0.004193781355932204,
+          "request_seconds_sum": 901.730522199301,
+          "seconds_median": 4.234281875018496,
+          "seconds_p95": 10.434723451774323
+        }
+      },
+      "luna": {
+        "n": 177,
+        "pairs": {
+          "automatic_r1": {
+            "n": 177,
+            "equal": 171,
+            "agreement": 0.9661016949152542,
+            "matrix": [
+              [
+                164,
+                5
+              ],
+              [
+                1,
+                7
+              ]
+            ],
+            "kappa": 0.682795698924731,
+            "reference_classes": {
+              "accepted_n": 165,
+              "rejected_n": 12,
+              "accept_agreement": 0.9939393939393939,
+              "reject_agreement": 0.5833333333333334,
+              "balanced_agreement": 0.7886363636363636,
+              "always_accept_agreement": 0.9322033898305084
+            },
+            "ci95": [
+              93.37016574585635,
+              99.38659658835853
+            ]
+          },
+          "automatic_r2": {
+            "n": 177,
+            "equal": 171,
+            "agreement": 0.9661016949152542,
+            "matrix": [
+              [
+                164,
+                5
+              ],
+              [
+                1,
+                7
+              ]
+            ],
+            "kappa": 0.682795698924731,
+            "reference_classes": {
+              "accepted_n": 165,
+              "rejected_n": 12,
+              "accept_agreement": 0.9939393939393939,
+              "reject_agreement": 0.5833333333333334,
+              "balanced_agreement": 0.7886363636363636,
+              "always_accept_agreement": 0.9322033898305084
+            },
+            "ci95": [
+              93.37016574585635,
+              99.38650306748467
+            ]
+          },
+          "r1_r2": {
+            "n": 177,
+            "equal": 175,
+            "agreement": 0.9887005649717514,
+            "matrix": [
+              [
+                164,
+                1
+              ],
+              [
+                1,
+                11
+              ]
+            ],
+            "kappa": 0.9106060606060605,
+            "reference_classes": {
+              "accepted_n": 165,
+              "rejected_n": 12,
+              "accept_agreement": 0.9939393939393939,
+              "reject_agreement": 0.9166666666666666,
+              "balanced_agreement": 0.9553030303030303,
+              "always_accept_agreement": 0.9322033898305084
+            },
+            "ci95": [
+              97.20670391061452,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 169,
+          "not_accepted": 8
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 170,
+          "humans_oppose": 5,
+          "humans_differ": 2
+        },
+        "resources": {
+          "completed_cases": 177,
+          "completed_calls": 710,
+          "recovery_calls": 533,
+          "cost_usd": 1.05303385,
+          "mean_cost_usd": 0.005949343785310734,
+          "request_seconds_sum": 4373.533069333091,
+          "seconds_median": 19.529204916994786,
+          "seconds_p95": 64.5577527672227
+        }
+      }
+    },
+    "Claude Haiku 5.5 \u00b7 Light": {
+      "decisions": {
+        "n": 125,
+        "pairs": {
+          "automatic_r1": {
+            "n": 125,
+            "equal": 124,
+            "agreement": 0.992,
+            "matrix": [
+              [
+                111,
+                1
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "kappa": 0.9584855529724343,
+            "reference_classes": {
+              "accepted_n": 111,
+              "rejected_n": 14,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.9285714285714286,
+              "balanced_agreement": 0.9642857142857143,
+              "always_accept_agreement": 0.888
+            },
+            "ci95": [
+              97.58064516129032,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 125,
+            "equal": 125,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                112,
+                0
+              ],
+              [
+                0,
+                13
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 112,
+              "rejected_n": 13,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.896
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 125,
+            "equal": 124,
+            "agreement": 0.992,
+            "matrix": [
+              [
+                111,
+                0
+              ],
+              [
+                1,
+                13
+              ]
+            ],
+            "kappa": 0.9584855529724343,
+            "reference_classes": {
+              "accepted_n": 112,
+              "rejected_n": 13,
+              "accept_agreement": 0.9910714285714286,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9955357142857143,
+              "always_accept_agreement": 0.896
+            },
+            "ci95": [
+              97.58064516129032,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 112,
+          "not_accepted": 13
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 124,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 125,
+          "completed_calls": 537,
+          "recovery_calls": 412,
+          "cost_usd": 0.5355804,
+          "mean_cost_usd": 0.0042846432,
+          "request_seconds_sum": 715.3827841668681,
+          "seconds_median": 4.348290207009995,
+          "seconds_p95": 12.047045016963962
+        }
+      },
+      "luna": {
+        "n": 125,
+        "pairs": {
+          "automatic_r1": {
+            "n": 125,
+            "equal": 118,
+            "agreement": 0.944,
+            "matrix": [
+              [
+                111,
+                7
+              ],
+              [
+                0,
+                7
+              ]
+            ],
+            "kappa": 0.6397694524495675,
+            "reference_classes": {
+              "accepted_n": 111,
+              "rejected_n": 14,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.5,
+              "balanced_agreement": 0.75,
+              "always_accept_agreement": 0.888
+            },
+            "ci95": [
+              90.4,
+              97.61904761904762
+            ]
+          },
+          "automatic_r2": {
+            "n": 125,
+            "equal": 117,
+            "agreement": 0.936,
+            "matrix": [
+              [
+                111,
+                7
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "kappa": 0.5685936151855052,
+            "reference_classes": {
+              "accepted_n": 112,
+              "rejected_n": 13,
+              "accept_agreement": 0.9910714285714286,
+              "reject_agreement": 0.46153846153846156,
+              "balanced_agreement": 0.726304945054945,
+              "always_accept_agreement": 0.896
+            },
+            "ci95": [
+              89.6,
+              96.87560562015503
+            ]
+          },
+          "r1_r2": {
+            "n": 125,
+            "equal": 124,
+            "agreement": 0.992,
+            "matrix": [
+              [
+                111,
+                0
+              ],
+              [
+                1,
+                13
+              ]
+            ],
+            "kappa": 0.9584855529724343,
+            "reference_classes": {
+              "accepted_n": 112,
+              "rejected_n": 13,
+              "accept_agreement": 0.9910714285714286,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9955357142857143,
+              "always_accept_agreement": 0.896
+            },
+            "ci95": [
+              97.58064516129032,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 118,
+          "not_accepted": 7
+        },
+        "domains": 31,
+        "triplets": {
+          "all_agree": 117,
+          "humans_oppose": 7,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 125,
+          "completed_calls": 531,
+          "recovery_calls": 406,
+          "cost_usd": 0.7614269850000001,
+          "mean_cost_usd": 0.00609141588,
+          "request_seconds_sum": 3463.2997825370403,
+          "seconds_median": 23.057903917011572,
+          "seconds_p95": 62.43714367537759
+        }
+      }
+    },
+    "Claude Haiku 5.5": {
+      "decisions": {
+        "n": 3,
+        "pairs": {
+          "automatic_r1": {
+            "n": 3,
+            "equal": 3,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6666666666666666
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 3,
+            "equal": 3,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6666666666666666
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 3,
+            "equal": 3,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6666666666666666
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2,
+          "not_accepted": 1
+        },
+        "domains": 3,
+        "triplets": {
+          "all_agree": 3
+        },
+        "resources": {
+          "completed_cases": 3,
+          "completed_calls": 16,
+          "recovery_calls": 13,
+          "cost_usd": 0.0161575,
+          "mean_cost_usd": 0.005385833333333334,
+          "request_seconds_sum": 18.796710460010218,
+          "seconds_median": 3.842197958001634,
+          "seconds_p95": 10.820950360398273
+        }
+      },
+      "luna": {
+        "n": 3,
+        "pairs": {
+          "automatic_r1": {
+            "n": 3,
+            "equal": 3,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6666666666666666
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 3,
+            "equal": 3,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6666666666666666
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 3,
+            "equal": 3,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.6666666666666666
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2,
+          "not_accepted": 1
+        },
+        "domains": 3,
+        "triplets": {
+          "all_agree": 3
+        },
+        "resources": {
+          "completed_cases": 3,
+          "completed_calls": 16,
+          "recovery_calls": 13,
+          "cost_usd": 0.024747675,
+          "mean_cost_usd": 0.008249224999999999,
+          "request_seconds_sum": 106.27782537494204,
+          "seconds_median": 20.641830000997288,
+          "seconds_p95": 62.190480524164734
+        }
+      }
+    },
+    "GPT-6 Luna": {
+      "decisions": {
+        "n": 13,
+        "pairs": {
+          "automatic_r1": {
+            "n": 13,
+            "equal": 13,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                12,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 12,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9230769230769231
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 13,
+            "equal": 13,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                12,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 12,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9230769230769231
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 13,
+            "equal": 13,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                12,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 12,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9230769230769231
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 12,
+          "not_accepted": 1
+        },
+        "domains": 13,
+        "triplets": {
+          "all_agree": 13
+        },
+        "resources": {
+          "completed_cases": 13,
+          "completed_calls": 51,
+          "recovery_calls": 38,
+          "cost_usd": 0.0493226,
+          "mean_cost_usd": 0.003794046153846154,
+          "request_seconds_sum": 58.36652399704326,
+          "seconds_median": 4.289083875017241,
+          "seconds_p95": 8.080348849616708
+        }
+      },
+      "luna": {
+        "n": 13,
+        "pairs": {
+          "automatic_r1": {
+            "n": 13,
+            "equal": 13,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                12,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 12,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9230769230769231
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 13,
+            "equal": 13,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                12,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 12,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9230769230769231
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 13,
+            "equal": 13,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                12,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 12,
+              "rejected_n": 1,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.9230769230769231
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 12,
+          "not_accepted": 1
+        },
+        "domains": 13,
+        "triplets": {
+          "all_agree": 13
+        },
+        "resources": {
+          "completed_cases": 13,
+          "completed_calls": 51,
+          "recovery_calls": 38,
+          "cost_usd": 0.074429925,
+          "mean_cost_usd": 0.0057253788461538455,
+          "request_seconds_sum": 223.03692708196468,
+          "seconds_median": 14.911055750999367,
+          "seconds_p95": 32.33155052419169
+        }
+      }
+    },
+    "GPT-6 Luna / Claude Haiku 5.5": {
+      "decisions": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "not_accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 5,
+          "recovery_calls": 4,
+          "cost_usd": 0.004789,
+          "mean_cost_usd": 0.004789,
+          "request_seconds_sum": 5.575443374051247,
+          "seconds_median": 5.575443374051247,
+          "seconds_p95": 5.575443374051247
+        }
+      },
+      "luna": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "not_accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 5,
+          "recovery_calls": 4,
+          "cost_usd": 0.007291000000000001,
+          "mean_cost_usd": 0.007291000000000001,
+          "request_seconds_sum": 22.901284207997378,
+          "seconds_median": 22.901284207997378,
+          "seconds_p95": 22.901284207997378
+        }
+      }
+    },
+    "Claude Opus 5.5 \u00b7 Light": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.020877200000000002,
+          "mean_cost_usd": 0.010438600000000001,
+          "request_seconds_sum": 29.694851125968853,
+          "seconds_median": 14.847425562984427,
+          "seconds_p95": 16.144472506029707
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.030888299999999997,
+          "mean_cost_usd": 0.015444149999999999,
+          "request_seconds_sum": 98.05991087807342,
+          "seconds_median": 49.02995543903671,
+          "seconds_p95": 49.79885039422079
+        }
+      }
+    },
+    "GPT-6 Astra \u00b7 Light": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.0193237,
+          "mean_cost_usd": 0.00966185,
+          "request_seconds_sum": 29.046580538037233,
+          "seconds_median": 14.523290269018617,
+          "seconds_p95": 17.777581800127518
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.028370925,
+          "mean_cost_usd": 0.0141854625,
+          "request_seconds_sum": 88.61946262611309,
+          "seconds_median": 44.309731313056545,
+          "seconds_p95": 47.282557331997666
+        }
+      }
+    },
+    "GPT-6.1 Sol \u00b7 Light": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.019774399999999998,
+          "mean_cost_usd": 0.009887199999999999,
+          "request_seconds_sum": 24.149834958050633,
+          "seconds_median": 12.074917479025316,
+          "seconds_p95": 12.457625771417224
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.0290748,
+          "mean_cost_usd": 0.0145374,
+          "request_seconds_sum": 83.25759370595915,
+          "seconds_median": 41.628796852979576,
+          "seconds_p95": 44.861724409047746
+        }
+      }
+    },
+    "GPT-6 Luna \u00b7 High / GPT-6 Luna": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 2,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 6,
+          "recovery_calls": 4,
+          "cost_usd": 0.0048381,
+          "mean_cost_usd": 0.00241905,
+          "request_seconds_sum": 6.195526125055039,
+          "seconds_median": 3.0977630625275197,
+          "seconds_p95": 4.007016544397629
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 2,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 6,
+          "recovery_calls": 4,
+          "cost_usd": 0.007520425,
+          "mean_cost_usd": 0.0037602125,
+          "request_seconds_sum": 27.652805126010207,
+          "seconds_median": 13.826402563005104,
+          "seconds_p95": 17.14642855690181
+        }
+      }
+    },
+    "Claude Haiku 5.5 \u00b7 High": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 17,
+          "recovery_calls": 15,
+          "cost_usd": 0.022114,
+          "mean_cost_usd": 0.011057,
+          "request_seconds_sum": 21.495171208982356,
+          "seconds_median": 10.747585604491178,
+          "seconds_p95": 11.268175398514723
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 17,
+          "recovery_calls": 15,
+          "cost_usd": 0.03259835,
+          "mean_cost_usd": 0.016299175,
+          "request_seconds_sum": 100.07522004295606,
+          "seconds_median": 50.03761002147803,
+          "seconds_p95": 51.658622353654934
+        }
+      }
+    },
+    "GPT-6.1 Sol \u00b7 High": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.020539599999999998,
+          "mean_cost_usd": 0.010269799999999999,
+          "request_seconds_sum": 22.59938850105391,
+          "seconds_median": 11.299694250526954,
+          "seconds_p95": 11.852957963162044
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.030355800000000002,
+          "mean_cost_usd": 0.015177900000000001,
+          "request_seconds_sum": 113.21073633502237,
+          "seconds_median": 56.60536816751119,
+          "seconds_p95": 68.0888193920342
+        }
+      }
+    },
+    "GPT-6 Luna \u00b7 Medium": {
+      "decisions": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 8,
+          "recovery_calls": 7,
+          "cost_usd": 0.0099979,
+          "mean_cost_usd": 0.0099979,
+          "request_seconds_sum": 12.283913916995516,
+          "seconds_median": 12.283913916995516,
+          "seconds_p95": 12.283913916995516
+        }
+      },
+      "luna": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 8,
+          "recovery_calls": 7,
+          "cost_usd": 0.014650774999999998,
+          "mean_cost_usd": 0.014650774999999998,
+          "request_seconds_sum": 56.588944917020854,
+          "seconds_median": 56.588944917020854,
+          "seconds_p95": 56.588944917020854
+        }
+      }
+    },
+    "GPT-6 Luna \u00b7 Xhigh": {
+      "decisions": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "not_accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 9,
+          "recovery_calls": 8,
+          "cost_usd": 0.012533299999999999,
+          "mean_cost_usd": 0.012533299999999999,
+          "request_seconds_sum": 12.391023252013838,
+          "seconds_median": 12.391023252013838,
+          "seconds_p95": 12.391023252013838
+        }
+      },
+      "luna": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 0,
+            "agreement": 0.0,
+            "matrix": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": 0.0,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 0.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 0,
+            "agreement": 0.0,
+            "matrix": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": 0.0,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 0.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 0,
+              "rejected_n": 1,
+              "accept_agreement": null,
+              "reject_agreement": 1.0,
+              "balanced_agreement": null,
+              "always_accept_agreement": 0.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "humans_oppose": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 8,
+          "recovery_calls": 7,
+          "cost_usd": 0.014987649999999998,
+          "mean_cost_usd": 0.014987649999999998,
+          "request_seconds_sum": 66.85441162600182,
+          "seconds_median": 66.85441162600182,
+          "seconds_p95": 66.85441162600182
+        }
+      }
+    },
+    "GPT-6 Astra \u00b7 High": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.0200747,
+          "mean_cost_usd": 0.01003735,
+          "request_seconds_sum": 19.480351082980633,
+          "seconds_median": 9.740175541490316,
+          "seconds_p95": 9.772555479136646
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.029492675000000003,
+          "mean_cost_usd": 0.014746337500000001,
+          "request_seconds_sum": 115.55680304003181,
+          "seconds_median": 57.778401520015905,
+          "seconds_p95": 64.99792763831502
+        }
+      }
+    },
+    "Claude Opus 5.5 \u00b7 High": {
+      "decisions": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 8,
+          "recovery_calls": 7,
+          "cost_usd": 0.010447900000000001,
+          "mean_cost_usd": 0.010447900000000001,
+          "request_seconds_sum": 49.536485165997874,
+          "seconds_median": 49.536485165997874,
+          "seconds_p95": 49.536485165997874
+        }
+      },
+      "luna": {
+        "n": 1,
+        "pairs": {
+          "automatic_r1": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 1,
+            "equal": 1,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 1,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 1
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 1
+        },
+        "resources": {
+          "completed_cases": 1,
+          "completed_calls": 8,
+          "recovery_calls": 7,
+          "cost_usd": 0.015446274999999999,
+          "mean_cost_usd": 0.015446274999999999,
+          "request_seconds_sum": 100.04576275101863,
+          "seconds_median": 100.04576275101863,
+          "seconds_p95": 100.04576275101863
+        }
+      }
+    },
+    "Claude Sonnet 5.5 \u00b7 Light": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.019584499999999998,
+          "mean_cost_usd": 0.009792249999999999,
+          "request_seconds_sum": 58.40297162500792,
+          "seconds_median": 29.20148581250396,
+          "seconds_p95": 47.537092530597874
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 16,
+          "recovery_calls": 14,
+          "cost_usd": 0.028794425000000005,
+          "mean_cost_usd": 0.014397212500000003,
+          "request_seconds_sum": 131.123902332969,
+          "seconds_median": 65.5619511664845,
+          "seconds_p95": 84.20977049102657
+        }
+      }
+    },
+    "Claude Sonnet 5.5 \u00b7 High": {
+      "decisions": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 17,
+          "recovery_calls": 15,
+          "cost_usd": 0.022288500000000003,
+          "mean_cost_usd": 0.011144250000000001,
+          "request_seconds_sum": 47.92027421100647,
+          "seconds_median": 23.960137105503236,
+          "seconds_p95": 33.43148756117589
+        }
+      },
+      "luna": {
+        "n": 2,
+        "pairs": {
+          "automatic_r1": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 2,
+            "equal": 2,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "kappa": null,
+            "reference_classes": {
+              "accepted_n": 2,
+              "rejected_n": 0,
+              "accept_agreement": 1.0,
+              "reject_agreement": null,
+              "balanced_agreement": null,
+              "always_accept_agreement": 1.0
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 2
+        },
+        "domains": 1,
+        "triplets": {
+          "all_agree": 2
+        },
+        "resources": {
+          "completed_cases": 2,
+          "completed_calls": 17,
+          "recovery_calls": 15,
+          "cost_usd": 0.032862475,
+          "mean_cost_usd": 0.0164312375,
+          "request_seconds_sum": 113.93221787604853,
+          "seconds_median": 56.96610893802426,
+          "seconds_p95": 64.22407904501742
+        }
+      }
+    }
+  },
+  "audit_groups": {
+    "audit_target": {
+      "decisions": {
+        "n": 398,
+        "pairs": {
+          "automatic_r1": {
+            "n": 398,
+            "equal": 397,
+            "agreement": 0.9974874371859297,
+            "matrix": [
+              [
+                361,
+                1
+              ],
+              [
+                0,
+                36
+              ]
+            ],
+            "kappa": 0.9849185297461163,
+            "reference_classes": {
+              "accepted_n": 361,
+              "rejected_n": 37,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.972972972972973,
+              "balanced_agreement": 0.9864864864864865,
+              "always_accept_agreement": 0.907035175879397
+            },
+            "ci95": [
+              99.17355371900827,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 398,
+            "equal": 396,
+            "agreement": 0.9949748743718593,
+            "matrix": [
+              [
+                361,
+                1
+              ],
+              [
+                1,
+                35
+              ]
+            ],
+            "kappa": 0.9694597912829955,
+            "reference_classes": {
+              "accepted_n": 362,
+              "rejected_n": 36,
+              "accept_agreement": 0.9972375690607734,
+              "reject_agreement": 0.9722222222222222,
+              "balanced_agreement": 0.9847298956414978,
+              "always_accept_agreement": 0.9095477386934674
+            },
+            "ci95": [
+              98.6413043478261,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 398,
+            "equal": 395,
+            "agreement": 0.992462311557789,
+            "matrix": [
+              [
+                360,
+                1
+              ],
+              [
+                2,
+                35
+              ]
+            ],
+            "kappa": 0.954755589238348,
+            "reference_classes": {
+              "accepted_n": 362,
+              "rejected_n": 36,
+              "accept_agreement": 0.994475138121547,
+              "reject_agreement": 0.9722222222222222,
+              "balanced_agreement": 0.9833486801718846,
+              "always_accept_agreement": 0.9095477386934674
+            },
+            "ci95": [
+              98.24561403508773,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 362,
+          "not_accepted": 36
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 395,
+          "humans_differ": 3
+        },
+        "resources": {
+          "completed_cases": 398,
+          "completed_calls": 1771,
+          "recovery_calls": 1373,
+          "cost_usd": 1.8255426,
+          "mean_cost_usd": 0.004586790452261307,
+          "request_seconds_sum": 2458.7910827303713,
+          "seconds_median": 4.407840875486727,
+          "seconds_p95": 13.605074768737524
+        }
+      },
+      "luna": {
+        "n": 398,
+        "pairs": {
+          "automatic_r1": {
+            "n": 398,
+            "equal": 382,
+            "agreement": 0.9597989949748744,
+            "matrix": [
+              [
+                359,
+                14
+              ],
+              [
+                2,
+                23
+              ]
+            ],
+            "kappa": 0.7210198895995799,
+            "reference_classes": {
+              "accepted_n": 361,
+              "rejected_n": 37,
+              "accept_agreement": 0.9944598337950139,
+              "reject_agreement": 0.6216216216216216,
+              "balanced_agreement": 0.8080407277083177,
+              "always_accept_agreement": 0.907035175879397
+            },
+            "ci95": [
+              93.98896832244546,
+              97.74021919204792
+            ]
+          },
+          "automatic_r2": {
+            "n": 398,
+            "equal": 381,
+            "agreement": 0.957286432160804,
+            "matrix": [
+              [
+                359,
+                14
+              ],
+              [
+                3,
+                22
+              ]
+            ],
+            "kappa": 0.6989945724708604,
+            "reference_classes": {
+              "accepted_n": 362,
+              "rejected_n": 36,
+              "accept_agreement": 0.9917127071823204,
+              "reject_agreement": 0.6111111111111112,
+              "balanced_agreement": 0.8014119091467158,
+              "always_accept_agreement": 0.9095477386934674
+            },
+            "ci95": [
+              93.76623376623377,
+              97.46200042896974
+            ]
+          },
+          "r1_r2": {
+            "n": 398,
+            "equal": 395,
+            "agreement": 0.992462311557789,
+            "matrix": [
+              [
+                360,
+                1
+              ],
+              [
+                2,
+                35
+              ]
+            ],
+            "kappa": 0.954755589238348,
+            "reference_classes": {
+              "accepted_n": 362,
+              "rejected_n": 36,
+              "accept_agreement": 0.994475138121547,
+              "reject_agreement": 0.9722222222222222,
+              "balanced_agreement": 0.9833486801718846,
+              "always_accept_agreement": 0.9095477386934674
+            },
+            "ci95": [
+              98.24561403508773,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 373,
+          "not_accepted": 25
+        },
+        "domains": 37,
+        "triplets": {
+          "all_agree": 380,
+          "humans_oppose": 15,
+          "humans_differ": 3
+        },
+        "resources": {
+          "completed_cases": 398,
+          "completed_calls": 1757,
+          "recovery_calls": 1359,
+          "cost_usd": 2.63862384,
+          "mean_cost_usd": 0.006629708140703517,
+          "request_seconds_sum": 11310.720168862637,
+          "seconds_median": 22.007212061493192,
+          "seconds_p95": 66.85631960094761
+        }
+      }
+    },
+    "low_word_target": {
+      "decisions": {
+        "n": 170,
+        "pairs": {
+          "automatic_r1": {
+            "n": 170,
+            "equal": 169,
+            "agreement": 0.9941176470588236,
+            "matrix": [
+              [
+                148,
+                1
+              ],
+              [
+                0,
+                21
+              ]
+            ],
+            "kappa": 0.9733792671468839,
+            "reference_classes": {
+              "accepted_n": 148,
+              "rejected_n": 22,
+              "accept_agreement": 1.0,
+              "reject_agreement": 0.9545454545454546,
+              "balanced_agreement": 0.9772727272727273,
+              "always_accept_agreement": 0.8705882352941177
+            },
+            "ci95": [
+              97.94520547945206,
+              100.0
+            ]
+          },
+          "automatic_r2": {
+            "n": 170,
+            "equal": 170,
+            "agreement": 1.0,
+            "matrix": [
+              [
+                149,
+                0
+              ],
+              [
+                0,
+                21
+              ]
+            ],
+            "kappa": 1.0,
+            "reference_classes": {
+              "accepted_n": 149,
+              "rejected_n": 21,
+              "accept_agreement": 1.0,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 1.0,
+              "always_accept_agreement": 0.8764705882352941
+            },
+            "ci95": [
+              100.0,
+              100.0
+            ]
+          },
+          "r1_r2": {
+            "n": 170,
+            "equal": 169,
+            "agreement": 0.9941176470588236,
+            "matrix": [
+              [
+                148,
+                0
+              ],
+              [
+                1,
+                21
+              ]
+            ],
+            "kappa": 0.9733792671468839,
+            "reference_classes": {
+              "accepted_n": 149,
+              "rejected_n": 21,
+              "accept_agreement": 0.9932885906040269,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9966442953020134,
+              "always_accept_agreement": 0.8764705882352941
+            },
+            "ci95": [
+              97.94520547945206,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 149,
+          "not_accepted": 21
+        },
+        "domains": 29,
+        "triplets": {
+          "all_agree": 169,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 170,
+          "completed_calls": 873,
+          "recovery_calls": 703,
+          "cost_usd": 0.8866675,
+          "mean_cost_usd": 0.005215691176470588,
+          "request_seconds_sum": 1280.9532425769721,
+          "seconds_median": 4.942182645521825,
+          "seconds_p95": 21.412336336811116
+        }
+      },
+      "luna": {
+        "n": 170,
+        "pairs": {
+          "automatic_r1": {
+            "n": 170,
+            "equal": 158,
+            "agreement": 0.9294117647058824,
+            "matrix": [
+              [
+                147,
+                11
+              ],
+              [
+                1,
+                11
+              ]
+            ],
+            "kappa": 0.6115765422696117,
+            "reference_classes": {
+              "accepted_n": 148,
+              "rejected_n": 22,
+              "accept_agreement": 0.9932432432432432,
+              "reject_agreement": 0.5,
+              "balanced_agreement": 0.7466216216216216,
+              "always_accept_agreement": 0.8705882352941177
+            },
+            "ci95": [
+              90.0,
+              95.85798816568047
+            ]
+          },
+          "automatic_r2": {
+            "n": 170,
+            "equal": 157,
+            "agreement": 0.9235294117647059,
+            "matrix": [
+              [
+                147,
+                11
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            "kappa": 0.567175871523698,
+            "reference_classes": {
+              "accepted_n": 149,
+              "rejected_n": 21,
+              "accept_agreement": 0.9865771812080537,
+              "reject_agreement": 0.47619047619047616,
+              "balanced_agreement": 0.7313838286992649,
+              "always_accept_agreement": 0.8764705882352941
+            },
+            "ci95": [
+              89.3854748603352,
+              95.26627218934911
+            ]
+          },
+          "r1_r2": {
+            "n": 170,
+            "equal": 169,
+            "agreement": 0.9941176470588236,
+            "matrix": [
+              [
+                148,
+                0
+              ],
+              [
+                1,
+                21
+              ]
+            ],
+            "kappa": 0.9733792671468839,
+            "reference_classes": {
+              "accepted_n": 149,
+              "rejected_n": 21,
+              "accept_agreement": 0.9932885906040269,
+              "reject_agreement": 1.0,
+              "balanced_agreement": 0.9966442953020134,
+              "always_accept_agreement": 0.8764705882352941
+            },
+            "ci95": [
+              97.94520547945206,
+              100.0
+            ]
+          }
+        },
+        "outcomes": {
+          "accepted": 158,
+          "not_accepted": 12
+        },
+        "domains": 29,
+        "triplets": {
+          "all_agree": 157,
+          "humans_oppose": 12,
+          "humans_differ": 1
+        },
+        "resources": {
+          "completed_cases": 170,
+          "completed_calls": 865,
+          "recovery_calls": 695,
+          "cost_usd": 1.340223375,
+          "mean_cost_usd": 0.007883666911764706,
+          "request_seconds_sum": 6216.1492254076,
+          "seconds_median": 30.095881625049515,
+          "seconds_p95": 76.67243193069439
+        }
+      }
+    }
+  },
+  "dimensions": {
+    "content_fidelity": {
+      "meets": 487,
+      "material_defect": 47
+    },
+    "presentation": {
+      "meets": 473,
+      "material_defect": 55,
+      "non_material_difference": 6
+    },
+    "controls": {
+      "meets": 510,
+      "material_defect": 24
+    },
+    "evidence_coherence": {
+      "meets": 531,
+      "material_defect": 3
+    },
+    "semantic_adequacy": {
+      "meets": 483,
+      "material_defect": 51
+    }
+  },
+  "matched_routes": {
+    "all": {
+      "r1": {
+        "difference_ci95_pp": [
+          2.077877140160877,
+          5.019305019305019
+        ],
+        "n": 534,
+        "decisions_only_correct": 20,
+        "luna_only_correct": 1,
+        "exact_mcnemar_p": 2.09808349609375e-05,
+        "agreement_difference_pp": 3.5580524344569286
+      },
+      "r2": {
+        "difference_ci95_pp": [
+          2.1231422505307855,
+          4.956941080079794
+        ],
+        "n": 534,
+        "decisions_only_correct": 20,
+        "luna_only_correct": 1,
+        "exact_mcnemar_p": 2.09808349609375e-05,
+        "agreement_difference_pp": 3.5580524344569286
+      }
+    },
+    "acquired": {
+      "r1": {
+        "difference_ci95_pp": [
+          0.0,
+          10.144927536231885
+        ],
+        "n": 69,
+        "decisions_only_correct": 3,
+        "luna_only_correct": 0,
+        "exact_mcnemar_p": 0.25,
+        "agreement_difference_pp": 4.3478260869565215
+      },
+      "r2": {
+        "difference_ci95_pp": [
+          0.0,
+          10.144927536231885
+        ],
+        "n": 69,
+        "decisions_only_correct": 3,
+        "luna_only_correct": 0,
+        "exact_mcnemar_p": 0.25,
+        "agreement_difference_pp": 4.3478260869565215
+      }
+    },
+    "remediated": {
+      "r1": {
+        "difference_ci95_pp": [
+          1.7896093000958773,
+          5.0773636461530165
+        ],
+        "n": 465,
+        "decisions_only_correct": 17,
+        "luna_only_correct": 1,
+        "exact_mcnemar_p": 0.00014495849609375,
+        "agreement_difference_pp": 3.4408602150537635
+      },
+      "r2": {
+        "difference_ci95_pp": [
+          1.8475750577367205,
+          5.0
+        ],
+        "n": 465,
+        "decisions_only_correct": 17,
+        "luna_only_correct": 1,
+        "exact_mcnemar_p": 0.00014495849609375,
+        "agreement_difference_pp": 3.4408602150537635
+      }
+    },
+    "patched": {
+      "r1": {
+        "difference_ci95_pp": [
+          0.0,
+          1.1952191235059761
+        ],
+        "n": 257,
+        "decisions_only_correct": 1,
+        "luna_only_correct": 0,
+        "exact_mcnemar_p": 1.0,
+        "agreement_difference_pp": 0.38910505836575876
+      },
+      "r2": {
+        "difference_ci95_pp": [
+          -1.1952191235059761,
+          0.0
+        ],
+        "n": 257,
+        "decisions_only_correct": 0,
+        "luna_only_correct": 1,
+        "exact_mcnemar_p": 1.0,
+        "agreement_difference_pp": -0.38910505836575876
+      }
+    },
+    "generated": {
+      "r1": {
+        "difference_ci95_pp": [
+          3.763440860215054,
+          10.75268817204301
+        ],
+        "n": 208,
+        "decisions_only_correct": 16,
+        "luna_only_correct": 1,
+        "exact_mcnemar_p": 0.000274658203125,
+        "agreement_difference_pp": 7.211538461538462
+      },
+      "r2": {
+        "difference_ci95_pp": [
+          5.150729646697396,
+          11.827956989247312
+        ],
+        "n": 208,
+        "decisions_only_correct": 17,
+        "luna_only_correct": 0,
+        "exact_mcnemar_p": 1.52587890625e-05,
+        "agreement_difference_pp": 8.173076923076923
+      }
+    }
+  }
+}

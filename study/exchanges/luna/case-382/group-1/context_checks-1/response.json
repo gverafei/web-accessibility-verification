@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target conveys the broad purpose of discovering events and local destinations. Event titles, dates, prices, destination sections, and location-related content are visible; differences from the reference do not cause material loss of core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page is generally legible and coherently arranged across the supplied views. The hero text and background artwork overlap and create some clutter, but the main heading remains readable. Event and destination content is presented clearly.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls have understandable labels, including search, navigation, location, category, and destination controls. Some category graphics are blank or generic, but their text labels remain visible. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of an event-discovery page. Layout and scroll positions differ, but the visible sections align by purpose and content.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, event details, location links, and destination labels communicate a coherent event-discovery purpose. The observed visual differences do not undermine that meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Exploring controls and outputs**\n\nI\u2019m thinking about the controls and how category circles are clickable, probably with labels. It seems there\u2019s no inferred interaction, but there\u2019s a visible search option, navigation, location information, and event cards. However, it looks like there aren't any visible buttons. I need to ensure that the JSON output has the exact keys required, so I\u2019ll pay close attention to that as I prepare the output. It's all about making everything user-friendly!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Exploring controls and outputs**\n\nI\u2019m thinking about the controls and how category circles are clickable, probably with labels. It seems there\u2019s no inferred interaction, but there\u2019s a visible search option, navigation, location information, and event cards. However, it looks like there aren't any visible buttons. I need to ensure that the JSON output has the exact keys required, so I\u2019ll pay close attention to that as I prepare the output. It's all about making everything user-friendly!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B_LdMWg9Av4NduWnvEnA6M461bbf6JGfRzMxr0JyWyVW6-ipOw8__yP8qcWM7DL7WBBh61Fh_a0tU9U3-FrTfP5WTs5DPPFlLQaNVYTZ9xD2wuCYpQBlNjS1-GOvi-ahN4KJqJhio3ZeriB7iCsF2oyB4BNkOcVKYHXyw3lt34JZtaLsB_DSvBoJqbXF9W1WYQFnRUOCrLzKo2f-KpzujPjRs1ztyPZ6zDNVQ64yM9rKwZ7YgxNRULKmZLIJgBLYg-AfiFrSaw8nyz0hoVzCGzsV1BUAboGnD2QjafbSPOlQx6Y4P3YiyYsGsxBo2h35IWpQX1MbUzsp38fGtfolbLhwhSkXA4y41GHYX6peP2zzORI6FoEfnqXDhDjmFZonKI0dxgweIkcDmKxRTNy1hmKK-sIXhwXv_90gZOTMSFRxxGlzI5HGIEbGytcQ04LAaLLhoT_B0KQXyZTqftb0kLh0NUE-0ID2j2KeGyosLCv6ZRAijENYBVDlQF6o1I1yqtSnkd7cjUeRJSj_1UCMthOFlunhsZvnpqC-0CMD5GoKDz5-ZXeeG6xN7HW8C3yVyLafeLCrOHejbY7YKBkMvCWXDr8LJdR2WVeixLnQ8QphvjAdSPxqNBXqTrxMUiseHti-oAQfr8-Qy8wR-CM5aWs71trmDsZ4Wb-9V_bsquHFYIkUahj7HzvcvtJMvwkk1hFzlgdyu-IJdy3H5oJzzKBU1PTjqP5yJjpoG3Xmpu4wQFC7M1FBpUjZobMQwPBnfdPK7SDppyfPkw05tJ_x6NB4yW7Zaz09oxacZmfqhdhVxLgjW9kv-FshRmE-cnkhznG9jEZmAUfFD4iwKWvy_RydyL9nvcvRvv6ER8gIsOIRTO2Ll34LbJm7RShEGZrx_d4pq26-SgfqJmxB0liAYBUvoklLwqRMptU-ChkHRO9uPEya9GYuxcWp8ckA2dhYpLvs06hT_OSO9rF7c-rIHluqJeGM7iyzsbJ7jrmB-Cc2kUT4Sw6bR8JgkQmsh_B3CMzyWGaq44lVPL73S_oFFovF_yG_b0jLrJeGPDApXy6X_Wu85Bjyy8rLWhSFW4nPN8pbH9WWF2alfkXx1Q8GqMLNeS_G0m2Zltei6rGQj6YK7deAhC-qgCBULpBoHA4VUf5xM2iitDn9uqqUGG7yIBSzkPo59oWwoyact3y0-VESZcKUkRXY5k92ciTFF3sV38xIdB0iOjKAKrEBEeAGXgSh7jFBIeGadfY4QM6TBfmKlsfu7N5TyIR2_HRazw1O7IRG3ha6wqFltwxuZ1hmmrJGsFitdVe-csSr6r28Kun05ssiQnkADoG7rD_EMwl-cSbigqcebk8to8Iw7mphWaayk9nIrp2N1cxbm4wyrLbZHGzhht96zKfRxQ60MEoSmuFlVjFEmqOJfdR7Fm-FQU4j81AGc7LYmwj77MiEDb4s7ZKGPXNoUIjZcsHY2tm5Lhlxg37gYJpxC9_HZb2F0SiQXsbtL4WDOUtkfw9jj2f6VUNnCNaMm53KXpzq9O_YdDfUYvEgvgpRvYcBu29FB-Tvupv40tvHiGIL4tiDRCNxcU-VZOnlt7nSC-CpKlgeLuuE9wUzFzhw2dHv8NxuLku5X_cWy7toFvlmb2Vd5NMC9xpo9i7z8J1aAWuxGQXsNb4Xan9arys7ScLhTAuwf725mrH6AIzWwByGDakISztL2Bn-lC3CpepoIMqihr071F1o96-PddU-_82u2uly75FTB5EjdORV_n3UZ4UybhT6n1aKj3rQdcFT8xIuZr0B85lSvI9FpDhxL8UfKbrvZ3_9A6IjNOmX8-RnGkTK5cdJ1NqGgqezofDMd8jb5P2AyCyuotIirAvOxTFmoxo-XtGKEifDka0oVN_8jxct8Qn-j1_k32AvZsAUtyXWfFwszsVXwF-cY7KXZ89X4OJD8j2uNN1T7SsOk7_-1Qfvv7CAytOtqj13Kdv48JAaWj6-qNWjowucrt51kXT_AzEtbysAiajr4j1hp4eMogBc-1cpyrLZPsnraU8ddfuyIjiX1I2yzYKExnQeIlHWMRAXPFyFUUXAEa9sROsXSVJt7JjU1BdFwJWalAQ1qxEPOMmxdBTqSfyiiS0Z-9zLIp2cEkcgBkxqDS06qCHdBCwSSCLm2ln9guTLN4rCaP0_CrrTjWdz-MlX3tWFeaWI33V6xM0xacIpHvzZhr2c3QhSrfwJHlCs45Rra2Byi3fGbWAptzGZhh6JRsfZEfDrA2Lro8203Sts5IFvk8_gQQAPeglsyrt5Qehoa8vqmyWnne3ZFLH21YbY9wMa0f1KyYg0Psfegl6fVxrXgCslzJX4GUc1rrh0tqYGiYH5bdC1CaHiUGW8vwT5sGr-VvG_NCbsIMWOlFIGXwUI4sGQDrkqKdC2qYSUJJBuGyxNjGHu-dl1YzBhjRt3Bb_CUy6mb4Z4zexM8D1Vx__9I1G8MAIzWjSHEqmXmK2fHvcFEDgHel7qIVuasu-D9evUI07GvnszfT56Tzs9eIGjqh-ICdIk6czhQn_ScCTurIVgJ_suro519C44sABOGrKvkprskK3jbtgRt9dDUcy5pikX4GkztyOgyccwJABewX56d17ld3QBqcO9HuknE_Z0X8LnuVTZ81RNGkNdpfWscr20mFvdXG5tGUvk0RzrR3uhVC-pBNbpRtLgCJmwtgNZyCbb0NkjJnab77H-_Qxjim5dDmQMJajMiWO6bjnK9mY4t3BFzLlPnNQferqCqhRJezqqkbVq1g2cC4SDGbqQ9pXSIIB9pQfp7rwsmcVsLRU-sK5wDjnvVVqKozY5B0ldwVzvI4wBvvt8WN5YqdudUunVbHvBEoRWatrQi3rKjB0JaDBMKPat7INsq-Ss711VdaeMN5rMmkbj475bAWdiFISVaFxs-R2I7oqD1QYcIxllke25ArCHLtSY4WcUfa38862qdx5hfdiKPnUIgwsfKXSo3OkbyiCEEbrb6oyR3sUQFPe09ZmaY76srMUqBUkk45w-ccyo-Tt9TY0a1jkx0MjMmpmg5Db-LKcuoSB0e-bFE3lTgoslUNLUMbg87SayUMSI1XgxkG5IBGLMP1p3uXUg45YOaCv8R3U0HGJF7BRnfD_KiZnwgeN4nqYRELF7PF-a_pJEWTkD1pvMbcQpGGu0I7b4gbnYsJpKn61o7IARQ9jG8riP6iHEnlmwhV_NSMCKbeyOhIIpP6i3ZHpXLdnCrWvd3je5FpUG9aQvus4owyRXPdioZn1XcBFPSW8STwene36sFEDtfJ7nDSLEtJ8OSaqkDgmEX6ykKAPKl96s9ZqPTtfxfVeVeSMWeU-XfTpF_61uhyCVS623fppoYGbpUkyA7c2QJJOB9Kg67685sHkUgULza-eqxa98Be0eAzI_02L5-6bhcSAiYaQLG5wETQ-S-mTbq13ZWAf3mQf7E3WbWj24czCWoI01a-i8w5zhmtpVWGrK3xI1XPSacpUSx_y1thka0MzOaBCUYZNB0uDEDEwOhn_1SeH8qXjgNq-3CtNEI7w6MCiXovv8qW2iGHDAtkik6RxYBdEfew23iffi79YVLL7PalnzMHIuRofF1dum_z5FYKiZOWnX2nGkaMcBpbZ8JUisnaaGHSLgGboElruM8n1_uyWysR0klurZMmypyFcqRgv3z-9mMAPZeH3B8e2C8zjLHfP1T9vsazbs6-0mU_xk7bO_ywLOp09Sjj7lIYPvPyBDPPUvoggrJq8JELZX50QKkK9JDrxiXvqE1b8crLQ_6cX6GiQ2KhzCaci28tJbWfoduhwwkwhxfEhPND3dzWLE9IzEyv_T-2Jr25NCGOHroLMd9AxP3_jh0boGNG6Uf9Hq9m4gvKJ8NNT52sCF-nV2w8s-tEPF9HPGkR5xJ_H7WMTxuLis-Ex680qbm7HawqbspdOvXnNgb-6vo28-kEkjZAg07T8s1K6KaPUEnOo0FZSS9ByFItF4daMQWYRXi5vvglzxuCGJa1ctQbXytHE7KB-Z8EM9-epZs1WG1ulmYvuabStMJwT0NiRjVWUfixwCGzvP1n5NN3kQ7N-ylNMYsIfi1FN4QVuBqnlr9Sp8SlZXeiGOy6dl32ezjtw_LzLvX10SfXexi5oo-FwkbycfEyjUdnRndIjw774Pm-p1jayxqEZdhCELLIoB-6UgToHqAo392zICnE2LwXGXsDo8wQClziMtmnflPMBadBgGXPRLGhicXIzB3TOsILetU01DolCZ9i4sN-CPrWNLmicZBRkbeUsZMQfUfeCddfalxn8LOptF0M30Xc3I6OImyQljPI-3m0VEFYXWKQzWTAqDGWlsRsgDH0PtxQSPL-wLnATtXLNOfP6sM8XeIS_prKLy_3bEDF-UQN-uFt8gKojVaTj7fh5wAg5LdJo7bOfN0WmF73vndg3A4H1GQy1qkVhjN55P3nH5MenBwr0Q8tE-TlX2K4uHLFUF1pCJ75FC0S9a0Nl6zGQ1-XWnKcgYWB2NYZ4rY50Eb7uHhyqw8ObZM0_JCyPzUbjQsVGxQL7Ewk9Ot6_87YRCu14EqKzr6RbVCVdw1L7HyZllxf8HcxVPZSdNWV39DiEZrVg88MYcnjQl_J_lkX2YpVghkh1dwhsqwrgsuAqbmXAN_z7FerUsEbJ53eDbzt82W_r5gh1.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_02f5c113e5c9d7ca016ae81fc75e7887d19a2ab13d0b81cf8b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16808,
+    "completion_tokens": 526,
+    "total_tokens": 17334,
+    "cost": 0.002363925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 16805,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002363925,
+      "upstream_inference_prompt_cost": 0.002100925,
+      "upstream_inference_completions_cost": 0.000263
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 210,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

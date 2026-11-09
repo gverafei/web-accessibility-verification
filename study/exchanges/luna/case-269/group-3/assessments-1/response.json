@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible Customer Stories section, case-study text and image, carousel indicators, and resources callout. The shown content aligns closely with the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding content is legible and coherently arranged in both states. The large blank area and floating promotional panel appear in both; no material target-only obstruction or clipping is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including Contact Us, View Case Study, the resources call-to-action, and cookie choices, have understandable labels. The carousel indicators remain visible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows show corresponding page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible customer-story content and resources message convey a coherent purpose; no meaningful text or imagery loss is apparent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Comparing JSON elements**\n\nI need to compare virtually identical JSON structures and identify differences. There's an issue of a huge blank space at y4000 due to animation, and that should be noted, as both seem to have a target text heading with a darker appearance. At y5000, they're the same. I also need to look into controls related to cookies and case studies, as well as ensure that evidence of coherence is met semantically. I'll apply a rationale for each point.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Comparing JSON elements**\n\nI need to compare virtually identical JSON structures and identify differences. There's an issue of a huge blank space at y4000 due to animation, and that should be noted, as both seem to have a target text heading with a darker appearance. At y5000, they're the same. I also need to look into controls related to cookies and case studies, as well as ensure that evidence of coherence is met semantically. I'll apply a rationale for each point.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B4KmJPpXFQY5aFXVLkxhnzNANmIJ3nIIOuWDTdC24mAOWV1zc-cUyL3tXzQ5CKpmupU_mdLCLIPrmvu2kiUY2em2StzB2leS6WruhPVeufgogotPqxkh_Z-NGP5zG_i6w0x7W3SihHG0icUSdrJ5_5TjAsC7sulZ6SxkUbWLpjGewGxM7BgN2iBJsNSrBBTVaoTZ4w09px1PDZp4UCL8piu7p6XmT7dc1fSf1gfMiUESqKAXVYdftwmTFOXvYZH59aPGTer6i-0UzLyqB2jWDvENrPKySbMeGmhd8q0Tpb41o7nMBiUfQ2BQk8zRUFRv42ziMi7nmc6wMripjQz1p52yn4eqaS29WCPxHkE8EajX_xgdTYZJlY8beQQMKtkfGA9waVUQMZO8dzOXRVe3X_CojdtmYaQcnsuDe-TyGLdIGnwQUYWXX1d7RBzvulz6smzYkKlhynXfdonP055FS6JZdFnXyoVpKgAA6cGY8YmJsWMYZGWZqAAxklCkUbDvXiqmtN0H0AVWWu63Q8eHxDzpmu5hQSXAOPuETrxRcesyfb-6lNaje2FzraMOJoz5tM0Q0VOzmjO2gF3G9XOxwKhH85vmV2yocUN_sI_FxhrQvYxJNrnh__KYtHRyy3vF__RHYkHl5uYSCyni5HlT8Q1HghnN4hX2YveaTaWV3YaDIXTw8DoJYDoaPOL7O4QhNQ8A4f30d3J1cdtfdREWx1msXZ2iNaviPGjHB_9DWpDu8-4Hg8zWnrUrhV-DynxTSpqUL7IeqEoAm6kkZ5vQGXMStLHsZbxPe5YtLeFUjF6A_qpvxIktM_N6IfPRACrGOckOYY2BwRHG7KAPoOwU1hAVICbOZnh5Tgqnrv9vikbIDZJsbqjoqLfTd1hcIqAhLwGs2S5evbJcxBGDM3bppLSBjLOsZrY-NY34CfsSGzaZorv9ioJUbFgIEMk7PXx8kGt6t0-yqG-93L3SrYzn4n_vH0hWOYBKg6NUb4Sjkr-eZaWIiu9TEsjfTF7OK9N5KcBF7L4KnhG590zqukvnRD4truczgXPwgTWEMFqXr_154ol6ub6e1Khw8Zk9sNoI6sXM12F0QAw4rZk_frbpmdVeT_WyxfDklB2Z3t46_yyjbSCkj-vk-W44bQCZTii67hllK45FlSaJ-Nhvt712wDlNYuZyrNOQQox0BKCl3_Dk6mg5X-TRuGvSVZbD8iPGgHdwW7lIAz80RiS5qytQFSGBvwLJBgvjJrbG929iPL0zZ4tFQM0DLi1P4f9OAOr-gB2OIpEkkUKk7YFH6L2tJyfe0E8gtPQRNhrY4oKgbkjK6Sl15LiWsjL8i2619drTUIz6TyyA0RMkiOBQ6aIRapsJDI4GaogH-T985dLH7L_-sPaGemwZIRZF9JrMumZMi9jR4fQIhdNpsR5GXVnXcD-o_shUgcdO0X3-0a2zp5bhj9KKd5SY3oixsY0qENuvMNrfa9E1BRcfhD2E7oRFMlzZ3bZVVBzjUnwIHq78-sAl07PQZc7qnCW_WPtBrAC-gqbMxiMBtx34eIti8ee0XYG4-vK-ojWwWLEbwe5iCYKsDRYblVA59_ysWWGSysUhBRUneXT48ZMddWi26Bg6c0Q9CFXr66DBES9nyIhP4N4mW1AJZ5oeA3NEHzc_oUwj5vREgzsrPfplnnQXB1OCRRaz7ahpH5q9Eu6EZIq_erqiR08m7yOyVx26EXyMlHVa5OcoGrPbfPbZ6oGCGPHdO-kaFsy4xtQoFpN0xMdoaMbTFBnqj4vqkUUzTGogBaIENlSdd6WSTkhVQi7DPzv1joD5OD2ikaDEsngB24QxuuBHeek36j8sJh7aJGivm_c8HWzDtBwSD54DAARz9WxDwpSLU9vTMSCEI2my6QHCyb-sjGZ0OCjyKEPrnz4HSjtEJ6lrwEK4orV7f77dS-S3weVrJRqeumNRDQzeUp4zEJPRJrV4AS6cHlGVBbm71k1hVjh7gwoEyr-p3Idp04meNlauifftD9r8mEpKLtFjInK3eEiu-zRLWja-C2FeDPJ9WQa6lpjDbns4ui0VG-yDAEJU-x-OigQFC2-znI584f4ahDmy-s_5LXUZ_-Mh1btaAXrNXQelvLDr2ydVvu79Zenk3Gc0_IdcQ6-OJh2tp1zYmGfF6L4TXzm5kSMXFSiVizRFGBSVz4VW3cS6mhg7jJXM3rl6deyzOD03NOahZuG1yCPOBh7dwaMUbt2i8RFzmQM33lbo0vnCPnINpz9fp-WTkD8jIXeDMXmn6PhhYmZ11yN9gLhTMLNrK1IoIXGpsr_.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08c2c6cd4191f94c016ae81e08a2e487d1ac0ee4ae1c823ebb",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11829,
+    "completion_tokens": 320,
+    "total_tokens": 12149,
+    "cost": 0.00163855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11826,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00163855,
+      "upstream_inference_prompt_cost": 0.00147855,
+      "upstream_inference_completions_cost": 0.00016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

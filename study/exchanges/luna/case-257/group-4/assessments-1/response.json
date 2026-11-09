@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are identical in both supplied windows, preserving the visible Ubuntu Core information, imagery, and tracker-settings content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and coherently arranged. The tracker-settings panel overlays lower page content in both states, with no material target-specific obstruction.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, announcement, and tracker-settings controls retain understandable labels and appearance in the target.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target windows match exactly and form a coherent, assessable comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Ubuntu Core heading, supporting information, product imagery, and tracker-settings text convey coherent meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Explaining output requirements**\n\nI see that I need to produce output in JSON format. It should include exact screenshots that have identical hashes. The evidence must be clear and meaningful. For the core content around y6000, and product imagery around y7000, it looks like a tracker banner is obscuring some lower information, but that\u2019s okay. The cookie action controls should also be legible. I want to ensure everything aligns with these specifications.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Explaining output requirements**\n\nI see that I need to produce output in JSON format. It should include exact screenshots that have identical hashes. The evidence must be clear and meaningful. For the core content around y6000, and product imagery around y7000, it looks like a tracker banner is obscuring some lower information, but that\u2019s okay. The cookie action controls should also be legible. I want to ensure everything aligns with these specifications.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2eCek5RuVdYBMhXNT6D37qTlZ72OxwRFUDuaLN7ErQACYzDHfH4saCXU7b5B8Alt5reo_4JxdITjD1c6h_qcaQhEOgIKAx0rOgVNUNcn7bFQVcACOj6Cf57m1mJzXwf7wyfcyjoBCYqs5spbGUUIAZpGPLJFxOSEt4nMrjwNPnktN8hqX9qLV55mrHR3FAuz273g4gy2l0CY_HQtOSLrCwNFjgd0AV7WE4IPSqx9b_LFPxKlac9pG0iItj5oNL__1PxfUG-krftIircuCbpEbOWE0-aCvrxB8Ae_JIhFheU14x8gyw--MjUGekR4sGbT7nbhAyIA3new48Kt8VuJ__9oB9-r25JBMwhVLrzCu1eV_Kb16xb5jmbx_sa-asWdKQHsyHdYGFmX4aSe_qDaCBLFxKBWZLl3QQtvG5lpQs0eP2GN73hKPy_gmSNfvSKOYXWeOIX9w_FnHM41h95JYq_c2pRfFZOgvH9JaKMdHKh77xcRgq8wMUYdt6XmS1pfQ-d0mW7aGcwBzZQrMyUa_lLGyEOw7iQkPUDW1CFvEPjsI3FZs6zcRokxh0OXL2z7DmenudQQ7U06nitmlx6mHquVQQfmxs-PEjZ-ncQ9SpM9TUAomliNkX71Pg-jGEFNVBhf26PyCNLahucS2SXgEKQmZVbWsGGcKQrYTYRh5dvmLtxyZVBGDJtysPuMnSlCGuOlHuQ3wioj8bTYx6wvPUkhx5MpjtuPU9BzgqxD3McqF2Sn1Jn5EdSfA3rJA9quCA3cwwpBJFRBcX_29p1YpOAnMayPeYVTtQbafGFHLZqS5gHgrhieaAi_NhyFQpZLKjUtv1QDU9d7nzjQHuLe9xGKvTSKkETv1Rn9IjnTkZtNIbLPZxN-othMftX2FTudUHW4XwRN_njkoNf0CJ74Ebu1S5N29BKhOA4POVLsU1MkAkpTsBGOpzwzjvc4G-e_-rWQ_V0iwBPpNlIwnuqEEeYzNqVHaJ_usUW7Qb1qnGndYEvqok4AUX58VVVnaEEKzuixKQqwbpTBxLuTXbNH4Dv2XD2JFk_XYll1twHjvw3JNBCmnVel_dwW_rdP7bE85BGSH_1omH-J1hQqv8UkvjEjmKwIzs_me18kM-dMPksCyJ6KL79mC7SUPns3TH_Leoodi6ERkWYOfn97ofTBkDJxJJ4j_lDNoRiveAOn8X_eJ1qPqFC4_JesjMko9gXpHmFRtAvwu3BACBeaqT-zAqn27cVEKK3YzgPaJ_ln48HbS-Nct1pE9xvyy9wy2Wb0VAlNSuRWHfJ8xikZEj3eyvsVitH5VoyIAjZ5xOir_SNrq5KhD01b41hrJ_hn49eaToWA1iQiUNYnb06CqWfR4llrMRfB-U2J_-vZdS9pNlzE5q-wWF6RE0g6ckCbT42lmF7tlUHlgg75tHKFFJtxCGPZts79bkfdnReEKagb1L2MS2TWkQ6EihPrufs0ePs6WowvBOiVv3rwd6bo0pEUsN-C5XO-SX7vK8NRKgqIXj1EVFiPNCW8oPngsCnb3p0Qge5wMcSN2RQceIWD__TYs-3KUSR_MAzsfrK6sYtjjcrAcKr-wC7-i0xOzske2Khhl9V8akGAiylg4ek6JEX2khYv_aZLUz2tpgZecpWfaK6IEb-OkhqQInj7msp85crhunJaSr80zedITX0Ir40ashXDQjacOvAEJ5FrJJKuuC0BHPkgjmhN-zvZ7HzjTDQTwuGcShV52Au-f3HsA2XjJ6X3jpirB5j7efgtVPkpHqZObD4BibdNo-WjxhL4gAY8LmU0rXWix7yZ4bKmqC-96C5wclv3vydlhVlPajPnQfxwjrpVd-ZZ9L-DF_2454tjX2vwSFHpUH8Xcaq1fpWEB-eoDGRgYShUS_9OYzNg6LLi13Y8Ww26-1J5LVA9owbXKSrL_wozADOOAGdLeky1c8Cuji2vr5cmRThixqjAQnomveadg05CPn2FDDBbWI9dZWCs86PoW-xXKDBr7Pd0nOeO4DBSEHgI_ntAeVKmMNEN8Q_HIEzjfllilnXzJUbXuRhPxuE3sScqS3HwZ3H0S0nVk9FUsX5ss4FvybFknluDTTR-r_7HdtiwhBm0Gzi2hf4ky1BGv7k5XvL2exiqfdkEMFDYFFeg2VPw2Ex3-iOQFjERVXWED8_ljKjembjup-3sGW8JBh1l-jGQOCvITDXzHC8p8cZQbzqIaEMXCtRnmP8x-Nmiu37IZNAfpbOooIFhoya0BtNAgzvruKO7pOHn03fV396356mvQAWcQGJSIc9tylWxuWbeVvLPhmKL39.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_044fef934c729e18016ae81d9cd2f087d19d01770b788ea568",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10297,
+    "completion_tokens": 293,
+    "total_tokens": 10590,
+    "cost": 0.00024974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10294,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00024974,
+      "upstream_inference_prompt_cost": 0.00010324,
+      "upstream_inference_completions_cost": 0.0001465
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

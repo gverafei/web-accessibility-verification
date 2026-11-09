@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent Disney company directory with sections and descriptive links for parks, stores, streaming, and other brands. Its regenerated structure and wording need not match the reference exactly.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The directory navigation repeatedly overlaps the main content. In the first target view, navigation labels collide with the first Parks cards and make parts of their text difficult to read; similar overlap appears at later scroll positions.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The overlapping navigation labels obscure or collide with visible link labels in the first card row, making some core directory links harder to identify.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views are a coherent, assessable reference/target comparison of the same broad company-directory purpose. The different layout is a permissible regeneration difference.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, links, and descriptions convey a meaningful directory of Disney brands and offerings.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing navigation overlaps**\n\nI need to evaluate the target sticky directory navigation for significant overlap at certain points. In the screenshots, the navigation text is overlapping with content, especially at y1000 and 2000. The side navigation seems to extend across the top section, leading to readability issues for headings and card content in the Parks section. Although most content is visible, some links become unreadable due to this overlap. I'll need to note this presentation defect and its impact on user experience.**Evaluating control defects**\n\nI'm considering whether there's a control defect. The explicit action controls need labeling since some overlap is obscuring the first park links in the initial window. I should assess if these essential labels are clearly visible. In screenshot 2, the navigation text overlaps with the first row and the My Disney Experience link, making it difficult to read. Overall, the directory's core purpose of organizing extensive categories and cards seems to be met, despite some readability challenges.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing navigation overlaps**\n\nI need to evaluate the target sticky directory navigation for significant overlap at certain points. In the screenshots, the navigation text is overlapping with content, especially at y1000 and 2000. The side navigation seems to extend across the top section, leading to readability issues for headings and card content in the Parks section. Although most content is visible, some links become unreadable due to this overlap. I'll need to note this presentation defect and its impact on user experience.**Evaluating control defects**\n\nI'm considering whether there's a control defect. The explicit action controls need labeling since some overlap is obscuring the first park links in the initial window. I should assess if these essential labels are clearly visible. In screenshot 2, the navigation text overlaps with the first row and the My Disney Experience link, making it difficult to read. Overall, the directory's core purpose of organizing extensive categories and cards seems to be met, despite some readability challenges.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6ArUO27_O4cqWZIxT2EDiBbT3m0QIsTiC84ARnmPhEMmvpunC4fnbYO8hqgDpZPkZzkJ7jA8zLLw2g5x-AJPpDZNts6QMRNUzLmHcNP987uOKJwQWmqFjtE8bXzS_YrvcpIootxCFp1_imjo-uwTIWnqly48OhkjMoY7QiwUQDzAozGvwFAczsy_qmToOoj5DbtGpJcZ9GweWC6Pz5yMRFXEo-W7MHJM3eflhC41Vc8Ri20NzK0Yd12vrBNV0YutYDG9rjtEEmbgeNgY_H5-b1CEd_4XSr8gqIokkG-EoAsqFDodoxMX5svf1t_OHYlYiOpV53XJ69-J_Qme40AuIg0yekzIftQwyEWHjNC2_3D7fwbmxT9XVq_ILIDicmT0kK_VnAB7fvhPNm8Hg-t-hGflQIFu69kPZcYZgo546HVU-yaYwJR1frUj-9kAne-6UV3GYg8xtHJKQGef4hxzVrYhUeqHptXQOWiuZj70XTA4jICbihhRW98Hb0qEmwFiJbUnCGk6myI3LG8zIag1c9zjNH1WiBg4D0xMsjJBFNsZMQPR88XzBSWE4hJ_J41wNzVQY0VYcmVtz-u_uF-GUHMGx1OEmB2aM8QsHPpYWjkNbArmruqtxbxTarL00Mv6iUxKI6ObDbGCdBNp3JQiFRNf2XLTuUrMwQZDGvsLLGz3tgbC0vhD7-VkogrlrIzmI2a5CEo9WdtIxo3PPutE2pqamuZi54hhar9oFqb16Zk6MqFZ6qKXUqvQDmTL55FBPdYlUIFYz43s3JbMlAyuid9tW-R2v0qYISFDidhGNzhmAygwm1AYH0KXgZ1hLqHOtPTzQCBCR2MWTg1zy53QgwYr1clkNSYqNcTekL3KLiBtOctEqH5gAGC3bq_Y7Bli0weFZ7VK0KvNa5fhCSUCCkIHoGU6PkTi4V-uBlHayOqgi_2oJJNauxwvs1QWmyzNaZ3L-69DIil9-7aAeD7rwbSGpWtexnpriyTROkU2oqDsOB7flQxFEkjS0fQzroOg9xrtn6bWcbH7QF4K9JmUfOiPOmpiMAoObxVwdAbupeWTx18O4w1jp6OPbn4nGJ_nizNzM1nUwVXnp6x45t42W9QO1T6Sly0j-JmqxfsLHkE620rU4BqhOyR3b7deEvKHEGlb9Ln12z8SyPfo5r59E-rNJZm5ZkBHgPOBNA0jkVsXrN-C-e4kIBbRl6I_G5mripU7CHueKUDhNBvinVu-aTx6wjog0SMvyDrgGzLIOBzHEK7dmPJo5pBddAwFLtwJ3Qd-YFJAPkRSZJQ1GOMS7SEkfraYAXniRFykfKNUIPFE680kPX2HEomvr4JJb50UlgwSl3cVgcVmOfhiscj9oTBCcfjm2JvzRgX930lOoNJLb0xv-80qlLMhKpApBkHh1zB4muAddFK4Xg2aiBvTUBVFfoJ9xGAkGVG-EUOx50Mudlq5_fi7aPDyIQ7UW5uvYCCpYoYDqMnEzCA7zktXDNFvZEsKCiO_ELaALICcGugFXfdB8PwTdXd7e4Ejg-sWFPcfHSRL1ELMyqwgoSjY4xTpBJK3FQEeQV3NeiN0LA7DptxVatmAuB0PzOIOEzb3vX7BOUNcAwCGDKLuANlJ5ePwIquwtpt1E8OmW98NuH5tbQQzN3TWr2v8gf6aeWJur_Gb2GAi7MnmGTVXXXaXwcrl--CL9Ejc5VMQREjE86AgP6DSsLXjNmbcwEq4RkURCWF7ttY2R_Y14cvYIAqWG3YX68ByOnw40Vc66QTdZPpR9xAuyVUCEBQ980nz6RoR8kHtzNqbgniqFQG5Z2mcPTlLTZXQAX-etKtAvF1MMQxJbRng-5nq7p_KJjf5lOKyKJJEYL2aIXpfqvu2UiM2cUwfZhE-7mp9uv5bOgYHPvchO1QARf-L9BblPl22GrqpLES-L_4CPq9WpXcILSLK1lW1200-DSlq5H1kXXHQTG8yXeGMad8Xxxsb2qQdh1zFpagVPnCgZyJS9HXewamisRdndcsNYFsAk3U_I8wi0jDThDj2OPT-3_EvCGYVVSPpPoKV-nE6gsEvyM-7HYZKcBQIYrfkliVqo70N0daWJgugai27IgmGHyD8PSv7qzPCPLb42WqLZM5MtqXAQFC7dfahCbPSs4-otXFifOzeiB7h-fMuXt5a57bxGnUILN2B6A9yqA3EgHSHowpGdsAJIzTAE6RfuTBTKKbQCnMfjUCYySm_-ZYts3u_NmM2qYiGXZqk2ptuHILId0XhcVt35NwZ5dsHgEj_MzAeIcfR-uYu_zOMIBPHpnOp1e5nuOTcM5Xn3-RphEec8c-GZj5INyX_CUbv0GsTDcgdm7rVDn9sw-8S954Cr6gAehKdvjd9fK3CwCbrsAgBVcm7iHg57NCpOH6ngAlvJsviI12jQ-CTk_gI829qjugZVea8a2PjlffTV2MiuyniX__qTNwwZfaef6ZgpQXpewW3EKh0pxzkORpjqBoXesMpl1Rzkkd2qi2XUbXSuUXJ-vBPHxxMPV1Mow04bpODMYg7m-KDa9_HCfPsWCRz0bU2Zn1_HrRZyTzL2BIP4i4t5UBH2fBHMytpci-otEtNKCv5mHUpc8rF3jIBpay2xbqmza3zhoBFBYSziLHoD9x4NrMEVFqJN1GEKhUzrGdtNlE7R1VNbD-RrlYij7tJX_uEaXgRjHb8AelfZsWNWw2Eh3wAZLhmHJod9T4Ldjjg69E9Ei0U5zqeMmgpL38w70-ZZftmCBe1WwjblhjZKcA78F6DL4BnDfgkVTKWP6neoHkWo8OS_BtZVIiEWeX8pOel4pmDAmynGG5AuC4DoJGswcoALOTf6F1-hmAeq4sND4GrPtKdZ6OglfCwrzgtyRHx1IkoMlz9FIbc4x4ahEGmS7DNRCb2BNpOqXuu2fZh3cwNjqPuaVUj6JeOG-_AkL24J1ErXEKETQcQ8vunt0Te8BV-9ZUICKX_ZkZ37lWJLhumII4afu_2aWxHY75DO6b9y-dWXXnS6Bfrih4FVf9-V52vYq12QM_EDF7-t9LqChcy61T0m2xUfgVjiXCuQu87t_C1mlfnprRHO6gGVgQhavXwjlmAPTFLoiv3aU-pyk2E6djm3txrAR5AtNp48in05KdP8mpVFQyOl5J2TeX-qpiV1-YCv-vXxxg001mnAkN6t2PAWfHg15OyQrM55WXQsExUZpm2QkuSRXvLAZPHfBIKYempQPVL_1_LVIXeJhMlW845P6qSm6F7bo9ndqIKjhlLFiRLnRg8U93vX5QVcoYTC1Q75CwQgnLq0PZgCZV9QPtIHv_nyvOa8saDYHHVkvYRwPrQn8lPL8CkeaiiwF4fNYTZ-JbbFj90Ffkh1xjCx63XFijIui_K5zy1IxYZaRIXyU15lqpFEM-O7M1RAZiyT-IQr8_LIiVwY_rKji6KNj7qciNJBjOSAuRTAvPeypNu1C-bZqhEUj6hpji9avgdIa-FuO4-yEu9gpqno85e-zQ9XFv2zUwXrQKDR-8K8uLcdB5cZCMGQ-4mJAMELx4xxk0OijCit2IeiV8xLUhwh1dIS4fMuAUan6LlRX6zcwe-QGJviGf9EvyMhrxhKg4bqx3BxDn62r0gAVdZDRO19dibOdmInXU93zeAw28KW8xDbNLYGM7ltdj6yBd3_CydlmMKp7MurggpiiC8JzyFNBq-B5h8khneR2rA9Kvm0a3RcbzE_iRgQNf8OPHKDCqbndthUMPRttztTzqHBb40XidNhX_HijHnx69IND6vC2drklyYBtQc63rqMfabZX1H1c6xlW_SsPssaKnibxrYIJLRuniy42CLch0vG5gp5smdrPpwiclMzgI5s5pt0u16E2rmF9rftuV5DAfRC4WjiQBKXvcLPlxFc0gZ9I0cQ4wk2fx8HCdlBA-rxTd4WBVdl6npKmahWLdsE4LJR9ridc_ncbw6hcAwHN-eB1IvxZFfSMhYUVA-SaulhSvoey4cNTCOSatv-rLjTiysVIvursR1t-dqdfV9tc9ys559U2WjimKB8hBViiVde07LbGzlKl9BekMxdpNz2rcjpoKH8Erpwq2GoFewuTEd9Q6frr5YHqZdMITYIA34SUWaKnGge4cHlFGRQtuorq1k48eKnLVaN4Z63Y5XKRKb_0KtFLGGCMJxyHi4jbu7niLSH48T40-puFk76Fr2BU6n1Hlhx8mZqgXjZEoIof0YjmiDKc4Q3WECFWVrU0zvYccvaT6iudiXWRuDFpkP4KomvqDyd_ahhHs-Lj6OhkydaE647d3ECE8RCUnYbcaYsALiTThpofOax9h0tgcNeDAoZAz0cDvB4U8rd7Rz3bceeotWAv4pIdMQnJa6kD7iaXUCX-wIUSa7wzCffiPR1vaPTDAH3xBR7hsryZkudPoXDnHyC5dvI2QpzEkxIDn2XHnjGh6LtXYKtw1y0WeYysIh41vf4bRCHs3A2_1S_eMwv06aje16FAWEK_O5kNEK9d8mNn4T2SvXm2rcx57j0HNzOVjMMybKGPRSp5T7CfXNOHPDHAEYFvkHB8GLSlGS76iu3-d1QyrALlNj695MXkhHtLZoFnT-V0KqVjk7NKdOIT9_ZBHtAZhaTlxqV0V0qRnfRIWT_ablKYiOZuG44Rk2kzrEixpLy5i0X1DrpRQEPJTmwAoEIGdDPCMdBsI-opyvZzRzn6wwdSuMS8QlIZ2hyDaGtpWHB-cXkXzlVwbcLO63a83wGYifykOhqPabCcupzlKdjwaSbSJrflQvkYzfvSxvTNQNdRgnDKzzB8Pc2BnP6CzNpLOogGgLc74baFHW7SaOh_86GD5e2wYwGkkipi0V9JR4MaCPLjPSYO7SnjwSkjE8eok2zlQNPD97AeFuvM8-csjqw_cfBFqiQSkysuqlLDiZssUoFRMNKis800rAYa1pzHAp2H9RLgeuyq68Z8_7HvoRiEkX2knwnIAbavAUz11KsA1umgGZso85tUTbaZyAojkke_jR4KU3aZWbkuQR66XzppAj3FyTvRBf0LLQC7m1cBYMod1z82ItlNkkSDDez7zDtFqu0TlivSjZx-502MQlKWh-Pk4CYF2N-THIbh7lZ3Z_O1XzSk6BEXF8LBqR3cfZZgeSW6biiWWo13fz4OAQ__J1wPS9BfEnDYXxgvqlxho_jxsmvaYdXY6B0keIZt4vhwSQDDzx9rZ9y5ddpiyHnsyscrKkc0JVw99AgTNjk6R24NyG7EtYCg3UrM0jb1bZqblFslB7OdgqNATLYuyhVPXQkr4eEbdUQnmFPP26Wo8evdKPYXfHPg9Ki9rL_G_1Jjni8FqsL7pJ81aILZpK9Cy7kBExadmsjXFdvYYTyQt4BbMURPKxIaWvRd9IrPPteUAsuLrx6lAS-WLJgCXjPaeITq7R67rI1vSGvZLeoCsDCtMgE4KjmyhtYHvhSyHP1bwb4IBJvUfXi-SMQoarMnUNo_IR6tQxhqHybJsIQtF7Sv9HZH8IRHhUb7mOLvj9Kz62VB_sJBlIE8ZP2QH5hSFMW2kLJuf7sKc7qVwMszGsNIc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ef27a04bcd75de7016ae80acf4a0487d1b38c0c425f30f100",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14835,
+    "completion_tokens": 557,
+    "total_tokens": 15392,
+    "cost": 0.0021328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14832,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0021328,
+      "upstream_inference_prompt_cost": 0.0018543,
+      "upstream_inference_completions_cost": 0.0002785
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 279,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

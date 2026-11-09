@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the reference\u2019s ROSE Data Server hero, product description and specifications, product image, navigation, and the visible hardware-category content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target content is legible and coherently arranged in both supplied windows, with no material overlap or clipping beyond ordinary viewport boundaries.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Details, Find Retailer, and category labels remain identifiable and readable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent, corresponding page states; their supplied lower-page views match.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The product description, specifications, imagery, and hardware-category labels convey coherent meaning for the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing JSON requirements**\n\nI'm thinking about needing to ensure the JSON includes five dimensions, along with having the same screenshots and content. I want to make sure all the controls are visible, and the details for finding a retailer and navigation are clear. It's important that the category links are readable too. I also need to provide concise rationale to support all of this. Everything needs to be coherent, so that clarity is maintained throughout.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing JSON requirements**\n\nI'm thinking about needing to ensure the JSON includes five dimensions, along with having the same screenshots and content. I want to make sure all the controls are visible, and the details for finding a retailer and navigation are clear. It's important that the category links are readable too. I also need to provide concise rationale to support all of this. Everything needs to be coherent, so that clarity is maintained throughout.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BfVj5SM0jGKmrXxb-Iq6QRtrM3mvOpR4wY0OM3904LCqDKo8uX_zo6KgkzLR8y58LqszqdmrCPgeRR9aCzD6ngEeZJb7UrjcM_0df4D_E3ief_zvB_XhnYn5IODuI1gdMV9zVHyEKOQtfG8UZ2GBXqiqtGPnDtLHykcG631eHncmZ5CU9AB9_Dc7GTPJyv3Bbzy9ztjF2I72xRBz_BduixAoeGyswcFtORzVhkLEPA1h52FeXMkpJD4l1JRiXqiCT7Jsm_FZPEwso-h8uWGnbXP1smf289HiI_RXMuFk_uz5Fcp22c1ITTxsvVouGLXIK1cO62OtBcxPc5_m6LN2Ew5cAUximeXrf_2tYcWL_c55Wx3cTp_J9D_LcO3yRnUbM0grVas7VV_HB58wgOJrlakRejqaV5bEiwgi2pcSPDXRM6J_IyqmSddvWYGQjMXULwgo-5SPaCcnL95WEmdZ8egamb-csn3ZhxuaYorFwO_4gOyPZD5FJRHWelDk1qrNfcYF1RidsE4OzFBY7y0K-v0o9eOIXF16bBaTlDk04VBdoKadhpCB7Q3j8YF0jP63i8lILL79im3JaWRsiKU7AQ4x_3XuZtFKnHcLDxlXfbSem2qE5iapVgqmbPElJPQKlwjbhsn5gJxzMVSk_cJ0Tc4EvRH1y3WF-XKxn4wAD8jzBoJx7Xrt5_pOZvrMUjE08KVUvzJTuwSDxMmby_72kBACD5tA9nyumE2v3eflfYUfVC-Do0o2dSYcWgIoxJ6RLbXCRSVp58azVWOHx5O088HuRVUL37VlFdoZX9PCJnwmvZlcos6QmCT6Vjd-XOBLnyQ2yUb4d_TGeGq9xL47ae56a3CbRSyQljJ70eLgCipFnb_bQdnQ6wWC9lhXx1M3oFYYRt023vlHlzo-9ESd5luqZkYnFzcFCfGbWXtJcIhL5MHnrqV0rQ8sX6sjfkw1dq-M_fujK0m8Rw3e_uCqaCmBilmLJytyH9C9dInPv7V4Yc9_RbK0R8wnz3Vq4-KeBK1xqNeQZRT27qddHhzUQASCSTlSjtoLHAez_sayMcasg42senITLRXTdkvz7mZZ0OTrVw2PjEzRrJ8qij4JQbl28_Mow4Z22gM5K0I9w4gQszhQYYPLtp-YL_cdBmiU_wX0hKyoVeLLkL-p52tScsF2FCrsNTbn0sPwbtxHTzvaJeJ8k0ffswiHVRbDXXjb_R6Cnvwn0zeCil7XfjPZ9iP53bqKUk4Gxut7wjPkN2Ra-keLIA0A5ThZCcgBl7SAhPJBaAe_mChR6etm-tOf4NrNoKmJCnypazAqBPZ7ngWTdk4e4PARo2Pz1kAzxRXxJZCWklMMmY2h4Fj8JejurkUwn7sQkU2al62GXGjuxlQu9wXtkFhDvTCPCI1MAf9F7lWk0Ul9F-gflpi_ZIMDUtvy8_1hJd8LelvHNsKvgUTw0FgUy5fzMLwq0SLmc8WK4WrzSx1l9bfS_Q7Jku4mi1OcyrfZa48p26U2LkuCRH4GG-J2mkdM6hI9azb0sAllPt7XKEe-azrz0PiSXBuAO4LlyBn5mok8zjtpDpr7SIjEaaRKRciPtzuQJ5LeTGoXxC8wWFViZ5T75OfjyzMtCk0S-xiTUz-oxC2RFknHKz9hMPU67-FmKeGNIG6NKuKbnKoC5N4u56cp_grFVUIZG53MFCnetop2I55BhoJkBQwpSu4RrgPghCTTG2fPt2u4AIW2_i8v1axNcJr4Dw4g6k9_rk8x95wOtGXb8qIqsoWMQUJVBwS59D3S3PRztDFvOc7VQb_kcdwPW9xn2BvR4WoIQXoFo_Yjra31xdreFwDo93d0l5CCp-4e6wAo1z_WFR08LCv2gkWqDTm2Sa1uHA34KCA-M3BuFpv32EcTkIeBSWKnzF6flDanqxPNG5i8BtqFjkfjXegNRj7hw_yzenAfrzfRtO3f8F2__alIXt2Qj8wft2kMzQMDvbNH40XuifkG18tDsvPdxxb17tlvY2YK_Lemh28nTPsY8WKUWO2C15TZLRpTVZ6bD-pyhwABcs7Nrj1XUqz8QAbMaMuj67ucVgAZg1w0-k3Dgx9JG5ljQ0=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0db2b3b22c1abed3016ae817d4112c87d19cefeee4aa0ccb5d",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10186,
+    "completion_tokens": 273,
+    "total_tokens": 10459,
+    "cost": 0.001409675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10183,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001409675,
+      "upstream_inference_prompt_cost": 0.001273175,
+      "upstream_inference_completions_cost": 0.0001365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

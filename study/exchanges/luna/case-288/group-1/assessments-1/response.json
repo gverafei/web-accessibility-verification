@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target provides a coherent automotive marketplace and information portal: car listings and search, new-car categories, automotive news, and related content. It does not need to reproduce the reference layout or every visible item.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible content is legible and arranged into clear sections and cards. The target\u2019s smaller new-car illustrations remain paired with readable category and price text; no substantial clipping or overlap is apparent.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, location links, listing/search affordances, and the poll\u2019s answer choices and vote button are identifiable and understandable. No untested interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target views form a coherent comparison of an automotive portal. Their different layouts and the target\u2019s additional content are permissible for a regenerated page.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s Russian headings, labels, vehicle listings, automotive news, and poll convey coherent meaning consistent with the page\u2019s broad purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10169,
+    "completion_tokens": 242,
+    "total_tokens": 10411,
+    "cost": 0.00139205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10166,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00139205,
+      "upstream_inference_prompt_cost": 0.00127105,
+      "upstream_inference_completions_cost": 0.000121
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

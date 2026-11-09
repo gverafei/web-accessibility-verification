@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the nginx overview, release and security news, project descriptions, and links to documentation and source code. It reorganizes the content but does not show a material loss.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged across the supplied views. The lower target view shows the project cards and footer; viewport and scroll-position differences do not indicate clipping or loss.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation and key actions have understandable text labels, including documentation, installation, source code, and news links. No essential visible control appears unreadable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots form a coherent comparison of the nginx site. The target\u2019s redesigned layout and differing scroll position are consistent with the regenerated-page contract.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headings, explanatory text, news entries, project descriptions, and link labels communicate a clear nginx site purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9874,
+    "completion_tokens": 227,
+    "total_tokens": 10101,
+    "cost": 0.001347675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9871,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001347675,
+      "upstream_inference_prompt_cost": 0.001234175,
+      "upstream_inference_completions_cost": 0.0001135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

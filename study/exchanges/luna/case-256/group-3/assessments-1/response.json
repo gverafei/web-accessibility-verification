@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots are visually identical in both supplied windows. Core cloud-service information and customer-facing content remain present.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged; the cookie settings panel overlays the page in both reference and target.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, Learn more, Contact us, and cookie-settings controls retain readable labels in both.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired states align exactly across both supplied regions and form a coherent reference/target comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible text and illustration convey the cloud-service page purpose coherently, with no meaningful difference between the states.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10309,
+    "completion_tokens": 178,
+    "total_tokens": 10487,
+    "cost": 0.00019236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10306,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00019236,
+      "upstream_inference_prompt_cost": 0.00010336,
+      "upstream_inference_completions_cost": 8.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

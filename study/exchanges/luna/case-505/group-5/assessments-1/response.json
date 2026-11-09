@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent climate and weather news cards followed by a substantial TIME site footer. This supports the broad news-site purpose; the different content and layout from the reference are permitted for a regenerated page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible card headlines, bylines, images, and footer links are legible and arranged coherently. The slight difference between the two target captures is consistent with their nearby scroll positions, not a substantial rendering defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible footer navigation and subscription links have understandable text labels. No essential visible action control is blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent comparison of a TIME news-site reference and regenerated target. Their different scroll positions and page content do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's news headlines, categories, author bylines, and footer labels convey clear meaning appropriate to a news and publication site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing footer details**\n\nI need to focus on evaluating the window target footer. It seems that a reference at y8000 shows unrelated content, although the goal is to regenerate a broad purpose for the Time homepage news. The footer cards are coherent, and the controls are clear. I see that I should take a note that the target ends at 6610, while y8000 and 9000 have different content due to offsets. Overall, the target coverage is complete with no defects.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing footer details**\n\nI need to focus on evaluating the window target footer. It seems that a reference at y8000 shows unrelated content, although the goal is to regenerate a broad purpose for the Time homepage news. The footer cards are coherent, and the controls are clear. I see that I should take a note that the target ends at 6610, while y8000 and 9000 have different content due to offsets. Overall, the target coverage is complete with no defects.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B7tPkin7Y8FEvmuf-I9WiHnpCdncS22i8po-T8E9yz_J1ICeTNXrp0ftti1Dzjj-fojy_uBP3timjUabvn9ILQ9Msn-gsp-sVRnhdUN6UAtCxpYb7MYsli66T8tbBtoGyhmzVT3YmQUszjt_ojnE38_tTo21HCqGb_DNb1s4iVDkex1NhyHG-N8yr-uPqsiheX_vEdy6vg8Me7a7AeENsS2WJVM9kjWA7pB-b3zKExDzj1Vc6d0BjivP5fAs_qYcVp8cQx3_azKevLird9hkFYbeBIxJ9JiEq_3_BH_pRoQInJysgmctxbbCQOJjyMeP6mmM1IfpuKGh074NMu2Z1mmYzptDJmkzLfVnE9GIRRZR4aZkSjqdXQK-C8v5AGwNWBWG0ysNGR9tyvJQ1wnENI_Vsmb4QYuAgrz_xfJEnIkx-UKp7-NRFNJQPHoWJqdjDxFtUJvitqnjPLdJlTlYhkVi9sGDbreHfOtPNvL48705Urq1ALFI_vY1TTVUePbMWxagontKWQb3fGB8e7oesz8v90GWQ0J4qtGm_3J4Zrini6dYdcXEtUOaU0P4JTvnHdxIRj0KOc-WRcLoqQC8SQBTAgoe8VMJn2WsL2A_kohM2yCbK2EDhSOGUBPPNCF7D_wGm_0N1He6mszkLOWNvgu5l_HsWC5d2NWEyJUWl27ZmZEBwsKf-TASseft42HoqOEbnTWoxHhVk8Qv_R1sn0DSPeb9_b80olTGnnHxT-7YHKlLVLYsgvErOVj0FMlINTSaPtYjCYMZDb2Zpglx_XyRNSB8v9vHXVGjKGAyQkGfYIF6Q1_RtHNKMv5byfSBEkXX74D9CAyKv-mYmGmuFhe4UyHnJAhQ_UJ0zlze8Fx5QiN3AmNcQTiFlOpEYhDlA8ShpgH42GStDDdzWaat0IGERVL79OOaz3fnt34J1b7TLBIpnwCrGpPTS9TrfH-1ZLRzLyQK067Duwt7x2gk-lqgy6tWIkf-pd3XOzqvZalAs8pBrAD_cVwDUZdS7JaZmTXg7Z4GRiv-laohHxWNxb-c-JYQlNmH2K6gBZuW0_hjdwtYkytvQ2kb3mFdjatq11V09QXYIJ6qeZ7pPkgn1ionGQvJFrF5VLm_t8x0rnMPsLBdLQ5viowxtFZj5h9Ax33ZkSKHNu7f9BMAY_xbj9RzQZyY1uXQssXMVL_ebOOlg6eovrHDg-cITTXZNzPongGu5hNpYZLd9G6o9J7Bzb8lo7kj2FGJHV1wP5o8WGL1mdRLBItmWOTeDk00kFNR9C0CFJLgCAcChfOQnX-0SQGOLVaTC6I7UcnOhR8qg8WaYUD9G7HTRW1HKSdC8INKBSV_MGODMXr9jVvoWGXglG3n8OuWSHmLOBj2l3Zup41KSxRhpyIG6rmCNch75QJ2gJEpI-OczMXyX1_ygLysKnp9hZeIvl8rW9jfolPMmHEa37kSkx4V-4d3JGeh5X63-ZU41eZkBolzLVViv8wREURwRo5HFAVTOa3CNTu9s-1ZTsi3WnFsHa4HUjhrrcQU5JdeYXGU_HdOUoB09q0cWOXCeXYQ0xAH045-a_vTToQJw2PJalRFakiv1K_Sc08h7Z51YQyiGlogWto3UiWVJvm84ENJmN4LSzl0yN-d1-zvLs7eZy5qh8o0ps69maonQNngZ-NhhaCcspjbfA4hAQnRCbTfCc1H0OhXlOSc2g3e-i_UBTUqR5Zgu4w_HLr1u9v_siab0gsQEacdR0_rnzCzV6-2YOcDnDsW2vBf_W2Nkw5IK-jfs_z4zvn7CUW--700nguyWk1-vQBLRoHe8ckk4eMFhb_f7FryYf8ZtPSnrbn3Cw5E6HZH6exQ9zz3zzvt9CGHOL9xEA-K81xIBWFDv5jmbx3dasBG3MHm1NHTQebeS4Tz6pBKb-xc_qdX2huaX9eSZ3IUcdvlSMZcrjZle4O-RF6c-rUHWq4jFs7IuS9gFBn16aPHQllpf8ByqB7zjVHBX5rV-HDZNEfwgWglXv-_mtxfsvO7a2OY-n7z3PuGOksb665l1BeZRUSIQTBwkncOphKQCgpfhaFGztHe2tSLeqF-LH63yZEzU_pxvHoz3k5Cg23F5Il6rL_OUgo_A0SVfgSjTxONvSqtfWGurCBJVBInOzqjxJVNcxb3exaFA6YI8yDVSOrkHp30nAhjDBESpljN3Rz4I5esT4aDOCVgwgNMgzM0yz0BYZqYQ-b6oMKga3jnZurp9pTz3KY6B6b4VHrNaEK1Ve--HK6_0sW8xrmw2Kn6ou47GCz3doG1dS6T128yqJnMf8AOYdlxpwkTSCLRsK4YIiZpiMl74EI6CZBI0j85LE2xpmd_FcQ4n0ZlzRPDExqOkoev4OKgAn5lm-vGMYVLz2QCHbnPxBaO2xmjbah9SEh-3h0xfN928X9ojfSz3cK7c56rj4aVi_cqnGUvRcXsDvSUoQMq0wSHyZZ_dVGtWdZbvq9IBKOdABai269X7tD656gfr0qxfADXxcVlW-8qd7b3g13PMWDQQ1GCtwnMKZdJI_Wo9tdYpIzp5kzAJf708hIhieUge3S3exlytq_9hvY5LPDqCX-R8S8THszm5JU3FRNFoLieHQcZ053mgZkNIEb94SKdfHHiLg5JVaCFnHdhyVsxsDskCvQHhoX_N9i_CLoNhuJz9Sbj74cRR7MdpUj_rcPsQWzHu6a2Tpq6FE4dMu7zkAoyZhDTUd08kEd-toWj2ITxPyDqUvNxKc86D4mFlwrnPP_PSQCFvB5fO40IgjPyl9N8y9C2vMLxrxA-yI_WOREAAq-PCHCY_c5Y8C_T-p7KW-Hd9hes_gPR2aoZTmo-7Ak_W837m-LyBJzl3AlP5xSKbsJOGF3HV1pXs_-6rtf9oTUMapOy91-1frLytx3pA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0fd0b677ce9ee4a9016ae81eeb656887d1be3bae4a7ca55eff",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14487,
+    "completion_tokens": 390,
+    "total_tokens": 14877,
+    "cost": 0.0020058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14484,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020058,
+      "upstream_inference_prompt_cost": 0.0018108,
+      "upstream_inference_completions_cost": 0.000195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 101,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

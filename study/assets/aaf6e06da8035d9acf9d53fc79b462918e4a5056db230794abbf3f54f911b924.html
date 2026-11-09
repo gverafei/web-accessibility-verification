@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Media.net | The Sell Side Platform for Greater Outcomes</title>
+<meta content="We help brands and publishers leverage the best of programmatic, to achieve their goals across every screen." name="description"/>
+<link href="https://www.media.net/" rel="canonical"/>
+<style>
+    :root {
+      --bg: #f4f4f8;
+      --surface: #ffffff;
+      --ink: #14141c;
+      --muted: #3d3d4d;
+      --pink: #e0175e;
+      --pink-text: #b5124a;
+      --purple: #3b1f9b;
+      --purple-soft: #ece8fb;
+      --line: #d9d9e4;
+      --radius: 16px;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--purple); }
+    a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--pink);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .skip-link {
+      position: absolute; left: 12px; top: -60px;
+      background: var(--ink); color: #fff; padding: 10px 16px;
+      border-radius: 8px; z-index: 100; text-decoration: none;
+    }
+    .skip-link:focus { top: 12px; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 50;
+    }
+    .site-header .wrap {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; min-height: 68px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px;
+    }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; color: var(--ink); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; }
+    .brand span { color: var(--pink); }
+    .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 24px; flex-wrap: wrap; }
+    .main-nav a { color: var(--ink); text-decoration: none; font-weight: 500; padding: 6px 2px; }
+    .main-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+    /* Hero */
+    .hero { padding: 72px 0 56px; position: relative; overflow: hidden; }
+    .hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin: 0 0 24px;
+    }
+    h1 .accent { color: var(--pink); display: block; }
+    .lede { font-size: 1.2rem; color: var(--muted); margin: 0 0 28px; max-width: 34ch; }
+    .hero-visual {
+      border-radius: 28px; overflow: hidden; position: relative;
+      box-shadow: 0 20px 50px rgba(20, 20, 40, 0.15);
+    }
+    .hero-visual img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--pink-text); color: #fff; text-decoration: none;
+      font-weight: 600; padding: 12px 22px; border-radius: 999px;
+      border: 2px solid transparent;
+    }
+    .btn:hover { background: #8f0d38; }
+    .btn-outline { background: transparent; color: #fff; border-color: #fff; }
+    .btn-outline:hover { background: #fff; color: var(--purple); }
+
+    /* Banner */
+    .banner { background: var(--purple); color: #fff; padding: 28px 0; }
+    .banner .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .banner p { margin: 0; font-size: 1.25rem; max-width: 60ch; }
+
+    /* Sections */
+    section.block { padding: 88px 0; }
+    section.block:nth-of-type(even) { background: var(--surface); }
+    h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 20px; }
+    h3 { font-size: 1.25rem; margin: 0 0 8px; }
+    .eyebrow { color: var(--pink-text); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; margin: 0 0 12px; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; list-style: none; padding: 0; margin: 32px 0 0; }
+    .features li { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+    .features strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .split img { border-radius: var(--radius); width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .checklist { list-style: none; padding: 0; margin: 20px 0 28px; }
+    .checklist li { padding: 10px 0 10px 28px; position: relative; border-bottom: 1px solid var(--line); }
+    .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--pink-text); font-weight: 800; }
+
+    /* Partners */
+    .partner-group { margin-top: 32px; }
+    .partner-group h3 { color: var(--muted); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; list-style: none; padding: 0; margin: 0; }
+    .logo-grid li {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center; min-height: 96px; padding: 16px;
+    }
+    .logo-grid img { max-height: 48px; width: auto; object-fit: contain; }
+
+    /* One */
+    .one { background: var(--purple-soft); }
+    .one p { max-width: 62ch; font-size: 1.1rem; }
+
+    /* Contact / form */
+    #section-contact { scroll-margin-top: 90px; }
+    .contact-box {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 24px;
+      padding: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;
+    }
+    form.signup { display: grid; gap: 14px; }
+    form.signup label { font-weight: 600; }
+    .field-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .field-row input[type="email"] {
+      flex: 1 1 260px; font: inherit; padding: 12px 14px;
+      border: 2px solid #6b6b80; border-radius: 10px; min-height: 48px;
+      background: #fff; color: var(--ink);
+    }
+    .field-row button {
+      font: inherit; font-weight: 600; cursor: pointer; min-height: 48px;
+      background: var(--ink); color: #fff; border: 0; border-radius: 10px; padding: 0 22px;
+    }
+    .field-row button:hover { background: #333; }
+    .help { font-size: 0.95rem; color: var(--muted); margin: 0; }
+
+    /* Footer */
+    .site-footer { background: #101018; color: #e8e8f0; padding: 64px 0 32px; }
+    .site-footer a { color: #e8e8f0; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 32px; }
+    .footer-grid h2 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; color: #fff; margin: 0 0 12px; }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .footer-logos { display: flex; flex-wrap: wrap; gap: 14px; list-style: none; padding: 0; margin: 12px 0 0; }
+    .footer-logos li { background: #fff; border-radius: 8px; padding: 8px; }
+    .footer-logos img { height: 28px; width: auto; }
+    .footer-bottom {
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid #2c2c3a;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .social { display: flex; gap: 16px; list-style: none; padding: 0; margin: 0; }
+    .social a { display: inline-block; padding: 6px 10px; border: 1px solid #4a4a5c; border-radius: 8px; text-decoration: none; }
+    .social a:hover { background: #22222e; }
+
+    @media (max-width: 860px) {
+      .hero .wrap, .split, .contact-box { grid-template-columns: 1fr; }
+      .hero { padding-top: 40px; }
+      .contact-box { padding: 28px; }
+      section.block { padding: 64px 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap">
+<a aria-label="Media.net home" class="brand" href="https://www.media.net/">media<span>.</span>net</a>
+<nav aria-label="Primary" class="main-nav">
+<ul>
+<li><a href="https://www.media.net/publishers">Publishers</a></li>
+<li><a href="https://www.media.net/advertiser">Advertisers</a></li>
+<li><a href="https://www.media.net/aboutus">About Us</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<div>
+<h1 id="hero-title">Closing In On Your Outcomes. <span class="accent">Conversions.</span></h1>
+<p class="lede">Scale of the open web. Performance opportunities of the walled gardens. And a stellar team that helps you succeed across every screen.</p>
+<a class="btn" href="#section-contact">Learn More <span aria-hidden="true">→</span><span class="visually-hidden"></span></a>
+</div>
+<div class="hero-visual">
+<img alt="Shopper sees contextually relevant ad on mobile while in grocery store" height="900" src="https://s31073.pcdn.co/wf-assets/images/conversion-compress.jpg" width="1200"/>
+</div>
+</div>
+</section>
+<div aria-label="Seasonal campaign announcement" class="banner" role="region">
+<div class="wrap">
+<p>Power performance across the holiday season and Q4’s biggest moments with Media.net’s curated deals.</p>
+<a class="btn btn-outline" href="#section-contact">Learn More <span aria-hidden="true">→</span></a>
+</div>
+</div>
+<section aria-labelledby="outcomes-title" class="block">
+<div class="wrap">
+<p class="eyebrow">Why Media.net</p>
+<h2 id="outcomes-title">What it takes to be an outcome-first SSP</h2>
+<ul class="features">
+<li><strong>Audience graph</strong>The only purpose-built audience graph that unifies SearchSignals with first and third-party audience data. Reach your consumers when they are likely to engage.</li>
+<li><strong>Verification and measurement</strong>Partnerships with industry-leading verification and measurement partners. Measure ad effectiveness, incrementality, and ROAS.</li>
+<li><strong>Formats for walled gardens</strong>Unique formats that match how users consume content in walled gardens.</li>
+<li><strong>Context on the open web</strong>Drive performance in the context-rich open web.</li>
+<li><strong>Global team</strong>A scaled global team provides granular inventory insights, analytics, and recommendations to optimize and exceed your goals.</li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="advertisers-title" class="block">
+<div class="wrap split">
+<div>
+<p class="eyebrow">For advertisers</p>
+<h2 id="advertisers-title">Get on the shortest path to premium inventory</h2>
+<p>Target and reach the right audiences, in the right context, at every stage of the marketing funnel.</p>
+<ul class="checklist">
+<li>Unlock 1:1 access to premium curated supply with audiences geared specifically to your KPIs.</li>
+<li>Optimize and improve outcomes with pre- and post-auction insights into campaign performance.</li>
+</ul>
+<a class="btn" href="https://www.media.net/advertiser">Learn More <span aria-hidden="true">→</span></a>
+</div>
+<img alt="Person on couch sees ad for basketball streaming service while reading basketball content on mobile" height="900" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/reach-compress.jpg" width="1200"/>
+</div>
+</section>
+<section aria-labelledby="publishers-title" class="block">
+<div class="wrap split">
+<img alt="Three mobiles showing different ad unit types and placements on publisher websites" height="900" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/homepage_publisher-visual-20-2-opt.png" width="1200"/>
+<div>
+<p class="eyebrow">For publishers</p>
+<h2 id="publishers-title">Unlock exclusive revenue with industry-best solutions</h2>
+<p>Tap into unique demand with advertising budgets available only to Media.net publishers.</p>
+<ul class="checklist">
+<li>Choose from a suite of monetization solutions to drive higher yield, customized to your needs.</li>
+<li>Lean on the best engineering and yield management teams in ad tech, invested in your long-term growth.</li>
+</ul>
+<a class="btn" href="https://www.media.net/publishers">Learn More <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="partners-title" class="block">
+<div class="wrap">
+<p class="eyebrow">Ecosystem</p>
+<h2 id="partners-title">Intentional with our partnerships and people</h2>
+<p>We work with industry partners who share our vision of a better digital advertising ecosystem. Thanks to our partners and the people who make Media.net, we are focused on making advertising more efficient and publishing more profitable.</p>
+<div class="partner-group">
+<h3>DSP Partners</h3>
+<ul class="logo-grid">
+<li><img alt="Criteo logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/criteo.png" width="140"/></li>
+<li><img alt="Display &amp; Video 360 logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/dv-20logo.png" width="140"/></li>
+<li><img alt="The Trade Desk logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/ttd-202.png" width="140"/></li>
+<li><img alt="DeepIntent logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/deep-20intent.png" width="140"/></li>
+<li><img alt="Epsilon logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/epsilon.png" width="140"/></li>
+<li><img alt="Yahoo! Advertising logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/yahoo-20adv.png" width="140"/></li>
+</ul>
+</div>
+<div class="partner-group">
+<h3>Publisher Partners</h3>
+<ul class="logo-grid">
+<li><img alt="Time logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/time.png" width="140"/></li>
+<li><img alt="New York Post logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/ny-20post.png" width="140"/></li>
+<li><img alt="Everyday Health logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/everyday-20health.png" width="140"/></li>
+<li><img alt="Yahoo! logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/yahoo.png" width="140"/></li>
+<li><img alt="WebMD logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/web-20md.png" width="140"/></li>
+<li><img alt="The Weather Channel logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/weather-20channel.png" width="140"/></li>
+</ul>
+</div>
+<div class="partner-group">
+<h3>Technology Partners</h3>
+<ul class="logo-grid">
+<li><img alt="Fiducia logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/fiducia.png" width="140"/></li>
+<li><img alt="Adelaide logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/adelaide.png" width="140"/></li>
+<li><img alt="SEEN THIS logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/seen-20this.png" width="140"/></li>
+<li><img alt="Jounce Media logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/jounce.png" width="140"/></li>
+<li><img alt="HUMAN logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/human.png" width="140"/></li>
+<li><img alt="Scope3 logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/scope-203.png" width="140"/></li>
+<li><img alt="Sertify logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/sertify.png" width="140"/></li>
+<li><img alt="Experian logo" height="48" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/experian-latest.png" width="140"/></li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="one-title" class="block one">
+<div class="wrap">
+<p class="eyebrow">Our commitment</p>
+<h2 id="one-title">Media.net ONE</h2>
+<p>We back voices and initiatives to make the open web more sustainable, diverse, inclusive, and democratic. Because we believe change is possible if we act as ONE.</p>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="block" id="section-contact">
+<div class="wrap">
+<div class="contact-box">
+<div>
+<p class="eyebrow">Contact</p>
+<h2 id="contact-title">Let’s talk about what Media.net can do for you</h2>
+<p><a class="btn" href="https://www.media.net/contact">Get in Touch</a></p>
+</div>
+<form action="https://www.media.net/" class="signup" method="get">
+<label for="email">Enter your email address</label>
+<div class="field-row">
+<input aria-describedby="email-help" autocomplete="email" id="email" name="Email" placeholder="name@company.com" required="" type="email"/>
+<button type="submit">Submit</button>
+</div>
+<p class="help" id="email-help">We will use this address only to respond to your enquiry.</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company</h2>
+<ul>
+<li><a href="https://www.media.net/aboutus">About Us</a></li>
+<li><a href="https://www.media.net/resources">Press Room</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-solutions">
+<h2 id="f-solutions">Solutions</h2>
+<ul>
+<li><a href="https://www.media.net/publishers">For Publishers</a></li>
+<li><a href="https://www.media.net/advertiser">For Advertisers</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-legal">
+<h2 id="f-legal">Legal and Compliance</h2>
+<ul>
+<li><a href="https://www.media.net/legal/tos/">Terms of Service</a></li>
+<li><a href="https://www.media.net/legal/inventorypolicies/">Inventory Policy</a></li>
+<li><a href="https://www.media.net/ad-quality-policy/">Ad Quality Policy</a></li>
+<li><a href="https://www.media.net/privacy-policy/">Privacy Policy</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-choices">
+<h2 id="f-choices">Your Choices</h2>
+<ul>
+<li><a href="https://www.media.net/optout/">Opt Out</a></li>
+<li><a href="https://www.media.net/preferences/">Preferences</a></li>
+<li><a href="https://www.media.net/">Do Not Sell or Share My Personal Information</a></li>
+</ul>
+</nav>
+</div>
+<h2 class="visually-hidden" id="f-cert" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Industry memberships and certifications</h2>
+<ul aria-labelledby="f-cert" class="footer-logos">
+<li><img alt="IAB logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/iab_logo_c.png" width="90"/></li>
+<li><img alt="IAB Tech Lab logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/iab_tech_lab_c.png" width="90"/></li>
+<li><img alt="Digital Advertising Alliance (YourAdChoices) logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/daa_logo.png" width="90"/></li>
+<li><img alt="NAI logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/group-201321319195.png" width="90"/></li>
+<li><img alt="Local Media Consortium logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/local_media_consortium_logo.png" width="90"/></li>
+<li><img alt="ANA logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/ana_logo_1.png" width="90"/></li>
+<li><img alt="TAG logo" height="28" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/tag_logo.png" width="90"/></li>
+</ul>
+<div class="footer-bottom">
+<a href="https://www.media.net/">© 2026 Media.net</a>
+<ul aria-label="Social media" class="social">
+<li><a href="https://www.instagram.com/medianetads/">Instagram</a></li>
+<li><a href="https://x.com/medianetads">X</a></li>
+<li><a href="https://www.linkedin.com/company/media.net">LinkedIn</a></li>
+</ul>
+<a href="https://www.media.net/contact">Contact Us</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

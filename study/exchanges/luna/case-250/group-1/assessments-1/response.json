@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target provides coherent Forbes news content, including a tax-bracket feature, article headlines and authors, popular stories, topic browsing, and newsletter information. Its regenerated layout and content selection are permitted under the contract.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and article content are legible and arranged in clear sections. The image and text layout remains usable across the supplied target views, with no substantial overlap or clipping evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible search, subscription, section-browsing, and newsletter controls have understandable labels or recognizable indicators. No essential visible action control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views form a coherent reference-and-regenerated-target comparison of a Forbes news homepage. Differences in layout and scroll position do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, headlines, topic labels, summaries, and control labels communicate a clear news-and-browsing purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing evidence coherence**\n\nI need to assess only the segments of evidence related to the windows. The target here is to regenerate a coherent news piece from Forbes. I see image 4 continues to target lower content without defects. I can control visibility by browsing newsletters and exploring sections; ensuring it's readable. Comparing references to the target content seems coherent. So, I\u2019ll also need to make sure there's a valid JSON schema, ensuring the rationale is contextual.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing evidence coherence**\n\nI need to assess only the segments of evidence related to the windows. The target here is to regenerate a coherent news piece from Forbes. I see image 4 continues to target lower content without defects. I can control visibility by browsing newsletters and exploring sections; ensuring it's readable. Comparing references to the target content seems coherent. So, I\u2019ll also need to make sure there's a valid JSON schema, ensuring the rationale is contextual.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0AlZ0QPmtiZA6P42wdq8jVPFD2_4esct2QG22QM3I7U2XXrNEX1baRWaHezb_uQGlxOYaN0Q6XSTOYkFBQJTsvVspoWF3MAqd1241uTl_1fAF4Sevwjisqt9StTZ98DUbHaAIwcYhEiilU_G4dviNwN4FGy4AGq0hGz51jtRc_rDu7czUCJq24W7bJrQkDVjJTOZOYE386Kiz9G1-PMRjjdFl_l_nmF_1LE6ml3VgcyFziZPSzTulf_2-P-vi2mUNA997NY97AItsGgMNcYXSf-8ghIOauM58dP1sP-mVaV7ZJpErBBsVS19kujniadABRYUjqZce3aa7bPNcyZfpExuYY0NYK9l6aXWxWeBWhaLsE_an7wVuez3zFMJa7QR3LBmqIhw3JPxniZWUKpIsNGC9E6JMDqSn2n0KrjAQeQ25t3CoAy0LUzx90UFGEkl4a531dYYtc8rKt-0mRAmKi6VBS5Wj2nj2hg-Bi77u3JXe5S2fOjnPmGm8gTfldYBhq2ntK3QYq95IflbDPUGh8rJIx6ZTf97CSeFZzI4QekFyY0zRxQmz2K5u7TiOHOldxebp9bPQBvBArdG08lB-0O-b4vqpNpbrTU5aJdrU881M4C3kZIeLz0xgAySAueXGSzRRqXrTI5DmyziJXww7jw-fSqTW2bXXqJ0J1IWkbrNG7tgMow4sNRyU8T-CxVJDPpGlB-mLZ_fQOLD59oaUA9rWe-TAwbeItVu1o9z-l540bkbnXlgguOh15jPueHAHpSOissoI7INmGQiM2-ey2E0zbfYuxZQQm9X3bpzTFGoiy-2OKvfqkS2upCBP43JQRgl5STENQJ-pX72UyAq4kIYTNbx-uDIMFS7T2Wc_94WhidDpuqoy400Q_v_0awD0uSpfj7b-CXbdnoo8CKvoNhxKl6fELoCXr_0hjxrQe36uTWVsal9X6Kc9dKyxu-F_7ZZvBUnKakasMr0IuhaaLyMt2NhQO6ccOuFxpgWKgbLe6FmkeWr5BRWF6QPQ6gw5vbVzaQ8lZUe8rEMMNtkOcLQAB-hkDx73eIjKBXK0eo7iiXJxGj45vXTilwZ-EE0o-wX6FDrbLNiixyF1seq_k44ousKZ_WQvM1KXlkmGh-rYmTJnfOpPofxo6aUZoFeYOJZo0lZ2wgu6FOJUSREW-7Cjq2f40v_eFqJHeQ99tE2EEJ-lyclsGFLkjzFFL23E7g61lUXB7oGI09feE3nwWlE3BucTy97QZO4An8cdGoLlnZJpGqctH69yeD1fNkO4FRsfhf82ybqssKtINF0Ihc45hQHuThP_tGZHkDgGvUAHqd4GYULPsBLAhHfRvQ3wWfYWtLGHHFHniFQw5I2aJj1gg1xpV5-x6HGlpZNGhscOOpAmFJhn2fX2e2TRlpTgz8ZcpR0uZWOOnmTpgCMwwsNi_AOjQnWXS7FUYmVOdEQ10TsiicRETyS0wTClkBzC3kfop8MuXPJDZzZ76x8P6BIZONTBzyyOmqyyOX7DTpdlJOWaQDZ508HQqI7So2P9i5ARnvahWOZ4hdeHqTVf96utUSSh7iKqbJsL1AcOyDgT8xiweb1oFG5lSqV2wIPL6pcZ3vpVziH08p-SV7No0J_uJTsuEYecQOPuXhqT3Pqr7OVsapsxLASQcZP5FPFDEsIWu1d4O9g5UK9e5IAYyfHZ82qouE_htuzhwzsBXx0PU7TOyvw6XaOMuZuMGT6lUIICGBsjsTPT0h1_dlfd-R6qwocOe2VsySdfRpCtGQuDiDx4flq2qU00DGHRK5UCxSQ8oE4MFVVdg7EfazPSDQVWhBeMnGUozxyWY5RgtyS2ed0Ie0SC55bgE_OZVpzI0Lqr_ieIb-oAsxGk4cyQPm-yVujzAMVzSg7wR0okl-TTDyRmsCs28gi0Q-yQcjSew1gojM71kyxwuhbgeCLfdWPGZFVH5gsyqrpaHZ6aplIQU2YH7qiPA-Vh2-mgp2uDXgx79alm9sR6scnDsXI2CCKzA-4xjNFzm_SEoMf7hz4MZwy6s3U9BZprOwZMsh6T8K2svjus5DEmaoRIXJ5yl5VvOeK-qY-jWna9qEXWPTcm9OQLMzx26lBP1ZVOU0UM00ekqw6_kJcgJOQ-T2_4dErpbVVKn618QwfROzkALn6pvfQbm0_HjoQRqgBbQxKes57l5uxeRTOFOyO08LCL7kwwQ4iX8yI1-vlSPn0ZxOrA1mqiNoJLOy5NgpBV52gmrK2Lyvzgyd5pBV4Kt57Tg-Ro7xrvWltl7rEYkLz5JyNurjQwb75vH7HlJ_jQnoVMSQknoNZL5g1NlDy2SMP2OaNp-NWSfy07futN0ZMbeggTTcmB2lPYYyzYgQ4C5LdgETldsgQWPeBIo-2xCn5-2bg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03e19653993572f4016ae81cfe93a887d1a2d9250bdeaeb0da",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14207,
+    "completion_tokens": 348,
+    "total_tokens": 14555,
+    "cost": 0.0019498,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14204,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019498,
+      "upstream_inference_prompt_cost": 0.0017758,
+      "upstream_inference_completions_cost": 0.000174
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

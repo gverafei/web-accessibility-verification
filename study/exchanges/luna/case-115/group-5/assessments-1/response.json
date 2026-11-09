@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent news-story content and a complete site footer. The reference establishes a news and entertainment publication; exact stories and layout need not be reproduced.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headlines, bylines, image, footer links, and legal text are legible and arranged coherently. The viewport boundary does not indicate clipping or content loss.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Footer navigation and subscription-related links have readable labels. No essential visible control appears obscured or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference are coherent states of a news publication, and the target's different stories and page layout are permissible for a regenerated interface.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target content clearly communicates news-publication stories and provides understandable section, company, and subscription navigation.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing page coherence**\n\nI\u2019m trying to evaluate the footer and end of the page while disregarding unrelated sections. The target seems to have a coherent news site layout, especially at the bottom with article cards and a footer. I can infer that one article is about climate, and there's another title partially visible. The footer is readable, and all controls and links function as expected. This evidence confirms coherence and matches the source page from TIME. Now, I need the exact JSON and a concise rationale.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing page coherence**\n\nI\u2019m trying to evaluate the footer and end of the page while disregarding unrelated sections. The target seems to have a coherent news site layout, especially at the bottom with article cards and a footer. I can infer that one article is about climate, and there's another title partially visible. The footer is readable, and all controls and links function as expected. This evidence confirms coherence and matches the source page from TIME. Now, I need the exact JSON and a concise rationale.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BpeGNlvDiQwmGojXIISybVKtVWgJmRTb4mU830I0dv42IOeQsDmRuwLLJYaTTCq68VyTCc0d5D2Hu2bvoU7CcxtJVGkkN3Gvq7eTh4e6wdaT21_bAK3umdIXJMPSQ2MIkwFf0t10lOOzWQEvM8Mf5Ohud_BndVz3rxQ6IbMGXwkg40aE0f2KxtdOReI90jHKjUM2Ti2se7TMNThtyS99FYcx-AkHkwxHPLcclSKXe8M4A-8fCYNtJ7mFCAySbrAionH2mpFHcOgWVCSmpD_bME_ZXgGadVzNNsfBjCOxAsYjUTpgBt8km0uO5R8u6pkGxpLjbOGNRM4Y_py_oYIJNPUJG3g_I77GK8qUy_o36DiMnpyhUzDqiebFrZRrk48tMuYffMoNTgLgGZZrAFlpkPAI1Mqid-iSyDJenx7ZynlxPDBLG-045BD0gCVQiOTI4G0RDU3jwPI3JhRK7uSD2vwRiNMnvyFC8gB1J4tL1yqaTz7uS-pXJvWJ8K8DU-TvJ7Tg1u6vdqzOGPf4r7cKNLlQbn78-Ue2yZXpVTVhIL0qZO4cm0GA0cdXLshN9s-3drskwn6YxPviZ5ZKj4_Ztfxn-yZrtSyETO1309las7KgNdXYSq5z9FCwsDQ3lyn3N5f7COkz-gRoEjLlxCqYRd0Xy8KT6vyFheVpw7ZvT3SrCDkC3_0AAg6hnI5cTlUl2M_E49ceqhaqPVRQJaIJx-Mbpv54UQlb_dRvGaimU9rZ46pRtSf-sbSsQE2n2LJz6baKLz_W4fsJIkO8WgeIVY7I6MRA5W5sOvAO4JtYEg07opFR4DPFWIIEHvNZj3l2rVlLqjTPgAAWnMk05kBsJa6I9qsZwXhfAETQCLnps1QKu1HZviNww93j1JjoGZln-SQGaIEMkq-_c_xxfud0OtcHeS1uusXafh6ccS1YU6NAiG-SPNLWF-Cs3M0Eun9j3waDc2gYLFIZv-7yx60LYg4y8VHrRUpTePpsqM9PKDAQiPMpz6z9UaW8eXynvpzl-mcmr8ipAZgSvOwiFLNcLHvY9iUWfWwcw5H7CBipg7YnNiXzgzwZHpbJeZRsb3_n--Kpr0YHQ7RQ2N8SaQLmgbvWHWs0JTAkJH8hh4XNPFB0Kk0AaKABopHXmxJrz-sk66F29pUXdOX1TDdXF7S9HvezOYJ2X_Jm3zgxvQD4Rm9EAm84WC03i2e1R-R1GguxTRkwOjaYIu2AUdehFmULPc1P4gg57eg2KmoJZUb1MNuWf27sQOPz6BLas3J6pF4paz6dxJ2uHCrSJ-mGnE-5xOHj0kLjBNxzhjIe8Xil0ch4Td5pua4d3-AW923Q05gO6LBO_Ipp70TvkkJ_IFKW6yJ7DQQfpoi45wXaf_fdqG2dk9WqzkHcPtEhAaR1e1NXo6AqblW9ndATr-hN1seflFQ1FHz4ejllaFrM2T8V6s8HBArJoNeEQANSjt-KTugVzc_hEC_lj3gUPn0BUDW4snbVnNiACBhNWobXAVrSpwM5hdiSDgwb_kUbJ0X55HOLyfGbGSCm2vj74ztTugEVe3on5hDNcQ_ZB8njMVkdTlleVsRM1sqYluVWqJAnzHGmWbiP837oPnYSZT5s_V8xCS6YW3C_44LcEwRQHKfsuKyOwhp90Y8L-MOkjpcXfq9dd59wP0Uorrx2geP92sVsl4UZBBTN0WtHdCGteILWrqjYdt9KDDRFX0GrqzmDroKflnsVOjHAQbYCuHwl7vQMz1H9j18NsawA_Z4qUrqhT7aHvrERkfvFZNuScI7G7jpZaMr8QldHPcYRqM3Ue7p_ZjLPpdgrdZxofX0dAXxG90qtincRVYUbABOZPseHXNspIVwaMjAg9NBDDB_mbOyi3h4MTY-uxdLNFUKGJQEzYSgFeXGH48PhiXdBcuyK_ZZ7lHT-WJi4b7keLWl7U--HWJq3j1DpOvYY7FRO2MWvLhIMpffd6CuAxeZkwVw63tWwB8pgk5LnrN52QF1-eQ7MA2SknhrHejQPbGlO92VbZxvRRQ1WFerdUMEm6yxj4-UbonawblqZcVPZ7-U8OwFItMinG75XNOQgQiOO6kmzWxkgIkWaBpMlpVVLQcRNSWkcWkgBC6oT3HOsdgRwN5vn86MrHkOFeUIEJju9IeoG4RWj51wm8TXKavxH5OiYgwgiFV6pr_6u2dXri-f4_v6SagV3h6hJlEJLQrxN4MJ2gg_etKHsALh23sfp9GBU-iXg1qeMiFxXSrGXR-UnxZiYHPmIAhaJeRlvbhS6AO2LJvCiZRq_XMs4rCUIQuMx-4WcdODZG1INHf6WFgFOiWxGkUtei5b5Vj24q-cdGz2hYS1dYPhK6UvdsGjheRWoYxynsuHDBcY-aV150SAYLQCZl3zpRJwtsPmgpVfUZ5-GTcApIjzeP9-KZ8sIMWjVrIew8nXSAtmbA-JK97gQy9oVtWMIhFJfoY3rxLP7bQnj7RsU1Hhs7JXtX2rDYLQcm4rmCnCN2heydFReUlf4jVMnJLihd5MXb_hsqaur37AJsJ27HrntUwUnMW32ulXcpQZCLNs7I76FB5hdqgTrlx1HfUj3O241mfHWm3DpVDPbLFQvAWmruX4j20AD7miT8mP6gGf.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0af50e7888f4a800016ae81a5c347c87d185cdc7d8bcad10d8",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12522,
+    "completion_tokens": 338,
+    "total_tokens": 12860,
+    "cost": 0.001734175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12519,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001734175,
+      "upstream_inference_prompt_cost": 0.001565175,
+      "upstream_inference_completions_cost": 0.000169
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

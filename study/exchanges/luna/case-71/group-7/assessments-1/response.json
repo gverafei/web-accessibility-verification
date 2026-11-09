@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference shows an editorial \u201cBook of the week\u201d feature with the book cover, title, author, and description. The corresponding target card area is blank, so meaningful page content is lost.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"A large portion of the visible target feature is empty where the reference presents readable text and a book image. This is a substantial blank region, not a harmless layout change.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible \u201cRead the letter,\u201d \u201cStart now,\u201d \u201cContact sales,\u201d pricing, integration, and footer controls remain identifiable and understandable. No essential missing control is established by these views.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show corresponding portions of the same page, including matching introductory and footer content. The missing book feature is a localized defect, not an incoherent evidence set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s blank book-feature area no longer conveys the reference\u2019s book recommendation or its supporting description.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content visibility**\n\nI need to evaluate the book's content since there are missing images and text in window 1, leaving a blank card region. In window 3, the reference card's alignment with the footer seems okay. It looks like there's a material loss in terms of descriptive content, possibly due to a defect. The large blank area does correspond to the book's card, but the context around the logo carousel doesn't clarify the book imagery. It\u2019s essential to ensure all controls and links are visible and functional to enhance user experience.**Identifying presentation issues**\n\nI\u2019m noticing that the region starts at y12000 and the book card appears to be blank. Although the page footer and signup controls are intact, it seems like there\u2019s no visible action button for the content labeled \u201cbook.\u201d On the bright side, the \"Read\" letter feature is preserved. However, the defect with the blank area is concerning since it\u2019s replacing core content, indicating a deeper semantic issue rather than just a cosmetic problem. It's essential to address these concerns!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content visibility**\n\nI need to evaluate the book's content since there are missing images and text in window 1, leaving a blank card region. In window 3, the reference card's alignment with the footer seems okay. It looks like there's a material loss in terms of descriptive content, possibly due to a defect. The large blank area does correspond to the book's card, but the context around the logo carousel doesn't clarify the book imagery. It\u2019s essential to ensure all controls and links are visible and functional to enhance user experience.**Identifying presentation issues**\n\nI\u2019m noticing that the region starts at y12000 and the book card appears to be blank. Although the page footer and signup controls are intact, it seems like there\u2019s no visible action button for the content labeled \u201cbook.\u201d On the bright side, the \"Read\" letter feature is preserved. However, the defect with the blank area is concerning since it\u2019s replacing core content, indicating a deeper semantic issue rather than just a cosmetic problem. It's essential to address these concerns!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BjQ9r1B3sr-XxWqfC1txkuh0-_8fqVpaEUlN9efoCb-h-z68A3U6HarKPrajPJgNLwZgooRhn1cIanszOBazpMfcJr01xunhMqe8QuxZBDKD40LpNFywSNZnAeFhSFRJLup6nUImtCxZDOkCuQOCgvVLb7E1qIQjO6DEvM4plBWp-KrOnjLiO_3CNZFrKedaT_xf2N8PTu4j0atHkD0Iz3atbuY7uaNfIXpp_QKYzGGs1poLHoUkfTdQ7Js5Qa5bXUzNWxuzTxxr3Y527k5XqmOWe43Q_Fzto-YFyT8TpDIQjdqwIE-YqArB5relVMGibkItIWxugvV9syVBzh_d8jAMd7G45WXiSLPBHNYCb9E1jc9-SHjpv3qjr8bu4C49OrbK75UJ7jxlFYSV_2wgS5B9acD23sBOnOT7RLJCcrT4mEnpPljO3eE8_Wo_Hpu7SZSDGP-4zn5ssQJZG2cojviu5iMHIcroQ9Bv-wmslL5Cd02VtYkfoSlWdOWPibKYK-R0Fu268fYpmWSg5tSe_QsK4567jvLKaeQ9i6V3B49n72xlfSAKyN-kwWF85YSn5POuoxwuAwOwwQqrTbQ73pCvPwo_AQ4CcjVMPqcVK_vMX8VcSJkTW5R8EdWpIxgplhGxtCe3qt_e1UKhlg1Q6VZ4nZ8mqJ61TrlwkpOLR7mj0OVcv7hxsd_EiLilBQ2z34KGQzJBGfi8vz_sXa_RcYr4Za-4W8NLXLr_Ymo08lQwv3EolvKCkuM6N6pcGtPjF2GwOWIyEuq20x0s38rO460HWzFYoNxl878TNkGu0HyZxDDdL_2IpSE2mhs56tU2UuiBYuRUwumdRoDGgk8j_1B9_S6xHuM52lkxWYYxo8HcL65viDM7HMUQ3sHxaqGAHpdF_-CvM-4_8MO28zfDXxuIPvcU-s4Yj-fwEhMGGVJmkhyBTCfXzdS0Qfk1dncEiLqOxx1YNetFx2lM-a3VXUW4xz4ob9AcEONC5513kENYOU6Nmcjh6Lf4_Wb4UebaFReGIO-wSt-1GKt4GodSj_J7CttjPCLrJZ401iSOQIKb1KYdzS8aBvBFsQnidSMBWycbMcR8hP7GXpVtgB3JVMJr-Z7LnhnrAgzyi8dZ7bo0C4RFtwpU_59w2-RTiavy44-PpX0AKD0kuwPygZdDI_ecxDO-8udgPWZF6zxv2LrCLgIurZ0e0qL54_U6o4vv4O8RwEFwBFVeY_Kzi4GE4h33yekAkvzZsSpyhoI6CPjlZQzAgPUxlaxImlEme_veeXUMOn7k0OIrsK3QqlAT64roCyn0xoPAtt3jisUpjrVwHA1ALi1cXgfrwDrBgtnzPpvt7viGdu-A_1r3yuhffXZnmBAS7ys6AKW7UyZyWjvqWlvWDtEWzuOJYI-dtoOTJJusQHMiTD2XQbkPnLZi61K7pQoD6aZFlaSMcziP53ZCMCD1DCeiqV7EpO8ZFRqqRXY9y30UPl1mDe2pfkJVPHKHUZRmGGXaAF7aCjUzEsA3wDIG5JsEfKTzfY3pYAJtweUvKVEbx8UltVq3sZpiFuZGnjIsnWB-Mxs-TmiCC13lctIBXi30Pl94C-iTU_I7j7SdiGFCRtXxCplckorVh8-mlqzjM200aWHrs0GSERaqYmMv5SgLqro6cQK7ck0rnznvOVHuD6xrrRJxUjw87_jL2a1AxpV6y1pEYYj4YGyKSLr7cuVQAprULtxfXfaSDNE6ElGjpdoZVK6v40rQS4Hi8xZ6LOEW8OpnTF8TD7uZOGCHWVIzIpy6wKrQeKLXWKLfB_RUPBcgCD4G_j1LvdO1_WJivuETRlwLFAlpv5XgI57M3JOqzgiT92YxaqbEbDTxXeN5oUT6q4FJvT-veZAmy38o3UqIFfHcsepu3mKCiOYuHBt90x7NzXNzLx0eogc_RVMHy91a7wYfmFLEx_HcI7He_m2AYogshf_VcYoVNfAKCKyjVGfIkML-I0Ezohj1ss8492MSTsmCo7rSgJxAyAAchd6srKsP9nrdpRpdvj2udwC-q9xrdqZfJTtkuz3-DenpsAHtX9GMBsSI46XLFICFRk9Z83RI53lFjmqAwOEfmA-oGH4C8FpLXSeoBf7g1AD2rV4qh74Jnn7d1rMuXAxLi_GKRVR3eEpLh0s0blEqfK1R4wj1indSK9mGVFX95qo_LuRh8DNjijoq8GJuTBd5zVM0_u-GOnnNXO25XCTCxpyDWmnXRhUZih7DObmMeyQE32UmmG4CZA6CiS2dOPJex98XbRtMj1-KlZ_F5QVd6Ah2GRhvEB4NJKpygEo7YToayzD3fkvZPm8gez7ICEwGw3RmW08vsknOxLuOEvYQybeUVS6Iuac_mp4R9woWYZsAMJHpsz3zlE5dPpa_6N4bUS51y757-mkuM_Fzp9il1OStkY9VDaX2vo8_qrCUSps-XSNYavGGZFbqiEDbz3rr9MdEdyfiwtCS28V0kpbtEhPsSClFsC3X0orZDme1zmjlYAocfeJxtbPKTbwHHg_4LvwDaBbxvMbjGS-AEvhdKK4ZmroPCaz0aTpiWi175hls7O66TwumXsCMSM_I8kWccgEScJOfqsOAbDxVo6Qr05T2Jq2Q4dMOTyic9q5g_f-JrGVKy8_ASgjXOsV1mssfyxtE99FrPcMkl7ywJOlFHxqZejVPbt78Ch_Y7Z407SL5wHkeHrEnZPy6wruoQqQpdg9MK7fzJr4-6lnLBeW4WlG5XdNMiOFjk7FL6VbcSny8d6aQbiUt49zNrGsdbQH8bmKzwXcgjzfQ_lgjwuV_JKsIR_A32uPN2G1HdrwrZmyCrbdDWQQwsqlPSRVJXuK_cTOF3IC9mtEMOkQooFMNuC1IOKZEiD6-wOZEWgZaNo52QZEI6TWqwpzdNQ1w1-mjKDyp6Q6p3x2S9JKnfEhio7dvYNH01cT8NNZvxp1jactFg7Cffb_Qqr5mJ3Ua8nr6VXE5fXWU1eTUcOoG9seOFHavgglaVtFuD2BvCtMOl6pPgFZqvw6BqhFEvvscdRHdtVQs-26lRYalw3DiW2bmZ4mRLYZXlb_d3BZPnTELIpw83TbPQbqbhcl1q8FnzhY0tW3jOOX6NMLuZMlSaScyNrm5x5HKH-eYrKXdtB47RZoY8_jPXLh6yKkw4yzDWd3e3XjiBAqRBvkjp8BBhFUT0pySa17QlqRUooCnMrTWKyIsw3dD-oEQrXk61xirkjc6ZNQzZ9ESqMX8LmQ1L9X4WASB3O0r5CNyzm7tLgsU00s8hyfqyDvGd-vCUJBc7_RYLhyOJiGMNL2uXPHMpj7JJGI2pB_nbffG8kxRj_oD52X36iwPbQSdeuQayDYcVqep_fDdlUDaeIaPdJaGoxbVfX3GzinMoOxFUFCtyDMPX085e8mCiium_Bb4X5KoTeGmAwPCcZUUaOO2KI6GHTyixfxf-Zk1Y1uf_7kI4zk4TcUKQ6Mem2I43e0cwQuGrSVR9CIWy8-Rxp_HjCTtu-Zb5OFyVA0Hc-AMPeYETdUQZIpErmkXfsLnIjBhwr4fqTS9kO22sfkrSO65TumdHYskKomn1z6mV-uM_cF2haUK6QcfRMI5yyUk_SLQlKgMuedKgv3vRDQMtlDo4FwxdFhcYyAfyaAyEkmgoVjVkBJeiSiq3uQGfjpQBs_e5CBVd-KJH3fKSMSf1uUHpHvNCGuPoj5_ioeVpI13aGBNLNtEmJZJo9Ed7COxEdr1d9Ss61rus22JQDb7gtkRvJdOCz5epMafTOvfhKiFN3XTkUpHYGeS_mmMp8MVkrX4XOXCAJcflib9TJf0pT6OduHCcWRS1o-Hceix9aPzoOy0-tH2S_6HfrXQks3g5w9oRCeJQi7vBNOkHO4UWab9enowPSe1xTZG2Ao_uy0riPQc6w36wuF8Hhs_MV3WORqEJh3f3JTgX8hB97IKuclNNqWP_PP7LX7P5wKB3j7yQCL0h18T6zBNbQum8eLdQhMlPJUNBw6MvCjG9K-Y0OSS-tnuj8w90jDbwdCjTNuYZMVBHRGZxtU2IRrUisRDTJa6JNoNDwf04WG_F2tagA0ZxvmInGvOGRWm0bOquHUk-No0QUXptxNpsXUf2IMluxZ3w2w6k8rzaXcY0Bz8qYWR8MC4HhByWH7Fg1TaKTZP1usXyv9Naf69oIk72nxtMZ2EdbAEGc1OZnDFV1PgXsCDTH7_6IWQdQM2mwB0Cw121FFp2SdBLROPZUANzjxxXGGKnLBWJ2TXzTghOGfNAfpCoWLIdXvmwELxFIwlgTBI8Zyamqzh2UhuVkxjkbdsxDHZ9xmumNESsiznxRd242KA5oMrivzryUO_dpvoXe9S_D6mXCJPaaps-yCbgEgm5Jb4aT2gSe9IwJtdqL6GiE7YHmLUZ7kmJCRK1TqpmkkrmJ3WFiaWrDJn7wctCgV-cE0U1I5HlgeTD108bpgdW3y4i2RywhIw1rf2gvuE4dSF4n-LCPWwnI9Tngll6-g-bnCgOKgiCkZC-vF8nDp_u4IBZymLm3eHrJKuFmcfAMNnIIoekLydkEZWjevDOJTKOHD3arSBkrnE9JNwEzIpeFm_j_RFgPMC_WY2Eo9fAxsfi66oZ5Pqysvn_rOL8p83ACI5YBlFlI-Ke_4lapE_uyCVObaysM5rSrORg_ccqGP0vmD2qrrWXA5srasxaXFFOEPL65Uqtf9ond-hG74vdr6AyHDzs1dZrNSjWxRTwDCZ9XgOUvCHlKbghYy3iXv4Z9kw3amYav5OpH2I8YoXRPI_9ZqI4yvVdUR-G2l63QtDYsm7wn31wgMfCC-Xg5JJcqtNZjd_a-icxP7HoTU047o-k1X9t0H1sj-O7Cx9oVl0d4Y9QjUant0Ky7EWiOx-JSYL9WoeRpJ_FM5S4-GKDmk-w_Xbyv6Aos8eDqDTVEOmkbpTDDRMLWWvioQEpfIxfnkbTi1l60u51YwxdEyB_OQJY9yECs=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_070e70d739ee5a3a016ae818cd200087d1a7e804c73cd47d6f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11037,
+    "completion_tokens": 535,
+    "total_tokens": 11572,
+    "cost": 0.00164705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11034,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00164705,
+      "upstream_inference_prompt_cost": 0.00137955,
+      "upstream_inference_completions_cost": 0.0002675
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 242,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

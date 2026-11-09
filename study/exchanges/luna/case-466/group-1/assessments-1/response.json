@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible reference headline, descriptive text, hero imagery, navigation and cookie notice. The hero card\u2019s darker appearance is a local visual change, not a loss of core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The main content remains legible and coherently arranged. The hero image and card are visible, and the cookie banner matches the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Navigation, the labeled BlackBerry Secure Communications action, and cookie customization and confirmation buttons are visibly identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of the same page and corresponding regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, supporting copy, imagery and control labels communicate the page\u2019s security communications purpose coherently.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13997,
+    "completion_tokens": 249,
+    "total_tokens": 14246,
+    "cost": 0.00187405,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 13994,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00187405,
+      "upstream_inference_prompt_cost": 0.00174955,
+      "upstream_inference_completions_cost": 0.0001245
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

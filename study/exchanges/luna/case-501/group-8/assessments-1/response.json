@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s footer contains coherent related news cards and the expected site footer information. The reference\u2019s floating archive/chat widget is supplementary and need not be reproduced.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The footer and article cards are clearly laid out, with readable text and no substantial overlap or clipping.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Footer links and navigation labels are legible and understandable. No essential visible control is rendered with an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Both images show coherent TIME site footer regions; the different surrounding content and omission of a supplementary reference widget are consistent with a regenerated layout.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s article headlines, categories, bylines, and footer link groups communicate clear editorial and site-navigation meaning.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10890,
+    "completion_tokens": 197,
+    "total_tokens": 11087,
+    "cost": 0.001459675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10887,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001459675,
+      "upstream_inference_prompt_cost": 0.001361175,
+      "upstream_inference_completions_cost": 9.85e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

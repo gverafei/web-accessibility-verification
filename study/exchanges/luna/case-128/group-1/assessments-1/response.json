@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible headline, explanatory text, product cards, and lower-page developer/governance content. No meaningful core information is lost.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page content is legible and coherently arranged. The small dark background behind the terminal path in the target is a minor local styling difference, not a material presentation defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, hero actions, product links, and cookie-consent controls remain identifiable and readable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows show corresponding regions of the same page and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The text, illustrations, and labels convey a coherent Docker agent security and governance purpose in the target.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Analyzing display differences**\n\nI'm noticing that the only difference seems to be in the target console terminal label, which is highlighted in black with maybe a changed contrast. The images in index 3 and 4 look nearly identical. The target has a small dark box behind /billing-agent, while the reference just has unobtrusive gray text. It's a cosmetic issue, really. Both the reference and target checksums match at 0, and all categories are meeting the requirements. I need the JSON to be exact.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing display differences**\n\nI'm noticing that the only difference seems to be in the target console terminal label, which is highlighted in black with maybe a changed contrast. The images in index 3 and 4 look nearly identical. The target has a small dark box behind /billing-agent, while the reference just has unobtrusive gray text. It's a cosmetic issue, really. Both the reference and target checksums match at 0, and all categories are meeting the requirements. I need the JSON to be exact.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BqNIBZvH55bdjZrIQgq11GhfkcW4b6AImtPCjSJdpbwT3LmFnn5lSr8mEAO7gEuVGpwBQ_iTdhsk7yiwQidUqjTGuZnQscpEp1FKs4WaZlm3pMaEqpsB2_GWFtui_QeYmrq_gD0Vlg5_JN8ttWEgrO0-FYF6o9yNr6jGuzaJ5TejHVp6SbWyIcx_HE7a0Xsopo7RiUDc7ZsDOikL6jnEiU0j2dJ2kIa8KJot8Dw36WGWvpR9cvwnZxCFz92FZ4xsAFvzw8jPpoHqwG_EaL26FQdcY8nv9K2Sol-09-X5EWKUWBkbMXuzWwdbTUFHkt5kZowsiBJ7GeoPx3uumTUijQIVRZzWh-e3Cjt4NslMVYSwWWKVWcvwDdVJ_qqQI-1ARSFIBOPlL-82ZOsuf8pHdEsBdViJH8ETJIFlu8OehZcrY-h916iSx1iKWwpJaieB4hEjZYSEvTkasnfd-03FUyoUZqCRhguzpL2ICY1JhiFD-4vcSalCFsyLLMJ7fNlheSVekXH8GvWHJt-h5kEto658Lsi56scZk3oa6QU-cYKZR-wn3JatE8wVV3FDy0lCIc7NjSHvUKTbGFA-iep4n4PjYBgyeKmT0loucw2KhIWJaIUVrfIdt2dqQKQpsrw7TXnlJkDWzBYgV5jJ6d01dlxZq1i17rgGFfZKtqexngZm2PlIcCG6fy1NNLY83rtYhkzBpKCXLw0M4q3q2MeadSzLtP85QK-IRqiY_nvr_0mXDyRnPVef_HeHhziFLB2AMuLGoqIEv5V4Tq84u2sZwxR2bZRu-yPVA6rkQ92xNPsvDIp7tfcBNCbHrmBzJNMn87CwNHWBmKGZ65H8OIGLLt434HYUaLg_tC_JfnEOt0o1iVSaZ9bn0REMKUlsjGOFnXTLqC0bNkYUg7Un0buwuVfhb_ks6HYo-wVS8PnjMRNk9xs3of6v3nA2TKwn8hg-0_ZctsCgtce92326y5ndjdwnp4bI0sl9TJ4b8BAZSDHZiO9c9-d_zdo4faSSE6_8e81UV_V17e3N4QytlyG4E96Ep8t415f7_80EyrlkevgHcWZ-6n9EH-4Gq0vljf-YCBGmw0NcVSR31KKkZR8xvSuUTvFoOGnQfxe85wABuCYCgQT3u0UZxtQzNuO9K3u_A3BFOHDRGWWgz7259TLEbAA466Kl4jJbEkH5FERpSpVFSc--S-zPCll1XFGHX8XKbHcQu93D-JNLDUbgJEaxmA_0xcljTt9zIhz3McwIwKiDXpCt-MB4K_TFltlYMNdgIzWbEiaJ8-lQHmJ7UjSMxhrFAOIO5neIupJN1XtZneqb39LFb5mojFL7M5Lm01Z3buIQ5fWfVYOS8AFRgfBGkWUk857Uox3T6Bt4TTuEW5Ymwj8fp_se0BtHp61LY4qMmjGAJdeBvZrpVyYbX50j3U35qEAYCUV5h3yYM0haOSVuNc9k-FrsocmG04VCYXp-W6yrJPvxBmqdJh1MtHUbNsqvyAcDLi1Juom83s9u_TjT06QvTc2xArMXbZDoHoNfV5fJaP0rs9HguCxP5ZSoFaGY8wlNtbXK7cFXaxQSfRexXfrJAa31SgHjrYWzXw1LCa7Q47qOk4_L-ICbpySlYlN6lX4AfqNyCaOOn6Xm2ONE0naaRQdT4KINl2KhAY5PzEOihBgyYc9YE3DqcyOcRah7Ime1UXxUEe9jkQgmIIUuWquqEPzp_x3-9IkWNv1LnRy-lydiQm3Rcn0XX7nDiR0mpH1pOEhPZZEJ1ddNpgafGZ6uu14kYHaP48asGBaJzVNJT_uYqRLG3n1Qu0IHhtVwbGaAOu_3STn-E90A4l-cy7j7D9LmGGpVJp-0rWPtjUw-Jrx0gLFw8hM830i7OC3u4b98btdFb1mwJcU6z1uHHtoBlXImI3k-OVWZmjVWmzYhF9KFB87BJWRKUBCVjKQo9SP54seKeZss7YNwe14NX0MY4Ia7NM6ANwk7c1AkZCFVX9Priu8wsAOjYIlFkBZI01Xt4Dg5BqcaSaMZlwgdjlLRLsGClMgyMxPOGaZGbVwGRda71LXDY-12um-FOI7pMXM2ha06B2g1I2_igclJQZ95Dco-hfej64zVt-aiKHvD5DJOr-4S2TiapURUTQT8VT7vgvHfcbkYdc1KTgEs-0YKE7KB44uFpRNlv16k-rBCkoS5Fxjo0L5HiK9rfft1TcJM4MGRJi3vVBp-7Reue5Sowzza323FjGF-gO9Pfl-YBy0Vf3eg6Xq5DQFMCMbIhQRmpzqyU4nXyWo-0MphHdQThCnD5_QcfCBfherO_QvlRBx3dbuURBHGrj4eIdEt484Cq970X8rgtmL8lGtYFahlcXbS0jaUVs-VvxrNUeXCNZNbViRbc5X56sLDgTWjA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_085011934652ed41016ae81a8c025c87d1b2c4a1ed5342ee3c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11437,
+    "completion_tokens": 309,
+    "total_tokens": 11746,
+    "cost": 0.00158405,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11434,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00158405,
+      "upstream_inference_prompt_cost": 0.00142955,
+      "upstream_inference_completions_cost": 0.0001545
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 61,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

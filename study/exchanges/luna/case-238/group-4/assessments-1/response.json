@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent site navigation, FAQ topics, and footer information for the same broad service-site purpose. It need not reproduce the reference footer\u2019s full link inventory.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and sections are legible, consistently arranged, and not substantially clipped or overlapped.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Navigation and footer links are readable, and the FAQ rows have recognizable disclosure arrows and clear topic labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent corresponding lower-page regions of a regenerated service website; differences in footer layout and content are permissible.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s Russian headings, FAQ questions, navigation, and footer labels convey clear meaning consistent with the site\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing website footer**\n\nI'm assessing the footer to ensure it's readable and informative, focusing on features like an FAQ section and date/news updates. The footer should be detailed but serve a broader purpose, not just a checklist. I want the site to be coherent, with controlled elements like FAQ arrows and links. The content needs to maintain fidelity in presentation and coherence. I\u2019m thinking perhaps it would be useful to have collapsible FAQ items that are easily recognizable. I'll need to use JSON for this.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing website footer**\n\nI'm assessing the footer to ensure it's readable and informative, focusing on features like an FAQ section and date/news updates. The footer should be detailed but serve a broader purpose, not just a checklist. I want the site to be coherent, with controlled elements like FAQ arrows and links. The content needs to maintain fidelity in presentation and coherence. I\u2019m thinking perhaps it would be useful to have collapsible FAQ items that are easily recognizable. I'll need to use JSON for this.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6By4p9g3PP5-2Qq8oNH2YJh7KopM6LUkyupZtgQJ7JawERQi844mDEF-SlrHfiHBU0Az7Os0qCrw4-UZH-GgtSEa98l1F6r-pCLw9JH9GAO_3Mxr9et415lUElhjhdKvoRBKvDTEranrIPuDOgJ7TRUKD_yeedM9aJKRBvxxjNqVc98j2XRRzz0BOod9CvltUhqyb7hMuJPX5ZUVi3Nf5NK789y3d65jIpytoYjman2twMa6qEaOUza06ZiryX5evNbdSf-o_nwc7w6prEFf3GVNb_WXLjpNFA8d57yEOTzTNlgWl91_uJ9vbaqByw1x0RqR6HVKa_q21BL7KOwRpao_7mE4H92ENIzm_XrKiOTO3Jm1RG4Z-DLyZ5l3agLzyDejz8MCgfoGz0nLjzOqKT5peflFm6TaixxmBfXP0fXQdgxbE1K_XTsIcjHjgFAB1bPgMhSRjek3ijao-Vfo0Vav6qN6zLVW-Jo8tHqtCw-r8vatgy1HiFaYV9ZCHTbc7qP1Qsa2A0aSmXUA8oQrdd0gjPWPQ1DvRf2zmJ7tNevUdQ2OK-DlccoGuR2b72ir7KlmueILg2219xKDTJuROkC9_WUrT4mJeIxNywLXKQQtTD6K-TK6WJmYAbd47IFnsl1KBemWuRdnHhrsxWEBKIdu6eHA4XiM2_1jG2Gp_V7bX4JB-skJgbh_fxoAwnslKMoZyLChK-33ivNm6Vj1ouOYbxo9X-lbgXSblyGR9m_YjErunxg5JafQ8Ojgp-DvpDYuUcFShdRywD519jrjLyn6fWg3-zo-LzLy6qjfpIMNk4FirjdA0mvzunLvTvVh2lxhLsoDR8yryfW7MBXgEvYv6HfUbz3kzeWwpxAE9txr3sKiCQFd7LyU1rBFbXrbKpHqMu-VKWgo2m0Jh8msvVee_9FHro85pZAnv8UpgxreBdWHMrtK__M8eoTW6AYbK1Zy-4DsvdfQeblwHlQFcu2pBZjL_bEH7q6G4MK4QJddy8Qmyvhq7pPdWdu0vwkcWxiXxq7ugmhNuAHALEhqC_QeUix87_x9UZtmc1Nbfin-VXSqYJtWegosthYndOFkrllLC1PVxZ-4LAmOLNXRTgJge9HedUBwQlNNDGnhyFoP2uv-iGBWkyK0xOg1-wBvl29uoHK73c7lu5RR5SbiJwi6dd_QZ3d11wUvqTrrXYnDRCqEHPYrUZRe7FU0XtHcEPDtT-n31EqufztszJ2nIXyLyKP5m_93dlZ9TTu0pXS_qYvtKUxQURNRnSIDv1tOzJhmXiBHSKRwnsKRWjIzpCnmZqF3_aKFZiFsqjznSWk6-SCOM75My1MYgF2NU3cXzmTRHs4jf7Vuitpjj-k-KDussLm5E0Jd7pb7TUH3VjPCu9Y_AFe89FqSAzlttUgx7YOLtD76yXanwtk2cAiXYz4Y_5fTFGuik6DcbiUYC3XtHn9iXW-PwUrMq7TOl_FdrvWkhfT28-mK8KBwI3H0nAY5E_AgsN5cgzyLhO7_9k4N066BxJ36PxPg9pIqp8ZdNaWvmcAH9NJiKRA118EleTr1n7X9_zD6ZCg_P2qQkihk-A_qESQ9ULZH4SjX4VNAxNWyErnqvx2i5oSzxaqld7_C4G68kvqhnON6i5Sp7NjFO-7mwp4FGc6Km3mo4FI61aWNAdtQsimNk_ArihrhT_QNvl9E7Ktve21GviuOBeC39t7rwgfAlyeVGVc0ZMYr_dUefUzoX-po5dhh6o4dDZ5Rba0Ofuu7gOb_DLmmc0uwkgn-qqBhDCmR1sg5Z_pKR5-mpw5rWUJfXMmHmcq-JoDT7q_cbL1ehKvk1eDCDalIqgtOoj1xdM6SjsZNthKQoLp-MnOBtzcD4_36SATvOfHXznPvHksRQ_7_t6H0TJJBHDF2g1YX9-Ulc7hkfMQZznUdf_uC8ws_6T00p7zXgBTdk_2PBwaTqDUg_SkS64jsw1Douu3AuSnG2ShJrlPp8UFlosJ6FKxOB1cEVnuMOxBOILj_mGIhCyOrIWG4ujVbPaQH7p4MCJqy7-KCnE3LN46PTAFQF1xHChP5N3F48EaeQSPOq0uM7MX9uJ8bCcFi3sbsZo1Ghvaq2mnPpB31X1kXUIyW7s6fGX1wEwugLr35BvFhlptpx_fnJ-rvg6npPtG_FaXavRCww0x9Ffu0UBMk5o5ScmIp-pGC1xzd8h0jPNhDXRZVZVifA85dCO_ifjuW8_RBIDJHyi4VduACqf2xeR2YRB1z4orOgXz1S7gIw0RroBCj6BOze01gsXITXt9EBRCkEq5bbRcyIhixm0cc5k9UT2Mr-Qz4xbDXEAT9X-UJsg3IUTKot0MCIFZbD9pWSMHK3No_ZSL0lAmljlJJRRHoJtwI_bnKASowD_Hbc8vAEQ-s8i9T0bwtxlWSqwxdWOq-4_x4suftblisPCkcKVlJTlEzGttltBU2Q07clPg-h6-UdCnevmqG86q_6QVMqSuPjD2vxRKsu5pT0dYD5k9ySuxEJNhaUJ3ML0Gcg73KVBsFlMgoExJqj44p_0I=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c441b6015c8ebb3016ae81cb6bbe487d1876cb02e12546746",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7775,
+    "completion_tokens": 314,
+    "total_tokens": 8089,
+    "cost": 0.0011288,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7772,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011288,
+      "upstream_inference_prompt_cost": 0.0009718,
+      "upstream_inference_completions_cost": 0.000157
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

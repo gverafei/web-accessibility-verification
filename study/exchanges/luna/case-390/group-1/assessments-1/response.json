@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible reference content, including the homepage header, search, news, product information, and lower legal-resource links. Differences are negligible.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged in both corresponding views; no material clipping or overlap is evident.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, search, access, and other page controls retain understandable labels. No essential visible control appears materially degraded.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target views form a coherent comparison of the same page at corresponding scroll regions.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target's text, imagery, and labels convey the same coherent legal-information service and homepage purpose as the reference.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9808,
+    "completion_tokens": 188,
+    "total_tokens": 9996,
+    "cost": 0.001319925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9805,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001319925,
+      "upstream_inference_prompt_cost": 0.001225925,
+      "upstream_inference_completions_cost": 9.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Descubre celulares, pantallas, lavadoras, monitores, barras de sonido y más de Samsung México." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Samsung México | Celulares, pantallas, línea blanca y más</title>
+<link href="https://www.samsung.com/mx/" rel="canonical"/>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #111;
+      --muted: #555;
+      --line: #dedede;
+      --blue: #1428a0;
+      --soft: #f5f5f5;
+      --radius: 1.25rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: #fff; line-height: 1.5; }
+    a { color: inherit; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid #1769ff; outline-offset: 4px; }
+    .skip-link {
+      position: absolute; z-index: 10; top: .5rem; left: .5rem;
+      padding: .7rem 1rem; background: #fff; border: 2px solid var(--blue);
+      border-radius: .5rem; transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .site-header {
+      position: relative; z-index: 2; background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .header-inner {
+      max-width: 1440px; min-height: 76px; margin: auto; padding: 0 4vw;
+      display: flex; align-items: center; gap: 2.5rem;
+    }
+    .brand {
+      font-size: 1.45rem; font-weight: 900; letter-spacing: -.08em;
+      text-decoration: none; white-space: nowrap;
+    }
+    .main-nav { flex: 1; }
+    .main-nav ul {
+      display: flex; align-items: center; gap: clamp(.8rem, 1.7vw, 1.7rem);
+      list-style: none; padding: 0; margin: 0;
+    }
+    .main-nav a, .utility a {
+      text-decoration: none; font-size: .91rem; font-weight: 700; white-space: nowrap;
+    }
+    .main-nav a:hover, .utility a:hover { text-decoration: underline; }
+    .utility { display: flex; align-items: center; gap: 1.2rem; }
+    .utility a { font-size: .85rem; }
+    .search-form { display: flex; align-items: center; gap: .45rem; }
+    .search-form input {
+      width: 145px; border: 1px solid var(--line); border-radius: 2rem;
+      padding: .55rem .8rem; font: inherit; font-size: .85rem;
+    }
+    .search-form button {
+      border: 0; background: transparent; font: inherit; font-weight: 700;
+      cursor: pointer; padding: .5rem;
+    }
+    .hero {
+      position: relative; min-height: min(72vw, 690px); overflow: hidden;
+      display: flex; align-items: center; background: #f5f5f5;
+    }
+    .hero picture, .hero picture img {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+    }
+    .hero picture img { object-fit: cover; object-position: center; }
+    .hero::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.8) 34%, rgba(255,255,255,0) 68%);
+    }
+    .hero-copy {
+      position: relative; z-index: 1; width: min(1440px, 100%); margin: auto;
+      padding: 5rem 6vw;
+    }
+    .eyebrow {
+      display: inline-block; margin: 0 0 1rem; padding: .35rem .7rem;
+      border-radius: 2rem; background: #e8edff; color: var(--blue);
+      font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    }
+    h1 { max-width: 610px; margin: 0; font-size: clamp(3rem, 6.2vw, 6rem); line-height: .98; letter-spacing: -.065em; }
+    .hero-copy p:not(.eyebrow) { max-width: 490px; margin: 1.35rem 0 1.7rem; font-size: clamp(1.1rem, 2vw, 1.55rem); }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 46px; padding: .7rem 1.35rem; border: 1px solid var(--ink);
+      border-radius: 2rem; background: var(--ink); color: #fff;
+      font-weight: 700; text-decoration: none;
+    }
+    .button:hover { background: #333; }
+    .button-light { background: #fff; color: var(--ink); }
+    .section { max-width: 1360px; margin: auto; padding: 5rem 4vw; }
+    .section-heading {
+      display: flex; justify-content: space-between; align-items: end;
+      gap: 1rem; margin-bottom: 2rem;
+    }
+    h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.08; letter-spacing: -.045em; }
+    .section-heading p { margin: 0; color: var(--muted); }
+    .category-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: .8rem;
+    }
+    .category {
+      display: grid; place-items: center; min-height: 110px; padding: 1rem .5rem;
+      border: 1px solid var(--line); border-radius: 1rem; text-align: center;
+      font-weight: 700; text-decoration: none; transition: background .2s, transform .2s;
+    }
+    .category:hover { background: var(--soft); transform: translateY(-2px); }
+    .feature {
+      max-width: 1440px; margin: 0 auto 1rem; padding: 0 4vw;
+    }
+    .feature-panel {
+      min-height: 440px; position: relative; overflow: hidden;
+      border-radius: var(--radius); background: #f4f4f4;
+    }
+    .feature-panel img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    }
+    .feature-panel::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(255,255,255,.75) 35%, transparent 72%);
+    }
+    .feature-copy {
+      position: relative; z-index: 1; max-width: 540px; padding: 4rem;
+    }
+    .feature-copy p { color: var(--muted); font-size: 1.1rem; }
+    .card-grid {
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem;
+    }
+    .product-card {
+      overflow: hidden; border: 1px solid var(--line); border-radius: 1.2rem;
+      background: #fff; text-decoration: none; display: flex; flex-direction: column;
+    }
+    .product-card img {
+      width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: var(--soft);
+    }
+    .product-info { padding: 1.15rem; display: flex; flex-direction: column; gap: .65rem; flex: 1; }
+    .product-info h3 { margin: 0; font-size: 1.1rem; }
+    .product-info span { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+    .story-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .story {
+      overflow: hidden; border-radius: 1rem; background: var(--soft);
+      text-decoration: none; font-weight: 700;
+    }
+    .story img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .story span { display: block; padding: 1rem; }
+    .site-footer { background: #f5f5f5; padding: 3rem 4vw 2rem; }
+    .footer-inner { max-width: 1360px; margin: auto; }
+    .footer-links {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+      padding-bottom: 2rem; border-bottom: 1px solid #ccc;
+    }
+    .footer-links h2 { font-size: 1rem; letter-spacing: 0; margin-bottom: .9rem; }
+    .footer-links ul { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin: .55rem 0; }
+    .footer-links a { color: #333; font-size: .9rem; text-decoration: none; }
+    .footer-links a:hover { text-decoration: underline; }
+    .legal { display: flex; flex-wrap: wrap; gap: .75rem 1.4rem; padding-top: 1.4rem; font-size: .85rem; }
+    .legal a { text-decoration: none; }
+    .copyright { margin: 1.5rem 0 0; color: #555; font-size: .85rem; }
+    @media (max-width: 980px) {
+      .header-inner { flex-wrap: wrap; gap: 1rem; padding: 1rem 4vw; }
+      .main-nav { order: 3; flex-basis: 100%; overflow-x: auto; }
+      .main-nav ul { width: max-content; padding: .2rem 0; }
+      .utility { margin-left: auto; }
+      .category-grid { grid-template-columns: repeat(3, 1fr); }
+      .card-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 620px) {
+      .header-inner { min-height: 64px; }
+      .brand { font-size: 1.25rem; }
+      .utility a { display: none; }
+      .search-form input { width: 108px; }
+      .hero { min-height: 670px; align-items: flex-start; }
+      .hero picture img { object-position: 62% center; }
+      .hero::after { background: linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.84) 42%, rgba(255,255,255,.05) 78%); }
+      .hero-copy { padding: 3rem 1.35rem; }
+      h1 { font-size: clamp(3rem, 14vw, 4.5rem); }
+      .section { padding: 3.25rem 1.2rem; }
+      .section-heading { align-items: start; flex-direction: column; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .feature { padding: 0 1.2rem; }
+      .feature-panel { min-height: 530px; }
+      .feature-panel img { object-position: 62% center; }
+      .feature-panel::after { background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.79) 40%, transparent 78%); }
+      .feature-copy { padding: 2rem 1.4rem; }
+      .card-grid { gap: .7rem; }
+      .product-info { padding: .85rem; }
+      .product-info h3 { font-size: .98rem; }
+      .story-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-links { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1rem; }
+      .site-footer { padding: 2.5rem 1.2rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Samsung México, inicio" class="brand" href="https://www.samsung.com/mx/">SAMSUNG</a>
+<nav aria-label="Navegación principal" class="main-nav">
+<ul>
+<li><a href="https://www.samsung.com/mx/offer/">Tienda en línea</a></li>
+<li><a href="https://www.samsung.com/mx/smartphones/all-smartphones/">Móviles</a></li>
+<li><a href="https://www.samsung.com/mx/tvs/all-tvs/">TV y AV</a></li>
+<li><a href="https://www.samsung.com/mx/refrigerators/all-refrigerators/">Línea blanca</a></li>
+<li><a href="https://www.samsung.com/mx/monitors/all-monitors/">Monitores</a></li>
+<li><a href="https://www.samsung.com/mx/watches/all-watches/">Wearables</a></li>
+<li><a href="https://www.samsung.com/mx/accessories/">Accesorios</a></li>
+<li><a href="https://www.samsung.com/mx/offer/samsung-week/">Samsung Week</a></li>
+</ul>
+</nav>
+<div class="utility">
+<form action="https://www.samsung.com/mx/aisearch/" class="search-form" method="get" role="search">
+<label class="sr-only" for="site-search">Buscar en Samsung</label>
+<input id="site-search" name="searchvalue" placeholder="Buscar" type="search"/>
+<button type="submit">Buscar</button>
+</form>
+<a href="https://shop.samsung.com/mx/cart">Carrito</a>
+<a href="https://www.samsung.com/mx/mypage/">Mi cuenta</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<picture>
+<source media="(max-width: 767px)" srcset="https://images.samsung.com/is/image/samsung/assets/mx/26_sw_2h_hd08_herokv_static_mo_720x1248.jpg?imwidth=720"/>
+<img alt="Una familia disfruta de productos Samsung: un refrigerador, un smartphone plegable y una televisión con un videojuego." src="https://images.samsung.com/is/image/samsung/assets/mx/26_sw_2h_hd08_herokv_static_pc_1920x1080.jpg?imwidth=1366"/>
+</picture>
+<div class="hero-copy">
+<p class="eyebrow">Samsung Week</p>
+<h1 id="hero-title">Tecnología para una vida conectada</h1>
+<p>Descubre celulares, pantallas, lavadoras, monitores, barras de sonido y más.</p>
+<a class="button button-light" href="https://www.samsung.com/mx/offer/samsung-week/">Conoce más</a>
+</div>
+</section>
+<section aria-labelledby="categories-title" class="section">
+<div class="section-heading">
+<h2 id="categories-title">Explora por categoría</h2>
+<p>Encuentra tecnología para cada parte de tu día.</p>
+</div>
+<nav aria-label="Categorías de productos" class="category-grid">
+<a class="category" href="https://www.samsung.com/mx/smartphones/all-smartphones/">Celulares</a>
+<a class="category" href="https://www.samsung.com/mx/tvs/all-tvs/">Pantallas y audio</a>
+<a class="category" href="https://www.samsung.com/mx/tablets/all-tablets/">Tablets</a>
+<a class="category" href="https://www.samsung.com/mx/washers-and-dryers/all-washers-and-dryers/">Lavadoras y secadoras</a>
+<a class="category" href="https://www.samsung.com/mx/refrigerators/all-refrigerators/">Refrigeradores</a>
+<a class="category" href="https://www.samsung.com/mx/monitors/all-monitors/">Monitores</a>
+</nav>
+</section>
+<section aria-labelledby="feature-title" class="feature">
+<div class="feature-panel">
+<img alt="Una persona usa su smartphone junto a una tablet Galaxy mientras viaja." src="https://images.samsung.com/is/image/samsung/assets/mx/26_sw_2h_co76_featurekv_mx_pc_1440x810.jpg?$1440_N_JPG$"/>
+<div class="feature-copy">
+<p class="eyebrow">Galaxy</p>
+<h2 id="feature-title">Productividad a donde vayas</h2>
+<p>Mantén tus ideas siempre en movimiento.</p>
+<a class="button" href="https://www.samsung.com/mx/smartphones/galaxy-z-fold8-ultra/">Conoce más</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="galaxy-title" class="section">
+<div class="section-heading">
+<h2 id="galaxy-title">Descubre Galaxy</h2>
+<p>Conoce los dispositivos más recientes.</p>
+</div>
+<div class="card-grid">
+<a class="product-card" href="https://www.samsung.com/mx/smartphones/galaxy-z-fold8/buy/">
+<img alt="Galaxy Z Fold8" src="https://images.samsung.com/is/image/samsung/assets/mx/f2607/home/HOME_Feature-Card_Galaxy-Z-Fold8_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Galaxy Z Fold8</h3><span>Comprar</span></span>
+</a>
+<a class="product-card" href="https://www.samsung.com/mx/smartphones/galaxy-z-flip8/buy/">
+<img alt="Galaxy Z Flip8" src="https://images.samsung.com/is/image/samsung/assets/mx/f2607/home/HOME_Feature-Card_Galaxy-Z-Flip8_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Galaxy Z Flip8</h3><span>Comprar</span></span>
+</a>
+<a class="product-card" href="https://www.samsung.com/mx/tablets/galaxy-tab-s12/buy/">
+<img alt="Galaxy Tab S12 Ultra con S Pen" src="https://images.samsung.com/is/image/samsung/assets/mx/home/20261009/HOME_TS12_Feature-Card_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Galaxy Tab S12 Ultra</h3><span>Comprar</span></span>
+</a>
+<a class="product-card" href="https://www.samsung.com/mx/smartphones/galaxy-s/galaxy-s26-fe-pistachio-256gb-sm-s741blgmltm/">
+<img alt="Galaxy S26 FE" src="https://images.samsung.com/is/image/samsung/assets/mx/home/2608/HOME_Feature-Card_Galaxy-S26-FE_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Galaxy S26 FE</h3><span>Conoce más</span></span>
+</a>
+</div>
+</section>
+<section aria-labelledby="tv-title" class="feature">
+<div class="feature-panel">
+<img alt="Un padre y su hijo juegan frente a una televisión Samsung de gran tamaño." src="https://images.samsung.com/is/image/samsung/assets/mx/26_sw_2h_co76_featurekv_vd_pc_1440x810.jpg?$1440_N_JPG$"/>
+<div class="feature-copy">
+<p class="eyebrow">TV y AV</p>
+<h2 id="tv-title">Movimientos ultrafluidos</h2>
+<p>Sumérgete en la acción.</p>
+<a class="button button-light" href="https://www.samsung.com/mx/tvs/all-tvs/">Ver pantallas</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="home-title" class="section">
+<div class="section-heading">
+<h2 id="home-title">Tecnología para tu hogar</h2>
+<p>Conoce soluciones para cada espacio.</p>
+</div>
+<div class="card-grid">
+<a class="product-card" href="https://www.samsung.com/mx/washers-and-dryers/washer-dryer-combo/wd90h27-bespoke-ai-laundry-all-in-one-combo-26kg-plus-20kg-dark-gray-wd90h26ahsax/">
+<img alt="Lavasecadora Bespoke AI Laundry Combo" src="https://images.samsung.com/is/image/samsung/assets/mx/home/WD90H26AHSAX_Home_Feature_Card_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Bespoke AI Laundry Combo</h3><span>Pre-venta</span></span>
+</a>
+<a class="product-card" href="https://www.samsung.com/mx/refrigerators/french-door/rf80h36-rf80h30ceraa-29-cu-ft-silver-rf80h30cdtem/">
+<img alt="Refrigerador AutoView French Door" src="https://images.samsung.com/is/image/samsung/assets/mx/home/RF80H30CDTEM_Home_Feature_Card_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Refrigerador AutoView French Door</h3><span>Comprar</span></span>
+</a>
+<a class="product-card" href="https://www.samsung.com/mx/vacuum-cleaners/stick/jet-95s-stick-vacuum-cleaner-soapstone-charcoal-vs70h28ghc-ax/">
+<img alt="Aspiradora Jet 95S" src="https://images.samsung.com/is/image/samsung/assets/mx/home/VS70H28GHCAX_Home_Feature_Card_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Jet 95S Stick Vacuum Cleaner</h3><span>Comprar</span></span>
+</a>
+<a class="product-card" href="https://www.samsung.com/mx/air-conditioners/wall-mount/ar5000hm-r32-ar40f12d0am-ax/">
+<img alt="Mini Split Inverter" src="https://images.samsung.com/is/image/samsung/assets/mx/home/AR40F12D0AMAX_Home_Feature_Card_560x560.jpg?$560_560_JPG$"/>
+<span class="product-info"><h3>Mini Split Inverter</h3><span>Comprar</span></span>
+</a>
+</div>
+</section>
+<section aria-labelledby="stories-title" class="section">
+<div class="section-heading">
+<h2 id="stories-title">Explora las historias</h2>
+<p>Más formas de disfrutar tu ecosistema Galaxy.</p>
+</div>
+<div class="story-grid">
+<a class="story" href="https://www.samsung.com/mx/one-ui/"><img alt="" src="https://images.samsung.com/is/image/samsung/assets/mx/f2607/home/HOME_Explore-Card_One-UI_PC_312x312.jpg?$312_312_JPG$"/><span>One UI</span></a>
+<a class="story" href="https://www.samsung.com/mx/mobile/switch-to-galaxy/"><img alt="" src="https://images.samsung.com/is/image/samsung/assets/mx/f2607/home/HOME_Explore-Card_Switch-to-Galaxy_PC_312x312.jpg?$312_312_JPG$"/><span>Switch to Galaxy</span></a>
+<a class="story" href="https://www.samsung.com/mx/apps/smart-switch/"><img alt="" src="https://images.samsung.com/is/image/samsung/assets/mx/f2607/home/HOME_Explore-Card_Smart-Switch_PC_312x312_local_gui_vari_ver.jpg?$312_312_JPG$"/><span>Smart Switch</span></a>
+<a class="story" href="https://www.samsung.com/mx/buy-direct-get-more/"><img alt="" src="https://images.samsung.com/is/image/samsung/assets/mx/f2607/home/Home_Explore_Thumbnail5_BDGM_PC_312x312.jpg?$312_312_JPG$"/><span>Compra directo. Obtén más</span></a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<nav aria-label="Enlaces del pie de página" class="footer-links">
+<section>
+<h2>Productos</h2>
+<ul>
+<li><a href="https://www.samsung.com/mx/smartphones/all-smartphones/">Smartphones Galaxy</a></li>
+<li><a href="https://www.samsung.com/mx/tvs/all-tvs/">TVs</a></li>
+<li><a href="https://www.samsung.com/mx/refrigerators/all-refrigerators/">Refrigeradores</a></li>
+<li><a href="https://www.samsung.com/mx/washers-and-dryers/all-washers-and-dryers/">Lavadoras y Secadoras</a></li>
+<li><a href="https://www.samsung.com/mx/monitors/all-monitors/">Monitores</a></li>
+</ul>
+</section>
+<section>
+<h2>Soporte</h2>
+<ul>
+<li><a href="https://www.samsung.com/mx/support/">Inicio de soporte</a></li>
+<li><a href="https://www.samsung.com/mx/support/user-manuals-and-guide/">Manuales y software</a></li>
+<li><a href="https://www.samsung.com/mx/support/service-center/">Busca tu Centro de Servicio</a></li>
+<li><a href="https://www.samsung.com/mx/support/warranty/">Garantías</a></li>
+<li><a href="https://www.samsung.com/mx/support/contact/">Contáctanos</a></li>
+</ul>
+</section>
+<section>
+<h2>Descubre</h2>
+<ul>
+<li><a href="https://www.samsung.com/mx/smartthings/">SmartThings</a></li>
+<li><a href="https://www.samsung.com/mx/galaxy-ai/">Galaxy AI</a></li>
+<li><a href="https://www.samsung.com/mx/campaign/samsung-care-plus/">Samsung Care+</a></li>
+<li><a href="https://www.samsung.com/mx/rewards/">Samsung Rewards</a></li>
+</ul>
+</section>
+<section>
+<h2>Samsung</h2>
+<ul>
+<li><a href="https://www.samsung.com/mx/about-us/company-info/">Información de la compañía</a></li>
+<li><a href="https://www.samsung.com/mx/sustainability/accessibility/overview/">Accesibilidad</a></li>
+<li><a href="https://www.samsung.com/mx/about-us/careers/">Empleos</a></li>
+<li><a href="https://news.samsung.com/mx/">Newsroom</a></li>
+</ul>
+</section>
+</nav>
+<nav aria-label="Información legal" class="legal">
+<a href="https://www.samsung.com/mx/info/terms-and-conditions/">Términos y Condiciones de Venta</a>
+<a href="https://www.samsung.com/mx/privacy/">Privacidad</a>
+<a href="https://www.samsung.com/mx/info/privacy/cookies/">Cookies</a>
+<a href="https://www.samsung.com/mx/info/legal/">Legales</a>
+<a href="https://www.samsung.com/mx/info/sitemap/">Mapa del Sitio</a>
+</nav>
+<p class="copyright">Copyright © 1995–2026 Samsung. Todos los derechos reservados.</p>
+</div>
+</footer>
+<style>
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>

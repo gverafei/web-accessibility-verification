@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible company description, city map, awards and award explanation; the corresponding content matches the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged in both target views. The footer\u2019s color difference is minor and does not impair usability.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Sign In, footer links, privacy notice and Acknowledge controls remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show the same TripLink page sections and form a coherent reference-target comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text, award imagery and labels convey the same company and award information as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating images' similarities**\n\nI need to assess the images since they appear nearly identical. Images 1 and 2 are very similar, while 3 and 4 have some differences, like a slight blue hue in the footer and a smaller globe icon. Both awards look the same too. The header needs to be checked for coherence as well. I'll make sure to verify the footer controls, sign-in options, and cookie banner. Finally, I need to produce a JSON output with the exact schema, keeping my rationale concise.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating images' similarities**\n\nI need to assess the images since they appear nearly identical. Images 1 and 2 are very similar, while 3 and 4 have some differences, like a slight blue hue in the footer and a smaller globe icon. Both awards look the same too. The header needs to be checked for coherence as well. I'll make sure to verify the footer controls, sign-in options, and cookie banner. Finally, I need to produce a JSON output with the exact schema, keeping my rationale concise.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BxsS3Zv3LYAKSDAIkkUvl6pEzNZ3FCV9XSqtDEQKOCBbfCzsGOiw5d7WoP1HnUhbE4jaDJlZczlnozjH7KdgHgV72jXiAR0v1FfiY2jXhCpB95J67r273ak2Wyn7uQPcIw6M784Qry4xocfqmuNb4tst1QscOL0tIascRzFAXJNHRHCd3uFH3Jpwx37JNNez5d77LDTg3PCRvJMM-bqoic6Km8FtPFBBxNsuUEUaOy7WNKHiaZyRFH5iSbz8_vUhg-d0Y08dJKMVWdy7UlthN27JCqJC2iLD5MBspAGm4aa5HVd91DuzMEq_VWs8nsqyILChgzFIKi-kiPFmNgYtIgWC2OnHOfq5BlgdjBTQ1xiltPhobAf5lJDwa34sVAPRRMsylOYqTx0h1hp-l-MWyfuU2nVijeAEefCemH8Ggigc5xyavuLAxkDXerG95qPVCy6l4-q5NdQBmScIyknGANAIM27veXNShQkqqYq4eY3yBqgj30lQ0OAmx5ftCDtVCOR73Db3Kj2a7he3Cd3tXXjfJ-r0HO3_ZUPxrIjV6Ivzdl1KAVFKc_gUIdYfsmsyfCiaNjbWzFP4oesYzqMuizfEQ2EH70a8KVezbFzJJjPkh7kJRAwrnONOvxIX2gI0XQmalCbBrFtHcgIoIPGK0Q_ziLqlzss5HFOzbqli-Jco0Gpub-MYC8zxuI5x51yxglEzPdV4NZtPTrYYosR-s9Mix1JRcBr227w5FRAzLdr2WaAwe9DXEOXLcsTPRfhEXXaZSkw9CWokxJRnAiNAqkEQosPNeXDjcatWxCGN2Iy7EdI3nl4J1qeOevg-GUfJCzxwSD5H8tMNNKRThp42Kfr_JYUFHA4K3vNDfyEOjxXb_4uYcp92O6hVWS_MdUug0PJubOpVY_QWR3bWxw9-nxKa6K2PaD5Ebnbm_P28hFJWLDAfDbYPNhzVoBg0gCFkEQyLxb9l1KndW6PIsrUIguK13jKseIH_bBuahZShv79Xbe1tcy1EzUq_fPdBA3HAmtTm8aIFD6gLaOSizwRZBx8BmFmFNEng1GkGNaIG-F1gcn_Vg3KtOhAhMLVuhmuecLdLIM_eThUDNLEa2Cj7hiMGg4tIX9E_34o79D8gx0NqIPm3H-3kinpMB74CqZexaoL-vCQ2tzGwEmual513nhb5tH3MARk3IWO8aC-SOMigWx6_afpQdpDPoA2xeGI4L3L_3gTmWJ9P-5vA08F0hnv1b5J3p5Rsm-ePBp02_Wlw0gWFVA4QbM12tvy7u-71B4ZvyAU2pPxxv9qu-15sM3II-eCPBT03RZ0Gsqfz0mGQG6cT-56LPKy6a13svby26CC3o31IWImRtdyVyD91ZnjwNn9jviVGXpb4Jorzz8Ob2-B8M-etL-kBqSCrrSsdn1Nf04s0xBch-KzJTE5BPsvDdopDHAsaIpPMKss_s_hXjvy-SOrDwMs0c8nh8cGK47hbgZn1d6EquLgff_fMPXqbutSBPJM-CMnrT0lvSXpbwZLPp2BC0CS2M0tcN_E5IwztDjCfh_WcshnuZMf2VPqxb5_r-JLCn2UQFpz1FArMMzk9CNf8ArxpgV974pgcKtF3pv2_aPxZBeeWhLPqKt7CEQUXD2NAtj86FThUYguodWXYVwxjMf0xhLsptGM-vx2OZ-_GmB0_5mxCTpikG9gqyKA4FccQvHDC1Rt6xbZJKNJdJ-05tH_zdpk4kpkeTycqrwTyA2-iAG18rfTg8xLhbGC-F14ZIywJ1mxJxpJBv-tvjyEKICR_UZbfR-BFB0CBu-ULCejaQ4cc03dsr_0NE7DWtu5E1fG7sXCohuvGYCxyH-TalmVd7uTFcx_pofizictrG8MXMzGtu6hpq8jLA2hjImu1JXJVVQhqDpBzUrJBZ3YCLpLrlkCuZjshlCBewu_JuP8qZ8-B-WTUFy4EPvFg7uCOJ7xRmNQOPLhJRRKO7BnyTeUv_gcAz0yb8W3niQ7Ww-itGGJxLga3BXVHSWiQpB0dt9N5YQmSBd0W5wzJ8NrHq6l4yqpqgaIxwWb2EBdzQ-KoswpR8vYZbAZIUNwnw54qwlGV_XxP5-z-k9feK0pG2jcpatSKGjBHCOTQgJQslahszRUbxevqTK7OGjGKwNSmJMOlaWqF927Q9GiEDzxbJn4qocKcHtNPI9xuV_TvoLHt0zmEBy243YcBuLsofCVY1lLOmJgqqKDTN48XCc4w1vfvJT7Qoc7khsQgTx5g_BvmeNSxsdqGIPOSUFkxnPyY2bVx8tmFoWtawNDSQ-sZfWjuYrBB7hIDBpaBHtjIKK9G5oVoOHadx4j2H_WBLUi-NXB5z4qNfwufz2fAqZ1jpJu5yNOOUF5vw_kvxpg4eODPAsmboehK77CUg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e6dc9b072336c6a016ae81c6a652c87d1a208612ce1bea73f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9754,
+    "completion_tokens": 301,
+    "total_tokens": 10055,
+    "cost": 0.001369675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9751,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001369675,
+      "upstream_inference_prompt_cost": 0.001219175,
+      "upstream_inference_completions_cost": 0.0001505
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

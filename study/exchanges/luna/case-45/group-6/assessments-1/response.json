@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible target contains coherent Nintendo news, eShop gift-card information, and game product listings. The reference window shows footer content, while these target windows show other page regions; with reference coverage limited to its shown region, these lower target views do not establish loss of unseen reference content.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Target headings, links, product imagery, prices, and product cards are legible and arranged coherently. The viewport cuts and horizontal overflow do not make the shown core content substantially unreadable.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links and the gift-card purchase button have understandable labels, and product cards show recognizable heart icons. No essential visible control has an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target evidence coherently depict Nintendo page content. Their different visible regions and scroll positions are not evidence of a mismatched comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s text, game imagery, gift-card artwork, and labels communicate recognizable news, shopping, and product-listing purposes.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9703,
+    "completion_tokens": 252,
+    "total_tokens": 9955,
+    "cost": 0.0013388,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9700,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013388,
+      "upstream_inference_prompt_cost": 0.0012128,
+      "upstream_inference_completions_cost": 0.000126
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

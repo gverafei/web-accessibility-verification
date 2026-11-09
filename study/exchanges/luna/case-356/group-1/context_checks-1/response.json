@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the broad purpose of an art-community home page: it presents art to discover, topic browsing, creator actions, community features, and sign-up. It uses text-only art cards and omits much of the reference\u2019s image feed, but the regenerated-purpose policy permits a different layout and does not require source imagery to be reproduced.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target\u2019s art-discovery cards show repeated broken image resources, with broken-image icons and linked alt text where the artwork should appear. This substantially undermines the primary art-browsing presentation, rather than reflecting an optional unillustrated card or a temporary media frame. The remaining text and lower sections are legible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible primary actions and navigation have understandable text labels, including Submit Your Art, Create AI Art, Try Video Creator, Sell Your Art, Log In, and Join. No untested interaction is assumed.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target are coherent views of an art-community home page. Their different layouts and content arrangements are consistent with regeneration, and the target\u2019s lower view continues the same page.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The target\u2019s text conveys the page\u2019s purpose coherently, but repeated broken artwork images materially impair the meaning of its central art-discovery area, which is meant to showcase artwork.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13179,
+    "completion_tokens": 320,
+    "total_tokens": 13499,
+    "cost": 0.0018073,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 13176,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018073,
+      "upstream_inference_prompt_cost": 0.0016473,
+      "upstream_inference_completions_cost": 0.00016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

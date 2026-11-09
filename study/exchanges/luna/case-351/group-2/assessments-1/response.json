@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views are visually identical. The visible page messaging, news area, footer information, and join prompt are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged in both views. The same viewport boundaries and bottom banner appear in each.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, login and join buttons, and footer actions have recognizable icons or readable labels; no target-specific control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots show matching page regions and states, with no apparent mismatch in the reference/target comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text and labels communicate the page\u2019s art-community purpose and its navigation and membership options coherently.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Creating JSON Schema**\n\nIt looks like I need to work on generating a JSON that represents identical images, with an exact hash for each pair. All dimensions should align, and I should include coherent, visible labels. There\u2019s a note about some bottom content being clipped by a cookie banner; this is the same for both images, which seems normal. I\u2019ll make sure to create an output schema that reflects these requirements clearly!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Creating JSON Schema**\n\nIt looks like I need to work on generating a JSON that represents identical images, with an exact hash for each pair. All dimensions should align, and I should include coherent, visible labels. There\u2019s a note about some bottom content being clipped by a cookie banner; this is the same for both images, which seems normal. I\u2019ll make sure to create an output schema that reflects these requirements clearly!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B9ibPYWgN7y8G6ZVaV43Op-XZyBAdH6JZBA238MXRJImj9rNXvmA3b9goCJ93WP2REWv1e-b9ag5XUFuZZAHLumyB0CI-gH7YBT1bxreEPT1kwKlndfksErq4DJEkoOVbXcCryOytbTcZNcMjimeDokvbgaZSYgk1JEyZJRKf-QYvWxBWwwl9LzITC5sSQfBnTC4dilXn7VEE_MmR5fP4UlYnEx5D4lBzKz3j4GowZjoK2ar9EMd1NPQauM0b5XnraN8_iOkLTX6l4PVE4_YCAhLzbghACZStAezcuUs3S1cDcbWRNxggnsrZhFKND2bNXFAmgOOKh6W67dSTwF54oHWxiDfGLLqiAvpCOFf08JSe3JyNLG0S_Wks1bAskyowQNuATeH64bXE5Q3vk_VTwHCEuX9ewVkfXJrn_nshZ_xAX74F6Pb20gpA5A8wV74P9jDfk8crOwsWyw0-1eKxclPVxF7P9oe6CipQlQQz4qgPzQLXDHi5cnhjOSs4nDMW51hIg5gYRGyxi_O3K0LunJ3pxDzVCO-Zldq813ZMvcFEKYioZOiVH_qYdnH46zzeeXzzroWzIuBIB1xA7ttE5ABR-LkATbMGotE3ad97XFmxsZb_QRcOFfWsTANRf5cPX3GKio8LLNbHR2eFYImO0tj2mSQWWqe0D5vH3mXJhp_HGOY30lSBg8-9GoxLIhuvamKEuQY-6jWArExQvQByWsS3SCQ-adtKT0O4QM64s781jJZDzGL01C7Hs62HJMpAPLWaL8jBkmxKEEWu7YwHW8nRFov1d1--YyjFr4hte3C869ITObji_HYai23C2ZzOzyaBG9bt4fT4ISKKEu6jCEf7WZR0f6UEhvW70yGwf6Mb8hnZanogJehFoskVnEkAbdtlTjw6qvcXvEoqF_m4PvMWzReTjrr0PB3OoopAp9hQfyfYXAkNYLVCngkjHFvOuYI7bejFnPy44Dua2E_cXFB8yJJQUf-IkKrLndZOt06_EHYBznxpiZMLoi2AKDoi54qYJ7XnJAlx4nGiNCznVtaZqgNSGPs4fW6UvDbjPR5UpHenWt2EZuBJjp6IpVMKpqmZmWpkq7fAaRCmIYMgxEfTP59Miu6Np9b4LrqNudsBMnoUvUQkbYrj4Fo_AzCq0PUw-8PUYR8xsMmqXFTYGT0VkuzvT0EeUjLz7VkOmOid5Qkv_h-ytDJmmQwp4kmDztjGcSqn9wwLuy3y0Krd8NFvxRryzB3Kl7riyPL2oyBzCTG8Ma5Mm_2PY8X3tfcyWMkM8sfR-aJXbK-A6HrB4AVaNgU2vdPPMCjK7yWhr_emDfOtSgQbSNJUbQ7IlmpTSc2JjGObI_geh-BJYvOF5mtF-EY4UHrqKKLtvNzubDnNsrvoUUOxQVxRfC-GLzYZ3EPLkakOjNWqhcR6LawLXO3NvEcL1VFf0AuT81NnSVuGgZg6yHLHIYJ8HT-DBqak81kPBm-0dE0Hbrk6b2o8O30Q0FgVNSjAqgFu7AAgYAz6lN2QHpBVqQ7jYmyWy83aqkBnfwPVLAzJ3A4doCGgixQE2LX5cGbUdUFlBw_PwNxO0Pu1Ufii6hYPuUHKL6RTEmd2bkqA9gBiXtFeKKeaY3i2ydZgsKp1QBjWCjBUn_a9gDm6ZIM2iP-fSsBUrqwquJJZVJ5s6kCxuGq-xwST6rjBCewfjrdAf86I792t4cyk1ubffXJIuWbh37wfmXLWForA0OLy1mxo8vrv2q9qtnSkMAj7JCsUG3suk-C_INKIr0e__PERjIgtUuk-1-NR1lE7mhad7__0Xa4eOWS8jEurl21JFlUX2Xgt8EaL5jx4FT5_ZQfMFyC-f2gr86Aqv6pdqa_kyEAU4610Fwo4neFKGIrAPO9vZfl48-B_e9Qm0aY1pF0iPF2a-3TWqjfdcvdt6j1lk5gwjrX53_D_dust5M319qg4pFsczbUvMhEibkrVmDTH--2HgtvMwrjGwc0HNtOZukjvUD3rG2Zb_f5zuGDxySI2HTWxHPjrb7DyuTbx3wU3Ivq6_Rb9rQW9xoR-3djkF4BRBRUgcI45n2VtZkAlT6jtWM3UCUoD4jIhFEQ6I_RTZedhZP7PgJyuo3asXzYO0DhDM5UH3VuFxyCQx8jUDY8WQt9MnAO52lVwU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0025e96c979316a5016ae81f60b90887d1bdc8cdd1b62bbf4e",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9847,
+    "completion_tokens": 289,
+    "total_tokens": 10136,
+    "cost": 0.0013753,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9844,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013753,
+      "upstream_inference_prompt_cost": 0.0012308,
+      "upstream_inference_completions_cost": 0.0001445
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 44,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

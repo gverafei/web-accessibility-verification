@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#142633" name="theme-color"/>
+<title>Дром — автомобили, объявления и новости</title>
+<meta content="Автомобили и запчасти: объявления о продаже, каталог, отзывы владельцев и автомобильные новости." name="description"/>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17232d;
+      --muted: #596975;
+      --line: #dfe5e9;
+      --paper: #ffffff;
+      --canvas: #f3f5f6;
+      --accent: #d91f36;
+      --accent-dark: #ad1428;
+      --nav: #142633;
+      --soft-red: #fff0f1;
+      --radius: 16px;
+      --shadow: 0 8px 24px rgb(21 38 51 / 7%);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    a { color: #125b83; text-underline-offset: 3px; }
+    a:hover { color: #0a3e5b; }
+    a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid #087da8;
+      outline-offset: 3px;
+    }
+    img { display: block; max-width: 100%; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; border-radius: 8px;
+      background: #fff; color: var(--ink);
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+    .site-header { background: var(--paper); }
+    .topbar {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 24px;
+    }
+    .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
+    .brand img { width: 114px; height: auto; }
+    .header-links, .primary-nav, .utility-links {
+      display: flex; align-items: center; gap: 22px;
+    }
+    .header-links { color: var(--muted); font-size: .92rem; }
+    .header-links a, .primary-nav a, .utility-links a {
+      color: inherit; text-decoration: none;
+    }
+    .header-links a:hover, .primary-nav a:hover, .utility-links a:hover { text-decoration: underline; }
+    .header-links .location::before { content: "⌖"; margin-right: 6px; color: var(--accent); }
+    .account-links { display: flex; align-items: center; gap: 16px; font-size: .9rem; }
+    .account-links a { color: var(--ink); text-decoration: none; }
+    .account-links .sell {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 16px; border-radius: 10px;
+      background: var(--accent); color: white; font-weight: 700;
+    }
+    .account-links .sell:hover { background: var(--accent-dark); }
+    .nav-band { background: var(--nav); color: #fff; }
+    .nav-inner { min-height: 52px; display: flex; align-items: center; gap: 24px; }
+    .primary-nav { flex-wrap: wrap; gap: 8px 22px; font-size: .92rem; }
+    .primary-nav a { padding-block: 14px; }
+    .more-menu { position: relative; }
+    .more-menu summary { cursor: pointer; list-style: none; padding: 12px 0; }
+    .more-menu summary::-webkit-details-marker { display: none; }
+    .more-menu summary::after { content: "⌄"; margin-left: 6px; }
+    .more-menu[open] .more-list {
+      position: absolute; z-index: 5; top: 100%; right: 0;
+      width: min(420px, 88vw); padding: 18px;
+      border: 1px solid var(--line); border-radius: 12px;
+      background: white; box-shadow: var(--shadow); color: var(--ink);
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px;
+    }
+    .more-list a { padding: 4px 0; }
+    main { padding: 28px 0 56px; }
+    .intro {
+      display: grid; grid-template-columns: 1fr auto; align-items: end;
+      gap: 20px; margin-bottom: 20px;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.15; letter-spacing: -.03em; }
+    .intro p { margin-bottom: 0; color: var(--muted); }
+    .region-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 16px; font-size: .94rem; }
+    .region-links a { color: #315c72; }
+    .all-premium { font-size: .9rem; white-space: nowrap; }
+    .panel {
+      background: var(--paper); border: 1px solid #e7ebee;
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    .listing-panel { padding: 20px; }
+    .section-heading {
+      display: flex; align-items: baseline; justify-content: space-between;
+      gap: 16px; margin-bottom: 16px;
+    }
+    .section-heading h2 { margin: 0; font-size: 1.45rem; letter-spacing: -.02em; }
+    .section-heading a { font-size: .92rem; }
+    .car-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+    .car-card {
+      min-width: 0; overflow: hidden; border: 1px solid var(--line);
+      border-radius: 13px; background: #fff; color: inherit;
+      text-decoration: none; transition: transform .16s ease, box-shadow .16s ease;
+    }
+    .car-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .car-card img { width: 100%; aspect-ratio: 1.42 / 1; object-fit: cover; background: #e8ecef; }
+    .car-info { padding: 12px; }
+    .price { display: block; margin-bottom: 5px; color: var(--accent-dark); font-weight: 750; }
+    .car-name { display: block; color: var(--ink); font-weight: 700; line-height: 1.3; }
+    .car-place { display: block; margin-top: 5px; color: var(--muted); font-size: .88rem; }
+    .content-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; margin-top: 24px; }
+    .stack { display: grid; gap: 20px; align-content: start; }
+    .search-panel { padding: 24px; }
+    .search-panel h2 { margin-bottom: 6px; font-size: 1.6rem; }
+    .search-panel > p { margin-bottom: 20px; color: var(--muted); }
+    .brand-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+    .brand-grid a {
+      display: flex; align-items: center; min-height: 42px; padding: 8px 10px;
+      border-radius: 9px; color: var(--ink); text-decoration: none;
+    }
+    .brand-grid a:hover { background: #f1f5f7; text-decoration: underline; }
+    .search-row {
+      display: flex; gap: 10px; margin-top: 18px; padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .search-row input {
+      width: 100%; min-width: 0; min-height: 46px; padding: 10px 13px;
+      border: 1px solid #aab7c0; border-radius: 9px; background: #fff; color: var(--ink);
+      font: inherit;
+    }
+    button, .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 46px; padding: 10px 17px; border: 0; border-radius: 9px;
+      background: var(--accent); color: #fff; font: inherit; font-weight: 700;
+      text-decoration: none; cursor: pointer;
+    }
+    button:hover, .button:hover { background: var(--accent-dark); color: #fff; }
+    .check-card {
+      padding: 22px; background: #eaf2f5; border-color: #d5e2e8;
+    }
+    .check-card .mini-logo { width: 86px; margin-bottom: 16px; }
+    .check-card h2 { margin-bottom: 8px; font-size: 1.35rem; line-height: 1.25; }
+    .check-card p { margin-bottom: 14px; color: #344a57; font-size: .94rem; }
+    .text-link { font-weight: 650; }
+    .category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .category-card {
+      display: flex; min-height: 112px; flex-direction: column; justify-content: space-between;
+      padding: 15px; border-radius: 12px; background: #f5f7f8;
+      color: var(--ink); text-decoration: none; overflow: hidden;
+    }
+    .category-card:hover { background: #edf2f4; }
+    .category-card img { width: auto; height: 48px; max-width: 100%; object-fit: contain; object-position: left center; }
+    .category-card span { font-weight: 700; }
+    .compact-list { display: grid; gap: 0; }
+    .compact-item {
+      display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px;
+      padding: 13px 0; border-top: 1px solid var(--line);
+      color: inherit; text-decoration: none;
+    }
+    .compact-item:first-child { border-top: 0; padding-top: 0; }
+    .compact-item img { width: 96px; height: 68px; object-fit: cover; border-radius: 8px; background: #e7ecef; }
+    .compact-item strong { display: block; line-height: 1.35; }
+    .compact-item small { display: block; margin-top: 6px; color: var(--muted); }
+    .news-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .news-card {
+      overflow: hidden; border: 1px solid var(--line); border-radius: 12px;
+      color: inherit; text-decoration: none; background: #fff;
+    }
+    .news-card img { width: 100%; height: 148px; object-fit: cover; background: #e7ecef; }
+    .news-card strong { display: block; padding: 12px; line-height: 1.35; }
+    .news-card:hover strong { text-decoration: underline; }
+    .article-list { display: grid; gap: 12px; }
+    .article-link { display: grid; grid-template-columns: 112px 1fr; gap: 14px; align-items: center; color: inherit; text-decoration: none; }
+    .article-link img { width: 112px; height: 76px; border-radius: 9px; object-fit: cover; background: #e7ecef; }
+    .article-link strong { line-height: 1.35; }
+    .travel-list { display: grid; gap: 10px; }
+    .travel-list a { color: var(--ink); font-weight: 650; }
+    .market-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .market-item {
+      display: flex; flex-direction: column; min-width: 0; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 11px; color: inherit; text-decoration: none;
+    }
+    .market-item img { width: 100%; height: 128px; object-fit: cover; background: #e7ecef; }
+    .market-item span { padding: 11px; font-size: .9rem; line-height: 1.35; }
+    .market-item strong { display: block; margin-top: 7px; color: var(--accent-dark); }
+    .poll { padding: 22px; background: #fffaf0; border-color: #eee3c9; }
+    .eyebrow { margin-bottom: 8px; color: #6a5940; font-size: .78rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .poll h2 { margin-bottom: 10px; font-size: 1.35rem; line-height: 1.28; }
+    .poll-meta { margin-bottom: 14px; color: var(--muted); font-size: .9rem; }
+    .poll-options { display: grid; gap: 9px; margin: 0 0 16px; padding: 0; border: 0; }
+    .poll-options legend { margin-bottom: 10px; font-weight: 650; }
+    .poll-options label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .poll-options input { width: 18px; height: 18px; accent-color: var(--accent); }
+    .poll-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .poll-actions button { min-height: 42px; }
+    .poll-actions a { font-size: .92rem; }
+    .reviews-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .review-card { color: inherit; text-decoration: none; }
+    .review-card img { width: 100%; height: 112px; border-radius: 9px; object-fit: cover; background: #e7ecef; }
+    .review-card strong { display: block; margin-top: 8px; line-height: 1.3; }
+    .review-card small { display: block; margin-top: 5px; color: var(--muted); }
+    .blogs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .blog-card { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+    .blog-card img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; background: #e7ecef; }
+    .blog-card strong { display: block; font-size: .92rem; line-height: 1.25; }
+    .blog-card small { display: block; margin-top: 3px; color: var(--muted); }
+    .site-footer { padding: 32px 0; background: var(--nav); color: #e8eef1; }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; }
+    .footer-logo { width: 104px; filter: brightness(0) invert(1); margin-bottom: 16px; }
+    .footer-title { margin-bottom: 10px; color: #fff; font-weight: 750; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+    .footer-links a, .footer-col a { color: #dce5e9; font-size: .9rem; }
+    .footer-col { display: grid; align-content: start; gap: 8px; }
+    .footer-bottom { margin-top: 26px; padding-top: 18px; border-top: 1px solid #3c4d57; color: #c3cdd2; font-size: .88rem; }
+    @media (max-width: 1000px) {
+      .car-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .content-grid { grid-template-columns: minmax(0, 1fr) 270px; }
+      .brand-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .primary-nav { gap: 5px 14px; }
+    }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 28px, 600px); }
+      .topbar { min-height: 66px; flex-wrap: wrap; gap: 10px; padding-block: 12px; }
+      .header-links { display: none; }
+      .account-links { margin-left: auto; gap: 10px; }
+      .account-links .sell { padding: 9px 11px; }
+      .nav-inner { align-items: flex-start; padding-block: 8px; }
+      .primary-nav { gap: 0 16px; }
+      .primary-nav a { padding-block: 7px; }
+      .more-menu summary { padding-block: 7px; }
+      main { padding-top: 22px; }
+      .intro { grid-template-columns: 1fr; align-items: start; gap: 10px; }
+      .all-premium { white-space: normal; }
+      .content-grid { grid-template-columns: 1fr; }
+      .check-card { order: -1; }
+      .brand-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .reviews-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .blogs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-top > :first-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 24px); }
+      .brand img { width: 98px; }
+      .account-links { font-size: .82rem; }
+      .account-links .sell { font-size: .8rem; }
+      .primary-nav { font-size: .87rem; }
+      .car-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .listing-panel, .search-panel { padding: 15px; }
+      .section-heading { align-items: flex-start; }
+      .section-heading h2 { font-size: 1.25rem; }
+      .brand-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .search-row { flex-direction: column; }
+      .search-row button { width: 100%; }
+      .news-grid, .market-grid { grid-template-columns: 1fr; }
+      .news-card { display: grid; grid-template-columns: 112px 1fr; align-items: center; }
+      .news-card img { height: 92px; }
+      .news-card strong { padding: 10px; font-size: .9rem; }
+      .market-item { display: grid; grid-template-columns: 110px 1fr; align-items: center; }
+      .market-item img { height: 92px; }
+      .compact-item { grid-template-columns: 82px 1fr; }
+      .compact-item img { width: 82px; height: 62px; }
+      .article-link { grid-template-columns: 92px 1fr; }
+      .article-link img { width: 92px; height: 68px; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-top > :first-child { grid-column: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+<div class="wrap topbar">
+<a aria-label="Дром — главная" class="brand" href="https://www.drom.ru/">
+<img alt="Дром" src="https://r2.drom.ru/js/bundles/media/drom-logo.0674e216a1f2780b.svg"/>
+</a>
+<div aria-label="Регион" class="header-links">
+<a class="location" href="https://www.drom.ru/my_region/">Москва</a>
+<a href="https://www.drom.ru/world/japan/">Аукционы Японии</a>
+<a href="https://www.drom.ru/catalog/chinese/">Каталог китайских авто</a>
+</div>
+<div class="account-links">
+<a class="sell" href="https://auto.drom.ru/addbull/">Продать авто</a>
+<a href="https://my.drom.ru/sign?return=https%3A%2F%2Fwww.drom.ru%2F%3Ftcb%3D1792208900">Вход</a>
+</div>
+</div>
+<div class="nav-band">
+<div class="wrap nav-inner">
+<nav aria-label="Основная навигация" class="primary-nav">
+<a href="https://auto.drom.ru/">Автомобили</a>
+<a href="https://auto.drom.ru/spec/">Грузовики и спецтехника</a>
+<a href="https://auto.drom.ru/moto/">Мото</a>
+<a href="https://baza.drom.ru/moskovskaya-obl/sell_spare_parts/">Запчасти</a>
+<a href="https://www.drom.ru/reviews/">Отзывы</a>
+<a href="https://www.drom.ru/catalog/">Каталог</a>
+<a href="https://baza.drom.ru/wheel/tire/">Шины</a>
+<details class="more-menu">
+<summary>Ещё</summary>
+<div class="more-list">
+<a href="https://www.drom.ru/world/china/">Автомобили из Китая</a>
+<a href="https://www.drom.ru/world/korea/">Автомобили из Кореи</a>
+<a href="https://www.drom.ru/world/germany/">Автомобили из Германии</a>
+<a href="https://www.drom.ru/electro/">Электромобили</a>
+<a href="https://www.drom.ru/osago/">ОСАГО онлайн</a>
+<a href="https://www.drom.ru/autocredits/moskva/">Автокредиты</a>
+<a href="https://vin.drom.ru/?utm_source=top_menu_link">Проверка по VIN</a>
+<a href="https://www.forumsdrom.ru/">Форумы</a>
+<a href="https://www.drom.ru/pdd/">ПДД онлайн</a>
+<a href="https://law.drom.ru/">Правовые вопросы</a>
+</div>
+</details>
+</nav>
+</div>
+</div>
+</header>
+<main class="wrap" id="main">
+<section aria-labelledby="page-title">
+<div class="intro">
+<div>
+<h1 id="page-title">Продажа авто в России</h1>
+<p>Объявления, отзывы владельцев, новости и полезные материалы для автомобилистов.</p>
+<nav aria-label="Выбор региона" class="region-links">
+<a href="https://auto.drom.ru/?cid[]=92&amp;rid[]=50">Москва и область</a>
+<a href="https://auto.drom.ru/moscow/">Москва</a>
+<a href="https://auto.drom.ru/cities/">Другой город…</a>
+</nav>
+</div>
+<a class="all-premium" href="https://auto.drom.ru/region77/premium/">Все спецразмещения</a>
+</div>
+<div class="panel listing-panel">
+<div class="section-heading">
+<h2>Автомобили в Москве и области</h2>
+<a href="https://auto.drom.ru/">Все объявления</a>
+</div>
+<div class="car-grid">
+<a class="car-card" href="https://auto.drom.ru/himki/gac/gs8/664922829.html#from=widgetPremium">
+<img alt="GAC GS8 в Химках, 2026 год" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/MUO18QFFjOwfNz0hyLKUmINiHLw4Y7-24vwmpyGD42-qD5_Of0OZ6ES4J7g-QRrFBEa7quIRQSpJF4kq/gen272wb.jpg"/>
+<span class="car-info"><span class="price">3 510 990 ₽</span><span class="car-name">GAC GS8, 2026</span><span class="car-place">Химки</span></span>
+</a>
+<a class="car-card" href="https://auto.drom.ru/moscow/mercedes-benz/e-class/474418274.html#from=widgetPremium">
+<img alt="Mercedes-Benz E-Class в Москве, 2019 год" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/DDGgPi-aa2b0VaORor1eEgceZsX34XgfNREvqcti6WGRbuEYOs6JnDIsQT6-FRxrBhyfDpktV6s___vI/gen272wb.jpg"/>
+<span class="car-info"><span class="price">1 550 000 ₽</span><span class="car-name">E-Class, 2019</span><span class="car-place">Москва</span></span>
+</a>
+<a class="car-card" href="https://auto.drom.ru/moscow/mercedes-benz/c-class/248077910.html#from=widgetPremium">
+<img alt="Mercedes-Benz C-Class в Москве, 2023 год" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/WeBoQPCwHuyJ4gzlaP2wWO5ya75xd5ohL__SYM0Y2gDPYC_is2sZQgvsCmFMjrk3eg4APL095bCvGNCz/gen272wb.jpg"/>
+<span class="car-info"><span class="price">5 100 000 ₽</span><span class="car-name">C-Class, 2023</span><span class="car-place">Москва</span></span>
+</a>
+<a class="car-card" href="https://auto.drom.ru/moscow/skoda/rapid/165931311.html#from=widgetPremium">
+<img alt="Skoda Rapid в Москве, 2020 год" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/U7t2YmJQg2NpPrtO-Bw0-7LaCC41v39vnR7OSkVFeTUHcmYech6FAT1FZ-HxEHr62PT7-vjO9pPL3U_Z/gen272wb.jpg"/>
+<span class="car-info"><span class="price">1 900 000 ₽</span><span class="car-name">Skoda Rapid, 2020</span><span class="car-place">Москва</span></span>
+</a>
+<a class="car-card" href="https://auto.drom.ru/moscow/hyundai/ix35/146014182.html#from=widgetPremium">
+<img alt="Hyundai ix35 в Москве, 2013 год" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/lkQj1qMCGJgyDL9JTll_1muox5nLgzZ_P4XT7X6-aaDA7A0z8cCdSyEVvLZfhAlAoiF6pGN1HHAW4PWI/gen272wb.jpg"/>
+<span class="car-info"><span class="price">1 300 000 ₽</span><span class="car-name">Hyundai ix35, 2013</span><span class="car-place">Москва</span></span>
+</a>
+<a class="car-card" href="https://auto.drom.ru/himki/gac/s9/396213246.html#from=widgetPremium">
+<img alt="GAC S9 в Химках, 2026 год" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/9SqH2ImHZyzuRIoUJgM_8SvLlYWvvgGNXYNnVUC_fWFt-yIN6DwK67eDl7Bb23_Jqga6SkHjMFZPCgA5/gen272wb.jpg"/>
+<span class="car-info"><span class="price">5 899 000 ₽</span><span class="car-name">GAC S9, 2026</span><span class="car-place">Химки</span></span>
+</a>
+</div>
+</div>
+</section>
+<div class="content-grid">
+<div class="stack">
+<section aria-labelledby="search-title" class="panel search-panel">
+<div class="section-heading">
+<h2 id="search-title">Поиск объявлений</h2>
+<a href="https://auto.drom.ru/">Открыть каталог</a>
+</div>
+<div aria-label="Популярные марки" class="brand-grid">
+<a href="https://auto.drom.ru/audi/">Audi</a>
+<a href="https://auto.drom.ru/belgee/">Belgee</a>
+<a href="https://auto.drom.ru/bmw/">BMW</a>
+<a href="https://auto.drom.ru/changan/">Changan</a>
+<a href="https://auto.drom.ru/ford/">Ford</a>
+<a href="https://auto.drom.ru/gac/">GAC</a>
+<a href="https://auto.drom.ru/geely/">Geely</a>
+<a href="https://auto.drom.ru/haval/">Haval</a>
+<a href="https://auto.drom.ru/hyundai/">Hyundai</a>
+<a href="https://auto.drom.ru/jeland/">Jeland</a>
+<a href="https://auto.drom.ru/kia/">Kia</a>
+<a href="https://auto.drom.ru/mazda/">Mazda</a>
+<a href="https://auto.drom.ru/mercedes-benz/">Mercedes-Benz</a>
+<a href="https://auto.drom.ru/nissan/">Nissan</a>
+<a href="https://auto.drom.ru/skoda/">Skoda</a>
+<a href="https://auto.drom.ru/tenet/">TENET</a>
+<a href="https://auto.drom.ru/toyota/">Toyota</a>
+<a href="https://auto.drom.ru/volkswagen/">Volkswagen</a>
+<a href="https://auto.drom.ru/lada/">Лада</a>
+<a href="https://www.drom.ru/makers/">Все марки</a>
+</div>
+<form action="https://www.drom.ru/" class="search-row" method="get" role="search">
+<label class="visually-hidden" for="vehicle-id">Госномер, VIN или номер кузова</label>
+<input autocomplete="off" id="vehicle-id" placeholder="Госномер / VIN / № кузова" type="search"/>
+<button type="submit">Найти</button>
+</form>
+</section>
+<section aria-labelledby="new-cars-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="new-cars-title"><a href="https://auto.drom.ru/region77/new/all/">Новые автомобили от дилеров</a></h2>
+</div>
+<div class="category-grid">
+<a class="category-card" href="https://auto.drom.ru/region77/new/do-1500000/all/">
+<img alt="Лада Нива Legend" loading="lazy" src="https://r2.drom.ru/js/bundles/media/niva_legend-lm.da61c7d1f29bdfae.png"/>
+<span>Эконом до 1,5 млн ₽</span>
+</a>
+<a class="category-card" href="https://auto.drom.ru/region77/new/all/?minprice=1500000&amp;maxprice=3000000">
+<img alt="Haval Jolion" loading="lazy" src="https://r2.drom.ru/js/bundles/media/haval_jolion-lm.5983210454ef50e0.png"/>
+<span>Комфорт до 3 млн ₽</span>
+</a>
+<a class="category-card" href="https://auto.drom.ru/region77/new/all/?minprice=3000000&amp;maxprice=6000000">
+<img alt="Geely Monjaro" loading="lazy" src="https://r2.drom.ru/js/bundles/media/jeely_monjaro-lm.07faed66359e797a.png"/>
+<span>Бизнес до 6 млн ₽</span>
+</a>
+<a class="category-card" href="https://auto.drom.ru/region77/new/all/?minprice=6000000">
+<img alt="Lynk &amp; Co 900" loading="lazy" src="https://r2.drom.ru/js/bundles/media/lynk_co_900-lm.9b22503aee3defe3.png"/>
+<span>Премиум от 6 млн ₽</span>
+</a>
+</div>
+</section>
+<section aria-labelledby="news-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="news-title"><a href="https://news.drom.ru/">Автоновости</a></h2>
+<a href="https://news.drom.ru/">Все новости</a>
+</div>
+<div class="news-grid">
+<a class="news-card" href="https://news.drom.ru/103960.html">
+<img alt="Автомобиль из новости о российской версии китайского клона Прадо" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4/103960/gen473_4506857.jpg"/>
+<strong>Объявление дня: российская версия китайского клона Прадо</strong>
+</a>
+<a class="news-card" href="https://news.drom.ru/1-Mazda-CX-Toyota-RAV4-103962.html">
+<img alt="Автомобиль из материала о параллельном импорте Mazda CX-5 и Toyota RAV4" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4/103962/gen473_4506865.jpg"/>
+<strong>Параллельный импорт еще сопротивляется: Mazda CX-5, Toyota RAV4. А кто еще?</strong>
+</a>
+<a class="news-card" href="https://news.drom.ru/KGM-103929.html">
+<img alt="Иллюстрация к новости о планах KGM" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4/103929/gen380_4505326.jpg"/>
+<strong>KGM отложил локализацию производства своих авто в России</strong>
+</a>
+<a class="news-card" href="https://news.drom.ru/Tesla-103959.html">
+<img alt="Иллюстрация к новости о презентации нового Tesla Roadster" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4/103959/gen380_4506832.jpg"/>
+<strong>Tesla устроила эффектную презентацию нового Родстера</strong>
+</a>
+</div>
+</section>
+<section aria-labelledby="stories-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="stories-title"><a href="https://www.drom.ru/info/">Тест-драйвы и статьи</a></h2>
+<a href="https://www.drom.ru/info/">Все материалы</a>
+</div>
+<div class="article-list">
+<a class="article-link" href="https://www.drom.ru/info/misc/103935.html">
+<img alt="Иллюстрация к статье о причинах лишения водительских прав" loading="lazy" src="https://s31.auto.drom.ru/i24322/pubs/4483/103935/gen966_4505400.jpeg"/>
+<strong>Коварные статьи: за что лишают прав «по незнанию»</strong>
+</a>
+<a class="article-link" href="https://www.drom.ru/info/misc/103870.html">
+<img alt="Иллюстрация к запискам водителя такси" loading="lazy" src="https://s31.auto.drom.ru/i24322/pubs/4483/103870/gen966_4503358.jpg"/>
+<strong>Записки водителя такси. Новые проблемы и возможности</strong>
+</a>
+<a class="article-link" href="https://www.drom.ru/info/misc/2026-changan-qiyuan-q05-103906.html">
+<img alt="Changan Qiyuan Q05 в материале о популярности модели" loading="lazy" src="https://s31.auto.drom.ru/i24322/pubs/4483/103906/gen380_4504611.jpg"/>
+<strong>Суперхит осени-2026: разбираемся в причинах популярности Changan Qiyuan Q05</strong>
+</a>
+</div>
+</section>
+<section aria-labelledby="market-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="market-title">Запчасти, шины и диски</h2>
+<a href="https://baza.drom.ru/">Все товары</a>
+</div>
+<div class="market-grid">
+<a class="market-item" href="https://baza.drom.ru/moskva/sell_spare_parts/dvigatel-271820-turbo-mercedes-w204-c204-m271-820-137484584.html">
+<img alt="Двигатель Mercedes M271.820 Turbo" loading="lazy" src="https://static.baza.drom.ru/drom/1787113938697_bulletin"/>
+<span>Двигатель 271820 Turbo Mercedes W204 C204<strong>335 999 ₽</strong></span>
+</a>
+<a class="market-item" href="https://baza.drom.ru/moskva/wheel/tire/shina-hankook-w320a-winter-icept-evo2-suv-255-55-r20-110v-g17403946284.html">
+<img alt="Шина Hankook Winter i*cept Evo2 SUV" loading="lazy" src="https://static.baza.drom.ru/drom/1730216106778_bulletin"/>
+<span>Hankook Winter i*cept Evo2 SUV, 255/55 R20<strong>19 050 ₽</strong></span>
+</a>
+<a class="market-item" href="https://baza.drom.ru/moskva/wheel/disc/litye-diski-bmw-8.5-xr19-5x112-g17810975732.html">
+<img alt="Литой диск BMW 8.5xR19 5x112" loading="lazy" src="https://static.baza.drom.ru/drom/1761318308169_bulletin"/>
+<span>Литые диски BMW 8.5xR19 5x112<strong>99 000 ₽</strong></span>
+</a>
+</div>
+</section>
+<section aria-labelledby="reviews-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="reviews-title"><a href="https://www.drom.ru/reviews/">Отзывы владельцев авто</a></h2>
+<a href="https://www.drom.ru/reviews/">Все отзывы</a>
+</div>
+<div class="reviews-row">
+<a class="review-card" href="https://www.drom.ru/reviews/cadillac/escalade/1467014/">
+<img alt="Cadillac Escalade, отзыв владельца" loading="lazy" src="https://s.auto.drom.ru/i24322/r/photos/1467014/gen270_1749740.jpg"/>
+<strong>Escalade, 2022</strong><small>27 · 16 октября</small>
+</a>
+<a class="review-card" href="https://www.drom.ru/reviews/gaz/valdai_8/1466985/">
+<img alt="ГАЗ Валдай 8, отзыв владельца" loading="lazy" src="https://s.auto.drom.ru/i24322/r/photos/1466985/gen270_1749724.jpg"/>
+<strong>Валдай 8, 2024</strong><small>13 · 16 октября</small>
+</a>
+<a class="review-card" href="https://www.drom.ru/reviews/esteo/mx/1467009/">
+<img alt="ESTEO MX, отзыв владельца" loading="lazy" src="https://s.auto.drom.ru/i24322/r/photos/1467009/gen270_1749705.jpg"/>
+<strong>ESTEO MX, 2026</strong><small>10 · 15 октября</small>
+</a>
+<a class="review-card" href="https://www.drom.ru/reviews/geely/atlas/1467007/">
+<img alt="Geely Atlas, отзыв владельца" loading="lazy" src="https://s.auto.drom.ru/i24322/r/photos/1467007/gen270_1749698.jpg"/>
+<strong>Atlas, 2026</strong><small>41 · 15 октября</small>
+</a>
+</div>
+</section>
+<section aria-labelledby="travel-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="travel-title"><a href="https://travel.drom.ru/">Автопутешествия</a></h2>
+<a href="https://travel.drom.ru/">Все истории</a>
+</div>
+<div class="travel-list">
+<a href="https://travel.drom.ru/103944/">Поездка из Красноярска на Байкал в апреле 2026 года</a>
+<a href="https://travel.drom.ru/103938/">Кавказ 2026 — когда всё пошло не по плану</a>
+<a href="https://travel.drom.ru/103907/">Перегон Владивосток — Екатеринбург на фоне бензинового кризиса</a>
+</div>
+</section>
+</div>
+<aside aria-label="Проверка автомобиля и голосование" class="stack">
+<section aria-labelledby="check-title" class="panel check-card">
+<img alt="Логотип Дрома" class="mini-logo" src="https://r2.drom.ru/js/bundles/media/drom-logo-black.7d5d28165f524e06.svg"/>
+<h2 id="check-title">Проверь авто перед покупкой</h2>
+<p>История продажи, пробеги, ДТП, ремонты, залоги и многое другое.</p>
+<p><a class="text-link" href="https://vin.drom.ru/example/1">Пример отчёта</a></p>
+<a class="button" href="https://vin.drom.ru/?utm_source=web_main_page&amp;utm_medium=banner&amp;utm_campaign=report_by_vin">Проверить авто</a>
+</section>
+<section aria-labelledby="poll-title" class="panel poll">
+<p class="eyebrow">На правах рекламы</p>
+<h2 id="poll-title">Когда все такси в России станут беспилотными?</h2>
+<p class="poll-meta">8 573 голоса</p>
+<form action="https://www.drom.ru/poll.php?pollid=1125" method="post">
+<fieldset class="poll-options">
+<legend>Выберите вариант ответа</legend>
+<label><input name="Variant[]" type="radio" value="1"/> Через 5 лет</label>
+<label><input name="Variant[]" type="radio" value="2"/> Через 10 лет</label>
+<label><input name="Variant[]" type="radio" value="3"/> Через 20 лет</label>
+<label><input name="Variant[]" type="radio" value="4"/> Через 30 лет</label>
+<label><input name="Variant[]" type="radio" value="5"/> Не при нашей жизни</label>
+</fieldset>
+<input name="pollId" type="hidden" value="1125"/>
+<input name="pollaction" type="hidden" value="vote"/>
+<div class="poll-actions">
+<button type="submit">Проголосовать</button>
+<a href="https://www.drom.ru/poll.php?pollid=1125">Результаты и обсуждение</a>
+</div>
+</form>
+</section>
+<section aria-labelledby="sport-title" class="panel listing-panel">
+<div class="section-heading">
+<h2 id="sport-title"><a href="https://www.drom.ru/info/autosport/">Автоспорт</a></h2>
+</div>
+<div class="compact-list">
+<a class="compact-item" href="https://www.drom.ru/info/autosport/103939.html">
+<img alt="Ралли «Татнефть» в Альметьевске" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4483/103939/gen380_4506052.jpg"/>
+<span><strong>«Татнефть Ралли Альметьевск»: валидольный финал</strong><small>9 комментариев</small></span>
+</a>
+<a class="compact-item" href="https://www.drom.ru/info/autosport/103922.html">
+<img alt="Иллюстрация к новости о Формуле 1 в Африке" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4483/103922/gen380_4505114.jpg"/>
+<span><strong>Формула 1 возвращается в Африку</strong><small>12 комментариев</small></span>
+</a>
+<a class="compact-item" href="https://www.drom.ru/info/autosport/103898.html">
+<img alt="Гран-при Сингапура" loading="lazy" src="https://s.auto.drom.ru/i24322/pubs/4483/103898/gen380_4504451.jpg"/>
+<span><strong>Гран-при Сингапура. Последний спринт сезона</strong><small>44 комментария</small></span>
+</a>
+</div>
+</section>
+</aside>
+</div>
+<section aria-labelledby="blogs-title" class="panel listing-panel" style="margin-top:20px">
+<div class="section-heading">
+<h2 id="blogs-title"><a href="https://blogs.drom.ru/">Блоги «русских» машин на Дроме</a></h2>
+</div>
+<div class="blogs">
+<a class="blog-card" href="https://www.drom.ru/info/lada-aura/">
+<img alt="Лада Аура" loading="lazy" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-aura.jpg"/>
+<span><strong>Лада Аура</strong><small>59 985 км</small></span>
+</a>
+<a class="blog-card" href="https://www.drom.ru/info/song-plus/">
+<img alt="Бид Сонг Плюс" loading="lazy" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-song-plus.jpg"/>
+<span><strong>Бид Сонг Плюс</strong><small>38 500 км</small></span>
+</a>
+<a class="blog-card" href="https://www.drom.ru/info/moskvich/">
+<img alt="Дромовский Москвич" loading="lazy" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-moskvich.png"/>
+<span><strong>Дромовский «Москвич»</strong><small>171 942 км</small></span>
+</a>
+<a class="blog-card" href="https://www.drom.ru/info/niva-travel/">
+<img alt="Нива Тревел" loading="lazy" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-niva.jpg"/>
+<span><strong>Нива Тревел</strong><small>56 391 км</small></span>
+</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-top">
+<div>
+<a aria-label="Дром — главная" href="https://www.drom.ru/">
+<img alt="Дром" class="footer-logo" src="https://r2.drom.ru/js/bundles/media/drom-logo.0674e216a1f2780b.svg"/>
+</a>
+<p class="footer-title">Про автомобили — от объявлений до историй владельцев</p>
+<div aria-label="Разделы Дрома" class="footer-links">
+<a href="https://auto.drom.ru/">Автомобили</a>
+<a href="https://auto.drom.ru/addbull/">Подать объявление</a>
+<a href="https://baza.drom.ru/">Запчасти</a>
+<a href="https://baza.drom.ru/wheel/">Шины и диски</a>
+<a href="https://www.drom.ru/reviews/">Отзывы владельцев</a>
+<a href="https://www.drom.ru/catalog/">Автокаталог</a>
+<a href="https://www.forumsdrom.ru/">Форумы</a>
+<a href="https://travel.drom.ru/">Автопутешествия</a>
+</div>
+</div>
+<div class="footer-col">
+<span class="footer-title">Полезное</span>
+<a href="https://www.drom.ru/misc/dkp/">Договор купли-продажи</a>
+<a href="https://www.drom.ru/shina/">Каталог шин</a>
+<a href="https://www.drom.ru/pdd/">ПДД онлайн</a>
+<a href="https://law.drom.ru/">Правовые вопросы</a>
+<a href="https://www.drom.ru/safe/">Безопасность</a>
+<a href="https://www.drom.ru/sitemap/">Карта сайта</a>
+</div>
+<div class="footer-col">
+<span class="footer-title">О Дроме</span>
+<a href="https://www.drom.ru/about/">О проекте</a>
+<a href="https://my.drom.ru/help/VozniklaProblemanaDrome">Помощь и техподдержка</a>
+<a href="https://www.drom.ru/about/reprint">Правила</a>
+<a href="https://www.drom.ru/about/press/">Для СМИ</a>
+<a href="https://www.drom.ru/commerce/">Размещение на Дроме</a>
+<a href="https://baza.drom.ru/for-business">Разместить прайс</a>
+</div>
+</div>
+<div class="footer-bottom">© 1999–2026 Дром</div>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>

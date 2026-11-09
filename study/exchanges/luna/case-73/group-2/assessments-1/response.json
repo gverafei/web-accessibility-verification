@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent information about Stripe\u2019s commerce infrastructure, business audiences, customer stories, and metrics. It need not reproduce the reference\u2019s particular sections or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Several business cards show visible broken-image icons in their image areas. The repeated broken resources are an observable presentation defect, though the cards\u2019 text remains legible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible calls to action such as \u201cStripe for enterprises,\u201d \u201cView professional services,\u201d and \u201cRead the story\u201d have understandable labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent, assessable comparison; their different layouts and content organization are permitted for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, descriptive text, metrics, and link labels convey a coherent purpose and meaning for a business infrastructure page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating presentation issues**\n\nI'm noticing a presentation issue due to repeated broken image icons, which are prominent on three cards. The semantic aspect seems adequate. For image 2, the metrics appear coherent, which is good. However, I need to make sure that I address the material defect that the broken icons are causing to ensure everything looks polished. Overall, my focus will be on generating a JSON output that reflects these metrics and addresses the issues properly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating presentation issues**\n\nI'm noticing a presentation issue due to repeated broken image icons, which are prominent on three cards. The semantic aspect seems adequate. For image 2, the metrics appear coherent, which is good. However, I need to make sure that I address the material defect that the broken icons are causing to ensure everything looks polished. Overall, my focus will be on generating a JSON output that reflects these metrics and addresses the issues properly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bjx_GbQ6CL0G8xkkHmo__EvHK8PfpSvZX9sGg4d0v3wARtQmiN186esOmljlT3KJJW_7t7SJLObd83qvV1Hk81d2aEutHsvU-NuEKZ4Qly09-7KWiROOGnuEwqjPOC_S3W4L8ktM5c1ELOESyAKJbbT53hMvjSOt1PDjTSEl20iA1GGv6iDzxDSsta0YpV_sUe3IV6Du5Wok3zybtnMn_xxEiFcHcRRrzuqzj5k-Lqi8_syGJicOm11iytwnQ-9Ueax-aQW-X5_jYKXkEQQHGx3vVC_VDMx7fKuJMMnVumZ0HT9RtUSIri1Ez82qmC67DxuOMsUlSQmY-UTrUK-cBindsfvxkz-FFaXMMA7p0p96MkMhTCZa9whAbWlSedmXa0Gvb99P1ipxJmZzoj_wRyvmFuzrqh9lNpy1qP78yh80M8QOmnDRTyDJclpDEF5UrrrZ4vLlyOk_dZX_FhN4lSPwt4FDRqNizNoTKoFeBIBrae_B1letgfVIreOEkgdqjFFXVlHBlgtD21oeh4LY715S_ogOcDPO3anjeetBKrQeG8Aru9nyQeoCdjtqYJdxJQRGG3K3JiOWE4ToacSj4E1tDPmOe7k7Lnyu8S1Wh3SyWSpGK5R5s3xZNZvu9zCSvYwRgIHF7dKL_p-8zh5GtPQPbbcHijTP3e5ekqgnJ1vU3dfB_U4zle1oLapd5ePz8k9ZC151nrrWcICkn-0LhCyZlvB3UbwfXSmIQU-vKNaxh75NJD9qoOas_LLTBfjSmHm8s0oJo8TUidyhBgWUv-HZonoFhND9rKpiGSkWK-iGoUdZPheUewYnF46Fslrki-0-MkMMKvUH0zJ0c2vntp6uYnZtYTBqQ2xdRZcp_1ShafonZUldKzWaeLI7df3rqQNwHP6F5tI53yGdF6Q_nsozFE4CNtMHKTyVSnsSRMZKkLIyd5rx1d_iAi57_myMEPOMQo0li2VgfFhWZRcvoZZFws6CFiuduTTOyLOBrByHjbNpLwu9VLpRrRIFdQ18Teai78CPveaba4c5sKmJQ-B_Mfw1gNNqPGIgJieGcDwqQIXrml4-NLsl7PLdgeR_bCxDQygif9DZKF_eidU5UwPIBtxUNQ4mkJ9VWKkf9IfX8d7MbGtT3kgCUBVm64ACzEZCNnZWS4yAMxX4Gt0ueYBOVoQax-K00en5C6Ju9HgFMEhNSiKSbWf6opB8TZlX43afjxDTwf2eP52BFRjx7iBu4RSZHpvEH2PSkw0bosXl9hJk7oGnIkF2KR4-YH3ocVww5YGnMM3Z25oAC97BlBh-Z_X1JJsgRoQ_YMSbUlfTubSXFXuWxWzYtDXGylCnJ8eABUhaXzpFsczY-kpkB9GNqZ3d7vjzWB_CehYgL8tLklUDL3cm2FcAvDFuCxbYZG0uqO8_Ood2AUQ4LIug6Imfl36KrrXkfwsw8WjZ29y5PoDXRdYdcEDWZfUXMnIo32bfiP0EP4ksVRcDYPvnYcM6THzZjICuTZSSK1n-g_u1ZVIY6IHzbxKb45sW2m_Ycci46eTkzXauci637Pc7yHZxbR3RUnvgheltxxNysUVOILejfcTJGYx334YEjZU7IxuIlBuXjbyDzAwMhaKrHREOIKosRD2EQ_-ywdGF96AFsHyxBsXA0uwGEvXpMweoXgrDHZW2fc5NAiGnXlbJVNy-zEKS6yCeN89L1gPHIg13k-E-RqN0TivBnZxzxyz7k30ffiAELjrCzbcvZLJ8_ptqknpJ33JUI3k9K6p-jj1si_glYK3fRc9_tbEEYf2KmRRKgJDiHRMFZ0QhPsMh0-yT-Hvx9ONZjXL3UE9xhG2GKx3JurmsnOfAcUgciVVKw8IeMOxLXd11f-Qi0n0O1eKcXqWpDN-VzYm_kbuNJzgEIKczqoL33yU4wPZqyZ-YkeMm_895R0OMPeOG7p6Hug4J7XO-qZbW1xwXP1n7q5JxIvBFl6XCrtxEtefrepa10d8HtHkVBanvTyUoz6iGG_vzJLXXjXQReg2tKSGt1SmUjtHvHD6iqeaNcEgHp1I7lk2UfXbR7TKw-ydpp1QLElSlSsCrBmEQY0a8viHatEtCU7Ui1BCGhsEiBtpu1_NaneAknTDUS1C8RAmNX9bqQRnueJhuik3a8cFnBt5rZuFDmgbWV6U8w2quoBfwHS45t7EI0gjac-N1Hj5GAjI59-hw0oQUm_w9t_tf_qNUCcDswkhIFDoZ8KX9FJ9Gj5zHmVCF3N5Y9XgxYOgTMNk8G0Kz8tQeA3KL_3zFGdhv75-vtB8vJ7CEcUsQTGVF3INDm0C7rkrW71cv-jIqHRBRvYm0mG-KwcwuZSiELElNao-HJNTCAgwEhGwt2NbIj6SlSfooxLQhHX6x2p7LIhUMWjcMrxdKchiworMgG0GhjBij9w3vnf_iKr2xyLFb1ZacR1yiQCC770OXgmthSak0bzCR0s293MBongf47JZx4iVy3Oh61M8L7ygtTLXHqq2RlsEm3r_rIcBXUyQFN2b7k_UdPhbyY2Ml1YE6q1CuakKNM4fGnbn5vlbonYOIjc07nl3rRHpp8NMsN4aWNY0nBA9_jU_TTrREqadGAvalmKnzCxoFNHENwA0-twSHlLYHtKGEbKkLyWqMOtsvq-lKMhln_iTSkZzjoXwx8i5g4XihRoJjy34ezSkexqINfGWniBaArsc8iMDjXI1w2qcj2bh5ExOiAL9EB8uDuKWAzoySgK0daBjQlEK7imOVrvY7P7d63wyaDx7mjBVvbS1_4hxbwLcqZFTi43IfHchAwwt_B8grEHePT3R-1WW06OytrQF3mESrN5YgJT4g5Jj4L_7Bym_aGU-_xkgOYIZEB57Z6qw6ME_A9MutFMzQGnMd4O_rckHAoqoGr1hbkvjNHn7YABrAbny1QCmM2ps-DQJNuKgLsZnnlZb3Vuv2EZZa9wfw9MOXwcci1nuhCD9aH758kldGaPbqWoidNtB5sTfy2fXFdXN0aoqruglHqtEKbUFFGScRbelSntRq0AJzsUr3twwCeE8xGwLkuJrPz303yDz_XJdH_7DvBFwgGUrb46W3rS8rgOhFQr9KP0lk9YrzUYxjvQw2TShAVo0sowaEIK_SAAGsQsK9DxsXSVrbA4JChWBZ_xWv922WEl-egNg2RIsWJ3EJQg2hR6stqA32pFdm8F_-Db_wwLH4sCK1Q8YasQC_b4bv3v3dTMqkXtVRWNXeTNXejJzwchrQ2NgnNrDy-53R8c3E-p_JHsDGua_EhWERmejZD4wvClQYLsic5rLJ0YGxRMV4D_HsJ01iUY56PoQJ5I1QtNQmCc_bqwcRfQor_hRLjT_oRr1QzB4kQs83O9E54EXNo_c2JcmYPiFjfUKe3IeXaxpGBxDCPtZiFzW1Rlgs2qZYJRrbD0MTvmLh4MGh5YO_kUP7F0yz150g-BBZnmMoM1WCxdphcU0FTGYQZv_dRKHXrTyyYw2v9YwvADqxdpHmw1-BY4ioJRFVzx7civQhzdJpBAgGpuZqI6bC9uKT8aX0f0GA914n1yMEioT0Z7dGilc9WN3UcKOGNMwP3fhi2rA9ZtSgxqBLCam0IhH8_2Ey9m43Czog03LL7-baMzuftLVnNXV0RWsY7A1wA89G9dqP_t7EQW4VJGdXnHrS8Mm8j9aUNwCmnprl188nW-8Ya62HPmQht1v_GW65OA2pu5J4GxWBS86qQ8AiAgQsRc6gjzkm3EKSCSobd9VG2uyWaPgIHSr3iXaRHOmI84UtA-W8ZzoWfDv3BIRer-HcAs0ZTnYJLMQqnoPRs44LHZndFk0qEHnZFdDxPxfvHn1G44B-RI-FlDhwSDZw6iFbnzbFkaPaPCEZZNSr055i9bbgh6BbBDRzKOWBiLmn_wxDKrvufqf5I_EOCrSSmQqX6MOLTiKL4lTHmK_Th_wY93MSCJ4sPlQ0lfC6CyI9OmrI1GvRwJr6BIAGJIfDXXKLSgzmyV4opdpde-rfPl5-isMews_CvYWaedTFUWQA56R_2chK8PUA4Yp2KFFXZdG5VwJ618Qm6txGMABHB8GAYlg8AQX2b-fyLzsdLetW_NEDSE_k_MQpyMe4v7uDu8Wbnwgo3LW3R2Nxy6vN6-AIbDR3DRbua-RNxaTcjIVHLioPrsHwkRrHsdRy-yfd5rJUP_3ad1zScIPNoe0eCVsSLuPfSoCQqSbmH1Esrldtfv7jM1uRsvS5OWji7V2PVQIo70miB0QJEV8-aWa73bciX19JWpDw1L4as9xImmgcMX4hHKbdmuChy7-Q-oKOSWN_COVJ5m3r9yduBqk8qOdK5KE7f3GWWsAkBwHIJJvJK2lsopGtW1p75csbnd1cDl9G1XSwaqhwwleF61-oV89fQ1xj_m0Kw5w3qzoelVwe28OMd3LmJWnT3289eFk5KPDBmA5onTcRP4Pae3NINZfgzg8H-BoFeI6rRuVuFktLL4jrooyV0X0UqiDaY7TmX-5EuLXCMiaxWxI_pQYg4-cxzWn_TA0S5yliw4vHIR8q_2O7zCVtgjHqkCC1Qfgjt9ZIq6cvZN4FxuZPZadqVpJ6fMA-xsmAaWRzWtIxVs3GdvXhxXRiVmrWbFXfq3kuUiyJgv4VhV1o1w8TOuj4mbvPwMh2iq_Cx3QpBFc4IgrbqdN38KvKtTC7XAgjQvIjfOoV2UYQgJySziCNZTZd03Nwzx-N5Ospx-tPgVYwiJEUPFuUl8aCNrNXe8YsbtBWG91fkdz7jvs0ywB-eCyjwzVl1rXViwAPBgpo2o=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_086c01997d12bdb7016ae818edafd487d184d74b10a5a9bf16",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10583,
+    "completion_tokens": 484,
+    "total_tokens": 11067,
+    "cost": 0.0015648,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10580,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015648,
+      "upstream_inference_prompt_cost": 0.0013228,
+      "upstream_inference_completions_cost": 0.000242
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 215,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

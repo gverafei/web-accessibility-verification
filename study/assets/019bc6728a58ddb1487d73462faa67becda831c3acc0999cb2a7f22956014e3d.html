@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Universidad Veracruzana</title>
+<meta content="Universidad Veracruzana, institución de educación superior pública con sedes a lo largo del estado de Veracruz." name="description"/>
+<meta content="#17529E" name="theme-color"/>
+<link href="https://www.uv.mx/favicon.ico" rel="icon"/>
+<link href="https://www.uv.mx/" hreflang="es" rel="alternate"/>
+<link href="https://www.uv.mx/en/" hreflang="en" rel="alternate"/>
+<style>
+  :root {
+    --blue: #17529E;
+    --blue-dark: #0F3A70;
+    --ink: #1B1F24;
+    --muted: #4A525C;
+    --line: #D6DCE4;
+    --bg: #FFFFFF;
+    --soft: #F3F6FA;
+    --focus: #FFBF47;
+    --cat-art: #6B2C7A;
+    --cat-aca: #1F5C99;
+    --cat-dep: #8A4B00;
+    --cat-ins: #1E6B3A;
+    --radius: 10px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--bg);
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--blue); text-underline-offset: 3px; }
+  a:hover { color: var(--blue-dark); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; box-shadow: 0 0 0 5px var(--blue-dark); }
+  .wrap { width: min(1180px, 100% - 2rem); margin-inline: auto; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .skip-link {
+    position: absolute; left: 1rem; top: -4rem; z-index: 1000;
+    background: #fff; color: var(--ink); padding: .6rem 1rem; border-radius: 6px; font-weight: 600;
+  }
+  .skip-link:focus { top: 1rem; }
+
+  /* Utility bar */
+  .utility { background: var(--blue-dark); color: #fff; font-size: .9rem; }
+  .utility .wrap { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .25rem 1rem; padding: .35rem 0; }
+  .utility a { color: #fff; text-decoration: none; padding: .2rem .3rem; border-radius: 4px; }
+  .utility a:hover { text-decoration: underline; }
+
+  /* Masthead */
+  .masthead { border-bottom: 1px solid var(--line); background: #fff; }
+  .masthead .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: .9rem 0; }
+  .brand { display: flex; align-items: center; gap: .9rem; text-decoration: none; color: var(--ink); }
+  .brand img { width: 62px; height: auto; }
+  .brand span { font-size: 1.35rem; font-weight: 500; line-height: 1.2; }
+  .masthead-tools { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+  .masthead-tools a.media { display: inline-flex; align-items: center; padding: .25rem; border-radius: 4px; }
+  .masthead-tools a.media img { height: 28px; width: auto; }
+  .search { display: flex; }
+  .search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .search input {
+    font: inherit; padding: .5rem .75rem; border: 1px solid #8b95a1; border-radius: 6px 0 0 6px;
+    min-width: 220px; color: var(--ink);
+  }
+  .search button {
+    font: inherit; font-weight: 600; padding: .5rem .9rem; border: 1px solid var(--blue);
+    background: var(--blue); color: #fff; border-radius: 0 6px 6px 0; cursor: pointer;
+  }
+  .search button:hover { background: var(--blue-dark); }
+
+  /* Primary navigation */
+  .primary { background: var(--blue); position: sticky; top: 0; z-index: 50; }
+  .primary ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+  .primary > .wrap > ul > li { position: relative; }
+  .primary a, .primary summary {
+    display: block; color: #fff; text-decoration: none; padding: .8rem .85rem; font-weight: 500; cursor: pointer; list-style: none;
+  }
+  .primary summary::-webkit-details-marker { display: none; }
+  .primary summary::after { content: " \25BE"; font-size: .8em; }
+  .primary a:hover, .primary summary:hover { background: var(--blue-dark); }
+  .primary a[aria-current="page"] { background: var(--blue-dark); text-decoration: underline; }
+  .primary details[open] > summary { background: var(--blue-dark); }
+  .primary details ul {
+    position: absolute; top: 100%; left: 0; min-width: 280px; flex-direction: column;
+    background: #fff; border: 1px solid var(--line); border-radius: 0 0 var(--radius) var(--radius);
+    box-shadow: 0 10px 24px rgba(0,0,0,.18); padding: .4rem 0;
+  }
+  .primary details ul a { color: var(--ink); padding: .5rem 1rem; font-weight: 400; }
+  .primary details ul a:hover { background: var(--soft); color: var(--blue-dark); }
+  .primary details ul a:focus-visible { box-shadow: none; outline-offset: -3px; }
+  .menu-note { color: #fff; font-size: .9rem; padding: .3rem 0 .6rem; }
+
+  /* Hero */
+  .hero { position: relative; color: #fff; background: #0c2a4f; }
+  .hero img { width: 100%; height: min(60vh, 520px); object-fit: cover; opacity: .85; }
+  .hero-caption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,.78));
+    padding: 3rem 0 1.5rem;
+  }
+  .hero-caption h2 { font-size: clamp(1.4rem, 3vw, 2.2rem); margin: 0 0 .75rem; line-height: 1.25; max-width: 30ch; }
+  .btn {
+    display: inline-block; font: inherit; font-weight: 600; text-decoration: none;
+    background: var(--blue); color: #fff; padding: .6rem 1.25rem; border-radius: 6px; border: 2px solid var(--blue);
+  }
+  .btn:hover { background: var(--blue-dark); color: #fff; border-color: var(--blue-dark); }
+  .btn.outline { background: #fff; color: var(--blue); border-color: var(--blue); }
+  .btn.outline:hover { background: var(--soft); color: var(--blue-dark); }
+  .hero .btn { background: #fff; color: var(--blue-dark); border-color: #fff; }
+  .hero .btn:hover { background: var(--soft); }
+
+  /* Sections */
+  section.block { padding: 3rem 0; }
+  section.block.alt { background: var(--soft); }
+  h2.section-title { font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--blue-dark); margin: 0 0 1.25rem; line-height: 1.2; }
+  .lead { color: var(--muted); font-size: 1.05rem; max-width: 70ch; }
+
+  /* Quick links/cintillo */
+  .cintillo { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; }
+  .cintillo a { display: block; background: var(--blue-dark); }
+  .cintillo a:hover { filter: brightness(1.12); }
+  .cintillo img { width: 100%; height: 92px; object-fit: contain; background: #fff; }
+
+  /* News */
+  .news-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card {
+    background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .card-body { padding: 1rem 1.1rem 1.25rem; display: flex; flex-direction: column; gap: .6rem; flex: 1; }
+  .card-body h3 { font-size: 1.1rem; line-height: 1.35; margin: 0; }
+  .card-body h3 a { color: var(--ink); text-decoration: none; }
+  .card-body h3 a:hover { color: var(--blue); text-decoration: underline; }
+  .card-body p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .card-body .btn { align-self: flex-start; margin-top: auto; }
+  .chip { font-size: .8rem; font-weight: 600; padding: .15rem .55rem; border-radius: 999px; align-self: flex-start; color: #fff; }
+
+  /* Agenda */
+  .legend { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .legend li { font-weight: 600; padding: .4rem .9rem; border-radius: 999px; border: 2px solid currentColor; background: #fff; }
+  .legend .c-art { color: var(--cat-art); }
+  .legend .c-aca { color: var(--cat-aca); }
+  .legend .c-dep { color: var(--cat-dep); }
+  .legend .c-ins { color: var(--cat-ins); }
+  .event { display: grid; grid-template-columns: 74px 1fr; gap: 1rem; align-items: start; }
+  .date-box { background: var(--blue-dark); color: #fff; text-align: center; border-radius: 8px; padding: .4rem .3rem; }
+  .date-box .d { font-size: 1.6rem; font-weight: 700; line-height: 1.1; display: block; }
+  .date-box .m { font-size: .85rem; text-transform: uppercase; }
+  .event-meta { font-size: .9rem; color: var(--muted); margin: 0; }
+
+  /* Oferta / Somos / Numeralia */
+  .split { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: center; }
+  @media (min-width: 880px) { .split { grid-template-columns: 1fr 1fr; } }
+  .split img { border-radius: var(--radius); }
+  .testimonials { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .testimonial { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; display: grid; grid-template-columns: 72px 1fr; gap: 1rem; }
+  .testimonial img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; }
+  .testimonial h3 { font-size: 1.02rem; margin: 0 0 .4rem; line-height: 1.35; }
+  .testimonial p { margin: 0 0 .6rem; color: var(--muted); font-size: .95rem; }
+  .stats { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .stat { background: #fff; border-left: 6px solid var(--blue); padding: 1rem 1.25rem; border-radius: 6px; }
+  .stat strong { display: block; font-size: 2.2rem; color: var(--blue-dark); line-height: 1.1; }
+  .stat span { color: var(--muted); }
+  .stat small { display: block; color: var(--muted); font-size: .85rem; }
+
+  /* Regiones */
+  .regions { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); list-style: none; padding: 0; margin: 0; }
+  .regions a { position: relative; display: block; border-radius: var(--radius); overflow: hidden; color: #fff; text-decoration: none; }
+  .regions img { width: 100%; height: 170px; object-fit: cover; }
+  .regions span {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: .6rem .8rem;
+    background: rgba(15,58,112,.9); font-weight: 600;
+  }
+  .regions a:hover span { background: var(--blue-dark); text-decoration: underline; }
+
+  /* SUGIR */
+  .sugir-list { display: grid; gap: .5rem; padding: 0; margin: 1.25rem 0 0; list-style: none; }
+  .sugir-list a { display: block; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: .75rem 1rem; text-decoration: none; font-weight: 500; }
+  .sugir-list a:hover { border-color: var(--blue); background: var(--soft); }
+
+  /* Details (native disclosure) */
+  details.disclosure { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: .6rem 1rem; margin-top: .75rem; }
+  details.disclosure summary { cursor: pointer; font-weight: 600; color: var(--blue-dark); }
+  details.disclosure ul { padding-left: 1.2rem; }
+
+  /* Footer */
+  footer.site-footer { background: var(--blue-dark); color: #fff; padding: 3rem 0 1.5rem; }
+  footer h2 { color: #fff; font-size: 1.25rem; margin: 0 0 .9rem; }
+  footer h3 { color: #fff; font-size: 1rem; margin: 0 0 .6rem; }
+  footer a { color: #fff; }
+  footer a:hover { color: #FFE08A; }
+  .foot-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; }
+  .foot-bottom { border-top: 1px solid rgba(255,255,255,.3); margin-top: 2rem; padding-top: 1rem; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+  .social img { width: 26px; height: 26px; }
+  .social { display: flex; gap: .75rem; list-style: none; padding: 0; margin: .5rem 0 0; }
+
+  @media (max-width: 900px) {
+    .primary details ul { position: static; box-shadow: none; border: 0; background: var(--blue-dark); min-width: 0; }
+    .primary details ul a { color: #fff; }
+    .primary details ul a:hover { background: var(--blue); color: #fff; }
+    .primary > .wrap > ul { flex-direction: column; }
+    .search input { min-width: 0; width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<!-- Utility links -->
+<div class="utility">
+<nav aria-label="Accesos rápidos" class="wrap">
+<a href="https://dsia.uv.mx/miuv/escritorio/login.aspx" rel="noopener" target="_blank">Mi UV<span class="sr-only"> (se abre en una nueva pestaña)</span></a>
+<a href="http://mailweb.uv.mx/" rel="noopener" target="_blank">Correo<span class="sr-only"> (se abre en una nueva pestaña)</span></a>
+<a href="https://www.uv.mx/estudiantes/">Estudiantes</a>
+<a href="https://www.uv.mx/egresados/">Egresados</a>
+<a href="https://www.uv.mx/academicos/">Académicos</a>
+<a href="https://www.uv.mx/administrativos/">Administrativos</a>
+<a href="https://www.uv.mx/comunicate/">Directorio</a>
+</nav>
+</div>
+<!-- Masthead -->
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="https://www.uv.mx/">
+<img alt="Escudo de la Universidad Veracruzana" height="70" src="https://www.uv.mx/v2/images/logouv.webp" width="62"/>
+<span>Universidad Veracruzana</span>
+</a>
+<div class="masthead-tools">
+<nav aria-label="Medios institucionales" class="masthead-tools">
+<a class="media" href="https://www.uv.mx/prensa/" rel="noopener" target="_blank"><img alt="Prensa UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/prensauv.png"/></a>
+<a class="media" href="https://www.uv.mx/television/" rel="noopener" target="_blank"><img alt="Televisión UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/teleuv.png"/></a>
+<a class="media" href="https://www.uv.mx/radio/" rel="noopener" target="_blank"><img alt="Radio UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/radiouv.png"/></a>
+<a class="media" href="https://www.facebook.com/UVeracruzanaMx" rel="noopener" target="_blank"><img alt="Facebook de la UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/fb.png"/></a>
+<a class="media" href="https://x.com/UVeracruzanaMx" rel="noopener" target="_blank"><img alt="X (Twitter) de la UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/tw.png"/></a>
+</nav>
+<form action="https://www.uv.mx/" class="search" method="get" role="search">
+<label for="buscar">Buscar en uv.mx</label>
+<input id="buscar" name="search" placeholder="Buscar en uv.mx" type="search"/>
+<button type="submit">Buscar</button>
+</form>
+</div>
+</div>
+</header>
+<!-- Primary navigation with native disclosure menus -->
+<nav aria-label="Menú principal" class="primary">
+<div class="wrap">
+<ul>
+<li><a aria-current="page" href="https://www.uv.mx/">Inicio</a></li>
+<li>
+<details>
+<summary>Nosotros</summary>
+<ul>
+<li><a href="https://www.uv.mx/universidad/presentacion/">Presentación</a></li>
+<li><a href="https://www.uv.mx/universidad/mision-y-vision/">Misión y visión</a></li>
+<li><a href="https://www.uv.mx/identidad-institucional/">Identidad institucional</a></li>
+<li><a href="https://www.uv.mx/universidad/general/historia/">Historia</a></li>
+<li><a href="https://www.uv.mx/cug">Consejo Universitario General</a></li>
+<li><a href="https://www.uv.mx/juntagob/">Junta de Gobierno</a></li>
+<li><a href="https://www.uv.mx/contraloria/">Contraloría General</a></li>
+<li><a href="https://www.uv.mx/administracion-rectoral/">Administración rectoral</a></li>
+<li><a href="https://www.uv.mx/legislacion/">Abogado General</a></li>
+<li><a href="https://www.uv.mx/orgmet/general/organigramas-institucionales/">Estructura organizacional</a></li>
+<li><a href="https://www.uv.mx/universidad/entidades-y-dependencias/">Entidades y dependencias</a></li>
+<li><a href="https://www.uv.mx/documentos/">Documentos institucionales</a></li>
+<li><a href="https://www.uv.mx/universidad/presencia-universitaria/">Presencia universitaria</a></li>
+<li><a href="https://www.uv.mx/informacion-estadistica/" rel="noopener" target="_blank">Estadística institucional<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Aspirantes</summary>
+<ul>
+<li><a href="https://www.uv.mx/escolar/licenciatura2026">Convocatoria de Ingreso a nivel Licenciatura, TSU, Técnico e Iniciación</a></li>
+<li><a href="https://www.uv.mx/escolar/posgrado2026-II">Convocatoria de Ingreso a Posgrado 2026-II</a></li>
+<li><a href="https://www.uv.mx/escolar/cimi2026/">Convocatoria de Ingreso al CIMI 2026</a></li>
+<li><a href="https://www.uv.mx/ofertaeducativa/">Oferta Educativa</a></li>
+<li><a href="https://www.uv.mx/aspirantes/">Enlace al Portal de Aspirantes</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Docencia e investigación</summary>
+<ul>
+<li><a href="https://www.uv.mx/investigacion/">Investigación</a></li>
+<li><a href="https://www.uv.mx/uvi/">Intercultural</a></li>
+<li><a href="https://www.uv.mx/posgrado/">Posgrado</a></li>
+<li><a href="https://www.uv.mx/vinculacion/">Vinculación</a></li>
+<li><a href="https://www.uv.mx/catedrasdeexcelencia/">Cátedras de Excelencia</a></li>
+<li><a href="https://www.uv.mx/convocatorias/">Convocatorias de plazas</a></li>
+<li><a href="https://www.uv.mx/calendarios/">Calendarios (escolar y administrativos)</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Arte, ciencia, cultura y deporte</summary>
+<ul>
+<li><a href="https://www.uv.mx/agenda/">Agenda cultural</a></li>
+<li><a href="https://www.uv.mx/dgbuv/">Bibliotecas</a></li>
+<li><a href="https://www.uv.mx/cienciauv/">Comunicación de la ciencia</a></li>
+<li><a href="https://www.uv.mx/comunicacionuv/">Comunicación universitaria</a></li>
+<li><a href="https://www.uv.mx/daduv/">Deporte</a></li>
+<li><a href="https://www.uv.mx/difusioncultural/">Difusión cultural</a></li>
+<li><a href="https://www.uv.mx/editorial/">Editorial</a></li>
+<li><a href="https://www.uv.mx/edu-cont/">Educación continua</a></li>
+<li><a href="https://www.uv.mx/cimi/">Iniciación musical</a></li>
+<li><a href="https://www.uv.mx/artes/talleres-libres-de-arte/">Talleres libres</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Internacional</summary>
+<ul>
+<li><a href="https://www.uv.mx/internacional/">Relaciones internacionales</a></li>
+<li><a href="https://www.uv.mx/movilidad/">Movilidad</a></li>
+<li><a href="https://uvmx-my.sharepoint.com/:x:/g/personal/ccacademica_uv_mx/EQGgpO-5cf5Nj35k-iCiAJgBN3gPewqMVh2kSg3cMGrMew?e=Mh3BcQ" rel="noopener" target="_blank">Convenios<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/dcia/">Centros de Idiomas y Centros de Autoacceso</a></li>
+<li><a href="https://www.uv.mx/eee/">Escuela para Estudiantes Extranjeros</a></li>
+</ul>
+</details>
+</li>
+</ul>
+</div>
+</nav>
+<main id="contenido">
+<!-- Hero: featured story -->
+<section aria-labelledby="destacado-titulo" class="hero">
+<h2 class="sr-only">Noticia destacada</h2>
+<img alt="Mesa con cestas de chiles secos y frescos, y libros sobre el valor biocultural del chile" src="https://www.uv.mx/comunicacionuv/files/2026/10/BUV-201026-PAOLA-Libro-chiles-3.jpg"/>
+<div class="hero-caption">
+<div class="wrap">
+<p id="destacado-titulo" style="margin:0 0 .4rem; font-weight:600;">Investigadores documentan en libro valor biocultural del chile</p>
+<a class="btn" href="https://www.uv.mx/prensa/general/investigadores-documentan-en-libro-valor-biocultural-del-chile/" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre el libro del valor biocultural del chile (se abre en una nueva pestaña)</span></a>
+</div>
+</div>
+</section>
+<!-- Institutional banners -->
+<section aria-label="Documentos y programas institucionales" class="cintillo">
+<a href="https://www.uv.mx/documentos/files/2026/03/UV-Programa-de-Trabajo-2025-2029.pdf" rel="noopener" target="_blank"><img alt="Programa de Trabajo 2025-2029 (PDF, se abre en una nueva pestaña)" src="https://www.uv.mx/comunicacionuv/files/2026/03/PT25-29_Banner-cintillo-300x92px.png"/></a>
+<a href="https://www.uv.mx/documentos/informe-de-labores/" rel="noopener" target="_blank"><img alt="Informe UV 2026 (se abre en una nueva pestaña)" src="https://www.uv.mx/comunicacionuv/files/2026/09/1IL-Banner-cintillo-de-portal-UV-300x92-px.png"/></a>
+<a href="https://www.uv.mx/documentos/planes/" rel="noopener" target="_blank"><img alt="Planes institucionales (se abre en una nueva pestaña)" src="https://www.uv.mx/comunicacionuv/files/2023/06/01-Boton-con-los-4-Planes-AJUSTE-3.png"/></a>
+<a href="https://www.uv.mx/sustentable/" rel="noopener" target="_blank"><img alt="UV Sustentable (se abre en una nueva pestaña)" src="https://www.uv.mx/comunicacionuv/files/2022/08/Banner-UV-Sustentable_Con-fondo-transparente-300x92.png"/></a>
+<a href="https://www.uv.mx/uge/general/atencion-de-la-violencia-de-genero/" rel="noopener" target="_blank"><img alt="Protocolo para atender la violencia de género (se abre en una nueva pestaña)" src="https://www.uv.mx/comunicacionuv/files/2019/05/UGEUV_Banner-Atencion-a-violencia-de-Genero-300x92px.png"/></a>
+</section>
+<!-- News -->
+<section aria-labelledby="noticias-titulo" class="block">
+<div class="wrap">
+<h2 class="section-title" id="noticias-titulo">Noticias</h2>
+<div class="news-grid">
+<article class="card">
+<img alt="Escritor de literatura de terror durante su participación en la UV" src="https://www.uv.mx/comunicacionuv/files/2026/10/BUV-211026-CARLOS-Literatura-terror-3.jpg"/>
+<div class="card-body">
+<h3><a href="https://www.uv.mx/prensa/general/literatura-de-terror-dialoga-con-los-horrores-de-la-realidad-roberto-abad/" rel="noopener" target="_blank">Literatura de terror dialoga con los horrores de la realidad: Roberto Abad<span class="sr-only"> (se abre en una nueva pestaña)</span></a></h3>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/literatura-de-terror-dialoga-con-los-horrores-de-la-realidad-roberto-abad/" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre Literatura de terror (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Ilustración sobre inteligencia artificial y automatización industrial" src="https://www.uv.mx/comunicacionuv/files/2026/10/Banner-UV-161026-CARLOS-Automatizar-IA.jpg"/>
+<div class="card-body">
+<h3><a href="https://www.uv.mx/prensa/general/ia-y-automatizacion-optimizan-procesos-industriales/" rel="noopener" target="_blank">IA y automatización optimizan procesos industriales<span class="sr-only"> (se abre en una nueva pestaña)</span></a></h3>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/ia-y-automatizacion-optimizan-procesos-industriales/" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre IA y automatización (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Participantes en el foro sobre gestión de riesgos ante el cambio climático" src="https://www.uv.mx/comunicacionuv/files/2026/10/BUV-201026-Shuguey-veracruz-Foro-Gestion-de-riesgos1.jpg"/>
+<div class="card-body">
+<h3><a href="https://www.uv.mx/prensa/general/uv-fortalece-capacidades-ante-riesgos-asociados-al-cambio-climatico/" rel="noopener" target="_blank">UV fortalece capacidades ante riesgos asociados al cambio climático<span class="sr-only"> (se abre en una nueva pestaña)</span></a></h3>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/uv-fortalece-capacidades-ante-riesgos-asociados-al-cambio-climatico/" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre riesgos climáticos (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Presentación de investigación sobre transmisión de infecciones por murciélagos" src="https://www.uv.mx/comunicacionuv/files/2026/10/BUV-19102026-Celia-presentan-investigacion-FIME-PR-1.jpg"/>
+<div class="card-body">
+<h3><a href="https://www.uv.mx/prensa/general/modelo-matematico-estudia-memoria-de-transmision-de-infecciones-por-murcielagos/" rel="noopener" target="_blank">Modelo matemático estudia memoria de transmisión de infecciones por murciélagos<span class="sr-only"> (se abre en una nueva pestaña)</span></a></h3>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/modelo-matematico-estudia-memoria-de-transmision-de-infecciones-por-murcielagos/" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre el modelo matemático (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Fotografía de la exposición del archivo de Miguel Fematt" src="https://www.uv.mx/comunicacionuv/files/2026/10/Banner-UV-191026-PAOLA-Exposicion-Miguel-Fematt.jpg"/>
+<div class="card-body">
+<h3><a href="https://www.uv.mx/prensa/general/antes-del-angel-un-recorrido-por-el-archivo-fotografico-de-miguel-fematt/" rel="noopener" target="_blank"><em>Antes del Ángel</em>, un recorrido por el archivo fotográfico de Miguel Fematt<span class="sr-only"> (se abre en una nueva pestaña)</span></a></h3>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/antes-del-angel-un-recorrido-por-el-archivo-fotografico-de-miguel-fematt/" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre la exposición (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Imagen relacionada con la campaña sobre cáncer de mama" src="https://www.uv.mx/comunicacionuv/files/2026/10/IMG_7600.jpeg"/>
+<div class="card-body">
+<h3><a href="https://www.uv.mx/prensa/general/cancer-de-mama-tumor-mas-frecuente-y-principal-causa-de-muerte-en-la-mujer/">Cáncer de mama, tumor más frecuente y principal causa de muerte en la mujer</a></h3>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/cancer-de-mama-tumor-mas-frecuente-y-principal-causa-de-muerte-en-la-mujer/">Leer más<span class="sr-only"> sobre cáncer de mama</span></a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Agenda -->
+<section aria-labelledby="agenda-titulo" class="block alt" id="agenda">
+<div class="wrap">
+<h2 class="section-title" id="agenda-titulo">Agenda</h2>
+<p class="lead">Próximos eventos culturales, académicos, deportivos e institucionales.</p>
+<ul aria-label="Categorías de la agenda" class="legend">
+<li class="c-art">Artístico</li>
+<li class="c-aca">Académico</li>
+<li class="c-dep">Deportivo</li>
+<li class="c-ins">Institucional</li>
+</ul>
+<div class="news-grid">
+<article class="card">
+<img alt="Cartel del concierto Resiliencia Sonora" src="https://www.uv.mx/apps/agenda/Files/Index/11712"/>
+<div class="card-body">
+<span class="chip" style="background:var(--cat-art)">Artístico</span>
+<div class="event">
+<div aria-hidden="true" class="date-box"><span class="d">23</span><span class="m">oct</span></div>
+<div>
+<h3>Resiliencia Sonora</h3>
+<p class="event-meta">Música · 19:00 horas · Sala Anexa · Xalapa</p>
+</div>
+</div>
+<a class="btn outline" href="https://www.uv.mx/agenda/evento.html?area=1&amp;evento=8726" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre Resiliencia Sonora (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Cartel del taller Reflejos de araña sin telaraña" src="https://www.uv.mx/apps/agenda/Files/Index/11735"/>
+<div class="card-body">
+<span class="chip" style="background:var(--cat-aca)">Académico</span>
+<div class="event">
+<div aria-hidden="true" class="date-box"><span class="d">24</span><span class="m">oct</span></div>
+<div>
+<h3>Reflejos de araña sin telaraña</h3>
+<p class="event-meta">Taller · 11:00 horas · Auditorio · Xalapa</p>
+</div>
+</div>
+<a class="btn outline" href="https://www.uv.mx/agenda/evento.html?area=1&amp;evento=8742" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre el taller (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Cartel de la gala Jóvenes Talentos de otoño" src="https://www.uv.mx/apps/agenda/Files/Index/11713"/>
+<div class="card-body">
+<span class="chip" style="background:var(--cat-art)">Artístico</span>
+<div class="event">
+<div aria-hidden="true" class="date-box"><span class="d">25</span><span class="m">oct</span></div>
+<div>
+<h3>Jóvenes Talentos: Gala de Otoño</h3>
+<p class="event-meta">Música · 13:30 horas · Auditorio · Xalapa</p>
+</div>
+</div>
+<a class="btn outline" href="https://www.uv.mx/agenda/evento.html?area=1&amp;evento=8727" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre la gala (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="card">
+<img alt="Cartel del evento De Norte a Sur de danza" src="https://www.uv.mx/apps/agenda/Files/Index/11715"/>
+<div class="card-body">
+<span class="chip" style="background:var(--cat-art)">Artístico</span>
+<div class="event">
+<div aria-hidden="true" class="date-box"><span class="d">30</span><span class="m">oct</span></div>
+<div>
+<h3>De Norte a Sur</h3>
+<p class="event-meta">Danza · 20:00 horas · Sala grande · Xalapa</p>
+</div>
+</div>
+<a class="btn outline" href="https://www.uv.mx/agenda/evento.html?area=1&amp;evento=8729" rel="noopener" target="_blank">Leer más<span class="sr-only"> sobre De Norte a Sur (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+</div>
+<p style="margin-top:1.5rem;"><a class="btn" href="https://www.uv.mx/agenda/">Ver toda la agenda</a></p>
+</div>
+</section>
+<!-- Oferta educativa -->
+<section aria-labelledby="oferta-titulo" class="block">
+<div class="wrap split">
+<div>
+<h2 class="section-title" id="oferta-titulo">Oferta educativa</h2>
+<p class="lead">Contamos con programas educativos en diversos niveles de estudio. La mayor parte de nuestra población estudiantil cursa programas con reconocimiento de calidad nacional y/o internacional, lo que nos distingue como la universidad pública estatal con mayor diversificación en su oferta.</p>
+<p><a class="btn" href="https://www.uv.mx/ofertaeducativa/">Nuestros programas</a></p>
+</div>
+<img alt="Estudiantes de la Universidad Veracruzana en un espacio universitario" src="https://www.uv.mx/v2/images/oferta.jpg"/>
+</div>
+</section>
+<!-- Somos UV -->
+<section aria-labelledby="somos-titulo" class="block alt" id="somos">
+<div class="wrap">
+<h2 class="section-title" id="somos-titulo">Somos UV</h2>
+<div class="testimonials">
+<article class="testimonial">
+<img alt="Rector Martín Aguilar Sánchez" src="https://www.uv.mx/comunicacionuv/files/2026/10/somos-anuies-1-150x150.jpg"/>
+<div>
+<h3>Rector participa en sesión del Consejo Sur-Sureste de la ANUIES</h3>
+<p>El rector Martín Aguilar Sánchez participó en la Sesión Ordinaria del Consejo Regional Sur-Sureste de la ANUIES de la RM, realizada en el Instituto Tecnológico de Chetumal.</p>
+<a class="btn outline" href="https://www.uv.mx/comunicacionuv/files/2026/10/Consejo-Sur-Sureste-ANUIES-FOTONOTAS.pdf" rel="noopener" target="_blank">Leer más<span class="sr-only"> (PDF, se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="testimonial">
+<img alt="Vicerrectora Georgina Hernández Ríos" src="https://www.uv.mx/comunicacionuv/files/2026/10/somos-informe.jpg"/>
+<div>
+<h3>Coatzacoalcos-Minatitlán fortalece desarrollo universitario</h3>
+<p>La vicerrectora Georgina Hernández Ríos presentó resultados de cobertura, calidad académica, investigación, infraestructura, cultura y bienestar estudiantil en su Informe de Labores 2025-2026.</p>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/uv-coatzacoalcos-minatitlan-fortalece-desarrollo-universitario-hacia-la-excelencia/" rel="noopener" target="_blank">Leer más<span class="sr-only"> (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+<article class="testimonial">
+<img alt="Firma de convenios entre la UV y el Ayuntamiento de Minatitlán" src="https://www.uv.mx/comunicacionuv/files/2026/10/SOMOS-Convenio.jpg"/>
+<div>
+<h3>UV y Ayuntamiento de Minatitlán impulsan educación y desarrollo</h3>
+<p>La Universidad Veracruzana firmó dos convenios de colaboración general y específica en materia de servicio social y prácticas profesionales con el H. Ayuntamiento de Minatitlán.</p>
+<a class="btn outline" href="https://www.uv.mx/prensa/general/uv-y-ayuntamiento-de-minatitlan-impulsan-educacion-y-desarrollo-municipal/" rel="noopener" target="_blank">Leer más<span class="sr-only"> (se abre en una nueva pestaña)</span></a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Numeralia -->
+<section aria-labelledby="numeralia-titulo" class="block" id="numeralia">
+<div class="wrap">
+<h2 class="section-title" id="numeralia-titulo">Numeralia</h2>
+<div class="stats">
+<div class="stat"><strong>96,042</strong><span>Matrícula total</span><small>Ciclo escolar 2025-2026</small></div>
+<div class="stat"><strong>387</strong><span>Programas educativos</span><small>Ciclo escolar 2025-2026</small></div>
+<div class="stat"><strong>91%</strong><span>Matrícula de calidad</span><small>Julio 2026</small></div>
+<div class="stat"><strong>113</strong><span>PE de posgrado registrados en SNP</span><small>Julio 2026</small></div>
+</div>
+<p style="margin-top:1.5rem;"><a class="btn outline" href="https://www.uv.mx/informacion-estadistica/files/2019/06/UV-en-numeros.pdf" rel="noopener" target="_blank">Ver UV en números<span class="sr-only"> (PDF, se abre en una nueva pestaña)</span></a></p>
+</div>
+</section>
+<!-- Regiones -->
+<section aria-labelledby="regiones-titulo" class="block alt" id="regiones">
+<div class="wrap">
+<h2 class="section-title" id="regiones-titulo">Regiones</h2>
+<ul class="regions">
+<li><a href="https://www.uv.mx/"><img alt="Región Xalapa" src="https://www.uv.mx/v2/images/regiones/xalapa.jpg"/><span>Xalapa</span></a></li>
+<li><a href="https://www.uv.mx/veracruz/" rel="noopener" target="_blank"><img alt="Región Veracruz" src="https://www.uv.mx/v2/images/regiones/veracruz.jpg"/><span>Veracruz<span class="sr-only"> (se abre en una nueva pestaña)</span></span></a></li>
+<li><a href="https://www.uv.mx/orizaba/" rel="noopener" target="_blank"><img alt="Región Orizaba-Córdoba" src="https://www.uv.mx/v2/images/regiones/orizaba.jpg"/><span>Orizaba - Córdoba<span class="sr-only"> (se abre en una nueva pestaña)</span></span></a></li>
+<li><a href="https://www.uv.mx/pozarica/" rel="noopener" target="_blank"><img alt="Región Poza Rica-Tuxpan" src="https://www.uv.mx/v2/images/regiones/pozarica.jpg"/><span>Poza Rica - Tuxpan<span class="sr-only"> (se abre en una nueva pestaña)</span></span></a></li>
+<li><a href="https://www.uv.mx/coatza/" rel="noopener" target="_blank"><img alt="Región Coatzacoalcos-Minatitlán" src="https://www.uv.mx/v2/images/regiones/coatza.jpg"/><span>Coatzacoalcos - Minatitlán<span class="sr-only"> (se abre en una nueva pestaña)</span></span></a></li>
+</ul>
+<p style="margin-top:1.5rem;"><a class="btn outline" href="https://www.uv.mx/universidad/presencia-universitaria/">Presencia universitaria</a></p>
+</div>
+</section>
+<!-- SUGIR -->
+<section aria-labelledby="sugir-titulo" class="block" id="sugir">
+<div class="wrap split">
+<div>
+<h2 class="section-title" id="sugir-titulo">Sistema Universitario de Gestión Integral del Riesgo</h2>
+<p class="lead">Su propósito es crear en la comunidad académica, administrativa y estudiantil una cultura de prevención y seguridad que favorezca el cuidado de la integridad, la salud y el medio ambiente, así como de los bienes físicos, tecnológicos, científicos y culturales de la Universidad Veracruzana.</p>
+<ul class="sugir-list">
+<li><a href="https://www.uv.mx/sugir/conoceme/que-es-el-sugir/">¿Qué es el SUGIR?</a></li>
+<li><a href="https://www.uv.mx/sugir/uigir/que-es-la-ui-gir/">¿Qué es la Unidad Interna de Gestión Integral del Riesgo?</a></li>
+<li><a href="https://www.uv.mx/sugir/files/2013/02/Acuerdo-Rectoral.pdf" rel="noopener" target="_blank">Los procesos y las virtudes de la gestión del SUGIR<span class="sr-only"> (PDF, se abre en una nueva pestaña)</span></a></li>
+</ul>
+<p style="margin-top:1.25rem;"><a class="btn" href="https://www.uv.mx/sugir/">Ver más sobre SUGIR</a></p>
+</div>
+<img alt="Actividad de prevención y gestión integral del riesgo en la Universidad Veracruzana" src="https://www.uv.mx/v2/images/sugir/2.jpg"/>
+</div>
+</section>
+<!-- Quick directory -->
+<section aria-labelledby="accesos-titulo" class="block alt">
+<div class="wrap">
+<h2 class="section-title" id="accesos-titulo">Accesos para la comunidad</h2>
+<details class="disclosure">
+<summary>Estudiantes, egresados, académicos y administrativos</summary>
+<ul>
+<li><a href="https://www.uv.mx/estudiantes/">Estudiantes</a></li>
+<li><a href="https://www.uv.mx/egresados/">Egresados</a></li>
+<li><a href="https://www.uv.mx/academicos/">Académicos</a></li>
+<li><a href="https://www.uv.mx/administrativos/">Administrativos</a></li>
+<li><a href="https://www.uv.mx/comunicate/">Directorio</a></li>
+</ul>
+</details>
+<details class="disclosure">
+<summary>Otros sitios institucionales</summary>
+<ul>
+<li><a href="https://www.uv.mx/bolsadetrabajo/">Bolsa de trabajo</a></li>
+<li><a href="https://www.uv.mx/defensoria/">Defensoría</a></li>
+<li><a href="https://www.uv.mx/uge/">Unidad de Género</a></li>
+<li><a href="https://www.uv.mx/max/">Museo de Antropología</a></li>
+<li><a href="https://www.uv.mx/voluntariado/">Voluntariado</a></li>
+<li><a href="https://www.uv.mx/sustentabilidad/">Sustentabilidad</a></li>
+</ul>
+</details>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="wrap">
+<div class="foot-grid">
+<section aria-labelledby="f-otros">
+<h2 id="f-otros">Otros sitios</h2>
+<ul>
+<li><a href="https://www.uv.mx/bolsadetrabajo/">Bolsa de trabajo</a></li>
+<li><a href="https://www.uv.mx/dgrh/calendarios/">Calendarios</a></li>
+<li><a href="https://www.uv.mx/defensoria/">Defensoría</a></li>
+<li><a href="https://empresasuv.mx/">Fondo de empresas</a></li>
+<li><a href="https://www.fundacionuv.org/" rel="noopener" target="_blank">Fundación UV<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/uge/">Unidad de Género</a></li>
+<li><a href="https://www.uv.mx/mipago/">Mi Pago</a></li>
+<li><a href="https://www.uv.mx/max/">Museo de Antropología</a></li>
+<li><a href="http://www.orquestasinfonicadexalapa.com" rel="noopener" target="_blank">Orquesta Sinfónica de Xalapa<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/programadescuentos/">Programa de descuentos y promociones</a></li>
+<li><a href="https://www.uv.mx/cidu/">Sistema de archivos</a></li>
+<li><a href="https://www.uv.mx/sgcuv/">Sistema de Gestión de la Calidad</a></li>
+<li><a href="https://www.uv.mx/cosustenta/">Sustentabilidad</a></li>
+<li><a href="https://www.uv.mx/voluntariado/">Voluntariado</a></li>
+</ul>
+</section>
+<section aria-labelledby="f-contacto">
+<h2 id="f-contacto">Unidad Central</h2>
+<p>
+<a href="https://www.uv.mx/universidad/ubicacion/">Lomas del Estadio S/N, Col. Zona Universitaria C.P. 91000, Xalapa, Veracruz, México.</a>
+</p>
+<p>Teléfono: <a href="tel:+522288421700">01 228 842 1700</a></p>
+<h3>Redes sociales</h3>
+<ul class="social">
+<li><a href="https://www.facebook.com/UVeracruzanaMx" rel="noopener" target="_blank"><img alt="Facebook de la UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/fb-white.png"/></a></li>
+<li><a href="https://x.com/UVeracruzanaMx" rel="noopener" target="_blank"><img alt="X (Twitter) de la UV (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/tw-white.png"/></a></li>
+</ul>
+</section>
+<section aria-labelledby="f-transp">
+<h2 id="f-transp"><a href="https://www.uv.mx/transparencia/">Transparencia</a></h2>
+<p><a href="https://www.plataformadetransparencia.org.mx/" rel="noopener" target="_blank"><img alt="Plataforma Nacional de Transparencia (se abre en una nueva pestaña)" src="https://www.uv.mx/v2/images/logotransparencia.png" style="height:40px;width:auto;"/></a></p>
+<ul>
+<li><a href="https://www.uv.mx/informacionpublica/" rel="noopener" target="_blank">Información financiera presupuestal<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/transparencia/gobierno-abierto/inicio/" rel="noopener" target="_blank">Gobierno Abierto<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/transparencia/infpublica/avisos-privacidad/" rel="noopener" target="_blank">Avisos de Privacidad<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/legislacion/files/2017/07/Codigo-de-etica-de-la-Universidad-Veracruzana.pdf" rel="noopener" target="_blank">Código de ética<span class="sr-only"> (PDF, se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/apps/cocodiuv/" rel="noopener" target="_blank">COCODI<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/planeacioninstitucional/contraloria-social/">Contraloría Social</a></li>
+<li><a href="https://www.uv.mx/planeacioninstitucional/programa-anual-de-evaluacion/" rel="noopener" target="_blank">Programa Anual de Evaluación (PAE)<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+<li><a href="https://www.uv.mx/dpcm/general/fondo-de-aportaciones-multiples-fam/" rel="noopener" target="_blank">Fondo de Aportaciones Múltiples<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+</ul>
+</section>
+</div>
+<div class="foot-bottom">
+<p style="margin:0;">© 2026 Universidad Veracruzana. Todos los derechos reservados.</p>
+<p style="margin:0;"><a href="https://www.uv.mx/universidad/buzon-de-comentarios/">Buzón de comentarios</a></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

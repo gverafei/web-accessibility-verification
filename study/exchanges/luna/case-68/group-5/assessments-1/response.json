@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The corresponding visible content, including the three guide summaries, customer quote, developer documentation links, and integration diagram, is preserved.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged in both target views, with no substantial clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible guide and developer links retain understandable labels; no essential visible control appears lost or unreadable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Reference and target views correspond coherently at both scroll positions; the second pair is visually identical.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Text, diagram labels, and links convey a coherent Stripe payments and integrations purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11025,
+    "completion_tokens": 172,
+    "total_tokens": 11197,
+    "cost": 0.00146405,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11022,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00146405,
+      "upstream_inference_prompt_cost": 0.00137805,
+      "upstream_inference_completions_cost": 8.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

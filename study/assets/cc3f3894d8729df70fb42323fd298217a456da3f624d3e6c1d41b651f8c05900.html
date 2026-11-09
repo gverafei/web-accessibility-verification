@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="MikroTik makes networking hardware and software, which is used in nearly all countries of the world. Our mission is to make existing Internet technologies faster, more powerful and affordable to wider range of users." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://mikrotik.com/favicon.ico" rel="icon"/>
+<link href="https://mikrotik.com/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="MikroTik" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://mikrotik.com" property="og:url"/>
+<meta content="MikroTik makes networking hardware and software, which is used in nearly all countries of the world. Our mission is to make existing Internet technologies faster, more powerful and affordable to wider range of users." property="og:description"/>
+<meta content="https://mikrotik.com/images/logo/open-graph.png" property="og:image"/>
+<title>MikroTik · Routers and Wireless</title>
+<style>
+:root{
+  --black:#0b0d0c;
+  --ink:#111;
+  --muted:#4a4f4c;
+  --white:#fff;
+  --paper:#f4f5f4;
+  --line:#d6d9d7;
+  --green-text:#00602e;
+  --green:#009245;
+  --focus:#ffbf47;
+  --max:1200px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;color:var(--ink);background:var(--white);line-height:1.5;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:#000;padding:8px 12px;z-index:100;font-weight:700}
+.skip:focus{top:12px}
+
+/* Header */
+.site-header{background:var(--black);color:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.25)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-size:1.25rem}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.main-nav a{text-decoration:none;text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;padding:8px 2px;display:inline-block}
+.main-nav a:hover{text-decoration:underline}
+.main-nav details{position:relative}
+.main-nav summary{cursor:pointer;list-style:none;text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;padding:8px 2px}
+.main-nav summary::-webkit-details-marker{display:none}
+.main-nav details ul{position:absolute;top:100%;left:-12px;flex-direction:column;gap:0;background:#1d211f;min-width:220px;padding:6px 0;border:1px solid rgba(255,255,255,.2)}
+.main-nav details li a{display:block;padding:8px 16px;text-transform:none;font-size:.9rem;letter-spacing:0}
+.main-nav details li a:hover{background:rgba(255,255,255,.1)}
+
+/* Hero */
+.hero{background:var(--black);color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:24px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);margin:0;line-height:1.15;text-transform:uppercase;letter-spacing:.02em}
+.hero p{max-width:60ch;margin:0;font-size:1.05rem;color:#eef1ef}
+.kicker{font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;color:#9fe0b8;margin:0}
+.hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+
+/* Buttons */
+.btn{display:inline-block;border:1px solid currentColor;padding:12px 18px;text-decoration:none;text-transform:uppercase;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:transparent}
+.btn-light{color:#fff}
+.btn-light:hover{background:#fff;color:#000}
+.btn-dark{color:#000;background:transparent}
+.btn-dark:hover{background:#000;color:#fff}
+
+/* Product tabs */
+.tabs{background:#fff;border-bottom:1px solid var(--line)}
+.tabs ul{list-style:none;margin:0;padding:14px 0;display:flex;gap:24px;flex-wrap:wrap;justify-content:center}
+.tabs a{text-decoration:none;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:6px 0;display:inline-block}
+.tabs a:hover{color:#000;text-decoration:underline}
+
+/* Product sections */
+.product{position:relative;color:#fff;background:var(--black);overflow:hidden;isolation:isolate}
+.product .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.product::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.86) 0%,rgba(0,0,0,.7) 55%,rgba(0,0,0,.55) 100%);z-index:-1}
+.product .wrap{display:grid;gap:40px;padding:64px 20px;align-items:center}
+@media(min-width:900px){.product .wrap{grid-template-columns:1fr 1fr;gap:64px;padding:96px 20px}}
+.product-img{background:rgba(0,0,0,.25);padding:16px}
+.product-img img{width:100%;max-height:420px;object-fit:contain}
+.product h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 16px;text-transform:uppercase;line-height:1.15}
+.product .lead{font-size:1rem;margin:0 0 20px;color:#f1f3f2;max-width:60ch}
+.features{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:10px;font-size:.92rem}
+.features li{display:flex;gap:10px;align-items:flex-start}
+.features li::before{content:"";width:8px;height:8px;margin-top:8px;background:#7fe0a8;flex:0 0 8px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Generic sections */
+section.block{padding:72px 0}
+section.block.alt{background:var(--paper)}
+.eyebrow{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--green-text);margin:0 0 8px}
+h2.title{font-size:clamp(1.6rem,3.5vw,2.3rem);text-transform:uppercase;margin:0 0 12px;line-height:1.2}
+.intro{max-width:70ch;margin:0 0 32px;color:var(--muted)}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+
+/* Category grid */
+.cats{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:700px){.cats{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.cats{grid-template-columns:repeat(4,1fr)}}
+.cat{display:flex;flex-direction:column;gap:12px;border:1px solid var(--line);background:#fff;text-decoration:none;padding:16px;color:var(--ink)}
+.cat img{aspect-ratio:10/8;object-fit:contain;width:100%;background:#f7f7f7}
+.cat span{font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.04em}
+.cat:hover{background:#eef3ef}
+
+/* Video + news cards */
+.cards{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:700px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{display:flex;flex-direction:column;gap:12px}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#222}
+.card img.square{aspect-ratio:4/3}
+.card h3{font-size:1rem;margin:0;line-height:1.35}
+.card p{margin:0;font-size:.9rem;color:var(--muted)}
+.card a.cover{color:inherit;text-decoration:none}
+.card a.cover:hover h3{text-decoration:underline}
+
+/* Dark feature section */
+.dark-block{background:var(--black);color:#fff}
+.dark-block .intro{color:#d6dcd8}
+.dark-block .eyebrow{color:#9fe0b8}
+.dark-block .card p{color:#c9d1cc}
+.dark-block .card img{background:#111}
+
+/* Info tiles */
+.tiles{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:700px){.tiles{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:260px;padding:24px;color:#fff;background:var(--black);text-decoration:none;overflow:hidden;isolation:isolate}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.tile::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.85));z-index:-1}
+.tile .tag{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;color:#9fe0b8}
+.tile h3{margin:0 0 6px;font-size:1.1rem;text-transform:uppercase}
+.tile p{margin:0;font-size:.9rem;color:#f0f3f1}
+.tile:hover h3{text-decoration:underline}
+
+/* Training */
+.split{display:grid;gap:32px}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:64px}}
+.note{border-left:4px solid var(--green-text);padding:4px 0 4px 18px;margin:0 0 20px;color:var(--ink)}
+
+/* Footer */
+.site-footer{background:var(--black);color:#fff;padding:56px 0 40px}
+.footer-grid{display:grid;gap:32px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.footer-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.footer-grid{grid-template-columns:repeat(6,1fr)}}
+.footer-grid h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;margin:0 0 12px}
+.footer-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.9rem;font-weight:300}
+.footer-grid a{text-decoration:none}
+.footer-grid a:hover{text-decoration:underline}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.2);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:.85rem}
+.legal a{color:#fff}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap">
+<a aria-label="MikroTik home" class="brand" href="https://mikrotik.com/">MikroTik</a>
+<nav aria-label="Main" class="main-nav">
+<ul>
+<li>
+<details>
+<summary>Hardware</summary>
+<ul>
+<li><a href="https://mikrotik.com/hardware">All hardware</a></li>
+<li><a href="https://mikrotik.com/products/group/new">New</a></li>
+<li><a href="https://mikrotik.com/products">Search</a></li>
+<li><a href="https://mikrotik.com/products/group/ethernet-routers">Ethernet routers</a></li>
+<li><a href="https://mikrotik.com/products/group/switches">Switches</a></li>
+<li><a href="https://mikrotik.com/products/group/wireless-systems">Wireless systems</a></li>
+<li><a href="https://mikrotik.com/products/group/indoor-wireless">Indoor Wireless</a></li>
+<li><a href="https://mikrotik.com/products/group/lte-5g-products">LTE/5G products</a></li>
+<li><a href="https://mikrotik.com/products/group/iot-products">IoT products</a></li>
+<li><a href="https://mikrotik.com/products/group/60-ghz-products">60 GHz products</a></li>
+<li><a href="https://mikrotik.com/products/group/routerboard">RouterBOARD</a></li>
+<li><a href="https://mikrotik.com/products/group/enclosures">Enclosures</a></li>
+<li><a href="https://mikrotik.com/products/group/interfaces">Interfaces</a></li>
+<li><a href="https://mikrotik.com/products/group/accessories">Accessories</a></li>
+<li><a href="https://mikrotik.com/products/group/antennas">Antennas</a></li>
+<li><a href="https://mikrotik.com/products/group/sfp-qsfp">SFP/QSFP</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Software</summary>
+<ul>
+<li><a href="https://mikrotik.com/software/all">All software</a></li>
+<li><a href="https://mikrotik.com/download">Downloads</a></li>
+<li><a href="https://mikrotik.com/download/changelogs">Changelogs</a></li>
+<li><a href="https://mikrotik.com/software">RouterOS</a></li>
+<li><a href="https://mikrotik.com/winbox">WinBox</a></li>
+<li><a href="https://mikrotik.com/mobile_app">Mobile apps</a></li>
+<li><a href="https://mikrotik.com/bth">Back to Home</a></li>
+<li><a href="https://mikrotik.com/connectivity">Connectivity</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Distributors</summary>
+<ul>
+<li><a href="https://mikrotik.com/buy">Buy something (find a distributor)</a></li>
+<li><a href="https://mikrotik.com/becoming_distributor">Sell something (become a distributor)</a></li>
+<li><a href="https://mikrotik.com/mfm">Made for MikroTik</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Support</summary>
+<ul>
+<li><a href="https://mikrotik.com/support">Help</a></li>
+<li><a href="https://manual.mikrotik.com/">Documentation</a></li>
+<li><a href="https://mikrotik.com/consultants">Consultants</a></li>
+<li><a href="https://forum.mikrotik.com/">Forum</a></li>
+<li><a href="https://mikrotik.com/supportsec">Security</a></li>
+<li><a href="https://mikrotik.com/warranty">Warranty</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Training</summary>
+<ul>
+<li><a href="https://mikrotik.com/training/about">About</a></li>
+<li><a href="https://mikrotik.com/training">Schedule</a></li>
+<li><a href="https://mikrotik.com/training/centers">Training centers &amp; trainers</a></li>
+<li><a href="https://mikrotik.com/training/academy">Academies</a></li>
+<li><a href="https://mikrotik.com/training/train-the-trainer">Train the trainer</a></li>
+<li><a href="https://mikrotik.com/certificates">Certificate Search</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>About</summary>
+<ul>
+<li><a href="https://mikrotik.com/aboutus">Contacts</a></li>
+<li><a href="https://mikrotik.com/aboutus/company">Company</a></li>
+<li><a href="https://mikrotik.com/logo">Our Logo</a></li>
+<li><a href="https://darbs.mikrotik.com/">Vacancies</a></li>
+</ul>
+</details>
+</li>
+</ul>
+</nav>
+<div class="header-tools">
+<a href="https://mikrotik.com/products">Search products</a>
+       | 
+      <a href="https://mikrotik.com/client">Account</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<p class="kicker">Routers and Wireless</p>
+<h1 id="hero-title">Networking hardware and software</h1>
+<p>MikroTik makes networking hardware and software, which is used in nearly all countries of the world. Our mission is to make existing Internet technologies faster, more powerful and affordable to wider range of users.</p>
+<div class="hero-links">
+<a class="btn btn-light" href="https://mikrotik.com/hardware">Explore hardware</a>
+<a class="btn btn-light" href="https://mikrotik.com/software/all">Software and downloads</a>
+<a class="btn btn-light" href="https://mikrotik.com/training">Training schedule</a>
+</div>
+</div>
+</section>
+<nav aria-label="Featured products" class="tabs">
+<div class="wrap">
+<ul>
+<li><a href="#crs812-ddq">CRS812 DDQ</a></li>
+<li><a href="#hap-ax3">hAP ax³</a></li>
+<li><a href="#rds">ROSE Data server (RDS)</a></li>
+<li><a href="#hex-s-2025">hEX S (2025)</a></li>
+</ul>
+</div>
+</nav>
+<!-- Featured products -->
+<section aria-labelledby="crs812-title" class="product" id="crs812-ddq">
+<img alt="" class="bg" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/products-carousel/background/CRS812_bg.webp"/>
+<div class="wrap">
+<div class="product-img">
+<img alt="CRS812 DDQ switch" src="https://cdn.mikrotik.com/web-assets/rb_images/2483_lg.png"/>
+</div>
+<div>
+<h2 id="crs812-title">CRS812 DDQ</h2>
+<p class="lead">This switch is your next leap forward – a powerful, efficient, and cost-effective way to bring 50G, 200G, and 400G into your rack. Quad-core 2 GHz ARM CPU, dual-redundant power supplies and 4x hot-swap cooling fans, 2x 10G Ethernet, 8x 50G SFP56, 2x 200G QSFP56, and 2x 400G QSFP56-DD ports.</p>
+<ul class="features">
+<li>2 x 400G QSFP56-DD, 2 x 200G QSFP56</li>
+<li>8 x 50G SFP56</li>
+<li>1G/10G Ethernet ports</li>
+<li>4 GB of RAM</li>
+<li>Quad-core 2 GHz ARM CPU</li>
+<li>Dual-redundant hot-swap power supplies</li>
+<li>4 x hot-swap cooling fans</li>
+</ul>
+<div class="actions">
+<a class="btn btn-light" href="https://mikrotik.com/product/crs812_ddq">Details<span class="sr-only"> for CRS812 DDQ</span></a>
+<a class="btn btn-light" href="https://mikrotik.com/buy">Find retailer<span class="sr-only"> for CRS812 DDQ</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="hap-title" class="product" id="hap-ax3">
+<img alt="" class="bg" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/products-carousel/background/hap_ax3_bg_1.webp"/>
+<div class="wrap">
+<div class="product-img">
+<img alt="hAP ax³ home access point" loading="lazy" src="https://cdn.mikrotik.com/web-assets/rb_images/2211_lg.png"/>
+</div>
+<div>
+<h2 id="hap-title">hAP ax³</h2>
+<p class="lead">Our top-of-the-line AX home access point. With all the processing power and speed your household might ever need. Gen 6 wireless, 2.5 Gigabit Ethernet, PoE, WPA3, and more!</p>
+<ul class="features">
+<li>2.5G ethernet PoE-In/Out</li>
+<li>4 x 1G ethernet</li>
+<li>802.11ax + Wave 2</li>
+<li>Strong Dual-Band, Dual-Chain wireless</li>
+<li>USB 3 port for storage and file sharing</li>
+</ul>
+<div class="actions">
+<a class="btn btn-light" href="https://mikrotik.com/product/hap_ax3">Details<span class="sr-only"> for hAP ax³</span></a>
+<a class="btn btn-light" href="https://mikrotik.com/buy">Find retailer<span class="sr-only"> for hAP ax³</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="rds-title" class="product" id="rds">
+<img alt="" class="bg" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/products-carousel/background/RDS_bg_1.webp"/>
+<div class="wrap">
+<div class="product-img">
+<img alt="ROSE Data server (RDS)" loading="lazy" src="https://cdn.mikrotik.com/web-assets/rb_images/2438_lg.png"/>
+</div>
+<div>
+<h2 id="rds-title">ROSE Data server (RDS)</h2>
+<p class="lead">RDS is a high-performance, all-in-one storage, 100G networking, and container platform designed for enterprise environments. Featuring 20 U.2 NVMe storage slots and a special RouterOS Edition for Storage &amp; Compute (ROSE).</p>
+<ul class="features">
+<li>20 x U.2 NVMe storage</li>
+<li>100G high-speed networking</li>
+<li>16-core 2 GHz ARM CPU</li>
+<li>32GB DDR4 RAM</li>
+<li>ROSE (RouterOS Edition)</li>
+<li>Container-ready</li>
+<li>Dual hot-swappable power supplies</li>
+</ul>
+<div class="actions">
+<a class="btn btn-light" href="https://mikrotik.com/product/rds2216">Details<span class="sr-only"> for RDS</span></a>
+<a class="btn btn-light" href="https://mikrotik.com/buy">Find retailer<span class="sr-only"> for RDS</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="hex-title" class="product" id="hex-s-2025">
+<img alt="" class="bg" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/products-carousel/background/hex_s_2025_bg_1.webp"/>
+<div class="wrap">
+<div class="product-img">
+<img alt="hEX S (2025) router" loading="lazy" src="https://cdn.mikrotik.com/web-assets/rb_images/2458_lg.png"/>
+</div>
+<div>
+<h2 id="hex-title">hEX S (2025)</h2>
+<p class="lead">A compact, affordable wired router featuring a 2.5G SFP port, 5x Gigabit Ethernet, PoE out, USB, and a fast dual-core CPU — ideal for homes, offices, or underfunded labs that need reliable performance.</p>
+<ul class="features">
+<li>2.5G SFP uplink</li>
+<li>5 x 1G ethernet (bonding support)</li>
+<li>PoE-In &amp; PoE-Out</li>
+<li>USB 3 port for storage and file sharing</li>
+<li>Dual-Core ARM CPU + 512 MB RAM</li>
+<li>Flexible powering (12–57 V)</li>
+</ul>
+<div class="actions">
+<a class="btn btn-light" href="https://mikrotik.com/product/hex_s_2025">Details<span class="sr-only"> for hEX S (2025)</span></a>
+<a class="btn btn-light" href="https://mikrotik.com/buy">Find retailer<span class="sr-only"> for hEX S (2025)</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Hardware categories -->
+<section aria-labelledby="hardware-title" class="block">
+<div class="wrap">
+<p class="eyebrow">Hardware</p>
+<h2 class="title" id="hardware-title">Enhance your network with hardware that works harder</h2>
+<p class="intro">MikroTik offers routers, switches, and wireless systems for every type of network – from home offices and small businesses to carrier-grade ISP infrastructure. Whether you're building a setup for a few users or thousands, there's a MikroTik device that fits your needs and your budget.</p>
+<div class="cats">
+<a class="cat" href="https://mikrotik.com/products/group/ethernet-routers">
+<img alt="Ethernet routers category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/ethernet_routers_600.webp"/>
+<span>Ethernet Routers</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/switches">
+<img alt="Switches category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/switches_600.webp"/>
+<span>Switches</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/wireless-systems">
+<img alt="Wireless systems category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/wireless_systems_600.webp"/>
+<span>Wireless Systems</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/indoor-wireless">
+<img alt="Indoor wireless category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/wireless_home_office_600.webp"/>
+<span>Indoor Wireless</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/lte-5g-products">
+<img alt="LTE and 5G category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/LTE_5G_600.webp"/>
+<span>LTE/5G</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/iot-products">
+<img alt="IoT products category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/IoT_600.webp"/>
+<span>IoT products</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/60-ghz-products">
+<img alt="60 GHz products category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/60GHz_600.webp"/>
+<span>60 GHz products</span>
+</a>
+<a class="cat" href="https://mikrotik.com/products/group/routerboard">
+<img alt="RouterBOARD category" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/routerboard_600.webp"/>
+<span>RouterBOARD</span>
+</a>
+</div>
+<p style="margin-top:32px;text-align:center"><a class="btn btn-dark" href="https://mikrotik.com/hardware">View all hardware</a></p>
+</div>
+</section>
+<!-- Video blog -->
+<section aria-labelledby="video-title" class="block dark-block">
+<div class="wrap">
+<p class="eyebrow">Video blog</p>
+<h2 class="title" id="video-title">Know our tech</h2>
+<div class="cards">
+<article class="card">
+<a class="cover" href="https://www.youtube.com/watch?v=ZUjiBTaltvQ">
+<img alt="Video thumbnail: RouterOS 7.24 changelog" loading="lazy" src="https://i.ytimg.com/vi/ZUjiBTaltvQ/sddefault.jpg"/>
+<h3>RouterOS 7.24 changelog - switches with L3HW VRF, LLDP PoE, Preamble Puncturing and more...</h3>
+</a>
+<p>Hardware offloading for VRFs is now getting introduced in many CRS products, along with CCR and RDS.</p>
+</article>
+<article class="card">
+<a class="cover" href="https://www.youtube.com/watch?v=w9sGyOaYNzw">
+<img alt="Video thumbnail: CLAIRÉ indoor air monitoring" loading="lazy" src="https://i.ytimg.com/vi/w9sGyOaYNzw/sddefault.jpg"/>
+<h3>CLAIRÉ – smart indoor air monitoring with Matter over Thread</h3>
+</a>
+<p>Connected indoor environment monitoring that tracks CO₂, particulate matter, VOC, temperature, and humidity.</p>
+</article>
+<article class="card">
+<a class="cover" href="https://www.youtube.com/watch?v=Sr4C4LIRQQo">
+<img alt="Video thumbnail: SolidRACK 5 mini" loading="lazy" src="https://i.ytimg.com/vi/Sr4C4LIRQQo/sddefault.jpg"/>
+<h3>SolidRACK 5 mini: the compact 10” desktop rack, a MikroTik HQ internal tool</h3>
+</a>
+<p>A compact 10” 5U desktop rack with adjustable angle and under-desk mounting options.</p>
+</article>
+<article class="card">
+<a class="cover" href="https://www.youtube.com/watch?v=xXtRNm77Phk">
+<img alt="Video thumbnail: Preamble Puncturing explained" loading="lazy" src="https://i.ytimg.com/vi/xXtRNm77Phk/sddefault.jpg"/>
+<h3>Preamble Puncturing explained</h3>
+</a>
+</article>
+<article class="card">
+<a class="cover" href="https://www.youtube.com/watch?v=iEONEeYGFJ8">
+<img alt="Video thumbnail: GPOE-CON-mini" loading="lazy" src="https://i.ytimg.com/vi/iEONEeYGFJ8/sddefault.jpg"/>
+<h3>GPOE-CON-mini – 48V in, 24V out in tricky setups</h3>
+</a>
+<p>A compact PoE converter that powers 24V Passive PoE devices from standard 48–57 V 802.3af/at infrastructure.</p>
+</article>
+<article class="card">
+<a class="cover" href="https://www.youtube.com/watch?v=JQNRGvJTznY">
+<img alt="Video thumbnail: Local smart home with CLAIRÉ and hAP be³ Media" loading="lazy" src="https://i.ytimg.com/vi/JQNRGvJTznY/sddefault.jpg"/>
+<h3>Build a local smart home with CLAIRÉ + hAP be³ Media</h3>
+</a>
+<p>Pairing CLAIRÉ with hAP be³ Media and Home Assistant using Matter over Thread.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Highlights / newsletter -->
+<section aria-labelledby="news-title" class="block">
+<div class="wrap">
+<p class="eyebrow">Newsletter</p>
+<h2 class="title" id="news-title">Highlights</h2>
+<div class="cards" style="margin-top:24px">
+<article class="card">
+<a class="cover" href="https://mt.lv/news134">
+<img alt="Newsletter #134 cover" class="square" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/carousel/134_soc.webp"/>
+<h3>Newsletter #134 | July 2026</h3>
+</a>
+<p>LAMP 5G R16, new SFP/SFP+ modules, a WISP 60 GHz success story, fun Reddit community updates, new videos, and more!</p>
+</article>
+<article class="card">
+<a class="cover" href="https://mt.lv/news133">
+<img alt="Newsletter #133 cover" class="square" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/carousel/133_soctikliem.webp"/>
+<h3>Newsletter #133 | June 2026</h3>
+</a>
+<p>The most affordable Wi-Fi 7 hAP be lite, useful accessories, LoRaWAN sensor tags, and more.</p>
+</article>
+<article class="card">
+<a class="cover" href="https://mt.lv/news132">
+<img alt="Newsletter #132 cover" class="square" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/carousel/132_soctikliem(1).png"/>
+<h3>Newsletter #132 | April 2026</h3>
+</a>
+<p>New hardware and practical tools, from the Wi-Fi 7 hAP be³ Media and LTE7 devices to compact IoT solutions.</p>
+</article>
+<article class="card">
+<a class="cover" href="https://mt.lv/news131">
+<img alt="Newsletter #131 cover" class="square" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/carousel/131_majaslapai.jpg"/>
+<h3>Newsletter #131 | January 2026</h3>
+</a>
+<p>The CRS804 DDQ 400G switch for AI clusters and storage fabrics, LTE Category 7 upgrades, and the RouterOS 7.20.7 long-term release.</p>
+</article>
+</div>
+<p style="margin-top:32px;text-align:center"><a class="btn btn-dark" href="https://mikrotik.com/software/all">View all</a></p>
+</div>
+</section>
+<!-- Tiles -->
+<section aria-labelledby="explore-title" class="block alt">
+<div class="wrap">
+<p class="eyebrow">Explore</p>
+<h2 class="title" id="explore-title">Connectivity, apps and tools</h2>
+<div class="tiles" style="margin-top:24px">
+<a class="tile" href="https://mikrotik.com/connectivity">
+<img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/info-grid/GridBanner_Small_Connectivity_Index.webp"/>
+<span class="tag">eSIM</span>
+<h3>Connectivity</h3>
+<p>Seamless networking with latest eSIM-enabled devices for IoT, enterprise, mobile networking, and more.</p>
+</a>
+<a class="tile" href="https://mikrotik.com/bth">
+<img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/info-grid/GridBanner_Large_BTH.webp"/>
+<span class="tag">Mobile</span>
+<h3>Back to Home App</h3>
+<p>Free secure VPN access anywhere – unleash the power of your router!</p>
+</a>
+<a class="tile" href="https://mikrotik.com/download/winbox">
+<img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/info-grid/GridBanner_Small_WinBox.png"/>
+<span class="tag">Desktop</span>
+<h3>WinBox</h3>
+<p>Our Pro desktop app with endless configuration possibilities for all operating systems.</p>
+</a>
+<a class="tile" href="https://mikrotik.com/download/mobile">
+<img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/info-grid/gridbanner-small-home.jpg"/>
+<span class="tag">Mobile</span>
+<h3>Home App</h3>
+<p>A simple way to manage your home router. Available for Android and iOS.</p>
+</a>
+</div>
+</div>
+</section>
+<!-- Training -->
+<section aria-labelledby="training-title" class="block">
+<div class="wrap split">
+<div>
+<p class="eyebrow">Training</p>
+<h2 class="title" id="training-title">MikroTik Certified Training Program</h2>
+<p class="intro">MikroTik training sessions are organized and provided by MikroTik Training Centers at various locations around the World. They are attended by network engineers, integrators and managers who would like to learn about routing and managing wired and wireless networks using MikroTik RouterOS.</p>
+<div class="actions">
+<a class="btn btn-dark" href="https://mikrotik.com/training">Training schedule</a>
+<a class="btn btn-dark" href="https://mikrotik.com/certificates">Certificate search</a>
+</div>
+</div>
+<div>
+<div class="note">
+<h3 style="margin:0 0 8px;font-size:1.05rem;text-transform:uppercase">Trainers &amp; Academies</h3>
+<p style="margin:0 0 12px">MikroTik Academies are educational institutions – such as universities, technical schools, colleges, and vocational programs – that offer semester-based networking courses using MikroTik RouterOS as a learning tool.</p>
+<a href="https://mikrotik.com/training/centers">Locate a trainer</a>
+</div>
+<div class="note">
+<h3 style="margin:0 0 8px;font-size:1.05rem;text-transform:uppercase">Graduation</h3>
+<p style="margin:0 0 12px">Each year, more than 30,000 MikroTik certificates are issued for students who graduate from our certified training courses worldwide. MikroTik certificates are internationally recognized.</p>
+<a href="https://mikrotik.com/training/academy">Academies</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<nav aria-labelledby="f-hw">
+<h2 id="f-hw">Hardware</h2>
+<ul>
+<li><a href="https://mikrotik.com/products/group/new">New</a></li>
+<li><a href="https://mikrotik.com/products">Search</a></li>
+<li><a href="https://mikrotik.com/products/group/ethernet-routers">Ethernet routers</a></li>
+<li><a href="https://mikrotik.com/products/group/switches">Switches</a></li>
+<li><a href="https://mikrotik.com/products/group/wireless-systems">Wireless systems</a></li>
+<li><a href="https://mikrotik.com/products/group/indoor-wireless">Indoor Wireless</a></li>
+<li><a href="https://mikrotik.com/products/group/lte-5g-products">LTE/5G products</a></li>
+<li><a href="https://mikrotik.com/products/group/iot-products">IoT products</a></li>
+<li><a href="https://mikrotik.com/products/group/60-ghz-products">60 GHz products</a></li>
+<li><a href="https://mikrotik.com/products/group/routerboard">RouterBOARD</a></li>
+<li><a href="https://mikrotik.com/products/group/enclosures">Enclosures</a></li>
+<li><a href="https://mikrotik.com/products/group/interfaces">Interfaces</a></li>
+<li><a href="https://mikrotik.com/products/group/accessories">Accessories</a></li>
+<li><a href="https://mikrotik.com/products/group/antennas">Antennas</a></li>
+<li><a href="https://mikrotik.com/products/group/sfp-qsfp">SFP/QSFP</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-sw">
+<h2 id="f-sw">Software</h2>
+<ul>
+<li><a href="https://mikrotik.com/download">Downloads</a></li>
+<li><a href="https://mikrotik.com/download/changelogs">Changelogs</a></li>
+<li><a href="https://mikrotik.com/software">RouterOS</a></li>
+<li><a href="https://mikrotik.com/winbox">WinBox</a></li>
+<li><a href="https://mikrotik.com/mobile_app">Mobile apps</a></li>
+<li><a href="https://mikrotik.com/bth">Back to Home</a></li>
+<li><a href="https://mikrotik.com/connectivity">Connectivity</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-dist">
+<h2 id="f-dist">Distributors</h2>
+<ul>
+<li><a href="https://mikrotik.com/buy">Buy something (find a distributor)</a></li>
+<li><a href="https://mikrotik.com/becoming_distributor">Sell something (become a distributor)</a></li>
+<li><a href="https://mikrotik.com/mfm">Made for MikroTik</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-sup">
+<h2 id="f-sup">Support</h2>
+<ul>
+<li><a href="https://manual.mikrotik.com/">Documentation</a></li>
+<li><a href="https://mikrotik.com/consultants">Consultants</a></li>
+<li><a href="https://forum.mikrotik.com/">Forum</a></li>
+<li><a href="https://mikrotik.com/support">Help</a></li>
+<li><a href="https://mikrotik.com/supportsec">Security</a></li>
+<li><a href="https://mikrotik.com/warranty">Warranty</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-tr">
+<h2 id="f-tr">Training</h2>
+<ul>
+<li><a href="https://mikrotik.com/training/about">About</a></li>
+<li><a href="https://mikrotik.com/training">Schedule</a></li>
+<li><a href="https://mikrotik.com/training/centers">Training centers &amp; trainers</a></li>
+<li><a href="https://mikrotik.com/training/academy">Academies</a></li>
+<li><a href="https://mikrotik.com/training/train-the-trainer">Train the trainer</a></li>
+<li><a href="https://mikrotik.com/certificates">Certificate Search</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-about">
+<h2 id="f-about">About</h2>
+<ul>
+<li><a href="https://mikrotik.com/aboutus">Contacts</a></li>
+<li><a href="https://mikrotik.com/aboutus/company">Company</a></li>
+<li><a href="https://mikrotik.com/logo">Our Logo</a></li>
+<li><a href="https://darbs.mikrotik.com/">Vacancies</a></li>
+</ul>
+</nav>
+</div>
+<div class="legal">
+<nav aria-label="Social and contact">
+<ul style="list-style:none;display:flex;gap:16px;flex-wrap:wrap;margin:0;padding:0">
+<li><a href="mailto:sales@mikrotik.com">Email sales@mikrotik.com</a></li>
+<li><a href="https://tiktube.com/">TikTube</a></li>
+<li><a href="https://youtube.com/MIKROTIK">YouTube</a></li>
+<li><a href="https://mikrotik.social/@mikrotik">Mastodon</a></li>
+<li><a href="https://facebook.com/mikrotik">Facebook</a></li>
+</ul>
+</nav>
+<nav aria-label="Legal">
+<ul style="list-style:none;display:flex;gap:16px;margin:0;padding:0">
+<li><a href="https://mikrotik.com/notifications">Subscribe to our newsletter</a></li>
+<li><a href="https://mikrotik.com/privacy">Privacy Policy</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</footer>
+</body>
+</html>

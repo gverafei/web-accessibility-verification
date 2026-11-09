@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent Brave FAQ content and extensive footer information relevant to the same browser site. Its wording and layout differ from the reference, but no material loss is apparent in the supplied region.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"FAQ rows and footer columns are clearly arranged and readable. The sticky header and viewport cuts do not substantially obscure the content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible FAQ plus icons, navigation links, download/search buttons, and the language selector have understandable labels or recognizable purposes. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target depict corresponding FAQ/footer regions of the Brave site, with a coherent regenerated layout.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, FAQ questions, footer categories, and links convey coherent meaning for a browser website.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing layout coherence**\n\nI need to really evaluate the screenshots of the target's footer and FAQ section against the reference. The target FAQ should be clear and organized, with coherent rows, and the footer needs to be readable as well. I see that there's been an alteration in layout and controls, which is important. I\u2019ll focus on ensuring these elements are recognizable and coherent, ultimately needing just the JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout coherence**\n\nI need to really evaluate the screenshots of the target's footer and FAQ section against the reference. The target FAQ should be clear and organized, with coherent rows, and the footer needs to be readable as well. I see that there's been an alteration in layout and controls, which is important. I\u2019ll focus on ensuring these elements are recognizable and coherent, ultimately needing just the JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B8chwC2VXBb4-9KeNpzlbZi2SPIqQUv25WlUF8tEZ3QJ9nlqvu9qCndd3W4opGkprfqyYNC0VTluxXr12WnjUstyPe0Z054MYU36bzqBXb99zc9JoCnMAHUYqw6g3ZbYe-Ot1TODXqcZdFV51ILWBZniuqlce0eFCMDGA6Y0Wn_Wq7UoqSUZtJMVp43EqNZHvKpxPLeYWYzqsjVLGVdaZ_0PMdXOFNUBUkvEhEp4rQcmNowukKJg94_2Xp_CNkygt2Y3-RU-h5yYKIwSqbJCpMd87LQY9CZPUHIj_6de8bLeN3hab6_Y6FWz_LZBxDRRpWsfkFfg600b9MP6SAQJF5JiDjIhEEeFUioYuo-sBdDsxHuuCLLGfjE8uGBoyowDWgZZq4rbrwXF4BtQkaUm8gZc58AntFYp_rcYS4QMUTx5GOMAD878G5ZdoG0zXH3SPfx14F4duDOIvzoAT3BtsFfCSXkGnkn1pTsTAXl9Xhacg9zdgSuxglw9Pxm_5BPGTeRwgs4MUSwSxquzQtv_2Cxqe6ajDOhAm1P8uVLEfZzx3PZ9_zUz76b0rS8Ze8MKwgGI_9rvSp1oAZG4msIZcrL_l1Cfk1d8x5Np8Z7pal5-fRobQWvIHOPEJUWAkxAUQ6RHIFQYYdiB3FETGQlYCFRd-UwfBVANoieX_LGLv0xMQSI2FLSw3s8qbmIj6JcsyJOyWyXw12XFRLklBt6WyFyD4ebpsDDBs8JESXE0A1E5ejmvCSNnz6xWsvG_IJ1KWL681x8BxlPpKDCEZcRxdTDdub2V7ntpFTVRxQZQfsD-OUk1d_p5ONV_FWu--cym4zqQl4ohXSuR6elJzzdzrKjLOUNTE2edWBONhxtvrVaLX6CkwwdnvYK7DJptnyiWpVJoRFyvgk5_uefYGu2UnoNU-AZGfM4KVEcRg-lTNWXMF97-qZ-HosWYeiscfUUG2_Hrax52uUfc8-L7cd4MU9bl8fNzEukwnhWaL8rSz9653WdMpo-9MfFKjY5lDZbEql__hhvGv8YY1b9LSmTt2SwIgumJ4Wpc5Exr7kJ6iznrF-soC1kl99SPaIJ33Kuk-YNWD9hkruCQkmysKS83-mOGzcgr3lm4KvzFCNXbHF7VMUdIaivd1HiglSU_XGLBNSNBnO9NRPZJ4_5ClEiZ0jaxIpDCiPz5yJzTXDzosGlx-tMe00DPI2u_16ZQYPbV_tOu_-0BqkRFlcIbUixn5p5Koxiacq-JlBmjiF9er-ZBhHIswQqIhC0s2BS1c6oQdSkmk6R6Fz2w1hzCnimYFFdFTjpBqoC6ZY4mIplCavN7GfPRjqT6zh1pHQklky4DuyO0GxDdT9k0JhfbL7dHlGiCI0c6c_pfYMIWrIBjGZT4h54kEE9CPyKQRBA2dFBhcYnTOCvTUmUSi45I-CY1KblmqEFUm3BVRBaiahGWJfOBsizkntMVhV-cIQc0rDaC2nTAfGOLTVfGgE96aCZYcgsNW5fVwD3eICdUUhbdAkiwCk7ZKR2vdvjEKh5TdkmUofHv9X6iyogFkpTDW2bIR9qxMuBkkEaNmdj4kZC8x0bfJROc36Leh7c-otGmTwNRY0mQ8Px2ilWpshBiOeUQu-V4Lhi11UWVTtYFhJ_xxcdf1m20mmJ5TsabQfB0T-i2ftrtAOEG5akWvhNpaZd5SYBKUMiAXriAA43rPbvNWeqw-kXgENsyR3X6QbBA-ebIlpSQw1rIFTMew_Qdw2uQqkidrpB4WEe8Uac-RT5ljINZIl4iUOz0JXUf9a5oGlP2hhXv1a95-K0swJ4DSSsLGNi7nhJNa7n_ivCGpQgXKqLEkT6M01Kjku0jmqkNO9y0rRASIbe8FDMfVBN2LzEKqm6q7qkOU_jFPuqbQK7BmgfAQDPHwoglBdZ1JmQDY-85N0eP9mpd230OvHvHP-vMwGvxpCzUUVv99OzyN2VyZiNIfryXs6zX76ta14wyXeG9n92R_Ojs8UYXFx10VKD11wvyAocIg1ArycKxgGQywUo4F-ey9FyLRycmUACQCfHWxglCc7wOX67ZHxziVzpqmT0hgwQMptnK6hweecWV5zcMP1saJBshwRM5q4K0geyG8J7taHAYLuNCcU49ispyjVP3U3MWkOq6f3khkiiUa7_KDOly_D_OjHlDszl1bg3kGGLGJHvECe07Eemcvn75hW2t92sGO634OvklvnT8UOoa0Qg-MwI6UgoioZoS8JDPW14b36KQTtbA8JfkBko7o-oCdSLgMubn5NsaP8io9NKriNjmBoSUPhBAQlNeKIvaJMRAvLz6jdq32wEPXYNEosmUwRujaV1WMQ-BjmIys3gw6DuD5c2fOoHT_-96Jabu4MtpNGiNq_QNfpbLrNtE1T1f9avKGiR0hnq4RvYOrlZiGUrej9G_E_SFGPd-5C2OgtiR5jeVQNyPWE24tcG8KWIiHidP8ZE-0jDzWcMVpQfygNpm6IZM5nZG4sjm0dY1oBprWMXGkmd-xe0wU2bHVbvqa_-llLkJXfVwl6TsVnLU4kRpRuVyV5rVCOWxeOxzHJVE8EQ1kVNhvqju7DmSXJst2Z8nI-OgI2FPs67HPRyVd3hR2mlx1g30ulYEmcKs7D0.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0159d188725f7467016ae81f1a727c87d19c9d5457a6e688b0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10589,
+    "completion_tokens": 337,
+    "total_tokens": 10926,
+    "cost": 0.00149205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10586,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00149205,
+      "upstream_inference_prompt_cost": 0.00132355,
+      "upstream_inference_completions_cost": 0.0001685
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

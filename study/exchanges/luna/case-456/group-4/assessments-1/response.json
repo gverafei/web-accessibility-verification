@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are identical in both supplied segments, preserving the visible case-study content and footer information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged, with no material overlap or clipping in the observed regions.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible email field, country selector, and chat control are present and understandable; no control differences are observed.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target segments correspond and provide coherent evidence for comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Spanish case-study and footer text, labels, and controls retain coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing screenshots for duplicates**\n\nI\u2019m focusing on checking the exact screenshots for duplicates. I need to ensure that the entire window is identical, particularly the visible controls like the footer, email input, and country selector. It\u2019s important to confirm that everything matches exactly. Plus, I have to keep in mind that the required format is in JSON. Making sure all these elements are in sync is crucial for accuracy!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing screenshots for duplicates**\n\nI\u2019m focusing on checking the exact screenshots for duplicates. I need to ensure that the entire window is identical, particularly the visible controls like the footer, email input, and country selector. It\u2019s important to confirm that everything matches exactly. Plus, I have to keep in mind that the required format is in JSON. Making sure all these elements are in sync is crucial for accuracy!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CC6ire6-vr3c31l7t49Z9pNez5HrvuTL7PpboFQZZDpeCfxY8nQubqlvo7lcNXncOxvcPhqhUOAynUHsHbkSKYbRnYpjc3TGVGW6x1onAgqSGC-tVlXTvB7OKnZjnZh05UsiZ2Y5bU-z1-6gWlYXEnvlQ35MzMqT4lyV0asanrc_LPBosmqRYa8jQ2uE41dtjuxG1LypDqpUYf7HysQOWegF8KzpTEg4n6J4EnOLz6G5mfd_7_7y2CEJ95PuuOBTSfc9OCMlrj4UM3RJzdVujSMXvdpn2sl2cmTbuzNNt-PtVWy3ztoXkGDpdm4KgRNYzciWMhH9m16ptl6oiawEdyBg54jFkqAKOSh6_hCKP3iBRZZrR_ruQkr4Ydww9cglJ-VVwahyzhOjL2dPswIGF9jaH4yICatzDJlLpFa4khKAapKo8lKzDcqZjbgMgCQWa1JY_hNXAdR1lkTxg4GARzfq4h7u97qdFJWYeHEGIAUTWkPcDI7KjXYAU0I7f4abr9ZKQgxV16nvKH6d08JIaJGcBnJd6rPjR99PIZgseJpFIjpkXw3HzP8nCreWT6z2zaIISW_q1TBcRQ8LpXh4IDiy37hgRUW8_l_2TmJCRtkY4ofcwji8kAbDAD8eknzSyFi6PoK43_4auv2XgdfZMyBeQF-lGQ6R3vZLeiCTTzAbXvuOZOqnOPlBMfSh6USnQ6naMzfSKuXm2rJ0mGy7TeeHtZnTVpCeMwxMvInXn1H4uV2SgGoxBMih-K_YU4OjrWRQMYc55ku3pSzEbfwHr2FrNtBt5ez4wrNoXXrdnDp_TBWcUuQPwkKAJ4hpCkrCAquJ8zs2dfhjquoBMbtrHBtWFO7mceX8M7_QOiYCSxpPXjuhVgYuIv_sSiWR7d_0VW_xUcSYgiP1nV1FEquAJCP0cFsSTQd3IdnTX1OSNjqGJuxr15tMrIje1lsth_4OkiJUl25zQDV3M6eW8U5w_FcGvyg72RXiBDMaKybOkkNAE2j_cMtZs7X29sfw2_U70AcRdXkhS5yP3tFfnVGBWg_x4vBIZJh4mZa0CSry8e-BgA0LgnH0kx3_4pA35vZDi1iqXdmjfg012aSo3if-sRDCu9MBCClRIWSllCbv_OEI0LGejP7FXaifZbEWBbRGu3B9ViUrFoI2W0jn7sYCmRfik9J6uqNGbpWbxQz9YhLij5vkI7tHstevY8443t6hsVVddDlUrD0_tdd3d838fKvbPmNN7J7uaY0r3SvGl8to7hA93Oqm3-GEf7mJN7FxpaESI6IC48VKNaZKqlxdZTFQqT9YdwgMij2AllYSkQLF7v0nm6oDmEgT_CvxGzF6Inc_L52PM9VixarQ3mm3Ogg7ArcpMQFFPGx-9e0k0zdiFPpWl3scJdpPJNlltGA9EbE9VPbiVk_dF_j5Rx5DKSf25iWv7mg58p3t4sP3CbpioZc6v0F2zEyJHHNJlpk-HcPDKfnK-60kGD8ouE4n0-DzyNL7Zyl2xsJ1wzCP_euDYN1LeCyb_qBnvyHC0LKjpfugLRlpS6eGWuGOcMXMpP2ZA8r4zTrPbgDYNC2mtVyhgt6wo5nUKv2AOzr7qR-Ug6a61evBASW8fHtNwTW46ZrBm0SJtI5i0n-5MJgnOaCDZQpg9vLAMdJPcqRcOYhEbgt03fdxl4z17YQu5uSwxaGr1bX-VlACBvINUqB7R8w3n_rFTG93y-puAVdQA5bQGUTG4cLxQZXma8hJksMYtknilMRRIn1wt5iK28eAmIX3MwUEhhiozRnAF0SIKnJbaC1ZcoJGwwv0RyDw3YLxS58C21rXXvWz6XtysoVXG8Zc9CTLD9iPs8w6PEv5y3YJE3i1Wpo-DlyHB6Tx5-N1l5Jp_pp4Sd3ZcLNCysHOywV-4wHtxsiNRdynoGV--bnGkktFcxw0dM9ZR_hVzf_pl3n72UznQpXQMZZydK5qPe460u6jkmSsXTnnvr7d2fikhDRZjkd6j1lzVYRVI3Emy0KxuhqBto9J2Zl39I1vx_MhDzM-vMDnnZcJj0JrWF0iJv7GyAfZdZ_6qP-1nLjklFJ6Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_024ba67ffbe13147016ae820b9a4b487d198fc37938099769f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14373,
+    "completion_tokens": 261,
+    "total_tokens": 14634,
+    "cost": 0.00192705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14370,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00192705,
+      "upstream_inference_prompt_cost": 0.00179655,
+      "upstream_inference_completions_cost": 0.0001305
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

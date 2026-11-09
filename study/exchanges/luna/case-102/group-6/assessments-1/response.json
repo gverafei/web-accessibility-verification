@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target retains the surrounding integration content and the \u201cWhat\u2019s happening\u201d heading, but the reference\u2019s visible news carousel imagery is absent from the target. This removes meaningful editorial content.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target shows a large empty area where the reference displays prominent editorial carousel imagery; the section is visibly incomplete, not merely a different carousel frame.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The carousel\u2019s left and right arrow controls remain visible and recognizable in both states.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding page regions with coherent section context; the localized missing imagery is a content/presentation defect, not an evidence mismatch.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The section heading and subtitle communicate that the area is about recent news, but the target omits the visible editorial imagery that gives the carousel its substantive content.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating carousel content**\n\nI need to assess the target blank image cards in the \"What's happening\" section, where there's a huge lead image and corresponding cards. Is this supposed to be a dynamic carousel? The DOM only shows a logo carousel, but it seems like the \"What's happening\" area should have images. All the cards are blank in the screenshot, which raises questions about editorial integrity. The main content should display the latest news, but currently, it's missing images, indicating a potential material defect.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating carousel content**\n\nI need to assess the target blank image cards in the \"What's happening\" section, where there's a huge lead image and corresponding cards. Is this supposed to be a dynamic carousel? The DOM only shows a logo carousel, but it seems like the \"What's happening\" area should have images. All the cards are blank in the screenshot, which raises questions about editorial integrity. The main content should display the latest news, but currently, it's missing images, indicating a potential material defect.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BoAT1630qKACknbw7ESnC-GvXWh-XSEnP7KMPu-N_HCZHtfNESzKj4XIR6xW0EeSB6eNfJ4wDqRjkt81tJ5W4Tqh7bdT8XviMLpPDOZLyX-d8TCocYRYWABwXHJ4oUFNyZW6Iwpq9w_wRZt-Iocw2JbH-yEl5CfJSW2Sstx-e9CM_KGjhxPJxOUky37qhGqtRuYE2tQCjCTpMeenuMq8HRYgTxSPS-GL8U9-DUizhiG46k8GR4ttAptrLXJMw5mil12gpO3MzCeCE_1Jw6bjcfPeeSkIcSEhwpI7mIWsFvzYSvIDgpfDWFIsy81U_GLxJ1pyLxEbku32Z6Q9bbJJQzj2DMOgiqOjmqL10gfJ-Um0RpQD1o9ImX5ZW5inf5vgR-0-YbGL7amyg8mJhPgfMI_Tdw1NNJM0oOz4sWe1rZEmJ-tY0Kuxet4wISL3PR_xkv8QTiXkkIVDZlkxQ3vbRprjepMFrtyZMnthYQpaB2owivOQO6Knf49Ecu9Vt93MwDexEoMk7MSo80Hsv45HrAwwYzYy7LP0OEi-GmTYn4YcQKLjx9Xsf-Y2-xKxDgWXWABK6NTSXVvrshAEL7UrCojXWMNrZibyxDXV59NoAGYXy6v0j1pk3HuwOoo2PxRRMhkCOwen_GhWVAKSCiGgfIdwlrvEFqHQPYMUXsTWzBKkLyTbIgo8mBjYkJS-vHLua9kf5PWUuwncnLP_BwlODSB-k8ywDO2FWdOFCvG9D3h_tTztLhwD38rpoX7jlfgC2nLtRtHeZEdcZr6ZnCcHQH4GkSV65bNIVXz-Rad3rJxd2KYO4xMUGdWaMkgPOmBxV-4oxcq9wLDf6Mrzy7H634TT5S9LVxy-xP6KjSupM7qp5qEelrpJcWBLciqQJYN12Tv-WJ9PEaTyVgj5n7kRDiLNe78Ni25CJCa5tys3qByoh6b87317ipg8mnJ8fc61WKxiD1AQ9o4lkkMt8fVmcphV0-vZmMmPOSeKooS2bNmufO2jqu4K9hY-4bIHrCrNNWqvFVDBlLMgn5vzOPRC5VA6UHx7hs5B3f7vgeAEnarAem2GsYaQnBqu_4oczVsKiYHg2Rk6jFgnJY6MIZrWk4KE8Aa0Y1j_n1ghUCXhzwfD8Vk6flQ5v3oYTDeaqUoLb-06rjARn2YL47CXBuczsYAhgl_PtSP0NkT0WU3jarQ5Fu4ywEQ_4dBAxTp7JdfSxW-59a3D2TAp3SsQps5G6_kzS1wZotyOrmdCyRwimil-TAyUC2_bwv_g3Z3Q34z8xFETDoK0ux2K8ZX8HAgFgGH9Bd_AsspzcONLOR_Ja7cACb4LQzMPbcWTdp1pz17SGqrobIREb-JeFrJyZfLd8ZbmfRCAIMFDzpc_Z7DmquOF2kEzZnD-GCFmBqsYbwfHUvUWVmxKveB0QWV2nH2NpO9J_ep9bt17ffba3TQJeztDi4KYbWPXCwckPs5U_xZQ0hhxpXyombhfQoZv7OmSImQQNwQW8joTBB5KH1Y-ErHGwAEY-D0AqxmHiRvb46sAzCBiAdmGcZrcjxQmA2Rr835H6K3WCxiNYHNZB6GEmsFypunM-bjY5ZGD0B-fm6pm_sA5orCDoqb_Ex69kaOxo2wbxiLZKQ3foWeEAYEM3Lzh0EJtjb8XLU6tVLXIEFdYeSukmPdjeOkxw6MPut753hlm4dhW3s2Z2fVEIx-r3aGtdzRLbVX-NpWakzVzSkEc9Dp4RujvrwDf7pJdiL0Cx_4RvqKYGFdIB9BIEy0SlKsu6IdRxcq6yV1I2dRSjKO8dYbYVAK0rVyVm6Uoeoh8ZXHv0zrr9FdlDfmX4cRXH4s7M7LaEPZ6VwDCfB_jD7b0zwbtnavS7LFlVg-LFtElweEupKVog0KV-dC3tLtWdRLAfRB9Z8vugAb-z0cRUG5HAFJ0MHEwlgzZmCLwo1rZZpZw4Gvw7HbwKpxMMIpAuUFz3_6eTxhZkdaFwDVV6lxCZZv5Pp3DueS9WgE6o6roaUoo52y6O5SqhjLuK9OBAlNKzeZWK7uTLVUTViFQqAYiC3Kfy0K7_zJKQQanu-HpWdOeSUDvkGpML1DJqbPBjmhPXivbofdLm9a0XyPTvxJMjDoFXJ4y8M3Y7ibquJwOkSTQbBCuF3VT7yQ316RstPSG4_P02agh-Y_6osmUHHU-_kinx8GeJ-63caDvudtLJIvFPkMDURn_GOQNM0lrW1fQQIR9oHrrR4MU1CTCqhrLjIrrT4fp-st-dPEK9InBYWryt5Z5djsIiseHHyMHmdKMvnpxRaaNX6S5RkQkJ3I63jcIEBxWZJSZvkAGwEpw-CDapcBSU6l9URhfkKmXZLvuVh01Vsaz2ygFA1W0o0rEmq2UZ2cfJws7d-cm-vgRBIFivz_kXB7D1LN1pRUfNk3jcKQSg9kIqWRGMovnYaP028jvm-v2zfQN1km3EsCqSLp9Bx7tCuD97R5xh3trE2KC0ZuTruKyAZQJX8b73AlV-ZzkPBxT1g3Wayz6Nw2zqiCdeNF2GaLhgwil2Xmr-NPMYpq2cpW0b_etcTv5iCBfqo-1sk9sZYOUYcx6wTkzFzMBsbcOYQtDjURV7Yyd72-XKuvxaBb4VsL1jZCwhbZuIqJt7jUgL_5VlzNKHeiTOANOwNFd37uUUe-kNubGIW5es_8EF_kkhcQn3aS6yWyLL5E_mKX4jW0BdsuGA0Kj-LdLpHS4PXJVynP0rvJYytw4n3uYyStUQNUaFB0oDlDKJ-Ucvplbzbp-48W7BvToKa1v_GlYz3mpAMQRRKwfn90QD3fg9IkjXsck30eMBZR230aNV3fOygJsy0KD4A0jYyOprnfxArrFcnhU8GAyBZrWAqOZrRi1TrElfwmTiCpz1isKQBOppoZY_H_MaLAZ1SV93P8vvl_l-WoH16zlyHI69i2P-YGExQsmhYMrP8p1aCxgLUkASAHri2LSmAoTIoUGfoIybTpyVpv4RBFEFaB32D8dgIcZyYV-7MMfjn6q4xhI4DsAe1YB9wOiRJHiemS7PTD3I4Vjec-_XxpArAtVjpVEVg0za6Nb0eFOVMP50hodhcKcGbXW6kRLWQFJSJP9e0BEWhadvPYbN-oNr-5yw5bSv4g6T3CbtJAMUT_xTJ2r86SHFUHRKT2nWb4w8UWs_1XxfwUKtyQNi-DEUnU3AW14zEAfANCk-8si8AJEWC7wsTR7yKl6hp-D_PsQc9xhZ6K6MgIAGDcWwqeuSjKyhOnSxdiWfybzWGCBy4NtNNjtmiuBQOnshp63dW2M-CtmfCS3NEyunaY3I4QqpafNrsjOBwFWgGuIDe21KeI0oUskCdxLCG72uGvdmykBU3qylV2RenjjWzKV0NkW6U0TfOespo7WmKT0h-JaUv1xcxV5fPHqjUQoMgsFXKwAF-2oxHYtJc5bk3iCt1S4LxmJAxMi77Efhq8f0XJkgyskg0RMlzykb7VBsfqt18-rLs7wXKbejP_X9Uiw7fgNqMGMspLG6daD0eFIRhPAfKjJ9ojuayLN32w1pEd9SFdsT9fPrVgbUnuEUI7w6EkwejVKqRaoZZH-_6g-fE9t3iEyaVuZxjSn6Ec6P7gUr4zFZAd2B_KksOlSnsTqS7ceqGjaVOut-vkxB0GgKleZ30otnDfVUhT5JfVpTBwOtZbX4lTxQYpP-um7JsBfn0kl9kcWPRSURXpy6cUWKRID9UzplXhIYCEPxok4yi5gloYHdB4V-LHuwBAJfYWDk8hl-YaxFzdgxqKAd7rbj_piJe8Xxv3OJcHix9PCeeE6GxcRiIK3w6RwRj6CSuOssrhxomwqs97-l18ohDZoCgukGfHR_KhW7JQZJeITInR9RMNTLZuR4FQVwXZtu_GdLvA4kTHIIjN53d2DqbEKBqlT3bn4Gmm1Y6q1Jo60tgFCLrjD5dS2IPzPmAinKmYOH8SVrjTh7iUzjejkl4NMlMTEXUvf92bNf6FcUMk0al5SmnGN9YYwEPY9NW3Z9M00Y7S2BGKVINYmC6vqXCjUel0JyhbtookML3u8esm6Ebpb1w09DH2nTjXfj4IuXwmEj39AatMF_7bXTfVp-J_0IwLUsP-IbhUObISBNpD00Mg0U8209fMRZjfmdS22hWY08mLSHvRF9sh_TnMzeLOhZ7qDF1lX_-BMIVUVpPZoqm0A0ulva6wcpXfbTObFinuVMbhfS-ea9o=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_047f1f83dea9965a016ae819fd37a087d19fcd6dc7406fbfe6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11010,
+    "completion_tokens": 400,
+    "total_tokens": 11410,
+    "cost": 0.001576175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11007,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001576175,
+      "upstream_inference_prompt_cost": 0.001376175,
+      "upstream_inference_completions_cost": 0.0002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 181,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

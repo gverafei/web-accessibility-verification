@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Forbes Shorts cards, titles, and the Reviews, Leadership, and Careers content are retained. The modest vertical shifts do not remove core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content in both target windows is legible and coherently arranged, with no material overlap or clipping. The large blank region above Forbes Shorts appears in both states.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible play controls and the header controls remain identifiable. No material loss or unreadable essential control is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows show corresponding page regions and a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains meaningful article titles, review listings, section headings, and associated imagery consistent with the page\u2019s news and editorial purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing layout adjustments**\n\nI need to assess the layout here. It looks like the offsets are a bit off vertically, so I might have to lower the target header. The reference points are y9000 for the header, which ends at 183, and the target ends at 189; I should aim to set the content about 6 pixels lower. For the ad around y8000, the target seems shifted down about 6 to 10 pixels. Alright, let's figure this out!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout adjustments**\n\nI need to assess the layout here. It looks like the offsets are a bit off vertically, so I might have to lower the target header. The reference points are y9000 for the header, which ends at 183, and the target ends at 189; I should aim to set the content about 6 pixels lower. For the ad around y8000, the target seems shifted down about 6 to 10 pixels. Alright, let's figure this out!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzmH61i7lW7ObHTbo0DUyw6AHJKSdmqlNonN7drzUNHGrPB0CjG9l3ZeCUajuaDjvQ0tcQJ1iqX5WEs0ZQPFmIYz8oV38ZAEQFNbETmMYgDYGLOqa7EW0KyDBa8t5-fSbW6tPlpm4wawBWlxEQmJKLgBU8Fwn8DhGgyAt5SMdX6FAuH96cGsPfK5FxKvYIWdhQGkDLoB-qxzzN9_9MEkDQDDo-bKgptNqWgEfNWkIaBJQxwwt7yp6OZw4t-WSpqLa5oKkyTVl4_PU5yjuhw2_UTAwgga85rhIHqwbqIgxwoZcqTqpao9_o0a_GJ0GQyc_pbUJGrpTWdZmeht7yO54TLjN8ekIssmlsTuliS0nKotAU89CpkE44I1Q42UL0IspWO4Ivd8kYGOy9gQSh2yK_gv5OanTkJqXe4V9RLoNfD2Vwphg-iWn1cNqimjp0-WCPCcdPD-FxZctFe1cA8rrITcKOHNuEPAqcSLH1ArSmy1WSzqDm6i9hytju0sQCNl0EM5sA5mrhGqzaDL7eK9s_1CTVQerYlrx9DmtrA_jSMX1Vr8vHTm4mowZDVUDc9LDGTWZM2PCy4e8idMtPyZDkKrLiw5hbElPnaZ30goAJeb5byqXd3ExJPY0AgnHhC_uwpoOV7Dda1P_fB5jmIcjNviF3BgyitfVrqCI3jeVWQpVagBRTjhg2zBkvVu0vH94p0QVQYaZ7H8Vi8glyOxzSnUeUOuisY3GWMCFgbuxytneAjzsWBuFW4r_hW1460mAmhYPSyPEM2lspUrrn1jylYAcD_DluCh8MDtOB9TkmYyl6SDo0pi2d7KIezKtyqKArpD04SL7DgMjRDIGoYBgn8q5lUWCYkreOw8OVg6lZkTi7O9nQ0PMmpz3EHyoo2gxlF3Xqj7Bgqb4WGUaLPnY8Y24zSXV6ZW7kcBaWblwJhnrq1eJBZvRpIkNIKtlz8Q-Tb-XlnpEnvj8Or58gobTWCISVo0OvZliI0U37EhJmuHcQyA5ZFq0tEjx30zJ9F_tWIYjw1560GnG9Ie5OucJMGaLbxpEJomR_dNp2TFiga93kPFjfcnvvgUlLlmIu_bKpM13TfLK4tsI_mxntJ9zhKv4hx6SQAy86Ref4E4g3E72Qhm3g2fe94PkuSVMTnyaKmVjlbTH9zPkGnL61XB7zrqNXQU5VyUt22fo13KnjMtEI36PtpIZAppVCav_gB9zDGr_S9U2GnsOMJtZpGwXKrBx2XuLyJ6fPvQKV66jVIEMRwt6hhPexB7PFFETcNa0jf9afq97by_IGzb-LYLAJIgd0GvTF42s5s0wYBldHJmOms4NlwtosprxhK9F5TcE3BQgWH7OeN-F-j99Z5bMU7C4F42mV97QxppeswmDNRYJZ0n6VLsZ-ek--hbh4ErvwZ4q3N4dqEKHzy650gyBD8BpFrhPO6_zI-GIOBxdMVX8yFwkg_qPREpApX3VVR7wfbz8hVVxe-A6ZvNfkuAAt3lBBjOkFaM-lc1QsOYdeYs_OijQVdVDtPPL3BsnimLwlva_diNxSHxcgU9SuzGSAKatgSk6jzZ_6oxQ9XtYwYAj6ZTtolqCEKtVY6tIJQCqtOzfMCYyhlKvVDnUs8HZre9tlS4SjKlODV-L2yyBJK-aFARkyV0yyFPt5wmwuqvXUzzLYfM4tDDvMmltfyeXEJqx9luP76cYCmB4z2UNK-UOEV0_aL5rQtPqIKlEPsXQM9GHdhfipLaKg_ZEONZdtZ_giXDmkWX010N9wC5xbuGAcKINko98eCJKNs-o_DNK0T_2IpKMx9fUsAT-uYZGYvgYg3dJKUHexS5r5HnbFuME7ws3Uz7ksdMKmN5So7w88BwRiQjJneq87-q-MM1ZMjhv7u_l_ESUf2i2pU-Y3DY_emX5FdRJXI3E4ZNttEFqJvs9gP_Y7azOF6PrYvfW9exIy2JDAckvscf-MWlNJHKSNklK534uG_gxvx469uAA-r3_3PLQgynNYspqIHhueKRWT1FYLyO2uYUA4pM8LiXfMMzWsmuAce_OhI8oFZ8SoMJVMUnSGOCZs0CDySwQbpT-r6gnmpoDstz0Y6stRqxhDELS2ZOUmWgs9n-Dv9FPQVqo6JkRmrNXE6oyX0jZ5WUnGVbSA26hC-d1Bt44LxOVdCbGtlwn82x9kT7J8lTX5nzm5a0heZt8pQl105G7W7NCOKv0DYjVufMxNmCKEFB8Tp2dRb3BHDx5N8iYjHbI8RB3oW00RU7qXped2QaWhIFjB2w9Y2X-zkYZzey_CTXsN7pXWHlNcYYOGgRVskMqJFScXZDGNVhRBrP8HNCY5nKQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_011257cbfb73113c016ae81ce4ad0087d18943f95e801ab7aa",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18328,
+    "completion_tokens": 312,
+    "total_tokens": 18640,
+    "cost": 0.002446925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18325,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002446925,
+      "upstream_inference_prompt_cost": 0.002290925,
+      "upstream_inference_completions_cost": 0.000156
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible news and useful-material titles, summaries/categories, support topics, and footer information are readable and convey the page\u2019s purpose. The broken material thumbnails do not erase the accompanying text.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Both visible editorial thumbnails in the useful-material section show broken-image indicators and clipped alt text. This repeated broken imagery is an observable presentation defect, even though the adjacent titles remain legible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible support-topic links, section links, app-store buttons, and footer links have understandable text labels. No essential visible action is shown with an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference are coherent page states for the same broad MTS service and information-site purpose. Their regenerated layouts and different page content do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Russian headings and card titles communicate support topics, news, useful materials, app information, and footer navigation. The thumbnail failures do not make this text unintelligible.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing Content Fidelity**\n\nI'm focused on the lower region of a target area where I noticed some helpful content and news, but there are two broken images within the useful materials. It seems that the policy mentions that repeated broken editorial imagery is a concern. Despite the images being broken, the text remains readable. I\u2019m considering if the broken images affect the overall meaning. The core information appears to be preserved adequately, although the presentation defect does arise from these broken images. I\u2019ll produce a JSON output with rationales.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing Content Fidelity**\n\nI'm focused on the lower region of a target area where I noticed some helpful content and news, but there are two broken images within the useful materials. It seems that the policy mentions that repeated broken editorial imagery is a concern. Despite the images being broken, the text remains readable. I\u2019m considering if the broken images affect the overall meaning. The core information appears to be preserved adequately, although the presentation defect does arise from these broken images. I\u2019ll produce a JSON output with rationales.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzbX5LSVS-h9Q4gRamJ8HTJ7rVfYWU4VP_VEMvlJITUF-IBsD2Fr43E9WKlc1N-fahY6EvJVmmSXkWIOUsg1Op4sMVa0XIqAUn9ovtxVHAAdko0EUhe2FkqmCpQCUHP2OIiz47XnXC1qQbRoclRNt9a-vLynJemDuoRo5Zkl1UnWtRlARBl_GLA4ZLeDCb7ObjjiDNkbyd9rzJTuSo--a-1SQCw2KRlP9HDOVh-2U99_7NfpPhrzh7-jqtijyC38EZEKmx82D8h8m6IbPAxP443pMJiNp9kCqxTOrfgbIK0SB0h59kzoCtVkreyMpzO-SyHbq0e1yGLbAqkUtRc3yreFd0Gym5V30gOO0ShIAJ2Fd_k-4L9p3dkIT_EDUSNOkupPO8hH1NEwkqibC6gTPihed-VSEo9ZzdQl2m1YttTqxa5mWpO90c3tDAI9PhvR0mPqcPtOPy-UeVe59gDyGVlq3Yccx8Zn-Rz1kaUJHGufXC9QhuG_EeHXKOEs00S9n-_-OwTMEFq8k-Vz9Q2AQzPg_VaevvXKb4HfomPa6N-o2dbBQPqGtlKidnxWhv2U-xLlqG5rOuHf2-rufLMdzcTXUFy9fBXw9wP-20z_Ta2_iaFzKjNeHjE1VeksI2c_HMw1w9dZ1XGo8uhudmivwR7otRZSQU9Wbi59WSpmlSKvMSzU_N1u_0YtKoDsPlD4Z7re7ngU4c5UjkqFDAvD4ZiTiMc_LNp_rYex9YF5MZ8FTeAmv2CQnBFzQQAFGbMLQrbnvHktqlBo0gILNryITCs5bgTjmMUm4bEWVSCMLVob-pEvqyTVo6CjlnYurZk4DZJSa0CnCIwYshHOORKWrtL6eK2BVhmso4mCjhl8so0hlMwZmABrxzhmJzw_83wn5a9gXRPhSX5MLj1PlTS7nlZ_oLp01vWYkS2LxdKWT_FM2vt0lJMoUDllpdQgnec1TGxotsj88QNmEKm6xHpBGX5r8u95VK_DVADlq5HpeD0RWPbEL8vtOlRa8QGvERo-HUn5QAHzZfRrkvck5gN3XhcWepYA7dM3JPOXmH9R_g8HZVey9vqCA9oTjOMlfboIR7Ds0ri8Ov-5MY7sXe4zsnfq0c-ljeFIt3-EF7GMAa7UFe4v0SLr9XDSVdPII-ExVP9C59ihZYQ6hg9dSExNf3YpFvEH3aNfxqjwfujAYUV1VHDWrT8hzfkRGuThMNcHT6KKCA2g_ksiCELcnQ5ire0UfmX89-ARA_Zi3xZvMFZTd2f7tFbe0l4CwkLzzD85BCWmTm_W2ItJjvx3g0f4ximWfrFncNlLhsHFxeEk3l2hMY69K3OJaMc30IYaAa7u4Rkyw1VcZ_-IwbWCIP9lywXBgS3Y7aGN1KB7QSfSNlLL39GUJeOy1gE63wtw0e5KYDzZQWLLnDBLlFsi_RLSS2q-jfDNRdpO5vyp1zx9ZtZ6iviRMlWGJhZ4fN29OgreMtrAdy5KfpwlSpHkmuixSaCtTcQtDqnR1cz3FY4kEsHPf0IGpJ5vbxEeGqz1C43E3jnWsFPZWWsOVcqH0khNBqaC7qNSjSrpoIrx9KL3NNXCwEuKJEoe2yeEZct_PVtj27dKd_k7LKG3HXzw42orVANmV_ykT7SWtImfLkCIdJ1KOk0PzTwoInk7E5fHRdnyx3vEEITZvAYEo8Otd7l5H8kVUfxTIaTckmq-AsrJomgVhA4--xHPpCs5B7gGOvbkNXHZngUrv3Pf_3se1TOooLMdB-9iEfNUGaqqRuLyFpCAO2VpCSdtEux0EIK0rEZZMCIwD6kQ1XTZTkaBxoMKu1EBoQt-ZHueLnmkPFU-G849giCc6A-J1wq0KKDfh5P_Lxj2ds-WrrMZhoAxcvkMxnUcYpf_n2DMZt4BcEhendkV4Ar_A1194yI-LTz8imNuohXPcjWuQQ0toiPH8VHPo4Zh3qMajKM0YKqFFuF5m3V1fMUiac6S20ol3dDCG2mbmJ5bGZgeTxJSwET_6m_XHrAsKfEorWJMP8JE_WJ6mywY1F2UDecjeFfJzSuUIYsNeF_K1sWprCjaY1qXoOkDiD7Fp0JmYcFrfoVzS4Km88PFe8umGqWhyIitxXuFJOm8WfowDzhJ-MQbuSi8GA7J3a7x2xHXNZ7xs63jk6vQ8RPtiwx2U5G-2qpYNMHx3FMv_eBMvWW_xRcH2InfYfxB3oYIWLkGkB8i9-EoViOGTeQU4I7CtReCrAXezt7gQ8WveMQqdgUDgAiAeNkQX3JOqZphtNCmp5z-p0WmQPusZfmrxCJPeTC_CDGOQdg0lW1XzfoXDIYOfHza4ilH3SySQvxgYc1BO_o3_NvV3kW6qgPCgZBEsodKUWAWkW6SNfh2EEgCLVnwi-YpWwYZFmsut-B4H7_ql0Z7lbumznYnk7Dkg0QUlLiEVdrpfxE1uu0uSL21X8gMHta32BXVBOtW7kKv63OviKyeNGAFR8MdV5rQaZkYStu8vETsXfMOwwEOUfUB7VsyuGQ-VGZ_sY0Odz8AXIHcqAgVh7Rgo1JP24saUK6I5HbXEfjUR80pa2leIbo2ctCpw93xg1FdJFUjkG6ENOL12bxCBThZ3IrwA6Kbianws43okCeUxW9-krXJoRWZSEOfWZ9vj_05A1dX9YpnS__C44UvfBFsYh91vdVsm7vqWhqvtwVBaDwiRblERx6KTHuCWcWacslez6T1G3n03Yw7G4dnR3hgV4nfNqqrN4mW6EiTY5uICw7WxvTN-Ni4pgzS-7QQQevEsGCsLR3uPgy7OyG1Y94rJmV2CspwDcLVcWTOStkb1MmT-hPoc9ffzT7rhllWkuGOOp9Wn3Owkjl860ToM9WJSlGW2fxKkyhtBitKXslWA0037J-TOpHhBYyv-mVja-tBslyC-zpZCHB2zbXAd18OsKKdKLK8S4ggEJRhoCgFSpbdN9DRKWtuzefZ7vsReu6zrvBmFVRzwyMXQFlAfCVtDLMdnjj_ZrnLOQo4Wu3kD9rXdj2WEn2i1xg_TzEg6cYgHbp5CI066VvRvVxOatpVty_hHQxrmSlw_RZSASsvgwNsEUvD1J_Oro_ZMQelAqjxp4jppvCs7WtuUcjC_B3Oa142L7iZ5RFxzd5SauWcHbSd2QwTF7BC4l1dz-U9kj20xBX6S5tjgsxeomWxp210KAngRRy2JMaqNF7vG6eWniIOaKRWlW0dZKOnVphFWk7G5P0s60OmHRZAd0x-smihKyNNXPP5N56GIY4SXoaRtGDL70Y67pcbzwcidrgbJv3rsxZtxMi0Sb2NHbaEg0XiJ8q35nvfnv7WVT2VSqzjpvKOgowfdyeZD759tECfpkPo2uJqMVgjYCGn_7I76UbByZwZGM8Uid0iMmW91Z4WzdOcAEymRN3fUbdlvjJed43AVv6buwjgAP9kaiMup1sLRHXKncpkgG0KGKAGw6MazIdF9AVgaSA6K8fon5BPzCfTEppwRsHadtjJK_4A1ELQtYLHi4_QN-DZFUPc-ZhiBqdZZ66EwKhtyxQgWYW3E4gcNZDNqdqLpBGk1HIavTR1nt2iIQp175W8T8GoiSwpJ9aknThiVvjnP7XmjX2UfxfgmXum5x6b0hQkubY9gHwY5fal1UgnylTyM1p768be7v3KVy7LVs4kM72_peL3GKehy4DtrU3IMzinQiAMQQFh8nn281X5bOMxwv3oIhVQeeEmvyZEWiOm6uQiUbuqew2ZvlQqf0xmxjldPPpHLTQXtm1jysRRntZ68H59HEM7ePXGc0UGximySvrilNC3OgPze2a4epROAYFdQ804zVKo8M1S946MTdhMAjit3KKVCx2gXiCE5LzgQb2SgDqfHRdbSgmWrd3vg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b22ebc305f41fdf016ae81cd89a4087d1b3223f6e31d9fc9f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16919,
+    "completion_tokens": 460,
+    "total_tokens": 17379,
+    "cost": 0.0023448,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 16916,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0023448,
+      "upstream_inference_prompt_cost": 0.0021148,
+      "upstream_inference_completions_cost": 0.00023
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

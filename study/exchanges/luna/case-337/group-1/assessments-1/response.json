@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target communicates the browser\u2019s main benefits and the visible feature descriptions are coherent and substantially complete.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page is legible and arranged coherently overall. The partial clipping in the private-search card is localized and does not make the page\u2019s core information unreadable.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The private-search card\u2019s submit button is visibly cut off at the card\u2019s right edge, leaving only part of its label visible and making this actual search control unclear.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent states of the same Brave browser page; the layout and visual differences are permissible for a regenerated interface.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings and explanatory text convey coherent meaning for a browser product page, including the privacy, speed, and security features.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating search card issue**\n\nI'm looking at a search card that seems to have a visual issue with its layout. The black button on the right edge is clipped, making it partially unreadable. The search field is 252 units wide, but the button, labeled \"Sear,\" is cut off at the edge of the card. This could indicate a material defect in design, since essential controls are not fully visible. While the main functionality is there, it's clear that the button's visibility is affected, which impacts user experience.**Assessing usability issues**\n\nIt seems like the clipping on the action control of this card is a major concern. Although the text remains legible, the clipped button labeled \"Sear\" along with its search icon is partially obscured. While the function of the button is still apparent, the visibility issue impacts usability. Despite the content being clear, I would categorize this as a material defect affecting user interaction. Overall, it seems the core information is intact, but the controls need improvement for better user experience.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating search card issue**\n\nI'm looking at a search card that seems to have a visual issue with its layout. The black button on the right edge is clipped, making it partially unreadable. The search field is 252 units wide, but the button, labeled \"Sear,\" is cut off at the edge of the card. This could indicate a material defect in design, since essential controls are not fully visible. While the main functionality is there, it's clear that the button's visibility is affected, which impacts user experience.**Assessing usability issues**\n\nIt seems like the clipping on the action control of this card is a major concern. Although the text remains legible, the clipped button labeled \"Sear\" along with its search icon is partially obscured. While the function of the button is still apparent, the visibility issue impacts usability. Despite the content being clear, I would categorize this as a material defect affecting user interaction. Overall, it seems the core information is intact, but the controls need improvement for better user experience.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B8fTAcKFuxv4mSQzCjYGdQJCYyXzAr0HwxE_yrb1kMCZqXHGgFdwnZ2Y_BG8mBuT51bP-wTO_aEGdFjquy7WmYmw33SuaqzWRKiZHGnaGhS_54TC9PyVgBi24OJcC46EoL8WvjfX8g_g4jd0Ob0WzFwIX3xC-NLImEKJaVLJN0URNCigYmzJHyLfcYf-fuNmxoPt9OYreG35ljPCTrIueKyxMF6A2s9rcwepB64z0K9tdtQo2CvE0VpXL3Gg-AErfmQJTWEZwCfoLXvy-n0QJzRY4B_nr-qZjdvREH47lkgP7WJ2Ytf3rVimtBd28xFMM7y0t4_8Od54XMIXcgl_9Zpsvqb3gh0DKBymg-K3wiomFGl0iOBnBIkp4U-9KFSsuumyQZhh3qHX-h1GVbPH2KZjvMQH09LLKdUzN0vo-rNsJPDI4w4Co6xzG-vzz2YRIk2lc7EN0M6YOiEMMaZfGrbRjFmsk9E25Ob3B2HPL4tO5loB3VQOUDO9JvIlkmO2wQZd_MXKSzY-GBiyoKxy7rAbiJNwCS4Y4H9Na4-tIJYcmgucsGtS2aBg0jZbqXQtV2PlpwBSLz2zd7xQqbAF9hv9IYo2TP5xEDHt_z3k9nLK4NkQSAZd9ZdVkz9fsxGKe-TD_BVAsNJO3zxQzoqvMrYqM4L2CQR3rNTV0fa9kaJKhiQrW0JmWmUyMHc--UtexxbD9mkUbOvg1IQdXUfFHTcUJ8jziD1PgIhY0txgxnzi-wo5EnldOlqd-7PM1Y-i9QFqiYuE_uO-Gg5znSdvUajhBEmg-7GqOAK0aeOhvuEjnWRR0JBuS5EEJvHYjHgR-WMyTmRuWO4u1hwJU_Q7zNtjetju4xLNFZwgV727ogmRkmdQuSc0e5cuzmW9FPIl_-DdfF1u2L_6UeRRUyODSvsMAtVj8D9PBtLPOb0nZrJ7m3FMvPuuWsOryqDt7vGp5OJjik1xvstZ7z_MfduFr7mJvzPFip6lHWwfJm3HlO_3twJgeRFLqXCvtej5xBTmQbMTg5hc7ig8T5PZZsQ16Mj0JH4zFtgy5shjZ_fSQJLePpVlguNwTNBH5uJxpO98NOYsZo375DFYhqQt0hqXNAR8tuHWcxKP2gx77oIYjwVg4Egzd-ml8JIcJdvrYPhkqICTgJwhC2qZDvvhgLrrGZHBBdAtrHmVOXkEue8WWKoyiOtjAfPfCr3TBTx4VrdSxgTF6WSxIt5l9lyC6ncaEzKnUGgFbnHy_tqPYm83TXs27oXJb0CNP8686rOrj46VoPrc19SdDzWI_UVRhDM4HMM9jTVYQIub2XgcUu1GF_0-qz9hQo-_EF6qtwv1_WYPWH8BYvMB1y-oBocoeYm3ltqYPtAq4L1dwQNgeIgCV4kTRiJ45AHreBYLliQj07WmXNjmdlcw4iSLyDD4KDt6wR5o3T6S1DImODnIB2nuW69uVi_dQhR2iDLe7drRQLl1bksbaR_deh617g0jBaTFp36tBDSxIDzEd4OkA819tYcWdMrauxJJo0QMIzMTK09xJbzl2UKkgusRfuu1mC_XBOFGTltFiT63ZN-VYxtUyNRq0HPx5y2P-J6WJsYULjJuAvt-qwIOKpMIBg7ayWgRwRF00Ak-56Aaw6O1zdKpbkdnKPQj7-XmMW4n_3VfmolowwLZD1EIS4DjXu-LzqjTFhcvCN_ELPBn1cGi701NjdOZC5CsBbjs4neCbkfdGZ0ZaJVXzQaX-jfrhRR8h3gjLWXFfii2n-hyF0KvvJQ860SynouF1cvHvVTb1zdwIIVNlYiDWUCI29-e-7MJuvfyjfPucRDQYMg90ogssxfk8iacl-SkxDUcHCdJEDY6bz5etI5wyYCUiuRtvYMe-tAdoq6p48m_psUA8FkOxUL52M5RmP7NFbaR0SLzs-ughegEry-7LaoK6fmSEtyHRzpz0b4dcU14uepWuVR9ddNf_HQHbJsCyvJ1PbfPrzi90LDrGHoeDqEMCVyQi2yMQv1jerYSqAY7cRNTngsPZde1kdthtdo6Y1x2Zh0r2SPRBi9rjH61nizqXg2p0ybNBKxFJSWEJWViTWyk4cFYEoTozmNE3iah6W9CCWrWbzkze7HFeUbu6NT8GcT7bVhps-MMlK997hfRKzqC-uYdjJaqNBhigtUra_gvv3hxFIvIw33oK0NJkn1bd9zc_8hF1DSlz6rVlZItVjexXiUcGtBnjBTHbyc-uYtVi8AE4gdU7lnWGK2ismChipOjkht_9PjU8T3OWHBRvIbtAdBt_FDqMakFADYlrleDiI91-jPSYB-nY-xVMahyiBsd5MeKKf2ZKSTt2mjjaZGGtI93SwlSmfqRMLNyQnB1FdF1kQOeXnE2HQxCsPm48Jc3p3SBx4mVOLDZuHEudn1sWiHfSUI_0sNqvxboa5PVdk3TM85jrCc5AMGdadTEXTdPmtW3ovbHlJjGJkCriL_9wFyUkwrJxndLJ294da74jvaDtbYRAy8CX6gL3r0OF9bXZeYevYZmlhkGrRunmzUDMwXnAv3q-JrXHlbYEn68M-rBGJJQYwaer5KCkmNyuq62uCd_Uw-XoWKLBFsLF5QjSwSRhx7cwHDq52yDnitAqqH_s8OZjAhrOsFiercHbcAoni7y06rM8ZgCM7QnXK2GykA1Aoku7vWautfkJWkxH9EyUb1i0KnXdPd-aeaic0m_k-OK-iJp7Xp7pVJzeCKMHgw-zNOVeMwDVFABeyHu24OZfdTJwquJwBsn7x6sJMGoysZTUDDV7Oq0p2CuiPqTHohKr2t8kDyWBfWg0sdhzvMRYGudYxsQD5CAr-lM6j4jaV6x9gmikAnHwdFgQL2Yh5qtKuuyNTJYyAI-0MF4uQ5cSEljFI0iJTwY8CmsZ0BBK97JxTjwSd3DiHSzisnzEs40Gowk38h2fZ2Azb8emRTdpiB1rJ0SnU6eOeoHukfpB6ddTEQSRhOcecHwsUVE-RXV-oex6anKMj9ffF01T_aeTgaPQcEYXp1wXGHBKcvq3dVpuYcqBkpi1C_7XMVXfEJlhv4kZvfIeRIf2cjh1pc_IRRSiN1gjKwI-dNz251FhGAXO5BEfTSIVVPaiLZxbwy84gBEthGHw_xOPXxBMJqCO4mc2KGdqFmDb9mx1vwKviqmOm0F1SQPbLrUco9gjUxvm6-q_G-k1d_VqLBrTrOzUVjX0GwsaFQbq9IujLa3QE3WJP5ludkp-o02HUl1Mb13eKKDpKsmQOPBfSIbEUEeAVn2DBTkOd_N_CJuMABjlPsVyUPFDVJvA0I5ohjxm5Kvl9d1SLMx4KfEHraJPMwBBd5AW4SgWEUvWEkkPxwdzE4qrXyh3U3tpKm6SoszT9m6WeRtQ7hAuu3r6VZmP7n5oCqCklSlaat1mGOn-AtVF5xn7IJv1g9JnlHwKygm43SbzUyfWxwPhBxljgsZP9mVVSUvUzfRrvE1fwOVN0Zs0ojAd-XDsMyXQ5jCJ7tao_QB98ga5LWbd_qRfIQ5WApuxuCtZvMdySnOX_UtWYoSJN0x5nkIV_9QfA_JkprfHByM9nkOKMtodlCnYZBOOCYAHFCdd6zNH5Z2JgOoc3S5E4-GlwmRdyrE1TYQ6qNpafuUUr5NLfUlxDvs-722AFveig_Jeag-E1DJkaSN4-EJMQHI3Umom3LHq4vOlktv0TLwLO3ohAR43Gfwvqw5h335K-PG-tzrc-vd-iQMJ_h2_xOTaeqNZbxa0lIrieeLudiugL1DmIqMjH7DrJiMv_Yz-hYAYykmpu2PrHsm77RDXCQWdH0_X6ek60NA7KFM7vftQnQs5C_Qt3IwP1ENEGabnIxB5vZnkCc467vLXA4zmZGyBCvi3CvbwL_ddZ8TrdJPZEkmgQN9gm3w2ZUcLP5y9whfdN0BSzXlK69kzm9g_qE_0tSJjhIIsY6kapSTGd6c0hBs5BwgyIf0o2bss_Ze1ybXJnVH_Obya1x6nt32g7qa2U8_bfuL9fkA9F0JfXo8GgpZOCjw2BmUTYZWAmXd9gwlxQ8hUNpoGRsbag5hMggvYwaAbVNLCZnfSUhnPajFM0kNuDYWqtD5S9SrB9oWki7MbfK8b6LzCkDWrxipq5vfej4Qw-KG-Qc7Tl5yquOf0OJrb0H-VkveR4ckI82p5e3hl0dJCvGHWYkCzYQH2t1_vJzeHMw1P7ZjW8dQmFC3R7jHnzQhbJCjzeDJgG4w71wGgR0WRiuvFpL6Et9CEyI6LD5Jrjxm61pyR1St8RQi8NsCMUPrRlMcvXPgWxi_tGA90wR4Eba27yD4Juz1xs7cP2_u4nu3PqhCA-gD0B1jY4Y5u_V3BmLwhSOWHQU0e1H-hRTF0QoZkoPOsG3Wn93te4Y_HILqzDdD9cNTjEUBE5UXTjHR6PxUR8bs8wqdugeoUYn79gtrOohEW3eNj7d6TSDjxm109eDy-Evu6d7HRrTu7FCIBlEyOr5oReyJQMqJy9uhnJbBkA-iAmd7LNT0huSceHIEdCvJP_XU-e19EhNImB5pjwA9SHqdOyuPCvIf9bXiFAXdFoadOfXwL6sPGKq0Sdj0JdV1fFiXETdIqrrznDFN-RbS2816oe__h57IAkVECpopYR8llyL2C5X2gyUdnv86XqV22Aysp9dZYifnYzeKeGIH1a8LDV1Nvpto9rRNEtayxIbsBjvuFgWAGOutpPmrLYCx0FaIJ99BXgefE8LLR2rrB7Pfzl0TFU6FuwE2kyqW1QYt4SkdtHwrH6yPaYZ0bR0PGNo1qs70_NejWLmBKXPNbp7e1yEWfIPaa83_ZK2vPfa-BKI_Il4znCDeaQgu9Pi18L2qzU1XDmR6ipmlmVcF9Yaee-0ZR7qTrOiQ_L2peOi3QTiaChU392u253w8Vho7xMXulROdMQ0zrQW2eGxpAbATx6rBos3YUxP0VtFVIu_ps3KGRYK8-vaiDwsG7M8Ue3vf0PaLT-Vzo68rCvpfyb2d5P9vtJRnMzqyL0u9L4CytQWIJFRNPquYRfY787LNfZFb-d6WbpEwwlPEi5FchrWNm_D-J2LU03T1pLjxUBw88LvWcupEmcZKePDy64yH_W6aPLRJMr5MaabPPhwPAMCTkhCFeQSYTzcHzz2Z3jhezYrmRX00Ljeq6PDbqUbJYR1RmWbHqq2aZAcNXJDn0JKysoLbjkB6XhN0S69CGStSNgYIbTpCXelMGkUOS0IJXKagI89mFsyGRpxMOGAiptP2TcSWabABYTXyYJ_jux3sSV66mWCkfq7zF9aUhOYMYcjSHIWtneQk2Wo1WucCr34eOXjjToyCgdN9WnScrtHo2Jm1PVS2kTlPnwoPYuS8aNgKTfzTaxOO9_1OjyfI2zQmU2gXPrZxhCattdeGIXyQjcWE-ZAv8Vbyt66-oExIlj5j7VNZOl7BI4dsovV7y7cqtKQMuRG4Wx4RJ3XgMkAYGAcbNzJFMXN1pV7QXw5ulTl7-QFyHvS-Vb1ALOAdC6joyNWzWPL5v1U_1VD6dfcjv5Cj-QPunPa3QnKPyr9ZFsH3eEV1_Y1VSX00WQdxuCaRG_2zbLb3HZClCnG7tF9A__RvKNexsd5ppOrHZam_1BhHgy4MRz2SwhBHlduRFi1v6-cwRrRtugdXtsR-EEoxg2wfA5VRUB79zEeyvP8Bq1yPXyEk6vCh9a_tWBkC68EqYASmEamE17zEHr7.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e8f4d0b68803b58016ae81f1b842087d1865e414be016d291",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10584,
+    "completion_tokens": 555,
+    "total_tokens": 11139,
+    "cost": 0.001600425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10581,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001600425,
+      "upstream_inference_prompt_cost": 0.001322925,
+      "upstream_inference_completions_cost": 0.0002775
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 293,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

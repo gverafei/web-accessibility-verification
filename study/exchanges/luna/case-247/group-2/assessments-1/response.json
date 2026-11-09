@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Forbes-style news and editorial content across leadership, innovation, lifestyle, travel, and style. Its content differs from the reference, but the regenerated page serves the same broad news-homepage purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible article images, headings, summaries, and bylines are legible and arranged consistently in a usable grid. The footer is also clearly laid out; no substantial clipping or overlap is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible section links such as \u201cExplore Innovation\u201d and \u201cExplore Lifestyle,\u201d along with footer navigation links, have understandable labels. No essential visible action control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent comparison of a news homepage. Their differing layouts and article selections are permissible for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Section labels, article headlines, imagery, and bylines convey clear editorial meaning consistent with a general-interest news site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating news site coherence**\n\nI'm assessing screenshots of the Forbes news site, and they seem coherent overall. I notice a reference to billionaires from the year 2000 and a list of vetted individuals from the year 3000. The content focuses on leadership, innovation, and lifestyle, with the footer at position 2580. The homepage appears well-structured, having controls to explore links and a footer. Everything looks good, but I need to ensure the JSON is exact.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating news site coherence**\n\nI'm assessing screenshots of the Forbes news site, and they seem coherent overall. I notice a reference to billionaires from the year 2000 and a list of vetted individuals from the year 3000. The content focuses on leadership, innovation, and lifestyle, with the footer at position 2580. The homepage appears well-structured, having controls to explore links and a footer. Everything looks good, but I need to ensure the JSON is exact.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzrvFa3ekbgFdrU8sEKCdT042T2QMa9Hjq9Il5ZLfbOifj9Q7XDEXGygwuXWAPyzMhcC70wyuHNNKOnI0s5HfLxqZuATWzZHcuhuWzLHFyQyz5ijVzHWjRPZ5K5AEPPxwAXdqMkX8x5USKi0VBVbI967bumbmfvSgFb17yJiLCgmfJVT3agT0WxD_I3dagfal3BahwDtg7JUCS-DinobAz188qGb-Ak3JuzMMnySjyandcpYzPGBSeoT3QT8MwnaCjtzW-ARvQoC1HTOCllNpS3EkcKUcy39JZ_5pTXY8ifUOKN4u8qgUqecUatt2PoIEg2WPaDIZ8ri0geK6JUiJWZX-k4w_aaSbWukEiFr4PLuOFghqBk_xVxbfzq4PZR0AD1N1YZ3tpsRAzdSw8ok0VRnN7H2Dgo69wK4g0sB2t9YY0jKBf5hELat7TLVvqm5WPjQe42UkIeQcy2S6yHbTzCYCtzxjcthH0TEoAl8e3ByjOAFkVYSbZPpwfB1WgnDf1y5ERNmGlH_6oebKhP_X2GLYykD_S8R1FXE2T4npfRXZTuuckXP2Md41FFzzCj3YxQBKEl0t3XxH7fA1WORFJmbJ-JL9Rz1KrvWB6yrhB1KjLQlkGdxA125MnFPlgXMKAt4_SWE9EzXcN860qovLxL8tY5bNjdd765bx_QBqUOgNd5HeP1d33aohnMyCclzeU2C-HaCBxoVwv5ZDrS-vQYIHBLS_oZj3JuUQhh8GYmnBLRrT06smYUHOTpsq7-CWbpqP99-_fiyqD3AbDGKztZtpUoBuj3fvySNb5qAuedplbPiVltv0jpQsI7CyPjVzJS4L_iTwv1P44lalTcq11JE2K124Qsi2hkpOpiyT5kohdneHg7HDSeX9mu08QloDqOxnwITrC-Gb8HoOzJ7PT6iNHxago5G-VXi53NE4A3-n-39BpSDPHYivUU5wok4SVkhHiJ6cpKT_PP-5_4KQeWCStYd14vUMY7_Onw9kYP4rM4w_a3PvL08ji3xUnJ8_jloVsp-HHKEAXwswCd1qjSc8gEVu8YD7prdJ0_7-rwkx45BXbySzbLnZK8aqljmQhZycQylwEvc3UdYSYrjTStgoeJSwhsYfvHfjNrFlfeL952B1HRAiBj8xr1qSQ1cXgcbD4JPXSlglcTL5q0w62RPw7m3SXiJvRHMo8STshYafaCNhqGuHQQ7PUDnB0nLsp8WEvPTGZRhD8PMEVZ2mH0GBqVJQgWmqAedfKbPGQ4LNfDM_1rTlxVaFwDfv5_XJRa-wmOp1cYK-T2KyHPopfuu2mJaCoeZeG-eeJLnGovFyt3CkgtyoKUn8X3_4T5yD_7GmF0XagpuQmcWxJ0TuIKl8-X6Oh5o69SHV4GrFoNdCttepbdobB60i8MGmudYVTIot-47wxmcwgBIWNDN1CuLGwed4lg5KfO-LMZ07nsF-5mdH6juJcdFJT8YmVX_p4GIVHKPXPGCbH1mTsCacVzcFAqRAsoDXvDPkqKqUnXAz_LVOMEbYXLvgooNNEADiWzHW2rFLdz5iOe3nWflTg_dLZ-xNRyqJ1Xu1x-GoAaMtVfehrX4Jrk9f4maS1P_cMc93FgpqgLKX82v2VGfeRJL9kH_mca5u6Fg-nZUNQIBIpqGcyGEWWkcVNizXihpX432BGV5HN-OzMW-VsJ5Xt0NW5Ws25jRUoe7I4K6s7r5bBgtz63JyJPm70RRJqAZ4is5K6jv1p8ZnAD6LP08Fd4APu2rbWHcjmjET1ACbfFAPmeD2EYoqxPlf19qknjoctSCnEP-lg5vblsELD3P0clC0FZiTsMaZ3jiPbo0nEpzOhQpssISj0xuAbAAMmvjitCIrZinKJ-i5tYPEmHBAJqb2asRM46e9dmVjSZMA20TWW7MgSW3IFHpAgpm4OgfRdUvxAWaQVdG2hOyDxZvwiO5ZmMHISfTJ0Pfr2diBcx7YgkQ5aHg-ifI0m07XSoN7_pw2z-Esq5kKzQhZsYdDmMxkCIrZax1zaR5BnSvYSHbm8_PXqsxo92YSfJsggyaXhQUdS1VHboqCgG7aFIJo1XfecjPzKa0NbhZFFfZLFlQm7g3eAhGeLEwYAFIKRQhGxnj5ZlR7w7c_HCzItiE54qF75AokyRlQwUiKu99DpnXpYQ6z2T-QcK--1hQk5d5-uktHbU-R_DAa7wo_Pi3HrUCDRbe5UolqVtJhMR38ZFUbeIgmS-o6clRNLuSeYmppYWcVbwxm-oQXbWyQZOpxDs4TBrtC4vgv-6BuxATsvVk7HvcKvjKPuTFMgD7kt8pqK8gQ99yfzx7acpnNo5suEyjraGU_VYIK-ZqV-D9EvQfzz2McNpobp6iWuFq4vQrUAtU0GpfgAVy1nn7Zsc6c4SYMoIx2mr9TD2d96FbWQp4YPuxn1EkF2SBBRI5vi2rCSo9datRHWZ8NalP4JDBeYnIg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_04a1070ee302b198016ae81cea5b9087d1aae9730699fd264a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14233,
+    "completion_tokens": 360,
+    "total_tokens": 14593,
+    "cost": 0.00195905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14230,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00195905,
+      "upstream_inference_prompt_cost": 0.00177905,
+      "upstream_inference_completions_cost": 0.00018
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

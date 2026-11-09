@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target omits the visible iPhone 18 Pro hero information and imagery, leaving a large blank black region. Subsequent product content is pushed far to the right and largely outside the viewport.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target has substantial horizontal overflow: across the lower views, most of the page is blank and product cards appear only as narrow, clipped strips at the right edge. This makes the storefront content difficult to view and use.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"Although the top navigation is readable, product actions are clipped with their cards; only partial controls such as \u201cLearn more\u201d are visible at the far right. Essential product actions are not presented accessibly in the observed layout.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target are coherent, assessable views of the same general Apple storefront purpose. The target\u2019s layout differences are defects in the target, not evidence mismatch.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The blank hero removes the prominent product\u2019s visible meaning, and the severe clipping makes much of the remaining product information difficult to access or interpret.\"}}",
+        "refusal": null,
+        "reasoning": "**Identifying layout issues**\n\nI've noticed a major layout defect. The navigation controls at the top might be somewhat legible, but the action controls for the product cards are clipped on the right side due to horizontal overflow. This means essential controls are not visible in the viewport. The central visible content controls are only partially readable starting at x1158, especially the \"Learn more\" button. This seems to indicate a material defect with the clipped buttons and controls, highlighting a semantic issue as well.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Identifying layout issues**\n\nI've noticed a major layout defect. The navigation controls at the top might be somewhat legible, but the action controls for the product cards are clipped on the right side due to horizontal overflow. This means essential controls are not visible in the viewport. The central visible content controls are only partially readable starting at x1158, especially the \"Learn more\" button. This seems to indicate a material defect with the clipped buttons and controls, highlighting a semantic issue as well.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Aq8yUC4MY8Kcp4Ds1mvK7E-dkQ4dyf361dZFUJ4kKc1GkrDKSw1up56fp2yTi_fH2Z35_dVqZ8147gPxYiDSUfFKGJ8-aFfuSqJHqZdtiHdbpPH3DyJ8ubM9XPwpE-ghUSM3I-x2l-IO0GKlbwT-vCzWLgjiWj3TphyDTV02FBChjsLVnBPj9bTQoEiwEVpaoB1xi5-7p7ue2qGXPEOloCEZMeEruKXaZ_cr9drdv8QYS3MEjDS0AnZt_U_8J_c9TUJgp0fRZDj35QWZeT8T3WU8CJjKcCvO52HsTEW4WDWI8cqkrARVF53F6BMSG33patuMO_JfDCoW4otChqAE2F7kMAs13_82v1n2u9Vravqnz7TWb4pJ2l0rpmBiUUSogy_3VPnNCKcW9uXZGpQxw0KAcTAbKAN969IyQLIxzllP-3xo8eVK-65ka8hTYrHeiERofgrSf9DWyX3sxXAQA2s2DgWSODRumi2XYLDdTaE5NJIj1nemtebfZCZlKaw23dZXvGA3Tjjtruzg-cjNSXNB9QHE7WRONk9MMRb25Yqu4-ci1XsqfPxtgIaSdwcLbHJphNupNC9lgXMiIkMBVvq_wxRzv9T6cOcWlYqORj6iKuJh3yVdZmeCN6UYmagSE5qYerbycpV2dtYe-JwlS6Y451lvvv-AYdIib-11SrcF0vSdGxnjFndiUy6mHNgV3pX_a0-5JR0k1vfZkHyT_rswm2j7kgALsHaiSwOjpOLeq__KP8f79cQPvEkcGo-l4YuLOTODuWTQpdR_cPKCqH-_UdmoOp4t1odkcGDrwB3pGIBD3oHy8IddP2oG6Q42w-yD7RsQlWQ_nig-eZjL6tkApxK9hTs0_giruje_lEg1liEZqISnAGF5sDzaqjhdOvBGfR5oc6k6Z782HqcSC6jVEDkw0nQvN_Uh9uKExdoPAl7lCH8p_DBc4WQPeDdVuVN2Z3QwV-FYQl5WvjX6WBxRGe931B9Forh6SG5xz7RF1wTgjZf5EUr3tk_czX1Zk-IYN94JYT9m4AGnP11lCbAn8B6vBRTDgMnfyn9uZXVUj6TNm48B0K0dVudtnrIBS_XkqjOY2olCwv0cuxnaxwleOVLiPggBlcz9P-MwpHoxXxNqbqZi2nZOtM5WvTJZqW4LoNMvz_563p1VG_33e2wCoJkeDeMQ9yFUhRiaKtSqObLvvjpvNqkW6vzT9SbJxVkSCKV_l6a3MBptjFyBMfdXcpSF9yw6NDhW4kM7745Kj8egiWhRY2D1XmhcnXa80x66Z-QS9_ABZ_0NLcFOJCnk-6g4u5CD4p5bp601gAkYUpN_mqFlowKaTvMunnrTwjPHTbFYfwMdJk6OePiAyAxo1r7kUAPgbJCMPLaEjF7VYbLJ8OkDk-F2mW48jeCTxIC3wvutFGupf1lUUD3GQkms5eu7zPqT8SjJuT6mFmXg0V110TgY6orVbJrOILv8F6ewynD_QIGg7lmEG5Ce4bAr1xmhtnPWhzLKF9t6uEDs5nJrwc61kOY2Ocjsj9pNkgNTvgUVZgSHHuTX44buEH7OFaA-CtFWfu6pfYQJoR04lOR80irwbnXdanYE27Sc6OOTyxlvAEWYjBPXrRQ2Gh-gMRS1_q1xUgWltq03eT86oS0G7hHRQ3Qg4wU9OAphGCGDTDG2jm7tajbZRNmUQI2ECap8kw4smw7F8HxPC5tV7uC7AfIb5UeuJ5jtj_pfoXnxr9y-2F68soYAjnDAjMGEyU3wsJ0R2zwprwwDJmn1Ij1Xq594P4DRXXbodfXLhtzLSJZbGhIOuSNXoMjcM6DIzRumGUdPJsex5pmrp9EEDJG8ZsLm7djRWoBwSMEYUdEILFNgzypIjUrJy49SLYC97qMgJRTIvWWc4kkifq7EDGmtJ2tZH7ngDpvrXytx9FD1SykZgWRg1i3U0QACLJLdMD6ZGhqgeOW48I9BrM5Zjnxn9tpk_USet0OFves7KM_KLvPo6vcsL8zyOI_MsHmlma5TZv81u9Tc_m9B0NaY0eH_Rm8RpjzgwQn_nxIXuHoReLXGkSe2MokDyXt_4btKJ_dyEOXZOibDIZfSty00SFUConqou-vmm6xZW5Ks4gR2C9p5D0RRuXHeNGdOEns5yE1xd4DNTMehM15gr2m_ksSLBm8MOEl91KW4-b7dWmbwM0JjRKL2AmG2dDKSnDGda6c-q1J2mq8lHDZzY0hprlenefjiBuZZJU2ypX1mYeK2DTJXrOzdF3YV9HA3I_1nIy8lS-srKAs7sRXBQaCJiEiKlgacrNoZspFMsI9cwU2-04wqZ3GnryXb8cytdvVPOOVSU77MVFmaHWTo8yDLfhfVq_ff8nRF7Ibt0EiKNa1rsudMOSCZpDYkcchUvBNArNTsMhqNEkb5oUiUt9q0TGs2ic02fMm7-3E0b4O3SJUDrX1FJzARkbUTBOwKcfDMu0wCBkrS3zKCq-s9DipDKXQSUmq2I8C1-LUZI0ooJJ-ZmZr--ez82f0c8iHw6C_C-berl2xNlR-ysG32-vQetri7ohVXM8bgGDc7wVBvGo5GCzAqAYpZqv6ROcWnJJOi7PWT-WcKRP1g1simE42FfxHa2XPNc-fkTTWzNOPmxABaWsxqjxGLYhYo8i0qFy_VquExQwEUsHuphH2iLbWwAJjUPMiVXthLk-r7PZaQiMhAw6jGpHXNNTliRVo6ZSHbTtLO_hd-7WSD4Wr2Ku9ZmpGAZGHK2qJhoRYCMrub4foEervwLg9gQEzGFylSZzjzDCI_j9391e5FSIj8dsGZPnP1kHZL-v2FXwBBVaM7XKgo8SYhCTdGrfS894xzLXyfbvEfLW8GHG9999a5pJclI_Cb87GAMgW4ThYsx3Yc8xmgaVvmS-Evj8sJ7ysaaL42pOr2kgNbffBZVUHbwvV8le6ujEWqkB439FBzz3oStV5f3ejzCx-h-okGGcDMBwP_g6vMm6VI4KrRcV6oUZtyOgDvrSUrGsu67B2CT5W_MDVB6ZiiQz0TA2zJhfUQ_jrC7EPqXoUvjHGzavdug8j2sh-4GRBYnEwXYbf0dKscx6eKAASrgQnhuKjhDeRv1pxZJPxHFveVQOHv2l7KJ0p9ax3VEHWyy1FWep_U8bCd1uvurQR6BeQ8qmyLmDBZuhx0uA2RxI6TSDy7f5RjZ_e0jYn0OWcr_BOUYAlCqqOgeu57Xj4vF08kA8R2cQpTNKsTI4ahd0qGWHOzdMpXZDJt4UTd5HAdp9yczdcVMSx4TdpLVGaZu4PjbYfZ4K9Zg-FyJ8khsrHjrtXiej_vSgJs6ruxvY_iTHckcLE9YQQyNvcbZIghdQQo13Efwsk8g7szJaCiMSD4F5t2dZeKG3DkwX7u2D4qqDP8dK0LajeVBqDrLXeMQj5x_47aU0HIGI3sli1WKO-OVxdfo1LbR6LMqJNziYyUjCqDyIO6ThICA9sPxH5xIp--cYQX7bH8m6MxRaClcc340jEDpqnjrSxqpnKtWHcyp0pP9U-hsWCL7hmk0zbyC2onPdW4SxVMJKzYMCu81BZSKkt90fLGDfR8-dzADuzq6AMaEPeqZiaBXW0qEy9EHnN63u-2g4tFvVqLifLXEmFHVJuwyeih1N2fMFTo48Qta2zCPcYcCaOG4wE089V3AveTYlR_DlPy_7CBHrlmI7FqGL-YveFwBDFLHd_IKWsq32jvWMRinyvGjwtGKDhGKqu1WhTCqN4nWSVPuUodODPLvkBYJfa7iVgNio9g3cfib_WnH8c5L0ng9gTNK3OiTKoZ0sBEVaeAPGIh7v_ZhobPfmsqqjX13zzg1s3FImkqdfDYYg2b2GI3YL10zJSjSI1OXmKQNrOtnOqG1VKc_hfvradPVw-MJJUAeveh6pBnVH2pQRAl20KzDAtxxi678CiX4_ijCTYGuDd_WMi3Dg9EdcNC1SWW0DC-I4h_UzBQmNFwfOcabyKlpmF2LTQ6L3satX5fKcP7LIHhkh572_Hhai49naw82LQ3tpvz9zFslgl_P7xY5EtvUoqJuGpeqtDboxOHCM0AZXW1LlIzNqm5Sxy27arYgSRf8UpJW-eO77-mUSQvUgbyqKQyMSGV6MNqNkCmsmnqtaaCicvTZqKRRUux21y6Kv45YmiA6BjLhZTNTRbz_-O8NQat0gibLmLLggJClvETo3k8TFaa89l29fFPPA_k5P_i3EcZzhG3A3wCO6ND-3GFvjUKzovOMRG0yq5Wbs0BJkrDnin8hIYtSGw-Bbic1TZS9BnirRWgFt9avJpzzBrHe62hPBrEim7g-1h0oETKHL-dNxg7Mu-ndyzpMpli8sZYljrB0gicB4DBTFPe0SeSZyK2QUHTQ-5_vrPN_zUPYfdFK_zx_CJyhZ09Pl_Oyl9K6-d4MTu8YFv1iNF-4nbQLUkha__hrOoDAfL8_xNGfN-9gZ0oWDQyoFtF5eJHnbt5o1PTyqJKpB02lrImotY76umtRA7-1EkJ642DSyBj3FNm-KVORPz5Rmdmv6wCf942FLI-lzgOOFf8puc5Hk3RUwAUvxJeAqMSyzccn84YY8ENNXaRQn0XXD4DmgcZz7_mshlRDYH4PqZVhiEzA-rM0JUIONxGT5CeJG3ycAp4qz1pcWCRqUbBhusnbfxny3kAVktMsdeT4LwzrFxEa03RhThr6eDXt27tDnOzpc_OIdqCiMvpqH9GV1DjWgG8UX5YRc_5UtAJWbT5MnAiUn_3Ifdx9WgYKiXqj-WRctbDTdXu_tfPrJSdiiakIYd8kO5eDjjXOo_kRluVfsJL3ZN6_rmRiIMujUNQfq4LW5tVEjOijrMmYUTyYn9OZAkpAb_8D8O6tGPOHe88udMuvvvfYSs36GeBTjyD_8S70-a235LXl4SazaXvb8Z0VdOA2p_zdIsTn4w9gmBa02uJzZTIjoh.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0dcd75d86487f07a016ae80ab91cd087d1b25ca4c5f54a8b20",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 15754,
+    "completion_tokens": 503,
+    "total_tokens": 16257,
+    "cost": 0.002220675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 15751,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002220675,
+      "upstream_inference_prompt_cost": 0.001969175,
+      "upstream_inference_completions_cost": 0.0002515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 235,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

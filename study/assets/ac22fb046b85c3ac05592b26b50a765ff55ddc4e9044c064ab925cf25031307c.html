@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>TIME | Current &amp; Breaking News | National &amp; World Updates</title>
+<meta content="Breaking news and analysis from time.com. Politics, world news, photos, video, tech reviews, health, science, and entertainment news." name="description"/>
+<style>
+  :root {
+    --ink: #111;
+    --muted: #4a4a4a;
+    --paper: #ffffff;
+    --tint: #f5f5f3;
+    --rule: #d9d9d4;
+    --red: #b3001b;
+    --focus: #0b57d0;
+    --max: 1200px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--red); }
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+  .skip-link {
+    position: absolute; left: -9999px; top: 8px; z-index: 100;
+    background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 4px;
+  }
+  .skip-link:focus { left: 8px; }
+
+  /* Header */
+  .site-header { border-bottom: 1px solid var(--rule); }
+  .top-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 16px 0;
+  }
+  .brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 700; color: var(--red); text-decoration: none; letter-spacing: 0.02em;
+  }
+  .brand:hover { color: var(--red); }
+  .header-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 8px 14px; border: 1px solid var(--ink);
+    border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+    background: var(--paper);
+  }
+  .btn:hover { background: var(--ink); color: #fff; }
+  .primary-nav ul {
+    list-style: none; margin: 0; padding: 12px 0 14px;
+    display: flex; flex-wrap: wrap; gap: 6px 22px; justify-content: center;
+    border-top: 1px solid var(--rule);
+  }
+  .primary-nav a {
+    text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.06em;
+    text-decoration: none; font-weight: 600; padding: 4px 0;
+  }
+
+  /* Headings & sections */
+  h1, h2, h3 { line-height: 1.2; }
+  .section { padding: 36px 0; border-bottom: 1px solid var(--rule); }
+  .section-title {
+    font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em;
+    margin: 0 0 20px; display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; border-top: 3px solid var(--ink); padding-top: 10px;
+  }
+  .section-title a { font-size: 0.85rem; font-weight: 600; }
+
+  /* Lead */
+  .lead {
+    display: grid; grid-template-columns: 1fr; gap: 24px; padding: 32px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 860px) {
+    .lead { grid-template-columns: 1.6fr 1fr; align-items: start; }
+  }
+  .lead figure { margin: 0; }
+  .lead figcaption, figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 6px; }
+  .lead h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin: 0 0 12px; font-family: Georgia, "Times New Roman", serif; }
+  .lead h1 a { text-decoration: none; }
+  .lead p { font-size: 1.1rem; color: var(--muted); margin: 0 0 14px; }
+  .byline { font-size: 0.9rem; color: var(--muted); }
+
+  /* Card grid */
+  .cards { display: grid; gap: 28px; grid-template-columns: 1fr; list-style: none; padding: 0; margin: 0; }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; background: var(--tint); }
+  .card h3 { font-size: 1.2rem; margin: 10px 0 6px; font-family: Georgia, "Times New Roman", serif; }
+  .card h3 a { text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+  .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: var(--red); text-decoration: none; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+  /* Headline list */
+  .headline-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  @media (min-width: 760px) { .headline-list { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+  .headline-list li { border-bottom: 1px solid var(--rule); padding-bottom: 12px; }
+  .headline-list a { font-weight: 600; font-size: 1.05rem; text-decoration: none; }
+  .headline-list a:hover { text-decoration: underline; }
+
+  /* Two column feature */
+  .split { display: grid; gap: 32px; }
+  @media (min-width: 860px) { .split { grid-template-columns: 1fr 1fr; } }
+  .feature img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: var(--tint); }
+  .feature h3 { font-size: 1.5rem; font-family: Georgia, "Times New Roman", serif; margin: 12px 0 8px; }
+  .feature h3 a { text-decoration: none; }
+
+  /* Newsletter */
+  .newsletter {
+    background: var(--tint); padding: 28px; border-radius: 8px;
+  }
+  .newsletter h2 { margin: 0 0 8px; font-size: 1.6rem; font-family: Georgia, "Times New Roman", serif; }
+  .newsletter ul { padding-left: 18px; margin: 0 0 16px; }
+  .form-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+  .form-row label { display: block; font-weight: 600; margin-bottom: 4px; }
+  .form-row input[type="email"] {
+    font: inherit; padding: 10px 12px; min-width: 240px; flex: 1 1 260px;
+    border: 2px solid #6b6b6b; border-radius: 4px; background: #fff; color: var(--ink);
+  }
+  .form-row button {
+    font: inherit; font-weight: 700; padding: 10px 18px; border: 2px solid var(--ink);
+    background: var(--ink); color: #fff; border-radius: 4px; cursor: pointer;
+  }
+  .form-row button:hover { background: var(--red); border-color: var(--red); }
+  .legal { font-size: 0.85rem; color: var(--muted); margin-top: 12px; }
+
+  /* Lists of links */
+  .link-grid { display: grid; gap: 10px 28px; grid-template-columns: repeat(2, 1fr); list-style: none; padding: 0; margin: 0; }
+  @media (min-width: 760px) { .link-grid { grid-template-columns: repeat(4, 1fr); } }
+  .link-grid a { text-decoration: none; font-weight: 600; }
+  .link-grid a:hover { text-decoration: underline; }
+
+  /* Disclosure */
+  details { border: 1px solid var(--rule); border-radius: 6px; padding: 12px 16px; margin-top: 16px; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p { color: var(--muted); }
+
+  /* Footer */
+  .site-footer { background: #111; color: #f2f2f2; padding: 40px 0 28px; margin-top: 16px; }
+  .site-footer a { color: #fff; }
+  .site-footer a:hover { color: #ffd6d6; }
+  .footer-grid { display: grid; gap: 28px; grid-template-columns: 1fr; }
+  @media (min-width: 760px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
+  .footer-grid h2 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 10px; color: #fff; }
+  .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-size: 0.95rem; }
+  .copyright { border-top: 1px solid #444; margin-top: 28px; padding-top: 18px; font-size: 0.85rem; color: #d6d6d6; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#maincontent">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<div class="top-bar">
+<a class="brand" href="https://time.com/">TIME</a>
+<div class="header-actions">
+<a class="btn" href="https://time.com/subscribe-header-time/">Subscribe</a>
+</div>
+</div>
+<nav aria-label="Main sections" class="primary-nav">
+<ul>
+<li><a href="https://time.com/section/politics/">Politics</a></li>
+<li><a href="https://time.com/section/world/">World</a></li>
+<li><a href="https://time.com/section/us/">U.S.</a></li>
+<li><a href="https://time.com/section/health/">Health</a></li>
+<li><a href="https://time.com/tag/ai/">AI</a></li>
+<li><a href="https://time.com/section/climate/">Climate</a></li>
+<li><a href="https://time.com/section/ideas/">Ideas</a></li>
+<li><a href="https://time.com/section/entertainment/">Entertainment</a></li>
+<li><a href="https://time.com/section/sports/">Sports</a></li>
+<li><a href="https://time.com/games/">Games</a></li>
+<li><a href="https://time.com/vault/">The Vault</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="maincontent" tabindex="-1">
+<div class="wrap">
+<section aria-labelledby="lead-heading" class="lead">
+<figure>
+<a href="https://time.com/article/2026/10/13/lawmakers-argue-trump-russia-diesel-deal-violates-law-legal-experts/">
+<img alt="Donald Trump and Vladimir Putin shake hands outdoors at a formal event" height="800" src="https://static.time.com/v3/assets/bltea6093859af6183b/blt3da31d3c412cf957/6ace1f57f400d9ce7965124c/Trump_Putin.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp&amp;crop=3:2" width="1200"/>
+</a>
+<figcaption>Andrew Harnik—Getty Images</figcaption>
+</figure>
+<div>
+<p class="tag">Top story</p>
+<h1 id="lead-heading"><a href="https://time.com/article/2026/10/13/lawmakers-argue-trump-russia-diesel-deal-violates-law-legal-experts/">Lawmakers Argue Trump's Russia Diesel Deal 'Violates' the Law</a></h1>
+<p>Some Republican and Democratic lawmakers insist that the controversial deal runs directly counter to an existing law. Here’s what legal experts say.</p>
+<p class="byline">by Tiago Ventura</p>
+</div>
+</section>
+<section aria-labelledby="latest-heading" class="section">
+<h2 class="section-title" id="latest-heading">Latest stories</h2>
+<ul class="cards">
+<li class="card">
+<img alt="Illustration of green virus particles on a dark background" loading="lazy" src="https://static.time.com/v3/assets/bltea6093859af6183b/blt71114314fbf38327/6ace7326c26d3ac02eccb50d/GettyImages-713781681.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp&amp;crop=1:1"/>
+<a class="tag" href="https://time.com/tag/cancer/">Cancer</a>
+<h3><a href="https://time.com/article/2026/10/13/infections-linked-to-new-cancer-cases/">These Infections Are Linked to 12% of New Cancer Cases</a></h3>
+<p>by Veronique Greenwood</p>
+</li>
+<li class="card">
+<img alt="Students gather in front of a campus building" loading="lazy" src="https://static.time.com/v3/assets/bltea6093859af6183b/blt53ee3258c7db4fdc/6acfd4360d238eea223053ef/GettyImages-2300067578.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp&amp;crop=1:1"/>
+<a class="tag" href="https://time.com/section/us/">U.S.</a>
+<h3><a href="https://time.com/article/2026/10/14/cornell-community-reacts-to-fraternity-party-pause/">Cornell Community Reacts to Fraternity Party Pause</a></h3>
+<p>by Rebecca Schneid and Connor Greene</p>
+</li>
+<li class="card">
+<img alt="Portrait of Shai Gilgeous-Alexander" loading="lazy" src="https://static.time.com/v3/assets/bltea6093859af6183b/blt34a17a3a40a4d4da/6ac530e99e7344945707b929/time-sga-005.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp&amp;crop=3:2%2Coffset-x100.00%2Coffset-y0.00"/>
+<a class="tag" href="https://time.com/section/sports/">Sports</a>
+<h3><a href="https://time.com/article/2026/10/08/shai-gilgeous-alexander-sga-interview/">The Excellence of Shai Gilgeous-Alexander</a></h3>
+<p>The OKC Thunder superstar believes he's the best player in the NBA. By Sean Gregory.</p>
+</li>
+</ul>
+</section>
+<section aria-labelledby="headlines-heading" class="section">
+<h2 class="section-title" id="headlines-heading">More headlines</h2>
+<ul class="headline-list">
+<li><a href="https://time.com/section/world/">World:</a> <a href="https://time.com/article/2026/10/14/philippines-social-media-ban-school-violence/">How School Violence Catalyzed Philippine Lawmakers to Crack Down on Kids’ Social Media Use</a></li>
+<li><a href="https://time.com/section/us/">U.S.:</a> <a href="https://time.com/article/2026/10/13/most-americans-think-trump-is-profiting-from-the-presidency-illegally-or-unethically-poll-finds/">Most Americans Think Trump Is Profiting Illegally or Unethically</a></li>
+<li><a href="https://time.com/section/politics/">Politics:</a> <a href="https://time.com/article/2026/10/13/trump-has-asked-guilfoyle-to-resign-says-new-white-house-press-secretary/">Guilfoyle Resigns at Trump's Request Following Credit Card Scandal</a></li>
+<li><a href="https://time.com/section/ideas/">Ideas:</a> <a href="https://time.com/article/2026/10/13/india-modi-protests-voter-removal-election-commission/">In India, a Dark Shadow Falls on Its Vaunted Elections</a></li>
+</ul>
+</section>
+<section aria-labelledby="newsletter-heading" class="section">
+<div class="newsletter">
+<h2 id="newsletter-heading">Newsletters</h2>
+<ul>
+<li><strong>Future Proof</strong></li>
+<li><strong>In the Loop</strong></li>
+<li><strong>The Brief</strong></li>
+</ul>
+<form action="https://time.com/" method="get">
+<div class="form-row">
+<div>
+<label for="email">Your email</label>
+<input aria-describedby="email-note" autocomplete="email" id="email" name="email" required="" type="email"/>
+</div>
+<button type="submit">Sign up</button>
+</div>
+</form>
+<p class="legal" id="email-note">By signing up you are agreeing to our <a href="https://legal.time.com/terms-of-service/">Terms of Service</a> and <a href="https://legal.time.com/us-privacy-policy/">Privacy Policy</a>.</p>
+</div>
+</section>
+<section aria-labelledby="feature-heading" class="section">
+<h2 class="section-title" id="feature-heading">Covers and features</h2>
+<div class="split">
+<article class="feature">
+<img alt="TIME100 Next 2026 cover featuring Ashley Padilla" loading="lazy" src="https://static.time.com/v3/assets/bltea6093859af6183b/bltca36d6122d165a6e/6ab5427ba244418d9382257f/TIM261012-T100NextCover-Ashley.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp"/>
+<h3><a href="https://time.com/collection/time100-next/2026/">TIME100 Next 2026: The World's Most Influential Rising Stars</a></h3>
+<p>Introducing the 2026 TIME100 Next: people from around the world who are shaping the future and defining the next generation of leadership.</p>
+<p><a href="https://time.com/collection/time100-next/2026/">Read more about TIME100 Next 2026</a></p>
+</article>
+<article class="feature">
+<img alt="TIME magazine cover featuring Paparo" loading="lazy" src="https://static.time.com/v3/assets/bltea6093859af6183b/blt0a6fba6a18c1bfae/6ab438f7a727e97e59ba7d36/TIM261012-Paparo-Cover-FINAL.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp"/>
+<h3><a href="https://time.com/">The Latest Covers</a></h3>
+<p>Browse recent covers and explore the full archive of TIME's journalism.</p>
+<p>
+<a href="https://timecoverstore.com/">Get the issue</a> ·
+            <a href="https://time.com/vault/">Access The Vault</a>
+</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="ideas-heading" class="section">
+<h2 class="section-title" id="ideas-heading">Ideas <a href="https://time.com/section/ideas">Read more</a></h2>
+<ul class="headline-list">
+<li><a href="https://time.com/article/2026/10/13/normalcy-bias-prevented-me-from-recognizing-my-daughter-s-heart-failure/">Normalcy Bias Prevented Me from Recognizing My Daughter’s Heart Failure</a><br/><span class="byline">By Raj Panjabi</span></li>
+<li><a href="https://time.com/article/2026/10/14/in-defense-of-the-disney-adult/">In Defense of the Disney Adult</a><br/><span class="byline">By Jada Gomez</span></li>
+<li><a href="https://time.com/article/2026/10/10/understanding-america-defense-spending-paradox/">Under the Gun: Understanding America’s Defense Spending Paradox</a><br/><span class="byline">By Joshua Keating</span></li>
+<li><a href="https://time.com/article/2026/10/12/we-need-to-bring-back-matchmaking-our-friends/">We Need to Bring Back Matchmaking Our Friends</a><br/><span class="byline">By Meehika Barua</span></li>
+</ul>
+</section>
+<section aria-labelledby="games-heading" class="section">
+<h2 class="section-title" id="games-heading">Games <a href="https://time.com/games/">Access all games</a></h2>
+<ul class="cards">
+<li class="card">
+<img alt="Market Movers cover art" loading="lazy" src="https://time.com/images/games/market-movers.svg"/>
+<a class="tag" href="https://time.com/games/market-movers/">Fantasy prediction markets</a>
+<h3><a href="https://time.com/games/market-movers/">Market Movers</a></h3>
+<p>Think you know the wisdom of the crowd? Choose the outcome the market thinks is more likely and climb the leaderboard.</p>
+</li>
+<li class="card">
+<img alt="Linked cover art" loading="lazy" src="https://time.com/images/games/linked.svg"/>
+<a class="tag" href="https://time.com/games/linked/">Play on words</a>
+<h3><a href="https://time.com/games/linked/">Linked</a></h3>
+<p>Find the steps that unite two seemingly unrelated words in just four moves.</p>
+</li>
+<li class="card">
+<img alt="What Year Was It? cover art" loading="lazy" src="https://time.com/images/games/what-year-was-it-card-tight.svg"/>
+<a class="tag" href="https://time.com/games/cover-game/">Time for games</a>
+<h3><a href="https://time.com/games/cover-game/">What Year Was It?</a></h3>
+<p>Five real TIME covers from our century-spanning archive. Read the clues and guess the years.</p>
+</li>
+</ul>
+</section>
+<section aria-labelledby="topics-heading" class="section">
+<h2 class="section-title" id="topics-heading">Browse by topic</h2>
+<ul class="link-grid">
+<li><a href="https://time.com/tag/longevity/">Longevity</a></li>
+<li><a href="https://time.com/tag/public-health/">Public Health</a></li>
+<li><a href="https://time.com/tag/exercisefitness/">Exercise &amp; Fitness</a></li>
+<li><a href="https://time.com/tag/cancer/">Cancer</a></li>
+<li><a href="https://time.com/tag/movies/">Movies</a></li>
+<li><a href="https://time.com/tag/television/">Television</a></li>
+<li><a href="https://time.com/tag/music/">Music</a></li>
+<li><a href="https://time.com/tag/technology/">Technology</a></li>
+<li><a href="https://time.com/tag/ai/">AI</a></li>
+<li><a href="https://time.com/tag/extreme-weather/">Extreme weather</a></li>
+<li><a href="https://time.com/tag/energy/">Energy</a></li>
+<li><a href="https://time.com/tag/hurricanes/">Hurricanes</a></li>
+</ul>
+<details>
+<summary>About following topics</summary>
+<p>Follow a tag or section from its page to personalize your feed and get alerts. Manage preferences in <a href="https://time.com/account/preferences/">Account Settings</a>, or go to <a href="https://time.com/account/my-feed/">your personalized feed</a>.</p>
+</details>
+</section>
+<section aria-labelledby="climate-heading" class="section">
+<h2 class="section-title" id="climate-heading">Climate <a href="https://time.com/section/climate/">More climate stories</a></h2>
+<div class="split">
+<article class="feature">
+<img alt="A landscape scene used to illustrate climate coverage" loading="lazy" src="https://static.time.com/v3/assets/bltea6093859af6183b/blt58f2e3bd7240951f/6acf8800c336f2d68fa27cde/state-climate.jpg?branch=production&amp;width=3840&amp;quality=75&amp;auto=webp&amp;crop=3:2"/>
+<h3><a href="https://time.com/article/2026/10/14/climate-change-accelerating-study/">Climate Change Is Accelerating Faster Than We Can Respond</a></h3>
+<p class="byline">by Simmone Shah</p>
+</article>
+<ul class="headline-list" style="align-content:start">
+<li><a href="https://time.com/article/2026/10/09/carbon-accounting-greenhouse-gas-protocol/">The Most Important Climate Fight You've Never Heard About</a><br/><span class="byline">by Justin Worland</span></li>
+<li><a href="https://time.com/article/2026/10/09/china-xinjiang-fish-farming/">China Wants to Sell The World on Xinjiang-Farmed Fish</a><br/><span class="byline">by Ian Urbina</span></li>
+<li><a href="https://time.com/article/2026/10/08/hurricane-isaias-what-to-know/">What to Know About Hurricane Isaias</a><br/><span class="byline">by Simmone Shah</span></li>
+<li><a href="https://time.com/article/2026/10/07/kelvin-waves-california-el-nino/">What Are Kelvin Waves?</a><br/><span class="byline">by Simmone Shah</span></li>
+</ul>
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<nav aria-labelledby="f-sections">
+<h2 id="f-sections">Sections</h2>
+<ul>
+<li><a href="https://time.com/">Home</a></li>
+<li><a href="https://time.com/section/politics/">Politics</a></li>
+<li><a href="https://time.com/section/health/">Health</a></li>
+<li><a href="https://time.com/tag/ai/">AI</a></li>
+<li><a href="https://time.com/section/world/">World</a></li>
+<li><a href="https://time.com/section/business/">Business</a></li>
+<li><a href="https://time.com/section/science/">Science</a></li>
+<li><a href="https://time.com/section/climate/">Climate</a></li>
+<li><a href="https://time.com/section/ideas/">Ideas</a></li>
+<li><a href="https://time.com/section/entertainment/">Entertainment</a></li>
+<li><a href="https://time.com/section/sports/">Sports</a></li>
+<li><a href="https://time.com/newsletters/">Newsletters</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-more">
+<h2 id="f-more">More</h2>
+<ul>
+<li><a href="https://time.com/vault/">The TIME Vault</a></li>
+<li><a href="https://africa.time.com/">TIME Africa</a></li>
+<li><a href="https://www.timefrance.fr/">TIME France</a></li>
+<li><a href="https://www.timeforkids.com">TIME For Kids</a></li>
+<li><a href="https://time.com/collections/time-co2-futures/">TIME Futures</a></li>
+<li><a href="https://studios.time.com/">TIME Studios</a></li>
+<li><a href="https://time.com/video/">Video</a></li>
+<li><a href="https://redborder.time.com/">Red Border</a></li>
+<li><a href="https://partnercontent.time.com/">Supplied Partner Content</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-about">
+<h2 id="f-about">About us</h2>
+<ul>
+<li><a href="https://time.com/about-time/">Our Mission</a></li>
+<li><a href="mailto:feedback@time.com">Contact the Editors</a></li>
+<li><a href="https://time.com/section/press-room/">Press Room</a></li>
+<li><a href="https://time.com/mediakit/">Media Kit</a></li>
+<li><a href="https://www.parsintl.com/publication/time">Reprints &amp; Permissions</a></li>
+<li><a href="https://time.com/time-masthead/">Masthead</a></li>
+<li><a href="https://time.com/join-time/">Careers</a></li>
+<li><a href="https://time.com/sitemap.xml">Site Map</a></li>
+<li><a href="https://time.com/modern-slavery-statement/">Modern Slavery Statement</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-subs">
+<h2 id="f-subs">Your subscriptions</h2>
+<ul>
+<li><a href="https://time.com/subscribe-footer-time/">Subscribe</a></li>
+<li><a href="https://geo.ema.gs/time_digital">Access My Digital Magazine</a></li>
+<li><a href="https://support.time.com">Manage My Subscription</a></li>
+<li><a href="https://support.time.com">Global Help Center</a></li>
+<li><a href="https://magazineshop.us/collections/time-magazine/">Buy an Issue</a></li>
+<li><a href="https://timecoverstore.com">Shop the Cover Store</a></li>
+<li><a href="https://time.com/giveagift/">Give a Gift</a></li>
+</ul>
+<ul aria-label="Social media" style="grid-auto-flow:column;justify-content:start;gap:16px;margin-top:12px">
+<li><a href="https://www.facebook.com/time">Facebook</a></li>
+<li><a href="https://www.instagram.com/time/?hl=en">Instagram</a></li>
+<li><a href="https://twitter.com/time">X (Twitter)</a></li>
+<li><a href="https://www.pinterest.com/timemagazine">Pinterest</a></li>
+</ul>
+</nav>
+</div>
+<div class="copyright">
+<p>© 2026 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our <a href="https://legal.time.com/terms-of-service">Terms of Service</a>, <a href="https://legal.time.com/us-privacy-policy">Privacy Policy</a> and Do Not Sell or Share My Personal Information.</p>
+<p>TIME may receive compensation for some links to products and services on this website. Offers may be subject to change without notice.</p>
+<p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

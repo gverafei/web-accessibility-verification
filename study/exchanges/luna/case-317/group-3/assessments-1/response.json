@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows are visually identical. The app feature descriptions and Corporate services section shown here are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and coherently arranged; the repeated Corporate services banner appears in both states.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation and language control are preserved with understandable labels and icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target windows match and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, descriptions, and imagery communicate the messaging-app features and corporate-services section clearly.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating identical references**\n\nI\u2019m considering how to judge if two items are exactly identical. I need to check if the reference and target have the same hashes. The presentation might look strange because of a repeated corporate services banner, but that shouldn\u2019t indicate a defect. I\u2019ll need to ensure the JSON meets all criteria, including rationale for matches and any visible information. I should also look at controls like headers and navigation for semantic consistency.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating identical references**\n\nI\u2019m considering how to judge if two items are exactly identical. I need to check if the reference and target have the same hashes. The presentation might look strange because of a repeated corporate services banner, but that shouldn\u2019t indicate a defect. I\u2019ll need to ensure the JSON meets all criteria, including rationale for matches and any visible information. I should also look at controls like headers and navigation for semantic consistency.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B7JDCEKxwpHEuNnAPEiD0W6cN0t5DGP-zMhgwd43XLueeRdKOcUTaKO6gckEesWlrLf3vRITy1z27NfSzLlp7nxvkGIHobIx1Al8rNgd0kVUA4NFvTSfx6xJn0u5IMsqj_gT5px5PSLw4ncBVuZFMvRkqpvhqCbDU4RfuXnez6q99s4odxfv8w6dsVAkOS-iNGNBAR0sG1P3pmUHBj3dlNg31XajoOaHMw8lHVKRlx3symz0ch1hRq-7z6DYBVemQlhRJINgogYSvycPC7jJuOAMpvYmuYT4creMMfuNPv6M1g6ELg_jdZLs0AqN47kvs3OuD9UyzNye78UvWl150hCZ-ip_BR6SRvvJkv-3WbbhrKQfaizQKG-638Hktncd631m1nJ6Yg6DxoN-X6lFoVB2bX9-9EuEj9KBH7uDLvH7g_nwLAujFlLD7PRwi9RoaZovAwMQMIrqh3gY6O52VcbYctW5cJsvqnJtgzeooQAxhuHsp-An9BT1oWuDNzJLpkCWJf_3VelgyqYBc6bxoL-XPNoCKorBrCdNCBk9e51ibRhvYcLGcbTa5wYI-_Vn_L57KAeuWpszeG-Tf7gxsrT1NcrMJwVIELYnLaeG7uoCjOeguqhMKEPjshGjoJ60umpqPRw4whqn0SbxcW9n6wQJhxnpTW2cukgnSdHtypnh5adGgMDZQhd41P6j_tpVXs3LPu60jf7X64qPrMt4EHXCGrup3VIgggyNAcEm_6aulemIKQHLG1Miei1MB4kkYn_it0zrpDN4fnS6p07WDoXffFySKFvTDF21_BSAJ2rQFMs7LtC2E493vixH-R_JCnIn5sY1eYbLuZ15xiiUzloX5Grtmk37xz-TvuRR7R6OlnVg_4Mo-IPjX5Yjwwu8hJYmegUF8bLiEBLr_2MJ6KEgycY8wajGitc3kUjF7ARA68jbAX1kscSQQcw3RXyH5gWZyR9rzHNzCujbbM3YjA0FzR1J8z7ekKMEa6Kx7aCefLPIcjOF_z_FfjbrOw3wLjZD3AgetnmUN6tAPeMHWlzDQpKIrQP9sJDnhRcvREsab72KgEs8b0l97f6UIPsKA1wueZTl2beEbmOFWOKkjs1aNCOJkazppUynuWGt4ztRpV8eIpPwLwMt8EJtaC6JbmwE7J30Casj5k4CM7OeplAzJkFJ0uT6wICrtquRQYyEET-p6U4Nbvpb2dBOXcp2bGR7FrIYSuxlAR7aA-2jmOE1Ks60iUXNUrX0dobB9Dy_IgTA0zJZDvDaMNwOzCGVOnybuKII3s_zEm1crBgU2QFzFBCzcvEidnQ3sdk71CyFSWkNxWBR4jq6heR8nBBenz8JONyxk4qxyByL42z1tLzORrC2b7PvkSwKZTyY9GOA9PivMnI-l5jaB3NQxvLc1nEhmVkdiWfIQKbJwAq0NnRN9jCK0tA0Tkq6SU-LSxZdcI6k055JgSOenz71juABCu3N6UaG1NDjSv7SR3hMAn9ASSb9OXGFfvzOhnSbMMOhpWZMkGEK40-o2m5BJfSTwh6lw8hsyEnTErORqxsqUdPTW4L15y8ZzdwBlFicfgbBWka9287kuVgNpBa_SjCS4UxuAZmadJybe1Nn051N_GXRYEGeP82XbXw-vYEU8b8Lrc4TQZ1M2ZgAOpFWtgDmCfU1TNY9-j-JmudlIXQgzIcrYRwJWjvHgSY4-WoxI426-ThZxKZtZ6Iy6L_MUwNl20NCbrUBl4ZORyh69HRdJ5UlxYJqQdG1_p6gNvOPud5hsDEe4B4KbPimJp2kezv_eXX8C43Cleybl6CkVi2F2XAHksMhUP5A2yWbMikX1OehPKEUY3AGIaO6pkJRV-Gk_fuEtWyVVwbBrIKwodio8i_wLxkIvSS9l41PWwVlNkWeD-Z0OEu08x6vC1xMnVjEwOKEAQI2WpVo6GWFJdD_F70k0eyeGGEbe3ZbIlsU0zDiKzt7dJO8sTP3eCIXTVVXvbmNtvr-zsh_R5j3-zxeZAGFyL9Sh4bowjhMM4d4HKlgreS_OupF_kIZBgNVj8k3UpWNdiRJituqEbF-QlJwp8K8oDslnfvTZBMeY5fmzeIoG85s-Lz1p1EmOKuK4-38lF5RDKTvrKZ9801r0CwFmYV_-yhLxkfRstpCHj_4NieKSigao7T9GSENRjuwxCGN6eePR8GeoA7-ru3Mk6TiM8Mjp-xE8bqMCOjCwGnSw5FBB_YKzJV-71q66i9yfFwoLMa6BoQujQjeMA1bTePWBNrQ3JghnL52xw2zhoxdI3Yk-s=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06d477b3c93e6198016ae81ec76a3087d19748c99bf82cc974",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9857,
+    "completion_tokens": 267,
+    "total_tokens": 10124,
+    "cost": 0.00136555,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9854,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00136555,
+      "upstream_inference_prompt_cost": 0.00123205,
+      "upstream_inference_completions_cost": 0.0001335
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

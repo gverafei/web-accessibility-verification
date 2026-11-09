@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible editorial headlines, health/business/travel sections, market information, and sports scores are retained. The missing AOL app banner is advertising and excluded from preservation assessment.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core content is legible and coherently arranged in both corresponding views. The banner's absence leaves whitespace but does not impair the surrounding interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including search, section links, market tabs and lookup, and the \u201cSee all\u201d buttons, remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent, corresponding states of the same AOL page; the only notable difference in this window is an excluded promotional banner.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, editorial imagery, market data, and section labels convey coherent news and portal content. The absent banner does not undermine the page's meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating ad window content**\n\nI'm focusing on assessing just the window. The difference is that the ad banner is absent for the target, which is excluded. The content remains the same, and I'm noticing that other windows, like image3 and image4, are identical. The controls are also unchanged. All the evidence I\u2019ve gathered seems coherent, so I need to ensure the output JSON is exactly as required. Let\u2019s keep everything aligned!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating ad window content**\n\nI'm focusing on assessing just the window. The difference is that the ad banner is absent for the target, which is excluded. The content remains the same, and I'm noticing that other windows, like image3 and image4, are identical. The controls are also unchanged. All the evidence I\u2019ve gathered seems coherent, so I need to ensure the output JSON is exactly as required. Let\u2019s keep everything aligned!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgGS5wTF7PlmKW8L5zes9UCcHvBdNkv2s_EwMZorVlSoJoq3TMDWRyfKuCsF_rW8M2VJGKVlJ6h1HLJ6PcISVNCvXXestuCrGLs-rTQnWarQOXQo3tSuVxfF_jrGO1_OCtd1uq-CNG3Nvj-nU-7J7jxYqZcH9ARabXYWFfk4nSnLgMGBpBNkGBchqWwqsEnDcso1ZqnKmweKOe_cS_PlHzxckC8VcDms1V44H5Qk4ENcMeMCR_YKCAhJqQ8AxyM-C8AvNRzxjkMFantifkVNNtDixW21hYtAKcIXZFlFLwZoWpTv2nwUsa1n1xQq7463HJ_tfVqOWUhb5TUP0P7ugn11YbgKhxcyMmZeAzxN0tkMJO9sssNCUn85--IMU8cwqoMNN9R7CsL9y1rEdM1rZIERTGUsDmZsf7sixId02wXpc1UwJ3snYFMzZyfqAMKfWnvksk3EYbzI_hGd1CtyOa5thKS49ab2rnkrv0qOqFVuBCxp5YXlOhWdhzhc_phDlUMH7nqs0DS5IF2Hh_7PS1m272KQJkkVAcQgLVJmW4gfLGhSi611C8WBs2vj5YjqKgGnd2hMXkuIeDMf-x-PCUSxDg70ZZq0ytFzg22ozRoffrcqO-N6wsKj3uiMzW4d5CdRFSrjdbcgZg52qUoOH6Q1AsCnkwH3NVL15vqS-1QolDnaMfnAu-hjxpps4hYvLZCIRO8t_bbMyr7PA1xsPDLkOSRTHhb4K17ZAsFPTOwUwnVj4HPjb76ML9feZUSmYLICGDupIhqDeoqSRCooTIriqNK59IL6RBtlv0vgQLaYdcysL3rLI8hti7g6e_IiRCojVs0AntsOKit6HWDO37nCwxyntR3pIbgMW0ArujY0RRbaQaxnP2z_uwM5bNxCx01J4kQ6Jz0Cl9PldIsRbnwKpXyS8TEOevFHcePDPanAUqhhG-RUx397jGIhKeLdkqLJsHbF7yW02g51gFqGnkTgPWBX0YUBTgzHtcDXhUiYX1-OLok6xq802rQnOqjomscBBNDtn9IpU5CXIfKqxdAHlhvs0SAfbWtI3A62bfxG-klRx6OX9PaFPp_G2WdQ6OuaRkISFqQj27G4xfxghWfRxWUCR92FC6ZMX__teKmd0MpRZ0T60OpZ-alqC6wPrrnsoDm6j7xL3RPs85_rXU61QGr4F9a7GYyNsO3t0uE91mOw1rqTMNbHSh-S7HhCihJa5OC-RoUotoPq85yuc7b4YjiV61ldssx5C-8xGS7LqNM6YJzu9yGVrzfL4c8c4pN1WWYBbTBoTCvaCqIwUblxj2gEgC2y2iCm7dttcb1R6hWlTKdxLZVTMFJnw3NapxePwkBwsOLxRXCcI7SYzfqosPjScfOfoSJPgV5uNWiQOM0ejXkyATaBWw0DIp_sYqHwVhKMZKjsNbMcdhY8AcCPgTVErYbVC3JJH75i6peY7tZPRJl7s-du4l0e1XSAy9ee2rSN_1JdcjGGc__N2eHLylmVrpOi41jl4EQAmxe8rQ_FAryBDZXDqdOYfV4YeHsZc9Wa87UVBeGGv_NmxzVp6WKKlXN12hC1TXXuF48bftpWlg_7mDlKA02SPkX4VXFiNUyT90ShnwWVyZeKeY0wJA7se8RDQAHG9kgAAnv_Dtm_GUn4GAad7i1ZMhJvnQpM_g7--oJ99NheQ-zZqqBfaKCAnW8Ca1c1DT3Joo8B9dGPwkMILs7JsNyWCvnXZqNVOV-51HwismjpHUHrt9mpG5f2NGFUGNtoSgVjq8Y8VCL-ZFmBfKd0Q5en5lqa8WfF9BcOwwd7TSlNZD6-VgHbtCXrQBVnoRtjDEx3kp685HpPFLPMZkeCDLQo1cq1MBUsW6ZSWv-OZLT29iG2KM9sXhByF8bWpHtUP_gHKXkM4EfAyGjyefP2EOtUVzpnD3MKXmpbhPw_I0f56Fwm5JKCJ-VKPncj0fGxoQlLidG9c1_e3e7Mdo6FRZpiiVaq7KtIIocpMaxQQWSUB0tXcM4r5z0o9_s-Qg0-PHYElF483RAR0yZ0WZsff0fqQ2Be0n71LyO6ViT9k3G0v3opC19ecH77UX6BJlmHuOL5ExZ_dg=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_09da609a31e3a9c3016ae81805253c87d1903cf99e21d794ab",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18823,
+    "completion_tokens": 313,
+    "total_tokens": 19136,
+    "cost": 0.0025093,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18820,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0025093,
+      "upstream_inference_prompt_cost": 0.0023528,
+      "upstream_inference_completions_cost": 0.0001565
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

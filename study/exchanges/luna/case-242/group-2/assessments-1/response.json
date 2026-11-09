@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show the same Forbes sections, headlines, imagery, article summaries, bylines, and market/sidebar content. No material core-content loss is visible.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and arranged coherently in both target views; the header overlap at the scroll boundary is consistent with the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, subscription, and newsletter controls retain understandable labels and presentation. No essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both reference-target pairs are visually identical and form a coherent comparison of corresponding page regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, article text, imagery, and labels convey coherent editorial and news-page meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Clarifying JSON requirements**\n\nI need to focus on ensuring that our JSON structure is solid. It looks like I'm checking for identical checksum pairs for images. It's important to make a note of the preservation of articles and controls, confirming that they are the same in both 2000 and 3000. Yes, the evidence should reflect coherence. I'll have to think about whether a presentation header is distracting, but consistency in the output schema is vital.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Clarifying JSON requirements**\n\nI need to focus on ensuring that our JSON structure is solid. It looks like I'm checking for identical checksum pairs for images. It's important to make a note of the preservation of articles and controls, confirming that they are the same in both 2000 and 3000. Yes, the evidence should reflect coherence. I'll have to think about whether a presentation header is distracting, but consistency in the output schema is vital.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6By9Zzgd7KC5kD2IslDFmzvqamSOUIGj3Sb16AGZcrijT-piHPyss4W6_u-bbMhvTGluKxsx4LaUxUBXCM2NLZQaZHELLNp30jDxw5MtivmxBQQd-q3qS_h2fsDdapVw2uyPLhWMy_hUcR0UUtvf3nG61Cc7seqdQmBpbzyns0_AvaWJHKL_SE7hxEkw2pGQSUBpGVJSyoupZi0WA0BM7fEGu3wNa55t8RX2vXTx25J-wyzLJ_4a_o1OS5DQJKpT9cwmlA0QU_jTwVdYz0ZSkpXc9EHMOltVliioaONuIXu6_2drnQqHNheHhzn3gzlKbgnaKVsdARyWG6VzkVxNf3rA0I2yPOeer41jT1GC0c9mgo3kVptbfhEm-I4Ys5gpdmn3R8QEtwTm0vn9ERD5HuxCf20X8bNveSeiY2TvGO-4o1qiYOh_6g-N2Dp09jJRsv93iheRt2BU0fEUjTI6hRbTQcc0DjNLf2QHWcUQ_G6B89mTb8Yhsyu5kDE6lhxhUJ5S4_KGUhLcX2kbf88z1Epr093bIBXzJubw6DnHjs2pFhXKSuNFd5-0bw_Lr3JeOtE8HLb9hMCBWMoGO7wNaXG6m01ASTRWWfj3QloUa2JbsJj0Rakmtx8-cXjN7L6AxqiaRD1JuK5z5fASrDu2B3fChTN6QZXFghICjvq53tao39DSTKyzNZJ9ldNyORVN4dIuEsroEivuYxTToqThGHxFGP2W3kaKfLrpoQ273_YU9lg0yFFPbxV9lyXJaWb9tadltgYaS-PYCRUrKgaU7vQ6a4oPOIrKFTMqtZycfjk5Qs0OhmUh69SzG3Oj-uZTcsCq_7CBG5HI-4gqAt9CZ4jRIQzNfVqCPj3daMDYVei5f6fMGmd4g7EfdPZbJY6SxIjkoNQXyP3qSSBZjrUq5qCBkVN4olJh2gkjxasUDMrQsUJePa2CDqWEtv_UUaUsC8iJn4cioOf-it6dddeba5vFFvV3dnpFJUy8U4OXlRMmYHnR8k9KGT_kym4K3TNic_ULcrmK_jjyMMkz15OhqrxWMUVRQ53ybEIglNSB6AgZ74iQpKM0IxHaLiJ1Uxyx4Pq3PFAKAicTQAOI6VquA9mw94hIOjAY9qdJHDYnE9-yif4HfYxSSEO7tdmhlZ4OFPwVUmApKJZIEoYPjN1uW_qzsPP4m4wsbQoC1kaaSKUf3uftG6HmOK7EfQHYa4wB7UlYXd6gtTVRF6f9aqJc2NAAimIT-ggWnPim8h63hBB0oj2MNGRrdUUm_BiRgjjebuznjXHmCVuuuom97DysksHG4IfemWos_T9nPwo8LUFRkuos2bphd-ho14liSX0r-tgRelrP9ZbLWlvAOhJBYt5i_rKGxre8jpJWe1nEJVONzkaHAqJA8Ovqu_mUigubZIWslyj1dzIzSCq4cYDkU60juQVJLALBrsAKo65fgebB2nV4V0dwi5xAeKlU6em8PE2R8l4xlga5UgZt7Rnb3hkr_TbYMkSK3Ev72-MI_9bO0VfX2E34tduL1JP3_nBUAmAEKa8qSH8FBpsWh2fpsAFOPFEdculu_qm3GtB-5vRSWZ6HcHSfv1nLRBV9VBzJWAG5LtiK0lEpp7xfF6D6fx3G939FnGdK_SrFZCgVsGiVetwIj9JYbJEpo02jyLKBFSajhITtq24l6Te_vP7h7GUeJ25DABpoVt5FCTx_mYYJ3Gz3Ir8CsYcqcVLxFfjXZFuomjHDwqMXe29zgnD-WLiAPM8DI1806svP9RPHPgxrU2oipJo83a2g9wPcmZW-7vmy3hSt4IzTxJX8hAeZec5VhuIKt4VE70SMv3qSt2gUcuUwL7hnrbcaa3wbS3PFx1cB9jYStLzvJu3hld64GZuIhoSGPdJfEBby1JfC3j4kXB1_U6xKz9rmc1KRc5bAJBmZIHxWmjWVDRS_w8JggJommLaeaSgMfqL77_Z6uqAdFHAZV91I_kCyhYY-dBsTaZSBn1JpOwHAxDHLFFpa2_QFuadmq0K-PyxxLvHyv2HskRClnxRQ9Krtw23WTJ-u4Lf3OlE8h9467Uyn2Nzz8eb-0yFxRVlzsMDjXN7veGsZ6eU2jKSngDWsAmPLm-J2UxlIgG7HgyPOtqOBpC5DZL1HDbnwVL9dn-x-VpcA1P9rWPjm6kGPa_JEID303S2cjUb3vc6SoBbDXcnVKAi5mor4nZDLRG0PQwB9st3dTCYCzjg3sS3G3xDPquBZO7kvFjPGxXJun0W-zZZEWN522bldZQvz0Hzacj8HiQoEUsbPWiXT21cXnl2FDpE5QaeG4cyA21jUpRW_95e4oxG6y5-v3A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b76e07e10a2edb2016ae81cbbcab487d1ab6fff5e9835a163",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18321,
+    "completion_tokens": 299,
+    "total_tokens": 18620,
+    "cost": 0.00243955,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18318,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00243955,
+      "upstream_inference_prompt_cost": 0.00229005,
+      "upstream_inference_completions_cost": 0.0001495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

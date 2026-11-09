@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The News Break, games, and Politics content shown is retained, including the quote, billionaire updates, poll, article headlines, images, and summaries. Minor vertical shifts do not indicate lost content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core text and editorial imagery are legible and arranged coherently. The slight differences in section position and spacing are harmless local layout changes; the sticky header\u2019s viewport overlap is consistent with a scroll boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible poll options and submit control, sharing icons, and game Play Now buttons remain identifiable. No essential control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding portions of the same Forbes page and its sections. Their states are coherent and assessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headlines, article imagery, summaries, poll question and answers, and game descriptions communicate coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing layout differences**\n\nI need to evaluate the local layout. There are differences that could be caused by the layout being a few pixels off, and a sticky header might cover things differently. The content should be equivalent, and I want to ensure the JSON reflects that accurately. Content fidelity is vital, making sure the presentation aligns properly. I need to confirm that the game controls are visible, like play and poll buttons, ensuring coherence and maintaining semantic integrity.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout differences**\n\nI need to evaluate the local layout. There are differences that could be caused by the layout being a few pixels off, and a sticky header might cover things differently. The content should be equivalent, and I want to ensure the JSON reflects that accurately. Content fidelity is vital, making sure the presentation aligns properly. I need to confirm that the game controls are visible, like play and poll buttons, ensuring coherence and maintaining semantic integrity.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CAlg8doYFrshYmoi6u2_qLajATnWOlI9xkIs1DwMazlLd3CukE5Khfkd1TFt0mRvAr1m_r3Ut7-5nEHk_ZWPw2EBZ5vM1XxFCZlY-NS-ANg1K-5l_OhyY6Hjqifi8oYDcq09rFzCu_RwIJryJIPsAeKRPtL7gTq6gfyb--V73_-x8RxSRiqoC86eACPvbqvRpwJCxUab6mL8LH_x8Z1twnBDi4A0ncsx2YuX3N1Zx0kFLGfyCqxjoXyMEPXj0fDVqC8q6AcXA26qoXVEIssCm1azcu8J9725bKlJ0Q6eeWrlqz9mKjwH1wD3aZpNTO-M_EIAWEBV7bradutNt2cAcFHFU0OwJb_7b7X7-nPONCwyAqW6XHOqXBJyHqQZ8YtgIa-rDJSpnRm5TZdlfKuOSskQ_7Ua2i5NjlTxMYbjnBPEYg4F-0DUm8fyRlg0JjN2ncnB3MHgq1biEUsNTQkInK7cMnboO881yZATxRYzdPXPR3G6FeZssWpa0tFDJuuy8Ff17AY9788Pp-AR9lPVRF056ruo_KacDx5Xidr2VDqqqqF-ooxK5KPqmtVy73JuVKkpOc80XcoAxYRExvRYIsYL1ymlfpohxBOfPl9bz11yGUNS8w9qPWiFih-sLTAIxYZpk2qaHzbFnIP8tnR1zNsNREu4Dr24a2MOSNfHeM1Wd2V84ekw755Lajir8f9537-YFAOvvVurVxVNriabhCFnAF1JpdpOnOE0FGXoz5JIdlwFCOS2quKgsJzZ-dbZbsSjLIHg6vFSoWY1FRWexs6AS3Al3h6oJGw7beaQbHN99UACX0pxqyk8AN0qKETJFR--kWmP3a2YOkXCqt7HEFCzjq1D4_tBtHe8UTXAZlJJu8Vdy8WXpOWDnrmNyjNg9XH7xzScR98N3wE-RJL7RnSSQDUiWrWuOqo7inACKgcq1NTqpxZgTZSsTeGvmy8u-RxE8nYBVuT5YASUDv9Z80VQFqGcDY1xW-vb6Ue0XU8RZm5Rn7ctzBZIQqDJq7PRb0msbe8ncgcUFAL0oj-MdWI106nTjTmFVvl3Pw3q4R0_teqzrc4Qx93NlRXSB6AzstS8dkUMdajK25TyNWF9OhS4FBdxeveJZhpWbF20wKFTF-uXMoosW1-_UFcE_pAHJytgTsOH2FnyguEqKgpYt6ztqhJaHXg0shFk5jT20UvAcBCT3jug9XDcXCsf6NI3mArSV9eZjXyB8nLddCzmJxjCNxGUO0JabO6rBkEmmBPJDoE1qMoYGwRoPGwgyed5V2eQsUZyNjOYq1dWQB3ylufJDsBF4jIF86pLpe9oSwv22tGTrNycvZFwuBemGAzXOz6v288pIYUu0wUSgkme2zOvugu70uSZ0VhpLNXeEM1IJSelf_Yiu-jcw5CyyC9kSnwjqdIWlF6OvhyuMllemuv8Q-lij-05W39MDGSkYfzy_wIy-bR3k-_3OiaAb0VnP_PfVbKeffcmw5jEd-VCK9-OpboLlcmOmYeqykyfOKhVK8PdV_u_yJd2hXruakXfrDEl-txtEcw7zP6ysHUxvi1V7LiDzxjT-ToVOHdsBUNndF6IpRg2WW3A5uJIhRTw-aImwiuPK-EhdopUa_u_CLpXbYZNZ7tS5k3FJd2HpQBSK9abZW4W3rW_R5gjg5_wVGjdYdINzKDqTJovIrv4OomAzlW_eqkXJ-ZOhc3o8cYUrwceo4zdqQtmxWoKoMvv8KuxHX6nKryb9qj4nLs3ESBb7vzHSYAnsUXH2F0KMqhhPaANY4sLPZtE-XDPR0hMWf4zRVFTededVIdyyyXwii2LGp_KBrPBgV6wUv4_Id9xCLFxewNv1OCZRV6uVptLGX0TfnTyNl2altDqBArhzIzW4gak0GFt8H-5PBH86chcusM_HOoiOgl0tY3Gct1OeaPN_N13iyJW63Q3f9FXyaGrurUJukvGNllPvClp2p6pnEJDyQJTuKoiVdIvdzkzVxumC-U7LWYGWioSBRJlsqeSDwDaLLG_evoK3UWqu4O3ye8oYFlZqCRYABKqxniPTd456ZvqAdgLxCKjRd_zrFEhvnZNY_nFb0vREE8Pc4NldiN8I8UIGy9A6EgADx7iQ2OcCINDreDQAVvCZawZD9Da_0hpBihEuhYTRTwkQZVQ7OtFwYK5mzCpuj8SIc22GxzFoFN-erbhSVLVZlpWR480wykqADYdbHq1baqj-46n_Co-0BQ08cdGAthnH5XzGNWiD-2FO6f_3j0EkrALUStVevfdU2yFIM9GE3xao5BDZa4CzqWumgUU48sv3gf6XSS1ysmyicN085twSsYgWRZy7taye3T1Ybk-COoENEc7wW27F1Lcay2-QQDixRrcly2wyySdLiwjE_9hJ5VvSo-BZkvGPGUvEoXad53MuiVjcq0ix9tLppErgn8KjYipliq8BJlpDv7EPub2ROtrGMwaqe8NL6zLm-NxHwFzdnMH-Q=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ef56281f30d0a08016ae82023703887d18ae5b2cacfea8f93",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18323,
+    "completion_tokens": 345,
+    "total_tokens": 18668,
+    "cost": 0.0024628,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18320,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024628,
+      "upstream_inference_prompt_cost": 0.0022903,
+      "upstream_inference_completions_cost": 0.0001725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows are visually identical, retaining the visible article listings, newsletter and subscriber sections, and footer content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and arranged coherently in both windows; no material clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and the subscription call-to-action retain readable labels; no essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target windows align and show the same page regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The article, newsletter, subscription, and footer labels convey coherent meaning and match the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Analyzing identical images**\n\nI'm thinking we need to note the exact hashes for the identical images. I should check that all dimensions match as well. If the content shows a footer that's the same, it indicates they are identical, right? There might be a huge blank in the Partner Center for both images, and that could be key evidence. I want to ensure that all this coherence is documented well in a concise JSON rationale.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing identical images**\n\nI'm thinking we need to note the exact hashes for the identical images. I should check that all dimensions match as well. If the content shows a footer that's the same, it indicates they are identical, right? There might be a huge blank in the Partner Center for both images, and that could be key evidence. I want to ensure that all this coherence is documented well in a concise JSON rationale.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BwLwRliwWo_32K_awFPgNcpSrz0GwR9gYg1CC0FzWQ7ZD0fX6p9Vm8BxIny6vjuk6DdYbszKzHKAzkj7FWdpWYoyLR0rOFhiDjVIDp0RP-auwceSOj9cXIH-LqRyzABjgK5_hdauYsbnFfEmMmwD6Xw4zlYkOxECTSB4rm3vD6zjpkIuzMErlOQy4V-MVZbQU_2fUvw0-cLI1uxVU7Mu3s4CwVm79XVoBrIhqql2YrwkuylMijbE7PBCh3DMZdYdEl6uObZ8xGtAnArShnWKdAZ9Ut5menbQg-qNXhBvfRrG9Q8Ri8Tfu_H0Uhk93qQYW9hXOBlxUj85PRATDU-_rOWZBLPDjWIuQHCo9BzZa4-rpJXCZLbLaGwjoGdUTRkloSca_qEz6Pd9pRJnvAej34HrVbW3BB4MqIBklW7aSD9HbMqrQiy8-VCxwx_iECPRpdDzQtfw56vjWfnT62GE6uv8GHm1KTE867g3CxRVhJsjrZDoqU97Ypr3xE6dQIaaZWbFmGrJYD-EYcjTB2NT7lptwZf3OZaM2kqBf6CWEdfv9ratD9ks_Uk0MqCBcdMBPSZSSUwHDJImfyX-67nkluL5wOmWZsSAu4DJ_GG2IDasriD1dOTVfTj4tC-OB1aSNtYcZVS2eXjrMGN76lc2dDNGlp0Vjd5Uj6fWahS233FPU-BtbEYOGIIBI_Oqp0vMjlAJJV50Tl1OqpecJIuxtyjaSrj1AYQ9xlKWODERDN6QP1asO33qojK7isDNrzzo_ndNYv0xMK1FA4jVV3lWPBArC6NLlEZPgxROVo_0Wck7V4_aRDYxK7-YjB3qWjjdZVMfnYiz-gUKlNvMcnBFCczi9S0YEJ2-6oWz0T9zKQqZRzvEd2R2BJNpMrDsYdf-UwG74k5WPlgw166tCwt9E1SjbMp1okSNDtY-37wLthAs3GVezUEyeaXVMi2XFMYdqHPuqnBAxVdycPkrq0HFyRZQC0GcvmMciOck80_9PHEc9PLWE0peyeDnZebV42yKTCfW_Bd4Nz7UlVhdjniAVFoFi92SOzK8mKMuFDUPZfnpJ9qNJOgkZrgeTn_53fzaxuvNraIpegEJHkSmAYjWPGSr8sOLt76T7P-gn27FwAsw6lnOWbXcgz0n5YcgN-Q9x70d2HZt83-nA7Wqr9s8dYLIaP2wQkMl_w90mDH4Krj1KMAXwKFNGQA9Lp2JjCGnx3rgoOx8ZB7O9NfkDEhBpTAA6j8l7wWdtyoXY7p6ncEoL4zXZUVSLpe7LZwr9pYSTIdrSvg0P6BOJbUMSedLzQWBkwjsYf3BKXGE9FIFOCaEFRsUOsT1_Y0s5IZGt5KX4g5hWENKUwulDO--h_d1He_HoMxTM92ZcHC9Yk8bwp5WKuM0LwCS4RLd-PKsZDzOKnXrqTqNA6h3yD2b_PCJ2Qr32arVJU9TylnPQab3ST0JDtF7aOdpDk20-lu0JUU8UAMFDWpwHOqPoDsUdv-Yvv5b6hOfGoOyOXv65kqLdWqInYJKZSTnYzr24N0V6_dgdjJMKwfETjNoxkp5LkLsKIdlDXmTgwZ_0PyyvDdrcB-idDLOpedvstFbpEqDAPnQ8JbVlkQWRkphLeqW1V3d11GYQID3MOav7bJkuKlc97xmMq0awWbrYP0YYF7O9Xh4bDApgCpJ8iGN3LMy33uXjTyqM9fcyzDPXcTClD4e4kPnibHaKNTJyXsYNEJR3MbFT3ROdhrlCmqpv6wYwr81DVMEw36kHqwkRQYi1GOduPPMgWh6R7pvu2R-Ae3E3DSYemmWkLODa8sAhdxa7gSo4vt50HW2C-OYWTPi2LdW56aGJU4dSx6ov1OoxYxdnXnfvQUZjkUIMZvgSViaK_ImMeUtuIcJ5EUNcr-p8HNZQt5Nq-tEpqnDYDnOS6qF3CBLOg2ymR7-3IqAcPva4NivrXY6-GgmS0F_jUPhA59ijtIUSDyfnzlPv6Txbe_M3QM0y50fOaBaovUTHRQAAirQ55ZCKadZuI82Njpw6C1C0RMerVl5X7fz40Uqkn8p8ZZrUiiFWUMU1-E9VmXTPkEbu629V1pa8Gdaw0EeiylqDts-iZsKyE6iHSgV63PHbkHt46C.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06fc712c22d5f26c016ae81c0a7f5c87d1831ab5f786e5255b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12646,
+    "completion_tokens": 262,
+    "total_tokens": 12908,
+    "cost": 0.001711675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12643,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001711675,
+      "upstream_inference_prompt_cost": 0.001580675,
+      "upstream_inference_completions_cost": 0.000131
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

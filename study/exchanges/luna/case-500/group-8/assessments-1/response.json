@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent TIME topic sections and linked article headlines, followed by a recognizable site footer. The regenerated page need not reproduce the reference footer\u2019s exact contents or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, article links, and footer columns are legible and arranged coherently. No substantial clipping or overlap is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Article and footer links have readable labels and are visually identifiable as links. No essential visible control is unclear.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent comparison of the TIME page\u2019s lower-page content and footer; the regenerated layout differs but remains assessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The topic headings, article titles with bylines, and footer navigation convey a clear news-publication purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer and news list**\n\nI need to assess the target end footer and the news list. I should reference the footer only and regenerate it for the TIME news purpose. I want to ensure the lists on AI and climate are coherent, with links that are legible. I\u2019ll compare the evidence for coherence and check if the semantics are adequate. The presentation should be readable, with a compact footer, ensuring content fidelity is preserved. I'll consider a footer link list with text headlines in a straightforward JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer and news list**\n\nI need to assess the target end footer and the news list. I should reference the footer only and regenerate it for the TIME news purpose. I want to ensure the lists on AI and climate are coherent, with links that are legible. I\u2019ll compare the evidence for coherence and check if the semantics are adequate. The presentation should be readable, with a compact footer, ensuring content fidelity is preserved. I'll consider a footer link list with text headlines in a straightforward JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B5jP2r2R_V5jT_HskLZCOCXYegjkAxxYW5Wj_sr73GXGJ2wuupH1CWq-TTJzREGcUOialB4cOYMFfqfERms4PmnEKrgLlRMjkvH0WnTyGcvK0pACjnDnoVVgF_AkBekQN2FlcwoNCx-P36UJbVYa6cu2NvVWEVdP4USAZYIU_Eo465KR3UYmwMS554pwxtnpEhF9yDo6AxVw6Z68WPHtu1QaKFRDx3Xgs8PNYBD4cUrxnybhs7p1MbEHRyoOFTPedwRcDxMMd1KdbVyYJ2q0aHYdEN6wlF59TWOqjDBoU0Ll3UWtNpl5pTcMk7cq7bPhFLbpzKondZTHTQ3TWcEPhOUIrP6Y36fmAWrvtiFO0H_DSfzwtu2wdU2JPKj5pioExvmYGOujmvHovrhM8Yla65GXZe_ZZg3S3X_z_2zLJtaBGJxfO-iCWXi8NggNMsJiWPcI8g4nQmOdI4GublRuYUJZMSqnxwDIKrZ7S47mAxi1T1pyqrI4hJlINRW7tjGALu4tKTFlT7TIU7tjo5eaYQeSbDPpWI665oYHLNZZl1GKB1fRuAVX7t3DH7rlAkiry73DHg52rNIHXAYFLS9TyA6Gbeq_eU11xptfysCPwwUOwaiLOlRxFGDPC8gmCSflzIWQ9P4S86GAXb7bsZwDLP_3bJSyvwJ4-Tfp0FZYB9iwy34qG9dcgS0n1iQ6dnpQhKHvMDBu2_rPUgdXHxxobRLANIypyuXP3Xr5JgDWh8Jd6tDVU2MKtkdN6bubWJhwV45NRq0iCRCnLiQxCv4rNkPG8nMCW9WYPK3Ftioxpep0-XOT6Sgb2JDjA2ypNaGzapcFFdf0XA-CZ8jEhokoBivA4UkPJop_B4rEJ9P3qeLjSxQvY590umBsYpGQH6zYmjSXN4JRUQ5ZsR4ESINcYqVJLCNCZ8xCo9H2PyHjrBKf_z5XnGbT4WghKVmWS5yc-5BDyXtIofolosRPeQDfq6k1bNF1oivaYxzyWnvPvtNcfgy3CpPiSZwgYb45w0afT5ga43N9JaZdwy2djkxY-MK2QfvIqy4VdXz9LHGCVLLRe8KzpORaZALmMbt-9ACEGZYgH0TvKwY3X7KRsCDFOXJ7fUCS2RWOh2lH5KPhZXZcIE11RG280nYVRkO6iet5azgh4eAl_0bXoqV2S9fZV4LCjZBQxd9UpuZQeGR2-dxt7VKz3u6AbHorLLO8ci_rPqhcQLoJast7htWtws5Whs-uLge4cKq2dBInOm-5xwh_bG9uSI5RekizIWg8h73qgPeSOo482rXdkVPQxGuaOPRNH80PRl6lhC492Rafl37Da7G9B-yPRYzkvp1LSbhKR_rsGAeaLrXcJnbTvfcPrZN65N9fp_yqwz6B-5t4w0H6ZolaKtMbRT95NuPTfu4Yft983HYbYz8fADz5x4rDZVmbtoSFGMonJKKoKv3HTldJHKN3K-J9C1v8l6BBwWC62xYZw6Cbod3U-xtU3sdxTEdyZUI5JsHDmKIGYhBNZ_uGg1FIuwyyMTxmsSj1QyRdwKDCps-wiuq-YsT2W0iyEZkkY4eBNPqqsw2UvX0Uqd4WN7htrOs7O5O5PJQSyGkyhYdGqhFRSjibn5N10-Te7y1Nj11cG3ebuZCY_4nYejgv2LP_858ad6v0Na7Kz-yO5bQDdkpNe1izDeerunTVWk5gj8RxbCkcfyw3kCLzy66nxVMIzbL2P1cRrhr63rcz6RDcm20TSPvk5eUw9Fan_oH6-Xgh0fDc8ld2W1x6dYvA3X4ahWjGgpdBq_VIMi1-QfpI2iIaM8tSSA8PjEWoCPq41wI-haNJYyCg6NxZ9KF-wdSCKVm-SPzm8j_srM3SIt_eQAdWmzXPo0zYMf98qVVR4KikTXS46ufGFvBBo0WUzbu-bbmeUAIDQcd3W-G5qLpWbiJADOzOC8ohQs-WaeOqH6Y1fQVigb9-nyVlPnEZCy87-vrAWPBOQa-cmnLvS_nYNwMEITIth8RPbIFELC5lGEmlro8nRSZ6dl9TfmPTFvFYNdgGU0b6DX2kxqNV5F7ef8tDKH5dfbO1DbKVfwEDhvCYBzeVEKeqB2wK42X_XD8FFlze9sC388pfmyK9KhblkLlw56XO1Y3KD3J5Fjpjxr6RBt51BNyujCHgLQnAXY9wV-EL016KmTEtb6PNxmaBc8E44EEfZ0flbmYF6oIKVtMDNGrHK1nBLWykjFbr2suX6jCVbECZtd78OAaQsVZFrpg5y8ka_rHVxDoi42fgITNE9-coIIdl-cTz7laLj0egQVRN8UzLpQyUOjmuuS1lUmhTousRnXdK6-yBhiD8EdX2TUvYJgc41Si0Odp3gCjh0jxdNvteYgonL_D-b5OgT3rqshPYx_4fT5tEMH0us7-X428e11vpKu-09nMBkq9y1UNSybYmA2VmIrbgOWoTia3FmH1cOItsq9r6IZSrDKgkXQ4q6WeQzy9AQZeyLDgmOKOUbp7v36i4sYFJvp-_h465cIWpuhiP_aCcjtWpbVOs01-AAsj7JywGJutsGlxJ-s1DYnBeC_-_shXNwoTY3ZtBali33KJlg-JTt7_RWzWH5rB9QtqV8yVP6AVStYuFI4l4nAjjXAJegUjEw6e0AgbGiAKOeX2hcuOPuwmGg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0dfa8708f4961a6a016ae81e61d90c87d1be912b1c866cf4c2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10797,
+    "completion_tokens": 328,
+    "total_tokens": 11125,
+    "cost": 0.00151355,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10794,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00151355,
+      "upstream_inference_prompt_cost": 0.00134955,
+      "upstream_inference_completions_cost": 0.000164
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

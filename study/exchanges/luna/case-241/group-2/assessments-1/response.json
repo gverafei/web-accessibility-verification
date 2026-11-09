@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents relevant telecom services, shop categories and products, company/app information, news and tariffs. Its text-only product cards remain meaningful; the contract does not require matching the reference imagery or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and arranged in clear sections and cards. The cookie notice and viewport cuts do not substantially obstruct or make core content unreadable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and expandable tariff/category rows have understandable labels and purposes. No essential visible action control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent reference/target comparison of the same broad telecom-provider page purpose; the regenerated layout and content presentation are assessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, product names, news, service links and tariff labels convey coherent meaning consistent with a telecom provider\u2019s site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing target usability**\n\nI need to evaluate the target for coherent and usable output. The windows should display plain text cards with shop names but likely no product images. I\u2019ve decided the target at y2000 will cut the top section with bullet links and have shop cards with text only. For y3000, I want to include news, company/apps, tariffs, and a footer. The presentation needs to be neat, even with cookie overlays. I've got a clear structure in mind that'll need to be in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing target usability**\n\nI need to evaluate the target for coherent and usable output. The windows should display plain text cards with shop names but likely no product images. I\u2019ve decided the target at y2000 will cut the top section with bullet links and have shop cards with text only. For y3000, I want to include news, company/apps, tariffs, and a footer. The presentation needs to be neat, even with cookie overlays. I've got a clear structure in mind that'll need to be in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AhQac9mbd0aa4Q1rTPiJ3alHmxw2s_DQwK12mCMLl9ibN7u9W9X_zLy5dJHv39Ro5P0R9An0LIyFtf8K1M939CFZvtOmoDXQMO-8Spwn5qgi-g5xmSBENmDFUDpD2Y8q-4LVQ1-rX_EpfbZiPpfxRBM8hQAacV-sJbsPJO60GdNp-GUpN-6MTABTP3yshjzGvcMFJjwSqgGiQSDsiP9yLpbCUwmZP6pIfVUosnec7r5RAnKEWZfbCOe6rZbotdQ1Bjp_TK_mCs5PddRMTgPvqEmj6qN1JWgKaaWW7K2j-Tr1IXNxvjtR3eSgXYTvcOavKpGIqHCQ8m3t-XveGjwyA8cZyxTbpgwTzTCU2N3pfgyUR8ziFt6edRFwYkYtnZNP-LDVYAQRMYNSbW1wnz3zMesg-vbxXwLQIkdtuBn5x_FPv3x4RLJuuYkzmLt7YTHXHSvQuaNoZS9UYmDprCzEzxHsni4pQBEARs6EZVNGxUiZkKObseob7MYq8RmvZpbfi0TjZ4x6XTzyaJ_71E7lvG9YDEvB1SVy65oVjMIQgWMZvY58W4DnS4UJgi4vzsI2sOgJp5JDjOLy0ip3tjOwsSKMpP5JTUkPlZGiVIp4fxQ0zcnk8686Msh8ipQtWDxCt4HSGYUjCQoI40PRAJZr2y846ADHgRbKqCRLhhD2q4uWK7v7dDBHS3NGo6lPWUJCz7GweYOAfLyjq4SiEVEmBXZosWIYOkFAWA6uG9zDG6m-t7swvatlidHXbRK-hMgf9yjB1KV2mftOcYAC1VmtcWa7VC3ZJFNMgAARv8WfjPRLySFWShGlWVmThYe2dMDKGsta8zwTOl4IKL3NGS4PnVIE8byMfkSK6YoV8Q8hvdWeJkpd4lHdI57_NhqXqbtl5qnMwIXG0qQ97Q6yLmRQUWoJqoaWi2UJkAkJiULtVoIai5-xZGi4d78AFhu642BVSdv_N6TV5eU_srv1fbjDY-5uF0A3cJdACaG4Bg_YMTO0RwdBNBFLZpc85aGELmBznc8ialAixqTn1KKQ2sgvLynLg1v55qObqWeHSwSXcGj4cREMSTTOnJlxqjksN4WeLGsN4u6Ia1B8kxPoNP8Vms-dEOO1HdnsZFR_wqdeAqKShEEG3e0RD9x97Bf27t6agF0KsSu72I5I5lbWjUKt2EQm9dwL1UaBFXVKAtilhb1yPpPM44QsvOXicvt6QetytT__VfEZ68an6qtifprPx6OhmtI6iFvw5V-NmjBLV-49xnt8IfMiDvw4Ls2S6ieQ8cKFS8widpfL3GM0YP8L7RNK_GGPDGXdjv-AdVCFyMbv4Ng0yQeA3--wJe-djNakvpuaht-w6iIKlhvkKxPcHw0yqUNjWVLD9LPTvpisxZSTqT3HiEUpcvhQLMeJrs95mj8vU6sUMiobxXczo12x2IWaSxGYRGAn-ReN4rtHIeJagyYPXc5BZVMJa9wbN-vdQU58m00yERbevls_m6z3iViOCqU7jUCc0_p_ndysn32cvOs7YruzZwAljlVZITOeqz3NOit7sep-5fLo8TW-lRK_6q5mXPWghQdLFQ-WQZEIGohjKsNZ-I70Jjogy1jqbZKcu8GAfJjRObxAJSl_OSP9pUi6lCP-AL6n9lZ81B0nREQ0767PN32SHjPqMbnqFqbBGh5qwfw-eTQ-CBoNHeawMKkKjlyYP-Myc1rvrZQL5ts04sZbk5vrl0p0Dg79yeJr5zbwTPxdYBIY0hXGK-qdKPkwsCTfhWaGv9PPO_OTZyf_O8qmEP8j3un0EchhCfIJytDXElH3GgCiWVi-0U7cjZ2SlKGmVJaiJcDmHvy-sBBbF-H2C51MFTFV5tOWEJfy8YFsOU4-5QxrjB202ZTVA49LKXzuYFG8iZk6Ws6pNHTQy_NFgneh1QQB_CIDOPQByhI8dJKoI4qMWEMzVX0juigPizGBxSdmk7IN1k8FcrhkiRBxjswqU58gVPjJ318szbRglM7u0uLaCxcG2f8iWpPzyyJnF2pYJFZ-kwnwxeRG0mLpCgBu2XAuv-RecRImL9-Vm4ykqctMewSVnNxxrU4GMXpyYD3G091KJHbC3lobMa0HKceitcA6VZiBhYVmP7H4_EGBJP_ohmaESgxmGw05dre_MG5_9C9SKY-wkHlsE2XmLp7Jq6czFznE32pV7rqGPSnG36yaWiOftyXXlYUSF15hu9WPDolJ48cdzfgZz50P4iCZyW6O4Kmdwaxr5daRUTx9dY5uQCbCo9a627Pdr37Jk_zma9TdE6Zx7xTqll7Tpw9QMzqBwQKBYF-v1lvkdCNCzBJ3McHji7a3i0Kvuchs4hEsAUoMbhtaj9iARMILr8BYI6T-pwYqWhCl-by5r2WHimRpU83jEwmntXtIqjrjp6ZKX_IYVEbHl8DuRuY_g9FK-nlVOim4f9tsvBTZdVOXXwtyy3L2Rhy_No_JITppCrGgSkLTWuED408bbCWg58zvPJrnQOgkhSCsoCeyTzpZn-XCEMzQox-X59XF9-qtezslWgtiYZGuEs_7gXYhDO2m3aDXEKBAHuL2_kAQ50D6vbX3wZd85NyZD8ZvMuihZdBE0Fvuqs_jaj7czN7TPU3l8UWcVe-KZv2iP5XVFmE1jRj6yyyuZDXTtDsU_uOhfiJjUmgvkAWWxG0hfaLUeQTtPUblijevl1qBj8Jy0zOn_amXdG4ymhOXHucdCuXkv0lyPTMgvyx3_aVj4waEoYLnTPGTmybS_vDH0y6kKsckbNhkGGXyOTdzf_p6nr0ygXstdfpVALelm6-aAQ7rEW3nN8318ds8F13_PvQZuSLZqF_XPPm-VEHrR8P7-OTa_vpMkQGZYj7p4cOCDYEfCxzb4fKLArmUIGyJgVzCpP2rAk2zxEwbomyvolJAyibumuvWt_jtH-KgT8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00e85bd895e872e9016ae8084e717487d1b59a00e1b2e10b1f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11691,
+    "completion_tokens": 378,
+    "total_tokens": 12069,
+    "cost": 0.0016503,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11688,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016503,
+      "upstream_inference_prompt_cost": 0.0014613,
+      "upstream_inference_completions_cost": 0.000189
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

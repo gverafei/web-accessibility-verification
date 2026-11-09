@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The Forbes Shorts cards and the Reviews, Leadership, and Careers content are preserved in the corresponding views. The differing blank region above Shorts is an advertising placement and is excluded from preservation assessment.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The editorial content is legible and coherently arranged in both target views. The blank ad-area difference does not obscure the page content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, subscription, video play, and \u201cSee Forbes Videos\u201d controls remain identifiable; no essential visible control appears materially defective.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent comparison: the Shorts section and the lower Reviews/Leadership/Careers view align, with a permitted advertising difference.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains coherent editorial headlines, images, labels, and page sections that communicate the same broad purpose as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating ad presentation**\n\nI need to note that the image 1 ad has a missing target blank ad area. The shorts and lower sections are identical, and everything meets the requirements. I think there's coherence in the evidence since the sections correspond, even though the y-positions are duplicates in the lower part. The blank ad area seems acceptable for presentation, with controls that are visible and recognizable, including nav and video play. I\u2019ll ensure the JSON is exact too.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating ad presentation**\n\nI need to note that the image 1 ad has a missing target blank ad area. The shorts and lower sections are identical, and everything meets the requirements. I think there's coherence in the evidence since the sections correspond, even though the y-positions are duplicates in the lower part. The blank ad area seems acceptable for presentation, with controls that are visible and recognizable, including nav and video play. I\u2019ll ensure the JSON is exact too.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq5_-j1iAd1whfom7ugfvF4No0QDHSsdRrBYyznZxddgApagx0veZ-OwnVBLH6a8sh6QgE6Toddw-aTWdDyjCAb-lhianx8C357fVAs7bucx-pmUIukNZavSItI5XtBKJxt6Ms8m-bwt8AqduD86nf1rOC9DJbASi8GhGBYLJPIsbsF8-ea_B639D-wg7qu2utMBR_ddWhFGrFQS3tQis3Dun-TDMo7hhk4oZx1MtBpOFT2WqdqZpwxrHoblGNs0uuXSoRQImweo197g9K0HMY9X_gWzjKjylGz2x-BkXwQcXkbeIjd4254g-T3ukhORqT9w8s5yIl0ucZJEPPG-OTV38PV2WcV4VppHR9Wazx3IrG38cEo2zbVzln_utv8KXug_hkDYodhNIhoALZYoZJ0uTHIWxcismJD2ylTyQ-EF7us_TIoKHYl6w8uIh2Xjq8GPEwj7PDiEYiouAUHqauFCW5S7tSYO6-_7LtWYj7QVrNCexEp6CYh4pdiYaHwtvStIYspDpmd6uCGm7onRSiMEQzTJe5m2C0u11CWJvvmpbfGk2bfFRFRAZMl7lCdtnGQlhI6pKGU4uh4axWYuRqElcamA42hoUthP96K4GfGIEBWxuBL7NcvKstP7Su3rkgssEW2fmJ6ypxJzk8AkNajMKrq_50AtXl2SE2MnJ9TM7t3XHFQkr3G285SsIAACg_OAfzYjCD2BVOnMH9-Os-uIZwxVlAcMnKZuDukD4BoEKG1EhRnL4ILTiqztPceZ-wo0vzH8FhhhCLmPzDJ7AN56ffCni5XzeJAYQ0gNFbtFyA1XxzsQLysp28A3Rbgai5Js6rTddBKdtrzFzciZxLItusHxSUhDf4JrlAf3UijCaQRWKGQGAS21RBkSrpwduCyeyfCVLOHnhO0Lnl1euQwivu2HVduhasCEECn1iw5V_xhkTv4SbRHdczAwfrs4cfuvCTr09RAxnwkkbIKE6LKASL4DzTtSM1V6uaIRUcGk0tQsypoedzrP1MTc20Rq-pSMZDk_i68VJG36UI5jssDY1vF8-adPcAsXHBYGCfJWz0pfOnWpPtznSgPLqqR1VNOkI5VvAoHIMXvNCfgMzQ8ODsF8jxQJN1qrcukRUYCvSBV6DzeV4v2udGPJmu_dTRKv06Yn0qzRYgg0sAen0si7UErjzVxEMDMIzfko3qvvKmCzwGtg4hC1kTehrMkNrntVC3gnI_Y270eWKZsUojTy3oY_ZpngJ5DMmAFDS5jLu3mLUp-cn8k3_TplhVWCjj4DnLVAKxbLDEx6Mrz4gauyRb6JxctyXormMGZ_PFLXQQu6rSHiPuqF2buJafg_BeYVMmoXfLR3Xafu66LR48YTi76ZrwS00_-2oNYjFxQFS64DPsEn1xurqZAXcUn96-h6zRU8bwZGUVyvcp724ZokPNbKDGBznMzSBaaX0cEwR9GdvCAD-DmHx7hXOAV7l70giflTmldYKJMcGdy8gY-a2UK7CEBnd-K6rLi45VsmYBiVpLEZoe2gDeNWRNgdrnraMYLGJ0MBXkEkmL6gFnAPtZ7GpPXGkwn9IpbgCp1bw-MCpXrvTAUlt9rDrRUgPp6iaDXx0hPRnitUHv6-pSGeO3OM47vIpWq3Pszhblrn5zRhqI6fFYxTXizHUcL3X4Y3KhNEYprcFd2rqFwERAC21UDkE93Dd6nvIh1_WKUZXfFmKwDTXS5tEb0EaQK5RJVilzzv0z3MWFj6Ex0WDENmcqifZE1xYQcGnF7yDSdzw1zxuzijBdlmXXEM8KtjEIebGjrLFn9wgcxc51BWt1fKwZW2LFnZzjpaxJQsiWuLyHZ4MKhRCivv6N17vdxR7vklbh-h5sxxdxurXJtL-9wEURZb8Rc0fUcZ1zKlhkaVUF0a-7zvEP7iinOm4S4NrNFTzB7Vv5bZTMjn9-vMdufCoFUG6lHF0Y3eUoA0oMMqRTA1rObigN57d0K55RlbIygPB-8l4E6RDz3D8dIdk8sctatWTRVxaAWUPoXOv3gfzTjycC-W9_8eOJO_OssYPPg5HLD3cjOHvNIqSREN7LiwVF_zDITnmVXcJyw36fyzO5F5vlF_-2yxNkR2PHG6ttNxjOdtKKMt5Iz0zhjH7wjxwneP-IqtkhD9WOUYGJojAZ-x-ntBPu9gwc5950b0vN6G0UVGmxveyLPCXyH1SaNAKByIDiPJNvesbF-SbV8EQ8njIAqgfDkVMEGldOHo445gO_EO0D3OqsXWIwkCdCvvRfI8RV7ilC5jZixiySfMncm6A2anuVOFUt0Uy-JP24hMTp0Gu8rMIm_ZpC9rOIoXG0V7-QXz7KJVz0R80xGaJFBAxxuyLr38NB1_6vX1y0TSyOsAZnv7yHxvqMILv7dXzwRg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c4b05ecbc88e606016ae7ffa10d8087d183f4897db97d0bcc",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18351,
+    "completion_tokens": 329,
+    "total_tokens": 18680,
+    "cost": 0.0024583,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18348,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024583,
+      "upstream_inference_prompt_cost": 0.0022938,
+      "upstream_inference_completions_cost": 0.0001645
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

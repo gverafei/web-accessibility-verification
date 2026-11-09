@@ -1,0 +1,60 @@
+{
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+    "content_fidelity": {
+      "type": "choice",
+      "choice": "material_defect",
+      "probabilities": {
+        "meets": 0.45,
+        "material_defect": 0.55,
+        "insufficient": 0
+      },
+      "confidence": 0.33
+    },
+    "presentation": {
+      "type": "choice",
+      "choice": "material_defect",
+      "probabilities": {
+        "meets": 0.23,
+        "material_defect": 0.76,
+        "insufficient": 0.01
+      },
+      "confidence": 0.64
+    },
+    "controls": {
+      "type": "choice",
+      "choice": "material_defect",
+      "probabilities": {
+        "meets": 0.47,
+        "material_defect": 0.53,
+        "insufficient": 0
+      },
+      "confidence": 0.3
+    },
+    "evidence_coherence": {
+      "type": "choice",
+      "choice": "meets",
+      "probabilities": {
+        "meets": 0.94,
+        "material_defect": 0.05,
+        "insufficient": 0.01
+      },
+      "confidence": 0.91
+    },
+    "semantic_adequacy": {
+      "type": "choice",
+      "choice": "material_defect",
+      "probabilities": {
+        "meets": 0.24,
+        "material_defect": 0.76,
+        "insufficient": 0
+      },
+      "confidence": 0.64
+    }
+  },
+  "usage": {
+    "input_tokens": 11726,
+    "output_tokens": 0,
+    "cost": 0.0011726
+  }
+}

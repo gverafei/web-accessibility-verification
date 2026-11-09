@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible article cards, headlines, imagery, bylines, and page organization. The large blank advertising area is explicitly excluded.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Editorial content is legible and coherently arranged in both target views. No material overlap or clipping is apparent; viewport cuts and the blank ad slot do not impair the page.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible AI prompt has a readable placeholder and recognizable send and close icons. No essential control defect is evident.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Reference and target screenshots depict the same page regions in matching states and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible headlines, images, categories, and bylines convey coherent editorial meaning and retain the reference content.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18622,
+    "completion_tokens": 197,
+    "total_tokens": 18819,
+    "cost": 0.002426175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18619,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002426175,
+      "upstream_inference_prompt_cost": 0.002327675,
+      "upstream_inference_completions_cost": 9.85e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

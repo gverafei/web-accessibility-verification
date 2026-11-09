@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible data-safety information, testimonial content, client logos, and section headings shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and coherently arranged; no material overlap or clipping is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, download and sign-in controls, carousel arrows, and floating controls remain identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target depict corresponding page regions, and the supplied states form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text, imagery, and labels convey a coherent purpose around WPS data safety and user testimonials.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image assessments**\n\nI need to compare images to see if they're essentially identical, particularly looking at the side tab text contrast. For the y4000 target, it seems like PR&Media is darker than the reference which is faded, but they're in the same active carousel category. The content at y5000 is identical. I'll confirm that the JSON aligns as well. I just want to make sure my rationale here is clear and concise.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image assessments**\n\nI need to compare images to see if they're essentially identical, particularly looking at the side tab text contrast. For the y4000 target, it seems like PR&Media is darker than the reference which is faded, but they're in the same active carousel category. The content at y5000 is identical. I'll confirm that the JSON aligns as well. I just want to make sure my rationale here is clear and concise.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBY319VS7q0aRIurRHTLfaZg2TQwCxuIk2YhpHGAKw49gFsJrfrfApOuRVzlHoLTNmqDa8WZsxFo9DoXdbcaaUezN9m4fTQH1IyqkJLArQY1h-bDWl014P7MRncmTL7p6QoFm75HXLtxePHpDQC-TaC_tTMdlMy0GVQVLcLt4PCjJZZvHV-11G-O0kCtXHbtSU1GmgHyOCW3Q5tONBBLRIwI30iGPC5XCO94QRJU_P7erAiZvF82N7WRAr7qeh3I1OkW4Xl2rjF57vFv68lK7EQy31Mhf0jvr8na5YmWhtTVt2qlsRUByPFxqkDZbSuMdINyF5fIegsefvkD3EUGWlJNJ_nGYUyEwNfwVSN9AqEr-GlM6LrVbhaNFfq1HfDtBM5wWbfaDDnoeEDb20PRNy-cVKOhEQo9EjgdlH-aVsLT-YGgEtq1ivG4Z-110CGovcpC8g2zrLrrWn6hWMengJkCEG4iUAX0QsOmZQCpEAZNnHQC9aSUkH9Pe-zpsKxJtCNcWzvgx8b4qsxJiBSknTP-i11dR5qoQVcGJaP0k748SZXvTEXDOHCWHk61JCzfOIi8XzOgTPIMWRbh8BxNpKGWpngi3DNoHOeAduP1l_xhL2Hr_yHml4yu8HQKLjug5Rfh-M2FQQMKGHgD_elJa08HQ7M3B3oYQcHsuXUQsDqrUgVgYHVXHCsqS2rX5VqeOiVHNgOV1-OaCVKcVGalxcZQK0EhkFwO_js8dlBvkV9aQPeNkLzpYYljF8eUOyUBHEVUET4_IncO3HBsXwjwUxSI0eH2-HFPpEmWDg9Sdw1Mfx0Om0rbbvYcz-l8c5qhe4jx9MAj9d1mwB-MLVWw5moYmOZhrH03ihbVYW1A3PLDv-X2stSGrWyrcp2iccHUCMxVMktFd2eTlvTmMnKcf7gOswHs092Z0RuZB_0RFRJwppOC3dmLjHDMIqyOhuHIKXZc4fVGzvASX_QSK5QQOklYjYUlZdfNG4yaCE7vdjZS9bd7XmsCmDdkAmn58CzrSaHReE75u7aQQN4INUE7efeNUAdobFrbJ-dDubrXgKcobtG7IAau7B7qXtEnxe-wqg21pYYzNNIIfdwZYcR5ShxraF5x5juB8JRnVYJc8Dx1mBO9vYFAmxzY55TrSwSAQrZSqEHOD4dED0dPLdYCL53OoOmdr2kIfSSgoOjD1Hr5ye57himk3S1bP2x7ujA1bEUGQCVC1mreOV80v1KUv07QxXbz3hLgZzkJe3XvVkT_MDwYoV7CdQnz-KL6_kv7Y1IQBGEqWmM-tY34tbuuU8aOCl8uqWYyVLGIYRh-8mfPB8kp0fXWmM5sirTlzp1qEJVoJvzrF29xOwUTzTdKhgfKppHv_bc3_CAHYbFPnTfxP60IEC2DZfFK5m1iMvYGXG7_NCTj4CzlPV3iwF5t1F763WBCMpStxs3HOjP82TRUF3iq2X_wz5YVRi5P0aN3DMWTyvRe5xOoKPW7QmJnika5MgZKuC39gigjAzZXKpF_BM5MN8W1wW3RXCIkBdV4FsHsjZOFBmeGRA2h-QYq4eICrG7_REhydF7Zv9NA92nC7AwUy3yoeElGwglbDCid5LMqZsBRUXNhj-oEb3sv1i_3RfaeK7A99e9QPTc-7YbuSHc8OJExq4QyoTH90yGV8ugp62WrHMWu4babjA-zF98nYs6asmrOT0cQ3s9ANkQISvQp5zjX_YlEh7qEEbE8p45qfvg_WL9E-SWAn-jfEqYotOpySURSOCJxaxjddIWcXdxxxSDtYDrm8lZW293vbwBi276qcNtn_yOFGsQ5WdHXYirzOm2ezxJc01wdJMj308z31fk2p-ArXasnHc1biqzyqXG0qoD8m2MIEWKoErXchhosFqI1UzelK3QmXQc53x6Ey6Jettufu43lLR8nv5_-_jgaoAlvRm4vhBnhlY3U53XNHvDNpWp85hScITxIrFTRW_Dx__DRh5EKyBTx6LhllyugLaQKTNXPhA2Z2dnwnjWmamgwXoqFYwM7wk93yWLbT7X1VZhGSqGGr6v_XZdcrL9ol8dtqruPLA87C_zmba-LMA0iZsqUrVdW9m49P6duTM8SY1KoGzmILlcMfIRYM1cp0YFkA8WLMViWUKtI5_JJDtXg8g8pOoWgZHPT935yUaTXKTPRznpmM7RQ4RsyE7Dl5OTZ5oSWXz3VMmgNehzH1omTvLH23vgXn2naLnlZQpkLx7aBp7_VbHPDjDE.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08badaa9134a22fa016ae820564e9087d1a7e1b39521d8cbfb",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11053,
+    "completion_tokens": 277,
+    "total_tokens": 11330,
+    "cost": 0.00152005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11050,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00152005,
+      "upstream_inference_prompt_cost": 0.00138155,
+      "upstream_inference_completions_cost": 0.0001385
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 52,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

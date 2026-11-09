@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows a coherent Samsung shopping/support page footer and a set of relevant help topics. The regenerated page need not reproduce the reference footer\u2019s exact link inventory.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible help rows and footer links are legible and arranged clearly. The heading partly obscured at the top is consistent with a viewport boundary beneath the sticky header, not evidence of substantial content clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Search, cart, account, footer links, and clearly labeled expandable help rows are identifiable visible controls. No interaction failure is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent comparison of the Samsung site\u2019s lower-page/footer region, despite the target\u2019s regenerated layout and different scroll positions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The Spanish help-topic labels and footer categories convey clear meaning appropriate to a Samsung shopping and support page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer design**\n\nI need to assess the target footer FAQ in comparison to the reference footer. The target has to be coherent and usable, but I'm concerned because the FAQ heading gets clipped under the sticky header, which complicates boundaries. Even though there are fewer footer links, they've been regenerated and are still legible. The presentation looks fine with accordion controls and links. There\u2019s evidence of coherence and it's semantically sound, but I should also consider obtaining the JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer design**\n\nI need to assess the target footer FAQ in comparison to the reference footer. The target has to be coherent and usable, but I'm concerned because the FAQ heading gets clipped under the sticky header, which complicates boundaries. Even though there are fewer footer links, they've been regenerated and are still legible. The presentation looks fine with accordion controls and links. There\u2019s evidence of coherence and it's semantically sound, but I should also consider obtaining the JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bxn55Bl5UxLZXXHV9xr1oMRSJdfy0-XG0TB05Bdo4HyjwpEti26ytiwI4F39DHaFuD1t8EsQm0XTjmEOGazRbr46Q4Rh0gjYZJUL7DK-9ZJnDQRIdiDRzeKLdJ-OWAoepz6ZTUy6qo22Lv8QsY8qbRZRGMknQXuPbAsyM7xVylIUY_I725W5roll7U_voGJ7lV8mZcOpq4ofLzkUA4A589NTeJK52x4MaF3bxbHoCxoGhbVpGoINzinaQgqcJluF0zBwpm3C2qZogJEKLM7RMk3Ov-UG3-lWRgJRK7NrP8FIEz0m-ZpUgcDwmjzux34hnxm_dwnviJi3Kj86pGFZksfO-aKeevbsoP5beQnY0LLTLZbxNQrx0H-vhQlzKhK8zX9zTSjv-nrj5cpef3ENsnfmWo355-h-5KvZpv6i8vSxcDaeguCxlWL2uYOErxS5NtKeA9U2o1Mm19rAAvsp3Z4zDh91VmIwK2S81nqJnfvak4K93fc84nc9sKcAnLABZXLt8XD6Yj4KhHpXpniJfld4ddAts88qADyDJA37zVhLGn9WVexHuc7l5z1kSNHjgq_-qoM5qIAJdPlbH3NHmbwWeIBqEXPMavukEz0zd9UliSN498qMEr6byxq8WGY5Woqn1hBnlrvp37q_VAbmbI0my9hyY60sSm0hbFcj-55ERugjA34BH48BF3saFFdqvEQF2cCPqfJYq5Y_XK5u9eCUIAZdZeR3qG_qaD-Z0u6P7FZTmcvzETJwO-J8DZ4bPn9ntvwK9sXOLLjAB-9xpGHscyN-JlKIiALhnKJE1BeuF61-4dbfNxJzjNACZfbNuUobxTPDIIq1XKP9c6MOuHVcTsivsgc1pGf2C8jipZi_x1uXB7RS-KKBjtxT9xervxweRcERgTLhOGwtBLpVu-p9HadMMlpB9TH2Lqa7HB8f_GSzQv4eg-nn-Wrxp8kbZl2mQ97C6NWQQwk3NfwC6mWa0PXI-2Y3oIGT67g_sV40lZLld_Zbai8oNXmXjewbAE4rMH1qkKmg5tljrpZAYqwpb9uh-AdMyviCi6N7vYQViq58FimcyT8zjB479DFjkWJK6gHCje-_bNWq2zwBV8Ix3EwjPeEo4yEhs23dipNCrzaI_7cuQqV5xS2QgBccSvCBw8b-5tAFbYdLTgLwMOl98WSM3xRcgj2yWsekGaBhc92sjNko9A1PthbtpfAy1ZQHMVarRUEnGRwO2TFFDFtxIQ5sh4vghBZZ_s7uc_Jx3QOkgTfM8KD6FJ7EiLg4HbQiIxJyg5n8JyqRylXIyQNLtIbKNp4GDpo-2qNw3u7GaEiEXX-oXq2y4nEmoFblO09QkXWOuaQWyhHQ7lMhVtrPGfr_pCF8kANrsvP6hc8bj8syHqSzFSFe_G3H7wugdRGXlV0_CRE4TajlTyIZcyM3xktrsMy0fl4dWH72InBYrcSu-WJIsbACjv9A_v4K6gvk7pRjrm4nDf2sUclo6ZcngEq66y-HgIvI_nLRxIhnkwO-dplbURgQVz10B7zLYzxq9qxAWqqIAM6ZmrP2w9ij3_F17uPRFihFDSzlEhHv6k4ju8g_hb6NBHT6MaVltK7m8_K570_X59nLvKkRiTTzBc7Cx9kLUM0g5UXcGn8_lKGXTswupXRa6i6FxAWX7GGcV-I7D4sla1iqj1zfdR4DM9mRMDtDzRDzlLhuXl88RvBzDi0n9_x93YMd3Bc7Mo33YFacFn_T2qJdEUauK6vx8s3zBjUaFyzg1Itcni45MRimzehUE1-7-QMwMvXGrrHz8sDLChUyz1RenUrVt1I4kLOBf1GpQfBxvtwQJwYDlj8SFmry3U7O2yuPG5CZm-dnXboVK8-GH5By7I2toRuOpj6TTbTW9u-Mxrj80dHZoIcz4UFcYCX6rD1rutmwhhexlU-VkugTByMuc5e8poLYcaF-U1HC2O4ryehzT_K8izUDPoaDnHQ1pcPo37tudJnvnv7a0p4dl0RXEwIS9eupfRYaTKyRIM_LtCO0fjJmerSSYK0jivKcHZ_x0DhSJgRKzKShep3jCb7f-LmjCoJHtaajGApyFH5yuV_A6E3WjjGRhgEtyGbcm4NF13XcqRnlLOKMZuYNk1qv4joB3kn8NVwnXcWpZf20dU7cgtQoud2vAi5-4s44uQMfAVsOso_zG7rdjNN1qBjUw0W6hqQTXUoAUVFxBvCeRpmU_yqyyQIQx084wOSwtplqKtMU5T605LALFOUV6YyOY2eUsBSEsPpEHW9NvjsSs2Z88lQV9UhA25Bf4-arf5eO97v1i7BmummMNizv_R0sLXiIyPTjTCItXxxduIKvyoUvnd8f9hUua16iAmE-BpfWt4ImX7blOzpk4utfZK69JDjWcMLAivpNaIHuWyvrBDuBeszO8-seYI3PaIpygqnaerFB5Amh4zIUWh4T20Pyh1M6WQ27g==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_055a0c509682b9f7016ae81c65cc1487d183222d0850b24c0a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9380,
+    "completion_tokens": 332,
+    "total_tokens": 9712,
+    "cost": 0.001338425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9377,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001338425,
+      "upstream_inference_prompt_cost": 0.001172425,
+      "upstream_inference_completions_cost": 0.000166
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 61,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

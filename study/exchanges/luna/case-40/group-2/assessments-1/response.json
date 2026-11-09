@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target preserves the quote, attribution, and link, but omits the large accompanying editorial photograph of the rainforest immersion gathering shown in the reference. This is a substantial loss in the visible core content, not an optional ad or auxiliary embed.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible text and controls remain legible and coherently arranged. The missing photograph is a fidelity/content issue; the remaining layout is not substantially unreadable or overlapped.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible \u201cLearn about Harvard\u2019s Amazon Rainforest Immersion journey\u201d action and arrow icon remain clear and understandable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired screenshots show corresponding regions of the same page and form a coherent comparison; the localized image omission does not make the evidence set incoherent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The quote, speaker attribution, and action label still communicate a coherent page purpose. The absent photograph is a material preservation loss, but the remaining visible content is meaningful.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11322,
+    "completion_tokens": 241,
+    "total_tokens": 11563,
+    "cost": 0.001535675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11319,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001535675,
+      "upstream_inference_prompt_cost": 0.001415175,
+      "upstream_inference_completions_cost": 0.0001205
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

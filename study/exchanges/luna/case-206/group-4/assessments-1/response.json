@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent WhatsApp updates and relevant site/footer information, supporting the broad purpose shown by the reference. Its regenerated card layout and wording need not match the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cards and footer content are legible and arranged coherently. The partial content at the top is consistent with a viewport boundary beneath the sticky header, not evidence of a substantial layout defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, download, update, and footer links have understandable text or recognizable icons. No essential visible control appears materially unclear.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference show coherent WhatsApp page content in corresponding lower-page regions. Differences in layout and footer organization are permitted for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The update cards communicate recognizable topics and descriptions, and the footer labels convey clear navigation categories.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer coherence**\n\nI need to assess the target lower footer against the reference lower cards or footer. The target has three coherent updates, which is good! The header is sticky, and the partial text at the top is clipping due to the scroll boundary, which seems normal. Yes, there's evidence of coherence. I need to ensure the JSON format is exact. The rationale is that it has regenerated coherently, with adequate content and a clean presentation. The controls and labels are also semantic.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer coherence**\n\nI need to assess the target lower footer against the reference lower cards or footer. The target has three coherent updates, which is good! The header is sticky, and the partial text at the top is clipping due to the scroll boundary, which seems normal. Yes, there's evidence of coherence. I need to ensure the JSON format is exact. The rationale is that it has regenerated coherently, with adequate content and a clean presentation. The controls and labels are also semantic.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bw1ce5ocLSgV1S_XCjbiHHka45sQ4ondpqeyA4FjQvAddito9EwryxrtoZ7O4BNbiWkaaJWyG4UcimqnOF6w2gqosJH1XhQI3awrdC8MCb1dH78JoyvMJBWvjk4AmqIYYZnghOqyRV7eos2xONlTkMGDAbdQo31nZTY7ksHTA1OEsSLNdffLDbxOvvCLkgW-3WC7OtjTGQ1ooyK0GJWcRhos2dGMoeP4Em1hx4--ZsO0LOifrJ8hJVwjzUhFeSYIQwtxJg3gwjNw_EqpJ1FIMhO8pHyP7RjcAYk9-bbWkSV7STCDCHmofZraM_7CPAxufL40Agfr8d-_--1Q5lRtVXpCGxB5KZc9LlqxtESHmP1e7o8r3IyxQRVywBhRDkd-H0Ix3XxnQOeEJfpZxrGQeb4dNQvpBSEU3HixEVtdnHiELO2lKWtwjhKNtl__p4nqYy3_6mkjzx39KaPodlc4Qhs6LmWREPJqg9zV4WCc6bQfhgeUfr2RgiOcDRfWPOpIkJigt7ERnaMkqFC_kmWRiG5TVKQ-yTlD6P46GfF-SVcRlTrsfH2IXzQLsRvO2wFKYCPQRhe-M3-Fr9FvYcUEy5n5v8fJ4a5cFR5vEmCn8LACWS8w3ircH58r9-pGZ3Cxh8gP8rQ2RLFzTvyRNmLK-l0Ihpu-HFQU4MAvhGZcRj3uoM2Tj_VfcxzSGoqSti_yq9UKua_Y8Kw_q3fsHOh3a_SH1ZAZm52pp0LZ0ASkGekhOJvBjkXOXdT58xNZutSOSB3GTEnKD7djn_YzFXT1zvIJLL2Ybs7tAGsU1UYmdg7ye8CrwdDBQWxhiNw2rSANicqq__xti2-J7r_ISrUXX6jzbAjL08MxGD21Jq1mERwYsDZGpme7A5Ha7avJELhy1dBirvCpVCNdmbmvUiAEBH0jYNdHlBVPjdt0fNN3ribh0tBeIi7Y3ocYLSTiAg2fctWFiehBay-Up7FIMnxnKa12H4RkgfPhfDS2vdMwsG6V2hKbnC4-XwIp-Aen9Cbqf6sXhdr2nhTnh-tsgOHeaDiCJZSQpsJ5XSIwfHCOiZqHYyDOccZC2Q7mZZ12Z_tHT7CCAj5zurytxQclFwy0iygDtnHvcRyOKNtxdb1LqkU2YHbEhRtO-bD3t0RukscxRUqmZFA6-FmOxCCTVNMjnB90kSgjNKq20HZ2V8dkA1mu0Hdtpr5KYjgnMiAJBuO5HB4rxisWOgX_kLzhHGdchN04IL6epspimhu5qZ5SJytXEm-vTeNczAYOaeTPsynbq5aqdJx8sqKnMRXnZEB1DZiA8YOckfmCRj9OmBDUqsLek7a4oP1CmpV2j4uKhm-Glpe7n9TkyjLb0jCwPoENQphCz41XKWGCd3nP4FhGnMS4rYaSXd_kwmcCncPo4_9VxhDh5Y17BdnKUNODUJldqmQ7JRy8VTnF1yq-NKhs8psNL8yyhtNDXaYE_idSg_oKdw_nIf-RWD6ELlnJvoKcsJCMKajt8OWMgqED7ewxzzXGisXH8wJPBGz0QPstt0IJdGwbrJhkvO741TSFExORVhs36KfnWOM2Ap8QVcBrAQXSE-oVtO_mZHKebmYmJzSZaXdxAvpU781krrI_JGhzhz0QgazqrMIEx6bM0L73VQYJQ4nMSBLY253z09RcgmoaYGgBITTXSnLnyuc6Z8qRnfZ9HONTu5Gi0M1C0T1omtzRpozqYVi_7bHsSECT0KLswJQXVWP5yUrfBgMqiaPqtQuSQJ6r9FzOwtpBHxmpb54seVfZEfQc0pcptBsyAu11NuxJgK66z8RefPCY8vkYtn-Y-RhAH4sQJcozXSOyPiZM8ANW469ZnfsA90zZMbsceGdogt7LsTTvbBdT_Hp9focaEXVefCT4tgZiEPfk7NNCsvwRT6Klj5C___atYvh_re5Ia_lmYK36lhA4rtt0gSKM4nzCXifmyi-YHlrXfFCjERtzqpNrYBdHyK2X1CM_HLWKWOimTAYPsZe1Dj_zMR3KA3WggNNeUIayKOUJPs0IbIGPSIr-5tpLcMynIc4CGpGrCnkul9yA7HeKQhkUUAYpAYLuhdkyV7c_ZjW_C8IHi5Ta0vrfdXGGUDzI1RKnnNXYvzRSkh3EihjWFdbIsbV0J2Y_8Gp1a6dCxAb4gI-8AuEaf_2fRh-JtRj0ncoKa466RRA5AFS1DvXQEQzB_65DXWUzC1g_6Hh-Yr64gb9_OFqse7B7PJIEag4YDR8E_CuRzI3w_UVMvbl0hF_Z82xHN6RmTGqKFG8_KAahJoYMSHgSeEVs7MmpuM1FafzHZk-0HGi6B2uOsE-M70v6x-RR23cJyMWcqvhMLQSkl51EQ1MZu5UNE9_ZH8T9Wv5RuJIo2GX2397k91t5WC10pZjO6WQb0tvTblAKzsZEybg_PJbDpZgNw6HBPlswKPLSAXz_2keZmeCFBo_HP4gzUdNO1rEWrtqRnlZHfEXPJkQBMfnh1xeEs9RkoeLHP-N0mcJ1Debpjjof9H2iuoj0gb4vw0mfuXtksS6ZtxXMDAAcRw=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e49f7a14d2a488b016ae81c33083887d1a23b00e77b7c7b3a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8480,
+    "completion_tokens": 337,
+    "total_tokens": 8817,
+    "cost": 0.001228425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8477,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001228425,
+      "upstream_inference_prompt_cost": 0.001059925,
+      "upstream_inference_completions_cost": 0.0001685
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

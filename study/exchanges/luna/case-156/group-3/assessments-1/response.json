@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target differs in release-list content: at the corresponding section it shows the PHP 8.6.0 Beta 2 and survey entries where the reference shows the Beta 1 entry, and the Beta 1 excerpt in the next window is different. This is a meaningful change to the page\u2019s release information, not a cosmetic layout difference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text and links are legible, consistently arranged, and unobstructed in both target segments.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible article headings and inline links remain readable and identifiable; no essential visible control is obscured or unlabeled.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Reference and target segments form a coherent comparison of the same PHP release-news page at corresponding scroll regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target text and links convey coherent release-news information, even though some release entries differ from the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10404,
+    "completion_tokens": 279,
+    "total_tokens": 10683,
+    "cost": 0.001439925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10401,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001439925,
+      "upstream_inference_prompt_cost": 0.001300425,
+      "upstream_inference_completions_cost": 0.0001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

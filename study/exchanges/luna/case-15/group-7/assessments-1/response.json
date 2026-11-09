@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible category links, footer content, and tracker-settings notice are preserved in the target. No material loss of core information is apparent.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and arranged coherently in both corresponding views. The target\u2019s slight visual difference in the consent button outline does not impair usability.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation links, the Contact us button, and the tracker-settings actions remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show matching page regions and consistent states across the supplied views, forming a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation, footer labels, and cookie-consent text convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing layout details**\n\nI need to assess the elements here. The outline for cookie acceptance is nearly identical, but I see differences in the reference target and footer. Looking at img1, I notice the reference at y12000 for the upper category rows matches exactly with the target. The same footer appears in img3 and img4. There's a tiny white bar at the bottom at x697 that likely indicates page continuation\u2014does it appear the same in both? I'll document everything in JSON for clarity.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout details**\n\nI need to assess the elements here. The outline for cookie acceptance is nearly identical, but I see differences in the reference target and footer. Looking at img1, I notice the reference at y12000 for the upper category rows matches exactly with the target. The same footer appears in img3 and img4. There's a tiny white bar at the bottom at x697 that likely indicates page continuation\u2014does it appear the same in both? I'll document everything in JSON for clarity.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BfYbhF_hiLSqypVIHXcXlUq90D8W81A6Q2FAIAg-JtyEwcLeEU1Cvzn2tKIQxTdnKMtwlQsNmMlUGJnf2bBkTgvLUy08iFNpaCm8TK-0bpizOs-ouSbEYzDllF-4ddffwyiqK6_S7JxBDZmjwObPID6ocEDD3zhtseTl45DYikr9qjs4AD4V3RdgAPAQ6W2jkPpqUo-vK6ri7sxTanm2op70VictJb_XN2AlhhnENIpwdaGfJBnsaLkbF2AYiLzeLdX9fil-Okm9BpKdHKQ0qdcsRKuvyZo9VewcdowkY-mj1QVSgYIgxD-t3TXFLdi_ACcasUOQ7RJj5RBxmQvemCgBdRLRYcWpu1ZKD3mP6_urz2CFd_PyJgLM49GLVcak73Dv-7H0_0KzuYBpsAF8ohuJlI_eiU5QUY2cbCpHjxRbwMT8kJYwoWvJ2-ol0r3Cq2ItV8j-i8VmiCMdaa1HNOcO-QXDUJGi0Qn9mEAweuZ9yTq-4NgP6mVh4ZyAzVAh1m5gE8Owj42HvO_m7nXv_ikJ2xTlWJ52Da1QlmS--T1h3M0GCg95poEUTGzY4kQReQ0jXAKDVvpR5nsTmpFDwHv4BYwmlxTwmziFusUCEWaHH1swZg_TQhJbLBHjemk5FTqXi0Nv9QXbAmXn715gu7myVZUeOZ5yA7rXCes4IlMqrwElz8ZlAs6P358gtBG1Bm5Zw1ElxxqWExg0MHp1QmAHypdpmBf6WCPw8UXXtk-wWMnRnFxarLOaI_1GA6bUr6AEU1_HQZw5UgCR-AZvwcCnexrqghrpeu7aEx9a1OC9Vdz3visMx7_MEt0FHajjr5z7ZRxUa9XXZaP9LBZKaLpkkMHWCuIXg4PH6P0rEVzGqZL1CMGX3L8lRIcpzqXotISmSeE3I7SZKE3OmHo0bdjT5w4ISXYNoFFz3WKThO_RlooNuOSeyGibdeXZR5Owc7OGWhjX-YkCu7YE4Ht4Q5VDblQn6NpH9zhD2wolY1C9ijR6zuw0rSkJQYsrFdKXubv_sZhspvFSIdTOyAZKoR8q2yVC1bI3Mrgr9wB7uHPYpMwf3FHOLk-EUyXKDvyKVl9X61nVVmxMybpmSa1DaLdU39M5ntYAFtjRgFgl4bSEUAcCEsOABLcd1Wo8pYrSjHEf7VmHQXZgitWztklGa0mz0r723LD_hOw1Vq2Jd1IeBbUY_vhKvwq_YokA7bZ5kD1aThtDAsxy1dLE3BJC3JSPqt2As6HuSYVEO7KH_K45WpJ0zRBauEBf0HhKVvSGbO99imaVttQyPv3DHgAmtgOgXrXu9sovoKH6P4PzYs0sjTJkh_CUtZxd2kZxeu7MlG3hRFdzelRmiEpQ9U7_GEQohAi52jdceXoUUHTETsfwnuHQ8hRiak8OQDQ7z56Tut7bTdBkrZcjwXHYVP46NF7wrsnzFhKHcfGtxj_WRSqBlpvVZte70oUjkhk9dUoqGb9Gk71cK65Oj5Lv2Zy3Gmb36IqfPtDtBVelopvlN1dMb7hU-paTOGJwI9mbCU6AN3NiloUhcofMiecj4x5YALtDu42n1uWsLeYYdsOVbOkeqiQwGLI34pALwCaaAABuSGhDT05RbkBS0Jhgc2pthYp_Eb-cwe505tYVIs3p2gFXLCm9D1jo_7KZLuU84v0Q1kYAdmGZJDP8W5msVBzXxc3T1IBI5V9hsn0Y6yWFpyxHgCiPMIrYILNug7T6CYwOjn9FwbU3d9_c-LOyw2CSpL8TCxh8pJq1RAUCMzMnW-dnby2DNFu0NL0IlkFH8MUW6wL1Ptjk-hxrPA78dTWdxsK1JAuFPOkI2DJ8w5_3rTPKpZG4rkibMeQsjkT6Fyrj8QnzVJavD1awKpDUdVWclNwSZHfFGV4evUSYyIK0vKBJBd9bkdE9dw-issh02s_U-6eGuUVAxYIhCUJkCQWbivGBwmssTZAmse4G1QuVVEHsXj66pmjttebgigvI_w-zohHAF9fXFoqCcClhXt05_C5qmOV4eJ6TnWnV_hOc8UV_fum6xKuedEsoCJfC17k65bwwdY0xYki7w1FBboYhncsDsa0wwL5AfdcXu4bOVqGCPMllJdhfguf32aY-6o0yiI4ea1iLXT1HPB5DYMyOfkmzBY5MiweSy3mgkaXXhsmJgwBpY_p2-EywmkuXGwOJdD-5SNEgkPuHINI80qdOa8miW4M8TLrlHxJU3h-0hoWN7lnhFl_AaQHmCsNfBApoTrc1FwDTC0nuMf5rW0bPBcvRiXAB_8SwxDVJaIgcbpPUsljrHds1WSMA1V3dNFw6R7KYjs0rnTxSktYii_O0sbsiz51W07Re7NvZS-nri-wG7pCqUd-aW_Ckp1K8EYKT41sWJyF-u3vSQf5DPtjYFBe3epquMSm6Dy_74bLHw-7Hugogo4Xmk3R2i7qrdmSV-DJXYGePhTzYjHjN-KuBFe9hgw7Bp7WZ6GOv6y8A6oFlE0=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06f500a749a88b5a016ae817d6d72087d19b3dedaf12db2806",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10327,
+    "completion_tokens": 313,
+    "total_tokens": 10640,
+    "cost": 0.0014473,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10324,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014473,
+      "upstream_inference_prompt_cost": 0.0012908,
+      "upstream_inference_completions_cost": 0.0001565
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

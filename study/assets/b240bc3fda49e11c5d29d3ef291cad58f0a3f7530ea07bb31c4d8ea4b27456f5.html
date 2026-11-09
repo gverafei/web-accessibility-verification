@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>МТС - связь и экосистема цифровых сервисов - Частным клиентам | Официальный сайт МТС - Москва и Московская область</title>
+<meta content="Актуальные новости о тарифах и услугах связи, цифровых приложениях, ТВ и медиа, финансовых сервисах и технологиях МТС в Москве и Московской области." name="description"/>
+<style>
+    :root {
+      --red: #c8102e;
+      --red-dark: #a00c24;
+      --ink: #1a1a1f;
+      --muted: #4a4a55;
+      --bg: #ffffff;
+      --soft: #f3f4f7;
+      --line: #d9dbe3;
+      --focus: #0b57d0;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+    .skip {
+      position: absolute; left: 8px; top: -60px;
+      background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 8px; z-index: 100;
+    }
+    .skip:focus { top: 8px; }
+    .wrap { width: min(1180px, 100% - 32px); margin-inline: auto; }
+
+    /* Top bar */
+    .topbar { background: var(--soft); border-bottom: 1px solid var(--line); font-size: 14px; }
+    .topbar .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; align-items: center; padding: 8px 0; }
+    .topbar nav ul, .topbar ul { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; padding: 0; }
+    .topbar a { text-decoration: none; color: var(--muted); padding: 2px 0; }
+    .topbar a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Header */
+    .header { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+    .header .wrap { display: flex; align-items: center; gap: 20px; padding: 12px 0; flex-wrap: wrap; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 20px; }
+    .brand img { width: 52px; height: 52px; }
+    .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+    .main-nav a { text-decoration: none; font-weight: 600; padding: 6px 2px; display: inline-block; }
+    .main-nav a:hover { color: var(--red); }
+    .header-actions { margin-left: auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      min-height: 44px; padding: 10px 20px; border-radius: 999px; font-weight: 700;
+      text-decoration: none; border: 2px solid transparent; font: inherit; cursor: pointer;
+    }
+    .btn-primary { background: var(--red); color: #fff; }
+    .btn-primary:hover { background: var(--red-dark); }
+    .btn-ghost { background: #fff; color: var(--ink); border-color: var(--line); }
+    .btn-ghost:hover { border-color: var(--ink); }
+
+    /* Hero */
+    .hero { padding: 40px 0 28px; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: stretch; }
+    .hero-main {
+      background: linear-gradient(135deg, #eef1ff 0%, #f7f0ff 100%);
+      border-radius: 24px; padding: clamp(24px, 4vw, 48px); display: flex; flex-direction: column; justify-content: space-between; gap: 24px;
+    }
+    .hero-main h1 { font-size: clamp(30px, 4.5vw, 46px); line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em; }
+    .tag { display: inline-block; background: #fff; border-radius: 8px; padding: 4px 10px; font-size: 15px; color: var(--muted); }
+    .hero-side { display: grid; gap: 12px; align-content: start; }
+    .quick {
+      display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center;
+      padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; background: #fff;
+    }
+    .quick:hover { border-color: var(--red); }
+    .quick-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--soft); display: grid; place-items: center; font-weight: 800; color: var(--red); }
+    .quick strong { display: block; font-size: 17px; }
+    .quick span { color: var(--muted); font-size: 15px; }
+
+    /* Sections */
+    section.block { padding: 40px 0; }
+    section.block + section.block { border-top: 1px solid var(--line); }
+    .block h2 { font-size: clamp(24px, 3vw, 32px); margin: 0 0 8px; letter-spacing: -0.01em; }
+    .lead { color: var(--muted); margin: 0 0 22px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; list-style: none; padding: 0; margin: 0; }
+    .card {
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; background: #fff; height: 100%;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .card h3 { margin: 0; font-size: 19px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .card a.card-link { text-decoration: none; color: inherit; display: block; height: 100%; }
+    .card a.card-link:hover h3 { color: var(--red); text-decoration: underline; }
+    .card .price { font-weight: 800; font-size: 18px; }
+    .card .old { text-decoration: line-through; color: var(--muted); font-size: 14px; margin-left: 6px; }
+
+    .pill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill-list a {
+      display: inline-block; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line);
+      text-decoration: none; font-weight: 600; background: #fff;
+    }
+    .pill-list a:hover { border-color: var(--ink); }
+
+    /* Two columns */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .panel { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+    .panel h3 { margin-top: 0; }
+    .panel ul { padding-left: 18px; margin: 0; }
+    .panel li { margin: 6px 0; }
+    .panel a { color: #0a3fa3; }
+
+    /* Details (disclosure) */
+    details { border: 1px solid var(--line); border-radius: var(--radius); padding: 0; background: #fff; }
+    details + details { margin-top: 12px; }
+    summary { cursor: pointer; padding: 16px 20px; font-weight: 700; list-style-position: inside; }
+    details[open] summary { border-bottom: 1px solid var(--line); }
+    .details-body { padding: 16px 20px 20px; }
+    .details-body ul { margin: 0; padding-left: 18px; }
+    .details-body li { margin: 6px 0; }
+    .details-body a { color: #0a3fa3; }
+
+    /* Footer */
+    footer { background: #111116; color: #e8e8ee; padding: 40px 0 28px; font-size: 15px; }
+    footer a { color: #e8e8ee; }
+    footer a:hover { color: #fff; }
+    .foot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 24px; }
+    footer h2 { font-size: 16px; color: #fff; margin: 0 0 10px; }
+    footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+    .foot-bottom { border-top: 1px solid #333; margin-top: 28px; padding-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; color: #c9c9d4; }
+    .social { display: flex; gap: 12px; }
+    .social a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border: 1px solid #444; border-radius: 10px; }
+
+    /* Cookie notice */
+    .cookie {
+      position: fixed; left: 50%; transform: translateX(-50%); bottom: 16px; z-index: 80;
+      width: min(1000px, 100% - 24px); background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 8px 30px rgba(0,0,0,.15); padding: 16px 20px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+    }
+    .cookie p { margin: 0; font-size: 15px; }
+    .cookie p a { color: #0a3fa3; }
+    .cookie .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cookie[hidden] { display: none; }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+    @media (max-width: 880px) {
+      .hero-grid, .split { grid-template-columns: 1fr; }
+      .header-actions { margin-left: 0; }
+    }
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .topbar .wrap { font-size: 13px; }
+      .btn { width: 100%; }
+      .header-actions { width: 100%; }
+      .cookie .actions .btn { width: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к основному содержанию</a>
+<header>
+<div class="topbar">
+<div class="wrap">
+<nav aria-label="Типы клиентов">
+<ul>
+<li><a aria-current="page" href="https://moskva.mts.ru/personal">Частным лицам</a></li>
+<li><a href="https://moskva.mts.ru/business">Бизнесу</a></li>
+<li><a href="https://moskva.mts.ru/gos">Госзаказчикам</a></li>
+</ul>
+</nav>
+<ul>
+<li><span>Регион: Москва и Московская область</span></li>
+<li><a href="https://pay.mts.ru/pages/refill?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=popolnit_balans_mts&amp;utm_content=menu_oplata_i_finansy">Пополнение и оплата</a></li>
+</ul>
+</div>
+</div>
+<div class="header">
+<div class="wrap">
+<a aria-label="МТС, на главную страницу" class="brand" href="https://moskva.mts.ru/personal">
+<img alt="Логотип МТС" height="52" src="https://static.mts.ru/mts_rf/images/logo-eco.svg" width="52"/>
+</a>
+<nav aria-label="Основная навигация" class="main-nav">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile-tv-inet">Мобильная связь</a></li>
+<li><a href="https://moskva.mts.ru/personal/dlya-doma/uslugi/katalog-uslug-fiksirovannoy-svyazi/home-inet">Для дома</a></li>
+<li><a href="https://pay.mts.ru/pages/refill?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=popolnit_balans_mts&amp;utm_content=menu_oplata_i_finansy">Оплата и финансы</a></li>
+<li><a href="https://shop.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vse_tovary&amp;utm_content=menu_internet_magazin">Интернет-магазин</a></li>
+<li><a href="https://moskva.mts.ru/personal/servisy/semejnaya-gruppa">Сервисы</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="btn btn-ghost" href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile-tv-inet">Тарифы</a>
+<a class="btn btn-ghost" href="https://support.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=support&amp;utm_content=main_footer&amp;utm_term=link_tap">Поддержка</a>
+<a class="btn btn-primary" href="https://united-auth.ssl.mts.ru/account/login?xClientId=MTS&amp;goto=https%3A%2F%2Fmoskva.mts.ru%2Fpersonal">Войти</a>
+</div>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Hero -->
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div class="hero-main">
+<div>
+<span class="tag">Зафиксируем цену тарифа</span>
+<h1 id="hero-title">Переходите в МТС со своим номером</h1>
+<p>Сохраните номер и подключите выгодный тариф. Оформление онлайн за несколько минут.</p>
+</div>
+<div>
+<a class="btn btn-primary" href="https://moskva.mts.ru/personal/pereyti-v-mts">Перейти в МТС</a>
+</div>
+</div>
+<nav aria-label="Быстрые действия с SIM и номером" class="hero-side">
+<a class="quick" href="https://moskva.mts.ru/personal/esim">
+<span aria-hidden="true" class="quick-icon">e</span>
+<span><strong>Оформить eSIM</strong><span>Онлайн, быстро и удобно</span></span>
+</a>
+<a class="quick" href="https://moskva.mts.ru/personal/krasivyj-nomer-mts">
+<span aria-hidden="true" class="quick-icon">★</span>
+<span><strong>Выбрать красивый номер</strong><span>Легко запомнить вам и друзьям</span></span>
+</a>
+<a class="quick" href="https://moskva.mts.ru/personal/vybrat-nomer#/">
+<span aria-hidden="true" class="quick-icon">SIM</span>
+<span><strong>Заказать SIM-карту</strong><span>Всего за несколько кликов</span></span>
+</a>
+<a class="quick" href="https://moskva.mts.ru/personal/chistyj-nomer">
+<span aria-hidden="true" class="quick-icon">✓</span>
+<span><strong>Оформить чистый номер</strong><span>Проверенный на спам-историю</span></span>
+</a>
+</nav>
+</div>
+</section>
+<!-- Categories -->
+<section aria-labelledby="cat-title" class="block">
+<div class="wrap">
+<h2 id="cat-title">Разделы</h2>
+<p class="lead">Тарифы, услуги и сервисы МТС для дома, телефона и покупок.</p>
+<ul class="pill-list">
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile-tv-inet">Тарифы</a></li>
+<li><a href="https://moskva.mts.ru/personal/pereyti-v-mts">Перейти в МТС</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz">Услуги и опции</a></li>
+<li><a href="https://moskva.mts.ru/personal/dom/home-allmts">Домашний интернет</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/rouming-i-mezhgorod">Роуминг</a></li>
+<li><a href="https://shop.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vse_tovary&amp;utm_content=menu_internet_magazin">Интернет-магазин</a></li>
+<li><a href="https://moskva.mts.ru/personal/5-g">Уже 5G</a></li>
+<li><a href="https://moskva.mts.ru/personal/servisy/semejnaya-gruppa">Семейная группа</a></li>
+<li><a href="https://moskva.mts.ru/personal/vse-akcii">Акции</a></li>
+</ul>
+</div>
+</section>
+<!-- Popular services -->
+<section aria-labelledby="pop-title" class="block">
+<div class="wrap">
+<h2 id="pop-title">Популярные предложения</h2>
+<p class="lead">Выберите то, что подходит именно вам.</p>
+<ul class="cards">
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/5-g"><h3>Уже 5G</h3><p>Развиваем сеть нового поколения. Переходите на новый уровень скорости.</p></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/mts-junior"><h3>МТС Junior</h3><p>Детский тариф с функцией геолокации и SOS-кнопкой.</p></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/pereyti-v-mts"><h3>РИИЛ</h3><p>Максимум связи. Переходите в МТС, чтобы попробовать тариф.</p></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/vse-akcii/skidka-33-na-krasivyj-nomer"><h3>Скидка 33% на красивый номер</h3><p>Выберите запоминающийся номер с нужным сочетанием цифр.</p></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/mts-optimus-mm"><h3>МТС Optimus</h3><p>Записи звонков, расшифровки и главное из разговоров.</p></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/servisy/platite_s_balansa_telefona"><h3>Оплата с баланса телефона</h3><p>Платите в AppGallery, играх и других сервисах.</p></a></li>
+</ul>
+</div>
+</section>
+<!-- Essentials / how-to -->
+<section aria-labelledby="need-title" class="block">
+<div class="wrap split">
+<div class="panel">
+<h2 id="need-title" style="font-size:24px;margin-top:0">Самое нужное</h2>
+<ul>
+<li><a href="https://moskva.mts.ru/personal">Личный кабинет</a></li>
+<li><a href="https://payment.mts.ru/spa/categories?tab=payments">Оплатить или перевести</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/rouming-i-mezhgorod">Настроить роуминг</a></li>
+<li><a href="https://moskva.mts.ru/personal/sim-to-esim-page">Перейти на eSIM</a></li>
+<li><a href="https://c.mts.ru/uQ4e/gxvm74ev">Скачать приложение Мой МТС</a></li>
+</ul>
+</div>
+<div class="panel">
+<h2 style="font-size:24px;margin-top:0">Поддержка</h2>
+<p class="lead" style="margin-bottom:12px">Отвечаем на частые вопросы</p>
+<ul>
+<li><a href="https://support.mts.ru/mts_mobilnaya_svyaz?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=mobilnaya_svayz">Мобильная связь</a></li>
+<li><a href="https://support.mts.ru/mts_mobilnaya_svyaz/esim/kak-aktivirovat-esim?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=kak_aktivirovat_esim">eSIM</a></li>
+<li><a href="https://support.mts.ru/mts_mobilnyy_internet/reshenie-problem-s-internetom/chto-delat-esli-ne-rabotaet-mobilnii-internet?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=chto_delat_esli_ne_rabotaet_mobilnii_intern">Не работает интернет</a></li>
+<li><a href="https://support.mts.ru/mts_mobilnaya_svyaz/blokirovka-nomera-problemi-so-svyazyu/dobrovolnaya-blokirovka-nomera?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=dobrovolnaya_blokirovka">Блокировка номера</a></li>
+<li><a href="https://support.mts.ru/mts_mobilnaya_svyaz/vosstanovlenie-i-zamena-sim-karti/kak-zamenit-sim-kartu?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=zamena_sim_karti">Замена SIM-карты</a></li>
+<li><a href="https://support.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=vse_temy">Все темы</a></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Needs as disclosure -->
+<section aria-labelledby="needs-title" class="block">
+<div class="wrap">
+<h2 id="needs-title">Всё, что нужно</h2>
+<p class="lead">Раскройте раздел, чтобы увидеть подходящие услуги.</p>
+<details open="">
+<summary>Для связи</summary>
+<div class="details-body">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/zashchitnik">Защитник+: защита от ненужных звонков и мошенников</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/cubes">Кубики: безлимиты, больше ГБ и минут</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/shumopodavlenie?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=main_slider_nuzhno_dlya_svyazi">Шумоподавление с ИИ</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Для семьи и работы с звонками</summary>
+<div class="details-body">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/sekretar-plus">МТС Секретарь: ответит на звонки, когда вы заняты</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/zapis-razgovorov">Запись разговоров с расшифровкой текстом</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/sekretar-vzvonke">Ассистент в звонке: заметки и напоминания</a></li>
+<li><a href="https://moskva.mts.ru/personal/servisy/semejnaya-gruppa">Семейная группа</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Для поездок и отдыха</summary>
+<div class="details-body">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/rouming-i-mezhgorod">Роуминг и межгород</a></li>
+<li><a href="https://moskva.mts.ru/personal/servisy/oplata-zagranicej-po-qr-kodu">Оплата по QR-коду за границей</a></li>
+<li><a href="https://moskva.mts.ru/personal/servisy/kion">Онлайн-кинотеатр КИОН</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Для выгоды</summary>
+<div class="details-body">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/vse-akcii">Скидки и акции</a></li>
+<li><a href="https://mtsdengi.ru/karti/debet-mts-dengi?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=debetovaya_karta_s_keshbekom_do_30&amp;utm_content=menu_oplata_i_finansy">Дебетовая карта с кешбэком до 30%</a></li>
+</ul>
+</div>
+</details>
+</div>
+</section>
+<!-- Shop -->
+<section aria-labelledby="shop-title" class="block">
+<div class="wrap">
+<h2 id="shop-title">Интернет-магазин МТС SHOP</h2>
+<p class="lead">Смартфоны, гаджеты и техника для дома. Цены указаны на момент публикации в источнике.</p>
+<ul class="pill-list" style="margin-bottom:22px">
+<li><a href="https://shop.mts.ru/promo/smartfony/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=shop_smartfony&amp;utm_content=main_page&amp;utm_term=vidget_shop">Смартфоны</a></li>
+<li><a href="https://shop.mts.ru/promo/naushniki-i-kolonki/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=shop_naushniki&amp;utm_content=main_page&amp;utm_term=vidget_shop">Наушники и колонки</a></li>
+<li><a href="https://shop.mts.ru/catalog/gadzhety/umnye-veshchi/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=shop_chasy&amp;utm_content=main_page&amp;utm_term=vidget_shop">Часы и трекеры</a></li>
+<li><a href="https://shop.mts.ru/promo/planshety/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=shop_planshety&amp;utm_content=main_page&amp;utm_term=vidget_shop">Планшеты</a></li>
+<li><a href="https://shop.mts.ru/promo/umnyj-dom?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=shop_umnyj_dom&amp;utm_content=main_page&amp;utm_term=vidget_shop">Умный дом</a></li>
+<li><a href="https://shop.mts.ru/promo/nashi-luchshie-predlozheniya/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=shop_akcii&amp;utm_content=main_page&amp;utm_term=vidget_shop">Акции</a></li>
+</ul>
+<ul class="cards">
+<li class="card"><a class="card-link" href="https://shop.mts.ru/product/smartfon-apple-iphone-17-pro-max-256-gb-esim-sim-cosmic-orange?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=api_tovarnay_polka_vidget&amp;utm_content=glavnya_ctranica&amp;loc_code=77000000000000000000000000"><h3>Apple iPhone 17 Pro Max 256 Гб eSIM + SIM Cosmic Orange</h3><p><span class="price">137 490 ₽</span><span class="old">184 990 ₽</span></p></a></li>
+<li class="card"><a class="card-link" href="https://shop.mts.ru/product/besprovodnye-naushniki-s-mikrofonom-jbl-tune-720bt-chernye?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=api_tovarnay_polka_vidget&amp;utm_content=glavnya_ctranica&amp;loc_code=77000000000000000000000000"><h3>JBL Tune 720BT Черные</h3><p><span class="price">3 590 ₽</span><span class="old">9 990 ₽</span></p></a></li>
+<li class="card"><a class="card-link" href="https://shop.mts.ru/product/smartfon-huawei-nova-15-12-256-gb-chernyj?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=api_tovarnay_polka_vidget&amp;utm_content=glavnya_ctranica&amp;loc_code=77000000000000000000000000"><h3>HUAWEI Nova 15 12/256 Гб Черный</h3><p><span class="price">32 490 ₽</span><span class="old">36 990 ₽</span></p></a></li>
+<li class="card"><a class="card-link" href="https://shop.mts.ru/product/smartfon-samsung-galaxy-a56-8-256-gb-5g-grafitovyj-a566e?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=api_tovarnay_polka_vidget&amp;utm_content=glavnya_ctranica&amp;loc_code=77000000000000000000000000"><h3>Samsung Galaxy A56 8/256 Гб 5G Графитовый (A566E)</h3><p><span class="price">34 990 ₽</span><span class="old">48 990 ₽</span></p></a></li>
+</ul>
+<p style="margin-top:18px"><a href="https://shop.mts.ru/search/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=api_tovarnay_polka_vidget&amp;utm_content=glavnya_ctranica&amp;q=Подобрали%20для%20Вас&amp;loc_code=77000000000000000000000000">Больше товаров в МТС SHOP</a></p>
+</div>
+</section>
+<!-- News -->
+<section aria-labelledby="news-title" class="block">
+<div class="wrap">
+<h2 id="news-title">Новости</h2>
+<ul class="cards">
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/novosti/2026-10-16/uzhe-5g--skorostj-vsegda-s-vami"><p>16.10.2026</p><h3>УЖЕ 5G – скорость всегда с вами</h3></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/novosti/2026-10-15/skidka-na-svyazj-pri-popolnenii-balansa-kartoj-mts-denjgi"><p>15.10.2026</p><h3>Скидка на связь при пополнении баланса картой МТС Деньги</h3></a></li>
+<li class="card"><a class="card-link" href="https://moskva.mts.ru/personal/novosti/2026-10-15/riil--vibiraj-svoyu-cenu-na-svyazj"><p>15.10.2026</p><h3>РИИЛ — выбирай свою цену на связь</h3></a></li>
+</ul>
+<p style="margin-top:18px"><a href="https://moskva.mts.ru/personal/novosti">Все новости</a> · <a href="https://media.mts.ru/">Полезные материалы</a></p>
+</div>
+</section>
+<!-- About / Tariffs / Apps -->
+<section aria-labelledby="about-title" class="block">
+<div class="wrap split">
+<div class="panel">
+<h2 id="about-title" style="font-size:24px;margin-top:0">Создаём цифровые сервисы для жизни и бизнеса</h2>
+<ul>
+<li><a href="https://moskva.mts.ru/personal/new-telecom">Технологии МТС</a></li>
+<li><a href="https://moskva.mts.ru/personal/podderzhka/zoni-obsluzhivaniya/nasha-set/?on=g2">Карта покрытия сети</a></li>
+<li><a href="https://moskva.mts.ru/personal/podderzhka/zoni-obsluzhivaniya/offices/">Карта салонов</a></li>
+<li><a href="https://moskva.mts.ru/about/ustojchivoe-razvitie">Вносим вклад в будущее</a></li>
+<li><a href="https://moskva.mts.ru/about">О компании</a></li>
+<li><a href="https://job.mts.ru/">Работа в МТС</a></li>
+</ul>
+</div>
+<div class="panel">
+<h2 style="font-size:24px;margin-top:0">Скачайте Мой МТС</h2>
+<p>Управляйте сервисами МТС, проверяйте баланс, контролируйте расходы, настраивайте тариф и услуги.</p>
+<ul>
+<li><a href="https://mymts.onelink.me/uQ4e/appstore">App Store</a></li>
+<li><a href="https://mymts.onelink.me/uQ4e/googleplay">Google Play</a></li>
+<li><a href="https://mymts.onelink.me/uQ4e/AppGallery">AppGallery</a></li>
+<li><a href="https://www.rustore.ru/catalog/app/ru.mts.mymts">RuStore</a></li>
+<li><a href="https://www.mts.ru/personal/mymts">Узнать больше о приложении</a></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Tariffs as disclosure -->
+<section aria-labelledby="tariff-title" class="block">
+<div class="wrap">
+<h2 id="tariff-title">Тарифы</h2>
+<details>
+<summary>Мобильная связь</summary>
+<div class="details-body">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile">Тарифы мобильной связи</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/red">RED</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mts-super">МТС Супер</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/mts-top">МТС ТОП</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz/mts-junior">МТС Junior</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/starshee-pokolenie">МТС Мудрый</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/proshche">МТС Проще</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/riil">РИИЛ</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mts_nalegke">МТС Налегке</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Дома и устройства</summary>
+<div class="details-body">
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile-tv-inet">Связь, ТВ и интернет</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mts-doma-otlichno">МТС Дома Отлично</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/satellite-tv">Тарифы для спутникового ТВ</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/watches-and-modems">Тарифы для часов и модемов</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/telefon">Тарифы для домашнего телефона</a></li>
+</ul>
+</div>
+</details>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<nav aria-labelledby="f-about">
+<h2 id="f-about">Компания</h2>
+<ul>
+<li><a href="https://moskva.mts.ru/about">О компании</a></li>
+<li><a href="https://support.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=support&amp;utm_content=main_footer&amp;utm_term=link_tap">Поддержка</a></li>
+<li><a href="https://moskva.mts.ru/personal/kontaktu">Контакты</a></li>
+<li><a href="https://moskva.mts.ru/personal/novosti">Новости</a></li>
+<li><a href="https://moskva.mts.ru/personal/vse-akcii">Акции</a></li>
+<li><a href="https://moskva.mts.ru/personal/podderzhka/zoni-obsluzhivaniya/offices">Карта салонов МТС</a></li>
+<li><a href="https://job.mts.ru/">Карьера в МТС</a></li>
+<li><a href="https://ir.mts.ru/">Акционерам и инвесторам</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-services">
+<h2 id="f-services">Услуги</h2>
+<ul>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz">Мобильная связь</a></li>
+<li><a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/rouming-i-mezhgorod/poezdki-po-miru">Роуминг</a></li>
+<li><a href="https://moskva.mts.ru/personal/esim">Оформить eSIM</a></li>
+<li><a href="https://moskva.mts.ru/personal/chistyj-nomer">Оформить чистый номер</a></li>
+<li><a href="https://moskva.mts.ru/personal/krasivyj-nomer-mts">Выбрать красивый номер</a></li>
+<li><a href="https://moskva.mts.ru/personal/dlya-doma/uslugi/katalog-uslug-fiksirovannoy-svyazi">Для дома</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-shop">
+<h2 id="f-shop">Интернет-магазин</h2>
+<ul>
+<li><a href="https://shop.mts.ru/catalog/smartfony/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_content=smartfone&amp;utm_campaign=footer">Смартфоны</a></li>
+<li><a href="https://shop.mts.ru/promo/naushniki-i-kolonki/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_content=naushniki&amp;utm_campaign=footer">Наушники и колонки</a></li>
+<li><a href="https://shop.mts.ru/promo/umnye-chasy-i-fitnes-braslety/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_content=chasy&amp;utm_campaign=footer">Умные часы и трекеры</a></li>
+<li><a href="https://shop.mts.ru/promo/planshety/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_content=planshety&amp;utm_campaign=footer">Планшеты</a></li>
+<li><a href="https://shop.mts.ru/actions/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_content=skidki_akcii&amp;utm_campaign=footer">Скидки и акции</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-docs">
+<h2 id="f-docs">Документы</h2>
+<ul>
+<li><a href="https://moskva.mts.ru/about/investoram-i-akcioneram/korporativnoe-upravlenie/dokumenti-pao-mts">Документы ПАО «МТС»</a></li>
+<li><a href="https://moskva.mts.ru/personal/servisy/sertifikaty-bezopasnosti-mincifry">Сертификаты безопасности Минцифры</a></li>
+<li><a href="https://moskva.mts.ru/personal/pravovaya-informaciya">Правовая информация</a></li>
+<li><a href="https://moskva.mts.ru/about/komplaens-i-delovaya-etika">Комплаенс и деловая этика</a></li>
+<li><a href="https://moskva.mts.ru/about/investoram-i-akcioneram/korporativnoe-upravlenie/raskritie-informacii">Раскрытие информации</a></li>
+<li><a href="https://moskva.mts.ru/personal/cookie">Политика обработки cookies</a></li>
+<li><a href="https://static.mts.ru/dpc_upload/images/agreement.pdf">Соглашение о пользовании системой (PDF)</a></li>
+<li><a href="https://static.mts.ru/dpc_upload/images/usloviya_servisa.pdf">Условия использования сервиса (PDF)</a></li>
+<li><a href="https://moskva.mts.ru/personal/sitemap">Карта сайта</a></li>
+</ul>
+</nav>
+</div>
+<div class="foot-bottom">
+<div>
+<p style="margin:0">© 2026 ПАО «МТС». Все права защищены.</p>
+<p style="margin:4px 0 0">На информационном ресурсе применяются <a href="https://static.mts.ru/dpc_upload/images/products/pravila_primeneniya_rekomendatelnyh_tehnologii_06_10_20232_my_mts.pdf">рекомендательные технологии</a>.</p>
+</div>
+<div aria-label="Социальные сети" class="social">
+<a aria-label="МТС во ВКонтакте" href="https://vk.com/mts">VK</a>
+<a aria-label="МТС в Одноклассниках" href="https://ok.ru/mts">OK</a>
+<a aria-label="МТС в Telegram" href="https://t.me/mtsofficial">TG</a>
+</div>
+<p style="margin:0">18+</p>
+</div>
+</div>
+</footer>
+<div aria-label="Уведомление о cookie" class="cookie" id="cookie" role="region">
+<p>Мы собираем файлы cookie и применяем <a href="https://static.mts.ru/dpc_upload/images/products/pravila_primeneniya_rekomendatelnyh_tehnologii_06_10_20232_my_mts.pdf">рекомендательные технологии</a>. <a href="https://moskva.mts.ru/personal/cookie">Подробнее</a></p>
+<div class="actions">
+<button class="btn btn-primary" id="cookie-accept" type="button">Принять</button>
+</div>
+</div>
+<script>
+    (function () {
+      var banner = document.getElementById('cookie');
+      var btn = document.getElementById('cookie-accept');
+      try {
+        if (localStorage.getItem('cookieNoticeAccepted') === '1') { banner.hidden = true; }
+      } catch (e) {}
+      btn.addEventListener('click', function () {
+        banner.hidden = true;
+        try { localStorage.setItem('cookieNoticeAccepted', '1'); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

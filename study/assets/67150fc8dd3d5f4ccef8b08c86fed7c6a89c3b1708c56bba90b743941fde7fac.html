@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Discover the innovative world of Apple and shop iPhone, iPad, Apple Watch, Mac, Apple TV, accessories, entertainment, and support." name="description"/>
+<title>Apple</title>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #1d1d1f;
+    --muted: #6e6e73;
+    --blue: #06c;
+    --line: #d2d2d7;
+    --page: #f5f5f7;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.45;
+  }
+  a { color: var(--blue); }
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 4px;
+    border-radius: 3px;
+  }
+  .skip-link {
+    position: absolute; z-index: 10; top: -5rem; left: 1rem;
+    padding: .75rem 1rem; background: white; color: var(--ink);
+  }
+  .skip-link:focus { top: 1rem; }
+  .region-note {
+    display: flex; align-items: center; justify-content: center; gap: 1rem;
+    padding: .7rem 1rem; background: #f5f5f7; color: #424245;
+    font-size: .85rem; text-align: center;
+  }
+  .region-note p { margin: 0; }
+  .region-note a { white-space: nowrap; }
+  .site-header { position: relative; z-index: 2; background: #1d1d1f; color: #f5f5f7; }
+  .nav-wrap { max-width: 1060px; margin: auto; padding: 0 1.25rem; }
+  .nav {
+    min-height: 46px; display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem;
+  }
+  .brand { color: white; text-decoration: none; font-weight: 700; font-size: 1.15rem; }
+  .nav-links { display: flex; gap: clamp(.7rem, 2vw, 1.65rem); align-items: center; }
+  .nav-links a { color: #e8e8ed; text-decoration: none; font-size: .78rem; }
+  .nav-links a:hover, .footer a:hover { text-decoration: underline; }
+  .search { display: flex; gap: .4rem; }
+  .search input {
+    width: 120px; min-width: 0; border: 1px solid #777; border-radius: 5px;
+    padding: .35rem .5rem; background: #2c2c2e; color: white;
+  }
+  .search button {
+    color: white; background: transparent; border: 1px solid #888; border-radius: 5px;
+    padding: .3rem .6rem; cursor: pointer;
+  }
+  main { display: block; }
+  .hero {
+    position: relative; min-height: 620px; overflow: hidden; background: #000;
+    color: white; text-align: center; isolation: isolate;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, #000 0%, #000 30%, transparent 65%);
+  }
+  .hero-copy { position: relative; z-index: 1; padding: 3.25rem 1rem 1rem; }
+  .hero h1 { margin: 0; font-size: clamp(2.6rem, 5vw, 4.25rem); line-height: 1.05; letter-spacing: -.045em; }
+  .hero .tagline { margin: .45rem 0 1.15rem; font-size: clamp(1.2rem, 2.2vw, 1.7rem); }
+  .actions { display: flex; justify-content: center; gap: .7rem; flex-wrap: wrap; }
+  .pill {
+    display: inline-block; padding: .58rem 1rem; border-radius: 999px;
+    border: 1px solid #2997ff; color: white; text-decoration: none; font-size: .95rem;
+  }
+  .pill.primary { background: #0077ed; border-color: #0077ed; }
+  .pill:hover { background: #1686f7; }
+  .hero img {
+    position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; object-position: center bottom;
+  }
+  .product-feature {
+    position: relative; min-height: 560px; overflow: hidden; text-align: center;
+    background: #f5f5f7; padding: 3rem 1rem 0;
+  }
+  .product-feature h2 { margin: 0; font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -.04em; }
+  .product-feature p { margin: .35rem 0 1rem; font-size: 1.35rem; }
+  .product-feature img {
+    display: block; width: min(100%, 1160px); height: 370px; object-fit: cover;
+    object-position: center 58%; margin: 1.8rem auto 0;
+  }
+  .feature-dark { background: #050506; color: white; }
+  .feature-dark img { object-position: center 55%; }
+  .grid-section { padding: 1rem; background: #fff; }
+  .grid {
+    max-width: 1440px; margin: auto; display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
+  }
+  .card {
+    min-height: 500px; position: relative; overflow: hidden; text-align: center;
+    background: #f5f5f7; padding: 2.5rem 1rem 0;
+  }
+  .card.dark { color: white; background: #050506; }
+  .card h2 { margin: 0; font-size: clamp(2rem, 3.2vw, 3rem); letter-spacing: -.04em; }
+  .card p { margin: .35rem auto 1rem; max-width: 28rem; font-size: 1.15rem; }
+  .card img {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 62%;
+    object-fit: cover; object-position: center top;
+  }
+  .card .actions { position: relative; z-index: 1; }
+  .entertainment { padding: 4rem 1.25rem; background: var(--page); }
+  .entertainment h2 { max-width: 1100px; margin: 0 auto 1.5rem; font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -.04em; }
+  .show-card {
+    position: relative; max-width: 1100px; min-height: 350px; margin: auto;
+    overflow: hidden; border-radius: 14px; background: #182331; color: white;
+  }
+  .show-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .show-copy {
+    position: absolute; inset: auto 0 0; padding: 2.5rem;
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
+  }
+  .show-copy h3 { margin: 0 0 .25rem; font-size: 1.8rem; }
+  .show-copy p { margin: 0 0 1rem; }
+  .footer { background: #f5f5f7; color: var(--muted); padding: 2.5rem max(1.25rem, calc((100% - 1000px)/2)); font-size: .82rem; }
+  .footer p { margin: 0 0 1rem; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: .55rem 1.1rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+  .footer a { color: #424245; }
+  @media (max-width: 760px) {
+    .nav { flex-wrap: wrap; justify-content: space-between; padding: .55rem 0; }
+    .nav-links { order: 3; width: 100%; overflow-x: auto; padding: .35rem 0 .5rem; }
+    .nav-links a { white-space: nowrap; }
+    .search input { width: 95px; }
+    .hero { min-height: 540px; }
+    .hero-copy { padding-top: 2.6rem; }
+    .product-feature { min-height: 460px; }
+    .product-feature img { height: 300px; }
+    .grid { grid-template-columns: 1fr; }
+    .card { min-height: 470px; }
+    .show-card { min-height: 280px; }
+    .show-copy { padding: 1.25rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+<style data-warp-repair="true">section[aria-labelledby="duo-title"] > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">section[aria-labelledby="duo-title"] > .actions > .pill:nth-child(2) { color: #0066cc; }</style><style data-warp-repair="true">.feature-dark > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.dark.card:nth-child(1) > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(2) > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(2) > .actions > .pill:nth-child(2) { color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(3) > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(3) > .actions > .pill:nth-child(2) { color: #0066cc; }</style><style data-warp-repair="true">.dark.card:nth-child(4) > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(5) > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(6) > .actions > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style><style data-warp-repair="true">.card:nth-child(6) > .actions > .pill:nth-child(2) { color: #1d1d1f; border-color: #1d1d1f; }</style><style data-warp-repair="true">.show-copy > .primary.pill { background-color: #0066cc; border-color: #0066cc; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div aria-label="Country or region" class="region-note">
+<p>Shopping and content may vary by location.</p>
+<a href="https://www.apple.com/choose-country-region/">Choose your country or region</a>
+</div>
+<header class="site-header">
+<div class="nav-wrap">
+<nav aria-label="Main navigation" class="nav">
+<a aria-label="Apple home" class="brand" href="https://www.apple.com/">Apple</a>
+<div class="nav-links">
+<a href="https://www.apple.com/us/shop/goto/store">Store</a>
+<a href="https://www.apple.com/mac/">Mac</a>
+<a href="https://www.apple.com/ipad/">iPad</a>
+<a href="https://www.apple.com/iphone/">iPhone</a>
+<a href="https://www.apple.com/watch/">Watch</a>
+<a href="https://www.apple.com/apple-vision-pro/">Vision</a>
+<a href="https://www.apple.com/airpods/">AirPods</a>
+<a href="https://www.apple.com/tv-home/">TV &amp; Home</a>
+<a href="https://www.apple.com/entertainment/">Entertainment</a>
+<a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a>
+</div>
+<form action="https://www.apple.com/us/search" class="search" method="get" role="search">
+<label class="visually-hidden" for="site-search">Search Apple</label>
+<input id="site-search" name="q" placeholder="Search Apple" type="search"/>
+<button type="submit">Search</button>
+</form>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<img alt="iPhone 18 Pro in burgundy, showing the Pro Fusion camera system and glowing Pro lettering." src="https://www.apple.com/v/homepage/images/iphone-18-pro/a/hero_iphone_18_pro__fqe1motd0ymy_large.jpg"/>
+<div class="hero-copy">
+<h1 id="hero-title">iPhone 18 Pro</h1>
+<p class="tagline">Pro further.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/iphone-18-pro/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_18_pro">Buy</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="duo-title" class="product-feature">
+<h2 id="duo-title">iPhone Duo</h2>
+<p>Hello, hello.</p>
+<p>Pre-order starting 5:00 a.m. PT on 10.16. Available starting 10.23.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/iphone-duo/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_duo">View pricing</a>
+</div>
+<img alt="iPhone Duo unfolded in landscape orientation, with the Home Screen visible on its interior display." src="https://www.apple.com/v/homepage/images/iphone-duo/a/hero_iphone_duo_announce__fh4u8yzndpe2_large.jpg"/>
+</section>
+<section aria-labelledby="watch-title" class="product-feature feature-dark">
+<h2 id="watch-title">Apple Watch Series 12</h2>
+<p>The most accurate heart rate sensing in a wearable.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/apple-watch-series-12/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_watch/apple_watch_series_12">Buy</a>
+</div>
+<img alt="Two Apple Watch Series 12 devices, one showing the Heart Rate app and one showing green health-sensing lights." src="https://www.apple.com/v/homepage/images/apple-watch-series-12/a/hero_apple_watch_series_12__n9rln7bzvwya_large.jpg"/>
+</section>
+<section aria-label="More from Apple" class="grid-section">
+<div class="grid">
+<article class="card dark">
+<h2>Apple Watch Ultra 4</h2>
+<p>A battery you can’t outrun.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/apple-watch-ultra-4/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_watch/apple_watch_ultra_4">Buy</a>
+</div>
+<img alt="Apple Watch Ultra 4 with a natural titanium case and translucent gray Ocean Band." src="https://www.apple.com/v/homepage/images/apple-watch-ultra-4/a/promo_apple_watch_ultra_4__e4r3qertak2u_large.jpg"/>
+</article>
+<article class="card">
+<h2>MacBook Air</h2>
+<p>Now supercharged by M5.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/macbook-air/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_mac/macbook_air">Buy</a>
+</div>
+<img alt="Two open sky-blue MacBook Air laptops arranged to emphasize their slim profile." src="https://www.apple.com/v/homepage/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large.jpg"/>
+</article>
+<article class="card">
+<h2>iPad Air</h2>
+<p>Now supercharged by M4.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/ipad-air/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_ipad/ipad_air">Buy</a>
+</div>
+<img alt="iPad Air models floating, showing the front display and rear camera." src="https://www.apple.com/v/homepage/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large.jpg"/>
+</article>
+<article class="card dark">
+<h2>AirPods Pro 3</h2>
+<p>The world’s best in-ear Active Noise Cancellation.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/airpods-pro/">Learn more</a>
+<a class="pill" href="https://www.apple.com/us/shop/goto/buy_airpods/airpods_pro_3">Buy</a>
+</div>
+<img alt="White AirPods Pro 3 wireless headphones with silicone tips." src="https://www.apple.com/v/homepage/images/airpods-pro-3/a/promo_airpods_pro_3__e4755qofhnyq_large.jpg"/>
+</article>
+<article class="card">
+<h2>Apple Upgrade</h2>
+<p>Love it. Lease it. Upgrade it.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/us/shop/goto/apple_upgrade">Learn more</a>
+</div>
+<img alt="Burgundy iPhone 18 Pro with a spectrum of purple and red silhouettes behind it." src="https://www.apple.com/v/homepage/images/apple-upgrade/a/promo_apple_upgrade__jvn6udm4tx2e_large.jpg"/>
+</article>
+<article class="card">
+<h2>Apple Card</h2>
+<p>Get up to 3% Daily Cash back with every purchase.</p>
+<div class="actions">
+<a class="pill primary" href="https://www.apple.com/apple-card/">Learn more</a>
+<a class="pill" href="https://card.apple.com/apply/application?referrer=cid%3Dapy-200-10000036&amp;start=false">Apply now</a>
+</div>
+<img alt="Apple Card shown from the front, with Apple logo, cardholder name, and chip." src="https://www.apple.com/v/homepage/images/apple-card/a/promo_apple_card__d8xz4kd4evwy_large.jpg"/>
+</article>
+</div>
+</section>
+<section aria-labelledby="entertainment-title" class="entertainment">
+<h2 id="entertainment-title">Endless entertainment.</h2>
+<article class="show-card">
+<img alt="Artwork for Matchbox The Movie." src="https://is1-ssl.mzstatic.com/image/thumb/tJfeKcRIT_sFwIKianB3GQ/1250x668sr.jpg"/>
+<div class="show-copy">
+<h3>Matchbox The Movie</h3>
+<p>Action · Save the world, bring your friends.</p>
+<a class="pill primary" href="https://tv.apple.com/us/movie/matchbox-the-movie/umc.cmc.31qa8j1tn2cnpyk3fx43w928d?l=en-US?itscg=10000&amp;itsct=atv-apl_hp-stream_now--220622">Stream now</a>
+</div>
+</article>
+</section>
+</main>
+<footer class="footer">
+<p>More ways to shop: <a href="https://www.apple.com/retail/">Find an Apple Store</a> or <a href="https://locate.apple.com/">other retailer</a> near you. Or call <a href="tel:1-800-692-7753">1-800-MY-APPLE (1-800-692-7753)</a>.</p>
+<nav aria-label="Apple information" class="footer-links">
+<a href="https://www.apple.com/accessibility/">Accessibility</a>
+<a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>
+<a href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a>
+<a href="https://www.apple.com/us/shop/goto/help/sales_refunds">Sales and Refunds</a>
+<a href="https://www.apple.com/contact/">Contact Apple</a>
+<a href="https://www.apple.com/choose-country-region/">United States · Choose your country or region</a>
+</nav>
+<p>Copyright © 2026 Apple Inc. All rights reserved.</p>
+</footer>
+<style>
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+</style>
+</body>
+</html>

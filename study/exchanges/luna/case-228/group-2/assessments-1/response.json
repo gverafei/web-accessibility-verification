@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target communicates the awards section with a clear heading, explanatory text, and the awards graphic. The changed layout and reduced graphic size do not materially remove its core meaning.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The awards section is coherently arranged and its main heading and description are legible. The graphic is smaller than in the reference but remains visible; the footer cutoff is a viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible cookie notice has a clearly labeled Acknowledge button. No essential visible control in the assessed region appears unreadable or obscured.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding awards and footer regions in a coherent comparison, despite their different layouts and scroll positions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s awards heading, description, and graphic convey a clear, relevant awards-section meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating award display**\n\nI'm assessing the generated award images; they\u2019re coherent, although the text might be a bit small. The footer is partially obscured by a cookie notification, but it\u2019s in a normal fixed position and doesn't block the awards. I\u2019m also noticing that the target image is compressed inside a card while still showing the essential explanatory text. The controls for acknowledging the cookie seem readable, but the footer might be clipped by the viewport. It looks like there's no main navigation for the target, which is puzzling. I'll need to document this in JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating award display**\n\nI'm assessing the generated award images; they\u2019re coherent, although the text might be a bit small. The footer is partially obscured by a cookie notification, but it\u2019s in a normal fixed position and doesn't block the awards. I\u2019m also noticing that the target image is compressed inside a card while still showing the essential explanatory text. The controls for acknowledging the cookie seem readable, but the footer might be clipped by the viewport. It looks like there's no main navigation for the target, which is puzzling. I'll need to document this in JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bx-XeirniRnn02BW85zL3TmdYFOkrAywfoSLg0n527SxbcrCcGWGLkeTbOTTrVnoTJO_wGSAESjz3rGfF8X9Zm8bfj5aFQ2AUrdHVQnCqVFHH-_DCGJst4mfUL7C-HfcHLgiDB65Yr7oHGV3ltJ4zU1KYCXhLVfg3kmzWzVGe_KQGQeAb7UIBWRb2rDIrZOwyK30ajj879duKGAuu0JTrhypW6UCQ3WevEG5MqYV3tlHUrwHK9SI_5tl8C4-IB8h1XCFsQ-zZmvQd97_s0YMA6yRdZdSQDk_AwlO16rfG7aoXr8dS5zXvKNXseQ988wkT2Onnlh2wD8BJnhLpGZQa5dNZENZoH4M0nKsoGTMicdzc3IxrLwhz2KOjaD9qhG3qt3gNAX0P3wjT2abDnZWvinLXIpH3kH4IB-WM-XIy4HfXSBmYw58TV3CbmJA5MEVf7mIrsOsznihAzi4G-d-H7NxelbayagT8OWs08m-Mt7xmNswxeswTDvoR98uQDiK_SirnHwGYNsstFQsDi6Sx7vLjbs_dXnnQnRzafJXjtKLbqSMMphshg1pmATwvKIJTCpFCPJJPc8Tdo9mwsFpliYvQ9Vh3pCuh8PVRYLUn_OehEvMfT9HhEevFFzundcXMo3HghSXXIdBvMm-DUidPkasfQBcBU_SRrwVm8anxqdk6NQroGwrpEPQOKfIIepZVJ5C3qfsDERtX9luar2Kz5lnEfV4Mt4fSDPS3Z65aSQsHenvAn_QSsDESne-1dv55H7ULx9gQzxysV2a74pjnEwjGA0gNR99FMSS-_mfHVFvRrMEO3cB1nSvPcHV9R_nMabtbId57iJpuXJ15HCadK-N8mQ18AKhBc42i3nDBE_VUR5NL6MN4VRvORUVhRKaX_YrYRWrPDSJ10De4TBw-lA8-tjJmIHnN5JSIuJELZ6guxnGKIGqL9KLTqBQIExVdtVmg9-6tHD9r7eYW5CrQyu6axPd9NJIkVZ29z7elcHJ_N40YirYrVBsU4zhD1I2r1wuXU7RauurcnBXmXqvY91GbtZOFcRq7czsfpZDtrFx-B8tU1qoyXR7ciTPGSx0CrJ7lm9O43AQjTFMHv6b6RvQKVOaMAR0xNScBdbhYfjUw_gl8l6W-cK8agRbHeomIDxJ8p5PoN8l8uQaqxbiRIfIYxAXzbLCh_edm4LAQzrMvZSsJhbhiE7Bh6vHioiY7lyesjEoSZ7IbbzaBh19NNkyjilhwZZ_oFd325i_kdbMJroqENiyeT2VeeLujLUjYRnMlSJ4mY2abr3pLD3k3BF4d0QYg0oBWlQGkN3RscaQX6ZgxVfnUdTK4HuItD37GohQcknYegG1eAkwZWg6_xuA1qvO88EBiA_a_IEB-QVDP1SlB8KNqeMVVLRiF8rF2KYzUNPdXNC0DhzgXg5_L8A8Mv1GIk5z3MPVIUBpqMhsBlLoAqDJ7cciVYVY0UFmn5fBnkj_uuA6yOgtgSjIanLy95B2KqQ0FiPT77SgzOxVJcis8LUtWNXaZOYCYAHqN0sL4hPrN5B2hy29uIDjDsENAwGXXABT3Ld9Mo-o_y38_-gjhoYiDLt985oJwxQEAiK-N4v9efDVWEuTIm2Gi2sWjuSou7WYgiSXK8nawcIlyhfpxEqzNUPOCil8eR12m_P8aMyby40Fwl8db9vm2suaAF4BDiES49RJxbc0vqr_Ea5Ut8bpzL9KR2GUc7yF8K7Ix6meOPMfqwqGn-VtfHZdyom0cJdnNIIo5zy_He8nRzY6x2Zv2r5SAas9u61bZknsugEwDrVZG-15qB1KTLVNPKyqv8_VcIU59KGldUpUm57AGIaJ9i4VpE6heduRyRQqYAKQJ5RjRbvoudJB-eDnizuDiXQNqLTtRzbddDWcZp2DMjkP5A0b874r2kY7pXQKzWVCRaQZH5ZyrmtToaWYpj5hTxHJm32Zlax2nacxpeJSlszO7ympadwcSGnol6ntA4FnFG2z85IVmzG2CFjHDf8tkh2DfVtbTIa4yFVZRzba9bICsezBy5jxu6sa7rPkLTKCqczkN0dTK3R92O4CdgsJRkxPyWyP7E7dfM5GGwj9yRDDiJayz6U9I8iGieOOh7dS6Lhh6LCI2H3Rah1nnUuza-Lga8UwHsEos83o9mN9WKB4lLTEm6RN7uWKnDJlVoHPRq_HdJjblspyx03xBbKuRy3N04T84AsbYTx9GUOX1lvDxWslOvt9mJDpPBlvVHFiPLYWlqBTLXOMreHBiFvsSJZdm1WLF9kvTGTj5ooFdorP4r_DwEotmP05PF1EetBy0K-Y1yKZ7nmcsj8O-8Xq--cfQeG0AMxorSG_JEAGNupn7Q_754n-2d9zfjv1iw7ahB5TtVxSZb2XhfRGsbSmXGhC4Z3vJck3mkX3RzpraFwblZXw4ZxdSdJ0CkMBTxTS4oH-Iav4v69j5Y_z3mMPfsCltioLRDSZeuWghVXt8eyN9UrDuktsTFM_Fgb484io3sxpV-uCOeadZD3KNFcBnQ1ypZi60QU-MgwiJFNsyzAnqnwG9ROvofthn7CgcD9IzU9mF7Q6qC6xsFEGkfHpmlSnDY2m2qfiy-EDIQJ6vX_Ka_fohMybkN8_jxzvfAl_smSEL5d2cDeBaoyjXTVRirsD1YX-v8d-auwgkV_s2pGNj9TVL8OWkPwBZae_35bYxcQ7f9FJVIqoQ_vvbKnIxBsKGPekqrrgS1uxHHq9hPU3eRjUGtYN-EjqzrTRRQgYXDPv6l4GHdboYwvQ95i8knpGjaMXDzabAYnWGULeyDt03NEU1gwdBfdqY7TBovobQlEbrCq2xkj4Tf_dMYN_k6btmphRfqgX_aKjd9ZLOksnaNXtCupflOVVxawL_n0APJ6bo3KHI2o63gs4iPcOsjR8OIGoFhrg8JvizdB4n4R3vyY6ckMCcbWvPhT.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_045e186b1a4f27c9016ae81c7bc42887d1ad91255cbea74489",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10159,
+    "completion_tokens": 362,
+    "total_tokens": 10521,
+    "cost": 0.0014508,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10156,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014508,
+      "upstream_inference_prompt_cost": 0.0012698,
+      "upstream_inference_completions_cost": 0.000181
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

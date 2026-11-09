@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots are identical in the supplied regions, retaining the visible LINE service cards and their descriptions.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The cards and text are coherently arranged and legible in both regions; no material clipping or overlap is introduced.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible card indicators and navigation controls are preserved identically. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The corresponding reference and target states match exactly across both supplied windows and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Visible service names, imagery, and descriptions convey coherent meaning and are preserved.\"}}",
+        "refusal": null,
+        "reasoning": "**Ensuring output consistency**\n\nI want to make sure that the output JSON has identical images. It's important to note if there are weird faint headers behind these identical images. Also, I need to check the controls for ellipsis icons in the cards to ensure everything is consistent. It seems I need to verify the checksums too, just to make sure everything matches up perfectly. Getting everything right is crucial for a smooth user experience!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Ensuring output consistency**\n\nI want to make sure that the output JSON has identical images. It's important to note if there are weird faint headers behind these identical images. Also, I need to check the controls for ellipsis icons in the cards to ensure everything is consistent. It seems I need to verify the checksums too, just to make sure everything matches up perfectly. Getting everything right is crucial for a smooth user experience!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B7EcgUY4se1madvuAVB-CbkRwWvZ5Zlnq7qMPzmMWySquf8cXQVBOqUb_XmQh9oZ-IGTfI3c4CYzvi1HlRck6BFMGYAY2BrcTtVWlxelXGCBJprXAfxEAtllSOKC0zreDhBe4WiFqg5jDyWuH04uE-Kid6Mld_w6XnnZwOqMLw0MBb1AyKfordxQpqDHCQuo_HXxfxq3uuq4jchqPYEtz7YjtizIE8yxNy8IzuFc8SlrLwvFe9SrxxGCcbQeiv2-fgmCaTsTDRdPXmprt3pQzq5K15cwWbzvt28xjknIFuytEbgBnBVjJHt9ufpO4kmMC83ZI91cg85TLx3aDc6sggcQgLBXlt1erStM_AoVnhR33J4GEla6FR_1tyVRsDAVQLTGmMaI-ofE50mFoBvm9CYYnXDAF933-iHA71AD8Etky7VpcpzMSeKNpw4Wzvihb7b4IRZgWq8C_vUxn9YEvp4duJPqiNhF9C-JahYyscPuLXSKnqkCg4UgV2EF59vZ8iPvFaWnxnlwiUs9IJDTT65AaCoBdxc1CRsCelW3_CTVvFR5qlpNIrVvfDcPCU6Ec3uWKSpvEEywf9cLUUd4N8W4mlMv8hoI1-wTJgknxGNbXeWzzQ0rcsR6J9CS9B8fVlLbwJagPggv3AreiOPbdfvI2hvDM_IBdGjUIKHLKsC1YHt6fQL2kGJr3ip_Edf5nA0BOmS1sdEgGkgoHphIK7XVM9EJDwRdrjJfYBXwjBmAfyqY8FqgMxdUrtblARNQuKRatg54NW8XbHeLx1Qf7fMNEK3Kkf3Fzvs6nODoJxDaMjKT-LwtCClmsIx3sXGJiEfOsmEDzgwujDqaMFLfHoFox08ftn1oKtlBz5ccgC1tadsouBcwEruZveE0clPYIDenSjJ_TvRp5yYTQDZfcWSNtlWJGriyzZNqPSm25nPGgDwICozrJLNAFVkjnrOcNokZje5hVp4cwOuHrf5Mmz5Tn4gUPaGK7fRYJbfKRiI4ahElJbSqhbFbhfyZfnt_6rfd8sChjoOed8gqGZa2ipNR_zBTbgPpOBvkrj9kOrKRYJpVO4wlerqwDTyQPrVVYJ10hDxL_0r3QM4Xk8Kv112740P42nhBCUBH_J44DQ8QuWaaHHcWm1PLnah5KZcaAFzmzCkqamwar7dXyycOa5JcXLAbAg1TOy-gUT7DC__x0rgkbh1sfk6vVtrXB6TfPGMd4a6BRvP8xIJVdZBkcEPmu47ueo8YpK536kRTq-oX2j8RJR_DhNBvcNowoif_HO9zOWjT7hruh_OTIZXSnAXY3KfOWLIRQZYP2beAl7RoN6VTIeKvn5ZVvvI9f2HjkhLSNRswf33-yrK8fhms5bhxARavibyPm1cHFG31uXlPzCfczP0O4s-txpjFVDFCxDBLDgCeBGmk6OKjqN9-B8vIh0jmgtgBherUe_hjFbsfT0mkt7-V64zGpnDLBCcnUhMC22urG4i2rPXUWTCbux4wJjP1TA9rNBpDE4B9r1E8-zp7TEaHy5S8L0Vb-FiwE4o9Sx-toAhIlrtgRzGWFaA5fE-GM2mf7MXlDtYH0ziv967QkmAk4mt3mNs4VOiVFOlz_ywup2u0vQi2DFaOX3AKRqCFR63RaPvGi1_YOKpHhwjH1jCgxSoYY2EfKOALq_B8pqq1e7RRMlvVzrT5SaMfVzm3j0J0kE_2EDwU6PVtQfj430RcAutgxvGDWln2uzBFjbfWGCAFepX1beBDzHDHu_tDWq37INYZNAA-NvJ41g7udMjyiNRdmE5NODUx7etHK4j_EYcnf2jPkqZ6-DlrDACGBPJ_aI-ST7OMWubor8ar7CPWd-sG9U5lF4eok1i4JMDUxYhyc8sSGkD9Z8d9Gh73JWg2VL6oyaWndXPHsBR8fazIwALR_mDKiOiMlPj5AkpaaYpAN2Gv7aPqb5tgsBcOlcP97L_dfvzsoDHocJ3wWrHrTXQGAknd9NBStqh3HreynxqOzeXqzg3tosGXN-zsu9uhvnnSsNI4C57F8J_PEhUeLRklqWOI8uYxiMt.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_095a3ba93f9414d9016ae81ec3361887d1812b748888cf449f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9840,
+    "completion_tokens": 206,
+    "total_tokens": 10046,
+    "cost": 0.001332925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9837,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001332925,
+      "upstream_inference_prompt_cost": 0.001229925,
+      "upstream_inference_completions_cost": 0.000103
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

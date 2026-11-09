@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The regenerated target presents coherent news headlines, summaries, bylines, and related coverage appropriate to a news publication. Its content and layout differ from the reference, but the contract does not require matching its inventory.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible target content is legible and arranged in a clear news-homepage layout. The lower view continues into a distinct AI feature and cover collection without apparent clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, Subscribe, and collection links have readable labels; the AI prompt suggestions are also understandable. No essential visible control has an unreadable or ambiguous label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots form a coherent comparison of the reference news homepage and the regenerated target. The difference in design and content is permitted under the regeneration contract.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headings, story summaries, categories, and feature descriptions convey coherent news and editorial meaning.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14480,
+    "completion_tokens": 230,
+    "total_tokens": 14710,
+    "cost": 0.001924925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14477,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001924925,
+      "upstream_inference_prompt_cost": 0.001809925,
+      "upstream_inference_completions_cost": 0.000115
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible customer-stories section and Smadex case-study content are preserved, and the subsequent resources prompt matches in both sets. The large blank area appears in both reference and target.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, body text, imagery, and calls to action are legible and coherently arranged. No material clipping or overlap is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible \u201cView Case Study,\u201d \u201cBrowse Resources and Insights,\u201d navigation, contact, and cookie-consent controls have understandable labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired windows show corresponding page regions and a coherent comparison. Differences in header visibility or layout are not evidence of a mismatched set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The case-study text, imagery, and resources prompt convey a coherent digital-advertising page purpose in the target.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing window evaluations**\n\nI need to assess the window. There's a major blank in the reference and target at y4000, probably due to the animation? The same case study at y5000 has the same issue with the target content, but the header navigation differs because it's fixed visible. The reference at y4000 shows a customer stories heading but is blank for the target. I\u2019m noting that there's no material defect and that all controls are consistent in visibility, including buttons and resources. JSON seems exact, but maybe I should check the image content? No.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing window evaluations**\n\nI need to assess the window. There's a major blank in the reference and target at y4000, probably due to the animation? The same case study at y5000 has the same issue with the target content, but the header navigation differs because it's fixed visible. The reference at y4000 shows a customer stories heading but is blank for the target. I\u2019m noting that there's no material defect and that all controls are consistent in visibility, including buttons and resources. JSON seems exact, but maybe I should check the image content? No.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CA0R33X9hdCiIDU-UrVz5AiO6HSpEZU_yJYV_wdniyHcPcw3rawLs_I6Ot1maaOVVEMgTvOMgO4-i6xchw5Ts0IXqvlHO7HNrJRban34mioD2QZ7swEQMKUvGiFEIjj03t4qgbcdO0_iR77d2hhiDf8lLSqo3tdoKn_zffDMXXl8-uhlgkL4QuA_U-Vm1cekLRbvfKK7wgf_YCE3QHV7oImx0OoxU3Kb6gemmhyGjVDmHkN-qlUnqh_tAgdxH4J6cZ26kP8X-WrAyFWSLgmdGc0LXn8BmeTCtNq00VjRCdba4VAq8mAsC81x8ay-eoNfBPxwNZwo4uIh-t4DDuyacnDryYOSVJlD-PL_BJsdx2uc9MPoHsLDnB8iLaa2HROTAbMCkCWqc69mTO7eyHyGyfQxIeZxzR6dDKTkDykLfXF9-hKRO3XNDVra1WKZVI6W7_a7N5PvOx_wSXIfVjQm-8IiHV9lUduzq75uSRRZj5ZjeQrzGcFIA_SZGfzP_rKRVIl7CB51b-0kfVxJhqr8M1IPnZgGRp0BOMTvi4YL49m2p9mQEm1hKZu1M0DbKFyaBSjtPMYh_a0mUTNgvVZOQfv3XPUKbk3IyW_Q1cATFxuvJCwW8-iF3JZOfI7G0uktV6Bm6yQFKS7RYQKVau3sNaF4zUbGOK99lwb0w8PsRgLGELqYRh2ntd-eyyj7Je1_0EOLqt3hMAWREtGcIHXJlazDE-x5Gsuqpd0IFKtANAl0zghfqbZ4ZNGh0OQEKnlJt8FKu8N-r5hh_F4HuZpi-PNGqP0Tz_yo7YXdwhlME3z1GqDArCeJMVqIALaSvmWHmT8l-dMK0U1C3Zc8BAgd339M_w6FpsvNnpBvHIvQ0rhYCAcVTPdLNHJSznq42giEOPQCiCL8-dWvFQv-8fJZB1ZW4HMZglp0CnZuN8l9L1t-GOakDEboAH11z-1v8S34ZXZtxfSXg0PHE-Lc4bQCO40FexFTBmkKdkOYMJHRT4WdLD-9HUanBj0YtVhyptJimF7F6dWre3DI7uG5MzhRkwCOX9YO85fK2uL7qy7HStO46eLFxX8tG6yG_EZaYtAC0iIvAqaizAM-gDoi4YVux--5toGaUuGZS1vErNJ4n__c7dNr9tUJlb8yYlRLnzoR6Di-U7Z8ZK8oJW7jspXJUT9MSpJ5e9f1qviszPG3UBuJtGvnHiD2A8_gIjYJXKJLDB0HQioQBcG4w25HN4eBttmzaVEqlsSggvUq3g90UNweZcUOtcDZFdOw9JNFL1v8AoD7QFQqUP3sBsHegycPhTvFVzhnoGUlfplalBb3LKey0LtIiSsy0pECBKw8P7QLTDYhesX7htj9VQ-MijFpo5iZduL-kESfuo3qTp_Ff215_NVQtBnOEm6-WMULQj-bAWOqzSlJxTCFcsTyoPXGN27CnnhV-KeFgG1bpUHuiofTwP0-DXaveIZ0M57GYAAJqkbkVpTAC_VTPgWPPN1IvFr70I7Yx2qfz6TGXVQZfiogm5RocGV7191ZtVvlMJjAeoVq8j6drJWNoy6u8WS39i5plvPTuvBJwBxtAjFOIWW_27YYB8FTrgJ2B_WaLNhrXrdla3f0jywJ7Lin2_d1yp-hPV23M5EmpKwLhCGa9D_h2nIBPgAB8FiytIXyJ7vlMtyggK-2Kmc8gLOi0cqJYgnIY_BDvoILdK4LCQHOOpWWw4SAs4FYXRbJznjE-guz7EvHYGOVfwH_rk-NhSTlBDOyVx7duyMv6xQARBoVt9IqGGlEeNZ6qeUamnnFWJSvHizNCEyDTB0y2s_jpqmyS6a6uq_7jvfIE-1jBRTirxZiRGExAglrrSpACBKJVDI3i04-BKSEbEPCRzc2VC3wLXvHYwdXEq0udNChuZMMkAXRVo0-zbD-SP60kzDObCnkdAcc5zImB5Pb_3Fx82MZABKzvTk_iu-Y_UAUNIeALkoXjrZSZTaQrSGEoBNgePsO6XjCqY_kkajHK0-nQWB7O_S9bnlaZ0YD98MAmrIB1hxkfB3iwomkN7_lb6MxQM4g1-VJRPjsFxLVQSUkhuan4piV45aSli3BhORFrcDap6tYZRBT1YSkyErKCGq4VhnNUPoblbz-udJqa-Ly4BqrrLMaRb9011ORrmeGdB8ci6BpIiO1LoMY8DvIRfmHzZzePCgyZfTDuLmM2hyK2gJ2HY46BGzCPorZmwrtKUVV-ElNBycUSqJXP9timCbua1eqKVQXOZnhoOcqolexqM4Yav8VwcsL7-VNLH1rR9VN1jvEVH4YoA_MbwtUd_wYWPwC-J-k_yalXpR7KAW-MBBhLcSb-w521aFkaKcmdu0YORN2ryV99jrd45XIsVCwRtiKkkpZRIKVJfnSH5_vPLoByJkZFnO3wQyI-KCIhYv3iylfUNKCy-fkqHf8SOIUl-94sdHA1I44ksap_iuGG1wxhPpwRz8vbd7Kr_TtiWJvR2YP254LTHIkvNYVA0DUq3SPozVrLJQTO1r7fpJ6DYUhLWnhtyemsfzL99UrPJzetPvnbJhxCY7-zBjVrqEMK_JvkJs0lLlO-iAJkmiEDCDThbaTfcFFfj-qFMQmI1950bERhigH71tF08dJtTlTrssszIL9r8CBHOciPosle6jDtoVkN9WnZ3NWFEaTzzy0oZrapw=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_09a7f56a79ca9645016ae82031dda087d187296cd05cbee6f5",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11833,
+    "completion_tokens": 352,
+    "total_tokens": 12185,
+    "cost": 0.00165505,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11830,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00165505,
+      "upstream_inference_prompt_cost": 0.00147905,
+      "upstream_inference_completions_cost": 0.000176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 85,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

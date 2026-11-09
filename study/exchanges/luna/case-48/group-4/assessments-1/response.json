@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference window shows the page\u2019s account call-to-action and footer. The target windows show coherent Red Hat AI, security, product, and company content. Lower target content cannot establish loss from the source region not shown in the reference; no material loss is observable in the corresponding content.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Target content is substantially overlapped: navigation text runs over the hero and featured cards, while a large floating panel and cookie notice obscure page content. This makes portions of the actual interface difficult to read and use.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links and actions have readable labels, including the event registration and press-release links, cookie options, and navigation links. No essential visible control is shown with an unreadable or empty label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots are coherent states of the Red Hat site: the reference shows its account/footer area and the target shows other page sections. Differences in scroll position do not make the comparison incoherent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s text, imagery, and labels convey coherent meaning about Red Hat AI, security, products, and company information, despite the presentation overlap.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8652,
+    "completion_tokens": 279,
+    "total_tokens": 8931,
+    "cost": 0.001220925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8649,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001220925,
+      "upstream_inference_prompt_cost": 0.001081425,
+      "upstream_inference_completions_cost": 0.0001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

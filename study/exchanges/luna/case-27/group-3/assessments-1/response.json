@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible footer area, premium-offerings banner, navigation, and footer link columns align between reference and target. No meaningful core information loss is apparent.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and controls are legible and coherently arranged. The cookie banner overlays the bottom edge in both states; this is consistent and does not substantially obscure the visible core content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Navigation links, offering buttons, and cookie controls are visibly labeled and understandable in both reference and target.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots show corresponding regions of the same page and state, with a coherent, directly assessable comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Docker offerings, footer categories, links, and cookie choices convey coherent meaning and retain the page's apparent purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11466,
+    "completion_tokens": 255,
+    "total_tokens": 11721,
+    "cost": 0.001560675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11463,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001560675,
+      "upstream_inference_prompt_cost": 0.001433175,
+      "upstream_inference_completions_cost": 0.0001275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

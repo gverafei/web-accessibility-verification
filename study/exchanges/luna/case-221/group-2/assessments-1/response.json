@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The award heading, explanatory text, award graphics, navigation, and footer information are preserved in the corresponding views.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is coherently arranged and readable. Footer text is darker in the target than in the reference, but remains legible and does not substantially impair use.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Sign In, and privacy acknowledgement controls retain understandable labels and presentation.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views show corresponding portions of the same TripLink page and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, award descriptions and graphics, and footer labels convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer text contrast**\n\nI need to identify the difference in target footer text between dark and reference white. The footer has a blue background and navy text, which might have low contrast, though it appears legible. The main page content awards have the same setup; the footer contact/navigation text is dark on vivid blue, which could affect readability.\n\nThe contrast ratios between dark navy and blue seem to hover around acceptable levels, but they might not meet the lowest standards for small text readability. Overall, it probably meets the materiality policy despite some concerns about contrast.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer text contrast**\n\nI need to identify the difference in target footer text between dark and reference white. The footer has a blue background and navy text, which might have low contrast, though it appears legible. The main page content awards have the same setup; the footer contact/navigation text is dark on vivid blue, which could affect readability.\n\nThe contrast ratios between dark navy and blue seem to hover around acceptable levels, but they might not meet the lowest standards for small text readability. Overall, it probably meets the materiality policy despite some concerns about contrast.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BxwbFnVdTFq1zOZE1fLYii9Mm_vwl-VvGs4MZbQye7NkX5jGLShFVSAhxvaawiW6QRlq7GRD5YnMaQGM_KuIASdvHHC3yE3MFwhdfRBgqzAuFETn08CFLrbFR2iFBKXmFKxaWzAuET-oHE3C8ZY48qDsmUtD8lVd9IOC26-nRwBW2CAWxSxcF-5H5M3Z3wcg4L8M5UU5JWTobRXmlyXgJEvZ0dpaBWKurNnVopW5RM-Z3SZrIkHSun80Yu3ZF-goOAPXhFWy3eMfE9-sLcABda7rvka2qgYDU4AcbnQqAh5gdVreUkrLJ210dUbNGv5AT5HrIlhP3MUdT3CcSWPVUBVRs8yqg6XhPAAlgqUVMzNXNHb-0D9N2u8bzyBOAa4RrcTsT1JUFyD-BNOBRrnf8yzbt040s1eoYDNnlpSbPWlSyMdXrXoGIMO3fXgLs0hw0eeu3q-f5RBjnPlIQiF9nHRUQqgZPNwGpeSrF36_cqgsXeCmOJu8F_uKJPcNielumc4-Q1MuwpOGX2LNq0GyiwLu6BJ06keh7z_57ikvq3fQxIY2-DoznjiMK-U7mWw2PYubVWetfEmjYlE0XelGKGWdQWzrucvDtBqCoK0073GvvEM5PfOaNkT9ciMzaH3DUVT3M0bDLznvT0nvBrmb6ULvAJi1yXfncaa0yshDIqUvgarL-1YC0PATKQbgxFaVjqw1iLB7v-nDJxiJHLm_RT3xWPszoifSsbdBt_IlmbGq5PsDHcXxr7usscnShjN6zuTDP0QVvkhzcB7GB4AOTmDnd5A-5VMppwz8IcWZmDzNKV8_M_APXLxWBU_wzr8XJEG4RtKXsA3r6dwKuLQXLyhF0S2WwCFWpDGXVBuQtRE87Pny0qAgZQRyjg0cADxWqvWlbkHQkIUqiDr0YWPybZW7mIo3C1Vyk3nm5Mn2ligcyaJ0LGNKDD6U2IeBi5UgCkBVKJcUjeePfKl0aff9j-o_5tL8h4HO5-_dKtxGcQ7-oRqeJYZHB1PfdiwAER5umPhQtjqigPhZxNuOCyCpNX1XXq6qDG47ixBYwpFuznhls6DvsKCkr44LeCDZz-LqdkfmYB68G7o_NzQQBBqi1qf-rMeuO5Mzj6X0L2d7riKkJtt2gS4-IUlWSQcAAjTQIxqk19H8JHWT8oLhsByvua53mMp9yYUzxeZCn0Wfspq5rljb6Q3M9wHbhU8hFF2IR_5VJ5ULdx8n4bhi-Gm_BHUPZbOkNMJOK-M5HZ_cLgOHGoPcmuWZyHw1VJaIgx4SfQgEIbDc1y2HCPGFVROJ6-rxiBB1JoRpZcsAm8b0v3Tf0KubX6cEXZpwbpuBm8w6Mp706O20hjLzK68eLGvY3eqo9oohFRrydUiEvmjnTONyVUPw4c5pUx5xHQiFyVDutEJRQN0e9LolBmsjLPG-e3V11m-Gv48TKQ2MlkTNMa-qQ8FfNgAHkP0Zx9i9VFEG2Jd8wK-sEVrkl51rnSW35cC9WNqTrHMUxSRsQw6uJmlLpLyz31JAWOVx54hzcVJocGKXuQTRQ5RM3a_uPpeaXWCQ09OkfoxXCwbNTca2392o7IU04RzBSJ1MApswxQf-cLOWQYgWXVzznNW7AtHcL6mhbZBlpulBLhogLU11DPwwoddNDIz1uZiBrBsiDV5w8qK1KqEiiJF0s0rdWGThFEJvM_4wY8BUlNuVrYAqsQp4j-Xpiw84AdTdXQO5oGPgB_UH3y2KpF0c-SksE4f4cBKP4SB8lW9UroPqYEi2TEMeAY0_B5HGDIuYtZI-Nwd46X1aDAY96XV_zoFjWyTO12pVQMtK7ZEr8gdpGGDPZp6m5z6iL1oOUw1Q0KUMS-rWXrIOhmD7dGUlNg_jf8iC7HkxZxMbbSd9Me2QFNKU_mrK-zir2VyiXwVFeAbVXV7Ml1Mgd-Wg54pK2qHdGVS774_47TRfuyDFk-wiu6FPkR-nxX8-QeAjG4GVvmPazMUth0FPxBoxw69nMhnqw55owQQzpWjDyGjJzkA0uFlf-Id3Mg5XSvVtGXM6Lte4SkNO5I-V2Ov_d0bGO031N3t6cCNyD-0LI92LrwM8MDS0TpyHsZb0wkEXKgq03O3qbyyAZ1BuAJsIBp-xXhdBEo2YIer9esaLazyRWpW9xRrykpOH6w3u3DdGm_33GXNB-MRcjTqdHHic--FxBrzOzvcPQg-ApP0NzgenQ-4kSgZkTEw_MH4JedSy2AEpI8f0Qkkqu07mp0CJArWT6KQJYJep1LiS7aAokw0JOJEtAinwmf5Zx_NYVEqRbaVF5HA3DMl31eaLJ_9L2QZKvj5AECZlqJxkFb5_BdJMKgXM_bhBrbcfBfoGX0GD9i91aOuFNaFSainsprGCyezdHeZ3RUG0J006EWtu8SdZgDscLKcACjJwRyKYTsKJqQvOM6Mu9pxzHK0ASRJROKFRAwuh_3BXgKMHBEdseCevDMC5UzwYCIwGG2ryQjwgF3sIlwPc1EOyMMeHf2kd2oppo2qqilTU3zOQqS2CQPczXtnkAfJbiF5kPjlyC4pWvib3YR5NgPcO7D59-iwNJYxlxxQU9K2K0kRU9UpRflGVecbRHvqpv4PqHRfLJ6RFI-cRnUUn67xfykLP_0vbocqXYIYRuOITNCqwDoVTgSnujJaT7aUYyspESOhB611uZEDrcpwiVBcZrsJGe-n_pAAMP7WrEEl25CB2wC-C0C027-Spvy8cWqU_8Zpceqz8F5lx5KbZNJjsgusW7MZ7eu_wAtetiUCCcFkM9t5MLu_gPYEcb_V07Htl2cywF2wzBcyjOqvbDsLEPc7NBUURmKw8fslMpBm9mJXBpRBx3NTNiydY4tczS2zUWL7TuPYkpUecMvpPnQDC95PGN3z4YibuTg6tx6HzZfgN3iPuZfHUmd9_xrdYHa6LsqQCaU0XA3CEK1iOrHPKTznDuSfVJXPbQtHdBtWh2CNgM8rkX3DtqlLJFcYxB1HFWn01r0Llw5NAO-jXKWEj2LlL8sP_EC_XEwE9JoS-NrUcLti9JSz-65CQHTuBnXVA0iJ0d4pZC0bbAl082NAzuWXKLZaO4C-4gGt5Q3oiHOXOQG5uR_fbuIr0h_JE6-W7jldQyPvPI1aR8y8JRfXTP9nV2Ow8RaKieVi29l1YS3HS5EopR3Q7cnWOuxlkHiLW_mKE4PLIbu5RwmNqTuP1KkgeHPMxs7FzSikI2eSeL_C_Xpds-21wYHQo4POGFXKp0_ZWqNFZVQ_xeOLGA5pSWAWR2QQMLI8JrVxiU5cfzap2XZADfjfVao1roUV2X_rlDHjeEzojlVnrbCeIUSsNYDnFt_m-e-ak6uA6T1N4tDe1COyv5loQ0-hh1jNXIk_yLUiAsWcdCI5mToJWIxCkefoYAMbW_0V5ukScDfeh_vKptOvWVrl9yeeRahxmkAuSlE4OelRAEOmgaillgdob0LG9CvtHd1hh7Nppa5e6WSCX1eENWLWKA2d_srWsCqlW7t4Q_G8t1kl_B0ESrpQwbNhjburNMhM7UP2kPYYN2jownW8dooGqLC9rTCC-0YgH5avAYbIEzlYj3dB7rt0u5MooUGR9vYwqQGlsUVxPfxssZd5W2dLbI_hdjPK1JSm5rwixEEIhZRHJ9n7AClIW-Ccj4zK8zoseINOaGY1X5IYspDU3Z9lI29sHECjIdT9Ta4n6sulaZZkmC1QuOhifKqcSSZCtipOrsLBGTYVYJDpEKtqCv2ZqF6CMxMcZR5B8rdgsMPj8e2fGlRcSOo-834P1eAxE1xP4JfSTUDv3IGYvZbbFUCa2UiqJeh9ACXt1BRb2oT91iYzQmVQ4UJxvZfVHoYfwmJQ0StVWAueUVILWpJTThdxWL-K6EgVzieqZZ6yTA7U1-0-TZlXu0R_YlKQqsEgpVGUp4tNqCBtC65_kH9hlwQqBp8hL-4AXeAv2YaeMTUXdU4OQpc0GdUXvhywr3L6K2ZmCZqNqntkmU-q89SDQi5kIP8d3-1EMsFghYODTTetJTDbadTJVj37awh7yg4v2bcT6nO9DR-tLTlDwlXBPR3u-2QZxaosnGwl0pZh0Py84cJc7bZVWJKTxuQBWmJbiuw3kYc5hSCV2xnsR2RuGWvPcjNyfXDjeH465HuadAncDcNyLS3QFtUSUsBp8-NcrT5L2fAiNj8AaPRxiYdheZHFtvAgNlRt9uAreVEFzDbUkqxceKPW4y4HCAWJFdQXkrrj4LJ8bz3C9wJIpvts8MnZ_Km8GOsGEwoqpHua5t2wi95eI5rYKw9vfPGn.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03687626373094fe016ae81c6c3af487d1b05bc038b69860a2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9752,
+    "completion_tokens": 449,
+    "total_tokens": 10201,
+    "cost": 0.001443425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9749,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001443425,
+      "upstream_inference_prompt_cost": 0.001218925,
+      "upstream_inference_completions_cost": 0.0002245
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 213,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

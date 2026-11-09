@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible Forbes Shorts cards, Reviews, Leadership, and Careers content are retained. Small vertical offsets and minor differences in video frames do not materially change the information.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and imagery remain legible and coherently arranged; no substantial clipping or overlap is visible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible navigation, subscription control, video play icons, and See Forbes Videos link remain identifiable and understandable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding Forbes page regions in coherent comparison states.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Headings, article titles, bylines, images, and video-card context continue to convey the page\u2019s meaning.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating window placement**\n\nI need to assess the windows and look for small differences in their vertical placement. For instance, at y8000, the shorts target section shifted down about 6 pixels, and the cards or images seem fine. At y9000, the target reviews start 6 pixels lower, and I'm checking if the leadership image differs. The header height reference ends at 183, while the target is 189, with a local offset of 6. The content remains intact, and video thumbnails can have slight differences. Controls like play icons are visible, and all categories meet the requirements. I also need to retrieve some data in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating window placement**\n\nI need to assess the windows and look for small differences in their vertical placement. For instance, at y8000, the shorts target section shifted down about 6 pixels, and the cards or images seem fine. At y9000, the target reviews start 6 pixels lower, and I'm checking if the leadership image differs. The header height reference ends at 183, while the target is 189, with a local offset of 6. The content remains intact, and video thumbnails can have slight differences. Controls like play icons are visible, and all categories meet the requirements. I also need to retrieve some data in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0PBaO9PTi-UOpPdbp6czST5SidY6RVZPXwC_6JqgVPO-M8OFg-e2Z0A_YWfJ5ryETybjsBAG8BFb2q6m4jsh0VeMvAIaDz2YR-7uSGfz2B_I_E7TW1GxuzeMQlEsU-TspPkhkq-VdifST-njMM1z1oR36oR1VzzVU6D0QaUg4XfTVb8uAEIqLFcdRnuOviU3K4xrZHeLo0GSBgGUOGunSYLK8AFDUtb61ZuyBzz6MBN1zNIoL4Tu1rMm8iI48087k06GY0vQIvARRR-dtCWmYAQPUzaNBe9ydQ2B4aAjRuc95q2c5TyA9EXA0LACMA54hNjVP8KCW4zscBS-2Cn9C4zs0SxU5TluQ4YIteIMg8YgmA4CYIhPOgT8rLFpeOlKlEkQnbStQStv_qblwpJcp91P9oGM2Gnjp0L74YYb3_icA80arlfBYxpNP_Kj66lJ5aOewhdD8g1ojdP0lgPa4XV60EzeIpcShQ444RreZoCINe8TSZFDrXKnG6JXVcQJTM-WEJZjrtlNXLNU1MLekOv2aPrB2kqsy4qrFbTB_4NbCOODYhnD0NFwczxhWYCzXdWftWINTJO2ZMZZdgHYuG2NyZN0iFYyz1QUfGhd5yQIaU0T3LhIJ9On5wgQGcNCnEOGyIGhMTOprAmvW75Jrda1HbakS7rxWZ-Qk6WmFfUtvt9KDIgZRs580gdYVRrpUcedafSHgyHXqP74kDfLl_TtKoNOMhD_Zi3TJjYe4JI_L9hVezJ_C3NotEzXTmyn-bnmY1SmJhKrC2T4ci0HwEt6pLBt65VnvxIXdFf0O-oGBNpeoWIzev5cRRVBwL3dktRgemNFsV9h8nMrJgo3iAwYFV4vNqAvKcqzQX3MLDP1NwQCPP58mrK4PnImkoupBuCLhnea8V6ciLRJS__Dnp_94UFpau4VSYjUjqsL5MxbPtyx7qwvvWySrlZJ_NkHM-hbcAJyiYaOWMmUs1W6UHpWIkvRcBAdnl8pcaacL4OmCY0z3bSz0tHtbMxWmtZdcEuT8aokWZeGv8wfwtqzQPUEhryjRxV22cJthHCyS5N0bLmrJGd-M4Y7S9WUux7u7r2jKrIpcEivauadItFf5odXfhsVFrHJcLI5ELFKaN65_qmWULj6owxd8WlVPubcBEJwqcjXShDYMcCKTOxaPSoxUR9LaMgpPwBG3PfwtBCzBgqHMsQBmxzHNRkV70uvwgThFIDXQmWS_JotaHecWoi3zZkBwpGIzz-SxErm18Rf0ViTWhV7yWUZHa4xiCmcUgZ_82UPBkANVpBC6i_hlMgK3vEQQq61SLuQcyjJnQerccOgI5haW4ZP4_sz0X926ELrAfP1qLVP7ZjUj1zmlLU_jLzN-FghmWKK4oBNVPsJWyjHyT1C4VXy4MKVqiVYWWJOrYiVz9xXmXnpZfnCJRxVUf31NwEJ-PEG72EpfteOdO8uqvGYAuLfqoH1N30lAos-Ba725IOT-8fvGDiWlOCZqf92JCSZYglRoOkbvNpJleDzfM2yfFYhxE1GnbbAVcVIjMYaxYwTybGEBiRqY1AV4oCvN2Pj7GRpGk989Np7iaa4NKaAS_9S0k6xnAl3-JZxBBauEgXMN7BsrOBxZewEkwlVg5j6C_tJn1IcHLvxjr2-P9iUsd6LHXmONPfxPk3PDSMFYjnSZ0vZEBPyfXvrXJFhUI273F9Hn-jUzHcKgOIYgkcW-OYae1ptaGSvvpOc1LOnalmH9KFYhCd_g-RPOvXsUplXTR802eZOtXe-C7E5sSa5s3iCfgdVjdIylmPFNLYLwL_l-d2qvRsHjquc9-6NIrQ4stjYKzxTCxaAUlH-8Z60YdiDr1tySaP6bFOeNTPUdE1RocreUMNtZFMRfV7k4-fl6RXIRKI3zZJfC9jfRkzZDKXKX9Wojc_2AywBuWO_BnleF7fc-ZgxpNiKGAJZUVOpXXjavI7X7UwvrLRNuACDcNxy-54yejw4rp0ijmyzf6C7LTaatr90cjrafBsw1BzhJYD6mGZydRMUQl6LcOzVYMrwrEzU8bjXsJO1xZi_Hma6SVI4laoiLPmWpipAv77QD-6DUoZ5ACzs2wNS3H_MjKFKIPaQbdKRrBxxjv3L0OIFgmQGMThUekPtPI9AEPbvuNLMH99ootuFGhZ7ROm7YzxsJ7gvvqGWamLKSCuQVGsRLcizg0IA3yYjBsnkFA-vSzinfMaMltBjtWdshWueVf1I7yhwfZncZgJE4Zs3IOprlGFZr0ve2uIqslVU2B_KJb6z9q99RM4V4rOCoRKjSsuAEmICfbukQ4FdlEc_mftKMgnf00PA-U4vefAEOzvzEpwgYz3Xv5CR9tM2hRCu-RnQ7o_YOzq0fqdiqRDrJA7i8n5_Uprt6kcXzP-D3VnyYU-UGU_MEZoOrMhQawUArR2hpUjeTaP8teftV2u4sOqypZaiCzpxvU4_8Hy1iI-rWoO3C3njEymiJbGUISkSj12FZX0pZwEc3dOSmOHFWOGlh0Cr7WH0cqC4BBEUU2klyQUYL0KjLUe4nh2tTji0XGMnizhycQgHIPTCUiPT3AgU4-mO-gA656yOXDS0QYyTIP7_JujUFcdGNJFnjzX1-16620ELeiI0vNEXXuDzCC__A0Pvc9e788iLaMYh1_mLLkaBO4pM-wc-S6qV8VzY8YkOMhElPOpU9jcI5ZGAIvTZWSB6sVmPvySnwBRFgDB4NX_QcFhlSjeLoVMAUCQ2OOvCDfk6nRyyGzitVfQVoBvOIRaDiZEkyYNnrhYjqjNdGNhGUExpkcr5LVacigRc2bJQneqtwVlrsLabfjhuqtavCud5gSqi5U9w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b6fdbbeb146303d016ae81d0d622887d1a5b8dce93ff5bcff",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18330,
+    "completion_tokens": 280,
+    "total_tokens": 18610,
+    "cost": 0.002431175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18327,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002431175,
+      "upstream_inference_prompt_cost": 0.002291175,
+      "upstream_inference_completions_cost": 0.00014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 96,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

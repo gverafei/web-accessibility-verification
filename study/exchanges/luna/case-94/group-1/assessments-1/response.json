@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent TIME news homepage with a lead story, legible headline and summary, and latest-news items. It adequately serves the broad news purpose; differences in story selection and layout are permitted for a regenerated page.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible target content is clearly arranged and readable across the supplied views. The lower view continues the lead story and a cover feature without substantial clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, Subscribe, and article/collection links have understandable text labels. No essential visible control has an unreadable or ambiguous label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target are coherent, assessable views of a TIME news site. Their distinct layouts and the target\u2019s additional lower-page content do not make the evidence mismatched.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s news headlines, descriptions, categories, and cover feature convey coherent editorial meaning consistent with the page\u2019s broad purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14471,
+    "completion_tokens": 236,
+    "total_tokens": 14707,
+    "cost": 0.0019268,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14468,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019268,
+      "upstream_inference_prompt_cost": 0.0018088,
+      "upstream_inference_completions_cost": 0.000118
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

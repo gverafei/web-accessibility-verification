@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Shop a wide selection of everyday essentials, fashion, home, beauty, electronics, books, toys and more on Amazon." name="description"/>
+<title>Amazon.com. Spend less. Smile more.</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17212c;
+      --muted: #53616e;
+      --navy: #131921;
+      --navy-soft: #232f3e;
+      --link: #086b80;
+      --accent: #febd69;
+      --paper: #f3f5f6;
+      --line: #d5dadd;
+      --white: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:hover { color: #a84310; }
+
+    :focus-visible {
+      outline: 3px solid #ffb84d;
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 5;
+      top: 8px;
+      left: 8px;
+      padding: 10px 14px;
+      transform: translateY(-150%);
+      background: #fff;
+      color: #111;
+      border-radius: 4px;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .topbar {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .top-inner {
+      width: min(1440px, 100%);
+      margin: auto;
+      padding: 12px 22px;
+      display: grid;
+      grid-template-columns: auto minmax(220px, 1fr) auto;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: .9;
+    }
+
+    .brand-smile {
+      width: 43px;
+      height: 8px;
+      margin-top: 4px;
+      border-bottom: 3px solid #ff9900;
+      border-radius: 0 0 50% 50%;
+      transform: rotate(-4deg);
+    }
+
+    .search {
+      display: flex;
+      min-width: 0;
+      height: 44px;
+      overflow: hidden;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .search select, .search input, .search button {
+      border: 0;
+      font: inherit;
+    }
+
+    .search select {
+      max-width: 150px;
+      padding: 0 10px;
+      color: #27333d;
+      background: #e8eaed;
+      border-right: 1px solid #c8ced2;
+    }
+
+    .search input {
+      min-width: 0;
+      flex: 1;
+      padding: 0 13px;
+      color: #17212c;
+    }
+
+    .search input::placeholder { color: #606b73; }
+
+    .search button {
+      width: 52px;
+      flex: 0 0 52px;
+      background: var(--accent);
+      color: #16212a;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .account-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .account-links a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+
+    .account-links small {
+      display: block;
+      color: #d2d7dc;
+      font-size: 12px;
+    }
+
+    .account-links strong { display: block; font-size: 14px; }
+
+    .cart { font-weight: 700; white-space: nowrap; }
+    .cart-count { color: var(--accent); }
+
+    .subnav {
+      background: var(--navy-soft);
+      color: #fff;
+    }
+
+    .subnav-inner {
+      width: min(1440px, 100%);
+      margin: auto;
+      padding: 8px 22px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      overflow-x: auto;
+    }
+
+    .subnav a {
+      color: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .location-note {
+      background: #fff7e8;
+      border-bottom: 1px solid #ead7b7;
+      color: #37424a;
+      padding: 9px 22px;
+      font-size: 14px;
+    }
+
+    .location-note div {
+      width: min(1396px, 100%);
+      margin: auto;
+    }
+
+    .page {
+      width: min(1440px, 100%);
+      margin: auto;
+      padding: 24px 22px 50px;
+    }
+
+    .intro {
+      margin: 2px 0 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 5px;
+      color: #62717d;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      letter-spacing: -.035em;
+      line-height: 1.1;
+    }
+
+    .intro p:last-child {
+      max-width: 720px;
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 14px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(20px, 2.4vw, 27px);
+      line-height: 1.2;
+    }
+
+    .section-heading a { font-size: 14px; }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .feature-card {
+      min-width: 0;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid #e1e4e6;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgb(21 34 43 / 7%);
+    }
+
+    .feature-card a {
+      display: flex;
+      height: 100%;
+      min-height: 280px;
+      flex-direction: column;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .feature-card img {
+      display: block;
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      object-position: center;
+      background: #e8ecee;
+    }
+
+    .feature-title {
+      padding: 14px 14px 16px;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .feature-card a:hover .feature-title { color: #a84310; }
+    .feature-card a:hover img { filter: saturate(1.08); }
+
+    .browse {
+      margin-top: 38px;
+    }
+
+    .browse-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .browse-card {
+      min-width: 0;
+      padding: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(21 34 43 / 4%);
+    }
+
+    .browse-card h3 {
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .browse-card h3 a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .browse-card h3 a:hover { color: #a84310; }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 12px;
+    }
+
+    .category-link {
+      min-width: 0;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .category-link img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      margin-bottom: 6px;
+      object-fit: cover;
+      border-radius: 7px;
+      background: #edf0f1;
+    }
+
+    .category-link:hover span { color: #a84310; text-decoration: underline; }
+
+    .more-categories {
+      margin-top: 30px;
+      padding: 18px 20px;
+      background: #e8f1f3;
+      border: 1px solid #d0e0e4;
+      border-radius: 10px;
+    }
+
+    .more-categories h2 { margin: 0 0 12px; font-size: 20px; }
+
+    .text-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .text-links a {
+      display: inline-block;
+      padding: 7px 11px;
+      background: #fff;
+      border: 1px solid #c8d5d9;
+      border-radius: 999px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #172331;
+      color: #e8edf0;
+    }
+
+    .footer-inner {
+      width: min(1440px, 100%);
+      margin: auto;
+      padding: 30px 22px;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    footer h2 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    footer li { margin: 6px 0; }
+
+    footer a {
+      color: #e8edf0;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: #ffbd69; text-decoration: underline; }
+
+    .legal {
+      margin: 24px 0 0;
+      padding-top: 18px;
+      border-top: 1px solid #48535e;
+      color: #d4dce2;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1050px) {
+      .top-inner { grid-template-columns: auto minmax(180px, 1fr); }
+      .account-links { grid-column: 1 / -1; justify-content: flex-end; }
+      .feature-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .browse-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 620px) {
+      .top-inner {
+        padding: 10px 14px;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+      }
+      .brand { font-size: 22px; }
+      .search { grid-column: 1 / -1; grid-row: 2; }
+      .search select { max-width: 112px; font-size: 13px; }
+      .account-links {
+        grid-column: 2;
+        grid-row: 1;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+      .account-links a { font-size: 12px; }
+      .account-links small { font-size: 10px; }
+      .account-links strong { font-size: 12px; }
+      .orders { display: none; }
+      .subnav-inner { padding: 8px 14px; gap: 18px; }
+      .location-note { padding: 9px 14px; }
+      .page { padding: 22px 14px 36px; }
+      .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .feature-card a { min-height: 230px; }
+      .feature-card img { height: 180px; }
+      .feature-title { padding: 11px; font-size: 15px; }
+      .browse-grid { grid-template-columns: 1fr; gap: 12px; }
+      .browse-card { padding: 15px; }
+      .category-grid { gap: 12px 10px; }
+      .footer-inner { padding: 26px 16px; }
+      .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="topbar">
+<div class="top-inner">
+<a aria-label="Amazon home" class="brand" href="https://www.amazon.com/ref=nav_logo">
+          amazon<span aria-hidden="true" class="brand-smile"></span>
+</a>
+<form action="https://www.amazon.com/s/ref=nb_sb_noss" class="search" method="get" role="search">
+<label class="visually-hidden" for="department">Search in</label>
+<select aria-label="Search in" id="department" name="url">
+<option value="search-alias=aps">All departments</option>
+<option value="search-alias=electronics-intl-ship">Electronics</option>
+<option value="search-alias=kitchen-intl-ship">Home &amp; Kitchen</option>
+<option value="search-alias=stripbooks-intl-ship">Books</option>
+<option value="search-alias=beauty-intl-ship">Beauty &amp; Personal Care</option>
+<option value="search-alias=toys-and-games-intl-ship">Toys &amp; Games</option>
+<option value="search-alias=sporting-intl-ship">Sports &amp; Outdoors</option>
+</select>
+<label class="visually-hidden" for="searchbox">Search Amazon</label>
+<input id="searchbox" name="field-keywords" placeholder="Search Amazon" type="search"/>
+<button aria-label="Submit search" type="submit">⌕</button>
+</form>
+<div class="account-links">
+<a href="https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+<small>Hello, sign in</small><strong>Account &amp; Lists</strong>
+</a>
+<a class="orders" href="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first">
+<small>Returns</small><strong>&amp; Orders</strong>
+</a>
+<a aria-label="Cart, 0 items" class="cart" href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">
+<span class="cart-count">0</span>  Cart
+          </a>
+</div>
+</div>
+</div>
+<nav aria-label="Shopping" class="subnav">
+<div class="subnav-inner">
+<a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Today's Deals</a>
+<a href="https://www.amazon.com/Amazon-Video/b/?ie=UTF8&amp;node=2858778011&amp;ref_=nav_cs_prime_video">Prime Video</a>
+<a href="https://www.amazon.com/coupons?ref_=nav_cs_coupons">Coupons</a>
+<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&amp;ref_=nav_cs_customerservice">Customer Service</a>
+<a href="https://www.amazon.com/gp/browse.html?node=16115931011&amp;ref_=nav_cs_registry">Registry</a>
+<a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&amp;node=2238192011&amp;ref_=nav_cs_gc">Gift Cards</a>
+<a href="https://www.amazon.com/b/?_encoding=UTF8&amp;ld=AZUSSOA-sell&amp;node=12766669011&amp;ref_=nav_cs_sell">Sell</a>
+</div>
+</nav>
+<div class="location-note">
+<div><strong>Deliver to Mexico</strong> <span aria-hidden="true">·</span> We’re showing items that ship to Mexico. To see items that ship to a different country, change your delivery address.</div>
+</div>
+</header>
+<main class="page" id="main-content">
+<section aria-labelledby="welcome-heading" class="intro">
+<p class="eyebrow">Discover more, every day</p>
+<h1 id="welcome-heading">Find something for every part of life</h1>
+<p>Explore low prices and great deals across fashion, home, beauty, electronics, books, toys and more.</p>
+</section>
+<section aria-labelledby="featured-heading">
+<div class="section-heading">
+<h2 id="featured-heading">Explore popular picks</h2>
+<a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Browse today’s deals</a>
+</div>
+<div class="feature-grid">
+<article class="feature-card">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=kitchen%20appliances&amp;pd_rd_w=UqSdx&amp;content-id=amzn1.sym.cdf8fb5e-177e-4368-bc95-7557f8d45baa&amp;pf_rd_p=cdf8fb5e-177e-4368-bc95-7557f8d45baa&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Kitchen must-haves" loading="eager" src="https://m.media-amazon.com/images/I/51l7ZOsRo7L._AC_AIweblab1431263,T1_SF1282.5,2052_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-title">Shop kitchen must-haves</span>
+</a>
+</article>
+<article class="feature-card">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=beauty&amp;pd_rd_w=NOaLE&amp;content-id=amzn1.sym.56d10b2b-d2c6-4e80-902e-2dc7a11e218d&amp;pf_rd_p=56d10b2b-d2c6-4e80-902e-2dc7a11e218d&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Beauty items and accessories" loading="eager" src="https://m.media-amazon.com/images/I/61Ld77LHXQL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-title">Shop all things beauty</span>
+</a>
+</article>
+<article class="feature-card">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=fashion%20clothing&amp;pd_rd_w=2rZhY&amp;content-id=amzn1.sym.8d76d45e-337c-4c9e-b68f-9db0a3be5fa0&amp;pf_rd_p=8d76d45e-337c-4c9e-b68f-9db0a3be5fa0&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Clothing and accessories" loading="eager" src="https://m.media-amazon.com/images/I/61R7G24e7dL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-title">Start looking sharp</span>
+</a>
+</article>
+<article class="feature-card">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=toys&amp;pd_rd_w=AXq1Q&amp;content-id=amzn1.sym.8b52b913-ce78-41cf-ae72-7f73aa57759f&amp;pf_rd_p=8b52b913-ce78-41cf-ae72-7f73aa57759f&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Toys for little ones" loading="eager" src="https://m.media-amazon.com/images/I/61upHi2gzaL._AC_AIweblab1431263,T1_SF1282.5,2052_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-title">Toys for little ones</span>
+</a>
+</article>
+<article class="feature-card">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=pc&amp;pd_rd_w=31U4K&amp;content-id=amzn1.sym.13a0f6ed-f664-46bf-b0b3-347680dd2799&amp;pf_rd_p=13a0f6ed-f664-46bf-b0b3-347680dd2799&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="A laptop for a PC setup" loading="eager" src="https://m.media-amazon.com/images/I/714RPvHc4LL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-title">Level up your PC here</span>
+</a>
+</article>
+<article class="feature-card">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=good%20books&amp;pd_rd_w=02ei7&amp;content-id=amzn1.sym.eeefb0a7-3a05-4e5a-b6de-9999066c4ff2&amp;pf_rd_p=eeefb0a7-3a05-4e5a-b6de-9999066c4ff2&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="A selection of books" loading="eager" src="https://m.media-amazon.com/images/I/613fnGHLTYL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-title">Discover books you can’t put down</span>
+</a>
+</article>
+</div>
+</section>
+<section aria-labelledby="browse-heading" class="browse">
+<div class="section-heading">
+<h2 id="browse-heading">Browse by category</h2>
+<a href="https://www.amazon.com/">Explore Amazon</a>
+</div>
+<div class="browse-grid">
+<article class="browse-card">
+<h3><a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20electronics&amp;pd_rd_w=zscb0&amp;content-id=amzn1.sym.a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_p=a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Plug in with our electronics</a></h3>
+<div class="category-grid">
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=headphones&amp;pd_rd_w=zscb0&amp;content-id=amzn1.sym.a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_p=a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Headphones" loading="lazy" src="https://m.media-amazon.com/images/I/417NhPd56zL._SR210,210_.jpg"/><span>Headphones</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=electronics%20tablets&amp;pd_rd_w=zscb0&amp;content-id=amzn1.sym.a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_p=a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Tablets" loading="lazy" src="https://m.media-amazon.com/images/I/41dMYqsSuGL._SR210,210_.jpg"/><span>Tablets</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=gaming%20equipment&amp;pd_rd_w=zscb0&amp;content-id=amzn1.sym.a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_p=a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Gaming" loading="lazy" src="https://m.media-amazon.com/images/I/41gk0-eoy4L._SR210,210_.jpg"/><span>Gaming</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=speakers&amp;pd_rd_w=zscb0&amp;content-id=amzn1.sym.a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_p=a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Speakers" loading="lazy" src="https://m.media-amazon.com/images/I/41uuEMle6TL._SR210,210_.jpg"/><span>Speakers</span></a>
+</div>
+</article>
+<article class="browse-card">
+<h3><a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=computers%20and%20accessories&amp;pd_rd_w=XfPkS&amp;content-id=amzn1.sym.2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_p=2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Score the top PCs &amp; accessories</a></h3>
+<div class="category-grid">
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=desktop%20computers&amp;pd_rd_w=XfPkS&amp;content-id=amzn1.sym.2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_p=2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Desktop computers" loading="lazy" src="https://m.media-amazon.com/images/I/31aw+nYkUmL._SR210,210_.jpg"/><span>Desktops</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=laptops&amp;pd_rd_w=XfPkS&amp;content-id=amzn1.sym.2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_p=2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Laptops" loading="lazy" src="https://m.media-amazon.com/images/I/31hqkoNqvTL._SR210,210_.jpg"/><span>Laptops</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=external%20hard%20drives&amp;pd_rd_w=XfPkS&amp;content-id=amzn1.sym.2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_p=2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Hard drives" loading="lazy" src="https://m.media-amazon.com/images/I/217Arq+nObL._SR210,210_.jpg"/><span>Hard drives</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=computer%20accessories&amp;pd_rd_w=XfPkS&amp;content-id=amzn1.sym.2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_p=2ed5cb2d-6276-4908-8487-054be25673ca&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="PC accessories" loading="lazy" src="https://m.media-amazon.com/images/I/312z6VjcSmL._SR210,210_.jpg"/><span>PC accessories</span></a>
+</div>
+</article>
+<article class="browse-card">
+<h3><a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20fitness&amp;pd_rd_w=IVkos&amp;content-id=amzn1.sym.c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_p=c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Gear up to get fit</a></h3>
+<div class="category-grid">
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=fitness%20clothing&amp;pd_rd_w=IVkos&amp;content-id=amzn1.sym.c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_p=c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Fitness clothing" loading="lazy" src="https://m.media-amazon.com/images/I/41CutKsrzNL._SR210,210_.jpg"/><span>Clothing</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=fitness%20trackers&amp;pd_rd_w=IVkos&amp;content-id=amzn1.sym.c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_p=c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Fitness trackers" loading="lazy" src="https://m.media-amazon.com/images/I/41RKKF01YxL._SR210,210_.jpg"/><span>Trackers</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=fitness%20equipment&amp;pd_rd_w=IVkos&amp;content-id=amzn1.sym.c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_p=c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Fitness equipment" loading="lazy" src="https://m.media-amazon.com/images/I/41MjMjLh9BL._SR210,210_.jpg"/><span>Equipment</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=fitness&amp;i=todays-deals&amp;pd_rd_w=IVkos&amp;content-id=amzn1.sym.c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_p=c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Fitness deals" loading="lazy" src="https://m.media-amazon.com/images/I/41idnUIEIZL._SR210,210_.jpg"/><span>Deals</span></a>
+</div>
+</article>
+<article class="browse-card">
+<h3><a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=home%20and%20kitchen&amp;pd_rd_w=JhLCb&amp;content-id=amzn1.sym.53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_p=53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Fantastic finds for home</a></h3>
+<div class="category-grid">
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=kitchen&amp;pd_rd_w=JhLCb&amp;content-id=amzn1.sym.53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_p=53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Kitchen" loading="lazy" src="https://m.media-amazon.com/images/I/41opB3I6bHL._SR210,210_.jpg"/><span>Kitchen</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=home%20decor&amp;pd_rd_w=JhLCb&amp;content-id=amzn1.sym.53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_p=53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Home decor" loading="lazy" src="https://m.media-amazon.com/images/I/31zR9dINh6L._SR210,210_.jpg"/><span>Home decor</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=kitchen%20and%20dining&amp;pd_rd_w=JhLCb&amp;content-id=amzn1.sym.53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_p=53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Dining" loading="lazy" src="https://m.media-amazon.com/images/I/41bvMGlDk4L._SR210,210_.jpg"/><span>Dining</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=smart%20home&amp;pd_rd_w=JhLCb&amp;content-id=amzn1.sym.53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_p=53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Smart home" loading="lazy" src="https://m.media-amazon.com/images/I/314AasupNAL._SR210,210_.jpg"/><span>Smart home</span></a>
+</div>
+</article>
+<article class="browse-card">
+<h3><a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20pets&amp;pd_rd_w=wpAsF&amp;content-id=amzn1.sym.1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_p=1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">What you need for furry friends</a></h3>
+<div class="category-grid">
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=pet%20dog%20supplies&amp;pd_rd_w=wpAsF&amp;content-id=amzn1.sym.1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_p=1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Dogs" loading="lazy" src="https://m.media-amazon.com/images/I/41eLkFePVUL._SR210,210_.jpg"/><span>Dogs</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=pet%20cat%20supplies&amp;pd_rd_w=wpAsF&amp;content-id=amzn1.sym.1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_p=1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Cats" loading="lazy" src="https://m.media-amazon.com/images/I/41OERaEZuaL._SR210,210_.jpg"/><span>Cats</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=small%20pet%20supplies&amp;pd_rd_w=wpAsF&amp;content-id=amzn1.sym.1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_p=1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Small pets" loading="lazy" src="https://m.media-amazon.com/images/I/410BX1Aby0L._SR210,210_.jpg"/><span>Small pets</span></a>
+<a class="category-link" href="https://www.amazon.com/gp/goldbox/?ie=UTF8&amp;discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%25222619534011%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&amp;pd_rd_w=wpAsF&amp;content-id=amzn1.sym.1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_p=1f0ba011-0583-4bad-bb49-3ee32d4b860a&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Deals" loading="lazy" src="https://m.media-amazon.com/images/I/4172LJHm7gL._SR210,210_.jpg"/><span>Deals</span></a>
+</div>
+</article>
+<article class="browse-card">
+<h3><a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20books&amp;pd_rd_w=wb0hW&amp;content-id=amzn1.sym.dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_p=dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Books you can’t put down</a></h3>
+<div class="category-grid">
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=childrens%20books&amp;pd_rd_w=wb0hW&amp;content-id=amzn1.sym.dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_p=dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Children’s books" loading="lazy" src="https://m.media-amazon.com/images/I/41GFVxxKgwL._SR210,210_.jpg"/><span>Children’s</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Mystery%20books&amp;pd_rd_w=wb0hW&amp;content-id=amzn1.sym.dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_p=dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Mystery books" loading="lazy" src="https://m.media-amazon.com/images/I/419CThhzV6L._SR210,210_.jpg"/><span>Mystery</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Fiction%20books&amp;pd_rd_w=wb0hW&amp;content-id=amzn1.sym.dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_p=dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Fiction books" loading="lazy" src="https://m.media-amazon.com/images/I/41xc5J9rTaL._SR210,210_.jpg"/><span>Fiction</span></a>
+<a class="category-link" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=motivational%20books&amp;crid=&amp;pd_rd_w=wb0hW&amp;content-id=amzn1.sym.dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_p=dab76f9a-c9d4-46fc-bdd1-04e215d4bd84&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk"><img alt="Motivational books" loading="lazy" src="https://m.media-amazon.com/images/I/41w0AxX8G8L._SR210,210_.jpg"/><span>Motivational books</span></a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="more-heading" class="more-categories">
+<h2 id="more-heading">More to explore</h2>
+<div class="text-links">
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=beauty&amp;pd_rd_w=NOaLE&amp;content-id=amzn1.sym.56d10b2b-d2c6-4e80-902e-2dc7a11e218d&amp;pf_rd_p=56d10b2b-d2c6-4e80-902e-2dc7a11e218d&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">Beauty</a>
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20Shoes&amp;pd_rd_w=PjYUq&amp;content-id=amzn1.sym.acbd6832-a460-4b1c-8723-1a2289c0c8d4&amp;pf_rd_p=acbd6832-a460-4b1c-8723-1a2289c0c8d4&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Shoes</a>
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Video%20games%20%26%20accessories&amp;pd_rd_w=N9z5e&amp;content-id=amzn1.sym.9cb3c994-ef2f-4bf0-92eb-3dcb97ae83bc&amp;pf_rd_p=9cb3c994-ef2f-4bf0-92eb-3dcb97ae83bc&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Video games</a>
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20fitness&amp;pd_rd_w=IVkos&amp;content-id=amzn1.sym.c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_p=c9aac128-0f53-4ef3-9966-f21ec6e54087&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Sports &amp; Outdoors</a>
+<a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&amp;node=2238192011&amp;ref_=nav_cs_gc">Gift Cards</a>
+<a href="https://www.amazon.com/coupons?ref_=nav_cs_coupons">Coupons</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-inner">
+<div class="footer-links">
+<section aria-labelledby="about-us">
+<h2 id="about-us">Get to Know Us</h2>
+<ul>
+<li><a href="https://www.amazon.jobs">Careers</a></li>
+<li><a href="https://blog.aboutamazon.com/?utm_source=gateway&amp;utm_medium=footer">Blog</a></li>
+<li><a href="https://www.aboutamazon.com/?utm_source=gateway&amp;utm_medium=footer">About Amazon</a></li>
+<li><a href="https://www.amazon.com/ir">Investor Relations</a></li>
+<li><a href="https://www.amazon.science">Amazon Science</a></li>
+</ul>
+</section>
+<section aria-labelledby="make-money">
+<h2 id="make-money">Make Money with Us</h2>
+<ul>
+<li><a href="https://services.amazon.com/sell.html?ld=AZFSSOA&amp;ref_=footer_soa">Sell products on Amazon</a></li>
+<li><a href="https://services.amazon.com/amazon-business.html?ld=usb2bunifooter&amp;ref_=footer_b2b">Sell on Amazon Business</a></li>
+<li><a href="https://affiliate-program.amazon.com/">Become an Affiliate</a></li>
+<li><a href="https://advertising.amazon.com/?ref=ext_amzn_ftr">Advertise Your Products</a></li>
+</ul>
+</section>
+<section aria-labelledby="payment">
+<h2 id="payment">Amazon Payment Products</h2>
+<ul>
+<li><a href="https://www.amazon.com/gp/browse.html?node=16218619011&amp;ref_=footer_swp">Shop with Points</a></li>
+<li><a href="https://www.amazon.com/dp/B0CHTVMXZJ?th=1?ref_=footer_reload_us">Reload Your Balance</a></li>
+<li><a href="https://www.amazon.com/gp/browse.html?node=388305011&amp;ref_=footer_tfx">Amazon Currency Converter</a></li>
+</ul>
+</section>
+<section aria-labelledby="help">
+<h2 id="help">Let Us Help You</h2>
+<ul>
+<li><a href="https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya">Your Account</a></li>
+<li><a href="https://www.amazon.com/gp/css/order-history?ref_=footer_yo">Your Orders</a></li>
+<li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468520&amp;ref_=footer_shiprates">Shipping Rates &amp; Policies</a></li>
+<li><a href="https://www.amazon.com/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns &amp; Replacements</a></li>
+<li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&amp;ref_=footer_gw_m_b_he">Help</a></li>
+</ul>
+</section>
+</div>
+<p class="legal">
+<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&amp;ref_=footer_cou">Conditions of Use</a>
+         · 
+        <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&amp;ref_=footer_privacy">Privacy Notice</a>
+         · 
+        <a href="https://www.amazon.com/privacyprefs?ref_=footer_iba">Your Ads Privacy Choices</a>
+<br/>© 1996-2026, Amazon.com, Inc. or its affiliates
+      </p>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</body>
+</html>

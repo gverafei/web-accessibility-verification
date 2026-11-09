@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the visible section headings, article titles, authors, imagery, and overall page organization. Small vertical shifts and the normal scroll-boundary crop do not indicate lost content.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible editorial text and imagery are legible and coherently arranged. The large blank area appears in both states and is not a target-specific presentation defect.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible header controls, including subscription and navigation, remain identifiable; no essential visible control appears missing or unclear.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target windows show corresponding Forbes page regions and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The article labels, headlines, bylines, and visible editorial imagery convey coherent meaning consistent with the page purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating layout discrepancies**\n\nI need to assess the layout. The target matches almost identically, but at y5000, there's a slight vertical offset of 10 pixels. The top seems clipped from the previous row, and the layout content is the same. There\u2019s a large blank space on the right, likely for ads, which is also identical. The image at y4000 and text content appear the same, though the target is shifted by 7 pixels. The controls header is consistent, so the evidence is coherent. I\u2019ll return the JSON exactly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating layout discrepancies**\n\nI need to assess the layout. The target matches almost identically, but at y5000, there's a slight vertical offset of 10 pixels. The top seems clipped from the previous row, and the layout content is the same. There\u2019s a large blank space on the right, likely for ads, which is also identical. The image at y4000 and text content appear the same, though the target is shifted by 7 pixels. The controls header is consistent, so the evidence is coherent. I\u2019ll return the JSON exactly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzXECd1AvNodKNK8vWRtyfgSaj2_w7hqYtz_EbJD6ydXawR4nJkn3PnVxZVa9omdF2qQZM0xo7k3nRZlGdG_LZps-wGxVxCs4EKfIXEN28R_2ZKijQEGYSGE8fDaXwqSRzRKkFGNj6kMsRp5yhMMeE4ipcLJxdDtOBeMhpqyOnHAacefKeBnHa-7PxMMrcy9fe48Efb__qaNI62zzZN45mDXYOoKwnzR9AMyWW3Dzl7zKmbzzjvOor3OjJHoA6bGKYSeC3btI88x1ItC7sm1oHrSKaER-pM4waAAuNIhPAW8jYdzA15UvNycz0D1zDAQ5b_shwxMScaiJQoa_gwn9GHF1Rs-OX_q-FeyWM_ZAUE-L4BD0TEVjG0tg9iN029JXzr9tI4_2kvta29wZHhpPMQ_etCQ1r2pLlKjKwVuiNWOg9qfGW7aE6IbVICx88B7d35RxXDv_ahibmpVtXCf8d4INv23q85MWorqu67S_B7v_YPyXnv8Uu45bHxGRgxkmbntq-3WXidpTlwMmmnOWRK5uh3OQaUv9gweHSVUW0VnQLhyYIqVFRqgJEaaOgm6afyIoiw5YMMzEirtDqNjvS1unqE-hM_xRU6CQTNLO-2zZ4uvYhbKwJPsSSDwdPRy5TgYiivVD_TMKxOgwadjMpJI4aXaZnpRVjcnQI2-kTA0mCWpvWmWEv0SxPeCebhOmP9DVBcwtKA_YnX-sfNic0Sm2tVJuLmk8Y2ve-CMgX4hesV5EdLaQRaUHedST0Z89kA-MqJ-ytd99JNPMgvf35q2QxtSP4PIE7Nf0Htf0JY3ux4EsZeHEDFVD_Qs7s8O32vEbTQUXe89_6uUT0ko_Cv-71uQSXyv0i7kUA8-48Y44Su0Fvij51yBEVuWahCw1zz_3YARt9fNEPMkUJC497GFn0tKINJEoHJlC0WdjGKIFZkI7d_vNkhJ47r7LTdelD5sG_j9weLaXfQ6PAobqf2q9Yanh23nmjE6AXY2RV7joxT_OYMAgaabAiMYNJAtX0a_7P7xhPRIkNsMAJL1TvI3gBpFvxqH-vc5iMiBi_eCjhXbHDkFJZVZ-4_udmhudeueEXG7uqd8Zt1-0lwlVTtO2gCdBXi2jYW71S6Vm-AuzmGgVnt2SSO3f_6-7LRQoUfodjbWZ2MpMwVTpnEk1GuW7rZOIVq7Wc4rp_j4AP30cvlIoKh44S78qZcX8q6nU65kCHEuBlJAyTLBSNqfQVBSaFy0L4bWXe-xDpu8S0HEIkBz86U_2dUfOMioRfUBxnjo0shiYq1FkmxAFDo3nmMFzOJqh7AHc1cCVQDA1AvvFSBj8L_OwLGvIKD9PboutQWvsKkCWPEaHlfEa4RJsu6OHsdDV1XajShnJC96rITfvutckEU_qLH7hlv4fmCQzF8NqU365D5HOBRu3bVuzGn-wh6L8t8L8C5sDxs3V-3sfbGUd2h2Q_R-AWk0YsXaJr2gzd9EBgwYL7kSJXEcFC71CDvr-3FDCTI1CuuMjxuOVZaP-imtkH_1QOX9TW5ioAJ4QWXd-Q5e2oSacAVFssmNG7lfL-ZDIaj_tgXNsHULW1hiw_bqOknu0Nc5DKyJPfmNAq9Rvj0x9HF9ajsnLi5OudsUiub0wGiizmA4iMrA2BSiup47kEuvkMPOn5uAnXDHSZ2KwMwBF62GA1-DO7cWIhmHJH1sCrj9WfZKMXmXWY2PmEjb-DQZpFcgMLLo6M7641XYK5zIxr9SMMbv-qvNmTqCN9MEYq1GxEohygdxWb6HBCmDGBFLrgHZYMzuZNrrLJa51H7J6hWIAUoUiUhVC5hOZ5j9_eohcgSzJ0lau1hXnfptF6vpnsjN_duM7ZR1_TLgbG8j_uQBrkVcEFcJbZtGV4zyO8X9910a3QXQJeXacKkNV6dS7nACJ8PF9d_CulGADbUAtyekIxKeZ_E9kAB9oL6WzZtnxyvvbOAUNT2fRsUQT2xz0yusnIGKz4I66l3SATvXuhujWbxYS1k1wP0Xaeo2RB34Zk0DTSFiLO_8665lp6fw-5wL1QRgWptjRybnLKies2hb8KjK6udwTvkRGThqEI3tF9swzqLHl5XFPEhTtz39sL8pFIJKY7RC3qM0KKojQb1R2MN5mmG5LcwKfka2FNpHHhNoPYreeAXiwiLnt6vIQdr5jQKM1BWihasCMjSWVnkyXoiRaNGPG1f4673W9LYkL9LejePcshknWBsCoKlwJiItsh6G8SDwjz2zpwvXnpfRoKnmPNOlR5nav7BYoQtHs1NAUV9SlyPZ3SZlEp9BEg0YtMTG-dFLlJrHWYPSOZid2m_gL48TCMRDM8aMELTmv6IIsNdnoLNPqtCFWFRTX93m-g2i-VIcNe6UjbVuNfQe99xDuvtCwNmP1wECKNbWn2RZ9N70en9SEq16PDUqZVepRyUogoL93MrAha_OATqpVKiyU4d9i1S0oVxYnqycUdEIFkHg-F2ztu4XrlrJA7RDeJMMgGY.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0dc83b402603f35b016ae81cd50d7087d18a4bc8479fd74b92",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18332,
+    "completion_tokens": 275,
+    "total_tokens": 18607,
+    "cost": 0.002428925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18329,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002428925,
+      "upstream_inference_prompt_cost": 0.002291425,
+      "upstream_inference_completions_cost": 0.0001375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

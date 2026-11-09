@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target windows are visually identical. The visible footer, campaign call-to-action, navigation and cookie notice are preserved; the notice\u2019s overlay is present in both.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and footer content remain legible and coherently arranged. The dimmed background and centered cookie dialog appear consistently in both captures.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls have understandable labels, including the cookie settings, reject and accept choices, navigation links and Get Started call-to-action.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states correspond and provide a coherent, directly comparable view of the same page regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible page text, footer sections and labels communicate a coherent Outbrain Direct Response site purpose; no material semantic loss is visible.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating JSON and usability**\n\nI need to check the JSON for identical images in both pairs, but the cookie overlay is making it tricky to see the content. The visible labels seem functional, though, and the page footer is somewhat legible despite the dimness caused by the modal. I\u2019m thinking the content is preserved and the presentation is still usable, even with the consent modal covering the page. The cookie preference popup feels intentional, so I\u2019ll note that everything appears coherent and semantic.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating JSON and usability**\n\nI need to check the JSON for identical images in both pairs, but the cookie overlay is making it tricky to see the content. The visible labels seem functional, though, and the page footer is somewhat legible despite the dimness caused by the modal. I\u2019m thinking the content is preserved and the presentation is still usable, even with the consent modal covering the page. The cookie preference popup feels intentional, so I\u2019ll note that everything appears coherent and semantic.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B8dkZ5ygpOOYhhOQqNsRJGB5s-S6bKnvTgwIEIW0AC80Wofq29KuBTbcaCEsipMK08ZJk9fBZ5ZqrNwHlqnqA7NatfAlZjy3nrOSu1bq9xjZhmlvB73OLrcOLdvb7_jx8v1XjAmhhc86BL4mUMwtQyD0e1qwVV0lWYkkRehe99Z8mSb1ipBhAe4DMa0bLDgZhhT4pKfzCC_PssHTsDZ5afIJtt992kdU_IwaQY02bwFOn7AAmIUQpP_E5ezx1QIcapYBkh9cTU75lWhmyESWkEDlJ7uYyenjEWt5n3Css51Xh3j7ywjp0rh4aozH5HHIcpP-guGsv8OOAHX4TefP6oJ_MlxY0uZul0-KgQi8C07R8p-3UJZNuA6RldaRZqX86_e-XSc0VgUH9nssibYxteTxLAeCe9ncfMTzQj4VCznfag5Kv5aoGMAzLk0DijmydhQVqXfY5XqAlFYWhQSTkZhXAIvW3IRFs-mE4hqHs91FCaWwbZ-1f65h6S-8XPvHGEVk95k6ESMo3xK7DBe46l5GjyTwHxC0bj0oDru-1llEWMqiI_BRJLHCN0jpZMAV3ssxgO3ZWkQL83jSb6Y86-sFgXkdXOwi7oyoi3t4Bq7MZftPxT_PWgKpXkBA9WKCOlrSll3Yoqq98URm_eSPhJ5cDngznI6q4UN3PnH1rBvUqcWaaSdXoKl9pVXJazqYtWipJZ38Xnxg-8yGjy-2qDpwGFn29yjw0iCPMax3R1ayeOmk7lfdpYatuxyPFQ7snBeyKOLlwHHdZBgsp0o9LQVvnvatymPcZ1Hqx7uObA84ak3NVbvXkdeUBNUSi0YbBR48JticThNjbnyU_vjmB9bsJk2lxzgHnSWznh5AZRq1WY74a2nAwNQb-HQOqmONh7bwR52E5FQPPWhavPAk5jm6C3HPubmiNn4n410GGB1m_arGUUkx96KEEkO2jZyHOJgq15Zx9OuutIZVHDV86wTxxTIWkIJSpG4oEAUti5tYeOpie4hyjKnKwC0Ulw_rSAtjcRdqAxg3axfz1L88mah2_J5TKQyvMxOSu7OTxR2pzRhngGx7C_DOkraKoJWUhWMpZx3Nz1cHk53dwyvBDbEdsTVcCTK_DFf2Zy1OOPyZvwLvHv1-CO_CcMLmFfytRGRfUI4th5HD7b941_JL7YNrWqewXSO1cQXkhkN68mq5_vjoMLokvq0UXIPSoBNMzVf-8JNbkGEcxkRT09Mh7-9aQQf94EzvhTO_ZSUYp4ZeT9B8YhyC4EYjqdYBs8etvD_OUO6XCSU35K0RRRuikljJuQ3HjPq3XOdNXPk2KbVUi4VttVYZ2oo31yRtOOSrb-JtRCt-1hkirjoefyjflm_U2Wymm0tAEcSeL3DCIIYdd1bh4U8npSxpVGYuCS96ZD5DDDstyti8Tf6MNI4OkzIL8ZVGUtMNKzuc9Jx6Jo3PFVUJFNkiMvWisn1I2KICsKcd_I-eKL7ZtkJ1G33mb9r7m1NGNRJZKyp3nCO4zZ7n_8q9jrh9PwJ3iNf4s-v_eyf0hzguiPt2dvca42gUFI-Ywkj-NFyIMuryMEYxZ4nAsWd5P2mddr7CtWXEe09YxZyIwSMs6UYZdVu6pxcv56bxDCiBkcgInw057t_NXlzQpIRJ5dBKEuLBqxgzFuPeZWGTP7IT9_zGXvnPjcYL8RU608u4Kx1XmVheQY7E8WlQRRskzCQo5JpuNh7Dtys0cfIIseB-3xkHqJFr6PD1CF8G9JvldZxZuqHfRUOpdpXVijyHFl379jqAWSrwzigZjasmFfbuvoGW7p5k3GJN78tEoB7j1ZtFFvoneLB36zVheEttxbXZ8_Iuvdg-_IhgQmjmDiVm5-MdB1Jm-wnlUndOT0Mko5HcYBwuBTHAuRLhZ7h0moh2WAm-fGMXFGHCGKuBiItTG-cbFdWDA9364uUedZPJZNPmeRNsn_6RgjPJqQpGI1rDoRwPQgSnkQk70WNIDj8W_2-vRVzqaO0XPIP-ecmHpUl-OigFT5MYXq4Z46veodkDLDK6DN6iT7GgPoiay5XdKDG8MJ-tt0RxDygMjWJQ41ubvedPCctd4nGVUjl2uU7r-EylANWmTAOzene9dAvNX33E9muYu5jEGO16YhdeUkCM0yAk2rh_S8oNUXdAUpwjXVmGccp4Z2w33XPmBFVHdNum2u2qaOLNwSgZymm5CcafO096oavhhyxncEEoxq_7_P8C0OCKKHuAu1L9bii7pvkXSF1mYLvjrNqSWtsCGd_dpjOQba0EeF8VGycKGCK6lVUD_sndRSsqXq8bfnlWws43GHgHH8OpZBqSF71aZhygry0JkSZcFnhcTZGbw75BTZFn2wALU-H7vm2Mu55kb3SIXXeSvqMg-82SfzJHd12BNSVWHlRVaM2nPslTetGFICrZLyL_mYTR5FgSKJNdyXjxor6iOLPj8hIeol3c3iZ8YYk-K5VF-lWaWu2IYn8GZCO9IQGCyeGfNmz.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0577824532071001016ae81f1b662487d1a2b60eb2442ac542",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10358,
+    "completion_tokens": 325,
+    "total_tokens": 10683,
+    "cost": 0.001457175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10355,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001457175,
+      "upstream_inference_prompt_cost": 0.001294675,
+      "upstream_inference_completions_cost": 0.0001625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

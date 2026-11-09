@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent Samsung Mexico shopping page, with the Samsung Week promotion, product categories, product cards, and recommendations visible across the supplied views. Its content and layout differ from the reference, but the regenerated page remains adequate for the broad purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s first visible product card contains a conspicuously blurred, pixelated product image. This is an actual product-card image, not an excluded advertisement or an illustrated interface, and its poor rendering is a material presentation defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, shopping-cart and account controls are understandable. Product cards also show readable actions such as \u201cConoce m\u00e1s\u201d and \u201cComprar\u201d; no essential visible control has an unintelligible label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views form a coherent comparison of a Samsung retail page with a regenerated Samsung retail page. The design and page content differ, but those differences do not make the evidence set incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, Spanish descriptions, product names and action labels convey a coherent shopping purpose. The blurred image is a presentation defect, but the surrounding product information remains meaningful.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11217,
+    "completion_tokens": 333,
+    "total_tokens": 11550,
+    "cost": 0.00156855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11214,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00156855,
+      "upstream_inference_prompt_cost": 0.00140205,
+      "upstream_inference_completions_cost": 0.0001665
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

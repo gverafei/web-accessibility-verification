@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent WPS product information, including the data-safety section, learning resources, a download call to action, and footer navigation. Its layout and section positions differ from the reference, but those differences do not create a material loss of core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, descriptions, cards, links, and footer content are legible and arranged coherently. No substantial clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible action links and the Free Download button have understandable labels. The footer also shows recognizable product, company, and support navigation; no essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views form a coherent reference-and-regenerated-target comparison. The differing section positions and layouts are assessable and do not indicate mismatched evidence.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text and labels clearly communicate WPS tools, learning resources, downloading, and company navigation. The content remains meaningful for the broad purpose shown.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating content coherence**\n\nI need to assess the regenerated target. The images show coherent sections, so I'll compare the aligned content. I\u2019ll check target y4000 for safety and y5000 for the latest/footer details. I want to reference the testimonial at y5000 along with the latest starts. For target y5000, the layout height differences seem reasonable, and I can see the controls, links, and CTA. The content looks semantically fine overall, so I need to ensure evidence of coherence and then return a JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content coherence**\n\nI need to assess the regenerated target. The images show coherent sections, so I'll compare the aligned content. I\u2019ll check target y4000 for safety and y5000 for the latest/footer details. I want to reference the testimonial at y5000 along with the latest starts. For target y5000, the layout height differences seem reasonable, and I can see the controls, links, and CTA. The content looks semantically fine overall, so I need to ensure evidence of coherence and then return a JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBvRZrCEBux_yp9xvSZS4DmKtHt_C4th2Vcl4NVp_J4RfAn5veqHIEOUSadIZ1EUWYAbqpIt5oRVguYRBbT7hKsIRREyC1Q_mbFYe4MOOdp_oF95M46ZPGAOKqje5tXZkVJ07ozLjwjp9_cR_zaG9sNQOggRem691qDzrQf7Izyz3okDSmyA6-5EUC7GNMz-AN8S-Tqen5na80z1wNABF1RzJW8nJvI-Mvh4nfKH7BcaqE1gUonZvmw8WmywvHjE7E6C4k6NFfZpDpiVIPeIF_8m6_NBGrubiC3y5OHmLa8FoSLw82bMfI6ZzgMV2xh5DWc8Sc3wrgpqO8_5exaVOjR7ZSNNh7exk1kIbRsCoaWDerCFrTcpKy5UsomI3-0Aa92dWymMtKkeP-QhmywGxGtbnLqdZMnY016OQ2TaYdLzmzrnDKXToHmkwU8SC8lmYkIub8TQZxGCDjezMcmVXiFcFiaOXQEJ--LTPd2eZWu8D4HUxSqo7XErmNbMeehCz8jZveJeSAz_g5OMVgyd98FksKtAustmKFTeLQR0KNMFDq_2dWzCn2BEeiB91mAl8zkNZrsPeBEkKd7bbcwfdz7Dbmcq92OzKo9ygGkBv2yBLs7hBa2GrSjCw7UzAt70w0g_JNq3xunetoRHnDNVkgTXsI1u6iJApPC8c-bL-XbJpfhZuHi1lxx9VVybIX9vAceD-aAl3Vm8S6PWRY86ijPr3DstZEYrkZ7kRO3oXO2Dz_WAVNa97zmpV6TfndTX7kpMkx7kU4R_gNuMSk1P_bStCNhebzXKFpx18ILDB-1CwRwJbuKInaHOsRB9WGcqoLyCwPU-ur43tgYMSUEYtDdnww7Hs_0ZUwMRuhhjlLhr166Pmu0CETOeA0knhcFm1c8Q737hqdSb0udERcFTjZi_PbYs_lINMoNGoL5rZuPwGwoCAibqNo5RF_uIG7B7RKyaWCApirM2np3lSI4OoEdrajr1DO54aR9GSREOySk1HL_WHHq_i_XR0tKIMSPHE_-trMsteIocwqF5aL7cdak-e-i2UafrfZ6FrwHHcUAi76iEZfMevb4Fmlz2rfo_JSrRnotJsZvyzCzjTeKbpl1i5U45LP8FOS1IByyWeeiq91sWAONoWSwPDL8OMK_6rJczIOT1YpfK7eVqpIC1pnZCBZXuKG7zxAsGVQRUjeZY-k3UocXo3gM2A4p5VjBlkCpL8xwFUe1LqgTPycKBhG5Gm_bGcOBOmnUFM3RlTRWt8W_cSP2d3YXOJRSXCGJIoJzziwPDM2u6X4Y898YMZBVuUOVnWuKYQAcNq-T8m82U-yJyA42-AWekEopT0gZeYIk8blCeQzrm9FiHDtyj2phmIaRppBs5YEavmQAHkhvlmO3BqBs51QAouuY5I2Uy6SUNZ6O1G_oiflw2bBM60h7wiJKjIWGUbe-Mxb1666Er0ApS7e0VWuqlfTOp9Xue2DtwJHv8FR35E8E1vAFUml8-aejSC5p9Fu0EcIEfosQS-CzkKm6Ikj8_ICVfVJpIJbDzx4pP7XW1mJD27ZBKB-sF1zLmTghz6DH8v18v6CjLANEWPNhtbban4UL7PK62dPXS5lYIysAaA9itvCxL_vGdnh3mgmj67trjRJDNmUfkA0KxqfLFBZ_h3MTRmJeIzqVuP3YfYu8YEPLsww0NJlrkXqGQLSjiuewxYZaXO0lpyu84RKEUhfFALU8e4kkz3bfISNWcII69tCU6GvK-3CtAL-l--ZNVjBMWgPv0SWM0fPDjqUZSw36VJm5vTWt-ebMmLve_QcXX7q7EYMk73wOUX0k5JzUiWpUAT9kMqAvHLkKNnExl-k7QrJWqEIpXAB5GMA0nppgzG552EezTvN630EIhPsbJM83p3ksI90710kN2ZtnAfVphV2c85clCA4GnnDnfklZxOO7NEfqF9k5ZrawYCI4qmDlHgV0e1Jha6O7bWrvSUzyk3yv7JgWmQS_TYuZbkE6vwxX0VuMtUKYWuyNp-JbtT_sP5vhsd2ZvuCp8JDCPic73TK3EKu2k3wER46chBXjOKv7LraHSl5dzzyg8cvnmOyIB6H0ZYM9AFo4_V4xJ58PZ7vzrA-BTRLB6SVvxOuwa99s9Ls8PHB3fXRY9HxKksJfFYZGuQKV5KnB6ylo_FCwXE87uPa1GlrNsNnbVX1f6c-7m9F2jug_EKD8sSFrbs9kCnvH_zQXpYuyIu4pxPWFHaHXY7n2Z_JpH8W00SapjhKctic-ZHuT1Vebgr_Ik1IZsoDp4sTuXLQCNy-uS8EXszLp8MlWfeTGhoL8GlX7kp-BWKtFvvuANnO1qY8L-uGnYoGkuqkqVtUFweXSvd2KEEI1UWM1nAc0whQq4Wd5D41XTqmtqm2qsnVcle6SC-bJEam4yBptSoz6ZbJJCOWqYnMlKkAQWSnYVXuaK41pJOeR7I7MhsC1yvo214UXeY7wFKQhtASh61tk11nu-pJ0KYqr42dxD9RF.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_089a3c774347c8c8016ae8206d89d487d1bd9d4bc12d21a019",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10707,
+    "completion_tokens": 370,
+    "total_tokens": 11077,
+    "cost": 0.0015233,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10704,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015233,
+      "upstream_inference_prompt_cost": 0.0013383,
+      "upstream_inference_completions_cost": 0.000185
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 70,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

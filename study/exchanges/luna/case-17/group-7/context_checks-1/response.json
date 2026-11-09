@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target retains the annual-letter text and surrounding page structure, but the reference\u2019s book feature\u2014including its cover, title, author, and description\u2014is blank in the target. This removes substantial editorial content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The book feature renders as large empty blocks where the reference shows a book cover and readable editorial details. The surrounding text and footer remain legible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible annual-letter action and lower-page calls to action and navigation are labeled and understandable. The missing book feature is a content/presentation defect; no further interaction failure is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent comparison of corresponding page regions. The differences are localized to missing content in the target, not a mismatched evidence set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The annual-letter text remains meaningful, but the blank book feature no longer conveys the book\u2019s identity or summary, materially weakening the meaning of that editorial section.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating editorial controls**\n\nI\u2019m assessing a potential control defect regarding editorial content. It seems like links to publications are perhaps missing, which could be essential. There are visible page navigation controls, but I notice a lack of a call to read the book or any purchase links. This might indicate a conservative material defect due to the absence of vital book links. However, there is a button to read a letter which meets the requirements.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating editorial controls**\n\nI\u2019m assessing a potential control defect regarding editorial content. It seems like links to publications are perhaps missing, which could be essential. There are visible page navigation controls, but I notice a lack of a call to read the book or any purchase links. This might indicate a conservative material defect due to the absence of vital book links. However, there is a button to read a letter which meets the requirements.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AVaKMzzU2s3PVDAjzycmxMLnZNCvR9Gfm8SU5im78Rs0jFHHVs3C0AfIcwv3CaTWt0_c0ENF2fNORB6ERUB3XMIHZahlTHYX6gTg_RnNtyulWRjQksvfF1GQLPRzSrpxdWzhgoA3rx9rLGOApsC8X9YrhdJf6HrR8y6boLKpLEKWzkBd84YZKyT_SZFolCMFDT5ROawNlxAHWiYrBnOJ-_G2wqDshkFQZn7qbMxIVhAlkIFEk6AE2wIqeyhJSXB30-GbwptmjQf3IVF2hGBnbL1Fz5vUDZ8JoYzZdckNmRF7jYLA_QCjtd5K9Ij4fkCQVFK08P1b1N2JQDnEPGN2f49Vvbt834ywskqbp3F-KoMYRD0ZlwUfVVMEgAJ2lRMkQHmjXH_UhBki6ng1xs4CemZEK0dMq9gmvzxBYrA1p4T2p6fNE5myi5HwF5PF8kNiXcdWpBmV61RRsdxsUH7PqzwJyT0Mszs6tukc6wxePMRi0QKaBMGF8PKIo2WW5D3ue0HjFO6t4oyDJ8dQHjToYkqA8xKw9AH9Rcv99YNUfFqdmSbRx5jc2S1SHEQp5wcpEdPldsQzYHva4BlaJ0trCbJpHSfFShxXbtqcdZLp3pxhcUiEhoJBNErIM2WzZxoKr0vTkPlSpAR3AUIWIpV_ATJ0Hh1e-5G3NBdU7eMMFJMkSMd0J8N0LSZRuWCi2XUPeo9xBksc4P1h1oobfi66On3-Kc6diPVqBY3LSY-LMrrRGQYcTycXQX6N-lq0d2u5hsluYPvDvQSqTyQr8pAtr9bVtchGvu2dP81lqLOPLajiPasY5qhecnKdilHhwcdTmOdb9S2pouhsiNnzDweEKjvwfJCCK8ESu22aYghu32YLjBXU3q1Lt3fv__yJnMoUMYOo5-CXjPLvM4wuvPJcb5bcX0uN0umvHMxKkZvZb6_Qdohbb88UBiF65Zkpb16ms4dD5XGHDo6gqMNy9q03Mypp8fcdA-fQSWwbJjY08h0zb3aOkVMjMZGWitlf408XHU5CGzvz-FMjBi02VV6cHNlkHzpwO29Uhua3m4hGs6bY-waW9FjnhnbeN9I7bvWBp0fbOwJUA1cql88172dYfaB5LJtP8mPWCkJ1-LSzeQCGL6I2U5Uwi1isQchpkPe2xr9CjI5pcGLDSrGZpS3WO38IkuaCs5U1SUPw6vTxXI6EZz1PGFWUv0qEYYhS7PJfUHcZzAjchxv86NRkT394O8nRqSDt40Zd5qrdrJ9S-6BBDKRc5RRtq4NZ-iQhuuBn0hYe-YWnfEmWmtsTzrbNv1Felsmu9KF-dDaD7_1uB-ykKqsuS8KFd_YEqySJpxwx1224kajcSXcN9OtjMh7Dwp2O6mxPMpIRhDOJhR86uMSbKLzdX7EiiLfntPMMLKApdSeyZS7tDEWrlD0yy2RnhnkY8FN9tX1Q88S7DISqbxNh8oWAD_B1OraIhGcLFY0kSGLx8AM1Rm9md8CLqfu9I4rJj0aigpDBMzEX2qPXhZUVTOPwjinLdqF_dWrDzM1cm1CqVHMRv1lsSRt4_mnlOc103qjeXfw3lWe5ysP1Z_hKisUBj6QSYh2OEpL2lbTHIuLVlgNSk5CG6VYOL1PTBsYubAIVQJ9LKM4dwaWD_m5nfsQI4ewnXnWwLAh3QgHIXz7dEYb5WlYLTCd37ylbFsztIUF6kvkeVr4ZF764pN9e8mk5EqFbLzOpqxLmZlZZjMgrTSWMaJni9iItVvuqiJ9iFSaEhBpO5hsPCD2jHW2KHK8L9sLGP1x34a_cDQozVsknAhgSaAiHt-J5pjxfWaWlzekS564UEvK5aoX4Jx0JJx9V_32o6kDN-HRvmg6-nLZ40MdBFvYuYKqlN2iUEyCAoIMOb_WjHokmu9hrjzet6yj8o365TWt8Saru3WXHhNljSG4-4ZsnGArBn1-cVR849JybMVr_fzFonO6DcAQtcqMsERvgNuW5kXf0Jfjeo_NcedjXdhtFVGSMt5nEs5IXQqieBR0ejiol-G33qDKIfP1z_xl6a3NrWlXwv_L_5x0i3lcq6duqLgrNQ5kA1tO3uCxGh1qgyLsNANLbM7EYz2mumNrqSDjr7j8_S8zdfJXoXN_PmGvjl1wAGMr2NosC-I2NnULnJjN87aq9BD4KW4Cgy49Uhok0wVsaglJBcFwvKA70QvUrEneZGGnKV06LFHT-ZGCWCK21iS5kf4fF8VcrVtjaYVbQCB68lxOQdZLqmk1uB-fjWhkOn1-SxIIBd6Nn3UZIrryx1YFcbaDarmRB4OU6XN3JX5nFxvw9Yxz1fBLEJ-iPgXZiAbI6CIkcaAtgtCZ6-LA915ezhMxcKT3HnuHvMcnL_HPdDrvJaF7DcpQvd2TZMU0lFvVWTyM0QlN8GVbG_Zg-WImbqPMv54-ZDZKA5zYUk1T77TsljfoGHLJGhmmrUMxrdk6vT97yZmK4cec6ZRIPugEy-wCrw_vdIXB9vaeySegstMozS1RmhWWy_hJdvVDYSMmEzQj-omDZxYN2-46jraNXusC4EOomDQKinQ-dBP1jBHbOcKHkJeZx_Udo3ye_Ko9kZvbtqXCwWL2U8kY04qxdDitReOg-g2nlAq_BLlTCRfh6qtTIyL_ul_cJxUdkUbaaBtJ8pkRwkjOiFRFUe7-77CGKAjcnaJsAw7y4DEf6aIolY_hcWyXyxu6DIzZYRpy3nwSPbxsAPBVFZaV2RbrHTBryN1Qh8GvHE5NVXmhWrkJPGPQ5or25aEK4sGsDUA5GVQsvRnivNEK41bJ3cqi8WQCZg8CuDTbgBQQa7gBOfgeT4uzPSJYtZVXrCiJjOaQ0Njzl2JBMlFcvb-OpeVRuyQL4Ut1lCD1jK2L6nbhVNhmFuRGtSKOE8N5QLInTZZyvy7bLUGbz5cGG2ccQv6CtBGql838DAT5E6bVf6DoSSup-MeMNpWdTdxQedlKIR-JJMraUt2EUyZwG-Pi6Ybg7bnW0tQ9OuyANNcyS1pCcOA2uz_11yS-8OO38GxtSoHWfKfnwxSgQ4wPVOCBa4JcihTRinIqiSN3PJkTA7r5GG2jhZMZvLShofZU4sUw92U43dlcecudPde62KyvxlGlAKnMzoUdKN0tGqHass72QA0iynrASlp8kFxMjFY-jo-xxIOgNjxw2Q4V4brleACCixxsZBIjAitt-HHKVkt77DtrRsx8CTmr_wxAznXCFLibc43ut1oEkk4scCFMz3DN8isziSpq4LBjUwDxevXgcWxDz11WPhABj85wbp8JwOkIb3lHdVmQb0rWI_lAE4tNPHotGqHCirL8m_9p9ZxV8NuAR81rkmPIMnXIWg3jDhQMoirHag9DnE7GT54sXB3EnM09umO8pyImWV3xakHwgA7JkXGasYzUlyL5L5BNZ6Q4is3dKNiRKfnlZCjvarz07DyRrh75UR_KDO7RZUKANop-rlYDxb4LRbaJhyEToFWjU7ZVbOO_cKLNYdRmDms4fywo6WvjMdxC_I44eoxkHwDOnJIMaiGHEZsSkVhGkkFjJ_u1O03u_3tvth1HPY1VY_yiNOfTG1my5Pq-WXxqX8vw75Id4hTNqxm3s_8g3MUQlJsnCvQC627GrY0I9UNtVI_OKkZ-nF5epxbEe9NbrQxmiY66SCbs6V_pWLKrVa23DJSBBx5M_aJMWAZEtz7lDHkcK-Gl2GaPFvkwe9ITlwxfgMAFDPUzDZuLKLZ60egwDbptAT2A-PNcO3TYGIoZyZzv597iLykMum3iwg8AkNRM_FoVtvzVJUVo3M8ibZnZNWCDI5iHDmUdZEvzPnsT8prdEgxkIssF3EqYxrvJQ48lAvxwHfgYBUHcKH_sThXOkCvSUwXu2DSXeoj38JtTSue-RITINT1diisJZz3-K5JmWMoxkV3xEMFtUHL7Ux6_4oyzWuEH4CD-mQB1HtIq7FlLEbsYE1eWmdo2Dheptxl-FRv0MlTbVJ4suR3oOp5TDb6E5YFirgmbl0uheOE-zag5DnqwlYV4XaUSh9807Cdzr08fXjguanjXzqLbK-0MeTDiOgAWUBLNqSizeb5NDv6PuM6ig8xgxSQxXDPE4pWEcY3fYkSDA4aKO3U1L6zQn_bc_b-AXXGt0aOUyIU8GFkG-iJwddA027uphwiGJVERcawqW8wF_GgQs61FU2vBemNwqbxLlmOPnlGrKpQjgMrQ-AevNTax6QvsAMQTCuI88OvKLiHEVOd09vJdwkkyw79dIXNB06C3HJid2x2FNIjqXdbwikjcQNPrDyOQpVvDsrVCn-utkZuVe9XBCjF-j4XZ-KzPHz6n5MvOB3xuAcLf0vfadi_baQDB9iqIb2kqgpFMezmCyNf-VljeYytcyoMvFtvRuNJMHctVz_5beKnMoFlI2T3Vjzr9SadWi8DWAz9fY8v9u3aZgkQlnlqOEZ6Ix2-ufTEdq1uX6sWcG9w1zOy6UwLcKzi5B_qnqLyPbsiZEnaRtVU9WzddKWUymm6aDMXtyOMT1tM1rVb4lJZJiwfRBcc0YlrM8xMr3jgua6Caf_R2Ug2SM75yz0zIeFfB_TaLWF5aZn8EwNsR9fTxCKPaxqMxZsEjkWyybDyt2hUIdV-BVbkJiZpMGkjA8UUpIO5kHtR8xZPhBK7eKNWeDrcjNMlhbCXEOWodG1QqWTwIhYJXWqTBvisvfke5CxIu7yPy2jLOm7rtK1FRcPnJd3DfHCJO-O3kw0zgUigO8hpkaE217Ex2jnqMit9YF_DnAJGwUna5yL6J1-YTGxr8x1k8O0o5cVyjgoexnDutolkwG_PvS9sQg7F29XADJZ8zIkX9H9OFpGuZq8D1itgaM_KmyHheBdTxycX9IfpOC6DDfpqZGH7sg0Q3ZIyJtNlZy_XSJ-BcaHZp0yA9P10uctq7fycp6qMBeu3tl5_uDCuzwWzycj6PA6plyqhl-NsMSv0EtKAg9LqmEBK-0fLm5JL2RirEbxz0nwo7_LBKuf_cgFVlr2D226mb6M5llaBC9ssfJuQI_rZTyttjJL1Q7g853vOToNdbeiGC1n8zdZ_PuE7SUwU-hq5K5pnRcZo7qil4A0iAtBcEYxmVtDg-lmBuPWyuUaOx3cfUCb2abMZlKMEigHfbWA2ilvCSUFkotxQag1nnzTp82WglXhMbx7uHOF8GDpd2m-y3t59Rw9fkL6mNrcN3QXxYG_nWO_3KIxru5nGtuSlv2TbkQIQrgGXDaVC8dLapAieEy4730w-4MlAyRSXHyREHVHVn5vVCfzTeOw14KYoKgBxGoEteqXsfJjZZNNmh9Db5FLNKaE29DXJrzfzYPQPf1wbv1_oN7BZvkDSnjNC_Yd1E2FUhs2w=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0d0788adb205fbab016ae8055636d887d1ac7affd87f7cd171",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18405,
+    "completion_tokens": 554,
+    "total_tokens": 18959,
+    "cost": 0.00257755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18402,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00257755,
+      "upstream_inference_prompt_cost": 0.00230055,
+      "upstream_inference_completions_cost": 0.000277
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 260,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

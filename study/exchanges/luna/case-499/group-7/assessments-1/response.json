@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent climate-news section with relevant story headlines, images, bylines, topic links and a path to more stories. It serves the broad purpose shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible story cards and footer are legible and arranged coherently. The repeated grid and page-ending footer are usable; no material clipping or overlap is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Topic links, the \u201cMore Climate Stories\u201d link and footer navigation are visibly labeled and understandable. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference segments form a coherent comparison of a climate-news page and its lower-page stories/footer. Layout differences do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headlines, topic labels, imagery and bylines communicate a meaningful set of climate-related stories, with recognizable site navigation and subscription links.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating climate cards**\n\nI need to assess the target climate cards and footer, referencing the corresponding sections for coherence. I want to ensure that the images and text in these cards align well. The \"More Climate Stories\" controls and footer links should meet the same purpose across the site. The evidence suggests there\u2019s coherence since they all serve a semantic function. I think I\u2019ll need the data formatted in JSON only for clarity.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating climate cards**\n\nI need to assess the target climate cards and footer, referencing the corresponding sections for coherence. I want to ensure that the images and text in these cards align well. The \"More Climate Stories\" controls and footer links should meet the same purpose across the site. The evidence suggests there\u2019s coherence since they all serve a semantic function. I think I\u2019ll need the data formatted in JSON only for clarity.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B5CKSuoBc4-bvai5kVYEC7R1zCnFcp5HEERo7Sc-eqmHw-DmlcWkrfcgWnCYTrHGxzUE3Hbw1Kn7W_zsyYvHZo6Bx-DjL4hpCuzdjl5USpo8BYY-nCA8Zv_6ka8-evBL67W3ZRVxdt6k5oCL-oJfP7IBmfZm_Ja44g0RB5unqLjv4aP17A_CaKesDk8mdr9iBP4r0OvluaDcLj2vTyNgTB7fxbCXoJzBPin6KC3GGr0EBDqoM83-Mr5ziFYaBYNLqoq8ECBgKao-mu1YoZ4m9XoThcRoJAhnIpVkBDaHkBoFavarv-GmjUqnbudnvRJiNfLPHL5Q6Y4-Q0riEiXIXtvoXbEkTFtljioSnbuW_mlwWc2fRv5K_ucHwxIQAC_Wf-kR8yBroka3aqd68L039UNrXJsVriwRjQVFbO69H3NrTsRrE_qJxZzckIuGe6VShq-wMqaCIcEY0U41Mo2O2-ZyQU2YFJ929Cq-rrKzm6_plvj0YGHae9o4V4vpI79ueu1viEX45CBfD0gKtmOGKUg6J_q2drceFBOhyuWrU4pQ5jTTvdb40oCOIvlMG1FF0OoIr5xg06pUte8a03XFCuEqh10mEH4wXBcAfTxxfaGTzphP3K-K19q21cY1ZwOyontudhgincuQAuYAjqu8FW7_bkKn4qeDFA0LdAEeFo-ExKk8-Cfc9bWTK4cUeybn-MZyl2f-d0TNivg-YRrsebdM_Mslimr8k6rj-I3L6YHkeZUcuAdr6zEmfHP0C3DFx6pvZvAMHEEFZcLa1lmAQ6lgHzxVXFvK45rh97n63WO4w6vLINkiUg2Z3VP4lBwx2y19C21oRHmO8Of6iCe_JwiCUJO7MiM9W_qLkp00U4gyPiPGTpa0NxqGAVWtXf0U-vxgUKIuVi_5Bsje4coyuzd_skh1ZPPNXFom6NQUfFKfP8tcfSBycYFmEmhCOiKB68ZKAllV9ymHatlbTegnCjjrQjv3h8sCx4pS12r5kr3xGADZfYCFy5iD-3lfIwq3_LmW9A1WXDYye4_ObeCszwdsVbJipBzk31hH2u74rok0pfvpzaw97vDiuSeYUv7cQBgAcX2m_LW7JG-CUeHXeAEkyrtLxURF4hHrwE4qbJIrD4rGn8b_UIzIZq2JL71lS81IjI7N7VLT1P8vvCfn4la3_yAQhZQxJDy6NkLWuj8v0XlcKT1UbpjPYDo_GIKYnw0RYcdWa3TM_9TQg5kngC_2cA3blFlpvs6HUwhX8uAdtZfR8ApdV8HwKeMLXNk8A12kLagEfPfAf6PFh-QtfzMDA0G47Kz41J1Ogqu0X-b-jIM5Gd0vyJe21tQzGGmdCrFrpRFnMHv7R4TBVrQTZ5LBT4MtqXUvEDEGTTZgGo46iENEZpZ4LbwQ0T-oS48hye2KYAqYuHLYAGc-xlWj_Q0OhdkdopemxSpEPdVZxnNUMx27RaJjdDLtBGtIoUKbo-XEIa8DyaD4zjW62orMDAm3XDRVNNMIIipFyPEfJ98eWyWKRwsDLLEdYtV5QKXE5ZM8nPQ1IlEtdenZRTwBSHBEkbg2MWl6MsmmPexyXB64FcvK2fNXdA34JgrhaQpZ3s9x8pwXyj7mc-nHgiZNIQYmYlbrt11PZjRf6oPnOn_vgU_IocjcC2QkHtF_G6hdsJi7EPIrwMSVpWaTvQ9z6Hutdy4MLrUp0XHMoD-IXELi1Qjvx_KgizIEiY6aZi1CidFPkpNl0dzbU5m8_SJWAnmbslmg1RzcQCs9G6ajW-mTuuw1SicTeFMBrHLnIGS5QMV4ndRlddDyQfHCmk8miySE-RtJVBVXDDyvoUQF5GbH2QpM8ExlkI7aoCWhajwwFKsaJjWL6l-cUNIkApkT6h0TEwaydSILEw6eiJRHP9_ood6nTAJdwcJrGPICHbmR-MfBdl60swXD6-9UvdwGThG_3b2xQ-ETQbcgwSQQJlgnbULcnEvGsfeqXbHzbYK_7lvKochLFNpTod2aoY2hdhLdrn7TrSYJvpNPjUME3iaIz24rmQYuiwBCgKaAdQpfkXHT36UoFWnNhSGr0-dBXqXOyB6Tv8v0K39yBjrQ9i_YqY0TcoGB7G4XKTFhfLQsdkKPTxJtOPz3m6EjCRZfscHDn5gu9Haks67n6RmH8mrvhZMPcYg9CA7C8bcLZroUdcYqx9_zTgxqRsrNiOjJLnqifHUDKIQz4WWMGREcEzeyJj3ld9S2xV48h8Kx4yLipyi3u4LGq7KTpG83mpG5RQSctUzMRM9ULRm0TmAxYMRwwQ-6i4PHJkC_QWjUyhjaoTE60KX-B2fJ2ytyor34_unMw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0567421c53ed9f24016ae81e40133487d19ccaa0373dfef7d2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14506,
+    "completion_tokens": 333,
+    "total_tokens": 14839,
+    "cost": 0.001979675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14503,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001979675,
+      "upstream_inference_prompt_cost": 0.001813175,
+      "upstream_inference_completions_cost": 0.0001665
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

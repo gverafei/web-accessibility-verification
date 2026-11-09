@@ -1,0 +1,49 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The QNX slide\u2019s visible CTA is labeled \u201cQNX\u201d with an arrow in the reference, but appears as a blank button in the target. This removes meaningful information from an essential visible control.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The slide imagery and explanatory text are legible and coherently arranged. The blank CTA label is a control defect, not a broader presentation or readability problem.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The QNX CTA remains visually button-shaped but has no readable text or recognizable icon in the target, so its purpose is not understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding page regions and states. The localized CTA difference does not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The heading and descriptive text communicate the QNX offering, but the blank action button no longer conveys the destination or action that the reference identifies as QNX.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BwicxuqQ1y4Tbonij7nkzocVXbGilTUtuueYk4YaPt4W4fInwJ3_4n6uehZt8Jsad1SS9inFtMR_vP0lbtZPu0AjtA8Mu7gUt0azYXi8KAFgBB-5GlyS-hq4jzmwiHeDZfqvLwCjfDvWd49j547IXCyBplJfIzLVNhW1Pg8LQI8B8RJAx5ZeAqA-pO41GKYK-T49uoUdT6IiNDuRfzRgrMnKFTrCo4286OweEnuN4ckSioXYGinx0SK8Oc9nETHaEtQBgpV4L6IiXQfM6OhEj4q1EZjBRdr7huA3GJKxoV0SsQfdeR_g-kxKrOlZa-hzeyKBQKgYMPTi386z0NORxhti4M3AgrGxzDJvYm16aiyqmqKgBUTYcNUAqw8_b5S2D94Cs2LMGWArmB8Tg3RYI7Ai1nMHaXfnHiCEBmRo9y4tM4b3tfF6d0rGzshCIib0GrOC3LxYzwMrmEQfV1K2V30TzIgpPtDK6kkoyXljnfz2qpSNE77R7yqlMfPZ79r39kBGazJjAORsnIPPUxjQtXGszzA6NZjWwBq9v64534ZgQVFSZbjHKcxUpYz-F4YIXrGDnaK1dRFdTF1Pp2XwBbu0ed-WXo5Ox7PQHuCVQFbGD4pxCNPwV32LfdZnGvNNG9T9fDpsLHDXzoZOfA12-5GQqZpmGbDEPwrnW2icgtkWgO_a_RxuDdVbX0fBad0Boshzh8evYbC1EJ4s6w4cLW0UJpcFKDzOZazG76MS0rL8bwJtqNEjWqd8DUxNbS-CWgQ_7zB6DBVtiQ3PRvvfx9-MF4km4zaDDPmUZRb3ElTYYnZ3HsRMyNxk0kMHzSzodtaY6E9EIIyODICR8SX88fD4PDaAgj2KZ8StXFJJcZ3lB7Na07YLry-zUY8sOLtJ9PocQNuxGqqHxjKdXdX4uJdqMwsDrSp8b15x66rIsBlB1SUrfkZ1q_2O9JgyxY127FQ92V0BZm4aN_dxI0asej2VJvU0CnOz80zLwkJ-GjPUcgqBaWxGFIsU7jAFS6Lzi5eRTN9B_IK5x3nQzkn0GueFepQmp37P-zr8O6mrukiIbsH6x-4EkM2E9cIqlaUBW0_KEfUwffVJHYIbUfeuP5h-i1CT1hCNQuL_lL2lz0UzV3Jt6waCQYMjp6Da4NQz9orf1zpjUQyFnvSGn0QR0kVP5rlE6fUpBwOQ1Dtpo85wrZL1uRRYAw424fwYGLOkATDsZOEI3Gu8U5MEM6II36radYl4oDEV-tzp-a8nZnjSuVnUoSCqZ1pkH0F33GTmI63PxT81Jd3_ZnVrLJCVNTBcPIZDc7mfCTIDQRxh7tjEENVCpVhjH0D4Cwgna7y3yWBGR8PM2A1nXXZwTZ9sa7O42OGX64icwt81Zj0XXAZxOh3Dib52ukPNB4Zctrxo4kKKN4UH4o-iMjuO4Wo0mTKpcdRazgO18CUqrhbuqOMej5dN6uBGz3I0ZEZlyRkFUooC0bX9uLbsA7q-cwLf4XBEYf-O5WosbxXlTj_lGPWuhslv7JsBieOufhrWcr7BSdoplu4rklMu4n8gjEYVGAbdnpRCOTxhhykM5LSH_IJ0ReypUtKrMKvVccE7MF2dBVQqQ00TFgzTMQLkF0FGYC6O2_sF63x2EpZWPCSDP9NtAdQ5lQDRi-QfCV7MJGBES_R73Dy_bot2E4MDIWqnW1Vm2pkFEjUTaDBCmW2g0PGb9pGYoDh--83ALHTEmuJ3gfq7y6OfJ6jsnddsptoUAyDrz4xIk44T_PtwPlaGE0n30j_8ft_cmmPiETr63ODoBPB7BbPE0udsVa9Q7qNDG710rAcmfPmQYLdDLQqBk5uav9C4cQG_11PEagAWWvYtOPwJRuXNrxdk8bFRWM0gI9j2yETEzd0q2Yrq3zsY0rsA7T-o8k-eUh4wDdv_uQyGLKHYNaUpnwnMs-bc0DIfXP_BuSaTebsFc1J7rz8HMjB-4EC2ae5v8gR0omuj7UT0BOplc34VdWtriQKA_MfSHK7Zu5lRRMq0Ce2SIZS-IsxBz0CoY-_5pP0Mmfi0i0OgiygxWpvSNp0l0vwhokjT4rEKdDEuNHpWPP5V4y69myDoyGWZg54qn4ZQzBWYKHoQUfIUXepdvP8MCZuwCLqVW6B3Q2x3C8elaHfkX3H-s1i64o7xhWt3Qf1DsX7gnvYSjEhDZylg7uTBWtU0vhL3z1jBuiOWKqhvWF4V0PB-RpEveUH-nAXXHLtJ2soJAFyjEIMowdehj-jVAXmfAmlnHelgRamGrHciuDAtY9YkwiIGcUaR88XKh5-DNGxQyMeaK531rawKA5Kmueih-IbUMpKi6Lw1hGSL5S6N7QiXvUCaLUECsUuAtQIuNOidR2T5N80Yn0P5CrqRTOUF5UcI9Xyp7oznQM0vEto-3ZnbBRVTMfSWxCnktAFMt9C1dSUeQwGTQXTMVfdhpnKkkoJtnbg_4VjieBrMR9i2Hg_DE8_5J6aiy9IcdtfTImFJsHLPIs9e0RWZPFo-6J7mUTElJw-hCVq8cyAxRlDRjUFf86cOLRS5N1FNeMOLijtHH16kAisQrAUrkj7-d6fIdUcXoY-cKPxMcr7xCoAHjyZkKs1f6JQhP-nDKeiMitdWMI_U1wflLSQ-mwfrKt2_C-cUOAUEvWigIHUqoLrfbBAXBs_aSYeH3ox2gYpyVvHrEmrt_jpG2aWW0e5CV81Oas4KSUctwYssw2wlwKHx9lPr7TyqKJyJT6kIWBh6CTs9lb8f2i6rAOOS64joeCzsYc4r6OKi_KbgZvC_cPaQAUk_T9vjHH7j7gkSNclgDOu9D-NY7jDDcMfDtkXA6f_kwLptMHdSIjQSG1PAkvmc0L8XVNIeGb91L9KFqlsGJxnToH8iE5-GacccfoFDzuanf1me6g-U1FneK4DAvBmM19jsXXe83pyBzY83lYuDCviYenT90hJmxEg7dZOs5oR5T3WwuyJzcZYht2xTFvOgtq7uTj180s9yLIXhKFaNVcxIN7oUS2u0kz6mgHFMS00qXXz9fP9UneW-hw5wXV6wmb3mc5NVAN4hjS1KI_60ByZFJEP6x4pSAsLazYVdjAFOKcf_g-eOQyZmC-wI_kLuaWJrPAozlfr9f6mdZaJyprwLV-8Rft0v7ixXcdw_RA9avYFN0JuDLFM2Q6lx4fYbA1eNvDfCUq06kc18c9mOxhR0DH60dihu6y5PJ4ITQMrNQZ-V4Yp3XgSgezQy8Sb7k8pssqhlwmsxK-ec26xi4fI6aHNsab0-vGGi3q3Km4x2bMtzdVQP8o13MSlkl8M-rvw_wBcS6LKp0cIVn6trCzSzWQjRs31wIhoNvbMG-jR6C64DCRNmlb_-yHxeQSPmoiyUogS7uZCc5sNeuHrxf5jhCMhiiLS9HyiT8iZYf44EK1iI3QqLcwGAFZK08xF9Eau5ZouKxe-Th2ROlIe0mW7TKTF8hQCBgN3zeMyLsVWhgJWbfVe7MfDFOGPL0zb_TicUoryc5H-GmCbSkCI6PVqja72DkhLUxwjwq03RI1VIgEavjGvsCi5upH8ArBBbgekDklacHRX4I5LXcafGaNlsU_2hQQhIzD2tncdvua09vMr-l7aSKps1-UjK1X1IwMHYcxn0GXpVNLRMa7omM_2MKTZe16N_Fs_el5KAPvoxZ8bzHMNi4BsZaXS5dfk8fOF9O80JU5to_QMD0yaxAzcnwL0cbYM0ZgQbQiBRnjaxPGRxQLrdieEVxPqQbus2097eB1xGBvRDw_CU0T3Ti12IxpPyHyVj8AjqoqQ3-OHyu9GksCC0w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07b713395d6c8c3f016ae81c202bd087d1af00ef2beefaf94f",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17674,
+    "completion_tokens": 437,
+    "total_tokens": 18111,
+    "cost": 0.002427675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 17671,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002427675,
+      "upstream_inference_prompt_cost": 0.002209175,
+      "upstream_inference_completions_cost": 0.0002185
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 156,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

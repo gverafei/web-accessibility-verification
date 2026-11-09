@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent climate-related stories and a complete site footer. The reference\u2019s large empty region is an advertisement slot, which is excluded from content preservation.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible story images, headlines, bylines, and footer links are legible and coherently arranged. No material overlap or clipping is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links for the personalized feed, account settings, and footer navigation have understandable labels. No essential control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent regenerated-target and reference comparison. Differences in layout and the reference ad area do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The climate-news headlines, images, bylines, and site navigation communicate a clear news-page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing footer and articles**\n\nI need to evaluate the target footer and articles against the references. I want to ensure they are coherent. The reference advertisements should be excluded if they're empty. The target footer should be black with visible content, including labels and links. I also want to make sure that the content aligns with climate information. Lastly, it seems I only need the JSON schema for this task. Let's move forward with that.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing footer and articles**\n\nI need to evaluate the target footer and articles against the references. I want to ensure they are coherent. The reference advertisements should be excluded if they're empty. The target footer should be black with visible content, including labels and links. I also want to make sure that the content aligns with climate information. Lastly, it seems I only need the JSON schema for this task. Let's move forward with that.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2fpkheNF7IQDQcRbJXejab-58GY-O0CkTh2Dy5OY2gxM0Q2wFVuKj9m2TMvRia4AJsSwBQiJqeK37CA6MK3S_Jcj5wE_aLuBQH0sm6w2JWZBPFY6_prcBEDLZqWUS4-aRD8DNNqJnr-CoiWQQ4YCcnxcBmUbZaA8KrjCW4ny33JC-RnliNKND1fqTAVG9Kr3z27fBg_GvXGwisKjuqegeV0g1-4GjQHz1Gp9w5HdecWBubEEQ_KKI0yph9uk1VoqZAzdw9nQ9WL2eq9Yq0UWSpKVuFu2ndfNgW4ACn7BA1NhJlmm5SlljaaZxc8HKJZILHQYBaWaWsVR3H-qehZR6v5HadQ5aTJT4GgWoI08YCAtwf5PzjKcIRXkqh4PAWBAGAJir6tTr_RPNUfGNMJM1HsjF1_BINtT9avNrBd2X98ZCNDVaAtGji8qEQWWXfZT35pE1qh2BUR2PTCU9Q1kppFSl0J1pJp0YVtiWt2Hv-SDGqnn9iIgGLD6wisz1FWswQwIgjB0nSeOVDn9D4UV1EAG6OQMlvOOefFtZidmEhkdpBGjmOeQ7itWsheomdg1H2AWlZBsZnLROiBmq4hq_nhKX4IGKe694PFFbV-3Tkw5iPcmBFXDjYffq2-CyzEgLImVq6YOl4LQXSSSmS32K59YsUBOWJCLXX7CQrCU_RJs4WierYLxA39Wg55Gf_8rDFoulheW4SzZqP5ymeZNtkK_T90a1QMLB791J5Uk-JMhsEhdj-9zPQqE7EBpf-3PrVuGC11G85YH8Wu6qVCOStJ5r8Nza7hs_G_-TK2ACZgXirptpcMRVe2s1h7Bs-sJjk6oD0dji6AoHclNdaCHSCUpWyuszLaisaAPo5L5Ypzih-KBm3v_lFdUI0GRmcFOb6u-9AvtZZLnGLak5cMNNBO1c2fTU3gK_X4H5uhRnjj-N8K_iBbQZ5mgBxGmU_C3H5iKHpmzG6qAyxAtE06Jy7q4Hfd6Db9C4FzZGULIoQp4OSwwl7biYxl0Njn9kcyIQphjiRdTrqs9FVZUbwt9aOZWmZwkjcvhAB7-PWGbB5B4cg701B6RP5ZtaMcYWzI6LDRh1cjkd8tbnn_3jul4hf7bgmipJF3gNTF18nyd2HEPf8JVTB-dvg5_1c8yNV4fggXXyAARgDv87MrMcWIkHHHotD-xXOSQlK2XafEnzwVvcAALr9MF5K1UE2Gh9V_ThqLSgX-Na_VyIHhCKR7lpC3a9djGjSjhZErNBPDy43UI68xG4nqV4MXzecisLZ3aeftSpZe80bRMdEouGqPbne0nbzKVLjYSAsq1d4Q8VKvFOnzQrK9GsPg6yvw22nO-Hdzk8Z0W6TCj_RdW2M5uyHVGzPLIvEwFKfasYZ-PyK5h2GPTTtwdpiNgN6tDSTnQWmVqQVofo66yGeKhFlGZjIv1fcW_CgYuxs0lmxxz1BFbFyoymna09xbJeu1GWkNb25fJ75yt227iK_a8HAXb7TiCMbYtv7ZOYZNXXey7uI9L1sN0_JVndc2o5kZhjNzIk0Wkz0AzjP4qodf0sN17E0w4aUTHu7SCW8Wuhlue9Hlle9fe50_QD4GLGk8WGl6UeVKfNuo96iUeRiIhvS4H7eYF2mW3wlPcTZlPsqLPSFqOVfGo3dJamD4LVNQOSj0CyfEPB7goH8khL7QL4WHk1ph6WJboaf2b8b4O3vHKQ6UpUinmLp6pPmiVKIv5bpTSk6_enfppoAK3Djq1MDAJ5IlQvYej_tN0oqA5amr3Mq_bVAURMULHYPz8_gDvbmq2uxcS0Pl2wSiKU6ImgF7IebPLJjSsUeewRrU6suCSnW1BSVj2n2_zyTO_QxBiZXs6SniiRPYEJbLGhOUtiF1WipH-dbRmeYnG6-FasXgaB8zCz2c8INCWz5bAVRAdUFSBFCa1sBW3QpSuT71Ma7zvw0syRaOhHQs4JEC1Zry1IdYYmWtlK6E39OT1G4J1VtrgewRkyh0-1toeWgbwDXwX62PndZwegwOnDRn5TeXqZbiNw2HGuV7h577aBvM6St3sdvzydd1VnBAGWBmEOs2BeZGsBN0VOwxr40A9leeY3OAeb-PJjur_9FRPQ505ZAPWuh9u4z8MaQ8ryJiROr9gpCfrF_raAXylScKqnDcPOd1xlGtgCJcrMqF0CmJ-JRMK0UPpG_j0ItIIsTaPa5wab8nuclt86kgzpjzgYrfhjkPM3zVv80vBYUy1i0M-wCB5ZW.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0fa285dab0e2adc6016ae81d9da35c87d1855de0586cd459f0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14513,
+    "completion_tokens": 306,
+    "total_tokens": 14819,
+    "cost": 0.00196705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14510,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00196705,
+      "upstream_inference_prompt_cost": 0.00181405,
+      "upstream_inference_completions_cost": 0.000153
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

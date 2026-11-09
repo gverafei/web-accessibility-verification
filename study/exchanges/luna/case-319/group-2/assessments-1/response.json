@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same LINE NEWS and LINE MUSIC sections, including their text, imagery, and visible links. No material loss is apparent.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged in both target views. The displayed imagery and text match the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible app-store icons and \u201cMore details\u201d controls remain present and recognizable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target views depict the same page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, descriptions, imagery, and labels convey the same news and music service meanings as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Explaining output requirements**\n\nI need to generate output in JSON format. The images I'm working with are almost identical, so I'll need to clearly explain their dimensions. It's crucial to handle controls in both the app store and other areas, as they should be easily recognizable. Ensuring content fidelity is important, and I want to make sure there's coherent evidence. I'll note that the question pertains only to the window, but that's adequate for our needs.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Explaining output requirements**\n\nI need to generate output in JSON format. The images I'm working with are almost identical, so I'll need to clearly explain their dimensions. It's crucial to handle controls in both the app store and other areas, as they should be easily recognizable. Ensuring content fidelity is important, and I want to make sure there's coherent evidence. I'll note that the question pertains only to the window, but that's adequate for our needs.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AIYeFgDv47goo0aeAmFn8dAFLJxx_Xo8V6V9Aj-ufAGtuD9PYTY6saeVAxnHV-VRyt9EbyIN-zMpBsNzMg2q9iLeypzkvrbPlJlOfs00qKNMuPAItSZKgU6OCb1DkG8_aKMpYfBnxGxBKoMJ9cc3l-SnG3aLKqYvSEGcy3xxwj7cQ39QBXBV-K2BCZZaAb38hGVimIWMRGzoCxckuD__E4DqQ3dHruJRE5Jr4W4jIM8UhvRj7bCFktXKoZ_6ZxNMbkCG_vi9hqXmWhlQ-Tcc21zh-KWNcrCXie2cIxpCUhNvXQEkUSto-ZHrhCMY3dI26FmEdj8t4oiTnz8vqH7qp0lZFP9pxpWL2Rf097CfqEV43Yd829V3d_LB5NJQrLfB4Y_Aemgu7lGDcsnZ1px9TPdbC2XTigCIU0F3e4sfnKcR_CVTcNPqF2lB33PkuLmJfNd82vXVUQS5VPC0rfqFfCTMZKVf7tHd6KJRhzQBS6Nvl1SYfzSrbtOaSW52QbqVpjectR5wV5H8pTXTKllE6pvGbS2yIohqOIrnaNrWVwaOlnqgi-AXE5_FpR1vJNibtkLlQXtZtOeKbgZ2dQ7Z1vF7usQ4nTpmyMsFNesdJF4AMOR25k40kbFj31kHIoHMPLe6115y4Tdujrk8NmHArcbdvANhCa1KScRVwmJXazBaYH23v4FFzU034A0CaL5IRHMwBkd2lxB9_BL_2UJydGovPFJWsZ-rQm5Ldc-xlxIOOVZHcHJj_NQ9WbA5UGmJ3I8TSPbLNoVDYFJN6gSh85VpNeA2geNe2iuXGbe53OuPy7M5qrRfEdwoVUK7Q8LLEdLC1qqct2XQ8st7PjBXbkdaLqQadMImSOoMVvvAW3Saa5qIlO6nbGHnKGkOKIkAnCUtwMD7oC0SHqA8WS9vm5ewo4metmn7blSgx1J-7qfNas1bFaoVSIX1SgZ24HNtNkZC7xDkmciz1k-o6ZtYv333E5HNH9fnc5kjV6j7mD8dDd8nXXov3ZvfMg-2_30FRLFfjIIPwB5D8OO5FdfRcDjti3kW6inMVHQNW1ZfCiUyduIqQDJNIKgZQaFON85QJOYzCLk__qMMXyTqkDKEnWxH6qkYE8VTKo1J3h5nzOjqrpcL4o9Fa7VQl3QLC09Z6D7jnUm3-KCDAIT8jNn-NEL35sBcPZTDlomjQhRr3mEvpmdpLx9EUvcroXbp2FLF9p_IlG8FszSldi1epcUpJcp9vzCLXZoEQXywwmrNolnzRnMIUnYrOxtaM3yevzn424_7jA5NOHMlVK4lq7IWirTH7lwaTInxvdojMDwjxvxwHnul--ZyGDYfeoY5VujqV5ILHMUNtbRaOm96QE7QkQLfW8sOR5PdU8oJ4tuE9Du54Rj2-MZ7i1nIAvXBOvUl-EPecEZN0KAvmGXEa4WRU8BPk-hmZVdfmq2_thpfB8sSAV8a1N8xerSM7pt0BJ04MbMs6t-7OKb7qjxFH__C1k4fDUdqAOgL4fEH6rOejtivaX5l_qgMhK0vwZlVT8nCd2J-Lkq6_-LHrKMCkICwWVUQR18GWFi3Jjmi3Gju4PYdxiw376c5A9emhLx4gEOY6PkV99r4KWPYz6bftn63vPmqYjrBnKpipbtJU27ZGbtzza2pSJzQ75igDk6VB8ezOeCMtjOdMMrJVNhaho4htCIfH5rCc8GehsDHZJKI9abXOatySboFbBrzkQXzSlyOLeJ5WGYIuTF3r-BwpMBBeVje0eh2VyJ0UCSydg4s7aV241Bu3sIYZ17pvKDV3gsExOVBXbCkC18PWoTyGvW1PbGeBQSXYH2fDjcyRUu6qRDOxZOuPjJv5iGKLkKPqxX82s19moo-9F4Nn2hADYZ-kzskASHqKmMtMsdtsHtbONJLyhbLONBZaOhebQiC64-wNl6VUMnd7YgH7qlAgLj9wWVsR3I6LkiXYqfW7k0ivBW8Tzs6kLD2eiyGTyqdoY4BnyXAdr1nJ2_rTvSGR0m1VwtfIhKYVzpaeuSpbMlq6RmZWX6AwOSOdE5FS0fPB2h2-MrM-nk6_aKSDL8N_XadHmf4fBVs1-X2HUr83eQCetS1rZQ7FH2dx90x05lnMRdcrFF-5NRDsjDHRUKmJopWUwAZ54OEtG2rm6uMm5ZTTM-5FGz13MzzvlPfxTIW8N2i744.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_02d8337d006a5039016ae80216ee6087d181f46754e835ce7b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9850,
+    "completion_tokens": 274,
+    "total_tokens": 10124,
+    "cost": 0.001368175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9847,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001368175,
+      "upstream_inference_prompt_cost": 0.001231175,
+      "upstream_inference_completions_cost": 0.000137
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

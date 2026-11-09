@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a clear SUGIR risk-management section with explanatory text, related links, and an action button. The visible footer also provides coherent institutional links and contact information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The section and footer content are legible and arranged coherently. The supplied target views overlap at a normal scroll boundary; no substantial clipping or overlap makes core content unreadable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The SUGIR links and \u201cConoce m\u00e1s sobre el SUGIR\u201d button have readable labels, and the visible footer links are identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding SUGIR and institutional-footer content, and the target views form a coherent set of adjacent scroll states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target text and labels clearly communicate the risk-management section\u2019s purpose and identify the institutional resources in the footer.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating layout and content**\n\nI need to assess the relevant SUGIR section while keeping the footer intact. I should ensure everything serves the same purpose and that the footer is included too. The cropped image of the weather cards seems irrelevant. I\u2019ve got readable links and buttons, and the presentation looks good overall. The evidence is coherent and semantically adequate. I need to check the JSON format too. By the way, that footer logo looks tiny and perhaps broken\u2014could be an issue!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating layout and content**\n\nI need to assess the relevant SUGIR section while keeping the footer intact. I should ensure everything serves the same purpose and that the footer is included too. The cropped image of the weather cards seems irrelevant. I\u2019ve got readable links and buttons, and the presentation looks good overall. The evidence is coherent and semantically adequate. I need to check the JSON format too. By the way, that footer logo looks tiny and perhaps broken\u2014could be an issue!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-6qLKRK1f_4l7q1ZSmmo6y68l1YjdTZNij8zLjaPVG3FLp52XSRtzqtY3rqMS_t0lWPA4bWJgyq3DmFVOtmbznw5vXBxhbbET0CKufDoio3LfvnScWSOEY2kqBVAjUj_fxIE-jyrbbtiNPU2SHJuW5dJ7A8BZJxG7A51h1KAy5ZaDEttVcRDpkyDJq7GthsCpcZTIQmMy4pAGXaZZt08gnZhWdeV45yuAXBwpTWLnqFikRTNmDVaw3cu_ICkKwuh6LwgihvJsHUDZiMnxb9EhqEQmNXCDdLcqrRpCXAUD9EZschL18SyB8bEw9kMBE9j5BRtIFdONsPA3SlmpNoBjvkFStPJSrL6cIqs17Ey_KYvacs6OTm6wRSjV8juGVYQE0ixK8wS_eWeS5YXK_LAEJGeBEk3NhYno8xP2K1GLxW1KbzXNDByX0qzgUKtrI24DE1O8OxO2WKUCA92WVgXPd7aW9EiKKq8CbNoX30vLOx_mR92rT1PAMweY4ImslJl2BPVxeE1h-pqV7ijYa9UdkzSe8d769QR7RC9lyTn-LlBwiA_J9oUY-K4qV6kXVdsGy-7_1DKPO7A4IZYCdhliVAO5JJZnakGd0lkbih9gZlovoeDgrkAsQ2ocY0tvXEiC8ZhPuWGr4GimA8MRT7Aw-Gx0gb8QrQltRA4aRkQsF4II5IgdonifnBceUN4sExccXgU5wf8yaSJxnj78Znnfd_u1OnKqdjxDwve9SnnEyMX2vsSgPm8L9f7wojYdfybSonKzyLFM0gbojgAT1vkdaL1lOO-FYKGlg27_z0xYr3x2JBf_XsGOlJCgybpLXCmeJtJrQAwgLYFguaRERon8BO9q1kaymNH7VooY0IxO8o-H6yGi2mIelZSyiJr2fNJpG0lDZexRj2IWWTZ4pGNcfnMgutGfqiud_-47znsUgML118_0J9b5mxzZKXSAJAE0ARfjJWJ0-fYlDdHBtXHHPN4Xd5_NQAufIOkIyN-awYNmkhmKJ7SUiOGkIeaKToEuNLB4Nef6qbJJhWfCo2elrz4Tn43sRUQvXp2dbi4QP8HKRSYg_sGAGg07M9fBaJTAPrYUn0UBvlkYOlL0Csd3irSWoTX6Jxl4a6YUbUdBsTtfnFAu44HhfOQCu06aiT4lRe6ip4BSo0KOFbmSq6xrqLD3SXEN9XKMPnS46ywXq8dLw2J36WvupSNOOmUXmUI-bkwpiHDb5LNtQlfaKsVcvaID_TpbwOLGihrhwU_y8iHOe25kyyXh6HBMu0V3qo9kEhvlvo9-Vdzz6GTDelVPShPEvqZuOczik4xF6QEY6yIWRgyHo-FBuXzFpNcVrQ13TLYmXHwFoQp0xYSuDflRMFeVd4wDnsxyZe1yXZ5cwlahJIZrFRG7eue8Ia9c8CWKhcmtDCEAYqR7Kyox8gehvs4GY_r8m36KbDXLNfZz5YmDhxktGG13z_iDJ81bJoHMVSaArSRUuxW_Ek-XK2539PwbvDy47kjt5joBupT7Cia2ax-HVd0dDCx4oCHDpIaB2ZtTi-4VnJHZlriOhjDnP7eEiNlPYeMIHmY9vJQT6VCWCiSHyz_BH9b4sNAfZEU3epiqL8K-OBYMYiTjVlqY0Yvremr3MONGIpgQGeXPTwlzApsa65_6_BBceBxgugxUSmpD66oAc2lntCA6zO4UjLhI_udNLOMs1OYCUlyXOQzr-tvyOn_ofFf-gpld8zZYUHONiHSnCbzWS18ZsrQJtYxIw0nvRoq4teysQCwSU_psK5OqG2wiP9Zv8Dz_bZRBTWVGG3r-IQwDB6AQnDZmungHTiZ5JMZcu6s3TWm7nudo97wHHF6TDNT-jH_lMb0L1C8zH2q6tZWsaL49lqne3F-8e4aNyDErqVD2E8eMasXNWl2Jd9K1UA6NgVq6TORvTT7cjuoLC2DZMmXGNCvRHKIs7aDXxz9BdbxU7enZAfPXLkA4jD6TkVJY8djMbQFn6ch-__ML1-sutWn1PvhDAyFt-AOZ2mnCPqwJ_Kh4K0gIUUx8-2iyH4KLaolN6qe9WLGrBFfWLeM2ZHwTNydnhE7t0M87uv8wx-6cdZXTd_dhrtmXQEmw_T7k_hcqf85o2NKYEy9r8FkG6N1abWSWMjUzZeTLleM3ExDzFiALB7NU6aNwtf10166ytRMH2NAwwX_rSyBGUj6r2V2Ybu1fX2K5YXXfJeBgliHGFq5kbks3spQpvUw7NthUdukU0HRIOD7-pXKjgnLwxBXfRSfARMEVyGa9TJUC7NEcE1xIL9ZWBT5bBcJVRlpursBTyISBgRUVDfImdpcAwpOfvad6C8d59YcS1iM5g0EDtJ0Lfpx-RTmtfRdHbj6ufQveKDMVuhDa0C35TIGONwDnWaHGg8eyKC479bvGpEEGkjNvwv0obtVtBgvU2-mZGYjPpwINY_7moTXlR6uJx5kkQHu31xrF2MBtPiTOowOyfIxkn8LtHwOx435Z9l4VUFcmqmRrn_Su9U_2E1hv87Sb1l9kropk5OHAtK4_MW6S96X1hCAk4wgMo-UTelV-mM5CVqCxO3hnf7u-LTkuGASGbtVWUcNb6ngmW2rn4V-Ths7_ZgJoYFc2Oq1-C0E93f7EhFY-k7H8fbh3zrz8fg-rTrwWk5OOjpW-4QhaZoMlZZlXBc7bL08ctU_jcSAFxo-xC_6b59NY2m7HNx434XUZiRkJF03mUGPfZ8q--CqbbJgAwHSABZpVScyRFmB7lB1WfYdy7Sb_oIKhu1GiHyusFUb3IqIx2q_Oh9ltm-ArfDSkjMoD8viWgX8_6T8CL2ZTy2Ga9fmLjxjSZE8PFvoAOYqG5FyQ-dXsOtVhuL1tRnExq8gV4N64q5FUG8uF_W9IB-scg3ozexXVJPUazWNIocaSngbl4v9NEci-9fCWevk0rBRZPjvNC6x8za4ARHBEfXQHxqQxO0kaaLs-EopbFtzqLH-Yl25oKYCzMq1v9FrtLjYQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b19c5578e4382d7016ae81fb82ef887d19053ec2b01dd65b4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8785,
+    "completion_tokens": 374,
+    "total_tokens": 9159,
+    "cost": 0.00128505,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8782,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00128505,
+      "upstream_inference_prompt_cost": 0.00109805,
+      "upstream_inference_completions_cost": 0.000187
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 100,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

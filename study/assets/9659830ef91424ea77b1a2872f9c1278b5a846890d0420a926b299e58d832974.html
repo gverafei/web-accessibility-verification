@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Create, edit, convert, and collaborate with WPS Office: a free office suite for documents, spreadsheets, presentations, and PDFs, with AI across devices." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Free Office Suite for Word, Excel, PDF &amp; PPT | Kingsoft WPS Office</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #151d2b;
+      --muted: #586477;
+      --blue: #1759d1;
+      --blue-dark: #1047b3;
+      --blue-pale: #eef4ff;
+      --line: #e2e8f0;
+      --paper: #fff;
+      --soft: #f7f9fc;
+      --max: 1180px;
+      --radius: 22px;
+      --shadow: 0 18px 50px rgba(30, 57, 100, .10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+    a:hover { color: var(--blue); }
+    button, summary { font: inherit; }
+    :focus-visible {
+      outline: 3px solid #f5a623;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+    .skip-link {
+      position: absolute;
+      z-index: 20;
+      top: 8px;
+      left: 8px;
+      padding: 10px 14px;
+      transform: translateY(-150%);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    .section { padding: 96px 0; }
+    .section.soft { background: var(--soft); }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { letter-spacing: -.035em; line-height: 1.12; }
+    h1 { max-width: 730px; margin-bottom: 20px; font-size: clamp(2.6rem, 6vw, 5rem); }
+    h2 { margin-bottom: 16px; font-size: clamp(2rem, 4vw, 3.1rem); }
+    h3 { margin-bottom: 10px; font-size: 1.35rem; }
+    .lead { max-width: 660px; margin-bottom: 0; color: var(--muted); font-size: 1.12rem; }
+    .section-heading { max-width: 760px; margin: 0 auto 44px; text-align: center; }
+    .section-heading p:last-child { margin-bottom: 0; color: var(--muted); font-size: 1.05rem; }
+
+    /* Header and keyboard-accessible disclosure menus */
+    .site-header {
+      position: relative;
+      z-index: 5;
+      border-bottom: 1px solid rgba(226, 232, 240, .8);
+      background: rgba(255, 255, 255, .96);
+    }
+    .nav-row {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 26px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      flex: 0 0 auto;
+      color: var(--ink);
+      font-size: 1.1rem;
+      font-weight: 760;
+      letter-spacing: -.04em;
+      text-decoration: none;
+    }
+    .brand-mark {
+      display: grid;
+      width: 31px;
+      height: 31px;
+      place-items: center;
+      border-radius: 9px;
+      background: #e52e3e;
+      color: white;
+      font-size: .85rem;
+      font-weight: 850;
+      letter-spacing: -.06em;
+    }
+    .primary-nav { display: flex; align-items: center; gap: 24px; }
+    .nav-list { display: flex; align-items: center; gap: 21px; margin: 0; padding: 0; list-style: none; }
+    .nav-list > li { position: relative; }
+    .nav-list a, .nav-list summary {
+      color: #344054;
+      font-size: .91rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .nav-list summary { cursor: pointer; list-style: none; }
+    .nav-list summary::-webkit-details-marker { display: none; }
+    .nav-list summary::after { content: "⌄"; margin-left: 6px; color: #68778e; }
+    .nav-list details[open] summary::after { content: "⌃"; }
+    .nav-list a:hover, .nav-list summary:hover { color: var(--blue); }
+    .menu-panel {
+      position: absolute;
+      top: calc(100% + 20px);
+      left: 0;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      gap: 22px;
+      width: min(520px, 90vw);
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .menu-panel h3 {
+      margin-bottom: 10px;
+      color: #7b8798;
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .menu-panel ul { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+    .menu-panel a { display: inline-block; padding: 2px 0; }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 21px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 720;
+      text-decoration: none;
+      transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--blue-dark); color: #fff; box-shadow: 0 8px 20px rgba(23, 89, 209, .2); }
+    .button.secondary { border-color: #c8d3e3; background: #fff; color: var(--ink); }
+    .button.secondary:hover { border-color: var(--blue); background: var(--blue-pale); color: var(--blue); }
+    .button.small { min-height: 42px; padding: 9px 16px; font-size: .9rem; }
+    .mobile-menu { display: none; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 0 54px;
+      background:
+        radial-gradient(ellipse at 78% 22%, rgba(189, 216, 255, .58), transparent 34%),
+        radial-gradient(ellipse at 20% 5%, rgba(226, 237, 255, .78), transparent 38%),
+        linear-gradient(180deg, #f8faff 0%, #fff 94%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(400px, 1.05fr);
+      align-items: center;
+      gap: clamp(32px, 5vw, 72px);
+    }
+    .hero h1 span { color: var(--blue); }
+    .hero .lead { margin-bottom: 27px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .micro-note { margin: 13px 0 0; color: #657187; font-size: .84rem; }
+    .hero-visual {
+      position: relative;
+      min-height: 425px;
+      padding: 18px;
+      border: 1px solid rgba(195, 211, 236, .82);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, .7);
+      box-shadow: 0 28px 75px rgba(58, 90, 145, .13);
+    }
+    .hero-visual::before, .hero-visual::after {
+      position: absolute;
+      z-index: 0;
+      border-radius: 50%;
+      content: "";
+      filter: blur(1px);
+    }
+    .hero-visual::before { top: -28px; right: 4%; width: 140px; height: 140px; background: rgba(151, 189, 255, .25); }
+    .hero-visual::after { bottom: -30px; left: -28px; width: 110px; height: 110px; background: rgba(198, 184, 255, .22); }
+    .visual-window {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      height: 100%;
+      min-height: 387px;
+      border: 1px solid #e1e7ef;
+      border-radius: 17px;
+      background: #fff;
+    }
+    .window-bar {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      gap: 7px;
+      padding: 0 15px;
+      border-bottom: 1px solid #edf0f5;
+      background: #fbfcfe;
+    }
+    .window-dot { width: 8px; height: 8px; border-radius: 50%; background: #cbd4e1; }
+    .window-title { margin-left: 7px; color: #718096; font-size: .72rem; }
+    .window-body { display: grid; grid-template-columns: 58px 1fr; min-height: 340px; }
+    .window-rail { display: grid; align-content: start; justify-items: center; gap: 17px; padding: 17px 8px; border-right: 1px solid #edf0f5; }
+    .rail-icon { width: 27px; height: 27px; border-radius: 8px; background: #edf3ff; }
+    .rail-icon:nth-child(2) { background: #e6f7ef; }
+    .rail-icon:nth-child(3) { background: #fff1ed; }
+    .rail-icon:nth-child(4) { background: #f1edff; }
+    .doc-area { padding: 21px 22px; }
+    .doc-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 19px; }
+    .doc-tag { padding: 5px 9px; border-radius: 7px; background: #edf4ff; color: var(--blue); font-size: .68rem; font-weight: 750; }
+    .share-chip { padding: 6px 11px; border: 1px solid #dbe4ef; border-radius: 8px; color: #56647a; font-size: .68rem; }
+    .doc-page { max-width: 360px; min-height: 245px; margin: 0 auto; padding: 23px 25px; border: 1px solid #e7ebf1; border-radius: 6px; box-shadow: 0 8px 24px rgba(34, 54, 83, .06); }
+    .doc-heading { width: 66%; height: 12px; margin-bottom: 14px; border-radius: 10px; background: #273951; }
+    .doc-line { width: 100%; height: 6px; margin: 9px 0; border-radius: 8px; background: #e5eaf1; }
+    .doc-line.short { width: 72%; }
+    .doc-chart { display: flex; height: 76px; align-items: end; gap: 9px; margin-top: 19px; padding: 0 13px 2px; border-bottom: 1px solid #e7ebf1; }
+    .doc-chart span { flex: 1; border-radius: 5px 5px 0 0; background: linear-gradient(180deg, #75a8ff, #3576e5); }
+    .doc-chart span:nth-child(1) { height: 38%; }
+    .doc-chart span:nth-child(2) { height: 62%; }
+    .doc-chart span:nth-child(3) { height: 50%; }
+    .doc-chart span:nth-child(4) { height: 85%; }
+    .doc-chart span:nth-child(5) { height: 69%; }
+    .float-card {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 12px 15px;
+      border: 1px solid #e4eaf3;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 12px 34px rgba(39, 64, 105, .13);
+      color: #354156;
+      font-size: .78rem;
+      font-weight: 650;
+    }
+    .float-card.ai { top: 73px; right: -28px; }
+    .float-card.sync { bottom: 40px; left: -32px; }
+    .float-symbol { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 10px; background: #eef4ff; color: var(--blue); font-size: 1rem; }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 9px;
+      margin-top: 32px;
+    }
+    .platforms-label { margin-right: 4px; color: #718096; font-size: .78rem; font-weight: 700; }
+    .platform-chip {
+      padding: 6px 11px;
+      border: 1px solid #e1e7ef;
+      border-radius: 99px;
+      background: rgba(255,255,255,.72);
+      color: #475467;
+      font-size: .78rem;
+      font-weight: 620;
+      text-decoration: none;
+    }
+    .platform-chip:hover { border-color: #9ebcf4; background: #fff; color: var(--blue); }
+    .benefit-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 48px 0 25px;
+    }
+    .benefit {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+    .benefit-icon {
+      display: grid;
+      flex: 0 0 44px;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 15px;
+      background: #eef4ff;
+      color: var(--blue);
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+    .benefit h2 { margin: 2px 0 7px; font-size: 1.02rem; letter-spacing: -.015em; }
+    .benefit p { margin: 0; color: var(--muted); font-size: .9rem; }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      gap: 30px;
+      margin: 17px 0 0;
+      padding: 24px 30px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.78);
+    }
+    .trust-strip strong { font-size: 1.05rem; white-space: nowrap; }
+    .trust-strip img { width: 100%; max-height: 62px; object-fit: contain; object-position: left center; }
+
+    /* AI use cases */
+    .ai-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .ai-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 7px 24px rgba(26, 45, 78, .04);
+    }
+    .ai-card img { width: 100%; aspect-ratio: 1.48 / 1; object-fit: cover; background: #eff3fa; }
+    .ai-card-content { padding: 22px 22px 24px; }
+    .ai-card .label { display: inline-block; margin-bottom: 10px; color: var(--blue); font-size: .75rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+    .ai-card h3 { font-size: 1.18rem; }
+    .ai-card p { margin-bottom: 0; color: var(--muted); font-size: .92rem; }
+
+    /* Collaboration */
+    .collab-layout { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); align-items: center; gap: 48px; }
+    .collab-copy h2 { max-width: 480px; }
+    .collab-copy > p { color: var(--muted); }
+    .collab-list { display: grid; gap: 17px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .collab-list li { display: flex; gap: 12px; align-items: flex-start; }
+    .check { display: grid; flex: 0 0 23px; width: 23px; height: 23px; place-items: center; border-radius: 50%; background: #e8f7ef; color: #168453; font-size: .78rem; font-weight: 800; }
+    .collab-list strong { display: block; margin-bottom: 3px; font-size: .95rem; }
+    .collab-list span:last-child { color: var(--muted); font-size: .88rem; }
+    .collab-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+    .collab-gallery figure { overflow: hidden; margin: 0; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 10px 28px rgba(26, 45, 78, .07); }
+    .collab-gallery figure:first-child { grid-column: 1 / -1; }
+    .collab-gallery img { width: 100%; aspect-ratio: 1.75 / 1; object-fit: cover; }
+    .collab-gallery figure:not(:first-child) img { aspect-ratio: 1.4 / 1; }
+    .collab-gallery figcaption { padding: 10px 13px; color: #475467; font-size: .8rem; font-weight: 650; }
+
+    /* Suite cards */
+    .suite-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .suite-card {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(180px, 1.1fr);
+      overflow: hidden;
+      min-height: 230px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .suite-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 24px; }
+    .suite-icon { display: grid; width: 39px; height: 39px; margin-bottom: 18px; place-items: center; border-radius: 12px; color: #fff; font-size: .82rem; font-weight: 800; }
+    .suite-icon.pdf { background: #e43e48; }
+    .suite-icon.slides { background: #ed701d; }
+    .suite-icon.sheets { background: #078657; }
+    .suite-icon.writer { background: #2469df; }
+    .suite-icon.photo { background: #6954e8; }
+    .suite-copy h3 { font-size: 1.13rem; }
+    .suite-copy p { margin-bottom: 14px; color: var(--muted); font-size: .88rem; }
+    .text-link { margin-top: auto; color: var(--blue); font-size: .88rem; font-weight: 730; text-decoration: none; }
+    .text-link::after { content: " →"; }
+    .suite-image { display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 16px 12px 0 0; background: linear-gradient(135deg, #f4f7fd, #eaf1ff); }
+    .suite-image img { width: 100%; max-height: 205px; object-fit: contain; object-position: bottom center; }
+    .center-link { margin-top: 32px; text-align: center; }
+
+    /* Trust and reviews */
+    .safety-layout { display: grid; grid-template-columns: minmax(230px, .85fr) minmax(0, 1.15fr); align-items: center; gap: 55px; }
+    .cert-image { padding: 18px; border: 1px solid var(--line); border-radius: 20px; background: #fff; }
+    .cert-image img { width: 100%; max-width: 420px; margin: auto; }
+    .safety-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .safety-item { display: flex; gap: 12px; align-items: flex-start; }
+    .safety-symbol { display: grid; flex: 0 0 38px; width: 38px; height: 38px; place-items: center; border: 1px solid #dce5f0; border-radius: 12px; color: var(--blue); font-size: 1rem; font-weight: 800; }
+    .safety-item h3 { margin: 2px 0 6px; font-size: 1rem; letter-spacing: -.01em; }
+    .safety-item p { margin: 0; color: var(--muted); font-size: .86rem; }
+
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .review-card { display: flex; flex-direction: column; min-height: 240px; padding: 23px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    .stars { margin-bottom: 14px; color: #ae7412; letter-spacing: .1em; }
+    .review-card blockquote { margin: 0 0 22px; color: #39465b; font-size: .94rem; }
+    .reviewer { display: flex; align-items: center; gap: 11px; margin-top: auto; }
+    .reviewer img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; }
+    .reviewer strong { font-size: .87rem; }
+
+    /* Latest stories and footer */
+    .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .news-card { display: flex; flex-direction: column; min-height: 235px; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    .news-card .label { margin-bottom: 12px; color: var(--blue); font-size: .75rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .news-card h3 { font-size: 1.16rem; }
+    .news-card p { color: var(--muted); font-size: .9rem; }
+    .news-card a { margin-top: auto; color: var(--blue); font-size: .9rem; font-weight: 720; text-decoration: none; }
+    .news-card a::after { content: " →"; }
+    .footer-cta {
+      padding: 66px 24px;
+      border-radius: 25px;
+      background:
+        radial-gradient(circle at 82% 0%, rgba(147, 183, 255, .36), transparent 34%),
+        linear-gradient(120deg, #f0f5ff, #eaf1ff);
+      text-align: center;
+    }
+    .footer-cta h2 { margin-bottom: 12px; }
+    .footer-cta p { max-width: 650px; margin: 0 auto 24px; color: var(--muted); }
+    footer { padding: 65px 0 28px; background: #101a2b; color: #e7edf6; }
+    .footer-top { display: grid; grid-template-columns: 1.25fr 2fr; gap: 60px; padding-bottom: 44px; }
+    .footer-brand .brand { color: #fff; }
+    .footer-brand p { max-width: 270px; margin: 17px 0 0; color: #aeb9ca; font-size: .86rem; }
+    .footer-links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+    .footer-links h2 { margin-bottom: 15px; color: #fff; font-size: .87rem; letter-spacing: 0; }
+    .footer-links ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .footer-links a { color: #bac5d5; font-size: .83rem; text-decoration: none; }
+    .footer-links a:hover { color: #fff; text-decoration: underline; }
+    .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; padding-top: 22px; border-top: 1px solid rgba(226, 232, 240, .17); color: #aeb9ca; font-size: .8rem; }
+    .social-links { display: flex; gap: 17px; }
+    .social-links a { color: #e7edf6; font-weight: 650; text-decoration: none; }
+    .social-links a:hover { text-decoration: underline; }
+    .address { margin: 0; }
+
+    @media (max-width: 960px) {
+      .wrap { width: min(100% - 38px, var(--max)); }
+      .nav-row { gap: 14px; }
+      .primary-nav { gap: 14px; }
+      .nav-list { gap: 13px; }
+      .nav-list a, .nav-list summary { font-size: .84rem; }
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .hero-visual { min-height: 360px; padding: 13px; }
+      .visual-window { min-height: 330px; }
+      .window-body { min-height: 284px; }
+      .doc-page { min-height: 210px; padding: 18px; }
+      .float-card.ai { right: -10px; }
+      .float-card.sync { left: -10px; }
+      .ai-grid { grid-template-columns: repeat(2, 1fr); }
+      .collab-layout, .safety-layout { gap: 32px; }
+      .suite-card { grid-template-columns: 1fr; }
+      .suite-image { order: -1; min-height: 150px; padding: 12px 12px 0; }
+      .suite-image img { max-height: 150px; }
+      .footer-top { gap: 35px; }
+      .footer-links { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 720px) {
+      html { scroll-padding-top: 20px; }
+      .wrap { width: min(100% - 32px, var(--max)); }
+      .nav-row { min-height: 68px; }
+      .primary-nav { display: none; }
+      .nav-actions .button.secondary { display: none; }
+      .mobile-menu { display: block; position: relative; }
+      .mobile-menu summary {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        cursor: pointer;
+        list-style: none;
+        color: var(--ink);
+        font-size: 1.25rem;
+      }
+      .mobile-menu summary::-webkit-details-marker { display: none; }
+      .mobile-panel {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: -4px;
+        z-index: 10;
+        width: min(340px, calc(100vw - 30px));
+        max-height: min(75vh, 600px);
+        overflow: auto;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: var(--shadow);
+      }
+      .mobile-panel > ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+      .mobile-panel > ul a { display: block; padding: 8px 5px; color: #344054; font-weight: 650; text-decoration: none; }
+      .mobile-panel details { padding: 8px 5px; border-top: 1px solid #edf0f5; }
+      .mobile-panel summary { display: block; width: auto; height: auto; padding: 7px 0; border: 0; color: #344054; font-size: .95rem; font-weight: 700; text-align: left; }
+      .mobile-panel details ul { display: grid; gap: 8px; margin: 9px 0 0; padding-left: 16px; list-style: none; }
+      .mobile-panel details a { color: var(--muted); font-size: .88rem; text-decoration: none; }
+      .section { padding: 72px 0; }
+      .hero { padding: 56px 0 35px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero h1 { max-width: 600px; font-size: clamp(2.55rem, 11vw, 4rem); }
+      .hero-visual { width: min(100%, 550px); min-height: 340px; margin: 10px auto 0; }
+      .visual-window { min-height: 310px; }
+      .window-body { min-height: 265px; }
+      .doc-page { min-height: 190px; }
+      .float-card.ai { top: 48px; right: -5px; }
+      .float-card.sync { bottom: 20px; left: -5px; }
+      .platforms { margin-top: 25px; }
+      .benefit-row { grid-template-columns: 1fr; gap: 20px; padding: 35px 0 14px; }
+      .trust-strip { grid-template-columns: 1fr; gap: 15px; padding: 20px; }
+      .trust-strip img { max-height: 48px; }
+      .section-heading { margin-bottom: 32px; }
+      .ai-grid { grid-template-columns: 1fr; }
+      .ai-card img { aspect-ratio: 1.7 / 1; }
+      .collab-layout, .safety-layout { grid-template-columns: 1fr; }
+      .collab-gallery { margin-top: 4px; }
+      .suite-grid { grid-template-columns: 1fr; }
+      .suite-card { grid-template-columns: minmax(0, 1fr) minmax(130px, .85fr); min-height: 220px; }
+      .suite-image { order: 0; min-height: auto; padding: 12px 10px 0 0; }
+      .suite-image img { max-height: 190px; }
+      .suite-copy { padding: 20px; }
+      .safety-grid { gap: 20px 14px; }
+      .review-grid, .news-grid { grid-template-columns: 1fr; }
+      .review-card { min-height: 200px; }
+      .news-card { min-height: 205px; }
+      .footer-cta { padding: 50px 20px; }
+      .footer-top { grid-template-columns: 1fr; gap: 35px; }
+      .footer-links { grid-template-columns: repeat(2, 1fr); gap: 24px 18px; }
+    }
+    @media (max-width: 420px) {
+      .nav-actions > .button { min-height: 40px; padding: 8px 12px; font-size: .82rem; }
+      .hero-visual { min-height: 300px; padding: 9px; }
+      .visual-window { min-height: 280px; }
+      .window-body { grid-template-columns: 43px 1fr; min-height: 235px; }
+      .window-rail { gap: 12px; padding-inline: 6px; }
+      .doc-area { padding: 16px 12px; }
+      .doc-page { min-height: 174px; padding: 16px; }
+      .float-card { padding: 9px 11px; font-size: .7rem; }
+      .float-card.ai { right: 0; }
+      .float-card.sync { left: 0; }
+      .suite-card { grid-template-columns: 1fr; }
+      .suite-image { order: -1; min-height: 135px; padding: 10px 10px 0; }
+      .suite-image img { max-height: 140px; }
+      .safety-grid { grid-template-columns: 1fr; }
+      .footer-links { grid-template-columns: 1fr 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+<style data-warp-repair="true">.suite-icon.pdf { background-color: #d93642; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap nav-row">
+<a class="brand" href="https://www.wps.com/">
+<span aria-hidden="true" class="brand-mark">W</span><span>WPS Office</span>
+</a>
+<nav aria-label="Main navigation" class="primary-nav">
+<ul class="nav-list">
+<li>
+<details>
+<summary>Products</summary>
+<div class="menu-panel">
+<div>
+<h3>Office apps</h3>
+<ul>
+<li><a href="https://www.wps.com/office/writer/">WPS Docs</a></li>
+<li><a href="https://www.wps.com/office/spreadsheet/">WPS Sheets</a></li>
+<li><a href="https://www.wps.com/office/presentation/">WPS Slides</a></li>
+<li><a href="https://www.wps.com/office/pdf/">WPS PDF</a></li>
+<li><a href="https://www.wps.com/office/">Explore all features</a></li>
+</ul>
+</div>
+<div>
+<h3>Get WPS Office</h3>
+<ul>
+<li><a href="https://www.wps.com/office/windows/">Windows</a></li>
+<li><a href="https://www.wps.com/office/mac/">Mac</a></li>
+<li><a href="https://www.wps.com/office/linux/">Linux</a></li>
+<li><a href="https://www.wps.com/office/android/">Android</a></li>
+<li><a href="https://www.wps.com/office/ios/">iOS</a></li>
+<li><a href="https://www.wps.com/wpsdocs/">Online</a></li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+<li>
+<details>
+<summary>Explore tools</summary>
+<div class="menu-panel">
+<div>
+<h3>AI tools</h3>
+<ul>
+<li><a href="https://www.wps.com/tools/ai-story-generator/">AI Story Generator</a></li>
+<li><a href="https://www.wps.com/tools/ai-email-writer/">AI Email Writer</a></li>
+<li><a href="https://www.wps.com/tools/ai-summarizer/">AI Summarizer</a></li>
+<li><a href="https://www.wps.com/tools/AI-tools/">Explore AI tools</a></li>
+</ul>
+</div>
+<div>
+<h3>PDF and image tools</h3>
+<ul>
+<li><a href="https://pdf.wps.com/merge-pdf-online/">Merge PDF</a></li>
+<li><a href="https://pdf.wps.com/split-pdf-online/">Split PDF</a></li>
+<li><a href="https://pdf.wps.com/compress-pdf-online/">Compress PDF</a></li>
+<li><a href="https://www.wps.com/tools/heic-to-jpg/">HEIC to JPG</a></li>
+<li><a href="https://www.wps.com/tools/jpg-to-excel/">JPG to Excel</a></li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+<li><a href="https://www.wps.com/buy/">Pricing</a></li>
+<li>
+<details>
+<summary>Resources</summary>
+<div class="menu-panel">
+<div>
+<h3>Learn</h3>
+<ul>
+<li><a href="https://www.wps.com/blog/">WPS Blog</a></li>
+<li><a href="https://www.wps.com/academy/">WPS Academy</a></li>
+<li><a href="https://www.wps.com/tech-specs/">Tech Specs</a></li>
+</ul>
+</div>
+<div>
+<h3>Templates</h3>
+<ul>
+<li><a href="https://template.wps.com/word/">Word Templates</a></li>
+<li><a href="https://template.wps.com/excel/">Excel Templates</a></li>
+<li><a href="https://template.wps.com/ppt/">PowerPoint Templates</a></li>
+</ul>
+</div>
+</div>
+</details>
+</li>
+<li><a href="https://help.wps.com/">Support</a></li>
+<li><a href="https://365.wps.com/">Enterprise</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<a class="button small" href="https://www.wps.com/download/">Free download</a>
+<details class="mobile-menu">
+<summary aria-label="Open navigation menu">☰</summary>
+<nav aria-label="Mobile navigation" class="mobile-panel">
+<ul>
+<li><a href="https://www.wps.com/download/">Download WPS Office</a></li>
+<li><a href="https://www.wps.com/buy/">Pricing</a></li>
+<li><a href="https://365.wps.com/">Enterprise</a></li>
+<li><a href="https://help.wps.com/">Support</a></li>
+</ul>
+<details>
+<summary>Products</summary>
+<ul>
+<li><a href="https://www.wps.com/office/writer/">WPS Docs</a></li>
+<li><a href="https://www.wps.com/office/spreadsheet/">WPS Sheets</a></li>
+<li><a href="https://www.wps.com/office/presentation/">WPS Slides</a></li>
+<li><a href="https://www.wps.com/office/pdf/">WPS PDF</a></li>
+<li><a href="https://www.wps.com/office/">Explore all features</a></li>
+</ul>
+</details>
+<details>
+<summary>Platforms</summary>
+<ul>
+<li><a href="https://www.wps.com/office/windows/">Windows</a></li>
+<li><a href="https://www.wps.com/office/mac/">Mac</a></li>
+<li><a href="https://www.wps.com/office/linux/">Linux</a></li>
+<li><a href="https://www.wps.com/office/android/">Android</a></li>
+<li><a href="https://www.wps.com/office/ios/">iOS</a></li>
+<li><a href="https://www.wps.com/wpsdocs/">Online</a></li>
+</ul>
+</details>
+<details>
+<summary>Tools</summary>
+<ul>
+<li><a href="https://www.wps.com/tools/AI-tools/">AI tools</a></li>
+<li><a href="https://pdf.wps.com/merge-pdf-online/">Merge PDF</a></li>
+<li><a href="https://pdf.wps.com/compress-pdf-online/">Compress PDF</a></li>
+<li><a href="https://www.wps.com/tools/jpg-to-excel/">JPG to Excel</a></li>
+</ul>
+</details>
+<details>
+<summary>Resources</summary>
+<ul>
+<li><a href="https://www.wps.com/blog/">WPS Blog</a></li>
+<li><a href="https://www.wps.com/academy/">WPS Academy</a></li>
+<li><a href="https://template.wps.com/">Templates</a></li>
+</ul>
+</details>
+</nav>
+</details>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<div class="hero-grid">
+<div>
+<p class="eyebrow">A smarter way to work</p>
+<h1 id="hero-title">The new <span>AI-powered</span> office suite</h1>
+<p class="lead">Create, edit, convert, and collaborate—anywhere. WPS Office brings Writer, Spreadsheet, Presentation, and PDF together with AI Copilot, Cloud Docs, and multi-device sync.</p>
+<div class="hero-actions">
+<a class="button" href="https://www.wps.com/download/">Free download <span aria-hidden="true">→</span></a>
+<a class="button secondary" href="https://www.wps.com/wpsdocs/">Try WPS Docs online</a>
+</div>
+<p class="micro-note">One lightweight suite for everyday work, across your devices.</p>
+</div>
+<div class="hero-visual">
+<div aria-hidden="true" class="visual-window">
+<div class="window-bar">
+<span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+<span class="window-title">Project overview · WPS Office</span>
+</div>
+<div class="window-body">
+<div class="window-rail">
+<span class="rail-icon"></span><span class="rail-icon"></span><span class="rail-icon"></span><span class="rail-icon"></span>
+</div>
+<div class="doc-area">
+<div class="doc-toolbar"><span class="doc-tag">WPS Docs</span><span class="share-chip">Shared workspace</span></div>
+<div class="doc-page">
+<div class="doc-heading"></div>
+<div class="doc-line"></div>
+<div class="doc-line"></div>
+<div class="doc-line short"></div>
+<div class="doc-chart"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="doc-line" style="margin-top:17px"></div>
+<div class="doc-line short"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="float-card ai"><span class="float-symbol">✦</span><span>AI, right where you work</span></div>
+<div aria-hidden="true" class="float-card sync"><span class="float-symbol">✓</span><span>Changes stay in sync</span></div>
+</div>
+</div>
+<div aria-label="Available apps and platforms" class="platforms">
+<span class="platforms-label">Works across</span>
+<a class="platform-chip" href="https://www.wps.com/office/windows/">Windows</a>
+<a class="platform-chip" href="https://www.wps.com/office/mac/">Mac</a>
+<a class="platform-chip" href="https://www.wps.com/office/ipad/">iPad</a>
+<a class="platform-chip" href="https://www.wps.com/office/ios/">iOS</a>
+<a class="platform-chip" href="https://www.wps.com/office/android/">Android</a>
+<a class="platform-chip" href="https://www.wps.com/office/linux/">Linux</a>
+<a class="platform-chip" href="https://www.wps.com/wpsdocs/">Online</a>
+</div>
+<div class="benefit-row">
+<article class="benefit">
+<span aria-hidden="true" class="benefit-icon">✦</span>
+<div><h2>AI that works where you do</h2><p>Write, summarize, analyze, and create faster with AI built into daily work.</p></div>
+</article>
+<article class="benefit">
+<span aria-hidden="true" class="benefit-icon">↗</span>
+<div><h2>Work better together</h2><p>Share, co-edit, comment, and keep every change synced in real time.</p></div>
+</article>
+<article class="benefit">
+<span aria-hidden="true" class="benefit-icon">▤</span>
+<div><h2>Work across file types</h2><p>Open, edit, and convert MS Office, PDF, and Google Docs files with ease.</p></div>
+</article>
+</div>
+<div class="trust-strip">
+<strong>Trusted by millions</strong>
+<img alt="Trusted by leading organizations worldwide" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/trust-logo.auhc0_nj.png"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="ai-title" class="section" id="ai">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Your everyday AI companion</p>
+<h2 id="ai-title">WPS AI, built into every task</h2>
+<p>Each feature maps to a real moment in your workflow—not a demo you’ll never use.</p>
+</div>
+<div class="ai-grid">
+<article class="ai-card">
+<img alt="WPS Docs AI helping create a first draft" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/ai-docs-generate-report.Cw2GyBgi.jpg"/>
+<div class="ai-card-content"><span class="label">WPS Docs</span><h3>Go from idea to first draft instantly</h3><p>Start with a prompt and let AI help structure, refine, and expand your writing.</p></div>
+</article>
+<article class="ai-card">
+<img alt="WPS Slides AI creating an editable presentation" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/ai-slides-generate-profile.DmaH_Zi1.jpg"/>
+<div class="ai-card-content"><span class="label">WPS Slides</span><h3>Turn ideas into ready-to-present slides</h3><p>Create complete, editable presentations from a short description or existing files.</p></div>
+</article>
+<article class="ai-card">
+<img alt="WPS Sheets AI analyzing data and creating a summary" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/ai-sheets-summary.BtlKDYtE.jpg"/>
+<div class="ai-card-content"><span class="label">WPS Sheets</span><h3>Make sense of your data instantly</h3><p>Analyze data, generate charts, and turn raw numbers into clear reports.</p></div>
+</article>
+<article class="ai-card">
+<img alt="WPS PDF AI extracting key points from a document" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/ai-pdf-extract-keypoint.CqiG8srM.jpg"/>
+<div class="ai-card-content"><span class="label">WPS PDF</span><h3>Work with PDFs, not against them</h3><p>Summarize documents, ask questions, and find key information without reading every page.</p></div>
+</article>
+<article class="ai-card">
+<img alt="WPS AI refining document layout and formatting" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/ai-docs-format.DqPXF9AW.jpg"/>
+<div class="ai-card-content"><span class="label">Docs, Sheets &amp; Slides</span><h3>Keep your documents clean and consistent</h3><p>Refine layout and formatting so your work looks structured and ready to share.</p></div>
+</article>
+<article class="ai-card">
+<img alt="WPS AI assistant answering questions about a document" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/ai-assistant-chat.CdTkOj-F.jpg"/>
+<div class="ai-card-content"><span class="label">WPS AI</span><h3>Understand documents in seconds</h3><p>Ask questions, get summaries, and extract key insights directly from your documents.</p></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="collab-title" class="section soft" id="collaboration">
+<div class="wrap collab-layout">
+<div class="collab-copy">
+<p class="eyebrow">A connected workspace</p>
+<h2 id="collab-title">One cloud workspace for team collaboration</h2>
+<p>Keep team documents, feedback, and updates connected in one WPS Office workspace.</p>
+<ul class="collab-list">
+<li><span aria-hidden="true" class="check">✓</span><span><strong>Cloud documents</strong><span>Access your documents anywhere and keep them organized across devices.</span></span></li>
+<li><span aria-hidden="true" class="check">✓</span><span><strong>Real-time co-editing</strong><span>Edit together, add comments, and track changes as they happen.</span></span></li>
+<li><span aria-hidden="true" class="check">✓</span><span><strong>Smart sharing</strong><span>Choose who can view, comment, or edit—and revoke access anytime.</span></span></li>
+</ul>
+<p style="margin:27px 0 0"><a class="text-link" href="https://www.wps.com/wpsdocs/">Explore WPS Docs</a></p>
+</div>
+<div class="collab-gallery">
+<figure>
+<img alt="WPS cloud documents organized in a shared workspace" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/collab-cloud-docs.Dc4W3rlY.jpg"/>
+<figcaption>Cloud Documents</figcaption>
+</figure>
+<figure>
+<img alt="Collaborators editing a document together in real time" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/collab-realtime-editing.DD1HN7GS.jpg"/>
+<figcaption>Real-time Co-editing</figcaption>
+</figure>
+<figure>
+<img alt="Sharing controls for document access and permissions" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/collab-smart-sharing.Fx6PiOFz.jpg"/>
+<figcaption>Smart Sharing</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="suite-title" class="section" id="suite">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">All your work, together</p>
+<h2 id="suite-title">WPS Office: the all-in-one productivity suite</h2>
+<p>Access Writer, Spreadsheet, Presentation, PDF, and Photo in a single, lightweight app.</p>
+</div>
+<div class="suite-grid">
+<article class="suite-card">
+<div class="suite-copy">
+<span aria-hidden="true" class="suite-icon pdf">PDF</span>
+<h3>Handle PDFs without extra tools</h3>
+<p>View, edit, convert, and sign PDFs in one place.</p>
+<a class="text-link" href="https://www.wps.com/office/pdf/">Learn more about WPS PDF</a>
+</div>
+<div class="suite-image"><img alt="WPS PDF tools for viewing and editing documents" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/allinone_img_pdf.C-Kv6a5i.png"/></div>
+</article>
+<article class="suite-card">
+<div class="suite-copy">
+<span aria-hidden="true" class="suite-icon slides">P</span>
+<h3>Present ideas with confidence</h3>
+<p>Design engaging presentations for meetings, pitches, and classes.</p>
+<a class="text-link" href="https://www.wps.com/office/presentation/">Learn more about WPS Slides</a>
+</div>
+<div class="suite-image"><img alt="WPS Slides presentation design workspace" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/allinone_img_slides.BNaETSwm.png"/></div>
+</article>
+<article class="suite-card">
+<div class="suite-copy">
+<span aria-hidden="true" class="suite-icon sheets">S</span>
+<h3>Turn data into clear decisions</h3>
+<p>Organize data, build charts, and manage budgets with an intuitive spreadsheet.</p>
+<a class="text-link" href="https://www.wps.com/office/spreadsheet/">Learn more about WPS Sheets</a>
+</div>
+<div class="suite-image"><img alt="WPS Spreadsheet data and chart workspace" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/allinone_img_spreadsheet.40MmKlLh.png"/></div>
+</article>
+<article class="suite-card">
+<div class="suite-copy">
+<span aria-hidden="true" class="suite-icon writer">W</span>
+<h3>Write with confidence</h3>
+<p>Write, edit, and collaborate on documents with ease.</p>
+<a class="text-link" href="https://www.wps.com/office/writer/">Learn more about WPS Docs</a>
+</div>
+<div class="suite-image"><img alt="WPS Writer document workspace" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/allinone_img_writer.C4NV2HQX.png"/></div>
+</article>
+<article class="suite-card">
+<div class="suite-copy">
+<span aria-hidden="true" class="suite-icon photo">P</span>
+<h3>Edit and enhance images with ease</h3>
+<p>Crop, annotate, and refine images for documents, presentations, and sharing.</p>
+<a class="text-link" href="https://www.wps.com/office/">Explore WPS features</a>
+</div>
+<div class="suite-image"><img alt="WPS image editing and enhancement workspace" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/allinone_img_photo.C2SPFBw8.png"/></div>
+</article>
+<article class="suite-card">
+<div class="suite-copy">
+<span aria-hidden="true" class="suite-icon writer">4+</span>
+<h3>Work across familiar file types</h3>
+<p>Open, edit, and convert popular Office and PDF files across your devices.</p>
+<a class="text-link" href="https://www.wps.com/office/">Explore all features</a>
+</div>
+<div class="suite-image"><img alt="A document open in WPS Office" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/allinone_img_pdf.C-Kv6a5i.png"/></div>
+</article>
+</div>
+<div class="center-link"><a class="button secondary" href="https://www.wps.com/office/">Explore all features</a></div>
+</div>
+</section>
+<section aria-labelledby="security-title" class="section soft" id="security">
+<div class="wrap safety-layout">
+<div>
+<p class="eyebrow">Designed with care</p>
+<h2 id="security-title">Your data safety. Our core mission.</h2>
+<p class="lead">WPS describes a security approach spanning file transfer, storage, collaboration, and AI workflows.</p>
+<div class="cert-image">
+<img alt="WPS certifications and standards: ISO 20000, ISO 27001, ISO 27018, ISO 27017, ISO 27701, GDPR, and AWS" src="https://global-static.wpscdn.com/cms/official-website/v2/_nuxt/secure_iso.D10kbnle.png"/>
+</div>
+</div>
+<div class="safety-grid">
+<article class="safety-item">
+<span aria-hidden="true" class="safety-symbol">✓</span>
+<div><h3>Secure data protection</h3><p>Protect files with encrypted transfer and secure storage across creation, sharing, and collaboration.</p></div>
+</article>
+<article class="safety-item">
+<span aria-hidden="true" class="safety-symbol">◎</span>
+<div><h3>Global compliance standards</h3><p>Privacy and security practices aligned with international standards such as GDPR and ISO.</p></div>
+</article>
+<article class="safety-item">
+<span aria-hidden="true" class="safety-symbol">⌑</span>
+<div><h3>Privacy-first AI workflow</h3><p>Keep documents and prompts under your control; WPS says they are never used for AI training without permission.</p></div>
+</article>
+<article class="safety-item">
+<span aria-hidden="true" class="safety-symbol">☁</span>
+<div><h3>Reliable cloud infrastructure</h3><p>Keep work accessible with cloud storage, backup, and recovery capabilities.</p></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="reviews-title" class="section" id="reviews">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Trusted by experts. Proven by users.</p>
+<h2 id="reviews-title">A familiar suite for getting work done</h2>
+<p>Reviews and creators highlight compatibility, ease of use, and tools for everyday work.</p>
+</div>
+<div class="review-grid">
+<article class="review-card">
+<div aria-label="Five out of five stars" class="stars">★★★★★</div>
+<blockquote>“A powerful Microsoft Office alternative with familiar design, full compatibility, and built-in PDF tools — trusted by millions worldwide.”</blockquote>
+<div class="reviewer"><img alt="" src="https://res-academy.cache.wpscdn.com/upload/seo-engine-admin/2026-03-24/fb527d82afdd95b7211dd3f2c78b4d99.jpg"/><strong>Kevin Stratvert</strong></div>
+</article>
+<article class="review-card">
+<div aria-label="Four out of five stars" class="stars">★★★★☆</div>
+<blockquote>“Designed to feel instantly familiar, with a clean interface and a smooth, easy-to-use experience.”</blockquote>
+<div class="reviewer"><img alt="" src="https://res-academy.cache.wpscdn.com/upload/seo-engine-admin/2026-03-24/eed55eb0ec1867345eb873561984e45c.jpg"/><strong>Michael Horn</strong></div>
+</article>
+<article class="review-card">
+<div aria-label="Five out of five stars" class="stars">★★★★★</div>
+<blockquote>“Excellent compatibility with Office formats, plus 100,000+ templates and a full suite of tools — all available across desktop and mobile.”</blockquote>
+<div class="reviewer"><img alt="" src="https://res-academy.cache.wpscdn.com/upload/seo-engine-admin/2026-03-24/8adc4faad73760392b15b229f1de8917.jpg"/><strong>Brett In Tech</strong></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="latest-title" class="section soft" id="latest">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Ideas, guides, and tools</p>
+<h2 id="latest-title">The latest from WPS</h2>
+<p>Explore online tools, product updates, and practical tutorials.</p>
+</div>
+<div class="news-grid">
+<article class="news-card">
+<span class="label">Latest features</span>
+<h3>Explore more tools from WPS Office</h3>
+<p>Discover online tools to edit, convert, and manage documents faster.</p>
+<a href="https://www.wps.com/tools/AI-tools/">Explore AI tools</a>
+</article>
+<article class="news-card">
+<span class="label">What’s new</span>
+<h3>Claude in Excel brings AI to spreadsheets</h3>
+<p>Explore what Claude can do for formulas, data analysis, and automation—and WPS Spreadsheet’s built-in AI alternative.</p>
+<a href="https://www.wps.com/blog/claude-in-excel-ai-powered-spreadsheet-assistant-complete-guide/">Read the article</a>
+</article>
+<article class="news-card">
+<span class="label">Tutorial</span>
+<h3>How to use WPS Copilot</h3>
+<p>A practical guide to AI writing, document analysis, slide creation, and everyday workflows.</p>
+<a href="https://www.wps.com/academy/wps-copilot-practical-guide-quick-tutorials-1898623/">Read the guide</a>
+</article>
+</div>
+<div class="center-link"><a class="text-link" href="https://www.wps.com/blog/">View all news</a></div>
+</div>
+</section>
+<section aria-labelledby="final-title" class="section">
+<div class="wrap">
+<div class="footer-cta">
+<p class="eyebrow">Your work, all in one place</p>
+<h2 id="final-title">An AI office suite for all your work</h2>
+<p>Join over 5 million teams who have switched to WPS for a more focused, unified workspace.</p>
+<a class="button" href="https://www.wps.com/download/">Free download <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="brand" href="https://www.wps.com/">
+<span aria-hidden="true" class="brand-mark">W</span><span>WPS Office</span>
+</a>
+<p class="address">WPS SOFTWARE PTE. LTD.<br/>6 RAFFLES QUAY #14-06<br/>SINGAPORE (048580)</p>
+</div>
+<div class="footer-links">
+<section aria-labelledby="footer-products">
+<h2 id="footer-products">Products</h2>
+<ul>
+<li><a href="https://www.wps.com/office/windows/">Windows</a></li>
+<li><a href="https://www.wps.com/office/mac/">Mac</a></li>
+<li><a href="https://www.wps.com/office/android/">Android</a></li>
+<li><a href="https://www.wps.com/office/ios/">iOS</a></li>
+<li><a href="https://www.wps.com/office/linux/">Linux</a></li>
+<li><a href="https://www.wps.com/education/">Education</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-company">
+<h2 id="footer-company">Company</h2>
+<ul>
+<li><a href="https://www.wps.com/about-us/">About us</a></li>
+<li><a href="https://www.wps.com/strategic-partner/">Business cooperation</a></li>
+<li><a href="https://www.wps.com/partners-oem/">Partners</a></li>
+<li><a href="https://www.wps.com/privacy-policy/">Privacy policy</a></li>
+<li><a href="https://www.wps.com/partnership-customer-stories/">Global trust</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-support">
+<h2 id="footer-support">Support</h2>
+<ul>
+<li><a href="https://help.wps.com/">Help Center</a></li>
+<li><a href="https://www.wps.com/academy/">WPS Academy</a></li>
+<li><a href="https://www.wps.com/tech-specs/">Tech Specs</a></li>
+<li><a href="https://www.wps.com/support/">Feedback</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-follow">
+<h2 id="footer-follow">Follow us</h2>
+<ul>
+<li><a href="https://www.facebook.com/kingsoftwps">Facebook</a></li>
+<li><a href="https://x.com/WPS_Office">X</a></li>
+<li><a href="https://www.youtube.com/wpsofficeofficial">YouTube</a></li>
+</ul>
+</section>
+</div>
+</div>
+<div class="footer-bottom">
+<span>Copyright © Kingsoft Office Software, All Rights Reserved.</span>
+<span>Free office tools for work across devices.</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

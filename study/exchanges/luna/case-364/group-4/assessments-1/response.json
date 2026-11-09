@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The training cards, their descriptions, and the footer navigation and links shown in the reference are retained in the target. No material loss of core information is visible.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The cards and footer content are legible and coherently arranged. The slight footer color difference is cosmetic and does not impair use.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including the trainer and newsletter buttons and footer links, have understandable labels or recognizable icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding training-section and footer regions in a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, imagery, and labels communicate the training and footer content coherently in both versions.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating JSON requirements**\n\nIt looks like I need to ensure that the JSON structure is correct. I should pay attention to the images, making sure the exact placements are maintained, like the tiny footer shade differences and separator positions. The reference footer starts at y870 in the first image, so I'll aim to target that. I need to check that the controls and trainer button visibility are consistent with previous segments and keep the JSON schema strict.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating JSON requirements**\n\nIt looks like I need to ensure that the JSON structure is correct. I should pay attention to the images, making sure the exact placements are maintained, like the tiny footer shade differences and separator positions. The reference footer starts at y870 in the first image, so I'll aim to target that. I need to check that the controls and trainer button visibility are consistent with previous segments and keep the JSON schema strict.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-QiAHxSd_Ib7Z0c4In-ZRsMydnL3RgM6PG1o1qLPSz1kdTde2H2uSThHwYCGjNXiqPHOEacAS96i36tm4GHE68mQKHPX301qsHk_7WeHFvSaDUcFP2O3GdqvgUYJzEjLuz01Vbhve9rSaJxJxyHLqkCb6LqurUlZmNZI7fJzK-OPY_dwwhL325etjcoW7L4K4XAOJxhkZoaZHm2n_M2s6lhmWapIbFQvuNVWe6yD2FHM2lh7GAyU_2eBQ8618S7rPX_Wv1055T1jfKvCANsMrboKYCuOwBs4pjhENnZtV5lXHo_TJ0DAJPPz2ACZj4hEJQuSENRiy4A_AsbVVfr7DslyLEEitBZ9kLI1nwjPvjIT22CXGYAZqpydfBX5ztVHD6CCWejytrt_UqjuJJuTm4eyuKQ9VZlzPdKMCYgejfSlyYkAlxft3QqnzQMBUD2ZL3SrTL6NrpIVYgLkTAymVp3dKkH86I32XdINtfU_USn1bv8Mys4R7F4aoL9yEtiOt4zayAMwYVVmkVjmkSE2NQMXU2xYrrmpmoJC0g8jjx8NlnQEBLQz-lKzQ4jz48Syf52GAJsJhDwen0q0brheS-1Ef2pV-qES6q0ojkdMHrlW0MUjw2DWU8zdCiSXsD9N-OuY8aphp2ymw1XkVlwFUtlvXE44WqlUHfb2XHXXPu6IJs9V8qQlxOjZcb0nEvd8ExrGNubmXI7lKco5F2WwpSA4Z6WJAgF1oSqt9R9ZkChjpJYQsvZRkcXP9aI9Sxqb5eM2tJWKrPXj2LrMsb6N513dM8DkK5Xfu3bFORobBJLuzfTmuUa_hcu0KPq4d77K6RI4iJiPs5TTREBG3b5T83Trg4wJsKSh9P7KHImYRoHWMoesxqGPTYWpUn8mZ1gIaGk6kEdbPPhH-ZO43T2tIh9QKi_5dYP3nd9VzQ18CLypr2xXZH0K-7L_W8gvIBRRCzLcGUcXgv6xQD-0WNUgYho1dY-tr8OMmNk4DmREGXOBaDxrR52QPotv8JfOZj_v4QDz5ybl1OowWxNpDFB8gvrEhFGNt6o-VTXWOHi1rGyQvTWo18aAocpNKSQs7WpZrDdsX902kwwXmilUUkacs32U3tYnwotoctOfF1HylRrTyYBM5fS4ZMu_AghQrmXDdehUEr4SDMOoXkvKVsKfM5NDclwsfKp_0ajpG4dUvnA8ab_v_RxBq8tIcyLNbjVV8fyJV7hTAYQAZEYI8HqlPHhIu0XmL7EpR6Lp0EHBYY-JSD7vKTMEbKvyU0tGsBqAmui4iDCHPnnq48uWoIcExIN0zopZJRY7sd8HdsWVlRCflv-cEjVsVCsXi2uyFievy_wwOfhFbmvBvgExU2P-nqCHIThQyGrUMvhOe_JFM_bQBSpy42Sq9T70RowzIBKEhAnoKueRkNG7PizESwvB1wWR0-2trCNKpGogJKav92bRMDiDvaCstEx8YPhgqsmd33A1pWdO-2CayJ5jETFj7U09sRhPEJ7fCY6lknpmqiryofg7iV4BkuUljguRhvGN_Dm1Fd7XDY4TpnMt4ExEK-GqbptnM-nbpTzyg3Gkm6XXN-whNggiOTAZmVhHGlJ1BlzUHCusWJ40Zuw75Jiv1WIJ2TQzYp4AxWRTvK1FA8JbHHQugUdenmIQ21gRsbOum7XcCoB3HZ7_U9rQo4axsp-lv5oiomSikifz63fKbWX-e8aauc1jNQgh6lK01Dqq0e8KhHL-UYda3_K3-okZOLT4eBGilvf8xP9WE192lqHio57nlBbiZ7qjhTrgvH1KMsGfK0kIunxETt8_gJHSAOg3TkKN62kiNaELxJP77LCC-ijz-ZwiH8R9DJUatgiCR62i5QL0po-0LehGz-3_chSV6vXxiM1dAXjQ5d-79HTRvYmlSS6o2lQ4MqtsloaD3qniiOQqKMwjnPyPRyW6SWAWKgylfEdEApPplFsvLZAOU3sCt-T4oxZ3RK6le7rxvgHRl4kqi3sltc_ow41VBap1gOuKJN1TfV1nqyppyuHmrWMu6rBjypOAAGw1r03ZEIQaXOFMiE2JK_Hysm8wS1qrEtztpaORPe0r74JqpfWKQdr1imL8ecPjdvShK0rIrIV-G35tStriX9XKvGIytyaUmuYl5bxiRfLc0hy_RRMiIcs9oYaabkxShCIa-twbIf7plEUSb1qd-LECyalS5d7JZxrF94HqjdWbu0PxuzWB0RIXKf2Ozsl7Hf3iOMg4cbhWLy2ki0R8ou9w-i32ZjGUQ6oNekh3nV2TmIIZsNv65xTW2N6EGg3XQB32AOv95FL7PeVHnhzkSg4uvafsnsR25BT29dvM2SU7IwjQOLIkytPlZgV7rIxyaPgjPtAkVf.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_05dbc245441befe6016ae81f8e9f1487d1bfeb3591271c4052",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10158,
+    "completion_tokens": 299,
+    "total_tokens": 10457,
+    "cost": 0.001419175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10155,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001419175,
+      "upstream_inference_prompt_cost": 0.001269675,
+      "upstream_inference_completions_cost": 0.0001495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target presents an art-discovery gallery, but many visible artwork cards have broken images across the supplied views. Repeatedly missing editorial artwork materially weakens the page\u2019s core content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The layout is organized and its text is legible, but numerous large empty card areas with broken-image indicators make the main gallery substantially less usable as a visual-art browsing interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, account, category, and gallery-related controls have understandable labels or recognizable icons. No essential control defect is evident.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent reference/target comparison of an art-community home page. The regenerated layout differs, but remains assessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Headings and creator names remain coherent, but the repeated absence of artwork imagery undermines the meaning and purpose of the target\u2019s central art-discovery gallery.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image issues**\n\nI need to assess images for broken links, especially concerning editorial imagery vital for art galleries. There are repeated broken thumbnails across different windows, indicating a material defect in content and presentation. I should check if broken art cards are clickable and ensure that labels are readable without needing inference. My goal is to understand if the overall presentation remains coherent, despite these repeated broken images, which clearly indicate material defects affecting semantic meaning.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image issues**\n\nI need to assess images for broken links, especially concerning editorial imagery vital for art galleries. There are repeated broken thumbnails across different windows, indicating a material defect in content and presentation. I should check if broken art cards are clickable and ensure that labels are readable without needing inference. My goal is to understand if the overall presentation remains coherent, despite these repeated broken images, which clearly indicate material defects affecting semantic meaning.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B97-svOMM97w9cEKVpPQDz9lydmO8yhBY7nphobai3XkFh1SPGLGk3pE8nnbQH6Wk1hFrbn8Iq-zowsOe_1ofHk1MQqD45vM4c6FVVf5fInRFZRlpXZEdGsYvdF-jNLd9C_9s5btIzXP8Gwdg2iB9Rbjwi6bG1kXal90NGskaC_2-eCSCHiJlRWG-mD-sR-ezxe-lwNLmbdVHMGwukUUKH_Dux2oa5zxbQQtrbKkjrY5_kRJaC-efzfba3DODta4lnO_ZxS40spoRIAhQskS5YmeZAMY7S5HBc2i9xeN2JX8NXwRjz6KLcHlrwrkq_N2LRqqtS_vr1Wh-5_M3mQOD39UKLF80o7Z-pi-Ccpqyk7lbXgR6OkjXaPagapb97TInvInXPkuLZ_lyi-2s2dfU7qeYOsXvXdFRUdslxJw12dseFGJkHTB_BCWsq1d-_4CLsMFD_nyMkDkb-sCSavCf2NkPWDsjYBJ2gXVOoo9uMHr4y1yPiTo4tCt6GFFC4gvAvhXu0C0Ukpiwiqtc_2zjPjDHdkHTh0iPI5eJat6VO6fQZMcQWJrymlGHFuCtpWISG-7nSBpfy79oGYVmYpf1qZZvkWfb74teqhiQkJmSaqTzUByi9ep0NXeuRZ3TXC9KBO6ZQiVby71N3Vw6n0uvSK9h_6EonmOkMJELm-A_oHutg_YmW8jLEFxs7eAwiCnqez-aGqzjpLL6p7KAMtDwsGM53_sW9wFqva4gEkeJ7lfyM4Kjz3AYDvqdiFgqjO2YT76dYQ2LOvdi6MBQVIXBTsq5VPZnWdwbSlxcWxIoxraouf--IfQwJ6nP_928M97D5XHNRugGq4UhLRloF1brluqPQ4H1LcH45zmkF8Eb8IOgkh_HGnYHQlhGNptBtYUg2CHahv00CP_NWLVT6caXWVnSm_NQYELQGDrlwAu7HlELsFLWtjh3GZhrl_e2qMnqI7RETtwet5wxiIOXB-u7vrt-02QEp7X15tdW5HXsVtsl5R1nysKEpoMYARJ4TtWOTLkRBvFtz2yYYif5Z2cN4bnLiJ43T9oQ_EjbUo6eZOS9BGuBcGPJheJ_CkPBwoznOVAFdyH7cMoDscmj57WKC7PwgfpmzraL2kxPjighzJ-Al6cCfLEfKQhgvAeS-8mk3pS3dMEB1zhDnn4njGgYWcv12HLTUjgBem-Th9mpHSLl8880I00LoKNiGdIhBJsAbrWsH8MUGGLzjHtwMCbLcc_KIBpFLjfi_xFTPswSn5NwdRCmzpNDYSJpFZa5kNIvZkWdoWb6I-uQ1Do6Evzj0R3vJiOdTujd673r1y4F90UDr6vFvoEUFBWQywmnNVBMq0CrgGAb-v79mLCUkN5T8hXkAdgUylkNmUVW_6OjOSa5GlBS_BVKk3Mo9AdkQXRV8uUsVnHwJHHs-nsiS-1M9ewKQ7sAjD8JYWaGJvl6Qeavl5gReYirWeRY-x-69vS7QHCabRN61UwlKVN_fnG9XUYonzgKfUyQK4mD7htisIE8fhgX1pVvkM5kp67saKoPt0ncmBsPfmSzqwN1NOTvGNiv_MlDNZ1dlDHjCNPzw0X97rwvCA09XEMf0GFnv9xhBHW925fLGR60jNmM3WdZqKGGgfRSINqsTl2KkLNY-UyBiA3TAkoRcK30HP-ilt8-puDlawD1Xc5zRkUqSwRfmQR6xtLwUjW1vKrYzUzA3Ks4Ae-c3xnLQnUGYafbvspeRqYAdCOD8ae5rNBKMaSQ_0ePZb94XGKsRrN2bj5aAyWKJYY3N5VtkKeefiq1DNRfLBm54TbFh3e5n8mkadeY_GA2Xisi5qtEjaiLxgsfZABLGjPS8OyTpeUfHaE1zgqsa9whF3oRndLy7Od59WIyMK6xrexHIx2oJiMKBNFuffqUvH5Y88soKx6g7JVphoH40IPG8fGU256_IYjMFGPhSxE2EcduKzBn4A_a2W8WwaLNDjgUbDwizZy_vf91UY-eIebDmf0qT_3jzpOris9PdjC86XIJAbiMqk2lrqHxALI2fMMY23NY8FCPj1DeoPW7GC_0m-65KUiQga62rCCAiJ1WSbw3tedqDQUVXOek70Bevp3akYjz0_65FkuSZjzfg-EXQK4LC8Xf3S9pQqJTAUEn-P2aima_ptWZS-eQLHW8YzJQTfwewGh2SBmn8ZBLcQafW8kX_y9rvLMfKkayJHzInOIhh28IwJdcFUjKz99p7CQP7Nq7yvDXWUoHisUUtweOObBJa55S6OaOtRGhP7Ty3MA1pokFgx_8W3Hjg3FjDSIT_Hx1EfUqGxayN2oDRHtpH2-4M8x_2Rd7uSq1Iz2TDwSDtSMq9JFKqk9VIz0p3bEbcM7d_GoZBjHTUQhkkY-VBX3G4iuYLpVCVTYiX1Mpb_xF431m1DKofPZZfc0gKjtLw53apIjdwUSsYgeMZDbcfmIXiCYsqYtyLFl6T2DCiUZ4QOGkr0t3ZsOhlun847NAGyGZy6UnZikgYZjGPN8t__u4-uvWJ8M-6RXJ9ChVhb2DxUigPtD3ZysWFtSn0WW-9hfg2H56xzqjf2ydGdGwfb2rRj5MEAcUM8VkQjEYBhHzzTfs5nUobsVtCFKVcRskcwPevxYVRgcTwQY7EEqfl_kE2ER38jlkmOOtYBCTC62yzU8shxHMg1RDHoOsJRIi7_u22jwgWJAjlDd_jxqGS2XTw6umBEB6BR8W4Yi1wBxzgnSzEymqFq8a9qzbOzoW06E8Kzzppaaeda_Xwf7pSaJ2IT49wZTKbEuQ7PbPQY1l-txv506mw2CPa7IsGWzbLvBMuVDWj6jHA4dJANcDULII1z39sJlmFBx0qm7gbR1qQg0c_L2n054KU9tZZ8HZQ50tJqp9fJFNcnUD8B6n5pckIojXKcKIgqFJZvrcojgIYyjcKCWOTSn-is9JJZrjdPnpDozEuSPm-7L8PhRUokIFnxpbltSSAW3-M9Ean48-Od0Xh38sFit4g5x77-LX_HkK3krhSr2OAxmnVqA5Qdl0IbWwL-wygHlHOgjqSXzXueaMfpFiX2m5bp95jnArmP-LoLshWug-sXWfiIYwuPyB9VJnlBTDHDw7WRzSQ2BtTlzDRuwDWpOOCECpVJ-pn_Dmluwc1xu5O5hzR308a8hRw60p70CKdqsZ2Mi7XRSQhbYOv0AlWbje3ma5jK5BPt8N0Rbr-KMpoZLmUjjrPQaIohNbedAa0UO5tcoVPBo-C50OdchzyTd8eqgAgxoJLyh2dW6-_eGCG-U-kpwEoKW9mMIfnyUITlcIjzMr6IBbMFjmWQVjzzsZ5hLixKb4DA3cvFdhFNSRTi1w0Pf8wBJL6opXgPvqip52EKRSXbGYIRU0Y9cmwXNIXH9hDiG9y6mhwe7e8MRs4BCHcAxF5hIKm9rG9_N6eWHC4K6BUrxUHvQvGoNuS1ZHTw4HGySY6G9YqYWC43SvAitWDZ6XcjWST-P7QIKm1DZLlwFybfv_M6Dk12JgJ7SRca6Vy942NfU1Iy0rWT-QZXW0WW_7DwEmMM6C48uHTZ8oP6HQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_089935691bda4e76016ae81f78253087d1800b20726a8cf9c9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17931,
+    "completion_tokens": 415,
+    "total_tokens": 18346,
+    "cost": 0.0024488,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 17928,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024488,
+      "upstream_inference_prompt_cost": 0.0022413,
+      "upstream_inference_completions_cost": 0.0002075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 130,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible Eventbrite homepage content and organization, including the hero, category links, event listings, and destination section.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding views are visually consistent; content is legible and coherently arranged without material clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, event-card, and destination-carousel controls are present and recognizable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent, corresponding page states across both supplied segments.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s event-discovery purpose and the meaning of its visible headings, event details, and labels remain clear.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Organizing JSON requirements**\n\nI need to ensure that the JSON for all screens has identical screenshots. It'll be important to have a concise rationale for each screen. I'm noting that it needs to reference the exact content and target. I also want to make sure that controls for visible categories\u2014like search, navigation, favorites, sharing, and carousel arrows\u2014are included. These elements should be addressed semantically, to enhance understanding and functionality.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Organizing JSON requirements**\n\nI need to ensure that the JSON for all screens has identical screenshots. It'll be important to have a concise rationale for each screen. I'm noting that it needs to reference the exact content and target. I also want to make sure that controls for visible categories\u2014like search, navigation, favorites, sharing, and carousel arrows\u2014are included. These elements should be addressed semantically, to enhance understanding and functionality.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-1uckgleurOUTlWlBO1Ha3UT53edyiSj_JuRThjc6ih4L3Gm1zbL5Cxm5bat1Pe8q2h4Dh1EXop4prpQ-KTMHPmlLFM_u--iCGpuOnNIqHoXG6Hsqq_iRkBqtATCJHY2tXOTHPhZmvDBT0GK7B6dyYVokYV0PzEHVi_wpStv-Zy13fZu0kgt3xpND9GcSvjZJnkHlUJZOMQ5CiSNattl3qxEWUUb-fbqcrhKDtJNNSRPMq0VNGWKXiGxMPWvd8OvaHzBJ5kZNiOcMOhnlB4Yio6MowhcVi7uBSYLLEvvsPkXH9COJiTXB2BVc5uPUbqlbqlZyYNPwb2Z-ioktJ08VGuXANKMfpBe4UTxRKILuD5tTXqfwObbXAvrk9UUjBbWB_2hT-88GFVtj6mPpAu3Qj1LKstdJyCsq5sfFC733Nx2mvGWXkBgRnKtFXJUwnIaQTg8KX5zWcUeJmA5FQ41_DjBMnD4809rFwraQkplCyS-gqmkrDiMdEg28_nqdgd5AjL08fFgpFR1hxdPxaKD1cdkgOPvH1ct7DsEbNiVxANclPoO87MrleG058tfpv3krnfmMwCo5k4OWdHfKsGd3NDKZwXvM9XxJdXBnZV8Te-m1rnvcuyV1u9VOcj7mqDsq2iCmOkTB1gbsWoZvgBKyCGaSifencHPxy0JDwvnvwniJA0sInm8b5g0noks_Lrf0PV7E6hmTtgSegmxp3jDyoATFFsP7u-VjYF1rAWHsHNEFcxaNofrsP-7S39QCr3vqfFn3X8GbFwhp1CeEhbOocYZJkkXePktTcNJRt0sHg17X8ErktSwy7T9-PkvwPDpwyA4bQBfsKNIBz5lfKy5UQyCQg--q7Xn6K94sXTckJ7bLIcrjc187FPNDvoDHieKN247FJKtS-6zMEeKA5AsobKBY31nVh0r8VY_iryZUusAnC_Zna0wLUZnlK2wI9dpUf1E7sOQbThTx0RTCCvKvHqdrcH6Op4F-lvMbypAor0WwWQB5um3syTh6SDHTJYDWsxg_GucYnjrFh3imH9t0DLS1GBgeNaF5WmW4IosZfRHCoa8AKtxXYIJpyPZe82Tswv4qWxqR0ZFf40VYuQ4exoOYfP16U_JMkIHsSdJ1bgA2BtKMzbKSel-odipXu2_TNnQverZ9ObcxD8UQvhC8z2byJ5N8K0J9jvmvlqE4z8cUhD6EvP-Do7amDJ9Xd6xV2nOZMKS_zvpJTKrmQBVUKYWrG-TjyUvVVMVbg1HjjMJTtFNn6ZbVVYwtO2ndejHUL06FlklE4J19M_h0K9LvUDibU2aLdukV_ThNVNmwGpt_DfRzLRzCBWOrsI7CyUa50sl2OqIClSRDeuXPWtPWbfV9GD_M2hsTYq68GMQaKU1eMf8pAOQzCUmYB6kreOyPp_LCXFW3_h6fTOCWUIGaMkqxMBVrnHBECwuF8zCOuZ2z48bRT4B19q4gtPP9bfTWKDx0eIC3mTQdWx4AtKT1pvM3ngODYPOjY28oAMLAdNvklVi47SX0zTi6IkfdJZ1CGFqlOR_mGNSPT4hLhhPgDblObpH7vEo8z1ySMz0Nl3loFwf2zU4d-3aQfETNU7P8yA4276LRUhecFQmf5NcDiJwqvcwrBulfGKX9HWiiUphGRQ0mZDKC_zMq91VuMpDU95_F26NdaGRfqDaWGfb1J9hQc99takeEC9q_NZPmFPifkF3ZxeQ5rQbl_dVYFQi6Q-Tn-84-hVaQFFSokVHwdZ--HuntFpAp3CRPD49ZANYG4hIjpfENDWrAPFZ9VbOjBoC38BfjAZ4ruWl6F5Lnn5rHl-HPk1FZlReD6e7goUOx9sp-j648hbHUwkYRul6qMMQbOXsNcz0o37IyOzg5eiO7fwgf__TTsEhvFmc3PxTiBVPN0AtizOZI0POcUzSFdQEkY8HCiJ-isqgRx7MqZzR1lgvznggUhOyX57lqHL32NrCUzZpHi9DkYK3j-yAUVwdWIVuHZxHcQJYWdfn1MIK49nNsjafWhVaFWkJFtNQQy_ci_CKA5ahIlrGSwvZzXU8l_bcDVLFofaO2qo__DRBIHp8K5W5m9V6tih3_npWQ55SQcWkyfEwvtYvPeB3fC.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00d10695925ed1bf016ae81fb467c487d1b712c29d8d5f0cb4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11419,
+    "completion_tokens": 268,
+    "total_tokens": 11687,
+    "cost": 0.0015613,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11416,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015613,
+      "upstream_inference_prompt_cost": 0.0014273,
+      "upstream_inference_completions_cost": 0.000134
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

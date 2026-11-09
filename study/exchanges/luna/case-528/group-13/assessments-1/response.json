@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference window shows the BBC header, a large blank region, and footer navigation; it does not show editorial content that the target listing visibly omits. The target provides coherent BBC sports-audio listings with titles, episode information, images, and save controls.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Target text, episode images, and controls are legible and arranged as a readable list. The horizontal overflow and basic-looking styling do not make the visible core content substantially unreadable or unusable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible Save buttons have readable labels and recognizable bookmark icons. No essential visible control appears ambiguously labeled.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots provide assessable BBC reference and target states. Their differing visible regions and scroll positions do not by themselves indicate incoherent evidence.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s program names, episode titles, durations, and associated imagery convey the meaning of a sports-audio listing.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing webpage layout**\n\nI'm looking at the webpage region, referencing a footer and a huge blank ad. There\u2019s an audio listing for sports that needs attention too. The page's default browser style shows some horizontal overflow, but that doesn't affect the content's coherence. I'm noting differences in scroll offsets and checking if the footer aligns with any meaningful content or just ads. It seems like I should target a more usable semantic list for better presentation.**Analyzing webpage content**\n\nI\u2019m looking at the webpage layout, specifically checking the footer and a large fixed ad overlay. The image presents a header followed by that blank ad slot and then the footer. I need to target the BBC audio listing and compare it with the BBC homepage. The lower area seems obstructed by ads, so I should focus on the core listings despite blank spaces. Content preservation is crucial, so I\u2019ll ensure everything meets the necessary standards.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing webpage layout**\n\nI'm looking at the webpage region, referencing a footer and a huge blank ad. There\u2019s an audio listing for sports that needs attention too. The page's default browser style shows some horizontal overflow, but that doesn't affect the content's coherence. I'm noting differences in scroll offsets and checking if the footer aligns with any meaningful content or just ads. It seems like I should target a more usable semantic list for better presentation.**Analyzing webpage content**\n\nI\u2019m looking at the webpage layout, specifically checking the footer and a large fixed ad overlay. The image presents a header followed by that blank ad slot and then the footer. I need to target the BBC audio listing and compare it with the BBC homepage. The lower area seems obstructed by ads, so I should focus on the core listings despite blank spaces. Content preservation is crucial, so I\u2019ll ensure everything meets the necessary standards.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AJOURo7TFnlx89Tk9CNyghkISj7Td7Ljekvwi_N2NDWfXvXVb0B4G9Ml_S0iWVVfIrakoT4aQIOzXKqYobMLC8VefiU0n-IOvPBz1zHS0u0ML5eLWdJSfv4PwBzz36HcFPi3YldIJgQKwF6LTYdvNKyltTB6h8MQxulgj8BdY-gi2m0X8X2JPHvscrTqbvqBMS9wPMKcPdZuEc948olaH-uPSAAI9evWkImRHbQc-kUVZ9Ko3hHQt9TdF7YVni-HjGILb0WbInVxc5bH_tt6vmP4LKHJkmH14SJeVBLRafC3FH6uDIT348CCHt1oZXZFJXczdwsLPvWhA61HpYNnq6p1i_8foN05ybfGUjSYB7vPi_J8QUWEAf1VyLN73BM-HHgfiXGfwFcazhDi4IJxbKKmrq1T_7K5hIY1bYinDjnrPDbRwG3c38fHsrb8cknd4ZtFu5Yw-MRNQcpBGFCkbgm2k3wiBpwGMzqoKXmxaR6sDY-LnI3XwmVGdVlGtWgGsyFalX40EAs53sJnSiR5QBHYUlBkZ5_WalOc_GGMXDdfhMpNWrB7Z1d0YlHD_TqMXQHMCOYvuxHC5GbGxMpG-MUDxz7ei48ol1dmh0jtoNFUfrGmOZGT06YlHDFWjfecealK9X7GLTdq0RSoWBEd0cOw7dYRJ15sWciOkrg3mKf-bDep9a_qMkSfrrC05xyb8RBbRj8wjXfgGnrD2YwDawPJ6RHJ69fU4R-TzYOJgScdSDiQyU3DuxHjad3uY9y-VvLlpmUR60B-ajODsfyQuyUBY9TP3DVrpG6Xan6UG8sTC5KASC9gUd54cH5s2MAYWnxlmBkrqNpdhptAqXLZkmjXGB7404Tmp0DIjrQPG5zLAaUcCmfMeY-CEnmvK-U6AA-F0OtcNLWyxhauIFiPoAN7tEaRPtB30Wt002VzzqRC0lJyXWGPUqP7Lzi4LzUZWeBaBEnCI1aQ4hIs2fsLaGtuG_O_HkRRvSXYJ-gVceoX24wKId04wnTzKzwqQI85F6ImxjBm4eUNBpXZZ1a5F2c990MREJooDWmQxI_TX36RUU2ms_XVGAfgJr02IjNv0nMj9HuGvWDoBfS0RCnIBr59nicQkIQ6enRD_-zMTdgyoubaSVPoFDvgjwjpOn-QO0GrSHWHXSxIEEbl3ApCakg6v7wMvxHvUgHPrZdPcIWgtMK0jTAyv-CGTt18dYR8HvW1FQSSlp1NkQ88DcU-YrfoUOxsMPrg0jATeKjmket6H0O5o2Kiym2NW_gm9jMORp5S7x70BaVj0l5GukKkCqMOf-QXWzOmVWiGFMHHBatHrnmPNn6mXKJrjtN_jnAB6KXZxIfj1iCCLKmPPYCPrb3KQ1LGCxfyJzI7aaC-7yEopmTQfsY83WOvfRI94y8wpCvwVqjn37PMknwYQv5lWQKk33BF3EI6pEYo9izn4KeBILeDxZM5IfFNaHW8FMSRb842cdg0KDDdUMGO4w3B_RIP7f8jT7L-5MTfG_uRHOum90-FBTXoFTmR16mLvcIsEsfI7u3T3h0EZd6Sw2pTxG4nQLqZJBZyIrc-GCn4shAVl3Zb_Lkaa9NRa83sB-jLLlnKFvhBtw3LUD4bLNZQ_BZ5WrMPeWtN8Ta1NIXbVDiPS3auTAGhMeNNTUoi7L-CWiOfU7anuFdOwlmwQ2KrXYBgAFM_kNMN1LZlcCKJBV-jAfOZkU2az_5XkcSn8S2RMdWnyAAlFf0ehgjbrVYz7nqSpqIGNVx5_atH5VhUMInTUpb91HQZZiEuSZN21EASokBf0zx4jqKpKPQwNajhubDIWJz3ldnhEqA_wzEKIUcp6Mh3M_Ghvup2mPGY6y6TSPo0N7D0djs7Iusm0opEMwhKV0yQTAUaTFmsUTSLLojCQpOnjB3HO98x2RfyZ-fBXqI3VzCx39ax_t37RHZqw9AXiTKKKeJGetXuJWISV2OTHY_onzXOPAvo6KCl13yf2t6-UeOnFhG7siWgEhCOpcsIsoiT9OqXW87IqT-Q2mBDEJ_yFCe-Edcje-F30NfOgcYPJ8JNrM3NsLl4ov-MtbSryZZX8B9isCv1jRg151lzsEQYXpSayEs0HvwbNPcUabPpgzsQit4Lqu3KALp7Ij2cyVzpyqQtGQ7aQgLPHcw74G3He9WVzhmsUeaBazNIxaQSPkvh4M3agI9mweBEfSpE6Zbc35LsfzLfUqKhejNRMdKJWuuEvWBe8FJ34Q7qkDseDXc8qhyfp5_VDBIWtlBIyZMNY2-AWNwtSIKgx5e44bIiZN4UcrGaTCwE7hqaXt2OBX7-j7pETK5JWRcVXahlyPtTpAY7FQa6g_65GxEEXeuVJ7BAMA_Q2TsY37rRr2ZuoaKvSw2IkallfnRL274L8YLT1sDIrKImEw0bFpW9Uej_OaXMbd9voYC8SdqcS1j1YGfu9vsxKSg51L292tTICMWxNFA1G6h3r8wDBpE3Yt_y8c1rd1Mmluk-stL6nULd5N_OOQiQtM0Qi-kSkx_eRb4NejFrZxon-6DvSd0riflkVzJV0aYzOIhStpiNxXB5t2Oe5JP051DLARK_gk7yWJWWAOpAixOycg_AYEbTOhny8j3pEqOa6hhzvdyfLeaSSXZu0MyN349eTHO6ZqSmFy4uzy8uCHl576sd7cEWS1mb2s2QJCv2LRwWUdtfA3tMiRMa_QqnC1F6jSLDzzwQZEJuvLTZTBNCDdKddoJgJcDH4bdR8Otw4UnTa2YUFLdChGtYc38EuO_DsCRzy2jJu2y4BPY96YZovZ2s5MnhEL_r2wYjOIE9n3L0DAN_7MRO7na3C1dIAqG4Zx2W2zpSCLriDeTWccsMCB5YCmUFeldqYlMLv0JotVBgKEIp5Yj9P3fTd2Stv2WW_Hb1xOoswrLrj8uiYGPOHLwPuQSrMMyRIu-H8M7ahmIorOcyKXLjgL5n3HKIrEM-9hbwC59jFVxuVKvMIhE84zB8efuXjA9ehsSc5moL3QIORP4UTO4AzdXvtMsULilP30sff2CZ2I8ntRObXh8SyK-oeC0rBJ92lQF3MeObKZVWqVevkzGldQabc3YQZ_OXh5AVfiKUmU46Rnu5OjbWDEw8iVuaNJbTl_TDC75Fp0VlRjfYIPVcfIkFJIzK_HZ351yyK7HwEwK_Ehvepg6OYi86Q3Ha_PH5Q1hb8jxBjx3m6u9eBteGLCfqD9TmureVRre2rF1BHY7HHowEZy49QCrfB5qOrmcaVb5nH2nuUts5D1S6J1DaRGY6fs8byGG5AaSVR6pbvJ1cd_0Lp2pLL3MHWMijOBAP6oaOsTUqkEASDLYL6OFbDlmmFn-OTCLPN8iOwTUVO02mAWZdUo6Py2MC5sWrusa4rJj-0Gjt2UkckdthQIl178Whh1X8jufxv2e3e1LTkHBrMyVGHfYLAT_V-QnEUGOg2KQtVZP_4E6HN1KU6f9uaGdmMINWmZMaKV0gyJXshT8ip6QvOod8WZV8mRvebRWf9PTb5XvNXTrpvzrpvgenfFZlrjF9PYGAb-41NykJzPTgDEQQPMS_bN3N8cIYmsb-Ng8tRntoKQt2Eb1HzDWaFKp_YWr8l3fjPk_WJiAqAT6zUAuuHB3gwsF8MhRktU7n1bGho6ZlkeddjkKJHve3n1Bu7mt1fIJ0jYAdNV5AJcxdhZqbWckk4pE300x8PeEBBqMxx6YsuGLLV__dNqqXegN92MXPHIgjSy4DQX2xsfnymqqFNESTtYm8i6vXqT4tS-eeCGVO9fWhJrkrFHtq9M1ggBZfCS7ZbiEdKa0ZL9je54y9gwe3kFikyQDZbJ_01fLaaIHKSonOn0c1DwvBhUY2YWlrQiMf-TVm6uzIxoWJCP9DowwOXQL5UVkoaicsOwHkfY6Q2bRH5qbXxw5RmgFs2OrRvggjIRssvy7cCgyBOQW_ceTtT-gU20j1afy4-2kQU_WaetvE7cnd0Eg_bpfSfE4qUp7XZ2WHuDfgvoY6WgR5Igjajy1-A7UJWqCFjlvB_3ytXFoci2uVjRuon2qNS-ZUuOJz03Z6qwhy2K9GXjndzHOUrAbzmxhBaoXCYAHvbtu-_JVBlkxE4MVvPGwhyP3oJFYNcewOjsR9k5e2rt71I2MBNpnMCgGYPrOws0Pq7pPWlyUSTAD0xa_D6kbnze0Tggdu59wznG7vL6gOLzoRS5QaGmWbe1rLeEnvPL1ekp7r0keAL_kZJjnGzfZ9We1fYht9uCyQR-QbwD9kyrtAP33EBOZcImqQh97_PVB33ENwS0NNrObM3cL_j0-QeL_I5lWrACL8G9z6Zb8_BB7iwDUsm40HsnCwM1NHS4nUWaPE3Vy82OzW_tm3ow65vzBLpgBiiFaNCyCUAbPjZxDy_-tYveKPPQ1rRU3WSY4dqSeRwCsT3nvNPiw6lwHarLuGfFb0VJbsrGmGCIIS-oopLSoHuYH9fPVVUV0jWjPVt1Q1SQ8cc0PsKmSkKfkUTdYuPhTPwJaL540nAf-Xo0mZlhzKVwxkpYm7dI7Lmn5PU7DAKQXdsYPiBkGRuBqFm68JPu1J1PyJPH1t65TmZ1zKWkACogTp-pWpTsuHtObT2IwpCaUB0s-GEa7XePrrLrxiuzI2J0PM5LDBxt0NFvwk6vahaTZgF7Ki-5LWpTS4i6vHzfwFRFw_SmQF9ZRPvtadN0NFLbghAgp4tL4AD5vWSHhvVhqZcyDhcxpzwo7sv24UfWseKbDmgkViYVzkQBqcra7Etgr0pbsrOpdE1f5Mnd7VAbfsQZSFrwVdb20XOq4t2ZNOlNUfCPHuywbqoMMm0xUdT8gfyH4wrUi5uN9FvNU-UUoQ-k0-JDX_Og9JMQdZg61q2Kac12GPxghijQwikDQIRVIjcdlLUe-CKeW42hx4CscjSMdyumaFClL4aimKrIKYu6jl7m5yS80reHjsGEH35N7PesmrCVmC7dstslVd9hlHc9IwX-my5YtpWeBDs301g31mfwa-AvO9ex4TBv7SxV2rspuswescpR-VPU3Pi2k_LNVRxZDEPHCEbcLU3UCIACBsengnP87qbH7E3f8AISj0gJZ5hzYB1f0cQufDRsfh7vS0Ev42UerS3rULQV9I4i9ZG4Ic9SwdnlEXOzzkd98PaIELxb5GW-I309LE1NBa8g9kcQCNc2qTHCu34zbYKqiAp4keIT3ZbO3d_5woNu6eLPr1hiiYEXe-pVcQ4q-YpdBtNyK6BUmeXH__QDsYpfMNrpjWbM1ziE9Fgi0OBG15uUasFZoc4Mreb-ZE_8Jtn3u1C941yZ1GjXaUHHvBoKoDae5KJpuSQU7rruFUx2H2mOyFoVxBOexQBQrFCCSYdnD6AVTF3dxQiJW8Gb7rK1F7VSXckTIrhGSjBWLFLs7YAd2nQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f7cfc1e85e74f86016ae80249544887d1bd1cb036cf3eb8f9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9398,
+    "completion_tokens": 558,
+    "total_tokens": 9956,
+    "cost": 0.001453675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9395,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001453675,
+      "upstream_inference_prompt_cost": 0.001174675,
+      "upstream_inference_completions_cost": 0.000279
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 270,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

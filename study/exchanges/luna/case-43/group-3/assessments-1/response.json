@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible news and press content, awards carousel, and footer information. The carousel shows a different set of awards, a permissible slide/content variation rather than loss of core page information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and sections are legible and coherently arranged. Differences in scroll position and the carousel layout do not make core content unreadable or unusable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cookie choices, news links, carousel arrows and indicators, newsletter sign-up, and footer links have understandable labels or recognizable icons. No essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views depict corresponding regions of the same page, including its news, awards, and footer sections. Their differences are assessable and consistent with layout and carousel variation.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, descriptions, award captions, and footer labels convey coherent meaning for the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating content and layout**\n\nI need to assess the target at y4000, focusing on the news section. It seems the header is missing due to a shorter page layout, which affects how the window target aligns with the top product image. The content alignment for the same article text is off, and the awards carousel might be affected by slide changes. It looks like the footer matches the reference, though the sticky header at y4682 seems hidden during scrolling. Overall, the content fidelity appears consistent, and the presentation is coherent.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content and layout**\n\nI need to assess the target at y4000, focusing on the news section. It seems the header is missing due to a shorter page layout, which affects how the window target aligns with the top product image. The content alignment for the same article text is off, and the awards carousel might be affected by slide changes. It looks like the footer matches the reference, though the sticky header at y4682 seems hidden during scrolling. Overall, the content fidelity appears consistent, and the presentation is coherent.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Ab7emuU9g4N_gR68Ryx1nmF-hQqu4B5uATNJI1XOdZKkXhe_zUZ_KERf_C_sSckBGJ_-psN26H61x8shE1unvqLi6HWmaQsQzYyTJ4fDjwYK8DDOmOSzYobITpjJ_o4baBcVkukxIz3lPRk3bEMFZLkrRFZPNqHvvVS-Zjc75zEDjS0znwuq3nuDG8Rb7qPP5tmLRytLFBtXjQeAEKhMbCq_T_4euq0H_I2gOa2HX64sVG3G0kAjamwgF6CeC_XugHG3fGnEH8dbEi4ZI_h1IH7f2UKmxVy1rhkEwUxP0PZ_1MZ3aWnQDlDGZVwZY-WcphFowDiiSHhsZSz_EuZWdWO9GKnezwzVck4PI7mz126AV_thmUQ6snnIv6oAwYEajz8hsgK21NAB7CTmzT6BuVFhdLH5ZP-hEdokYLPWpxOpRyxDWnKUG49V9oQGuXtEeSvoNqAUmlzC9VvCu2Ir8jaAYSH8NNUixHv3QIb3v0QqSFn0VECnVBKUtwbeyIGG78ouSgnJR7Y-wwL8O2hHmJS1nmXCT5jKETXzSAPwwcmYDu4A6-5VYrsbQsXLgS35f9M6hAndESCtsVTwtC7KJaGDdZTs3sClx_1dkUt8PeZ_LyH1YTtmdbVu4NLYllkVws540OX2n_YPE_VV_5440DNEYda_GgkqJWXpfsOwdi0JX7FhsReiI0_LWT_5S9v8Zk4PFk5cLpaKezv8kHdWO8XWfheJHYOsFck7Opg-Mg1ooKbnLcW-DZ_0q6ci2L0g7JosIkKcwUfMyq0lbJGerF4nodjJzu4plKr9hNKfDVbIYyaQ-M4Ark_Kk_qdE5vTdlb5EBPZqM2FNooT9hJ5udEwk3u_y5hXdJgymQ53ddsUTM-E1M6RWQM87Z9fIJbd9C5mgEPKYntWx0rhsJlHzGxNu1Fv1Ayga2n5c9Ryh6NdOcOKJyHYyWmwZ1rfioMdyCiuKEi5dFi5L35fw1LjmhLDVo5i2KgiZCC_R42u1yNG8OXWE5HP_9gN2mn1GQmLDSi5UbZlXUFHkjRIQVkkw_YK0ZmeXxcOlJ_2fU5kaSxD2Nw9RVjFlKlk2fCaTeNju1VA8xi2F7n5Tt_P2-mBbc0Svr6xNkCI6V7O4IfaEa4qx7kVI1aQgN-f7NL8apOTToBddlAUpERsGmCrbZdMS4tvviXd6pZ6RfFCzyHuyoSRMCv_X-zP3233w_tSMhuHJAmmCn9OxsU20SvH3cG7hhSIMjUa7tAQ89PkJ61TmeNQb8y9BWglGwYiRUkSYkYTZQznU4uiMfjnR_xTDqz5sHDYxQT51JckE10iXHq-VHfPjUnPG3P_p9zOMr7RYszWxLeMPwVvwJLQT4W9fM8cv_aPaZABeS6RPwz9OfkCuCmTxEHieyDp536uJyC5sofkcDJC7VimUNx7qufkv1dvKmt94d2FPMVK1clS6cLOJ2ofakJNtqMB6kdZJOrG76f7rhHljNFO-v5hppCjp0WyOZb-33Pwe5gpSP5MSHbzaoaAIpJ26iCrK2xqo1zvVsDEx_UOg6ilcDlUDCXqDbGJ4aKFbqsJMB3xBYNuhd9FEbZ2um9kMepfi3HApzHHii04506fdFumh3s-Fh-4z4tllfe20nMasSAbEsqDHuW2ejLBfz1hHhJYeou2XbazllKnSBUJEZdGtu48JLKOEw8GuZl8Z3tdeRlAgofk6TnLJBl9CkunHyFQy7aZtVcHUUpeHm8iA1RM2OpS2sKOKy7MGigpqz89KGZToO99RR8-4cRxKNRQZ5DmpVkgLaF27VG-ogc-Ix1ZoPv6Jot5rOaCJZx2EHJLmrZJUKPLnHdsEV84mBbIWCtB7Vz2OMImHLIVsB0fGLNevKpWL_Q7tZw3YtUUcAr1Rb0vzRLlGv9oi020TnbfGXdbUQAEIp0UN5tzzynFM7Wq_Uu0--VjYDnkZxQkdbaAqJHEDkPAXaKD6wPh85ShGFyAVBZiMMKsclUpQubvgLgChETUGSQMBlf75ZFR71AYW6__GNPYnXgE2wWm4Dz2b1tv8TR-zu1exWnV99Do4LxfrIB_sEZTFDjrcrv8bV1gvXGPEhfg6b4Q0ZCO6i_XKdCPAY-qPGMpjdG2oS5pRREjdNNLzT2hZgxpRP3KlKUs1Dqq7wvrydyy8JCB7u5N_t_3d5vVwByW6FSSBStx593qw_jxjvH8wiZDHedCHMF-1VjPj30pH5XbPbWp2W1-DqY5_I_7wsMY5PvNpPERIz71SCzJ0JJXHanW2rfhaWA9XErf4UY4AQW-iGO-NNN73qcin8G-bEegPDCtGE94VtzYCukgFQ1pXvOns-hdIIZzI5HacoB4yslsWxFLAXOxzjHMoq59NKMcPO02DY1cAHgud5mD4SjNhStIdLxld7PNcWP6ySPjqWooK2r9aQr9NF7o6Dn81ka3DEF8bv4UMhTt-JBFaDDNhGVUkJZ6CYTSE7GjnDK54HxZfawPDCXoicfmkWYWB3BBj_6WJan-arXOlhLVWsXCIRhHhFOUeTpTY6AQAI-5ERGoo_Cku5d-33JvZireU7Cqipdwb6fYs9TgyHn7Ay2cs-TLbQqtMqw5-wrBUTRUxNZiw-m6bxRheapRoFZ3JwViL6T_5M9muTGxP5dbns-dHxyctHLlP-dzTd6rqBF9OJ5ya0gBbtVe09bIxtmiipiWLNPoyi0zTO-nixFWay8d57pQOUut6mNy8dwEWyfJiqPGfmVLPf451caWgw6PaMPQb2WqLx6EuCnNVS_L-F7yp13f9llYJ4vrtaEgK5y7at4uGR02XAHFtp27RTRwGvPV3HM9lBXP03GLtzPyeWIFIK00QTgd5nhxsew1c7JSV898dCOgnSupxlrSwSl_FcuSlvhostPe5-YFstFCSK37L9H_21zDBn91s4137EtMH1vti0wn97DGOd7y0lYTIMItvpE_Zz-PeGpXrpZ6Th5_tANg97PXyP_j0zLAyrz8P1XmkV7LgLVqACaDmuhBK371JmWX_2AAYh_1_XZ2hikGf3Enw_UICeaUL2bTxENfdSJ09ptHgolJJKI65XNE_Rbxh5Zb1Pjbf714o-hDEEvFQYrjuYs1_QDIDpzPElgvHoAODauZFzAdhmON-lTe6Y-R1lhu2mAL4REYxwmVXgHEbZA05H8D_dEM12jUm2hFPZ0Q1tvHRqicXhCAV1C-YBtfdKA7LyBQT0vSt-0dQIIjw7D9GKw90zpCRIPN5ZogJyKto8yaz_-yrs40INgn2OCVdOMysjUNTP98xtkeKojxZCsicC10ekNObwEY7nwoIn1ewyLNERGIUbH3DVLQKpUq75nwS9XWvbiTjNJeWJ-JiMXHisVfrOyXu92gT2r12S5zifcpVvN6uJGb4llvPXX47ISp8YIGeiq2nfyVslUBCRS07JWO0r6jnqkF0SNHdN6JrXG7mNU4XvFupwQemp6EDuB3YeSUrw1uBjKnA_z2wPeUXJTk0-Rba1GXeo56Gy0rwxj_T4XvicKHNu-hiP5eLiVJOTGwQp4VrBX7iZUs12jkLQZhALPerMKRbAravoiWwyM6OoohE1GECFeaO02GaxKR8tT.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c198d5fe32a6f8a016ae806f8f4e887d18af2fb204a5d0d11",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10638,
+    "completion_tokens": 432,
+    "total_tokens": 11070,
+    "cost": 0.001545675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10635,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001545675,
+      "upstream_inference_prompt_cost": 0.001329675,
+      "upstream_inference_completions_cost": 0.000216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 148,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

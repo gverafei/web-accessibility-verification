@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Ubuntu is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT." name="description"/>
+<title>Enterprise Open Source and Linux | Ubuntu</title>
+<link crossorigin="" href="https://assets.ubuntu.com" rel="preconnect"/>
+<link href="https://ubuntu.com/" rel="canonical"/>
+<style>
+    @font-face {
+      font-family: Ubuntu;
+      src: url("https://assets.ubuntu.com/v1/f1ea362b-Ubuntu%5Bwdth%2Cwght%5D-latin-v0.896a.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 100 800;
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: dark;
+      --bg: #1d1d1d;
+      --surface: #262626;
+      --surface-raised: #303030;
+      --text: #f7f5f3;
+      --muted: #c4c0bd;
+      --line: #4c4947;
+      --orange: #e95420;
+      --orange-hover: #ff7043;
+      --blue: #9bc7f5;
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 1rem;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Ubuntu, "Segoe UI", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); text-underline-offset: .2em; }
+    a:hover { color: #d0e4ff; }
+    button, input { font: inherit; }
+
+    :focus-visible {
+      outline: 3px solid #ffb38f;
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 20;
+      top: .5rem;
+      left: .5rem;
+      padding: .7rem 1rem;
+      transform: translateY(-160%);
+      color: #171717;
+      background: #fff;
+      border-radius: 3px;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .wrap {
+      width: min(calc(100% - 3rem), var(--max));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      background: #252525;
+      border-bottom: 1px solid #393939;
+    }
+
+    .nav-row {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .brand img { width: 30px; height: 30px; }
+
+    .primary-nav ul {
+      display: flex;
+      align-items: center;
+      gap: clamp(.8rem, 1.8vw, 1.7rem);
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .primary-nav a {
+      display: inline-block;
+      color: #f2f0ee;
+      text-decoration: none;
+      font-size: .93rem;
+    }
+
+    .primary-nav a:hover { color: #ffb38f; }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+
+    .sign-in {
+      color: #f2f0ee;
+      text-decoration: none;
+      font-size: .93rem;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+
+    .search-form input {
+      width: 150px;
+      min-width: 0;
+      padding: .45rem .6rem;
+      color: var(--text);
+      background: #1b1b1b;
+      border: 1px solid #666;
+      border-radius: 3px;
+    }
+
+    .search-form input::placeholder { color: #d0cecc; }
+
+    .search-form button {
+      min-height: 40px;
+      padding: .4rem .7rem;
+      color: white;
+      background: transparent;
+      border: 1px solid #666;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .mobile-nav { display: none; }
+
+    .announcement {
+      color: #f2f0ee;
+      background: #111;
+      border-bottom: 1px solid #3b3b3b;
+    }
+
+    .announcement-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      gap: .8rem 1.6rem;
+      padding-block: .5rem;
+      font-size: .94rem;
+    }
+
+    .announcement-label { font-weight: 600; }
+    .announcement p { margin: 0; }
+    .announcement-close {
+      margin-left: auto;
+      padding: .35rem .6rem;
+      color: white;
+      background: transparent;
+      border: 1px solid #666;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .hero {
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 82% 40%, rgba(233, 84, 32, .15), transparent 36%),
+        linear-gradient(110deg, #242424 0%, #1e1e1e 66%, #25211f 100%);
+      border-bottom: 1px solid #3c3937;
+    }
+
+    .hero-inner {
+      min-height: 430px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(250px, .7fr);
+      align-items: center;
+      gap: 3rem;
+      padding-block: 4.5rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: #ff9a72;
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { overflow-wrap: anywhere; }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 0 1rem;
+      font-size: clamp(2.6rem, 5.5vw, 4.7rem);
+      font-weight: 450;
+      letter-spacing: -.04em;
+      line-height: 1.06;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin: 0;
+      color: #e0ddda;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      line-height: 1.5;
+    }
+
+    .hero-rule {
+      max-width: 680px;
+      margin: 2rem 0 1.4rem;
+      border: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .hero-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .8rem 1.4rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: .65rem 1rem;
+      color: #fff;
+      background: var(--orange);
+      border: 1px solid var(--orange);
+      border-radius: 3px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color .15s ease, border-color .15s ease;
+    }
+
+    .button:hover {
+      color: #fff;
+      background: var(--orange-hover);
+      border-color: var(--orange-hover);
+    }
+
+    .text-link { font-weight: 500; }
+
+    .hero-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 250px;
+    }
+
+    .hero-visual img {
+      display: block;
+      width: min(100%, 300px);
+      height: auto;
+      filter: drop-shadow(0 20px 35px rgba(0, 0, 0, .25));
+    }
+
+    .notice {
+      margin-block: 2rem 1rem;
+      padding: 1rem 1.25rem;
+      background: #282828;
+      border: 1px solid #57524f;
+      border-left: 4px solid #74b3ed;
+    }
+
+    .notice p { margin: 0; }
+    .notice a { font-weight: 500; }
+
+    main { padding-bottom: 2rem; }
+
+    .section {
+      padding-block: 4.5rem;
+      border-bottom: 1px solid #3d3a38;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin: 0 0 2rem;
+    }
+
+    .section h2 {
+      margin: 0 0 .7rem;
+      font-size: clamp(2rem, 4vw, 3.15rem);
+      font-weight: 450;
+      letter-spacing: -.03em;
+      line-height: 1.15;
+    }
+
+    .section-lede {
+      margin: 0;
+      color: #dedbd8;
+      font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+      line-height: 1.4;
+    }
+
+    .pro-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 2rem;
+      padding: clamp(1.5rem, 4vw, 2.7rem);
+      background: var(--surface);
+      border: 1px solid #4b4744;
+      border-top: 3px solid var(--orange);
+    }
+
+    .pro-panel h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
+    .pro-panel p { max-width: 700px; margin: .7rem 0 0; color: var(--muted); }
+    .pro-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem 1.2rem; }
+
+    .partners {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .7rem;
+      margin-top: 1.6rem;
+      color: #d2ceca;
+    }
+
+    .partners span {
+      padding: .4rem .75rem;
+      background: #2a2a2a;
+      border: 1px solid #484848;
+      border-radius: 2rem;
+      font-size: .88rem;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .news-card {
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.4rem;
+      background: var(--surface);
+      border: 1px solid #474340;
+    }
+
+    .news-card h3 { margin: .4rem 0 1rem; font-size: 1.3rem; line-height: 1.3; }
+    .news-card p { margin: 0; color: var(--muted); }
+
+    .benefit-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, .75fr);
+      align-items: center;
+      gap: clamp(2rem, 5vw, 5rem);
+    }
+
+    .benefit-layout img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #45413e;
+    }
+
+    .check-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 1.5rem;
+      padding: 0;
+      margin: 1.5rem 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      position: relative;
+      padding: .9rem 0 .9rem 1.8rem;
+      border-bottom: 1px solid #403d3b;
+    }
+
+    .check-list li::before {
+      position: absolute;
+      left: 0;
+      color: #ff9a72;
+      content: "✓";
+      font-weight: 700;
+    }
+
+    .security-band {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(230px, .7fr);
+      gap: 2rem;
+      padding: 2rem;
+      background: #262626;
+      border: 1px solid #4a4643;
+    }
+
+    .security-band h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
+    .security-band p { color: var(--muted); }
+    .security-facts {
+      display: grid;
+      align-content: center;
+      gap: .8rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .security-facts li {
+      padding: .8rem 1rem;
+      border-left: 3px solid var(--orange);
+      background: #303030;
+    }
+
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .solution {
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      background: var(--surface);
+      border: 1px solid #4a4643;
+    }
+
+    .solution h3 { margin: 0 0 .7rem; font-size: 1.35rem; }
+    .solution p { margin: 0 0 1.2rem; color: var(--muted); }
+    .solution a { margin-top: auto; font-weight: 600; }
+
+    .closing {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 3rem 0 1rem;
+    }
+
+    .closing h2 { margin: 0 0 .5rem; font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+    .closing p { margin: 0; color: var(--muted); }
+
+    footer {
+      padding-block: 2.5rem 5rem;
+      background: #252525;
+      border-top: 1px solid #444;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #4a4643;
+    }
+
+    footer h2 { margin: 0 0 .8rem; font-size: 1.15rem; }
+    footer ul { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding: 0; margin: 0; list-style: none; }
+    .footer-brand { color: #eee; }
+    .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.3rem; color: #c7c3c0; font-size: .9rem; }
+
+    .cookie-note {
+      position: fixed;
+      z-index: 10;
+      right: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      width: min(calc(100% - 2rem), 1200px);
+      margin-inline: auto;
+      padding: 1.2rem clamp(1rem, 3vw, 2rem);
+      background: #1e1e1e;
+      border: 1px solid #77716d;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .5);
+    }
+
+    .cookie-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .cookie-note h2 { margin: 0 0 .25rem; font-size: 1.2rem; font-weight: 500; }
+    .cookie-note p { max-width: 780px; margin: 0; color: #e0ddda; font-size: .92rem; }
+    .cookie-note button {
+      flex: 0 0 auto;
+      min-height: 42px;
+      padding: .5rem .9rem;
+      color: #fff;
+      background: #393939;
+      border: 1px solid #918b86;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .cookie-note button:hover { background: #4b4b4b; }
+
+    .cookie-note details { margin-top: .6rem; }
+    .cookie-note summary { width: fit-content; color: var(--blue); cursor: pointer; }
+    .cookie-note details p { margin-top: .4rem; }
+
+    [hidden] { display: none !important; }
+
+    @media (max-width: 980px) {
+      .nav-row { flex-wrap: wrap; padding-block: .8rem; }
+      .primary-nav { order: 3; width: 100%; }
+      .primary-nav ul { justify-content: center; flex-wrap: wrap; }
+      .hero-inner { min-height: 380px; }
+      .pro-panel { grid-template-columns: 1fr; }
+      .pro-actions { align-items: flex-start; }
+    }
+
+    @media (max-width: 680px) {
+      .wrap { width: min(calc(100% - 2rem), var(--max)); }
+      .nav-row { min-height: 60px; }
+      .header-actions { margin-left: auto; }
+      .search-form input { width: 120px; }
+      .primary-nav { display: none; }
+      .mobile-nav { display: block; padding: 0 0 .8rem; }
+      .mobile-nav summary {
+        width: fit-content;
+        padding: .45rem .7rem;
+        color: #fff;
+        border: 1px solid #666;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .mobile-nav ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: .3rem 1rem; padding: .8rem 0 0; margin: 0; list-style: none; }
+      .mobile-nav a { display: block; padding: .35rem 0; color: #f4f1ef; }
+      .announcement-inner { align-items: flex-start; flex-wrap: wrap; gap: .35rem .8rem; padding-block: .7rem; }
+      .announcement-close { margin-left: auto; }
+      .hero-inner { grid-template-columns: 1fr; gap: .5rem; padding-block: 3.5rem 2.5rem; }
+      .hero-visual { min-height: 145px; justify-content: flex-start; }
+      .hero-visual img { width: 155px; }
+      .section { padding-block: 3.3rem; }
+      .news-grid, .solutions-grid { grid-template-columns: 1fr; }
+      .benefit-layout, .security-band { grid-template-columns: 1fr; }
+      .benefit-layout img { max-height: 360px; object-fit: cover; }
+      .check-list { grid-template-columns: 1fr; }
+      .closing, .footer-top { flex-direction: column; align-items: flex-start; }
+      .cookie-row { align-items: flex-start; flex-direction: column; gap: .9rem; }
+      .cookie-note { right: .5rem; bottom: .5rem; left: .5rem; width: calc(100% - 1rem); }
+      .footer-bottom { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">#main-content .button { color: #1d1d1d; }</style></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="wrap nav-row">
+<a aria-label="Canonical Ubuntu home" class="brand" href="https://ubuntu.com/">
+<img alt="" src="https://assets.ubuntu.com/v1/82818827-CoF_white.svg"/>
+<span>Canonical Ubuntu</span>
+</a>
+<nav aria-label="Main navigation" class="primary-nav">
+<ul>
+<li><a href="#products">Products</a></li>
+<li><a href="#solutions">Use cases</a></li>
+<li><a href="https://ubuntu.com/support">Support</a></li>
+<li><a href="https://ubuntu.com/community">Community</a></li>
+<li><a href="https://ubuntu.com/download">Get Ubuntu</a></li>
+<li><a href="https://canonical.com/careers">Careers</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="sign-in" href="https://ubuntu.com/login">Sign in</a>
+<form action="https://ubuntu.com/search" class="search-form" method="get" role="search">
+<label class="visually-hidden" for="site-search">Search Ubuntu</label>
+<input aria-label="Search Ubuntu" id="site-search" name="q" placeholder="Search" type="search"/>
+<button type="submit">Search</button>
+</form>
+</div>
+</div>
+<div class="wrap">
+<details class="mobile-nav">
+<summary>Explore Ubuntu</summary>
+<ul>
+<li><a href="#products">Products</a></li>
+<li><a href="#solutions">Use cases</a></li>
+<li><a href="https://ubuntu.com/support">Support</a></li>
+<li><a href="https://ubuntu.com/community">Community</a></li>
+<li><a href="https://ubuntu.com/download">Get Ubuntu</a></li>
+<li><a href="https://canonical.com/careers">Careers</a></li>
+</ul>
+</details>
+</div>
+</header>
+<section aria-label="Announcement" class="announcement">
+<div class="wrap announcement-inner">
+<span aria-hidden="true">ⓘ</span>
+<span class="announcement-label">Register for Ubuntu Summit 26.10</span>
+<p>Live on Nov 12–13. Join us in celebrating the world of open source. <a href="https://ubuntu.com/summit?utm_source=announcebar&amp;utm_medium=referral&amp;utm_campaign=701N100000qk8UUIAY">Learn more ›</a></p>
+<button aria-label="Close announcement" class="announcement-close" type="button">Close</button>
+</div>
+</section>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-inner">
+<div>
+<p class="eyebrow">Canonical Academy</p>
+<h1 id="hero-title">Real-world SysAdmin qualification</h1>
+<p class="hero-copy">Prove your ability to manage complex Linux environments with real-world, performance-based examinations.</p>
+<hr class="hero-rule"/>
+<div class="hero-links">
+<a class="button" href="https://canonical.com/academy?utm_source=takeover">Get your badge</a>
+<a class="text-link" href="https://canonical.com/academy/exam-content?utm_source=takeover">Explore exam content ›</a>
+</div>
+</div>
+<div class="hero-visual">
+<img alt="Illustration for digital sovereignty" src="https://assets.ubuntu.com/v1/66f575a1-Digital%20sovereignty.svg"/>
+</div>
+</div>
+</section>
+<div class="wrap">
+<aside aria-label="Ubuntu 20.04 support notice" class="notice">
+<p><a href="https://ubuntu.com/blog/ubuntu-20-04-lts-end-of-life-standard-support-is-coming-to-an-end-heres-how-to-prepare">The Standard Support period for Ubuntu 20.04 LTS has ended. Discover your options.</a> Take action today.</p>
+</aside>
+</div>
+<section aria-labelledby="enterprise-heading" class="section">
+<div class="wrap">
+<div class="pro-panel">
+<div>
+<p class="eyebrow">Modern enterprise open source</p>
+<h2 id="enterprise-heading">Security, support and managed services from the publisher of Ubuntu.</h2>
+<p>Ubuntu Pro brings security maintenance, support and compliance options together for your open source estate.</p>
+</div>
+<div class="pro-actions">
+<a class="button" href="https://ubuntu.com/pro">Get Ubuntu Pro</a>
+<a href="https://ubuntu.com/pro/free-trial">Access a 30-day free trial ›</a>
+</div>
+</div>
+<div aria-label="Cloud platforms" class="partners">
+<span>AWS</span><span>Microsoft Azure</span><span>Google Cloud</span><span>AT&amp;T</span>
+</div>
+</div>
+</section>
+<section aria-labelledby="engineers-heading" class="section">
+<div class="wrap benefit-layout">
+<div>
+<p class="eyebrow">Built for the people who build</p>
+<h2 id="engineers-heading">Energize your engineers</h2>
+<p class="section-lede">Better security. More packages. Newer tools. Open source from cloud to edge.</p>
+<p>Ubuntu is an open source operating system used across software infrastructure, from developer workstations to enterprise servers.</p>
+<ul class="check-list">
+<li>Authentically open source</li>
+<li>Secure by design</li>
+<li>A dependable release cadence</li>
+<li>Stability through long-term support</li>
+</ul>
+<p><a href="https://ubuntu.com/engage/adopting-secure-enterprise-linux-desktop">Read our guide to adopting Linux securely in your enterprise ›</a></p>
+<p><a href="https://ubuntu.com/ai">Build your AI models on Ubuntu ›</a></p>
+</div>
+<img alt="A person working at a computer" loading="lazy" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_600/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2Fa0ca630d-woman-computer%401x.jpg"/>
+</div>
+</section>
+<section aria-labelledby="security-heading" class="section">
+<div class="wrap">
+<div class="security-band">
+<div>
+<p class="eyebrow">Protect your open source estate</p>
+<h2 id="security-heading">Open source security</h2>
+<p><a href="https://ubuntu.com/pro">Ubuntu Pro</a> provides security and compliance options for the full stack. Patch from kernel to library and applications, and explore support for standards including FedRAMP, FISMA and HITECH.</p>
+<a class="button" href="https://ubuntu.com/security">Discover Ubuntu security features</a>
+</div>
+<ul class="security-facts">
+<li>Up to 15 years of security maintenance</li>
+<li><a href="https://ubuntu.com/livepatch">Kernel Livepatch</a> for patching without downtime</li>
+<li><a href="https://ubuntu.com/esm">Expanded security</a> for infrastructure and applications</li>
+<li><a href="https://ubuntu.com/security/security-standards#fips">FIPS 140-2</a> cryptographic modules</li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="products-heading" class="section" id="products">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">One platform, many environments</p>
+<h2 id="products-heading">Ubuntu from cloud to edge</h2>
+<p class="section-lede">Build, run and manage open source infrastructure wherever your workloads live.</p>
+</div>
+<div class="solutions-grid" id="solutions">
+<article class="solution">
+<h3>Public cloud</h3>
+<p>Ubuntu images and enterprise services for public cloud workloads, with optimization and support options.</p>
+<a href="https://ubuntu.com/cloud/public-cloud">Explore public cloud ›</a>
+</article>
+<article class="solution">
+<h3>Kubernetes and containers</h3>
+<p>Run Kubernetes across public clouds, private infrastructure and bare metal.</p>
+<a href="https://ubuntu.com/kubernetes">Explore Kubernetes ›</a>
+</article>
+<article class="solution">
+<h3>Private cloud</h3>
+<p>Build and operate private cloud with OpenStack, with support and managed options.</p>
+<a href="https://ubuntu.com/openstack">Explore OpenStack ›</a>
+</article>
+<article class="solution">
+<h3>Ubuntu Core and IoT</h3>
+<p>Transactional updates and long-term security maintenance for embedded devices and fleets.</p>
+<a href="https://ubuntu.com/core">Explore Ubuntu Core ›</a>
+</article>
+<article class="solution">
+<h3>Workstations and desktops</h3>
+<p>A professional developer desktop with options for AI/ML and cloud development.</p>
+<a href="https://ubuntu.com/desktop">Explore Ubuntu Desktop ›</a>
+</article>
+<article class="solution">
+<h3>Data center automation</h3>
+<p>Provision and manage physical infrastructure with Metal-as-a-Service.</p>
+<a href="https://canonical.com/maas">Explore MAAS ›</a>
+</article>
+<article class="solution">
+<h3>Robotics</h3>
+<p>Ubuntu supports robotics development, including ROS and ROS 2.</p>
+<a href="https://ubuntu.com/robotics">Explore robotics ›</a>
+</article>
+<article class="solution">
+<h3>Multi-cloud applications</h3>
+<p>Model-driven operators help deploy, integrate and manage applications across infrastructure.</p>
+<a href="https://juju.is/">Explore Juju ›</a>
+</article>
+<article class="solution">
+<h3>Systems management</h3>
+<p>Manage Ubuntu systems and security patching across your estate.</p>
+<a href="https://ubuntu.com/landscape">Explore Landscape ›</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="savings-heading" class="section">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Open source, on your terms</p>
+<h2 id="savings-heading">Significant enterprise savings</h2>
+<p class="section-lede">Sustainable open source at the lowest cost, everywhere.</p>
+<p>Ubuntu has no mandatory subscriptions. Add security, support and managed services when they fit your needs, across public cloud, data centers, edge clusters and appliances.</p>
+</div>
+<ul class="check-list">
+<li>No mandatory Ubuntu subscription</li>
+<li><a href="https://ubuntu.com/security">Security</a> and <a href="https://ubuntu.com/support">support</a> options</li>
+<li><a href="https://ubuntu.com/cloud/public-cloud">Public cloud</a> and data center deployments</li>
+<li><a href="https://ubuntu.com/about/release-cycle">Long-term maintenance commitment</a></li>
+</ul>
+<a class="button" href="https://ubuntu.com/contact-us">Let’s talk open source</a>
+</div>
+</section>
+<section aria-labelledby="next-step-heading" class="wrap closing">
+<div>
+<h2 id="next-step-heading">Find the right Ubuntu solution</h2>
+<p>Explore products, support and resources for your organization.</p>
+</div>
+<a class="button" href="https://ubuntu.com/contact-us">Contact us</a>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-top">
+<div>
+<a class="brand footer-brand" href="https://ubuntu.com/">
+<img alt="" src="https://assets.ubuntu.com/v1/82818827-CoF_white.svg"/>
+<span>Ubuntu</span>
+</a>
+</div>
+<nav aria-label="Footer navigation">
+<h2>Explore Ubuntu</h2>
+<ul>
+<li><a href="https://ubuntu.com/download">Downloads</a></li>
+<li><a href="https://ubuntu.com/security">Security</a></li>
+<li><a href="https://ubuntu.com/support">Support</a></li>
+<li><a href="https://ubuntu.com/blog">Blog</a></li>
+<li><a href="https://ubuntu.com/engage">Resources</a></li>
+<li><a href="https://ubuntu.com/community">Community</a></li>
+<li><a href="https://ubuntu.com/about">About us</a></li>
+<li><a href="https://canonical.com/careers">Careers</a></li>
+<li><a href="https://ubuntu.com/contact-us">Contact us</a></li>
+</ul>
+</nav>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</span>
+<span><a href="https://canonical.com/legal">Legal information</a> · <a href="https://canonical.com/legal/data-privacy">Data privacy</a> · <a href="https://github.com/canonical/ubuntu.com/issues/new?template=ISSUE_TEMPLATE.yaml&amp;reported_from=https://ubuntu.com/">Report a bug</a></span>
+</div>
+</div>
+</footer>
+<aside aria-labelledby="cookie-title" class="cookie-note" id="cookie-note">
+<div class="cookie-row">
+<div>
+<h2 id="cookie-title">Your tracker settings</h2>
+<p>We use cookies and similar methods to recognize visitors, remember preferences, measure campaign effectiveness and analyze traffic. For details, read our <a href="https://canonical.com/legal/data-privacy?cp=hide#cookies">cookie policy</a>.</p>
+<details>
+<summary>More about tracker settings</summary>
+<p>You can review or change your tracker choices at any time using the tracker settings on Ubuntu.com.</p>
+</details>
+</div>
+<button id="dismiss-cookie-note" type="button">Dismiss</button>
+</div>
+</aside>
+<script>
+    const announcementClose = document.querySelector(".announcement-close");
+    const announcement = document.querySelector(".announcement");
+    announcementClose.addEventListener("click", () => {
+      announcement.hidden = true;
+    });
+
+    document.querySelector("#dismiss-cookie-note").addEventListener("click", () => {
+      document.querySelector("#cookie-note").hidden = true;
+    });
+  </script>
+<style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</body>
+</html>

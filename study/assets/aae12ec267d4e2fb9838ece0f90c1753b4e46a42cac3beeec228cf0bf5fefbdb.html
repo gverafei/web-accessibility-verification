@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Дром — цены на машины</title>
+<meta content="Дром - цены на машины. Автомобили и запчасти: продажа новых и б/у авто, каталог, отзывы автовладельцев, форумы, ремонт и эксплуатация, объявления и цены." name="description"/>
+<style>
+:root{
+  --ink:#1b1f24;
+  --muted:#4a5260;
+  --line:#dfe3ea;
+  --bg:#f5f6f8;
+  --white:#fff;
+  --link:#0a57a4;
+  --accent:#c41230;
+  --dark:#1d2430;
+  --focus:#ffbf47;
+  --radius:12px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.5;
+  font-size:16px;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--link);text-decoration:underline;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--white);color:var(--ink);padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:12px}
+
+/* Header */
+.site-header{background:var(--dark);color:#fff}
+.top-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding:12px 0}
+.top-row .logo img{height:26px;width:auto}
+.region{color:#fff;display:inline-flex;align-items:center;gap:6px}
+.top-row .spacer{flex:1}
+.top-row a{color:#fff}
+.btn-sell{background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:9px 16px;border-radius:999px}
+.btn-sell:hover{background:#a00e27}
+.main-nav ul{list-style:none;margin:0;padding:0 0 12px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.main-nav a{color:#e8ecf2;text-decoration:none;padding:4px 0;display:inline-block}
+.main-nav a:hover{color:#fff;text-decoration:underline}
+
+/* Sections */
+section{padding:36px 0}
+section.band{background:var(--white)}
+h1{font-size:clamp(1.7rem,3vw,2.3rem);margin:0 0 8px;line-height:1.2}
+h2{font-size:clamp(1.3rem,2.4vw,1.7rem);margin:0 0 16px;line-height:1.25}
+h2 a{color:inherit}
+h3{font-size:1.05rem;margin:0}
+.lead{color:var(--muted);margin:0 0 16px}
+.hero{background:var(--white);padding:32px 0 24px;border-bottom:1px solid var(--line)}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0}
+.chips a{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--white)}
+.chips a:hover{border-color:var(--link)}
+
+/* Cards and carousel */
+.hscroll{
+  display:flex;gap:16px;overflow-x:auto;padding:4px 2px 14px;
+  scroll-snap-type:x mandatory;
+}
+.hscroll>*{flex:0 0 240px;scroll-snap-align:start}
+.car{background:#fff7d6;border-radius:var(--radius);overflow:hidden;border:1px solid #efe2a8;height:100%}
+.car img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.car .meta{padding:12px 14px 14px}
+.car .price{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:.85rem;padding:2px 8px;border-radius:6px;margin-bottom:6px}
+.car a{text-decoration:none;color:var(--ink)}
+.car a:hover h3{text-decoration:underline}
+.car .city{color:var(--muted);font-size:.9rem;margin:2px 0 0}
+
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));list-style:none;padding:0;margin:0}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:16px;height:100%}
+.card a.stretch{color:var(--ink);text-decoration:none}
+.card a.stretch:hover h3{text-decoration:underline}
+.card img.thumb{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;margin-bottom:10px}
+.card .sub{color:var(--muted);font-size:.9rem;margin:4px 0 0}
+
+/* Brands */
+.brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px 18px;list-style:none;padding:0;margin:0}
+.brands a{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);padding:8px 6px;border-radius:8px}
+.brands a:hover{background:#eef3fa}
+.brands img{width:40px;height:28px;object-fit:contain;flex:0 0 40px}
+
+.split{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:24px;align-items:start}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+
+/* Forms */
+.search-form{display:flex;flex-direction:column;gap:10px}
+label.field{font-weight:600}
+input[type=text]{
+  font:inherit;padding:10px 12px;border:1px solid #7a8290;border-radius:8px;width:100%;background:#fff;color:var(--ink)
+}
+.btn{font:inherit;font-weight:600;border:0;border-radius:8px;padding:10px 16px;background:var(--link);color:#fff;cursor:pointer;align-self:flex-start}
+.btn:hover{background:#084680}
+.btn-accent{background:var(--accent)}
+.btn-accent:hover{background:#a00e27}
+fieldset{border:0;padding:0;margin:0}
+legend{font-weight:700;font-size:1.1rem;margin-bottom:12px;padding:0}
+.opt{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;cursor:pointer}
+.opt:hover{border-color:var(--link)}
+.opt input{width:18px;height:18px;margin:0;accent-color:var(--link)}
+.poll-meta{color:var(--muted);font-size:.95rem;margin:12px 0 0}
+
+/* Lists */
+.linklist{list-style:none;margin:0;padding:0}
+.linklist li{border-bottom:1px solid var(--line);padding:12px 0;display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center}
+.linklist li:last-child{border-bottom:0}
+.linklist img{width:96px;height:64px;object-fit:cover;border-radius:6px}
+.linklist a{color:var(--ink);text-decoration:none}
+.linklist a:hover{text-decoration:underline}
+.count{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:8px 0;border-bottom:1px solid var(--line)}
+.plain li:last-child{border-bottom:0}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:700px){.two-col{grid-template-columns:1fr}}
+
+details{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+summary{cursor:pointer;font-weight:600;padding:4px 0}
+details ul{columns:2 240px;list-style:none;padding:8px 0 0;margin:0}
+details li{padding:4px 0}
+
+/* Footer */
+.site-footer{background:var(--dark);color:#d7dce4;padding:36px 0 28px;font-size:.95rem}
+.site-footer h2{font-size:1.05rem;color:#fff;margin:0 0 10px}
+.site-footer a{color:#e9eef6}
+.site-footer ul{list-style:none;margin:0;padding:0}
+.site-footer li{margin:6px 0}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.social{display:flex;gap:12px;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+.social a{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;background:#2c3645;border-radius:50%}
+.social img{width:20px;height:20px}
+.copy{border-top:1px solid #39424f;margin-top:24px;padding-top:16px;color:#b9c1cc}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+<div class="wrap">
+<div class="top-row">
+<a class="logo" href="https://www.drom.ru/"><img alt="Дром" src="https://r2.drom.ru/js/bundles/media/drom-logo.0674e216a1f2780b.svg"/></a>
+<a class="region" href="https://www.drom.ru/my_region/">Регион: Москва</a>
+<div class="spacer"></div>
+<a class="btn-sell" href="https://auto.drom.ru/addbull/">Подать объявление</a>
+<a href="https://my.drom.ru/sign?return=https%3A%2F%2Fwww.drom.ru%2F%3Ftcb%3D1792208900">Вход и регистрация</a>
+</div>
+<nav aria-label="Основная навигация" class="main-nav">
+<ul>
+<li><a href="https://auto.drom.ru/">Автомобили</a></li>
+<li><a href="https://auto.drom.ru/spec/">Спецтехника и грузовики</a></li>
+<li><a href="https://auto.drom.ru/moto/">Мотоциклы</a></li>
+<li><a href="https://baza.drom.ru/moskovskaya-obl/sell_spare_parts/">Запчасти</a></li>
+<li><a href="https://www.drom.ru/reviews/">Отзывы</a></li>
+<li><a href="https://www.drom.ru/catalog/">Каталог</a></li>
+<li><a href="https://baza.drom.ru/wheel/tire/">Шины</a></li>
+<li><a href="https://www.drom.ru/electro/">Электромобили</a></li>
+<li><a href="https://www.drom.ru/osago/">ОСАГО онлайн</a></li>
+<li><a href="https://www.drom.ru/autocredits/moskva/">Автокредиты</a></li>
+<li><a href="https://vin.drom.ru/?utm_source=top_menu_link">Проверка по VIN</a></li>
+<li><a href="https://auto.drom.ru/rate_car/">Оценить автомобиль</a></li>
+<li><a href="https://www.drom.ru/pdd/">ПДД онлайн</a></li>
+<li><a href="https://www.drom.ru/faq/">Вопросы и ответы</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap">
+<h1>Дром — цены на машины</h1>
+<p class="lead">Продажа новых и б/у автомобилей, запчасти, шины, отзывы владельцев, новости и проверка автомобиля по VIN.</p>
+<ul aria-label="Выбор региона поиска" class="chips">
+<li><a href="https://auto.drom.ru/?cid[]=92&amp;rid[]=50">Москва и область</a></li>
+<li><a href="https://auto.drom.ru/moscow/">Москва</a></li>
+<li><a href="https://auto.drom.ru/cities/">Другой город…</a></li>
+<li><a href="https://auto.drom.ru/">Вся Россия</a></li>
+</ul>
+</div>
+</div>
+<section aria-labelledby="premium-title" class="band">
+<div class="wrap">
+<h2 id="premium-title"><a href="https://auto.drom.ru/region77/premium/">Спецразмещения</a></h2>
+<p class="lead"><a href="https://auto.drom.ru/region77/premium/">Все спецразмещения</a></p>
+<div aria-labelledby="premium-title" class="hscroll" role="region" tabindex="0">
+<article class="car">
+<a href="https://auto.drom.ru/himki/gac/gs8/664922829.html#from=widgetPremium">
+<img alt="Химки GAC GS8, 2026" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/MUO18QFFjOwfNz0hyLKUmINiHLw4Y7-24vwmpyGD42-qD5_Of0OZ6ES4J7g-QRrFBEa7quIRQSpJF4kq/gen272wb.jpg"/>
+<div class="meta"><span class="price">3 510 990 ₽</span><h3>GAC GS8, 2026</h3><p class="city">Химки</p></div>
+</a>
+</article>
+<article class="car">
+<a href="https://auto.drom.ru/moscow/mercedes-benz/e-class/474418274.html#from=widgetPremium">
+<img alt="Москва E-Class, 2019" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/DDGgPi-aa2b0VaORor1eEgceZsX34XgfNREvqcti6WGRbuEYOs6JnDIsQT6-FRxrBhyfDpktV6s___vI/gen272wb.jpg"/>
+<div class="meta"><span class="price">1 550 000 ₽</span><h3>E-Class, 2019</h3><p class="city">Москва</p></div>
+</a>
+</article>
+<article class="car">
+<a href="https://auto.drom.ru/moscow/mercedes-benz/c-class/248077910.html#from=widgetPremium">
+<img alt="Москва C-Class, 2023" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/WeBoQPCwHuyJ4gzlaP2wWO5ya75xd5ohL__SYM0Y2gDPYC_is2sZQgvsCmFMjrk3eg4APL095bCvGNCz/gen272wb.jpg"/>
+<div class="meta"><span class="price">5 100 000 ₽</span><h3>C-Class, 2023</h3><p class="city">Москва</p></div>
+</a>
+</article>
+<article class="car">
+<a href="https://auto.drom.ru/moscow/skoda/rapid/165931311.html#from=widgetPremium">
+<img alt="Москва Skoda Rapid, 2020" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/U7t2YmJQg2NpPrtO-Bw0-7LaCC41v39vnR7OSkVFeTUHcmYech6FAT1FZ-HxEHr62PT7-vjO9pPL3U_Z/gen272wb.jpg"/>
+<div class="meta"><span class="price">1 900 000 ₽</span><h3>Skoda Rapid, 2020</h3><p class="city">Москва</p></div>
+</a>
+</article>
+<article class="car">
+<a href="https://auto.drom.ru/moscow/hyundai/ix35/146014182.html#from=widgetPremium">
+<img alt="Москва Hyundai ix35, 2013" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/lkQj1qMCGJgyDL9JTll_1muox5nLgzZ_P4XT7X6-aaDA7A0z8cCdSyEVvLZfhAlAoiF6pGN1HHAW4PWI/gen272wb.jpg"/>
+<div class="meta"><span class="price">1 300 000 ₽</span><h3>Hyundai ix35, 2013</h3><p class="city">Москва</p></div>
+</a>
+</article>
+<article class="car">
+<a href="https://auto.drom.ru/himki/gac/s9/396213246.html#from=widgetPremium">
+<img alt="Химки GAC S9, 2026" loading="lazy" src="https://s12.auto.drom.ru/photo/v2/9SqH2ImHZyzuRIoUJgM_8SvLlYWvvgGNXYNnVUC_fWFt-yIN6DwK67eDl7Bb23_Jqga6SkHjMFZPCgA5/gen272wb.jpg"/>
+<div class="meta"><span class="price">5 899 000 ₽</span><h3>GAC S9, 2026</h3><p class="city">Химки</p></div>
+</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="search-title">
+<div class="wrap split">
+<div>
+<h2 id="search-title"><a href="https://auto.drom.ru/">Поиск объявлений</a></h2>
+<p class="lead">Выберите марку автомобиля или откройте полный список объявлений.</p>
+<ul class="brands">
+<li><a href="https://auto.drom.ru/audi/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/audi-light.75b6056d0e41acd5.png" width="40"/>Audi</a></li>
+<li><a href="https://auto.drom.ru/belgee/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/belgee.c9dc0cf1a4333132.png" width="40"/>Belgee</a></li>
+<li><a href="https://auto.drom.ru/bmw/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/bmw-light.d8554c1e92b03045.png" width="40"/>BMW</a></li>
+<li><a href="https://auto.drom.ru/changan/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/changan.9c8ae4ae573e17d1.png" width="40"/>Changan</a></li>
+<li><a href="https://auto.drom.ru/ford/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/ford.f71e8159380bf49b.png" width="40"/>Ford</a></li>
+<li><a href="https://auto.drom.ru/gac/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/gac.0b11f1136707f5ba.png" width="40"/>GAC</a></li>
+<li><a href="https://auto.drom.ru/geely/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/geely-light.7b86701812158965.png" width="40"/>Geely</a></li>
+<li><a href="https://auto.drom.ru/haval/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/haval-light.79af4b758ffdeb79.png" width="40"/>Haval</a></li>
+<li><a href="https://auto.drom.ru/hyundai/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/hyundai-light.9015f0d559caa06a.png" width="40"/>Hyundai</a></li>
+<li><a href="https://auto.drom.ru/jeland/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/jeland-light.83ccf04a21883dc2.png" width="40"/>Jeland</a></li>
+<li><a href="https://auto.drom.ru/kia/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/kia-light.0f5e2b451de7fb66.png" width="40"/>Kia</a></li>
+<li><a href="https://auto.drom.ru/mazda/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/mazda.c3208c174011a127.png" width="40"/>Mazda</a></li>
+<li><a href="https://auto.drom.ru/mercedes-benz/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/mercedes-benz.a0afa7f12a925483.png" width="40"/>Mercedes-Benz</a></li>
+<li><a href="https://auto.drom.ru/nissan/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/nissan-light.3e2c1b1a5b9d5f44.png" width="40"/>Nissan</a></li>
+<li><a href="https://auto.drom.ru/skoda/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/skoda.a9a03e95f464db4d.png" width="40"/>Skoda</a></li>
+<li><a href="https://auto.drom.ru/tenet/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/tenet-light.ccc1ba181967f30a.png" width="40"/>TENET</a></li>
+<li><a href="https://auto.drom.ru/toyota/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/toyota-light.c634f942f36c6b39.png" width="40"/>Toyota</a></li>
+<li><a href="https://auto.drom.ru/volkswagen/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/volkswagen-light.6d82214350fafc4d.png" width="40"/>Volkswagen</a></li>
+<li><a href="https://auto.drom.ru/lada/"><img alt="" height="28" src="https://r2.drom.ru/js/bundles/media/lada.85a26ecc218323cd.png" width="40"/>Лада</a></li>
+</ul>
+<p style="margin-top:14px"><a href="https://auto.drom.ru/">Показать все марки</a></p>
+</div>
+<aside aria-labelledby="vin-title" class="panel">
+<img alt="Дром" height="24" src="https://r2.drom.ru/js/bundles/media/drom-logo.0674e216a1f2780b.svg" style="margin-bottom:12px" width="90"/>
+<h2 id="vin-title">Проверь авто перед покупкой</h2>
+<p class="lead">История продажи, пробеги, ДТП, ремонты, залоги и многое другое.</p>
+<form action="https://www.drom.ru/" class="search-form" method="get">
+<label class="field" for="vin-input">Госномер / VIN / № кузова</label>
+<input autocomplete="off" id="vin-input" name="q" spellcheck="false" type="text"/>
+<button class="btn" type="submit">Проверить авто</button>
+</form>
+<p style="margin:12px 0 0"><a href="https://vin.drom.ru/example/1">Пример отчета</a></p>
+</aside>
+</div>
+</section>
+<section aria-labelledby="new-title" class="band">
+<div class="wrap">
+<h2 id="new-title"><a href="https://auto.drom.ru/region77/new/all/">Новые автомобили от дилеров</a></h2>
+<ul class="grid">
+<li><a class="card stretch" href="https://auto.drom.ru/region77/new/do-1500000/all/"><img alt="" class="thumb" src="https://r2.drom.ru/js/bundles/media/niva_legend-lm.da61c7d1f29bdfae.png"/><h3>Эконом до 1,5 млн ₽</h3></a></li>
+<li><a class="card stretch" href="https://auto.drom.ru/region77/new/all/?minprice=1500000&amp;maxprice=3000000"><img alt="" class="thumb" src="https://r2.drom.ru/js/bundles/media/haval_jolion-lm.5983210454ef50e0.png"/><h3>Комфорт до 3 млн ₽</h3></a></li>
+<li><a class="card stretch" href="https://auto.drom.ru/region77/new/all/?minprice=3000000&amp;maxprice=6000000"><img alt="" class="thumb" src="https://r2.drom.ru/js/bundles/media/jeely_monjaro-lm.07faed66359e797a.png"/><h3>Бизнес до 6 млн ₽</h3></a></li>
+<li><a class="card stretch" href="https://auto.drom.ru/region77/new/all/?minprice=6000000"><img alt="" class="thumb" src="https://r2.drom.ru/js/bundles/media/lynk_co_900-lm.9b22503aee3defe3.png"/><h3>Премиум от 6 млн ₽</h3></a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="poll-title">
+<div class="wrap split">
+<div class="panel">
+<h2 id="poll-title">Опрос</h2>
+<p class="lead">На правах рекламы</p>
+<form action="https://www.drom.ru/poll.php?pollid=1125" method="post">
+<fieldset>
+<legend>Когда все такси в России станут беспилотными?</legend>
+<label class="opt"><input name="Variant[]" type="radio" value="1"/> Через 5 лет</label>
+<label class="opt"><input name="Variant[]" type="radio" value="2"/> Через 10 лет</label>
+<label class="opt"><input name="Variant[]" type="radio" value="3"/> Через 20 лет</label>
+<label class="opt"><input name="Variant[]" type="radio" value="4"/> Через 30 лет</label>
+<label class="opt"><input name="Variant[]" type="radio" value="5"/> Не при нашей жизни</label>
+</fieldset>
+<input name="pollId" type="hidden" value="1125"/>
+<input name="pollaction" type="hidden" value="vote"/>
+<button class="btn btn-accent" type="submit">Проголосовать</button>
+</form>
+<p class="poll-meta">8 573 голоса · <a href="https://www.drom.ru/poll.php?pollid=1125">Результаты и обсуждение</a></p>
+</div>
+<div class="panel">
+<h2>Блоги «русских» машин на Дроме</h2>
+<ul class="linklist">
+<li><img alt="Лада Аура" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-aura.jpg"/><a href="https://www.drom.ru/info/lada-aura/">Лада Аура <span class="count">59 985 км</span></a></li>
+<li><img alt="Бид Сонг Плюс" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-song-plus.jpg"/><a href="https://www.drom.ru/info/song-plus/">Бид Сонг Плюс <span class="count">38 500 км</span></a></li>
+<li><img alt="Дромовский Москвич" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-moskvich.png"/><a href="https://www.drom.ru/info/moskvich/">Дромовский «Москвич» <span class="count">171 942 км</span></a></li>
+<li><img alt="Нива Тревел" src="https://r2.drom.ru/skin/blogs/sq-sm/60-x-60-niva.jpg"/><a href="https://www.drom.ru/info/niva-travel/">Нива Тревел <span class="count">56 391 км</span></a></li>
+</ul>
+<p><a href="https://blogs.drom.ru/">Все блоги</a></p>
+</div>
+</div>
+</section>
+<section aria-labelledby="reviews-title" class="band">
+<div class="wrap">
+<h2 id="reviews-title"><a href="https://www.drom.ru/reviews/">Отзывы владельцев авто</a></h2>
+<ul class="grid">
+<li><a class="card stretch" href="https://www.drom.ru/reviews/cadillac/escalade/1467014/"><img alt="" class="thumb" src="https://s.auto.drom.ru/i24322/r/photos/1467014/gen270_1749740.jpg"/><h3>Escalade, 2022</h3><p class="sub">27 отзывов · 16 октября</p></a></li>
+<li><a class="card stretch" href="https://www.drom.ru/reviews/gaz/valdai_8/1466985/"><img alt="" class="thumb" src="https://s.auto.drom.ru/i24322/r/photos/1466985/gen270_1749724.jpg"/><h3>Валдай 8, 2024</h3><p class="sub">13 отзывов · 16 октября</p></a></li>
+<li><a class="card stretch" href="https://www.drom.ru/reviews/esteo/mx/1467009/"><img alt="" class="thumb" src="https://s.auto.drom.ru/i24322/r/photos/1467009/gen270_1749705.jpg"/><h3>ESTEO MX, 2026</h3><p class="sub">10 отзывов · 15 октября</p></a></li>
+<li><a class="card stretch" href="https://www.drom.ru/reviews/geely/atlas/1467007/"><img alt="" class="thumb" src="https://s.auto.drom.ru/i24322/r/photos/1467007/gen270_1749698.jpg"/><h3>Atlas, 2026</h3><p class="sub">41 отзыв · 15 октября</p></a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="news-title">
+<div class="wrap">
+<h2 id="news-title"><a href="https://news.drom.ru/">Автоновости</a></h2>
+<ul class="grid">
+<li class="card"><a class="stretch" href="https://news.drom.ru/103960.html"><img alt="Объявление дня: российская версия китайского клона Прадо" class="thumb" src="https://s.auto.drom.ru/i24322/pubs/4/103960/gen473_4506857.jpg"/><h3>Объявление дня: российская версия китайского клона Прадо</h3></a><p class="sub">20 комментариев</p></li>
+<li class="card"><a class="stretch" href="https://news.drom.ru/1-Mazda-CX-Toyota-RAV4-103962.html"><img alt="Параллельный импорт еще сопротивляется: № 1 — Mazda CX-5, № 2 — Toyota RAV4. А кто еще?" class="thumb" src="https://s.auto.drom.ru/i24322/pubs/4/103962/gen473_4506865.jpg"/><h3>Параллельный импорт еще сопротивляется: № 1 — Mazda CX-5, № 2 — Toyota RAV4. А кто еще?</h3></a><p class="sub">35 комментариев</p></li>
+<li class="card"><a class="stretch" href="https://news.drom.ru/KGM-103929.html"><img alt="KGM отложил локализацию производства своих авто в России" class="thumb" src="https://s.auto.drom.ru/i24322/pubs/4/103929/gen380_4505326.jpg"/><h3>KGM отложил локализацию производства своих авто в России</h3></a><p class="sub">171 комментарий</p></li>
+<li class="card"><a class="stretch" href="https://news.drom.ru/Tesla-103959.html"><img alt="Tesla устроила эффектную презентацию нового Родстера" class="thumb" src="https://s.auto.drom.ru/i24322/pubs/4/103959/gen380_4506832.jpg"/><h3>Tesla устроила эффектную презентацию нового Родстера</h3></a><p class="sub">80 комментариев</p></li>
+</ul>
+<details style="margin-top:16px">
+<summary>Ещё новости</summary>
+<ul class="linklist" style="margin-top:8px">
+<li><a href="https://news.drom.ru/Nissan-Z-Nismo-103957.html">Для Nissan Z выпустили новые детали Nismo</a></li>
+<li><a href="https://news.drom.ru/103956.html">Экс-главе ГИБДД Красноярского края дали 10 лет тюрьмы</a></li>
+<li><a href="https://news.drom.ru/GWM-103955.html">GWM начал продажи флагмана и приоткрыл планы на будущее</a></li>
+<li><a href="https://news.drom.ru/103952.html">Пятничная подборка видео</a></li>
+<li><a href="https://news.drom.ru/103950.html">Объявление дня: американский универсал 1980-х с оклейкой под дерево</a></li>
+<li><a href="https://news.drom.ru/Honda-Stepwgn-103949.html">У Honda Stepwgn появилась «черная» спецверсия</a></li>
+</ul>
+</details>
+</div>
+</section>
+<section aria-labelledby="info-title" class="band">
+<div class="wrap two-col">
+<div>
+<h2 id="info-title"><a href="https://www.drom.ru/info/">Тест-драйвы и статьи</a></h2>
+<ul class="linklist">
+<li><img alt="Коварные статьи: за что лишают прав «по незнанию»" src="https://s31.auto.drom.ru/i24322/pubs/4483/103935/gen966_4505400.jpeg"/><a href="https://www.drom.ru/info/misc/103935.html">Коварные статьи: за что лишают прав «по незнанию»</a></li>
+<li><img alt="Записки водителя такси. Новые проблемы и возможности" src="https://s31.auto.drom.ru/i24322/pubs/4483/103870/gen966_4503358.jpg"/><a href="https://www.drom.ru/info/misc/103870.html">Записки водителя такси. Новые проблемы и возможности</a></li>
+<li><img alt="Суперхит осени-2026. Changan Qiyuan Q05" src="https://s31.auto.drom.ru/i24322/pubs/4483/103906/gen380_4504611.jpg"/><a href="https://www.drom.ru/info/misc/2026-changan-qiyuan-q05-103906.html">Суперхит осени-2026. Разбираемся в причинах популярности Changan Qiyuan Q05</a></li>
+<li><img alt="Китайское сердце для Kia Sportage" src="https://s31.auto.drom.ru/i24322/pubs/4483/103913/gen380_4504964.jpg"/><a href="https://www.drom.ru/info/misc/103913.html">Китайское «сердце» для Kia Sportage: проходим обкатку</a></li>
+</ul>
+</div>
+<div>
+<h2><a href="https://travel.drom.ru/">Автопутешествия</a></h2>
+<ul class="linklist">
+<li><img alt="Поездка из Красноярска на Байкал" src="https://s12.auto.drom.ru/i24322/pubs/4483/103944/gen380_4506835.jpg"/><a href="https://travel.drom.ru/103944/">Поездка из Красноярска на Байкал в апреле 2026 года</a></li>
+<li><img alt="Кавказ 2026" src="https://s12.auto.drom.ru/i24322/pubs/4483/103938/gen380_4506012.jpg"/><a href="https://travel.drom.ru/103938/">Кавказ 2026 – когда всё пошло не по плану</a></li>
+</ul>
+<h2 style="margin-top:24px"><a href="https://www.drom.ru/info/autosport/">Автоспорт</a></h2>
+<ul class="plain">
+<li><a href="https://www.drom.ru/info/autosport/103922.html">Формула 1 возвращается в Африку</a></li>
+<li><a href="https://www.drom.ru/info/autosport/103898.html">Гран-при Сингапура. Последний спринт сезона</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="market-title">
+<div class="wrap">
+<h2 id="market-title">Запчасти, шины и диски</h2>
+<div class="two-col">
+<div class="panel">
+<h3><a href="https://baza.drom.ru/moskva/sell_spare_parts/">Запчасти</a></h3>
+<ul class="linklist" style="margin-top:8px">
+<li><img alt="Двигатель 271820 Turbo Mercedes W204" src="https://static.baza.drom.ru/drom/1787113938697_bulletin"/><a href="https://baza.drom.ru/moskva/sell_spare_parts/dvigatel-271820-turbo-mercedes-w204-c204-m271-820-137484584.html">Двигатель 271820 Turbo Mercedes W204 C204 M271.820 <span class="count">335 999 ₽</span></a></li>
+<li><img alt="Бампер задний Ford Focus 2 Универсал" src="https://static.baza.drom.ru/drom/1770826696752_bulletin"/><a href="https://baza.drom.ru/moskva/sell_spare_parts/bamper-zadnij-ford-focus-2-universal-133702816.html">Бампер задний Ford Focus 2 Универсал <span class="count">10 000 ₽</span></a></li>
+<li><img alt="Бампер задний для Volvo XC90 2015" src="https://static.baza.drom.ru/drom/1763911672249_bulletin"/><a href="https://baza.drom.ru/moskva/sell_spare_parts/31353430-bamper-zadnij-dlja-volvo-xc90-2015-132240517.html">31353430 Бампер задний для Volvo XC90 2015 <span class="count">15 000 ₽</span></a></li>
+</ul>
+</div>
+<div class="panel">
+<h3><a href="https://baza.drom.ru/moskva/wheel/tire/">Шины</a></h3>
+<ul class="linklist" style="margin-top:8px">
+<li><img alt="Nokian Hakkapeliitta R3 SUV" src="https://static.baza.drom.ru/drom/1649133986846_bulletin"/><a href="https://baza.drom.ru/moskva/wheel/tire/shina-hakkapeliitta-r3-suv-235-55-r18-104r-g9553398432.html">Nokian Hakkapeliitta R3 SUV, 235/55 R18 104R <span class="count">101 700 ₽</span></a></li>
+<li><img alt="Hankook Winter i*cept Evo2 SUV" src="https://static.baza.drom.ru/drom/1730216106778_bulletin"/><a href="https://baza.drom.ru/moskva/wheel/tire/shina-hankook-w320a-winter-icept-evo2-suv-255-55-r20-110v-g17403946284.html">Hankook Winter i*cept Evo2 SUV W320A, 255/55 R20 <span class="count">19 050 ₽</span></a></li>
+<li><img alt="Nokian Hakkapeliitta 7 SUV" src="https://static.baza.drom.ru/drom/1790037600036_bulletin"/><a href="https://baza.drom.ru/moskva/wheel/tire/nokian-tyres-hakkapeliitta-7-suv-255-55-r18-109t-g18528385030.html">Nokian Hakkapeliitta 7 SUV, 255/55 R18 109T <span class="count">27 070 ₽</span></a></li>
+</ul>
+</div>
+</div>
+<div class="panel" style="margin-top:24px">
+<h3><a href="https://baza.drom.ru/moskva/wheel/disc/">Диски</a></h3>
+<ul class="grid" style="margin-top:12px">
+<li class="card"><a class="stretch" href="https://baza.drom.ru/moskva/wheel/disc/litye-diski-bmw-8.5-xr19-5x112-g17810975732.html"><img alt="Литые диски BMW 8.5xR19 5x112" class="thumb" src="https://static.baza.drom.ru/drom/1761318308169_bulletin"/><h3>Литые диски BMW 8.5xR19 5x112</h3></a><p class="sub">99 000 ₽</p></li>
+<li class="card"><a class="stretch" href="https://baza.drom.ru/moskva/wheel/disc/legkovoj-disk-ls-471-g18551394563.html"><img alt="Легковой диск LS 471" class="thumb" src="https://static.baza.drom.ru/drom/1750304592027_bulletin"/><h3>Легковой диск LS 471</h3></a><p class="sub">15 770 ₽</p></li>
+<li class="card"><a class="stretch" href="https://baza.drom.ru/moskva/wheel/disc/disk-litoj-x-trike-x-122-7.5-j-r18-et45-5-114.3-dia67-1-g18290265813.html"><img alt="Диск литой X-trike X-122 7.5J R18" class="thumb" src="https://static.baza.drom.ru/drom/1778095301733_bulletin"/><h3>Диск литой X-trike X-122 7.5J R18 ET45 5*114.3 DIA67.1</h3></a><p class="sub">13 400 ₽</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="makers-title" class="band">
+<div class="wrap">
+<h2 id="makers-title">Производители и марки</h2>
+<ul class="chips">
+<li><a href="https://www.drom.ru/makers/">Все марки</a></li>
+<li><a href="https://toyota.drom.ru/">Тойота</a></li>
+<li><a href="https://nissan.drom.ru/">Ниссан</a></li>
+<li><a href="https://honda.drom.ru/">Хонда</a></li>
+<li><a href="https://mitsubishi.drom.ru/">Мицубиси</a></li>
+<li><a href="https://mazda.drom.ru/">Мазда</a></li>
+<li><a href="https://subaru.drom.ru/">Субару</a></li>
+<li><a href="https://hyundai.drom.ru/">Хендай</a></li>
+<li><a href="https://ford.drom.ru/">Форд</a></li>
+<li><a href="https://volkswagen.drom.ru/">Фольксваген</a></li>
+<li><a href="https://bmw.drom.ru/">БМВ</a></li>
+<li><a href="https://kia.drom.ru/">Киа</a></li>
+<li><a href="https://lada.drom.ru/">Лада</a></li>
+</ul>
+<div style="margin-top:24px">
+<details>
+<summary>Каталоги и сервисы Дрома</summary>
+<ul>
+<li><a href="https://www.drom.ru/world/japan/">Аукционы Японии</a></li>
+<li><a href="https://www.drom.ru/world/china/">Автомобили из Китая</a></li>
+<li><a href="https://www.drom.ru/world/korea/">Автомобили из Кореи</a></li>
+<li><a href="https://www.drom.ru/world/germany/">Автомобили из Германии</a></li>
+<li><a href="https://www.drom.ru/catalog/chinese/">Каталог китайских авто</a></li>
+<li><a href="https://www.drom.ru/catalog/">Автокаталог</a></li>
+<li><a href="https://www.drom.ru/shina/">Каталог шин</a></li>
+<li><a href="https://www.drom.ru/topcars/">Рейтинг авто</a></li>
+<li><a href="https://www.drom.ru/pdd/">ПДД онлайн</a></li>
+<li><a href="https://www.drom.ru/osago/">ОСАГО онлайн</a></li>
+<li><a href="https://www.drom.ru/autocredits/moskva/">Автокредиты</a></li>
+<li><a href="https://www.drom.ru/misc/dkp/">Договор купли-продажи</a></li>
+<li><a href="https://law.drom.ru/">Правовые вопросы</a></li>
+<li><a href="https://www.forumsdrom.ru/">Форумы</a></li>
+<li><a href="https://water.drom.ru/">Водная техника</a></li>
+<li><a href="https://www.amayama.com/ru/">Магазин запчастей Амаяма</a></li>
+</ul>
+</details>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="fgrid">
+<nav aria-labelledby="f-nav1">
+<h2 id="f-nav1">Сервисы</h2>
+<ul>
+<li><a href="https://www.drom.ru/commerce/">Размещение на Дроме</a></li>
+<li><a href="https://baza.drom.ru/for-business">Разместить прайс</a></li>
+<li><a href="https://www.drom.ru/safe/">Безопасность</a></li>
+<li><a href="https://my.drom.ru/help/VozniklaProblemanaDrome/">Техподдержка</a></li>
+<li><a href="https://www.drom.ru/sitemap/">Карта сайта</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-nav2">
+<h2 id="f-nav2">О проекте</h2>
+<ul>
+<li><a href="https://www.drom.ru/about/">О проекте</a></li>
+<li><a href="https://www.drom.ru/about/reprint">Правила</a></li>
+<li><a href="https://www.drom.ru/about/press/">Для СМИ</a></li>
+<li><a href="https://www.drom.ru/faq/">Вопросы и ответы</a></li>
+</ul>
+</nav>
+<div>
+<h2 id="f-social">Мы в соцсетях</h2>
+<ul aria-labelledby="f-social" class="social">
+<li><a aria-label="TikTok Дрома" href="https://www.tiktok.com/@drom"><img alt="" src="https://r2.drom.ru/js/bundles/media/tiktok.ee0765cca5a5821c.svg"/></a></li>
+<li><a aria-label="Дром ВКонтакте" href="https://vk.com/drom/"><img alt="" src="https://r2.drom.ru/js/bundles/media/vk.f19846bbc5a3fdb2.svg"/></a></li>
+<li><a aria-label="Канал Дрома на YouTube" href="https://www.youtube.com/drom/"><img alt="" src="https://r2.drom.ru/js/bundles/media/youtube.948b47f626b797c9.svg"/></a></li>
+<li><a aria-label="Телеграм Дрома" href="https://t.me/drom"><img alt="" src="https://r2.drom.ru/js/bundles/media/telegram.126f44f532d7f821.svg"/></a></li>
+<li><a aria-label="Дром на Одноклассниках" href="https://ok.ru/drom/"><img alt="" src="https://r2.drom.ru/js/bundles/media/odnoklassniki.37388670c1f622da.svg"/></a></li>
+</ul>
+</div>
+</div>
+<details style="margin-top:24px;background:#2a3340;border-color:#39424f;color:#e9eef6">
+<summary>Модели авто по алфавиту и году</summary>
+<ul>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_1.html">Модели авто: A–B</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_2.html">Модели авто: C–D</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_3.html">Модели авто: E–G</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_4.html">Модели авто: H–J</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_5.html">Модели авто: K–M</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_6.html">Модели авто: N–P</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_7.html">Модели авто: Q–S</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_8.html">Модели авто: T–V</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_9.html">Модели авто: W–X</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_10.html">Модели авто: Y–Z</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_year_1.html">Модели авто по году: A–B</a></li>
+<li><a href="https://www.drom.ru/sitemap/html/sales_firm_model_gen_1.html">Модели авто по поколению: A–B</a></li>
+</ul>
+</details>
+<p class="copy">© 1999– 2026 Дром</p>
+</div>
+</footer>
+</body>
+</html>

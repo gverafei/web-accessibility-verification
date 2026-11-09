@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the reference\u2019s welcome heading, explanatory content, learn-more link, navigation, and footer.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged; the target appears visually identical to the reference.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation items and the learn-more link are clearly labeled and preserved.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target depict the same coherent page state and layout.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The heading and explanatory text convey the page\u2019s purpose, with the related link and navigation intact.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6165,
+    "completion_tokens": 158,
+    "total_tokens": 6323,
+    "cost": 0.00084955,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6162,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00084955,
+      "upstream_inference_prompt_cost": 0.00077055,
+      "upstream_inference_completions_cost": 7.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

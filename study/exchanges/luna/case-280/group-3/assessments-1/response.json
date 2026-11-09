@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible article cards, headlines, images, category headings, and comment counts match across reference and target.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and consistently arranged in both views; the small viewport-edge cut at the bottom is ordinary scrolling context.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"No essential visible controls are missing or made unintelligible in the supplied regions.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired screenshots show coherent corresponding page states with no meaningful mismatch.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The category and article text and imagery convey coherent meaning and are preserved in the target.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10191,
+    "completion_tokens": 164,
+    "total_tokens": 10355,
+    "cost": 0.0013558,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10188,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013558,
+      "upstream_inference_prompt_cost": 0.0012738,
+      "upstream_inference_completions_cost": 8.2e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

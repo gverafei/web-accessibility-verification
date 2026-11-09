@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible feature lists, customer logos, calls to action, and imagery in the corresponding reference regions. The two paired views match.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and coherently arranged. The tracker-settings overlay is present in both reference and target.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Learn more and Contact us links, and tracker-settings controls remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent comparison, with matching content in both paired windows.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, logos, and imagery convey coherent information about the Ubuntu offerings and use cases shown.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Preparing image output**\n\nI need to generate JSON for output with reference and target images being identical in each pair. For y9000, they should have the same imagery and logos, while y8000 needs to match, too. There\u2019s also a dynamic image that varies between y8000 and y9000, likely due to different content sections from scrolling. Don\u2019t forget the cookie overlay. I\u2019ll ensure all these distinctions are properly addressed.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Preparing image output**\n\nI need to generate JSON for output with reference and target images being identical in each pair. For y9000, they should have the same imagery and logos, while y8000 needs to match, too. There\u2019s also a dynamic image that varies between y8000 and y9000, likely due to different content sections from scrolling. Don\u2019t forget the cookie overlay. I\u2019ll ensure all these distinctions are properly addressed.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B3I_XNHidXOIieU9k3JKMagCFAAHy_qCJj_pVQwb_TGtxWy6OchTdgaJSyXNZBaOUD1bYYvjvvZIUguqKZHCq7bydT97WghDFSr57mHLS6jMFu0UMpuWCkXTe2XEZGe2FujU2bwbrGMvrY5THFsyXSutlAmfYApT3lcxZURLhxwLthdEAKqu9_0RUM8LaEjUxY2XkrpRroNAsKKXwX4Mu4qUJ0TPfWKSqHlBEqgxoydsmMzGSnwcqvXG5tYpNXoKPIfwooWudZMenTdrsuhv3qRIpLvqWxqyxtRPMzYAyeVLLtvoy_9gdjMXfW0Y_0UtY4EbiyO09jf0-N1kYz16oreujuKJB1clHscZwqrsCMoIx7uh99n77-HCU9PK8p_IRMOkwgkeTp6hdlx3du9nEiDH_ZgT1Uz4q33Smhnd-M4T7hkMeEOw-Mp23qCCP1-0MGWvadPXIFPsxPRvbKvzbLx9ohzpp31CKrr8csgl5BRvP84muKRN-GarHnh_AaxR6xdxnYje68fFiu4mxtoQ3cwWhj3iE8pNk_jFz9sepiMvW-7dHB3CR_hnr1WERtgF0Plbf7Hz9XO6h0xgt51XHlcmL0Yg-a7_3Ov-vSHOGQh6XNGZefFGPUpDHh99r2bSR1CC8E7zewB0VeXy7d8eGy8tyrfT2cOzJkUM0Y4iSa_n2eiLoBhejXEHhWPQGkhw-lOH1d8qgudYpLRk92MoYt6IIqR_LAGmmedkbwI81voNm2LXucPXfXglVTPNBhUu4e9d7SD1AYjL-Nebrdc9bRdiovzVqNmrFkXvKx1vZ384n3aUyPHq7FsnuLnLynuGmeRt5Yx-W_AoAER857pI2UWxkRrl-8V0js7vPiJCWk4cG3iA-pojyJS_SbSRgtQaJz2SpZDsfs4-Q_l93jWPiOlFnWnhXuUdsrrjS9iRIoVyc2w-IAQGNV8QLkrTxKTygFhEejPw1DN6YaIgJlV67u2Cud32QPu130gsj_WtBj3CtMKauqozvv_M_34i98Tbs58WxhL62Hx8qhKoXTOhq2qjFw276cXaTk0DUhoeZ9klH4A51Vj2kxP6shuGX9M-rL5QC3o8Lkp2yipmFCOAH6kSWYa0ZrGOnQwfMq2zaJVOYdbXkxw4vqFTnDFUqydoVT_zOcC07GVFfxdX2LiEe5VfPPchbADHH5biRljLzkWF7AAzStGkfS7kepdyBVOkcvcuzr6fsipTwGm2U1cLohz6D-zICjvcEmdz95tY51tTziGDLsK_PL_GIcL3n41so0D_XgMLSRjXfF0gghjhpT0NbaE14njveIoxuxQBd64l0-ai7iOzcI7GiaaMD3ntX_PRsRl_H7I4I0wSb4Bcxn5d7cAz_jT5Fiwff_lRgaPss79rWX8D8g7wcLBQhiNU7ezWKY99tZVz5_8ivpYMZHMj384qqxRbQe7jZ4X1lRqSZyRKEsGPw_xqHDU8e0CtMWIrRRcVv76hHjcSgUnICVWFNHU7qEu_K4c7m9gA5aBxyJbtI20aMVSyV-XKmvYG5WOC_xpXh0feFBhOXj5HXY0r-zpZ_BYUViCg5lELvU66eIAzVaJjZifepbNV1zpeL1vXxhYze-t-HkEcMHTW4_iZrvilZgEd9TE8-J4_pVdtbEDsLJVSWD1pbUKl5iHhbq6CcnRbxLFzCuVyf27K7RdabeB8k7ZDmJXtoB_Lq7U7l0UhuJq5j0EVT2whSz9Wexp2G_1p_9D8b_-64gneW7LsZyAtCEW_K8yfM7Xr3dbVrVQ2tXZtVzK-_2Fo8ToeZkrwm91DiALNJexYtVxxoK5Y2QcVIXwX0BozHWyjXLttKW1c6KnDV5Bzk9bWA7inYq4qUTQ1ZOB2OACGrzvSlPxmZoKfY8aCOGwXENqWsm4zTGqZyHkzstwqrm6q42ODh8__KStpBtt1JMvB7WIDB1gUD-vw_n1kulTP5wt9ECJgwuBdnWk5LDRCKabxmDfbGle09W0zhtDOpCVHL-moXEH2DoSg78p8J7bfB53GH5nqhswrJBOnKviRSFmrZPT4Cy534v_mI0gWcsX52PzFJDlBB9rb6aAKBpZsdeQtMIx1mzqmmJKqsY5gbVNdcQFLaiDZjg1ax9GvzCelm6A51JvXSD9FLwSP3FxpcVF8TrG0MVlhncVtGkkwdlGkG41IiPncrfXIU_s9dtlZFt_e9l5lvWNiOP3DEJaKQKH247PsdVtoVmfhhKgmPyNAz3li0DWN7kiFcD4oa3goACEzmZXANOyTmYN0N6Yvz2wGPIivii6rbpvD3tzjRdjHqgJMn4ZSPeQibHiZsg6BnWV_GQZUMma6o-pSo3hChbkgRSbK8brNZ1FAEQVUt0_gFzp7GD7DOgZuVMkgq1yUAARZKVWunqkBORf0_jJoRfschSwQjk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03a2ab8980e77f49016ae81dc741a487d1b9cc4ba9fdad86c8",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10312,
+    "completion_tokens": 303,
+    "total_tokens": 10615,
+    "cost": 0.001440425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10309,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001440425,
+      "upstream_inference_prompt_cost": 0.001288925,
+      "upstream_inference_completions_cost": 0.0001515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

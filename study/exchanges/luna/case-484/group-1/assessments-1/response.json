@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the Debian community and operating-system sections, their imagery and links, the download control, project news, and footer information. The visible layout shifts do not remove core content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and imagery are legible and the page remains coherently arranged. Differences in margins, spacing, and alignment are local layout changes, not substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, download, carousel arrows, news links, language selector, and other relevant controls have understandable labels or recognizable icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding regions of the same Debian page and form a coherent comparison; their differing offsets do not undermine assessment.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, descriptions, imagery, and labels coherently communicate the page\u2019s Debian community, operating-system, and project-news purposes.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating JSON Assessment**\n\nI need to assess the JSON layout. The differences show a slight horizontal margin and offsets, but the content is retained. The first links might have the \"Security Updates\" title clipped due to the scroll boundary. Comparing images, the top security title and description are in different positions because of scrolling. However, the content is preserved in another image. The header width shows slight differences, but it\u2019s not an issue. Overall, the evidence is coherent and the rationale is detailed.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating JSON Assessment**\n\nI need to assess the JSON layout. The differences show a slight horizontal margin and offsets, but the content is retained. The first links might have the \"Security Updates\" title clipped due to the scroll boundary. Comparing images, the top security title and description are in different positions because of scrolling. However, the content is preserved in another image. The header width shows slight differences, but it\u2019s not an issue. Overall, the evidence is coherent and the rationale is detailed.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BxrVGwWzPj62W3-DOGKXhFDFeH_6c_eRIFQ7yh7DJ9HBF_9zS_zXLlasbyHXnLtQcKgcyJAQgfncIdfz-s8uDMBPnU_LQZy_OY39hanrZcrlPi34VXbtomlHCqcy2wCx6x1t92_u-H50IQGHku6Bi1sIUKaWp9awIxyUT2kzR0gZu0x2n-_Jms-qcRqtgT1tb8WOsSMnITn9LfmM65dc6F43mXZOCZmOUQdinQ4I2uLNlCChEK7z2WQw5OWENPzgpgZEc7hXoa9sdpHlw_Ro0Ula_rnDwo1PmHsUvkZQy6oyHQW0zGlu72MBMQ67DBJs-AtWCsMvKK5clT2I8kO2Xt2q3DUcbSYGZ5ORxlyFlTWWXMTEbfp2uc0BRjjdl_7tyPtJEp4ixPK8d22qmdhgksxAHSdHH0cBi-_HRwzMLkLTIFSP3zEYtWFNkjDvBkbu7ipkT0pG1AzZkmSCpf298JC2QezedcRayvzv4TqQYKsx11Rxf616QGtuKC3qK2-3mpfwsdzmskJl8Y-4d4JBDr7oyUzWG2o4ruwYWddisZXR-bOuXjCxQhjB1jO_cIYL3Aj8aOMMKM1QX0XsQCPvJ5Kz8e34e4Um9x825jHyecCpC_4WkuX7EpUA4Duw4A7uLOI40CwgWKc8dJ5fnbeG13tCOgRGZmPVHtyZZRS0kFR9Bv-YSns7Zu5V_Z4ebV-q93QALjbYFoJAxAVQpx85Z_FzomeS4uc2SQrz9VyDx4Ds1mS5HZlclgJOMSz2gTKsfBSkTCT9y0a7YyjE4_X5wnXkoeXas6P1A7lu4a1i8AD-BrA_f-mdD1SGcsEDhN6NicbOd1RraNcHFDxM_V6uVYqhGdxpKkOMq-VLuQE_G2IYCcv-f5u4c1z9NwG6vMBgA-1H-uLLBJWlbWEKhzbNHNG3LXKgAm9gXty6H_PH2csWpQal1M_cumecvNmyhsLbax_IBVs9Ioz5Z3NURY5NsYqMfKUP2Im7v_jqtC507qYXya_MDLndOh3-Z8KtnDAI7IWxZm4YmIqr9RCA_m38Noh9UmrIE8rbsoIc3jMB8LcTrvr0tXyjrUwnvrwfvQhTV-sTTo3s1HYT0cG3EmA1Z78iGwPEvyXVILr_hq3-ymn5KLUq8KRaATH6r95UDc1F4f1Ibqj0Z0FpydC643qTyJ8uF49vbJUEcy5kDSigIhUJB0T7xqaXfAbz2kXQB8MSad7Vt9_RY3vKcJeHVTTKQk7Y5R-LBjWiWzGgvtV4IBz_P7JEUsMcPmywpyhMFQ29B7PKQDr4B6gqeQcIGeyiBd9AZ5i1kyupKo9UJayyWFM87D1CvwhUmOB5jJWzHjI72PJTrP3zHbm3Lfcgxp60_B9eSlJPEAVsHqfQ-Rc5EruHzGYWcDEKYcsSaaqjCaWOf5t8HP8hrzFAmsXZdNcrgfzpTfqpyr1mUzTcrLu2jRWKtujYrfiyOQqudYOWFbOUwWoISrxpWzTwfsqMCl8PAOvOiUGbvVPFTd4Kgr763Ghvzup7j3l9S-2zH8FzVCOSESZqkse1NQITLjKATRwkJkzQN5JsCSA4kpfeNuifZBsvEwFBwDwiPyqnUBRw80knibV45w5MaJ-uHsFQEf_CLphiwTGUNorzJSqC5lKeSouMKdmCMm1A8efJS91tPDz74-FTVhbUGwGHkgHFEdEnleP4eZVWGVe0oMttCNNV8AsCHBR7jl0OX0F7wDWDJ8a58Qk7h51vYL_UVV_P1_lYiee8swshUc8aaMmy-Sr3DP1dVh1SLj7rGKCSMmlxru-m01K_oOT4rTxB4dybWYfc1meD0t_06wmQe4BvH9X4dog1DNDvvZe7IwNPA-bVDwvdA0duTezX5POb004tmRWi5vuVOaPof24DSSdSYlDK6ObcoePsXql37msgSBIUnPTR5qMFSfjkNsfrU1Lwg7C2XxS2VY329d9dE97OAYzXd3MVjAWw7V-O3Fhvokf9M83hXjV8ZaYkDPIugm8trgdTgs-LMfCAthUmAEf_LlF0kDnomxm9C3k4Z-wfFQnG5qC7TmpDQTJswiH7bGgygqVUuaFY7u2TTediuMEAEBwmgbYpG9QDEabqRGUv29uQjTrNRwsHQzdkvLlm0KXdM4wtB2N4FA1UrXq83je2BVRAGQBClmT0hIGx2l43wJP9s0go_Z1-IxDEL0aTtMsbH8hKADRFpam9pUNkzB0gIAbQigrZECTeWBNbN0RWabt23VdcL1FWm3Hd3h98qvD4WTwf0Y-gIaeiNWVFFhfeZEHBnkhtu8fvnWeatSXLmvaMFiHTd3S4pgzKDp3qSqvrJGeifhppoPp6ews-u3NrPtVw94HQjv6SmwrglrSp0SIVTsZrrGTI1bY58iUF0k7AisS2JziJK3VFK8hCNIBWUlowQQC-kUtf2bHmYZwbbhqd2G4LM-dwGB24ftTTTPSkNZeCDBdCygYbWhLG_7vR3xH2nqP56kTfZbHb2UG2BR2CTj7FaVYrLUP5zutFVchVSlaPUFExJmyZLNBaLhW442mhd4bf1AC02Xa6CeSM0_LWzIxhwpplwiMOqkFJAicsETUUlHG3_uTX2FkTToDj8iTIrWTgbL-j4LAh3PiMZG6rYxuNL2VktgZLScgHT96O4s6ck1MfSv2oZ8P8YmLsQ80SHd98zXCCyacxKHxRF527XnkD1rQHaySuhkn848r-4aOCOekfPdPsLGqiHto8rToEZE43PCOIafX-99j-4JvSGabvXYMNgURwdRIK88rvyInNY7K2DHRIeebBtX2E6mi9YGL7RmqsjGWaH9OW1UnML62EAdJww6wH6jJ6L7RYOXjSNjsQa_CLp4lH1z4GoqIyIXaUfPOy8c-bbXtztZQYZAIxoXG26FpzpxADoKSorvttZQsg_2EmXXWXW2zf1saYyLv7q-WAVzCLu0pA4J5oslCp6Ua_dHEG0K05Q4h3KfKVBq4l0H4ecf1nkNQWYGqcwAf4BrpLxal54O6CtOzVw_p8QwEfBmNqL-TONggMyU46t2hP0YyuvzXICq-crGl2lzJDgy2DZ-3D8E4q_gR5e4FDedfa5H_rRlYmq5aT2nmd29y9zqXK3hm5OdQ2DomDO9vcdtvKIP8OcbiLmsv-iDhB1Z4LqKNqos_AXhcvE4HfarvD4jQ8cFERX7yqD74qa1wXLs4nC6KGpF2R-eVk3Ag1F9c3KKJLhGVuGfD3rcxdM7rTKrSsaqLJ1YqoT7t1oduLPQ8XNWSjeeG1eXGGrS4qz9KNfoLweGanf0fsKD1TSnVu-WuOc_kqt3e4G-V7hBBQafYxrxC9mBTq8CMgz88L8Ovp_mk3bu0qNsCT1Quk9DBfBrRyWWRolTVBhlCLyaZuLo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_026c11e20bb3faf1016ae81c6900a087d1af0acd44121e8a04",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9736,
+    "completion_tokens": 407,
+    "total_tokens": 10143,
+    "cost": 0.001420425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9733,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001420425,
+      "upstream_inference_prompt_cost": 0.001216925,
+      "upstream_inference_completions_cost": 0.0002035
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 132,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

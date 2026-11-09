@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html class="svg js" lang="en"><head><style type="text/css">.truste_caIcon_display {display: inline !important;}</style><style type="text/css">.truste_cursor_pointer {cursor: pointer;}.truste_border_none {border: none;}</style><style type="text/css">.ta-display-none { display: none; }</style>
+<meta charset="utf-8"/>
+<!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="United States" name="country"/>
+<meta content="us" name="siteid"/>
+<meta content="en" name="Language"/>
+<title>MySQL</title>
+<link href="https://labs.mysql.com/common/css/main-20260812.min.css" media="all" rel="stylesheet"/>
+<link href="https://labs.mysql.com/common/css/page-20260812.min.css" media="all" rel="stylesheet"/>
+<link href="https://labs.mysql.com/common/css/print-20260812.min.css" media="print" rel="stylesheet"/>
+<style>
+                    #fp-banner1 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image1 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-mysql-97-lts-community-centered.en.jpg") no-repeat; background-position: center top; }
+            #fp-banner-image1 .link-960 { left: 320px; top: 0px; width: 640px; height: 300px; }
+            #fp-banner-image1 .link-640 { left: 213px; top: 0px; width: 426px; height: 200px; }
+            #fp-banner-image1 .link-320 { left: 0px; top: 0px; width: 320px; height: 300px; }
+                    #fp-banner2 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image2 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") no-repeat; }
+            #fp-banner-image2 .link-960 { left: 0px; top: 0px; width: 960px; height: 300px; }
+            #fp-banner-image2 .link-640 { left: 0px; top: 0px; width: 639px; height: 200px; }
+            #fp-banner-image2 .link-320 { left: 0px; top: 0px; width: 320px; height: 300px; }
+                    #fp-banner3 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image3 { background: url("https://labs.mysql.com/common/themes/sakila/banners/mysql-summit-may-2026.jpg") no-repeat; background-position: left top; }
+            #fp-banner-image3 .link-960 { left: 0px; top: 0px; width: 960px; height: 300px; }
+            #fp-banner-image3 .link-640 { left: 0px; top: 0px; width: 639px; height: 200px; }
+            #fp-banner-image3 .link-320 { left: 0px; top: 0px; width: 320px; height: 300px; }
+                    #fp-banner4 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image4 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") no-repeat; }
+            #fp-banner-image4 .link-960 { left: 0px; top: 0px; width: 960px; height: 300px; }
+            #fp-banner-image4 .link-640 { left: 0px; top: 0px; width: 639px; height: 200px; }
+            #fp-banner-image4 .link-320 { left: 0px; top: 0px; width: 320px; height: 300px; }
+                    #fp-banner5 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image5 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-mysql-global-forum-2.en.jpg") no-repeat; }
+            #fp-banner-image5 .link-960 { left: 345px; top: 241px; width: 308px; height: 42px; }
+            #fp-banner-image5 .link-640 { left: 230px; top: 161px; width: 205px; height: 28px; }
+            #fp-banner-image5 .link-320 { left: 46px; top: 260px; width: 230px; height: 32px; }
+                    #fp-banner6 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-blue-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image6 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-mysql-ee-generic2.en.jpg") no-repeat; }
+            #fp-banner-image6 .link-960 { left: 340px; top: 231px; width: 154px; height: 42px; }
+            #fp-banner-image6 .link-640 { left: 226px; top: 154px; width: 103px; height: 28px; }
+            #fp-banner-image6 .link-320 { left: 93px; top: 260px; width: 134px; height: 32px; }
+                    #fp-banner7 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-blue-gradient-background.jpg") repeat-x top; }
+            #fp-banner-image7 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b1280-mysql-ai-generic2.en.jpg") no-repeat; }
+            #fp-banner-image7 .link-960 { left: 340px; top: 231px; width: 154px; height: 42px; }
+            #fp-banner-image7 .link-640 { left: 226px; top: 154px; width: 103px; height: 28px; }
+            #fp-banner-image7 .link-320 { left: 93px; top: 260px; width: 134px; height: 32px; }
+                    @media
+            only screen and (-webkit-min-device-pixel-ratio: 1.25),
+            only screen and (   min--moz-device-pixel-ratio: 1.25),
+            only screen and (     -o-min-device-pixel-ratio: 5/4),
+            only screen and (        min-device-pixel-ratio: 1.25),
+            only screen and (                min-resolution: 120dpi),
+            only screen and (                min-resolution: 1.25dppx) {
+                        #fp-banner1 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image1 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-mysql-97-lts-community-centered.en.jpg") no-repeat; background-position: center top; }
+                        #fp-banner2 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image2 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") no-repeat; }
+                        #fp-banner3 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image3 { background: url("https://labs.mysql.com/common/themes/sakila/banners/mysql-summit-may-2026.jpg") no-repeat; background-position: left top; }
+                        #fp-banner4 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image4 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") no-repeat; }
+                        #fp-banner5 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image5 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-mysql-global-forum-2.en.jpg") no-repeat; }
+                        #fp-banner6 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-blue-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image6 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-mysql-ee-generic2.en.jpg") no-repeat; }
+                        #fp-banner7 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-blue-gradient-background.jpg") repeat-x top; }
+                #fp-banner-image7 { background: url("https://labs.mysql.com/common/themes/sakila/banners/b2560-mysql-ai-generic2.en.jpg") no-repeat; }
+                </style>
+<link href="https://www.mysql.com/mysql.rss" rel="alternate" title="RSS feed" type="application/rss+xml"/>
+<link href="https://www.mysql.com/" hreflang="en" rel="alternate"/>
+<link href="https://www.mysql.com/de/" hreflang="de" rel="alternate"/>
+<link href="https://www.mysql.com/fr/" hreflang="fr" rel="alternate"/>
+<link href="https://www.mysql.com/it/" hreflang="it" rel="alternate"/>
+<link href="https://www.mysql.com/jp/" hreflang="ja" rel="alternate"/>
+<link href="https://www.mysql.com/cn/" hreflang="zh" rel="alternate"/>
+<link href="https://www.mysql.com/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="https://www.mysql.com/favicon.ico" rel="shortcut icon"/>
+<script async="async" crossorigin="" data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="text/javascript" id="truste_0.8582266125211957" src="https://consent.truste.com/notice?domain=oracle.com&amp;c=teconsent&amp;js=bb&amp;noticeType=bb&amp;text=true&amp;cdn=1&amp;pcookie&amp;gtm=1" type="application/x-a11yharness-acquired-script"></script>
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" src="https://www.oracle.com/assets/truste-oraclelib.js" type="application/x-a11yharness-acquired-script"></script><meta content="A6ZlvBxsryW9hXgcaPJ9kpW0x7/fHa3bkV+ey55MdskMuoTzOWSI8Au9e4ZxhzDxsAv6uc//J3N1evSQQWPjZAAAAACaeyJvcmlnaW4iOiJodHRwczovL2NvbnNlbnQudHJ1c3RhcmMuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmcyIiwiZXhwaXJ5IjoxNzQyMzQyMzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==" http-equiv="origin-trial"/>
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" type="application/x-a11yharness-acquired-script">(function(H){ H.className=H.className.replace(/\bno-js\b/,'js') })(document.documentElement)</script>
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" src="https://labs.mysql.com/common/js/site-20250121.min.js" type="application/x-a11yharness-acquired-script"></script>
+<!--[if lt IE 9]>
+        <script src="https://labs.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js"></script>
+        <script src="https://labs.mysql.com/common/js/polyfills/respond-1.4.2.min.js"></script>
+    <![endif]-->
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" type="application/x-a11yharness-acquired-script">!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="E6BB6-B37B4-898B7-F97BA-BBCDB",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"E6BB6-B37B4-898B7-F97BA-BBCDB";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="zfuwmuqxicppe2wro2ea-f-0be0e4475-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1334304","ak.ai":parseInt("802521",10),"ak.ol":"0","ak.cr":46,"ak.ipv":4,"ak.proto":"h2","ak.rid":"28066a3d","ak.r":48095,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.cport":59051,"ak.gh":"23.219.81.46","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1792112264","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==S4huCmeyAVhQei8wgCyNcy3pjBGXr2z2gBTH02dcehXPLifAXM22YsivfyzNIusXEPekIIcMX6x6hGzrTlAIbjipbt8DIQwdEu0bm2k0eH5tX/sRbhebk+UmyAvlPUlvxS0xDpjAjDDWAV9mURe4/n6fMCEypYbS8Q8Zl+iltLKUPk7heXvv9sBuOLLWQ9dXwApXdskYMNH9GKZopxjrOzCAa7ppTDJ0a8+HX/BHQF8knSQzJ6rSt8cp8Gh48P9unUaw4mT8zVmMGFvP8aTTdWaB1Po4+KRwHS9v6dZVK4KF5OIWIM2CGVolXTLYLbz3JCIoUpQS4cEI0FkBTCKgbDYbhzk55w4Da0G0dKlZIL/asOjh2wYeqhBLf+ZL8I1ORR9T/yN78i/BaPx00hy2VVR7oyTSlqxPD0kyA49Uv+I=","ak.pv":"21","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><link as="script" href="https://s.go-mpulse.net/boomerang/E6BB6-B37B4-898B7-F97BA-BBCDB" rel="preload"/><link href="https://www.oracle.com/asset/web/css/oracle-chat.css" rel="stylesheet"/><meta content="A6MWCkFp/4goXtWiSJNfo09g03RCQpXkuDZDGnlApjvSPZL4CIhvZx3xGfg6bCT4TRppCXmFXWDEkxA7DO3nZgQAAACGeyJvcmlnaW4iOiJodHRwczovL2dvLW1wdWxzZS5uZXQ6NDQzIiwiZmVhdHVyZSI6IlNvZnROYXZpZ2F0aW9uSGV1cmlzdGljcyIsImV4cGlyeSI6MTcwOTY4MzE5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" http-equiv="origin-trial"/><meta content="A2uWz2bbyoykT6h7LZQlNUdwVAFfb3IL5LU+YR1qxtW5T1dCRKjJ5/h3zur1LmuLWk0B1kyAAwyCxJzDCzNxUAQAAAB6eyJvcmlnaW4iOiJodHRwczovL2FrYW1haS5jb206NDQzIiwiZmVhdHVyZSI6IkJhY2tGb3J3YXJkQ2FjaGVOb3RSZXN0b3JlZFJlYXNvbnMiLCJleHBpcnkiOjE2OTE1MzkxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" http-equiv="origin-trial"/><link href="https://zfuwmuqxicppe2wro2ea-f-0be0e4475-clientnsv4-s.akamaihd.net" id="dnsprefetchlink" rel="dns-prefetch"/><link charset="utf-8" href="https://sc-oal-en.widget.custhelp.com/euf/assets/css/syndicated_widgets/standard/ConditionalChatLink.css" id="yui__dyn_2" rel="stylesheet" type="text/css"/><link charset="utf-8" href="https://sc-oal-en.widget.custhelp.com/euf/assets/css/syndicated_widgets/standard/ConditionalChatLink.css" id="yui__dyn_4" rel="stylesheet" type="text/css"/><link charset="utf-8" href="https://sc-oal-en.widget.custhelp.com/rnt/rnw/yui_2.7/container/assets/skins/sam/container.css" id="yui__dyn_5" rel="stylesheet" type="text/css"/><link charset="utf-8" href="https://sc-oal-en.widget.custhelp.com/rnt/rnw/yui_2.7/button/assets/skins/sam/button.css" id="yui__dyn_6" rel="stylesheet" type="text/css"/><link charset="utf-8" href="https://sc-oal-en.widget.custhelp.com/euf/assets/css/syndicated_widgets/standard/ProactiveChat.css" id="yui__dyn_7" rel="stylesheet" type="text/css"/><style data-harness-measurement-freeze="v3">*,*::before,*::after{animation-play-state:paused!important;transition-property:none!important;}</style><style data-warp-repair="true">#fp-products .fp-product > h2 > a[href$="/products/heatwave/"], #fp-products .fp-product > h2 > a[href$="/products/mysqlai/"], #fp-products .fp-product > h2 > a[href$="/products/enterprise/"], #fp-products .fp-product > h2 > a[href$="/oem/"] { color: #a35400 !important; }</style><style data-warp-repair="true">#banners .fp-banner-dots-center > a#fp-dot1, #banners .fp-banner-dots-center > a#fp-dot2, #banners .fp-banner-dots-center > a#fp-dot3, #banners .fp-banner-dots-center > a#fp-dot4 { min-width: 24px; min-height: 24px; }</style><style data-warp-repair="true">#footer-contact-numbers > a.darker-blue { text-decoration: underline; }</style><style data-warp-repair="true">.pad-b-slight.rw:nth-child(3) > .pad-tb-slight.col-1-of-2 > .fp-product > h2 > a { color: #a35400 !important; }</style><style data-warp-repair="true">#fp-content-app > .rw > .col-1-of-2 > ul > li:nth-child(-n+3), #fp-content-app > .rw > .col-1-of-2 > ul > li:nth-child(-n+3) a { color: #fff !important; }</style><style data-warp-repair="true">#banners .fp-banner-dots-center > a#fp-dot5, #banners .fp-banner-dots-center > a#fp-dot6, #banners .fp-banner-dots-center > a#fp-dot7 { min-width: 24px; min-height: 24px; }</style><style data-warp-repair="true">.procta { min-height: 24px; }</style><style data-warp-repair="true">#ochat-flyoutclose { min-height: 24px !important; }</style><style data-warp-repair="true">#ochat-flyoutclose { min-width: 24px !important; }</style><style data-warp-repair="true">#ochat-flyoutclose { min-width: 44px !important; min-height: 44px !important; }</style></head>
+<body class="no-sidebar full-page www en ochat_slideout_loaded yui-skin-sam masked" style="padding-top: 0px;"><iframe id="_yuiResizeMonitor" style="position: absolute; visibility: visible; width: 2em; height: 2em; top: -33px; left: 0px; border-width: 0px;" title="Text Resize Monitor"></iframe>
+<a class="skip-main" href="#main">Skip to Main Content</a>
+<div class="page-wrapper">
+<header>
+<a aria-label="MySQL Home" href="https://www.mysql.com/" id="l1-home-link" title="MySQL"></a>
+<div id="l1-nav-container">
+<div id="l1-line1">
+<div id="l1-lhs">
+<div id="l1-slogan">
+                        The world's most popular open source database
+                    </div>
+<div id="l1-search-box">
+<form action="https://search.oracle.com/mysql" id="l1-search-form" method="get">
+<input name="app" type="hidden" value="mysql"/>
+<input aria-label="Search" class="icon-search" id="l1-search-input" name="q" placeholder="Search" type="search"/>
+</form>
+</div>
+<div id="l1-auth-links">
+<nav aria-label="Contact/Login Navigation" role="navigation">
+<a href="https://www.mysql.com/about/contact/"><b>Contact MySQL</b></a>
+<span id="l1-contact-separator"> | </span>
+<span id="l1-contact-separator-br"><br/></span>
+<a href="https://www.mysql.com/auth/login/?dest=https%3A%2F%2Fwww.mysql.com%2F">Login</a>  | 
+                                 <a href="https://www.mysql.com/auth/register/">Register</a>
+</nav>
+</div>
+</div>
+</div>
+<div id="l1-line2">
+<nav aria-label="Primary Navigation" role="navigation">
+<ul id="l1-nav">
+<li class="active">
+<a href="https://www.mysql.com/"><!-- <span class="icon-sakila"></span>  -->MySQL.com</a>
+</li><li>
+<a href="https://www.mysql.com/downloads/"><!-- <span class="icon-download-thin"></span>  -->Downloads</a>
+</li><li>
+<a href="https://dev.mysql.com/doc/"><!-- <span class="icon-books"></span>  -->Documentation</a>
+</li><li>
+<a href="https://dev.mysql.com/"><!-- <span class="icon-code"></span>  -->Developer Zone</a>
+</li> </ul>
+</nav>
+<div class="social-icons">
+<nav aria-label="Social Navigation" role="navigation">
+<a aria-label="Join us on Facebook" href="http://www.facebook.com/mysql" title="Join us on Facebook"><span class="icon-facebook"></span></a>
+<a aria-label="Follow us on X" href="https://x.com/mysql" title="Follow us on X"><span class="icon-x-twitter"></span></a>
+<a aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql" title="Follow us on LinkedIn"><span class="icon-linkedin"></span></a>
+<a aria-label="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel" title="Visit our YouTube channel"><span class="icon-youtube"></span></a>
+</nav>
+</div>
+</div>
+</div>
+<div class="nav-up" id="sub-header">
+<div id="l2-nav-container">
+<div id="l2-nav-toggle">
+<span class="icon-three-bars"></span>
+</div>
+<a class="button nav-button-3" href="https://dev.mysql.com/"><span class="icon-code"></span> Developer Zone</a>
+<a class="button nav-button-2" href="https://dev.mysql.com/doc/"><span class="icon-books"></span> Documentation</a>
+<a class="button nav-button-1" href="https://www.mysql.com/downloads/"><span class="icon-download-thin"></span> Downloads</a>
+<div id="l2-search-toggle">
+<span class="icon-search"></span>
+</div>
+<div id="l2-site-icon">
+<span class="icon-sakila"></span>
+</div>
+<div id="l1-section-title">
+<span id="l1-section-label">
+<a href="https://www.mysql.com/">MySQL.com</a>
+</span>
+</div>
+<nav aria-label="Secondary Navigation" role="navigation">
+<ul id="l2-nav">
+<li class=""><a href="https://www.mysql.com/products/"><span class="menu-label">Products</span></a>
+</li>
+<li class=""><a href="https://www.mysql.com/services/"><span class="menu-label">Services</span></a>
+</li>
+<li class=""><a href="https://www.mysql.com/partners/"><span class="menu-label">Partners</span></a>
+</li>
+<li class=""><a href="https://www.mysql.com/customers/"><span class="menu-label">Customers</span></a>
+</li>
+<li class=""><a href="https://www.mysql.com/why-mysql/"><span class="menu-label">Why MySQL?</span></a>
+</li>
+<li class=""><a href="https://www.mysql.com/news-and-events/web-seminars/"><span class="menu-label">News &amp; Events</span></a>
+</li>
+<li class="last"><a href="https://www.mysql.com/buy-mysql/"><span class="menu-label">How to Buy</span></a>
+</li>
+<li class="other-section"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+<li class="other-section"><a href="https://dev.mysql.com/doc/">Documentation</a></li>
+<li class="other-section"><a href="https://dev.mysql.com/">Developer Zone</a></li>
+</ul>
+</nav>
+</div>
+<div id="l3-search-container"></div>
+<div id="top-orange"><span id="section-nav">Section Menu:   </span></div>
+</div>
+</header>
+<div id="page">
+<div id="main" role="main" tabindex="-1">
+<div id="banners">
+<div class="fp-banner" id="fp-banner1" style="display: none;">
+<div class="fp-banner-image" id="fp-banner-image1">
+<a class="fp-banner-link link-960" href="https://blogs.oracle.com/mysql/mysql-9-7-0-lts-is-now-available-expanded-community-capabilities-and-dynamic-data-masking-for-enterprise"></a>
+<a class="fp-banner-link link-640 hidden" href="https://blogs.oracle.com/mysql/mysql-9-7-0-lts-is-now-available-expanded-community-capabilities-and-dynamic-data-masking-for-enterprise"></a>
+<a class="fp-banner-link link-320 hidden" href="https://blogs.oracle.com/mysql/mysql-9-7-0-lts-is-now-available-expanded-community-capabilities-and-dynamic-data-masking-for-enterprise"></a>
+</div>
+</div>
+<div class="fp-banner hidden" id="fp-banner2" style="display: none;">
+<div class="fp-banner-image" id="fp-banner-image2">
+<div style="height:300px;box-sizing:border-box;overflow:hidden;background:transparent;color:#1d1d1d;padding:34px 56px;display:flex;align-items:flex-start;gap:38px;"><div style="flex:0 0 190px;display:flex;justify-content:center;align-items:flex-start;"><img alt="MySQL" height="115" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" style="display:block;max-width:170px;width:100%;height:auto;" width="170"/></div><div style="max-width:660px;flex:1 1 0;"><div style="font-size:44px;line-height:1.12;font-weight:bold;color:#3a678f;text-shadow:1px 1px #fff;margin-bottom:12px;">MySQL Community Governance Model</div><div style="font-size:22px;line-height:1.42;color:#0f2d45;font-weight:600;margin-bottom:24px;"><br/>Learn how MySQL is expanding open collaboration, transparent processes, and community participation</div><div style="display:inline-block;padding:10px 18px;background:#3a678f;border-radius:4px;color:#fff;font-size:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.25);">Explore the Governance Model »</div></div></div> <a class="fp-banner-link link-960" href="https://blogs.oracle.com/mysql/the-next-phase-of-mysql-community-engagement-accelerating-participation-and-collaboration"></a>
+<a class="fp-banner-link link-640 hidden" href="https://blogs.oracle.com/mysql/the-next-phase-of-mysql-community-engagement-accelerating-participation-and-collaboration"></a>
+<a class="fp-banner-link link-320 hidden" href="https://blogs.oracle.com/mysql/the-next-phase-of-mysql-community-engagement-accelerating-participation-and-collaboration"></a>
+</div>
+</div>
+<div class="fp-banner hidden" id="fp-banner3" style="display: block; opacity: 0.0442984;">
+<div class="fp-banner-image" id="fp-banner-image3">
+<a aria-label="MySQL Contributor Summit 2026" class="fp-banner-link link-960" href="https://blogs.oracle.com/mysql/mysql-contributor-summit-2026-collaboration-innovation-and-community-driven-development"></a>
+<a class="fp-banner-link link-640 hidden" href="https://blogs.oracle.com/mysql/mysql-contributor-summit-2026-collaboration-innovation-and-community-driven-development"></a>
+<a class="fp-banner-link link-320 hidden" href="https://blogs.oracle.com/mysql/mysql-contributor-summit-2026-collaboration-innovation-and-community-driven-development"></a>
+</div>
+</div>
+<div class="fp-banner hidden current" id="fp-banner4" style="display: block; opacity: 0.954072;">
+<div class="fp-banner-image" id="fp-banner-image4">
+<div style="padding:34px 42px;color:#1d1d1d;display:flex;align-items:center;justify-content:space-between;gap:24px;height:300px;box-sizing:border-box;overflow:hidden;background:transparent;"><div style="flex:0 0 380px;display:flex;justify-content:center;align-items:center;"><img alt="MySQL Early Access" src="https://www.mysql.com/common/logos/mysql-early-access.png" style="display:block;max-width:380px;width:100%;height:auto;" width="380"/></div><div style="max-width:440px;flex:1 1 0;"><div style="font-size:38px;line-height:1.12;font-weight:bold;color:#3a678f;text-shadow:1px 1px #fff;margin-bottom:14px;"><br/>MySQL Community Early Access</div><div style="font-size:21px;line-height:1.5;color:#0f2d45;font-weight:600;display:block;padding:8px 0;border-radius:0;margin-bottom:20px;"><br/>Preview, test, and evaluate upcoming MySQL Community Edition builds</div><div style="display:inline-block;padding:10px 18px;background:#3a678f;border-radius:4px;color:#fff;font-size:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.25);">Explore Early Access Downloads »</div></div></div> <a aria-label="Explore Early Access Downloads" class="fp-banner-link link-960" href="https://labs.mysql.com/"></a>
+<a class="fp-banner-link link-640 hidden" href="https://labs.mysql.com/"></a>
+<a class="fp-banner-link link-320 hidden" href="https://labs.mysql.com/"></a>
+</div>
+</div>
+<div class="fp-banner hidden" id="fp-banner5">
+<div class="fp-banner-image" id="fp-banner-image5">
+<a class="fp-banner-link link-960" href="https://go.oracle.com/LP=148943?elqCampaignId=631399&amp;src1=:em:lw:pety:cpo:::Ondemandlp"></a>
+<a class="fp-banner-link link-640 hidden" href="https://go.oracle.com/LP=148943?elqCampaignId=631399&amp;src1=:em:lw:pety:cpo:::Ondemandlp"></a>
+<a class="fp-banner-link link-320 hidden" href="https://go.oracle.com/LP=148943?elqCampaignId=631399&amp;src1=:em:lw:pety:cpo:::Ondemandlp"></a>
+</div>
+</div>
+<div class="fp-banner hidden" id="fp-banner6">
+<div class="fp-banner-image" id="fp-banner-image6">
+<a class="fp-banner-link link-960" href="https://www.mysql.com/products/enterprise/"></a>
+<a class="fp-banner-link link-640 hidden" href="https://www.mysql.com/products/enterprise/"></a>
+<a class="fp-banner-link link-320 hidden" href="https://www.mysql.com/products/enterprise/"></a>
+</div>
+</div>
+<div class="fp-banner hidden" id="fp-banner7">
+<div class="fp-banner-image" id="fp-banner-image7">
+<a class="fp-banner-link link-960" href="https://www.mysql.com/products/mysqlai/"></a>
+<a class="fp-banner-link link-640 hidden" href="https://www.mysql.com/products/mysqlai/"></a>
+<a class="fp-banner-link link-320 hidden" href="https://www.mysql.com/products/mysqlai/"></a>
+</div>
+</div>
+<div class="fp-banner-dots">
+<div class="fp-banner-dots-center">
+<span class="fp-banner-dots-left"></span><a aria-label="Go to slide 1" class="" href="" id="fp-dot1"></a><a aria-label="Go to slide 2" class="" href="" id="fp-dot2"></a><a aria-label="Go to slide 3" class="" href="" id="fp-dot3"></a><a aria-label="Go to slide 4" class="on" href="" id="fp-dot4"></a><a aria-label="Go to slide 5" href="" id="fp-dot5"></a><a aria-label="Go to slide 6" href="" id="fp-dot6"></a><a aria-label="Go to slide 7" href="" id="fp-dot7"></a><span class="fp-banner-dots-right"></span>
+</div>
+</div>
+</div>
+<div class="con pad-normal" id="fp-products">
+<div class="rw">
+<div class="col-1-of-2 pad-tb-slight">
+<div class="fp-product-icon">
+<div id="fp-product-icon-cloud"></div>
+</div>
+<div class="fp-product">
+<h2><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></h2>
+<p>Use automated and integrated generative AI and machine learning (ML) in one cloud service for transactions and lakehouse scale analytics. Get faster insights from all your data with unmatched performance and deploy apps in your choice of cloud providers.
+                <br/> <a href="https://www.mysql.com/products/heatwave/">Learn More »</a></p>
+</div>
+</div>
+<div class="col-1-of-2 pad-tb-slight">
+<div class="fp-product-icon">
+<div id="fp-product-icon-ai"></div>
+</div>
+<div class="fp-product">
+<h2><a href="https://www.mysql.com/products/mysqlai/">MySQL AI</a></h2>
+<p>MySQL AI provides integrated, automated, and secure machine learning (ML) and generative AI capabilities.
+                <br/> <a href="https://www.mysql.com/products/mysqlai/">Learn More »</a></p>
+</div>
+</div>
+</div>
+<div class="rw pad-b-slight">
+<div class="col-1-of-2 pad-tb-slight">
+<div class="fp-product-icon">
+<div id="fp-product-icon-enterpise"></div>
+</div>
+<div class="fp-product">
+<h2><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></h2>
+<p>The most comprehensive set of advanced features, management tools and technical support to achieve the highest levels of MySQL scalability, security, reliability, and uptime.
+                <br/> <a href="https://www.mysql.com/products/enterprise/">Learn More »</a></p>
+</div>
+</div>
+<div class="col-1-of-2 pad-tb-slight">
+<div class="fp-product-icon">
+<div id="fp-product-icon-embedded"></div>
+</div>
+<div class="fp-product">
+<h2><a href="https://www.mysql.com/oem/">MySQL for OEM/ISV</a></h2>
+<p>Over 2000 ISVs, OEMs, and VARs rely on MySQL as their products' embedded database to make their applications, hardware and appliances more competitive, bring them to market faster, and lower their cost of goods sold.
+                <br/> <a href="https://www.mysql.com/oem/">Learn More »</a></p>
+</div>
+</div>
+</div>
+<div class="rw pad-b-slight">
+<div class="col-1-of-2 pad-tb-slight">
+<div class="fp-product-icon">
+<div id="fp-product-icon-cluster"></div>
+</div>
+<div class="fp-product">
+<h2><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></h2>
+<p>MySQL Cluster enables users to meet the database challenges of next generation web, cloud, and communications services with uncompromising scalability, uptime and agility.
+                <br/> <a href="https://www.mysql.com/products/cluster/">Learn More »</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="con pad-lr-heavy pad-tb-slight dark-blue" id="fp-content-app">
+<div class="rw">
+<div class="col-1-of-2 pad-slight">
+<h2>
+<span class="icon-laptop"></span>
+                                Free Webinars
+            </h2>
+<ul>
+<li><a href="https://www.mysql.com/news-and-events/web-seminars/protect-sensitive-data-in-mysql-with-dynamic-data-masking/">Protect Sensitive Data in MySQL with Dynamic Data Masking — No Application Changes Required</a>
+<br/>Thursday, October 22, 2026                                </li>
+<li><a href="https://www.mysql.com/news-and-events/web-seminars/aoug-mysql-webinar/">AOUG MySQL Webinar</a>
+<br/>Thursday, November 12, 2026                                </li>
+<li><a href="https://www.mysql.com/news-and-events/web-seminars/qa-with-mysql-experts/">Introducing MySQL 9.7 LTS: New Features for Modern Application Development</a>
+<br/>On-Demand                                </li>
+<li style="list-style-image: none; list-style-type: none;">
+<a href="https://www.mysql.com/news-and-events/web-seminars/">More »</a></li>
+</ul>
+</div>
+<div class="col-1-of-2 pad-slight">
+<h2>
+<span class="icon-files"></span>
+                                White Papers
+            </h2>
+<ul>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-reference-architectures-for-security/">MySQL Reference Architectures for Security</a>
+</li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-reference-architectures-for-high-availability/">MySQL Reference Architectures for High Availability</a>
+</li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-enterprise-edition-for-government/">MySQL Enterprise Edition for Government</a>
+</li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/migrate-from-mariadb-to-mysql/">Migrate from MariaDB to MySQL</a>
+</li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-heatwave-ml-in-database-machine-learning/">HeatWave AutoML - In Database Machine Learning</a>
+</li>
+<li style="list-style-image: none; list-style-type: none;">
+<a href="https://www.mysql.com/why-mysql/white-papers/">More »</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fp-logo-container">
+<div id="fp-logos">
+        Powered by MySQL<br/><br/> <div style="max-height: 270px; overflow: hidden; font-size: 10%;">
+<a aria-label="YouTube" class="fp-logo-youtube" href="https://www.mysql.com/customers/view/?id=750"></a>
+<a aria-label="PayPal" class="fp-logo-paypal" href="https://www.mysql.com/customers/view/?id=1223"></a>
+<a aria-label="LinkedIn" class="fp-logo-linkedin" href="https://www.mysql.com/customers/view/?id=975"></a>
+<a aria-label="Facebook" class="fp-logo-facebook" href="https://www.mysql.com/customers/view/?id=757"></a>
+<a aria-label="Twitter" class="fp-logo-twitter" href="https://www.mysql.com/customers/view/?id=951"></a>
+<a aria-label="eBay" class="fp-logo-ebay" href="https://www.mysql.com/customers/view/?id=961"></a>
+<a aria-label="Cisco" class="fp-logo-cisco" href="https://www.mysql.com/customers/"></a>
+<a aria-label="Verizon" class="fp-logo-verizon" href="https://www.mysql.com/customers/view/?id=1225"></a>
+<a aria-label="Uber" class="fp-logo-uber" href="https://www.mysql.com/customers/view/?id=1269"></a>
+<a aria-label="Shopify" class="fp-logo-shopify" href="https://www.mysql.com/customers/view/?id=1303"></a>
+<a aria-label="Netflix" class="fp-logo-netflix" href="https://www.mysql.com/customers/view/?id=1276"></a>
+<a aria-label="GitHub" class="fp-logo-github" href="https://www.mysql.com/customers/view/?id=1265"></a>
+<a aria-label="Walmart" class="fp-logo-walmart" href="https://www.mysql.com/customers/"></a>
+<a aria-label="Booking.com customer story" class="fp-logo-booking" href="https://www.mysql.com/customers/view/?id=901"></a>
+<a aria-label="Zappos customer story" class="fp-logo-zappos" href="https://www.mysql.com/customers/view/?id=892"></a>
+<a aria-label="Bank of America customer story" class="fp-logo-bankamer" href="https://www.mysql.com/customers/view/?id=1309"></a>
+<a aria-label="Flipkart customer story" class="fp-logo-flipkart" href="https://www.mysql.com/customers/view/?id=1268"></a>
+<a aria-label="Paytm customer story" class="fp-logo-paytm" href="https://www.mysql.com/customers/view/?id=1283"></a>
+<a aria-label="Alibaba customer story" class="fp-logo-alibaba" href="https://www.mysql.com/customers/view/?id=1289"></a>
+<a aria-label="WeChat customer story" class="fp-logo-wechat" href="https://www.mysql.com/customers/view/?id=1287"></a>
+<a aria-label="Tencent customer story" class="fp-logo-tencent" href="https://www.mysql.com/customers/view/?id=1282"></a>
+<a aria-label="Taobao customer story" class="fp-logo-taobao" href="https://www.mysql.com/customers/view/?id=1290"></a>
+<a aria-label="Airbnb customer story" class="fp-logo-airbnb" href="https://www.mysql.com/customers/view/?id=1271"></a>
+<a aria-label="Toyota customer stories" class="fp-logo-toyota" href="https://www.mysql.com/customers/"></a>
+</div>
+</div>
+<br class="clear"/>
+</div>
+</div>
+</div>
+<footer>
+<div id="footer-bottom">
+<div class="footer-contact">
+<div id="footer-contact-icon">
+<span class="icon-call-phone"></span>
+</div>
+<div id="footer-contact-numbers">
+<strong>Contact MySQL Sales</strong><br/>
+                    USA/Canada: +1-866-221-0634  
+                    (<a class="darker-blue" href="https://www.mysql.com/about/contact/phone/">More Countries »</a>)
+                </div>
+<div id="footer-contact-copyright">
+<a aria-label="Oracle" href="http://www.oracle.com/" title="Oracle"><span class="oracle-logo"></span></a>
+                      <a href="https://www.oracle.com/legal/copyright.html">© 2026 Oracle</a>
+</div>
+</div>
+<div class="social-icons">
+<a aria-label="Join us on Facebook" href="http://www.facebook.com/mysql" title="Join us on Facebook"><span class="icon-facebook-square"></span></a>
+<a aria-label="Follow us on X" href="https://x.com/mysql" title="Follow us on X"><span class="icon-x-twitter-square"></span></a>
+<a aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql" title="Follow us on LinkedIn"><span class="icon-linkedin-square"></span></a>
+<a aria-label="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel" title="Visit our YouTube channel"><span class="icon-youtube-square"></span></a>
+</div>
+<br class="clear"/>
+</div>
+<div id="footer-links">
+<div id="site-footer-links">
+<div id="footer-nav"></div>
+<div class="links">
+<ul>
+<li class="top"><a href="https://www.mysql.com/products/">Products</a></li>
+<li><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></li>
+<li><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></li>
+<li><a href="https://www.mysql.com/products/standard/">MySQL Standard Edition</a></li>
+<li><a href="https://www.mysql.com/products/classic/">MySQL Classic Edition</a></li>
+<li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></li>
+<li><a href="https://www.mysql.com/oem/">MySQL Embedded (OEM/ISV)</a></li>
+</ul>
+</div>
+<div class="links">
+<ul>
+<li class="top"><a href="https://www.mysql.com/services/">Services</a></li>
+<li><a href="https://www.mysql.com/training/">Training</a></li>
+<li><a href="https://www.mysql.com/certification/">Certification</a></li>
+<li><a href="https://www.mysql.com/support/">Support</a></li>
+</ul>
+</div>
+<div class="links">
+<ul>
+<li class="top"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+<li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+<li><a href="https://dev.mysql.com/downloads/cluster/">MySQL NDB Cluster</a></li>
+<li><a href="https://dev.mysql.com/downloads/shell/">MySQL Shell</a></li>
+<li><a href="https://dev.mysql.com/downloads/router/">MySQL Router</a></li>
+<li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+</ul>
+</div>
+<div class="links">
+<ul>
+<li class="top"><a href="https://dev.mysql.com/doc/">Documentation</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/en/">MySQL Reference Manual</a></li>
+<li><a href="https://dev.mysql.com/doc/workbench/en/">MySQL Workbench</a></li>
+<li><a href="https://dev.mysql.com/doc/index-cluster.html">MySQL NDB Cluster</a></li>
+<li><a href="https://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a></li>
+<li><a href="https://dev.mysql.com/doc/#topic">Topic Guides</a></li>
+</ul>
+</div>
+<div class="links">
+<ul>
+<li class="top"><a href="https://www.mysql.com/about/">About MySQL</a></li>
+<li><a href="https://www.mysql.com/about/contact/">Contact Us</a></li>
+<li><a href="https://blogs.oracle.com/mysql/">Blogs</a></li>
+<li><a href="https://www.mysql.com/buy-mysql/">How to Buy</a></li>
+<li><a href="https://www.mysql.com/partners/">Partners</a></li>
+<li><a href="https://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+<li><a href="https://www.mysql.com/sitemap.html">Site Map</a></li>
+</ul>
+</div>
+<div id="footer-langs">
+<span class="icon-earth"></span> English  
+                (
+                                            <a data-localize-url="no" href="https://www.mysql.com/de/">Deutsch</a> |                                             <a data-localize-url="no" href="https://www.mysql.com/fr/">Français</a> |                                             <a data-localize-url="no" href="https://www.mysql.com/it/">Italiano</a> |                                             <a data-localize-url="no" href="https://www.mysql.com/jp/">日本</a> |                                             <a data-localize-url="no" href="https://www.mysql.com/cn/">中文</a>                                    )
+                </div>
+</div>
+<div id="footer-logo">
+<a aria-label="Oracle" href="http://www.oracle.com/" title="Oracle"><span class="oracle-logo"></span></a>
+                  <a href="https://www.oracle.com/legal/copyright.html">© 2026 Oracle</a>
+<div class="footer-legal-links">
+<a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+                    <a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+                    <a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+                    <a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+                    <div aria-label="Open Cookie Preferences Modal" class="truste_caIcon_display" consent="undefined" id="teconsent" role="complementary"><a aria-haspopup="dialog" aria-label="Cookie Preferences, opens a dedicated popup modal window" class="truste_cursor_pointer" id="icon-id03741656347306638" lang="en" role="link" style="cursor: pointer;" tabindex="0">Cookie Preferences</a></div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" type="application/x-a11yharness-acquired-script">
+    if ((oracle.truste.api.getGdprConsentDecision().consentDecision) &&
+            (oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(0) != -1 ||
+             oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(2) != -1) )
+    {
+        document.write('<script src="https://labs.mysql.com/common/js/metrics/ora_mysql.js"><\/script>');
+        document.write('<script type="text/javascript" async src="//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/mysql/odc.js?_ora.context=analytics:production"><\/script>');
+    }
+    </script>
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" type="application/x-a11yharness-acquired-script">
+                $(function(){
+                    var rotator = new $.rotator();
+                    rotator.init();
+                    //var slider = new $.slider();
+                    //slider.init();
+                });
+            </script>
+<script data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" type="application/x-a11yharness-acquired-script">var sc_product = 224;</script>
+<iframe role="presentation" src="javascript:false" style="position: absolute; width: 0px; height: 0px; border: 0px;" title="Action Capture"></iframe><iframe role="presentation" src="javascript:false" style="position: absolute; width: 0px; height: 0px; border: 0px;" title="Action Capture"></iframe><script data-path="/common/chat/chat-translation-data.json" data-reqjq="" data-scchannel="SC MYSQL" data-warp-frozen-acquired-boot="frozen-acquired-boot-v1" data-warp-original-script-type="" id="oracle_chat" src="https://www.oracle.com/asset/web/js/oracle-chat.js" type="application/x-a11yharness-acquired-script"></script><div class="rn_ConditionalChatLink rn_ChatAvailable" id="oReactiveChatContainer" style="display:none"><div class="rn_ChatAvailable" id="atgchat-flyout"><a href="javascript:void(0);" id="rn_sccl_4499221_Link" onclick="sccl_4499221.chatLinkClicked();"><div class="rn_ChatAvailable" id="atgchat-flyout-info"> <span>Live Sales Chat</span></div></a></div><div id="oProactiveChat" style="display: block;"><div class="yui-panel-container yui-dialog yui-simple-dialog shadow" id="rn_Dialog_0_c" style="visibility: visible; left: 15664px; top: 11000px; z-index: 9999;"><div class="yui-module yui-overlay yui-panel rn_Dialog" id="rn_Dialog_0" style="visibility: inherit;"><div class="bd"><div class="rn_SyndicatedChatBody" id="rn_SyndicatedChat_spac_4674211" role="alert">
+<div class="rn_SyndicatedChatLogoImageDiv">
+<img alt="" src="https://sc-oal-en.widget.custhelp.com/euf/assets/images/orcl_logo.png"/>
+</div>
+<div class="rn_SyndicatedChatHeaderLabelDiv">
+<div class="rn_SyndicatedChatHeaderLabel">
+</div>
+</div>
+<div class="rn_SyndicatedChatQuestionDiv">
+<div class="rn_SyndicatedChatQuestionLabel">
+            A Chat Assistant is available to help. Would you like to start the session?        </div>
+</div>
+<div class="rn_SyndicatedChatAvatarDiv">
+<img alt="Helpful person waiting to chat with you" src="https://sc-oal-en.widget.custhelp.com/euf/assets/images/chat.jpg"/>
+</div>
+</div>
+<form name="frm_rn_Dialog_0"><input name="rn_Dialog_0" type="hidden" value=""/><input name="rn_Dialog_0" type="hidden" value=""/></form></div><div class="ft"><span class="yui-button yui-button-button" id="rn_DialogButton_rn_Dialog_0_0"><span class="first-child"><button id="rn_DialogButton_rn_Dialog_0_0-button" type="button">Yes</button></span></span><span class="yui-button yui-button-button" id="rn_DialogButton_rn_Dialog_0_1"><span class="first-child"><button id="rn_DialogButton_rn_Dialog_0_1-button" type="button">No</button></span></span><div class="rn_RefuseDiv" id="spac_4674211_RefuseDiv"><input class="rn_SyndicatedCheckbox" id="spac_4674211_RefuseCheckbox" type="checkbox"/><label class="rn_SyndicatedLabel" for="spac_4674211_RefuseCheckbox">Do not ask again</label></div></div><a class="container-close" href="#">Close</a></div><div class="underlay"></div></div></div></div>
+<div class="ochat_slideout" data-trackas="ochat_slideout"><ul class="ochat_slidew2 active"><li class="ochat_flyout flyout-show flyout-fadein"><a aria-label="close-button" data-lbl="proactive:flyout-close" data-trackas="ochat-proactive-flyout" href="#close" id="ochat-flyoutclose"></a><a class="procta chatcta" data-lbl="proactive:chatcta" data-trackas="proactive-chat-cta" href="#saleschat">Start chat</a></li><li class="ochaticon1"><a aria-label="chat" class="ochat" data-lbl="chatslideout" href="#"></a></li></ul></div><div class="ochat_modal" data-trackas="ochat-modal" id="ochat_modal"><div class="ochat_modalw1"><div class="ochat_modalw2"><div class="chatwrap" id="proactivewrap"></div><a data-lbl="callchat:modal-close" href="#closemodal" id="chatclose"></a><a data-lbl="callchat:modal-minimize" href="#minimize" id="chatmin"></a><section class="ochat_panel ochat_sales iframechatwrap"><strong class="ochattitle">Sales Chat<a class="ochaticon iframechat icnclass icnchat" data-type="ochat_sales" href="#saleschat" target="_self"></a></strong><a class="subcta iframechat ochat_sales" data-lbl="sales:chatcta" data-type="ochat_sales" href="#saleschat" target="_self"><p class="ochatsub">Considering a purchase?</p></a><a class="chatcta iframechat ochat_sales" data-lbl="sales:chatcta" data-type="ochat_sales" href="#saleschat" target="_self">Start chat</a></section><div class="chatwrap" id="ochat_sales"></div><section class="ochat_panel ochat_support"><strong class="ochattitle">MySQL Support Options<a class="ochaticon icnclass icnsupport" href="https://www.mysql.com/support/" target="_self"></a></strong><a class="subcta" data-lbl="support:chatcta" href="https://www.mysql.com/support/" target="_self"><p class="ochatsub">Have a support request?</p></a><a class="chatcta" data-lbl="support:chatcta" href="https://www.mysql.com/support/" target="_self">View support options</a></section></div></div></div></body></html>

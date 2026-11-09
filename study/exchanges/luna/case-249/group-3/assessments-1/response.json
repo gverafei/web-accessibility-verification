@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents coherent news headlines, market information, topic links, and site information. The missing-looking image for one story does not remove its readable headline or make the page\u2019s core information materially incomplete.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible content is legible and arranged into clear story cards, a market snapshot, topic links, and a footer. One story image area is blank with stray alt text, but this isolated issue does not substantially impair use of the page.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible topic and footer links have understandable labels. No essential visible action control appears blank or unreadable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots form a coherent comparison of a Forbes news homepage and a regenerated news interface. Differences in layout and content are permitted under the contract.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s story headlines, market labels and values, topic names, and footer text communicate a coherent news-and-information purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing page visibility issues**\n\nI need to evaluate the target window at the bottom of the page. It looks like there's a broken third image area that's showing a blank grey space with the text \"Lifestyle Index story\"\u2014probably indicating a broken editorial image. The first two images are fine, but that one seems off. I want to reference the news content and ensure that the overall page meets coherence standards, despite that single broken image.**Evaluating potential image issues**\n\nI\u2019ve found a weird gray box with alt text indicating a broken editorial image, which seems minor. The prominent card for the headline still has content text, so it seems like a presentation defect. The policy mentions repeated broken imagery might affect usability. This third card is one of the top stories, but the gray image indicates an actual broken resource. I need to decide if this meets the criteria since it\u2019s not a repeated issue.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing page visibility issues**\n\nI need to evaluate the target window at the bottom of the page. It looks like there's a broken third image area that's showing a blank grey space with the text \"Lifestyle Index story\"\u2014probably indicating a broken editorial image. The first two images are fine, but that one seems off. I want to reference the news content and ensure that the overall page meets coherence standards, despite that single broken image.**Evaluating potential image issues**\n\nI\u2019ve found a weird gray box with alt text indicating a broken editorial image, which seems minor. The prominent card for the headline still has content text, so it seems like a presentation defect. The policy mentions repeated broken imagery might affect usability. This third card is one of the top stories, but the gray image indicates an actual broken resource. I need to decide if this meets the criteria since it\u2019s not a repeated issue.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0UnQsly2t_4r36ijkBDGuBwatIX60c8HTUdspW8I3EgAZ0HF1hg90XmunWjUSl3lWwWjyWh4VNff5WJyD0ZlnOm-LOWjzVHzHpBHc07XibDtOwpW1d7JYv6EGnJeDQXq34rE6i5FMg2HriN2uL_r3aaCEXdf9aIT5JO_dTWTCP58TcB-jSz1jQTmSiVngfP8nzfwFlBmLbTId-IRCjS_mibMIMibex9E-o4r-RLwzRMb6opdTBjoSfX8hBa6u8lqhf_r02QW5S42LPv001C4hfsQUJ3YB9gzj8j7UX-wPTtxvOxUb_uhjOlAVjKZil4SUehT5csmBbwUNTzc_0EuZd_eQcPxhof2v_m_k9EyX-Fnza8F-V1I0OknZjiLZvQjqsWb2-teYLtibqZ8Oi-DVB_trQEAAWsQOZ4MBkFQQU4Q_RRJb63t__OehOhqvox8E9jSdA_DyCe1Fl5y1YkPx7_o9EoYyHITA1xGDL2UaOvNIgXZ_myJ-hyCU4n-HjvTdvznqL2VTqB3ZtZLJLKhEhP8tXi_g-dlcv5vh9lKcYwB_Mi4Um1RUpaxqvjVE2E0NWkkQDGxK5iuhgPn8tY7v-rrDrXYyKX07i2a_z64MzhaMrQmgagJvVSiOjsTtFWnE8n3gOJ7Bi0mPv_5O5d-xspwGD9v4DZLrQQm0TTH3tdYtGBGC_v2-PKH-eBWjdzYj-2xkxkW5DglkvP9bPth5p3ZXRTcIbMm0V98kLUtQOYYat3V0trJa4lgeX6FVGk-yreegq5xf3287ue07cNjO2ekCX-nWPr74jawTdwHB8m58dr4cnlqSLzdyyh8vWgfoTgDbCwhAXB27EmxH6zzmNlAZL2XSnS6gI7U_hTiGRvy5RaecQYa9LD4KTXQ-YvZIBkz1GexKd6eRMm7GHOrl_3DTIWUGjFb64B3JsNaA1dDM1pRgEXhXWS8jaDFlFw--AvePlHlkU8WcqgICUn-PfEBfWPAf0rc3YTLqNfStTFfiQjjr61wWvOcrKNPJac2odgSw5ItNo8pHJdWRdbvPDmDIceWbWXjO-0fXidQfTsfIFFyr_Z9HZKV7XuVnIyYi9kIZyKcB5F8Jyolnwa4ptNa37sJC5ucqEjkn1FuvZ-NMVr9MzvVruadjdAgwYnt8Lsb_53kfJLSzw8otWhxlzUS5CXROaVL-slpk-O-KdopR9euOvqCt33Z7Vli9Ry9AMfFSVVsBGm5sFOzBlDutQFJHnudPkySu8AfxfZpD9Ifr6I_SdsjCpVIyHmNh9AwkH4MvryOUEEW5xZ7LYU64IhgNIt3byxUWRb0NxkRTcxUuOkmnoO4FIaJEAglVgIm4w64Wi4gf6uBTrwvGFy0RJOSOi36i5-xxoiwRaylD0VjoxT1ONOsGAqSapDzKCY8tk4CJkS9FPaQnjKoLIsWVHuMHH1Gqw04MOLOB6Hu7Cc6P1xMRzSOaRZmi6HIz8MLu3OgbgIq75Ajn8_hpOmOpou6nhr_wrzUFoVg6GCGzSg3gRcNtUuA25Hp0N9ISilYaG3IKxaeQRXvfeLenGmuIo2P9NGbem4LDtvBNFzuFfyYJFcWthlhbQoMTtRBbfkg6duf0yrHZJNDUtCS_vXjOFPQslaF2_5Os6PhZTw_vvIbEyJTkb0ZKa67M-J_d4UMVwE5iwY27IGbqO3EwEVPUcZrmEsE7Opjlc_Bo5Q0UmE1ZxAz6zeP3jPW_fDksdVt_WQmJNEsoTN5zNe8aOPwJtDjwgCG-J40qmpnAPccEHv3keNAOitBSVbd-9ME-WUkREml5HtZwe-UogMNHVnFGmxTvxPg7GCIVniROXtLANsoYLXfsi3kZP0VSaFy6qUp1b4QvNskY4O4et67bf-y5ZJgalPI2xkcUclSluhRSu-b9bWYci1m0PRxFOAOiLoW1DKOjNiOMc2PqbNny_RXy9q_ILy_pAh9EhcAluTEaTU4Q401xcBlzwT9yuzo7f7YlevH3Vd-iC_AVumlBTqvP8ZqrJYgd1XD6gi_kEnLnDZSHVJhcxmnbTCy0lSnjH7aFbo36BW3O6t2O99Pg-lg-1fGol0E_x_9pdoWPjO0G0O8MQ-BDeQT1LCpOUUu3d3brOeUxWOm7LDAo3H_OHbs74-nYcFIM4u2H0dbgnw5Dih-PB_0oxbsUDmNhuS7SZB3XbnEszPjOD-zwP2m4WXod-HR8ol_dljU-uCINnhnWITSd4SIDdy-Unrp0w9sFDapkAbL7vGfqSut5iDLdZp5TxkpdhFW3LjqkLl2fRuTqgahavq1Xsge0nv4fKkCRjhJni_JXnYjBnLCjAN-TulrFaHaC8EBskKlxq7sYWbHnd4QJ-MxzZtMOAxMaUUZrcBvF6q1wE5WFeRD4YBGLEQKg5IOK3kIpBSowzunb9LpC33wVnzcfpI5cPy2PPL3_6BCWvouPzCH6wj2gCc42f98SLGb1BnigXVSLPPAU4fIKkL2x2Ce4Sv4OvkSbc3_MAr3IxZDJ5NZS7StguZwYARHXMbPGUF8IjJ-Jnv9VMwo0qgbi7onR0upqV_SL5ZIxb5DgeQ3a-a5gq2vl1miyF2of5Rl9ITXGTwploVftvCsWIbox3WEXK7UiQoYgZoos0Vyt9l4gadoB1xnF4OukRIvRri568cwhKMf6kQW6RVFNclB6cjGoca0eh30Uaov__FGUfLxXQYe-sQDPwI9FQX5TDQlurngRRdRl7juTs_eXwFlYR1ZLNYMLX16x5d5yoOWLBKmqlA0Xa4Yez3Qcnc7XjMuRD0wOvmTmY_qJxe3Eo8sEDZU80qfGSeJDmdbkFBk4mD70S9fyVBGfWTS113zJ2rCT2RqzjclzeqHT07LGqIpUQT5GSU2fGMDyStKpQKNQAp2DTWcQJ89E7lGPKUf2F4k6maJSN8PwjfJs_KNHECaaeeTkgHv0vOrozWswZOlptEIB5kgIryCVm5_qT2Su1JtqMyJMR4U0B-5op-dznseL2QhadhcSj2AyAaunTTv3Hdm0r4srNRSw99JwrrboW-pbio8X1vqQvLIP72VgnoTOrsJspRN87fCIC-VfWx18k_1U-rpEx1blPoYdl3HOlHuS6_2uaK7NmK67KAhe5aTUMjjFpGN67YlWYYZW_clQIxNdBz0zQ0_sWOm4NYI-XfDWeZYDmtbHfBMEYbiSSk2dl_WKqYnkFdPAeCIJz52m7qW3pQATo9bVC16fd0DHZYGi0DSgVaGenCOiXsvf8SxGsLv1Av-B1kzd_HbA4K-oz869hsD_xre2AQ0MEG8Aj998aDNm1dMO0-MD4AnBNslBsodJEu71xncdfKFtzp02cJu7__oafEbL2lcYeg2mNbHI3An849tvGUwTvyUN9cLHAAArGta09PYORxC0PX4jD5H-syk-NgOMlbSYdWfHY-jO1mb-hMG7rUSSRLFvSVvqXtrqR0QFUViiXKbgF1VD0S6ZucLjSkXbbts-2guYJLOPAWmCtWwyvQPVbbOx-ooGcKYFyK-y7OicvGP0nbl9dLU8Eccg67xvrzU4HluLCdrdIJ8KOULD7e8UzeKp5_m1-tdii6a5LGrHs5cimqNGfVjAnp0bYr5uok9YNaNPhhOxRAtOAtwIOF2XBzzIfQcke0va4J1hGdJfgSVQaY_6T_WOoEgASa22H6C4hTklAEpAT9hR5ATXt-FHUjfao761YVuko67J6syN2n9mBaTVxlDEyuMgSLXNmw8pS66X_QVv7K7QK7aDOr-O3sStIKXCtcSTjssMzpnJo_dzizRxAUEQT5NYqX8d9rq7wJiL74OYxLGFu9YbmcyWznIVQKLc6D2XH4siKFn5wr_B8SjxW7uPBOsJyNRLqnXRe8RqYOK__Ov9ikAPQ-CGrTx3m5BBkYoXpMCjFB8d4X3zCo5yJuMP3GB9keGAV2fkPozupeLkfg6M7DP2fU3p6X3l1i7Mak_MN5TJMk-9PZHixrvVd0Lsedt4jDcH9RkEDxLr-YPiRlV2Rihh_CvmiCUqFNbcoT9OYsk5IxhkydaA7XoeSF7MGYL55TXogOYB1JPGMWjMlIIG0VVznX8l6KNokP_MThXcDB4WsOMhen6vtN-rhpZKJZsNW1fsEI_EycHf3NJz7aU6IP0zFmaLqIVJBLvvPBmxO0a-HoWh24dIQahcvSOeF0W6aqWFNCgxrt7BtWpXbvB7kwZgnqPkX9mY6xhPQI5mCn5u88z-6y5-9xIjNKsLx7Ev8shvMbUqCp6NQCUGJMUswmhh7vyUBEituBkAEsH6lYmN3s1HMjkMIK0WfluqEcy_X4tOKJV3r_9ZqOdCk_ft6bAYgdvQfyFRFuCSNKAFJ7gAhV_Zl5Pto8Zvyz9cRmeJphHSoqImKNjU9YZByAQdnK5JZ4M77SEKqibLoeSfHAizVQN1IuPlxQreiXSBMdy87BuppH0pTDYhn_0N2qaJkL8UGJNXXl5qi7668NmdEyRATiFdagMHiFYZi345eivze4msGg7M3rPh-1Faw_-jLW46rlQDYDV6Wgap_cScRUL0Zl5-1cyE9XPQhmJJcRP54Q4xpqo7ZhenUnYEgthMe09Xz3ek5L6-ZBQKJRA-un6XLwpfx5nOK3nc01uOWKH-gA1nAFoc_KjiLdIIWFDIKrwqlqYNtgxJbQaa8vHLdEkADn-1Sp5PHJ8w-6bp8MOq3I1MQeGRtlEWyBKdwDElTrF4cjqgXQKNfypNdkRXQPFeBYaYtdzDQ2mKVOzGGU6nhRBYJ7JWfTX7jyfirImBeHPp_speCzOkQXy5OTBj-6Lu11Bv6I_FKoUq-EuRBRYHFiZqlkZfqRAQDKnU34Pe4iHLcz6_vlvA0b_DcmoSqLe18yiAqSRSaM9wx4g3sro5Cs3gKsizhBsixM9jblq0E3VuITl1b5lzv7GtGZEl_m58AFbi-eQADOqruwTGiey-lo5bNPOh9mGAv2OI2lNHQ1NJsrBQjdV7TZxfrXDM4fBPzX5HQgHf_5YVYvjvVa71rITWtaT7-Wh4KyoljBep-KqekOUWXgweX0Kz_oPTe0afvfrv-hDIgPgbG0GekjPgWPr1tppW-Tx7xWZIJ-brekFcxYELZ_eevDOH6LRxbAfaXg7s6isGgfd3u74Ye2NPzXTzl0zJ5d_nYy3KYdrkf1kA3Y5SfPRf0E44M-uxzKYcZjmByM-1s2DR54p_o5l8Za82rQgu4XeG2dB-Xif6Tat1qwNS8nkNojav2S3nXNGY2CuUJQzz0t2VqiXt1KJtZvQpgCDPrshWeu79uFMxjFLynroDh7fxyZeLzALo_8-0iaeVBngEGece3WfgPmA2yiZhCIOHyxY5lW-4C-jwZuHRLCNG1ykFNLuKny7sHQh5-YwBJPMeZ7Uq_00Qy0tjKEWOW4fOL3unKSIkOd2G6f9h-EevvEaPhkMc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_09a18f51bb74387b016ae81d107fb887d19d3cef2c4a056db2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12397,
+    "completion_tokens": 507,
+    "total_tokens": 12904,
+    "cost": 0.00180305,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12394,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00180305,
+      "upstream_inference_prompt_cost": 0.00154955,
+      "upstream_inference_completions_cost": 0.0002535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 271,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

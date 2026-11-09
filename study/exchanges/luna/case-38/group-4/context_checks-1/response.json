@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target omits the visible testimonial cards and most of the pricing plans, including their plan names, prices, features, and signup actions. These are substantial core page sections, not advertising or optional embeds.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Large areas where the reference presents readable testimonial and pricing content are blank in the target. The later pro-services and FAQ sections are legible, but that does not remedy the missing central content.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The pricing cards' visible \u201cSign Up Now\u201d and \u201cView More\u201d controls are absent along with the cards. The global navigation and FAQ plus icons remain visible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding portions of the same DreamHost page. Missing content is a localized interface defect, not evidence of a mismatched comparison set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Without the testimonial content and the pricing plans' names, prices, and features, the target does not convey important information needed to understand and compare the offerings. The visible pro-services and FAQ content remains coherent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing missing information**\n\nI need to evaluate the whole window and focus on areas where there are blank cards and a missing testimonial trust panel. With references to 5000 review cards, it seems the blank section with a grey bar is likely failing on Trustpilot. The main testimonial cards are missing core information. For the pricing area, at 6000, it's also blank, and that makes the product cards lack major info. By 7000, the pricing card is missing features, but some services are visible. Overall, I'm seeing a lot of missing content and controls due to the absence of core product offers, so I need to provide a concise JSON rationale.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing missing information**\n\nI need to evaluate the whole window and focus on areas where there are blank cards and a missing testimonial trust panel. With references to 5000 review cards, it seems the blank section with a grey bar is likely failing on Trustpilot. The main testimonial cards are missing core information. For the pricing area, at 6000, it's also blank, and that makes the product cards lack major info. By 7000, the pricing card is missing features, but some services are visible. Overall, I'm seeing a lot of missing content and controls due to the absence of core product offers, so I need to provide a concise JSON rationale.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BhEbwtwYz1E5ybIIN-uTH9SNx5ZMQqXyX109ZuWdHgqy1Ys5PQvdENoeW6dEucjX7ZUVKx5Ah6vq_Hfj-BIfkNvj4Vh9F1vmKM-xVB2Xyvws9JXEaPCcHN1Bi8Uj-G0cKjKlRo_0PPC-dTb6NUzhfO9bdCt1eanG2esTn6Pv6VufBI31XwZrOeTvc0GederUyssQzvKxsWCOtcFae3At2tpE213tQ9BSjZk0dXK6B-Zu17a4ZlvuNY0IIoPSlLx7jvloOTVOq4ModR02WyABc8dZCqsTjMkLTMle0TRqEsZkKtotyCCBy6LWqGCyetRh1_m4hqj_BGwMlKAw6ueQDVNJEJ3WRZDMkTHi4jxYHLT0jOsRJ_KwAAs2t-ykNHxyJf82NFovS4nLBrELxMS-JsDyAJjaYw4g_f3hSLVkZWloTAHFSKc9kbElxDfdt5JuD0BznEBEg7_37TPaQ70hm9du8cmLhdqnVSBrYODSZlytm9QaRl_KYjLi3hkq-fq05RgcaHZn8GQFu3Ugffwg7yLgGdcFYpUX0Bb1K-dm4XvvIPjhgdX5F7UiER3qSuNZAFnK3HsY6th8S3ZEkp1GojVVFNen2mhJnsae5VNpwU0xKER4p47iMGUj6otdQjEpCUFMufp3MtfpjjmxN03dL7MqF3r5LMKHQQfIh-CUXYzN-h5tOQ49wmKdGP3n9sX-zGtDk67AF0b9eJLu8HuFPMVuWauz-_SUPo0QWwdYgcS8HpAiEagoPBrG2aNveLK20qa-fDJfYvEFpPfI1-s-tmX6SB6Im0Dqm8w2xn37wn8hL7HVzpU6q7ByvXlfBQAOUZhwrEhIRrfHN6VVFetPKpTQc4E_LvQi2BIQ07T_KQYpOh86jA7NffXtkStroES-39wMOh4DuCannXYpJKRMhCq2Bn9YjreeLzY4AQ1Qc3o6gI-mqceDf-pW1Bg1-hFnfrnNwTyOY-M1mVVaSEkI7N7MInwYXAk5Yi8vXIDRM2RfSi7hc-TxFcSTNF5Xw7t_3bX9JBR4ZndKEKW_nPbldFNcfm3_K-u24nH4QdPcUlAM3HHPkRKo5DEMlkfP3043s2QkGatzBrHf9p13LtFWTzgazoYEu0FrajLE_9ir1-gFq-1N8gU3wV5ChUopv4dh7t1j8qSgsWRQizHHEETokL4vJv-rD5_Eew_1N1EvyGG0ht1rKMk3fbCfHCuYGx1Z5J399QbV7o6b6WUQ3btYvJ2FQoqe6RiPapQwQ8r_0fXawdah1-QH-GujG-6Qfl21-1dgXrV2FHMZBbZ54VGZA3AYZyk0kCS4HxBm7GAB_NqlvCQodOnwXoq055TfLrjPkasMZufjLEQarUj8trsUfxp1dnCbHHz5siOCVN0TJchf-rqTjL94Aa1kwJ3GelrjtVfX8sd04jM_xHQw-EjpRrogUhSGl-0ckrlksnVM-ZrjIzK0gTTcPrOz2UNDRJQ8yum5bssVKLY1auSA7YDsWoEuk8dJrduNvkzCtMTAQCxuU7AoXZk90q85K7h6l5WD8O0Ti5wTjAd2uMCRlKMh_khnqA_lJZVSShUbeYpbtr_voBopTAPzq4voi9gv4F-_gyhp3BB2vZ40WE-Izio8DNiCqT34L8YCLP-W2SBDoEHrGwasri1z8NbUMi2avW6UYE4H86H7RoIa3HGVn-858L7loo4jtOhYEW8OvqZTrkvOSSDsFcJNh8OyaeWeZ07XUPuXP8BA87tLGp6boslO12PFfCfZGpEG61W5p5_ybbHs-gZ08GXRn5j-rA2JEvesxdLT5kva_woMIAwwc4YuYLzfZUtLnCT4o73FEO7fTs2x391s_4WQrqe7eyhE75uwWgvkTm3wv744-Pq6-PFwspuXp43-qC2bCPwKJTNsmeS2QOyd5hUd16aRfOdKsCKfFK366F_r1FXMF5eceUTMNzOntvKa0fgv9Ef4ZIVQ6uUNTu1n_tVeNBYjeqtM-U5Sw6XtgOnaPvg8eRFp-RkU-fLqAmNoKVTPHuHNOtlXToIVECI4BXW3RLC0whEqcoBolo2fW92OxdYyJDYgaYaKNWpJj0SYFlgSnBEQgQV7p_n3CuJyGtK8YWi8aA_7PMBkLxGGPBlyZBw08F9XIVVauCFvpE0SxdcO1hOZh1kMcYpCG_F_KEmAi1WhFWxQnRxXYHlTz163OviLHiZOIDe8nRs9l64WASMvmOBXnMauzgtNq0dA4rj07jfg4PyP3He5DU9W5K4jX7HQbw5qspXy4RWKiNRlr35IPexnkqu5jIvy07oHK_JhMAxS_rZSFnWpn_OjXAzkJyPARE_suveYEGTbRbwIazBWoC-kVGI9w8yYvxb-yrUD57aVACt2WiaoTG3368jvkkjvwhBdCrz34peUC-i3xeOY8mL4E7jpY1ZMRAmrkNgMQUc7TmMP_eoRBWKnYCa7sPbky92bEesV7eGlmfN7FnANZCJDH-e_pyWhaSHIRfnm_tEGhxO3X0Wzu-IvsAXAYVAIOGfwDVY4yf4Yv-mJBXZrNhZb-hDu1Z8mLKVaXXSxL4ZRUC08bH0CZz-yXpIiMGKesKLpqU2se44cSZFNrspKcIUb0doD0117nYzQfWEn0KhavACROxQksR3STiN6f6cL-QexU2tDPunVusEtTZZUDS6zlM0pdONn9vBzHLH5RfSxAEUqZx3srJLlmDRDd6kC2jjxT5Eree9SwGKcoM130BxW84QaOUia2qmEeGTagzGjRgNt1G3boumGNEtLo6TdU8ZZRX6i0K5aZaPgrehunrb_WMPLHUYVvRGvABMFEZU_74tY6tQdGU4VJFNyepme9il9ERmqemdlnjVjI7IpVmgNTv7QMpz9lM7_jsycdI39pf5woVvNuCvIFBNfEwrOcIuInNKYC5Nb1Jx1ZqFTyRVstZBB5L2XeiR8tG76Ue0tt8yvrAQ5bPLP1DwynzQ971CzrgOyhKcgha91tjMxfNuOtxywJvZVUmE2KQO5ua5VnKW5s_Wkbn6gNoE0Jn1Q8EO1cpcTmZYM_d1As6YplOyVqcthQdlokxXUYgJW2TaA4o8KHdtVOMFoIWo2EoCe8-jSneKqoFJO9LY0iwo1fa8YV_sfFQUOU3TZB8bKiyUIOwrWqcedGzgPlsvNrPVKTUXdYbULqiYyx2AQSniPRy0vYLyP1htLRSZXlwcWndofwxEAM6_kHtpJT4m-BwSvzq_wvNHWe9_EGzbfCoE3EMB2FLe_R7R-_bRid6hABm4VRkC9lAuJxNGVIuRnHLfQSw8LVzSldfQRH41xJ67Bk6wf6XNNyCXcknXMTVIRE8sauEQG3tG6y8o.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_05f0f8a8adaddf28016ae818421bac87d18dcfb83211dc4fbe",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18274,
+    "completion_tokens": 441,
+    "total_tokens": 18715,
+    "cost": 0.002504675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18271,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002504675,
+      "upstream_inference_prompt_cost": 0.002284175,
+      "upstream_inference_completions_cost": 0.0002205
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 127,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

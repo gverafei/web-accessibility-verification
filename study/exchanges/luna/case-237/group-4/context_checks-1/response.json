@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Both visible useful-material article thumbnails show broken-image indicators and clipped alt text. These are repeated failures of editorial imagery, although the article titles and categories remain legible.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The two broken editorial thumbnails visibly disrupt otherwise orderly article rows. The surrounding text and footer are legible and coherently arranged.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible support-topic chips, section links, footer links, and app-store buttons have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference show coherent lower-page/footer regions of the same broad kind of service website. The layout differences do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible news titles, dates, useful-material titles, support topics, and footer labels communicate their purposes. The broken thumbnails are a presentation/content defect, but do not make the visible text unintelligible.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing broken images**\n\nI need to evaluate the lower section of the target screenshot where there are two broken images in the editorial materials. This seems to signify a material defect in the presentation since the editorial imagery is visibly broken, even though the core content remains coherent. While the text links are readable, the broken images might affect the overall semantic adequacy. The images should support the articles, and it\u2019s important to distinguish dimensions while ensuring aesthetic quality matches across the site. I\u2019ll assess everything thoroughly.**Evaluating footer imagery**\n\nI'm considering the target screenshot\u2019s footer, which seems aligned but has broken image icons. This indicates a material defect affecting content fidelity, although the overall semantic adequacy still appears coherent. The repeated broken images might disrupt the user experience, so that\u2019s a concern. I need to assess whether the JSON structure supports this. It\u2019s essential to ensure everything functions smoothly while addressing the broken visuals. I'll need to look more closely at the details!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing broken images**\n\nI need to evaluate the lower section of the target screenshot where there are two broken images in the editorial materials. This seems to signify a material defect in the presentation since the editorial imagery is visibly broken, even though the core content remains coherent. While the text links are readable, the broken images might affect the overall semantic adequacy. The images should support the articles, and it\u2019s important to distinguish dimensions while ensuring aesthetic quality matches across the site. I\u2019ll assess everything thoroughly.**Evaluating footer imagery**\n\nI'm considering the target screenshot\u2019s footer, which seems aligned but has broken image icons. This indicates a material defect affecting content fidelity, although the overall semantic adequacy still appears coherent. The repeated broken images might disrupt the user experience, so that\u2019s a concern. I need to assess whether the JSON structure supports this. It\u2019s essential to ensure everything functions smoothly while addressing the broken visuals. I'll need to look more closely at the details!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bzmkah1-4FDFoZx6xhqcRUJuIBSrAS46D20gwbUrFBujopaUV9o1TfNifH4EMaYFSEW-Swlm3eEsipLOfMrOfXQlYwf_Z9YqwAMwo8_QRr5PElWdssEqMr50oixNJ-kUB1nBKrPaQVPhshUKRIjeUlFtfhFEdAH1f9beJEtFS5qkrYDpBGB4DtLGRN2RPnX_9MgbL28yubiAb7JnMj7l6PESCEvIPOEjCqRPbL45Dsh-ZjFS3eh0W8oHsr6_pBSLWWZ_7sBbIC0STsnGA3Xnxg64r8xYyTcuOm3Bt3_pZH2KxM2WyFuQOUgd6svmmB32bD5J9YtKRsBvNqezyZW6wyHkHdjjUtL7BqjbDUdRJqhZr5DlCT4YUkO0gQUX_IUT8TVILdX9YChzNq4BeCkTOtJxZbOAIQE4hfgKPjc_eOPJ9KFV4xE_7yuyJBwmjd7Hevl6_1OgoJtObIujM8RsxQ7tCVTN9iwP0O97kthAGsPvmb0gEF5qNViTie6YAMINtvhQ5_MtRXDqG2CqPdiV9d69oGfIrXylLVg16f5AFuBImEynJS7hPuGpl2ndSJfWUM9q_bwAjL4uuCok-B1Y8Z-Fya0Ckc_UPA-zhrjbkRrOtWlsG5YeebDv2HaQTgR9wJoHzAY8P-SyPHyBY2c1EfKbw90it25C5v8cGXthdft99ZfMaGiMauzt18WI1Y_hfGdHcpcMQ4wi30fimyQA76gCwkJ1O_q2HGpwybYSTUYe0nUwwzOu3Uk1CKuN5NLKet-Pn7QYx3ApsKHDU3CpzTUx_svKk5mP8WFQEo_z6KpJPhfhb90rNqxzIHeCwFCJEPxCGEsjwD19n6IPo8bmanC0pBybsQokFc9Oh89Y4lz_Mz00YY6dZF-kbDoIuaYRmu-2EpDZmMlCgaeYo6KDZCpHrmmiKYnV9s1sPrpW52yvxLRx2Tr0mNC4_CMWgd-EKbtNAzPBY8xVPZgunywnsjfjXSLmfWeN3TxW84t2zXURO4pAIwRg8kxnSMW0bbqhlrED8HYFSkp5nN2d5qRE2T0L1mcdkKxUhPoUayhZtp1t7w5aU90Nbs-i-lsGMgtp8CEASabCQzQYvP2p6ciKjRPhuXXNv_YujUUHuWEWlAWFocCA30Ud8ElOd8r5nEuKzrnLBM9fEIKxIQX6Dd7x2RMtCLUkFMRbuGY5VKcxzNMjgoWE3HLHbBd_ConDOTXko3GlPYP76H3iFEXNWFzyZQfmuT826W8FWN7eWvLOhdM_-O1T7TucFk8H_pIjHCgRb0vRivTTJ5RLHWz35CEKpg4x7j-jtlHeWj7eQHuLF0E5wmg2HfTkS0XS_KIiKvqt6rs35FywnlF-VEi3ziM86xaIjvJeXX0ByhB_sQc8WFnKISjHfgLkliHUthzQYiyuSCsGKPw5Rm8CeKUrnPMsc9z85ngkSBg35Vd9bEY8Vo1Y1XNyubJj70KEaPYk12rZyetUOoOati7D9oJsfes8NxQxLtoI1pQ_VWPuZICa28eK90t9yb-YkaRAI05R66wcyJH35bri1PtgQh19ChgPRpebXW3Vn8WVCCJd9QsjGGrOMxjWp6LNkr8pXS-kPvIVIuVac1SqME2_F0PLSkbH0H9n3-j7UL8x_r_tK9ccYfiNwAFtbRw6i4o1MXDmKmV7hXmbGAEGPy3rMBpbZJgGf8sZC2fulWY0zrbIsREkSQm0bzeSLHEoe_dYT1aLPM1eGkNEbJeZqyndbaC3QsNXA7Zp32qIPE5FEax1-hOMSwF-EjqVxkeyf22ksSCXsCzkdWWeiILzVSGzUmvsmjG_2k9Mo2CAuDjD2UC-wzNRAZBWX6yGsy9vUA0DsAf7hRaCwIGk_srYmV-qBTnyFY0-OvLjJFTvrx-bKL2wjh0NVIq9t_J2fSa9MLgwHFNphvLITcedjP-fGKDhsgXiSpVoTnOFZkemvlypcIPgykLBqETBL1SpBNdCQhcgfB3gO6O0UMkqxYhYuIL1M9Le2NN4QlQHydhAWH_qqdrF9hDCjyEnJiVE7sZLytnSq5UCAhtBwJmBCTzpj_hIxEzZDlX97KZhIoct4TrXMco6yZwU-wQddYAoh1DD_7qjK83_DIVyv3Afi5oyA2T-KlXEfzFx7sW9JPC4kyHekP5CNFUENpsFVaci4QNaC_KSqT46dq-H9YmCljpzZxy0r09zcNy1Saasz7vgSuRvknN2XSFMSncO-Q2ugFhKCskSMXlVraTm1mWmqXxJVWPkQ23txkDNtTaaJ2HWgayYwk-U0brFPZc2S3GATDn1eANbxic-jEk7vNyhREkmibHqXVP_45D__3rCCQ3Nf_tLtyKWauXk-CFuQMkKrUuwmNAmQtgDkNRDVz_iJV_oWbJOyUnQcZULO3FTCkIc8RpNFgRDRKhAW6Tz1No_zu2eYCMVvm3nN-RoeC5AWvfTXdo2l-FXQovUpRJ4PfTy-wlll6UPtD-P13tLz_DWnCVSlFPjJRGOkqn_gFi0PcOpYBq0InXYCv2xPGXQiaAPL-uhuL20O1QXVIjfsFIHIPlwQhYQClbNt3mJcW25TjDnwJuN9P8liPo3bSFSMj4UJfiZYGOgHyo80p-uxUq-4sdorJQaSDn_4NnTlY6Vpcq_ASWzoG1Iju6kN3tXXdb9OGh8P1vXm3Qcaa4IWeMgA0PJX973bUoRtdKzmCeCDN9jkiujrwlut66ZiITxcShVpiO0Nkok2BJ1WQiASFz7awGLaqdrVXPJ0mmIvdKc6_K7uyWnoAsM0CPBwgaW-6bFjNiaCNSDpMEHoYeGbz1ZCwzVdPkOaGH99EmtQAM91lpko5PXhpBmqMwcDrDg16r5FNbkgVFE46e955756V5cwUW0F78h0e0x7C2Zc0ZGiiVntonOVXch97IyX0F6ImQcUExoJmVMc8Te0cXscdlYQEIWk8Y3Lbhqb5auSwH6PhX3_nMvxWEc24KkLjZrvj1JCTpWHArjZ2PFjlOHeB9kQAwhGcuowPakY5MNI-u9tHMu1honPdgjAoaqXKTR1Wjacqr9cjcPPHWfQGtsLTASbYLheWLumYIl9k9-3B0n72wE3O-xbcvtS7CPk7TrDR6BsMC3INw8V2pkm69hF_ThcCeerAf_amFg2lwMuFu0x20Igd4Z1Ci0PibcCJdtpZyzFsV_P9NvtcTJaL2RQeUFSg5hI21shj3-zFUVMK_NT6CiuWb2UNx1pFDiFFpQ4k_x-J_uwSNWD3O8LuSdhyvDc-ANhrYQU6jHBjvASp9rrApCP8qw-6NQPCd_B0mYqvNa5Es72lV_DbT6X0WdwFFH0iT-9Bq8R8e0fwHtl0sFag1yHUMGAU6fDqYFyiAgVWH5yCvZ4zbMqRcQiyw0vUyVF0TSlDeBB2doapGe7oS9lZA0exDZph-sPOTIb2TfkuBaFRCfXOcwydQ83yy6p3kfLOrsuq9UDdyHUiY8m_iF6jFQzxBPhWIUWyEVIGwQ6aonjIHiEO_gN4-iG91VS5Tqv1Lo85FZvC7HfCMya2e7kVpyM_PdzJgt6rL6DhDJw1j54o09GytJdxsKo42cE64wIPcaKqhuhSLPwH14PhYLvu-cxOqw5MUbDEyYd89tVmM_RnDmuxDb6eeGB7IA2djdxItILxV8L5U7xbR3rfo9u3iSlCsDOU1bTRoZnNAuUsscDAJubl0ymYXM8TEb2R5D31j_PHvpPKNEKVPW4uWxyHC9gacRPCyYBRGZv8ldUSSSzKp5YkmQLNGTry8iLkCCtkdpHSQ420pDAV6HQktPxKguy8Pr3vRbJupRDR_vPLrYfgdvm4dkb-suxP4fothrYCqjIadpOMmP6ifPxN8HPzSoDj2STerMkBVHWjayRCyjUohJqXA13SEM_Ci7R4Bp4LoA9WbbONDVgiyyyrrbkWJmzTg0v4qqv5HbKr2CbgvqV5KNNsgq-LDdO6QYu30zpg5-OBngVJgQE_-OgJl1ArTQi_zVk-e4-uds8RQjoR4izFHYPXFPG7bGVfLf7Gfysu_jD6O-yRi9_cgIR1LIZj15Xvytva6K04WHaTuNkaFZJsHjrywD5Ye19jMpw6vMKTFuI0fYLN_DR9w8EnA3pln5Ld0czvSdtWNd33miSHf0b2DV7vqF2bpYebf3dwqEQZytQkrGCRxKg3wi3SsY7J4lvaCFTeNxYWaeE5TlyuNcT9Vo19iK1ddi1bCHq0udqSqPftdedv6YZjNaggxQ7rQVKLkRdaDgpcjIC_KTgNiiqp_U19QeBAQnad9Smn8uxoibMUyyCbecVdgUqlt1b8WmhQG9YFH33ugjjj2TMeSpWQa94ncTG-aEJmMx67RaFz7llB753bnyZLbw6hXBM0p6kUa5wm6LRfHngW7s0dK1qOXB4V9deD8r5vELoML52b49XH9JFT5i72SxmVktfCaygdbXx3YoVPfopfWLJdPO1UQMbllsq4chBftbXpL0jh89KRGqVhcm16V9PgJ.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08840961de58df07016ae81ce2136887d189dd5fb4fd96dad0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13237,
+    "completion_tokens": 478,
+    "total_tokens": 13715,
+    "cost": 0.00189355,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 13234,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00189355,
+      "upstream_inference_prompt_cost": 0.00165455,
+      "upstream_inference_completions_cost": 0.000239
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 194,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

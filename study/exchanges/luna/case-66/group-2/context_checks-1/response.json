@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target contains relevant product and promotional content, but its severe horizontal displacement leaves most of the page off-screen; key headings and descriptions are visibly cut off in the supplied views.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Large blank areas and a narrow strip of content at the far right make the page substantially clipped and poorly arranged at the recorded viewport. Product cards and text are not presented as a usable page layout.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"Visible product-action buttons are clipped at the right edge, so their labels and full controls are not reliably available in the recorded view.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target both show the intended Apple homepage and its product and entertainment sections. The target\u2019s layout problems are assessable defects, not evidence of a mismatched comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible product headings, descriptions, and entertainment-card text convey coherent meaning, despite being partly cut off by the target\u2019s layout.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing layout issues**\n\nI\u2019m looking at a target layout that has severe horizontal clipping, leaving a large blank area on the left. The content seems fixed at 1440px, causing layout issues due to a horizontal scrollbar at the bottom. It looks like only the right edge of the content is visible, leading to substantial unusability. Though scrolling is possible, the default view is poor since product cards are mostly clipped, making essential content inaccessible. This layout seems defective overall.**Examining control visibility**\n\nI\u2019m noticing that the essential control labels, like \"Learn more,\" are only partially visible and clipped on the right. While the product sections are present, it seems like the layout issue doesn\u2019t permanently lose any information. Horizontal scrolling could potentially reveal more content, but the default page interface appears broken. The textual information seems coherent and maintains its meaning despite the clipping. Overall, there's evidence of coherent content, but usability is still an issue.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout issues**\n\nI\u2019m looking at a target layout that has severe horizontal clipping, leaving a large blank area on the left. The content seems fixed at 1440px, causing layout issues due to a horizontal scrollbar at the bottom. It looks like only the right edge of the content is visible, leading to substantial unusability. Though scrolling is possible, the default view is poor since product cards are mostly clipped, making essential content inaccessible. This layout seems defective overall.**Examining control visibility**\n\nI\u2019m noticing that the essential control labels, like \"Learn more,\" are only partially visible and clipped on the right. While the product sections are present, it seems like the layout issue doesn\u2019t permanently lose any information. Horizontal scrolling could potentially reveal more content, but the default page interface appears broken. The textual information seems coherent and maintains its meaning despite the clipping. Overall, there's evidence of coherent content, but usability is still an issue.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6ArFeBdOiZVXWOuu5DVwbm5JYTgL0NJEstGAAEsv7jK0qciDBAyTFcLyq8JI7SApdckG9clk3v_5Jou4g7U0c7ddxustZx6C_UTe8M94tAGzDQ_1YIpKNBppm8F2eUR5ylxvHB1m5hqMHsNapQBQYiNfKpkdUoQuuoKmsRt5yxJYV-giK_3hD220P7BgEmbh1nebkstgcljBw-z5u6GNA9WF9iAlRAcGD7v2lhaihL2P12tC1AvyHaJzyQuixz5x8_r8qN4zO-LO9f1xD_RmE2gNK3BhrwWSdwi4BQFhjFf7kEd29z_jOZGpvwVh46WkO45RC1F39Fxg-NKVFMvVjLwht8osuqCADJTrkAOUsru5EvJTnH8_MXV0EbLqCgrJtdVIzR2Z196Idm3bnfjmy0IJLttF4V4bT-0xteT7h0ZLcdviAO5GDdOXSWOrX1cvA8WnxZk-g1GbvvPFs7W4gMER9MI464akJKARIKdfSgt8yPj-8vN3kgffxmAR2cFg8Dvs_p7HLyv2KS88u-7swxcsMHSl8sKpFYDEaGD6Xl_Loy5kmvMyGp6kHYCAx7zlhtzvt-Z6qxZZNUmpdgkXGpp146D4jNQKxpdAStCZkT5HPfdWaGYxg09gT0jqPoY6ClDqDaPhb7nF2yXcAx4ckelXeVnAQt66SpwEIlWxvSiO1JyXEaODiKQRRYnawpXchON3YXEJIM_Gmdk_-jPid68GNaI-TTObOjshUg6zH2K4eDr-BisEEIWORTUEhfZigt0gQA5RZxrQ_PAQZLzC-NiPB_LppMh5BVN8YBCng3wAXv3-Qf1WZUd8-K7EVu15qFZB0osThu8n1lsU8qIBylq7mAx6zZsyZftDnpvX7hAkR78zz2qs7hPsdqrlnMN-voR-iRbyJFkNgHfLXIInAdmPyRLu3SWet4k3p7xPxlQNs4-bpc82NMap1yUwMnxMUR-AK46EAMzMLdXXHJagklK6ctVLGXEFHax3dSMyjvDRRuHA6hRjxGBfG67daFjPnSqqkEWk9-AYVfgAdKQTb9vRpVNHZC6EYfEwj0l5mDUpQGj_51mYTcEszwmAsMRnvgtnq8lpxbwO3DGcez7L_FAKYkzfUF2NDO0r447-U-HX0CppROcCtr9dXmV1M35ugbZFhnDzBribDRWEgroGfuRnABFyH-ydRAzpKy3tC11FdEO74wq0YCZQiIxAouH3xb0ZCkyeGA-xvYU5-5-_CIhErJdcb7E11j7AxIyWHQOyR2ZzYvhSo2gvs-EQGH1rmOgys8kENY6Cs8Ju_eUgwu-eiYFmaEKRNs6RIs9NyOVAZ2Cetdvq2d6xhG-F2IQUM-En9we6iMwYy7J3yLcYvgfamNtAJLTSdHQPLvFkJYvXPxc5M63ecyox4PH83mL58e_byy9hOaQym9B-noVHt4isPYNmnszjOUoVTU8NThIvCxsWBGtHLi1oGbjOigbAsP3hMfpz_KzRwB1Ca80awKIl_fTuuP40UDIoheLo6XIQ1SchoXSjgNyUopcZMMshZArpU8MScP9qihw8NZE0LYFiaILHcZWPpUYrR54wQXYx55kaHcJhrIGlU56d5EicgCOi_TRQNGWPHYCa4Voiul_cNJljwR5uKSyDKy2b7mf3eDndp3bTsmgjXESag8AP36Yc1CUaePtr1KCeokqxXCw-qJrKN52fhRqDaLDNF7HfDNZY_R9y6rBUG1bvTXNotp_RccpI9o5hl2ozWEgq0DWYeSYIB6vVr8to3oExLWP2m1BODjsPDl3gQ3uKfHtJNOeKEDWPgGVlCbMM4y_7uC2FILgLvgIe07Oo_WwcdDVjkYG3iviVZzuUHdlGRiOdvR8CuyO4ndnUAwXwNuPQYOBxGk65a-gYVDTp7nrKqK-6lUkjTfWUd-sxKBIBdMdmFaIUWEiVNVha0i2HHz9Ijj33o2Mf2z3UJFLxkO0zW1XYGIzAJb1Z94TJr2eG-PbQJW8rqZf7JGhIEOcOC7eYQTXCpdW0UVrdwnjyjbipIRSnLvtcjIU34F0JD2R0gHRmF1VRQWKRw1jlo3mFqHazxCqhiJ1PkxmGztmXTvtT-3pXtJoYr2TXik9biNLk_4bj7lIQZf9srf0yLQbWGCaPEFLfDBA7o-fflJB4V2WssJN5FIZCEfrnNluzfg5MREvIjYnGJAPBpwhBMGW36D5cv_EV5ziNP_XRRp-LbvRPhzwBzgzD4vLbUMMuT5WBxa8xO4h41LEg0r6U0Ly-zh5pwHCYMshSBZ6WSSEwAeU6b1L8AC-doEnSXIIoiqujQ4bu2pFUg_itODk4IK3MFJkUrGTqwKifv_b4kQWcvAelLcOywwDmxnNGXNXg23RiBvhSZt6LZDDj2uBa1sjc7qDcB8r3eG_r2xue81kXwUJyc3WQTd8wkcWhRuju1PyKkGUyHA1uUZx4DX8FnvURXgtDnP9FTZ_GyYW_EdO82ggiSXmcBbLINRQIAMvYu-T3n-E3PQkswLUXx6BDej_SwkaJ_UjIlASJtOqJnalGdls2UHeXhhoXAMxkCf5JRfwwl3IVjmKcDoooadZheBAmsImbbIPYky5BGaH5kLyGamDuRRa9GLM5nIcSar0D3qr_pu4nAJLQK4-j3K6Nk6o4JX7NvrskBHqjZbnqUrnpxGOluu5_fyxebCQ8p41iJPxdYCCBWUOhEkOqnrdx5GFh2J_MFyBz4P6-o_ma0Z55PUkAAFEnQqUVKqZ8-5479mh_14AehPI8j2xA9DgctSvVldbWifYuDrnP7E_k9YyIHxMD2Bp_Q2xLMVwFNCgCBpviu3FJKlk5Lrfy30g2BK49P8PYk4CQJG7TEoasb1JGlQA4cnNkWKo8y0W-UqqIFuFfBnhSclU1hyxRMd8xnD_nPaDnvCrb_j2JTLoDstfwWEtKMkE-gH-uuWNTxjY_Q2els8sb0sJF2Usb6Oxp358-bx-BBsWCxLTOMwiyN4JFkAB-5bRZcQ093DjHeZeH-cBSsFAn7fLDXHrvU70PkAb3YpzqRdBhXKwDUrIAUb6kZRt3VgNFgD70No0l75mKG0DphFJoK8-c5JM-3VmL-9Hbi_bvCu5h6ldjNrETIB3xRk9lm3T-ZDyGbypYPk_ZgucrCMogPbPse4iHXRecpaGK0pyHytF8liajQ_YY-22UQ5dDf2U4F3MV2oIJ9ja7kmmbacMox1ZYainvguS97m1qhOcIU0YtNhbObZHktwfzGX9I0dJxfuaxF2RRQ4-SW60lwT95qCle4JSDvO8LyjLfiPqNkSICvx3Fsui89qC70I1AC5fAi0kQJZj0Y1n0o6A9tbG0-xf6tozzxLf5PYKKnJTxMEHwCrp4NduDDnHnEoYDcubWba7AAb9GPaOt8Dgc8l-6sY-FE05tTjb6JEO82Vdza5ECIVVtE5UK303JMV7zK0WD5pMvdknvelChhlQ2fnGVkjQa0MkXKsSpXy9NhNYzL9bSzmOXK-cycUScjUODn0NI1aAvS8zA76AeLi6adG05EFn4ntWqoEN6jXHJ2YX-dFRZpeZkBH24l9rqHEKIKXmM34hbrS-s4AV_1_K8PnbL3imvbmcP7pfZA7tBJNX_bPFzKhKYTbB1GB1OchuCPI0NCvY6HvNg4HUiUtcFisdsRjBHYtlPmf9Y_NGpb4dGAB9evbweSR6v6FjChEWrlwd5nu2a6fxSfQhV15lGqyy7uUFyHmig2mFdjTAaIwWZQZtPt0AQG-YRVp1bmURnS7sk_oPASyLyQEGg0m3fUVaq9mOLsWy5X2K6RQf93_POo6yl6_Spe3pWjOsOYX4Ftu-cj0ttiIik_Gz0A5gEjVFzRCtzchKaIJsnbhskajIJPNIyw-ycCfI__3dDLX_Ox18sG8cTwLdcarnm_Pk82SJL3Go6wxKqllviD5RmL5xhG1ae2Um5VRP6noowFBtAxte5MGS_ekVukOBHNr6OSVxsbis_vj241wtUbCT0KWQD4lZWCaBZRo3N_pzGdnMNeMeKBytwQkD40-FBhFEz8ClBA6Jlgi2-JFfC4_T_T5nNqvHIDJOfAfFM-0jnbJUmQL9XuS35DNTLSn8UP96sY3X4OBPoD6zJDXFgxvceq3tLE7WodvGaxiQU8dh5ZlWIFkAs71ZYlNmpo8U56dX0jbit77y18NUlH9hEPmZPkIw628A2-cq_y7drSrZC9NFJb3xtFEPAy3NWIKn-BBiP0nAcc8tCpAI4oQwwlHObra0JGNQSwwFKy7LMRUhMeAZw6GMOXmOEDKwWjkAOlrL_kKelK96ZtS6TELDrCpnEGGIrYuPO77m40ffpfYNqhxSTWkNLvGBnrsckTtOne4TqhZJXFGhqydI5fcMoJaoqe5_07R6Kc3CeVwgJ20Z_gaZhKJoTnOoq6-ZWTb0Hya8GuxKfMWdzh9KPpfJMXFWIr9Tmar8tRusx1Xa-y5uX9j0wApWgKHkFMAuQpPCVKExHHoLvMYe3wFIzpei7Z0BovYmZ9YeRWqQh63adhxdwaHNmu2-Wig6mgnFx3dyhKQQi2rBp8pQmVT0I4bd2PEzjAj6UrG8G8XGpvgdyFH8F1YdMtB73Bu7G0113zAyERAR17H932-I2C6KI-4a0ou5TIvgHoO1E6CWnHj1RU943WqXvDUa-cJIUi45yDdMr9rf19znkVEGIsfSRuKohkQ-8whxxrC1EVWw40YsQ-nV2mhruoEWuIFiU9RFvs9GGuL0gDQr2fnSVwfh7mQ7EGbsGmKcdDZU1w1l1gBSv6S9-Er-QFaq-2ssTLakK_pLrZleK03ZaGj7vY_PRD-YXdN3JeQsdKUQ45Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0832387594cd7031016ae80ac11d8c87d18a6fc3595b252bd4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 19418,
+    "completion_tokens": 463,
+    "total_tokens": 19881,
+    "cost": 0.002658675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 19415,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002658675,
+      "upstream_inference_prompt_cost": 0.002427175,
+      "upstream_inference_completions_cost": 0.0002315
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 224,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

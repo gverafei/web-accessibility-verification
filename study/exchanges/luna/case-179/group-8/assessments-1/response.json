@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible footer content, including all four link columns, copyright and policy text, matches the reference. The overlaid assistant prompt is also present in both.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and footer columns are legible and coherently arranged in both images. The assistant overlay covers portions of the lower footer in both states, with no meaningful difference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Footer links and the visible assistant input and close controls remain identifiable; the reference and target show the same controls.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target depict matching footer states at the same viewport position and are directly comparable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The footer\u2019s section, site, company and subscription links convey coherent meaning, and the assistant prompt is readable in both.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14947,
+    "completion_tokens": 252,
+    "total_tokens": 15199,
+    "cost": 0.0019943,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14944,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019943,
+      "upstream_inference_prompt_cost": 0.0018683,
+      "upstream_inference_completions_cost": 0.000126
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target are visually identical in both supplied windows; the People and Ideas sections, imagery, and article titles are retained.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The displayed content is legible and arranged coherently. The assistant prompt overlays part of the lower article cards in both states, so it is not a target-specific presentation defect.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible carousel arrows, Read More control, and assistant input/close controls appear the same in reference and target. No essential target control has an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Matching viewports have identical image checksums and depict coherent corresponding states.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The section headings, article titles, and images convey coherent People and Ideas content, unchanged between reference and target.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18617,
+    "completion_tokens": 203,
+    "total_tokens": 18820,
+    "cost": 0.00242855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18614,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00242855,
+      "upstream_inference_prompt_cost": 0.00232705,
+      "upstream_inference_completions_cost": 0.0001015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible section retains its heading, supporting statement, explanatory paragraphs, and Get Started action. The subtitle is styled differently and wraps onto two lines in the target, but its meaning is preserved.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target content remains legible and coherently arranged. The changed subtitle weight and wrapping are local layout differences, not substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, cookie preference buttons, and the section's Get Started button have readable labels in both states.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding page sections and a consistent cookie dialog; the observed layout and typography differences do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's heading, subtitle, body text, and action continue to communicate the section's message and purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing layout differences**\n\nI need to evaluate the differences in layout, focusing on the large bold subtitles versus the smaller italic references. The sections are shifted down, and the typography of the top cards is altered while preserving the main content's readability. I noticed that the cookie overlay remains consistent. For the fourth image, the subtitle wraps and bolds nicely, which helps with height without overlap. I also need to prepare five rationales in JSON format and ensure the cookie buttons work properly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout differences**\n\nI need to evaluate the differences in layout, focusing on the large bold subtitles versus the smaller italic references. The sections are shifted down, and the typography of the top cards is altered while preserving the main content's readability. I noticed that the cookie overlay remains consistent. For the fourth image, the subtitle wraps and bolds nicely, which helps with height without overlap. I also need to prepare five rationales in JSON format and ensure the cookie buttons work properly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CCjlYYWNIANZdPCaMBq9_ORrVTiIDl88Eswh3lbYVhKSMR3t1wBk40-yJDSuPGqFqAzkwxRwSOiFQI-mwlDGWUPhHnt6ZIx0HYznITAzN7r-rjcDpPZCzqbIzJvEUI8JdXPnTbxl59pkNSeTjQLevkkTLKLlUZrWIuo_uavkZq5NIdWV63E00HjJcbbZcyUPOSdzWdvJWKebITNZd4EZliIHdIWmzNSgrQPmhLQxpU_xu-TqpYFy4oyNCv7hkzZhtU2XpUh7HYFKQbYCCxcXmHxTpj8rJNkuxzmq3A8GYPVOi6OznkQUednaUlGuT_CVJ7tJ9NjSWDgDG4Bvv8BHpFPTGNPk4spwqtzskbjw3jfMB--imiKii0mIfBA64zeCLT0Eh21fIZzenTOZ61VEapvjmSQpEcNuY622QdmAprsFO8VGc_HymVbksu9wxgdC7Mdsy83wTEVQPq320ths6woXVEtp8AusPk4PQOVumEJ9pBkxNDzRJPTuvck14It2ICO6DdQcXetjNOVYvCEzJJL118lYy-u_2FTq7LzAh-AJcfDYdi58x25vyUIaEz6s9oUNCZMH3QqQ73RFMq_c8QwSP_abre9i2y3I3Q1oJe8vujEg7nSX3CWxKEt0RkX_aRvRQ2EqY173XFQiV76ZWJyN06L1Z6gbZkgvlLra3A-3wKrTG9bmT8lcPTyxJJE2XBZ3UDqBnGYC-bYtdI7aM4_uz_ey1n8372zhdXgTAitwVePp5okUUcG6UIgZl8EUCzoVMM4S768IHjuOCdgKr5nA4OJlxe3_cIGN_aD2F7_RX3DVvqoMM3jL3hWnMmCg46dhMiJ_Gcdo8meVJOYvYbJlS9Affqy1MRZgBGpJ71gm4uvme5oc1Bukl3I_fVN4bt5U4kxzYczF1DQgQp7Zr9to-04A-Zv1-2j1PsGvKJj12jRg5zyhzypCMEB1o36VmR3gLWZcuHoSotYToHxNEmwCLUaLKLQsIQiqKRVXFlCB_k6QT8nlhv0Dcdr46dwkcYjEPEjT35RR4v0BbrZx_lqVY8AIChkZDPrEjFDp2ylRD-gs17kg-cPImmOseyVXSm3JkNu8B2Ahe9Sv8oAoJ8GMteiQGCVOjznixCf4Ly0Lt3nZmSBy8rMFpr2dkJptEdiLUTf04tOggTrXTThXE3KLeM1hgR8wqUeUtw9BTdvAC0QfvE2A37hsTWnSHbzjmtMyQ58NdnOmEfN8NYm_PTgM6ckUwc-QsV-iSx-f1sVD6S3bK4zjTQ5g7dkMwqu9xnq0O5MPGTKRwtI7Jdir8P7MmymNacsZwwf-XIjGAOtLbirow0ML8uloN3HWnk2dK2PJHfveekn2dnSHOKkkDuEQO9mvUUtSrAO19_zbTbGvG-5-A_spF6M1iOEMZpuv4cvvrlPA0Apx2R4FJJ2rUQ6mPRYEGKQ0rUrNIjWF2T8_Rqku2cIC2Oy0gjhdHp3PFGQXzXACT4fyjTHOdU94I5XIPsokxcQ5mHKASiv2wy_E7oyXOe72muIsZBTNbgO1p66KWRA7pKmcBepQ8nil6fuYr23w7IGYdjgGm4ZseLudtayPDkq6p__lg2Db9D_v_7wqq9FNT4fuz7yA6iUd8VieVuqtMbMHF3iAEuKXN9SugMpllQjtM_d85rOuP1AwPXKhAP1FVC5aGDSPiQrZRnUHRo62fh0cBGIvxztCjEFzvz3Y_b_6a_5UwvsrFWSn4Cz-yg2Y5ej22Vb3RyfyOfsFEiupZx5L5CqToeYkScwWe396XM90f0yqS2-rNI79HSeKaUcok0mXrlmp6iypHIP_T14Zoi5lxCOHkWRTA1nloh0Z4RBQ176DFaVsCdFaXx3gohHRi2GuqII66JYk7T0te7jpswd9eJwQ68s5HZRL_jYrEL9udG_gNeb48KfHT9wuqOdBz4JnOzJfaxfs1F5GVr1Zhu7TZd7UW20lYZDbhf1m79J1Q4OOFv57NGQXzZ1Aced3v4X4wb-JjBjKEaGkD3hjOAvND7pLUuGZ5ILSmkVzU1-hmnpc7LdkL5iHPVHTXZWox1apGKJuR1Rb7HlwtlUlCNXTM6C1eRlkcORLuOqi94cBR1MtOJxHQuwnqtGA1yGlLuB7d6SWedKZ-HjDo9QSrASf366jhnP013W7dIjk2f9FTpvGWY2vlshVADhIiUrmHX1Uq7i1N2GE9XFTyCNOCIHDKltM_AJaRyK4WoPg9AV4dpo11_h8q5nfVA6tM4ZJ_ebA0fPu4gPFyvF-67WCE4naWkbDATLVaP1x2R6RlyFGLtINxgws8q3_yt7Ptg3NXzbkk1UrpMSq-uetFtv67Kqu6lJnK6xER8BuxCOLytkwE9vL2_MJjJ-2VC37wP40BOHJBBuadGEyUzNWiuAE752oskSKOJ28GOC13p7pvjUHjbRisW_pEV4rPdZze4SOJai83BL8NTbNvOMrymchY8cC-8ST1mefQGlKGFJh0bNIdBYMTbXJpxItXtA3ehWJSZ2YoG3YK1TCGgU83UehNoLAB_Nx3hxo2EzuejxQbV8MmcdNYPFB_mQ7W2w8z5snXRKXp6wuBVSCe1ENAiIG53lBi2eno-fJvlUTt7sp9FIrr_wMLO0ucuELFQ-JxbeAKrF4-95YSmXjpmYWRs3stz87g4KkNbr0902uTKEWGi1GDRRjNFDxY-dWnbEH64cZePD5BJd3XUJl2syQzF9ELUAxXBPwCofUpijQUX-Cpxa01EDVbg2EvueXVcfVCcexhniHxS_27QBauXdRoYtsAtLcfBPoNp-CYPEAqS6k4-1dT0KxEAwHEv9mEh7CDp92W_YysI5I8vBJSFQduuYYfadIQcLwFGzSGKfRLcFo_zx47tqoYdj33cfX9a1IWV-lB1yz2BCYZmiRgQHHJ_LvFPbdx7wmLOqyVPPMFg56uvnx9WsYU4hg2ehWDOeR-3VvKOBZOAsptnL9zwxLp5Vmtl7XU0R8QTtGO--oVDgoecvHK495q5DXCEzuiP3Ycu2nE_M9CGqM5f0kk24aXcRNLGm57QI1piLEkrLFkpEN8D2UVIsdvKrwPyqQUl6KJEMRxKPd6JiokBWZNQQ-4EIi6B4GOLD1iTdsdsx1sL434oPnhQ8gGWUlFlLdSM7La26cphjBwNLHzQ36NEPuA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c9c0e5d23661b50016ae820a1dda487d1aa06152be59d731d",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10010,
+    "completion_tokens": 376,
+    "total_tokens": 10386,
+    "cost": 0.001439175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10007,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001439175,
+      "upstream_inference_prompt_cost": 0.001251175,
+      "upstream_inference_completions_cost": 0.000188
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 113,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

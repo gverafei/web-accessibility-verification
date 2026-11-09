@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s lower-page content and footer convey TIME\u2019s news, subscription, and site-navigation purpose. Its footer link inventory differs from the reference, but that is not a material loss for this regenerated interface.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target content is legible, consistently arranged, and has a clear footer layout. No substantial clipping or overlap is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible calls to action and footer links have understandable text labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference show coherent lower-page TIME content, including footer navigation. Their different layouts and link inventories are permitted for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, descriptions, calls to action, and footer labels communicate meaningful news, newsletter, and site-navigation functions.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing footer details**\n\nI need to assess the target footer against the reference footer. The target is coherent and meaningful, but has truncated links while still presenting a broad purpose. The coverage seems to focus on lower segment ends, which looks good. I\u2019ll compare the target displays, newsletters, and the TIME100 collection before the footer. The controls are showing visible text clearly and the link labels in the target footer are legible and semantic. I\u2019ll stick to a JSON format with rationales.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing footer details**\n\nI need to assess the target footer against the reference footer. The target is coherent and meaningful, but has truncated links while still presenting a broad purpose. The coverage seems to focus on lower segment ends, which looks good. I\u2019ll compare the target displays, newsletters, and the TIME100 collection before the footer. The controls are showing visible text clearly and the link labels in the target footer are legible and semantic. I\u2019ll stick to a JSON format with rationales.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BnrOxc2GFSsKM03lf5luDuPgwd_B0EPtWHCfClIXOZHxJZRJKNfThwvmYctamZsNqGEmAfxFBoTDZiRBHzeK5Gbcu44YT0OYio0vl1OUGtIP9fLp_N49_7zD5Nsam-9N88P37jtVUR__UWk3yRxBjLDFGBtVqE8XV7xwHjEsXlt5FDHx_hqFhHSPhWNvRN8Se2bQG44RhZ_C45CqJZCrL6BFfPTJB9U8Szbx8_QrnpeFsXfWNs0WAAOxV43IKuPMY27VMeo85gGo1cNV_ykpBTU2Ylm4Gt2zLsOecGWooHMz4nW371kiUxLH2ZHiNwW5erm1jlo8TO1gnADq-rl3cD9IgFpRbetz_R_lPjR0srqu-K-O7Oq3mhwxoYa4GrPht7n3UMyOGA9HASdWm9efd3HaobuTG-dVVoDhZQDsKpc5fV5rf-zvxIoWHP-qNV7t6FG5_agErIpC1B5H0fFHw5Bps-KP5PJKu6ewbipeVGG0uTm1ycnGotbmVwU8I009qxt0Ubburiq1ttDRxZn2j-e3dIYp_HwnNrg6TUXo3PDwtnvfT-fBWZpnl8wIJf-P3DtT8E-E9h-nPnzs9DbLi6LSAGcn0qIhr1RcXBxVAHE9U_ZK2gOjfLIsAuN93VUmmfSNSZOqzXt9KCdfEo_1uCNbykbA8waiJ6sr08MkrxuIdfwKyP-5P-UJ8HSkwqrxq7H8eTLyTHCMPqmUZZ8xxdoBqtXwjHQtQSUoX5RpsX3s8BGGvm7rENolM1JpC7jJ-fqo9Lk4DKbB0CetQ5sLQGfpzxLsSC_3XLSrd7pOZN7YkZi8oKJvPJAnQJ0gQ8fg9sUe2QtWAJMlkHi5djNdKHd08QgTUdeT3kZ5vI-kKE-sV9cTDstlaMlKUB8VP2yWWpIEGuuVrPPO0RxzOe8LgNpN_sxFodggH216gw8UeehHZsd6TVRVS_q5CX26IvUaagA36NaAo2Cd_BDbOhqBiNpsf1r0dN8tWmuHfE-E2-_L0MO_C_eYqMgMWR-XIIBWsB5l2-lS7y3IsyemDCiHpV9VcgD5r6abV0i4GGyjTtn5YvN3DOiHtGyDGBAKbM-vylAQGsSsK6LxPcD_c4Yd-CU0IIe3ZNiUJl11oLS5BqM880qbsnOgA91jbK07BaDfR0gVZrMrgjpqV6M5zC2xEfOXjhbsm_F7sJmlyUTu4sKK2ChhEuiq2TtBqONoAHAu5Sq5BZFerNaNtyHDZTplsy2sAjCNnqLfV25Rpa9FtS4LA0zvpzgM4K4lIUQix76b3Ar6gHNHFuFu-xPVVClphqRr952zFiegS5g8BK7bDfG218JA8Dua2mrR5td0uFYwSdz7EqGNmTVtG_uFNiIFWxcZnXMegKPcrqBcs0SiFhmWHhS1CjZ57gyXClykoxQ04EKu9dURNPHDFrGIXnirt6lhPmKMIeQl3g0EjF2j9AoDhdQQUf8t_FkfjHZ8wfipUeYefdfCx2J8SxwtPffkeiotITunYujcNjZmUhikkmW8SZaURw7cQDMgEizO2G0Ne3CJRxnw4aTammK-PMeYPXZ32BPmar6Gu-E9qDXDEiagj3dGkEUmKS8MZ081nLA2qsqEdAyn6sKV5km1ZAnoID6UrhBoZoqX-GUMpsCpgB9UNzkPgQx2xtmrUdBdYlk4xNIhF8ObVlMv2j2Iua-etyM3rZWQGssJnplNo77jCy8JpuRgsUVN7bCuK1_ACuD3jAbhdqs1wowr76h4yRON3WeFDun-Nw1c5z5SXR9e7MH5NDzvqKvExbK-Po1XNa7el_zyj-me1n4WVAnwMJKm7zRL694CgY4tcQ3BGWH0psv5kNb4E_zdOJMGdK5zmhtPA_NcCsmtmQkA43XC4l5FrpEAbHyABaJUQXlHmKCVhUKajiiXLTGsMabtBqx1nwmj4cNFYJ8T6I1aTsmgY7vvGfgOtLroCR-_fi8HR_la1k2tcP12rEK6P2NfLxIDoEQTlVGZPa1rNSB5_pU3NRcCYo1cOIZulGLqHZ9oJMj0okAhkcDMjhmQ4vOQjxWBCcyhg13fRTnmO4yb0YyI4ljpA0MYDdVOFcIiXmQtlq_WYYtvVpp3DPvY5_Etn8cmRewbdFHOjNSHnNmo5QF-etZdVdF82HvByICYFcE28dAY2j247xiTTM4BGAerRcUmtNut53ymY837nn0NLGuAL41XBu9JHBfOkhh58I9msab03tcX_UTU_UyVaCJMHoN2p-LsEn3yIr692H2taWOkvASstFO1txDCt5ydzAlCmQYFv5TBUvrtMRGkmn8C-pZeE509D9xJEjYHjB6lnYfDtfUr1h4y_Ueiq-Zsbd2jzTGI66UqOIzxHoBvbE-Js_Sk7MH7OlFZHh0emiuZoqdWU0vKuK9tmP_VGO0zNnfnZ0EXk3baEphurvHOJpU5CCX5l_Rqw-OVWg2nkjMEudBohuXjUd2KFB77eNetxIsy8hhbqSGH-KIKGDW1NBafVngxqOq86t4cLHfT8DtrMdMcXGZEo0o093eFTCALAuacMX6_jyUyTnJM-y5PxqoBZxOTEubYpXmhKjRG_PfJBEGqwcpBzV3_UxVKXfF87rdIFkxlIZ1Y8yxu_vk-PjaxTU0JYkJTP4BHxFHQcxvCFQ0eDwij1jA7Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03ed686b310335c9016ae819e9d83487d18fff8220fccff2ac",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12696,
+    "completion_tokens": 341,
+    "total_tokens": 13037,
+    "cost": 0.001757425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12693,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001757425,
+      "upstream_inference_prompt_cost": 0.001586925,
+      "upstream_inference_completions_cost": 0.0001705
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

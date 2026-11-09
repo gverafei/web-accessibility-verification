@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target footer presents coherent site navigation, subscription links, and legal information for the same broad news-site purpose. The visible article-card remnants and personalization prompt above it are consistent with a scroll-boundary view, not evidence of lost core content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The footer is clearly arranged in columns, with readable links and legal text. Its different styling from the reference does not make the content difficult to use.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and subscription links have understandable text labels. No essential control appears blurred or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The views show a coherent site footer in both the reference and regenerated target. The reference\u2019s promotional chat overlay is optional and its absence from the target is not a mismatch.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s section names, site links, subscription options, and legal notices convey clear meaning appropriate to the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing footer layout**\n\nI need to evaluate the target footer against a reference footer. The target has coherent text links and shows top stories along with a personalized prompt before the footer, which is good for normal scrolling. The chatbot widget is an optional overlay. The target's footer layout differs but it's still effective. The links are readable, and I noticed there's no social media presence, which is interesting. The content fidelity seems adequate, and coherence in terms of semantics is present. I should make sure that the top clipped cards are at the viewport boundary as expected. After this, I\u2019ll output the answer in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing footer layout**\n\nI need to evaluate the target footer against a reference footer. The target has coherent text links and shows top stories along with a personalized prompt before the footer, which is good for normal scrolling. The chatbot widget is an optional overlay. The target's footer layout differs but it's still effective. The links are readable, and I noticed there's no social media presence, which is interesting. The content fidelity seems adequate, and coherence in terms of semantics is present. I should make sure that the top clipped cards are at the viewport boundary as expected. After this, I\u2019ll output the answer in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2wzhZLETNkfhD38hrLK2ZzPMOSJ6eCZ36CsjQg5ZA4kW-LtHEj0JX8hmOv4BIGutSJZRWb83XvmmPeyuv9PeC15xxUMjYHolORWXXnz7X8RHJJgyiyuphufp2xkkg3qPfO0Iq0HPw95kKdHYjqXa3QRaJnJzdWyBZd6UPlJgEtR140dIm7TdtbpTBmIE6bEQ3CWcuxkS4AAXbzLoQ5NGamiAnNYULuVrBI9rzOg-bY6jNNI1x9lkrf7tPPKKOfSY72ZKI-IDm2odPtv7iWY0ADWB4DShtN-C1YXJE2Dsd2-3S2h9YWMA4qL74-X-VUvSjHr51EnUdPzvYqrDH2VI-93YqZWcBd8EzaiYvuVEe9U3OavfrIZm6_sI6egXxCLhQ5DZd7-4CXcQxgIDcckQfUmGuVvm7o15yt47T16bd4oy1ZAjgXpExqym5Rsbo_OHmLmPRcGSf2Vr0n1Vbv4O0m-nfszpVkCvljhgkAGpD2Yr52znjKFHT6G3Z22s-TBQ0ZfCIz_NG8JhtkOcpv3sT40dTCqCM9YQgSOanI_skMPOcDbnSi0C8s3c7PVR2FkSexXxRSGTwXclpOVWi2XJ5dYeKJx5Ttzm5jiJvW_nC9aKaQ7U_U9s2JontQlESZa9Eu7ymcaqS280I_kLrUCtxfh1f6wzO5zpMBgtmkGcNhD-_1dxhykKLxvLZcL1e_9s3Ilr3jIiYFxQPOjFwXtXf1VstjFj7y3cMJrk9Xm8m0HiCGw_aXu2inXRhNcIAcx22uxxSPlZDkyIz7CSUaUipg8zHO6g9hlYAiwuO5g8n0uUwCR0d4v96vtAGFdi2UGVuq1c551uDFYy9FhZbplv1hnvyXrFrFTO_HktmPe3MFuY1SiNzYcQIyo2R8PGYUk29m1S7yVrVM-nGMiRhCCKwtLZ13c51F7YL7lEfxQPMJF9sc6M0WNp1_Z47CCpSrgj4DhOBE8L0CBc_zpCMy63jocRV8L6oIt-j-u9j23td4wb4wMeh7gf6HfHPNCAiQWYhP5-KNOjHUcqPCEKu0y8rmQXSgl_VDcJHAuZApnT0nUTf-_a32OwLLpWaepd_vqqXGAAQIxkxh4X8DZoF76-h5P8LAd_QMWtcxQEPWyObDDUNxF8X752c32K5p8cCX_tq4AKF5hPMEq2Z7q4YaNJi_IxoFUH_oiAgKS-y6Esv2Jl8uB5DsY28NpmGmsQhdc0Ghw-4OJ02khhL3Ef-z0Uu-gqlQl2tgjbJDulOuZVGX19N-Txewv1295PLhfs-jMeaxJyMVk7vkjtMSKbFRF3hsJbgzYdwikL44Z6cnpDJwa8dzTjNEfwoXrespCfP533iacrP0RTfQPVR_PF3x0wnPpwejs40vhNOEy7MoE_BLfyBTUKziKwnqrtbVG4jdAxBbj9u_9tGBGezJbardlKvq0LZGnZ_TTa--Qqa-xp5hPawqQegwBytJ5M7cpylhMHnxQbdhhOq8TLpNC0Kdh2HOHG1Jlct4Gm_BEvJKzO2glHMIRU_-qxwAzZpG2QfsWFYjcehuM9leP0XoXLehJINjhoZ2GC7FsyE8H7s92rycIFftJPxds0FXam3lllbF2cdsQ5JQ8Fru0K8XyLcghyaPylDuNU1g2SJRYJd9gm0lCjwDqETojRrcqINH1_DXiCi9U1KUWGa3jz2z50mdJjafqI36aZup6jWb6-p7XwrQrZPp29B0DoWaMpsfoZ-2Oh6f91_YyiakSFRnY2DqobAgZ5df1oIE2gpUBElmy6K_RQRChB9qFyM2onryWmHNQTsb4Lc8skdgpPt2rN32LpN3JXWx7MYl2BI7zOoM8JwnJjpzZGhtOkMtcBKbqXhUvc1VSM9eKKMKrQ883TdZDi6U48zbGURce10Nh_RaNo1ZLUfyYV71o6PWeCFdNKvGUPhsydsrUXioWJKy_1wD_te4bILcn3_qTrOuulK8EbOg7TNm2ovMp0L_fwCnHBjXTZFuBfifxDzmHsGzfdF9fJE54_Hkkcc9oDQXfyTHNTBk7nDI-BAUYw_mt4wuIUQ4mrFkGXLlGiyNKoKIIMQb1yJSHkQMkx29sPEBRvMb6kKJO2nmcHxlIwJVrwDcSEEjfJSsF3wkCYw2Id1cRxWTD9MLDp5BR6qUTp2c9jYLDBiVGATiPuz-Yz8MJ8aus0F-PzTCFXTAcjMoyIfRWjMXurBt0k5BUgb9mtghjzgoUsq7GbTWTLrAFusW8mYS_1WFq7lXluAgmJCCmKS6bLt7ODtt9uR02Qa2vvFWFwgazOtVzIpH0Il0LGe4yPGzDjgrwF_sSGItHxuooZZUKEDfJjZEurgwiOdMkwf0qR20FB3T_DKcqOpIZpoJRBzGyzmpCIj1hPiB6uy7lyq7HFPIh9cgwjOiK4w_9DiplhgFTEqkitY6qD_zbx0NRkKsk500uA0du1VFtdowe4gB6YwfdYWdmESfWtsS7IZT991z-CHj3JTmPJbwIKPBH7rL-9gfEVGB1VNUdoTlcVRhPbOg-N3QsH9T9bdW28xcAztqNqQYEcd2qisUCZOa0ughPg2pg4sngu-3W5ECLzUWBgqYe2AE-_0FBDNWR7iO_PaYRzXZz4ipUbHnluR3f9aKlXZ7KVGWiPtOpjb5f49cKb53aps8DB5aoDyEKc_bw4SH11atavLBLKcPWYKQTL3vyZRlDbcC.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e698cc86fc0e5c1016ae81dadd4b087d1b1e436fe569d41d4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10838,
+    "completion_tokens": 360,
+    "total_tokens": 11198,
+    "cost": 0.001534675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10835,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001534675,
+      "upstream_inference_prompt_cost": 0.001354675,
+      "upstream_inference_completions_cost": 0.00018
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

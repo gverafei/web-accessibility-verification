@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="The Network Advertising Initiative is an industry trade group founded in 2000 that develops self-regulatory standards for online advertising." name="description"/>
+<title>Home - The NAI: Network Advertising Initiative</title>
+<style>
+    :root {
+      color-scheme: light;
+      --navy: #15105b;
+      --navy-deep: #100943;
+      --blue: #1851a3;
+      --cyan: #00a9d2;
+      --ink: #19213a;
+      --muted: #59647b;
+      --paper: #ffffff;
+      --wash: #f4f7fb;
+      --line: #dce3ee;
+      --content: 1160px;
+      --radius: 18px;
+      --shadow: 0 16px 42px rgba(15, 28, 61, .12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 1.5rem;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    :focus-visible {
+      outline: 3px solid #ffcc4d;
+      outline-offset: 4px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 20;
+      top: .75rem;
+      left: .75rem;
+      transform: translateY(-160%);
+      padding: .7rem 1rem;
+      border-radius: 8px;
+      background: white;
+      color: var(--navy);
+      font-weight: 750;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .wrap {
+      width: min(calc(100% - 2.5rem), var(--content));
+      margin-inline: auto;
+    }
+
+    .utility-bar {
+      background: linear-gradient(100deg, #17609e, var(--navy));
+      color: white;
+      font-size: .84rem;
+    }
+
+    .utility-inner {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: .45rem 1.6rem;
+      min-height: 42px;
+      flex-wrap: wrap;
+      padding-block: .45rem;
+    }
+
+    .utility-inner a {
+      text-decoration: none;
+      text-underline-offset: .2em;
+    }
+
+    .utility-inner a:hover { text-decoration: underline; }
+
+    .utility-inner .contact-link {
+      border: 1px solid rgba(255,255,255,.85);
+      border-radius: 999px;
+      padding: .23rem .85rem;
+    }
+
+    .site-header {
+      position: relative;
+      z-index: 5;
+      background: white;
+      box-shadow: 0 3px 16px rgba(20, 31, 60, .08);
+    }
+
+    .header-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      min-height: 82px;
+      padding-block: .8rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 158px;
+      height: auto;
+    }
+
+    .primary-nav ul,
+    .utility-inner ul {
+      display: flex;
+      align-items: center;
+      gap: .5rem 1.8rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .primary-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      color: #252a3b;
+      font-size: .94rem;
+      font-weight: 650;
+      text-decoration: none;
+      text-underline-offset: .3em;
+    }
+
+    .primary-nav a:hover {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 79% 28%, rgba(64, 70, 176, .48), transparent 34%),
+        radial-gradient(circle at 1px 1px, rgba(176, 196, 255, .19) 1.4px, transparent 1.8px) 0 0 / 27px 27px,
+        linear-gradient(120deg, var(--navy-deep), #1e126e 72%, #15105b);
+      color: white;
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -10rem;
+      bottom: -18rem;
+      width: 37rem;
+      height: 37rem;
+      border: 1px solid rgba(0, 198, 242, .28);
+      border-radius: 50%;
+      box-shadow: 0 0 0 38px rgba(0,198,242,.035), 0 0 0 78px rgba(0,198,242,.025);
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: clamp(2rem, 5vw, 5rem);
+      min-height: 475px;
+      padding-block: clamp(3.5rem, 7vw, 6.5rem);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      margin: 0 0 1.15rem;
+      color: #9cecff;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 28px;
+      height: 2px;
+      background: #43d7f5;
+      content: "";
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 690px;
+      margin-bottom: 1.15rem;
+      font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+    }
+
+    .hero-copy {
+      max-width: 580px;
+      margin-bottom: 1.8rem;
+      color: #e2e5ff;
+      font-size: clamp(1.06rem, 1.7vw, 1.2rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: .68rem 1.15rem;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color .16s ease, color .16s ease, transform .16s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-primary {
+      background: #a8efff;
+      color: #10124a;
+    }
+
+    .button-primary:hover { background: white; }
+
+    .button-outline {
+      border-color: rgba(255,255,255,.8);
+      color: white;
+    }
+
+    .button-outline:hover {
+      background: rgba(255,255,255,.12);
+      border-color: white;
+    }
+
+    .feature-card {
+      position: relative;
+      width: min(100%, 440px);
+      justify-self: end;
+      padding: .8rem;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 22px;
+      background: rgba(255,255,255,.1);
+      box-shadow: 0 24px 60px rgba(0,0,0,.25);
+      backdrop-filter: blur(8px);
+    }
+
+    .feature-card img {
+      width: 100%;
+      aspect-ratio: 1.22 / 1;
+      border-radius: 14px;
+      background: #e9eaf2;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .feature-caption {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.1rem .4rem .4rem;
+    }
+
+    .feature-caption p { margin: 0; }
+
+    .feature-label {
+      margin-bottom: .3rem !important;
+      color: #a5edff;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .feature-title {
+      font-size: 1.06rem;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .feature-title a {
+      text-decoration-color: transparent;
+      text-underline-offset: .2em;
+    }
+
+    .feature-title a:hover { text-decoration-color: currentColor; }
+
+    .arrow {
+      display: inline-grid;
+      flex: 0 0 auto;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.42);
+      border-radius: 50%;
+      color: white;
+      font-size: 1.15rem;
+    }
+
+    .section {
+      padding-block: clamp(3.5rem, 7vw, 6rem);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-heading h2 {
+      margin-bottom: .35rem;
+      color: var(--ink);
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.1;
+      letter-spacing: -.035em;
+    }
+
+    .section-heading p {
+      max-width: 620px;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      color: #174a92;
+      font-weight: 750;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .25em;
+    }
+
+    .text-link:hover { color: #0d2671; }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.15rem;
+    }
+
+    .news-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 286px;
+      padding: 1.55rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: 0 8px 24px rgba(21, 35, 70, .05);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .category {
+      margin-bottom: .9rem;
+      color: #24579b;
+      font-size: .74rem;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .news-card h3 {
+      margin-bottom: .8rem;
+      font-size: 1.25rem;
+      line-height: 1.3;
+      letter-spacing: -.015em;
+    }
+
+    .news-card h3 a {
+      text-decoration: none;
+      text-decoration-color: transparent;
+      text-underline-offset: .2em;
+    }
+
+    .news-card h3 a:hover { text-decoration: underline; }
+
+    .news-card p {
+      margin-bottom: 1.25rem;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .news-card .text-link { margin-top: auto; }
+
+    .about {
+      background: var(--wash);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(2.5rem, 7vw, 6rem);
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      background: #dbe8ef;
+      box-shadow: var(--shadow);
+    }
+
+    .about-image img {
+      width: 100%;
+      aspect-ratio: 1.2 / 1;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .about-copy h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -.035em;
+    }
+
+    .about-copy > p {
+      margin-bottom: 1.5rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .pathways {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+
+    .pathway {
+      min-height: 175px;
+      padding: 1.35rem;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: white;
+      text-decoration: none;
+      transition: border-color .16s ease, transform .16s ease;
+    }
+
+    .pathway:hover {
+      transform: translateY(-3px);
+      border-color: #71c8df;
+    }
+
+    .pathway span {
+      display: block;
+      margin-bottom: .5rem;
+      color: #2362a4;
+      font-size: .75rem;
+      font-weight: 850;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .pathway strong {
+      display: block;
+      margin-bottom: .5rem;
+      font-size: 1.1rem;
+      line-height: 1.3;
+    }
+
+    .pathway small {
+      display: block;
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+
+    .membership {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(110deg, #18206b, #14599c);
+      color: white;
+    }
+
+    .membership::before,
+    .membership::after {
+      position: absolute;
+      top: 50%;
+      width: 310px;
+      height: 310px;
+      border: 1px solid rgba(115,229,255,.28);
+      border-radius: 50%;
+      content: "";
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .membership::before {
+      left: -170px;
+      box-shadow: 0 0 0 32px rgba(115,229,255,.05), 0 0 0 66px rgba(115,229,255,.04);
+    }
+
+    .membership::after {
+      right: -180px;
+      box-shadow: 0 0 0 32px rgba(115,229,255,.05), 0 0 0 66px rgba(115,229,255,.04);
+    }
+
+    .membership-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding-block: clamp(3rem, 6vw, 5rem);
+    }
+
+    .membership h2 {
+      max-width: 650px;
+      margin-bottom: .7rem;
+      font-size: clamp(2rem, 4.3vw, 3.25rem);
+      line-height: 1.1;
+      letter-spacing: -.035em;
+    }
+
+    .membership p {
+      max-width: 630px;
+      margin-bottom: 0;
+      color: #e0e7ff;
+    }
+
+    .membership .button { flex: 0 0 auto; }
+
+    .site-footer {
+      background: #101744;
+      color: white;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.2fr 2fr;
+      gap: 3rem;
+      padding-block: 3.5rem;
+    }
+
+    .footer-brand img {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      max-width: 290px;
+      margin-bottom: 0;
+      color: #d1d8ee;
+      font-size: .93rem;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .footer-links h2 {
+      margin-bottom: .85rem;
+      color: #9cecff;
+      font-size: .8rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .footer-links ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-links li + li { margin-top: .5rem; }
+
+    .footer-links a,
+    .footer-bottom a {
+      color: #f1f4ff;
+      font-size: .9rem;
+      text-decoration: none;
+      text-underline-offset: .22em;
+    }
+
+    .footer-links a:hover,
+    .footer-bottom a:hover { text-decoration: underline; }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.2rem;
+      border-top: 1px solid rgba(255,255,255,.2);
+      color: #d1d8ee;
+      font-size: .85rem;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem 1.25rem;
+    }
+
+    .footer-bottom p { margin: 0; }
+
+    @media (max-width: 900px) {
+      .header-main {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .55rem;
+        padding-block: 1rem;
+      }
+
+      .primary-nav ul { flex-wrap: wrap; gap: .2rem 1.3rem; }
+      .primary-nav a { min-height: 38px; }
+      .hero-inner { grid-template-columns: 1fr .85fr; gap: 2rem; }
+      .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .about-grid { gap: 2.5rem; }
+      .pathways { grid-template-columns: 1fr; }
+      .pathway { min-height: 0; }
+      .footer-main { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(calc(100% - 2rem), var(--content)); }
+      .utility-inner { justify-content: flex-start; gap: .35rem 1rem; font-size: .78rem; }
+      .header-main { gap: .4rem; }
+      .brand img { width: 138px; }
+      .primary-nav ul { gap: .15rem .9rem; }
+      .primary-nav a { font-size: .86rem; }
+      .hero-inner { grid-template-columns: 1fr; min-height: 0; padding-block: 3.4rem; }
+      h1 { font-size: clamp(2.6rem, 12vw, 3.6rem); }
+      .feature-card { justify-self: start; width: 100%; }
+      .feature-card img { aspect-ratio: 1.35 / 1; }
+      .section-heading { align-items: flex-start; flex-direction: column; }
+      .news-grid { grid-template-columns: 1fr; }
+      .news-card { min-height: 0; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-image { order: 2; }
+      .membership-inner { align-items: flex-start; flex-direction: column; }
+      .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="utility-bar">
+<nav aria-label="Helpful links" class="wrap utility-inner">
+<a href="https://thenai.org/how-to-opt-out/">How to Opt Out</a>
+<a href="https://thenai.org/about-online-advertising/">Understanding Digital Advertising</a>
+<a href="https://thenai.org/consumer-input-feedback/">Consumer Input &amp; Feedback</a>
+<a href="https://thenai.org/about-the-nai-2/careers/">Careers</a>
+<a href="https://thenai.org/search">Search</a>
+<a class="contact-link" href="https://thenai.org/contact/">Contact</a>
+</nav>
+</div>
+<header class="site-header">
+<div class="wrap header-main">
+<a aria-label="Network Advertising Initiative home" class="brand" href="https://thenai.org/">
+<img alt="NAI — Network Advertising Initiative" src="https://thenai.org/wp-content/uploads/2021/06/NAI_logo.png"/>
+</a>
+<nav aria-label="Main navigation" class="primary-nav">
+<ul>
+<li><a href="https://thenai.org/about-the-nai-2/">About the NAI</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/">Self-Reg Framework</a></li>
+<li><a href="https://thenai.org/policy-news/">Policy &amp; News</a></li>
+<li><a href="https://thenai.org/how-to-join/">How to Join</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-inner">
+<div>
+<p class="eyebrow">Network Advertising Initiative</p>
+<h1 id="hero-title">Building trust in digital advertising.</h1>
+<p class="hero-copy">The NAI is an industry trade group founded in 2000 that develops self-regulatory standards for online advertising.</p>
+<div class="actions">
+<a class="button button-primary" href="https://thenai.org/self-regulatory-framework/">Explore the framework</a>
+<a class="button button-outline" href="https://thenai.org/how-to-opt-out/">How to opt out</a>
+</div>
+</div>
+<article aria-label="Featured NAI guidance" class="feature-card">
+<img alt="A tablet displays NAI guidance about using AI in network advertising" src="https://thenai.org/wp-content/uploads/2026/07/AI-guid.png"/>
+<div class="feature-caption">
+<div>
+<p class="feature-label">Featured guidance</p>
+<p class="feature-title"><a href="https://thenai.org/new-nai-guidance-key-dos-donts-for-using-ai-in-network-advertising/">NAI Guidance: Key Do’s &amp; Don’ts for Using AI in Network Advertising</a></p>
+</div>
+<span aria-hidden="true" class="arrow">↗</span>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="latest-title" class="section">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<p class="eyebrow" style="color:#24579b">From the NAI</p>
+<h2 id="latest-title">Get the latest.</h2>
+<p>Updates on digital advertising, privacy, and the NAI’s work across the industry.</p>
+</div>
+<a class="text-link" href="https://thenai.org/policy-news/">Explore all news <span aria-hidden="true">→</span></a>
+</div>
+<div class="news-grid">
+<article class="news-card">
+<p class="category">Blog</p>
+<h3><a href="https://thenai.org/tony-ficarrotta-joins-the-data-protection-breakfast-club-to-talk-privacy-ad-tech-and-self-regulation/">Tony Ficarrotta Joins The Data Protection Breakfast Club</a></h3>
+<p>The NAI’s General Counsel discusses privacy, ad tech, and self-regulation on The Data Protection Breakfast Club.</p>
+<a class="text-link" href="https://thenai.org/tony-ficarrotta-joins-the-data-protection-breakfast-club-to-talk-privacy-ad-tech-and-self-regulation/">Read the blog <span aria-hidden="true">→</span></a>
+</article>
+<article class="news-card">
+<p class="category">Press release</p>
+<h3><a href="https://thenai.org/press/the-nai-releases-2025-annual-report-highlighting-first-of-a-kind-privacy-self-regulation-in-digital-advertising/">The NAI Releases 2025 Annual Report</a></h3>
+<p>The report highlights findings from more than 70 member privacy reviews and a roadmap for compliance.</p>
+<a class="text-link" href="https://thenai.org/press/the-nai-releases-2025-annual-report-highlighting-first-of-a-kind-privacy-self-regulation-in-digital-advertising/">Read the release <span aria-hidden="true">→</span></a>
+</article>
+<article class="news-card">
+<p class="category">Public policy</p>
+<h3><a href="https://thenai.org/the-nai-comments-on-vermont-age-appropriate-design-code-proposed-rules/">NAI Comments on Vermont Age-Appropriate Design Code Rules</a></h3>
+<p>The NAI supports protecting minors from harmful data practices and shares feedback on proposed rules.</p>
+<a class="text-link" href="https://thenai.org/the-nai-comments-on-vermont-age-appropriate-design-code-proposed-rules/">Read the comments <span aria-hidden="true">→</span></a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="about-title" class="section about">
+<div class="wrap about-grid">
+<div class="about-copy">
+<p class="eyebrow" style="color:#24579b">Privacy, trust &amp; accountability</p>
+<h2 id="about-title">Clear standards. Meaningful accountability.</h2>
+<p>The NAI develops self-regulatory standards for online advertising and provides resources for consumers and industry members.</p>
+<a class="text-link" href="https://thenai.org/about-the-nai-2/">Learn about the NAI <span aria-hidden="true">→</span></a>
+<div aria-label="Explore NAI resources" class="pathways">
+<a class="pathway" href="https://thenai.org/self-regulatory-framework/privacy-principles-for-members/">
+<span>For members</span>
+<strong>Privacy principles</strong>
+<small>Read the principles for NAI members.</small>
+</a>
+<a class="pathway" href="https://thenai.org/self-regulatory-framework/privacy-review-program/">
+<span>Accountability</span>
+<strong>Privacy review program</strong>
+<small>Learn about the NAI review program.</small>
+</a>
+<a class="pathway" href="https://thenai.org/about-online-advertising/">
+<span>For consumers</span>
+<strong>Digital advertising</strong>
+<small>Get started with an overview of digital advertising.</small>
+</a>
+</div>
+</div>
+<div class="about-image">
+<img alt="A smiling woman" src="https://thenai.org/wp-content/uploads/2021/07/womansmile-6.png"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="membership-title" class="membership">
+<div class="wrap membership-inner">
+<div>
+<p class="eyebrow">For organizations</p>
+<h2 id="membership-title">Explore the benefits of NAI membership.</h2>
+<p>Find out how to join the NAI and learn more about membership benefits and resources.</p>
+</div>
+<a class="button button-primary" href="https://thenai.org/how-to-join/">How to join the NAI</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-main">
+<div class="footer-brand">
+<img alt="Network Advertising Initiative" src="https://thenai.org/wp-content/uploads/2021/07/NAI_rings-1-1.png"/>
+<p>The Network Advertising Initiative develops self-regulatory standards for online advertising.</p>
+</div>
+<div class="footer-links">
+<section aria-labelledby="footer-about">
+<h2 id="footer-about">About</h2>
+<ul>
+<li><a href="https://thenai.org/about-the-nai-2/">About the NAI</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/staff/">Staff &amp; Board</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/members/">NAI Members</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/careers/">Careers</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-framework">
+<h2 id="footer-framework">Framework</h2>
+<ul>
+<li><a href="https://thenai.org/self-regulatory-framework/">Self-Regulatory Framework</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/guidance-2/">Guidance &amp; best practices</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/faq/">FAQs</a></li>
+<li><a href="https://thenai.org/annual-report-2025/">Annual Report 2025</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-connect">
+<h2 id="footer-connect">Connect</h2>
+<ul>
+<li><a href="https://thenai.org/how-to-opt-out/">How to Opt Out</a></li>
+<li><a href="https://thenai.org/consumer-input-feedback/">Consumer Input &amp; Feedback</a></li>
+<li><a href="https://thenai.org/contact/">Contact</a></li>
+<li><a href="https://thenai.org/privacy-policy/">Privacy Policy</a></li>
+<li><a href="https://thenai.org/terms-of-use/">Terms of Use</a></li>
+</ul>
+</section>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<p>© 2026 The NAI: Network Advertising Initiative. All rights reserved.</p>
+<div aria-label="NAI social media" class="legal-links">
+<a href="https://www.linkedin.com/company/network-advertising-initiative-nai-">LinkedIn</a>
+<a href="https://twitter.com/nai">X</a>
+<a href="https://www.youtube.com/channel/UCxgL70aQb6E3wmtDlblNmqg/featured">YouTube</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

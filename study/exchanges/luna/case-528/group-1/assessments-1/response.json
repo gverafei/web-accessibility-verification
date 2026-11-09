@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the prominent Zelensky story, its image, headline, summary and metadata, along with other visible news imagery. The layout and ordering differ, but the core news content shown is meaningfully preserved.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target is substantially less usable visually: the BBC logo is vastly oversized, navigation is rendered as a long vertical list of default-style controls, and large blank areas separate the header from the story content. The news layout is lost even though the story text itself remains readable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation labels, Register and Sign In controls, and the menu/search controls are identifiable. No unobserved interaction behavior is assumed.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent reference and target states of the same BBC news page, with matching branding, navigation labels and a prominent matching news story.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target headline, summary, metadata and news image communicate a clear news-page purpose and the meaning of the featured story.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating website coherence**\n\nI\u2019m assessing the evidence for the website's coherence. The controls seem to meet expectations, and the navigation labels for sign-in and search are understandable. The header menu has an icon, likely satisfying design needs despite some clutter. However, there are defects in presentation due to malformed styles and wasted viewport space. It seems some top stories may be missing from the visible region, but overall, the content fidelity aligns with the primary story, which is good.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating website coherence**\n\nI\u2019m assessing the evidence for the website's coherence. The controls seem to meet expectations, and the navigation labels for sign-in and search are understandable. The header menu has an icon, likely satisfying design needs despite some clutter. However, there are defects in presentation due to malformed styles and wasted viewport space. It seems some top stories may be missing from the visible region, but overall, the content fidelity aligns with the primary story, which is good.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AHEx58r4c91oAToJKEwxrMtw2zYr4TqSYr8jFOAqGVbrr2LqO8qQwRwF_hTnRlQU0GWqjOLKTThPrzosLa3ujxcm68cdhyHQLYb1su7ChrjI80aSa373Ndlzky96J_tCnv3fhtcYSgJ4hglI-gwiY4W4G_M1LAw4ooUG5XSd6d8NM1wDIrTlidsXzRUbehnN3SkSYHyN5JTDE4YHVFcNvV7yMErbwZLwmEi5_377E0gfWnUxkimvVOcX8nb5ZpF9N1tWoYXxju3JwqtHx2ZWX6fBi-jpbBWZYkMQi4DsFtsrc1R_mc3RzUYryE8TEW7W-Z6VBdWqTiASiP9LMhfz4JRdSymI2by7WnIbz6EFcwpgKe0CtH_PjYZY-kUdjdmDxezv0BgeFRa2QHSmXN0sIZsC10oVrw0CrdN2yWfKlh5VQQW3Df7addvE0YUZrEFVPgtDkVMqvLgqUmWbd8uqjLALSg0zN58yoAHuKkFnYIElhSPxJBqnzzFXpHTkt_hW6qwqcsD-Au3D5_zd-80ULY9NysAbAIm5om9SpTDLV9hASxq_oLHHmHiIL3Wk6HgVZIT8T-nwPyCjcn-ZPWLzEVGbTfoJvfYFlDRQ16IEuNAud4ZBbVVDEaesDOxJc9TjNiIjqQiFFmKBMWcroNY9phurv3Xh1u69RSBvq5RegdGV_GelC6bTB3q_Jv3ceWKGF3734yqmb94LU2tRJHV2grLiea5gYnIE_aNtMnZOeqpfSwMg4MDjXsqXZ9H1SVUqNmeBslv1SlZtci7w8IuFddJ1AUYtO1wlSxV99S0vFpNmjU0C21vLLJrzrmmL0INiLi606G_RPTbqshSd-2KGnC14SlmMSphz3MVkjcOAwKyljIh-MbRfKq1c8nrzC1woN8qg91dHL_dACEUxB18sIYPrx3xGqdeFongH3gtGCzEaSFvtsCbnqXFEFyfVEAIzebSHjqx56GlJfc3VxAi0VTjncP1tjDK5AtuZr0SAwSSu76XJ6UojET3L6nGJCKNgsp7jMVRWqpHJKoqjonTLYnNwvLBLtxlqtDTVk1Zq78s70vBqFr7WJue4y2Au29I0dOsqFQlJc5xoim-KSSy0eX61si6Ysee8sbI4suktBzXAeHmneDuIfJNxin_6HHG9O6RUkjh7QHN5Y9ldWRNrQEx9qJLuVv1E4UwhNHVO0rKXvGztqT29wFoQVR_cb4JXEuzjNbKzxXvXoS6gZFb7dAN4PLK24js6Za54Sl7Kcu59IliQKAIS5xh566Hulw5KRphyman6kkCrj_uSpS-7ZijP0Awv3Fo71Js5xVn8L4f7zrSbs_RzUJDc2qabq4myklircy_aqQk96N4sbpx0-CIcdjoDsWNkCCuvy58fV4us8TtiwNe7egJ36ekJBnL8flO5sNsuQMmiN_LNFJ5MCf0vFgLI95J8VfzNov7fCoUqPgZYmw_aVyb-cCAKdwAU_WIWC-jBfXBJOyOndgSDeGJM7aowNd34x2yY6f22ove-sW3-TFo4tEidODrsYpfUkK7zntsaeRTO8TeXJ4C4c9z-XXfiB21SpA93CmLqG0kzYDFWadXhXh50Pzl2drOt0cLOv69nThEsdXMVt_deXhuPqOSJVvjFXGDmIa8yuLmwB2yNh8gkNljU0Dr3ZZ8Uh0-1rr_FIxqbQjXkfJ55vU8aAbjpdB2q5Llpifb-TGVrz5TDKSbp5KEZVsffnOEBE_POOjVHxHoZmKOhcJ2RcLL_OuWCU6oi1tma0fxckVOlv_j-90yyLDK0hOxBj8kKv0RpFvUBVqTGcOEPa0x-Il2zIejdWzntvsKWAIhhqiIiNLwm4ghkFfFhroDStuunKktIQcgYooZwY1Hyk_8m-aQ3oret4dwfgKp9mFd6C3MyUn_mL1q48XpJwSyhjZG5UXRFE5niweLuracJlTTQIsa3imf3dkdAGYTnoB3KKuAnvvpNAaeP_Aox8d11X3j3zTOnSBMdI5yPPp2bac4A6Ph1M41ObnFyCqIt_p5CN-QD3o0VJpc_2fcysCzUFyRIr7Xq7qu9UTHjd9VUq7lw7eWuekIUbJOQTZdGn3TYhAUFjHIITB37wiYsXA3kio-nR7RcVqaAKmXtAZ5-mlK1YDlk8MvKC5rQEebVBCuyCrANkaj6F1NHhhFqnCAbA78dEQjkVvWxXW_Sw75OhouyCsSf2o8Jp0WxlHMWEKzk62wsFuhYslw-7JUmaWm4EyMNn6vA2AusMman0uctDxGYup2n6fceG0JWdzcGnQiF5q0fqoowFEkFtNi7piuBXP7qsLnu3qzpFXjB2lA7FRrYdqNxXxIWB2iqD4a_tjHPk0fJBSJ3y96kxWU5VJYZKT4wpHgYgKF0wEoBtBGJtWroyFhkxNt1aGAcXBn378Ddr2Ae9NgbxihQrIw2MlzDLfVgSZIciGHfPvAalkIfcD1-s5Bji-B-zxuZX2K4b11y9mwlecowULwGQHB0bpDkJxRoHnBBIpbcsJcps2_MAuAaIFaHpeWA2jCvgaya9L1SHbejhl5Hdc2yd14gaqihJudMf_ly6MUpfXARrTCuQU5FWE2ul1gtV0mB8yPiv2IoMRuA9P6Ou2xfxJNHNg-gkUV9M_0H-idKvQIZRAxov2Lx423SUzyf8r6qGQu0X-0UCTyi9BnjJSjjHlfAsPBD5lndEdVMonLNPnHjcrKgs6OpzghrLQCL0oJ-h3P44qvl0MlmDmI6os4S7vdhB9t-XE7evyQLmKlEovberKWp6151VdZAA6yKdAnIfLX3QUOXFJ0_DlcdEx8bHqbYAh3tol0aWAS-LRwtFme3zznQyBRlsbQAKmZC6sTO6OdXcKwHLIELwnBW03YVb7wUp1s1XsW3v8zBbnQL69fRCGV7SOszW1Zca0yi-YPJa-KYzwRln8wq3602L2U1lzeD-UoEnqIVnVLIGOAR0tPMvfXt8VwLqLI2Ejf6NoSUPsqvOgeIJhBeXxZI0pdOMLpJwVZPbzsifl4VoP1a81JAqOQNTYZm9fUh6ao1MylYWO1F-FPnhmwnkg2El9rQJbJL_iOU_dk2nMOSdhFvWxvIvfxAbaa2i1bqai8yKo2fUsXaY7t1WpFYHX-yybdYiEQtfH_nd-0_wKXmUgZrKUSPUep1Rntc6kjuPY5mRDttltJ5HakugYCOUvqz2KWw4_hDtQWY4-_nCB2u2xWB8hsXicQCipTBT4VV0bJhJMgn0oP7rhlOGe1uxNJmzgGlN38XWHH6JvGy8vPPtQcppYvj8TQIv9MVD9wWzuZEqI7u8GRnXfyBPeJeZiZrPADW3BuWLMEQrU6k6i20_uU3Lw-CepMfd2ixP02rflfxCJw1HJOV1iT7V3aInvWc2t0ErtTgiPGgqdGQkL30PkqGu09f2nTEo5J86GTqXKmXF1tz4ib-ZNCxrH_1kPLDcox8fwScRl6kjqarqDyjw_8QjFE4-h-KMzIV_UC2kCrohGYWlBw8odrKYoKrOO2Z7WPnBwxBuDle8KbiwdYm1KlmrgzxkPnCnEg2Masc-YBF1vkGQy9_MC4JGVrH--4mt4lOhiGhi8bd10fryDtjHsMbSY9Um3EnZRZi3cekouMfMtdR860jyfby-Vm9eWXAKg2TbClCyDrfhP1cx2oLwsxs2e-2r322y6uL3LnZnxWH0cdXWHYs-ocxciNJF-TSx9mQRkQfv262vVoQ9isoY1ICeBqOo6WSORah9yaE7bIyXwxGK6MI0tYMqZxdcyFcuBwokwJi8ELsP4Wlw7TuxI-TOa08-EdoABp6BL4FrEUuIEIky5tQBEbyNl0d3NPSHmKMtdD8YfaQ9hu-OeCLsw8oXxDktVSGROe0zNgUiKFukQWKYaP0kjUBBJkEa2HQlW22nbcuq6rbwyU4-U3A4603ntrDNhupb1uCtVFxOFTZLobWz5P2EwFnCHd0twMQjQAn9NfqM8EFc2lzqVjxW231zUzF0xGBSibj0DKvJ-HUqsgnadCUDpAfXHF-Pz2sRxQL3pX7DvUWzGm2DI-UaxbDHMNx1XQAoCpMQSmKlg_yZcoxtwJcjyCjV-Ro0syHdTj-xmssbuUILDPekshF6Iw7C2Eyma2Xbw8-QRX66623m1NCnbXp1Zvmj6MsW_3Zx0II927pLq3PTzGRxqBHqEydbqjXBC75QotVX9EZjvsi4m_dEh2b--d_XfNDx5ipmec6rhjcDf2I9gaTRL5Bi1x3H1fCUi7MeVMvp9QqQiB4a45Fu7ByRGQE3-Ma_ICx4ghAhwjkGhqKTC_IA5WSyRzyU91LwIdt0m8B7BmRRCDBLafuca2dBHFKVaWO4bQTwuhwS5ldCMq3emQLAHQ0rXdkE3c3HnXe9vgHBC17SYoqd3HvOrDAmxFJ6PLwypJJ7sv6OpT52DxvIuQ1Clc86Iv_cgUaiXt4-1ljASrAXOxs-Fg8GpSUqQ8xuQ92H4UYErBCvJQEXhAFaANH10g-dDxy00Lugmk2X4IWnGs9cbrT7uF6m_yW6dVdePNBL27YKiQ0nMwg9cytsOGZbFhQvKS4R0Juas52g1kNnegfNprw7J30uEo8XVnjtMRde-aBTw27JlRvxdZijazBPTeEePvdcxmceRcQmeqBpxnT05ZsFYUaxltIjuxr3UhboUjLJQBm0z8RBTUWUMQ9yFSReXBNZf1JA4g3cVtl_UNF0dojVFqXdqDhmiDruAEFmKb4R1cGtirWCPOZXSIneECwHYK8eMh-UwaxnZemLFw14PD8LBLU8dYFgDJq2XhaUXK0d6utjO0wMlV_pq8h9vLH8zpFhQb7g-Od4n9vRva71jLr2yEd0gXakhp5-GDxEqTEBpsngw35loJk5kZeJPBHfEKGJPumtpBRwxRoF9qfdfBi52IW8aLJxx1q-ywC0BvOgJ7lvo-V32V3jbGCtDViLdbtGg7dop5CdEAWzPNUthvCsuoDzLS_5JxegDsT_Cfi-yB0mVW0neuphcRwzebv-Tri0IXAep_DrqtzCZPHARZPwjjfFXrVAL8RBWlSZV3kvM0fU46v0V3sAkwgZBLrF_Z8Mu7JFGNhkd9JU-ccJCRti43mPMWe4h_71Y8Y-vhrNproHDzUqWYXRFIApDznyRkmeIz4zPdR3zU44GsYCr9zod4ydGetjvQLa6tF19KhgiqEoOKae84x403BNTUA1Kfk0fliBlwPggH-yYC8i7M0hbxA9YyH2uPh0-T73Nhm-_L5DXp3TqA4EMiMINOJVle_JYi-o9d8JbP3woUj1acdhUp1I0wULuzF9LZm2Bo2SDs8akzygVhnp5fjZwHYtq55N2n1lP8VEgx9Nn3X5nzHRbGVS_Okm48wYzF2qAddD_woD2gJnZx1_3SnoNTIHQJj3cySobzSWryJ6wPuOE-8vBBZC_vprcm0Clc6tU_iwjrnTNba-KxWeXQmmaL_wRkVbGdiRtzkPfu5qcva9owI4f5qK9121Q4S5NeBD5aO_6OjyO9XbEWOhLcvQ4IGtE5x7BiPCVrIyzzU2wj4jagjwkeEY8BFdPCS0EnNpu587px28W0HE5wViIkCso_B3iO23qqZe210g4BidZwfQDA1HWarM5Yd94ttovZ-H8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b97a9bab8c86730016ae801be637887d19dd5855da6f88c8c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11237,
+    "completion_tokens": 581,
+    "total_tokens": 11818,
+    "cost": 0.00169505,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11234,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00169505,
+      "upstream_inference_prompt_cost": 0.00140455,
+      "upstream_inference_completions_cost": 0.0002905
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 278,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

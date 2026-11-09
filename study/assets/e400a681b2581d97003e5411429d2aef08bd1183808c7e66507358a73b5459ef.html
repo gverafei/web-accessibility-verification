@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#075b80" name="theme-color"/>
+<title>MySQL — The world's most popular open source database</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #173748;
+      --muted: #526875;
+      --blue: #075b80;
+      --blue-dark: #064567;
+      --blue-soft: #eaf4f8;
+      --gold: #e69b24;
+      --line: #d8e2e7;
+      --white: #fff;
+      --page: #f7fafb;
+      --radius: 14px;
+      --shadow: 0 12px 32px rgba(12, 52, 73, .10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--blue); text-underline-offset: .2em; }
+    a:hover { color: var(--blue-dark); }
+    a:focus-visible, input:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid #f0a62a;
+      outline-offset: 3px;
+    }
+    .skip-link {
+      position: absolute; z-index: 10; top: 8px; left: 8px;
+      transform: translateY(-150%);
+      padding: .65rem 1rem; border-radius: 6px;
+      background: #fff; color: var(--blue-dark); font-weight: 700;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+    .utility {
+      min-height: 39px; display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; color: var(--muted); font-size: .84rem;
+    }
+    .utility-links { display: flex; align-items: center; gap: 1rem; }
+    .utility a { color: var(--blue-dark); font-weight: 600; }
+    .masthead { background: #fff; border-bottom: 1px solid var(--line); }
+    .brand-row { min-height: 92px; display: flex; align-items: center; gap: 2rem; }
+    .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
+    .brand img { width: 145px; height: auto; }
+    .tagline { margin: 0; color: #566b77; font-size: .92rem; font-style: italic; }
+    .search { margin-left: auto; display: flex; gap: .45rem; }
+    .search input {
+      width: min(230px, 30vw); padding: .65rem .8rem;
+      border: 1px solid #9fb3bd; border-radius: 6px; font: inherit;
+    }
+    .search button, .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 0; border-radius: 6px; padding: .67rem 1rem;
+      background: var(--gold); color: #202b30; font: inherit; font-weight: 750;
+      text-decoration: none; cursor: pointer;
+    }
+    .search button:hover, .button:hover { background: #f2b449; color: #172f3b; }
+    .primary-nav { background: var(--blue); color: #fff; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .nav-links { display: flex; align-items: center; flex-wrap: wrap; gap: .15rem; }
+    .nav-links a {
+      color: #fff; text-decoration: none; font-size: .93rem;
+      padding: .9rem .75rem; display: block; border-radius: 4px;
+    }
+    .nav-links a:hover { background: rgba(255,255,255,.13); text-decoration: underline; }
+    .quick-links { display: flex; gap: 1rem; padding: .7rem 0; white-space: nowrap; }
+    .quick-links a { color: #fff; font-size: .88rem; }
+    main { display: block; }
+    .hero {
+      position: relative; overflow: hidden; isolation: isolate;
+      background: linear-gradient(115deg, #073e60, #087ca2 67%, #1695a5);
+      color: #fff; padding: clamp(3rem, 7vw, 6rem) 0;
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; z-index: -1; border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%; width: 490px; height: 490px; right: -75px; top: -185px;
+    }
+    .hero::after { width: 340px; height: 340px; right: 0; top: -110px; }
+    .hero-content { max-width: 720px; }
+    .eyebrow {
+      display: inline-block; margin: 0 0 .9rem; color: #ffe0a8;
+      font-size: .82rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+    }
+    h1 { max-width: 700px; margin: 0 0 1rem; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.08; letter-spacing: -.035em; }
+    .hero p { max-width: 650px; margin: 0 0 1.7rem; color: #effaff; font-size: 1.13rem; }
+    .hero .button { background: #fff; color: var(--blue-dark); }
+    .hero .button:hover { background: #e6f5fb; }
+    .hero-secondary { margin-left: 1.1rem; color: #fff; font-weight: 700; }
+    .section { padding: 3.5rem 0; }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-heading h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.2; }
+    .section-heading p { margin: .4rem 0 0; color: var(--muted); }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+    .product-card {
+      min-height: 245px; display: flex; flex-direction: column; align-items: flex-start;
+      padding: 1.5rem; background: #fff; border: 1px solid var(--line);
+      border-radius: var(--radius); box-shadow: 0 3px 12px rgba(14, 59, 80, .04);
+    }
+    .product-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); transition: .18s ease; }
+    .product-mark {
+      width: 42px; height: 42px; display: grid; place-items: center; margin-bottom: .85rem;
+      color: var(--blue); background: var(--blue-soft); border-radius: 11px;
+      font-size: 1.2rem; font-weight: 800;
+    }
+    .product-card h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
+    .product-card h3 a { color: var(--ink); text-decoration: none; }
+    .product-card p { color: var(--muted); margin: 0 0 1rem; font-size: .94rem; }
+    .product-card > a:last-child { margin-top: auto; font-weight: 750; }
+    .feature-band { background: var(--blue-soft); border-block: 1px solid #d5e8ef; }
+    .feature-inner { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 2rem; }
+    .feature-inner h2 { margin: 0 0 .7rem; font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.2; }
+    .feature-inner p { max-width: 650px; color: #385563; margin: 0 0 1.25rem; }
+    .feature-image { width: 100%; height: auto; display: block; max-width: 360px; margin: auto; }
+    .resources { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .resource-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; }
+    .resource-card h2 { margin: 0 0 1rem; font-size: 1.45rem; }
+    .resource-card ul { list-style: none; margin: 0; padding: 0; }
+    .resource-card li { padding: .73rem 0; border-top: 1px solid #e7eef1; }
+    .resource-card li a { font-weight: 650; }
+    .resource-card small { display: block; color: var(--muted); margin-top: .12rem; }
+    .more-link { display: inline-block; margin-top: 1rem; font-weight: 750; }
+    .customer-strip { background: #fff; border-block: 1px solid var(--line); text-align: center; }
+    .customer-strip h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
+    .customer-strip p { color: var(--muted); margin: 0 0 1rem; }
+    .customer-link { font-weight: 750; }
+    .contact-band { padding: 1.6rem 0; background: #123d55; color: #fff; }
+    .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .contact-inner h2 { margin: 0; font-size: 1.3rem; }
+    .contact-inner p { margin: .2rem 0 0; color: #e3f0f4; }
+    .contact-inner a { color: #fff; }
+    footer { padding: 3rem 0 1.4rem; background: #f0f5f7; }
+    .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+    .footer-grid h2 { margin: 0 0 .7rem; font-size: 1rem; }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; }
+    .footer-grid li { margin: .35rem 0; }
+    .footer-grid a { color: #385563; font-size: .9rem; }
+    .footer-bottom { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+    .legal { display: flex; flex-wrap: wrap; gap: .55rem 1rem; margin-top: .8rem; font-size: .84rem; }
+    .language { color: var(--muted); font-size: .9rem; }
+    @media (max-width: 900px) {
+      .nav-inner { align-items: flex-start; flex-direction: column; gap: 0; }
+      .quick-links { padding-top: 0; }
+      .nav-links a { padding-inline: .55rem; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 28px, 1160px); }
+      .utility { align-items: flex-start; padding: .55rem 0; }
+      .utility-links { gap: .55rem; flex-wrap: wrap; justify-content: flex-end; }
+      .brand-row { min-height: auto; padding: 1rem 0; flex-wrap: wrap; gap: .55rem 1rem; }
+      .brand img { width: 112px; }
+      .tagline { font-size: .82rem; }
+      .search { width: 100%; margin: .4rem 0 0; }
+      .search input { width: 100%; }
+      .nav-links { display: grid; grid-template-columns: repeat(2, 1fr); width: 100%; }
+      .nav-links a { padding: .55rem .35rem; font-size: .88rem; }
+      .quick-links { flex-wrap: wrap; gap: .7rem; }
+      .hero { padding: 3.2rem 0; }
+      .hero-secondary { display: inline-block; margin: 1rem 0 0; }
+      .section { padding: 2.6rem 0; }
+      .section-heading { align-items: flex-start; flex-direction: column; }
+      .product-grid, .resources, .feature-inner { grid-template-columns: 1fr; }
+      .product-card { min-height: auto; }
+      .feature-image { max-width: 250px; }
+      .contact-inner { align-items: flex-start; flex-direction: column; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 1.3rem 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">.contact-inner > .button { color: #202b30; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to Main Content</a>
+<header>
+<div class="masthead">
+<div class="wrap utility">
+<span>The world's most popular open source database</span>
+<nav aria-label="Account and contact" class="utility-links">
+<a href="https://www.mysql.com/about/contact/">Contact MySQL</a>
+<a href="https://www.mysql.com/auth/login/?dest=https%3A%2F%2Fwww.mysql.com%2F">Login</a>
+<a href="https://www.mysql.com/auth/register/">Register</a>
+</nav>
+</div>
+<div class="wrap brand-row">
+<a aria-label="MySQL home" class="brand" href="https://www.mysql.com/">
+<img alt="MySQL" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png"/>
+</a>
+<p class="tagline">The world's most popular open source database</p>
+<form action="https://search.oracle.com/mysql" class="search" method="get" role="search">
+<input name="app" type="hidden" value="mysql"/>
+<label class="skip-link" for="site-search">Search MySQL</label>
+<input aria-label="Search MySQL" id="site-search" name="q" placeholder="Search MySQL" type="search"/>
+<button type="submit">Search</button>
+</form>
+</div>
+</div>
+<nav aria-label="Main navigation" class="primary-nav">
+<div class="wrap nav-inner">
+<div class="nav-links">
+<a href="https://www.mysql.com/">MySQL.com</a>
+<a href="https://www.mysql.com/products/">Products</a>
+<a href="https://www.mysql.com/services/">Services</a>
+<a href="https://www.mysql.com/partners/">Partners</a>
+<a href="https://www.mysql.com/customers/">Customers</a>
+<a href="https://www.mysql.com/why-mysql/">Why MySQL?</a>
+<a href="https://www.mysql.com/news-and-events/web-seminars/">News &amp; Events</a>
+<a href="https://www.mysql.com/buy-mysql/">How to Buy</a>
+</div>
+<div aria-label="Developer resources" class="quick-links">
+<a href="https://www.mysql.com/downloads/">Downloads</a>
+<a href="https://dev.mysql.com/doc/">Documentation</a>
+<a href="https://dev.mysql.com/">Developer Zone</a>
+</div>
+</div>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-content">
+<p class="eyebrow">MySQL Community</p>
+<h1 id="hero-title">A database for the data-driven world</h1>
+<p>From modern applications to demanding analytics, MySQL gives developers and organizations a proven open source foundation for working with data.</p>
+<a class="button" href="https://www.mysql.com/downloads/">Explore MySQL downloads</a>
+<a class="hero-secondary" href="https://dev.mysql.com/doc/">Browse the documentation <span aria-hidden="true">→</span></a>
+</div>
+</section>
+<section aria-labelledby="products-title" class="section">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<h2 id="products-title">Explore MySQL products</h2>
+<p>Find the MySQL solution that fits your application and goals.</p>
+</div>
+<a href="https://www.mysql.com/products/">View all products <span aria-hidden="true">→</span></a>
+</div>
+<div class="product-grid">
+<article class="product-card">
+<span aria-hidden="true" class="product-mark">H</span>
+<h3><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></h3>
+<p>Use automated and integrated generative AI and machine learning (ML) in one cloud service for transactions and lakehouse scale analytics. Get faster insights from your data and deploy apps in your choice of cloud providers.</p>
+<a href="https://www.mysql.com/products/heatwave/">Learn more <span aria-hidden="true">→</span></a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-mark">AI</span>
+<h3><a href="https://www.mysql.com/products/mysqlai/">MySQL AI</a></h3>
+<p>Integrated, automated, and secure machine learning (ML) and generative AI capabilities.</p>
+<a href="https://www.mysql.com/products/mysqlai/">Learn more <span aria-hidden="true">→</span></a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-mark">E</span>
+<h3><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></h3>
+<p>Advanced features, management tools, and technical support to help achieve high levels of scalability, security, reliability, and uptime.</p>
+<a href="https://www.mysql.com/products/enterprise/">Learn more <span aria-hidden="true">→</span></a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-mark">OEM</span>
+<h3><a href="https://www.mysql.com/oem/">MySQL for OEM/ISV</a></h3>
+<p>Over 2000 ISVs, OEMs, and VARs rely on MySQL as an embedded database for their applications, hardware, and appliances.</p>
+<a href="https://www.mysql.com/oem/">Learn more <span aria-hidden="true">→</span></a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-mark">C</span>
+<h3><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></h3>
+<p>Meet the database challenges of next generation web, cloud, and communications services with scalability, uptime, and agility.</p>
+<a href="https://www.mysql.com/products/cluster/">Learn more <span aria-hidden="true">→</span></a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-mark">↧</span>
+<h3><a href="https://www.mysql.com/downloads/">MySQL Community Server</a></h3>
+<p>Get started with MySQL Community Server and find tools and downloads for your development workflow.</p>
+<a href="https://www.mysql.com/downloads/">Explore downloads <span aria-hidden="true">→</span></a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="early-title" class="feature-band section">
+<div class="wrap feature-inner">
+<div>
+<p class="eyebrow" style="color:#075b80">Preview upcoming builds</p>
+<h2 id="early-title">MySQL Community Early Access</h2>
+<p>Preview, test, and evaluate upcoming MySQL Community Edition builds through MySQL Early Access.</p>
+<a class="button" href="https://labs.mysql.com/">Explore Early Access downloads</a>
+</div>
+<img alt="MySQL Early Access" class="feature-image" src="https://www.mysql.com/common/logos/mysql-early-access.png"/>
+</div>
+</section>
+<section aria-label="Events and publications" class="section">
+<div class="wrap resources">
+<section aria-labelledby="webinars-title" class="resource-card">
+<h2 id="webinars-title">Free webinars</h2>
+<ul>
+<li>
+<a href="https://www.mysql.com/news-and-events/web-seminars/protect-sensitive-data-in-mysql-with-dynamic-data-masking/">Protect Sensitive Data in MySQL with Dynamic Data Masking — No Application Changes Required</a>
+<small>Thursday, October 22, 2026</small>
+</li>
+<li>
+<a href="https://www.mysql.com/news-and-events/web-seminars/aoug-mysql-webinar/">AOUG MySQL Webinar</a>
+<small>Thursday, November 12, 2026</small>
+</li>
+<li>
+<a href="https://www.mysql.com/news-and-events/web-seminars/qa-with-mysql-experts/">Introducing MySQL 9.7 LTS: New Features for Modern Application Development</a>
+<small>On-Demand</small>
+</li>
+</ul>
+<a class="more-link" href="https://www.mysql.com/news-and-events/web-seminars/">More webinars <span aria-hidden="true">→</span></a>
+</section>
+<section aria-labelledby="papers-title" class="resource-card">
+<h2 id="papers-title">White papers</h2>
+<ul>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-reference-architectures-for-security/">MySQL Reference Architectures for Security</a></li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-reference-architectures-for-high-availability/">MySQL Reference Architectures for High Availability</a></li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-enterprise-edition-for-government/">MySQL Enterprise Edition for Government</a></li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/migrate-from-mariadb-to-mysql/">Migrate from MariaDB to MySQL</a></li>
+<li><a href="https://www.mysql.com/why-mysql/white-papers/mysql-heatwave-ml-in-database-machine-learning/">HeatWave AutoML - In Database Machine Learning</a></li>
+</ul>
+<a class="more-link" href="https://www.mysql.com/why-mysql/white-papers/">More white papers <span aria-hidden="true">→</span></a>
+</section>
+</div>
+</section>
+<section aria-labelledby="customers-title" class="customer-strip section">
+<div class="wrap">
+<h2 id="customers-title">Powered by MySQL</h2>
+<p>Organizations around the world build and run their businesses with MySQL.</p>
+<a class="customer-link" href="https://www.mysql.com/customers/">Discover MySQL customers <span aria-hidden="true">→</span></a>
+</div>
+</section>
+<section aria-labelledby="sales-title" class="contact-band">
+<div class="wrap contact-inner">
+<div>
+<h2 id="sales-title">Contact MySQL Sales</h2>
+<p>USA/Canada: <a href="tel:+18662210634">+1-866-221-0634</a> · <a href="https://www.mysql.com/about/contact/phone/">More countries</a></p>
+</div>
+<a class="button" href="https://www.mysql.com/about/contact/">Contact MySQL</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<nav aria-label="Footer navigation" class="footer-grid">
+<section>
+<h2><a href="https://www.mysql.com/products/">Products</a></h2>
+<ul>
+<li><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></li>
+<li><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></li>
+<li><a href="https://www.mysql.com/products/standard/">MySQL Standard Edition</a></li>
+<li><a href="https://www.mysql.com/products/classic/">MySQL Classic Edition</a></li>
+<li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></li>
+<li><a href="https://www.mysql.com/oem/">MySQL Embedded (OEM/ISV)</a></li>
+</ul>
+</section>
+<section>
+<h2><a href="https://www.mysql.com/services/">Services</a></h2>
+<ul>
+<li><a href="https://www.mysql.com/training/">Training</a></li>
+<li><a href="https://www.mysql.com/certification/">Certification</a></li>
+<li><a href="https://www.mysql.com/support/">Support</a></li>
+<li><a href="https://www.mysql.com/partners/">Partners</a></li>
+<li><a href="https://www.mysql.com/buy-mysql/">How to Buy</a></li>
+</ul>
+</section>
+<section>
+<h2><a href="https://www.mysql.com/downloads/">Downloads</a></h2>
+<ul>
+<li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+<li><a href="https://dev.mysql.com/downloads/cluster/">MySQL NDB Cluster</a></li>
+<li><a href="https://dev.mysql.com/downloads/shell/">MySQL Shell</a></li>
+<li><a href="https://dev.mysql.com/downloads/router/">MySQL Router</a></li>
+<li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+</ul>
+</section>
+<section>
+<h2><a href="https://dev.mysql.com/doc/">Documentation</a></h2>
+<ul>
+<li><a href="https://dev.mysql.com/doc/refman/en/">MySQL Reference Manual</a></li>
+<li><a href="https://dev.mysql.com/doc/workbench/en/">MySQL Workbench</a></li>
+<li><a href="https://dev.mysql.com/doc/index-cluster.html">MySQL NDB Cluster</a></li>
+<li><a href="https://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a></li>
+<li><a href="https://dev.mysql.com/doc/#topic">Topic Guides</a></li>
+<li><a href="https://dev.mysql.com/">Developer Zone</a></li>
+</ul>
+</section>
+<section>
+<h2><a href="https://www.mysql.com/about/">About MySQL</a></h2>
+<ul>
+<li><a href="https://www.mysql.com/about/contact/">Contact Us</a></li>
+<li><a href="https://blogs.oracle.com/mysql/">Blogs</a></li>
+<li><a href="https://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+<li><a href="https://www.mysql.com/sitemap.html">Site Map</a></li>
+<li><a href="https://www.mysql.com/why-mysql/">Why MySQL?</a></li>
+</ul>
+</section>
+</nav>
+<div class="footer-bottom">
+<p class="language">Language: English ·
+          <a href="https://www.mysql.com/de/">Deutsch</a> ·
+          <a href="https://www.mysql.com/fr/">Français</a> ·
+          <a href="https://www.mysql.com/it/">Italiano</a> ·
+          <a href="https://www.mysql.com/jp/">日本</a> ·
+          <a href="https://www.mysql.com/cn/">中文</a>
+</p>
+<div class="legal">
+<a href="https://www.oracle.com/legal/copyright.html">© 2026 Oracle</a>
+<a href="https://www.oracle.com/legal/privacy/">Privacy</a>
+<a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a>
+<a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a>
+<a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible speaker images, VibeCode banner, blog heading and description, article cards, and MAX link. The cookie notice differs in visibility, but it is not core page content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged. The target's unobstructed accordion text is clearer than the reference's cookie-notice overlap; no material clipping or unreadability is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation, sign-up and login controls, blog tabs, MAX link, and accordion indicator have understandable labels or recognizable icons. No essential visible control is materially obscured or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show corresponding regions of the same site and form a coherent comparison. The cookie-notice state difference does not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, article titles, dates, descriptive text, and banner communicate coherent meaning consistent with the page's business-product and editorial purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing targets and references**\n\nI need to compare the target versus the reference. At y4000, the cookie popup is missing from the target, which is fine. The banner content for the target shows extra lower text since the popup is absent; that seems okay. At y5000, the reference cookie obstructs the accordion bottom, but the target renders clearly. Overall, the core aspects are the same, with controls visible for nav and MAX buttons. The evidence looks coherent and semantic. Now I need the exact JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing targets and references**\n\nI need to compare the target versus the reference. At y4000, the cookie popup is missing from the target, which is fine. The banner content for the target shows extra lower text since the popup is absent; that seems okay. At y5000, the reference cookie obstructs the accordion bottom, but the target renders clearly. Overall, the core aspects are the same, with controls visible for nav and MAX buttons. The evidence looks coherent and semantic. Now I need the exact JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgH0RcjCBE4i4QLFTbLYV7QysZmJByqc3okIub4KtpUSYvkNB3U2ZoZHLMJ0nrqh5p0X3AXPl2v739_YmUDa84OVXa0_P3B5I0Tpq2WOOL2WTOcQENNlap5xX9-OLZ-dYNyT0oib8V1XxtqL_mvgqsyUk-BNRPfuKyFIokjBdhp-HPjiFNLnT9jlpaEljLOxVrcilgGl4Vktz8Xnt7dnJJJmYVlvwa7U4prgMFyoXtqGVXjBrT1pWkAR_c0PGpl0lCv55f5K9o0ondxFuPtBrHChyqRMWOxMjM8iMJSlR1yF5LoS4mk9rmaCAl5lNtZ0JLi_y9NyG0HoWbD8oTgLuYWpLkwpyiKyKiUMUMvmMKlBSZ5JMkHxNrOn5IqaTwN8Mx3ZveWPim_ja_R48OWejsEMK9P5gRenEWuScqGQdAWQ_8EKpVrHc9OYO97avqvvdZLmym1R3eY9-HEPw2sZ9mK5mTQCpKfWNeGctISZmFUKyTaj6CfkJt00lNc2GzgovQHiZ08SL77QMx-wn0MOhxANiF4IAA6DGivHhZq9tQ0Y_9rBXUiPaC8kDHpCkG6Lngy_tuc_ZM2tH86p8CFeeWfBjFcVcJUt3P8ZM1ouphM8Pdpf0ZeLCgsgmwZVc95NEOduk_y_J6AnzptlOjof7r7n2QARuovWs2jecjqnunfZwtPtxZrkgUv6WQ46OJktrHRU5QHluuQygEiSB50FZGsKkIG0-0MpCFUuG8MNJf6aa8m8dnDaVgHyyGaJ4yJxFS1nviP84E5RkO2ZeOZCaySOW6GyaFoxvmtTjKKfn5uugRPC0HTpjptnA8yQGIXawwXo_iA3i1yZZNRMACzxxqzkrbOanPUoAqRaha0DLM7l2MIPrDhPijLQLie5tONX8NpeNGWdpUEedHq7WKR3wPO0Hi5f58nQhl63a2_Lu4qvuA4qFGzzF7Es1ibFUMHRILaRwyxucyUQF51dDvwD_JVOU0ydlXR-eeZAnwqf4S_BWGrJDPfkwxelkgwiNiy3s-UMqNLmQFjC_WfcpY-vJ-lJBkURu85S0soQVuCSZIlaH_XHp3qVLBPDlSnzOnBnBFbIkqY8wafMxPuwceNJFiS3tS4oRuGtLA3jYMLESenTr8ky2LVCZenpk00_O-SIVBPZ9bK5HQnS9ndJjari_-sP14le9VVT6yLFo5fghc96RdxJNF8HbS8FuYD4C2AP_O1_u3pqnvG-YTjuU2QC05q8Yp9YmUWF06E7ZkdbjDMNEkU2JmIMLovvMSqwLp9v9eGFhfocPoXMoe-RERcHL-DizNXFBVwv2FoLcxIT_dwv4sBgG7WIARVwqa5-rt5gd0xPb3Mf4qIBbRCwtgKh3n3_8oW9Pb5Ru74m9_6GXMasHit7RSMOPUh7o3vFhrTl2q8QnKA2d2FztbSW1ogRT6amhOAjZ9p9RHSMoSz_GDMMzFwchfOYvnGhd0b1biGnom7zUlcb06VWf0TICdw5ElodQwePPxYMmiwQYJJpMXUQyGgFJz4yWY0Y3mV8DwgC6fVgR-Yt_tezCr-bYe7P4bGkZFRkTJFYgVpN4s7DN--BUVEy-GHX3V6iK8iu-TYose2Rngsdpg8xrdRk7mloE8TyypDBF8L0gGDnq3C0B3TiOoLMwgBDpSaB5TfOja97gdCJM-WiF65aCnlaVA7FxabOXLZgXv3rUSTs_djP6L6Ta5idmETWtQ1VETBu8BdawXcfkq31LIRrn7vtAl5v0qzfBnVPgFFQ66i5sD8VZvTsIiYeuq3Eaf9h9S0iqoidY6o_oXhTSXlBGGpGJPlVQYZFgtPc-9bYVTIhaJrEQ8mWMdUahWimQDgpQGAwkb1AH61jgcsS_WTeEFLBUfg-76dvo_VgcSw8FlxvJ9EqqSZ7KUm2uh__iE_sgYMmNrE2202e3cSGWaxqr5IJuC0JJ0XQ6gDQ_kJ3mZupwuN8KgtDIlun30RYU9upGkWHFl2O14LId_-jRe-XjdhCOrTwdIpFJlrNs_9gBFMqw7465OQLP3fo1Y8B1uTTjmo8YhEglbwEDV-7ccRNnOZxb6MP-tTJOMN81r4vQEBhbLmuaSG_phcVkfKQJXdz6dukQ66iUa-g4kXCg7X5Gl06d8u5KVpFWVbeCGbF4CZvtNCtsJBbnr20AGv5Qv4OOqQi1oOkkBPfI_GgMjjRMXtLNQBvkJl2YaGKCXYD6IRyWj4A4SsUKVL3kVU9Gcgo6ted5PP3LtX9G91AjTCJRbr7bVEqshZHygY1zh9ZOB3Ta-CFJrTYgA2sNsz_9c8c4CLarUimIoY3CGEGWUV5o269-Ub3FtNZT-2YazbZuahLv8mcko3YH2SZrRs6OIp1VifQL2jDpu6zUQ80RjH9FUffj1bXnfo9r1W6QSwasIb_9xwYhLHa_q1WU1u6Fm_ZkaRBQuMK2rH342f-E2yATGsnBjJgYhM-HOQuAxR7OlUEnt6VZ0SdSI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_04dca271e2c44f5b016ae81805888887d1b3ff1b69626e8611",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10875,
+    "completion_tokens": 370,
+    "total_tokens": 11245,
+    "cost": 0.0015443,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10872,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015443,
+      "upstream_inference_prompt_cost": 0.0013593,
+      "upstream_inference_completions_cost": 0.000185
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show the same visible articles, headlines, imagery, navigation, and page sections in both supplied segments.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Core content is legible and arranged coherently; the supplied target views visually match the reference.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation and subscription/sign-in controls are retained and identifiable; no essential control defect is evident.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target segments correspond and form a coherent assessable comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The article text, images, and labels convey a coherent business-publication homepage purpose, with no meaningful semantic loss visible.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12638,
+    "completion_tokens": 173,
+    "total_tokens": 12811,
+    "cost": 0.001666175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12635,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001666175,
+      "upstream_inference_prompt_cost": 0.001579675,
+      "upstream_inference_completions_cost": 8.65e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

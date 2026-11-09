@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent, categorized TIME-style content, including collections, games, and article links across health, entertainment, AI, and climate. It is adequate for the broad purpose of a news and magazine homepage.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text is readable and arranged in clear sections with headings, separators, and lists. No substantial clipping, overlap, or unreadable core content is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible article and game links are recognizable as links, and the game section includes a clearly labeled access link. No essential visible action control has an unintelligible label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference form a coherent comparison of a TIME homepage. Their different layouts are consistent with the regenerated-page contract, and the visible reference advertising and interactive assistant widget are not essential comparison requirements.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Section headings, article titles, bylines, and game descriptions convey coherent meaning relevant to a magazine and news site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating content structure**\n\nI need to evaluate the target segments since the text lists are quite generic and lack control features aside from links. The reference for this will be the TIME homepage. The target content looks like plaintext directories with coherent, functional links. \n\nI notice that starting from collection 2800, there are sections like games and health which seem sufficient. I'm also wondering if the layout and semantic presentation are clear and legible. Overall, I need to ensure the controls and links are identifiable, and focus on obtaining an exact JSON structure.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content structure**\n\nI need to evaluate the target segments since the text lists are quite generic and lack control features aside from links. The reference for this will be the TIME homepage. The target content looks like plaintext directories with coherent, functional links. \n\nI notice that starting from collection 2800, there are sections like games and health which seem sufficient. I'm also wondering if the layout and semantic presentation are clear and legible. Overall, I need to ensure the controls and links are identifiable, and focus on obtaining an exact JSON structure.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B5JFGjsgbNxHdLYX5Xj_OuLgn7fvYF3DHrVY-G8Hs_gdzEtP9m-3UqZwNO5Hf_crKRHILZRxBICgu8nHcHiOCzv59cOlS5MqXa9EjM1NLhnoM4R-5vmfEYElc9yTNdCEEse2MRT-RxZwOfwZFJZX3TMWb5vhHvMsSAkJLRm7ZNSLJDkx6TYYAaoeO9rjcrMIgYndYt56BjisJOHTEvKKeOqHTApjxxujsyxp0LJzv73wvjP9OqeF93EILX8EuLTPiMaWk9cJ5Syh6ezcxsEHD_jvPfqJ_wwsOztI7XskvBgZh7rzewiObBN5sy9-7uiB1Uh-UH7Mc35Wv8YKOskaaEv2Ncib9JEcrziAm-BFPG9DViMXVu-0Z2GXPF2M59UOWWW659xLIswio1CDwMBYDgUeIZL0GeFvgS2slir9txZFmjsyka-GJJ9zNAGReF-vj5eGLiMNwUnKXZeeQnzsWEdMZckqJ4VcI-3bJIpUU2JI1KnlEa0jRgZ8bmIteiXgwQ697hTLaNaB4lFoUcyMuHbrjzbKxyId9mP2cN4_fOCNQhiDxxxmO522B7HwDeBLVLOL55dQOzK8AKAoNgDOs38G8aOOpJkfqfeDSlpG1F0cG6aCjlFCpIYNqllysFF8hU9MV-3ESj-t5B6bsu7kiKO8EcsSc-SwU6dhIAbf-4S4SehnJmOoaR3fj_Zj3nRftxJSCy2wPr1JbQgNrSrFNbUSoNgeuiO_sIc1Wd9QeDhAN6718d4lxNFAQS3XFq89DFbWwytE6dLy1PLTiDyz3qFDmdRsyWYSVACzQY0JLvA8hv8ITQ06AYsko2cWf1lf7CmjOF2LDlYWqC_uAgsV51jYG08Zwnoyep1T-OPF7U_JripKDRoAH0hea6PL-sjzOuZfr-ItcgOCXXf_9WLO1Y9oYfCkWv6Bxcd9JWkhJo9JWsImjPmB1CNcT78kqclW6jEcb7A_F4hnUuL2Oqye3BDnP_T2YPrEpoRaBC_oZW3CvX949d-IsTQjtSxnbERX4xeP-2BQFuAH5TiStVA0E9x5SrOZea-ULeIWaMteY2y2hNWNr3ixyxlIHe-T-oib5-sz6moLiIfoxIPc65vPwmtbTVb3JLXdoKurA_QZcfUz5ubBDXz6lrQN7GGxAxKBLT0WA4NyDf3aKU_q9Y0-s6ZZ-yJM220UZ7IAkfy4R5tFgmBjLrQTt3K9aIo-napQr38JwIISoYuethJSGgPsq11dlBlypDN2sXVcQ23FS--D63kkFGQdbkkjLymaTDFJeGqZLvEv7i3kNxtJz3nVDz6_x_08PtmyoduhwGxT-DGV24m40AmyPqvNETJ7YLHdUdc9QFJp7Z9J8JlxpeljHaY_huUCTTr30G5zPMreR0GwWzhe1GiELclyjI6mhtq1FMHTKqj2HpdLq12W1kY3UzEWgpfpH2l91PH9gOrBogaH1xY7c7eVNk46rPbGPuEU0Mk9JKP94i3IxWfP96AvJA7I4-_z6VnMSN79iRSiVVazMY_j7mZF4eGUMiSq_DkVzO0VWWjQSSEmBYIlcGa3jRTb-CQJQstw4mc6hXUKZ4vl7OMzzcz2hTlchhWJCZ01UVpV5-Izh9YgEu9w1UX0S_wwTbR2LcqDBoCbheq5MgSf4fb2DN5rq6vvbmgb8vYUN5mmkou4CEsHzy-BM6OBwFVvTwISYXlPU2KzSEsGid69eamm7mtvz-n1OPrexQDOgUcTm567LNyCMKfd2dCKa4eIiCpNoxwiJ3lYpNCpLYxp1WJx4rmWtceaALDCK8MqKmbVKTMa5QyGRH9Vtj7WQoWsLZrreCAIdFeCe_X26ngjmHQ0NChjr4yDObEQDXKmmSEBgnkB37qy4b11Jw264Wrmfh-9caAvRBjB8IVHMFowJfkQ2Uh0sFK18aYEbLWX0ZKSwjGrykWmLojnjoDaq-2BloXfdfUmSHadWI78YEpxUzLROm8IBEAM8DEQsZCzKTPlj6CY3ZzC9LlfvMvWTzGbnsaEyD8rIcVvCJ3Csdqiw3DaIG8Ajc5s5RjoFF0l4hcw8NOtXaoBcqjyrBmAandWNTMyaTtgCCFMz6lpGfRWjak66F77HTe2IhZbw9vrPuzZ2a8bHNpJPt0Un08YIBV3K9JHYenK9Opx_eTFXxaM8amO2Qxg8KYMJkxvLFxOCSnKk4uMZga20h_e6dy-sjxzuQZxjYMUtf_-ZkJ4y2-rVsP8j4H1KmE35s6P1zaQs9y13vsbdPFRhfSh4VG2sbPponDLpwQeOyMS74hBUL8fAEHsjXS6OT2k6jwdBBy9Flu6_bxgERqrNmRe19fvQuTANqIKdiR8cbx6slWFu_T0PKEeLDpQPe5GXgJLQasN5P-488ngjm8hfC5qMpCD9mAoNviROGGmqUZlE2DPhM0sMaa48-HuNp22bnN6P6muUUmCQmFpxsLJMc2B3FsOs3OAEH2_2uq9l6-UduywZyoAkJ2ODWe4TMKi70Q4RcgGrudp4agquo7Lwa1KuMj3Lyr0JBg9IIJWQ_BSpf_qnt96c6TBO0Mn1t0v32fE0Nro4He4Ney9rNCKSDFOZRGX6DRzSAZT-mOZ2k5iPMS7oEKd1pLJ6w9anQxvY7GswEkFyrreNDCkwXDYdiqNrtIYCKl0kyMpLunQOkFHGV3_HZCo17kwKMroaUVbwtXRLrOlqQb5nNyNbw_shlIVBsLb-qaKfXRYRHFQhG-MNNin2wphF6CBz25tI_-lipZ7Yt9WeZsydJ_-sYzk4a_nklUEZFYWMT4ULFwePOLwm_d02cZnRQYo3tfJ-HXLY4hfaALPWOl4CFkrhkPMaJsvj1KMVhgaFQkUxhCtIxmrce83S8QsxFtqzWfr3ttPHOTN3j6mKSBRJwv4RyyZXlGGdUC4o7L_vcDSy38VKyaPvUqNnCJ0Ynhu8DtKTBqlLCdA8DpGJmCbpDokbe2myEMTKiALHsOLNuW1VbHvvjU9fjJ-E8Bx2TlkCGi08EH1dMICZJaDvjqCeqKA0ReieMi6OP8UcYHKbN5cXdfND6KEHPSsHTXMv1dPiXVkWkGIxvndeURK6EK2t_Zsb_PXH3JoI3F6MwKKQu-0LroLm_yzm26A9yo_Eo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0d9b2dad9ec26c03016ae81e46df2487d1ac0124ea2d6144b2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14467,
+    "completion_tokens": 402,
+    "total_tokens": 14869,
+    "cost": 0.0020093,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14464,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020093,
+      "upstream_inference_prompt_cost": 0.0018083,
+      "upstream_inference_completions_cost": 0.000201
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 107,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

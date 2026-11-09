@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>WhatsApp | Secure and Reliable Free Private Messaging and Calling</title>
+<meta content="WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world." name="description"/>
+<style>
+  :root {
+    --bg: #fdf7ee;
+    --surface: #ffffff;
+    --ink: #13201a;
+    --muted: #3d4a43;
+    --green: #0f7a3f;
+    --green-strong: #0a5c2e;
+    --green-soft: #dff5e6;
+    --line: #e6dccb;
+    --dark: #0d1f16;
+    --focus: #ffb000;
+    --radius: 18px;
+    --max: 1160px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 1.0625rem;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--green-strong); text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .wrap { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
+  .skip {
+    position: absolute; left: -9999px; top: 0; background: var(--ink); color: #fff;
+    padding: .6rem 1rem; z-index: 100; border-radius: 0 0 8px 0;
+  }
+  .skip:focus { left: 0; }
+
+  /* Header */
+  .site-header { background: var(--bg); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem 0; flex-wrap: wrap; }
+  .brand { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; font-size: 1.3rem; color: var(--green-strong); text-decoration: none; }
+  .brand svg { width: 30px; height: 30px; }
+  .primary-nav ul { list-style: none; display: flex; gap: .25rem 1rem; margin: 0; padding: 0; flex-wrap: wrap; align-items: center; }
+  .primary-nav a { color: var(--ink); text-decoration: none; padding: .35rem .5rem; border-radius: 8px; font-size: .97rem; }
+  .primary-nav a:hover { background: var(--green-soft); }
+  .header-actions { display: flex; gap: .6rem; }
+  .btn {
+    display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1.25rem;
+    border-radius: 999px; font-weight: 600; text-decoration: none; border: 2px solid transparent;
+    font-size: 1rem; cursor: pointer; line-height: 1.2;
+  }
+  .btn-primary { background: var(--green); color: #fff; }
+  .btn-primary:hover { background: var(--green-strong); color: #fff; }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: #fff; }
+  .btn svg { width: 16px; height: 16px; flex: none; }
+
+  /* Hero */
+  .hero { padding: 2.5rem 0 1rem; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 2.5rem; align-items: center; }
+  .hero h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.02; margin: 0 0 1rem; letter-spacing: -.02em; font-weight: 600; }
+  .lead { font-size: 1.25rem; color: var(--muted); max-width: 30ch; margin: 0 0 1.5rem; }
+  .fine { font-size: .9rem; color: var(--muted); }
+  .hero-media { border-radius: var(--radius); overflow: hidden; box-shadow: 0 20px 50px rgba(13,31,22,.18); }
+  .hero-media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+  /* Sections */
+  section.block { padding: 4.5rem 0; }
+  section.block + section.block { border-top: 1px solid var(--line); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .split.reverse .text { order: 2; }
+  h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -.01em; }
+  h3 { font-size: 1.2rem; margin: 0 0 .5rem; }
+  .eyebrow { display: inline-block; font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--green-strong); margin-bottom: .5rem; }
+  .text p { color: var(--muted); max-width: 52ch; }
+  .link-cta { font-weight: 600; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .shots img { border-radius: 14px; background: var(--surface); border: 1px solid var(--line); width: 100%; height: auto; }
+  .panel { background: var(--surface); border-radius: var(--radius); padding: 1.25rem; border: 1px solid var(--line); }
+  .panel img { border-radius: 12px; width: 100%; }
+  .statement { background: var(--dark); color: #f3fbf6; }
+  .statement .wrap { text-align: center; }
+  .statement h2 { max-width: 24ch; margin-inline: auto; color: #fff; }
+  .statement p { max-width: 60ch; margin: 0 auto; color: #dfeee5; font-size: 1.1rem; }
+  .icon-note { display: inline-flex; align-items: center; gap: .5rem; background: var(--green-soft); color: var(--dark); padding: .4rem .8rem; border-radius: 999px; font-weight: 600; font-size: .92rem; }
+
+  /* News */
+  .news-list { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1rem; }
+  .news-list li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.5rem; display: grid; gap: .35rem; }
+  .news-list h3 a { color: var(--ink); text-decoration: none; }
+  .news-list h3 a:hover { text-decoration: underline; }
+  .news-list p { margin: 0; color: var(--muted); }
+  .news-list .more { font-weight: 600; }
+
+  /* Footer */
+  .site-footer { background: var(--dark); color: #d7e6dc; padding: 3.5rem 0 2rem; }
+  .site-footer a { color: #fff; }
+  .site-footer a:hover { color: var(--focus); }
+  .foot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 2rem; }
+  .foot-grid h2 { font-size: 1rem; color: #fff; margin: 0 0 .75rem; letter-spacing: 0; }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
+  .social { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1rem 0 0; padding: 0; list-style: none; }
+  .social a { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #1d3327; }
+  .social a:hover { background: var(--green); }
+  .social svg { width: 18px; height: 18px; fill: currentColor; }
+  .legal { border-top: 1px solid #22392c; margin-top: 2.5rem; padding-top: 1.5rem; display: flex; gap: 1rem 2rem; flex-wrap: wrap; justify-content: space-between; font-size: .92rem; }
+  details.lang { margin-top: 1.5rem; }
+  details.lang summary { cursor: pointer; font-weight: 600; color: #fff; padding: .4rem 0; }
+  details.lang ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .3rem 1rem; margin-top: .75rem; list-style: none; padding: 0; }
+  details.lang summary:focus-visible { outline: 3px solid var(--focus); }
+
+  @media (max-width: 880px) {
+    .hero-grid, .split { grid-template-columns: 1fr; gap: 2rem; }
+    .split.reverse .text { order: 0; }
+    section.block { padding: 3.25rem 0; }
+    .primary-nav { width: 100%; }
+    .primary-nav ul { gap: 0 .25rem; }
+  }
+  @media (max-width: 520px) {
+    .header-actions .btn-ghost { display: none; }
+    .lead { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a aria-label="WhatsApp home" class="brand" href="#top" id="top">
+<svg aria-hidden="true" focusable="false" viewbox="0 0 32 32">
+<path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.4 19.7l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 0 1 16 5.4zm-4.1 5.2c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.2 2.6 4.1 6.4 5.6 3.1 1.2 3.8 1 4.4.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.1-.3-.2-.7-.4l-2.4-1.2c-.3-.1-.6-.2-.8.2l-1.1 1.4c-.2.2-.4.3-.7.1-.3-.1-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1.1-2.7c-.3-.6-.5-.5-.7-.5z" fill="#0f7a3f"></path>
+</svg>
+<span>WhatsApp</span>
+</a>
+<nav aria-label="Main" class="primary-nav">
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="https://www.whatsapp.com/privacy">Privacy</a></li>
+<li><a href="https://blog.whatsapp.com/">Blog</a></li>
+<li><a href="https://www.whatsapp.com/download">Apps</a></li>
+<li><a href="https://faq.whatsapp.com/">Help Center</a></li>
+<li><a href="https://whatsappbusiness.com/">For Business</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="btn btn-ghost" href="https://web.whatsapp.com/">Log In
+        <svg aria-hidden="true" focusable="false" viewbox="0 0 16 16"><path d="M6 3l5 5-5 5-1-1 4-4-4-4z" fill="currentColor"></path></svg></a>
+<a class="btn btn-primary" href="https://web.whatsapp.com/">Download
+        <svg aria-hidden="true" focusable="false" viewbox="0 0 16 16"><path d="M7 2h2v7l2.5-2.5 1.4 1.4L8 12.3 3.1 7.9l1.4-1.4L7 9z" fill="currentColor"></path><rect fill="currentColor" height="1.5" width="10" x="3" y="13"></rect></svg></a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div>
+<h1 id="hero-title">Message privately</h1>
+<p class="lead">Simple, reliable, private messaging and calling for free*, available all over the world.</p>
+<a class="btn btn-primary" href="https://web.whatsapp.com/">Download
+          <svg aria-hidden="true" focusable="false" viewbox="0 0 16 16"><path d="M7 2h2v7l2.5-2.5 1.4 1.4L8 12.3 3.1 7.9l1.4-1.4L7 9z" fill="currentColor"></path><rect fill="currentColor" height="1.5" width="10" x="3" y="13"></rect></svg></a>
+<p class="fine" style="margin-top:1.25rem">* Data charges may apply. Contact your provider for details.</p>
+</div>
+<div class="hero-media">
+<img alt="Woman in the city stopping to look at the messages on her phone" height="900" src="https://scontent.whatsapp.net/v/t39.8562-34/656004425_1008747588378447_4681271289133427595_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=wjoPUudnSZMQ7kNvwGSBQu8&amp;_nc_oc=AdoQRJw9JEsNlIaLjL8DkHVtsQ4ux55KCJtXFOpVTw3P8ByN7h8vMBT163El25LTHqo&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wGJVRVHb428Girgnocfi_cxHhDoVRfN0s31jH0Fp1bu7w&amp;oe=6AD8CBC6" width="1200"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="feat-title" class="block" id="features">
+<div class="wrap">
+<h2 class="visually-hidden" id="feat-title" style="position:absolute;left:-9999px">Features</h2>
+<div class="split">
+<div class="panel">
+<img alt="Example of a WhatsApp event with multiple attendees going to French Class" height="400" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/656665442_4215181615403350_2094394019652782681_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=RLWPXm09JMAQ7kNvwFwltNd&amp;_nc_oc=AdpCkoIJxjj3kjZNHICZUffsQFHDwbXGdoPra998V_i9J5svrUfIWEfFq8i0AfwcZbQ&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wEwhQFqhcJ-24d8-B6aUYNPfaLHI3Y6zxcTlvpxBry9TA&amp;oe=6AD8CE6B" width="600"/>
+<div class="shots" style="grid-template-columns:repeat(3,1fr)">
+<img alt="Example of a text bubble reading Still on for studying" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/657609706_2270399193448511_279476224734901977_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=CwDxFxXFRV0Q7kNvwEOcc6W&amp;_nc_oc=Ado0co0TTHSNzkGq04xDTGWjbCrU25hGw_c6GLLpGJWb2iinql7xSRiyDzTCx40xV9w&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wEoc63byp9FOZBDJYne2GLl5CkhW3WcPNCxnh1Uz59FLg&amp;oe=6AD8BA0D"/>
+<img alt="Thumbs up, heart and glasses emoji reactions to a message on WhatsApp" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/655911721_1293480736049643_6822032083978119018_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=nzdkKFeh7W4Q7kNvwGRrtiO&amp;_nc_oc=AdppF0VQ6cA0yYKr9BSP880txHkLsTS-Iy2FWuBXIWMR1SfysO-05ZwSoUI5cEvWqvY&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wE-11vVPdvEru6zJgrRhH6UrJA8GCeLjWTHyZnCUgBl6w&amp;oe=6AD8CAB7"/>
+<img alt="Secure text on WhatsApp reading Ready when you are" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/657250101_2229945731166928_7923358215595961894_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=qc0d8bBjCIgQ7kNvwFXU1GJ&amp;_nc_oc=AdqOl7pNLHFqevDDkFVk-yvVeR_ML4qGcMyg0TAfJcvF0JGq7XBITsf-jMCSB2mjq0g&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wEivN--xB0LbAkpx-blcOFhvhHl722drUhK9s0aRbrE8w&amp;oe=6AD8EA13"/>
+</div>
+</div>
+<div class="text">
+<span class="eyebrow">Messaging</span>
+<h2>Simple, reliable, private messaging</h2>
+<p>Send messages, react with emoji and stay in touch with the people who matter, wherever they are.</p>
+<p><a class="link-cta" href="https://www.whatsapp.com/messaging">Learn more about messaging</a></p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="web-title" class="block">
+<div class="wrap split reverse">
+<div class="text">
+<span class="icon-note">New</span>
+<h2 id="web-title" style="margin-top:.75rem">Call on WhatsApp Web</h2>
+<p>Now you can make and receive video or voice calls, one-on-one or in groups, right from your browser.</p>
+<p><a class="btn btn-primary" href="https://web.whatsapp.com/">Try it</a></p>
+</div>
+<div class="panel">
+<img alt="Screenshot of an incoming WhatsApp video call on web" height="600" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/756341911_2533091953823319_2972944621044253592_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=_2ehy8kxtKoQ7kNvwHMV2mD&amp;_nc_oc=Ado1T9_9qARkqbwFtA5xwzkLaXBAL_SelN7GIVqthoPIOLIKpT6klHfuwCCeJmi7fao&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wEX560V3yKVy8c1zYRjlPBTOpd06KvAO3Bs39YTHGpEMA&amp;oe=6AD8D539" width="800"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="private-title" class="statement block">
+<div class="wrap">
+<h2 id="private-title">With private messaging and calling, you can be yourself, speak freely and feel close to the most important people in your life no matter where they are.</h2>
+<img alt="Bubbles of text saying hello in different languages, each with a user icon" height="500" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/660428698_2328129864265018_2323821782656351487_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=zBbMpUt3pVAQ7kNvwGmc-CN&amp;_nc_oc=Ado89839UFwGcf6y0vm-0JBkL7gQwwpq_4D1pcZeNdYU9_L6XtFUWXMk97O7i_xIHuA&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wH3sSev1PY5jipFU4za1UfgDTcgJ-R_xD49ocaeYrssZw&amp;oe=6AD8E7B7" style="margin:2rem auto 0;max-width:640px;border-radius:16px" width="800"/>
+</div>
+</section>
+<section aria-labelledby="calls-title" class="block">
+<div class="wrap split">
+<div class="text">
+<span class="eyebrow">Calling</span>
+<h2 id="calls-title">Never miss a moment with voice and video calls</h2>
+<p>From a group call to classmates to a quick call with mom, feel like you’re in the same room with voice and video calls.</p>
+<p><a class="btn btn-ghost" href="https://www.whatsapp.com/calling">Learn more</a></p>
+</div>
+<div class="shots" style="margin-top:0">
+<img alt="Screenshot of an end-to-end encrypted video call with family" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/472770474_998885868928301_7820026646601892106_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=OpxhDiMz_P4Q7kNvwGF3YPs&amp;_nc_oc=Ado33B7NqcMuz23RAULkOb1Lm-k_m83_xwbzXa4wQOsuxIMMXznSqVukF8ine59-HMU&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wHPUtF75do95tkqBLtZk-k2bfQWoat6pAFt9mlN_8DNGw&amp;oe=6AD8DD9E"/>
+<img alt="Screenshot of an end-to-end encrypted video call with family" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/473060158_1449917663062833_5908605757370656304_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=oqKY2pYzUAEQ7kNvwFQgD9e&amp;_nc_oc=AdrksvlMo4WHzwvHhjd8CSBsTKJ7w-nOp8zwF0ful9r1DU-9dD7ozyAm9zbXiXpYRuA&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wG2t_XH_S9H35APWn9bkV7aPjtTAJ2nXkiIBaueqEOs_w&amp;oe=6AD8B7D5"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="secure-title" class="block">
+<div class="wrap split reverse">
+<div class="text">
+<span class="eyebrow">Security</span>
+<h2 id="secure-title">Speak freely</h2>
+<p>With end-to-end encryption on WhatsApp, your personal messages and calls are secured with a lock. Only you and the person you’re talking to can read or listen to them, and no one else, not even WhatsApp.</p>
+<p><a class="link-cta" href="https://www.whatsapp.com/privacy">Learn more about privacy</a></p>
+</div>
+<div class="panel">
+<img alt="Bubbles of text saying hello in different languages with user icons" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/657146264_1235058018697365_2451389655469144977_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=xpNJDSUTOY8Q7kNvwHgHbtL&amp;_nc_oc=AdpaCuadeHydKW9SQOui2ekzQp745BpYvKNfIVg1tiSqFqPFk_OFeVMVhx-Y-XmvB7o&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wEbJon_nw8JXNOLS5awUqlLqgGpz82enFEzk6nLtqTW-A&amp;oe=6AD8E0D2"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="groups-title" class="block">
+<div class="wrap split">
+<div class="text">
+<span class="eyebrow">Groups</span>
+<h2 id="groups-title">Keep in touch with your groups</h2>
+<p>Whether it’s planning an outing with friends or simply staying on top of your family chats, group conversations should feel effortless.</p>
+<p><a class="btn btn-ghost" href="https://www.whatsapp.com/community">Learn more</a></p>
+</div>
+<div class="shots" style="margin-top:0">
+<img alt="Group conversation with a photo and message exchange" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/659198996_1263333499311132_1108931475611330866_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=JT9R9nCqK9AQ7kNvwGtDTa7&amp;_nc_oc=AdqdpaGJDvDMRgM_aXwh8Oub_rj46wrSW3IshmUU7_g4rXDZSZuUeJVu3qjekbRox_Y&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wFTpcf8-fqqnDB2sK6nrfYl9Mnn2cHDP87XSKOrTYRXjw&amp;oe=6AD8D864"/>
+<img alt="Group customized and named Best friend group" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/473285216_1384759809157265_1212522016876804051_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=ZY9dKy0KG_UQ7kNvwESu7QY&amp;_nc_oc=AdoA7OLNzSUKygqMYRanNxMc9gibTp4vYFa9ZUY1ita0LNmz7OgxMpLwdmcGtaqpG_Q&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wGcNQ3uOBCwZ_uXPQTHxCkqBUWn_PRgD_JkjSdONE6bmQ"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="express-title" class="block">
+<div class="wrap split reverse">
+<div class="text">
+<span class="eyebrow">Status and stickers</span>
+<h2 id="express-title">Say what you feel</h2>
+<p>Express yourself without words. Use stickers and GIFs or share everyday moments on Status. Record a voice message for a quick hello or a longer story.</p>
+<p><a class="btn btn-ghost" href="https://www.whatsapp.com/messaging">Learn more</a></p>
+</div>
+<div class="shots" style="margin-top:0">
+<img alt="Status showing a happy face and heart sticker, tagged with the location Pebble Beach" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/311869879_1082331725759559_5382136804801289925_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=g_auhOHJPe0Q7kNvwHrqcAn&amp;_nc_oc=AdpyXdOlxtKk7llNfPxUVW6IWnZ9LG9isKlQgRD-QK46Q9RCMOpPq5z0EBUBpJ1K8II&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wHcpwh2pzH8X2gq7JUcR4ygEibMevFlnYb9ZsY5H3WQwg&amp;oe=6AD8BE2F"/>
+<img alt="WhatsApp user profile photo of a happy woman laughing" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/659653507_956164453426749_1354931642582727870_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=vy2KfuA8pQMQ7kNvwHbHbx3&amp;_nc_oc=AdpYXCTVCskIYVqbBnmTZndiWgjJCmK-blukfi7-igJ4vEtbffwqOlzZMxnGa6pNNZI&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wHnCw5oO2tqRLNcy-UlNRXxSOrtaynwxtUcDW9zbnELkA&amp;oe=6AD8B634"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="business-title" class="block">
+<div class="wrap split">
+<div class="text">
+<span class="eyebrow">Business</span>
+<h2 id="business-title">Transform your business</h2>
+<p>WhatsApp Business helps you reach your customers globally to deliver compelling experiences at scale. Showcase your products and services, increase sales, and build relationships all with WhatsApp.</p>
+<p><a class="btn btn-ghost" href="https://whatsappbusiness.com/">Learn more</a></p>
+</div>
+<div class="panel">
+<img alt="WhatsApp Business showing an online grocery store with products for sale" loading="lazy" src="https://scontent.whatsapp.net/v/t39.8562-34/329699257_2856843487782508_7800545505417662242_n.png?stp=dst-webp&amp;ccb=1-7&amp;_nc_sid=73b08c&amp;_nc_ohc=Z5buLNBLiGMQ7kNvwF4k7zP&amp;_nc_oc=AdoMe7TuB2J7r7IH44O-fLOcHojc3K6F5Q_m8lCU5bpDkTgbPRnNBgvxceI7GERMwJY&amp;_nc_zt=3&amp;_nc_ht=scontent.whatsapp.net&amp;_nc_gid=nooJiAiX8Rk9qlsyzjBvuw&amp;_nc_ss=7f289&amp;oh=01_Q5Aa5wExwb_HDoRGGrkEi6gpmP4ibNvvxjtK3xwucSGPQeBahQ&amp;oe=6AD8E85B"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="news-title" class="block">
+<div class="wrap">
+<span class="eyebrow">From the blog</span>
+<h2 id="news-title">Stay up to date</h2>
+<p style="color:var(--muted);max-width:60ch">Get the latest from WhatsApp: news, useful tips, and our newest features to help you stay connected.</p>
+<ul class="news-list">
+<li>
+<h3><a href="https://blog.whatsapp.com/now-you-can-invite-anyone-to-a-whatsapp-call-no-account-needed-no-cost-no-time-limit">Now You Can Invite Anyone to a WhatsApp Call: No Account Needed, No Cost, No Time Limit</a></h3>
+<p>We’re making WhatsApp calling more open than ever. With guest calling, you can invite anyone to join a WhatsApp call, even if they don’t have a WhatsApp account.</p>
+<a class="more" href="https://blog.whatsapp.com/now-you-can-invite-anyone-to-a-whatsapp-call-no-account-needed-no-cost-no-time-limit">Read more<span class="visually-hidden"> about guest calling</span></a>
+</li>
+<li>
+<h3><a href="https://blog.whatsapp.com/new-controls-to-help-parents-guide-their-teens-on-whatsapp">New Controls to Help Parents Guide Their Teens on WhatsApp</a></h3>
+<p>We’re introducing parental controls for teens, a set of flexible, optional tools to help families choose the WhatsApp experience that’s right for them.</p>
+<a class="more" href="https://blog.whatsapp.com/new-controls-to-help-parents-guide-their-teens-on-whatsapp">Read more<span class="visually-hidden"> about parental controls</span></a>
+</li>
+<li>
+<h3><a href="https://blog.whatsapp.com/one-billion-people-are-now-protected-with-passkeys-on-whatsapp-plus-more-account-security-features">One billion people are now protected with passkeys on WhatsApp, plus more account security features</a></h3>
+<p>On WhatsApp, your conversations belong only to you and the people you’re talking to. That is why we built end-to-end encryption by default, and why we keep adding new protections.</p>
+<a class="more" href="https://blog.whatsapp.com/one-billion-people-are-now-protected-with-passkeys-on-whatsapp-plus-more-account-security-features">Read more<span class="visually-hidden"> about passkeys</span></a>
+</li>
+<li>
+<h3><a href="https://blog.whatsapp.com/your-group-chats-upgraded-introducing-better-polls-all-and-more">Your Group Chats Upgraded: Introducing Better Polls, @all and More</a></h3>
+<p>Group chats are best on WhatsApp, from staying close to your inner circle to coordinating with your fantasy league. Today we’re making them even better.</p>
+<a class="more" href="https://blog.whatsapp.com/your-group-chats-upgraded-introducing-better-polls-all-and-more">Read more<span class="visually-hidden"> about group chat updates</span></a>
+</li>
+<li>
+<h3><a href="https://blog.whatsapp.com/introducing-web-calling-on-whatsapp-plus-more-new-updates">Introducing Web Calling on WhatsApp, Plus More New Updates</a></h3>
+<p>Whether you’re on your phone, at your desk, or switching between the two, calling on WhatsApp just works, privately and simply.</p>
+<a class="more" href="https://blog.whatsapp.com/introducing-web-calling-on-whatsapp-plus-more-new-updates">Read more<span class="visually-hidden"> about web calling</span></a>
+</li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="download-title" class="block" style="padding-top:2rem">
+<div class="wrap" style="text-align:center">
+<h2 id="download-title">Get WhatsApp</h2>
+<p style="color:var(--muted)">Download WhatsApp on your phone, tablet or desktop, or use WhatsApp Web in your browser.</p>
+<p style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+<a class="btn btn-primary" href="https://web.whatsapp.com/">Download</a>
+<a class="btn btn-ghost" href="https://www.whatsapp.com/download">See all apps</a>
+</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="foot-grid">
+<nav aria-labelledby="f1">
+<h2 id="f1">What we do</h2>
+<ul>
+<li><a href="https://www.whatsapp.com/calling">Features</a></li>
+<li><a href="https://blog.whatsapp.com/">Blog</a></li>
+<li><a href="https://www.whatsapp.com/security">Security</a></li>
+<li><a href="https://whatsappbusiness.com/">For Business</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f2">
+<h2 id="f2">Who we are</h2>
+<ul>
+<li><a href="https://www.whatsapp.com/about">About us</a></li>
+<li><a href="https://www.metacareers.com/jobs?divisions[0]=WhatsApp">Careers</a></li>
+<li><a href="https://www.facebook.com/brand/resources/whatsapp/whatsapp-brand">Brand Center</a></li>
+<li><a href="https://www.whatsapp.com/privacy">Privacy</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f3">
+<h2 id="f3">Use WhatsApp</h2>
+<ul>
+<li><a href="https://www.whatsapp.com/download/mobile">Mobile</a></li>
+<li><a href="https://www.whatsapp.com/download/desktop">Desktop</a></li>
+<li><a href="https://www.whatsapp.com/download/tablet">Tablet</a></li>
+<li><a href="https://web.whatsapp.com/">WhatsApp Web</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f4">
+<h2 id="f4">Need help?</h2>
+<ul>
+<li><a href="https://www.whatsapp.com/contact">Contact Us</a></li>
+<li><a href="https://faq.whatsapp.com/">Help Center</a></li>
+<li><a href="https://www.whatsapp.com/download">Apps</a></li>
+<li><a href="https://www.whatsapp.com/security/advisories">Security Advisories</a></li>
+</ul>
+</nav>
+</div>
+<ul aria-label="WhatsApp on social media" class="social">
+<li><a aria-label="WhatsApp on X" href="https://x.com/whatsapp"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M18.2 2h3.4l-7.4 8.5L23 22h-6.8l-5.3-7-6.1 7H1.4l7.9-9L1 2h7l4.8 6.4L18.2 2zm-1.2 18h1.9L7.1 3.9H5.1L17 20z"></path></svg></a></li>
+<li><a aria-label="WhatsApp on YouTube" href="https://www.youtube.com/channel/UCAuerig2N-RZWJT8x75V9yw"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M23 7.2s-.2-1.7-1-2.4c-.9-1-2-1-2.4-1.1C17.3 3.5 12 3.5 12 3.5s-5.3 0-7.6.2c-.5.1-1.5.1-2.4 1.1-.7.7-1 2.4-1 2.4S1 9.1 1 11v1.8c0 1.9.2 3.8.2 3.8s.2 1.7 1 2.4c.9 1 2.1.9 2.6 1 1.9.2 7.2.2 7.2.2s5.3 0 7.6-.2c.5-.1 1.5-.1 2.4-1.1.7-.7 1-2.4 1-2.4s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.7 15.1V8.5l6.1 3.3-6.1 3.3z"></path></svg></a></li>
+<li><a aria-label="WhatsApp on Instagram" href="https://www.instagram.com/whatsapp/?hl=en"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"></path></svg></a></li>
+<li><a aria-label="WhatsApp on Facebook" href="https://www.facebook.com/profile.php?id=100064758844406"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"></path></svg></a></li>
+<li><a aria-label="WhatsApp on Threads" href="https://www.threads.com/@whatsapp"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M12.2 2C6.6 2 3 5.5 3 11.2c0 5.9 3.6 10.8 9.3 10.8 4.8 0 7-3.3 7.4-5.3.3-1.7-.6-2.7-1.9-3-1.1-.3-2.6.2-3.6 1.3.1-1.1.2-2.6-.1-3.6-.3-1.2-1.2-2-2.3-2.4-2.6-.9-4.8.4-4.6 2.2.1.7.5 1.3 1.1 1.6.6.3 1.4.3 2 0 .5-.3.6-.9.5-1.4-.1-.4-.5-.8-1-.9-1.2-.3-2.2.9-2.1 2.2.1 1.4 1.5 2.5 3.4 2.2 2.1-.3 3.2-1.9 3.2-4.3 0-2.3-1.2-4.1-3.6-4.5C10 4.4 9 4 8.1 4"></path></svg></a></li>
+</ul>
+<div class="legal">
+<span>2026 © WhatsApp LLC</span>
+<nav aria-label="Legal">
+<a href="https://www.whatsapp.com/legal/">Terms &amp; Privacy Policy</a>
+         · 
+        <a href="https://www.whatsapp.com/sitemap">Sitemap</a>
+</nav>
+</div>
+<details class="lang">
+<summary>Language: English (select a region, 60 languages)</summary>
+<ul>
+<li><a href="https://www.whatsapp.com/?lang=af">Afrikaans</a></li>
+<li><a href="https://www.whatsapp.com/?lang=az">azərbaycan</a></li>
+<li><a href="https://www.whatsapp.com/?lang=id">Bahasa Indonesia</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ca">català</a></li>
+<li><a href="https://www.whatsapp.com/?lang=cs">čeština</a></li>
+<li><a href="https://www.whatsapp.com/?lang=da">dansk</a></li>
+<li><a href="https://www.whatsapp.com/?lang=de">Deutsch</a></li>
+<li><a href="https://www.whatsapp.com/?lang=et">eesti</a></li>
+<li><a href="https://www.whatsapp.com/?lang=en">English</a></li>
+<li><a href="https://www.whatsapp.com/?lang=es">español</a></li>
+<li><a href="https://www.whatsapp.com/?lang=tl">Filipino</a></li>
+<li><a href="https://www.whatsapp.com/?lang=fr">français</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ga">Gaeilge</a></li>
+<li><a href="https://www.whatsapp.com/?lang=hr">hrvatski</a></li>
+<li><a href="https://www.whatsapp.com/?lang=it">italiano</a></li>
+<li><a href="https://www.whatsapp.com/?lang=sw">Kiswahili</a></li>
+<li><a href="https://www.whatsapp.com/?lang=lv">latviešu</a></li>
+<li><a href="https://www.whatsapp.com/?lang=lt">lietuvių</a></li>
+<li><a href="https://www.whatsapp.com/?lang=hu">magyar</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ms">Melayu</a></li>
+<li><a href="https://www.whatsapp.com/?lang=nl">Nederlands</a></li>
+<li><a href="https://www.whatsapp.com/?lang=nb">norsk bokmål</a></li>
+<li><a href="https://www.whatsapp.com/?lang=uz">o‘zbek</a></li>
+<li><a href="https://www.whatsapp.com/?lang=pl">polski</a></li>
+<li><a href="https://www.whatsapp.com/?lang=pt">Português (Brasil)</a></li>
+<li><a href="https://www.whatsapp.com/?lang=pt-pt">Português (Portugal)</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ro">română</a></li>
+<li><a href="https://www.whatsapp.com/?lang=sq">shqip</a></li>
+<li><a href="https://www.whatsapp.com/?lang=sk">slovenčina</a></li>
+<li><a href="https://www.whatsapp.com/?lang=sl">slovenščina</a></li>
+<li><a href="https://www.whatsapp.com/?lang=fi">suomi</a></li>
+<li><a href="https://www.whatsapp.com/?lang=sv">svenska</a></li>
+<li><a href="https://www.whatsapp.com/?lang=vi">Tiếng Việt</a></li>
+<li><a href="https://www.whatsapp.com/?lang=tr">Türkçe</a></li>
+<li><a href="https://www.whatsapp.com/?lang=el">Ελληνικά</a></li>
+<li><a href="https://www.whatsapp.com/?lang=bg">български</a></li>
+<li><a href="https://www.whatsapp.com/?lang=kk">қазақ тілі</a></li>
+<li><a href="https://www.whatsapp.com/?lang=mk">македонски</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ru">русский</a></li>
+<li><a href="https://www.whatsapp.com/?lang=sr">српски</a></li>
+<li><a href="https://www.whatsapp.com/?lang=uk">українська</a></li>
+<li><a href="https://www.whatsapp.com/?lang=he">עברית</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ur">اردو</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ar">العربية</a></li>
+<li><a href="https://www.whatsapp.com/?lang=fa">فارسی</a></li>
+<li><a href="https://www.whatsapp.com/?lang=mr">मराठी</a></li>
+<li><a href="https://www.whatsapp.com/?lang=hi">हिन्दी</a></li>
+<li><a href="https://www.whatsapp.com/?lang=bn">বাংলা</a></li>
+<li><a href="https://www.whatsapp.com/?lang=pa">ਪੰਜਾਬੀ</a></li>
+<li><a href="https://www.whatsapp.com/?lang=gu">ગુજરાતી</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ta">தமிழ்</a></li>
+<li><a href="https://www.whatsapp.com/?lang=te">తెలుగు</a></li>
+<li><a href="https://www.whatsapp.com/?lang=kn">ಕನ್ನಡ</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ml">മലയാളം</a></li>
+<li><a href="https://www.whatsapp.com/?lang=th">ไทย</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ko">한국어</a></li>
+<li><a href="https://www.whatsapp.com/?lang=ja">日本語</a></li>
+<li><a href="https://www.whatsapp.com/?lang=zh">简体中文</a></li>
+<li><a href="https://www.whatsapp.com/?lang=zh-tw">繁體中文（台灣）</a></li>
+<li><a href="https://www.whatsapp.com/?lang=zh-hk">繁體中文（香港）</a></li>
+</ul>
+</details>
+</div>
+</footer>
+</body>
+</html>

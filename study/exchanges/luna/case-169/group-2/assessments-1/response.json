@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible footer content, customer logos, contact information, navigation columns, language links, and legal links are retained. The small chat-widget difference does not represent loss of core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The core footer remains legible and coherently arranged. The target chat widget is awkwardly wrapped and shows a duplicated icon near the viewport edge, but this localized issue does not materially impair the main content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible footer links and contact information remain identifiable. The chat control is an auxiliary widget, and its minor layout difference does not make an essential control unusable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show corresponding portions of the same page, with consistent footer structure and content.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, logos, and labels continue to convey the page\u2019s footer and navigation purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Reviewing chat widget layout**\n\nI need to ensure we have the right JSON format for the chat widget. It seems like there's an issue with the doubled icon and the \"Start chat\" label wrapping vertically, but it's still readable. This could be an optional widget, but we also have a normal one at the bottom right. The target being clipped at the viewport's bottom might be shifting the button box, with the label appearing broken. Overall, the presentation is slightly awkward but it doesn't obstruct the core functions.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Reviewing chat widget layout**\n\nI need to ensure we have the right JSON format for the chat widget. It seems like there's an issue with the doubled icon and the \"Start chat\" label wrapping vertically, but it's still readable. This could be an optional widget, but we also have a normal one at the bottom right. The target being clipped at the viewport's bottom might be shifting the button box, with the label appearing broken. Overall, the presentation is slightly awkward but it doesn't obstruct the core functions.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BtPfHJNp0dhFbYigM-t_i1RyQrGHjUqyvmA6eP4qdTnXLVYH0H-JKxgmjHNYoa4paHFfUHZ21CkMnzDnYC0IBf5pjO-iq1LGzAA-w8afePcsRCq5YKaRryJaMp_oxzyKXRNj833QLmM5lF_c5XJk3YRizG7_xuPXDYRXErn0YD_V-tuyf8RosLjlXIWWGMv00Ym4fhcJeb-PM8nZDlikS7K38N3dSchEOOiLIpgPlzYxkIPwxA2sFoiKtFWyLx47uLAk14QqEPLEmPcpgHCNyMpAs1KW91kw4l0Pe_-i0KwyWqtuEzW7t02wWNqZmjNFRHEWYPwvzlSw0nlzZa-pXUOllW_VMMNV0WRkIivy-RSGHAW1AwUnBgCFEfjXNU8_E-bIpZD_UcGWbtmaXYzz7kE57gQU1Q6spK44MvcIjSL0RLf_mrJscOI3mmw4Wc9YRs58OErWfwQycNXqnjjbAOIOC8gBKMNdDHG12U_lZsSqCiPZD4abgLvwmw0SO-FbFLwKEBQetv0mMiB0nbPwwU1Ac-yMBCmeb_CGqaDL0-yA3FwA5LImOSSsczIAmmXMoLAWw6lQ9N9rmD0rU9XTxHeFr_JnhmKR8tuqv2cLuu_Wud3jTOYmPqKrJRy1MzZXkVbTl0DfmjjxjAfb_UWVF_iFKqbMLD6FZdjdXjaMjYWp7JSUqrzlKemAIvhx4OcHOSKH9DGr-7wLGig5YRaUiClHL4uKXB780XelHFzAmtPBnfDm1ywbpRRpDyzs6jJXDw2vBJFUbouw9gU5oSG49Frq1MiKn1gMeBu4-FGmkjA8D5wb6s8nl6kDjd0hAb38_1GA3LGyM58tVJ3lFmo-ezRxvxDC7Zcu7lnCsK3d0WqEyGFh94F00lAD9luwn2yfzSXjU4lFjUDVGCIsL2sWAFPWakNjZANQAm6ojajE1XzazMCKQxrHVYZniLGSuEB-4oFu-9wUBIQaxmtsBMg7zsJYpfhUMdGgwbHjyAr33rwRnTI48Kck8DDcJgM4iOeW6VOOGWZRRpkqrPk0rtcRmMEa1QOadlBw29IIJCtMgD_5tyDgVb2r_0rieKeobaOxARrCHpCdU1nhaq73bb6gxAhnlYH6ciRWq3QL1yjQh3umbzVxOvgk54tvQLFRy9qRjiU1MM8Zegq8eoeWubkkjU8fsbWWqxKgxIpaT1pc3zhS6VekqYX9o449voKF44FRx4w4q3tvpttVBFvnRdwoeDS5Ot0SmzYg-BR7-j9_13xQv_qQ-oTXpKhOh5TPR7NbzUQrU8odkuwKL9qfeln_zqgHGbKTECVNH4g8ljeFX_blf_SNqATe8JRrfGFpk5pa-fqaPO4cTXM50qaSeHWfrq68iFgtqB0HGy0AVtPeExwL1-2FOwHjSsdXtQxwcYUbF320pLv-PagkmqjL3FlVzEPqOnI3DfDH6Hq9PwJFofcTKbnFo4cveWwo8hEwvUYlAVMyHVP8QQxLXByoiKdsNx4RZXW_xMcBKoa_sQD3IhVXhM2KXMeNYex2PhcWvwItEVmX1XxWDvHHPICDS7Z7mmCSNXQ4sWEO-XJHAyEsQecFdkWD3GGlNfSKxUwAKacvVI--IGp-Hp1BeyCpmGb8EhiD95HAMOEgBv2wvXuSrHN_y82L6r91BDAvhtle2p-T9AG_eAlQVQUBONHBtB9GiOs_yNFvH3_EN7_yHs-AT8BDeKCpO6yqgicGjs-4oV0pz293opQntIB5BI2Fj91y7YgHyQULeZS0siaDIRPwR6G6Ne527nfo9rt3PGQwnvIs76uYZT362tLAGbzk-6aMCpJ4HcKeGkrutcC6dv_srb9vemSEnU5uXrH80hh8m9fpOQIelfmBKhWDojmHmVWUh9Cw10p_PucniBKhTTCRmxWC1fTcnQZ8J4f0QPp2fUjuaORMJDVUEKysrBnpzIeKdegfGfC-S2t7ATMeBBRTeSoMIUciROQDayMcUQPpegUl4KbvS5Ra0yd-2cesfezHEbaRuhMMN1duJOSrFX8o72u6IcqS2kjlTYr-9n7OWaT-GvDpepUzAiuWEWYp8itXvOE8RsPurogIn8jvGAIM23Vtt_u8QFGGTjBEUZgWzp44l15FLheRZIOHPDh-CJRiu3llRmsUqBzb80sehC17WHhmuvdZ6fD25mWGSfmHZql0-mQjON-DlEJ7Qx-007IimLfQ5se1ppQtEHCea-Zru2zq9ikUJf2qKPOrSGk16-ygarNBXRsYMt2S2hBQA97-4zP4Wnll5AaJ4OdV-GciMcpEoWxI6sQF1F1U0QHjtrtQmuNwjQPH3HMrDpzO7LQjhIVadXupm-uE-hpXB5vA91vMnm68rd6Gbcc5Z2NN9m5Qh6fiXzVzgH4Zgxt3QLNNh1MBz0kSw-VLRLznfAhTIB_oshaj5oVcTlpx7BYz-eOvZM8ApeAE5yoogtJ-ZfQjSXxCr2pLGI9o6CCNvc0pmTB2rFzstKccYNp2JRM0i20DjIlNQ58Brthwgpw1orIpxoZc9fKPLibARLolUHlM19bjM9KdMj8jYaNo__lNKO7YeZcuP5lbx7qh3ZZn0dou21bFPuF0MUFzpzN4xf1dnHybgN0iyClGsDkj8HAlB-nHxcU9ywQ5rrPT_xWtlvJkV9kSqQM-q4yq6GBBDV2yWt4Ja4qiyjwsgpXAe1pq8wFDwM-Rb8k3DG9rJHVa6VpC-OgFvCaGum5g_EsLXF2yp_XAcMbmN77g_n45DWDutz1XWA-G4uXtuvtWz9cM8fcTaFT60bQCnAlXbTFYbDGdmHeHpQOLmINvqIcBGANtkUkqXU9kqQ5klXx2u-aCnkL7_LOZ3xtUx1lEPf2RtJatQlOGgbl5VzAMXMX1D9x7TamuRYcoDA3qJV6jUP-yi3VgoIwaA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0115f2f7816ac1b7016ae81b4d503087d1812598efd84d75a3",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6514,
+    "completion_tokens": 365,
+    "total_tokens": 6879,
+    "cost": 0.000996675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6511,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000996675,
+      "upstream_inference_prompt_cost": 0.000814175,
+      "upstream_inference_completions_cost": 0.0001825
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

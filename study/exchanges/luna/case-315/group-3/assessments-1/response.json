@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target matches the reference in both supplied regions, retaining the visible app feature content and Corporate services sections.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The observed content is arranged and legible as in the reference. The repeated Corporate services banner appears in both states and is not a target-specific defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation and language control are preserved; no material control difference is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target screenshots are visually identical in both supplied regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, descriptions, and imagery convey the same page meaning in the target as in the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing JSON output**\n\nI need to ensure the output looks like proper JSON, with each pair being identical. I\u2019ve noticed that the corporate banner image is repeated twice in both the reference and target sections, which is curious. The background carousel appears the same too. I should check if all dimensions meet the required standards and confirm the windows are identical and coherent. The screenshot has some strange duplicates of large corporate service sections, but that might just be an issue with the source rather than a defect. Fidelity seems preserved.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing JSON output**\n\nI need to ensure the output looks like proper JSON, with each pair being identical. I\u2019ve noticed that the corporate banner image is repeated twice in both the reference and target sections, which is curious. The background carousel appears the same too. I should check if all dimensions meet the required standards and confirm the windows are identical and coherent. The screenshot has some strange duplicates of large corporate service sections, but that might just be an issue with the source rather than a defect. Fidelity seems preserved.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B67qMJt-Mly3MzQKGdRi4qY_Ac88P7T6LeyDFta4DjqOTc6xUrZz94F25w-BnuiPDDrs95e5OiFoE0_dELu-h3zFCSxHE8SfDhjTUbWNAmb1CB6PiXuIXonU1FeULByZlm2ZD7Sflv9TrrYkd16PzyB7I-IQ8_K50lhcyNyhrPIfo1dqZCxyCehjJi_Ax95i8hw8ejFtM0wVh9ZV6sY4U42WLTZGUV_BO9kR8GsGv9RQbUc5gM6-Iroe5hyU7tnzZ_cczT3vRNApL6G_Od5paVxAEPSIEOyE5mvsgQU868LenHvFTDc30yE7vhMxV3Iv9Wf17JeJ_O2Ie8FFQYE9Ri5eMZU4iiim_zDlnG6T4cfdyVDerOFMi0xm3rVhUxwrU_439FeMXnkjeJkOZgABvF6raJDKS94awWKkHviF9jXV28RNMyx2PUvwdyXqcIZeCr-VF7v-popk6ibWdL7cbKvb8jlCoymsMqArrRXa3DCH4WB8pI0O0G9ZstXs-4N5MjVMd3oc2Yd7D5xJ01Rxiew5Bk7OPJiszwgh-tbiUd4D1h7VV0IxHefRLhyTVC9fU_G-Ni1CcELieIh32hjZ_vF1EvkWFVLaAH2hQTm1LXSdAyCjQjWvBBTmsApuPDN7j1bjgbYEwJv7Ua2-F2SMjIoS-vjRzYGIXAwD-bXcc_DrbfRIZStnHFINCPUDxjmefmKrJ-9u62fuDRX5rbdlfMcr8CPFc7Z4E_jvHzUC43DeWjoHM7a9W5A4i0_1aJt7nux01sUlLDRErmjuViBQwclISZ7piTUyaJizaIS7jLSCdCx8jHCeIEt5q9f9xpPaWHyHrFl8Wp1XEulfgzjVMJ80f3FQ0vD9RWsCAHgv6FT8KpfwRYO4MeTUkaelOQBzqqVAVnNnRem6FwIUOXyEk8M_C-_07DfxeDNIBtl4gNz8j_lQTSRNelDJxQu6_fjtobMTw8E4PLZnaR3LxvvUSthBtxgbPcwXm_NShBety80Ojgp-tHzLZZQRX5_lvqzvcMemAT4zFmrd2Hz6NNpxhNzffMLPbSsxQvXMhHNhMvhq51NFJNvDUeBGwY6TXTU_ELlJdVp_p7wghHAs5Gz6GiC-FAsSWXUjQXnyd-FsgKsTWlfDgIgltZc9yPVOz3XV-H2isV_ExyWZzhZQg1XLrsZSjNRU7TD6_VbadVezmmzwHRz1UVwFcCDY_pQnodwWhU3DaBIsrlMMgLE3zkc8W3hHC46HrcoqPg6b45tfZXw5OzOSz34J1j3wzmEx41assMDJm4-KrxFvUAWlPm9v6WI1nQpcF7djMDlpnX7bU2sPL7O2JV9VpYs9d4vRAxVCyoHeOY6VqY7pFLt-VwMxyEIdXMu7g4kXySeIx_T8kpBJrDBLQqk2Pt0QLLVarL2mpNJoCD7LvBDHb1wq9j2hQCvBdVDLgerUAWpZswxL90VbG89mk2vKxIRX9A03OrJFuLKbJ1_aZeVLac3IYmtT0n0KqbhDOJqbkuyyuSEvEQ0-XfXXNnG2ogY5pFGACGOyJ1ppaDYcpgM0sjmLvqXtc--56jyrpse-wedJ54oiPfYmabN3TRU-KmbVtvE6gztA9d9cSA1ERFUvSrUFBj1jZDOCJD-Cum8ZubFjkNKt2CmffPc0AWqQALPK9vO0MCLxDj9iCzLDyYMnfj-sARvGz6rzpRHzJN62_Y4P-Y2dMSwedAZDNRJdxDw8T2zRQsY-t9TolvxfEGLZlFthwlEkZSnj5GQCgFvObSpgBOMsq3ANd3nwQ4Lg2WJ_-Bc0SGxVT-R965-tpMBHa6aV1cg0KlTDRUy1pVzNsR-V0uPcz6qJ4yeuSjctIQqGDZ6n5PLmT-PF6Qz0AM5sFk5RQ4F3iRKcwmpeGM-cNuaiT_qTvYafyvpMayJf7s_GiC50uMGvsCMQ9ItcBkCG7i2w5uesmAvqJb0lgJlp3Ipvhgji6AqZFj1iCBnJvoBSL27RShvVhsaW4Ovn6vEFMTqTUIxmiFHbhKlS0Z1vQLZhDab4Upp_ge4O7YUftJUubXm_zmGc0Vk8C_KtlVQfXjk-rXdvgOhF4rK4B3iMmeDeaODDzZziprlQJhki1mtNoUyHpsZlb8JFvQOEAuLT8NGBbtgjA13fbh_ISvgMFZXWBVmUn9FXKBsMxejc2rsfb7IDCs73FTONCDt6SU7kcos5HAKUA_LcGAdnRfgHNA-08pNupdb9r3TRAx8tAHje3kBkvgaT0xEfzKKXNqgQ-p3S-SkUpQOaB15SLi87RsSBW_bz1ufCGCzk_T0x5L_4LJk-gQQQtDWK6DoDNDKtyxOly7V4rhrS5qLSq8s2p5Gbyh_w20xDulHJzFbVfDl4P5y_4BmgCNUCQRObr1XBMjTwDfgTBY8dVmm-Q87x1i7S6b4lyakNx9tEDxLsjclGNMQVunEKD4bVQKxuM2jlbQtHaRIxjJriJql5N8iRwMr5TWwsmdXU_B7eF2kZamhOPV6pPGlGNACCbQyGiBYChxIebhq5a2Pws6jHqF0Pj4gp0qy3_hrb96dg81noulFWzoYQ6XT3nTB.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06591864619a962d016ae81eb98a1c87d18718ed6f3696a2e6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9858,
+    "completion_tokens": 299,
+    "total_tokens": 10157,
+    "cost": 0.001381675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9855,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001381675,
+      "upstream_inference_prompt_cost": 0.001232175,
+      "upstream_inference_completions_cost": 0.0001495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

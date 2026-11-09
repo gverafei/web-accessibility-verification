@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots show matching content: the Shai Gilgeous-Alexander feature and the TIME100 Next covers section are retained. No material loss is visible.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and arranged coherently in both states. The overlapping archive/chat widget is present in both and does not make the core content materially unreadable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including READ MORE, newsletter signup, and the archive/chat widget controls, have understandable labels or recognizable icons and match across the evidence.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target windows are aligned, coherent states of the same page; the supplied image pairs are visually identical.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headlines, summaries, imagery, and labels communicate coherent editorial and magazine-cover content consistent with the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Analyzing output requirements**\n\nI see that I need to generate JSON output. It appears the images are identical, which might simplify things a bit. However, it\u2019s worth noting that the overlay chat is obscuring parts of both the reference and target, and the underlying cards are also partially hidden. Controls are visible, like the \"read more\" option, which could serve as evidence that things are coherent and semantically clear. I'll need to ensure everything aligns properly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing output requirements**\n\nI see that I need to generate JSON output. It appears the images are identical, which might simplify things a bit. However, it\u2019s worth noting that the overlay chat is obscuring parts of both the reference and target, and the underlying cards are also partially hidden. Controls are visible, like the \"read more\" option, which could serve as evidence that things are coherent and semantically clear. I'll need to ensure everything aligns properly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BoJ1mKby3Q03Kkx2q81DERJHusu3YIyo_NB4sA-XxUOnpq0JPs5cXGseNNn8fomcoL0FgemgzRgoN8U-uaWTmjZv6_79ucDUTl-HxkKoUXYug9x5w1BAoaRNqxG9J1r7apZuJTeWzaN2G4vUSJ0gtPkxWiTsA7SZi1MsrNi4XqrpIhChExjV4GpibWvTcGvdlO3VLcw9BO2FatM2zHKHqAmNIGYSj39n86RDk1Sy2ePZNQnK8tf4XJc2DTScgVZpvLC7apMiu0qjELOi0WOT_jZBMDpAtEGt28r254MwCM6hhD0cBTlhUdtSv52ScZl-OFr-8CQAxfRgg7vYkKBnuSVYAkPQGRb4BAHelK-GGutV_ULr03MUxsCIENm7Cu0THtfHe2aKA6WVXCXJswCUe9UlssUnmDJsfVF9LiEQJWBxo1DVT_RjaUSuunskD05NqJRxrWF05BvtRHLl_mT6PffwV5WjNGA34AE9iAMXUlPUvqNRkfpUTPCN3QG5mdij2-kt4M2hKie2wcJv5hM8LJiww_gRhCXs-AoxE3oSqfwOf4mvjHqOi8txDcVbn2HXrji4jeV-h7g1xmHMGcObgtbtwf6ouoSFxqlqCBq-3ZEzEoaNJCp0ncXEup8i4e0EoRyM8E1dwc3ZFAmf3NEOs_I_IjwBkucaKFersTZ6Vo1wxWOdZAEgN5QnUFISJ7yWn03zJNRgOzEcGY9BBsn9NTweX50yIX-Re9U_MKKScC_aeou__PwnVl-RBEmz9SZjZdcednf7j3NJTOFfMIWCu9na-3c1HAMgM8F_DJciDzTFZqxX7C5nI2koneRcLb42fnPb2CBFhX_I31lSnE1-xAGUL3vnA1L2tr48WDjHA_ikzwpauFeSLXYeauwYP2zNLxHXdPlXfpT-wBBOCd5lIGi8oLP1BhL0aqEHgMhccnFJ5rIWauVkDqng7y4xPZLIj9ZCb8rChKN9LG3k-dyQ_VSW9eomDxc36h1FlDvsLpKZ6PU-WRsz_p8birLqFvfPXXpFqUA5xbqtXGdW62W5R1ZnNQ7BRQB2Rs1v_v4MHQHCwGMfO7NNaMwoDs-zo0QluelM10mFUjNOrGtlMbmw0KGlgI7k_UmQl19AK1bo85Adu97h-DLGUTKn6DxiYklWMclRNweJJT8_pdRh500iJiU0JrYkcD6SjrmeHZOoYpsw-9RL3sSkJ_NY5IbLAmwHryMe2eP-rwB_YNRXYjuqPmVL1JTS4wFPpGwcQFvPzOaTrVPwcla6vOSta3tS6uKVX-oKXqUXJCVDYxZU7AFgTPmruNqZzC9SVvpGgz_VdGyV0KEwr5x-DvXZjXi305xDeJJk2es8dMtV2g7KfVnkGuuUTnxru6kPdwuOpTbFdiVo_eqyWvA1dVqOjfRwRSYJqL3mvornCMpi9MG1Jxc5uMI9rumFcj_JWZGPO28pYEpuuskJRj906X0LprrqFI6RheVVwQAWEpuagjsgO5QLJMxZ6L4dKsE18UT8TpSXyPwS984QXsKQdoRsa1PFOvtUy91RkR3Mcu0ZL1iSHZCIc9qyBLOMJ9Ph53KhpQuniu2TJyg19-glnTk8SAYK73M7t8iu3U7GkVxovvXNW-y8oU8SeeWeMXtjHPrMP5392M6df6y3y-W4P8Cll_IRDJ-nraKTQ_6a2A1hawjiNz0dY3s_R8_oCXQjnK5KzGmhyBAwGIR3vAwrE-qswVtARQ3xzHdRQnZu5iP7w1gNYsmn5Uq9pS1Hg4SDakXRV4JapMpRlqiHQmmLCe6zWikRiaJz0G4msTNU4jPv1KXzSZnAYvcIDTFlYxbDpNazSPez6sPOqhpXZlBwtGPZjV8eMMDoyMzbV_TJEnKMLbaKprlfvIti8Y7Ru3P0F0apxq_lBHkXck-Vty3AHlE1LgmTF2zwghKItDds_uerPlb2hF2fTre7LwEKNtc0GX-EcLUHDyiNz_QEI_hqsnoOSc_XtxaIS9Jwd67c1CE6l0UkOdyydy9A4Su-wR3_S-77h7_Z2oZE_wD1ZbFcBl3lMPX-eEjiQO4zlIi9fZSQXOOIgYwdbSRw2HZrpKAklEXypSteLqaSHebFC93Nf0V_dT2LszUTTdckoqeF8qTlikl3zqrKQ6AnKZSKVyDgcAxRv_QlJNNAmYI0e-4gd7-6R0FjSvOWqty.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08c7893035aad9cc016ae81a0818e887d1965912c170b876b1",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18621,
+    "completion_tokens": 309,
+    "total_tokens": 18930,
+    "cost": 0.00248205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18618,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00248205,
+      "upstream_inference_prompt_cost": 0.00232755,
+      "upstream_inference_completions_cost": 0.0001545
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 44,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

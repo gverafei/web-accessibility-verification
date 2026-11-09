@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference shows a substantive community call-to-action and footer, while the target region has a mostly blank page and only a fragment of \u201cFeatured Projects\u201d with a broken image. Core information is not meaningfully preserved in the observed target.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target is overwhelmingly empty white space, and its visible project image is broken. This leaves the captured interface poorly presented and substantially incomplete, rather than merely reflecting a viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference\u2019s visible Learn More, Donate Here, and Contact Us actions are absent from the target region; no corresponding essential actions are visible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied images form a coherent reference/target comparison for the same site. The target\u2019s defects are localized page-content and presentation failures, not evidence of a mismatched or unassessable set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target exposes only a short Featured Projects heading, description, and broken-image alt text amid blank space. It does not convey the reference\u2019s community, support, contact, or footer information.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8463,
+    "completion_tokens": 316,
+    "total_tokens": 8779,
+    "cost": 0.0012158,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8460,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012158,
+      "upstream_inference_prompt_cost": 0.0010578,
+      "upstream_inference_completions_cost": 0.000158
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

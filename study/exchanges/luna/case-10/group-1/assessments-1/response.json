@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the reference\u2019s nginx overview, latest news, project descriptions, and navigation in the supplied views.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged, with no material overlap or clipping in the captured regions.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and content links have readable labels; no essential visible control is obscured or unclear.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views form a coherent comparison and show matching page states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, descriptions, news items, and link labels communicate a coherent nginx site purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Ensuring JSON Consistency**\n\nI\u2019m thinking we need to ensure that all JSON outputs are identical, with exact screenshots showing the same hashes per pair. It\u2019s essential to compare the reference and target for equality. I\u2019ll need to make rationales clear and concise while also ensuring that controls are visible and links are readable. It\u2019s important to maintain semantic coherence and provide evidence that supports our conclusions.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Ensuring JSON Consistency**\n\nI\u2019m thinking we need to ensure that all JSON outputs are identical, with exact screenshots showing the same hashes per pair. It\u2019s essential to compare the reference and target for equality. I\u2019ll need to make rationales clear and concise while also ensuring that controls are visible and links are readable. It\u2019s important to maintain semantic coherence and provide evidence that supports our conclusions.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BeryJ9ZRxaeUWqSHlIYvNtVYCAyje02_jv5nuT8E8Vh-6EvRXJMvlGZwm7jBojDa2HMn8YiFapFrJAtUyeBq625bwB-FRIHWaL21_nlL44XjmSJw0efjnzjqjHQtKCgqYULpdP1xrRRwNo9hGLQzQs4Vqoc47augtAvZB4LbflggYMUStThiUwGMNyClShAh9VgtO-yGUZpDPHRHTZ39yOwdLupFDV_o5K7Q6Yt-0ymRfdENr2CuSWux1eZsp1EgjdxhI-kiztGCnXPmXmQOJM6M_oGoFlBy4WN-ZUBkro2oI5fhLVtdZlIMfbvuJ_Z529QDl7VYDfgEeQcZgPUbbXohOyM3bLAjKIVZUJfHpVJ4oO1N3gM_QvBZvz8DJu98-YmILkgGPWxevoUHIASddSp3ZOS8z2uswXmb5L_gOHGvKBRZf_Xk-neJvw9mB53E6bGsduI2qPzAyRhkzk6p_WS8pjNVEmtnNt6r8bY-hWWtSGPv_0cmEbxhK4tElVA_2IvpbFDUW7p5nUvQtRyBq60Cq7fY7N5EHuDf2sHzIYtk5T7L6Ah52EMhfoE76lMuo2gyO8Si0_xmrKyIz9XgmHnqDzWQ0SuiBTPrQZw2dzKp6ryi0RGy835p4NlzT-hPBAr_IphjNtC-W-9K4WXDhYagK6ycq07CkWKx9qGRAChWkQ3pueid7BFhtn7fW4deDnGZymjG8TgADmXSBeBdZH3O9OSTHSdkNkpL-oA0BoUvARP27CgDO9mK3qgC7s93gIKGTjwmqGXeZv1y6e9ahMUE9Fzt7xuWLdVcVHiLb-9nQ_EBLZCJeMJ5HRcvkimfCWGH3CoR50n9LCWrVDP1W6qRk-bd5FAUTgOZiskIRfojNSqK6WN-Q75vEg5textyCSsonKjbOr7fWavpTROPpLT8vH0TFXxTV--o6Z0kgvbxdVHIJjhTfWpG1PaM4UJsFnOUk6MZw_8RU2VnkM0Pt3T5kZxOB-ry3Q4a4jV-vOnp6Tax5gV_fEX_bohW8V5DWEgwVayDyC__PPGn7xvLwB24K_BJ6eJIhAqHrEctxczxfXmtnNCML8EH1X5lpVRcGbIE5wp0kqBqLiq2CeX-bViqLZeBzr2JPHuN1weQS_QaM8raNR3rfxJgssudfs-dnxHaJrkoSiVGTdP17ZKDRHerrG748tpVnRl9ub32n4kXzctxuqgqYxuuH06gGjwgKtXRWjhG7i0suH1WRRE8azWF-XVqYzVXMxH7QWAMtKl-Z92lU9tuVRVvpqe7VS4kOghbXMcNMpOjTPkOeszTE8mdIkSmAu0yEfls_UUL5x8J9Q_T0aFpWRYHvYyOljPMp86KMPBnsgFfu1MsAkf_7XElw4MDGWtyRTqhWnI2G7njpAAad8bIy7snliDRrQrO3xp2FtQtiLk2uf1CnUW203Maw39AbiVm6DcH-G2EETlHqBYV2TtanDHvkFnKKtSXF6J8D-tW_WOkDB1dXiKL1QdcpWlzJ_a7wqLDxY2DgLgkjkC5SimmCSVGSmK4Xyc5-yWErjnBgo4qHy5C2NCZfUTDeEQLmyhNzfxdmN68_MI45h2dWZBlLwCk2MTTSLWoGhyLHypLpa2UoyN65AqqnlmRo6acX7WCJzu52-CM7_Ih8sy2GLc03Q01QxOMPI5-7QW2eXvcReCUeInTreq_OPPsiFqvZkI77-1uZBm5I65iR8QM9-Ufm16ziAfgxV0MReW5mjVkoy12kZmdqRZfhU0erYAuM7G8AO3EftxEp_r5YmEzGuvYOAPXkOfdoT4kAB58GjzFxd2CXbdvGDTFCLheK9fh_5Lw_TFYDk3pfKDIq3uhyI0i-Fgj5a7JxSo5USyHJZxqbsALeFRjIkvWC39AmCRDWT2wh_wXjOe99k-E9SOAiAvSh8FbyB_1tH8_b0t3_j7IpV5WJYu9icKMzZJriUgllaIHFvtY-zBasrysFihGqgMgvOydulAgKZOlMSofLvStNLnqxbOlbWJpUCACfCRw8iIALTMMvyVFSy5fq1NKoM4vdmbG68qZaK6mhGQ5DUznKwzurLOn2B5IapuCU3qA3FkMk-8n4F2h5NHH0DLMz4OOA9Le4QkbWcOvraRRU5u08Dn_9FkUWkWum7Ewqs_BOzzOQk9nAGj7q2cVubQdDsJz_sbpAMdUZv_8jTv.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_083210a658d4827d016ae817aa1fac87d189705c8aac6aef70",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9770,
+    "completion_tokens": 263,
+    "total_tokens": 10033,
+    "cost": 0.001352675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9767,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001352675,
+      "upstream_inference_prompt_cost": 0.001221175,
+      "upstream_inference_completions_cost": 0.0001315
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

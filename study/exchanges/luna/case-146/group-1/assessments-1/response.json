@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The regenerated page retains the NGINX introduction, latest-news entries, project descriptions, and meaningful links visible in the reference. Its reorganized navigation and project cards are coherent for the same broad purpose.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and links are legible and the content is consistently arranged. The lower target view shows the project cards and footer without substantial clipping or overlap; viewport boundaries are ordinary.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation links and action links such as Docs and Code have readable labels. No essential visible control is observably unusable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target views form a coherent comparison of the same NGINX information page; layout and styling differences are consistent with regeneration.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headings, news text, project descriptions, and navigation convey clear meaning consistent with an NGINX resources and project page.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10026,
+    "completion_tokens": 227,
+    "total_tokens": 10253,
+    "cost": 0.001366675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10023,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001366675,
+      "upstream_inference_prompt_cost": 0.001253175,
+      "upstream_inference_completions_cost": 0.0001135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

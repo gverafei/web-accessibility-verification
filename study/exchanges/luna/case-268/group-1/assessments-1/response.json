@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible headline, explanatory copy, imagery, video area, solutions section, and navigation. The differing ad creative is excluded.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible content is legible and coherently arranged; the video controls and page sections appear in the same positions in both states.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Navigation, contact, cookie-consent controls, and visible video controls are identifiable and understandable in the target.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired screenshots and saved component context form a coherent reference/target comparison; the observed states align.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target communicates the same page purpose and visible information as the reference. No material semantic loss is evident.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11815,
+    "completion_tokens": 189,
+    "total_tokens": 12004,
+    "cost": 0.0015713,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11812,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015713,
+      "upstream_inference_prompt_cost": 0.0014768,
+      "upstream_inference_completions_cost": 9.45e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

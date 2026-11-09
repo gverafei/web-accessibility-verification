@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents the ESPN section and its sports-related offerings, including SportsCenter, WatchESPN, ESPN+ Stream Live Sports, NBA Draft, Fantasy Football, and Andscape. These convey the same broad information shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's card layout is legible and coherently arranged. Its footer and page ending are also visible; the layout difference from the reference is not a material usability defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible service names are presented as recognizable, readable links. The target also provides clear footer links; no essential control defect is apparent in this region.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both images show the ESPN offerings and Disney footer in a coherent reference/target comparison, despite different layouts and scroll positions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, descriptions, and links clearly communicate the purpose of the ESPN services and related offerings.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6836,
+    "completion_tokens": 278,
+    "total_tokens": 7114,
+    "cost": 0.000993425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6833,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000993425,
+      "upstream_inference_prompt_cost": 0.000854425,
+      "upstream_inference_completions_cost": 0.000139
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

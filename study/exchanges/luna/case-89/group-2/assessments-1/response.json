@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The paired views show the same article feature and latest-covers section, with their text and imagery retained.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible editorial content is legible and coherently arranged; the large blank region is labeled as an advertisement and is excluded.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible controls such as newsletter sign-up, Read More, Get the Issue, Access the Vault, and the assistant input have understandable labels or icons.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Reference and target windows are directly corresponding, visually identical states and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The article and TIME100 Next cover section communicate coherent editorial meaning, with no material semantic loss visible.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18614,
+    "completion_tokens": 184,
+    "total_tokens": 18798,
+    "cost": 0.002418675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18611,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002418675,
+      "upstream_inference_prompt_cost": 0.002326675,
+      "upstream_inference_completions_cost": 9.2e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

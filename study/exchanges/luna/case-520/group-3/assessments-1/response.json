@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target matches the reference in this window, retaining the visible page text, image, footer links, contact information, and organization.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged; no material overlap or clipping is visible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links and the \u201cVer m\u00e1s\u201d button retain understandable labels, and the contact and feedback information remains visible.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target are matching views of the same page region and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible text, image, and labels convey coherent institutional, contact, and footer information.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7374,
+    "completion_tokens": 174,
+    "total_tokens": 7548,
+    "cost": 0.001008675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7371,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001008675,
+      "upstream_inference_prompt_cost": 0.000921675,
+      "upstream_inference_completions_cost": 8.7e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. Download now to enjoy a faster ad-free browsing experience that saves data and battery life by blocking tracking software." name="description"/>
+<meta content="The browser that puts you first | Brave" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://brave.com/" property="og:url"/>
+<meta content="https://brave.com/home-assets/images/brave-home-og.png" property="og:image"/>
+<link href="https://brave.com/" rel="canonical"/>
+<title>The browser that puts you first | Brave</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f5f6f8;
+    --ink: #1a1c22;
+    --ink-soft: #4a4f5c;
+    --brand: #c43b00;
+    --brand-strong: #a32f00;
+    --link: #1d4ed8;
+    --border: #d5d9e0;
+    --dark-bg: #14161d;
+    --dark-ink: #f2f4f7;
+    --dark-soft: #c7cdd8;
+    --focus: #0b57d0;
+    --radius: 14px;
+    --max: 1140px;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body { margin: 0; font-family: var(--font); color: var(--ink); background: var(--bg); line-height: 1.6; font-size: 1.0625rem; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  a:hover { color: var(--brand-strong); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+  .skip-link { position: absolute; left: 1rem; top: -4rem; background: var(--ink); color: #fff; padding: .75rem 1rem; border-radius: 8px; z-index: 100; text-decoration: none; }
+  .skip-link:focus { top: 1rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+  /* Header */
+  .site-header { border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 50; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 72px; flex-wrap: wrap; padding-block: .5rem; }
+  .brand img { height: 40px; width: auto; }
+  .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+  .site-nav a { color: var(--ink); text-decoration: none; font-weight: 500; padding: .35rem 0; display: inline-block; }
+  .site-nav a:hover { text-decoration: underline; }
+  .header-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; gap: .5rem; font: inherit; font-weight: 600; text-decoration: none; border-radius: 999px; padding: .6rem 1.1rem; border: 2px solid transparent; cursor: pointer; line-height: 1.2; min-height: 44px; }
+  .btn-primary { background: var(--brand); color: #fff; }
+  .btn-primary:hover { background: var(--brand-strong); color: #fff; }
+  .btn-outline { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-outline:hover { background: var(--ink); color: #fff; }
+  .btn-large { font-size: 1.125rem; padding: .85rem 1.5rem; }
+  .btn-light { background: #fff; color: var(--ink); }
+  .btn-light:hover { background: #e9ecf2; color: var(--ink); }
+
+  /* Hero */
+  .hero { padding: 3.5rem 0 2.5rem; }
+  .hero h1 { font-size: clamp(2.25rem, 6vw, 4.25rem); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 1rem; max-width: 16ch; }
+  .hero p.lead { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: var(--ink-soft); margin: 0 0 2rem; max-width: 42ch; font-weight: 500; }
+
+  /* Cards grid */
+  .cards { display: grid; gap: 1.25rem; grid-template-columns: 1fr; padding-bottom: 3rem; }
+  @media (min-width: 52rem) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card { border: 2px solid var(--ink); border-radius: var(--radius); padding: 1.5rem; background: var(--bg); display: flex; flex-direction: column; gap: .75rem; }
+  .card h2, .card h3 { font-size: 1.5rem; margin: 0; line-height: 1.2; }
+  .card p { margin: 0; color: var(--ink-soft); }
+  .card--peach { background: #ffe1d4; }
+  .card--blue { background: #e4ecfb; }
+  .card .spacer { flex: 1; }
+  .search-form { display: flex; gap: .5rem; }
+  .search-form label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .search-form input[type="search"] { flex: 1; min-width: 0; font: inherit; padding: .7rem .9rem; border: 1px solid #7a808c; border-radius: 10px; background: #fff; color: var(--ink); }
+  .search-form button { min-width: 44px; min-height: 44px; border-radius: 10px; border: 1px solid var(--ink); background: var(--ink); color: #fff; font: inherit; font-weight: 600; cursor: pointer; padding: 0 1rem; }
+  .search-form button:hover { background: #333845; }
+  .updates { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+  .updates a { font-size: 1.1rem; font-weight: 500; }
+
+  /* Sections */
+  section.block { padding: 3.5rem 0; }
+  section.block h2 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); line-height: 1.15; margin: 0 0 .75rem; letter-spacing: -.01em; }
+  section.block > .wrap > p.intro { font-size: 1.2rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 2rem; }
+
+  /* Accordion */
+  .accordion { display: grid; gap: .75rem; max-width: 760px; }
+  details.acc { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: 0; }
+  details.acc[open] { background: #fff; border-color: var(--ink); }
+  details.acc summary { list-style: none; cursor: pointer; padding: 1.1rem 1.25rem; font-size: 1.25rem; font-weight: 600; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  details.acc summary::-webkit-details-marker { display: none; }
+  details.acc summary::after { content: "+"; font-size: 1.5rem; line-height: 1; color: var(--brand); }
+  details.acc[open] summary::after { content: "−"; }
+  details.acc summary:hover { color: var(--brand-strong); }
+  details.acc .body { padding: 0 1.25rem 1.25rem; color: var(--ink-soft); }
+  details.acc .body p { margin: 0 0 .75rem; }
+
+  /* Comparison */
+  .compare-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+  @media (min-width: 48rem) { .compare-grid { grid-template-columns: 1fr 1fr; } }
+  figure.compare { margin: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+  figure.compare img { width: 100%; height: auto; }
+  figure.compare figcaption { padding: .9rem 1rem; font-weight: 600; border-top: 1px solid var(--border); background: #fff; }
+
+  /* Compare cards */
+  .tile-row { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  @media (min-width: 48rem) { .tile-row { grid-template-columns: repeat(3, 1fr); } }
+  .tile { background: linear-gradient(160deg, #ffe1d4, #fff4ee); border-radius: var(--radius); padding: 1.5rem; display: flex; flex-direction: column; gap: .6rem; }
+  .tile h3 { margin: 0; font-size: 1.35rem; }
+  .tile p { margin: 0 0 .5rem; color: var(--ink-soft); }
+  .tile a.btn { align-self: flex-start; margin-top: auto; }
+
+  /* Dark band */
+  .dark { background: var(--dark-bg); color: var(--dark-ink); }
+  .dark h2 { color: #fff; }
+  .dark p { color: var(--dark-soft); }
+  .dark .btn-outline { color: #fff; border-color: #fff; }
+  .dark .btn-outline:hover { background: #fff; color: var(--dark-bg); }
+  .dark a { color: #9cc3ff; }
+  .dark a:hover { color: #fff; }
+  .dark-band { display: grid; gap: 2rem; padding: 4rem 0; }
+  @media (min-width: 52rem) { .dark-band { grid-template-columns: 1.2fr 1fr; align-items: center; } }
+  .dark-band img { max-width: 480px; margin: 0 auto; }
+  .biz { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin-top: 1rem; }
+  .biz small { color: var(--dark-soft); }
+
+  /* Footer */
+  footer.site-footer { background: #0c0e13; color: var(--dark-soft); padding: 3.5rem 0 2rem; font-size: .95rem; }
+  .footer-grid { display: grid; gap: 2rem; grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 52rem) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
+  footer h2 { font-size: 1rem; color: #fff; margin: 0 0 .75rem; }
+  footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
+  footer a { color: var(--dark-soft); }
+  footer a:hover { color: #fff; }
+  .lang { margin-top: 2rem; display: flex; gap: .75rem; flex-wrap: wrap; align-items: end; }
+  .lang label { display: block; color: #fff; margin-bottom: .3rem; font-weight: 600; }
+  .lang select { font: inherit; padding: .5rem .6rem; border-radius: 8px; border: 1px solid #5a6170; background: #1b1f29; color: #fff; min-width: 220px; min-height: 44px; }
+  .legal { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #262b36; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+  .legal small { display: block; }
+</style>
+<style data-warp-repair="true">.dark-band > div > .btn-large.btn-primary.btn { color: #fff; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a aria-label="Brave home" class="brand" href="https://brave.com/">
+<img alt="Brave Software home" height="40" src="https://brave.com/static-assets/images/brave-logo-sans-text.svg" width="40"/>
+</a>
+<nav aria-label="Main" class="site-nav">
+<ul>
+<li><a href="https://brave.com/download/">Browser</a></li>
+<li><a href="https://search.brave.com/">Search</a></li>
+<li><a href="https://brave.com/search/api/">Search API</a></li>
+<li><a href="https://brave.com/brave-ads/">Brave Ads</a></li>
+<li><a href="https://brave.com/compare/">Compare</a></li>
+<li><a href="https://brave.com/faq/">FAQs</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="btn btn-primary" href="https://laptop-updates.brave.com/download/BRV002">Get Brave</a>
+<a class="btn btn-outline" href="https://search.brave.com" rel="noopener noreferrer" target="_blank">Search the Web<span class="sr-only"> (opens in a new tab)</span></a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<h1 id="hero-title">The browser that puts you first</h1>
+<p class="lead">Block ads. Save data. And get way faster webpages. Just by switching your browser.</p>
+<a class="btn btn-primary btn-large" href="https://laptop-updates.brave.com/download/BRV002">Get Brave</a>
+</div>
+</section>
+<div class="wrap">
+<div aria-label="Featured Brave topics" class="cards">
+<section aria-labelledby="search-title" class="card">
+<h2 id="search-title">Private search</h2>
+<form action="https://search.brave.com/search" class="search-form" method="get" rel="noopener noreferrer" target="_blank">
+<label for="q">Search the web privately</label>
+<input autocomplete="off" id="q" name="q" placeholder="Search the web privately" required="" type="search"/>
+<input name="source" type="hidden" value="brave.com"/>
+<button type="submit">Search<span class="sr-only"> (opens in a new tab)</span></button>
+</form>
+<p>Better results, AI answers, and zero profiling with <a href="https://search.brave.com" rel="noopener noreferrer" target="_blank">Brave Search<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+</section>
+<a aria-label="Powerful VPN: protect every app, on your entire device. Firewall + VPN" class="card card--peach" href="https://brave.com/firewall-vpn/">
+<span style="font-size:1.5rem;font-weight:700;line-height:1.2;">Powerful VPN</span>
+<span style="color:#4a4f5c;">Protect every app, on your entire device.</span>
+<span class="spacer"></span>
+<span class="btn btn-outline" style="align-self:flex-start;">Firewall + VPN</span>
+</a>
+<section aria-labelledby="new-title" class="card card--blue">
+<h2 id="new-title">See what's new in Brave</h2>
+<ul class="updates">
+<li><a href="https://brave.com/whats-new/#ask-brave">Introducing Ask Brave</a></li>
+<li><a href="https://brave.com/whats-new/#android-custom-toolbar">Create a custom toolbar shortcut</a></li>
+<li><a href="https://brave.com/whats-new/#android-large-screen-viewing">Improved viewing for large-screen devices</a></li>
+</ul>
+<span class="spacer"></span>
+<a class="btn btn-outline" href="https://brave.com/whats-new/" style="align-self:flex-start;">See all updates</a>
+</section>
+</div>
+</div>
+<section aria-labelledby="user-first-title" class="block">
+<div class="wrap">
+<h2 id="user-first-title">What does a user-first Web look like?</h2>
+<p class="intro">Better privacy. Faster webpages. Easier navigation. And experiences that put people over tech company profit.</p>
+<div class="accordion">
+<details class="acc" open="">
+<summary>The Web, without the annoyances</summary>
+<div class="body">
+<p>Brave blocks third-party ads on every website. That’s video ads, search ads, social media ads, and more.</p>
+<p>And those annoying “Accept cookies?” pop-ups? Yeah, we block those too.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Save data, save battery, save time</summary>
+<div class="body">
+<p>Without that unwanted junk, you save Wi-Fi bandwidth and mobile data, battery life and CPU. And websites load 3x-6x faster. Less waiting = more time back in your day.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Unparalleled privacy</summary>
+<div class="body">
+<p>Shields against tracking and fingerprinting. A premium VPN that can encrypt every connection no matter where you are. On-by-default <a href="https://brave.com/web-standards-at-brave/4-global-privacy-control/">Global Privacy Control</a> to stop websites from selling and sharing your data.</p>
+<p>All this (and more) in one ridiculously easy package.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Built-in security, on by default</summary>
+<div class="body">
+<p>Brave works right out of the box. No dials to turn, no extensions, no PhD required.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Switching is easy</summary>
+<div class="body">
+<p>A faster, more private, less annoying Web is only 60 seconds away.</p>
+<p>Just download Brave, import favorites from your old browser, and… You’re done!</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section aria-labelledby="fewer-ads-title" class="block" style="background:var(--surface);">
+<div class="wrap">
+<h2 id="fewer-ads-title">A Web with fewer ads</h2>
+<p class="intro">Check out a popular site in Brave and in Chrome. See the difference?</p>
+<div class="compare-grid">
+<figure class="compare">
+<img alt="Allrecipes website loaded in Brave on desktop, with fewer advertisements" height="1079" loading="lazy" src="https://brave.com/home-assets/images/desktop-brave-allrecipes.png" width="1728"/>
+<figcaption>Brave</figcaption>
+</figure>
+<figure class="compare">
+<img alt="Allrecipes website loaded in Chrome on desktop, with more advertisements" height="1079" loading="lazy" src="https://brave.com/home-assets/images/desktop-chrome-allrecipes.png" width="1728"/>
+<figcaption>Chrome</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="compare-title" class="block">
+<div class="wrap">
+<h2 id="compare-title">Winning on privacy, performance, and features</h2>
+<p class="intro">See how Brave stacks up against other browsers with these in-depth <a href="https://brave.com/compare/">comparisons</a>.</p>
+<div class="tile-row">
+<article class="tile">
+<h3>Brave vs Chrome</h3>
+<p>When it comes to privacy and performance, Chrome lags far behind Brave.</p>
+<a class="btn btn-primary" href="https://brave.com/compare/chrome-vs-brave/">See how Chrome compares</a>
+</article>
+<article class="tile">
+<h3>Brave vs Firefox</h3>
+<p>Once widely used, Firefox has slipped to the middle of the pack as a Big Tech alternative.</p>
+<a class="btn btn-primary" href="https://brave.com/compare/firefox-vs-brave/">See how Firefox compares</a>
+</article>
+<article class="tile">
+<h3>Brave Search vs Google</h3>
+<p>The world's most popular search sucks up user data, prioritizing ads over answers.</p>
+<a class="btn btn-primary" href="https://brave.com/compare/google-vs-brave-search/">See how Google compares</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-title" class="dark">
+<div class="wrap dark-band">
+<div>
+<h2 id="download-title">The browser that saves you time and protects your privacy</h2>
+<p>Download Brave for Android, iOS, Linux, macOS, or Windows.</p>
+<a class="btn btn-primary btn-large" href="https://laptop-updates.brave.com/download/BRV002">Get Brave</a>
+</div>
+<img alt="Illustration of Brave running on phone and computer screens" height="450" loading="lazy" src="https://brave.com/home-assets/images/app-illustration.svg" width="653"/>
+</div>
+</section>
+<section aria-labelledby="business-title" class="block" style="background:#eef1f6;">
+<div class="wrap">
+<h2 id="business-title">Let Brave power your business</h2>
+<div class="biz">
+<a class="btn btn-outline" href="https://brave.com/brave-ads/">Brave Ads</a>
+<a class="btn btn-outline" href="https://brave.com/search/api/">Search API</a>
+<a class="btn btn-outline" href="https://support.brave.app/hc/en-us/articles/360039248271-Group-Policy" rel="noopener noreferrer" target="_blank">Enterprise group installs<span class="sr-only"> (opens in a new tab)</span></a>
+</div>
+<p><small>*Brave supports enterprise group policy installation to customize which features are enabled or disabled for your organization.</small></p>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="block" id="faq">
+<div class="wrap">
+<h2 id="faq-title">FAQs</h2>
+<div class="accordion">
+<details class="acc">
+<summary>Is the Brave Browser safe?</summary>
+<div class="body">
+<p>Brave is one of the safest browsers on the market today. It blocks privacy-invasive ads and trackers, blocks third-party data storage, protects from browser fingerprinting, upgrades webpages to secure https connections where possible, and does all this by default.</p>
+<p>It’s built off the open-source Chromium Web core. <a href="https://brave.com/privacy-features/">Learn more</a>.</p>
+</div>
+</details>
+<details class="acc">
+<summary>How do I download and install Brave?</summary>
+<div class="body">
+<p>Brave is available on desktop (Windows, macOS, Linux) and on Android and iOS. Download the Brave browser <a href="https://brave.com/download/">for desktop</a>, <a href="https://play.google.com/store/apps/details?id=com.brave.browser&amp;referrer=utm_source%3Dbrave.com" rel="noopener" target="_blank">for Android<span class="sr-only"> (opens in a new tab)</span></a>, or <a href="https://apps.apple.com/app/brave-private-web-browser-vpn/id1052879175?mt=8&amp;ign-mpt=uo%3D4" rel="noopener" target="_blank">for iOS<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Does Brave have a VPN?</summary>
+<div class="body">
+<p>Yes. <a href="https://brave.com/firewall-vpn/">Brave Firewall + VPN</a> protects everything you do online, on your entire device, even outside the Brave Browser. One subscription covers up to 5 devices, across Android, iOS, and desktop.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Does Brave block YouTube ads?</summary>
+<div class="body">
+<p>Yes, Brave can block ads on video sites like YouTube, including on-page, pre-roll, mid-roll, and end-card ads. <a href="https://brave.com/did-you-know/brave-blocks-youtube-ads/">Learn more about Brave’s YouTube ad blocking.</a></p>
+</div>
+</details>
+<details class="acc">
+<summary>What is the Brave Search engine?</summary>
+<div class="body">
+<p>Brave Search is a private, independent search engine and the default for most new Brave users. It is also <a href="https://search.brave.com/default" rel="noopener" target="_blank">available in any other browser<span class="sr-only"> (opens in a new tab)</span></a> at search.brave.com. <a href="https://brave.com/search/">Learn more about Brave Search.</a></p>
+</div>
+</details>
+<details class="acc">
+<summary>What is Brave Origin, and how can I get started using it?</summary>
+<div class="body">
+<p>Brave Origin is a paid version of the browser for users who don’t need every feature Brave offers but still want its privacy protections. <a href="https://brave.com/origin/">Visit brave.com/origin</a> to learn more and get started.</p>
+</div>
+</details>
+<details class="acc">
+<summary>What languages is Brave available in?</summary>
+<div class="body">
+<p>The Brave Browser is available in nearly 160 languages, including four different dialects of Chinese. Brave Search is currently available in almost 20 languages.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Who owns Brave?</summary>
+<div class="body">
+<p>The Brave Browser, Brave Search, and their features are made by Brave Software Inc, an independent, privately-held company.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Is Brave open source?</summary>
+<div class="body">
+<p>Yes. The Brave Browser is built on the open-source Chromium Web core, and our client code is released under the <a href="https://github.com/brave/brave-browser" rel="noopener" target="_blank">Mozilla Public License 2.0<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+</div>
+</details>
+<details class="acc">
+<summary>Is Brave free?</summary>
+<div class="body">
+<p>Yes, Brave is completely free to use. Brave also offers subscription features, including <a href="https://brave.com/talk/">Brave Talk Premium</a> and <a href="https://brave.com/firewall-vpn/">Brave Firewall + VPN</a>.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<nav aria-labelledby="f1">
+<h2 id="f1">User resources</h2>
+<ul>
+<li><a href="https://support.brave.app/hc/en-us">Help center</a></li>
+<li><a href="https://community.brave.app" rel="noopener noreferrer" target="_blank">Community</a></li>
+<li><a href="https://brave.com/whats-new/">What's new in Brave?</a></li>
+<li><a href="https://brave.com/latest/">Release notes</a></li>
+<li><a href="https://status.brave.app" rel="noopener noreferrer" target="_blank">Status</a></li>
+<li><a href="https://brave.com/faq/">FAQs</a></li>
+<li><a href="https://brave.com/transparency/">Transparency report</a></li>
+<li><a href="https://store.brave.com">Merch store</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f2">
+<h2 id="f2">Privacy policy</h2>
+<ul>
+<li><a href="https://brave.com/privacy/browser/">Brave Browser</a></li>
+<li><a href="https://search.brave.com/help/privacy-policy">Brave Search</a></li>
+<li><a href="https://search.brave.com/help/brave-search-index-right-to-be-forgotten">Brave Search RTBF</a></li>
+<li><a href="https://brave.com/privacy/website/">Website and email</a></li>
+<li><a href="https://brave.com/privacy/publishers-creators/">Publishers and creators</a></li>
+<li><a href="https://brave.com/privacy/advertiser/">Advertisers</a></li>
+<li><a href="https://brave.com/privacy/ccpa/">CCPA</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f3">
+<h2 id="f3">Blogs and guides</h2>
+<ul>
+<li><a href="https://brave.com/blog/">Brave blog</a></li>
+<li><a href="https://brave.com/privacy-updates/">Privacy updates</a></li>
+<li><a href="https://brave.com/web-standards-at-brave/">Web standards</a></li>
+<li><a href="https://brave.com/research/">Research</a></li>
+<li><a href="https://brave.com/podcast/">Podcast</a></li>
+<li><a href="https://brave.com/learn/">Intros to browsers, search, and AI</a></li>
+<li><a href="https://brave.com/glossary/">Privacy glossary</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f4">
+<h2 id="f4">Downloads</h2>
+<ul>
+<li><a href="https://brave.com/download/">Desktop</a></li>
+<li><a href="https://brave.com/android/">Android</a></li>
+<li><a href="https://brave.com/ios/">iOS</a></li>
+<li><a href="https://brave.com/linux/">Linux</a></li>
+<li><a href="https://brave.com/origin/">Brave Origin</a></li>
+<li><a href="https://brave.com/download-beta/">Beta</a></li>
+<li><a href="https://brave.com/download-nightly/">Nightly</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f5">
+<h2 id="f5">Business</h2>
+<ul>
+<li><a href="https://brave.com/search/api/">Search API</a></li>
+<li><a href="https://brave.com/brave-ads/">Brave Ads</a></li>
+<li><a href="https://support.brave.app/hc/en-us/articles/360039248271-Group-Policy" rel="noopener noreferrer" target="_blank">Group policy</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f6">
+<h2 id="f6">Company</h2>
+<ul>
+<li><a href="https://brave.com/about/">Reviewer's guide</a></li>
+<li><a href="https://brave.com/brave-branding-assets/">Brand assets</a></li>
+<li><a href="https://brave.com/careers/">Careers</a></li>
+<li><a href="https://brave.com/events/">Events</a></li>
+<li><a href="https://github.com/brave/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+<li><a href="https://brave.com/reviews/">Reviews</a></li>
+<li><a href="https://brave.com/ai/">More AI features</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f7">
+<h2 id="f7">Web3</h2>
+<ul>
+<li><a href="https://brave.com/brave-rewards/">Rewards</a></li>
+<li><a href="https://brave.com/wallet/">Wallet</a></li>
+<li><a href="https://basicattentiontoken.org/" rel="noopener noreferrer" target="_blank">Basic Attention Token</a></li>
+<li><a href="https://creators.brave.com/" rel="noopener noreferrer" target="_blank">Brave Creators</a></li>
+</ul>
+</nav>
+<section aria-labelledby="f8">
+<h2 id="f8">Contact</h2>
+<ul>
+<li>Support: <a href="mailto:user-support@brave.com">user-support@brave.com</a></li>
+<li>API sales: <a href="mailto:api-sales@brave.com">api-sales@brave.com</a></li>
+<li>Advertising: <a href="mailto:adsales@brave.com">adsales@brave.com</a></li>
+<li>Business: <a href="mailto:bizdev@brave.com">bizdev@brave.com</a></li>
+<li>Press: <a href="mailto:press@brave.com">press@brave.com</a></li>
+<li>Legal: <a href="mailto:legal@brave.com">legal@brave.com</a></li>
+</ul>
+<p style="margin-top:1rem;">Brave San Francisco<br/>48 2nd St, Floor 3<br/>San Francisco, CA 94105</p>
+</section>
+</div>
+<form class="lang" id="lang-form">
+<div>
+<label for="language-switcher">Choose a language</label>
+<select id="language-switcher" name="language-switcher">
+<option selected="" value="en">English</option>
+<option value="ar">العربية</option>
+<option value="de">Deutsch</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="it">Italiano</option>
+<option value="ja">日本語</option>
+<option value="ko">한국어</option>
+<option value="pt-br">Português</option>
+<option value="ru">Русский</option>
+<option value="zh">中文 (中国)</option>
+</select>
+</div>
+<button class="btn btn-outline" style="color:#fff;border-color:#fff;" type="submit">Go to language</button>
+</form>
+<div class="legal">
+<img alt="Brave Software" height="auto" src="https://brave.com/static-assets/images/brave-logo.svg" style="width:96px;" width="96"/>
+<div>
+<a href="https://brave.com/terms-of-use/">Terms of use</a> |
+        <a href="https://hackerone.com/brave" rel="noopener noreferrer" target="_blank">Report a security issue<span class="sr-only"> (opens in a new tab)</span></a>
+<small>© 2015 - 2026 Brave Software, Inc. All rights reserved.</small>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  (function () {
+    var form = document.getElementById('lang-form');
+    var select = document.getElementById('language-switcher');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var v = select.value;
+      window.location.href = v === 'en' ? '/' : '/' + v + '/';
+    });
+  })();
+</script>
+</body>
+</html>

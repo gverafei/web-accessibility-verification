@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent magazine sections, article headlines and game listings. It is a regenerated layout, so differing stories and section content from the reference are not material losses.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cards, headings, images and descriptions are legible and arranged consistently. The health images are cropped but remain coherent editorial imagery; no substantial overlap or unreadability is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible section links and game actions have readable labels, including \u201cMORE IDEAS,\u201d \u201cACCESS ALL GAMES,\u201d and \u201cPLAY NOW.\u201d No essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference states form an assessable comparison of a regenerated magazine-style page. Their different layouts and editorial sections do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, article titles, game names and explanatory text convey clear meanings consistent with a news and magazine homepage.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating magazine snippets**\n\nI need to assess target snippets, especially focusing on the lower areas of the magazine homepage. I\u2019m noticing a potential image of a health center with hands that seem half cut \u2014 maybe it\u2019s intentional? Around y6300, there are game cards that look intact, with health images as well. I'll reference different sections in the editorial and ensure that the labels like \"PLAY NOW\" are legible and that I have more links. Overall, the content fidelity seems adequate regarding the semantics, and I'll double-check the JSON for accuracy.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating magazine snippets**\n\nI need to assess target snippets, especially focusing on the lower areas of the magazine homepage. I\u2019m noticing a potential image of a health center with hands that seem half cut \u2014 maybe it\u2019s intentional? Around y6300, there are game cards that look intact, with health images as well. I'll reference different sections in the editorial and ensure that the labels like \"PLAY NOW\" are legible and that I have more links. Overall, the content fidelity seems adequate regarding the semantics, and I'll double-check the JSON for accuracy.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bm7BWNIaNQ4WQHm0YhI6rqs9tSKkSgfYJJBiBGKhcwAECGA1YNM7WhHiE6KthC8g8-T6JtqqXIyPHX8qNbVV6SATtAZz2LVNI8yQ16ely4TAmtMTCPOnnqNJrT6tUU9BEn_lA2snBbx16L317zcYrTyAmObA0AOl0QBbzm-AK-GhF4CWsVcVon2YBVrbUHgxwN_WdGMxjWW71jlhtfAs_Lebu3fzQWnZD5GIjshOMGxxA2-eAC-A1IrwpJ05LakcUb-XSc0DVsMM1Njo2RsGVs4yKGk_FE6D0xPDMsFJmPV0QBFiYB4qL7bc8O2KCRdQIcuDuDddPtEuOwp71r1MXPKkOiIgrZIVixxnCjmeXOF7YY9AHXkOBcQkTF421qBG9ES0TwbOKml0h7ukAhjCMuObkgzY4g4Uh0q4bP5tr_GqAWPbeG2u234zv5NvVmFHCkCGPn0mJ0DLuqqjXQ6Mb5cxiGykPuXYTO8IZAOhCGhgptgzsz7voqcymCGaTrLdg7-lzEDFrlF4F0ZEp1RQtR5DAPRjrP_8LNcaAWY_9SD_SfxfHXouX1P7PKcyvD3ukdtedPWl_xNU8zulD7eQlYri2cdU04n5ATXPqIVo1wWXwX_7sHgTBXjk_z-MzXdpuQLhKNFTaNo_0GnSR-_zdU9n0LvHG2h29IXAfi8igZfGLqu42X_ye5Vnm6t-0wLebuuLSI1NcAJXuFXdvy0I8E9U2VS2kJpbIsyim6dxV-kjlGiX9pXQpehr52gjJ2ZI7O7eJ8ml3rA9pfgeHGDGylWHiwLL_uuEgzNoBNJ4gjbiAM0oqgGg3LCS2axatT4VzqmHO5VzeK5qtJR_vMpy9sj86JgNCLvbiqYqB5KbSeKVbv05ZqLlqQCAI2reRnMADq3ZBIi-sAZmLO0X7fM_yCo0VYW59-1hbw3JjVzXrMW19-GSPcwGVdXJ0HFPU-G2UhilW2HujjA8Ibt-AkzPpL47NZVizMo5Tqom7uoJOz2loLVvMvMiqnoipFOE6L0EggOfEKQ4bsElfCKh1ZALfCG4dOeVJD67kHGAvhxb9SnKwnk3swqv_o5G1I2XnvYoc-qg4yq1dW46A6qXs5QgtpBN7SSsUkb-D8GVUEtX-WocVS5ET3uinMiMv9UDlZswihtpsM6Q_UhXLL4zfx_NQh64hHULT1UHIQQaL5q3j1dkXry9EboDOWG4kSOWYp2aULw1lH1XvnwyfpYpuhjiHXZpGWUbjFktdp0EiIwy7BFnUlILgQKVy0XeWsHwu2Yjw2wFQazqnUc0vn2HpU7hecsIjwgGgx4B74h71i59Fx6T_U2MrNT3rL_UldOC3KjX1icqGaA0DH7hAG04LqiTXbEYoTYKDUrKinHVM9YoAEzGphpeyOZFoO5jnFFuuZeUxLf4us-Tz8liiyFScHExvSgQf2-DYHo8X8qvboMRB03cV1PRlynY4V4-AbtAM7Ckplgd1bYZYz1aWP225wQreScFecmizU3ipbTAnThdD1YvrC09mXVRIuvIrmUuA2EHdj3E-bK2n1_n5gdQ0WCsF7ilBJL3W4_TRIprpNuQr1-vP8zsKwGzKdDFt6i_k8nYP8n3aModndUzNQo-0foQKa9Y5S-SMN4JJ1QSlxdcAzZ7JASHhPo1KX9Jx9awm-8YAD7P1UBYsxO_9R0MxMWhhAbqRyucOYDZL5NXeh1xwYwiUa3msaZf8e8jSniAyV1yuGwYs7Fj2rcw1bIYzmOtIa9aWArDOfy9fDVywomcANJ8U5H0ucy0GgLuitwFmO7nCKZQlsnzcJ6rnXpiJvY4jGEFz09LthLb00Ot_dwplQWeOHIKEe1NVMZrwHCpT56B9bzTX_HeGY9UEuCg0xSgKoL5fpN8A8VqbSA7EL-xUwE9us3RYbD9FFmhi3UJxybS58I6EJn5wyor4o_W0tmGxtPJYRv7GTdhZB7cSfYYbCBXxOu87bzeqNGwC0lKr_c3gOPBW20XlwVVGJVHHmyo1tsnfRJLrgaC2ciMDO9PmB6Mm_LDedTD1Ib3eKAwT_bHtyfWiQ_KpRk5pdBI3suhZ7IVzuK0b211kmJECJK0M0ervzbK2UXfWYWwBUPUcXwxMLUzJ6w2FfehtflQLp8TM3q3ycMqZ1pJoRMhmboewwUHXxWBMhjnrOEQDusNtQxxPhqH8inWrMMBljqH6Y5tBfCEpAHlW5aKMCLiF5pQJSg8OuCsvG1b1kTC24mVT74MwkskE7kYBSrsaTPIw0aToHEBlXTbNZxDNEBg35t7v-mGVlTd3nliiU4CPYTQ0OQMGT9uRRBsT3TXlqfa949-bi3Ce61yEDeDU4kypYLm36STaNAz9_sjs1ur26bVm-stM4UWOcnr0VgwczrL7q2ejReqDO64way0W3lGPTbry8XwYdtd3Se6ya0KB_xlNiIyBcR-ctJv7AGRwOkpl2fX3eKNZSX-BIlh4bhQcnyTLgAxho-EBAIndqwVwQo2_REkB4WzZQaRffFtyslZ12OBnY2vkK_LCuaaUR0eCqeKtnVjJupUcv-2A1ND3FWJ5NMuHSU1XG1rB8FNM29xK33vfB6ljMmNtJTnqzQe4vAOswa8YRHiD_Jt39vGOEWA5n92haK.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_02ee78f8f9184221016ae819b95fd887d1959a561a53375bc9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14542,
+    "completion_tokens": 361,
+    "total_tokens": 14903,
+    "cost": 0.001998175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14539,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001998175,
+      "upstream_inference_prompt_cost": 0.001817675,
+      "upstream_inference_completions_cost": 0.0001805
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Home - The NAI: Network Advertising Initiative</title>
+<meta content="The Network Advertising Initiative is an industry trade group founded in 2000 that develops self-regulatory standards for online advertising." name="description"/>
+<style>
+    :root {
+      --navy: #1a1464;
+      --navy-deep: #120d4a;
+      --blue: #1e6fd9;
+      --sky: #3aa0ff;
+      --ink: #1d1d2b;
+      --muted: #4a4a5e;
+      --paper: #ffffff;
+      --soft: #f3f5fb;
+      --line: #d8dcea;
+      --focus: #ffb703;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--blue); text-underline-offset: 0.15em; }
+    a:hover { color: var(--navy); }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 100;
+      background: var(--paper); color: var(--navy); padding: .6rem 1rem;
+      border: 2px solid var(--navy); border-radius: 6px; font-weight: 700;
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(1180px, 92%); margin-inline: auto; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* Utility bar and header */
+    .utility { background: var(--navy-deep); color: #fff; font-size: .9rem; }
+    .utility .wrap { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; justify-content: flex-end; align-items: center; padding: .4rem 0; }
+    .utility a { color: #fff; text-decoration: none; padding: .3rem .2rem; }
+    .utility a:hover { text-decoration: underline; }
+    .utility .contact-btn { border: 1.5px solid #fff; border-radius: 999px; padding: .25rem .9rem; }
+
+    .site-header { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1.5rem; padding: .6rem 0; }
+    .brand img { height: 56px; width: auto; }
+    .brand:focus-visible { border-radius: 4px; }
+    .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+    .main-nav a { color: var(--navy); font-weight: 600; text-decoration: none; padding: .45rem .3rem; display: inline-block; }
+    .main-nav a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero { background: var(--navy); color: #fff; padding: 3rem 0; }
+    .hero .wrap { display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; align-items: center; }
+    .hero h1 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); line-height: 1.15; margin: 0 0 .75rem; }
+    .hero p.lead { font-size: 1.1rem; margin: 0 0 1.25rem; color: #e6e8ff; max-width: 40ch; }
+    .btn {
+      display: inline-block; background: #fff; color: var(--navy); font-weight: 700;
+      padding: .7rem 1.3rem; border-radius: 6px; text-decoration: none; border: 2px solid #fff;
+    }
+    .btn:hover { background: var(--soft); color: var(--navy); }
+    .btn-outline { background: transparent; color: #fff; }
+    .btn-outline:hover { background: #fff; color: var(--navy); }
+    .feature-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
+    .feature-list a {
+      display: block; color: #fff; text-decoration: none; font-weight: 600; font-size: 1.1rem;
+      padding: .75rem 1rem; border-left: 4px solid var(--sky); background: rgba(255,255,255,.07); border-radius: 4px;
+    }
+    .feature-list a:hover { background: rgba(255,255,255,.16); text-decoration: underline; }
+    .hero-figure { margin: 0; }
+    .hero-figure img { border-radius: 8px; width: 100%; background: #fff; }
+
+    /* Sections */
+    section.block { padding: 3.25rem 0; }
+    section.block.alt { background: var(--soft); }
+    h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); color: var(--navy); line-height: 1.2; margin: 0 0 1rem; }
+    h3 { font-size: 1.2rem; line-height: 1.3; margin: 0 0 .5rem; color: var(--navy); }
+    h3 a { color: var(--navy); }
+    .eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; font-weight: 700; color: var(--blue); margin: 0 0 .3rem; }
+
+    .cards { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); list-style: none; padding: 0; margin: 0; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+    .card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--soft); }
+    .card .body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+    .card p { margin: 0; color: var(--muted); }
+    .card .more { margin-top: auto; font-weight: 700; }
+    .card-cat { font-size: .85rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: .05em; }
+
+    .topic-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .topic {
+      border-top: 4px solid var(--blue); background: #fff; padding: 1.2rem; border-radius: 6px;
+      border-left: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    }
+    .topic p { color: var(--muted); margin: 0 0 .6rem; }
+    .topic ul { margin: 0; padding-left: 1.1rem; }
+    .topic li { margin: .25rem 0; }
+
+    .split { display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; align-items: center; }
+    .cta-band { background: var(--navy); color: #fff; padding: 2.75rem 0; }
+    .cta-band h2 { color: #fff; }
+    .cta-band p { color: #e6e8ff; max-width: 60ch; }
+    .cta-band .btn { color: var(--navy); }
+
+    .logo-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); list-style: none; padding: 0; margin: 0; }
+    .logo-grid li { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: .9rem; display: flex; align-items: center; justify-content: center; min-height: 84px; }
+    .logo-grid img { max-height: 48px; width: auto; }
+
+    footer.site-footer { background: var(--navy-deep); color: #e6e8ff; padding: 2.5rem 0 1.5rem; font-size: .95rem; }
+    .site-footer a { color: #fff; }
+    .footer-grid { display: grid; gap: 1.5rem; grid-template-columns: 2fr 1fr 1fr; align-items: start; }
+    .footer-grid img { height: 48px; width: auto; margin-bottom: .6rem; }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
+    .footer-grid h2 { color: #fff; font-size: 1rem; margin-bottom: .5rem; }
+    .copyright { border-top: 1px solid rgba(255,255,255,.2); margin-top: 1.75rem; padding-top: 1rem; font-size: .9rem; }
+
+    @media (max-width: 900px) {
+      .hero .wrap, .split, .footer-grid { grid-template-columns: 1fr; }
+      .hero-figure { order: -1; }
+    }
+    @media (max-width: 600px) {
+      .utility .wrap { justify-content: flex-start; }
+      .brand img { height: 46px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+<style data-warp-repair="true">section[aria-labelledby="membership-title"] p.eyebrow { color: #1a5bb8; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<nav aria-label="Utility" class="utility">
+<div class="wrap">
+<a href="https://thenai.org/how-to-opt-out/">How to Opt Out</a>
+<a href="https://thenai.org/about-online-advertising/">Understanding Digital Advertising</a>
+<a href="https://thenai.org/consumer-input-feedback/">Consumer Input &amp; Feedback</a>
+<a href="https://thenai.org/about-the-nai-2/careers/">Careers</a>
+<a href="https://thenai.org/search">Search</a>
+<a class="contact-btn" href="https://thenai.org/contact/">Contact</a>
+</div>
+</nav>
+<div class="site-header">
+<div class="wrap">
+<a class="brand" href="https://thenai.org/">
+<img alt="The NAI: Network Advertising Initiative, home" src="https://thenai.org/wp-content/uploads/2021/06/NAI_logo.png"/>
+</a>
+<nav aria-label="Main" class="main-nav">
+<ul>
+<li><a href="https://thenai.org/about-the-nai-2/">About the NAI</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/">Self-Reg Framework</a></li>
+<li><a href="https://thenai.org/policy-news/">Policy &amp; News</a></li>
+<li><a href="https://thenai.org/how-to-join/">How to Join</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<div>
+<p class="eyebrow" style="color:#9fd0ff">Industry self-regulation for digital advertising</p>
+<h1 id="hero-title">Responsible data practices in online advertising</h1>
+<p class="lead">The Network Advertising Initiative is an industry trade group founded in 2000 that develops self-regulatory standards for online advertising.</p>
+<p><a class="btn" href="https://thenai.org/how-to-opt-out/">How to Opt Out</a>
+<a class="btn btn-outline" href="https://thenai.org/about-online-advertising/">Understanding Digital Advertising</a></p>
+</div>
+<div>
+<h2 class="sr-only">Featured resources</h2>
+<ul class="feature-list">
+<li><a href="https://thenai.org/the-evidence-behind-digital-health-advertising-and-whats-at-stake-in-how-we-regulate-it/">Benefits of Digital Health Advertising</a></li>
+<li><a href="https://thenai.org/nai-state-law-processing-addendum/">Updated: NAI State Law Processing Addendum</a></li>
+<li><a href="https://thenai.org/new-nai-guidance-key-dos-donts-for-using-ai-in-network-advertising/">NAI Guidance: Key Do’s &amp; Don’ts for Using AI in Network Advertising</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/membership-benefits-3/">Benefits of NAI Membership</a></li>
+</ul>
+<figure class="hero-figure" style="margin-top:1.25rem">
+<img alt="Tablet held in hand showing the cover of the NAI guidance on key do’s and don’ts for using AI in network advertising" src="https://thenai.org/wp-content/uploads/2026/07/AI-guid.png"/>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="latest-title" class="block">
+<div class="wrap">
+<h2 id="latest-title">Get the latest</h2>
+<p>Recent updates on public policy, our blog, and press releases.</p>
+<h3 style="margin-top:2rem"><a href="https://thenai.org/policy-news/policy-priorities/">Public Policy</a></h3>
+<ul class="cards">
+<li class="card">
+<a href="https://thenai.org/the-nai-comments-on-vermont-age-appropriate-design-code-proposed-rules/"><img alt="Screenshot preview for the NAI comments on Vermont Age-Appropriate Design Code proposed rules" src="https://thenai.org/wp-content/uploads/2024/11/Screenshot-2024-11-08-at-10.53.51-AM.png"/></a>
+<div class="body">
+<h3><a href="https://thenai.org/the-nai-comments-on-vermont-age-appropriate-design-code-proposed-rules/">The NAI Comments on Vermont Age-Appropriate Design Code Proposed Rules</a></h3>
+<p>On October 2, the NAI submitted comments to Vermont Attorney General Charity Clark on proposed rules implementing the Vermont Age-Appropriate Design Code (VTAADC). The NAI supports the law’s goal of protecting minors from harmful data practices and manipulative design, but cautions that the draft rules’ blanket exclusion of all advertising would eliminate even low-risk practices.</p>
+<a class="more" href="https://thenai.org/the-nai-comments-on-vermont-age-appropriate-design-code-proposed-rules/">Read more<span class="sr-only"> about the Vermont comments</span></a>
+</div>
+</li>
+<li class="card">
+<a href="https://thenai.org/the-nai-comments-on-ftc-proposed-enforcement-policy-statement-on-personalized-pricing/"><img alt="Screenshot preview for the NAI comments on the FTC personalized pricing policy statement" src="https://thenai.org/wp-content/uploads/2024/11/Screenshot-2024-11-08-at-10.53.51-AM.png"/></a>
+<div class="body">
+<h3><a href="https://thenai.org/the-nai-comments-on-ftc-proposed-enforcement-policy-statement-on-personalized-pricing/">The NAI Comments on FTC Proposed Enforcement Policy Statement on Personalized Pricing</a></h3>
+<p>On September 25, the NAI submitted comments to the Federal Trade Commission on its Proposed Enforcement Policy Statement Regarding Personalized Pricing. The NAI agrees that covertly raising prices based on consumer data can violate Section 5 of the FTC Act, but urges the Commission to make clear that data-driven discounts, such as loyalty programs, are distinct.</p>
+<a class="more" href="https://thenai.org/the-nai-comments-on-ftc-proposed-enforcement-policy-statement-on-personalized-pricing/">Read more<span class="sr-only"> about the FTC comments</span></a>
+</div>
+</li>
+<li class="card">
+<a href="https://thenai.org/nai-urges-governor-newsom-to-veto-ab-1542-calling-for-opt-in-consent-standard-instead/"><img alt="Screenshot preview for the NAI letter on AB 1542" src="https://thenai.org/wp-content/uploads/2024/11/Screenshot-2024-11-08-at-10.53.51-AM.png"/></a>
+<div class="body">
+<h3><a href="https://thenai.org/nai-urges-governor-newsom-to-veto-ab-1542-calling-for-opt-in-consent-standard-instead/">NAI Urges Governor Newsom to Veto AB 1542, Calling for Opt-In Consent Standard Instead</a></h3>
+<p>On September 9, the NAI sent a letter to California Governor Gavin Newsom urging a veto of AB 1542, warning that its outright ban on selling or sharing sensitive personal information, even with consumer consent, would restrict beneficial uses like health advertising and location-based services.</p>
+<a class="more" href="https://thenai.org/nai-urges-governor-newsom-to-veto-ab-1542-calling-for-opt-in-consent-standard-instead/">Read more<span class="sr-only"> about AB 1542</span></a>
+</div>
+</li>
+</ul>
+<p><a href="https://thenai.org/policy-news/policy-priorities/">See all public policy updates</a></p>
+<h3 style="margin-top:2.5rem"><a href="https://thenai.org/category/blog/">Blog</a></h3>
+<ul class="cards">
+<li class="card">
+<a href="https://thenai.org/tony-ficarrotta-joins-the-data-protection-breakfast-club-to-talk-privacy-ad-tech-and-self-regulation/"><img alt="Screenshot preview for the blog post on Tony Ficarrotta’s podcast appearance" src="https://thenai.org/wp-content/uploads/2026/10/Screenshot-2026-10-07-at-10.47.35-AM.png"/></a>
+<div class="body">
+<h3><a href="https://thenai.org/tony-ficarrotta-joins-the-data-protection-breakfast-club-to-talk-privacy-ad-tech-and-self-regulation/">Tony Ficarrotta Joins The Data Protection Breakfast Club to Talk Privacy, Ad Tech, and Self-Regulation</a></h3>
+<p>On October 7, the NAI’s General Counsel Tony Ficarrotta joined hosts Pedro Pavón and Andy Dale on The Data Protection Breakfast Club for an episode titled “Watch Out For Falling Trees.”</p>
+<a class="more" href="https://thenai.org/tony-ficarrotta-joins-the-data-protection-breakfast-club-to-talk-privacy-ad-tech-and-self-regulation/">Read more<span class="sr-only"> about the podcast episode</span></a>
+</div>
+</li>
+</ul>
+<h3 style="margin-top:2.5rem"><a href="https://thenai.org/policy-news/press-releases/">Press Releases</a></h3>
+<ul class="cards">
+<li class="card">
+<a href="https://thenai.org/press/the-nai-releases-2025-annual-report-highlighting-first-of-a-kind-privacy-self-regulation-in-digital-advertising/"><img alt="Banner for the NAI 2025 Annual Report" src="https://thenai.org/wp-content/uploads/2025/03/NAI-Banners-4.png"/></a>
+<div class="body">
+<h3><a href="https://thenai.org/press/the-nai-releases-2025-annual-report-highlighting-first-of-a-kind-privacy-self-regulation-in-digital-advertising/">The NAI Releases 2025 Annual Report Highlighting First-of-a-Kind Privacy Self-Regulation in Digital Advertising</a></h3>
+<p>Findings from more than 70 member privacy reviews highlight industry progress and a roadmap for compliance in an era of accelerating state enforcement.</p>
+<a class="more" href="https://thenai.org/press/the-nai-releases-2025-annual-report-highlighting-first-of-a-kind-privacy-self-regulation-in-digital-advertising/">Read more<span class="sr-only"> about the 2025 Annual Report</span></a>
+</div>
+</li>
+<li class="card">
+<a href="https://thenai.org/press-release-new-board-of-directors-for-2026-2027-term/"><img alt="Banner for the 2026/2027 NAI Board of Directors announcement" src="https://thenai.org/wp-content/uploads/2025/03/NAI-Banners-4.png"/></a>
+<div class="body">
+<h3><a href="https://thenai.org/press-release-new-board-of-directors-for-2026-2027-term/">Press Release: NEW Board of Directors for 2026/2027 Term</a></h3>
+<p>The NAI announced its Board of Directors for the 2026–2027 term, welcoming five new industry experts and reappointing twelve returning members.</p>
+<a class="more" href="https://thenai.org/press-release-new-board-of-directors-for-2026-2027-term/">Read more<span class="sr-only"> about the board announcement</span></a>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="membership-title" class="block alt">
+<div class="wrap split">
+<div>
+<p class="eyebrow">Membership</p>
+<h2 id="membership-title">NAI Membership Benefits</h2>
+<p>Explore what NAI membership offers companies that work in digital advertising and want to demonstrate responsible data practices.</p>
+<p><a class="btn" href="https://thenai.org/about-the-nai-2/membership-benefits-3/">NAI Membership Benefits</a></p>
+</div>
+<img alt="Banner promoting how to join the NAI" src="https://thenai.org/wp-content/uploads/2026/07/NAI-Banners_How-to-join_NAI-scaled.png"/>
+</div>
+</section>
+<section aria-labelledby="topics-title" class="block">
+<div class="wrap">
+<h2 id="topics-title">Explore the NAI</h2>
+<div class="topic-grid">
+<div class="topic">
+<h3><a href="https://thenai.org/about-the-nai-2/">About the NAI</a></h3>
+<p>Learn about our mission, people, and members.</p>
+<ul>
+<li><a href="https://thenai.org/about-the-nai-2/staff/">Staff &amp; Board</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/members/">NAI Members</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/nai-working-groups/">NAI Working Groups</a></li>
+<li><a href="https://thenai.org/about-the-nai-2/nai-working-groups/working-group-participants/">Working Group Participants</a></li>
+</ul>
+</div>
+<div class="topic">
+<h3><a href="https://thenai.org/self-regulatory-framework/">Self-Regulatory Framework</a></h3>
+<p>The standards and programs that guide member practices.</p>
+<ul>
+<li><a href="https://thenai.org/annual-report-2025/">Annual Report 2025</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/privacy-principles-for-members/">Privacy Principles for Members</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/privacy-review-program/">Privacy Review Program</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/guidance-2/">Guidance, Standards &amp; Best Practices</a></li>
+<li><a href="https://thenai.org/self-regulatory-framework/faq/">FAQs</a></li>
+</ul>
+</div>
+<div class="topic">
+<h3><a href="https://thenai.org/how-to-join/">How to Join</a></h3>
+<p>Find out how your company can become an NAI member.</p>
+<ul>
+<li><a href="https://thenai.org/how-to-join/membership-benefits-3/">NAI Membership Benefits</a></li>
+<li><a href="https://thenai.org/how-to-join/join-the-nai/">Join the NAI</a></li>
+<li><a href="https://thenai.org/how-to-join/member-resources/">Members Resources</a></li>
+</ul>
+</div>
+<div class="topic">
+<h3><a href="https://thenai.org/about-online-advertising/">Understanding Digital Advertising</a></h3>
+<p>Background on how online advertising works and the choices available to consumers.</p>
+<ul>
+<li><a href="https://thenai.org/how-to-opt-out/">How to Opt Out</a></li>
+<li><a href="https://thenai.org/consumer-input-feedback/">Consumer Input &amp; Feedback</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="cta-title" class="cta-band">
+<div class="wrap split">
+<div>
+<h2 id="cta-title">Join the NAI</h2>
+<p>Companies across the advertising and technology ecosystem can become members and take part in the NAI’s self-regulatory program.</p>
+</div>
+<div>
+<a class="btn" href="https://thenai.org/about-the-nai-2/join-the-nai/">Become a Member</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="members-title" class="block">
+<div class="wrap">
+<h2 id="members-title">Members</h2>
+<p>Companies that participate in NAI self-regulation include the following.</p>
+<ul class="logo-grid">
+<li><img alt="33Across" src="https://thenai.org/wp-content/uploads/2021/07/33across_logo_svg.svg"/></li>
+<li><img alt="Illumin" src="https://thenai.org/wp-content/uploads/2021/07/illumin_primary-2022_B.png"/></li>
+<li><img alt="Adform" src="https://thenai.org/wp-content/uploads/2021/07/adform.f2b8fd8aed3953cb474fe2ec44bfbf07.svg"/></li>
+<li><img alt="Adobe Experience Cloud" src="https://thenai.org/wp-content/uploads/2021/07/Adobe_Experience_Cloud_logo_RGB.svg"/></li>
+<li><img alt="Innovid" src="https://thenai.org/wp-content/uploads/2021/07/Innovid_logo_full-color-2.png"/></li>
+<li><img alt="Alikeaud" src="https://thenai.org/wp-content/uploads/2021/07/alikeaud.png"/></li>
+<li><img alt="Audience Rate" src="https://thenai.org/wp-content/uploads/2021/07/audienceratelogo.png"/></li>
+<li><img alt="Unacast" src="https://thenai.org/wp-content/uploads/2021/07/661d3eb71206816721de6820_unacast-logo-black-dot_orange-rgb.svg"/></li>
+<li><img alt="Audigent" src="https://thenai.org/wp-content/uploads/2021/07/Audigent-Logo-1200x528-LinkedIn-e1686844174860.png"/></li>
+<li><img alt="Branch" src="https://thenai.org/wp-content/uploads/2021/07/branchlogo.png"/></li>
+<li><img alt="FreeWheel" src="https://thenai.org/wp-content/uploads/2021/07/FreeWheel_Logo_Black-scaled.png"/></li>
+<li><img alt="Criteo" src="https://thenai.org/wp-content/uploads/2021/07/criteo-logo-orange.svg"/></li>
+<li><img alt="Google" src="https://thenai.org/wp-content/uploads/2021/07/Google-Logo-e1686844327660.png"/></li>
+<li><img alt="Cuebiq" src="https://thenai.org/wp-content/uploads/2021/07/cuebiqlogo-e1686844220807.png"/></li>
+<li><img alt="Datonics" src="https://thenai.org/wp-content/uploads/2021/07/Datonics2025Logo-Eco.png.webp"/></li>
+<li><img alt="Clickagy" src="https://thenai.org/wp-content/uploads/2021/07/clickagylogo.png"/></li>
+<li><img alt="Index" src="https://thenai.org/wp-content/uploads/2021/07/indexLogo1121.png"/></li>
+<li><img alt="Kargo" src="https://thenai.org/wp-content/uploads/2021/07/kargonews1-e1686844569255.png"/></li>
+<li><img alt="Digital Blue" src="https://thenai.org/wp-content/uploads/2021/07/digital_blue_notag.png"/></li>
+<li><img alt="Member company logo" src="https://thenai.org/wp-content/uploads/2021/07/ytgf2eldjeeptzc2buu9.png"/></li>
+<li><img alt="Foursquare" src="https://thenai.org/wp-content/uploads/2021/07/foursquareLogo.png"/></li>
+<li><img alt="GumGum" src="https://thenai.org/wp-content/uploads/2021/07/GumGum_PrimaryLogo-Color_1-e1686844370537.jpg"/></li>
+<li><img alt="Member company logo" src="https://thenai.org/wp-content/uploads/2021/07/LOGO2-1-1024x181-1.png"/></li>
+<li><img alt="Member company logo" src="https://thenai.org/wp-content/uploads/2021/07/iklogo_black-scaled-e1776971994548.png"/></li>
+</ul>
+<p style="margin-top:1rem"><a href="https://thenai.org/about-the-nai-2/members/">View all NAI members</a></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-grid">
+<div>
+<img alt="NAI logo" src="https://thenai.org/wp-content/uploads/2021/07/NAI_rings-1-1.png"/>
+<p>© 2026 The NAI: Network Advertising Initiative. All rights reserved.</p>
+</div>
+<nav aria-labelledby="footer-follow">
+<h2 id="footer-follow">Follow</h2>
+<ul>
+<li><a href="https://www.linkedin.com/company/network-advertising-initiative-nai-">LinkedIn</a></li>
+<li><a href="https://twitter.com/nai">X</a></li>
+<li><a href="https://www.youtube.com/channel/UCxgL70aQb6E3wmtDlblNmqg/featured">YouTube</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="footer-legal">
+<h2 id="footer-legal">Legal</h2>
+<ul>
+<li><a href="https://thenai.org/privacy-policy/">Privacy Policy</a></li>
+<li><a href="https://thenai.org/terms-of-use/">Terms of Use</a></li>
+<li><a href="https://thenai.org/contact/">Contact</a></li>
+</ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

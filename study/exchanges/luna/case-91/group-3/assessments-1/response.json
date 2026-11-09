@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views match: the People section and its images/names, followed by the Ideas section and article cards, are retained. No material content loss is visible.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged in both target views. The overlay obscures portions of some cards, but the same overlay and obstruction appear in the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible carousel arrows and the Ideas \u201cREAD MORE\u201d control are present and identifiable; the chat overlay controls are likewise unchanged. No material control defect is evident.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Each reference and target pair is visually identical and forms a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The section headings, article titles, names, and imagery communicate a coherent editorial page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18618,
+    "completion_tokens": 254,
+    "total_tokens": 18872,
+    "cost": 0.002454175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18615,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002454175,
+      "upstream_inference_prompt_cost": 0.002327175,
+      "upstream_inference_completions_cost": 0.000127
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

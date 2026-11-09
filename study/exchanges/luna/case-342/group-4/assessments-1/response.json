@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show the same content and organization in both supplied regions, including ABC news and entertainment listings and ESPN links and descriptions.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and links are legible and coherently arranged, with no material clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links have understandable labels and remain present in the target.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The corresponding reference and target screenshots match and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Headings, link labels, and descriptions clearly convey the page\u2019s entertainment and sports topics.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10802,
+    "completion_tokens": 161,
+    "total_tokens": 10963,
+    "cost": 0.001430675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10799,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001430675,
+      "upstream_inference_prompt_cost": 0.001350175,
+      "upstream_inference_completions_cost": 8.05e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

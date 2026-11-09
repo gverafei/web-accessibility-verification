@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible Eventbrite landing-page content, event listings, destination section, and organization shown in the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The content is legible and coherently arranged in both target views, with no material clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, search, event-card actions, and destination carousel controls remain identifiable and understandable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots show corresponding page regions and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headings, event details, labels, and imagery convey the same coherent event-discovery purpose as the reference.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11423,
+    "completion_tokens": 175,
+    "total_tokens": 11598,
+    "cost": 0.0015153,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11420,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015153,
+      "upstream_inference_prompt_cost": 0.0014278,
+      "upstream_inference_completions_cost": 8.75e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

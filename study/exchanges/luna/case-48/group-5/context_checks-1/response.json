@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent Red Hat product, training, and topic content. The supplied reference view is a footer-area view, so this window does not establish loss of source content from the target sections shown.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s left navigation visibly overlaps and obscures main-page text in multiple sections, with some labels and content colliding. This is more than a minor cosmetic difference and reduces readability.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible primary actions such as \u201cGet portfolio details,\u201d \u201cGet product details,\u201d and \u201cRead more\u201d have understandable labels. The overlapping navigation is a presentation issue, but no essential action control shown here has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target are coherent Red Hat page evidence. The different content and scroll positions do not, by themselves, indicate a mismatched evidence set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, descriptions, links, and product information convey coherent meaning for a Red Hat site, despite the localized overlap.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating information coherence**\n\nI see that both target regions maintain information, but the reference footer isn't comparable. However, the evidence shows coherence; the same goes for Red Hat. I think the semantic meaning is coherent, and essential labels are visible. The actions to obtain product details should be clear, though I wonder if the many sidebar links overlap and if they\u2019re discernible enough. Overall, the main controls seem readable, so I\u2019ll need to choose controls that meet these criteria.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating information coherence**\n\nI see that both target regions maintain information, but the reference footer isn't comparable. However, the evidence shows coherence; the same goes for Red Hat. I think the semantic meaning is coherent, and essential labels are visible. The actions to obtain product details should be clear, though I wonder if the many sidebar links overlap and if they\u2019re discernible enough. Overall, the main controls seem readable, so I\u2019ll need to choose controls that meet these criteria.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6ATcXv4XVTREY7eoTjis5QHqYfDYF62ltsaKeoiD2N5aUN5PeanA4eezyj9maog3ruQTuqS-r21QjOznoHKkFZY9hjyx-DlYOHvMneQEYHsh5XokMUblrxxt8FRFSQ1mYtqz8P_swSDUmuL81aZlUUYjHbCAKu0jAnLwM52EJsH1D7fQF2uUfTRkr5STiaU1q6ej2wIGDL4-upWh6dugekQNAeBm2yOjZAIK1SXrOMdJYwUxAa6g9boPwaHRw9D2eun445MD0YjAXlZTCeNv-kdT-gXQxx2nHaqSuCrGETXvnBAqxOYWJqU2IzardBMQpcW6W_34jA8PUW3MMqtp-dnz8n25zMWqSFwtjy2w7303z8vMN-ZXsO29ylN4Xq19ZFznGDGaCcXsxESIbfSUGWhYjJEdSuUrUz1GQCJ3PR3Fvrzize-Zr3LKKir_Ua0jKMrm6UELcLIjPHkz4o34t0QEupHBBX5MNyzJvULF2Ahlh2qEYVsnqErSZ-4DMEziHTqTa7cc_kieZMJI9xe2ElPhq4IMnl3B1VP_jcsrmKJXjMbJSucD2aA36c6-koQ4tkVlgmwsgxvbp9MvFdlaeAHdg9I9rJiemXgDMS1tn-iaKChkDlbNnr-R3aKD5biAIcF8mST_XmRQXn4ymwUB12Xaghc4MdDMuVYzJmYZgNXkAFS29GkOe1orYJXsZfBwlgkKVTyKTOqs529143uib1AP4x-TRdxovic5ysdHUy8OhQUnf22m17_h6p9tm8oDNzFiRaZjfPOcPO7HBKJgdLtXNOJH29t68-9yic3xO2aSH20oL2NQ0_8VorfnHx4jpUTS3X-Swg5_fiY4Qq9b8bYjtemTogJ2nIkN0pZokPaPd4pkW7IHAuNMOsB_9h9PDnyTui9Buq1LAfjllnH8COJrJLGWbUpWAp0-0XeWdjf2XSbgRIJ4hVTW4T5-_ZXRl-sY8-Pkb0XO6tAVMTy29oANFvQTw0YmJVy5ySptnA3DAh--4BdkHoYmBpNZbwMf90Anaxtoq94Zyiqdr1XK9ltr5Wb_QQLbPfW1lh4K5Ga9EcqsLxriiisLY1NUDCFV409G-TLETnatRKLp4ueWsqUL5XH7CdA_b1zXZqXtHfYsXuUXDqu0OhK43AaIgDKhEOF5YJL1rX4OC5Lmbm8MHKe91nsNhTK0APTyK3a7wVCDmvxx4UfmU-PAiOJQTxjyeF3vJoIutNYFdqMEI6PTw9hkc__CglAp4jVDYxYLigOb_p97-RA52Z90fsY9k36Vad1GuTjADbGwoj6kna8yLxrt4PGhaYIXoedQ6QDHJ1nhjGtj9PWBXt7z5gc4hAAnp3rs8CTmKto1M_fnEXv0F60NaVflUzZJ8nhrt60aPuYW5bcvqADpXaF3n4D5TsOaXCQc0Q5S-BUVsC8ea2QkPuGyiRUEVj4bjJimYoldZB_08hpJsdMlRP9e3npVe-0X8g43hjBbpCy41cKKB1M_b0HS8D3g36bF1el-43F2kVTJ00rOIddgBLQvtv0wQCjVwCzgQEQzZCLDRhcp_dSfL8lea4JHbbwghYqv-sas7pSvHbjqzdf5WloBbyb2QdIRJHRhYpaCDEkqamaJi6c7yCaCDTeDTuTFTxhVpiw9qQjk5Ht7-cCoftLw2q4oHqTYk5-xN03gn89ND04eLM9XoqXSglHq-cpm0QcLWo03dVoWEkruN6w3b5v_eQM8hy0u_FixOJslhwJTAbIizoTHKskazc-yl1BsHkA1E6MP3cpBqeM8v1ArmfI5BBJHzbvU4DLHEfDmLRLGiUIAG18a77u5ltWnomg-AAbkzOzbM8E96RTjStHawSVnejVKEaGJ0hWZS_k99iBuzRoUJkMpRA320geWXLlPhZyeXMrkFXa3atKBmlbY8bzNRy54VDrdDCg-WsQSeV4YjYhBvUHmnrPBGRDeuCGxys5-tp4ko63Wx4JH06slj2M7ik5CrQJHyBXPUX2QbDZzvKnWi7sLlb41nGS2BM0W9YUd3zvd_obUFCH7ZUjJQ-iX4qMdhm_yQm83Gj5d99sB7sUfM_q4kDbpExCDgVhruq0XmOhQfV9XUxHHPq576rxKOqJ8eAft0irSIDqHI1Rr9HA5nt5VmHjYU5YY20Ly-d9d3r2fU7Js-JDUskzutyGxFVGOPjhlVWvhmmNqWk8wQXAVcCO9dJegVzb64ok-NfOOs49Wsq16BNhGjq0qK7QdR9Xja6-FalS0IVQkfc7MnplfOJkUS2DUiTAfinlldm41fmBoPr_n6YEGl313cj1vBnMH_SlU8J5_bACXMAjT1LwwcPNRU_cndjnxpBS4Jad6OBXj_13bmmGUpngc7VP6RVhSpt9_R4W9rcbOvxEilkOrChmrZhvorJsTMB3s_mTn32vCNLgnzYEE7kAwyEMespYZKVWRwvx3Ps_X3jJU8NY3EFCYRAs8NpnoGuwnKWNNqJui1ZqIjrPUZKo-fIUr6H1-5grgtRdH_1oTFolMDd6aPAcH0CIH-2h09pQKFCcvvALgxt1J8O4g-KMII_lZ1oTerjPyF_ytiGN-Jv4jNecG6pxTazseQENv8y_r-xc2CySvihgGRgcP32GKS1az4xv5CmCQdGIHDkYyI2jjWUCY9gHU_J5oypz90RwnKgx8F4qHo0XeDOwdvTas0r2_xXATPDJNkurmxtu8cVFPsKwLSQ03QxliLJ5FiNmk7p9Z74bbZIa8sbmfug8Rfaf13Drs2eqYd3tRIE-m4mJF3cYRnf1hiq1nfDxpHJ3zA7r9JW-iG4TyrWn1GJ8DJ9iLb8d7LjADJyTOqSXGMg6XTjUIJw0bCGKt3c13qgKxj87T1LR8d03gDZtZS0WwWY2XlTqdcliVwC5UavcjFIAVq3xlG9f-in33ntVLrsEsgHGL3JardNuo-PE8nS3YYn8uxoqadRM6gROz4NFJbQ-lXy6o-urNO_sWfUSdeO_xUlMXJv8elsEvHAMA2N3W_o5r3JR1afz6mTGzxN1vGyjclj_k5Nwaz3-VyAY6SO1sTJhQbazNVUprVn-FUxOeK3Hgy2dP5MIeOune9Llhy8We_llg4l9DzOkWNDqXeVBbPks3Y1KiDh0ykD54kjCOkYQh0ykWaBwpMz77szzjC2s_7HLjCtzVNCEy8j9N7H1L7LazwUnvNeUmwn04vWkvjyxjSVsm_8kGi303REkUD4ixUNSZ05Lwnn0OZC0zCnI64nBlW-6ncL2XwPHatHdu0S6swsT8FC3pb2aYouByh_JZQj_21qsNIdzG8cmMA-gTAot1lSUKePLxt_iTUZ3fU3tQq0CmZeLUUIy62lAJCNRQKuzlZD4rhvGZmf05cY2hY-bYE9gKusqSn7tTMqEKA4JwxdHdSqiPSNA-I_1sRFrRcaBWPc7FFWfzrPaQnhE97w3XFeeT0mZKPSN-eK9aFIQ6KFDevr2qPNNw6a3nNn2IjynwmZqMJpquKDhnCCN2MgxQ1np3p5ohXItrQQT11Uq0-subszHNH8si5aB74B23iabM_nJjC3mNe8fcPYdaaXyWnnB2pTn7kC3B42ufVwTyk-jQ94QFZ-bjqPbwMkdG2qhVQfYIWWDInncKEsrYZCiFL9sQQHJm-i3NUqeTasl0XHk2T1Vifg7P0A8QYM7p4SRQ3bj5_522un_Thom490OX7LWZWfOZg4E-S8yNSLgIuKQqyXDTLXHIs1CJLrpq_FIGBnGr_ml3cq6kPhHKJws_zjJrTN1m2Zvh3K7NxEN0BUCOhjN1CqbSsD_JvWeMSqKQ1QS3o2O1r8cphEVBy3xSkQNLVelyapudjr6JVJ5JyOdDS8rYtGox0dPJANKNtCKHXpvjTkLmKw6IBE0sbdyeTDBMZonI8RX-vbGd5nMPPq33FgKwBqXn2gxAuZaHI0I2OgQTJwnJVOjYjLq43MfT0LCcNTjwOJyEY7kojs5wnsUUf_L2D7MuWTKiBzDdNkEHv76KpgEX2QNlS7msaKmVipYlkEzem2jykAZBcgTt4J91bkStsHfRkssnycq35746Is8MgiZGyRmBqjVYGl42dQQS9rZWlfVTu4-Nlun0NUxykJc0XO194ClTMEzwdnWWAnSMKLwbgMqLSfyU4JbzZGaog6bWmRnl8PEHZcRdv7jOEr34SAeh6TQfPp69SdDg0Tnmk4qGYyN40SdLDEdCUVhkkKmuVJdPp3ldYDTA7fXi3LtvZV23J9C9L2So8A-8_atsES_P3mZEau8ykRlYBe1qYLNmTTxjzni2Dko8H2STIRPufEc1OtzkiF73hcUa_GLGtyRekHLP2ciW1EwNyu7m7AIyTWI0LrSZ1RdsGMan5d8VlxbVp7AXB3cRfEX3UN51opBl6N_aIRJX7CL6Orq4aP2OgrUQiPzMeggQhNGfVmwRxeWz-it-gypglBtTDw1Z_1dukxq3rXJ_IDhn6wxELUD3GZdhxr_Yf__ZHhsjaV2bwuejU0wYN_X990YrYR8wGBrfZPLUXc-K4OZ-UGTgeOB8v3YiYX8Ce_hHYf8latWyoC-vaOCk0AqmDykoIYMCTWKdVX2aSctkwuA9RgoAZ_u46Gx148GxQ0gJgNixh2YafQqcuW_up_OOOL845WWFZkPXt-ZyKxYc5IVKqwkVNUaYKDnNPMgn6OgNFZJWTOcD9lhTDLMCjCw1GK_cTPsSXbSmtqW3Qb6Kw5EStjmsa47SQEjB7AslY4ad1SbvtLnCeOFOzYHoC8Lmv7GYGDO6H0l_2jZ0DxwBySdgySQBa7pXUtkL9XsNLdncgAxowhnAkbScqNcMmE0d2zpTF-JdywSHtZeTBIObaZFrKj7cdC2GklMdLkEqouwhUms9x32GY1vOuPpiqoud9SCvgh0gw9cH-OkSpVyAjPrSX_IUCXX51OzyyVFR8EkvHu5TlEs82WwjVBn0VgjwWhTqp2Fxjl5v17_F3fQXvVco9sB2RTvgumgOX_4Mo-EXRnVhT3hXZGcgZVysRUA3JryErs53QHZ5efE6v9TrKlxZmIhcZa3pTXiIjKM-w3XooMnZeBgD5NHZJD3dUqTpgJThive3oZG6rWZJnLzeCaEoMGpcHdOGRYLbCbA2dlJgD7Mkvh7Oxx_joFRcDPAN1bnKJK4sw9gBiKz0mt2-k2PII2dEe2rC5V6C1_qn5s5b8O2vOm5OZnAtTDcV5RD0TgkbpQKhmkT-bCxmYq9mUBDV2Rnns5J2yaYdYwJza5kmB29jbkTVXyh9VuE6p9E3h6l50EDJQR1ASwhvsd57lgK7XtU3zU_J8GT-Tj5yqgYLu-aT-C8pg3vzkEKYki2OugY9m2QVmUhzNIvK5TqjcyQNrF_-aEZv48yfiecfDIwWPVtK7T4s9uCxf_8Z6WPr72vOo5cxIGpZBC6nVAwxc1xmzG5uzsmkJvMd4cJXI_g_RoTWR6zav3WQds8C7psE5nYlsTcqI8o97CLmKZQESyU0Fu_58HSq3MH6bCFWAoI0Tsa7EeyCbKkr8WsQ0CfOFnTYkeJ3vCAItBptwkHqQnYXAxPEmGNExm8xM8JSevtaLpXXaLQqktbTBtjE9QVciQuPZwhOb1uLFq60GpSDwNg2SOMiXQUBgr7PGwYrr8daIIOE86YYbo4t4zRJrvqzsOR0fO4ihXzZqMtt6drXYzrgLpAw24grbN-JWLyVuKnkasVPoBImgRhSVgO-5tDj38lJTCsFduK1oI1vRtK_0cMlL7GGPYJDNEyVI6FS4Al8y8kDKBGdUJ8Pxv8o_RMrg3RZOAI_3UQphi5JcH-Qulv8HMYGBlzCV-nPV94Nh1RsK4NFi3uLynlqY3FqGMrKA93smDGPyyviO2Q_RBWTjQfBwAcm7n1D2_PUm-ky7_OkR-wI7c0UlZhe6v8c1G4Hwi3uKKpRrhkyHHxfh3Q9rpcpfo9mxacZN6hqZYnlqTe1rrl3zbs59BBzsfL1nlg1ig5fYTv7BVy1ixpkxtfsgCnzanmWywf0q-ngjejECLG3ehg8urmRlqssu08DLeqpjyqtSj5d6XHvK0qn5A2pwdRX99PGkmdJ05cgtk1HbCvoyoLEysLrt3WDFhXkMsvx7DBkyy7RYRU-KzxJVrc48EA1lvsunlEITSMC6sTZvhzI6lMeMCEUhA8l5Pn1rvS19iVryuYwSpj7ly7mFYEkUJ2fDyg4WfJHMfhR7dBNvYMO--tcC-DbaSYoIDTYpIAwRnb790Jn9lqbZ3tszxyPTmJIbvcDLL7PdwGWxABXk7RzWpvYISlX2ouHgqO8XBqMC54BT9f4ZqPwvconAYQb1NpErdMRVbW5dRi_e5qSbgJQVC3B7tkFzKEQQ5ki7DqAIrNyts0RHsWlX5iVGUqzr3QeZQs_HzlETT3xXLlrGUUohjqVkca1LdHf2JWyW1oGkOnioSk93r79_CRFwbD7b2dHuG9FAaPwiyQ9p8KNqjt-T1ND0PRraHi-VcdlJCTUq-i-rYj5FIUqhio8IdlFDxmWrghbeh5FHLbVsMV8DeJVmczQxXlz7edskMF0vmNRrnLdsXewWTq_e2ZJnXoVeWXH4uD6cI5NdYZMoa_GHdOd491mb0qcmpXQnn61or6LWX4mJTE6CAxb-cGOC8us6LKebvQvrLprzJV8u3n4s9bRvCbXwjWvuxk87YUlV6tAdVvdEoOpatv0Ejn-J0e-5GWkcz2nOLp9Ii8qFkmXFXzEsVnJsKf2aGsHiBoRGen4PRx9XjP--5Zel5o-sfz_rok2dD3O35d5S-Aop9lge4pEzmaLYiG0qWigC3WUMcUYO0GAKOWLMYCBdcl9KiCihoawQAr03aLHuULvu5WuMZiMZJ_MMagSHHulgDi9iDSempNLaGKce_1C6AV4YvXeosW9mGHLp2o3ls0Seb58roDJeaMtAauvrDGju2ZqgCn8avgz_BY6ZsxgHYP3k6kgmKzt7hFGymnRX7jiFkCvE7bOYcehGk6CTYHF8id2eaqyrzM6IP7I-kJeIYHQ8slPIlgznM6yKEbF91IixGuV-j8V74RSvP6GaWYCbNIpnq_VCgoz1Ta8SEpxUEPkxNy3dJCGpilFc_-0DkYl5DbPcLQxVl5whs3qTdJReS9MdiODPjmYl3IPdGYtGvlr-DgLZYvspoN8IvlUw9zGGBMsa8UYlGCqUBqVC72o.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_088f3486c2ba69f7016ae804d6967487d1960356b0943dece5",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12334,
+    "completion_tokens": 687,
+    "total_tokens": 13021,
+    "cost": 0.001885175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12331,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001885175,
+      "upstream_inference_prompt_cost": 0.001541675,
+      "upstream_inference_completions_cost": 0.0003435
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 383,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Media.net | The Sell Side Platform for Greater Outcomes</title>
+<meta content="We help brands and publishers leverage the best of programmatic, to achieve their goals across every screen." name="description"/>
+<meta content="Media.net | The Sell Side Platform for Greater Outcomes" property="og:title"/>
+<meta content="We help brands and publishers leverage the best of programmatic, to achieve their goals across every screen." property="og:description"/>
+<meta content="https://s31073.pcdn.co/wp-content/uploads/2024/12/mnet-webf-logo.png" property="og:image"/>
+<meta content="https://www.media.net/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<link href="https://www.media.net/" rel="canonical"/>
+<style>
+    :root {
+      --ink: #0f0f10;
+      --muted: #3f3f46;
+      --paper: #ffffff;
+      --mist: #e6e4ec;
+      --band: #3f1f9e;
+      --band-text: #ffffff;
+      --accent: #b3124a;
+      --accent-text: #ffffff;
+      --focus: #1a4bd6;
+      --radius: 1rem;
+      --max: 72rem;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 100%; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+    body { margin: 0; font-family: var(--font); color: var(--ink); background: var(--paper); line-height: 1.6; font-size: 1.0625rem; }
+    img, video { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+    .skip-link { position: absolute; left: 1rem; top: -4rem; background: var(--ink); color: #fff; padding: .75rem 1rem; border-radius: .5rem; z-index: 100; text-decoration: none; }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(var(--max), 100% - 2.5rem); margin-inline: auto; }
+    section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+    h1, h2, h3 { line-height: 1.12; margin: 0 0 1rem; letter-spacing: -0.01em; }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 700; }
+    h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 700; }
+    h3 { font-size: 1.25rem; font-weight: 700; }
+    p { margin: 0 0 1rem; }
+    .accent { color: var(--accent); }
+    .lead { font-size: 1.15rem; color: var(--muted); max-width: 40rem; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; font-weight: 700; color: var(--accent); margin-bottom: .75rem; }
+
+    /* Header */
+    .site-header { background: var(--paper); border-bottom: 1px solid #d9d6e0; position: sticky; top: 0; z-index: 50; }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; flex-wrap: wrap; }
+    .logo { display: inline-flex; align-items: center; text-decoration: none; font-weight: 800; font-size: 1.4rem; letter-spacing: -0.02em; }
+    .logo span { color: var(--accent); }
+    .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .site-nav a { text-decoration: none; font-weight: 600; padding: .35rem 0; border-bottom: 2px solid transparent; }
+    .site-nav a:hover { border-bottom-color: var(--accent); }
+
+    /* Hero */
+    .hero { background: var(--mist); overflow: hidden; }
+    .hero-grid { display: grid; gap: 2.5rem; align-items: center; grid-template-columns: 1fr; }
+    @media (min-width: 880px) { .hero-grid { grid-template-columns: 1.05fr 1fr; } }
+    .hero h1 .accent { display: block; }
+    .hero-figure { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: 0 18px 40px rgba(15,15,16,.15); }
+    .hero-figure img { width: 100%; aspect-ratio: 714 / 682; object-fit: cover; }
+    .hero-figure figcaption { font-size: .9rem; color: var(--muted); padding: .6rem .25rem 0; }
+    .hero-points { margin-top: 1.5rem; }
+    .hero-points p { font-size: 1.1rem; }
+    .hero-thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-top: 1rem; }
+    .hero-thumbs img { border-radius: .6rem; aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: .6rem; padding: .85rem 1.3rem; border-radius: 999px; font-weight: 700; text-decoration: none; border: 2px solid var(--ink); background: var(--ink); color: #fff; font-size: 1rem; cursor: pointer; font-family: inherit; }
+    .btn:hover { background: #2b2b30; }
+    .btn-outline { background: transparent; color: var(--ink); }
+    .btn-outline:hover { background: var(--ink); color: #fff; }
+    .btn-light { background: #fff; color: var(--ink); border-color: #fff; }
+    .btn-light:hover { background: #ece9f5; }
+    .btn svg { width: 1.1rem; height: 1.1rem; flex: none; }
+
+    /* Band */
+    .band { background: var(--band); color: var(--band-text); padding: 1.5rem 0; }
+    .band .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; }
+    .band p { margin: 0; font-size: 1.15rem; max-width: 46rem; }
+
+    /* Outcomes */
+    .cards { display: grid; gap: 1.25rem; grid-template-columns: 1fr; margin-top: 2.5rem; }
+    @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: #fff; border: 1px solid #d9d6e0; border-radius: var(--radius); padding: 1.75rem; box-shadow: 0 6px 18px rgba(15,15,16,.05); }
+    .card h3 { font-size: 1.15rem; }
+    .card p { color: var(--muted); margin: 0; }
+    .card .tag { display: inline-block; margin-top: .75rem; font-weight: 600; color: var(--accent); }
+
+    /* Split sections */
+    .split { display: grid; gap: 2.5rem; align-items: center; grid-template-columns: 1fr; }
+    @media (min-width: 880px) { .split { grid-template-columns: 1fr 1fr; } .split.reverse .split-media { order: 2; } }
+    .split-media { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--mist); }
+    .split-media video, .split-media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .bullets { list-style: none; padding: 0; margin: 1.5rem 0 2rem; display: grid; gap: 1rem; }
+    .bullets li { padding-left: 1.5rem; position: relative; }
+    .bullets li::before { content: ""; position: absolute; left: 0; top: .6rem; width: .6rem; height: .6rem; border-radius: 50%; background: var(--accent); }
+    .highlight { font-weight: 700; }
+    .soft { background: #f6f5f9; }
+
+    /* Partners */
+    .partner-group { margin-top: 2.5rem; }
+    .partner-group h3 { font-size: .95rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid #d9d6e0; padding-bottom: .5rem; }
+    .logo-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); align-items: center; margin-top: 1rem; }
+    @media (min-width: 640px) { .logo-grid { grid-template-columns: repeat(4, 1fr); } }
+    @media (min-width: 1000px) { .logo-grid { grid-template-columns: repeat(6, 1fr); } }
+    .logo-cell { background: #fff; border: 1px solid #e4e1ea; border-radius: .75rem; height: 5.5rem; display: flex; align-items: center; justify-content: center; padding: .9rem; }
+    .logo-cell img { max-height: 100%; max-width: 100%; width: auto; object-fit: contain; }
+
+    /* ONE */
+    .one-video { margin-top: 2rem; border-radius: var(--radius); overflow: hidden; background: #000; }
+    .one-video video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .center { text-align: center; }
+    .center .lead { margin-inline: auto; }
+
+    /* Contact */
+    .contact { background: var(--ink); color: #fff; }
+    .contact .lead { color: #d8d6df; }
+    .contact-form { margin: 2rem auto 0; max-width: 34rem; display: grid; gap: .75rem; }
+    .contact-form label { font-weight: 600; }
+    .field-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .field-row input { flex: 1 1 16rem; min-width: 0; padding: .85rem 1rem; border-radius: 999px; border: 2px solid #fff; background: #fff; color: var(--ink); font: inherit; }
+    .field-row input:focus-visible { outline: 3px solid #8fb0ff; outline-offset: 2px; }
+    .form-hint { font-size: .9rem; color: #c9c7d1; }
+    .contact .btn { background: #fff; color: var(--ink); border-color: #fff; }
+    .contact .btn:hover { background: #ece9f5; }
+
+    /* Footer */
+    .site-footer { background: #f3f2f6; padding: 3.5rem 0 2rem; font-size: .95rem; }
+    .footer-cols { display: grid; gap: 2rem; grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 800px) { .footer-cols { grid-template-columns: repeat(4, 1fr); } }
+    .footer-cols h2 { font-size: .9rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .75rem; color: var(--muted); }
+    .footer-cols ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+    .footer-cols a { text-decoration: none; }
+    .footer-cols a:hover { text-decoration: underline; }
+    .footer-logos { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid #d9d6e0; align-items: center; }
+    .footer-logos img { height: 40px; width: auto; object-fit: contain; }
+    .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem; color: var(--muted); }
+    .social { display: flex; gap: 1rem; }
+    .social a { display: inline-flex; padding: .4rem; border-radius: 50%; }
+    .social svg { width: 1.25rem; height: 1.25rem; fill: currentColor; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap">
+<a aria-label="Media.net home" class="logo" href="https://www.media.net/">Media<span>.</span>net</a>
+<nav aria-label="Primary" class="site-nav">
+<ul>
+<li><a href="https://www.media.net/publishers">Publishers</a></li>
+<li><a href="https://www.media.net/advertiser">Advertisers</a></li>
+<li><a href="https://www.media.net/aboutus">About Us</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div>
+<h1 id="hero-title">Closing In On Your Outcomes. <span class="accent">Conversions.</span></h1>
+<div class="hero-points">
+<p class="lead">Scale of the open web. Performance opportunities of the walled gardens.</p>
+<p class="lead">And a stellar team that helps you succeed across every screen.</p>
+</div>
+<p><a class="btn" href="#advertisers">Explore for advertisers</a> <a class="btn btn-outline" href="#publishers">Explore for publishers</a></p>
+</div>
+<div>
+<figure class="hero-figure">
+<img alt="Shopper sees contextually relevant ad on mobile while in grocery store" height="682" sizes="(max-width: 880px) 100vw, 46vw" src="https://s31073.pcdn.co/wf-assets/images/conversion-compress.jpg" srcset="https://s31073.pcdn.co/wf-assets/images/conversion-p-500.jpg 500w, https://s31073.pcdn.co/wf-assets/images/conversion-compress.jpg 1080w" width="714"/>
+<figcaption>Conversions: relevant ads reach shoppers in the moment that matters.</figcaption>
+</figure>
+<div aria-label="More examples of how ads reach audiences" class="hero-thumbs">
+<figure style="margin:0">
+<img alt="Person on couch sees ad for basketball streaming service while reading basketball content on mobile" height="682" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/reach-compress.jpg" width="714"/>
+<figcaption class="sr-only">Reach example</figcaption>
+</figure>
+<figure style="margin:0">
+<img alt="Man pets dog while viewing a pet food article containing contextual ads for pet owners" height="682" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/context-compress.jpg" width="714"/>
+<figcaption class="sr-only">Context example</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<div class="band">
+<div class="wrap">
+<p>Power performance across the holiday season and Q4’s biggest moments with Media.net’s curated deals.</p>
+<a class="btn btn-light" href="#contact">Learn more <span class="sr-only">about holiday deals and contacting Media.net</span></a>
+</div>
+</div>
+<section aria-labelledby="outcomes-title" id="outcomes">
+<div class="wrap">
+<div class="center">
+<p class="eyebrow">Outcome-first SSP</p>
+<h2 id="outcomes-title">What it takes to be an outcome-first SSP<span class="accent">.</span></h2>
+</div>
+<ul class="cards" style="list-style:none;padding:0;">
+<li class="card">
+<h3>The only purpose-built audience graph that unifies SearchSignals with first &amp; third-party audience data</h3>
+<p>Reach your consumers when they are likely to engage.</p>
+</li>
+<li class="card">
+<h3>Partnerships with industry-leading verification &amp; measurement partners</h3>
+<p>Measure ad effectiveness, incrementality, and ROAS.</p>
+</li>
+<li class="card">
+<h3>Unique formats that match how users consume content in walled gardens</h3>
+<p>Drive performance in the context-rich open web.</p>
+</li>
+<li class="card">
+<h3>A scaled global team to provide granular inventory insights, analytics, &amp; recommendations</h3>
+<p>Optimize and exceed your goals.</p>
+</li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="advertisers-title" class="soft" id="advertisers">
+<div class="wrap split">
+<div>
+<p class="eyebrow">For advertisers</p>
+<h2 id="advertisers-title"><span class="accent">Advertisers,</span> get on the shortest path to premium inventory.</h2>
+<ul class="bullets">
+<li>Target and reach the right audiences, in the right context, at <span class="highlight">every stage</span> of the marketing funnel.</li>
+<li>Unlock 1:1 access to premium <span class="highlight">curated supply</span> with audiences geared specifically to your KPIs.</li>
+<li>Optimize and improve outcomes with <span class="highlight">pre- and post-auction</span> insights into campaign performance.</li>
+</ul>
+<a class="btn" href="https://www.media.net/advertiser">Learn more for advertisers</a>
+</div>
+<figure class="split-media">
+<video aria-label="Advertiser overview video" controls="" muted="" playsinline="" poster="https://s31073.pcdn.co/wf-assets/images/homepage-adv-video-thumbnail-cropped-overlay-v1.jpg" preload="metadata">
+<source src="https://www.media.net/webflow/homepage/advertiser-homepage-1.mp4" type="video/mp4"/>
+<source src="https://www.media.net/webflow/homepage/advertiser-homepage-1.webm" type="video/webm"/>
+<p>Your browser does not support the video tag. <a href="https://www.media.net/advertiser">Read the advertiser overview instead.</a></p>
+</video>
+</figure>
+</div>
+</section>
+<section aria-labelledby="publishers-title" id="publishers">
+<div class="wrap split reverse">
+<figure class="split-media">
+<img alt="Three mobiles showing different ad unit types and placements on publisher websites" height="750" loading="lazy" sizes="(max-width: 880px) 100vw, 46vw" src="https://s31073.pcdn.co/wf-assets/images/homepage_publisher-visual-20-2-opt.png" srcset="https://s31073.pcdn.co/wf-assets/images/homepage_publisher-visual-20-2-p-500.png 500w, https://s31073.pcdn.co/wf-assets/images/homepage_publisher-visual-20-2-p-800.png 800w, https://s31073.pcdn.co/wf-assets/images/homepage_publisher-visual-20-2-opt.png 1080w" width="1000"/>
+</figure>
+<div>
+<p class="eyebrow">For publishers</p>
+<h2 id="publishers-title"><span class="accent">Publishers,</span> unlock exclusive revenue with industry-best solutions.</h2>
+<ul class="bullets">
+<li>Tap into unique demand with advertising budgets available <span class="highlight">only to Media.net</span> publishers.</li>
+<li>Choose from a suite of monetization solutions to drive <span class="highlight">higher yield</span>, customized to your needs.</li>
+<li>Lean on the best engineering and yield management teams in ad tech, invested in your <span class="highlight">long-term growth.</span></li>
+</ul>
+<a class="btn" href="https://www.media.net/publishers">Learn more for publishers</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="partners-title" class="soft" id="partners">
+<div class="wrap">
+<div class="center">
+<p class="eyebrow">Partners &amp; people</p>
+<h2 id="partners-title">Intentional with our partnerships &amp; people<span class="accent">.</span></h2>
+<p class="lead">We work with industry partners who share our vision of a better digital advertising ecosystem. Thanks to our partners and the people who make Media.net, we are single-mindedly focused on making advertising more efficient and publishing more profitable.</p>
+</div>
+<div class="partner-group">
+<h3>DSP Partners</h3>
+<ul class="logo-grid" style="list-style:none;padding:0;">
+<li class="logo-cell"><img alt="Criteo logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/criteo.png" width="122"/></li>
+<li class="logo-cell"><img alt="Display &amp; Video 360 logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/dv-20logo.png" width="130"/></li>
+<li class="logo-cell"><img alt="The Trade Desk logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/ttd-202.png" width="180"/></li>
+<li class="logo-cell"><img alt="DeepIntent logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/deep-20intent.png" width="143"/></li>
+<li class="logo-cell"><img alt="Epsilon logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/epsilon.png" width="148"/></li>
+<li class="logo-cell"><img alt="Yahoo! Advertising logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/yahoo-20adv.png" width="148"/></li>
+</ul>
+</div>
+<div class="partner-group">
+<h3>Publisher Partners</h3>
+<ul class="logo-grid" style="list-style:none;padding:0;">
+<li class="logo-cell"><img alt="Time logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/time.png" width="132"/></li>
+<li class="logo-cell"><img alt="New York Post logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/ny-20post.png" width="132"/></li>
+<li class="logo-cell"><img alt="Everyday Health logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/everyday-20health.png" width="102"/></li>
+<li class="logo-cell"><img alt="Yahoo! logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/yahoo.png" width="118"/></li>
+<li class="logo-cell"><img alt="WebMD logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/web-20md.png" width="120"/></li>
+<li class="logo-cell"><img alt="The Weather Channel logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/weather-20channel.png" width="125"/></li>
+</ul>
+</div>
+<div class="partner-group">
+<h3>Technology Partners</h3>
+<ul class="logo-grid" style="list-style:none;padding:0;">
+<li class="logo-cell"><img alt="Fiducia logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/fiducia.png" width="125"/></li>
+<li class="logo-cell"><img alt="Adelaide logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/adelaide.png" width="132"/></li>
+<li class="logo-cell"><img alt="SEEN THIS logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/seen-20this.png" width="102"/></li>
+<li class="logo-cell"><img alt="Jounce Media logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/jounce.png" width="118"/></li>
+<li class="logo-cell"><img alt="HUMAN logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/human.png" width="120"/></li>
+<li class="logo-cell"><img alt="Scope3 logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/scope-203.png" width="125"/></li>
+<li class="logo-cell"><img alt="Sertify logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/sertify.png" width="118"/></li>
+<li class="logo-cell"><img alt="Experian logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/experian-latest.png" width="100"/></li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="one-title" id="one">
+<div class="wrap">
+<div class="center">
+<p class="eyebrow">Media.net ONE</p>
+<h2 id="one-title">Media<span class="accent">.</span>net <span class="accent">ONE</span></h2>
+<p class="lead">We back voices and initiatives to make the open web more sustainable, diverse, inclusive, and democratic. Because we believe change is possible if we act as ONE.</p>
+</div>
+<figure class="one-video">
+<video aria-label="Media.net ONE video" controls="" muted="" playsinline="" poster="https://s31073.pcdn.co/wf-assets/images/homepage-footer-video-thumbnail-overlay-v1.jpg" preload="metadata">
+<source src="https://www.media.net/webflow/homepage/homepage-media-ONE.mp4" type="video/mp4"/>
+<p>Your browser does not support the video tag. <a href="https://www.media.net/aboutus">Learn more about us.</a></p>
+</video>
+</figure>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="contact" id="contact">
+<div class="wrap center">
+<h2 id="contact-title">Let’s talk about what Media.net can do for you!</h2>
+<p class="lead">Share your email to start a conversation, or go straight to our contact page.</p>
+<form action="https://www.media.net/contact" class="contact-form" method="get">
+<label for="email">Email address</label>
+<div class="field-row">
+<input aria-describedby="email-hint" autocomplete="email" id="email" name="email" placeholder="Enter your email address" required="" type="email"/>
+<button class="btn" type="submit">Submit</button>
+</div>
+<p class="form-hint" id="email-hint">You will continue to the Media.net contact page to complete your request.</p>
+</form>
+<p style="margin-top:2rem"><a class="btn btn-outline" href="https://www.media.net/contact" style="color:#fff;border-color:#fff">Get in touch</a></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-cols">
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company</h2>
+<ul>
+<li><a href="https://www.media.net/aboutus">About Us</a></li>
+<li><a href="https://www.media.net/resources">Press Room</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-solutions">
+<h2 id="f-solutions">Solutions</h2>
+<ul>
+<li><a href="https://www.media.net/publishers">For Publishers</a></li>
+<li><a href="https://www.media.net/advertiser">For Advertisers</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-legal">
+<h2 id="f-legal">Legal &amp; Compliance</h2>
+<ul>
+<li><a href="https://www.media.net/legal/tos/">Terms of Service</a></li>
+<li><a href="https://www.media.net/legal/inventorypolicies/">Inventory Policy</a></li>
+<li><a href="https://www.media.net/ad-quality-policy/">Ad Quality Policy</a></li>
+<li><a href="https://www.media.net/privacy-policy/">Privacy Policy</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-choices">
+<h2 id="f-choices">Your Choices</h2>
+<ul>
+<li><a href="https://www.media.net/optout/">Opt Out</a></li>
+<li><a href="https://www.media.net/preferences/">Preferences</a></li>
+</ul>
+</nav>
+</div>
+<div aria-label="Industry memberships and certifications" class="footer-logos">
+<img alt="IAB logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/iab_logo_c.png" width="44"/>
+<img alt="IAB Tech Lab logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/iab_tech_lab_c.png" width="44"/>
+<img alt="Digital Advertising Alliance (YourAdChoices) logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/daa_logo.png" width="101"/>
+<img alt="NAI logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/group-201321319195.png" width="74"/>
+<img alt="Local Media Consortium logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/local_media_consortium_logo.png" width="97"/>
+<img alt="ANA logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/ana_logo_1.png" width="64"/>
+<img alt="TAG logo" height="40" loading="lazy" src="https://s31073.pcdn.co/wf-assets/images/tag_logo.png" width="60"/>
+</div>
+<div class="footer-bottom">
+<div>
+<a aria-label="Media.net home" class="logo" href="https://www.media.net/">Media<span>.</span>net</a>
+<p style="margin:.5rem 0 0">© <span id="year">2026</span> Media.net</p>
+</div>
+<div class="social">
+<a href="https://www.instagram.com/medianetads/" rel="noopener" target="_blank">
+<svg aria-hidden="true" focusable="false" viewbox="0 0 20 20"><path d="M10 0C7.28 0 6.94.01 5.88.06 4.8.11 4.09.28 3.45.52 2.79.78 2.23 1.12 1.68 1.68S.78 2.79.52 3.45C.28 4.08.11 4.81.06 5.88.01 6.94 0 7.28 0 10s.01 3.06.06 4.12c.05 1.07.22 1.8.46 2.43.26.66.6 1.22 1.16 1.78s1.12.9 1.78 1.16c.63.24 1.36.41 2.43.46C6.94 19.99 7.28 20 10 20s3.06-.01 4.12-.06c1.07-.05 1.8-.22 2.43-.46a4.9 4.9 0 0 0 1.78-1.16 4.9 4.9 0 0 0 1.16-1.78c.24-.63.41-1.36.46-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.07-.22-1.8-.46-2.43a4.9 4.9 0 0 0-1.16-1.78A4.9 4.9 0 0 0 16.12.52c-.63-.24-1.36-.41-2.43-.46C12.63.01 12.28 0 10 0Zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.51.21 1.86.35.47.18.8.4 1.15.75.35.35.57.68.75 1.15.14.35.31.88.35 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.51-.35 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.14-.88.31-1.86.35-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.51-.21-1.86-.35a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.35-.31-.88-.35-1.86C1.81 12.99 1.8 12.67 1.8 10s.01-2.99.06-4.04c.04-.98.21-1.51.35-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.14.88-.31 1.86-.35C7.01 1.81 7.33 1.8 10 1.8Zm0 2.87a5.33 5.33 0 1 0 0 10.66 5.33 5.33 0 0 0 0-10.66Zm0 1.8a3.53 3.53 0 1 1 0 7.06 3.53 3.53 0 0 1 0-7.06Z"></path></svg>
+<span class="sr-only">Media.net on Instagram (opens in new tab)</span>
+</a>
+<a href="https://x.com/medianetads" rel="noopener" target="_blank">
+<svg aria-hidden="true" focusable="false" viewbox="0 0 20 20"><path d="M15.75.83h3.07l-6.7 7.66L20 19.12h-6.17l-4.84-6.32-5.53 6.32H.39l7.17-8.19L0 .83h6.33l4.37 5.78L15.75.83Zm-1.08 16.25h1.7L5.4 2.57H3.58l11.09 14.5Z"></path></svg>
+<span class="sr-only">Media.net on X (opens in new tab)</span>
+</a>
+<a href="https://www.linkedin.com/company/media.net" rel="noopener" target="_blank">
+<svg aria-hidden="true" focusable="false" viewbox="0 0 20 20"><path d="M18.38.21c.76 0 1.43.67 1.43 1.47v17.08c0 .8-.67 1.45-1.43 1.45H1.19C.43 20.21-.19 19.56-.19 18.76V1.68c0-.8.62-1.47 1.38-1.47h17.19ZM5.84 17.35V7.84H2.89v9.51h2.95ZM4.36 6.5c.94 0 1.7-.76 1.7-1.7 0-.94-.76-1.74-1.7-1.74-.98 0-1.74.8-1.74 1.74 0 .94.76 1.7 1.74 1.7Zm12.59 10.85v-5.23c0-2.55-.58-4.56-3.57-4.56-1.43 0-2.41.8-2.81 1.56h-.04V7.84H7.71v9.51h2.95v-4.69c0-1.25.22-2.45 1.78-2.45 1.52 0 1.52 1.43 1.52 2.54v4.6h2.99Z"></path></svg>
+<span class="sr-only">Media.net on LinkedIn (opens in new tab)</span>
+</a>
+</div>
+<p><a href="https://www.media.net/contact">Contact Us</a></p>
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

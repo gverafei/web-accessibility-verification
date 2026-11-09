@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target communicates NGINX's purpose, current news, and related projects. The visible news and project descriptions remain meaningful; the regenerated layout need not reproduce the reference's exact wording or arrangement.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged across both target views. Cards, navigation, and project descriptions are not substantially clipped or overlapped.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and action links have understandable text labels, including documentation, source code, installation, news, community, and project links.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views show coherent versions of the same NGINX open-source landing page. Their different layouts and scroll positions do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, descriptions, news entries, and project cards convey a clear and consistent purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Checking JSON requirements**\n\nI think we need to focus on JSON for presenting information about news and projects. It\u2019s important that we preserve the descriptions well but maybe I should consider if slight omissions are okay. I want to ensure that the projects referenced in the second viewport are clear and coherent. It\u2019s good to note the layout, with the latest cards on the top and some other elements lower down. Overall, I should ensure the JSON format is exact and meets our semantic needs!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Checking JSON requirements**\n\nI think we need to focus on JSON for presenting information about news and projects. It\u2019s important that we preserve the descriptions well but maybe I should consider if slight omissions are okay. I want to ensure that the projects referenced in the second viewport are clear and coherent. It\u2019s good to note the layout, with the latest cards on the top and some other elements lower down. Overall, I should ensure the JSON format is exact and meets our semantic needs!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BrhFLZjgRUr5345aawwh3OyOCrYRWnzOJiAAwfRMF2nPNXVKmzhJY-GlkV1payGmgB_gcmd-h31vruO_hhxzNMkwLY-IwQsajQC8sDi1Cc2c7MO-BYBDTACIFBcMsvX9kNw8iXrT8RNd0kXwUOiHmTZhnZtf5xcq0w-9Vln55Dy7uI0iCG2RAQXd3gaykqDgxq-MWzkt-o35lGyrmfsTVTYmzIup2fv88NvRVlhEFwXYrIMLCd_XMdFkZ-MTyCr4wHsG0imMQpFx_Omo8oMLhlue1alkTmOCt6Yhj0mpC90IVCKqfpK1_Cg6ClsfLSy6H11-Bs1DZPLs3ztcGaMFaMPuV-lZVpA7rfuTOnQJJ4UOfcT4LfAkPlILYbrPV7LWbxdjoUBoU0N46tL6hbFOuq67OTr_2KLDkVYROT1dBtFAdq4cVI9IezCiV3S4JFrvPwLHKXoZYu2Tqbtss8F2o3icTwfHyEjF9eOkX60OK38Y10abh9yfJ0i_7ause0MOXwddF6OuHUGYP-fS4xSXDyqG6FprN2CFrMsS7sX1SlP6Gf-L91SAQqiWRQV3Btscjm1roVSbyUErrHpwYRPSSeYzarCyhZ0o5EEDmQSV80W-8rGS5fuygzFGqrlL4NlyWZPHV__NCy0F4_T_vY2tDX9fdzvXYzHfmqmwMtZmEE1ML0jYilCDEqDONF7cvnMl0uCz-etJHttyVgvLfuHzjJMxqXMomQUwjY3tERk0UHxXC3I-TrdXmDvFj2eKyRPAi8_OpVppDqxwOKigMqnPQtjsjB0RpNfEL1MhZYLVFrADKkigQlRjVTkT0PzsLlURv1WQ9egiTYIbwky4kDH7bZIvekUBQmuLenbC-Sv7xExPdDx_7WKZng59z8HFlzl6XQYA11Dd8jqb9M125YIkb3pk2iWaj_EyJ7zWyMwEyDJFXYoogRrbkZoA7RDRyxQcOwGCZs7qXRpzdmz-k9wzlTjJsz5GKdho13TTcv9dLNyC5m-u4F3ry59XA6JlATyQ9h2KgBJbCgWN3qMR5JIrd0Leu_GNf4xeiYO6EIjwNlovrU63A7cIdNuJFSMfx4FkguPZx1DEZP3Et8SPN0AouH5O_U2FVp4PYZ5_zUpwVqh3Q0qp8390cu4ZLBvua4jw3hzRPLNYzcRJLxFBSI5N3FxTmq0zzTJMErKF0hSOz9VOgvLyEaAa9Hqcpi-WA_USXZeetmQns2g1OFf55_9X04x_3091GnLJMUsyflVukO0FhD08iscIbfmvQy5GytRQ2XCMfpX8O7dA0QFyy5YVZ_ocGI-VtMLmF9Jj-Iw7towFhO34vQWyiGgqANlvE7k-F3CHl85kxOFrgg1zJbAMIBLssjYDLUXwtroCPiK5iH7-2ZmgnmjtoANeV1LPTWZfa1_uIgdqnCalLgy4PpZC5pDtfhbRfzKFbtopzhQDeCI-MNP9gbf_THBp9rLVyMWXmrPnRh0NARc6L0QDVbGm1p5GkpZfVa_02gEi9DMXp3GRL_PYDbuUNlavnvBMyEvSxPW9hmhle3KPmNRdsHQv0kgYum5wySkR8_banNDKWKzBmzwZkpKJbk17Y99Mqy9rapCRt3tw33n_M8POF1DzXKgsIWBnZSiycopAM6_m9ZJR5J-hVe4Tt5PXxm7WRbmceITWF5BVUu53eC01QUPt2K-_ceolqTD-DtqJd4RA_ZlOVy3ZnV58lXvi_OOiGa9nBtDw673D-T1Tm5RRct2KFcwDxoqBnYbrQnlqKKO80_0YY55b5lg3t96DL0Hd46c94hoeNI7DYt2WC8Iq62A3ICwpmAPbKDJKML6fJ7p3o6Vazu-isEqkU61NjB5R_6jUgt8oqpOEROFH956BWwyCdtevNGluw8ltynKhVEozpIxDUtH8WdCb1fc6l2XSldEcbyHGNccSEXC7WEvRgUePDoT2h5S9WoR4l1ffWQeB4iYiZhe5oyqibo5M7vHV_LddoNTgRL8A6W_WGasWtyONZLxuy-NlqMRksLybCgpaHaLjQp7LLfaFSC2rqiaLNzL0aOiDlgT0JLrblCBdFj2akZCJqoduEjfD3BK0mfR6Sc2VY65x_qc2Kg1KDslEQC93XYxPzgWROnn1vTo9xkxSo5tbicyjKnjgjG-oipOBDHNUSbQXh_-SPgblMRKzRxXy3TEQCxm2Q_N58Q37Tr4FdPHquy6SA-g4kbwy73PSOQ0LkeVu2bLllFvdAQUnsYUNQB1QdRo_NdlbUXhX9AxcQSwX5DYlOLxxXT-ZDqgIJQvvNVmUABPDQKgCEETbGo3jBwgdKy9BNeJziZC6Ef9YLHD_UFPNqPMjaAH7HgDh-7JPj_zncvD_-RumnSA6vwks6MN.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_075a0ca76e305e8c016ae81adf898087d1b256eb9e512da49f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9944,
+    "completion_tokens": 329,
+    "total_tokens": 10273,
+    "cost": 0.001407425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9941,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001407425,
+      "upstream_inference_prompt_cost": 0.001242925,
+      "upstream_inference_completions_cost": 0.0001645
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

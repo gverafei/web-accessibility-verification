@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent news-story cards, a games section, and site information consistent with a news publisher\u2019s broad purpose. The regenerated layout need not reproduce the reference\u2019s People and Ideas sections.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and cards are legible and coherently arranged. The partial story cards at the top are a viewport boundary, not evidence of clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible story links, game links, and footer links have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The evidence forms a coherent reference/target comparison for a regenerated publisher site; the different content and layout are permitted.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headings, story titles, game descriptions, and link labels communicate clear meaning appropriate to a news and media site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing layout coherence**\n\nI need to assess the target window, especially the lower footer and cards. It looks coherent so far, with controls and game links being legible, along with the navigation and footer. I want to reference the sections on People and Ideas, and ensure the cards related to news and games are in the footer. The broad purpose appears adequate. Also, I might want to check if the top article cards fit naturally within the window boundary, ensuring no defects are present. JSON evidence supports this.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing layout coherence**\n\nI need to assess the target window, especially the lower footer and cards. It looks coherent so far, with controls and game links being legible, along with the navigation and footer. I want to reference the sections on People and Ideas, and ensure the cards related to news and games are in the footer. The broad purpose appears adequate. Also, I might want to check if the top article cards fit naturally within the window boundary, ensuring no defects are present. JSON evidence supports this.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B3URuD0N36r6goBBOP8KTpNFFNECjp90WYnJ7JlBTK7C7FIIwoLYfPvb4Cju_qGMDhXnCc4Z9pXa8jzRG4uCoZXOUuWXgl2xKV38Kh3tMZRpvqPHWVcX1m0GTLAtm8ZSLtXEs5HUmRJ1umz_mrGBIkoIGkKnKdCB1_Z3wWsKb2GihoVMbdg5K1jiPTJGUzw5WM6JeFCjyNwrpHvAZIbUfUcZupamXv2hJdZfOtiSRgL_kHAOg1SnV6rwez9MQ_eu7mHlXYOJuAfdZsqhbjDMdZI2o5BOnpnOW3g0Y0svzP1UZWtX8PFblr_R5u3nFG_VLv7CPkybW__wCHuK9BiLGXKX6a_VKR4qCy6UEyeNC45341yODQJACwij8bnEcyIU-vBTNkHU4puEwpCmZeery7TdHJF3nVnEMqgBro5ofoLBD3ud3jCYdkYp3HR5jE8sR5asLju5ZThOmCIfQLrZpxLc-AZri6VSt8-oPanOyjG42krUkene-MbFxaPwBMdc9lQ0Cn1P4cOlChdji7JV066SpL81VNbaslkErXwzw9-gh0jOySazlHx-I_MHZa1Bh4QvSK2nm1xdyZsVemD0w5FkVv78HdEX3_1aCPNLjM8WkhyWzht8O7TfIbuyX8wSBh_2VaJxH2ghXb8b4F9RgDNo3KIEE9jFak52BWSwBVCs05qfb0St5UC0iaMJIPFxmR0BcwEAkOJE002PQAeZg7JG9Tp72BHF1fzRpzqJ9hzTXv1vb8yJb7Q56jOhgb_I7PNlL49MsImegoWwOZXxlod3CAJ4OWeKoYpTh3syaIo2gqg9HJQnkbzIt9sHC7MnVEnBUAqAec4-lGVUGd9ZNh-SKjf-mKz33dkrqlkXYceYYRSTleL718pni-5zczjQk6yosVqRfkbT6ZNFllxjwR_jttRoWtgA6uZMradAj492szDU_yFC3TPfVemiM0Dj-nWFQJC2iatMslMKu_C1ZIG43BgVJA5lF2bV4sThXoCJDpblEJViSojcAjgmAazrqJy2-hx1bCs25SoTK4g8cLuLhyVnNTuzJGvI0qy9kuiVN6E162Xl69IXHF4PxDm7JNXcqUBpc3mtxJKsFguTpPe9hdtSK8aYLHLuE-cwJyQUiP5Im0TqFgKKh0myo_GZSJCVnfzVSU1MrWXF2vKqhxvUMT3kupY-8sPF8mmbIYaTLqK0X8ARMwhZekc-H6SqXcQP9DoDcQcCWZSPR31sSk6yN7pNu30H9tq1h5RHHnTe57fo3zM8OgEIIwaaGS-GsEe5OuK5yAp-HynEToCVv1lkANPmlEt5DygPV4oRH6efw7p-tqMbjXRZyo0NC8-bungxoIK5kerZUOUs8UD0ciuBt-iqAUPR90cHO42_QVYqE5MWdWt6UJsAzlTzPL2RbGbLeeTghyNNKvBDzYEOmBP7cbrHDfCe973KDXOPVP0yZBUEozTLISVNKtaQXCtsVv8rV53C7PW0u7beVQsaSDhy3cWh79gooKJqZ9NwUFGRdt-k0505i8zw6Bemc70gnQiSNZwmZD8gbmalyJ6NgK5Lmual0fkCO01erCTbRXYsiLUu6wzgHRpSbC_bgiU0Z4pjdyoV9oFcsgZKNuJEfCBGQmHoZwLvW_tAlZrodSqcEh8ho0zrMzBofskvRzZ3bROMDDsA2r8Ko-B7eP8cIYY_GTuayI5o-BGMnVgyOAfcqJtiBafb6FMzzr7kdBNOMvc62DKtYoIXmA9BEGEvHqgChnDNwQkAGFR7fa4RS4gLrvPUNe5tCT7SzYCarxVBphn9s_RXfiCwb4UTJL1yKPMvf0OOChmgWsjz5LpSyW4qvnZWQ9CxJ5ayoHuxN0-DIaefKYUxj31ngVWdH-F5IPAGcVFoJYIpgBIzfFUhDIh09VYEmEyVhhoYQO1bnki0UFiecaN1kCaXmqZgUz-Tl70IO10reCS-vMt1IMA78WNlu973P_PFmxZAK2q7GXQF7G4VOFCLcsuiXVZSCP9VJCPtwhh2XRuJQF9SORODRhG2smx3hYvCAlXXUNhCzRgTlQ7o83BWaaDJkEHxqYvldPNzCcG6vxTvzNVIcNn5fNNKAzwElJVDh4Bu1kaxtsc9sQvIF-fjCiiBD7vbcuLnRrcQ7UT1eDZDNNTEQr1YZGfCAGxBrQY-a3HVmoLEawpyOuKR-BQV8Rj4DDmLshAMEd6bC9EOvVDlyPqQd-vfbDRZVVMgH6QRCBJZp1nOBNxc26I3fLbkUh0dkvLZMTEr8wrl7ZhjNVv2j1pYgnOqcvNeZMsTz15rQXi2u3laKfCavj8XyneUh_wTar8xXGLLuHO3eoSKR2876y5ImttviCQclitAf1Pn4uaVmTzC0Hzq--gEuyvTrto6ZLxkuZwmgrpQcYPl5H6d-nJ-WUeXrdJrSHtAAyrSUGLJJfhWeIn4k73.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_09bc00948de4151b016ae81dd3369887d189674702a878226e",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12659,
+    "completion_tokens": 324,
+    "total_tokens": 12983,
+    "cost": 0.0017443,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12656,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017443,
+      "upstream_inference_prompt_cost": 0.0015823,
+      "upstream_inference_completions_cost": 0.000162
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

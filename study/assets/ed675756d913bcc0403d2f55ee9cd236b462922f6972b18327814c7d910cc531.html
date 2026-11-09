@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Forbes: Business, Investing, Technology, Leadership and Lifestyle</title>
+<meta content="Forbes is a global media company focusing on business, investing, technology, entrepreneurship, leadership, and lifestyle." name="description"/>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #4a4a4a;
+    --bg: #ffffff;
+    --panel: #f5f5f3;
+    --line: #d9d9d4;
+    --brand: #0b0b0b;
+    --accent: #1a5fb4;
+    --alert: #9b1c1c;
+    --focus: #ffbf47;
+    --serif: Georgia, "Times New Roman", Times, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .skip-link {
+    position: absolute; left: 8px; top: -60px; background: #000; color: #fff;
+    padding: 8px 12px; z-index: 100; text-decoration: none;
+  }
+  .skip-link:focus { top: 8px; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  .masthead { background: var(--brand); color: #fff; }
+  .masthead .wrap {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    min-height: 72px;
+  }
+  .masthead a { color: #fff; }
+  .logo { font-family: var(--serif); font-size: 2.6rem; font-weight: 700; letter-spacing: -0.5px; text-decoration: none; }
+  .header-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .btn-subscribe {
+    background: #fff; color: #000 !important; font-weight: 600; padding: 8px 14px;
+    border-radius: 3px; text-decoration: none; font-size: 0.95rem;
+  }
+  .search-form { display: flex; }
+  .search-form label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .search-form input {
+    font: inherit; padding: 8px 10px; border: 1px solid #555; border-radius: 3px 0 0 3px;
+    width: 180px; background: #fff; color: #000;
+  }
+  .search-form button {
+    font: inherit; padding: 8px 12px; border: 1px solid #fff; background: #fff; color: #000;
+    border-radius: 0 3px 3px 0; cursor: pointer; font-weight: 600;
+  }
+  .primary-nav { background: #fff; border-bottom: 1px solid var(--line); }
+  .primary-nav ul {
+    list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 22px;
+    justify-content: center; padding: 10px 0;
+  }
+  .primary-nav a { color: var(--ink); text-decoration: none; font-weight: 600; padding: 4px 0; display: inline-block; }
+  .primary-nav a:hover { color: var(--accent); text-decoration: underline; }
+
+  /* Trending */
+  .trending { border-bottom: 1px solid var(--line); padding: 10px 0; }
+  .trending ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px 22px; flex-wrap: wrap; align-items: baseline; }
+  .trending .label { font-weight: 700; color: var(--alert); text-transform: uppercase; font-size: 0.85rem; letter-spacing: .04em; }
+  .trending a { color: var(--ink); text-decoration: none; }
+  .trending a:hover { text-decoration: underline; }
+
+  /* Layout */
+  .home-grid {
+    display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px;
+    padding: 28px 0;
+  }
+  .lead-story img { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover; background: var(--panel); }
+  .kicker { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 14px 0 6px; }
+  .lead-story h1 { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.15; margin: 0 0 10px; }
+  .lead-story h1 a { color: var(--ink); text-decoration: none; }
+  .lead-story h1 a:hover { text-decoration: underline; }
+  .byline { color: var(--muted); font-size: 0.95rem; }
+  .deck { font-size: 1.1rem; color: var(--muted); margin: 8px 0 0; }
+
+  .side-stack { display: flex; flex-direction: column; gap: 26px; }
+  .card img { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover; background: var(--panel); }
+  .card h2, .card h3 { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; margin: 8px 0 6px; }
+  .card h2 a, .card h3 a { color: var(--ink); text-decoration: none; }
+  .card h2 a:hover, .card h3 a:hover { text-decoration: underline; }
+
+  /* Section blocks */
+  .section { padding: 28px 0; border-top: 1px solid var(--line); }
+  .section h2 { font-family: var(--serif); font-size: 1.6rem; margin: 0 0 16px; }
+  .section h2 a { color: var(--ink); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
+  .cards .card h3 { font-size: 1.1rem; }
+
+  /* Topic link lists */
+  .topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 20px 24px; }
+  .topic-grid h3 { font-size: 1rem; margin: 0 0 6px; }
+  .topic-grid ul { list-style: none; padding: 0; margin: 0; }
+  .topic-grid li { padding: 3px 0; }
+
+  /* Markets */
+  .ticker { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; list-style: none; padding: 0; margin: 0; }
+  .ticker li { background: var(--panel); padding: 10px 12px; border-radius: 4px; }
+  .ticker .sym { font-weight: 700; }
+  .ticker .up { color: #0d6b2e; }
+  .ticker .down { color: var(--alert); }
+
+  /* Newsletter / forms */
+  .signup { background: var(--panel); padding: 22px; border-radius: 6px; }
+  .signup h2 { font-family: var(--serif); margin: 0 0 6px; font-size: 1.4rem; }
+  .signup form { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; align-items: flex-end; }
+  .signup label { display: block; font-weight: 600; margin-bottom: 4px; }
+  .signup input[type=email] {
+    font: inherit; padding: 10px; border: 1px solid #767676; border-radius: 3px; min-width: 240px; background: #fff;
+  }
+  .signup button {
+    font: inherit; font-weight: 700; padding: 10px 18px; border: 0; border-radius: 3px;
+    background: var(--ink); color: #fff; cursor: pointer;
+  }
+  .signup button:hover { background: #000; }
+  .fineprint { font-size: 0.85rem; color: var(--muted); margin-top: 12px; }
+
+  /* Disclosure */
+  details { border-top: 1px solid var(--line); padding: 12px 0; }
+  details summary { font-weight: 700; cursor: pointer; font-size: 1.05rem; }
+  details[open] summary { margin-bottom: 10px; }
+
+  /* Popular list */
+  ol.popular { padding-left: 1.4em; margin: 0; }
+  ol.popular li { margin-bottom: 10px; }
+  ol.popular a { color: var(--ink); text-decoration: none; font-weight: 600; }
+  ol.popular a:hover { text-decoration: underline; }
+  .meta { font-size: 0.85rem; color: var(--muted); }
+
+  /* Footer */
+  .site-footer { background: var(--brand); color: #fff; padding: 36px 0 28px; margin-top: 30px; }
+  .site-footer a { color: #fff; }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 24px; }
+  .footer-grid h2 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 8px; }
+  .footer-grid ul { list-style: none; padding: 0; margin: 0; }
+  .footer-grid li { margin: 4px 0; }
+  .legal { border-top: 1px solid #333; margin-top: 28px; padding-top: 16px; font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  .legal p { margin: 0; width: 100%; }
+
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  @media (max-width: 900px) {
+    .home-grid { grid-template-columns: 1fr; }
+    .masthead .wrap { flex-wrap: wrap; padding: 12px 20px; }
+    .search-form input { width: 150px; }
+  }
+  @media (max-width: 560px) {
+    .logo { font-size: 2rem; }
+    .search-form input { width: 120px; }
+    .primary-nav ul { justify-content: flex-start; }
+    .signup input[type=email] { min-width: 0; width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="masthead">
+<div class="wrap">
+<a aria-label="Forbes home" class="logo" href="https://www.forbes.com/">Forbes</a>
+<div class="header-actions">
+<a class="btn-subscribe" href="https://account.forbes.com/subscribe?eventSource=header&amp;redirect=https://www.forbes.com/">Subscribe: Less than $2/wk</a>
+<form action="https://www.forbes.com/search/" class="search-form" method="get" role="search">
+<label for="site-search">Search Forbes for news, articles, and more</label>
+<input id="site-search" name="q" placeholder="Search Forbes" type="search"/>
+<button type="submit">Search</button>
+</form>
+</div>
+</div>
+</header>
+<nav aria-label="Main sections" class="primary-nav">
+<div class="wrap">
+<ul>
+<li><a href="https://www.forbes.com/billionaires/">Billionaires</a></li>
+<li><a href="https://www.forbes.com/money/">Money</a></li>
+<li><a href="https://www.forbes.com/innovation/">Innovation</a></li>
+<li><a href="https://www.forbes.com/lifestyle/">Lifestyle</a></li>
+<li><a href="https://www.forbes.com/business/">Business</a></li>
+<li><a href="https://www.forbes.com/leadership/">Leadership</a></li>
+<li><a href="https://account.forbes.com/newsletters/">Newsletters</a></li>
+<li><a href="https://www.forbes.com/games/">Games</a></li>
+<li><a href="https://www.forbes.com/vetted/">Vetted</a></li>
+<li><a href="https://www.forbes.com/advisor/">Advisor</a></li>
+<li><a href="https://www.forbes.com/lists/list-directory/">Lists</a></li>
+</ul>
+</div>
+</nav>
+<div class="trending">
+<div class="wrap">
+<ul aria-label="Trending stories">
+<li class="label">Trending</li>
+<li><a href="https://www.forbes.com/real-time-billionaires/">Real-Time Billionaires List</a></li>
+<li><a href="https://www.forbes.com/sites/antoniopequenoiv/2026/10/16/katie-zacharia-fired-days-after-muffed-press-briefing-report-says/">Katie Zacharia Fired Days After Muffed Press Briefing</a></li>
+<li><a href="https://www.forbes.com/sites/suzannerowankelleher/2026/10/16/tsa-gateside-precheck-program-on-hold/">TSA’s New Gateside Pass Program ‘On Hold Indefinitely’</a></li>
+<li><a href="https://www.forbes.com/sites/siladityaray/2026/10/16/order-to-limit-ukraines-starshield-use-reportedly-came-from-white-house-as-trump-blasts-zelenskyy/">Ukraine’s Starshield Limits Reportedly Came From White House</a></li>
+<li><a href="https://www.forbes.com/sites/justinteitelbaum/2026/10/16/the-most-valuable-nba-teams-2026/">NBA Team Values 2026: Warriors Still Rule After Lakers Sale</a></li>
+</ul>
+</div>
+</div>
+<main id="main">
+<div class="wrap home-grid">
+<section aria-labelledby="lead-title" class="lead-story">
+<a aria-hidden="true" href="https://www.forbes.com/sites/baldwin/2026/10/16/whats-your-true-tax-bracket-the-answer-might-shock-you/" tabindex="-1">
+<img alt="Illustration of an IRS tax form showing tax rates of 10%, 12% and 22% with a 55.8% figure highlighted" src="https://imageio.forbes.com/specials-images/imageserve/6ad23596361376cea1b3be9b/0x0.jpg?format=jpg&amp;crop=1919,1079,x0,y0,safe&amp;width=960"/>
+</a>
+<p class="kicker"><a href="https://www.forbes.com/investing/">Investing</a></p>
+<h1 id="lead-title"><a href="https://www.forbes.com/sites/baldwin/2026/10/16/whats-your-true-tax-bracket-the-answer-might-shock-you/">What’s Your True Tax Bracket? The Answer Might Shock You</a></h1>
+<p class="deck">Marginal tax rates drive choices about investment portfolios, Roth accounts, side gigs and charitable donations. Here’s how to calculate yours before you make any end-of-year moves.</p>
+<p class="byline">By <a href="https://www.forbes.com/sites/baldwin/">William Baldwin</a>, Senior Contributor</p>
+</section>
+<aside aria-label="Featured and popular stories">
+<div class="side-stack">
+<article class="card">
+<a href="https://www.forbes.com/sites/mattdurot/2026/10/16/sergey-brin-registered-to-vote-in-nevada-amid-california-billionaire-tax-frenzy/">
+<img alt="Sergey Brin, wearing a dark jacket, in a portrait photo" src="https://imageio.forbes.com/specials-images/imageserve/6ad23a57361376cea1b3be9f/0x0.jpg?format=jpg&amp;width=960"/>
+</a>
+<p class="kicker"><a href="https://www.forbes.com/worlds-billionaires/">Billionaires</a></p>
+<h2><a href="https://www.forbes.com/sites/mattdurot/2026/10/16/sergey-brin-registered-to-vote-in-nevada-amid-california-billionaire-tax-frenzy/">Sergey Brin Registered To Vote In Nevada Amid California Billionaire Tax Frenzy</a></h2>
+<p class="meta">By Richard Nieva, Senior Writer, and Matt Durot, Deputy Editor</p>
+</article>
+<section aria-labelledby="popular-title">
+<h2 class="section" id="popular-title" style="border:0;padding:0;font-size:1.3rem;font-family:var(--serif);margin:0 0 10px;">Popular</h2>
+<ol class="popular">
+<li><a href="https://www.forbes.com/sites/siladityaray/2026/10/16/mukesh-ambanis-reliance-responds-to-elon-musks-claims-over-starlink-india-launch/">Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch</a> <span class="meta">846 views in the past hour</span></li>
+<li><a href="https://www.forbes.com/sites/alisondurkee/2026/10/16/judge-threatens-to-sanction-trump-after-he-backs-out-of-deposition-in-10-billion-bbc-case/">Judge Threatens To Sanction Trump After He Backs Out Of Deposition In $10 Billion BBC Case</a> <span class="meta">600 views in the past hour</span></li>
+<li><a href="https://www.forbes.com/sites/laurabegleybloom/2026/10/15/the-best-countries-to-live-in-2026-according-to-a-new-report-from-nomad-capitalist/">The Best Countries To Live In 2026, According To A New Report From Nomad Capitalist</a> <span class="meta">535 views in the past hour</span></li>
+<li><a href="https://www.forbes.com/sites/forbesliveteam/2026/09/24/2026-forbes-cmo-summit/">2026 Forbes CMO Summit</a></li>
+<li><a href="https://www.forbes.com/sites/maryroeloffs/2026/10/16/spending-against-californias-billionaire-tax-tops-1-million-per-day-and-its-working/">Spending Against California’s Billionaire Tax Tops $1 Million Per Day—And It's Working</a></li>
+</ol>
+</section>
+</div>
+</aside>
+<div>
+<section aria-labelledby="daily-title" class="section">
+<h2 id="daily-title">The Daily Brief</h2>
+<p class="meta">Sponsored by ServiceNow. The Daily Brief is generated by AI with editorial review. <a href="https://www.forbes.com/sites/forbesdigitalgroup/article/forbes-ai-audio-learn-more/">Learn more</a></p>
+<ul>
+<li><a href="https://www.forbes.com/sites/maryroeloffs/2026/10/15/troy-aikman-hints-at-espn-exit-after-pre-game-argument-with-joe-buck/">Broadcasting Contract Rumors</a></li>
+<li><a href="https://www.forbes.com/sites/maryroeloffs/2026/10/15/feds-investigating-suspicious-letters-mailed-to-capitol-hill-election-officials-nationwide/">Suspicious Mail Investigations</a></li>
+<li><a href="https://www.forbes.com/sites/laurabegleybloom/2026/10/15/the-best-countries-to-live-in-2026-according-to-a-new-report-from-nomad-capitalist/">Global Relocation Rankings</a></li>
+</ul>
+</section>
+<section aria-labelledby="newsletter-title" class="section">
+<div class="signup">
+<h2 id="newsletter-title">Subscribe to the Daily Newsletter</h2>
+<p>Our best stories, exclusive reporting and Forbes perspectives on the day’s top news.</p>
+<form action="https://www.forbes.com/" method="get">
+<div>
+<label for="email">Email address</label>
+<input autocomplete="email" id="email" name="email" required="" type="email"/>
+</div>
+<button type="submit">Sign Up</button>
+</form>
+<p class="fineprint">By signing up, you agree to receive this newsletter, other updates about Forbes and its affiliates’ offerings, our <a href="https://www.forbes.com/terms-and-conditions">Terms of Service</a> (including resolving disputes on an individual basis via arbitration), and you acknowledge our <a href="https://www.forbes.com/privacy">Privacy Statement</a>. Forbes is protected by reCAPTCHA, and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+<p class="fineprint"><a href="https://account.forbes.com/newsletters/">See all newsletters</a> · <a href="https://account.forbes.com/membership?eventSource=hp_inline">Explore membership</a></p>
+</div>
+</section>
+<section aria-labelledby="markets-title" class="section">
+<h2 id="markets-title"><a href="https://www.forbes.com/markets/">Money &amp; Markets</a></h2>
+<p class="meta">Last updated 10/16/2026 04:00 PM EDT</p>
+<ul class="ticker">
+<li><a href="https://www.forbes.com/companies/berkshire-hathaway/"><span class="sym">BRK.B</span> Berkshire Hathaway</a> $532.02 <span class="up">+6.34 (1.21%)</span></li>
+<li><a href="https://www.forbes.com/companies/jpmorganchase/"><span class="sym">JPM</span> JPMorgan Chase</a> $339.72 <span class="up">+4.19 (1.25%)</span></li>
+<li><a href="https://www.forbes.com/companies/visa/"><span class="sym">V</span> Visa</a> $402.61 <span class="up">+2.86 (0.71%)</span></li>
+<li><a href="https://www.forbes.com/companies/eli-lilly/"><span class="sym">LLY</span> Eli Lilly &amp; Co</a> $1,257.03 <span class="up">+5.42 (0.43%)</span></li>
+<li><a href="https://www.forbes.com/companies/bank-of-america/"><span class="sym">BAC</span> Bank of America</a> $51.23 <span class="down">-0.47 (-0.91%)</span></li>
+<li><a href="https://www.forbes.com/companies/palantir-technologies/"><span class="sym">PLTR</span> Palantir Technologies</a> $186.03 <span class="down">-14.47 (-7.22%)</span></li>
+<li><a href="https://www.forbes.com/companies/nvidia/"><span class="sym">NVDA</span> NVIDIA</a> $214.13 <span class="down">-3.10 (-1.43%)</span></li>
+<li><a href="https://www.forbes.com/companies/tesla/"><span class="sym">TSLA</span> Tesla</a> $354.72 <span class="down">-7.72 (-2.13%)</span></li>
+</ul>
+</section>
+<section aria-labelledby="latest-title" class="section">
+<h2 id="latest-title">Latest Coverage</h2>
+<div class="cards">
+<article class="card">
+<a href="https://www.forbes.com/sites/antoniopequenoiv/2026/10/16/katie-zacharia-fired-days-after-muffed-press-briefing-report-says/"><img alt="Katie Zacharia Fired Days After Muffed Press Briefing" src="https://imageio.forbes.com/specials-images/imageserve/6ad264af97e4d201b435edb2/0x0.jpg?format=jpg&amp;crop=1801,1200,x0,y0,safe&amp;width=960"/></a>
+<p class="kicker"><a href="https://www.forbes.com/business/">Business</a></p>
+<h3><a href="https://www.forbes.com/sites/antoniopequenoiv/2026/10/16/katie-zacharia-fired-days-after-muffed-press-briefing-report-says/">Katie Zacharia Fired Days After Muffed Press Briefing</a></h3>
+<p class="meta">By Antonio Pequeño IV, Forbes Staff</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/sites/alisondurkee/2026/10/16/judge-threatens-to-sanction-trump-after-he-backs-out-of-deposition-in-10-billion-bbc-case/"><img alt="Judge Threatens To Sanction Trump After He Backs Out Of Deposition In $10 Billion BBC Case" src="https://imageio.forbes.com/specials-images/imageserve/6ad27d6e50cf55fabaadbfdb/0x0.jpg?format=jpg&amp;crop=1177,662,x150,y6,safe&amp;width=960"/></a>
+<p class="kicker"><a href="https://www.forbes.com/business/">Business</a></p>
+<h3><a href="https://www.forbes.com/sites/alisondurkee/2026/10/16/judge-threatens-to-sanction-trump-after-he-backs-out-of-deposition-in-10-billion-bbc-case/">Judge Threatens To Sanction Trump After He Backs Out Of Deposition In $10 Billion BBC Case</a></h3>
+<p class="meta">By Alison Durkee, Forbes Staff</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/sites/maryroeloffs/2026/10/16/spending-against-californias-billionaire-tax-tops-1-million-per-day-and-its-working/"><img alt="Spending Against California’s Billionaire Tax Tops $1 Million Per Day" src="https://imageio.forbes.com/specials-images/imageserve/6ad258f93e7f855f4e1cc2ec/0x0.jpg?format=jpg&amp;width=960"/></a>
+<p class="kicker"><a href="https://www.forbes.com/business/">Business</a></p>
+<h3><a href="https://www.forbes.com/sites/maryroeloffs/2026/10/16/spending-against-californias-billionaire-tax-tops-1-million-per-day-and-its-working/">Spending Against California’s Billionaire Tax Tops $1 Million Per Day—And It's Working</a></h3>
+<p class="meta">By Mary Whitfill Roeloffs, Forbes Staff</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/sites/giacomotognini/2026/10/16/why-debt-laden-neoclouds-could-become-a-trillion-dollar-wework-20/"><img alt="Nearly 50% Of 2026 Data Center Bonds Are Junk Bonds" src="https://imageio.forbes.com/specials-images/imageserve/6ad1a6e53cd1a2729d180c1a/0x0.jpg?format=jpg&amp;width=960"/></a>
+<p class="kicker"><a href="https://www.forbes.com/innovation/">Innovation</a></p>
+<h3><a href="https://www.forbes.com/sites/giacomotognini/2026/10/16/why-debt-laden-neoclouds-could-become-a-trillion-dollar-wework-20/">Nearly 50% Of 2026 Data Center Bonds Are Junk Bonds. Here’s Why.</a></h3>
+<p class="meta">By Giacomo Tognini, Senior Editor</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="sections-title" class="section">
+<h2 id="sections-title">Explore Topics</h2>
+<div class="topic-grid">
+<div>
+<h3><a href="https://www.forbes.com/leadership/">Leadership</a></h3>
+<ul>
+<li><a href="https://www.forbes.com/under30/">Under 30</a></li>
+<li><a href="https://www.forbes.com/cxo/">C-Suite</a></li>
+<li><a href="https://www.forbes.com/ceo-network/">CEO Network</a></li>
+<li><a href="https://www.forbes.com/cfo-network/">CFO Network</a></li>
+<li><a href="https://www.forbes.com/careers/">Careers</a></li>
+</ul>
+</div>
+<div>
+<h3><a href="https://www.forbes.com/innovation/">Innovation</a></h3>
+<ul>
+<li><a href="https://www.forbes.com/ai/">AI</a></li>
+<li><a href="https://www.forbes.com/cybersecurity/">Cybersecurity</a></li>
+<li><a href="https://www.forbes.com/cloud/">Cloud</a></li>
+<li><a href="https://www.forbes.com/consumer-tech/">Consumer Tech</a></li>
+<li><a href="https://www.forbes.com/science/">Science</a></li>
+</ul>
+</div>
+<div>
+<h3><a href="https://www.forbes.com/money/">Money</a></h3>
+<ul>
+<li><a href="https://www.forbes.com/investing/">Investing</a></li>
+<li><a href="https://www.forbes.com/personal-finance/">Personal Finance</a></li>
+<li><a href="https://www.forbes.com/retirement/">Retirement</a></li>
+<li><a href="https://www.forbes.com/taxes/">Taxes</a></li>
+<li><a href="https://www.forbes.com/markets/">Markets</a></li>
+</ul>
+</div>
+<div>
+<h3><a href="https://www.forbes.com/vetted/">Forbes Vetted</a></h3>
+<ul>
+<li><a href="https://www.forbes.com/vetted/mattress-sleep/">Mattress &amp; Sleep</a></li>
+<li><a href="https://www.forbes.com/vetted/home/">Home</a></li>
+<li><a href="https://www.forbes.com/vetted/gear/">Gear</a></li>
+<li><a href="https://www.forbes.com/vetted/tech-electronics/">Tech &amp; Electronics</a></li>
+<li><a href="https://www.forbes.com/vetted/deals/">Deals</a></li>
+</ul>
+</div>
+<div>
+<h3><a href="https://www.forbes.com/advisor/">Forbes Advisor</a></h3>
+<ul>
+<li><a href="https://www.forbes.com/advisor/credit-cards/">Credit Cards</a></li>
+<li><a href="https://www.forbes.com/advisor/banking/">Banking</a></li>
+<li><a href="https://www.forbes.com/advisor/insurance/">Insurance</a></li>
+<li><a href="https://www.forbes.com/advisor/business/">Business Services</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="games-title" class="section">
+<h2 id="games-title"><a href="https://www.forbes.com/games/">Games</a></h2>
+<div class="cards">
+<article class="card">
+<a href="https://www.forbes.com/games/mini-crossword/"><img alt="Mini Crossword game artwork" src="https://images.forbes.com/fbs-games-assets/crossword-high-res.png"/></a>
+<h3><a href="https://www.forbes.com/games/mini-crossword/">Mini Crossword</a></h3>
+<p class="meta">Quick solve. Big win.</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/games/frase/"><img alt="Frase game artwork" src="https://images.forbes.com/fbs-games-assets/frase-new.png"/></a>
+<h3><a href="https://www.forbes.com/games/frase/">Frase</a></h3>
+<p class="meta">Unscramble the anagram to reveal the phrase.</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/games/pinpoint/"><img alt="Pinpoint game artwork" src="https://images.forbes.com/fbs-games-assets/pinpoint-high-res.png"/></a>
+<h3><a href="https://www.forbes.com/games/pinpoint/">Pinpoint</a></h3>
+<p class="meta">Guess the category.</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/games/queens/"><img alt="Queens game artwork" src="https://images.forbes.com/fbs-games-assets/queens-high-res.png"/></a>
+<h3><a href="https://www.forbes.com/games/queens/">Queens</a></h3>
+<p class="meta">Crown each region.</p>
+</article>
+<article class="card">
+<a href="https://www.forbes.com/games/crossclimb/"><img alt="Crossclimb game artwork" src="https://images.forbes.com/fbs-games-assets/crossclimb-high-res.png"/></a>
+<h3><a href="https://www.forbes.com/games/crossclimb/">Crossclimb</a></h3>
+<p class="meta">Unlock a trivia ladder.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="poll-title" class="section">
+<h2 id="poll-title">Live Poll</h2>
+<p><strong>Are luxury personal care tools worth the high price tag?</strong></p>
+<p class="meta">Results are shown by the source site. Voting is handled on Forbes.com.</p>
+<p><a href="https://www.forbes.com/sites/forbes-personal-shopper/2026/10/16/shop-like-sarah-michelle-gellar/">Read More: Sarah Michelle Gellar On Beauty Staples, Book Recs And Target Runs</a></p>
+</section>
+<section aria-labelledby="more-title" class="section">
+<h2 id="more-title">More From Forbes</h2>
+<details>
+<summary>Billionaire updates</summary>
+<ul>
+<li><a href="https://www.forbes.com/profile/carlos-slim-helu/">Carlos Slim Helu &amp; family</a>: real-time net worth $120.4B (+$2.0B)</li>
+<li><a href="https://www.forbes.com/profile/warren-buffett/">Warren Buffett</a>: real-time net worth $151.1B (+$1.6B)</li>
+</ul>
+</details>
+<details>
+<summary>Quote of the day</summary>
+<blockquote>“People who have money have an obligation. I wouldn't say I'm entitled to tell them what to do with it but to use it wisely.”</blockquote>
+<p class="meta">Chuck Feeney, Businessman and Philanthropist. <a href="https://www.forbes.com/quotes/">See more quotes</a></p>
+</details>
+<details>
+<summary>Forbes Advisor</summary>
+<ul>
+<li><a href="https://www.forbes.com/advisor/travel-insurance/best-travel-insurance/">10 Best Travel Insurance Companies: Expert-Rated</a></li>
+<li><a href="https://www.forbes.com/advisor/credit-cards/reviews/american-express-platinum/?utm_campaign=amex_platinum_forbes">The American Express Platinum Review</a></li>
+<li><a href="https://www.forbes.com/advisor/car-insurance/best-car-insurance-companies/">7 Best Car Insurance Companies</a></li>
+<li><a href="https://www.forbes.com/advisor/pet-insurance/best-pet-insurance/">Best Pet Insurance Companies</a></li>
+</ul>
+</details>
+<details>
+<summary>Magazine and subscriptions</summary>
+<ul>
+<li><a href="https://www.forbes.com/forbes-magazine/">Forbes Magazine</a></li>
+<li><a href="https://www.forbes.com/forbesasia/">Forbes Asia</a></li>
+<li><a href="https://www.forbes.com/forbeslife/">ForbesLife</a></li>
+<li><a href="https://subs.forbesmagazine.com/loc/FRB/IZEG101">Gift Subscription</a></li>
+<li><a href="http://www.forbesmagazine.com/">Subscriber Services</a></li>
+</ul>
+</details>
+</section>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company</h2>
+<ul>
+<li><a href="https://www.forbes.com/sites/forbesstaff/article/forbes-editorial-values-and-standards/">Editorial Values and Standards</a></li>
+<li><a href="https://www.forbes.com/connect/media-kit/">Advertise</a></li>
+<li><a href="https://www.forbes.com/careers-at-forbes/">Careers at Forbes</a></li>
+<li><a href="https://www.forbes.com/pr/">Press Room</a></li>
+<li><a href="https://www.forbes.com/connect/content-partnerships/">Licensing &amp; Syndication</a></li>
+<li><a href="https://www.forbes.com/contact/">Contact Us</a></li>
+<li><a href="https://www.forbes.com/fdc/sitemap.html">Sitemap</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-report">
+<h2 id="f-report">Reporting</h2>
+<ul>
+<li><a href="https://www.forbes.com/sites/forbesstaff/article/tips-and-confidential-sources/">Share a News Tip</a></li>
+<li><a href="https://www.forbes.com/tips/">Send a Secure Tip</a></li>
+<li><a href="https://www.forbes.com/contact/">Report a Security Issue</a></li>
+<li><a href="mailto:corrections@forbes.com?subject=Report%20Correction">Corrections</a></li>
+<li><a href="mailto:feedback@forbes.com">Site Feedback</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-products">
+<h2 id="f-products">Products</h2>
+<ul>
+<li><a href="https://www.forbesmagazine.com/">Forbes Magazine</a></li>
+<li><a href="https://forbesbooks.com/">Forbes Books</a></li>
+<li><a href="https://www.forbes.com/connect/content-solutions/forbes-insights/">Forbes Insights</a></li>
+<li><a href="https://www.forbes.com/forbes-101/">Forbes 101</a></li>
+<li><a href="https://www.forbes.com/accolades/">Forbes Accolades</a></li>
+<li><a href="https://www.forbes.com/connect/events-2/">ForbesLive Events</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-games">
+<h2 id="f-games">Forbes Games</h2>
+<ul>
+<li><a href="https://www.forbes.com/frase/">Frase by Forbes</a></li>
+<li><a href="https://www.forbes.com/games/pinpoint/">Pinpoint</a></li>
+<li><a href="https://www.forbes.com/games/queens/">Queens</a></li>
+<li><a href="https://www.forbes.com/games/crossclimb/">Crossclimb</a></li>
+<li><a href="https://www.forbes.com/games/mini-crossword/">Mini Crossword</a></li>
+</ul>
+</nav>
+</div>
+<div class="legal">
+<p>© 2026 Forbes Media LLC. All Rights Reserved.</p>
+<a href="https://www.forbes.com/terms-and-conditions/">Terms of Service</a>
+<a href="https://www.forbes.com/fdc/privacy.html">Privacy Statement</a>
+<a href="https://www.forbes.com/consent/editprivacy/?consent_do_not_sell=true">Your Privacy Choices</a>
+<a href="https://youradchoices.com/control">AdChoices</a>
+<a href="https://www.parsintl.com/publications/forbes/">Reprints &amp; Permissions</a>
+<a href="https://www.forbes.com/digital-terms-of-sale">Digital Terms of Sale</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

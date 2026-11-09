@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0b1712" name="theme-color"/>
+<title>nginx — high-performance web server</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17231d;
+      --muted: #52635a;
+      --green: #008b4b;
+      --green-dark: #006c3a;
+      --line: #dce5df;
+      --soft: #f3f7f4;
+      --link: #075da8;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    a { color: var(--link); text-underline-offset: .18em; }
+    a:hover { color: var(--green-dark); }
+    a:focus-visible {
+      outline: 3px solid #f2a900;
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+    .announcement {
+      background: #0b1712;
+      color: #fff;
+      padding: .65rem 1rem;
+      text-align: center;
+      font-size: .92rem;
+    }
+    .announcement a { color: #77e3a6; font-weight: 650; }
+    .shell {
+      width: min(var(--max), calc(100% - 3rem));
+      margin: 2rem auto 4rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 270px;
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: start;
+    }
+    main { min-width: 0; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.1rem;
+    }
+    .brand img { display: block; width: 190px; height: auto; }
+    h1 {
+      margin: 0 0 .7rem;
+      font-size: clamp(2.1rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -.045em;
+    }
+    h2 {
+      font-size: 1.55rem;
+      line-height: 1.25;
+      margin: 2.7rem 0 1rem;
+      letter-spacing: -.025em;
+    }
+    .intro { max-width: 780px; font-size: 1.06rem; }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin: 1.4rem 0 2.2rem;
+    }
+    .quick-links a {
+      display: inline-block;
+      padding: .48rem .85rem;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .quick-links a:hover { background: #e6f5eb; border-color: #a9d8b9; }
+    .sidebar {
+      border-left: 1px solid var(--line);
+      padding: .2rem 0 .4rem 1.8rem;
+      position: sticky;
+      top: 1.5rem;
+    }
+    .sidebar .brand { margin: 0 0 1.5rem; }
+    .sidebar .brand img { width: 165px; }
+    .side-group { margin: 0 0 1.45rem; }
+    .side-group h2 {
+      color: var(--muted);
+      font-size: .74rem;
+      letter-spacing: .12em;
+      margin: 0 0 .55rem;
+      text-transform: uppercase;
+    }
+    .side-group ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: .27rem;
+    }
+    .side-group a { font-weight: 550; text-decoration: none; }
+    .side-group a:hover { text-decoration: underline; }
+    .language-links { display: flex; gap: 1rem; }
+    .language-links [aria-current="page"] { font-weight: 700; color: var(--ink); }
+    .news-list { border-top: 1px solid var(--line); }
+    .news-item {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .news-item time {
+      color: var(--muted);
+      font-size: .9rem;
+      font-variant-numeric: tabular-nums;
+      padding-top: .12rem;
+    }
+    .news-item p { margin: 0; }
+    .older { display: inline-block; margin-top: 1.1rem; font-weight: 650; }
+    .projects {
+      display: grid;
+      gap: .9rem;
+    }
+    .project {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .project img { width: 50px; height: 50px; object-fit: contain; margin: .1rem auto; }
+    .project p { margin: 0 0 .45rem; }
+    .project-name { font-weight: 750; }
+    .project-links { font-size: .94rem; font-weight: 650; }
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 3rem;
+      padding-top: 1rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    @media (max-width: 800px) {
+      .shell { width: min(720px, calc(100% - 2rem)); grid-template-columns: 1fr; margin-top: 1.5rem; }
+      .sidebar { position: static; border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 0 0; }
+      .sidebar .brand { display: none; }
+      .side-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; }
+    }
+    @media (max-width: 520px) {
+      .shell { width: calc(100% - 1.4rem); }
+      .news-item { grid-template-columns: 1fr; gap: .25rem; }
+      .project { grid-template-columns: 50px minmax(0, 1fr); gap: .75rem; padding: 1rem; }
+      .side-groups { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .announcement { font-size: .83rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+<div class="announcement">
+    Interested in NGINX's open source Kubernetes ecosystem? Start here:
+    <a href="https://kubernetes.nginx.org">kubernetes.nginx.org</a>
+</div>
+<div class="shell">
+<main id="main-content">
+<header>
+<a aria-label="NGINX home" class="brand" href="https://nginx.org/">
+<img alt="NGINX" src="https://nginx.org/img/nginx_logo.svg"/>
+</a>
+<h1>nginx</h1>
+<p class="intro">
+          nginx (“<i>engine x</i>”) is an HTTP web server, reverse proxy, content cache, load balancer,
+          TCP/UDP proxy server, and mail proxy server. Originally written by
+          <a href="http://sysoev.ru/en/">Igor Sysoev</a> and distributed under the
+          <a href="https://nginx.org/LICENSE">2-clause BSD License</a>. Enterprise distributions,
+          commercial support and training are
+          <a href="https://nginx.org/en/enterprise.html">available from F5, Inc.</a>
+</p>
+<nav aria-label="Get started" class="quick-links">
+<a href="https://nginx.org/en/docs/index.html">Docs</a>
+<a href="https://github.com/nginx/nginx">Code</a>
+<a href="https://nginx.org/en/docs/install.html">Install</a>
+<a href="https://nginx.org/en/docs/beginners_guide.html">Beginner's Guide</a>
+</nav>
+</header>
+<section aria-labelledby="news-heading">
+<h2 id="news-heading">Latest news</h2>
+<div class="news-list">
+<article class="news-item">
+<time datetime="2026-10-14">2026-10-14</time>
+<p>
+<a href="https://nginx.org/en/download.html">nginx-1.30.6</a> stable and
+              <a href="https://nginx.org/en/download.html">nginx-1.31.7</a> mainline versions have been released,
+              with fixes for <a href="https://nginx.org/en/security_advisories.html">buffer overflow</a>
+              vulnerability when using alias with rewrite (CVE-2026-15176),
+              <a href="https://nginx.org/en/security_advisories.html">buffer overflow</a> vulnerability when
+              evaluating string expressions with variables (CVE-2026-93479),
+              <a href="https://nginx.org/en/security_advisories.html">request body injection</a> vulnerability
+              in HTTP/3 (CVE-2026-95101), <a href="https://nginx.org/en/security_advisories.html">session forgery</a>
+              vulnerability when using TLS session ticket key rotation (CVE-2026-97629), and
+              <a href="https://nginx.org/en/security_advisories.html">use-after-free</a> vulnerability when
+              using ngx_http_ssi_module with AIO (CVE-2026-97205).
+            </p>
+</article>
+<article class="news-item">
+<time datetime="2026-10-14">2026-10-14</time>
+<p>
+<a href="https://nginx.org/en/docs/njs/index.html">njs-1.0.2</a> version has been
+              <a href="https://nginx.org/en/docs/njs/changes.html#njs1.0.2">released</a>, with fixes for
+              <a href="https://nginx.org/en/docs/njs/security.html#advisories">memory exhaustion</a>
+              vulnerability when parsing malformed XML (CVE-2026-101025), and
+              <a href="https://nginx.org/en/docs/njs/security.html#advisories">inconsistent XML attribute values</a>
+              affecting signed XML validation (CVE-2026-101019).
+            </p>
+</article>
+<article class="news-item">
+<time datetime="2026-09-15">2026-09-15</time>
+<p>
+<a href="https://nginx.org/en/download.html">nginx-1.30.5</a> stable and
+              <a href="https://nginx.org/en/download.html">nginx-1.31.6</a> mainline versions have been released,
+              with fixes for <a href="https://nginx.org/en/security_advisories.html">buffer overflow</a>
+              vulnerability when using ngx_http_v3_module (CVE-2026-90439).
+            </p>
+</article>
+<article class="news-item">
+<time datetime="2026-09-02">2026-09-02</time>
+<p>
+<a href="https://nginx.org/en/download.html">nginx-1.31.5</a> mainline version has been released,
+              featuring <a href="https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control#control-api">control API</a>,
+              <a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#location">predicate locations</a>,
+              and the <a href="https://nginx.org/en/docs/http/ngx_http_json_module.html">ngx_http_json_module</a> module.
+            </p>
+</article>
+</div>
+<a class="older" href="https://nginx.org/news.html">Older news</a>
+</section>
+<section aria-labelledby="projects-heading">
+<h2 id="projects-heading">Other NGINX projects</h2>
+<div class="projects">
+<article class="project">
+<a aria-label="NGINX JavaScript documentation" href="https://nginx.org/en/docs/njs/">
+<img alt="NGINX JavaScript logo" src="https://nginx.org/img/njs_icon.png"/>
+</a>
+<div>
+<p><span class="project-name">NGINX JavaScript</span> (njs) extends nginx functionality with an ECMAScript-compatible interpreter for HTTP and Stream modules.</p>
+<div class="project-links"><a href="https://nginx.org/en/docs/njs/">Docs</a> · <a href="https://github.com/nginx/njs">Code</a></div>
+</div>
+</article>
+<article class="project">
+<a aria-label="NGINX Ingress Controller documentation" href="https://docs.nginx.com/nginx-ingress-controller/">
+<img alt="NGINX Ingress Controller logo" src="https://nginx.org/img/ingress_icon.png"/>
+</a>
+<div>
+<p><span class="project-name">NGINX Ingress Controller</span> connects Kubernetes apps and services with rock solid request handling, auth, self-service CRDs, and easy debugging. Not to be confused with ingress-nginx, the separate Kubernetes community project.</p>
+<div class="project-links"><a href="https://docs.nginx.com/nginx-ingress-controller/">Docs</a> · <a href="https://github.com/nginxinc/kubernetes-ingress">Code</a></div>
+</div>
+</article>
+<article class="project">
+<a aria-label="NGINX Gateway Fabric documentation" href="https://docs.nginx.com/nginx-gateway-fabric/">
+<img alt="NGINX Gateway Fabric logo" src="https://nginx.org/img/gateway_fabric_icon.png"/>
+</a>
+<div>
+<p><span class="project-name">NGINX Gateway Fabric</span> provides L4 and L7 routing capabilities in Kubernetes, implementing the Gateway API using NGINX as the data plane.</p>
+<div class="project-links"><a href="https://docs.nginx.com/nginx-gateway-fabric/">Docs</a> · <a href="https://github.com/nginxinc/nginx-gateway-fabric">Code</a></div>
+</div>
+</article>
+</div>
+</section>
+<footer>
+<p>NGINX open source resources and project information.</p>
+</footer>
+</main>
+<aside aria-label="NGINX navigation" class="sidebar">
+<a aria-label="NGINX home" class="brand" href="https://nginx.org/">
+<img alt="NGINX" src="https://nginx.org/img/nginx_logo.svg"/>
+</a>
+<div class="side-groups">
+<section aria-label="Language" class="side-group">
+<h2>Language</h2>
+<div class="language-links">
+<span aria-current="page">English</span>
+<a href="https://nginx.org/ru/">Русский</a>
+</div>
+</section>
+<nav aria-label="Site" class="side-group">
+<h2>Explore</h2>
+<ul>
+<li><a href="https://nginx.org/news.html">News</a></li>
+<li><a href="https://nginx.org/en/">About</a></li>
+<li><a href="https://nginx.org/en/download.html">Download</a></li>
+<li><a href="https://nginx.org/en/security_advisories.html">Security</a></li>
+<li><a href="https://nginx.org/en/docs/">Documentation</a></li>
+<li><a href="https://nginx.org/en/docs/faq.html">FAQ</a></li>
+<li><a href="https://nginx.org/en/books.html">Books</a></li>
+<li><a href="https://nginx.org/en/community.html">Community</a></li>
+<li><a href="https://nginx.org/en/enterprise.html">Enterprise</a></li>
+</ul>
+</nav>
+<nav aria-label="Community and social" class="side-group">
+<h2>Connect</h2>
+<ul>
+<li><a href="https://community.nginx.org">Community forum (new)</a></li>
+<li><a href="https://x.com/nginxorg">X.com</a></li>
+<li><a href="https://blog.nginx.org/">Blog</a></li>
+</ul>
+</nav>
+<nav aria-label="NGINX ecosystem" class="side-group">
+<h2>Ecosystem</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/njs/">njs</a></li>
+<li><a href="https://github.com/nginx/kubernetes-ingress">Ingress Controller</a></li>
+<li><a href="https://github.com/nginx/nginx-gateway-fabric">Gateway Fabric</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</div>
+</body>
+</html>

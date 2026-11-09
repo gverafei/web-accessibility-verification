@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent TIME-style editorial content, including news headlines, a newsletter signup, magazine covers, People features, and Ideas articles. Its content and layout differ from the reference, but the target is adequate for the broad purpose of an editorial news site.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and arranged into clear sections and cards. The screenshots show no substantial overlap, clipping, or repeated broken editorial imagery.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible newsletter email field and Sign up button have understandable labels, and editorial links and section actions are readable. No essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of an editorial website. Their different content and layout are consistent with the regenerated-page contract.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headlines, descriptions, section labels, and accompanying imagery convey coherent editorial meaning for the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target screenshots**\n\nI feel like I need to judge the target screenshots for a news site based on cleanliness and coherence. I want to compare it with the reference of the Time news homepage but focusing on sections like People, Ideas, and Latest covers. I'll look at details like newsletter content and article summaries, ensuring clarity and readability. The evidence of coherence is there, and the semantic elements need to be adequate. I think I just need JSON with the rationales.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target screenshots**\n\nI feel like I need to judge the target screenshots for a news site based on cleanliness and coherence. I want to compare it with the reference of the Time news homepage but focusing on sections like People, Ideas, and Latest covers. I'll look at details like newsletter content and article summaries, ensuring clarity and readability. The evidence of coherence is there, and the semantic elements need to be adequate. I think I just need JSON with the rationales.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B7a_lXhqFBig7m6f1lmddrY8T2jxcfnrj8hM1QoQi5ud42UcO85yq5VnJFkleLF7z4nssORUUAO4NlnHcGqdndbaFAjmriMzImvqgNNleRnXLrzzkgsU4ZnIc3v2JeDyc8FgF_E_3La8cpO6_Kd000lodROHzvhgE6xxJp4K1pZEabbzFmQXt-bf95a_D83YJmyJDB0lb-gY34NjQWVSkqywJYDj44zYThp-ShTh6_61igiZAdmtCgCrCIOkcBXKgpc5B3mfv4Rz5ifusq1xuq3R2PRgbDQczXWBssS6M424x-9ljpVKifZArda4hepkgpPg66-Y-_2_pZkqFgJO2bufVSWwffpn-ZA1G5ufMhH9BMLis4_5IngQKT2b8aMWHfEnKRApa0IBmaoM_36vpRibDgtUp6m1HPcvdPOG43sd9JjBesQwrNO40Qnrhbw8lIZUqnM2VKlCSKNvuzcgi1sYEQckYVyXSv7jfOqnqdRHE_mJ5fzz31NBvoNq1RLPBRFuOldYsoGYtg4F_1THHxKVhtZIC_Rgs_DF9oT-6zSE51KoERXWI2lc7hf5siW2mnRiOAlWmEO6APKq5VcMS4btkkejR2nNtG-UkbG0232KbzggrtANgEWkT9rr1fp12-uPB6kZ9CPYUmamT9_YBbB6qtC4RY_DfgYndLJTS0aGeRwTpN4Bd6lE7s4vO5gQuhK3UGLR6CYCIRVHB49Uxvl1OkkSHhT7kAWna6mA4JcB5y6R0SzhGiNfpTDYlOfeTujWiJhwMXDRvDk2id8f02xEO5xkF4IMb7cCRWepJiVTQ7Xjs4mCbzwlFpvM55Vi5WkIWfyc8XF9JMqAYMWSi4SVXqgu_v4tpRyhgDh_CsDeCTeafrjdLwIHRI_x9zDAAoOetd8J-AFMf7Pu4fXvxHeI6GeRXdC0JMmERwFCJ2dXirxm9N91OhhDCnWKBxQWjBqbB2YMQBWN62bXkHML9ZQwlxmhQxEOQeR2ugvPN2HItNkbVcmAmGXgPTwuNk0mbqS_QJ-qcTkTBZa6xW74FtrG99LZQs0m2H7IbS3bhAf7rCyuig8BsXVwkPR6WJSiFe_ksx6UDxNEgS3rS3w4ZnmoeyB8P54-n7xFDjZTEC0o2e1siE9dj2dBDqCb48nDHTUhfXjomsy5CfYcjBpZ8PVT20KfWq-i7g6sGLK_7xJ0n17eIpUl5MQSKxvsEQBwx3Jjuo9Tu_uvsmdCwyJhLx_r_kXRGJUt6099LVfzvojnPiVvYuZPUR8glOjOAhL6Nugo0oMvHENVmxcdjWzuk826qnJ_cvWZY2P1LcgsDpWrb0TQLGGzthcVaocrJ7QsnuPQk76uHk4FhpOS018NnaY2HUbjytXCt4OhJ7X8-7b6Y1oPikdZlol0c1XN5cz0uSUtU3t4ntJuZiP5fexdToJRsCXbF8oZJ7IF13dXOlbEXMLRkqalnhcs6AicoLE9jfWwEoD-AJtkczNADd-AT985w0fbtgdbRU6hP_8feupz4e3-CchpU1GrZ8DSpWj2B--P2eVzC3HLh-4z-YCEoRKbdQ7pQQ8_AdQCDG5R-aUqpOGbrVWh0uW-tJPR_DI_P7fA0siaW8T75YABBzopbrrha5O-QFrjeTJAHQq6JFjpT7F95_KiVpsU30d7EqIANK5Sun4qZiSxPhqcb4Da62-mN2ILMrw1J6z6zMqVwtcFFR_EplA9Z2qS3LCdKyeq5CWDFk__B695jmOCd01uCBfE8RP2tekiRUFc15KQAmKspaNxdbtpFaHdPI9Tl1OA-HC0sWgydEAc-xXNUhgDg9R-pPBsSEfUVpEwNr4TmrgCFpyE0ilId2E-QqIe6qfmULFG2mwQ5mDt5DeUiflbc_Z9n0naFP0sXi-I3fqAUMl9j4qA16yqDvwjjZlHTwNrfQ-NvU8BuJeCvh0Sbw7UctmcUEJ_e7nToiJmZijYKZvyvsbncJmqcYzCGzWfZ8-Ue9IgOwhwHHOAO4dGFsFruAtb_YJ_sBROQp-Ih2FUr7dAcO3_wOSnzgEbFG0oMx0MwC1TwiVCJZ7T_Huw3nwL-_56Y-Qenls-tQKohKtRlkgw_CMC2YEMnKkNuGdcQI4B5ySrCuW7Ey53FzSNiOqIRR6I9gMOhce1IRqDMIXsMZNMckvVXdJtS_oWT6o_zoCEW01x7vbw5x-nvYP5XgbkB09zfOd1W8DTj5oGma8Rv2qKLVx5JOjn4TJ3ARGQ11h6F4UON7RbBEjrGO09kiUw0QadNP2RXqtnCSSiCT8UVSjLAMNVB-7SeNGjJQOFqvZPYmqWJJXg_pjXh7Ztt3u5_oqLgjRdKn21QbbJPYSE_SowpPzZHAgf2tLvNrfwmr-sPJJ4Ft_wjso-yWw1MATy-STyn70N6I74r9ytWKHuXlX1fg04dwBaOd5ns_5gdNoxD_8-k1GORzoOCfPsoa9N5u4RARaMdn0kLBnlpaBJqBtrQwjDPT_281OeDdqHKvd36LU_S6i_7aGvV6ub9ayG7bRQwT5YUAjFAVTCNRtKM8ooPH-AVv3tqcfbDJ3fOQFk7lv.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00724d0bd161ef1e016ae81ed848f487d1a0e1e9519d5c5762",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14489,
+    "completion_tokens": 356,
+    "total_tokens": 14845,
+    "cost": 0.00198905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14486,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00198905,
+      "upstream_inference_prompt_cost": 0.00181105,
+      "upstream_inference_completions_cost": 0.000178
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 72,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

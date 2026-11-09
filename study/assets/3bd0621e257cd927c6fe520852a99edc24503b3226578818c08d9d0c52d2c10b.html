@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#14294b" name="theme-color"/>
+<meta content="КонсультантПлюс — законодательство РФ, кодексы и законы, новости и справочная информация." name="description"/>
+<title>КонсультантПлюс — законодательство и справочная информация</title>
+<style>
+    :root {
+      color-scheme: light;
+      --navy: #14294b;
+      --blue: #24477b;
+      --orange: #e99517;
+      --ink: #202a38;
+      --muted: #596779;
+      --paper: #fff;
+      --wash: #f3f5f8;
+      --line: #dce2ea;
+      --radius: 12px;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--wash); line-height: 1.55; }
+    a { color: var(--blue); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+    a:hover { color: #14294b; text-decoration-thickness: .13em; }
+    a:focus-visible, input:focus-visible, button:focus-visible {
+      outline: 3px solid #bd6500; outline-offset: 3px; border-radius: 4px;
+    }
+    .skip { position: absolute; left: 1rem; top: -5rem; padding: .75rem 1rem; background: white; z-index: 5; }
+    .skip:focus { top: 1rem; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+    .utility { background: var(--navy); color: white; font-size: .9rem; }
+    .utility .wrap { min-height: 40px; display: flex; align-items: center; justify-content: flex-end; }
+    .utility a { color: white; font-weight: 650; }
+    .masthead { background: white; border-bottom: 1px solid var(--line); }
+    .masthead-inner { display: flex; align-items: center; gap: 36px; min-height: 112px; }
+    .brand { display: inline-flex; flex-direction: column; color: var(--navy); text-decoration: none; line-height: 1.05; flex: 0 0 auto; }
+    .brand strong { color: #c76b0b; font-size: clamp(1.45rem, 3vw, 2rem); letter-spacing: -.04em; }
+    .brand span { font-size: .86rem; font-weight: 650; }
+    .search { display: flex; flex: 1; max-width: 680px; margin-left: auto; }
+    .search input[type="search"] { min-width: 0; flex: 1; padding: .85rem 1rem; font: inherit; border: 1px solid #a9b4c2; border-radius: 7px 0 0 7px; background: white; }
+    .search button { border: 0; border-radius: 0 7px 7px 0; padding: .75rem 1.2rem; font: inherit; font-weight: 750; color: #202a38; background: #f4a51c; cursor: pointer; }
+    nav { background: white; border-bottom: 1px solid var(--line); }
+    nav ul { display: flex; flex-wrap: wrap; gap: .2rem 1.6rem; list-style: none; padding: .8rem 0; margin: 0; }
+    nav a { color: var(--ink); font-size: .92rem; font-weight: 600; }
+    main { padding: 28px 0 44px; }
+    .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 22px; }
+    .notice { display: block; padding: 20px 22px; background: white; border: 1px solid #d9c9a7; border-left: 5px solid var(--orange); border-radius: var(--radius); text-decoration: none; font-size: 1.12rem; font-weight: 700; }
+    .notice:hover { background: #fffaf0; }
+    .notice small { display: block; font-size: .83rem; font-weight: 500; color: var(--muted); margin-top: 4px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(270px, 1fr); gap: 22px; align-items: start; }
+    .panel { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: 0 3px 12px #14294b0b; }
+    h1, h2, h3 { color: var(--navy); line-height: 1.25; }
+    h1 { font-size: 1.65rem; margin: 0 0 18px; }
+    h2 { font-size: 1.25rem; margin: 0 0 14px; }
+    h3 { font-size: 1.05rem; margin: 0 0 8px; }
+    .news-list { list-style: none; padding: 0; margin: 0; }
+    .news-list li { padding: 13px 0; border-top: 1px solid var(--line); }
+    .news-list li:first-child { border-top: 0; padding-top: 0; }
+    .date { display: block; color: var(--muted); font-size: .85rem; margin-bottom: 3px; }
+    .tag { display: inline-block; background: #fff0c9; color: #593800; font-weight: 700; font-size: .78rem; padding: 2px 7px; border-radius: 4px; margin-bottom: 4px; }
+    .all { display: inline-block; margin-top: 14px; font-weight: 700; }
+    .side { display: grid; gap: 18px; }
+    .hot { background: #fffaf0; }
+    .hot p { color: #3d4651; margin: 0; }
+    .webinar { border-left: 4px solid #6379a2; }
+    .products { display: grid; gap: 15px; }
+    .product { display: grid; grid-template-columns: 42px 1fr; gap: 11px; align-items: start; padding-top: 14px; border-top: 1px solid var(--line); }
+    .product:first-of-type { border-top: 0; padding-top: 0; }
+    .product img { width: 38px; height: 38px; object-fit: contain; }
+    .product p { margin: 3px 0 0; color: var(--muted); font-size: .92rem; }
+    .action-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 22px 0; }
+    .action { padding: 18px; border-radius: var(--radius); color: white; text-decoration: none; background: var(--navy); }
+    .action:nth-child(2) { background: #925800; }
+    .action:nth-child(3) { background: #45566e; }
+    .action h2 { color: white; font-size: 1.08rem; margin-bottom: 6px; }
+    .action p { margin: 0; font-size: .9rem; color: #f2f4f7; }
+    .counter { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 22px; background: white; border: 1px solid var(--line); border-radius: var(--radius); }
+    .counter strong { font-size: clamp(1.6rem, 4vw, 2.25rem); color: var(--navy); letter-spacing: .02em; }
+    .counter span { color: var(--muted); }
+    .quicklinks { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 14px; }
+    .reference { padding: 34px 0; background: white; border-top: 1px solid var(--line); }
+    .columns { display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 30px; }
+    .link-section h2 { font-size: 1.15rem; padding-bottom: 8px; border-bottom: 2px solid #e9a033; }
+    .link-section ul { list-style: none; padding: 0; margin: 0; }
+    .link-section li { margin: 9px 0; }
+    footer { background: var(--navy); color: #f5f7fa; padding: 30px 0; }
+    footer h2 { color: white; font-size: 1.05rem; }
+    footer a { color: #f7ce83; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    address { font-style: normal; }
+    .social { display: flex; flex-wrap: wrap; gap: 12px 18px; }
+    .legal { border-top: 1px solid #ffffff40; margin-top: 24px; padding-top: 18px; display: flex; flex-wrap: wrap; gap: 10px 20px; font-size: .9rem; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 28px, 600px); }
+      .masthead-inner { align-items: stretch; flex-direction: column; gap: 16px; padding: 20px 0; }
+      .search { width: 100%; }
+      nav ul { gap: .55rem 1rem; }
+      .feature, .layout, .columns, .footer-grid { grid-template-columns: 1fr; }
+      .action-grid { grid-template-columns: 1fr; }
+      .counter { align-items: flex-start; flex-direction: column; gap: 2px; }
+      main { padding-top: 18px; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к основному содержанию</a>
+<div class="utility">
+<div class="wrap"><a href="https://login.consultant.ru/">Вход в систему</a></div>
+</div>
+<header>
+<div class="masthead">
+<div class="wrap masthead-inner">
+<a aria-label="КонсультантПлюс — на главную" class="brand" href="https://www.consultant.ru/">
+<strong>КонсультантПлюс</strong>
+<span>Надёжная правовая поддержка</span>
+</a>
+<form action="https://www.consultant.ru/search/" class="search" method="get" role="search">
+<label class="visually-hidden" for="site-search">Поиск по кодексам, законам и другим материалам</label>
+<input id="site-search" name="q" placeholder="Поиск: кодексы, законы и другие материалы" type="search"/>
+<button type="submit">Найти</button>
+</form>
+</div>
+</div>
+<nav aria-label="Основная навигация">
+<div class="wrap">
+<ul>
+<li><a href="https://www.consultant.ru/online/">Некоммерческие интернет-версии</a></li>
+<li><a href="https://www.consultant.ru/about/">О компании и продуктах</a></li>
+<li><a href="https://www.consultant.ru/about/purchase/">Купить КонсультантПлюс</a></li>
+<li><a href="https://login.consultant.ru/demo-access/">Пробный доступ</a></li>
+<li><a href="https://www.consultant.ru/legalnews/">Новости</a></li>
+<li><a href="https://www.consultant.ru/wanted/">Вакансии</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<main id="main">
+<div class="wrap">
+<div aria-label="Актуальные предложения" class="feature">
+<a class="notice" href="https://login.conslegal.ru/free-access-request/?utm_source=gss">
+          Новое! Простой доступ к ИИ-помощнику КонсультантПлюс
+          <small>Откройте помощника для работы с правовой информацией</small>
+</a>
+<a class="notice" href="https://www.consultant.ru/about/nc/webinar/2026-11-06/?utm_source=main&amp;utm_content=advert_webinar">
+          Бесплатный вебинар: заем и кредит
+          <small>Бевзенко Р. С. · 06.11 в 11 час.</small>
+</a>
+</div>
+<div class="layout">
+<section aria-labelledby="news-title" class="panel">
+<h1 id="news-title">Новости законодательства</h1>
+<ul class="news-list">
+<li>
+<span class="date">16 октября</span>
+<a href="https://www.consultant.ru/legalnews/32828/">С 26 октября для учреждений действуют обновленные правила обеспечения наличными</a>
+</li>
+<li>
+<span class="date">16 октября</span>
+<a href="https://www.consultant.ru/legalnews/32827/">Технологический сбор: Минпромторг утвердил перечень продукции и размеры сбора</a>
+</li>
+<li>
+<span class="tag">Не пропустите</span><br/>
+<a href="https://www.consultant.ru/legalnews/32825/">Материнский капитал в 2027 году: размер, как получить, на что можно потратить</a>
+</li>
+<li>
+<span class="date">16 октября</span>
+<a href="https://www.consultant.ru/legalnews/32775/">Новое! Простой переход в ИИ-помощник из системы КонсультантПлюс</a>
+</li>
+<li>
+<span class="date">16 октября</span>
+<a href="https://www.consultant.ru/legalnews/32820/">Предъявление сведений из свидетельства о рождении через MAX: перечислены случаи, когда это допустимо</a>
+</li>
+<li>
+<span class="date">16 октября</span>
+<a href="https://www.consultant.ru/legalnews/32824/">Месячный срок ответа на запросы профсоюзов — поправки к ТК РФ приняты в первом чтении</a>
+</li>
+</ul>
+<a class="all" href="https://www.consultant.ru/legalnews/">Все новости →</a>
+</section>
+<aside aria-label="Документы и продукты" class="side">
+<section class="panel hot">
+<h2><a href="https://www.consultant.ru/law/hotdocs/">«Горячие» документы</a></h2>
+<p>Новые законы РФ, указы Президента, постановления Правительства и другие нормативные акты. Новые документы поступают несколько раз в день.</p>
+</section>
+<section class="panel">
+<h2><a href="https://www.consultant.ru/about/software/">Продукты</a></h2>
+<div class="products">
+<article class="product">
+<img alt="" height="38" src="https://storage.consultant.ru/site20/201907/12/40901bd2808b32f5d203358373a4ddef.svg" width="38"/>
+<div><h3><a href="https://www.consultant.ru/about/software/law/">Юристу</a></h3><p>Законодательство, судебная практика и ее анализ. Комментарии и разъяснения. Конструктор договоров.</p></div>
+</article>
+<article class="product">
+<img alt="" height="38" src="https://storage.consultant.ru/site20/201907/12/fee811f19913e1944f22eba7838368e3.svg" width="38"/>
+<div><h3><a href="https://www.consultant.ru/about/software/booker/">Бухгалтеру</a></h3><p>Готовые решения, разъяснения ведомств, образцы заполнения. Видеосеминары, конструкторы и калькуляторы.</p></div>
+</article>
+<article class="product">
+<img alt="" height="38" src="https://storage.consultant.ru/site20/201907/12/868fb80c4085fa7f280e6cb6bb1d1292.svg" width="38"/>
+<div><h3><a href="https://www.consultant.ru/about/software/budget/">Бюджетной организации</a></h3><p>Законодательство и разъяснения. Образцы заполнения, видеосеминары, новости и конструкторы.</p></div>
+</article>
+</div>
+<p><a href="https://www.consultant.ru/about/software/">Другим специалистам →</a></p>
+</section>
+</aside>
+</div>
+<section aria-label="Доступ к системе" class="action-grid">
+<a class="action" href="https://login.consultant.ru/">
+<h2>Вход для клиентов</h2><p>Вход в систему КонсультантПлюс для клиентов</p>
+</a>
+<a class="action" href="https://login.consultant.ru/demo-access/">
+<h2>Пробный доступ</h2><p>Бесплатный пробный доступ к системе</p>
+</a>
+<a class="action" href="https://www.consultant.ru/about/purchase/price/">
+<h2>Купить систему</h2><p>Получите специальное предложение</p>
+</a>
+</section>
+<section aria-label="Объем системы" class="counter">
+<strong>382 360 169</strong><span>документов в системе КонсультантПлюс</span>
+</section>
+<div aria-label="Дополнительные материалы" class="quicklinks">
+<a href="https://www.consultant.ru/law/review/fed/">Обзоры законодательства</a>
+<a href="https://www.consultant.ru/cabinet/">Подписка на рассылки</a>
+<a href="https://www.consultant.ru/law/interview/">Интернет-интервью</a>
+<a href="https://www.consultant.ru/edu/">Студенту и преподавателю</a>
+</div>
+</div>
+</main>
+<section aria-label="Популярные документы и справочная информация" class="reference">
+<div class="wrap columns">
+<section class="link-section">
+<h2>Кодексы</h2>
+<ul>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_5142/">Гражданский кодекс (ГК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_51057/">Жилищный кодекс (ЖК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_19671/">Налоговый кодекс (НК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_34683/">Трудовой кодекс (ТК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_10699/">Уголовный кодекс (УК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_34661/">КоАП РФ</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_19702/">Бюджетный кодекс (БК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_215315/">Таможенный кодекс ЕАЭС</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_37800/">Арбитражный процессуальный кодекс</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_33773/">Земельный кодекс (ЗК РФ)</a></li>
+<li><a href="https://www.consultant.ru/document/">Все документы</a></li>
+</ul>
+</section>
+<section class="link-section">
+<h2>Законы</h2>
+<ul>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_28399/">Конституция РФ</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_305/">О защите прав потребителей</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_39331/">О банкротстве</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_71450/">Об исполнительном производстве</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_61801/">О персональных данных</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_34086/">ОКВЭД</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_12508/">Расходы организации ПБУ 10/99</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_15281/">О судебных приставах</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_182661/">О государственной регистрации недвижимости</a></li>
+<li><a href="https://www.consultant.ru/popular/buh/">Популярные документы для бухгалтеров</a></li>
+</ul>
+</section>
+<section class="link-section">
+<h2>Справочная информация</h2>
+<ul>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_544153/">Правовой календарь на IV квартал 2026 г.</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_520626/">Календарь бухгалтера на 2026 г.</a></li>
+<li><a href="https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/">Производственный календарь на 2026 г.</a></li>
+<li><a href="https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/">Производственный календарь на 2027 г.</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_522221/">Таможенный календарь на 2026 г.</a></li>
+<li><a href="http://calc.consultant.ru/">Калькуляторы</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_197210/">Государственная регистрация юридических лиц</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_197206/">Государственная регистрация индивидуальных предпринимателей</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_152657/">Налоговая декларация по НДС</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_32453/">Формы бухгалтерской отчетности</a></li>
+<li><a href="https://www.consultant.ru/document/cons_doc_LAW_12453/886577905315979b26c9032d79cb911cc8fa7e69/">Ключевая ставка ЦБ РФ на сегодня</a></li>
+<li><a href="https://www.consultant.ru/law/ref/mrot/2026/">МРОТ 2026</a></li>
+<li><a href="https://www.consultant.ru/law/podborki/">Подборки материалов: акты, образцы, формы, договоры</a></li>
+<li><a href="https://www.consultant.ru/law/ref/">Вся справочная информация</a></li>
+</ul>
+</section>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<section>
+<h2>Контактная информация</h2>
+<address>
+            117292, Москва, ул. Кржижановского, 6 (центральный офис)<br/>
+<a href="tel:+74959568283">+7 (495) 956-82-83</a><br/>
+<a href="tel:+74957879292">+7 (495) 787-92-92</a><br/>
+<a href="mailto:contact@consultant.ru">contact@consultant.ru</a>
+</address>
+</section>
+<section>
+<h2>Мы в социальных сетях</h2>
+<div class="social">
+<a href="https://vk.com/consultantplus.comp">ВКонтакте</a>
+<a href="https://dzen.ru/consultantplus">Яндекс.Дзен</a>
+<a href="https://max.ru/consultant_plus">Max</a>
+<a href="https://ok.ru/group/54395495251971">Одноклассники</a>
+<a href="https://t.me/consultant_plus">Telegram</a>
+</div>
+</section>
+</div>
+<div class="legal">
+<a href="https://www.consultant.ru/sys/copyright/">Все права защищены © 1997–2026 КонсультантПлюс</a>
+<a href="https://www.consultant.ru/img/mptr.gif">Свидетельство МПТР России Эл №77‑6731</a>
+<a href="https://www.consultant.ru/sys/policy/">Политика обработки персональных данных</a>
+<a href="https://www.consultant.ru/sys/condition/">Условия доступа к сайту</a>
+<span>Сайт использует файлы cookies. Подробнее — <a href="https://www.consultant.ru/cookies/policy/">политика использования cookies</a>.</span>
+</div>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>

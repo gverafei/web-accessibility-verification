@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible LINE NEWS and LINE MUSIC content, imagery, descriptions, and page organization shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged; the small visible color variation does not impair presentation.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible More details and app-store controls are recognizable and retain understandable labels or icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding regions and form a coherent, assessable comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, descriptions, imagery, and labels convey coherent meaning for the page's services.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing image similarities**\n\nI need to examine the differences among the images, particularly the green text color, which appears slightly varied. Images 1 and 2 are identical, while images 3 and 4 look similar except for possibly a different subtitle hue. I\u2019ll make sure the JSON includes rationales and that only key segments are presented. Controls should be visible in the app store details, and everything needs to be coherent without any defects.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing image similarities**\n\nI need to examine the differences among the images, particularly the green text color, which appears slightly varied. Images 1 and 2 are identical, while images 3 and 4 look similar except for possibly a different subtitle hue. I\u2019ll make sure the JSON includes rationales and that only key segments are presented. Controls should be visible in the app store details, and everything needs to be coherent without any defects.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B62PAIuz3RzSxX33AozaZZ6dlQoD_6QDn5QKUaVgqEpGiAUZ4AxVFv-dONKZNP_YHFCb9kssQbpDGU7EMzRWsBo-qznSLD5uKfdgB4c-oKC2luwO59umnEf4IklweeOk1UUOT-tcdeDFU3T9R1wyQGKiotAiCCQt0RqBhVCwkR6uCVK6IV1EPTwSSu7xmEMXA9YBepb4W37fXNhiQX42ZVIGnn3IxyuQiOJ2ykFieMNuRhPXb_xdXQPBlYiktHVcgXSGrsDRu6T07Mi-ZmGPN_sjRlAJ-KyIFip8LMGEhHuYQLGu02P5sDx7dEbBQuC8rmeOQuNZr6Hkk443Sv1cP4fN8QYF2XbXEEoyVHOr66M6EeIKSXhz2I_ucXwDedbpwQ9NmEXfYR_OkEXKTN7MREN5pjyFbCbQUnRaasiaxBXbYNP0oPq2txBBVcQ9P0SH5_hUv6HvqbByMTM-ZnIGsTRKktihEkVuCeOH3q_37a8ZrJV9G4HBcckHLiNBEVzdMlKEul4vP-KUsB0Ei_lBIIjjrlJW0pJAbyAdQdcaAJG9LXQAhTaiVDJbQFhAQjUrOWfwn_J1r4F2sBI1kclltUZmnYdVlAPFPULQCkB7G7Anhqc3dzw5orPeSlbxfV-hx1fWKK_urDZdhL7GN4p9v_7HUP8ZYUcXecw1gnJ2QYPBBkAyqpADVRSnQezw5QJi2lal-UU-WIRqp-D0mu3C1dJYcUReyQVKqNML4k7Kb1goA_OUH90CY0jpvKP13FnsiQGOPrVrMVku-OPrvBSJoI1DuvBuxR4DBlNHAyrnCeH4hg8QJEFr2x7eJQgtulOec6UHBlcL8v5ZNw5fx5QRUpxugzUDvxi8vWdVkGOijlSMCfgK5mCBL5AivTJuLw214BMYvpIIqdgwXOcQdvPWurIsgj8XIvo4S_5C2Z21UTkJVTtzp_X33zefaF47-tc2Km5K4QRnuWn0tuJsP2Sztc_jr7KjS5VitGYD2GwZgjGid8FirhbCPv3l5WM-EDUAHfi478I3CUmQQQamCyPhNdOroCKW-WcKQcxAgN6ik8dCFQb2kFfu4wBu0Noru7ysah2f-ZZ5til4pecHDWH2ebmPYF4Ix2HBQ5xSOxfWLcQmO3HeCMxg5yXL42t0nYngaVFlUAp070UAYn0RR8gI_W7eYzk7VeWWActhOUtkk6bmxPPUa4CcHYRC-b1LgIn7EuKFhsl4ZNJP2i4igQFS7LQj3ROVbFd_AIxz4qhXFeL5WqBtgwB3G_wfCSPS6Qhe0KjSXexgbS4mgyYlHWO0Cr0WtJ3ltvM1XIwssnEXjiNJvtZoPK76nEfsOvQf05q6pC5az5C9xy1fvfDjjYVJBB0wrPo5AKKwSREq56heUkSjOAw2SHnKZKDoBiAk5uBebEzXWq9qW5nkCTMj4w6CvDpo4XuXYdotWC7NoBi46J-IS3eJ9Wdiqc8w2enxmkGXqS71vuoyp46WHcZCe4rEhegwN4bgPSQVXgbqs6IZpqAf-JCc5O_UfXfoVruL6LIPUwM-TWchAr0lqyFO_rx5C44ra-KzixhuVWNI-b-5Jf9t4T4ddqSDCFGwxylOetvWTUJYAfM3Zug2hkzC7mkLjaiNofytYuMP8KcafAsKCTUrPAlmr9SeDwoTXi3Tu6ThICoqDwGJMDH8sMicCR_gd6oC7x0EZJv5ztYrPlwmkfTU_1OKPVIiR87KnLIP2n8DNTGV0pLSrryY3a3NTBiXfW3_DKB8Gn3n-Ed1hTzTtFpQSvhXYC-3pKSu1I5yTzy4rwpVvIr3pKm9qJv_38QRWaj8cp9iuIYcr67171eks9k7mv1ABgStF6KnpOj7a_IG2BTepIkhGLfHvxaAoY7rWmOy1qWb2Ro2gFUIly5hfpk5iS5jGVCmGxt2dFZ2AJ481p6f-0NeE73eZgVK_N-DRJRMYB0rNzAJzpnQ2KOzhfJwhuh2K51LVxxxpIfHK716q4qfHadHKS2idKobXQVDJg5wYKF9KuyL6KOTdW9_rwG0MsVK4JttV-v7CJqZAhDIxkkrnwYHpnSggxMP-ySZN9NSdAMsIsSqzjz35OHmubEmeBIENr5x9Npt9U4eP4xuu-PU43xBpeCE4k8eeIu6FtDTQbUrAi-spRLYvqKKHz71kk-KGfo_xR0XT_IEaQFNAWkpFpCFq0e1oUuov1CKlzryGj1o4vdGOa6Ye-2KeOlKHeDc0fu_tmKPo7ovoJt5PektGF1eREoKQIEjkXO-kRGf-JPrOmIwjeEm5WCVGLosK5djXYTZi4DLT5Ge-T5pge_26fYOl4LkWJrjuGn6RYB-Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0cd3b9513786b6e9016ae81eb4772087d1af34fbcf4fd34b6a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9848,
+    "completion_tokens": 279,
+    "total_tokens": 10127,
+    "cost": 0.001370425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9845,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001370425,
+      "upstream_inference_prompt_cost": 0.001230925,
+      "upstream_inference_completions_cost": 0.0001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

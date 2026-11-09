@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent WPS office-suite call to action and relevant company, product, and support information. Its regenerated layout and footer details differ from the reference, but no material loss of core purpose is evident.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and links are legible and arranged coherently. The partial news cards at the top are a viewport boundary, not evidence of permanent clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Free Download and Sign in buttons, news links, and footer links have understandable labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference views show corresponding news, call-to-action, and footer regions of a WPS Office page; the layout differences are consistent with regeneration.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, supporting copy, navigation, and footer labels convey a clear office-suite purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating UI components**\n\nI'm looking at the window, specifically the target footer and call to action (CTA). I notice some differences in the footer and the buttons, which is fine. The footer navigation language seems to need adjustment. When I target certain sections, like at y4539, the screenshot shows some news cards are clipped due to scroll alignment, but they're mostly legible. Overall, I think everything meets the coherence requirement. I\u2019ll make sure to return the JSON exactly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating UI components**\n\nI'm looking at the window, specifically the target footer and call to action (CTA). I notice some differences in the footer and the buttons, which is fine. The footer navigation language seems to need adjustment. When I target certain sections, like at y4539, the screenshot shows some news cards are clipped due to scroll alignment, but they're mostly legible. Overall, I think everything meets the coherence requirement. I\u2019ll make sure to return the JSON exactly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBy0bhygeHKbQ8LCEXY8Q4mEsDCbCXzTwAgDX-aW0qFHStGFMm7pjqo8HfgxQeq2TOq1BEQ87d-Q_ya6tAtdzd73ERWbW96EyiQYVZ01K-j5luughKWdcDukGmUR9Gi4wWC8682hwS9IJe2Fl1e4PGLYP4LyRvvrfrW4Ma_3KUvzqoPLCUT7NWyWsm7LEMgfO2kfzYS-I9I6C4RCgv4FnYb03AvqDZ2nMGD5zNW3xSznpjz2DEv4dNg6FKKHaqeOTSJQJMFcttvPgNhqwjeztY3-3FV-goRUXF7njBTNVThd2lcQJZxNQ521vTI79HMrX_3fV0_KIA-0FbqwXGai2kN6lpLaUWU74h3CHDb_edKkroMpROZcf9P42C-jzF7FUebKrgoiyVI4KLn6NxkJeq8yKJGPAdO9QSoKJadHc-3v-oDbgGU6m3Pk-g1mgdjkxfOQNoNEb6V4FF8f5zp-u6uOOh16-8Eglw7Bv4BKnbKUgcD1wahMgxGd4MCisHmH3SRadkBUpUyawR7mJ8tKWY_xiYbqHcORlrV5bFI5qFi2ABhu1vGn1kveUoigtmijKs3YSSe9Xor-3-VelymYuI2xra-yBo3wPj5EvzuiT-0GneFqhD-SFyh936I6DehkEpizgTHcnqmjlpnaneg7jly63SYbP2xxCYZKNE4PESiWyNcprol0kyK3VMznyjxrpuIeGrpE01gm_h0SUZE5VN3UAWhTU_TllCluocoLeQpUJjQhdiSscUgzuZRShktfDMtKjJDwsr3yHC1XOQt3VNvpbIwVVDsvKAZUMGY5MVlCFBX0lmiqI-SQZtWMs8xLPQvmG6WxKRzYX1YndeZO_H_wBOp_XLpn8wmgMU7HldXBL7pKM8NqLakZ98MhnNHS6g21s1m3D415fuRgwDJ_W2kCtylxj2Zd-phUWtitoqtox6wUUu8PD54P1NQSysZvYC8SKUg57H0ZSaOf9zv2XacNVn6TLwXHbob7h-KLjpxFaOnvnxT1VBse_qHhe6C7PiMPFHAZkClfdHw_tfPKV4VgS1obRsNwNx4yICnYNXW4Uxn_LOy2aPFysSHfKDazhMDdWT0bXw5hdSGqcBFEfMsjfYadvIDleKtT60MdnaYokvjv-Q0YmjTYO84spYWl-7ukg1z69KHvoWT-3YbGpx86IbdvDAnFK9qGJf4Os3FSktKh-OYFInUkak4CWoU7g12lE11zYmw_vkhdeOW90zWR_2oF_iJFymOVTwUjS9CqPHoFm2HxF_a4EptncCOageWkc8TisB8STalXobBQN8c4erzpXw5kPT8ZF4HrF9M1qJ302Sv6kJU11OUgkfPdMEkavSPsG20f9ntIT7Qgq-zgtTsLXjJ1UCihb4ZDtyjuVeGaZ7uaQYa6FCs2gXBSryc1qvs90OyguZcMn_aKCy_FqeRMJ-E-OWvT4XeT__TW9SS8RtytYBpU-U4jjI-96lEHgbpmSfvpoSNMDYPg4P9lwrNYv6Fk5pruWuyRFGNFA9vwgmiahB7PVRGg4Yly9cy2Rt5ETlDu7y9NlR4DM-x4Au0xGLqnlb3WoOmYavTeKwXZR38t7MlxHfLUz8D0TnznxunDj26wsbZZ6CUnpSLpJzneJmGPSlah6CszuAeUKhWmKwHQuqXq1EDbeJv-qZvKAQFFgmsYKJSrW4N6f_1lVc_z7CdbQ0C-2gfsNpsJm03xsS9mzhQMJnYM1o-OxUWDWmFgxX4ytPS-nEb9taC2SOwJIPjjJ8M6gEFats8YJy2BisA7STIJkS1JqYdrBJNts_M28trHjPz0-3-CkHquhwcWg6arufg556EAKJgKKzCNTvfh1n_Cboe_nn_ZFDMrClcDuYD54QwN3s4LLjCsd35fKAZUTQ7XJfGA-VZY8YnaLUVUvEeQ4BjRz-kvm7nR1Jk8x-oq285Xrmuc6nG9EQAtxGtreqpuXd8dgoGnASLFhlEQdAjgkdM3byu0sn1DXZmf8YyMYN2iuo17WTZCvCB1Y-Yvjoqh6XhHyaqqYwgt90HsJCc7g_0oZ7jIeQICZopiIcFOaWCL-hHqGi3VH9KLOv8MhOqgyg_2gZN51BkRrMAVH6pCE_T6sedr3iBbKFrRH_pHIWKbZF3c6tLLJoJUC77L5uJ5PVY27JKhVJwD8biETk1Xykox1WFtDlb0RiPR6xo8RYm7oIx2XCySjTjXZ73Shgnt5lSI-YP2J1zxp1_a2v04z9lN5gPEObxRzO-3Kk5LZ8TGVBKnF03I_ardYkXbPXGn8fWifAr1FvK_Dc6_JKddQH4aoV3aGZ4cCHPZ2BPqPst8Y4sANLRAdRz7E-rGEgCluAI0oxaNjtRnXrNqX3YUB_0DkiOdzDYgSjlVlJfGvy974OPJtar7eFl5StZwH2EmuVLe6UvEwuqOAfd0NjJQhYUgQP7N4r6GqTSx4NGpyY0mGvh28Pr0875t0___kNF2uCyHDIGlt01HYx-rXYAQondbcZl130t_qbE_Z4JS3MgbuG9QIOz7Rlo_Ze6zG4A2CKVmpA6Ahd-maQvB5-2AiXqJMy7iyLefS_cPmYQQV7SM5Uysu_muPd8wNQuduJP08p_WQ9NZEgkrDp2XagSu_JJ3xmu7nUo6AKDkkp1WRYj4fcwopPVTmIdRXoVQOwJ-qHFgeCCoroCj3AfMsxQfe247lzB3S2onCiuCBgKN6Hjtwa1vaLFplAf9a1hr4aQf4ozES1pHJ8URU_2zpHjBkZkYwWXdoS6aMGfwCNyHMRzecJNfQEyknrevUOc97N0X0TqfdOcPK-e8yjhnO_q35U8V-pKpds2AktHM_1sovq-D01ochaWPoZESitGNOLGwY5cnK0FgLmsTHinnFPMkAvihINSlyNJmKEYmGWxh5ZjVjxYXlyaaGwLK57RS-YSdrk5KVz7LIp5WM9WQc_wMsdAZduYgjje.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_075524bdc2ad5105016ae8206fbc5087d195925e559c358347",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8768,
+    "completion_tokens": 376,
+    "total_tokens": 9144,
+    "cost": 0.001283925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8765,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001283925,
+      "upstream_inference_prompt_cost": 0.001095925,
+      "upstream_inference_completions_cost": 0.000188
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 106,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

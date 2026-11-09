@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target matches the reference across both supplied windows, preserving the visible product cards, descriptions, category filters, navigation, and footer.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged; the viewport cuts occur in the same places in both states.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation, category filters, card ellipsis controls, and footer links are retained and presented as in the reference.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target windows correspond and are visually identical, forming a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Product titles, descriptions, imagery, and labels convey coherent meaning for the page purpose and match the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating JSON for Images**\n\nI\u2019m thinking about needing JSON for handling identical images. I have to assess everything to ensure it meets the required standards. I'll make sure to note that the first top cards look normal and that the footer and product are in sync. I wonder if the controls, like the ellipsis icons, are recognizable and match the reference. Plus, I should check the filter buttons to ensure they're clear and functional.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating JSON for Images**\n\nI\u2019m thinking about needing JSON for handling identical images. I have to assess everything to ensure it meets the required standards. I'll make sure to note that the first top cards look normal and that the footer and product are in sync. I wonder if the controls, like the ellipsis icons, are recognizable and match the reference. Plus, I should check the filter buttons to ensure they're clear and functional.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B7ThJn6e0JRREp8BWY7M3QGj0GcRNN8xVHFB0EUrmHEri4uUKfaLksFV2FG6d0B2I9-lCyEaPMuRGxbnOQaoqAElggKBog-FEfAMr_O86ywMU3GRx6_fIqz5ulfe12r9dsXRpi7XAddCqm-O-bQDciK3tXaIwfaC4NWh6A74fqoTcF0FpBwemRiqV6meIfc2LqTzzPF5R1R8ZZ44njUoGljzwUdDO4SukFd6ddo_vkIANgd1gGxjfdxww_Tnm9JiRqnnR3TDiB8UhovTiJAY7ZaVC3AbrBWBsXM5H0ZKAmd3QXhzJtlothW7C9ybp3c24WcuUU6R2Lsbh_CXBawiCFwt_pF_SiQibsq_7LJp0bKgaoBrnTrBgpO7HDfmNU8Q5pnQgHmvWyTgeUHAGEHGvjU-3Lx4Kp08SRWMSCAOr9im7COs8rTJHaotl9yJ6BT0SgoCPHVHYACtqlIHVROCWiQqEQ0Z-oQYiQc-QfxeySeymowumQypN1KCzUX74lR99-Qo-7FIkuMkXewQ_4ncwm2SSPiY5BPGzH25sMyv6cIpKd384TCk5eu25R-HLB2YZ-HMEQL4QGTOZkMM6geR7s4-tghAAo9c5H3AFUZkBWxboNNKZOX91avunVGBBkAfYTgwq1buFZ31hMDDGCYS1ODyZvOB_4jqP8SVWaYKJpSj4WEU1quHBx9X-1fqL1dRVcRNvgiAP8kiH3xwY3b80mwmX3bjqkQkYRcNdA9hY6cYjOpmwJQqUlVJUeBkYpFxhqfcHaVstJvcF5H6Z4fV4_txiVVyeegCxr6mW0rf3G59ajR_CLRzsDMJb4_rRKy50X76CnLGQe8rfJj2N2mEq3BC6b8kc_d_dX6qKoAV7VgF9xQNd5UMUb5HuH4nAEgLV013iKL7f35evlGpGaemZQl_9qBEsfg1ni5mTrMlY25A9g2xKFMphY4Up6cuGtebJROpxS4FrPLs3yTjUWCfmWVAedNMMSjz4luNoHP2cS-13D_uZhxWF6Fra8RppsH3iNGaQ8fmhummsyuSpzf29Vfz8CWCQ1ZvWo4MlSNrIng5CdkmKKKC_NMGJwOt2pBZBH2BXBCz1CEWsgiE5K2q7XwzfF4CZUsZltmg63yNVCMOe6Mjn6f_JGtkRtLngGdZu5QAqfydVaHoUT0eNZKd74FzCZ7yP-0FgFk_9Kc-pyRxI9jwKP8G-P0Y5aTAiQkaKQP_upe4popSVF27Ypla_qxIYl3bufLTv91Rl5JWeGxyu_vIzMGM-S62oLYkbI4yeJgtXTOwFkXmX6H7EUhA9vTvFeqc5JeUp5A_ovdwlKDTZ9ct00TDSWzQC90wakSiG378vAi8QwyrdnXCxwcg4QWpbqyXcwHiM0CmPUoyBml6q4-gG446RmZSN8f3W3tefnFCQs1MhC0ae4yLFhvhVEL6GvqL4T9NnzmGqWjgw_KfEv0rRHRIFe9UcCFo3tVjyjRQPnG_goJYAcsmVkMQ79U3AvThImw-h1nVTNgYTlnLV99tpRzUeuj5miH80HGQkWD4RoTAiyaOCY1crszZW5Of6pdK4W23S09FHwq1SzLO5KHJWrP56OhQxjl_7rsMFenQaXzK_ScXzCW-QJPmzpkiub0uT-YLdLtyOo3vRyOZb2Bx4Fr7lRePGGFePQEhsxO2WqeQuXX9Ssrl9QBYpM80c1sYvD4X1UK-CZGOSd4FPkwkf1L5SVr1ALOCOew7Lr8EL-zUeLQPAh7vIxD_ISg77Y0WsMKqQBZQ8G-iabyy_EaNb_N68P-K0_6qvZKbVILaNqXQlFcjBFKxnam0-azLTJsBCPgPFCgm3-SbdW5D6hqC2aTTe0w3ZaQAAtmM7pbDRk8hQHU4aNV1ZZwRAd4_-0zPi31BL8WnodwFywTCvO3K8SOPgxS3-WS_DR2wBhEeiyRaXJ_J1XmtFeDiEPY-r0vR2eW5W95xozkr0INvfrpipQ5e8R48PT9xVl2AMjdhOND_uyUjZdm5QOrYlBIAx3N5NJe1gmc4hDJW0x9H0RMgWy9XXchQ1vBphkJxuoea64DKvKVOEOaDEk0RwZphM5UWcZeVqLfs_XuqepPOq4hxsVx0zNKIuUETar1dV2W.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_01d4d17e76c2600d016ae81ed225f087d1b95099846aa096d7",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9849,
+    "completion_tokens": 277,
+    "total_tokens": 10126,
+    "cost": 0.00136955,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9846,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00136955,
+      "upstream_inference_prompt_cost": 0.00123105,
+      "upstream_inference_completions_cost": 0.0001385
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

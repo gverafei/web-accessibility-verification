@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s first viewport matches the reference, including the headline, supporting text, prominent action, cards, and start of the next section. In the lower section, the accompanying phone illustration changes across the target\u2019s timed observations; the explanatory text and accordion headings remain present.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible page text is legible and coherently arranged. The mostly blank phone illustration in the lower target view is a frame of the documented animation, not evidence that actual page text is missing; other timed target frames show its contents.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The prominent Get Brave and navigation controls are visible, and the accordion headings have clear expand/collapse icons. No essential visible control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show the same Brave page and corresponding sections. The lower target views include temporally varying frames of the documented animation, which is a coherent permissible difference.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page communicates its browser, privacy, and ad-blocking purpose through coherent headings, descriptions, and controls. The changing promotional content depicted inside the animated phone does not undermine the meaning of the surrounding page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating viewport animations**\n\nI need to evaluate the viewport references more closely. The first viewport has an exact target, while the lower animation reference at y1000 has a partly faded illustration targeting a blank phone frame. However, the target at y945 clearly shows animated demo content through the frames, which makes it dynamic. The y1000 target image appears blank, likely due to frame timing, while y945 displays the entire accordion and animation effectively. The evidence seems coherent, along with JSON rationales.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating viewport animations**\n\nI need to evaluate the viewport references more closely. The first viewport has an exact target, while the lower animation reference at y1000 has a partly faded illustration targeting a blank phone frame. However, the target at y945 clearly shows animated demo content through the frames, which makes it dynamic. The y1000 target image appears blank, likely due to frame timing, while y945 displays the entire accordion and animation effectively. The evidence seems coherent, along with JSON rationales.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AQZXbmyVF3q5mhmgT0Lb6LSJ-TCqDqcOiD4AjkGlUu7U2HU57G6dYZHcVyUUW6r4vCgwbWNBz9JHOkWu4Yin_SlxQe7wr55Y-DlvOQMVLxF4i1aSywuMeoiBkAUOMI2TbIDgedZrXQogUB_Ovy1nwda2AWWA_xuCLjkpm5bGWNsyQJv2WENEqIRbi0r44qZ6shob3JcBwEe-Sw4K8ABYT2xMtf7Lc5ecb_5mS0MTkEGX6Qp7p6yEEkGbLTycBGBB5QnXDcJcL8RwhDcEJ26laJuqRpSM1WUE5EQ2sAPzJzVJdQ1l28w9VLpwX4E5MtCVz4DS7ReKXXQSimErghKjGKZ5zvtjeLd6dA_SwfMDRoWezvgDsV84_DIAQertLV4OK1kGe4iP5mLhVDEoBdQ58QTy4cawMZN2SJjIGansu7TfUcNlxVXV4NnY0ruj2zVttDjDJBeY_nvwEY8MHEA1yLZsWFcs1E5EK0xbFngLNSFzyWyFhptdvCZpZCwhgvPwHN0tp_m3xC4fkhgnUcMI1poSeTcknxU16KLPiFW3Y5VwYEURNU6Bg2xce9LG5_MoZ7_8FhNUT8sXiu13aE55tklTJQM_wYYHnsDAWHNM4Eo8qzOYK9d1jtQpOmBd8C6lOHZJOy98zIATAwAJP4xdeXT_Pa9B9XamM_NywaGmRaCbajJuXpIfvNqfWH_UYwVbBvpTY7gbzFMIVtMwJ2MsmVgRFvM3elmiweMMGBCsqX9-UUECeGHHXJ7qLn6i-oe6qlrRPXMlsqM2wYjtgylMVEzS4bM9JalobeaDuzVWPHyfZj8LpnsuMU2JqGvS3XtH6Y3o_uqw2GnCSpJn70W694flOyT5KiOBgy5QsKBLaZW4VaQnnB4SieQILZifPrQxTKx_GjJ6RHV6owmBQFRu0x86pDzgOBdh0c-85ZzPTJ-84rR2IA5RvZmfei77qB2-YnfDWSh3ugRLw8UYh24teWPXvCtm-SMQHPp-VPIsxxBaAuodP79KvYKN_c6Uq3i4MaHT1hpJm00ea1Tei2DEw1-lzVz6v8ODF2M4XWHZssfJGKS1IyAcGQZQQYFwnjWH6uO0LwsE4kREQ0SENt5tFF37Qh8Xbx43ycJ9d2WT8UHg6UQga02tr084pE8tMGtr3En8-cm8lmHlwYHwTPWZ_IqmEGcu9or8GNZoLsFCcAq8DDE5yNKxQtGvzjIzahKYqhpdo-F9fGbEZ2W-gkRoQwOgbEZ2Bq1KkjtQN_rHDx7v0JA6eHhTM0g7815TSWeFV5z76DSpKR9CzYqDTWaZgXTRtZ0gmccjhnFbViHsVa4jLdPgoexkNgR6Yn9TC7nAIr4EFjOJfANWVsD1_V1ZJOiLnLvSyfwrtUqMFU7iC7RdZfzJL7ACErz6hwV3plPS8YJSYZBxnFGJR7Fy545kvFS7Iqk1nyxe-S7pDvjpEtgaulIwBCY3K9RizJg0Y2yktoWdDBLTt75NP119DIFNYkoS9GZ7T4XV7kY8kvBqnmo_10KAOQhojshy34WRKPCZ89JatqV4npuUkFuKU5nFk9JCRESm88FnR1RP_nXtWIu-JKlR2tmmp4RsTBTOg4XTrdagNpypqd9K-ShzO0tFVF55MOZW1jUCRfKrQU_ye4-N-VCNJEvfxtRoCUpsEc3pFYf6bNTIgAS3FcXhNxxZQc581ONkhrxMe-j9qp1A0BtNOtyHDQUSX4Y0YCD027xwZZ4E0PDW9ax0rUHKto7A2Cd1rd661WKLkSlfBPK-7NEUmR2XTqlTWZRWNDqLXANsK5OtOmCjBZTPFegsJyf67ldIT5fcM6T1iXuAPeR0k1EL8OPBpQTVt8r3QoXoHPVq_rC2JL4LAAz_zi32y9J39KVNhyS9BR4jtp8H8JoFlAN7kXEz9kPWSCk5izxVXMUfNZspfTJBEh5-DCV7x4bhWHATK_Hw5pzTvb3WtSovXhXAkCr7_Kxe9JVzDPY0GwG5NabMIZCu3eHu9zo42a7vlDSQKk2t3TcOvQO-6EE4sdFhDUuCaxiQobwOyycJqe_Cp6MXFGXFibiLajyxzQQFUuGmKBkMUyc54TFWpnuacH7P8_lbwxWlnBh59hrm0SNPf7oMWHGuwNtKm_jm30fnlRsFKKhPAabhwDdR5MmNAcaL94uHiUUqSD-bauWBbGSBUlzX6t3nyR2kGeiPl4gizQU6Pl_P2Q79aW1BCLTUPu1McCIdCAh_mWQtE-xjCXFkDRVJC2RPNHYBzX2jGrlv6tqJO6NmUfKT8iAsufKshETcf0mitvOQuNpBmAviadKlMzrTsmQfk11HFlIVT6P-5oqBOKUFC_H5d34Sb6IlaHzk2rL9TPE0PqH1pp-LPtT73wS9n2Er7cydr65LawQiykEAqZGllhMRixox2nbrRd6apvGguH7TYR57-2q1fDSRy6RybsBS3pORncbo-rjlos3af7bBwtZmSyiY68czlRgqcAebV_acmVDosMcw66Fkuou-rXIxvsz2sm1PLvv_ZgJkEU4-KoF-47-PPUBnR-5Xx-73TXfD_LE7IBkZePFUPJfoUtth4ZX49IFqyRsb3Onlx8YznC0IYTKNIcuDvG6xJHANElze0Efgwfzqo0P_mmEaRKXQ1QZOnsaOOAymVUxGLIpHAiuQPQTxQt7JJdkOzYTGugXO0xczfBa8pfc81huiJoBs_uAecgo4cTfM0owCacaNjkQmD3KENZ3yqa4zVc1Likbcq5RRYujIXBB2rM-6HBR0m1k11WeR4a58x61YPVka_6aML4KfV1BKoaQQExZ8i00UPCfE9I-3pf5GxqiLlzkuYVA9Wh6m8vHQ4_FU4JcpTZONUAo56dmbpr6XMnqMj5k4_bBPjixrlQktVY3crFJyUiDtIgGpNwT2kHoBlME9ek8mdiyWomt-L5t-sEhtpc3pfaCsj2T7Di_w8J_zxhPXbEeFvA6wuCsQjBEwqRI2eRwcePFOkvKoU2DvBAEFKrhGZzyNRKPkWpfj7dpSqlwX5H5L2dVCWtxbtzB78mm5qu09ZOrsdvZydi6dW9OexVozqhPz4vhOFX82QjCEKjWwOaUk3YMbWO_-PPZdWYrn1upW89thI2F6qZhRkMofe6FD-m7t1R7oHIVG9xfQjKwFapl0v-TQad_rNsUkQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0df241135e070c7b016ae804167c5887d1b353b8c6ed5feb11",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21098,
+    "completion_tokens": 450,
+    "total_tokens": 21548,
+    "cost": 0.002862175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 21095,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002862175,
+      "upstream_inference_prompt_cost": 0.002637175,
+      "upstream_inference_completions_cost": 0.000225
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Gandi news cards, a help prompt, and product, support, and legal footer information. It is adequate for the broad purpose; matching the reference footer inventory is not required.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and links are legible and arranged in clear sections. The partial news cards at the top are a viewport boundary, not evidence of a layout defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible documentation button and footer links have understandable labels. No unobserved interactions are inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both views show a Gandi website footer region, and the target is a coherent regenerated layout rather than a mismatched evidence set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, descriptions, and labeled links clearly communicate news, help, products, support, and legal information.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer design**\n\nI need to assess the target footer/news section against the reference footer. The target should be coherent and have regenerated content that aligns with the broad purpose of the site. I want to make sure links are identifiable and controls are visible. The evidence should show coherence with the same brand, but it should be redesigned. The presentation needs to be legible, even if lower content is cut off at the normal boundary in the target viewport. I'll output the findings in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer design**\n\nI need to assess the target footer/news section against the reference footer. The target should be coherent and have regenerated content that aligns with the broad purpose of the site. I want to make sure links are identifiable and controls are visible. The evidence should show coherence with the same brand, but it should be redesigned. The presentation needs to be legible, even if lower content is cut off at the normal boundary in the target viewport. I'll output the findings in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BvMyqQAOWHgyZxVGIWt2YV8HJfKXj9KV8xMMDVQevvOQjduxd3apTIEdFRVB7SYshy9saWY8kZC1ZmbWvUlnCHYthCOge_CYn72Y5aeFVh-PgIdDeuSDoYK2-mp7tn56WjvpUpwhgFNBo-vP5Y873bNZVWfZnCaykW1w1MLGf0oCImT2vqe6ZPTGqdY2H6PMYUipQgfyOTZmx0z2WuSsddObN9MKqt3Jz-HPRk5xNcqdwr9haD2ybBpncJrM3lMI1UKKZeL3JDML5jSsEGkmdb8Vybbwl6AwL-t4S1zudO9CYOaNXT6EQ2jhMyhpsur8cLcdcYaqSqiTfTgUZoJh25T8sr7FoCf2UMNwgzi9JiPp4EGTukiBUut9Fmhfle5Pzospgwar80okz4DgFiaiON4Mwowt2syj8nEsVb5e4z6aVlAbyo6xtcwd30p7Nowg76FJruG-f97x9i4FcvpToqA6Vr7Jiw_DaT410qYobqzQcWJxIedzFKlJM0j04dd_Yo75uz7mM-fnedOJjx1IvSFyLIHYGnCLVLDkq7RWc_fYN94xnk91sr4eMMkoiYMSor3tqPWlHNgxhZaD-RS4JepNyh5kUy5cgG1kanu__oOl_3xmRDxvWhGvTtu_6ogsV3OdaCFqgTvnCQhTCx25m1jXTCIU0LN4niHvxThU19R4TkHYObCjuCUxse-e08mgy5mouUZJ86X5qGgtBIEKCAcH2mffUYLNcNchRdtz3BXDTjFqsgrvk76MuUS-guf5zDWyvRQAPGx8l5YPfI60KVxjjt7jMU4cHvEwYiCAZ7u2HaREQGcIBSFrLywdkwWEEDnXLdU5N4OMsOFCwp-iO_3M5YbTbbrr3EYqAP_6IYKDp4iLQRG-PX-X0hNvF7qLOeCCs0t5KsI-xgfilgE_cBLMMt4kEXuCt_ZTKxbz2U4E4pR8O8kThfN2MivYC_kR1YsrJ3DdwGyaMMZ8ZQ8SrxHYBAD931jyFHBNxMCBHwrnTmE1UXzVlbH4A_EHpZdcN8LmenQ0D-iSHNVCq7iSRWOD2FN54g4ycD_4-4AcNV-Hp70rL_Ao1t5mW2VHGJQbB7Y2yCbiEEhI-wUd1zLwbH6cHQN1WP2xVgG9z6wTVmlyr-UpaQOBdCoOnO913uI6ugzsGzTOOOO8xl6sRiY4D6-4bKTRywSFNAUIhP7rAoEmgeM4Eqfag4dWTyjR7YyGTlLJ6Wp3g-invFEgA57Ei_do1zB3JQayjV2lIlteOwJrqFiKTz2vtKuEVf7_EUn0rqblKS_mGZzpdTQwPSkPXU7TASMUnK2XKlB4T5F8NFEaOf0M4O0iJ9G-bs49KZmd6uvR0b2jx-FyKa4tvs6DYXQCL2eDu3E7Af5BlqOiUtbELLCPq9jiuIRr-M-ZaX0YteDMC_4FXTA2nwwsovuAZyluazgCVcE4Sc24f_Om8YEl-Vfh3wlfeD8tcF50EcQa-jUuMXBRg-17BK7lrq46ZJ0E4nh6dkSUfS9G398BusjOGZVD_mJGgSk_iK6o-tm-veTM14QTu-zazbYCTUEv0NXyy3a7Lo32-wjh6jMp1OGeEKIJYa7C5EuUJutbFfno7lG6PVHsAtYWYqdlACn1bd3D0Maws9_GpkXrl2jMboTkNl-4J7q0h1Fyz3RjjXj5Hh_Ix4q35eHqGiBe18uXnF20DzCsB_J4SApOy7y02DjagKPCKZGlFu1DOm-ozS_KKz2hYGI5WmOaEuXCLRbNJ2rIXsQ7tRBxzIoCVYOyvbVnEq_v8csTsOZe0rJ_NZTmfIqHF_TCAHgKPhDQq59GueuXJh9tT19VNXqiqd29pPFZ7Stz1fElNq5gwbvBO-dFCD37q4MVatT8Btk4VbV-YCLrGYOolF6fa8xsM6Lvjn9pbXyI0fBiD4ln0Q0ppFK9zImt2RZJiwChAH6FdcP-x9fhgPbhP80hFUL6xrtgGUmzG4jIXmOcJZTg96M78RYYD85bnh0k_wk8QQNHERpglwxqJ34vp9y8MR55eGOmwQHC3damq6oPmM93RclyGULm1eU5c3hz6fw8SBUMRSV4zr9GRMJ_oKRYhize-DsKFWQ7xrc_N9QcTASWiqrkAJyvBQCDoAOnXQm4TA8sb1rapTod19KPEquQBsEUJWk1DfIfPdMcUmHCpK0r9jJx66dCjdlYC6xQl7OjCGW8R9ElIU_6GMMFR4FZq7QRZTbS6M3FTxtdNHi1WYPGwNp2-lPzxIIgosZuHS_sXKjaSsnUrJk4u6hhdtW9vUYWpSk_hm09MmAFG14TEuyfOe53bFzj556IgRpvEIxfA8GLiRF0e4nz8Es5b5dsGn3EwU4LNuizVSZMHjlR7nnn3jKUf4NgFX_6yTkGFzjD78gdvLxYfAapFoQGVDU0V0y4a3dMpeyjOo3J4um2OaNG4_U3F8NQl0JUAB_D_S5kquUSY6FB_zWeBu2KN4Li0F8tw0VFeP8xakvjo-xG9qT4svEKCfACh459-G55GAn_lwrI9pZdUgXZcXrFxusmcTDdVZwk2ShpjQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0273b429210811b2016ae81bcb5ea887d1a9df6fd1eafe5148",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7007,
+    "completion_tokens": 332,
+    "total_tokens": 7339,
+    "cost": 0.0010418,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7004,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010418,
+      "upstream_inference_prompt_cost": 0.0008758,
+      "upstream_inference_completions_cost": 0.000166
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

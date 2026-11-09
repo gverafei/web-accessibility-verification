@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent technology and climate article lists followed by site navigation and subscription links. It supports the broad purpose of a news homepage; matching the reference\u2019s featured climate layout or imagery is not required.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target content is legible and arranged in clear sections, with a distinct footer and readable link columns.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Article titles and footer options are visibly presented as understandable, readable links. No essential visible control has an unclear label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference are coherent news-homepage states. Their differing layouts and content presentation are permissible for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s article titles, section heading, author names, and footer labels convey clear meaning consistent with a news site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer content**\n\nI need to assess the target footer and news list against the reference climate layout. The goal is to ensure that the target content presents a coherent list and usable footer. The reference images show climate feature cards and a footer, while the target has a climate list and relevant links, which looks fine. The text presentation is readable, and the links are legible and semantically correct. Let's make sure to use the exact JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer content**\n\nI need to assess the target footer and news list against the reference climate layout. The goal is to ensure that the target content presents a coherent list and usable footer. The reference images show climate feature cards and a footer, while the target has a climate list and relevant links, which looks fine. The text presentation is readable, and the links are legible and semantically correct. Let's make sure to use the exact JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2ZE02vunX6Ivjdr1lMum4bI4e7F2lxarybgZ3axEsiPLu6LetZvXItGZsyZau8G30D25kAlv15pBs_uqS6fqG2e8R-_0uXe6j4Msfm0Y0YHd7RlrXqV4sN7zdmdy-Bnp7JVcPdnkNIFKmxAG_LLzCfLmSd_Q9LPrslplQapEnbUyfXS5y_78uMS_nlKN_hSVLYxlkRMXdocqNLJh6amvrWuduOANGyjuY_HPAjTD0Wwdiy8y-zEfp2tb5145mGMWB5RBK1OpUKNUluFxUttpMsRMC4vVn7ZlD6gjYBgllfaymxVFuTcibV9uBBnXVzRWVOJERTWvdeZodT-2Q29BC0EGDykC4tMpZgv6tSvjgoiXz6YVUZOATOATNuUfF4GgFjwHgfiGbbsWFoBe3plPKq0Yaa_mEq79hqlEc9Z4dAoO64n1wpch0c8u-KyxZOwtXiOjtLNSEpT8ux3DSQ-1nwqoPEQsuzX_M9OK_llND2LRw_aZPVWdScbH9Oilg495_TjaSsvRZ04f1W9Px_kj9W-hL60vkvqFU_IYGtZxRrcBDwMx3c87likfxr-pDuLZS_a6j1e5q6JPsmFwtx8t-xg2Zfnl6M2Zfx0a3dbFnyQ1cO6XzWkLgbX8X-txAOzBP-USn8QMXTMrrj6D9kDHcktW9oKDCd-lXjxogHLzv9uzfJbP-1IFn4VBLke5SCT31Xz_NMh0dYKXYYs8NGcJjbJvVzAtmtQZZDfbkgp0rDEAy-t0P8AxDBO1ymCOSgHFaUgMHyI64cuDdhdxbDHnCIiVyxPsgPSth9eNhhJuux21uwLd12sgSW_0BpGrz-UzxG1FDMC7m2BZhJAIKt-zG5MP1Jza3Sg9T2IPD1ypT2ycoyUut2MS_dsGG2GrlD7uYVlIuGAkLeji_mrUL36lCQttd2GD3a0c9kaagx9A-QSyQzTRe4-eg_qM4uH3fuALCMYOWaqaKgVB8xLO76-bcuMnl8Lhza4VP6rWNw7waNX3R9V2N33Vk4DHY4Oj9_BocfP3QM4ss7mBMVUjKwG2erJWBtmdxJlnrgiLxJv6kG5QpWKKJQGKnXRlUenzoLSdUaEG5dUt-SHE5Rw4oif_pREa2TdjqC_68gGIeKMLDJZGNFddhy-U8MjdNqB8z_bgk_IDTg3mLcFCBMx3KwI60vSJnhr32rTJZ9Dj5YLLzhBquu7R-xa_2VqOM9wt2igzeoLIs8QlD0op6L63Cj1loJ9rfXAf6_sw2uFIuDLZlK8cipN1xpm1PZ4IDWsP5B02_BuGIp1cRGp0rfjWw9qB56IFaniy2tzfsu6ljbwL8xgSAPhFmwnc2phSIOhXp7NvmnkqH2jEJ-k4h8R0rolnMBTe8qjHC3MaIv30opqy72-RjFgNTCo8YmrZRxiEkukzYY1kfl2l4pggD5HKcyQHKGyGpOQGAKJMtrnalfsF8sYWIpXq02ohUECdUOT7i8I7oPK5-gi3fyqV4mjSs44D6z5wI7CGQ0l0M3SafrSep8IUJ7gsh2UicFqBlHA26Zjhs20ct8707QmQrlDMmS3Q7JmmJs8uEOsaQix6QtU9UO14nNhP0AhTvzjIML8EB-qkK6poNoy1Rhb4FfAEs-ldIFZ1I0CrLD_ue09613iddxXE64hQRdSQretP8b5mZOhwxe__3rY3O_9-nxwPS2wevFiwsD-VLEEjZ6viSSa9MSnB-eUbI8YHYs6c6PXQvIXHeWl1jVLGbWuApPaQQOc7rPnBu3OJOgrWt_ekXur0sfXKy6H1XHorHuwAVr2QEB2J_cY-WttFt-v9hKlBP9clfAVCyQVni6iLiNuq2t1NtZmCmL-Hno4QyjiAPXz6rEFA-Qga3eE4x743eO1EOX8h3Tuhj_DTCAT2EUYSbLN4OUTsXHlxD47I16xto6m-pg26YJwz-hKtPdv2mhYOgMZZq3QQykNOjzbD0Q2bdn3mrqd3YMDBNgHQXz0L2W9iexB2CwrFyXAhCLx9oQFvAYlYAWgWrIjao0KpXuvrin5uu7Zn46epKIwViUbEbob8U8jR1h2qZilK-NaEb9CpH2XqKIz6airgiLVB8gUvnRn5kenIXtzRo72U8jA1b-mTgVS641IZnJ-zRViLasL21Kl2gDBMRiFpduwcRGRV-jRBk0tJ80dc7zAKWdlyZb_cE303VKICEKgtWTw9EG_UV0o5qyZyHGtI82c4r437WZNkRL87lcMTks8PKfp_xee78N_VGbXooCt9nb19uCFUs4vXdBDGui2xKGIULvYiTwNlaFFNKm9WrBaeQ1WefGVgSE20KfFUnh3mg2ekWgbLGo1K7yADd9LvBjIbSFRbn4lKUpn0A5Nr3bwjNxPKS9t-ejuL9DE04uPPQ8bOybJ3nAuC-PJ9joLXkNTMwqx4oLCP7X8DtJ_OGLQyZF5OGFJnnhyILTTl4tqeilTip9S8isxkmWv10UpgYa3JW8jmcmroy5hfs=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07a155b05036c759016ae81d98665c87d1b4646e2f2a2321c7",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12627,
+    "completion_tokens": 324,
+    "total_tokens": 12951,
+    "cost": 0.0017403,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12624,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017403,
+      "upstream_inference_prompt_cost": 0.0015783,
+      "upstream_inference_completions_cost": 0.000162
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots are visually identical across both supplied page segments, retaining the art feed, profile popover, category navigation, and sign-in/join prompt.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Core content is legible and coherently arranged; the artwork grid and surrounding page layout appear intact.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, category filters, profile actions, and login/join controls have understandable labels or recognizable icons.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired reference and target views align consistently in both segments and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The page\u2019s purpose as an art-discovery feed is clear from its artwork, headings, categories, and visible actions.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9828,
+    "completion_tokens": 188,
+    "total_tokens": 10016,
+    "cost": 0.001322425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9825,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001322425,
+      "upstream_inference_prompt_cost": 0.001228425,
+      "upstream_inference_completions_cost": 9.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

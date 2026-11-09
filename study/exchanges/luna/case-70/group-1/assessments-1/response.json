@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible reference content in both supplied segments, including the homepage message, calls to action, customer logos, and product-feature cards.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged. No material clipping, overlap, or broken core imagery is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation and primary calls to action are understandable, and the feature-card controls remain identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots form a coherent comparison at corresponding page regions; the displayed states and organization align.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, descriptions, imagery, and labels convey a coherent Stripe business-services page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Comparing image pairs**\n\nI'm trying to assess if the first two image pairs are identical. The second pair looks visually the same, but it seems their checksums differ, probably by a tiny amount. I need to compare images three and four since they look identical too. I'm checking to make sure the content is preserved and the layout controls are correct. There might be a visual discrepancy in one card's content that needs to be targeted, then I'll return this information in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Comparing image pairs**\n\nI'm trying to assess if the first two image pairs are identical. The second pair looks visually the same, but it seems their checksums differ, probably by a tiny amount. I need to compare images three and four since they look identical too. I'm checking to make sure the content is preserved and the layout controls are correct. There might be a visual discrepancy in one card's content that needs to be targeted, then I'll return this information in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bio7aZApIpQBf1HSWad-dryKBzxn7eTO1F-wbQu2Mdf_atSLZVdrFq-vBHxQYU6jVjQyDI7S5qKgzEo9GAO64KmfXMLuJgbKKZRY0053ZNUg91wwLCq11tp29gQGUkACiYYnrseXrt7a4epjpJL8Dx2N_GuF3gU_7OSw0axesFBQMVJ_qwTyihOFsP9iZpwrfhJnB-O051rm5q6toM2NVOrWlpqE6Nve_EMb_msjKz9bJyXKFD4o-Da5Qrq7vsSkz0J0q1NzL2BlI-657xt2UJYIdx49E22L3jYqLtp3-hmQPjARxy52v-LRX7WCXjciCMjH1eBauSD9UF1mnjwDnGLlBBaIL3MkOpWKQA9aanVeIf-vnTaee3yUm4ZwyI2D-w2tLmmqfcQ51lSDa5hwSqhKBGgvHpLS5I50x-xPadpUuBO-IAhTekB7Y9JgSbu9BFSIuM5sgP1fsqIAS1KuGzKk8NwVVVSc-jfIapYx8tznEfYRwTmsFp1HjqiBQykLrUQ2nkzg85AqvjErb8qgM_jGJiDRk6gNUfpU893UKVJ7Zq5u-KsuFf7xq-Zcrl2vM7OTYJstRYh6sxtCmxkOwL49TDhvLDAL3X8_S9hnrBEXvtajkRnywzgCQg0MTZLzAugBmhL4Rk60pEfVyGMPiFsdtJZG38uFsVlbLK5s4E0IA0rX3lrbALHUNw13-dEtwlaVodspetaHD1vkq49D-PIJmxccv9QNFx5RpYwSpBrnm6dse1bQB6lvWwASpI0JUw39JtRZPZ0dyIklCjDC2ToTp_wOL0DiytkZ5qgWNFWKwRUpOcAmuNrjChXgoUfLZCPr6EUj-nqJSYAUki2pOfkTh3ki7DZkxPaSjEJ9yEofQxhdEb-WQtae1uoC6e92iIsgteLrzISOfPHyebSdfGIYMDoIqx8FFk_goNTpArUg7L9GlRFd-P0cNWdDTSKNbt3Afhv_nRPNgGI9lRd6waBvBHGmApFB1-0yYgaoIajGjgAqlvK2ZO-6eF9-DUHZRXufuiJRpyVIx9k7e4eCZwhJvPLFr2fjBw1VuZJlH1JLH5p8FjsyCCzRuvshZGRjExZ20yUlzaLCrpqQ7CaleFJDKlsrxSBN9L_VtffHhyFqFLLUq-Ykhj1BAQ9oNFALK3iORFbSkFuZOqbDDSnqG_Yn_lenfnFdxywwts_ky956kwcuooVATTDG1OibsobAoj5ALc_sol23X64xTaHwIAMn47JvznyjbQekEI4D8JnPr5cmjsmPqln_kPI7n02MutwBtY_b-RYdFTKtZohogY3hQNO-8vre4isI1VAhC2U9ZUqLLDfAs3Eu2wY8Sp9yo1Hkr7MNl9H3Wop7BrpXTVMmQYkaOosnw1xkMIvnUTRLqubLYhRAbD0JdjHC8FfOUCcPd30pYCTVHpsbbIUVPeJwR7wL8h3cfgMJz3loIMMcTAWvaOh1cY1xjRH9On1401-FYPFwc5mr6_OD9RCh6U-zT1bOXvMF3vGAr2Xpa1u08r5wEGXcyne3o3YO0A47MvOndcFtaNNs2uVxMr7z2Bmw6WkLUyfxkgx-akpM4KgdVIo7HNdfjLoZfyy-80IpS6kfGS59K_3O9JktxwKaY3YyGHbRyHBD6-aTE9UOpRa7RKWX73ol09fus1JBvOVZ9ZoEPfFRNiHYSfUeV_h8-nfsrG1jA8vW9mrbcJ7NMluI7i5fbcA2ZqgjvMNUy5k7T_5y-d0yehjKyusoZfaRWibQeOxEcEfyy5yIUwsdB-p9_A2iftSrXcOtEw6vxDxjrg_6OmmkGNgm-kwcRAMSax8J1Kt5UNYjRET-a3CXOPnQDScCOTiIRiV5aiHnuukd5HTJ15RAQ8Cdho-Da2LJFMd9knQ2XBnXbU6JSTskS4ZyRZnuQGJDd3ossr6YeLDxv6Bjfm35dV-G2oIb0XuPp0iMKVpcHPc-n5ZIE8-x_V8Kyrq1SRk4BIu_2wbZAuVmyuV3yIBED3kiVEJZz5W3u0ideq2EUnb_mLn6-JMzC_kCp4Tpu1qor-O-gWwEgMuYUFmcJbZnd83ByulQnze7r0wbogsSs-r6K53AdL3CfaLp1EVVUheC2vlfsxgCqTd8RW62zEBOYqpUWb9FuMBivZ9M9v5620dYPAmlu24cUZC2PBCoEXg8YxVBb5zf9S8b3ZZHO8E7odng39ghJ2TnFMUNoJaFfvu18QlcA422NTw72G3EGwbGDD_ULrd0OPAO9xnqMQTfw45CYqOXyfWJzVK-A70rSdl5pYDHDbR_GGVDqySiY9uabtCL5NJJsRpvgoh3l3EbNFTKdd6t_WxxxAV9l4AhYEcorJPIr5tUhUawyNfRe9DUIZqYLeqWcEr0ycs4Tzxj7colPyHMOoZx6wzopZ3zyazffD9PgU6R7-XYEifvsqTd6gSZjYEY713AZ_A1MyJ2hI9E8HJ8wCkR4sypKSNmsYR0bbdqD5zFRogI2M=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06ca960a3038d7f3016ae818a7265887d1b9e59107cc9e6319",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11019,
+    "completion_tokens": 304,
+    "total_tokens": 11323,
+    "cost": 0.0015293,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11016,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015293,
+      "upstream_inference_prompt_cost": 0.0013773,
+      "upstream_inference_completions_cost": 0.000152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

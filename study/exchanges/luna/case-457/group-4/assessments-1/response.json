@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views are identical, preserving the case-study text, metrics, navigation tabs, and footer content shown.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content shown is legible and coherently arranged in both states. The blank area within \u201cC\u00f3mo lo hicieron\u201d is also present in the reference and does not indicate a target-specific defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible tabs, the \u201cM\u00e1s informaci\u00f3n\u201d button, footer country selector, email field, and chat control appear unchanged and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views depict corresponding page regions and are pixel-identical according to the supplied checksums.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Spanish text, case-study details, metrics, and footer labels retain coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing JSON requirements**\n\nI need to ensure that the JSON has exact identical hashes paired together. It\u2019s interesting that there's a blank middle panel in both the reference and the target, and it seems to be a visual blank. I see that the reference has a blank \"C\u00f3mo lo hicieron,\" which may indicate an unloaded video or embed. The target looks the same, but I shouldn't see any defects in preservation. Everything should control visible tabs and the CTA, including the footer.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing JSON requirements**\n\nI need to ensure that the JSON has exact identical hashes paired together. It\u2019s interesting that there's a blank middle panel in both the reference and the target, and it seems to be a visual blank. I see that the reference has a blank \"C\u00f3mo lo hicieron,\" which may indicate an unloaded video or embed. The target looks the same, but I shouldn't see any defects in preservation. Everything should control visible tabs and the CTA, including the footer.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CDAAxmZvS1IUtRHcqNmQfjuRlvV6uakL2xJWWtIRsFq9PMGwpgfFmKXE90pRDF_IJ6J_ihEC96HJN432kW918CO1CkcLTPMzPzAgsgCV8O8SoWabWMkwe8hdY9PrLqoZzszG4W_EE6XfWEZxrbT-EQREnO8iRAP46oCpNk1PIEIROTPYA9-vQv8L0cfQvFy3jHyncL7ABRT49hxNEve9GYojU-2uY_VV3ab2LIr7T1LlHR6HCmGCchfc6ai1YrA-uOrbt0KdeGuDemvpOLCMr8D-5gVoh6PcTaWQSMUQEZI6ArBO8yGDBuK9BF5rRScj9JXxIs9CGm71bTNOpcvNsKA-UUAX6zdooPYyd894hAYrgP1KVIhsX-_hkfV-pnkYPrav_Osafr5jUEY2ZbtaC60bZss0zXR-Axn_TbanRbZ9fObnhIMTdg9BuQ2U6A7igKm0rQMMc6LzGFkU_INcqXFLk-FTYd5TFzGCD2r8h6WVwqK_dtghBk_dKEh-ZxkARxMT7rMQWhbaKPelYW6hVU6v52IS9HQLjCeL3jn7aZy6JPgyOMyPt0Dc6z7UFZQ3OSvlT6yhf5XulZaoYo1JWza-bYbk7RHQ8a63J9WKW3Lswse7GnOKPDdlbTeBaVux_hO2jIftS0gnNm8uRX6SD-uhuUIj2vXUW3C8EA6IkfHftohvJcJxs8lIbWtVNp_uGYK6QfA4tVD1DAoalmJMx3nTvsAgEVYubnnq1el24I2UMdLIGzcY5uWaUerc70ayLi_wOz_8A2fplkzsVXPOeKsZf1fsbmMQONX7j7S-m1Mx-DRJraJdsxwoxkMRu4Rn-jyPjR1Mpg7FgzMQ4Hb6tjV3xzJwPFjSt9YaweCgm-GdIRJiUOIJ6Dd_wEm91lw4rs7syOO7YNIQO1CUdb28vSR3B1KcEs11swsL65oKIBltKWPuqlQ_M-74E0rGEkM4lGBrdp0BHotcUqkAa-HNDzlsE0yge_EgwlYztgxeeHVq0puIg_VYeJAl2P3cI-R9XnW2csaxwD_Kiu7lcmjUWFGEw5D3fBmKczAqc3bVnjbDngXCrEmNCbOh1GST3DN491rsENpYc4TzKcbAfYcAqMA1w8WoTI0lw8u8BwS26uOkdOon-fPdj_kcrnaxaWtQpBDiwPqtbhPlwFO3i0e4VRtrcD1N6CXFqLlSKb-tTKxdHOVodhIi-JoYEf-_sMOoPZ5lBrnqSsQUBRV-kiX6zKyWKU6qOJqxQg8fhGNf9BIzQSwvoNVXPTkoRvVQKB1hx8TSl9TGeuC62IYJ4SayTs0e_tOhqCGeR9kGIRnD9bBk_-pQU7tzF4I3P_9vxbMBiS4b7nelRLFvM6KGbRiBgHeb2rnlFzv3MPkZwFu0RzU0jost5w7U27KhUTltArlvnFualjVwLbrj7UdKBUM7COMqtDt0nxw8aK4MpSY3pHLZUPTNMnbpSu4xbQv5K5NhomTDTOUQAxUHo7k0p_PDGrdtG3JJd7UNktpUgEjBlv-U3KCA-9sa9ESQUzZNbv5hmSb6KiF3lLTlkOysCQK9UfGSzUbu64iogUoRXUgnA8pQUwhec2NLwxXUafzgd6DbxYw5oG-1SSu971yrRrQ_gvWaNMXa51KkS9LDsUsM_XORSE-QwjpYlVUieNfSw_TMFIwGp2ZEB7aHrzTjq6G0ixaW3lVOC5jGM3oedC6gpL3NjG6TFkKbbt2NPEPIDLWWMJYSdDGHhLqM_Dl6KDwDjkzwZqStV-0FQ8xWJEo8aaM7QMZMGBmfWsct1x5oelauuTSlf4Wo_dS9lC45Ff01gTW_prSptrysZQvpAqyHOcfIj97lrrtxNyiOPMq81ihRqAn-TXpJE9kj5B6s8Bk_3HvcIvgRP3TryPA61CHGz5JAIFlhxoU8yGraddycn3J-4ux07UlTH7VcGjtXa3k-qXM5gf1vWXzJLav-TDAz_oiLfBOGp1kDQzRtmxQJIo4MWhNeko4PorIT1sC_XLYG5xvTHAIrv198BfYtgRH6DbSfockw6hNcmb2a2gHq2q_FEIGnUgkTcXAyz8J048dzPaNtG2pmbJ4OUiJ5m373wDEtCom6_nPPJMd66rJMP6QU5jfV1x94GMSqJDNC_gjWLR0X1CYGgtCx-XIgbHAhTpMcRuGvxUneAcWGMaY2PZoquO989jxwWYWMmhmOsA6BR_7S1Wk5lWlxNxQ8QTe-gH9owwhf9RacRG5ta9jAfnoB7xm9QcYL8L1xu0h5JBya2Kl4bxYGzEljE5f_W7sCi7BSqY2U5r6JkzuMt7mTsyd4Zu12BZmLp3ZTQNSmrGTwucsndIoq7BaLOy2Cu7GfDXexZtoTUJqnCvPurMoJ0tlvoU61Yu8BgA7KF_Cx59MmhOOYw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c218d75cb3139de016ae820bf2f3087d1b3c88492c3c31bf2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14374,
+    "completion_tokens": 317,
+    "total_tokens": 14691,
+    "cost": 0.001955175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14371,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001955175,
+      "upstream_inference_prompt_cost": 0.001796675,
+      "upstream_inference_completions_cost": 0.0001585
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

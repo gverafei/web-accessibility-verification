@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both pages present PHP news/release information. The target includes release announcements, dates, explanatory text and links, which are coherent for that purpose; the regenerated page need not reproduce the reference\u2019s exact entries.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Target text and links are legible and the news entries, keyboard-shortcuts disclosure and footer are arranged coherently. No substantial clipping or overlap is visible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links have readable labels, and the keyboard-shortcuts disclosure is clearly identified. No essential visible control has an unreadable purpose.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent PHP news-page states at different scroll positions. Their distinct layouts and content are compatible with the regenerated-page contract.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s release notices, survey announcement, dates and navigation labels convey understandable meaning consistent with the broad purpose of a PHP news page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6597,
+    "completion_tokens": 275,
+    "total_tokens": 6872,
+    "cost": 0.00096205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6594,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00096205,
+      "upstream_inference_prompt_cost": 0.00082455,
+      "upstream_inference_completions_cost": 0.0001375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

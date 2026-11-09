@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent news content, including a climate-change headline and author attribution, followed by site navigation and subscription information. The regenerated page need not reproduce the reference's particular sections or stories.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible article content and footer links are legible and arranged in a usable layout. The partial content at the top is consistent with a viewport boundary, not evidence of permanent clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible footer navigation and subscription-related links have understandable labels. No essential visible action control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference views form an assessable comparison of a news and magazine site. Their different layouts and content are permissible for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headline, byline, section links, and subscription information convey a coherent news-site purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing footer layout**\n\nI\u2019ve got to ensure the footer region is coherent and clear. The images I'm targeting include article cards at the top, with one large image and title, plus the footer itself. I need to check all dimensions to confirm everything looks right. The footer links are clear, but there's a small card in the top right that has cropped text and might be cut off due to the window boundary. I'll reference all sections to ensure evidence is coherent.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing footer layout**\n\nI\u2019ve got to ensure the footer region is coherent and clear. The images I'm targeting include article cards at the top, with one large image and title, plus the footer itself. I need to check all dimensions to confirm everything looks right. The footer links are clear, but there's a small card in the top right that has cropped text and might be cut off due to the window boundary. I'll reference all sections to ensure evidence is coherent.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BpZ9yKsGDlh70JKFdA3bZqbOIHBlRKqOmC_lLM41u1gFzZ4P57HTaMUPpDR5qkB5Nat5iPb1GXcjI_kghWEU6EMXs6gNl0M4i1MIPU7k49TU1_S79crR6ghJibUaGlXeE41Jr9lufnnSpVzLjoBQ8jUYii8xRVV5zepUG3yRqH_tfULS1VC2gpoQnPiKl4bsClcBuyDhi5nbLDq15-nkMvqTeEiZMB903hrze6df_GSoGm4t3q-luh0g4DZDn9zR_DfM1sCT_3bF2ImeHACv62nIXM4_H5pMmSBU6difcjQ2qJ_StGsieQQ-xXOcRfIsINUj2eg5Q0--5saJxNKd-bMzZTVNHwB7ADxlceM3Y_f0NEF2h8jxEaPdHXvfgJabEibJAG0RD1L3GfUAmRUEkJtL74A1LL0XZ9cij6J2P4DY9m6HRAnDdmJYM6zwE4n0hiNU28WG7DFiq7dby0pETSrw6U3RaL8t_rG0rxwkoocLqCC5sR8REJxiQ878ONfX-DiFBrmR46MDNtV9MJuVpGOJgciz_DD1PpKXKHeDshcaagUnKuYtZc8empaFNaV96aKEDoqNe_MMt13v9RbZGj1CluSyK-vWCvUdVgI9FvJwvwvCDebeYqgCVq_u1ARwv70d7vnCrebeQb353a54x8RGE0pGoBcbUFeT80vR7a-A8Nv7xrV8wqoHK1Gc2Os3o2S0e9bLun3RgYD8LWobDASNFnXAtDYm-GeOyA0bzkp52lAbJWEx3lB6tRqNl79OVsA1LhGuHkW14uACx3sAtpTl5TO-w2va3nxVdwjEtsa2aqU03HoR5n_utehdACP2ynhdx6crS1LPQKC1ueCCrv982Xbkg64mH1Nd1f7gn3s7ajRX2dqqLbC4-R9CBPKEEq4bEt7pfNaqODXNpTfY7_j0Bt82Pbu7Y2lv96NWHYNXi41wxeAW7qS1GiamDhReDJqJ9RrXl4JUiWE77ZaeiRBrNs7bV32QG9VpzhlUQPOL0qoSMaLiJAAfYAvCJE4o9aOdRjZdb0g_CLN_kNVeLGmRUokBViye-aA4J9I4ZfwEyNJf8FXhUtL34xgwbZ9Eu56S0AjYQDyphdOvHQVDhHS229Fa3E64xtoWcrtmf5YjaHEMVhDfWOrKaOz_HWytmnrZqJtxBOZCzHuW8GzwTQAJ194GNkB586kmYqhAgiBVN27KxsHduXilu95OaaKY7K0BSSNOFqjnBXocd2yMWESqhqojCZL70WsjfjlLy43wGk9FIZS9eHQdvofwYQ7psAP_hD3KIvxFuJpujpmulMGUhWabertOJIZqYDxooCF2DBdeoTxUQK2uMv5ZXqOx5AgwR7Cx74vcbarhC-upLkPNMh2GzAwP-pJ-_94lJrRG-O7NFCdXOB96c0pBi-oa1xWiwiLpgN1qkeYZ02707DVNlI0mbHszFkNc_FV2R646k0KLKuMshXFDGfQbLYY5PsnwbA2d7mhkCWMc9R2u4ES5luq_fNivwRFWKE8Qpr0YWZ8zMXQ8Mmjn3Uem68mbiV_-GlhoV0M91FbDfLQGcP7j6p6JD3fDzj57_4mrSfG4jymXEmyYnrOQUeTtHqK6K2OZ3SesC61QU0oViFAi_rH2nnhko9ovFM4dzqN8Xws6CpDix1KMH9heJyG53XN5gY2yeOF8ltyMOyCm4bQlNS7A_ad9IgbhGkkP-MR9pTM0v_hXiXusK7SpLl1l0zqCzQgqg_C_GnY0aI39QtGOx56v5PNK1El2mCwvTLIVDe2YbFv_V79ppgshUrbXLbBcA2votUzNgmGl7X86Qmm79xpjCe8UphD0AZBHEwziK2G2OLRomoju_nJ-koiYvMqdZqRU7UFgIMlklsV9Tx681oaSTtveEByytBfM0XkkHWdjZK8D2I6DEbeR62UOjpKTQU96GeA6jJ0cUZlwrHWTjWkuXrxwTur0i1rSmKBPWXDn3fw826_jyVGFt6_yPMu-XsVeTAWD_d2dMNASrpBVKQNp-_3pSY_u06FQKjDSu8_We4ym-PGlbpOC4N1eJVBIEVbJ2EALRM74VKaLyduWf4qPdxBtYtiws7FGvAYNODAW5CRYWerA3bo2Vj7P0q3La6hhvAfu7JGZ1Z7io_lmhjeglk2Zu-C5dhYEPmaliGGabd3TYlCc-MtinK1UCpgDTVrbXUbDvx49GQc-nZCT1dmXoYa4O5Z9yXJ0R8P6pMBLeFpr9uB9UhRW1rFwOUOVvXV6sbOy53v7_SYYyR6s0AcKde2EHPc--0MdfF1jIs5arz1sJ5rETaqmvp-1RGtmOibFWbZe59kT-b5XUcrAOI433jt2ZzEn--EXQ-6koZZsMAvSPXUimWxQiGnGsH04tnQ1ex3LtPTyLwtu83MHKP-1FqoaIxhuuTGmOxR5pACe_ae9kOM471MjoFeEhi9zT325N_0SuRSnPqffsqlW67_zqJdrVDQfWVaLK7Yv71YQEKXbQ-EtZSb-0dIl22z8yto8Qn15DRSYpLSc0e7DciQueC_3qH4zZohHYNwvc2P1ltt0KjfH1k3Bjt0qkL0A_thQn6FHOwyHQaZke_rt4AYGyii6UsBrW4H0ngfTiHWHnlnSydeR2SEjuZ70kvSJ93kA57NzvFA2xkn6gFXh0v7-E9MAeTMHji1E-P__B39QrG-DZT0pVnPTvKdw3HBTRm4jKpdtF6TPclbs_qilGtTfxaepgct928mnIbHDUNj9jRWLLuyLdtS0SjvGDspAQDl.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c6ca703d33cd95e016ae81a57769487d1bc5798e83f26b9a9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12523,
+    "completion_tokens": 357,
+    "total_tokens": 12880,
+    "cost": 0.0017438,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12520,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017438,
+      "upstream_inference_prompt_cost": 0.0015653,
+      "upstream_inference_completions_cost": 0.0001785
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 86,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

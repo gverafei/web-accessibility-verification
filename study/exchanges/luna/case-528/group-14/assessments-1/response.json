@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference window shows the BBC page shell and footer around a large blank advertising area; the target windows show coherent BBC programme listings with matching branding, programme names, episode titles, durations and images. The reference does not establish specific lower-page editorial content to preserve.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Target listings are rendered as a narrow, unstyled column at the far left of a mostly empty page, with default blue underlined links and large wasted space. The cards remain readable, but the overall presentation is substantially degraded.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible programme and episode links are legible, and each listing has a recognizable Save button with a readable label. No essential control is visibly obscured or unintelligible.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The BBC branding and content form a coherent comparison. The different scroll positions and the target's lower-page programme listings do not make the evidence set mismatched.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Programme imagery, titles, episode descriptions and durations convey coherent meaning for BBC programme listings.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9388,
+    "completion_tokens": 253,
+    "total_tokens": 9641,
+    "cost": 0.001299925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9385,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001299925,
+      "upstream_inference_prompt_cost": 0.001173425,
+      "upstream_inference_completions_cost": 0.0001265
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

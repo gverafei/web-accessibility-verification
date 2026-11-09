@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent legal-information service, with news, product information, search, and links to codes, laws, and reference materials. Its layout and wording need not duplicate the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page is organized and readable in both supplied views. The lower-page lists wrap into narrow columns and leave substantial whitespace, but the text remains legible and the content is not substantially obscured.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, login, and content links have understandable labels or purposes. No essential visible control appears blank or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of the same broad legal-information page purpose; their differing layouts do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s Russian headings, news items, product descriptions, and legal-resource links convey a coherent meaning consistent with the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating layout coherence**\n\nI need to assess the layout's coherence. The target has narrow columns positioned to the center-left, which results in significant whitespace. While the content is legible, the narrow width causes heavy text wrapping. The reference footer has broader columns, but the target columns are only about 165 pixels wide. It starts at x427, creating an odd left gap. However, despite the narrowness, the content is usable, and controls like search and navigation are functioning well. The coherence seems present overall, even with the weird layout.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating layout coherence**\n\nI need to assess the layout's coherence. The target has narrow columns positioned to the center-left, which results in significant whitespace. While the content is legible, the narrow width causes heavy text wrapping. The reference footer has broader columns, but the target columns are only about 165 pixels wide. It starts at x427, creating an odd left gap. However, despite the narrowness, the content is usable, and controls like search and navigation are functioning well. The coherence seems present overall, even with the weird layout.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B_joofwTJQ9E97P-gARZdVdS0Nyfz8UXjb-qFQEnMCa0PJb2TF4IyMHrxUMOy8lmZOpUy2kBCs8t6z9ExKCXAiwva7e-EWFcUJHjasNpjBCirTqZdUF3cjVxQ-xMl5wk-13AS8Nj_ApU-mxcs8v5Nd3eHXWNAhnt8RvW3EH73yRKymX3PjrG6CUbAiymbb_i9rESQOtBY1nedZXmAiRORaPsZheTZloq18GzfZwMA3OaFf7WnVKHMMp_d_ZUcFyOrOJiIHzFCVaMTvgKf6uY5DiobCjk3MOmv0gswNqGGzb3MKgu1YHRUB3VZSb-cJWPqkDarHHwSF8ADbCJk7QYVzXgRmXcI9LpCIUODycN_rtyOfj_krYEXmQCNCFpELkrsmiLkqWu-8mYYvQm1y3nenkWjBbdW_ZON8J6kJFN5AziNzEE3sFfRqW55Z9u1A_rJw14XqLlHlEzMBq-nBJ1x-jzykCQWnR3kSZeXS84bGLL1DTMvSASlsT1joex6v_QiH6Rc0xK0ONLY91_6iKPA1t7UXpyJpVCz-mx9pDbxfIKyTBzNMEeqzwX1KmCIfZEtQB7JPhPDoYEj14yszL8BoptTNpAjTyYpyG0olvfh-x1FDndhGCPVJetYZpw2mM_0xL6u5vZimLCa0_5UFT8O2Smb7dkQTN6SWJXlbmCiiVo5AZCiPCJ4dW1dyOQhAD6B7LtTfJfpXPQfIz50hzEQ-wAWIZz86lh-whWtvvdy_Z110fgAk4R6SfqyE3CKADO4DTa9Cg4d0-iry-QqfDny6JIyyv2QuVzNiFE4RCnA4msGoK3z9CWb2ZVclEUCBqc_YE5LpNlv0ffyPcyhkrRZjwZsmQK6u9J_xpopBFeI4FBSSv2t10UqdcuzYUvxJ6RtL0F13waI2ayVvfxA9EUd5bCfzwss1B_2bvhbt_NgTZCGInHctCaXG8N6-WBb8IG5wlBS84rd8ZJcT8ktjXewVWZBh-xGBVpb4Jy_R3Z3OSFre54ai4KNhjqUicurhbKdN7mNsNyaKNDHVPQsdg1QKyihWKmoE0YoEfu9aWWptElCZYwQXX1dUIck37M9rnru_VrGLIgsd71An9QJU8wC5mZtmkL6Vm3uRAxXMYBVubVFKdzIYV5k17exRTf7UKBw4swRMZ-fxpdsYME5ipuJozP9hZFBPpQqitglQi-_cUHqt8E7JAb4Z3UNQ7PF6-ZJQIQxTkrq8VH-RefW6sujjE-3xbclWiUZ9kmlOxWGfrTngRT8AMncygg8FlhesX9zi889OMvdIVLfBGWvZVmn_1_39QHC3EGKv6gUkWrjdFvaRH0mPPkQ0IUacEzLqMsxC6CjhVmCAkOJpKto9QUw0wlDPGvDOCfkwK1yG_1UxCC5KpmZ4jlM2eWj0NXrEUyTMFIlAhT7QVaSvp2JhpNqlnrhJMl1ZoXbfx3KKtd8XB39pM_M6guYkXtV8k8CLr642h1GlNSYOr8WtOBkYkY8VATX-QlhmTuRaV0yq8tuUC69jn3dw8rrlXxKz2CG_61Y0jzuflMpkgZp2sy1bPmeadafM-Pp5yoQU4ejYt85Yt101U3PtXDPAVAThHIP0vMC4ws6oGM4A_XcMSmtHE49QrLlY8LF4VqMgWrMRe5tGxaN-2fXqB0L2KuzV0oAcXj0jfhWV_j99aD6m7XuP0HQhKpGljwP8wXZ4mrXgOshdN4Mcm_XKoYqpsyRQuv7q65ZratNWoQBI3oweVTrq_U1Ioc9ZWU95I7c_XzpFn5XtgLRu1HnYMkyBLflp3N1TwHS5hfoBoh1MrHtW5x4k73Z0gfY5oMVAZq5EKkFaJ-J4e0YeUye0jVPLh1A5I7edFr3GR1aQ4vMtmBot_r_4UtmCarqdgF8PBznl3F5tHIPlVQ2bJgwITvkTJOkFk_VIMBE5wRtg9PFs8E-G3oFEqo453A8ZP7TySQ1GwDdH_ylDIzVUsZYIsjpcW7ZcW4wWirzlw2X4FNYfYxs230TaLdwqfVsWtAdoe-SsI46oauL3UUTwp0ty7Y1LYtfX09gYbDn-VJqG_ad3D46sUf6EdV5w9WOE4c1KnfPa7nwJgbIo2zvo3qpfxqlGZ-2VTIAtnCwI_uMUT6WUYf_Y3OX1MPN1Sa0kpsE1n_hEibUdiYAbdRSp-lN_eNxWSnuGdlVcqcFUumeSid8LU26MkD1O_zJNd67vXO5DwbnSkohDVnsP5y2AaxnOi850bNNlKdKBlH8Qnnbf10SxzHImhRYc_KkGhN1nzt10J7v47-y1Jg_rCdvv0HJ07uvTI0fJjofxYVGb7xK-49AMrozJRUGCTI4Xl2L67jsdWAxOQtN2cpHwjCZB7jsnkOyGXfuOGz_qJBimBzxcnNdQmNYEGW3_IHq7HCM32HrABRfgPUbk5eW-xP-0Yyr62bbqHeCkZRriZkLGevPW2YVVbHQOiS2JucY90egXbgFnKJc95_Q5TcmbTa-2DBPzr6gw4-PwnN_v-iktb3gBU5-6usr-E0YFTVZti4KSKwPs7phDFsO_mKn9WbYdGTnwOA9jNp2psQa78w0UjR3f4_7m0k1Uj0jpu7LOJ39n2tHGxprTaycV0K6sRhaA3-8-ai9D0k9PapqDeaGYZeSmt_ac2jAkltUTMpfly8QkWsPdEvveSeoIQtEzocA8LFL-z4dnVbFZH6PyW1LOwZF-PbueQsaNk0uzCEe6ELGuBV7d5T1VyGZGhFp-TyNLrKtcr8dXKlljkWxhneQNmRiNa7rXsRqtJCrkPOlutwYWPFfz2Xw8VpfFgMMnLMVyFP4ez6B-ygveKBHZOJIldL8L1ntl9DXtnOAZKdxx_Y4X2U6IcpgcJ06paUYeyjpZwskpbCIJijuym62TikvplY98z6_1wIV6ArEntSt1XB3YD8JmlkLvPEzBq5zx82dnGxdXrCrrwBd0fSy3wr1j-k1a_M1gzqGA7WP4kRR8dCCezYLz0AYDQaxiqlmOLowmTaeaE0mpRb1f-7EnntIFNVKwNhEfgccLuXPcLF4wfh0ZR6hv7TXBdMOYcY193dKZBvrN4q5nOMT3lkI5hyuy7pcWczrOBAZ_MTJftg7Rf4V8072TnsNdVd1JGzC7gOOcfY43Cyas8AylbbeFlFaNtkJvsiPb5mUiemFRPY7GZEflnWMgrG2THtYvmYP31u8pj2HxYvUJQUm_iP-o6MUfhAIx4G5kHVdvp_iIPItBaoZWakzcwx-XIVFpZGkSjBI06rHHR20B0FAtR6wZOr4Nl0Crq0ZPB52UrSP4hA02a3VIhNqoxi7QDPZk6sbZ8319QoPfxH5CVgUFuG06PoBrTpBTDHWuJj613CKgaD4zABxcIK9-K5C-46vdqv0ASN6Aa5_NV1KApPG05CK5Qm_UZkMGaeoe7RQ5-0dpNzBFP4GZAQ2VKnX1MyjtjrE-4Ie1kmTNHlgKm4TF4Nywxj1Db44lo8F4RUO9wmVo_P5QvLbyxGqIrS5v-H1rja1KZ2-YbbCkbyiICDPF_Felh9TR5VNUsVDqhZF5qVmF4Vk0TOL59aeRJvIEPpN1_F_wLaODb3nJhR3iYVTNfXKwtdxyiRECAmgp_Npp2MpM6pGzMEzVEuhzdEmmoDuLeLg_2LfT1AcO8aVP9-HxoldTMe9j6dcHJ87fRnvezbouJEuMAcfdezz8gPkHyR-dkkHFwCtjNYiNo9oHGMQT6OpVd_4kuihd9GDii-rD1UzX1PBUrf-LLght9P7Z1pttWv54goPJ3ZwTg_AvCNdcCc87VlbG5538RBowGzxO20Ognq2-cStCpHKqDDIHne0xYIw7XZeyMJtH1zCJ97etLzed9g49pDDlqJ4NMkLEQp5MmQ1L7kg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_062579bafdc1eb77016ae81fe00dac87d1910c549dc398b586",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9972,
+    "completion_tokens": 451,
+    "total_tokens": 10423,
+    "cost": 0.001471925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9969,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001471925,
+      "upstream_inference_prompt_cost": 0.001246425,
+      "upstream_inference_completions_cost": 0.0002255
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 165,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

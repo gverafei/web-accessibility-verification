@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same FAQ, news cards, newsletter information, and footer content in both supplied regions.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged, with no material overlap or clipping in the observed regions.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"FAQ expand indicators, the Get help button, newsletter email field and Subscribe button, and chat control are visibly identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target views are consistent and directly comparable; the supplied image checksums also match pairwise.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, questions, news summaries, newsletter copy, and action labels convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Clarifying output requirements**\n\nI\u2019m realizing we need JSON for our output. It's crucial that the image checksums match exactly to ensure they\u2019re all the same. I should consider all requirements, including the actual FAQ and newsletter. Also, there are controls and labels to think about. I'll focus on outlining the output schema specifically since that seems to be the goal here.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Clarifying output requirements**\n\nI\u2019m realizing we need JSON for our output. It's crucial that the image checksums match exactly to ensure they\u2019re all the same. I should consider all requirements, including the actual FAQ and newsletter. Also, there are controls and labels to think about. I'll focus on outlining the output schema specifically since that seems to be the goal here.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bus0Vf0CcbWQBuQI-xaeJeiq5ysB4xJzOzbVwEPDJWJ8UNuRCFtzS6s_v_2AAaQiDTWRgVK335e8s_1MyvOuS2UyRBjICzLeV6v8ikjMaMK8xYse9JpnfSatPKD_IB0xHPGYGk1Fd8kdRL40e5ydl0Dzikt_jq1Ne1T9fmmK5mYm9lJS1bvFJgR-fCfUT3JNEGdMwx7kMj9sga9gi-scTf2DHHS9AQWiJZNDqabqmtqJ0BPU0PcfXpyue0y-6djzQ89R4C-VbSngpSzt21YaTH22_VUDCiemT3fPCJeluKIJWZsLa4Z-dTREwcXf606mpANymzAfxXO6xgxophfrI_4oWalD0E3v5JBSH5usoCzTzcuaPbtbk4TLL6AUfpzJIle69iELBtwpZ4NLdqma8DWNw-S3osZS8DqAkl0Tq17xFE6tAgyprxmTXM9C_i0L5_FUT2IYVPGJGM6STD0lj59LdQF7Ka0YFIAnLMZgqxXjxH3dtogbQ_zdXUi9Q3gmw9ce54JvEWTRdHYVQF69TAoNX2SWNRwNPPqJsuTFZeh1Oq1njNigYnZojjh7wstqJAY8NRrSsTQ1bBqW8SUd2kLn3PkiPnMf1i9JCXhw3Xx1z7aEEGpKuSxQ4VKTK7tv-h1uZPTUuEVYT2LZHfdY01i-nnhkPD7dfh3IjOZKj1Qz6I6qtNlLekjiW6u676CpXqteRBpzXWJCQ1WMburCd4mlbxQxYVuCu0KcGHDDnVtYRGgS7aQ6GqrnplfzF3qPPA1dZ6cU_QJ-3Jq2wVvCJ1RnSrcz-slpre-XPqfkpfXTq4RkxJUun_p7tyY6yX0JPQ6Wi8nRZz5U-9RVlJAEYbCZFmDhfeymueoEcqXbqIJoywg6DI2iawx7-O27E20tdA354qCJxsEbYiep12wftudUA9-PwvnJ-DeMNQL9qc5x7nhkPMvsoIfZwlcuDpNbotQZDoTQMM86AeYKVFXNOrWjEjp-K3ZS530rqemR2nw1AKeD8xOZPKiqzawDTRK61ctL_Y3A3hqZCILm0iipzIv8OMP545omB_xYX_9aV719eHkha1ss7A7pGRoXWviREEnUdr3wvGRkCTuK4huYpc4UNw_HtV_jSwfG4cQRn8bGUK87ISibF9Z8Zs1eXDekjrAqIMiidfqRn0-8wvfboZq1SihNdyOriv5nsQk5c7flsBYQL6tB5t1wLxNfWhmlralLRxOs0pybak8D7_InkzrkaMEjuK-lVCRCFPDOi5wc858aQ-hwDU6FRm03RNw5vGBCm_fJxVFgUeHN3FIRthmSIvV9jbfUMCjCw54OtbmB7DSr_uJyeSwRIb-kj64RSfMWsNXFzweStpPAZs_7Odq0UZmocTADwO4sIMmlaYqzYYWYr_2HvN0xx1Fgtnel2tVM4B52vi8tvSJ6ZVhJW0iTDaT29gmvszYvwUP0ybaNOBFKPf-EcFrrF2ZMd4zXjYwN3x4dsosa1j6r4R9zb35lj_EcVs0EVSrSfTPyX0K1f4QjPb88nKPb5iSjuNYjuNekw88Xhup0Gcj0JSet0d9PH6ztqq-r4C2nf9jwdGkFguSqZJzakhyxKa3MjHkLmc2eBkg-eoOjykDqs4afhzqK4b7WO5x6e6N5uXpWQl893hyCIWXKU3t_9xg4NVyGAa1MSkQAZsx_8WlxY8mW1L0V4HTuJ80WNjLwjbYsBNjGDavKEra2HEI4V5DSRGWD4xWtEy6shB3INR-krftDCx4safYSwZIipFxC5Bqihg9NLPML3uZ_dZnOgJz-tdXwgP9sQmXKoFhGVEAphZPwl0ZdqwK58QmVMR3lFdLnx7W0NJ_WFBAHJ3HAwP2j4Lsd785EVm966T2buut3DwMLx_aT_jYGthRU_XqvBaGYdypvaovuHsYcw19gn_9ctKIqsbE1chehuqMzzM3hgx6iMCuZ_JYcgpdldtfw8cZRrvK3hz8O4u4ofCJ5UO4UnWPJYDaMY-dl6K8rwg1_dqQInK1dg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_01d79da806f2e284016ae81bab517487d19faf8fe584efe19c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11282,
+    "completion_tokens": 270,
+    "total_tokens": 11552,
+    "cost": 0.001545175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11279,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001545175,
+      "upstream_inference_prompt_cost": 0.001410175,
+      "upstream_inference_completions_cost": 0.000135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same category links, footer content, and tracker-settings panel in both aligned views.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and controls are legible and coherently arranged; no material overlap or clipping is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation, contact, tracker-settings, accept, and announcement-dismissal controls are present and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target views depict matching page regions and coherent states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The category links, footer links, and cookie-consent text communicate coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10301,
+    "completion_tokens": 220,
+    "total_tokens": 10521,
+    "cost": 0.00021328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10298,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00021328,
+      "upstream_inference_prompt_cost": 0.00010328,
+      "upstream_inference_completions_cost": 0.00011
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

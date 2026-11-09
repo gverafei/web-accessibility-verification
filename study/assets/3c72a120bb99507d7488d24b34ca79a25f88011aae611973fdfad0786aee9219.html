@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Elevate your global payment capabilities with TripLink's cross-border payments and card issuing platform." name="description"/>
+<title>Virtual commercial card for global payments | TripLink</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #102542;
+      --muted: #4b5d72;
+      --blue: #1769db;
+      --blue-dark: #0b4ca9;
+      --sky: #edf5ff;
+      --line: #dce6f1;
+      --white: #fff;
+      --content: 1120px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: #fff; line-height: 1.6; }
+    img { display: block; max-width: 100%; }
+    a { color: var(--blue-dark); }
+    a:hover { color: #07397e; }
+    :focus-visible { outline: 3px solid #f2a900; outline-offset: 4px; border-radius: 4px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10; padding: .7rem 1rem;
+      background: #fff; color: var(--ink); border: 2px solid var(--blue);
+    }
+    .skip-link:focus { top: 1rem; }
+    .container { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
+    .site-header { background: rgba(255,255,255,.97); border-bottom: 1px solid #e7edf4; }
+    .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; }
+    .brand img:first-child { width: 126px; height: auto; }
+    .brand img:last-child { width: 74px; height: auto; }
+    nav ul { display: flex; align-items: center; gap: 2rem; list-style: none; margin: 0; padding: 0; }
+    nav a { color: #24354b; font-size: .95rem; font-weight: 600; text-decoration: none; }
+    nav a:hover { color: var(--blue); }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 1.35rem;
+      background: var(--blue); border: 1px solid var(--blue); border-radius: 999px; color: #fff;
+      font-weight: 700; text-decoration: none; transition: background .15s ease;
+    }
+    .button:hover { color: #fff; background: var(--blue-dark); }
+    .hero { background: linear-gradient(110deg, #f3f8ff 0%, #fff 75%); overflow: hidden; }
+    .hero-inner { min-height: 550px; display: grid; grid-template-columns: 1.02fr .98fr; gap: 2rem; align-items: center; padding-block: 4.5rem; }
+    .eyebrow { margin: 0 0 .8rem; color: var(--blue-dark); font-size: .8rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 640px; margin-bottom: 1.25rem; font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.08; letter-spacing: -.045em; }
+    .hero-copy { max-width: 570px; color: var(--muted); font-size: 1.08rem; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.25rem; margin-top: 1.7rem; }
+    .text-link { font-weight: 700; text-decoration: none; }
+    .partner-row { width: min(300px, 80%); margin-top: 2.25rem; }
+    .hero-art { position: relative; display: flex; justify-content: center; align-items: center; min-height: 360px; }
+    .art-orbit { position: absolute; width: min(470px, 100%); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #e4f0ff 0 40%, #edf5ff 41% 58%, transparent 59%); }
+    .hero-art img { position: relative; z-index: 1; width: 112%; max-width: 570px; filter: drop-shadow(0 22px 24px rgba(23,74,135,.12)); }
+    .section { padding-block: 5.5rem; }
+    .section-heading { max-width: 790px; margin: 0 auto 3rem; text-align: center; }
+    .section-heading h2 { margin-bottom: .9rem; font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.15; letter-spacing: -.03em; }
+    .section-heading p { color: var(--muted); font-size: 1.05rem; }
+    .solutions { background: #fff; }
+    .use-cases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .use-case {
+      min-height: 174px; padding: 1.3rem; display: flex; flex-direction: column; justify-content: space-between;
+      background: #f7faff; border: 1px solid var(--line); border-radius: 16px;
+    }
+    .use-case img { width: 56px; height: 56px; object-fit: contain; }
+    .use-case h3 { margin: 1rem 0 0; font-size: 1.05rem; }
+    .features { background: var(--sky); }
+    .feature-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem; }
+    .feature-art { padding: 1rem; border-radius: 22px; background: #fff; }
+    .feature-art img { width: 100%; }
+    .feature-list { display: grid; gap: 1.1rem; }
+    .feature-item { padding: 1.2rem 1.25rem; background: #fff; border: 1px solid #dce8f6; border-radius: 12px; }
+    .feature-item h3 { margin: 0 0 .3rem; font-size: 1.08rem; }
+    .feature-item p { margin: 0; color: var(--muted); }
+    .about { background: #fff; }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem; align-items: center; }
+    .about-copy h2, .awards h2 { margin-bottom: 1rem; font-size: clamp(2rem, 3vw, 2.7rem); line-height: 1.15; }
+    .about-copy p { color: var(--muted); }
+    .about-image { width: 100%; border-radius: 18px; }
+    .awards { padding-block: 4rem; background: #f5f8fc; text-align: center; }
+    .awards p { max-width: 800px; margin: 0 auto 2rem; color: var(--muted); }
+    .awards img { width: min(100%, 960px); margin-inline: auto; }
+    .awards .mobile-awards { display: none; }
+    footer { padding: 3.5rem 0 2rem; color: #eaf2ff; background: #102542; }
+    .footer-grid { display: grid; grid-template-columns: 1.25fr repeat(4, 1fr); gap: 2rem; }
+    .footer-brand img { width: 150px; }
+    .footer-brand p { max-width: 220px; margin-top: 1rem; color: #c4d1e3; font-size: .92rem; }
+    footer h2 { margin: 0 0 1rem; font-size: .95rem; color: #fff; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin: .55rem 0; color: #d5e0ed; font-size: .88rem; }
+    footer a { color: #d5e6ff; text-decoration: none; }
+    footer a:hover { color: #fff; text-decoration: underline; }
+    .footer-bottom { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid #3b4b61; color: #c4d1e3; font-size: .85rem; }
+    .cookie-notice { position: fixed; z-index: 5; inset: auto 0 0; padding: 1rem 24px; background: #14253c; color: #fff; box-shadow: 0 -8px 24px rgba(12,32,58,.16); }
+    .cookie-inner { width: min(var(--content), 100%); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .cookie-inner p { margin: 0; max-width: 850px; color: #f0f4fa; font-size: .9rem; }
+    .cookie-inner a { color: #b9d8ff; }
+    .cookie-inner button { flex: 0 0 auto; min-height: 42px; padding: .5rem 1.1rem; border: 1px solid #fff; border-radius: 7px; color: #102542; background: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+    .cookie-inner button:hover { background: #e5efff; }
+    @media (max-width: 850px) {
+      .header-inner { flex-wrap: wrap; padding-block: .8rem; }
+      nav { order: 3; width: 100%; }
+      nav ul { justify-content: center; gap: 1.5rem; }
+      .hero-inner { grid-template-columns: 1fr 1fr; min-height: auto; padding-block: 3.5rem; }
+      .hero-art { min-height: 280px; }
+      .use-cases { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 600px) {
+      .container { width: min(100% - 36px, var(--content)); }
+      .header-inner { gap: .5rem; }
+      .brand img:first-child { width: 112px; }
+      .brand img:last-child { width: 66px; }
+      nav ul { justify-content: flex-start; overflow-x: auto; gap: 1.25rem; padding: .35rem 0; }
+      nav a { white-space: nowrap; font-size: .88rem; }
+      .header-inner > .button { min-height: 40px; padding-inline: 1rem; font-size: .9rem; }
+      .hero-inner { grid-template-columns: 1fr; padding-block: 3.5rem 2rem; }
+      .hero-art { min-height: 230px; grid-row: 2; }
+      .hero-art img { width: 100%; }
+      h1 { font-size: clamp(2.35rem, 11vw, 3.4rem); }
+      .hero-copy { font-size: 1rem; }
+      .section { padding-block: 3.8rem; }
+      .section-heading { margin-bottom: 2rem; }
+      .feature-layout, .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .feature-art { order: 2; }
+      .use-cases { gap: .75rem; }
+      .use-case { min-height: 148px; padding: 1rem; }
+      .awards .desktop-awards { display: none; }
+      .awards .mobile-awards { display: block; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.75rem 1rem; }
+      .cookie-notice { padding: .85rem 18px; }
+      .cookie-inner { align-items: flex-start; gap: 1rem; }
+      .cookie-inner p { font-size: .8rem; }
+      .cookie-inner button { min-height: 40px; padding-inline: .8rem; font-size: .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="TripLink home" class="brand" href="https://www.triplinkintl.com/">
+<img alt="TripLink" src="https://dimg04.tripcdn.com/images/1vf1912000n85sazeE518.svg"/>
+<img alt="by Trip.com" src="https://dimg04.tripcdn.com/images/1vf5h12000n85slnuD8D7.svg"/>
+</a>
+<nav aria-label="Main navigation">
+<ul>
+<li><a aria-current="page" href="https://www.triplinkintl.com/home">Home</a></li>
+<li><a href="https://www.triplinkintl.com/product">Products</a></li>
+<li><a href="https://www.triplinkintl.com/solution">Solutions</a></li>
+<li><a href="https://sandbox.triplinkintl.com/">Developers</a></li>
+</ul>
+</nav>
+<a class="button" href="https://vcc.triplinkintl.com/webapp/yago/login?locale=en-US">Sign in</a>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="container hero-inner">
+<div>
+<p class="eyebrow">Global payments, made practical</p>
+<h1 id="hero-title">Virtual Commercial Card for Global Payments</h1>
+<p class="hero-copy">TripLink is a professional financial technology company driven by the mission “Technology Empowers Finance”. We offer modern, safe, stable, and flexible cross-border payment services designed to support enterprises in their global expansion, accelerate business growth and improve their profitability. Our commitment to continuous innovation and improvement is aimed at serving you better.</p>
+<div class="hero-actions">
+<a class="button" href="https://www.triplinkintl.com/product">Explore our products</a>
+<a class="text-link" href="#about-us">Get to know TripLink <span aria-hidden="true">→</span></a>
+</div>
+<img alt="Supported payment partners" class="partner-row" src="https://dimg04.tripcdn.com/images/1vf1p12000n6i148e3A8E.png"/>
+</div>
+<div class="hero-art">
+<div aria-hidden="true" class="art-orbit"></div>
+<img alt="TripLink virtual commercial payment cards" src="https://dimg04.tripcdn.com/images/1vf6112000ndkw4qq181C.png"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="solutions-title" class="section solutions">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">One platform, diverse needs</p>
+<h2 id="solutions-title">Global industry solutions for a better payment experience</h2>
+<p>TripLink addresses online and offline daily operational payment scenarios. Our efficient payment solutions help improve enterprise operating efficiency and enable more precise cost control.</p>
+</div>
+<div class="use-cases">
+<article class="use-case">
+<img alt="" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf2712000n6i15ykF27E.png"/>
+<h3>Employee Expense</h3>
+</article>
+<article class="use-case">
+<img alt="" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf1e12000n6i1cuy6A64.png"/>
+<h3>Travel</h3>
+</article>
+<article class="use-case">
+<img alt="" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf1n12000n6i0w9pBE45.png"/>
+<h3>Study Abroad</h3>
+</article>
+<article class="use-case">
+<img alt="" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf4e12000n6i0p4bD6DE.png"/>
+<h3>Amazon Ads</h3>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="features-title" class="section features">
+<div class="container feature-layout">
+<div>
+<p class="eyebrow">Built around your business</p>
+<h2 id="features-title">Customizable card issuance for a more tailored payment experience</h2>
+<div class="feature-list">
+<article class="feature-item">
+<h3>Flexible card management</h3>
+<p>Configure available balances and expiry dates.</p>
+</article>
+<article class="feature-item">
+<h3>Choice of card types</h3>
+<p>Supports various types of virtual and physical cards.</p>
+</article>
+<article class="feature-item">
+<h3>Customized card design</h3>
+<p>Supports co-branded card design.</p>
+</article>
+<article class="feature-item">
+<h3>Precise transaction control</h3>
+<p>Make decisions on authorized transactions based on your business strategy.</p>
+</article>
+</div>
+</div>
+<div class="feature-art">
+<img alt="TripLink card design" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf3j12000ndkvycvB517.png"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="about-title" class="section about" id="about-us">
+<div class="container about-grid">
+<div class="about-copy">
+<p class="eyebrow">Technology empowers finance</p>
+<h2 id="about-title">About TripLink</h2>
+<p>Founded in 2018, TripLink is a wholly owned subsidiary of <a href="https://group.trip.com/partners/industries/finance-services" rel="noopener noreferrer" target="_blank">Trip.com Group</a>. Our footprint spans Hong Kong, Shanghai, Singapore, London, Amsterdam, Tokyo, Seoul, Bangkok, Jakarta and Kuala Lumpur.</p>
+<p>Guided by our mission, “Technology Empowers Finance”, TripLink is dedicated to building a secure and efficient global payment network that connects directly to local settlement systems. It is designed for diverse needs, including cross-border payments for e-commerce, general trade and international travel. We are devoted to being a trusted partner to our clients.</p>
+</div>
+<img alt="TripLink office" class="about-image" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf1p12000nscipj6D108.png"/>
+</div>
+</section>
+<section aria-labelledby="awards-title" class="awards" id="honour">
+<div class="container">
+<p class="eyebrow">Recognition</p>
+<h2 id="awards-title">Our Awards</h2>
+<p>TripLink Commercial Card has the highest market share in commercial card spending in Hong Kong. These awards recognize the card’s rapid growth and position in the global market, as well as its contribution to convenient and cost-effective cross-border transactions.</p>
+<img alt="TripLink awards" class="desktop-awards" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf1c12000f6fadmu7EBA.png"/>
+<img alt="TripLink awards" class="mobile-awards" loading="lazy" src="https://dimg04.tripcdn.com/images/1vf0m12000f6g5uuqB97C.png"/>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a aria-label="TripLink home" href="https://www.triplinkintl.com/">
+<img alt="TripLink" src="https://dimg04.tripcdn.com/images/1vf0o12000djyrrtw8FA1.png"/>
+</a>
+<p>Technology Empowers Finance.</p>
+</div>
+<section aria-labelledby="footer-links">
+<h2 id="footer-links">Links</h2>
+<ul>
+<li><a href="https://www.triplinkintl.com/home">Home</a></li>
+<li><a href="https://www.triplinkintl.com/product">Products</a></li>
+<li><a href="https://www.triplinkintl.com/solution">Solutions</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-about">
+<h2 id="footer-about">About us</h2>
+<ul>
+<li><a href="https://www.triplinkintl.com/home#about-us">About us</a></li>
+<li><a href="https://www.triplinkintl.com/home#honour">Our awards</a></li>
+<li><a href="https://www.triplinkintl.com/fopages/triplink/cookiestatement.html">Privacy policy</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-dev">
+<h2 id="footer-dev">Developers</h2>
+<ul>
+<li><a href="https://api.triplinkintl.com/docs/api">API</a></li>
+<li><a href="https://api.triplinkintl.com/docs/api/sdk">SDK</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-contact">
+<h2 id="footer-contact">Contact us</h2>
+<ul>
+<li><a href="mailto:contact@triplinkintl.com">contact@triplinkintl.com</a></li>
+<li><a href="mailto:triplinkceo@triplinkintl.com">Questions &amp; feedback</a></li>
+<li>Shanghai: +86-21-34064880</li>
+<li>Hong Kong: +852 58075570</li>
+<li><a href="https://www.linkedin.com/company/triplink-intl/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+</ul>
+</section>
+</div>
+<div class="footer-bottom">© TripLink International</div>
+</div>
+</footer>
+<aside aria-label="Cookie information" class="cookie-notice" id="cookie-notice">
+<div class="cookie-inner">
+<p><strong>We value your privacy.</strong> Our website only uses necessary cookies. These cookies do not collect personal data for analysis or advertising and are essential for proper operation. Read our <a href="https://www.triplinkintl.com/fopages/triplink/cookiestatement.html">Cookie Statement</a>.</p>
+<button id="acknowledge-cookies" type="button">Acknowledge</button>
+</div>
+</aside>
+<script>
+    document.getElementById("acknowledge-cookies").addEventListener("click", function () {
+      document.getElementById("cookie-notice").hidden = true;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target regions show the same page content, including the audience section, sign-up prompt, illustration, and footer.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged in both supplied windows, with no material overlap or clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, sign-in/join buttons, audience links, and the Get started button retain understandable labels; footer links are also visible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots correspond exactly in both windows, forming a coherent assessable comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The text, imagery, and labels convey a coherent LinkedIn page purpose and appear preserved in the target.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11107,
+    "completion_tokens": 236,
+    "total_tokens": 11343,
+    "cost": 0.00022934,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11104,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00022934,
+      "upstream_inference_prompt_cost": 0.00011134,
+      "upstream_inference_completions_cost": 0.000118
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

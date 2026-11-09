@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible city and state links, regional activity links, and footer content shown in the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The content is legible and consistently arranged; no material clipping or overlap is visible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible link labels and scrollable rows are understandable, and the target retains the controls shown in the reference.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show matching page regions and coherent corresponding states across both supplied windows.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Headings, location links, and footer labels convey coherent meaning for an event-discovery page.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11442,
+    "completion_tokens": 169,
+    "total_tokens": 11611,
+    "cost": 0.001514675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11439,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001514675,
+      "upstream_inference_prompt_cost": 0.001430175,
+      "upstream_inference_completions_cost": 8.45e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

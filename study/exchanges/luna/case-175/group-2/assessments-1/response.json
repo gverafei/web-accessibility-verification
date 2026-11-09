@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents MySQL customer stories, sales contact information, and site navigation. Its content differs from the reference\u2019s customer logos and footer layout, but remains adequate for the broad purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is coherently arranged and readable across the customer-story section and footer.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and the support-options control have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target views show a consistent lower-page section and footer that can be meaningfully compared with the reference.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, customer-story labels, contact details, and footer links communicate coherent meaning for a MySQL site, despite the generic numbered story labels.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer content**\n\nI need to assess the target footer region against the reference bottom. The target customer story cards seem generic, with just numbers and a regenerated broad purpose MySQL website. It feels like these are dubious placeholder labels. The \"Powered by MySQL\" section has logos, but the headings and cards lack meaningful identifiers. I wonder if this incoherence affects content fidelity? There are likely repeated stories, but they remain legible overall, though the identifiers may indicate a material loss of clarity or meaning.**Assessing footer image content**\n\nI need to consider the footer that includes client logos. It seems the content can be changed, which is good. I\u2019m thinking that maybe the presentation works well overall; things like contrast and underlining look fine in white, for example. However, I wonder how the visual impact holds up in terms of clarity or appeal. Would using JSON to structure this be beneficial? It might help maintain organization, but I need to think it through further.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer content**\n\nI need to assess the target footer region against the reference bottom. The target customer story cards seem generic, with just numbers and a regenerated broad purpose MySQL website. It feels like these are dubious placeholder labels. The \"Powered by MySQL\" section has logos, but the headings and cards lack meaningful identifiers. I wonder if this incoherence affects content fidelity? There are likely repeated stories, but they remain legible overall, though the identifiers may indicate a material loss of clarity or meaning.**Assessing footer image content**\n\nI need to consider the footer that includes client logos. It seems the content can be changed, which is good. I\u2019m thinking that maybe the presentation works well overall; things like contrast and underlining look fine in white, for example. However, I wonder how the visual impact holds up in terms of clarity or appeal. Would using JSON to structure this be beneficial? It might help maintain organization, but I need to think it through further.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AgiYTCOE6GWLkQ_ch26SB1p_4PtiMQjm-iW7gzkEVrIeAigWc8VapuprN38KhAhhhC-xLFmt2JO0orHm2zaN97K7x50eMHWit_dKNkAaocvmd_AyVWMVgwAXF5mZ1cARoNCu9yx919tFHAzkhkLI8-mWlSIO5jlXMo8JVahOOu0Fw5APVYMoynaZiPWHqUX6jeKmVi1on5X88MCob5gCOQs99rWVl6iDXMNBG9TdT2FfSX2tMKH4y7cJgOrjiA_k85jZ8hrwEXBxbLLTesbVhyynW1fpk0WSwzJUaxM8BIIT1rU9bk5pbPuVuNMGthkp4AvAAkZDoQNlGLVox14kqIb1I9th9rC63yYalS2khUGUXhCOT000Sr2D-GnUvZ43qGSsPfAVGogaYW8tk_fRaRCamSzOmtKB2MdLlw_OD7_JiBNShyI9prxpPAtNhgPwKIcNjzXqAqqK6pkEFb0960c1d7EB3cnD2-PxuDXmoFXZZX9G8Wvq8oGRcbixY--xXgK0mcgVI3k43hyfY6aGRGJDU_auAczlb4R6Q4l24RHVojEhlSPvVuLppV8Mf7Yc4PHC1842YHbqXeryhMLr9RBCjeW0P4nXY04Qrs3Arl5P0jDZtH23aIvb8lDwRr51KAVXbizmBec0m85CmWm8te7yb4rbEXSQE_ykFvfI4cgmHc1a6SBEtKizYt5P154yKRIHOC31fgiSgP-HWhZqqsMEhMRBglzK95Llc7WieFtUVxf0HzB0GX1VYrvJik3w4ZYyzWuL4Upt4GBpohaEXLEs7bLg9teG_LmyPC-oC9Ey7bBXTQA-29BbHLMsa-0tsTz3U8Fj6pA3OMUbDyXQYcgkfDUG5qJKysQ5iC2E9cUjs19IRGCX63Kh1a4tUn2pbufr_mANrPTHXsSbcnLUpLVWfKGX2gw7GNRXCxAO47dHEuWWODg3RR_lR0B_lmOxvXWU81_99NGRsgpY9u4x3JGal1rzRCN0JBsJaEOMNDy62_SvxxEr5JhYlobIrcykUZy5h4ME8UjeymqEBg-iwqu7k9d3F9zwTbs-sxSLa_NKUEQ06mF3ZF3vX1vK4OXXtdbyy3B8n3SY9X7QPOvZrf6Si8kMMcdseLnjN5orNe514mGSAEaVgLfIPIWRaAoLd6iVsmx_whuTekVwSxRa5unQ0dnoXRSruGzpH8IfVhD7ZwGEA4xKlLGguz-4NFxJcy8v9bNGFeZK2uIHldRr4dRpxCCqr8WsE88QRZWxaLApVJFdsaPFIY1sudreW-nmEZOBJewzfyDx3G4hkGNU-e58RA4GJnSD9MLOkuY9Qb37wxLJxIFNMUYqoBuwz2ywjfC1Q90xnzPKR0Z7Xigsi6J04are-3jj1hvLMnwJmWPaH9TRGzaf1IuA6HVqmC4AJtJaD0tWhDHfoUU08E38p7lIcAOSOHN7hzwhz0kBeP2W_FNt8Tq5fk-mbWEXnMVoBo1cHynaJAIMgAytzlQevLqFyrj_xfz6Mgscg4hUMMH5IT1bcl5WxFjA2VacY80hlB9AdUEUjk3h4oQW750RYfYCAqiPRv-3gBdt6l4Iym1KPg2UrOd_HRSYQG7i_dBduYqRSnc0Rv9b_utz6oQ20DX7TBOpkE5sx1gB0vCe6G7RPP5RtSJv1jgVbSYb3Mn5Q21thGsGzpkdLnJ5N0_90f7NQIykUAvhFyWNBt6yRFHTU4_LXwa3Z3q9trKgUPrZrgioHazfh65IbpS2aj_FWHjetK6tZ9x951VGBzWW2OZbP77gGkb4UFNzIZ7fV6QMCyN4_qRsdJOmEm7xwMbZQ7jTIbEb0ZVtou5SAiV6pzBBvtr4ByuPEDwLnyGh6KhMZ789iKNQC0KNUBLl1TnFewk_8hGHKowLc4iTQCPlCCgkiDwLOBpQiJf_ZgPHBnLYXWJbKe5kOZ3t8VS_QZPWYOFCIOHCo_Bvzq1SUe3iKkSIZHnS2g9bqkqp_D_wv0QHGsYxT0DhiDHpRdr1pPRFdgufJ1fLpUnEoIaQh9ifrNv-VbaPAG02keWyi9JY6cRnY0rDiVsZ3hcwoz-E2JmaNLX3WirRtLVhsku8k0-Yl1oREYH5xmjVk1gHkSPmit1m_Y6LotQrUNktLBZcPAecgtXRZJm8kY5XKpJdTmYgXH__96txm3B-UZXkO84ukTCfYgGUpW7OtQYd5tdR1va9dK7egucBRf5QTA5n1mkFdxync-Pix-qlZAA8b0AmqFrxrg3vYorZ0u58hqepRI2feGvK-9AZGsz4xm1i2SHP2ymw5TMzJUKXNVALaK6Mz5qgeIpOGviuSROyCOqndD6hm10QFC5YlYm6ub6nc4HpI87jMDFObLDFodWEW2I9W6pwlGp6HR35CApwStpnxhxen0Lp10Z05welCnx2pTEDzqwmYt0M7JqzIFXYA-i_OLBMElqeaanGcGA8NyCCjnu35HrlAqziVUzOvUavhDs0zjH0MNg6JaZD0zUSAXTKtHQ4g7UaOobMw1v0tmtrRk9Jzn2HtqyWbZDV777HlsHnMjt9p-PMUa0LDtiCq_4DrdF0-WLFxSmqCgLxdlLJ7lU3VpAPku09cJwb_GOFyXRLFpx2WC9NLnDHskvGp8PHItEGiQPeBNethrAujQQiEiEZRV_J9cTFeZIaKoFd5eUJU78jewoYm6SUHh83hm7nhoS9JA_fRe69RbAiEj0gPAMvsF9hyQari7aUl0qvfMsGRhPllCcF9KV_w2xzWVkrcW1GdmTmybRSp8kyIOHp4Tg5ZCSPBop8uUKiqvPUL9H7uVy_f5vAmRwe1MkBzsv6DiAbf5N9Kd1Yd5uYL2j5fMb_0h4t3kX6H_ZXhYuGdSh8hwc4Zlj-W1B4kPrf4Q7euLKhtxQ4rEUFtMjjDwsVvE3GIJMZsaWFsy0jJlc8gZ5qGY0dv61pbjGOlGcQQFldPd9GVNorNL2xZBN_n0wyUv1PjqVoHHssqFjzE2f9duuutq99azRPtELIEENnY4-MhFi3e5CB4lO5l6xnC0plik_d5t7iCSihd7sO80qVarzgvtIluPDDrZE9hthnJaki7LQ4JuoVTDUibaOG0gnoGKLwqtCx9z6YvApZLTcfzq95JDG2MWy8bUgQOvc9MvYHnrWZxqC_VgzqSRE8C7ejF46emW1bQzC87uJw8GuN19LFmGSWftD3difXIs6pDOWY5eTUhy3YxnbxZ8Ij6aq03JDCBO-mczLE9iec7CApTIaBVWbRztmuGYmKF_IhEkvdEwp97lRTLUBKZYBxF7M98dMAFZ1tvhGZYJLvWKiX0s1IRS_ZyYGykuaYOLNFbbWHXtZ3w98DHUShqrgnqGcoDYAoE74P5y-YBHTEWu_d_Oy4v4ZMeC2veDnwzGoLFHeSEGgLPAgJjWO6lOelY0wXB7u-clP-BP5qKC8mYtT25CgMgEsHY2mzQ4SF15ObybXJu4KTNvqHAomXCHo4RXM8ul-p1X1nUlR6zpIeaeKSkXVuqdBlsxwtqxfvT4RpPzVlsLsc69fy4mKUWLOvxBhmUHLF202MscJpHE-IxvYQ9DfPXRSO-DnxRqEi2JBzkinmShZoYbXzxLyezViIt-OQ0g50LoU3bj9PleduA-3hXNplVndSaK73y4GsUymBeIyida8n9X9haBstxnc9NWkE6LSKPa-YzivBvmFs4SHh-ME148DLiOGhMoiuuyK4J_yNek07kIwnOSJCF_q4HJdCTytaOLmK-7b1WXsSXthPc0rPs0EljmcPLGDpmDjqby-B1iwtuHVMkELL_dKyC7d4eNlJUVc5OAO4yxOZvwXwkUCTYK0zwlwnBAJadtCeua-GJ9TeysuRtnuovMZGhY9JotmZhtggnpIk9O6EeohiaFaXNjkF_T-U4-91gQKQhwPNxQgVAz717DgP8ibdiYpv1i2bCTdCWv9C9CgE_2Ov5WPV5iBBfglKrzyu-6KHHoArwswEMN1sDYgq23mwd0KNn3-CIZK6rwBGSz3KcBzFS8G7j1FG0RDJ1XEc-v9SMyI70vGiKS5F0Ke6T52VBgTKBUwElrd4GKXccXAJUv4g8v4eZQ1A8yC7kDl55LaUwCVP0GYsNow9lWgbO_Y1vwj7RUmDCtY-qxs5alJsANjEk89FHMTyzFWrWYTV9R31vIwxiWzbOXly8I9fHXNMVga_wYjRu4wbKEbhYLhOVbBnDe1RnmbRZEljZlYh3_hFVN-bmqUxpUWa3m7nMl74HDUtI8oOK-qG0RF4-nL0D5Oid20RNbCgpOFHhDwfSdPjJHfNEQc15S_ouyRSig96o7yfXAkUb0BsyDEZKihPvQKSo_pCYDN26FSPIyR0lp_TZcrJS8PDs_-PU8oCPZF7cVwUh4bV6vBRexgAIb070-LFyZJIf6Ann498Rl4s-dIoHiABGmN08I3FBWPiE_7l26EP5Ur9Ece2sIb1A0KsN2wN4EU_kcLassFrEBc8-qh4YOXz-ThoEh3JjaTCugFJcmKWiw4OhHqgTL_qteESqIS__Q1ar-xQIYa5jnq1CFcMvTXLcZdd-dp.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_05ab90d23a30c691016ae8081df0e487d18b048891c4677349",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8344,
+    "completion_tokens": 457,
+    "total_tokens": 8801,
+    "cost": 0.001271425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8341,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001271425,
+      "upstream_inference_prompt_cost": 0.001042925,
+      "upstream_inference_completions_cost": 0.0002285
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 207,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

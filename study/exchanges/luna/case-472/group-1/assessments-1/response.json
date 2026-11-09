@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible HBR homepage stories, headlines, imagery, navigation, and lower-page article grid shown in the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The content is legible and coherently arranged; the supplied reference and target views are visually identical.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, Subscribe, Sign In, and search controls retain understandable labels or recognizable icons.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired views show the same page and matching scroll regions, forming a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The stories, images, headings, and labels communicate a coherent business-publication homepage purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12638,
+    "completion_tokens": 172,
+    "total_tokens": 12810,
+    "cost": 0.00021265,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12635,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00021265,
+      "upstream_inference_prompt_cost": 0.00012665,
+      "upstream_inference_completions_cost": 8.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

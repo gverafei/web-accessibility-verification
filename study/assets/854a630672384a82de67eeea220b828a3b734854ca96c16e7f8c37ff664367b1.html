@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#111" name="theme-color"/>
+<title>Forbes — News, Business, Investing &amp; Leadership</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #171717;
+      --muted: #62676c;
+      --line: #d9dcdf;
+      --blue: #005b8f;
+      --paper: #fff;
+      --soft: #f3f5f6;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); line-height: 1.5; }
+    a { color: inherit; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+    a:hover { color: var(--blue); }
+    a:focus-visible, input:focus-visible, button:focus-visible {
+      outline: 3px solid #f0b323; outline-offset: 3px;
+    }
+    .skip { position: absolute; top: -5rem; left: 1rem; z-index: 5; padding: .7rem 1rem; background: white; }
+    .skip:focus { top: 1rem; }
+    .masthead { background: #111; color: #fff; }
+    .topbar {
+      max-width: 1240px; margin: auto; min-height: 78px; padding: .75rem 1.25rem;
+      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem;
+    }
+    .brand { color: white; font-family: Georgia, 'Times New Roman', serif; font-weight: 700;
+      font-size: clamp(2.2rem, 5vw, 3.5rem); letter-spacing: -.08em; text-decoration: none; }
+    .brand:hover { color: white; }
+    .account { justify-self: end; color: white; font-size: .9rem; font-weight: 700; }
+    .search { display: flex; max-width: 260px; }
+    .search input { width: 100%; min-width: 0; padding: .65rem .75rem; border: 1px solid #777;
+      border-radius: 4px 0 0 4px; font: inherit; }
+    .search button { border: 1px solid #777; border-left: 0; border-radius: 0 4px 4px 0;
+      background: #252525; color: white; padding: 0 .9rem; font: inherit; cursor: pointer; }
+    .nav { border-top: 1px solid #353535; }
+    .nav ul { max-width: 1240px; margin: auto; padding: .75rem 1.25rem; list-style: none;
+      display: flex; flex-wrap: wrap; gap: .55rem 1.35rem; justify-content: center; }
+    .nav a { color: #f4f4f4; text-decoration: none; font-size: .92rem; }
+    .nav a:hover { text-decoration: underline; }
+    main { max-width: 1180px; margin: auto; padding: 1.5rem 1.25rem 4rem; }
+    .utility { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.4rem;
+      padding: .8rem 0; border-bottom: 1px solid var(--line); font-size: .92rem; }
+    .utility strong { color: var(--blue); text-transform: uppercase; letter-spacing: .06em; }
+    .utility a { text-decoration: none; }
+    .edition { margin-left: auto; color: var(--muted); }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between;
+      gap: 1rem; border-bottom: 2px solid var(--ink); margin: 2rem 0 1rem; padding-bottom: .45rem; }
+    h1, h2, h3, p { margin-top: 0; }
+    .section-heading h2 { margin: 0; font: 700 1.55rem Georgia, 'Times New Roman', serif; }
+    .section-heading a { color: var(--blue); font-size: .92rem; }
+    .lead-layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(260px, .85fr);
+      gap: 1.5rem; }
+    .lead { min-width: 0; }
+    .lead img, .story img { display: block; width: 100%; height: auto; object-fit: cover; }
+    .lead img { aspect-ratio: 16 / 8.4; }
+    .eyebrow { margin: .8rem 0 .25rem; color: var(--blue); font-size: .76rem;
+      text-transform: uppercase; letter-spacing: .07em; font-weight: 700; }
+    .lead h1 { margin: .15rem 0 .6rem; font: 700 clamp(2rem, 4vw, 3.25rem)/1.08 Georgia, 'Times New Roman', serif; }
+    .dek { max-width: 65ch; color: #444; font-size: 1.05rem; }
+    .byline { color: var(--muted); font-size: .88rem; }
+    .side-stories { border-left: 1px solid var(--line); padding-left: 1.25rem; }
+    .story { min-width: 0; }
+    .story h3 { margin: .35rem 0 .45rem; font: 700 1.16rem/1.25 Georgia, 'Times New Roman', serif; }
+    .story .eyebrow { margin-top: .55rem; }
+    .side-stories .story + .story { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 1rem; }
+    .news-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+    .news-grid .story { border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+    .news-grid img { aspect-ratio: 16 / 9; }
+    .markets { background: var(--soft); padding: 1.2rem; margin-top: 2rem; border-top: 3px solid var(--ink); }
+    .markets h2 { margin-bottom: .25rem; font: 700 1.45rem Georgia, 'Times New Roman', serif; }
+    .markets p { color: var(--muted); margin-bottom: .8rem; font-size: .9rem; }
+    .ticker { display: flex; flex-wrap: wrap; gap: .65rem; }
+    .ticker a { background: white; border: 1px solid var(--line); padding: .55rem .7rem;
+      border-radius: 3px; text-decoration: none; font-size: .88rem; }
+    .up { color: #167143; font-weight: 700; }
+    .down { color: #a22b25; font-weight: 700; }
+    .newsletter { margin-top: 2rem; padding: 1.5rem; background: #f1f5f7;
+      border-left: 4px solid var(--blue); display: flex; flex-wrap: wrap;
+      align-items: center; justify-content: space-between; gap: 1rem; }
+    .newsletter h2 { margin: 0 0 .2rem; font: 700 1.45rem Georgia, 'Times New Roman', serif; }
+    .newsletter p { margin: 0; color: #45494d; }
+    .button { display: inline-block; padding: .7rem 1rem; border-radius: 4px;
+      background: #111; color: white; font-weight: 700; text-decoration: none; }
+    .button:hover { background: #333; color: white; }
+    footer { background: #111; color: #eee; padding: 2rem 1.25rem; }
+    .footer-inner { max-width: 1180px; margin: auto; }
+    footer nav { display: flex; flex-wrap: wrap; gap: .65rem 1.2rem; }
+    footer a { color: #eee; font-size: .9rem; }
+    footer p { margin: 1.4rem 0 0; color: #bbb; font-size: .85rem; }
+    @media (max-width: 760px) {
+      .topbar { grid-template-columns: 1fr auto; }
+      .brand { grid-column: 1; grid-row: 1; }
+      .account { grid-column: 2; grid-row: 1; }
+      .search { grid-column: 1 / -1; grid-row: 2; max-width: none; }
+      .nav ul { justify-content: flex-start; gap: .65rem 1rem; }
+      .lead-layout { grid-template-columns: 1fr; }
+      .side-stories { border-left: 0; border-top: 1px solid var(--line); padding: 1rem 0 0; }
+      .side-stories .story { display: grid; grid-template-columns: 38% 1fr; gap: .2rem .8rem; }
+      .side-stories .story img { grid-row: span 3; }
+      .side-stories .story + .story { margin-top: .8rem; }
+      .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 480px) {
+      main { padding-inline: 1rem; }
+      .news-grid { grid-template-columns: 1fr; }
+      .edition { margin-left: 0; }
+      .side-stories .story { grid-template-columns: 1fr; }
+      .side-stories .story img { grid-row: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="masthead">
+<div class="topbar">
+<a aria-label="Forbes home" class="brand" href="https://www.forbes.com/">Forbes</a>
+<form action="https://www.forbes.com/" class="search" method="get" role="search">
+<label class="skip" for="site-search">Search Forbes</label>
+<input aria-label="Search Forbes for news, articles, and more" id="site-search" name="q" placeholder="Search Forbes" type="search"/>
+<button type="submit">Search</button>
+</form>
+<a class="account" href="https://account.forbes.com/subscribe?eventSource=header&amp;redirect=https://www.forbes.com/">Subscribe</a>
+</div>
+<nav aria-label="Main navigation" class="nav">
+<ul>
+<li><a href="https://www.forbes.com/worlds-billionaires/">Billionaires</a></li>
+<li><a href="https://www.forbes.com/money/">Money</a></li>
+<li><a href="https://www.forbes.com/innovation/">Innovation</a></li>
+<li><a href="https://www.forbes.com/lifestyle/">Lifestyle</a></li>
+<li><a href="https://www.forbes.com/business/">Business</a></li>
+<li><a href="https://www.forbes.com/leadership/">Leadership</a></li>
+<li><a href="https://account.forbes.com/newsletters/">Newsletters</a></li>
+<li><a href="https://www.forbes.com/games/">Games</a></li>
+<li><a href="https://www.forbes.com/vetted/">Vetted</a></li>
+<li><a href="https://www.forbes.com/advisor/">Advisor</a></li>
+<li><a href="https://www.forbes.com/lists/list-directory/">Lists</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<div aria-label="Trending stories" class="utility">
+<strong>Trending</strong>
+<a href="https://www.forbes.com/real-time-billionaires/">Real-Time Billionaires List</a>
+<a href="https://www.forbes.com/sites/antoniopequenoiv/2026/10/16/katie-zacharia-fired-days-after-muffed-press-briefing-report-says/">Katie Zacharia Fired Days After Muffed Press Briefing</a>
+<a href="https://www.forbes.com/sites/suzannerowankelleher/2026/10/16/tsa-gateside-precheck-program-on-hold/">TSA’s New Gateside Pass Program ‘On Hold Indefinitely’</a>
+<span class="edition">U.S. Edition</span>
+</div>
+<section aria-labelledby="top-stories">
+<div class="section-heading">
+<h2 id="top-stories">Today’s Brief</h2>
+<span>News and analysis from Forbes</span>
+</div>
+<div class="lead-layout">
+<article class="lead">
+<a href="https://www.forbes.com/sites/baldwin/2026/10/16/whats-your-true-tax-bracket-the-answer-might-shock-you/">
+<img alt="Illustration for the story about calculating your true tax bracket" src="https://imageio.forbes.com/specials-images/imageserve/6ad23596361376cea1b3be9b/0x0.jpg?format=jpg&amp;crop=1919,1079,x0,y0,safe&amp;width=960"/>
+</a>
+<p class="eyebrow">Investing</p>
+<h1><a href="https://www.forbes.com/sites/baldwin/2026/10/16/whats-your-true-tax-bracket-the-answer-might-shock-you/">What’s Your True Tax Bracket? The Answer Might Shock You</a></h1>
+<p class="dek">Marginal tax rates drive choices about investment portfolios, Roth accounts, side gigs and charitable donations. Here’s how to calculate yours before you make any end-of-year moves.</p>
+<p class="byline">By <a href="https://www.forbes.com/sites/baldwin/">William Baldwin</a>, Senior Contributor</p>
+</article>
+<aside aria-label="More top stories" class="side-stories">
+<article class="story">
+<a href="https://www.forbes.com/sites/mattdurot/2026/10/16/sergey-brin-registered-to-vote-in-nevada-amid-california-billionaire-tax-frenzy/">
+<img alt="Sergey Brin" src="https://imageio.forbes.com/specials-images/imageserve/6ad23a57361376cea1b3be9f/0x0.jpg?format=jpg&amp;width=960"/>
+</a>
+<p class="eyebrow">Billionaires</p>
+<h2><a href="https://www.forbes.com/sites/mattdurot/2026/10/16/sergey-brin-registered-to-vote-in-nevada-amid-california-billionaire-tax-frenzy/">Sergey Brin Registered To Vote In Nevada Amid California Billionaire Tax Frenzy</a></h2>
+<p class="byline">By Richard Nieva and Matt Durot</p>
+</article>
+<article class="story">
+<a href="https://www.forbes.com/sites/antoniopequenoiv/2026/10/16/katie-zacharia-fired-days-after-muffed-press-briefing-report-says/">
+<img alt="Katie Zacharia at a press briefing" src="https://imageio.forbes.com/specials-images/imageserve/6ad264af97e4d201b435edb2/0x0.jpg?format=jpg&amp;crop=1801,1200,x0,y0,safe&amp;width=960"/>
+</a>
+<p class="eyebrow">Business</p>
+<h2><a href="https://www.forbes.com/sites/antoniopequenoiv/2026/10/16/katie-zacharia-fired-days-after-muffed-press-briefing-report-says/">Katie Zacharia Fired Days After Muffed Press Briefing</a></h2>
+</article>
+</aside>
+</div>
+</section>
+<section aria-labelledby="latest-news">
+<div class="section-heading">
+<h2 id="latest-news">Popular breaking news</h2>
+<a href="https://www.forbes.com/news/">More breaking news</a>
+</div>
+<div class="news-grid">
+<article class="story">
+<a href="https://www.forbes.com/sites/siladityaray/2026/10/16/mukesh-ambanis-reliance-responds-to-elon-musks-claims-over-starlink-india-launch/">
+<img alt="Mukesh Ambani’s Reliance responds to Elon Musk’s Starlink India claims" src="https://specials-images.forbesimg.com/imageserve/6ad1eff704fac62e3463b721/960x540.jpg?cropX1=0&amp;cropX2=1136&amp;cropY1=39&amp;cropY2=678"/>
+</a>
+<p class="eyebrow">Breaking News</p>
+<h3><a href="https://www.forbes.com/sites/siladityaray/2026/10/16/mukesh-ambanis-reliance-responds-to-elon-musks-claims-over-starlink-india-launch/">Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch</a></h3>
+</article>
+<article class="story">
+<a href="https://www.forbes.com/sites/alisondurkee/2026/10/16/judge-threatens-to-sanction-trump-after-he-backs-out-of-deposition-in-10-billion-bbc-case/">
+<img alt="Judge threatens sanctions after Trump backs out of deposition" src="https://specials-images.forbesimg.com/imageserve/6ad27d6e50cf55fabaadbfdb/960x540.jpg?cropX1=150&amp;cropX2=1327&amp;cropY1=6&amp;cropY2=668"/>
+</a>
+<p class="eyebrow">Breaking News</p>
+<h3><a href="https://www.forbes.com/sites/alisondurkee/2026/10/16/judge-threatens-to-sanction-trump-after-he-backs-out-of-deposition-in-10-billion-bbc-case/">Judge Threatens To Sanction Trump After He Backs Out Of Deposition In $10 Billion BBC Case</a></h3>
+</article>
+<article class="story">
+<a href="https://www.forbes.com/sites/laurabegleybloom/2026/10/15/the-best-countries-to-live-in-2026-according-to-a-new-report-from-nomad-capitalist/">
+<img alt="The best countries to live in 2026, according to a new report" src="https://specials-images.forbesimg.com/imageserve/672ba1ff71ba8525c04e0c3f/960x540.jpg"/>
+</a>
+<p class="eyebrow">Lifestyle</p>
+<h3><a href="https://www.forbes.com/sites/laurabegleybloom/2026/10/15/the-best-countries-to-live-in-2026-according-to-a-new-report-from-nomad-capitalist/">The Best Countries To Live In 2026, According To A New Report From Nomad Capitalist</a></h3>
+</article>
+</div>
+</section>
+<section aria-labelledby="markets-heading" class="markets">
+<h2 id="markets-heading">Money &amp; Markets</h2>
+<p>Last updated: 10/16/2026 04:00 PM EDT</p>
+<div class="ticker">
+<a href="https://www.forbes.com/companies/berkshire-hathaway/">Berkshire Hathaway <strong>+1.21%</strong></a>
+<a href="https://www.forbes.com/companies/jpmorganchase/">JPMorgan Chase <strong>+1.25%</strong></a>
+<a href="https://www.forbes.com/companies/visa/">Visa <strong>+0.71%</strong></a>
+<a href="https://www.forbes.com/companies/eli-lilly/">Eli Lilly <strong>+0.43%</strong></a>
+<a href="https://www.forbes.com/companies/palantir-technologies/">Palantir <span class="down">−7.22%</span></a>
+<a href="https://www.forbes.com/companies/nvidia/">NVIDIA <span class="down">−1.43%</span></a>
+</div>
+</section>
+<section aria-labelledby="newsletter-heading" class="newsletter">
+<div>
+<h2 id="newsletter-heading">Forbes Daily, in your inbox</h2>
+<p>Our best stories, exclusive reporting and Forbes perspectives on the day’s top news.</p>
+</div>
+<a class="button" href="https://account.forbes.com/newsletters/">Sign up for newsletters</a>
+</section>
+</main>
+<footer>
+<div class="footer-inner">
+<nav aria-label="Footer navigation">
+<a href="https://www.forbes.com/sites/forbesstaff/article/forbes-editorial-values-and-standards/">Editorial Values and Standards</a>
+<a href="https://www.forbes.com/tips/">Send a Secure Tip</a>
+<a href="https://www.forbes.com/contact/">Contact Us</a>
+<a href="https://www.forbes.com/careers-at-forbes/">Careers at Forbes</a>
+<a href="https://www.forbes.com/terms-and-conditions/">Terms of Service</a>
+<a href="https://www.forbes.com/fdc/privacy.html">Privacy Statement</a>
+</nav>
+<p>© 2026 Forbes Media LLC. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>

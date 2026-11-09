@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The headlines on two prominent automotive-news cards are legible in the reference but very dark and difficult to read in the target, materially reducing access to their editorial information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The low-contrast headline text on those two cards is substantially less readable than the surrounding page content.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The article cards are visible editorial controls, but their dark, hard-to-read headlines make their labels and purposes difficult to identify.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The affected card headlines convey the article topics in the reference, but their poor contrast in the target impairs that meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image readability**\n\nI\u2019m comparing two images, noting that the text overlays on the first row of image2 are very dark and low contrast, making the essential headlines unreadable. It seems like the visible policy text and action controls aren't helping with overall presentation or semantic content. In contrast, image 1 has a white, legible headline, while the target headline is faint and almost invisible. I need to classify this as a readability issue, as important material and fidelity seem compromised.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image readability**\n\nI\u2019m comparing two images, noting that the text overlays on the first row of image2 are very dark and low contrast, making the essential headlines unreadable. It seems like the visible policy text and action controls aren't helping with overall presentation or semantic content. In contrast, image 1 has a white, legible headline, while the target headline is faint and almost invisible. I need to classify this as a readability issue, as important material and fidelity seem compromised.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBvcsSIoT02k6hcfrHBwz8KHj7eXtisk36xaE2josEAkTjnwd0TQR7YacD3BshnsC-jgzOxr_qx13KV77zOw_n_Wt0iR1z1Qun73LYBAXOIBl6N7jLopYhWvT3JfIJID2x29OpGaLoRQvwq9QO945JNfAgDtKL-meohpz8LL09vr8eVt55B4DrQXFzB31TQW6h8X-Z5xu0DBvEUqAmU2UEPpxd-I246Yp8gGp9Tg8ACR_zjTxQwmc-SiHdgFBpulPt4B1oDW475CjUXpdNuYW8FYqasbOW9BtTRqUHfo9MOQqGmKhosAOVZYPLDN9xFCAo2rCuDPDRFo3lGwl2Wl3EuJndIUNz5xCySs73JhxA5YgxgpR3f08P6kXAuW_jby_FSnwQwHVwFue9Bs6rIBqpqEBwQ3rIjLAezzkoGUkykipmGl6s0NtKYsIYL8AnmiHO5xU4j6P9p7D3MVeGcnaLkS1RebW79JiS2VC6BBLAxjSw5FVV0BIDvHtf8IzTXZVgZAobPq88-XAVdZ468tXp1-POmnRYi7_v5WnSshoCxXmA1sdqa-rttfiHToTm-3h45LPQCGGehUvSPzizupWP5GRU_7XUyv2ePny5Nsm1ihxr-nL3BQgKBf-F3SuEN31x7QJNuyxQcmA3VF_s78-Ll9auemLPeMBfpcw6GevpnbrTwXxeQfwZYey0FouCmb3rkgXT1pyqsd_lJKjPrSZiLcUX1awzYv9_MtWY-zC4M9gLZI0VEVDosGfClKq1ZBcq7MjIbCoJ4Vl0PnPdAWgUk5AqEyU_qj5L3mRcDZ6msYo-L0tvAMDQYY4wXec-WJodnrCdj7ww78sPc9mmE8XZvAzCVJb4107ZSiQ05qXZdMejwzy8JLRKu1QKkMcKTzXiTmdNjPJp6yj95ED8yMV_gGmnivLE5cUMrf6oyYy1Py6wikqHFlNVmvqrg7HijX9OAp3khmZkaMm2juEutjRTeymcMZK9ljCTsfuL_6QKytOlqs5rQQNr89ABogKNDB490yI-uqR7hChzUvt1K-Y-AK9bNBZm0Hg4IRhC_zwWRINw_SgyhFiwyhRdochgWshCdFQzk7bwO-VHf6wn2CPRbTV4TP3yYE4fN6uFp7kM5jeDf-bCKvo7qoN_R_-VzLR04tGm-ZWsFetU9TLUTYCFR7Fs8DOhAPxNC_G8vmBV3VJsksDq2169OyV-BM2QAJnUweg1R3Hn17FDCI97JENMmFhPmXRLLAjy3b5WB7aNpBQM6A2FMzMzH0oQTOCiSOQz-W3ND3D_Sd11PUGkut2tlRcZTp7RIKEF6VtgMlNNVYNXus0Cyvzg_j9-PBfbanH9i46TkzHPkvc-LQSZK1B-z1yefZo5glRNHPXFWy2-gTLTIzGYtaT3hNmhVZMyX0stONXjHfhjklshS5_2Z-NObouzCzFzHLuugEsDJud-MxdAQXr5nieHgm8vyerYKos59SCHaatt3GNTVL00bIrN1B_ifBEaYCH42veUta-XK7ORoGOPCMG6EPm56cyX69sS1ZvCmK4mZ4-oHsd6Rzk8up1Cc-b2Y5IxUtNy4oxDy131tqBu6wMDIDlKvQ1WjmZ5Bl1HaIZ9gdjIn88wMxG6jKQf5oWq_zA-SwZ0SYR_I7b6i4-XaGPBGjhSEgsZF1s-FOpUVz3ydz3wsJCEd-rH09WFZmjccYt0oek2YGVtaYW6ryY-QbRgfegy-jEy8N_HrP3Iv-CyN1o2GmXCDRrCzN2NNhB-RXx8GurLoOtSRPW-fvK87FOFmyt210FeNn3erqd9O01VI4u--062NHyIiE4k66fqA4xxS49UBUFBhYh3ZzwspziRra6I4VQRREgO985SG2vIldv9_abhO4akh7imtDMeDtK9Fms-GXNS4JEfadpkxCsT7sREOAnvHqRo4MB42MwkumKJn9qX2Eg19sEQygncRvolkdKvBKsx3qxSmFrnKsa0E1UOm6V8wuHyRAKpUNCHWyfRdgZG8U_RrOAevbTpZBdjGkp0Qpt2CyNNezKqJn7ajuY929SwjtUlxHcLmUMx5u51L4Qq2BM7cOzOoFm8wrot1lvyobmfwHs_6pepNxE1fIfM2hcBsH4PAD1qcVOETOIo_FF_rcjIFhwtET3oy8iPjMnGVK4QkASuBqls9dABVyAz8aqJYOIjLGPe_k4rXQ4vcydpRdLc5jJeABkVDfWgDf_N_cSY7Uy_Nu2Wfonu3Yl4tp_cchASug3LAwr_HcmTOoAovsKoGyMyggH_RCxg2EpbgpIkZBDYYTgMXsfyGg-5rj_5FeBCJP6BSHfMVx_GRQNkDsrZXlsBX9TkNoGMU34pbp7kSYN4qsj6k5V7ada5NuI6KZb1OqXrHiwJfKBx-h-JATvYRx-ntsNtaZv10FffqeCWiGBvr_7FVMPNf7jH6Vr8oLHKulBRZqjjtX2xBms7jCWpdcKdfM3q5eJvWE71eY6OodI8Gtp9VGQ4_Czu4-QmTz_Y9YHz9VqqfZNJKaLu-uQ6FuSzECXYLZxXd0jDrcTsaxeOR_Ro5pynogoLQ20vwdECu99LdywFpsH5CkTXPz_b3hYQcDcu1DvyYMp9YGVwBa68wdVdByO_JRInhy7GMtRgbbqXACZzSfCuvyo3FngKiPUH8OwNhcpqlQw_DEBDqhJdEUABuATE0DpJDkeBGgs1MsJ_c9lV5tnqfUKv03q4Cn7LeXNpOXYAqBDQRNYY4uQGfeocnchOz38_07zg0-pU2O5klYY34glTUo4ev8t0M7t0l3SxmdYdhXvLUdWWp1zzLs8A0aQin_7Bbzy4V6O-nfhP9zna4u0uyvr4ioVBsn8WUzXrRb3Mo3OCdi32qaxLdVWNB2_HZvOvz2Mz4Jdx-qfg_9-nCfQYQtWczmUfbsGJRuSSpN29q6CYsmvpID4AJCfqt1vmBH47rVEK-B-agJP5yBisW4Hk9LhlGzGUl9iwO8HsPPYviUdGPL_VoMrRvosDaGgrJnuUJOavUI5N6Ne6UYOecQ8aV7270qE0LImuQXEtxGiTnsHOPvIQXvn0mU5vHvvM7PnuqPE8ykH37vS9Ry5S31HDILsLr2Vu4mZsn2NRQhh1mj_yHegKEMtYm-F56ayhXUbGAK4KLXbDIlRR3yy5cd23S0Y47vbfaGuFuu-toCJEzfQP4MNig0maJT-NMvnuQPXo_vVH0PTTbWokTbgBbIXgYIrC7R2I_6X6gvWLGznCL_Eu6YEV_RUY9rJYwTz6Bwh52APn1gbCJoNq2-UQPgIroQFqnksmNdpeykDygmLBst3sVNquGb17cZ1IRV_kS7FKs9n9XRkIrFWM7g_Mme1URN6379SuIbhD-6qeMvnGUW_OHP60VzaAWJylZGa2ziICc_LPlO3tP4pIvO9lBMpUJqzSzByznpg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0351a579f211e458016ae8206d1fb887d18a00ff7d088fa140",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10194,
+    "completion_tokens": 371,
+    "total_tokens": 10565,
+    "cost": 0.001459675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10191,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001459675,
+      "upstream_inference_prompt_cost": 0.001274175,
+      "upstream_inference_completions_cost": 0.0001855
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

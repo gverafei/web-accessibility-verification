@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target omits the prominent QR code shown in the reference, removing a core sign-in method from the page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The large blank area in the sign-in card where the QR code appears in the reference makes the target presentation incomplete and less usable.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The QR sign-in option is absent, even though the visible instruction tells users to scan a QR code. Other labeled buttons remain visible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent, corresponding states of the same VK sign-in page; the missing QR code is a localized content defect, not an incoherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target retains the instruction to scan a QR code but shows no code, so that sign-in guidance no longer matches the visible interface.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing QR Code Issues**\n\nI'm analyzing a problem with the missing QR code. The core sign-in element is absent, which disrupts the essential task. There's a defect in content fidelity and presentation, as a large empty space is left where the QR code should be. Although the buttons are legible, the missing QR code means a loss of usability and accessible pathway. It\u2019s a significant defect that undermines semantic adequacy, as the request to \u201cscan QR\u201d contradicts the reality of no QR being present. I need to classify this as a material defect.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing QR Code Issues**\n\nI'm analyzing a problem with the missing QR code. The core sign-in element is absent, which disrupts the essential task. There's a defect in content fidelity and presentation, as a large empty space is left where the QR code should be. Although the buttons are legible, the missing QR code means a loss of usability and accessible pathway. It\u2019s a significant defect that undermines semantic adequacy, as the request to \u201cscan QR\u201d contradicts the reality of no QR being present. I need to classify this as a material defect.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BhUdssLnuMI2VWDljgpkj7HEPUqjKcT9vum6UBw7-YBuYX8tRqi4tKEBXiBYhk6JXe7PD3BvlaejHpSFbmhDWqi_Hx_hz_OTky_K8w-c96MO2bBdMkKJ0YpjfKdJjQ0wgUvl7uEEZ_unzbIU-qZu-ut_rmDUFT3woQTatZ4480BLQ7TrMJvfO0O5u24Q_R0TvUMjUQFTrZTA4ktIsbv-ELBlcZj4WERTY3YF0KQaja8_Tp-QnT1vixr0YAFXUMpHYoJ6hJlTIzRhdmSjHjUtwi_n0w4GTqgsoK1-gR2P_XKKe9fYufXEDuJCa2sGMng9UUJGOuNu0sL_67LBplbpO2TVcDKIiWpO53dzBhBtr64e4JoAyRHfZN85s_qnmImWf-Ct7MHkKo8-958USA_wQsO43bhG_h7zWuOzPMmeacm5mTdc7U56mEsFM5DzzNke2UU-aRvjhHf-OWuw9z5r2CUq9pGEhfz0239gzwjFlYiMUtcdBTP3jsqGuznRVaRONuLwMhlP9ZA5N8P6A4h2fV61MysqAC9XNQSCVJSqfTABRmSL_zD9x9zdm5UTROlmwn2jadosq8D1cZKNIVyrV1W4vJRQOnb_8gFgR4MmspV8oCNNoe1N6SkpkFZn5LwGvordjJx71gIryMrLK1oX8vu_x7fn8IJsDhphX4S4mCdHX4O_y4CHY2KaW37QDkhWBNbOxzjTC61nqCj5AZF_oyQpXMpkdg-I8J1ymCIJDZd0d_ngsLkqrjXmv70nMhhYMR2G6tyvyUjY68KGTq9N8LVJwBwDdEvDiUNFCa-8pna0wi_eixn3BV3363A35VnD3m_1BDV6pufI9FD-MAYsnAyNnRqLv37BhCaUPr_blei-ZgUDgXWFXzCuIBuEU_7b3PvIuKBVFc2ZGopRMtcm1aJ7oOkXc9_SOzu4QfrW15CdOoQwUou50eghBKxnBJwWwq2udgnVGReEHVL--A295EkV2ljc4gwOREj5QvoP8uCspwkPj9wRGVdaWGoVvOSIH7cB0LkRyLYCt9t9Z2uyVE0qPyA-AoiLe5JisnrnEwygxIBiV-Y3zM0peXlGSqMeQeCmTBvhislEbkySJF3du7jF4JghyCxnBaM5IIhlbADAyBxVdyQKGuTOoESa1KRUKuvTYa-K8lN-yKuiQnRAlnEDNo7Ux3fbVyfeDR7nCodEUrUIzZazVe8hvWzYfmrTIyOG291DFef_UhiYX-aelK-4AwZUSIAZf2FDiBY4AMF9vHFCzjiiDj1lgZD65l6tAKIbaG-pdMY57X0GuO_boyWq7n55qnUxRq3BjTHtMLmzmTDr_-hl_3H81_SgRUttvbOQtoY4MDoBdUmKNfTLoiTWJ7VILj9ylPMnAK-elobROlwjQ8btIPwawpHalvVvXgeSe_cK2ggPFpGLexIfTlJ8kN9eZ_ezksjeX78M9QFErpy7Ef0lW5eYOa6JQuziEGRNxuYAdRl9C4fFuvmfi4pcZOLBzDNjxPBcskriF1IvK0b3ifMtktvq9SfexuCwoQ_PSDZuwDCjaecm2WgO4Ljwixi6HJJ9E7Mnma8ut4KsRtZJ78Tpdnpk4cuNA_TFM2TM9W2Kar9jqNg36n4AH9I95qdi0WIoTDC2LabfHKJj4i7InmNq4S2O-j_kmnpIoRtwVpbBC-PZCjViCFMicq7NEVYZVN9G7QfTasirTPrEL5u5eBaRibgFIvJsKA50wuPGt5g_VUla-vYxt0vzjO-n6rRziJ6IlW0WHyhNdJAlsmZ4ndmY1jBl2ZoibhdPJC6rMHtRgPgKl1b-4x4q66qWhCeOuPkaAaTioZZE3xmzILqaak4rA_vgGWFjsrzydPOUZ7b7CyE6iPPoq53prjJpzTIpMofBGszC_n7r99_SikvRgcgGXye-f35cy3KMLIm5yPv_RZ7WR4L9SdZsZKTJ64XF4veUkwBAHijd_us5rIs5xl0ayENeaaDBb-WxIgPG90UQ2s4i2N5v6DRoPmSbpbZrbCtTmELhgD2gSYbOLE4aizTxJUCwf6VmKyjcfDlZxON635Jq6c1bzJ_rvFYT4pdwaQM20HQkyg-DBDz87HYrQ58aZANNQ0Z_H2RFOmlqvng05sreT5AmawCD3mh2TSZVWDsLcl1uZ-lbavtrlzkMv-ZDq1Q4zlwOmX7JQWLxKHRPYBwp1orRf9wRxF3EcU_D61eRudtCvkoQF8b_RfVFHOYhrZPfDJ9vSrhtVkaryQmMHXCHPj1pGBGhZbwex564HbJY6H_lPgsxRTFgPVZ9Z-K8i74HoA1TdKoMnOgnZJ9jMg6DjjJO57ZV8ROJSOuqi8y2nrFkXPTnPmjkEkhi_zIhOkk6YnF9TCSKRAL-OHL_Ggub4EXC8DhAPQ1sPw_Y_GGCADhltLMVr6nrin_1OYIckn2SkpB_o0MQ5e2GU10PQ0fxvldu136R-zRITN0vqreRqsw3fFlYzOIDs7JYLw5aFEqq4ooaBjdxmV_MHHw395JS_J7sq5p5nqYC7_UXx0tOQ1fzkb11PJ7PyazFTGOKTt5clNO-ROKEZs7WsypfSzw5O9AW4RsHBUXb7wmYLql-JBUxPBvg03PdonmcFhC7_mDLYMlTigWczgwPpK5BM024-vecm9qk8M_dFn0P2eQbGJAPTFIe4qSeSfYyHjoGFb26gD-oKY00tZOYhdSG1fIj4FvGovGQXrTOxSPwS_XplZdsGyYRJY6FDzpDc4PaGmN3e-CGPJ9CktLBoZkv6AWLpxDI1HNKUB9o41aZ1TQGdb-nXuOCdeE5LMdTT-IYg9Dd5PkhLZYwG_sjbBR_twykfBwWn7Nn9B9oG2xtT--7khl1jI1DXIBoZbXkJEM74C-vXlT7XkWOQTYZMjfk1NvHyN3y3PeaEkcw2ejmnMilnTzNeK7txAuj2P3Zd_MPLSDYuwB3FNVWG1bw1gEpv6kdgMofcPnndOWb-707QHOp_08aRCXbvPaYrwn93SbNLJH5kBrBpfA-oL5bDBEK1-WvRrOQd30EblljbLOjM-vI2XNtXwe95HlhObncydzkFBxNgSFCxTqX9U1MVlk4qrK0iSR7CMBzoZZlpPItbUDrDfEdyWPev9RuRrmQ4ci-985_wERHHdoQEA6L1zTRUOXNWwcT9fT1OIHQ8bdsA2u55ZJ1RXmX0zqyFumGZbZsD4WJ-SvCSERoxWGCTFRKNUohr5uNGQAxzHeTkq0hasui1Bp6pd0zffeVQOsrhGkImu1y4jmVgPkP1sDyrftOIuPiGfgsde5zTtQcRgM1xRRQM44Bzo872avFb4VoioJdUGYCSLRxvsMR1-m.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03bc798c3e496513016ae8185273c087d18f075f7ef095bc60",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7009,
+    "completion_tokens": 388,
+    "total_tokens": 7397,
+    "cost": 0.00107005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7006,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00107005,
+      "upstream_inference_prompt_cost": 0.00087605,
+      "upstream_inference_completions_cost": 0.000194
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 124,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

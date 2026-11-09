@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show the same footer navigation, category links, contact control, and tracker-settings panel. The displayed regions match.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and controls are legible and coherently arranged. The cookie settings panel overlays the lower page in both versions; this is not a target-specific obstruction.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation links, the Contact us button, tracker-settings link, and Accept all button are identifiable and readable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired images at both scroll positions align and show a coherent reference/target comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The footer links and tracker-settings text communicate their purposes clearly, with no meaningful difference between reference and target.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10301,
+    "completion_tokens": 190,
+    "total_tokens": 10491,
+    "cost": 0.00019828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10298,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00019828,
+      "upstream_inference_prompt_cost": 0.00010328,
+      "upstream_inference_completions_cost": 9.5e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

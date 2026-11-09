@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the Google sign-in panel, Gmail purpose, email/phone field, supporting text, and account and navigation options. The minor visual differences do not materially change the information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The sign-in content is clearly arranged and legible. The target\u2019s text wrapping and small spacing differences do not impair usability.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The email/phone field, Forgot email?, Create account, Next, language selector, and footer links are visibly identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both images show coherent, corresponding Google sign-in pages in the same captured state.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text, labels, and controls coherently communicate the page\u2019s purpose of signing in to Gmail.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Organizing JSON requirements**\n\nI need to focus on using JSON properly. The target must match the sign-in details, but I notice there are minor differences, like some missing carets and spacing issues. I want to ensure all controls remain intact for clarity. The presentation should be legible, and the evidence must be coherent and semantically correct. Also, I have to remember to check the target field for blanks and reference the cursor. It's important to stick to the exact schema!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Organizing JSON requirements**\n\nI need to focus on using JSON properly. The target must match the sign-in details, but I notice there are minor differences, like some missing carets and spacing issues. I want to ensure all controls remain intact for clarity. The presentation should be legible, and the evidence must be coherent and semantically correct. Also, I have to remember to check the target field for blanks and reference the cursor. It's important to stick to the exact schema!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AFcNilmlOT2KwaNAMGt2TdvBJbKbopjUEdIc4lom-GsokJkFCKFxe1HMSqRfVb2DhDOibkFT7eID_o7da2-tQtCYlcsuubJhMT0gkeP0xPJOoNvrj-I2DLgItmFMfKvxF9SSIqEsYiNUjdhkr8qqT-z_qtSnotIQIy4E4ZkUbDhF_oAgPMaCizi4oxS2T9q1DT-pBMP5fx_Z6txIgNKSDcYZ_IoaK4YX5yDyFsM_7f3V9nBGA5PRdaHgZyfzj80Z900RFBMtODOmgCULBPmvXtdTSrdqmK63lw1c5nmXw8NK4uMA7l6thDcmszCWJAx-txY9Eu6LYWStnTJJJskQHrxplQfxEJ6QJIgQBWmjhSH7pFB-RuPZFyrQL2bK3iI-GmaH2ECEJUd_pJ1-YnfdQtuhfaA7a9Xv_Ty-CjSzX5cSbyXkT4AlFkNSTDH5G75iFOaymEzRZsdMNGf0JW2wGQSNZAxHRVE78dBH9Uvmq8RyyDxPvdycaPZ8KxUdwe_mPewXwGekjdlQcShMC4T9qHmAEjtHKH1YDL-ffGMwGUq0SkX2v52_FQea5a6GP5CdEsmWb9gXxCQAqiscTmmU-U0ijxDXz7VSWkF9fT95Moln2n53z-jqG3iFm5WMprhUrmesz3mQTVlOTVb45b9p5x6Zdeh0vNGy3tyxGvl1gXj5X5p5MI0YgdA_5xRAn_l4wsD5Glq4IZ7uLzHaR_H9p-08fzC2HFegjSYcKDRFJnQAIAcorhv52UT1gcUhM__KkVy5cn9Y31FpiZCu9AaYYfwvxTmc7xVClyBCP9eFajubqXU1lY3tnVu3l6fX52jHotlrtq3wZGj2wiDYgQvb9Q6mVnQHKdZ5LPYMiKFpXlTht0quZWct5LyBPrw9JyipZzhnycDWRIhUHMZKYCALm4Ryg2gx2E6peHcOWuK3pHzvA-rXBrnzwYjDf6Gjl6fNIQXquZwj3_mcBUoyDc7y9WbnPqFaE2NEEq9az79LWDHXFnEEjjFn1CIDDB3XwQA6lmWAeXfWj9-mioaCazUdjuj8GhGHO5eH4ZjhIzRRjVslA5J0OTiOKRF5YfA-GVepqNh-Pj6wSFUfMpTpwR4Qxxiv3cdJnV9LiA-4vmKPOrOhmHSK6gnGtyYkTzmV9VS9SnItJwbnInZH8PBwE_NDMTIl-4akgXKpwpW_Nxp_ovKre45FKtXs5IZ8TgFxoZNNaZUrxfzVgwuBf0Mhir1X4oDqP9P6HZAxRhLZayCWTXBRZpRiE96ze6cYOhghuX-eWgd3G1ZKHzkRPd2iXUKfEPdkccIqjskdf2ZlYBpJgnaBjzssUSE6_ixvD8E70klUXnHs00ARqm49wKSKUxTVVINgtmLF2MEVyaz4hTZy5XC_ILvOV94b_kqQJjBY1pLqnopPsMtmE5XeyX1kA85AC8aaccECYqol9VTtEzIqiiR39S2I6L5Q3NYVeo5odd_5uOhCyIc4fX8nf66Wn0YTyiS-szD3ITiTw_5iG76Y9qpxU-NqWYKAklcE49S6eeVUE7n3c_2ohQUN7px43uWf00rQ1uUUixvYHWJWrxP2otGsCWtA54cqMSpVLQfPAARvRCfyA4EugfXZYp2Xg5yXBjUskSP7EAGzgYIq9MVzGY3Fgba6gSru3247dxeNabj5gpQSrvoD614fevDXjbbC9VvobVpt8rYO4AmvGur9w5omeDm6AcUBPRbB4afJqxt98t4gznFbdUmHzLN0mi8HqRFf5hEynP8YhkV2T5GeySbNvevbQuDh8whGuvw51OVSsVRCPAEJhFID7tjMQS00OjvCz2KM-sxrDHL8YWnZOYLUi1Ed6X-SoC6-eNwvsISuBsPQV8plA4v8CxhK_WtKX5xewYHW3Y_qKuo-YMkPNeO2eq7WIHq81uisbeW51cz4RMLSkp172rhVAbMxwkKqYhZjpzwEJaySxf3V9vVktJhQGlAEaOPjHd5HMiP_7w1wZQj2MmLktoA_31mpk7pQUWApY-Q9gLq19IfXFh1-ryZA-m1rYGW4oQGKHHCfZrUL2ZBbDAeSVjLmfOXDkvPpl82cyETqvJTBpZ1zL4t5A97mJ3WXZ-OwshZQfm6Thotq9SVKp9hKZxJThnIbEY08EM4IdqOSofLTcyPeZttbPeNiZcsPEIQip_m5S3_5i17qKCpyBxjuu8QMqInhFX78W1qouAplorOjEvZUBb6TmUOm73wllJhq7JGhignxn0NOcK4.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_01683bb37a01777d016ae8015aae0c87d1997005318153e33b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7102,
+    "completion_tokens": 302,
+    "total_tokens": 7404,
+    "cost": 0.001038675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7099,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001038675,
+      "upstream_inference_prompt_cost": 0.000887675,
+      "upstream_inference_completions_cost": 0.000151
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

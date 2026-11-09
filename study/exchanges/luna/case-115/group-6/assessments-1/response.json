@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent news content, including a climate-change headline, related image, and byline. A regenerated page need not reproduce the reference\u2019s AI-news stories.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible story content and footer are legible and arranged coherently. The partial content at the top is consistent with a viewport boundary, not evidence of substantial clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible footer links have readable labels and are identifiable as navigation. No essential visible control appears obscured or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target are coherent news-site states for the declared regenerated-page comparison; their different stories and layouts do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headline, image, byline, and footer labels convey coherent meaning for a news publication.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing target footer**\n\nI need to evaluate the window target footer, specifically the AI section at the bottom of the page above the story cards. It looks like the regenerated site for TIME news has some meaningful content focusing on climate change along with images. There seems to be a strange fragment in the top right that might be from cards clipped due to the scrolling boundary. For clarity, the footer seems usable and readable, though I need to ensure the exact JSON is correct.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing target footer**\n\nI need to evaluate the window target footer, specifically the AI section at the bottom of the page above the story cards. It looks like the regenerated site for TIME news has some meaningful content focusing on climate change along with images. There seems to be a strange fragment in the top right that might be from cards clipped due to the scrolling boundary. For clarity, the footer seems usable and readable, though I need to ensure the exact JSON is correct.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BpjkrADRng9mWJpY5MLiYmLhoobCxKJIobQGOMaCTmcKHH6mVlsbnwvsdUIsq6o-q1aKJdRDhG4CXo7buGZmRbHTmRyWFOP04ugOMw9H3TfgeFS2GwuJ7IUnYBMda2z1MYBX9uXF1YLt0VeR-eV7JK3hHLoOa_bzhH8WSCD19jUns_W4hipAm8YNaRorbhiLrVgiWjoTqHmBCT0mkwxJFimyFnmz5JYixoToXc6LU4S7zpwBPX6LUDk37RhD_jH1ky6e4Hxxea8otXknH7GmXyT-uE-QAwzcBd5-kWc7FRcdRCFf1QKlu5Qn5cNJ5XtLKyRUuwmaips4ZNu7kz6zXNFIQEiwgZjZwdSfaEzBKIylkpPKDXNuH-HltezF63KXQnGqfPNN78WIXRmHmS4ZHHLNgRwGTalXjwYPps8QVMRO3CcCk9gZ9wzuNSLqIx-Y521JDfEQfyy5Z2vsR2ZCaf0MOQH-xiAOnx0elz9U2RtdaWsT2iiKDtREEoABN_PDV-m0YXse4jWUR8F8Wycnh-JF68F9pT2cHWTP25rxRRXE2m_GpFt8TsWePLQ-cDTInZ9vymX5nSxRcWN3ENArj4zQiD31cHYqbmKGuZF5t3v4BUo4-CiGAeaibrcLHYcOSbG5CkTcF78r3jwSF7udc-bxs5BeA_CXjYqCF-ES4NWNP8Asy-JI9SKm1Vbdq6ItRonLUaWKIzOUsYbiauQO1Qd-uRckU86X4lwggdbeN7Vbo-Dy74b8QvgDWApZsNGpPEaitiU5X69Y0J2QlmcDfT-HtUQSI-7-1K6cm9Z5UMdoTLbl0L-31bH8BvK5eIwB2Kgp-JcL_B25AMsWXfSIgP-12IMjffdzmec-SjSbLm_iYZJ0DrXNcePOTCgtsPYp7nLmccCj1QbbbCy8ikQvpOyJ1EHy53XDtkkBVZRR6zWOai9ZhLT10aYkIDUwIcWEc8BEapfiebksj9Bysl90lru1xr5GsBFn80SQoJ0Z698BhFOiePvLXstkU6wevgOXZOpjS0_n3EyR9IO7bayN_dsmvG-CX4JvoaXEwmUeHWfnCvQpOQrzGkSPDXurRfe1xoUuMegH7XwP6DDqv7YEeyhqyTa1JUQbPQNgAlGsrxRwW-coAaWm3ggobRaw7x2uRZlJxTe04sxsu3GPnOQ4CNFP6O76p6wbHmhA4BYTqsYqDTlLBZLK_KY30ytMxd3RZd60W2O2htU6y_5oEGBeYC1x3zcu_KfaC8OxvNqkIN03l6T0uDkXII2HJ_ty57daVtW85FvRcWENTP-GMPdKum-sCGXBKZMPAC_jhhb0fxn5TxJX2gSxXDX39XaeJ070a3lhHFhUwS7rxL86EPuj6tgQRvXRwmGVPdMnLm0vUDbIvIZXLkf0aRZUSlZwKjKohGNSz4GmGHTnPJ_pTX6-5EY3sBUxQRCvmfT3DuP9NYzYCau6clThJjBXfr9wbpbEb_BMFWgyFM44_Ekcz6DQkexyy7NkAWQi0GDOTc_uZkU1glN1kHiUszg5--gftvxTawUz-bxP1HGFRRlrKhyEWnv5mEJi8BQzZE-x_Vd70DZ7G8dbz0qKs_lmcGJzk2gyL1xZ2Qk4o-4dAp1KaHOI7tS_4ege8CCn0Wb9flDhrbCNn5RECkvCm099-_BrudqYhKTeGVjtGybdwwbeXxE5v5PF_qSm96tUexK16WBYxj9b0LUtePi7-6TRMVS0WpYsiGVe44T8--HwY9pTvv5dj6MaZJG6cJVCtq6wqE-qTBjClKcGwlxSVAVn00yvHfSisybP0KSJG1FvbNXTMbxt6NJ6LbE8Btej7cHNLIA7rg4l6wUV4_GdaRcK0xs9YEE9yG9CV0-2i3LDnvuuF6V3A84lf8pnC3BXaXdy85_5b7FDRxtG5yM4MwUPIi5YoPRe2GDcPmWOSYI5eipchG9_DSL9CbY0cWSa3lDYM8z13VNAugAlY2T2Vo2Ud_pFyz7sLdVwgohyHQZ4odN0SiJipMS0vVA_sbBcbivXR8vUGpVQmEn1w8UmyxStmozZRW5ui9iuEcwZUakaVnnLsgzF9CRY5kyXkw1eCTq9nnzyOOu5K7gSdDTYXFkQOV9MrMBFdVaCYPwvX2XUzwE5u-iZNrlTSc-RdE7T8zIC0qW3ArsCRfyQ9MuFzVg4plLWZaykcYAhS5ODP_83iN6jBqV5ckR5ICvbxtuKhhqWW9r1Z-LwSExsJCUp8lwXvX0shqiAhOctBwqM9354nEo5ndwdfdpx5EdMEZYY1wXzNLUm_yLuu3mqUG886zecY8a2y5sT01ohUPB_1YKSKIGw9Q6wHlBmlExVHl1ejV3ibbiIZyxUg5fFni7lsAn6af3uwMEdSt9Ky2JOYf6FwSZRrq6NodZ1kxW42Y0op-e_TIo3a7LxBqDsHdmw27zzvUVLy3iy4He3D9p19T95CrVOFOfWI2YvtYGnxT3eXIg9IXCgPWSWwE_9ucMC8rK_ohdPv0-cZOhWSSSvfH0Xi0J5g8ZRl_2YNDx2X1XZyNkNO6DapK5kOuRdxd4AKnpTQWmXFviEeW0geVyMy0M3fCEB7DstPzfuo8C6_NLFt1vqQ5_8ahu6BlnV1U9bAuta4FyxWsWGlWmvZJmOivR2ksucQ6ccDNlCkOpcaa2AhI2vCl8CjE0_OUQE6ce0A_eW-RyELRbtDPg-_ysShgNyg4kCtEu5f3m08eR_TeLgjqmFUcj7UVbNTJNFZlY5DDcGvSguHFaxyuvfa6zAccopaNGIpz1lhuh5r3nWInmYGs2ld9MomQNP5HCGtBJzNASMtQZF_CIWFn6hxZh5nRz8z6N2Xp3V4twq8KJbhmpGyZEDDzSU0qnLVFJkZZ-goajyC4IRxkZs8nJogt8Zbus4tcarUSZqj18Pkb8BkoOJfruDDCkBmowwRcNdTn-MCXVFSSSQzARaR2Q10C8SPuFbe7u-Tjk5jcREX0puFceyBvXi_HEtjfHJ5iC92U0612LefajzrxiiHWe481k7BzS-h-zcgq8abNIp0erQom6fjEM_AZ1PX9IMiiBjSRjsf35KeAPxdoInW14g71QrBu1rNMQpIuJVh0eduljC3-aGj6hATszCXz7mbMBVWLCWyQJSKGigBf8dQL0T2Il_XlT5CYBJ_6-ktXniKs_QT0u_Mk8ck3bXnXo_6E8UVpepVSDrmxSQ4qJIHecO2g8lEH7DteAL015JmIiRlLE92UfyMaZVMMghB8H7JXt478lbFhX0_helabySSlF8O83JCQvqxJzy31vlhLrCGhCacvx0bNUscNmrQYQ5j1TqELqDTqOi7EMDGyyGSrYEMaWJXmG4okkU8TZgDocGA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_026ea42fa52e795a016ae81a61600487d1a48ba6ec0c09a7e6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12521,
+    "completion_tokens": 397,
+    "total_tokens": 12918,
+    "cost": 0.00176355,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12518,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00176355,
+      "upstream_inference_prompt_cost": 0.00156505,
+      "upstream_inference_completions_cost": 0.0001985
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 131,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

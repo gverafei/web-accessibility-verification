@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible Billionaires stories and market sidebar in the first segment, and the Forbes Vetted heading, feature story, supporting stories, and newsletter section in the second. Differences are limited to small vertical positioning shifts.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Editorial images, headlines, summaries, bylines, and sidebar content are legible and coherently arranged. The slight layout shift does not materially obscure content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation, subscription control, and newsletter link remain identifiable; no essential visible control is materially missing or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding Forbes page regions and coherent comparison states. Their modest vertical offsets do not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The retained headlines, descriptions, editorial imagery, and labels convey the same news and product-review purposes in the observed regions.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18321,
+    "completion_tokens": 274,
+    "total_tokens": 18595,
+    "cost": 0.00242705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18318,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00242705,
+      "upstream_inference_prompt_cost": 0.00229005,
+      "upstream_inference_completions_cost": 0.000137
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

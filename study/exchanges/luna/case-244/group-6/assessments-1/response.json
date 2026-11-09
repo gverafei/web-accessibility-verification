@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The Forbes Advisor content and footer information shown in the corresponding reference window are retained; the newsletter form, links, product imagery, and footer sections match.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The content is legible and arranged coherently in both states, with no material clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, newsletter email/sign-up controls, and footer links are present and understandable. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired screenshots have matching content and presentation, and the supplied evidence forms a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The text and imagery convey the same Forbes newsletter, products, and company/footer information in both states.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18330,
+    "completion_tokens": 184,
+    "total_tokens": 18514,
+    "cost": 0.002383175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18327,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002383175,
+      "upstream_inference_prompt_cost": 0.002291175,
+      "upstream_inference_completions_cost": 9.2e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

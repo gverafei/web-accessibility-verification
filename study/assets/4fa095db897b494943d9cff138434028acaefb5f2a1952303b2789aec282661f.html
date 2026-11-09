@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f4f2f8" name="theme-color"/>
+<title>Media.net | The Sell Side Platform for Greater Outcomes</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #171522;
+      --muted: #5b5868;
+      --purple: #4221a3;
+      --purple-dark: #2b176f;
+      --pink: #d92770;
+      --lavender: #f4f2f8;
+      --line: #e5e1ed;
+      --white: #fff;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    a:focus-visible, input:focus-visible, button:focus-visible {
+      outline: 3px solid #ed3381;
+      outline-offset: 4px;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; background: white; color: var(--ink);
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    .site-header { position: relative; z-index: 2; padding: 16px 0; background: var(--lavender); }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+      min-height: 52px;
+    }
+    .brand {
+      color: var(--ink); font-size: 1.55rem; font-weight: 800; letter-spacing: -.08em;
+      text-decoration: none;
+    }
+    .brand span { color: var(--pink); }
+    .nav-links { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.5rem); }
+    .nav-links a { font-size: .94rem; font-weight: 650; text-decoration: none; }
+    .nav-links a:hover, footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+    .hero {
+      position: relative; overflow: hidden; background: var(--lavender);
+      padding: clamp(56px, 8vw, 110px) 0 72px;
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 520px; height: 520px; border-radius: 50%;
+      right: -220px; bottom: -360px; border: 90px solid transparent;
+      border-top-color: var(--pink); border-left-color: var(--purple);
+      transform: rotate(-35deg); opacity: .9; pointer-events: none;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(34px, 6vw, 76px);
+      align-items: center; position: relative; z-index: 1;
+    }
+    .eyebrow {
+      margin: 0 0 16px; color: var(--purple); font-size: .78rem; font-weight: 800;
+      letter-spacing: .14em; text-transform: uppercase;
+    }
+    h1 {
+      max-width: 650px; margin: 0; font-size: clamp(2.8rem, 6vw, 5.3rem);
+      letter-spacing: -.065em; line-height: .99;
+    }
+    h1 em { color: var(--pink); font-style: normal; }
+    .hero-copy { max-width: 510px; margin: 24px 0 0; color: #3f3b49; font-size: 1.08rem; }
+    .hero-image {
+      display: block; width: 100%; height: clamp(340px, 43vw, 550px); object-fit: cover;
+      border-radius: 42px; box-shadow: 0 24px 70px #1b133522;
+    }
+    .season {
+      background: var(--purple); color: white; padding: 22px 0;
+    }
+    .season-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .season p { margin: 0; font-size: 1.06rem; }
+    .pill-link, .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      border-radius: 999px; padding: 12px 21px; font-weight: 750; text-decoration: none;
+      transition: transform .18s ease, background .18s ease;
+    }
+    .pill-link { border: 1px solid #ffffffa8; color: white; white-space: nowrap; }
+    .pill-link:hover { background: #ffffff1a; transform: translateY(-2px); }
+    .section { padding: clamp(68px, 9vw, 112px) 0; }
+    .section-heading { max-width: 760px; margin: 0 auto 42px; text-align: center; }
+    .section-heading h2, .split-copy h2, .contact h2 {
+      margin: 0; font-size: clamp(2rem, 4.4vw, 3.25rem); line-height: 1.08; letter-spacing: -.045em;
+    }
+    .section-heading p { max-width: 650px; margin: 16px auto 0; color: var(--muted); }
+    .feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .feature {
+      padding: 24px 22px; background: #f7f6fa; border: 1px solid #efedf3; border-radius: 18px;
+    }
+    .feature .number { color: var(--pink); font-weight: 850; font-size: .85rem; letter-spacing: .08em; }
+    .feature h3 { margin: 12px 0 8px; font-size: 1.12rem; line-height: 1.35; }
+    .feature p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .audiences { background: #faf9fc; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(40px, 7vw, 90px); }
+    .split + .split { margin-top: clamp(76px, 10vw, 128px); }
+    .split-copy h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    .split-copy h2 span { color: var(--pink); }
+    .split-copy p { color: var(--muted); margin: 18px 0 24px; }
+    .split-copy ul { padding-left: 1.2rem; color: #3e3a49; }
+    .split-copy li { padding: 0 0 10px 4px; }
+    .button { color: white; background: var(--purple); }
+    .button:hover { background: var(--purple-dark); transform: translateY(-2px); }
+    .button.light { color: var(--purple); background: white; }
+    .publisher-visual {
+      width: 100%; max-height: 430px; object-fit: contain;
+      border-radius: 22px; background: white;
+    }
+    .audience-image {
+      width: 100%; height: 380px; object-fit: cover; border-radius: 26px;
+    }
+    .partners { background: white; }
+    .partner-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .partner-group { padding: 24px; border: 1px solid var(--line); border-radius: 18px; }
+    .partner-group h3 { margin: 0 0 20px; font-size: 1rem; }
+    .logos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: center; }
+    .logos img { max-width: 100%; width: auto; height: 36px; max-height: 42px; object-fit: contain; }
+    .one { background: #171326; color: white; }
+    .one .split-copy p { color: #d0ccdb; }
+    .one-art {
+      min-height: 260px; display: grid; place-items: center; border-radius: 28px;
+      background: radial-gradient(circle at 70% 35%, #d92770, transparent 34%),
+                  linear-gradient(135deg, #4323a5, #211644);
+      font-size: clamp(4rem, 10vw, 8rem); font-weight: 850; letter-spacing: -.08em;
+    }
+    .contact { padding: 78px 0; color: white; background: linear-gradient(120deg, #32177e, #4c27b7); }
+    .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .contact p { color: #e4def5; }
+    .contact-form { display: flex; gap: 10px; }
+    .contact-form label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+    .contact-form input[type="email"] {
+      flex: 1; min-width: 0; padding: 14px 17px; border: 2px solid transparent;
+      border-radius: 999px; color: var(--ink); background: white; font: inherit;
+    }
+    .contact-form button {
+      padding: 13px 24px; border: 0; border-radius: 999px; background: var(--pink);
+      color: white; font: inherit; font-weight: 750; cursor: pointer;
+    }
+    .contact-form button:hover { background: #bd1c5b; }
+    footer { padding: 54px 0 28px; background: #171522; color: #f5f3f8; }
+    .footer-top { display: grid; grid-template-columns: 1.2fr repeat(4, 1fr); gap: 32px; padding-bottom: 38px; }
+    .footer-brand p { max-width: 220px; color: #c6c2cf; font-size: .92rem; }
+    .footer-col h2 { margin: 0 0 14px; font-size: .88rem; color: white; }
+    .footer-col a { display: block; width: fit-content; margin: 8px 0; color: #d0ccd8; font-size: .88rem; text-decoration: none; }
+    .certifications { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; padding: 20px 0; border-top: 1px solid #ffffff22; }
+    .certifications img { max-width: 76px; height: 34px; object-fit: contain; filter: grayscale(1) brightness(0) invert(1); opacity: .8; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 20px; border-top: 1px solid #ffffff22; color: #c6c2cf; font-size: .85rem; }
+    .socials { display: flex; gap: 18px; }
+    .socials a { color: white; }
+    @media (max-width: 850px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-image { height: min(58vw, 460px); }
+      .feature-grid { grid-template-columns: repeat(2, 1fr); }
+      .partner-groups { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: repeat(2, 1fr); }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 32px, var(--max)); }
+      .nav { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav-links { width: 100%; justify-content: space-between; gap: 10px; }
+      .nav-links a { font-size: .85rem; }
+      .hero { padding-top: 52px; }
+      .hero-image { height: 330px; border-radius: 26px; }
+      .season-inner, .footer-bottom { align-items: flex-start; flex-direction: column; }
+      .season p { font-size: .96rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .split, .contact-layout { grid-template-columns: 1fr; }
+      .split + .split { margin-top: 68px; }
+      .audience-image { height: 290px; }
+      .contact-form { flex-direction: column; }
+      .contact-form button { align-self: flex-start; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 25px 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">.feature .number { color: #c41e62; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap nav">
+<a aria-label="Media.net home" class="brand" href="https://www.media.net/">media<span>.</span>net</a>
+<nav aria-label="Main navigation" class="nav-links">
+<a href="https://www.media.net/publishers">Publishers</a>
+<a href="https://www.media.net/advertiser">Advertisers</a>
+<a href="https://www.media.net/aboutus">About Us</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div>
+<p class="eyebrow">The sell side platform for greater outcomes</p>
+<h1 id="hero-title">Closing in on your outcomes. <em>Reach. Conversions. Context.</em></h1>
+<p class="hero-copy">Scale of the open web. Performance opportunities of the walled gardens. And a stellar team that helps you succeed across every screen.</p>
+</div>
+<img alt="Person on a couch sees an ad for a basketball streaming service while reading basketball content on mobile" class="hero-image" src="https://s31073.pcdn.co/wf-assets/images/reach-compress.jpg"/>
+</div>
+</section>
+<aside aria-label="Seasonal curated deals" class="season">
+<div class="wrap season-inner">
+<p>Power performance across the holiday season and Q4’s biggest moments with Media.net’s curated deals.</p>
+<a class="pill-link" href="https://www.media.net/#section-contact">Learn more <span aria-hidden="true">→</span></a>
+</div>
+</aside>
+<section aria-labelledby="outcome-title" class="section">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Built for better outcomes</p>
+<h2 id="outcome-title">What it takes to be an outcome-first SSP</h2>
+<p>Performance built around the audiences, context, insights and expertise that help you move toward your goals.</p>
+</div>
+<div class="feature-grid">
+<article class="feature">
+<span class="number">01 / AUDIENCE</span>
+<h3>Reach consumers when they’re ready to engage</h3>
+<p>A purpose-built audience graph unifies SearchSignals with first- and third-party audience data.</p>
+</article>
+<article class="feature">
+<span class="number">02 / MEASUREMENT</span>
+<h3>Measure what matters</h3>
+<p>Work with industry-leading verification and measurement partners to assess effectiveness, incrementality and ROAS.</p>
+</article>
+<article class="feature">
+<span class="number">03 / FORMATS</span>
+<h3>Make context work harder</h3>
+<p>Unique formats match how users consume content in walled gardens and the context-rich open web.</p>
+</article>
+<article class="feature">
+<span class="number">04 / EXPERTISE</span>
+<h3>Optimize with a global team</h3>
+<p>Get granular inventory insights, analytics and recommendations to optimize and exceed your goals.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Solutions for advertisers and publishers" class="section audiences">
+<div class="wrap">
+<div class="split">
+<div class="split-copy">
+<p class="eyebrow">For advertisers</p>
+<h2>Get on the shortest path to <span>premium inventory.</span></h2>
+<p>Target and reach the right audiences, in the right context, at every stage of the marketing funnel.</p>
+<ul>
+<li>Unlock 1:1 access to premium curated supply with audiences geared specifically to your KPIs.</li>
+<li>Optimize and improve outcomes with pre- and post-auction insights into campaign performance.</li>
+</ul>
+<a class="button" href="https://www.media.net/advertiser">Explore advertiser solutions <span aria-hidden="true">→</span></a>
+</div>
+<img alt="Shopper sees a contextually relevant ad on a mobile phone while in a grocery store" class="audience-image" src="https://s31073.pcdn.co/wf-assets/images/conversion-compress.jpg"/>
+</div>
+<div class="split">
+<img alt="Three mobile phones showing different ad unit types and placements on publisher websites" class="publisher-visual" src="https://s31073.pcdn.co/wf-assets/images/homepage_publisher-visual-20-2-opt.png"/>
+<div class="split-copy">
+<p class="eyebrow">For publishers</p>
+<h2>Unlock exclusive revenue with <span>industry-best solutions.</span></h2>
+<p>Tap into unique demand with advertising budgets available only to Media.net publishers.</p>
+<ul>
+<li>Choose from monetization solutions designed to drive higher yield, customized to your needs.</li>
+<li>Lean on engineering and yield management teams invested in your long-term growth.</li>
+</ul>
+<a class="button" href="https://www.media.net/publishers">Explore publisher solutions <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="partners-title" class="section partners">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Working together</p>
+<h2 id="partners-title">Intentional with our partnerships &amp; people.</h2>
+<p>We work with industry partners who share our vision of a better digital advertising ecosystem. Together, we make advertising more efficient and publishing more profitable.</p>
+</div>
+<div class="partner-groups">
+<section aria-labelledby="dsp-title" class="partner-group">
+<h3 id="dsp-title">DSP partners</h3>
+<div class="logos">
+<img alt="Criteo" src="https://s31073.pcdn.co/wf-assets/images/criteo.png"/>
+<img alt="Display &amp; Video 360" src="https://s31073.pcdn.co/wf-assets/images/dv-20logo.png"/>
+<img alt="The Trade Desk" src="https://s31073.pcdn.co/wf-assets/images/ttd-202.png"/>
+<img alt="DeepIntent" src="https://s31073.pcdn.co/wf-assets/images/deep-20intent.png"/>
+<img alt="Epsilon" src="https://s31073.pcdn.co/wf-assets/images/epsilon.png"/>
+<img alt="Yahoo! Advertising" src="https://s31073.pcdn.co/wf-assets/images/yahoo-20adv.png"/>
+</div>
+</section>
+<section aria-labelledby="publisher-partners-title" class="partner-group">
+<h3 id="publisher-partners-title">Publisher partners</h3>
+<div class="logos">
+<img alt="Time" src="https://s31073.pcdn.co/wf-assets/images/time.png"/>
+<img alt="New York Post" src="https://s31073.pcdn.co/wf-assets/images/ny-20post.png"/>
+<img alt="Everyday Health" src="https://s31073.pcdn.co/wf-assets/images/everyday-20health.png"/>
+<img alt="Yahoo!" src="https://s31073.pcdn.co/wf-assets/images/yahoo.png"/>
+<img alt="WebMD" src="https://s31073.pcdn.co/wf-assets/images/web-20md.png"/>
+<img alt="The Weather Channel" src="https://s31073.pcdn.co/wf-assets/images/weather-20channel.png"/>
+</div>
+</section>
+<section aria-labelledby="technology-title" class="partner-group">
+<h3 id="technology-title">Technology partners</h3>
+<div class="logos">
+<img alt="Fiducia" src="https://s31073.pcdn.co/wf-assets/images/fiducia.png"/>
+<img alt="Adelaide" src="https://s31073.pcdn.co/wf-assets/images/adelaide.png"/>
+<img alt="SEEN THIS" src="https://s31073.pcdn.co/wf-assets/images/seen-20this.png"/>
+<img alt="Jounce Media" src="https://s31073.pcdn.co/wf-assets/images/jounce.png"/>
+<img alt="HUMAN" src="https://s31073.pcdn.co/wf-assets/images/human.png"/>
+<img alt="Scope3" src="https://s31073.pcdn.co/wf-assets/images/scope-203.png"/>
+<img alt="Sertify" src="https://s31073.pcdn.co/wf-assets/images/sertify.png"/>
+<img alt="Experian" src="https://s31073.pcdn.co/wf-assets/images/experian-latest.png"/>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section aria-labelledby="one-title" class="section one">
+<div class="wrap split">
+<div class="split-copy">
+<p class="eyebrow">A more sustainable open web</p>
+<h2 id="one-title">Media.net <span>ONE</span></h2>
+<p>We back voices and initiatives to make the open web more sustainable, diverse, inclusive and democratic. Because we believe change is possible if we act as ONE.</p>
+</div>
+<div aria-hidden="true" class="one-art">ONE</div>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="contact" id="section-contact">
+<div class="wrap contact-layout">
+<div>
+<p class="eyebrow" style="color:#e9a7c6">Start a conversation</p>
+<h2 id="contact-title">Let’s talk about what Media.net can do for you.</h2>
+<p>Share your email and get in touch with our team.</p>
+<a class="button light" href="https://www.media.net/contact">Get in touch <span aria-hidden="true">→</span></a>
+</div>
+<form action="https://www.media.net/" class="contact-form" method="get">
+<label for="Email">Email address</label>
+<input autocomplete="email" id="Email" name="Email" placeholder="Enter your email address" required="" type="email"/>
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-top">
+<div class="footer-brand">
+<a aria-label="Media.net home" class="brand" href="https://www.media.net/" style="color:white">media<span>.</span>net</a>
+<p>The sell side platform for greater outcomes across every screen.</p>
+</div>
+<nav aria-label="Company" class="footer-col">
+<h2>Company</h2>
+<a href="https://www.media.net/aboutus">About Us</a>
+<a href="https://www.media.net/resources">Press Room</a>
+</nav>
+<nav aria-label="Solutions" class="footer-col">
+<h2>Solutions</h2>
+<a href="https://www.media.net/publishers">For Publishers</a>
+<a href="https://www.media.net/advertiser">For Advertisers</a>
+</nav>
+<nav aria-label="Legal and compliance" class="footer-col">
+<h2>Legal &amp; Compliance</h2>
+<a href="https://www.media.net/legal/tos/">Terms of Service</a>
+<a href="https://www.media.net/legal/inventorypolicies/">Inventory Policy</a>
+<a href="https://www.media.net/ad-quality-policy/">Ad Quality Policy</a>
+<a href="https://www.media.net/privacy-policy/">Privacy Policy</a>
+</nav>
+<nav aria-label="Your choices" class="footer-col">
+<h2>Your Choices</h2>
+<a href="https://www.media.net/optout/">Opt Out</a>
+<a href="https://www.media.net/preferences/">Preferences</a>
+<a href="https://www.media.net/">Do Not Sell or Share My Personal Information</a>
+</nav>
+</div>
+<div aria-label="Industry organizations" class="certifications">
+<img alt="IAB" src="https://s31073.pcdn.co/wf-assets/images/iab_logo_c.png"/>
+<img alt="IAB Tech Lab" src="https://s31073.pcdn.co/wf-assets/images/iab_tech_lab_c.png"/>
+<img alt="Digital Advertising Alliance (YourAdChoices)" src="https://s31073.pcdn.co/wf-assets/images/daa_logo.png"/>
+<img alt="NAI" src="https://s31073.pcdn.co/wf-assets/images/group-201321319195.png"/>
+<img alt="Local Media Consortium" src="https://s31073.pcdn.co/wf-assets/images/local_media_consortium_logo.png"/>
+<img alt="ANA" src="https://s31073.pcdn.co/wf-assets/images/ana_logo_1.png"/>
+<img alt="TAG" src="https://s31073.pcdn.co/wf-assets/images/tag_logo.png"/>
+</div>
+<div class="footer-bottom">
+<a href="https://www.media.net/" style="text-decoration:none">© 2026 Media.net</a>
+<div aria-label="Social media" class="socials">
+<a aria-label="Media.net on Instagram" href="https://www.instagram.com/medianetads/">Instagram</a>
+<a aria-label="Media.net on X" href="https://x.com/medianetads">X</a>
+<a aria-label="Media.net on LinkedIn" href="https://www.linkedin.com/company/media.net">LinkedIn</a>
+<a href="https://www.media.net/contact">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

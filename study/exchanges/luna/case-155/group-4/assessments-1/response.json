@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target segments are visually identical and retain the release announcements, descriptions, dates, and links shown in these regions.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and links are legible and coherently arranged, with no material overlap or clipping beyond ordinary viewport boundaries.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible release links and the back-to-top control remain identifiable; no essential visible control defect is apparent.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired states show matching portions of the same release-list page and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible release information and associated links convey coherent meaning for the page\u2019s purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10405,
+    "completion_tokens": 175,
+    "total_tokens": 10580,
+    "cost": 0.00138805,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10402,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00138805,
+      "upstream_inference_prompt_cost": 0.00130055,
+      "upstream_inference_completions_cost": 8.75e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

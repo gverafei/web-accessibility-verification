@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent SUGIR information and a relevant image, alongside university footer information. It does not need to reproduce the reference\u2019s exact layout or footer inventory.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and links are legible, and the content is arranged clearly without substantial overlap or clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and the \u201cConocer el SUGIR\u201d button have understandable labels. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent views of the same university risk-management page and its footer; their layout differences are assessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s heading, explanatory text, links, image, and university footer convey clear meaning consistent with the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer and content**\n\nI need to assess the footer and the main content hero at y3315, making sure they align with the corresponding reference at the bottom. It\u2019s important that the fidelity and presentation are good. Controls like links and button labels need to be visible as well. The evidence has to be coherent and semantic. Plus, I should note that the target page includes a hero section since the layout is different, even though it uses the same image. The JSON needs to be exact.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer and content**\n\nI need to assess the footer and the main content hero at y3315, making sure they align with the corresponding reference at the bottom. It\u2019s important that the fidelity and presentation are good. Controls like links and button labels need to be visible as well. The evidence has to be coherent and semantic. Plus, I should note that the target page includes a hero section since the layout is different, even though it uses the same image. The JSON needs to be exact.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-Xr2e-SIJL7ZWUzw2i2Se3NFrwZ3zphe2qrl75xMdfEbHYzSG5qzr1cofi3ObzCTRNXtm4DFLg1HfgBR55QUvdJOBkI7Dx5CxnPGCJDxdDwA8bSY_7Jqm8TflSw2BPt45Li3CIFu3Dp-O9LhQsV_X0CUWNvZ93QOuXaw3-keuNqwoVbctkUoQmsMfAosDsviMJdRT5_8a751DS-VwrPidq2W3LBkvvTpPM1E65stKSYhmOVcuJLpVe-HXsrduqWC6mW44Hu-IuuNgZOwfUlzFjC4FWwB8gkLeesExxipvrBLt7_Nqad2j4Icr4AQsmx3mpGrvZ_fXKi0QLHcJsbrj-CvqHRc_ogej531uCQd2ygXTUZ-PADLwqd_YisLhcqhhOCaWGrv0HwqZigld3g2ayOc3qz5K_l-1daudBqMpXUz66L2HVymVXJtgTuzk-fvVEjF6T3Oly6wq2--SOS7ABIz5ztg8p5KE6-LDF-hVrOD0mPuBSIJU9t1XyTm6yJScuxn3NB-TcA0cVWA2-chkyzytpX5j8TQ1bG0uMIqqHg-GgFJrdV0Ban9tGn06fJW87znOrpBwK5pWIqU0zXSqslP1fNea7tku2S_SwBso6Q8yFKVI07R2OebV8xdTJ7e_1dskHYDzxQmWXn6cQkzBl7QAgBNHI342SINOPlAf059fVPS6MSjjCOuxBPK7XSNq_lvoOBLpwRzlEbbKz4WaJUo0_Uqkc1fvPwnCCrZrqc3zathTyx9gRT0eQ2_HfnWSMJXQy7ngsutoQyThOlOiTGzpqdXhcQ66Cr5axr9ABwBbD-yI6eqjcLDsb4k9y5ZtmVAz4Zn7YpBgJO0zsrs80myB33pCJmKuQHIgQMBZw_-_JlcEnakciRYA2wlhij_FjjCX8YBQk39IQCGG9c7HgYtZ7CNdA-y3EhC7T2tTZ1DzqduYWTQ1cca9fNcZLqV8uPh22bGcl5aFcUK0cE4ws88CsukkQXy2i-_6jwr0u34Avw-3ZJhjSmEieG3j5Th-dbabfsrNLwbV0w--yHRRilNbwEbQmnsSqrUhHn1E3O20V-prFD19d0hVLsQ9CtiiOz6ub0nTyOXi_8OAszqbVc09C1WyGzryyBlAQbM8b80cCZ6tm_XLBf55WmWt4Sc2hHaqOzSkCPjfhzGRkfcj_64fdiu0KdszQZG644LVsmVBfp5W3Fu9tllOirwJYRc7rBfeKArODvlXVJ-ErGdGpmUDJ46jLhokZcMp-b7bL5OLwxkAN90IROuqErtRQv2qkd38AcgtFldxXvdaMvHtLVTIQ90zoZcp6-7DehPtQqzhFLF-jhsvhjamgakfIuYZkVss2iUrx-_5OzEfOBOmxWn7mKqY9q-W0fW3nxHJhTzn-9hZx4q6vG6UV-vSeke1Ty399UNw930ZAqwbGfpiBKooeUIkpMQY4vMY7glYZgsb5thAcruGhWx_KQK1RwROH5yIjxBsxhp9deUSdj3N_9772axFiHXcYPLVWUudXVi1sdzXgtnXXtmN4jro7YEaDKMUo3_S6-PxicaLW7y10bS20UlJLWpchvojtaz3Wam0xr4zmNm42KmEc7SXrJgPHo-HHWewr2_zNboES5pqV2w-nDXuXwlrmVkJYM68CV-cCRFndg91sxdDj1F0bjOS8-zFWI3Mpsk2qo7wvP3KpIM1OGo9yHMpsnDW12VL107CSBfpRVhy4neTVbmB6r4I7cWWmX9nb16D4JWja5VNvwUfQpV-vWldk9xZmYT_ma-xLcBkCDrlj4VroV2AwNyKXlYDTt_hGrPcg_Nj6nrNcT0Fjn8KlW3Cy4nfSd3FOv1qBaPs7l5OfyxXPH6SX6czWQxHeQ3gHqwsx1IQr6W_0K3IRwHJ4G7NBUr14oUPs3Ze9eyOg7yzlBY5UVk93XAVXUb2VXn76adfKV450crk9-PTiNlKCl6wGxCkBE89VMXrxDYbYs65NuI3U9-jp8-D67VRujTdGyCssg3XNSLui5pDIZh5-IAC5vYsqTTjSasTbAB2-jXMWBLLAxh4mJVaSeGl6-5Ey-mdFRS6EwcVPVV6KauNZLnoOq_pxX4_C9Tn5XQCKwJDh0D1SXkRl2Dkrziecd2ybO1-337DKX46_nBntBL8ihL2I3lX7p3ocQUVXwRwead2Xsb6J2yFmiWweJKX0mMZi62IcstqFkRI1vlUwbVdspE3PaUf9EEiXdPejaP3WxC-IU0eh85cE9zEwb2LfOqxzpaz8QzEGhDP8A5V54cZzXW_eJamaozpXqi5lgoQx9SBz2kkgksXcNP6Kft-KxySZDSLWptUlEXc_6la0Wca3xVxpzvXoqOPnkyWuYANrH6ISSxIFym8YuM8HZ3cPOcvzWWYGI9F_IWFw10UxwEy_7YbnahuXDVmQvvrdVX8pwpeFEms82_lE48o3bV0O6KANl1OO1Il2usyc2FB_ft46I-g1MGTlvkSM54qdYVUPgHdo57DYTU5yUVN1Wgh_T9f0RAW0a60ifegkM4Y51IpY-zG80bltBWvDVbRt79sdkcfvt230ISNArcgz7bv-moJUfAS4T6d1BJ7gxufIaUyqQegncCBBMtzzppE=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0562eb8ef18787e5016ae81f95934c87d1b2a11568d370f2fb",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6955,
+    "completion_tokens": 324,
+    "total_tokens": 7279,
+    "cost": 0.0010313,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6952,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010313,
+      "upstream_inference_prompt_cost": 0.0008693,
+      "upstream_inference_completions_cost": 0.000162
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

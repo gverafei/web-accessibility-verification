@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Forbes-style editorial stories, product recommendations, games, and footer information. Its regenerated layout and content need not duplicate the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cards, headings, descriptions, and footer are legible and arranged coherently. The partial content at the top of one viewport is consistent with a scroll boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible newsletter, section, game, and footer links have understandable text labels. No essential visible control appears blank or ambiguous.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent comparison of the Forbes reference and a usable regenerated target; their differing layouts are permitted.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's article headlines, product-card text, game names, and navigation convey a clear editorial and entertainment purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating content fidelity**\n\nI need to assess the lower section of our target content to ensure it's coherent and maintains adequate fidelity, especially for broader Forbes news. I'll check that the controls and links remain readable, and make sure the newsletter explore button functions properly with no defects. For the images, the top crops of the two images should fit the normal viewport. There should be three vetted cards and a clean presentation in a semantic way. JSON format only is required.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content fidelity**\n\nI need to assess the lower section of our target content to ensure it's coherent and maintains adequate fidelity, especially for broader Forbes news. I'll check that the controls and links remain readable, and make sure the newsletter explore button functions properly with no defects. For the images, the top crops of the two images should fit the normal viewport. There should be three vetted cards and a clean presentation in a semantic way. JSON format only is required.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0yq7Xz0u6vHyaAcTItBgmiUqU6etLF1uYsO4-9V_GNPF_AMgpa0XrvgxWCz4jDqwdT3FPcbx6EkUFPxtdneJJ3H-XhVExSsXnvCwO_nMrNvyi9NFmAeuKFPhgCbk-foTFTiGHeJhgSPFDOTH7F1m65qbGTY2loxRyyRNVKeiW4yP-GzheLGmAjQoBhEmUlgrxOvKDBmVWc-4QYNWucNr7yScEt4Pu6bV8gw7wKwFn5Ek71_ifcuBO5cQAsWnfcWDB0uzCLMckY4RB9Pop-kKGN0DkjRyWQ_u3GDqBKg4EOxGQOxlSODKWYrl3DP0TDn08AgfKmG6Me1a0qExXxPwprJBww3LGjoppuSTdBwmqgLLC8BRsN2GSoR5WGjnbTeSZxJy_6e_ELGUBK5LV9LzFt-5sUVu3h3_bSmKtQCchixPnB1MnBfl7C4Xs7z8HlFgSsKFWwo2SsP2paq4lFdk2Qy9qAnvmChyPs7ReQHD-x0coANIxAP5bgkTzQU4s-HyflvBkkb8uftgK0lqmqF3At_Yf2Hi3jGT0JVpNnVFnOKg-bAv2gwDrZ7teoemw2OjWd-ZZviv2LGwqZ0WvFb2Llxfe7U31mW-eDAbZ1dfgvcvuxndFyjwq0-OiFQNPZKMWVb-T3lt_xSWg7qNTPadBWcsnnNdMcWfzZm3vfvBKveoKIblZh3aySQUu-gGC5QK4VVA4L1vyOF_DgNrMuOrOqpqIrY_7FC1HSU3aOjrz3qz2zWqRxzlhpLo1MnkTZFRRztp77D9btdA-0OMiUEIW8TcfSwNfIyzSZ2GGtXDVXcyQ3d1vTUVRu4SP7wrMIIc2eOBLgluUqUeFgGBowSz6WlPLiesMRapcT3hVEDP0KcxKgnVMv_vjyIbSe6UYUhLFAGIxMGzPk-h7dHFEeW7cVF1MK8z-_43a18HxPfdY8LGNIRMDk8EjwpRM35ZKRLT9mBpsTx_Dm_JUlPWlWziG2h4neBPFopi4dRO74AahI-ClhAbmMrV6BkUINU0g7SHBguIPnxbKp-9m1Bchi9MVj9lfKQJ1tJTHJ3nC2GCnA97fskbJTVQeXyf_XPHF2aAoCPEMSxxTxy3DFaCN7bIb7JopCbQuQIGSZ8J7YT7EtLrCmVI7wchwZ9hj7n_NQzSdcMBIn1Rz-MAPSVsPzEvNtNgupWUZt2S8c_85yU8IuxTesNU0gReUxfUkyoncldsP_e63_G0uHCiwdj0Imi5lJw91ZLpaej9tBqX8fqwQVVE-ZORxZNXGGhYQ8oKICB-__wrde3GjE169QG2wjCYd4_VMuVB9swdpLz5weBykI0SmMs-2MRKhZ2mv8YSdKfkMDDbJh87i8vRRb6T-CQs8sDfcqBoqjRZB6jNfZvR2klbl99Tr4-DLNOPDrGz67UzL8ccNaN8WYyP5OJWq_We9qG9egSaBPIOB8IqrITGwAwd-ne-i1sDd2naBzTXsM1QX4Xjc9baaEnREjIIY2SlOFKe0KwHW6Qcw1lDZdFol6E7M6z1RnmFOrzr3fm9NpMNMfg8lhy90N72EcPNdWLe7ySl0OuGFCAihyZejUVC2MCLyZjClww15Bnvn1ABn3ghyLzBAxBRRTSDAhur6E5GRHF4Fh7MZhaGrM3MDFhhgtprAYbECUiBOZjoWneYUR5o2tOLdvXhNLOKl35g8csotVT9QuA_5Ik6FJHzHywsg4aGqOWEQW6Ol3y0EGa9DUAs2RWbY1rMYzjTQCZSZ4jY67y-MH5_FJAD87CCPotX8F83mhAMrG3lqCX-ljl2t_Mv_ePk52ppRheA4aGAgEMGI8rTU_AgRmTyuSMiwkgm1IRI3c2PkRs1XobD_2GmmJ-bBQfhD80ol2MHuIcBHbDWxLPV-QtjdHBax_Yy-d6nCvxDfBvbrGE4go9h7sZVkiXM9wxpfKLj4bHOEGkQ8BfM9VXZRV9IBJSlxDqFtzl_R4eVLmSm7rb3WXWzZUUKwNHEoMArd5zMnholupvpf2QqEI7AHpEOGImHBX0qmwz3Q4lXsk5ieqCkiOzESR8kbenevYhceMgYdu7mze-nPHwP_Y6Zw4-ETlC_7zlCWzTM8DBm_SwC-R9BCSMlx4khKOmNFrYMUzFk7o1U0RbJbB8q0Ofq-rLIjJ-itCqL-fJtQ24o0uSO3LzH3f-BAt1Hjn3_XkLb6yW8kWY4Vu2wG-w3mub4btuOB4jPJYaAWFJKgdiTU0O7nbCAaEyQGZapjdUOeWSt12z-W236a4v9zWoBbKppWN3lcVBH1nUv0MOHQCr1A-5wwNr8SBQpi8NFtt38rVhSwCpJIMBJPhTqax4ojUi-jw_JcE0e07dmozOM9u0xjXeD6NzbqnDtevh2uv5enkPalJAkXvVXx7ysN1FGr_4xFU9ci20wAc0YO7KxrUzQo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0d8b6e4ac3e144cf016ae81d3088a087d1819984553f1349c1",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14228,
+    "completion_tokens": 318,
+    "total_tokens": 14546,
+    "cost": 0.001937425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14225,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001937425,
+      "upstream_inference_prompt_cost": 0.001778425,
+      "upstream_inference_completions_cost": 0.000159
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 61,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

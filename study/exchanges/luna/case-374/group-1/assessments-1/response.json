@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible homepage content, event listings, destination section, and navigation match closely across the reference and target.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and consistently arranged in both supplied segments, with no material overlap or clipping beyond normal viewport boundaries.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, category links, event-card icons, and destination carousel arrows remain identifiable; no essential control defect is evident.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots show coherent corresponding page states, and the saved DOM context is consistent between them.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The page\u2019s event-discovery purpose is conveyed by its headings, categories, event details, and destination content.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11413,
+    "completion_tokens": 184,
+    "total_tokens": 11597,
+    "cost": 0.00151855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11410,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00151855,
+      "upstream_inference_prompt_cost": 0.00142655,
+      "upstream_inference_completions_cost": 9.2e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

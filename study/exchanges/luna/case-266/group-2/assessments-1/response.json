@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible reference content and organization in both aligned windows. The large blank area is present in both states, and the small promotional widget is excluded from preservation assessment.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible header, page region, and cookie notice are legible and arranged coherently. No target-specific clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, contact, cookie-preference, and dismiss controls have understandable labels or icons and are retained in the target.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots show corresponding regions of the same page in coherent reference and target states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible page labeling and controls remain meaningful and consistent. The blank region is shared by both states and does not demonstrate target-specific loss of meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing video issues**\n\nI need to assess the situation here. Both references are nearly identical, but there\u2019s a significant blank area, possibly from a dynamic external video embed that's not loading. For instance, in the customer stories section, the video is shown but comes up blank. I need to make sure that the JSON is set up properly and check if there\u2019s any claim failure. The video itself might not be visible, so I need to ensure the surrounding page communicates information effectively.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing video issues**\n\nI need to assess the situation here. Both references are nearly identical, but there\u2019s a significant blank area, possibly from a dynamic external video embed that's not loading. For instance, in the customer stories section, the video is shown but comes up blank. I need to make sure that the JSON is set up properly and check if there\u2019s any claim failure. The video itself might not be visible, so I need to ensure the surrounding page communicates information effectively.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B34XjCC8mbuH7mzfRPJeQMwYIZhs-37W6gRGDlKj7kipKQKj0c59JrFZ0atTXHJHLueebJ_z0iubyTHhXJpdy4d0KNE2BjfpAKWBMB5jeJrarEKXpsn8ZZYxyk3YbBL1xnnO-uv_-n9oNjvUuXUc7P4kXPB0FM5nShno0e__sAPHftJVHI4lSA80c3Tq8YhDNsnfKaeIIe3cmutbQwPwdKXNzVTmjxu72q_cdyXmqJ5BlbPAhsfFFw1gMecujFYsLPpsLLoy_5C4zl_Idu2lbJrJNJiSOglUCdJ54garaVsz0u8HrZDAigZatNamNLQAq8gFIPKgp4Nw0CclwxRc09FHNZGLHcWCznlD_WZaidzyRVtd2Uj4m_lZg1-3-HLr_5iALB-nvvQq3OMOD9o3OrXgLa3QXOMP9Ii5xjel4MbgVO02Cu7_j9LL1qPWr5QdTMbhd8nP_0bereTmSQ1_dPOavcYoS8T6-5ALIaEyfVJ70EyY2lwJn7oxUldoUosyhQ4OftahViD6e-bEuSFA_aZDrolxkz1S5TxP6Oy_2Rjj3HgjzmW0XNNML6DlSWWQEeoyehn4b593yuoYgTPEAeiJMpNCh4qILF1YxQ-lZyWMiM3HYOJwg74e5fiVOS6OwicyXA1EskSW3QLNZMSGpEFkoGGp6loSpQyHn_NI0RAbAVw7Mdh_sZ8hOIjzcfxUsDmfJRNn7teOdT7Z43Zz6DnuXisWZUzi0KhR04DbKtCTpZ-kdSHb3YmYApgOJ-SXRHhzYwOt08TZTOnAfTII8HgLCnKB65tx6tb3Ai-8FPAo6NNxo2eKmZhAoKlt4J7wHVtL0tqJIbBnHKhiekR5hCpsY7Y28cTCg00zbdK3UiNGHwqf6V8vuq0e39iv3WYhAqI44BLfIwTM785IZKKncor0y9WhQ_-QYSVoOTcMvYzTe9x02MTeVtZN8WgDDaDXtj7_6_4VTROStcpaZhiFBaDBHSyQTgVqj6scH24HWSP2T-yE5m-Ltptvr4fumyi6sLxet-blT5atgOc2auY6Jajdwlunq65vsRQ4LXxJiYAgrYXpJ_yB3r0wJqJTNdxkxcgfWme0zVUCRbQlCYiSWET1lsndJ4UJjtmpPWLY71dnMRtsZFD0Kqt3X2KLdK2KgqpMMJqs9qPMLOnzeQgf5akKLxFdJuuSr2Oyz5xnn-xroSCRqaMZAfFMKnWnQtZIrG90wKmtGhqRi90zrzttIDRTmEMkYqIBlxD7ii184ltcQ0BFExpB4x4I8mZ5M-cgdJ-SsApHlYaOkjBxTTxPU0NBEmKKQ3L7QuiuBbjT04SyUfaGTdR7_Lw7Z_uUb9V5IF3SxkKk5Lx8KyA7gvBA5M0BgLuAkTXyxMwx2CualGfLIJKqXOl-T1wSrCj-TUI0gSfUaedJgM6QaGcbjOrIHMotopODStLf1AAaPOAXHRKtC_sasv-bGUggRzp9IhyAO7qa3IiwzTO30xgvwCvkB9rKmZ0nsGMVJ_meVUAvf-biyxnUfVUPz2YvyKV3AypesJCYapRMKIEy1hNlqAqtNDTgWwHqv8yCb3iPiXGENg4UrS6jDUlMEdUvCAahWsWiHbSBw8oMGnIFoJy9De77YfBJTrB4UjdN9TGv2w4clwCrsHXCPQbqrCFj25Opj-aXLmtEty_Zw1T2bZOwoJxI_rhHaAk1fZ2KIJmhvjC0vjCNkYE25jYNkotySAkZOPC_97RLO8rrmpKzF8QIMLM6P-8bxCZpxmPn1ipkhC24_8_Rn2-CXVNKZ-NwSDTXwp5ZRn-kRXWXmWOGxrlLjBKYFf-DRg5lQo_6OYbIu1w6z-xxZ0qxwGVcXWcbGGHBVjjIUJ29lEDUkQJmRl7bbIfbk9M1Phm1TdBOmPo3RNzgq2GVwgHx6CCJ5OHnFdyBuAjJQHUN_RneC9EFICsHpZaGzByoHZzpRN1MAFxi10rcLkrStHufJPtH5coQ8kaM7enq0apjmd13U7_2oB05tIuhukdsKfkda-h5AO9rb2MjoPT5irIcS2OiUxROh8RBBSeSA5e1HTomey_JIPpDnoQpnMbQAAKrbAc708CkQp9F7OtQrE4lpQa1irw8Utq1LdYfmEDctrSBhyoY9SDUx51hkbEXV6wKyvhzTo3NWv9dtXut1RZ8Bjkz6ngQlAZSNDYrahgRPc9eAH3NIUYbzkyXmjaJ-TnNKph3MtMqhRJjArusg8hNsJVmnNNchprxvXB27xS08sSQrfBR0Ux2VKhEaNF4_0qsgV5_J0UF_KrKk7a6GPy7OPFOgw_5oPnxj2ajCvKy4ob_4YYt_ks0ocKOImaSVWfXHzKJBQ7QSlygGh591auEyPf9JzFcPzWvMzJ6_MxbO5_Ld0MTg2NoVrdFOU8jP7QvVJtJogbdAhADKd8geUcSegaomg5LC3xIfK-xV54JtDq1a3TxX3RDAtpr-PMCm_J0Kz9dnTCVG918dsR6le_L6VhV5knnZa7RivzoTaZr6xt4FL1ftKqivwENaIncyzn__BC0d3rNrnt4jAEDp4CX2-334eRGDUHouTFUXUK173VIvJlI-9X4hDp5Tc8KC7y-jb4nl7NLrVYeWH0fyWxCJTQlLMZQObxLiWDjDPAl6xF1K-qZrs2RSYf0lqm1DA33Fddhxxjl6_FuE5cuR4wp_NCFK2n1nt-lgcfUU-O6uvUHQzWxe_kPG_3mMSftT77LK7oBl6HQ3_b6nV18xA5UYjogaswaTf-AJPoKLjn7KPy1FedhyjJLqGQC8iYSCPWsbox3xluI7gkiWvg3r0zHmYz28L6prAQbvc4Z1iScCoOqSCWFiYlucD75HXCHHBGz5OGhLwYBHAr_hiauH-qXlg73VNQTD5whPo25Go3TDBG0OMRLf6LeLe-wN7VCWsLpWAiSpzf9Zyk0S_tNoYBMQFNc8i8V453JC2NGmtYX6YVvNQQJu23d07UOlX9pa0U7b2urJirixvYGXFaj9xRHZ0btVrWbgxERPX-ZBmsP5Tp2moI361rRqBAieXiDS2iU42fbI_kGejp7UphqZqxX-axab6lhT-gnLL3F44vxanYeNqrWg2u-BlDO4N_sTRr_s6sM-0yv3pWZmS9Jx686N-cHF0Esz_ARmVADpOW0B-Sl6eNvav9SdEemBEh3IyIWdKMn74fbPPIJtt9g_3P5eZz53Kx215BX4Mf4KUl5ozlbb927z49ZQK-PfwPC8_ZERJu7KXzQ2lyq_2dc3sP3PraCkgFSEvIKBFVvx6xVrm3xe4WSIYfvBdWDi1XkcKCObIHoNwmrcsg-IBFbLfh7IenHuijueLhp5giuWqCdIhcQ3m9eJhbULrHPltqKlT9niZHFnFwV74MNbVRgsINijQILwXtuUm-bK0fZJE59jWq8kcgXqbgLYXEYzsHKlKhBT-BZk5H3ySLFFJkZtqzobggmKrdUQbdUkh95floaUQNPbM5KKwe0a01QeIcGbQ6Em4WsBiA0bLAtGywvflNK_VLah9KEDBaDAoU28m1VhX3TuDnz91DP34n52ZVM7d3HI4Y-viF5HFwwf7F9tpnUFTmK_TDgiU34R5kmjKUAyjjll6mQDtxM9daoPpt17-GupnAYvwY95kiaULLMf2wnPK_a8Xl9bhg6o4bk7ZSivoP21Rkp1lw8SWNEOwvq0Vgg8zE00CNzxU0XlEt6nnnkDiZT1ySZFo55Zjjx1_LNQrcV8TcsJPatSTWVL8LuL_yqskdMczrxAUix493AnNPcqfLTIUiES_9t-y9l2cpn0mjiKzCxRNaso3UY5VdFW_0axcq13ihVoN-sGXAr0D4VvcNjgdYc5dVuX25lTYzVJ9jsCXZowWF7_mSyDRqLzth4GUDUmlq287DqpK2wQdA-k_lr7lY3V9TH35lBRePJih9SifmlScu47Y3hMbq--3hwI44gJq9SNAGXbMkBQXAc1PFzVZUEIF8uZ--rphJg_ElI5gI-EcU40IWCATzH-WUtoVwMAkCid1-oDCeukkDOAjpAgDuaAIFiMBAUzmTxv9x0UdA_DjJlzKv2-gWiDjUxy50ESVwgCXkMD3Ai5puPRnltXusTidb7EYrqVKpXf3ugGibJtWW5LnKm8DcSQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08b260ceee5ed6cf016ae81df5025c87d1a14d40a76a1d6c73",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11830,
+    "completion_tokens": 443,
+    "total_tokens": 12273,
+    "cost": 0.001700175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11827,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001700175,
+      "upstream_inference_prompt_cost": 0.001478675,
+      "upstream_inference_completions_cost": 0.0002215
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

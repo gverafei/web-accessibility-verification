@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s visible lower-page content coherently supports an art-community purpose, with information about earning and selling art, news, site links, and community sign-up. The regenerated layout and wording need not match the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible sections are legible and arranged coherently. The footer and cookie notice remain usable; the viewport boundary and sticky notice do not create substantial clipping or unreadability.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible sign-up and login buttons, the expandable information row, and footer links have understandable labels. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding lower-page regions of an art-community site. Their different layouts and footer content are coherent for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target text and labels convey coherent information about the community, its services, news, and site navigation.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating page structure and content**\n\nI'm assessing the lower page element, specifically the footer. I want to make sure the text is coherent and that the content aligns with the broader purpose of the art community. There might be a need for a sticky cookie overlay at the bottom that matches. The overall structure of the page is different, yet it remains usable, and the controls have adequate labels. I see evidence of coherence, but I note that I need an exact JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating page structure and content**\n\nI'm assessing the lower page element, specifically the footer. I want to make sure the text is coherent and that the content aligns with the broader purpose of the art community. There might be a need for a sticky cookie overlay at the bottom that matches. The overall structure of the page is different, yet it remains usable, and the controls have adequate labels. I see evidence of coherence, but I note that I need an exact JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B97OjAGt-s-uS1eT0KjKkMhlvi8_WYXuxpMeIKjD4TuNUKvo56qIIXTLzHpToOh323d9LAW8pSy1a1E-sKFkcR26M1GoK98ocM6CPY7jnBd4bdtL1hUfJftKKfzeJ4ldExCbA8UQzen_PopiB4JBg_CcGgB2uAzx8YT6qMgZYl8vf76JK3SkJ66GjuS94CkF7mZaETPsDafmtvj_Qcv5BniBwPuGwJqQLGUfmoJybGCvdBIJZPfSQEPwCr-3X-WuXIqFbcqJsaIYsGSXItBerx8vBXUJF7eHY6imkkhw6RBY4C4Nb1GPTIIcL6T7wQHjbCp-wrrjCLBSaUS65Zki-WyZ3n82nK6KWC4ryFx-t4AfpS93IXgvsrz1Ra6hROQ-VAeHLp1AxpdeioxK2NURSfPRB77vU_smt68zjqmzjJYx287R5yzgKxl9HCs7gTe__qJOXu55UDlfuXyLnuqRQ9S02-dfoRAn30OHbuZCY_etis5WRI7eL_k3Pr4KFORPOO2QMkYfz7VQ9GcmAb1kaep0Fnjy5nnOW13XBxUp63R0jLWz6gwmrTwaShnTzxdfX1xpaM71WKudh6vNSgq_OOILszN6X7vLe3rPR1P5KTqMgRPAzpEGp_NGB4OG0RqxVN3t43-Q_wQooy04AT1F1gRcsSpi3rRSeBF_bwddCcCNs0m4o4acWJzCPh-bd-sBTSyDBQ9LCNcv6X6bfrsxJzXIMspL_ypVtH9G81rsUJmX73mwuZgia7j-Y2vVmif7s5IxR6vwF4UIjoccHH6wgdCsRMCDJx5JXG2dRExHnQnm1S2UCJSAfup1VQcDA2ZdZL99Iw_-PqcqCbwvnU33cMqHftxi2JrS8KH59frs3u6NH9vuqKE0uoQIOSpTao9l3EIEckisSzMjRtMOOVYR42zhjOso3BjvVDsFC6KP7iutUI_dU58cmJOrKGelxJXmdMMeb_vNic1QyYK3006T48dlGZPxCCuudzZqwetChkeqZ1UWo19dvDWw6Mhzhz2-toC8vT5sLoYt1dakgPCLn75w7pbm7Na1aoYyUJGW_Fd782YY5Td0c7DyayU5QJ33c7oMQCl4bMCOcYCrV5Y9v-kjxsfLEgKATlR36wGUE3tKGp1o3fygmxt0EAfXnFM2IlukcKY451s1Yw88MYJzFXxVs4JM5VkwP_Ws48aEB8Rus73FJgzxqci5YwekuDv7yYzgkAxuULvP4mkGoffjJ2IhUO90rUKZ4-On-ZLXiF4mi0gRUmElOBS47YxTMCyEETAjyxAe9_pE2vOWfNckDlXj2xIV7jbPBSQNYL3uDtJaFTGBUlXN4POSPCwHfMADU0OAd-yvmwGv-K3vpXj2t9IBjSQDgNw5iihym8QDb5liATxTXfptlsp1OC9wJ9Fv8Wtgov32JGZLmHfh0XOZGkNLRzfQnIyMq4W1LY7mlg67IHE4e56R0t93xoYIBB36zHpofxJYNzbsgdM9qEsTf-ZsJKH3UB3YySH2oe55dtoIiN3ihnPlB4iCPPjnng2zrJIK4G7zBsUtqbxs1cPnRCIPFyHzzARWYb_IFWa2bDyItKoNcpBWhXMy2zjflAcHW1eKnQvdEeCGbhAwh49EAfM6EAWhVN0jAwkSo4kYAzGr4Hplq8NY58hwXbX1bT-Nh1ZXM6QT6-VDCF3k2PvCfBFBufuM5I8Y7_NFBTY0y5UtWxAQH3mfDRKxFGBm9IFJPvDA40WWVF2Ri9E0rCGh_OiqBIs7DAgWk1DvFYkgwfZXLMQuEI25CHG5sXVlL4GvErhvbHwDhXSq6ff5qZgt0wZcjdwLhkAa23qsii4oodP0jm3qmGxA0YWlON8p-FRVOc3hB1OR-jPkRYEFZY-TgC3c5nExmZxcsMwGpbII0Tm6RFvzlceKGCRHXRGZsBmg2w_hocH5TiXr-5iCQuAHlr12c-8jzee-PX9NIyDD31f96caVD9QNo7hV9S6IOnWENKHS_gkyDqVH5ge4jiw0YE_y8RDQg9oTZn3Af-f_JrFVPaXawrVgxRob8vWVASPSJqRxpX1-O6QPlsurM5H5x1YurBbYJw2TlUkDk_llPODvjCLQZul7Nuf70-4D1Xwxsi9UEM4JLC46XTDbGKTs3eYP33gfHM46CAW6dE6qOOZwz8ExyY-nk_2qKxm0zqI71gFV5t3XTPNk3cYzT7UGPQd1HSL1f-4z7y_mZYahVQ_wJvm4V-ucvRnQ2ackp_ioxKGSwZ0K0PX_-oe7szh1mLLFcTOXVCay9W5PRtVOzxy0X1NjkAgvLi__Ro9oVaQvmCzPOPpJt3dsqRB5HNog2a8Ueb2a8krL_KR_QipnYsw1YD-Kvg5SAOBH5uC2Oz5GLrUr_94kHZZr6Azeqvop1YVAw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b6331f578b53b33016ae81f7a340487d1b4ca64c9c37ff64a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10085,
+    "completion_tokens": 336,
+    "total_tokens": 10421,
+    "cost": 0.00142855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10082,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00142855,
+      "upstream_inference_prompt_cost": 0.00126055,
+      "upstream_inference_completions_cost": 0.000168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

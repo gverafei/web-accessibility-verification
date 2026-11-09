@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target retains much of the footer, but has substantial duplicate and overlaid navigation/content where the reference shows a clean footer and account section. The resulting loss of clear page organization materially impairs preservation.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Multiple layers of text overlap across the footer and account content, with some text dark and difficult to read. The cookie panel and other controls are also obscured by the overlap.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"Several visible action labels and links in the target are overlapped or obscured, and a prominent red button has no readable label. Essential visible controls are therefore not consistently identifiable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Both images show corresponding lower-page/footer content from the Red Hat page; the target's rendering defects are localized interface problems, not evidence of an unrelated or incoherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"Although much footer text remains meaningful, overlapping duplicate links and obscured account/action text make portions of the target's content and actions difficult to interpret.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6821,
+    "completion_tokens": 250,
+    "total_tokens": 7071,
+    "cost": 0.00097755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6818,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00097755,
+      "upstream_inference_prompt_cost": 0.00085255,
+      "upstream_inference_completions_cost": 0.000125
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

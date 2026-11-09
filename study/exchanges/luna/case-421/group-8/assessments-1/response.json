@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target shows a coherent climate-news story listing followed by a complete footer. The reference window is the footer; the target\u2019s footer preserves the meaningful site sections and legal notices, with no material loss evident.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Story cards and footer columns are legible and arranged coherently. The different footer styling and layout do not impede understanding.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible story links and footer navigation items have understandable labels. No essential visible control is ambiguous.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Both views are coherent page regions in the stated reference/target comparison; their differing layouts and surrounding content are permissible.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s climate-story headlines, bylines, images, navigation, and subscription links convey clear meaning for a news site.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10822,
+    "completion_tokens": 204,
+    "total_tokens": 11026,
+    "cost": 0.001454675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10819,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001454675,
+      "upstream_inference_prompt_cost": 0.001352675,
+      "upstream_inference_completions_cost": 0.000102
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

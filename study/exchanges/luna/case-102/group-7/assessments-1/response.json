@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target omits the visible book cover and the book title, author, and description from the reference\u2019s featured book section, losing meaningful editorial content.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The featured book card renders as large blank blocks in the target where the reference shows a cover and readable book information.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible \u201cRead the letter,\u201d \u201cStart now,\u201d \u201cContact sales,\u201d pricing, and integration controls remain readable and identifiable. No missing essential control is established by these views.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding sections of the same page, and the supplied states form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"Without the featured book\u2019s cover and descriptive text, the target no longer conveys the book\u2019s identity or the meaning of this section.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing book content issues**\n\nI need to look into a mismatch in the book section\u2014specifically, it seems the header and image are missing, with text retained. This could indicate a material defect in the editorial content. The reference material at the bottom shares similar characteristics, but the top area is blank. It appears I've lost the book image and details, which affects the presentation and semantic quality. The visibility of links in the cropped area might need addressing, and overall presentation fidelity seems compromised.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing book content issues**\n\nI need to look into a mismatch in the book section\u2014specifically, it seems the header and image are missing, with text retained. This could indicate a material defect in the editorial content. The reference material at the bottom shares similar characteristics, but the top area is blank. It appears I've lost the book image and details, which affects the presentation and semantic quality. The visibility of links in the cropped area might need addressing, and overall presentation fidelity seems compromised.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BoF8crNDZnWLp4trij8aVc1NALXXU_yRD9bKgVrmxeiDMFDuyXbsr2pzdpryY7MWLTqRKMFyK3V1zS1QnvExzMg4S-cCFlKTilsV6Nbc7niIQLVvvwTigAWmBjlD4ImTpVnJyj7b_wL4xKyXDWXTAdYeXdyx1DQJ_3QZDQRxMf2VtvYSormJb5OYfq9_ZYDxJY0ia1YYCvtw8bQ0erSlCY5Q18OR75U5fSXmBVy7ZOjE91sNlkJKiOvjbbiDUlVQ7-eTcnz7uV034CsYwzdNo2IW_B_qn7sl0r9ju71xWBY61jioprrhC4xLXlJlXTuYM6P75GJ6FT4fuuS8VvDw7OAnz5aJAH6ZbJlAzt28eM6U_ZNX_w5LC1rzkBX27_rwmtGcsDpd9w_u7ocy-5RAyDTJM7TOst06Qnt9ex9NyTGHPjZLou2AzBGnWAvN8bkta5wvkX4FHp9g4WeymHOPhiWgCh58Vi4LGBA0dy8Kcxf81a56CkfZZta8pH9Y9y3GjLwNnr-2926GQJ6B1ZqPNUzvb87DQ2fh4Mx9nMS309CCJfN6Fg3hsFB6h35-QEaSkgudvg6Lib5Jo8v2TMoENf-_dSHZtkgIRszSFdRFGVAsFoIJfhPDC-a9F5fTPsQpZJ-JUXdhZdWteUiPpYQmbpbA_npv4UgR-fqGYaqHZp1ITQWDiCy4heU_uxu8mbZ4U_2iONse58GiEAI2oAT5JATzcEHwgsUi-Mv0MG1sZrHiR_3jBI4j-rzjGSR31v6TPqaigeS0eikXt2Ch3lKv6xRAwO3OieKKXz80Wfumjj9KYEfbHgGF5QEV9cmlO4hXT5tZG1eVEii5RY1OjLo8irgJYLbqNKWqua_jSX01k4h1q9ojx1dPyTvz1-G-Yz6771scPIU9x9fiIl8C8k2co_MHM1aZLWFHFeAVwAeqy3uZ6FtcwloSsFM3UWyHyPz6_O7keAcZCjj5-SBx3VPSLiMgBB-HDWL7DTF7ycwVIwbZ7g8xNWXCBXOynw3HU4FfFBz4qhveV-8BuNLzEl2YRlYMHgG3sIY5hPPNTWLtkygcOkb0JcTcgYKvbmN1WUC1lHeQuuKXpAuR1R0rIMHN52MG4KowTkyM2y8rSGrGK0YEdjwEfQW8HPk4TsyXB5xZsOCXhn1EyProhO5GgEl9OvVJHnaUgg18_F2TzvvXFrw-IuWuvznDuEFIDgNnhnOjjPld-9DWxGTWal6whwa4ZjBTGHpbyknl9GQF_rsGY3QETxf_KATr80NBDO0FCU_lrIiI092cXMW8Dsn0LEoM-xle8Cc5PzH7gDqQVf1be1aWPjQcGkTdVXEnuLMtQsez_8MgwuNB8sb6LC8rNlH28QET_4Rvh-rfvUd1JdDuCSYGE2O6QFjLZC9Wt1Mxqh6WsFBlsvcHJ7IIjcUB6ODAPJt8mJbWgzRyDgFYzW13vPflPOwjd1ZS1B1ybSaAI-vURipzkN2BIniMgDYCvf0EWBUx9ouqojx4_jUbWfOg0YJ2Rfbx2FIAT-7kgNw7LyhryZzOswufgLGGy8iS_snm253nRax0OkkkoNlW7k804Z6Lf9dy5nLjOpnUbiNXIRGLkdKceeeiAjRuX0W-hmUD-089uwIQxplHoFzKCxhvaEJ1CphxKX1_oUG7qPkwlXy80NkuKKcJMW_SWLBRkzOqExQIJ-yMSoxR2jCJINmZPUGmuLrq4mfcGn7v9NXpj3gbXV6oU947qiXHlrGtCn8IUqvzu7R4842e8Azh7gtajUqtgalvl9uinSB9quHcJTy-WvWsDWSqoy0YDA8Uy044klt7oEtbU8-OOw4pZ9Og20rMw2OOjPbpG7pLj4PjHG1NZrX82V4WWWvKoy5Q2FxUrjPFSpbQDjnDOXwju2n8fWGCRFOLnNmow7wlb5lH_Vl6leHnAHd1uzzHXsXcKjsEMWCbAL-QfZZKfwaH6O_RuHYdcnchejn7IQ-huJ6QsCUz1Jtxz8DL7IRzkS8u-SngZXHBCy0ZMTjpsHsuzGZOyNM2I3YRGkQ7dzNpqQagVq7_hJNb1GCWK4bJ_xyCGLQl1bEh1juRwPGjM7gr-6mbCq_8PNRjepGqxRxbG6BvcaURjJjFsCJIsbqxWhsccHWbme2WmSBUDCE0DIrYUJNtXtaRQKgRGdHYuzk2g0qApHJAuwEegRQNk_iLeRgU4req95GKwIgWGv4o3JZfTt0o7YjVP2QIAK6c8wP6gsjRUiyC63BKmimYTmlwyG7K3G-z4FnYh9P2UkbRnZCJAh8u74D51hFeCMxOG1EQgk-a2rG7qRSUcLE0UO-nXsFANAMKO0f2mkAxgrwZ3jpbZTvoBja3MNrNU7xnY_7xr41DIkY_RvbH2YgwlNlVqoTZz9ELN5nS0Zx_E28MQHhWnWgVk4ewFOpuwx5HFS0g_bFEPsexjYb1e--RF4dCb992ICXT1pq4xEBSV_r5YuG4I8JmJGahhiFAh1u65SRYZozL3KkSPl5f5gZcOV5FaKUoVjfOioty_1qPdPDCD6HL-0xZi-i4919P3tYUjGyieDYs0DPfUtdPybPKT0YRXXi7TZOvx36EWQvtprEfxK1DmWmWLSj6HixKTLBoroe3dseTScniiqCAN-VWXhL6FJ0NpXgDbaXCwsBGVR8VpQdlApTxBLGjwf6LdQpx9cjjEx-HCvkArE-gKiuEy84BoJ3RJRJQR7NUa31klE51yDE1Wxn2OkJEneElv7BkV3quf8I50hZ-d7oED1tLK7XEfwgoai_Lp3y_8vcLaL9qoXP5LR0D_MRdLNISAOPIeBDyTOVaAwFrFSZtTkbaVglIIVqLm9fPZUk4l_ql-t1Dek8kMUpaJp0w0w9VbAiAAVIBW1FkxMKVrXu0kSIJVBC0xBpHn-D_Ui0A9rrkrvvAnCyAsp64LvVn991kAK40Eth3WESmQOYmA8yh_hu44YxlsGgloOddWDzLMZMG-QE0Xdpk2FsEkBs5YvXk-c-EnkT86IEqaKm8edXYvOu0oGLC2WadW2l1n__oy3GgQqoBjgQX18vF-l1KZtYHjt16999w8_p-mYEk5BddP-8GE7xkFcop50t_3iWlPSqqpMY1QKJXus1M4Yf-cru6rlflQoMhxgJQlnkT-AVSp7fB5xaRTK4ATKaz4m2j_6CLVLsL2o4Ze-rGfWY0-AOWRJH7zp4dXNW1JCu4gR-9unixWtx6uY3b-BnJWNujLe0vyQLL5Z3pDNP9TN_vFNV-PEaD4w4sX-YyOnRBAHxacTLAO8Itq7RTvw9QawXj1uR3fMferZ3Wg5xrReFgk4WJm9wIZ-8gK5G852MHiLt_IlqVU_ToAxtJa6GEOu04P3ApCZzgS_NpWgIPC5bl79D2-kT_3MU4KCbwkxQDph2xA1T4oEvq9sZ2tfOQlxkqHDWjUcE0Y5BS6yK_NMPNu3V7pH5mncauC8cY-XVFkMbBF0icyC4mCzsEDwrZ7TB5FC9IGa_c8Ta2VG1ojUS5vB5O76dgvqfF5mG8uy6_B4pPhStajAWabtlu0k4YI-P4X3Wm9wEHyBV2RTTdi-27HL_gOeidSkU1NJCjoKoIEgeSI8uItRwLMGhIGDFWpHeI18x9HxRz-sW1ZPRhbT5j2XhKMyMA-Phe9gQsOMA1i8BGl609-hYsPO9N40p477kCvy4K3_odsBUiACGREA0THOuJxv3EZEyZ1swAE3f98Mp0kcrtP-SRpy6QmjEXF4bm9NqDAr3kzVb8cPNaw19pOjHguDOA773cGEJF7bIKa7yLOGEY7q4QwSJe1UanpLFDA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_010554eae0fdd5b4016ae81a02ef7087d1a2691b07975a19b0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11033,
+    "completion_tokens": 372,
+    "total_tokens": 11405,
+    "cost": 0.00156505,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11030,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00156505,
+      "upstream_inference_prompt_cost": 0.00137905,
+      "upstream_inference_completions_cost": 0.000186
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

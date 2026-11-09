@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent TIME editorial content, including the Shai Gilgeous-Alexander interview, TIME100 Next covers, and People features. The visible content is meaningful for the news and magazine purpose; source-specific layout differences are permitted.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and imagery are legible and arranged into clear sections and cards. The apparent cropping at the viewport edges is normal scroll context, not evidence of permanent clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible actions such as \u201cRead the interview,\u201d \u201cExplore the full list,\u201d \u201cAccess the Vault,\u201d and \u201cGet the issue\u201d have understandable labels or recognizable arrows. No essential control defect is evident.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views coherently show the same broad TIME publication purpose. Their different layouts and scroll positions do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headlines, descriptions, bylines, cover labels, and feature names convey coherent editorial meaning. The visible target imagery supports rather than obscures that meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14565,
+    "completion_tokens": 305,
+    "total_tokens": 14870,
+    "cost": 0.00197305,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14562,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00197305,
+      "upstream_inference_prompt_cost": 0.00182055,
+      "upstream_inference_completions_cost": 0.0001525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

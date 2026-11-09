@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent directory of Disney brands and related destinations. Its content is regenerated rather than copied, and the visible sections retain meaningful titles and descriptions.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The sticky directory navigation repeatedly overlays target content, including Star Wars cards and the ABC News section. It obscures portions of card descriptions and makes those regions harder to read.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible directory links and card links have readable labels and understandable purposes. The overlap is a presentation defect, but the shown controls remain identifiable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target form a coherent comparison of a Disney company directory. The regenerated layout and content differences are permitted under the contract.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headings, link labels, and descriptions communicate the purpose of the listed Disney divisions and destinations. The overlap impairs readability locally but does not make the interface\u2019s meaning incoherent.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating sticky navigation**\n\nI need to assess the visibility of the target. The sticky navigation overlays text at around y4000, likely causing substantial overlap. For instance, at x455 onward, the header nav sits over the first row text of cards, obscuring labels. On image2, the nav overlaps the Star Wars card description, degrading readability. It appears fixed at y90, causing overlaps across content as it scrolls. The y3000 area shows overlap on first row descriptions, while at y4000 it covers the ABC row. However, at image5, it overlays a boundary without text, which seems fine.**Assessing content overlap**\n\nThe repeated sticky navigation covers the core cards, affecting material presentation. While some card text is partially overlapped, the content's fidelity might still be preserved. The side directory links are readable, even though they overlay the card content. However, primary links in the first row may have obscured labels. For example, on the Star Wars card, the nav overlaps headings and text, partially hindering readability. This creates a material defect regarding presentation and semantic adequacy, though controls and visible links remain identifiable, proving the evidence is still coherent.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating sticky navigation**\n\nI need to assess the visibility of the target. The sticky navigation overlays text at around y4000, likely causing substantial overlap. For instance, at x455 onward, the header nav sits over the first row text of cards, obscuring labels. On image2, the nav overlaps the Star Wars card description, degrading readability. It appears fixed at y90, causing overlaps across content as it scrolls. The y3000 area shows overlap on first row descriptions, while at y4000 it covers the ABC row. However, at image5, it overlays a boundary without text, which seems fine.**Assessing content overlap**\n\nThe repeated sticky navigation covers the core cards, affecting material presentation. While some card text is partially overlapped, the content's fidelity might still be preserved. The side directory links are readable, even though they overlay the card content. However, primary links in the first row may have obscured labels. For example, on the Star Wars card, the nav overlaps headings and text, partially hindering readability. This creates a material defect regarding presentation and semantic adequacy, though controls and visible links remain identifiable, proving the evidence is still coherent.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Arla3hiaDgQTwYKOEPKIlqt2PiDGmN8JjQJCa9SqOy_C6zqJgjluY2cLZMSj4oWw0xIO8qLS68qHXg7AJ0yszp1edU5vOugj3wuAIxrFHl5oJI1IvQj1ZiAwiliG3sMrk7OJknxKl8ARl-brjCENUFpPZoCGXOA5oOw5N_1eh5Sbyrr8QBOISgnOzdHWT6lg7FoEHvfJ8xqShpt40dxpNc1xcFGqelE3Mkq_ut2yrq8nTyyfQRxas2NKqqUVF9TKYhUsqCkjv6o1tjbIGWZrxaphkcWpazMrbFGOsz1olnEmx-2c_zXQX9NLjiUFOAOhfBAfVE-wE6_HUSoJ47ufv_dmnpLqs6d9bG6k4Fzv07bYeWdqu6PdjgedRZ5gyx9hlt6MPUxZ6oZOmduYlD0QcYoVsKmOHlXoZjKMg1gSL7QQznJTX2B-maY4uVzZRGJvYHFkkFmOhdHAoSzcTFHWIm5DknLR-44Z6n1ei28s_UUBgbLgkhy4Cqf39J6Ed--OB33q3x9cU55ZifpKcWf2S4V-KeOK5eiNOqdxhePpW22sM4XnSsba1CJRjjcfaoeHPEfFKi1pD00XJzSrhHZMwuL5fto-Mp8m4fKJBDKlHR8qH44mM1foVrPWgwXxEpIEacn8FhsgdrZ5OcA36PbjCPo6hkEKW3ev8hATaNiFcGXucQFD507cUsSjPyaEdXUQVZ2lSaoghu5pqko4qXb2nyTVJIxNq7Kj8LH36tOlgoAX8q5vHJRw4_froVC1dxm_lp7yvoI8bPS2tvKZFSRvWQRW6WQT3oXVZKdhk8LNaC3Xcg2dyyfSk7MAuhv9TSmnD2z9j4x5pcEK4_GqrOAQOPGJKJJRLGVdpRyLO1IAkBBaT0xTKy0qycw13Zf2zsMSV_KGB0ot-dWzN-j4Hs_wczX4zqr8TvZRVnA3imSCHPGacvjaRLzqNHTld-bSzl3rENuRJduVqWsr6TBupHGBFtQ7KY4lxH_R2iVPLt6dLlgXgmdRRf5auQ8PDHSzSoXSHC1dBh94skC4izf1UkZPVJLBmDoyEijLLlYyeH878rOYluFl8i9SBC3ejwWt0CZOxAJNEDTiaFaEOr-Q7qCv3oSNo_TmK9K9L57c1qok9A8y1z2k9oC5HiSaZMb4LVDIDhrnYqnFu6_q8dYyEnh-wCUs2XrN2IW-yEP3BJwAxJ80rI8vw5_ydE8dFZx3tZU24T3BX8QSIKS2lW_hqwFBTrsFxJ71bQWERw8ycUVPD5OwSUvt6KmsIsw8c_Ab9gzM8gJtT2WEQfEgMtIWHargcSc9ijEIwHMabjVx1xwGQA5yeKOo4tMARDVqlBWDfFMCEXUN9BSXMzbTgZVASJB-N1x4qyvhLS3tMIOGx0rYscwVMIchE0ngA9kqPW5RRci3cwONOVAfgyOBSg9w-xiRDhVSh5fNCP1akEG5Fm6wEhQF_rGV3HrukeQYLJpwxFbtZRE5k0_r1TMNtV1XUxUjDK_Wo8vAIrhYGlfpNmpqTYssGOmlP8NL-ucdssZY7dm-t6H8ufS1qpRmpr7XjUb9pint_BcbkLfYF1mBZrRWowCDFQYZrT19wu410A0yOLOko681voAiH7lfirqVVMxBaFmHXc8PKeRuFtSmvlEvQxFwzGqKOWqymKW6sIiBPbrSqjVH2JCR-oC9kZv6a6TRFZVPkkYj7XE-hIBleEoKP2ZEEc3jY1SpBu5dZUKqd8GqX-RxjqOGQmejoWCXhmW_qf9X0iT6wOH0jIxelsu1XvS3cn1Ee7ziBZNpyEJTqNAwHDAvgDbV9e2zuxEDmKuqahqq927tfMyodwwjvTZdW8pW7I0j5qtDj7k9ki1hv6c8WHahgCoN3T0wfq-wSAA2cjhUHysYCa-eCGlXIfDW7p7LgZ5ZlFuHANdranu5IJSVGGAn9mdFEiQtRoxbiFQBEko0smbMDNS6HvORSVLE8JZFel8go0Rt0eogsQaFl3_BTD6YAXH2t_57wtE7gLAsu-zkPJm9pot2WQ8ljE7-FJMH7TyxS0CuxZQCY1UlRQiv9-sleKU856RQVpKWKzcBiHZohzdysNaXYOOldENs5Zg-X0B3GAtM82rqPvdNmRvczbnd6ZsgGEHiY-bdQXEw586qNQo3BEiAoOoS17q73lOOZhFNPO7C8yjc5_ShKN7aiLGeAC8txpsVPp1C9RHWOdAerJDRAdtuNgik80xmmCZbm1C6OySEwJCGaWX-s8PX0y-SLbIMeAO4sF1HaW1PrW_y7RsdUUY6XE3o5wT4yuflOsiZVc4tRQyO5k5tuzT0mD5773up-O_DRYZzoUjdX_mfX-S7323SzOxJ6RwpUL2u1JfcbH1r4zkJu0_BSVZ5aZWTjgqqkVNJfV6iLRHG6KFIOS6Tokhpq3o4Rmz0zCJOhGZnaUCnch9YAJAgCD4JV4EOZ84iFlroQxX54xpeZ62XwEEQQs2ODZXeSTTo7hooTfx6cWCMxwPl8lr-TYCPlQWAIRg9Xxiw7zj4aY7Sfet6IiFD3EC99tvV7i8N08yRupC7taFzEX7DksFSXZ5aGQhgFWzOoCK9-yWoYyp9VKCRF_FPKoSvt0OTxB6wPn7nR7RAVuEl1B67ztoF58ay5b7XNQA7K1EuobGt_dBjzcK6Wp7LOkvQyupWSPlXHutr9l7gQF-K_kEOqrG5Oh1_uBHzhaPxBBSuDhlWXNyiYUSDpzPCFXTYrM9N3CEjV5cq4bjXaXT5wPAZBkI1VTIr9WcFmEtKx8LxbXW5kF6Y0Qk2IAlaSR7Q7_ni5p6euOLb5pKV598wsu6EO0320l6Jo7fegwtLU8ZExOcLMaT-Etd9VKCGKLdx0DHXs2ROpwgRpPYcjQEapCE16B2_k6kIdhvFgSIjk94KntZB76UocyuH5cs26QBCnb0baF39dXoZJi44xnuorUuxnN1QoLQQYfeCaUm7rvsgtCMxnsoOr8EVLmElYAp1Bk20S2BRThJfdgChG52Z5QUXQyFZ0npObN-QkmIf4MS9O64Z39l_oOq8Vakknk7i1zVlCnnFTiHjkqynLTAT9QqoOMibwCjAGwT-_8n_oO3bsyZ0CJForYF12cWC2pGJ_20rjis1LOhSNdGjn4n3IEY8S_h79-AX0FJFLB_0iC40cq8A3CV9yhqxiuyZQhxH3pUN9kM-j0_sAegI9gz_3bUO18h0N97_Jjxv_bH6_GHF0NIgnOAfTp0KH2uOFAPEvF_XFqB2mCYqSuARaDdR_Vke9xpfcSBbMoxpii1YUHZsnEeRWTzY75u2bGR4YQi9B1wFhhlrcomAGuqVtSemNJej1dh1ZfVX_SEGl93OVoweVsIPrsnanLDNJnbKVr7MNuPRY2_mACZI6MAajKVZc0QzzPvQEegDfdr3VR-zycmyHE1s7KpyPCL4wDvSd-Spaqurmd__keLO6vdN0e7bPO-rYqlba2otYqjyS35L1VK2KxgRPYMUBBA8cSKneqO9ctAKwHj6BjpCe9dPn8cMTa0pKtZh3EY0I_7nPk3A2xlHyWdZVsLOGbP2Ns3_lbxcXJ03My_ToazyC5g5tW5lPzH-wtbFcWWhii-K7ND8o1ZkqF0voP1UefmqUYcvKqxM8KO4VcUTgLqQVyvy0GLgSbUtHGxFW9wlKcYz8OrCQphLavORPU_Sxss2yMqGjHcvomMSbRpqb8ci8Vs-xr-Ugx9U8NZhfVioSaN5k97rUjeTBbaFYhXV-WZiW09k2IrDqZRUij6QtSMl7Lffi777QFake73CxZtZQGRf9B8PNn4seCP-uU70D7JSoZLzofmY67_OwUq1JHUpzZE6U3f9qljnmG3Iefi2Mp5RFbV2WnEWWDykm9lWw5vVYnHmKXSX-ebTIpU47cjPy0htDIKlcD6b1hsf3Bz39P8t1cmYxNLWgm1pKvR7M_ejL-LCST8AJ-zzu7Peg8w0UBmV597u33nUw8QBL-vxR7KZPOXSVG8BnI2MU_MILObFvuXg5MyqbXtgj2YzAcbL8o7AyTO8h4zEb_-wK2qDy7xWMD8zH-edA0N3Q_poVok_6gpgkaC_esyhK7i1QMELdG1X8j3EWB_HCiZOWh3w7MlVis-91Dl4SJoExxxhLfd9XCcdKgTO6YyWcjHD5S9fL-rzbBEVHjBNDmad9adU_YOF1h_K_vTLE40XLnoOV1FUEVVn_Co4m4ygvpxqew_x2VEmg8YdKgZloCJ6FCY63TvNSQDFk4CPpnI73vDOjU03DT6RpE7EtkMHk8uYxZIGEes0J6v1HwxOEbfYO1TojSUBPskCrEL38NS-VexMVDvUq0_pJp_7ThJZy30V_Gn1cbgF5F3wVX-cNlVHJz16XQ2HBKZzNnbnADcmCjlURWbE8N2gsdph2-TYMpd2WtnbqLeJFH_DVdS9nVPETgp1BrbBOIBMq2529kpgU5uAG3NE35YmkD25tbI20cn0wQ8PNJwez0A1euUlyu3ljf1Fi1X3WYF-LiXRw047RuFcVVncglWFZz9bcDbInoyuaKVrNkdxSyp8lS8fLIWQgIvQ8y5g36nDR3nHkPkXHcHXkr4a69lF3eubJEWAL4Y9ymJAtcx8FCBYpkENqcup1dM1U44SJwLO-XYEttmsC4G0yf7KDi2rEOfaZRFtQuW2eUiSBw9nKdu_aWgJV2w3AfSq7SHeFODgIjFEvDgBqOFHrgJAhOoYhv7UIToBQL6mM4aKH_Q_n_US4yzDZPfSSPlhD1J3Am6-OLSNyVoDGDcLvQf9zM49BtjC2wo3AE5RVLrU5v9ApcMmLthkhzWE8KM4zxrs1QOHbYttl2rxlLI_6Eo1_0M5pRNyyH-D6R2UD9jQBx5V6GmIzIvx4S8nWzz4kaRhHHafwKrJNebXcK4BPgkuNSdTO_EO8X54-HJ69n8wU-VOcKUklIpuSG_RbJbftGrCXKCoRPkOByJH5wsMhJE2FRMy7HgVmOrb21GUZEOLKXt7vVA4loZrwu2mONSVZXngSG1LIsb4ULwuM3_pCmtKJ4Y6OLNCeaLC9Mj8lptZlhi-onajEf8rjnKRDrW3zPNajsqJzvqxiQbmkzJpNsH0CJtj5F0qEr96h8FvnH8xHsD04wivBBo4uc1x8GSay8Cbr6OFY-vSt-bBZu-QZXmCHimNbpHctcnZmeq-d4I75G0uoIpKrDzMDHy18XI6nuTOomoXP4AtxYtZautJwixaAcEkGikuua77aDu-6ZG7Pe6oH3UqHQ09udJRts9e-2YqXMbKwf6A4OdN3jhIaoi6joeUHc9M7-8s50Bc8I0tY8rp6GmqplKN8ZBQywEcAx-_tIFT_RZbldSeonlnGcvQD8KAikHN7_ex1sq9nzdiyr_U_9PdFFePWYHct0p6kJ1f9VZJXsJBSBIpplt5Z5w2FWr1QY_Lf-s9vwDGIr5R8VejLnvfe_Os5VM8CUbG5MG.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0970bcb99c7eaa37016ae80adfec2c87d18ca492b7c5897766",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16681,
+    "completion_tokens": 508,
+    "total_tokens": 17189,
+    "cost": 0.00233905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 16678,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00233905,
+      "upstream_inference_prompt_cost": 0.00208505,
+      "upstream_inference_completions_cost": 0.000254
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 276,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent TIME news homepage with a lead story, latest stories, additional headlines, and newsletter content. Its layout and wording differ from the reference, but the broad purpose and meaningful news content are clear.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible target content is legible and arranged in clear sections. Story images and text are presented coherently, with no substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible Subscribe and newsletter sign-up controls have understandable labels, and the email field is identifiable. No observed essential control has an unreadable or ambiguous label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent comparison of a TIME homepage. The target's regenerated layout and content differences do not make the evidence mismatched or unassessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headlines, category labels, summaries, bylines, and newsletter text convey clear meaning consistent with a news publication.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating news coherence**\n\nI need to judge the target site. The news homepage looks coherent at first glance, but the title seems contradictory and might not be factually verified. The images are good, which helps, but I'll want to compare everything based on purpose. All dimensions meet the requirements, and I\u2019ll need JSON rationales for that. I find the evidence of coherence is present, the semantics seem adequate, and the presentation is legible too. The controls for subscribing and the newsletter are readable, and the output schema is exact.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating news coherence**\n\nI need to judge the target site. The news homepage looks coherent at first glance, but the title seems contradictory and might not be factually verified. The images are good, which helps, but I'll want to compare everything based on purpose. All dimensions meet the requirements, and I\u2019ll need JSON rationales for that. I find the evidence of coherence is present, the semantics seem adequate, and the presentation is legible too. The controls for subscribing and the newsletter are readable, and the output schema is exact.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BpKgAQN8W2AdiXMjPG0DJ3FSv8hjhNiFR-skWJMCBESoctfClFrqsetMbZ7mecNVvZmQtL-PbTxKJoZtbR2KaACnuqWghLfRRE4T2ssVNXjPFRKGd-DnDJYix1N-UEJmIZGnJplSJv7u33gKj31G6R2d-DO8IQQYVpFmY4YVnBx042lYB2jNwjm-8j5zC9R6Xq4p4zCwyWKM01ygUUx9_IpuAafvwo2NgoPms5F1snEuUzep9vmc4IkNl3fLrUfnAgmFCWLQwPcZ8KkyCQa7dA-fxeEfosw9aZHigmtitaCQC5Py46TP4MJQeo8cJzWz97K4Fb155lw36KiVXcqr4SmE60q_9-oTTDLJCddwo7IqkaUkqtf1EptjKmp3BauO8kds1k4sYnx6qqf5ORqAI2eTpJhe8VvAbnX8KaKhuUBRLgZPgf49TbuqvlxyipP2nxyqEtk8h9UuBN8JjvWWqnKIaa_D8-VzBG_gmNF4xnU5cshPn8aTj5FI1OPRdAw4kI08zyPs5UqkegLI4qbN_zQzddTy6y4NPOptpgs-6zfHjJuIiw-CRVFbFaFL6OrU-3B5j2yXF-oBIBhEmoicSpLDM0sdV114lSud6mLDO2ZF3PhRCTLIOdB4Edv65IUm0xDSa07QXggOFzaFmOjI8XpJ4heYcuHfZZSjwY_RG4b77a63gQL_6YPH3IqIDTezTd7090ni4OmkZgVuQrQ1Be4QQAa1HzbpF6xJonu52zoeysEuoLj0OcO0eWb4EOOyKIKp372qVoLnmdpDAXYqKkTXUfjPPImj7cqycr0lR-S_YejrKuouAMvpuTZ_e-KXEhMkSbdikRQuEQsufe1BkMQk0QMQFT25Y6Fbni-3cThZQtEqAiDM8oRir-bqNASMGq60eGQbrRfpPFtlNK-eBL-x3sWyeGL4dx9l8YoiHTcET0eRUBRp_xfg3XdjayEWqqCqG7G5lcyRy3g4hlzOA601X3gqOVXG_H4WKdj64wkTMOWzw92GDIm_bJIr-Mf6Px0SYLX2akscQtJMffFkEM-nOxRcl9wQsmJegiU-XYiOKbLrBUpnNAyFt3-OjUpmYC8tXCJxaQBsbcTRPKAcEcgqXn3gThwAqMj38ALKVVvGMPtj71yPh15SqhKkFCKlV-K-TpaJRePohkM-mqWmWn8e7riiaqB881VHNILcsnqOXjYD4GJZemAKRJ4sosJb61RSAE8HTXjo1bg7iB93z2N2SlpaPsLoDQo8oaaHK4U-Wju8FcsEP89DN_CDKLkN1z-WTUpt2D-5rA4yeSfHdkdkx7x-XCbMOHqDcxdvQ9_tnDtR-mmwZ-HS3zC-P9Se9d-NSVJz4SHwEoG13WX0CXxXA63NfkYOBa6UuAhQVXWAZtIkdb6wzZ1dP8Csi6qwui01d_LIT0ZpYbc51FSfnGlZ_8iIZDovz-LwN6DjUdi-puPhrp8-nYdP3mwOA5lActpoj4yTXls9nExw7F-5aFTR-wPoLDo0lq0pUsnbt09Ia4YIaxjm-DSYvpztODTZvuxQTiLLgPhUp5RhuBhVaQm-liz0L0uBZLGudLY-bu1Yi5L1lUo8fMTIjI3M3ak2tvPq2VbL6JZLuuqImAuW_9KTDUm9gyGPY4eh_qeyvPATG_gPQTny1P0SvhF-2Aw9k8tpJVnaxa7D0-xKADPFqU8kz_QJ026GaPh4uikmD3y8GNPJ7Yb_TV7fM3YogRJ16lZSMw1CuCeejCdrkETIP94bm2FuwuM5lzhNsdYVmwKS44ueFSHvIj7GbwAJV7VITJnol9TdzPyXUM9fbKvBeqEm7FRj1TTmD0F2SBIk_D_m4N9TrkinII7GladusWSOij-AOB5GnW37cUI0AmhRJ8O6YVt2cELh1q7JsLFhBOGPiXEzMKg5x-zfioudaKOQU320Rk2fZvvGIxVPZL-e99ApH3cLhOBcs7JXWrkcb5jQTLF6SsafJ61-UZFgbhJwCyUBFfCTJB65IcbvWykiEQBL3VsLeraU6ndQlrYC2heoSw9KFkpl1JCsHl6JvwWz3o_TRMjZd2sq2x6JAY8TUjTnsAav3DM6C7mKsi3vd1mu3EoDFub_arYlFkxhrSM27-AWPgVqsWBcZXTsNxBD-eJiNuCzZgORO1iAk0LB4eLF7tYAQdl-IOEWFhK7Lke0J4Sm0Of8MXh99ePg5KGVTuYH14flsK1MinTTgAkg-1eY35Bgw2f0u08e1LQL4_8dUGgdQUUmqi9TRLYEBtm1xcsi_CvobDHanLhbL8vDkHCFpYx7dLzivKItRkiy7Mp7owIb4svF-7IMn6UzIrweGMlb5Fo3lRnGzgcczFJDNDkh3zrLYJvafIw0HsR8TIIZAleg2yllGR7GKhUAkwUY1MtYA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_02ae846869f1f3b2016ae81a484acc87d19e3e2395633b27a4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14355,
+    "completion_tokens": 346,
+    "total_tokens": 14701,
+    "cost": 0.0019673,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14352,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019673,
+      "upstream_inference_prompt_cost": 0.0017943,
+      "upstream_inference_completions_cost": 0.000173
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

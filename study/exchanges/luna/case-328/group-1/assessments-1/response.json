@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, explanatory text, cards, and feature-section content are preserved. The changing or temporarily blank phone illustration is a documented animation and does not remove the page\u2019s core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The actual page text and feature controls are legible and coherently arranged. The animated illustration varies across observations; this is not substantial unreadability of the page interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, download/search actions, and feature expand/collapse indicators have understandable labels or icons. No essential visible control is shown with an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same Brave page and corresponding regions. The observed illustration changes are consistent with the documented Lottie animation and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s text and labels clearly convey its browser, privacy, and feature information. Variation in the illustrative phone scene does not undermine that meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing animation coherence**\n\nI need to assess the target temporal shows within the animation. There seems to be a difference in layout offset at y945 due to a sticky header. The main content is coherent, but at y1000, the target illustration is blank, which may be due to a Lottie phase. The DOM is explicitly dynamic; I see samples at various points, and at y1000, the image7 is blank while earlier samples show animation. Overall, the evidence of coherence and semantics is positive, and I'll output the JSON accordingly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing animation coherence**\n\nI need to assess the target temporal shows within the animation. There seems to be a difference in layout offset at y945 due to a sticky header. The main content is coherent, but at y1000, the target illustration is blank, which may be due to a Lottie phase. The DOM is explicitly dynamic; I see samples at various points, and at y1000, the image7 is blank while earlier samples show animation. Overall, the evidence of coherence and semantics is positive, and I'll output the JSON accordingly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AFji4QAkzCVIjoP2vn5qzYmgrAnDhsbTHzDmINnvxhOQ99tz_FnCF6Yfp_y_0usi5Bx4fatqZa9ZIcabz8F39j2yLZ99dOmOg9bno80NRgZpBwnRSJrKiBAKwb-em9jgPhSJIvIgFxofo9wlnGMDSP0OIoO8R9KWnSKn7jS09Vgh9eBjk_2l6Q6r_30u8hOM6oesibEyL-9sl767N0IU1k6O1Sr-B2uWfjPMylgNuyzh2xvRF-EJjvSQGLRpTgCxkBgiHysKH0niRC_Mu7YXf4OVFhs1kLiEqEX2VmuqBeiUlQPc92NsKtygOPs0u4CkSnX9tOWNQianX5WXdkz9pD4PiJAcuOEhWkSv8lHvhvSinzCaXhDvKxr4K70fTQ6VUCW4jbyftvWCU-8LzLqYyPyflRPwGwyb1KCcHkbIKEY7PgW24EqSO6t7j-ybriOr2laW7ZTqueyoSyTp0QTDImZNzqDNbP80tRLx5YgJEzyU2IKT7Hba-r8MzmTR0kr31AoRIo9qM75VH49wN1WKoqaMXfgiRzsZrXH3LY8wBuwU4am4Ec4BYn0xJuwroVKAiO_bZoOw0eNQaZcTwBlDLY_dqTm6ewSwsO2A1F9pV74oJ_fDlSCo_pPmZyoF-65Ut3dDERmlSkSELO1uDYCcvh5gPQHa-O6JhT7n8mFnUVk9Q4knTmMfQx8bj1QN8Z05hkAj7tDhXTC26jsmmN6Ss7s2vgUiL_viffzOEAupnfHlTJCrbisHuPr0K68gUpzetDwHeZ2zJKgvBRM4bseO2ErHbuWT0UxpsljjRcQEjO_N_eAg3n27anZ3dDspTARh6uGdgkubH-os0a3RzhX3MgYgYOqvFRoiqHpcdoOeHzYeIspAp0QI2I0jQgXYxVTKOG1ZWvzFOHhmotSj1QgqSOyRgxy4k6nSluI6CO1VFip443GRLaI5xYHRh3yI3K2cs8u7eDlwmEGRJ3_3iuIts1W92Vnjqj3-L4qcDcqgDHVL9PX6xt61BdvjCYirv9BNgNqsEgJw2wf_JGdy8JEFbA56mFURMLG2rCxPCIf03J7HMjAym_g1_Zpa86ASHuPZ40nkGovwCpMxzwqJmGl_NjViRhcJvPk65RhhnPykAzYvN0NvMAN6GOifgGw5z8sjXqn8hWBD-rfc5U5Llgiu5ad1facTsx_3J2LtOYTKzOpAaL31BXQDJfcafYEpN3kkfBXH46BmzoVAT8EUffDMsG3Xm1ZAvYUY_om8_aDPLYLMJ4VJKm0ozxsu6P461XV04M0bYXk43vPWtEnPO9b_0PKCDg_rRiLhM6NPq0ZUFTL5QPCEH-LL89PRJXTvFj97vsCyhtxGZBE1GjRLm3_FMtx2h_xs3EtbKnk0bU7y3g_KqafZFdPe8ZKr6h6TKg1B7LyJQYY2Jb15W_GCQRQTHWNKcPEFR-sE5uKE9_vaEb0iiFBpwJEkAhjieT5h5CAhc90SDM4bBv04o2ZX2auzbkaDos5okomx5aJx-qreR_c95cnEPRVktRk8kXu-eM32Hh2JAa9ud17vi0dP5bohSMtSSyl0evZKh_e0ToT4c4Ibn6zXMu16ltyrjIlahZK3q2BZEc2x4hBBUzttrxhqPj_ZWjqrhVvsi_IDhxEJzXv4nB7xw_yZdN2D3OZIykWW1r2QfYBt7HPkumcKe1onrtRlGYVJ2hFjAaaWbzCslOvpgEgzbM6ybY-hAxawCrxlupptE9GzlFt9wFAk0REooczKDQeRbPjApy3ipmVWnwbemQVC-YQ70aYkAnZoXOmmPBJ0hmr8rOVt7Nsfha5jiTM3bibwd-HFl-K-QMA7AIq8ogZdrsMPrIQ6-pCrMjyZroldU-4mxyuwJlaLXD2idBw6AOaN1JEfZBIGLI4uemath2G4791R2Wa0bNN5DjmWZFAlLnDBJNRp9RsJSQiB1fOZXLrzgPcO5NCUPSyeqqAlyGZEUV1h3tFZolqpBaJO_ykwMiZ5A-0DXlMFEGiAjM2L5MxlR8puZ4eGPMAHL3Dz1u_DIKohrANPx3CXC29yUA8HgwN1tTylnKr_jWQC2mXvr6e20hdXfbdIPfzZPoL77RHum6l1pS_p5NkarF3wHLZ0lD8NlHogF0bs2QCXhZ1hTBs2GQ_3it2yWqdRvVHLl6eWwguwn1wibYrXduWbU2uZWVCBSP9qBY4iuNmPAACAVJ7ywCe2rQuaZTD88-nTxZZeDeO8FOan3hfYLm5wBSVSkZbB4jnTmRU2DuF8GuSAejUKTGZA5VjoY3rnXt70xpNF1gGlkjZnPmsaP1iUhJyrKJ7lY7A3JTbTldG1scByS_ahlCQOxqebPYB1kA5UbndpKl_a3PnAUznXMIqPTzfxzFzKzMf99oqolWYWxe29fWoVkiXK2RWEU-c7uidHLPl8Q32raxaDt-OcVaivH3tLksdysS-8Zy0eitrLiqm6uhARyapIU56Q9xlo6-9St719FegO6-unrtKyDzidclMSHBY-8siRHrajaBlcaZDvgrGLra8_ohjPKnyfb7B_-TuQut68U_DbykTqdYvRkzJDpr6Ki3L9m41IvwbadwlAfggnoS0Uc2FC3Bcl3rq0knxGdZX7c_b7dJz6ITvNIz2ouPMFHkrqCrteZPMREQLz8RQSVqHYC2dC9z_-QuOoZGVimzLwreDffauTzjOim_GCzkrvUIRbT5KSno79_jX1HsCaZB_R0Wd_9BdEnt_U8Rot1XWdCQvS8VhV_fGzFPgRHjbbVTwCRQEBqRqF9U5lKzfhli-jVFE8bKfd4zFL0FaPKsslXw8Dj_BDMoN4VT1ZYiMNZvCSIyTEUXqFlTjYE5axch0V-9l6EY6Usg0PRCVLER7-ALmRej2ILfUTC4jzfPckQOtx6DqGsZ53x9LSlVeCYzzgq4OCvXM3g3KMpkB3Oh9p1sIMiOCAZ62mCugxABUJ6HBY44UpEuADNxT_XfzY7xK8WXqchCbNlLMChjKS2V3-S_hRS9pK96_PlGy9Qchff1isug-_x13TWCl7UGvWN34DHg19l3EHZkQz8lU-EjUxSjjjucUjTOV7Itq23WVsI51SncyEGqnBR-bkwx3dBWKVBeiZkIyXTa0Nec8SF6GG8YFyPcTwamNTkSEe6LGUkET9gU4IyMuIBlYwA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0a56dfd97c3ecb06016ae80160828487d189dd2cd35abbb397",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21103,
+    "completion_tokens": 407,
+    "total_tokens": 21510,
+    "cost": 0.0028413,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 21100,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028413,
+      "upstream_inference_prompt_cost": 0.0026378,
+      "upstream_inference_completions_cost": 0.0002035
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 120,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

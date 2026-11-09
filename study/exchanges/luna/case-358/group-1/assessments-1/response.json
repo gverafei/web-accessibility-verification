@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents an art-discovery community with artwork, categories, creator information, and ways to submit or share art. Its layout and featured content differ from the reference, but it remains adequate for the broad purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and coherently arranged. Artwork cards and text remain usable across the supplied scroll views; the sticky header and viewport cuts do not create a material obstruction.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, login/join, category filters, and art-submission or creator links have understandable labels. No material defect in an essential visible control is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of an art-community discovery page. The regenerated layout and content differ, but that is permitted by the contract.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, artwork titles, creator names, categories, and community descriptions convey a coherent art-discovery and sharing purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10007,
+    "completion_tokens": 295,
+    "total_tokens": 10302,
+    "cost": 0.0013983,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10004,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013983,
+      "upstream_inference_prompt_cost": 0.0012508,
+      "upstream_inference_completions_cost": 0.0001475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

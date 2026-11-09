@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains coherent product and service information across the visible cards, including Watch, MacBook Air, iPad Air, AirPods, Upgrade, and Apple Card. The differently sized imagery and altered card styling do not materially remove their meaning.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and controls are legible and the card grid is coherently arranged. The target\u2019s imagery is smaller than the reference\u2019s, but remains recognizable; no substantial unreadability or blocking is visible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible Learn more, Buy, and Apply now controls have readable labels and are associated with their respective cards. No interaction outcome is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views show corresponding portions of a product-focused Apple page. Their layout and scroll-position differences are coherent with a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The product names, descriptions, imagery, and action labels convey clear, coherent meaning for the page\u2019s broad shopping and promotion purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10126,
+    "completion_tokens": 293,
+    "total_tokens": 10419,
+    "cost": 0.001412175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10123,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001412175,
+      "upstream_inference_prompt_cost": 0.001265675,
+      "upstream_inference_completions_cost": 0.0001465
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent news-and-culture magazine interface, including the Shai Gilgeous-Alexander feature and TIME100 cover content visible in the reference. Its additional People section is meaningful target content, not a defect.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and arranged coherently. The different layout and scroll positions do not cause substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible actions such as \u201cRead the interview,\u201d \u201cAccess the Vault,\u201d \u201cMeet the TIME100 Next,\u201d and \u201cGet the issue\u201d have understandable labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form an assessable comparison of the magazine interface; their differing layouts and positions are consistent with regeneration.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headlines, descriptions, names, and imagery convey coherent editorial and cover content appropriate to the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target windows**\n\nI need to ensure that the target windows are coherent. The content seems good with features like the article and the TIME100 covers, matching the People cards. I'll reference the Shai story and the latest covers to confirm alignment, and it looks like there are no defects. The controls appear readable, and there's evidence of coherence. I'll also need to make sure the output is valid in terms of the JSON schema.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target windows**\n\nI need to ensure that the target windows are coherent. The content seems good with features like the article and the TIME100 covers, matching the People cards. I'll reference the Shai story and the latest covers to confirm alignment, and it looks like there are no defects. The controls appear readable, and there's evidence of coherence. I'll also need to make sure the output is valid in terms of the JSON schema.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B4JtLXGIR8bQKUp7IRrZbNWhkc4Pmylbl72qbEzGxh_UwyOEeSiCYaB7Sd-q1tsQg_mNA5LIdNI8k4g8IZmXfMC_Bl_x6oY6soHrpfOgj4p_rjcRaxIseHwFjwgAlcevhHUUZQMWoLnlhTwoTbH4-yJNN0fkqmjAJ2ePVLn09cK7oCU0ESJtDMBBdE6LAdz9nFfg-Y-monVc4JfeEzTSNVRkJhwLxjlbCP8B5rMo8WmSEUwN5SlykeWne38tY_W59ZnFHrMXKJ7-vRJTPujJTe7f5TYgWq_9YgAk28zuP70Eenncq7zAZ_X3oJPCg1oSE3hE3megB1eFJUGJ4e_qtV-ydnnocGB5ecj6rVnrja_gnB3av7Xyl8hdewwYT03BI5BZmZl83B7O3iBaYoIYlP8PufqkJvxI5wUsJnbAEt4xiZjvrMpJJaZsSyrLAvdxfoa7EjxlUYTW6lQRGs6av94-aa4OhoJ87yflptSejVf54BET0dfKHlp-mfM0YvHtleIZaH8s722ikzUu4JLnFWBXERySo8VhG65b_-AOxGWnerjv-ox9ZhGs9EaVbw64BHMtHEzdAJ5qRrSdpldFkXflkkYato4XdLNXF-VWeYH-5kbPO5kiwrM0QeV6tT1_yws6zDJ0UwHb9EZ1B_pAb0vGdeaT2nc_KSCY65DAM9pK5Qb60Sfy7O71Eboi-6FuMdvci8yQpeCB6sU0ptJvAMkW193TftrpAWzHHeBbpCfWmg2otH4foURaEyoZSb6gRpnr4qpb_f5HQT9H3wq2n4KKm1su99lofoZFDpzcYwLUDvBulDe10tPzM0B41hHK4VmRoevkrwjmFAkVMceGHOKU4MhVa58BNHo81w_0rBWogRlQXRPSPD5Vq0FnQv-CU2yAmw87872xbpjGZvDce_om66fhRvvLRpnXYo8NG1hqDjFF9VhRdJv_y-qGsmBDaOdCt467XLgVFO4T7y8bSfz8n3DjVUB82ltUOaegBikCVnKqbBw9qQQJDbqoiA3uu7T23g_mlIqCU3PrWu3q5vusNp116gNWc0Y2DCtn9qKgd9hOgHnLNmyDx9j0CLyhKr8vSLGTkvwaZ-9pCbSo8N8Gqm0-v5_2CCBcrmXVJF7iC_h22Io2JDl-pgRS9vVTYbbfgdIVFYjfNVNqMgk1MhC_bI2S60XjzbWSlDGTlDLtVWHQyLdyqqcHjANj-pZM0cLPIPnQihQZg0mXCe7hJ0KgdeWES_16Ji6iv58yvL2uZy4ctE8HxltVpuzOycBn-CLq_fOH3lO58CHbErRe5mM9nPAAhvk1pZ1a1aTo5ZjPb76iAplOsBa7PKLy8o7C_TXK1quxy00HfXeglOubvzLkSJ-AisQLYT2kQrlgt3h5RUHurSwOqtKEgeIGZdxpzZ-usB7HXO5KjUI8uOC1YTpwy0-cemGFZtWaUiY8g9FoUcbtyjHIGEpbLYCxs58gCesgrUDNRA9Y7-D8-PviMQrzLUKJt8lskQBUzXcgw_hyHBw7Zp_-zUG366Uk0P_ZYPkp8KpvWuE2PNCSRwy2SKx0-ozhfPJVE5S9M-67pVGQxvAmTStIRXmAlJKBdb_eLy5B5u7z4-ccL1aViOUfJDBk2jAqqqtLYsBFHs7bww5tU2JRhuqDbwvoblz_bgQVKGedDfFsKD2zRR_t5q_uDpPo0uWq7IkObo5gEMNjvjuEpACljTj5G_iB-kRhS4O7ezKJVzyF3QqOH7kD0JMRr1E0bpFcV8jFIyv5cg1pgDfouhbsfCRidUbM4Jg66MVApIobq7V90Wo7y-a9xZvARy7eqtBDmOpZbYl4fz9nhQd5eW0UfRih9QVcOcUw23u2FobjNABjpoyRmZ_nBQvhPq5qiPJaYcqI6hpe34joqEfkHdeu2-TOuQzi96fA6iAK7CFo-pzJF4wUeUOm8wkMM_8ht-AyBDCzQHhDMISBs07cgx7yDLlJg_Yua1XyMOvzrfCG8AVricNo7g4dPOkx6n25JAgZ4Taz9ZJfhVfYjl-Tkj-5YFQEmmjN-A4zjshqKj04D2vqPuJL0KpoLkRmatv30CdgJSwjQt9Wt-9Z5vTG2PY9LhTLcgyxdL2cJ5X3JdtKWF-b8bQiUYb0ipcpMNZwq5pptsCFcD11RGGg0wDUOnFbNk1wa21-f9CVi1S4t2tmhQvosKC-LYWZO0kYNafSzwt6h-U62Nyw1-u6spMJG4snCSWo4UJEJfzccj8auGVM3umSeaVUbS0t-e42p3gpOOESZSZvjdwm4dSNS0GJ9M84nsecydsjwaslq_LZYG1BuzambQb0dODsq8Ns0i2_rSFv3A2s0faW3Ea8QOTBfxzykIdr1deBp6R3JEg6Ivd.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0609edac78a460db016ae81e07c17487d1b6d3c78474471544",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14589,
+    "completion_tokens": 333,
+    "total_tokens": 14922,
+    "cost": 0.00199005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14586,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00199005,
+      "upstream_inference_prompt_cost": 0.00182355,
+      "upstream_inference_completions_cost": 0.0001665
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

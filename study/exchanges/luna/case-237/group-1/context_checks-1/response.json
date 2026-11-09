@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target provides a coherent MTS service homepage with the main number-transfer offer, useful service links, 5G information, product recommendations, support, news and footer content. Different section order and text-based cards are acceptable for a regenerated page.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Several visible target editorial/product images are broken: the Internet-shop shortcut and 5G visual in the first view, and both useful-material thumbnails in the lower view. These are observable broken resources, not merely unillustrated text cards; surrounding text remains legible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible primary actions and navigation have readable labels or recognizable icons, including the number-transfer and 5G actions, service shortcuts and support links. No essential control appears ambiguously labeled.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target states form a coherent comparison of the MTS homepage. Layout and section differences are consistent with regeneration, and the broken images are localized presentation defects rather than evidence mismatch.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Visible headings, service descriptions, news titles, product names and action labels communicate a coherent telecom-service homepage purpose. The broken images reduce presentation quality but do not make the page's core meaning unintelligible.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18751,
+    "completion_tokens": 291,
+    "total_tokens": 19042,
+    "cost": 0.0024893,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18748,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024893,
+      "upstream_inference_prompt_cost": 0.0023438,
+      "upstream_inference_completions_cost": 0.0001455
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

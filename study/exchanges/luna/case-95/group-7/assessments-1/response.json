@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent climate-news cards and a TIME footer. Its content differs from the reference, but the regenerated-page contract does not require matching the reference's specific articles or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headlines, bylines, footer headings, and links are legible and arranged clearly. The viewport boundary cuts through the cards at the top, but the visible content remains readable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The footer presents understandable navigation and subscription links. No visibly essential control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference states form a coherent comparison of a TIME climate-news page and its footer; their differing layouts do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's climate headlines and navigation labels convey clear meaning consistent with a news-site purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer coherence**\n\nI'm assessing the lower footer and climate cards. It looks like the target has regenerated content to fit the TIME homepage, and the text is legible. I\u2019ll reference the related climate section in the footer since it includes article cards and footer link controls. There seems to be no defects, and I can see evidence of coherence and semantic consistency. Now I just need the exact JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer coherence**\n\nI'm assessing the lower footer and climate cards. It looks like the target has regenerated content to fit the TIME homepage, and the text is legible. I\u2019ll reference the related climate section in the footer since it includes article cards and footer link controls. There seems to be no defects, and I can see evidence of coherence and semantic consistency. Now I just need the exact JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bndui4hhetDhyYpcbLPvGXYQEtka6YtM2EPvWfx3_y09nosmvwcSI9plm-vcUXtoojo0DF1Mr1UXF7qtq_ctnPJtlBjv8LESq6OyHx0LI2S53wRJvZMRV42A9LJ8zlKJo6lLGAxMBQVafXHcR-yHbVa6bb-nhdZAgQiA1lkNGvQ_20FxbJCfVXb_TtNoQmjDmEnaVJxJuYLnV2pPfDh4vEI_sLhM7D52yCI_sP-hPGRcnqEMLgPoa_4De9G-I5BEl0hiaiI5cDCLICxgcK5zZDsavGY1mWqJh4gvAzW3vGbeGMc8EkUpEAHTQERv4-ygFZoxokjnlkS403tcDvYAQyZbvmKNce1LwV1dfCcTLkj0SAL19SpMb_CRNJRHauKhNbGolFiI2lsP1QpQX2E_p_Btr_1zt5gm0wAIOT3VIBp9ZBrNWmadl7IwboKOufIFhmBe1MB8Fr1FBc_GDKLcfEmlqjy5uUf8oKj0uHtOiL6UNzx2v95H2i8FqS6u2hOnFDoewMqdORaJTfOM28iM6IH6wMMrRAImj97lleiAv_ncXztFv3tvLoC5MkXiImAP3qfKbo5Cx0nqJEvZCvfx2K_FyrO8vWA83QnMxKL8LL9YhDZ-tCILt4tpvUXqrvKCQ3IhzzkrwTwBeZf_LxLnLDHh-NsZRw2dgB0VEgjvtksj-_ZD0gbMngkKNwcUeB_zs02YWUSTnDoTbwqmJ48LsqjhYuwBllgXcjruGd7Rk60eHF5kUMDSDxGh2x2ZfC_lKYao49ttdI25C89SDKVtAjgOIyjz6NFkicQRaBDllePzNZW8A-179rlH2jlhQLMo0m2_xiqofUqggtMceaYfLikEVBSq-DvDfLSGvAVPppym1n6x9E4LUIwTdBdr6iBuAkrDcefIBIqLQtPrjcMmlk1owrRzSr2txoBWoDDr6H_wq23uPIdyQaqRy31KOvcqNPozbnbbMEWZfskuHGaiadUYYbh8-eLEVFnezi5ut0ARtCdZ5vK7yMWxnPgA-rCWEL_rIPmoZEW8IlxJfDDXkGlfcDIxLQk84z2awz3eCA0AfCw-OdzYKux4SEiqO_ZIiyM2LmMoMCG5IQsP28U5ZmYn7sdtojEObLL5Mx0Q8bMqFo7e3mCvMbXTr03SOFbRI7sfuCHJqEH7JiKbfl8Yj-WiWSBmo8OtQH3kPnO5ZVmKncV22LYwp2AUmQUcoG3ujjRPy8KPl7p_i8kETG5A7qtWa8GbFhlxgE45kRO_ikzUUy-2E9_0zfLcZtNd-sIG8kRxSnZd4c9O6VIq0Wh5Hbj1h-8DgaTd7z0jhsZYajCMALGKa4KmjhwQLuEFMxjKiwBemsJo4rvOhKO9AS736ng0prUdPafggV251cUSUrttAKdBp8oCJYKhoURZELmbEYjEVn-4rm9rQieqGKgfIy790L1dd05nyIaJFWRhc4HgWJ-Z1DJiVNrzwpdzUu3ztUYwZT4dPiO-Jl3ypZmwOgOCGn7lEHMsoj-t8uAXfRUbjHbuHO7a1NvAWnmLZB--sKhDP_e6hH_uoENrTXfNBpvC4hHraT9pU0clQBDIZf1iWk35YowBczufXfX3uhCAjh88WpcIv06cbCfanBaJ4DSsADf0SB6H-Hv3Tbt2JpjbHSfkJdE306DdWxyCMC1mybXih_9RiKOiyY38GzGTQGRZ-ZNXFn47zqKwuUMlIklN0QZXVGLU7DuKNNMq1GBi0Yuamctt5_oHVO-yXZgbuLDizGL6K7AWpDtwMoI-_OOggglBdDGWrU89ekco2TzTbaUKJ6SN7YnBFi4XcTFhNbAW9TQsUy4kfe0pKiedzK1TmYdE1C7J0jT2QZ7MJQJyXntq1679_F8dqcydsfHjLwIUalF_zFsNaWAfNmtECS4nWGFzAbc7jSQWj7B8CddS2CAgpvNJqjQUEXcNgfl0YB48dNMSAorGjOnYF-PA5A5JaL9kLBSXFNWH2eAWddZu8dXRchW2fMTbWtcsDvJAOcZsUqfacMVmunlCo8UOI2R9pEpoO-8g784MuRpehoz6XsJkoZZFffcTHYzLzy3cX5OR6iKyoln2AiAmjxh5_L92gPGvNJavJHcFv6bbojT3QAm2VYc-YbPLBqBkDUBJ_VRrxmI5mJRcETWcECfWoGvcx3NcqV7ysqqJruofuGPtyFQbeM1dotenIw_uy11dSgKOsoRKq00uX8JsZSX3L6njDCL6cSyoUOaEdbs5bx6C3HAWvt4VzOYpZxwigfxHUfPk60NA08DgVdYKEic0QcmEypWTRbzIPGkAH7w90go0oZRr0NynYNE7oETSSNnHULKdBcs8QXLuIbxk439hXiDHFw=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0665ad8fda91bebd016ae819db970487d184ccfb719727bf05",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12646,
+    "completion_tokens": 322,
+    "total_tokens": 12968,
+    "cost": 0.001741675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12643,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001741675,
+      "upstream_inference_prompt_cost": 0.001580675,
+      "upstream_inference_completions_cost": 0.000161
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

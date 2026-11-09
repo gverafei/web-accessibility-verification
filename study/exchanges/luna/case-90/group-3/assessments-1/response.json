@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are identical in both supplied segments. Visible People and Ideas content is retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible layout and legibility match the reference. The chat overlay obscures some card content in both states, so it is not a target-specific defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible carousel arrows, Read More control, and chat controls are present as in the reference; no difference in essential visible controls is observed.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target segments are identical and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, article titles, imagery, and labels convey the same meaning as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image hashes**\n\nI need to ensure all the image hashes are identical; consistency is key here. I'm noticing that the chat overlay is obstructing the cards, but they still reference the same target and page. It seems like in window 3 the same condition applies. I guess I'll need to check back and return this in JSON format when I finalize everything. Let's get those details sorted!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image hashes**\n\nI need to ensure all the image hashes are identical; consistency is key here. I'm noticing that the chat overlay is obstructing the cards, but they still reference the same target and page. It seems like in window 3 the same condition applies. I guess I'll need to check back and return this in JSON format when I finalize everything. Let's get those details sorted!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bl_sWZWQodF83BZxYpMp_RuRhIM8TZSg439_CUl0cOrAuHhvAJ5WUFOa340Y0OepX6J1AeQcf2bBMY4flQYlMrbxc6P6WKxySX_1bSdFXxGo9_TlAZ9T0oX2WwchD6GHVWj5bUWArbmu1W1Woh--yqcl3Lo3A_jtn_nWk-Npm3PIFeX9sRCNo1DcfaOVRMVlrYzDZnrgKkzR5OqbNfgW0J-o4UzNeED4_K9j3PrrRcybwTExoUDeYkK8iKp1x7PVQsyTtmgvGvZDla5U5I9Gn3CO2IWOhdZvXO_q5JKLYSZ3XMlr9jur_61SMH8ltkKPXvBV1ul6HDE8A_CLibtp2DOhCPhyOW9ivw2FoND83l90YxhouSi-p5F8Y6SfGNS2b3PI54mxTqbapvlfamr95Voll_oBqVa67KfLTbVvKTRioLtdFqaFNQ0-9O2rC6BD0fRwqfn2SU76HRv7ZpuR5_j7ovfw1Gqdaj6UMFtyvDAE4D1S_N2s0AnNnIhcCGEUc9qfhPyI2Gj_yWVFCHxLvSQSu9VZ44fvM9N7YCQG23GcqNolfhu6qmY10MZEUyNJ8RMLe0jd1_RYNXWr11vgLbv_7oZawtDF8SdZeHqGfeVI5NwrTbBrdpdZTvQUmBlxHxckDyDwSoWxzW8OzUR64nTWwYpwRdBqt2dIrhkaUgZG188PrbjrbG2LdjX8rStJ_royGSRZ8TMX7CEdD0kSLPdwylhNHp3im_iYLP_iWar6-r-As0TJ2Z4h7bJvAl2QlT4vRzNrMvqLAw9n3gEMEzcfaoR4js2SnEAbZ6wRkzbxFmlGR8BczIs4MzX3biMWQeb5isL_Q1L8iNav_Jp9Aub-F_3FN_F5_0R718QeAtKSvsYI_TqAM791HJUyTg-7jloy12unDd0Bq_Ce5Hi07GUK6RVJdnuq1bpWtAz0UrIryeVkQesqRTLaLDyzq1UfMmO_kb7COH4Od-F7uOxYPBlfYGrs2JR358HHKSnpT6x35fwMhuU-nLxkxqSllX7u0Va3gp2yJ2YoN21uPSHgshvztl9XwtAtvHuuY2Er54IwICtu5Yr_OhuBPmKmTVPR3Y_7zKi9WTF3914FnWi82LqUArBYVfOORBjw1LMrNjbYOv5vVkR8MXeGZRe-cNvDDhUIbm4TCq3ptql81BkU7UnSZ4q_7gRlAAXm3ZzTZtJRvpjudeYdOvkbr6WZAqYlEQNOXm3-NYT6Fe_Pa4kzWqhG7SGYsNH09VbWDSnAzUu-gzjvYwfD8TXr61Mp43gMpyOo-YGhoj9dycZyWn344atAEnzYxcKQbrBcFuYua-Fw3t6x54U7GwnMOn6zDTi0wXZC-nNj7tMc8M5fFw6-fFgZAVAYX6SEsnDWUBI8s0nfCwPTiGH-KQZsfKqyrEtjxOrz--4eksmzrgm8wtCEuD4kBXQzz_GKptiPliZ4MzJA-udOTIF49uEwAYQigyDKfD9oFYTgnspE8j3DNrNTAIO9K-J9QQ8KNeooBwNiW8g36i0uGoyIUM7WIE3adOYgo56FnRR816x4_0xADEuc_SvAclYgrjvOu9a9yVPfatUNSWczozR-7jBFldDNdIFH8yrYPEduhf9bitHcosgOQRgqj3GyrIXQpxOCS01M9UdC-iUHK4yIc-QDKgtIrrLj5uVxa1DaGwPmFdSaq2CiIJrrhLhNy0SBcsp-LQUUKQbGdv9gzgbw3eAUAF8QOd7yuzxD00VzddrGmWeaNUdxWR5vEDrO5aGZuIu7Dq9OSy3ADUDyeHNioQwkLzHkdPJUV7Npf950q7vQytw__zfCwy7WbS62NHuJcD6g5vtkerSRCM68ciK8NuUU80X3uGZAEAoPmKlB4K7TNTCzjXkso4IgopdoWdZDp8qzuqULlIe1uQPodTwtH88O4qwegAfTr39C3ZGnPqmxTKYVG-Ck-INVIMYYuUlo_bBjGAYE2cuz3fGIxOQV9Qm_85i8H7QjB3bytNXE4ZYd73zYAy9ypSIcWhy2M44NO3hwTBFSltMM5eF9iUG-lA9DQtCfGRcXgQIORYtPgnggw_y8IggVplchMjGCd0ZONEOchk2n1XfVAQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0d2e4b3ea7ff046e016ae8197e15c487d1a6da68f287bf0865",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18620,
+    "completion_tokens": 280,
+    "total_tokens": 18900,
+    "cost": 0.002467425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18617,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002467425,
+      "upstream_inference_prompt_cost": 0.002327425,
+      "upstream_inference_completions_cost": 0.00014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

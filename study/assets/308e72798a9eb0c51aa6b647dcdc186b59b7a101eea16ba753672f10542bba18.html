@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#092d4d" name="theme-color"/>
+<title>National Institute of Standards and Technology | NIST</title>
+<style>
+  :root {
+    --navy: #092d4d;
+    --blue: #12649a;
+    --ink: #182b3a;
+    --muted: #526473;
+    --pale: #f1f5f8;
+    --line: #d4dee6;
+    --gold: #f3c557;
+    --white: #fff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: #fff;
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: #075d91; text-underline-offset: .18em; }
+  a:hover { color: #003d68; text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid #efb928; outline-offset: 3px; }
+  .skip {
+    position: absolute; top: -5rem; left: 1rem; z-index: 20;
+    background: white; color: var(--navy); padding: .7rem 1rem;
+  }
+  .skip:focus { top: 1rem; }
+  .govbar {
+    background: #f2f3f4; border-bottom: 1px solid #d2d6da;
+    font-size: .83rem; color: #273746;
+  }
+  .govbar-inner {
+    max-width: 1200px; margin: auto; padding: .45rem 1.5rem;
+    display: flex; align-items: center; gap: .55rem; flex-wrap: wrap;
+  }
+  .govbar img { width: 16px; height: 11px; }
+  .govbar details { display: inline-block; }
+  .govbar summary { color: #174e72; text-decoration: underline; cursor: pointer; }
+  .gov-explain { padding: .55rem 0 0; }
+  .masthead { background: var(--navy); color: white; }
+  .masthead-inner {
+    max-width: 1200px; margin: auto; padding: 1.15rem 1.5rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+  }
+  .brand img { width: 285px; max-width: 100%; display: block; }
+  .tools { display: flex; align-items: center; gap: 1.5rem; }
+  .utility { display: flex; gap: 1.1rem; font-size: .9rem; }
+  .utility a { color: white; }
+  .search { display: flex; }
+  .search input {
+    min-width: 220px; padding: .65rem .75rem; font: inherit;
+    border: 2px solid white; border-radius: 4px 0 0 4px;
+  }
+  .search button {
+    border: 0; border-radius: 0 4px 4px 0; color: white;
+    background: #1876ad; padding: .6rem 1rem; font: inherit; cursor: pointer;
+  }
+  .search button:hover { background: #0b5d91; }
+  .mainnav { border-top: 1px solid #ffffff2b; }
+  .nav-inner {
+    max-width: 1200px; margin: auto; padding: 0 1.5rem;
+    display: flex; flex-wrap: wrap; gap: .15rem;
+  }
+  .nav-inner > a, .nav-inner > details > summary {
+    display: block; padding: .85rem .95rem; color: white;
+    font-weight: 650; text-decoration: none; cursor: pointer;
+  }
+  .nav-inner > a:hover, .nav-inner > details > summary:hover,
+  .nav-inner > details[open] > summary { background: #16496b; }
+  .nav-inner details { position: relative; }
+  .nav-inner details[open] .dropdown {
+    position: absolute; z-index: 10; left: 0; top: 100%;
+    width: min(700px, 90vw); padding: 1.2rem;
+    background: white; color: var(--ink); box-shadow: 0 12px 30px #061c2c55;
+    border-top: 4px solid var(--gold);
+  }
+  .dropdown h3 { margin: 0 0 .75rem; color: var(--navy); }
+  .dropdown ul { columns: 2; margin: 0; padding-left: 1.2rem; }
+  .dropdown li { padding: .18rem 0; break-inside: avoid; }
+  .hero {
+    min-height: 470px; display: flex; align-items: center; color: white;
+    background:
+      linear-gradient(90deg, rgba(4,24,42,.94) 0%, rgba(4,24,42,.78) 47%, rgba(4,24,42,.20) 100%),
+      url("https://www.nist.gov/sites/default/files/styles/homepage_hero_large/public/images/2026/03/20/BannerVideo-NIST125thAnniversary-Still.jpg") center 45%/cover no-repeat;
+  }
+  .hero-inner { max-width: 1200px; width: 100%; margin: auto; padding: 5.3rem 1.5rem; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .13em; color: #f4d77e; font-size: .82rem; font-weight: 750; }
+  h1 { max-width: 680px; margin: .5rem 0 1rem; font-size: clamp(2.6rem, 5.8vw, 4.8rem); line-height: 1.05; letter-spacing: -.035em; }
+  .hero p { max-width: 650px; margin: 0; font-size: clamp(1.15rem, 2.1vw, 1.45rem); line-height: 1.55; }
+  main { overflow: hidden; }
+  .wrap { max-width: 1200px; margin: auto; padding: 4rem 1.5rem; }
+  .section-heading { margin: 0 0 .55rem; color: var(--navy); font-size: clamp(1.85rem, 3.2vw, 2.6rem); line-height: 1.2; }
+  .intro { max-width: 790px; margin: 0 0 2rem; color: #405464; font-size: 1.1rem; }
+  .topics { background: var(--pale); }
+  .topic-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; margin: 1.8rem 0 1rem; }
+  .topic-grid a {
+    min-height: 66px; display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 1.1rem; background: white; border: 1px solid var(--line);
+    border-radius: 5px; text-decoration: none; font-weight: 700;
+  }
+  .topic-grid a::after { content: "→"; color: var(--blue); font-size: 1.25rem; }
+  .topic-grid a:hover { border-color: var(--blue); box-shadow: 0 4px 14px #12334a12; }
+  .anniversaries {
+    display: flex; justify-content: center; align-items: center; gap: 3rem;
+    padding: 2rem 1rem; margin-top: 2rem; background: white; border: 1px solid var(--line);
+  }
+  .anniversaries a img { width: 160px; max-height: 94px; object-fit: contain; }
+  .chips {
+    display: grid; grid-template-columns: 180px 1fr auto; align-items: center; gap: 2rem;
+    margin-top: 2rem; padding: 1.5rem 2rem; background: var(--navy); color: white; border-radius: 7px;
+  }
+  .chips img { max-width: 160px; width: 100%; background: white; padding: .6rem; border-radius: 4px; }
+  .chips h2 { margin: 0 0 .25rem; font-size: 1.5rem; }
+  .chips p { margin: 0; color: #e2edf4; }
+  .button {
+    display: inline-block; padding: .75rem 1.1rem; color: var(--navy);
+    background: var(--gold); border-radius: 4px; font-weight: 750; text-decoration: none;
+  }
+  .button:hover { background: #ffda71; color: #092d4d; }
+  .news { background: #f7f9fb; }
+  .news-layout { display: grid; grid-template-columns: 1.25fr .75fr; gap: 2rem; margin-top: 1.8rem; }
+  .news-feature { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 6px; }
+  .news-feature img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; }
+  .feature-copy { padding: 1.5rem; align-self: center; }
+  .feature-copy h3 { margin: 0 0 .8rem; font-size: 1.35rem; line-height: 1.3; }
+  .feature-copy h3 a { text-decoration: none; }
+  .news-list { display: grid; gap: .75rem; }
+  .news-card { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; align-items: center; padding: .65rem; background: white; border: 1px solid var(--line); border-radius: 5px; }
+  .news-card img { width: 110px; height: 82px; object-fit: cover; border-radius: 3px; }
+  .news-card h3 { margin: 0; font-size: 1rem; line-height: 1.35; }
+  .news-card a { text-decoration: none; }
+  .date { display: block; margin-top: .3rem; color: var(--muted); font-size: .85rem; }
+  .more { display: inline-block; margin-top: 1.4rem; font-weight: 700; }
+  .measurement { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .measurement img { display: block; width: 100%; border-radius: 6px; }
+  .measurement p { color: #405464; }
+  .link-row { display: flex; flex-wrap: wrap; gap: .75rem 1.3rem; margin-top: 1.4rem; }
+  .link-row a { font-weight: 700; }
+  .campus {
+    min-height: 300px; display: flex; align-items: end; color: white;
+    background: linear-gradient(0deg, #071c2be8, transparent 75%),
+      url("https://www.nist.gov/themes/custom/nist_www/img/homepage/nist_gaithersburg_campus_2400.jpg?v1") center/cover no-repeat;
+  }
+  .campus .wrap { width: 100%; padding-top: 6rem; padding-bottom: 2rem; }
+  .campus h2 { margin: 0; color: white; }
+  .inbox { background: #eaf1f5; }
+  .inbox-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .inbox p { margin: .4rem 0 0; color: #405464; }
+  footer { background: #09243c; color: white; }
+  .footer-main { max-width: 1200px; margin: auto; padding: 3rem 1.5rem 2rem; }
+  .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 3rem; }
+  footer h2, footer h3 { color: white; }
+  footer h3 { margin-top: 0; font-size: 1rem; text-transform: uppercase; letter-spacing: .06em; }
+  footer p { color: #d1dce5; }
+  footer a { color: #dcebf6; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: .55rem 1rem; padding: 1.2rem 0 0; border-top: 1px solid #ffffff33; margin-top: 2rem; }
+  .footer-links a { font-size: .9rem; }
+  .social { display: flex; flex-wrap: wrap; gap: .6rem 1rem; padding: 0; list-style: none; }
+  .copyright { margin-top: 1.5rem; color: #c3d0db; font-size: .9rem; }
+  @media (max-width: 850px) {
+    .masthead-inner { align-items: flex-start; flex-direction: column; gap: 1rem; }
+    .tools { width: 100%; justify-content: space-between; flex-wrap: wrap; }
+    .nav-inner { padding-bottom: .4rem; }
+    .topic-grid { grid-template-columns: repeat(2, 1fr); }
+    .news-layout { grid-template-columns: 1fr; }
+    .measurement { gap: 1.5rem; }
+  }
+  @media (max-width: 560px) {
+    .govbar-inner { padding-inline: 1rem; }
+    .masthead-inner, .nav-inner, .wrap, .hero-inner, .footer-main { padding-left: 1rem; padding-right: 1rem; }
+    .brand img { width: 240px; }
+    .tools { align-items: flex-start; flex-direction: column; }
+    .search { width: 100%; }
+    .search input { min-width: 0; flex: 1; }
+    .nav-inner { display: block; }
+    .nav-inner > a, .nav-inner > details > summary { padding: .55rem .7rem; }
+    .nav-inner details[open] .dropdown { position: static; width: 100%; }
+    .dropdown ul { columns: 1; }
+    .hero { min-height: 430px; }
+    .hero-inner { padding-top: 4rem; padding-bottom: 4rem; }
+    .topic-grid { grid-template-columns: 1fr; }
+    .anniversaries { gap: 1rem; }
+    .anniversaries a img { width: 125px; }
+    .chips { grid-template-columns: 1fr; gap: 1rem; padding: 1.3rem; }
+    .chips img { width: 145px; }
+    .news-feature { grid-template-columns: 1fr; }
+    .news-feature img { min-height: 210px; max-height: 260px; }
+    .news-card { grid-template-columns: 86px 1fr; gap: .7rem; }
+    .news-card img { width: 86px; height: 76px; }
+    .measurement { grid-template-columns: 1fr; }
+    .measurement img { order: -1; }
+    .inbox-inner { align-items: flex-start; flex-direction: column; }
+    .footer-grid { grid-template-columns: 1fr; gap: 1rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main-content">Skip to main content</a>
+<div class="govbar">
+<div class="govbar-inner">
+<img alt="U.S. flag" src="https://www.nist.gov/libraries/nist-component-library/dist/img/us_flag_small.png"/>
+<span>An official website of the United States government</span>
+<details>
+<summary>Here’s how you know</summary>
+<div class="gov-explain">Official websites use .gov. A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS. A lock or https:// means you’ve safely connected to the .gov website.</div>
+</details>
+</div>
+</div>
+<header>
+<div class="masthead">
+<div class="masthead-inner">
+<a aria-label="NIST home" class="brand" href="https://www.nist.gov/">
+<img alt="National Institute of Standards and Technology" src="https://www.nist.gov/libraries/nist-component-library/dist/img/logo/NIST-Logo-Brand-White.svg"/>
+</a>
+<div class="tools">
+<nav aria-label="Utility navigation" class="utility">
+<a href="https://www.nist.gov/careers">Careers</a>
+<a href="https://shop.nist.gov/">Shop</a>
+<a href="https://www.nist.gov/contact">Contact</a>
+</nav>
+<form action="https://www.nist.gov/search" class="search" method="get" role="search">
+<label class="skip" for="site-search">Search NIST</label>
+<input id="site-search" name="s" placeholder="Search NIST" type="search"/>
+<button type="submit">Search</button>
+</form>
+</div>
+</div>
+</div>
+<nav aria-label="Main navigation" class="mainnav">
+<div class="nav-inner">
+<a href="https://www.nist.gov/publications">Publications</a>
+<details>
+<summary>What We Do</summary>
+<div class="dropdown">
+<h3>Explore topics</h3>
+<ul>
+<li><a href="https://www.nist.gov/topics">All Topics</a></li>
+<li><a href="https://www.nist.gov/advanced-communications">Advanced communications</a></li>
+<li><a href="https://www.nist.gov/biotechnology">Biotechnology</a></li>
+<li><a href="https://www.nist.gov/cybersecurity-and-privacy">Cybersecurity and Privacy</a></li>
+<li><a href="https://www.nist.gov/energy">Energy</a></li>
+<li><a href="https://www.nist.gov/manufacturing">Manufacturing</a></li>
+<li><a href="https://www.nist.gov/quantum-science">Quantum Science</a></li>
+<li><a href="https://www.nist.gov/standards">Standards</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Labs &amp; Major Programs</summary>
+<div class="dropdown">
+<h3>Research at NIST</h3>
+<ul>
+<li><a href="https://www.nist.gov/laboratories">Laboratories</a></li>
+<li><a href="https://www.nist.gov/ctl">Communications Technology Laboratory</a></li>
+<li><a href="https://www.nist.gov/el">Engineering Laboratory</a></li>
+<li><a href="https://www.nist.gov/itl">Information Technology Laboratory</a></li>
+<li><a href="https://www.nist.gov/mml">Material Measurement Laboratory</a></li>
+<li><a href="https://www.nist.gov/pml">Physical Measurement Laboratory</a></li>
+<li><a href="https://www.nist.gov/user-facilities">User Facilities</a></li>
+<li><a href="https://www.nist.gov/chips">CHIPS for America</a></li>
+<li><a href="https://www.nist.gov/mep">Manufacturing Extension Partnership</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Services &amp; Resources</summary>
+<div class="dropdown">
+<h3>Services &amp; resources</h3>
+<ul>
+<li><a href="https://www.nist.gov/standards-measurements">Measurements and Standards</a></li>
+<li><a href="https://www.nist.gov/calibrations">Calibration Services</a></li>
+<li><a href="https://www.nist.gov/nvlap">Laboratory Accreditation (NVLAP)</a></li>
+<li><a href="https://www.nist.gov/srm">Standard Reference Materials</a></li>
+<li><a href="https://www.nist.gov/data">Data</a></li>
+<li><a href="https://www.nist.gov/services-resources/software">Software</a></li>
+<li><a href="https://nvd.nist.gov/">National Vulnerability Database</a></li>
+<li><a href="https://csrc.nist.gov/">Computer Security Resource Center</a></li>
+<li><a href="https://www.nist.gov/nist-research-library">NIST Research Library</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>News &amp; Events</summary>
+<div class="dropdown">
+<h3>News &amp; events</h3>
+<ul>
+<li><a href="https://www.nist.gov/news-events/news">News</a></li>
+<li><a href="https://www.nist.gov/news-events/events">Events</a></li>
+<li><a href="https://www.nist.gov/blogs">Blogs</a></li>
+<li><a href="https://www.nist.gov/feature-stories">Feature Stories</a></li>
+<li><a href="https://www.nist.gov/video-gallery">Video Gallery</a></li>
+<li><a href="https://www.nist.gov/comms/media-contacts">Media Contacts</a></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>About NIST</summary>
+<div class="dropdown">
+<h3>About NIST</h3>
+<ul>
+<li><a href="https://www.nist.gov/about-nist">About Us</a></li>
+<li><a href="https://www.nist.gov/director/leadership">Leadership</a></li>
+<li><a href="https://www.nist.gov/contact">Contact Us</a></li>
+<li><a href="https://www.nist.gov/about-nist/visit">Visit</a></li>
+<li><a href="https://www.nist.gov/careers">Careers</a></li>
+<li><a href="https://www.nist.gov/history">History</a></li>
+<li><a href="https://www.nist.gov/education">Educational Resources</a></li>
+</ul>
+</div>
+</details>
+</div>
+</nav>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Measurement science • Standards • Technology</div>
+<h1 id="hero-title">125 Years of Driving Innovation</h1>
+<p>From developing precise atomic clocks to creating encryption standards to supporting manufacturing, NIST plays a crucial role in advancing technology.</p>
+</div>
+</section>
+<section aria-labelledby="what-title" class="topics">
+<div class="wrap">
+<h2 class="section-heading" id="what-title">What we do</h2>
+<p class="intro">From nanoscale devices that power the most advanced microchips to earthquake-resistant skyscrapers, NIST’s measurements and research fuel innovation and improve the quality of life for all Americans. We provide support and resources to U.S. manufacturing, helping to grow our economy and ensure our national security. Discover how our work makes America safer, healthier and more prosperous.</p>
+<div class="topic-grid">
+<a href="https://www.nist.gov/biotechnology">Biotechnology</a>
+<a href="https://www.nist.gov/cybersecurity-and-privacy">Cybersecurity and Privacy</a>
+<a href="https://www.nist.gov/energy">Energy</a>
+<a href="https://www.nist.gov/manufacturing">Manufacturing</a>
+<a href="https://www.nist.gov/advanced-communications">Next-Gen Communications</a>
+<a href="https://www.nist.gov/quantum-science">Quantum Science</a>
+<a href="https://www.nist.gov/standards">Standards</a>
+<a href="https://www.nist.gov/super-intelligence">Super Intelligence</a>
+</div>
+<a href="https://www.nist.gov/topics">See more topics →</a>
+<div aria-label="NIST and America anniversaries" class="anniversaries">
+<a href="https://www.nist.gov/125th-anniversary">
+<img alt="NIST: Celebrating 125 years, established 1901" src="https://www.nist.gov/themes/custom/nist_www/img/homepage/125-250-web_NIST-125.svg"/>
+</a>
+<a href="https://freedom250.org/">
+<img alt="Freedom 250" src="https://www.nist.gov/themes/custom/nist_www/img/homepage/125-250-web_Freedom-250.svg"/>
+</a>
+</div>
+<section aria-labelledby="chips-title" class="chips">
+<a href="https://www.nist.gov/chips"><img alt="CHIPS.gov" src="https://www.nist.gov/themes/custom/nist_www/img/homepage/chips_logo_mark.png?v1"/></a>
+<div>
+<h2 id="chips-title"><a href="https://www.nist.gov/chips" style="color:inherit">CHIPS for America</a></h2>
+<p>Investments in innovation, resilience and a more competitive American future.</p>
+</div>
+<a class="button" href="https://www.nist.gov/chips">Learn more</a>
+</section>
+</div>
+</section>
+<section aria-labelledby="news-title" class="news">
+<div class="wrap">
+<h2 class="section-heading" id="news-title">What’s new</h2>
+<div class="news-layout">
+<article class="news-feature">
+<a href="https://www.nist.gov/news-events/news/2026/10/nist-study-shows-how-toxic-substances-mixed-fentanyl-vary-across-us-and">
+<img alt="A researcher in safety glasses and a cap examines data on computer monitors in a laboratory." src="https://www.nist.gov/sites/default/files/styles/576_x_384/public/images/2026/08/25/_DSC2788%20%281%29.png?h=fa5f4214&amp;itok=ifEimrJu"/>
+</a>
+<div class="feature-copy">
+<span class="eyebrow" style="color:#12649a">Latest news</span>
+<h3><a href="https://www.nist.gov/news-events/news/2026/10/nist-study-shows-how-toxic-substances-mixed-fentanyl-vary-across-us-and">NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time</a></h3>
+<a href="https://www.nist.gov/news-events/news/2026/10/nist-study-shows-how-toxic-substances-mixed-fentanyl-vary-across-us-and">Read the story →</a>
+</div>
+</article>
+<div class="news-list">
+<article class="news-card">
+<a href="https://www.nist.gov/blogs/taking-measure/how-many-units-should-be-metric-system-even-nist-experts-disagree">
+<img alt="Graphic of SI base units and the constants used to define them." src="https://www.nist.gov/sites/default/files/styles/576_x_384/public/images/2018/11/26/si_redef-blog-banner.png?itok=hPeFu_lc"/>
+</a>
+<div><h3><a href="https://www.nist.gov/blogs/taking-measure/how-many-units-should-be-metric-system-even-nist-experts-disagree">How Many Units Should Be in the Metric System? Even NIST Experts Disagree.</a></h3></div>
+</article>
+<article class="news-card">
+<a href="https://www.nist.gov/news-events/news/2026/10/physicist-jun-ye-wins-wolf-prize-physics">
+<img alt="Physicist Jun Ye in his lab." src="https://www.nist.gov/sites/default/files/styles/576_x_384/public/images/2026/09/01/_DSC8480.jpg?h=b2774bcf&amp;itok=W1cXNbDt"/>
+</a>
+<div><h3><a href="https://www.nist.gov/news-events/news/2026/10/physicist-jun-ye-wins-wolf-prize-physics">Physicist Jun Ye Wins Wolf Prize in Physics</a></h3></div>
+</article>
+<article class="news-card">
+<a href="https://www.nist.gov/news-events/news/2026/10/nist-joins-white-house-effort-drive-new-golden-age-science">
+<img alt="A gold-colored chip mounted on a red NIST magnetometer device." src="https://www.nist.gov/sites/default/files/styles/576_x_384/public/images/2026/04/28/NV%20center%20magnetometer.png?itok=lLSf2x8_"/>
+</a>
+<div><h3><a href="https://www.nist.gov/news-events/news/2026/10/nist-joins-white-house-effort-drive-new-golden-age-science">NIST Joins White House Effort to Drive ‘A New Golden Age of Science’</a></h3></div>
+</article>
+</div>
+</div>
+<a class="more" href="https://www.nist.gov/news-events/news">See NIST News →</a>
+</div>
+</section>
+<section aria-labelledby="measurement-title">
+<div class="wrap measurement">
+<div>
+<h2 class="section-heading" id="measurement-title">America’s national measurement institute</h2>
+<p>NIST is the National Metrology Institute for the United States, also known as an NMI. Everything you use in your everyday life works because of measurements. Without precise measurements, your car wouldn’t run, your phone wouldn’t work, and hospitals couldn’t function. We maintain the measurements that make industry and society work. Learn more about our unique role in the national — and global — economy.</p>
+<div class="link-row">
+<a href="https://www.nist.gov/nmi">FAQ</a>
+<a href="https://www.nist.gov/services-resources/standards-and-measurements">Standards and Measurements</a>
+<a href="https://www.nist.gov/nist-work">How NIST’s Measurements Work for You</a>
+</div>
+</div>
+<img alt="The NIST-4 Kibble watt balance illuminated in blue light." src="https://www.nist.gov/themes/custom/nist_www/img/homepage/wattbalance_1600_x_800.jpg?v1"/>
+</div>
+</section>
+<section aria-labelledby="campus-title" class="campus">
+<div class="wrap">
+<h2 id="campus-title">NIST in Gaithersburg, Maryland</h2>
+</div>
+</section>
+<section aria-labelledby="inbox-title" class="inbox">
+<div class="wrap inbox-inner">
+<div>
+<h2 class="section-heading" id="inbox-title">NIST in your inbox</h2>
+<p>Stay up to date with the latest news from NIST. Sign up for our Tech Beat newsletter or get news about your favorite research topics.</p>
+</div>
+<a class="button" href="https://public.govdelivery.com/accounts/USNIST/subscriber/new">Sign up</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-main">
+<div class="footer-grid">
+<section>
+<h2>National Institute of Standards and Technology</h2>
+<p><strong>Headquarters</strong><br/>100 Bureau Drive<br/>Gaithersburg, MD 20899</p>
+<p><a href="tel:301-975-2000">301-975-2000</a></p>
+<p><a href="mailto:do-webmaster@nist.gov">Webmaster</a> · <a href="https://www.nist.gov/contact">Contact Us</a> · <a href="https://www.nist.gov/visit">Our Other Offices</a></p>
+</section>
+<section>
+<h3>Connect with NIST</h3>
+<ul class="social">
+<li><a href="https://x.com/NIST">X.com</a></li>
+<li><a href="https://www.facebook.com/NIST">Facebook</a></li>
+<li><a href="https://www.linkedin.com/company/nist">LinkedIn</a></li>
+<li><a href="https://www.instagram.com/nist/">Instagram</a></li>
+<li><a href="https://www.youtube.com/NIST">YouTube</a></li>
+<li><a href="https://giphy.com/nist">Giphy</a></li>
+<li><a href="https://www.nist.gov/news-events/nist-rss-feeds">RSS Feed</a></li>
+<li><a href="https://public.govdelivery.com/accounts/USNIST/subscriber/new">Mailing List</a></li>
+</ul>
+<p><a href="https://www.nist.gov/webform/nist_gov_feedback?page=/national-institute-standards-and-technology">How are we doing? Share feedback</a></p>
+</section>
+<section>
+<h3>Policies and information</h3>
+<ul>
+<li><a href="https://www.nist.gov/privacy-policy">Site Privacy</a></li>
+<li><a href="https://www.nist.gov/oism/accessibility">Accessibility</a></li>
+<li><a href="https://www.nist.gov/copyrights-disclaimers">Copyright &amp; Disclaimers</a></li>
+<li><a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a></li>
+<li><a href="https://www.nist.gov/office-director/freedom-information-act">FOIA</a></li>
+<li><a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a></li>
+</ul>
+</section>
+</div>
+<nav aria-label="Related government websites" class="footer-links">
+<a href="https://www.commerce.gov/">Commerce.gov</a>
+<a href="http://www.science.gov/">Science.gov</a>
+<a href="http://www.usa.gov/">USA.gov</a>
+<a href="https://vote.gov/">Vote.gov</a>
+<a href="https://www.nist.gov/privacy">Privacy Program</a>
+<a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a>
+<a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a>
+<a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a>
+</nav>
+<p class="copyright">National Institute of Standards and Technology</p>
+</div>
+</footer>
+</body>
+</html>

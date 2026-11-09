@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target shows coherent BBC stories, but the visible content and organization differ substantially from the corresponding reference regions: the reference\u2019s topic columns, featured Watch item, and promotional/newsletter sections are not preserved.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target is rendered as a largely unstyled, narrow left-aligned list with extensive unused space and horizontal overflow, unlike the organized multi-column reference. The text remains readable, but the substantial loss of page organization impairs usability.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible story links and Save buttons have readable labels, and the controls are recognizable. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots form an assessable comparison of BBC page content. Their substantial layout and content differences are defects to assess in their respective dimensions, not evidence that the comparison is incoherent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s visible headlines, summaries, and images convey coherent news and feature content consistent with a BBC news page, despite not matching the reference\u2019s specific content.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating content fidelity**\n\nI'm assessing the target as a raw unstyled BBC list compared to a styled reference version. The content fidelity seems off, as the target layout has a different purpose and is unstyled with a lot of whitespace. The records look unrelated to the reference area. It appears the target has reproduced content without its original styling. Although it seems to still contain BBC news articles, it's not retaining the exact structure expected, leading to a mismatch in content consistency.**Assessing presentation quality**\n\nI'm noticing that the presentation is materially defective, as it's unstyled and has significant horizontal overflow, which creates large whitespace. While the core content is readable, the organization isn't great. The controls appear visible, and the links are recognizable. I wonder if this evidence shows that it belongs to the same BBC page? It seems likely. Overall, the target text is relatively coherent with BBC content, but the dimensions of individual elements raise some concerns about the layout.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content fidelity**\n\nI'm assessing the target as a raw unstyled BBC list compared to a styled reference version. The content fidelity seems off, as the target layout has a different purpose and is unstyled with a lot of whitespace. The records look unrelated to the reference area. It appears the target has reproduced content without its original styling. Although it seems to still contain BBC news articles, it's not retaining the exact structure expected, leading to a mismatch in content consistency.**Assessing presentation quality**\n\nI'm noticing that the presentation is materially defective, as it's unstyled and has significant horizontal overflow, which creates large whitespace. While the core content is readable, the organization isn't great. The controls appear visible, and the links are recognizable. I wonder if this evidence shows that it belongs to the same BBC page? It seems likely. Overall, the target text is relatively coherent with BBC content, but the dimensions of individual elements raise some concerns about the layout.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AWN13bIYmMtcFZwM4lD_QODHd-iSYT5KgMV7IVoK16JNBqB22eof6DwEI42hfx1jHnJDRerWlsTPamogcXdvgE5fdZXUHSxCe1vMMwGw_Wm0VC792blr2uklCLDKzSneJUiOehJuXveST0_uTuFACUhv7bZ05PY6XH9ByHL2BgIXPsUk5OJotdL_zYN6lAPvg4XKFOSKOp1zF6Zpb0ooH-njTXs1iC8dfqU4FJWcoMfqm-Flfl5wZ3BFGbCdfahf2CQV0VvEa1o0kbmHr6fjaDf4JZY6lQI2nBU9tgh5pRL9pjgSB9o9N6VvKOMR5wyRgkAT2ceJOp2PpdgiVpfy7U6KOoonnoG6-0_n2DyIHUSrtRtknTTCVPnNcoFARKlBwl_KcYxCemlPFb7pbO0qHdtlDi8QrW5KAqqTPvtChZQe1Vo1z70yPIk5WzgpgFgfR2O4Oj3becFdoyJkFaZUxk1uP4x9cy748s5DoziPvAEuYmqJcrJTAxJQ97MmR9UuPrqm9w31vsk_WuNakgV5yBEV5m9lX3inQW32yEyokKhwBoyJNziiJbYfCPIoZ4Q7jyhdgWfRIsNgNmhOd-K8NZxsQCXMt74J2HA62kpcmCjUDDafPOd32fMYdSFq3Pncsfk_jI4KEQV1JBKqDAJPHatP7v5r4BtDRIgsMqX5uiN91Y7-lwAcsxtewyZxjgqKscjLvzFo3wiIN8kBqGei0oaRGKr4ob4wOo29L2tkIombbRwlC5cMDcBcttwgypEk1nqGMD6tcJUbLmiiC5wRtUdcvpCUSBMmZr4TYEIm7Y1zUpMHeR8Uo0nKV6RaYW0lQUuAam8taiIMVdR4MjRpS6rU8bWvRPtN42Ia2NXHCYvCeKder8VgChGt5StqoplBaZUKKyBVCAlJ9RNK_i8Z1krh5Aii6eO_cvkwzXy-N3e45QE39RwbWU-nJBlc_vUNDrYrooJiHOqNwPt-bvrc9xxCEfVXEpC6xzfSaaAav2V5cPmJ9iiSauCRBjq8rJ4bI20el0NNSu2MHQRtgXGImIJA2952NZPkH1B-juP1Su64B3ZgLEFD3m9C4_ScYh5lAAr7kjDyShY_2B8SmUZfstEFK9J3PkFPVPaFBdIiaETb6BH5HRMWUuSZSRo_NTZXty3KniwFjJb-2vM_-7o1MOfOi5vwMEcd8WakEIfbuTlxcTAYKegJEOEzkHR208rJjCTUvRjV3IHevMV2ngVGM0Ps048nqPePJKa_MQe9XPI64Jx3FmfUxJnEbYoglcrV-naEhK8UtxKgUjpkDp0AZ20CLl6GtIjvkKSHBx_-g7_FaW9JIwebyrkJc1_y9B795-LAu65x8eYlqzL_A_eSkD96IgZ1DisMCjZOhfWIhncEe361Li7hxHHftrJI0KO6MUYGB8Ds1HOijQrjrDFL63jOIm0CC3qhlj1tYZTVX0EKlnYfFUbuaGaL3b0jIoL6zWcp_QDDSp6N5i35O20PXyPpZakTPLIhlqgPWw5cz8xtqjlp53svZ8hf2Xt0No3iBZQjl8jHV3XdHBQqgL8UAPYmZhz7P9MD0QO_1eevftOx_mIBfj5cwOFUrgn9kzQQaTGubbdmugl9T6Yq2qBWwprYd78y33paxmZ5QSy2-wMCVBy3xb_QCdopjaTfb0W3RfxHk9ODb_s4XY5MRSg1v-4-FWNzn1p8b-7Z3CTb8K25NRQ2musN0mPf2WwkxlDvyt2z07RuAvguZ6yh2b88TnvO_G2_EIqV1c8cv0xflF5nrUyYvKqtTPzdYIsg6XOjF856wXYW6irZ8HFKdOB26B360q1FPgGGw6H27nqOgiyO_zpLrgwDbgxRQDvFaLs1VmEY3e7gGAo2ji_D50UaRH6YbEoQ5bZmGswnfiApMv24bf3zzpPb0tApZBBdb_nzeNhKrY6HHXlkOpuhchhLYENzF3Yz2yhNATyYA_T_1PoAMY6jexVwBmCDWqd19VoWapG99mI3zmSBPT9aJfGk0nEN53GB1V-Zq7n6XxU6-R01Fi0PZHEV2NXnPK30CuxrMUsQ9X-egFsrJOiAZ83Fnxf5yPOgAApXwvarwoX9ogzX8tbwOxtj8qxPpvzMqEg1wndhQsfq4o15g9B7hbRpMMdHnmZdBjoGUyr5uZX7SkdpQXMpwRvIqkjXI-jAZvOFwscsoOZkyURsP_6RRm1dQEiP-mzzHs0h968eyTatmc-fhCSDxgCyeDC-WKZzkyxdCpqta3Zx7gvXz3K2yPlhZjbat1rJBXRBm-1TMkgIeCf_F4F6_x1TzbA0und0Mr_aDeYXSOfi75ec3RQf0m-Gds7vaG0OEVZe0zUzqOUMderFe4iwvsAUCwPCkOVQBDs4ctPEav3dosFE6ztxMxYZkh12RgRCR_u4kHr21kFeUhp0oil0y4w1uV87JTyfm4bvSC2GWrMuz-ZGYxG8rog3iFgYyBdf5yhIKYZh6RFFBsGGxFBAvNyQRVChUJrOzgfHVl9tyml9K7JFQMNLp6uBjQ3_pDW5Emfe4N8uXPB7FLhIMaxD9SM6fXYNZiXurhYpyyrWo1AprvazmWZARq5tL90_S2p3RH_aUoRqb-4NPSyKM9Jz5402tA7s9IMHOjmKI1qRxYU5HJlwXtiyf4XT7EWjmY5jAGlWcrq5OrDAqThATp76C9FR_nb6AQWrT3qAeagYbxZ2P4NOM9qk42FgxZPUQc89EfgWfZ2YibzNH887pMoiXQfimbtgNDt7qAPzuRMVXeW2nOo7Odn8YJ7QiMA7vEashfFD_OTxznF9mt6b44zO0Xm6BzC2IZ3SUortMknBqkg5GXkyief4gFK-IagYaWqmqZQMMYR1JtkAJ18BaLWoJvNbTCljMy7ZG9y-Tolq_eyqMTuwI8Ho87uLIhT19iCHEGy_30sQdcy5ZaW1J6RhUGKHmLy5H1UhvLeLHsqtat1souEr8-w4IwW_u0P6VPBSQWZCJYIOKVGBj4lGHZBEyR85r4s2-V-zoDmS5G8hEyLyznGaxl9Xek-mY-actGpz6L0NbYYBVWQFrf7CnK2lbNpyXexHrNKXVOr11DS4BzuMPhAQYMAvsF8ql4Z11KHBxkicemqU1yM3Gh122C99qccCjJ8EDePLwBSpvQL5_y9M9kEHpU5xjuzggSRVAigE9YLtkhiZKU6HpQeGb0GsJT54Ru69qiDu01I5TIv4yWwHjTdA5GIn-_TtAdoi6hFCNSlgVFwB6HfMD-NAH2sjL9MN7XVoYCAxCAyz131qZhNJu7_NXlJ2uV43kTZP_0tRvNM0CFlNklvL5eR6x713zzIvRw-TBTO39JYw5DhXRpaKhQybF3aRqt8YunhybkFYW20nwyEzA9-Eqb5YdJzi3NBW3v5mdZFis1qs2cgq3F1sDAadjBSTEXHWemTICbE0s04xKhJ_cOgJYEk1-pwge_0zSBBjjPHijPGLKI4-9sK1Sihp9K2qDw2f0svMh7n9MeygdyOeYA32OjbuTrFeggeztzuOpQPgVxrupSgCiImilFl1XwseerkzXf6RTAwpdxrcUgr4ZY1MEwqTsjLIeEkogO2CAe4rsUGmjnCsyCLXgsQ2SgWVfv9ZdGF9Czrq8hPYOamMhr6zC_AdLssR0671KFVwDIiPsCBU9QjUYKHNTNUdOCoQsP7BsJ0rvbDafKDP2OI2bXLGexYY8P7IX_l6699j-MHaVeDwHglGcEC5NKapAoLyQw0_KgGUZ51kn4jaiiEV3fsQKFbAYd3znGhfwBct-kU6al-o1qNpEehg363fQc4rYiDQEpsS9zpuusBtfgFvl3EnaVNaIUKH1IM7vxIa69ZH3poMmHAAGQALjUvnMZxSoKzxmuqGjP4uUb9fEU8SWt6wzVfd4-XYxbZAC2neceS-qCdN4S-l5JwLR6-koegZOXSJMAS9BheDWulCQ7cDrJtAzUZwy5rBhevkqFLPDAV1PMdRTeXWB-2iGYZ13LLpDFimxkbr5rqK1XZCiynTvghSbebTCTC5eVV8PNsMy6jNQgaEnjIIH8oq0QDsqfpoi-mW-OpitV7-S357hAj5qXU_ZOTRjl4FoMUZeNGAqUkVqH0mPUHjk2OcP2AljMe5KdLHByg6Cj8VJ58Um1D2TN0hQFgpYxUh8mZ8LlbUdaUAbG37PmYxomntggva3tF8bb9KwC7tY_6JOz7Fyf2uKCXml6GunBb6fZ_aiciu7gfNzFX1wyvKo1gqxJhXYd7VBFw5uDdyo8tlMpu2Xdx6T2AQrRdOgf14thjNxGF_jZYzBENcv_TyyLRw8wLKD2VDXWOgpVbYHnRpRY6Oh4TlBlfuYcuxoqQ83S19dGVPQJ9OtdEJU5CeqkKNsieBJWS-8T-HdCf76PUykD0W7gYd9AUcGM-S0zJ2nBFOTmvuulkN8nE7TUS4JkOrUuuxeWYl0jStYREld2RNelX7Wazp0iLIctVzekcsU4DpuEX6MHkDLqA_azp8ZLeMyNw69_Z_gRM2vvPlUT5J17nytk_oeysuo7MsnLlkkmJio0fb4-kRUHl02K3BznmVIKZn0HShMGljAwmteFjhCtxmJXwgYDHSOxb-JFA4BxWk-RpP6XLwH5xH9FCHjN3I6W06QYK81oG_p4nk7xTbEaRAV63q_fmwVPVbyeQIfnZu-ATmiVqn06aebxtu3-q0ib4h89Tybv98C5w_CrjPOfL9D5qbLOH3EtJYaL3YFrchQqGa_Gn1x-XugWLNn8RDDDjXXD8sJX9btVhpG933CRYk_y5Ms5ZONwrJwXVeE0zyVftwlTAclX5As9qeOaCnx1GPE44k5TkeL3dfSVKoHXNFKQOfnDazo3cGKbjsdyXtb5Yh3tfqQ7ohsuue_HBS5ZxIDGhNFqQNVESaAICmI7dfFy2X7O1dF9kf4TUP_5HExx5IomTEV2jQFAkp_oAdj8N3Gr6VQapEjfZTpXDYXEU8dNHL6jT8NYAvQ-6vusaBIX4fkCxvPGrnkpZljMg5pwaQMbL8Fd2G59HZUZOUzPsi8FnV645-zll9wkz9aQ_3MMlQgVa2mvue4RV_4WzgfqHqngdJV661E_qwQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_095e983e28fc8500016ae805897ad487d1ac90263c3d7cb1d7",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18594,
+    "completion_tokens": 500,
+    "total_tokens": 19094,
+    "cost": 0.002574175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18591,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002574175,
+      "upstream_inference_prompt_cost": 0.002324175,
+      "upstream_inference_completions_cost": 0.00025
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 247,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

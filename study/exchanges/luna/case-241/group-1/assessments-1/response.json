@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent mobile-service landing page with a relevant switching offer, service shortcuts, popular sections, and support links. Its text-only presentation of lower-page items remains meaningful; differences from the reference are permitted for a regenerated page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and arranged into clear sections and cards. The cookie notice overlaps some content near the viewport bottom, but the overlap is limited to the normal viewport boundary and does not substantially obscure the interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, hero action, section links, support links, and cookie controls have understandable text or recognizable icons. No essential visible control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views form a coherent comparison of a mobile-service landing page. The differing layouts and content arrangement are consistent with regeneration, not mismatched evidence.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, descriptions, and labels convey clear meanings related to mobile service, account tasks, and customer support.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating layout coherence**\n\nI need to assess the layout for coherence. The core hero button and labels in image1 stand out, but the cookie banner overlays the next section a bit, although it looks normal. The hero text and cards seem okay. Image4 shows the lower page with all text links, but I might need to ensure button text is legible. Overall, the content serves its purpose, and the presentation looks good; controls and links are visible. I just need the JSON to be exact.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating layout coherence**\n\nI need to assess the layout for coherence. The core hero button and labels in image1 stand out, but the cookie banner overlays the next section a bit, although it looks normal. The hero text and cards seem okay. Image4 shows the lower page with all text links, but I might need to ensure button text is legible. Overall, the content serves its purpose, and the presentation looks good; controls and links are visible. I just need the JSON to be exact.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AhJDMbsW7hK1QFXB6tszxSDzDcMf1LI93jd3YdURDRBIGheehUtdrkZ4CRSWQFS8gvXjavIIHVrIn2HIH7PhabwnjdCTYe6AgvlSQccEEM_YgW8ndjX4QBBjvEZhGfFt2pSOpy-rYmgc8ibLfR5rvIo_rAoqDSseiJjY5MAy2YPh3PSq_su1TW6CkOzJnN6ZUJZ1RXJ-X6j2ylzAY2-3xIDyOL07RjfOgjPDJbQfZOXWnf1qvg6C57QJoS_OXGIlzlVsI8Ss1RDZ6BW751yZWjH8Tm_5e_nPTeTFvWufjIo_KBO68kW8tteVfp7DQZjCtFkbViIbCufRDsgk2_fFhO59r8clrYRTEbDA9fJqGTXtpsv-gSSeSufW_2Ecu5nH-H_vCDSFkujtCbqDYX77HbMJTqiPGjWJlUAUDoWCse4b9dp8KdF-UiDP68qbxtahRucTdCHWRBuTVhFdUjzfsT5UzcVJZ8xVdIjirMKRyg2sPAbL-GilxfSYkvBY23cjo3jQRjCxtSsS1apQP-_Ye1_LFKw8eGXHtAXgfTIX7kEvG6GNfnYC4B2x2NszLOPc7jXMVu1zrXsOX1_qT0Gt8bnqRy732pIjm8dvToCVx7ycqQR8Yy4ltgxkOU7seoj6aWSb29bP6tByihPQcq93qrwQj8g49PKGTwHJXb3XOFydx1kSMA98M0Xv6nuQfmj4KgxiUBf3gq-MzPzNH9PfpT1iZtP8943QGlqoSjyU5gh9BxTqyG1U8UxxY_RGoCZHPHE-FnxgIoK0zAK1YiybkV1bkT1X5R2kTnArrD9-d6WXuzSJFY6u6mMTSWKb-T6azBjDMAayjfrPkMFEnOWdqxm-zMqnz-SOWkEOpJ-UjVdzANGhv1CXNwOq5Sr9kWXkZutz5JyBx5j2azx2SYEFSTEbJvJjiIeYgLNY1CQYReLUqtPTxaACIJd1tfW8PuUC53zbN5QjicCLs5iTmFhcbLU9-ZN21AP9-HhAIp5drb-VJ8NFe8cDgO06gbsy6RIWDbzSB9AD4jUymoj4qvAWGArGMGRW8jyG1vrhMcaEwrYObeOXhIIS5U8ATs5pffKHyyYjx0Jo9ZdjSXG7w802ENJUv2RO8WQ6ZNeehvpfpuX-EkoGC2qfTa7bWfKBLJl-5O00y0O3W-rqQUh_1nIo0rgH84LfwY1vVzo8dah54BGPly42tmTFa7nreRyRyvypEJ4QZPWKZf7jtToz-h2fodb-xbNksdPpLhc4qEBMw-etPkmj4KvEbep5yhdF4XNVoArGAlf5-dFS0xlje1INnK7rB2GN8Pl4I3gFwOalUeXjzIncUhEJkxvOsf6_GPQx03cBWhwGJD4sSwvp-bpvoYt0G3qzlcmvgsYIi-sc4FXH3QQI4S47JuTWoDEe-_hyzgmFbECQ-AnmfiPbxmtF1TtpJJy6KGe_Ll9bzdNvQGUUkO3BSeJU2lL2JZgCk2R2LYp-SCbuvGxKjUBMaieQey8CTr6kseAc6BCUhYFM8c-aYZJ2Va5ocSyDOUsbAJ0j4rCJBYDGBKEHNZpd93LcuyST2uSYZUoTsRna9JW9mLlRCjm51YnCzw3BbRBuX3z2sjY7a1RBWgfNj0e459INOiKjHCqCv_4jtCsac3s01pjZjn78mt5-IU-YCjaqtiy_8697UiRuen6rFN54iuRF7kUDHfR3PZcg4qj_qIURRRlZbnTSAxYp3yIKNm4XrgswajyqrCbxxrmGDkJ9_6q9O8O501EXiRJbzN1bnttP-fiQusX3eaZY0frBx9VMPMYVFN9tD7tS_i-WS3CMHGAgctZpMXiJdK68X9O2ZnJLb9XuxsG8vfJmcyfrxvxw0YHngr9JjQyAm0hS373hNMrE_8kCbD7TzTlbHql5EkxMa1PcK2rMe7heqk410ksq5OLdgpToDQyRDdNnk4-yiQYpVf6PSSXhRLABPemzKUGIvjyML7dFFTKmOgNp9cvDOJl202kgEY3eF0ugS11wLLOMZOMDBpVrG04xfO_eoZ5S7mRPoCGiaUaa60Ffy16lV9Bzifq_IAvYEsYcY9XNh7YFzvEV9G_9nAU9FhCbf3JvXY63XjSOxvOiCml_iigeP898xQA-cAscD8UjGjhb2D91PH1Rr7Jp5Hrv8RcOtMXyoR63nEHiz3go403-1K5OhOEEiP9003DEX9jMOVNyHf27IQtihkDVP3HrY-GwlRHNzPPavpSkddjvQUHiLegUiXpuetjnnnOZGv02kOcEm18oLJHvim0IlLkWuGcRdE5sv_2mD2dGN6OvU07CdzJtnPj9AiDbx2_HjDLIpd3Pd1xVUx4A1uyhyl7Ia4NCHUN-wGJco3d3DGyfG-O18E6y-RlHO0q7oTt6YqQ2NJR7PHdig0doQ5xwimdcgBBPqvppFCXvoiZBIcO3VVTra9rr-pId7_fy9Mz8JSB0kI1Kb7giH3JdWwX4MtO4_1FZBfJwFzIlMVIurAmdYxHVqzf_CkeyWLhrMq2NmIZXCRw1ojo2Fo1R-IjDXDwAvFYHdNYaFrYFCMH8gNGtCjLw3g38TNRBDCiE1vteCYJFIhuSTIbzxvxqaoH4IR8-M6q7cZ31ZD6LsgcWm-WAM0NIVXxoLE57m3NTAlVxj_ctPp44fO5kZTQ6ebGdPMi0pD_w2678N07MWN5oocBb5vhmGiB61vJSeaRqS-xJ9KMK_9Tbx29ovIjAnsKUkkJl9wJg1cEzNqalIGkzboccQ8D0c5JRHwNBUeorwPWhYw1rM-jcq16p70iu_B07qS_LfTzIrnR_ygEEWGpyOz2J3I44d5fiEjbf93tS7NMQ9TxM-JCd_PNb4Cm4xLcmmbydsVTmZHj2be5hUxYHEFvQnWAk80Tz5NnSPYC.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0dff9b6cef732f4f016ae80847eee887d1a210245b462e7bfe",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11687,
+    "completion_tokens": 399,
+    "total_tokens": 12086,
+    "cost": 0.0016603,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11684,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016603,
+      "upstream_inference_prompt_cost": 0.0014608,
+      "upstream_inference_completions_cost": 0.0001995
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

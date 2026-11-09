@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Find a domain name and bring your online projects together with Gandi: websites, email, SSL certificates, and cloud hosting." name="description"/>
+<meta content="#fffaf8" name="theme-color"/>
+<title>Gandi — A domain name for a secure online space</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #201b36;
+      --muted: #514d5c;
+      --paper: #fffaf8;
+      --white: #ffffff;
+      --peach: #fff0eb;
+      --peach-deep: #ffd5c8;
+      --lavender: #eee9ff;
+      --mint: #d8f7ec;
+      --green: #08735f;
+      --purple: #6541df;
+      --line: #ded9df;
+      --shadow: 0 16px 42px rgb(36 26 45 / 8%);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: var(--sans);
+      line-height: 1.6;
+    }
+
+    a { color: var(--green); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    :focus-visible {
+      outline: 3px solid #5535cb;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 10;
+      top: 1rem;
+      left: 1rem;
+      padding: .65rem 1rem;
+      color: white;
+      background: var(--ink);
+      border-radius: .4rem;
+      transform: translateY(-180%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .wrap { width: min(1160px, calc(100% - 3rem)); margin-inline: auto; }
+
+    .site-header {
+      position: relative;
+      z-index: 2;
+      background: var(--paper);
+      border-bottom: 1px solid rgb(32 27 54 / 7%);
+    }
+
+    .header-row {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      color: var(--ink);
+      font-weight: 750;
+      font-size: 1.35rem;
+      letter-spacing: -.055em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 2rem;
+      height: 2rem;
+      place-items: center;
+      color: var(--ink);
+      background: var(--peach-deep);
+      border-radius: 50% 50% 45% 55%;
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 2.1vw, 2rem);
+    }
+
+    .main-nav a {
+      color: var(--ink);
+      font-size: .94rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .main-nav a:hover { color: var(--green); }
+
+    .header-actions { display: flex; align-items: center; gap: .8rem; }
+
+    .button, .button:visited {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      gap: .45rem;
+      padding: .7rem 1.15rem;
+      border: 1px solid transparent;
+      border-radius: .55rem;
+      background: var(--ink);
+      color: var(--white);
+      font: inherit;
+      font-size: .95rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color .16s ease, transform .16s ease;
+    }
+    .button:hover { background: #37304e; transform: translateY(-1px); }
+    .button--outline, .button--outline:visited {
+      background: transparent;
+      color: var(--ink);
+      border-color: #bdb7c2;
+    }
+    .button--outline:hover { background: white; }
+    .button--green, .button--green:visited { background: var(--green); }
+    .button--green:hover { background: #075d4e; }
+
+    .hero {
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 84% 24%, rgb(216 247 236 / 70%), transparent 31%),
+        radial-gradient(ellipse at 16% 9%, rgb(255 213 200 / 45%), transparent 30%),
+        var(--paper);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .8fr);
+      align-items: center;
+      gap: clamp(2rem, 6vw, 5rem);
+      min-height: 510px;
+      padding-block: 5rem 5.5rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin: 0 0 1rem;
+      color: var(--green);
+      font-size: .83rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      width: 1.4rem;
+      height: 2px;
+      content: "";
+      background: currentColor;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2, .serif {
+      font-family: var(--serif);
+      letter-spacing: -.035em;
+    }
+
+    h1 {
+      max-width: 700px;
+      margin-bottom: 1.2rem;
+      font-size: clamp(2.8rem, 5.8vw, 4.65rem);
+      line-height: 1.04;
+    }
+
+    .hero-copy {
+      max-width: 580px;
+      margin-bottom: 1.6rem;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .domain-form {
+      max-width: 640px;
+      margin-bottom: 1.35rem;
+    }
+
+    .domain-form label {
+      display: block;
+      margin-bottom: .45rem;
+      font-size: .92rem;
+      font-weight: 750;
+    }
+
+    .search-row {
+      display: flex;
+      align-items: stretch;
+      padding: .35rem;
+      background: var(--white);
+      border: 1px solid #bdb7c2;
+      border-radius: .75rem;
+      box-shadow: 0 7px 20px rgb(36 26 45 / 6%);
+    }
+
+    .search-row input {
+      width: 100%;
+      min-width: 0;
+      min-height: 50px;
+      padding: .75rem 1rem;
+      border: 0;
+      border-radius: .5rem;
+      color: var(--ink);
+      background: transparent;
+      font: inherit;
+      font-size: 1rem;
+    }
+    .search-row input:focus-visible { outline-offset: -2px; }
+
+    .search-row button {
+      flex: 0 0 auto;
+      min-width: 128px;
+      min-height: 50px;
+      border: 0;
+      border-radius: .5rem;
+      background: var(--ink);
+      color: white;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .search-row button:hover { background: #37304e; }
+
+    .included {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem 1.2rem;
+      margin: 1.1rem 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .included li::before {
+      content: "✓";
+      margin-right: .45rem;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .hero-art {
+      position: relative;
+      display: grid;
+      min-height: 330px;
+      place-items: center;
+    }
+
+    .art-halo {
+      position: absolute;
+      width: min(100%, 350px);
+      aspect-ratio: 1;
+      background: var(--lavender);
+      border-radius: 44% 56% 52% 48% / 56% 42% 58% 44%;
+      transform: rotate(-8deg);
+    }
+
+    .domain-card {
+      position: relative;
+      width: min(100%, 360px);
+      padding: 1.6rem;
+      background: white;
+      border: 1px solid rgb(32 27 54 / 10%);
+      border-radius: 1.1rem;
+      box-shadow: var(--shadow);
+      transform: rotate(2deg);
+    }
+
+    .domain-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eeeaf0;
+    }
+    .domain-card-top span:first-child {
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+    .secure-label {
+      padding: .24rem .55rem;
+      border-radius: 999px;
+      color: #075d4e;
+      background: var(--mint);
+      font-size: .72rem;
+      font-weight: 800;
+    }
+
+    .domain-display {
+      padding: 1.7rem .2rem 1.4rem;
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -.04em;
+    }
+    .domain-display span { color: var(--purple); }
+
+    .card-rows { display: grid; gap: .7rem; }
+    .card-row {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+    .row-dot {
+      display: grid;
+      width: 1.7rem;
+      height: 1.7rem;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: .5rem;
+      color: var(--ink);
+      background: var(--peach);
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .floating-note {
+      position: absolute;
+      right: -1rem;
+      bottom: 1rem;
+      max-width: 210px;
+      padding: .8rem 1rem;
+      border: 1px solid rgb(32 27 54 / 7%);
+      border-radius: .8rem;
+      background: white;
+      box-shadow: var(--shadow);
+      font-size: .82rem;
+      font-weight: 750;
+      transform: rotate(-4deg);
+    }
+    .floating-note strong { color: var(--green); }
+
+    .news-callout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 760px;
+      margin-top: 2rem;
+      padding: .9rem 1rem;
+      border-radius: .65rem;
+      color: var(--ink);
+      background: var(--peach-deep);
+      font-size: .9rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .news-callout:hover { background: #ffc4b2; }
+    .news-callout .arrow { flex: 0 0 auto; font-size: 1.3rem; }
+
+    .section { padding-block: 5rem; }
+    .section--peach { background: var(--peach); }
+    .section--lavender { background: #f5f2ff; }
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 2.6rem;
+      text-align: center;
+    }
+    .section-heading h2 {
+      margin-bottom: .75rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.13;
+    }
+    .section-heading p { margin-bottom: 0; color: var(--muted); }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.15rem;
+    }
+
+    .product-card {
+      display: flex;
+      min-height: 310px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.5rem;
+      border: 1px solid rgb(32 27 54 / 8%);
+      border-radius: .85rem;
+      background: white;
+      box-shadow: 0 8px 24px rgb(36 26 45 / 4%);
+    }
+    .product-icon {
+      display: grid;
+      width: 3.25rem;
+      height: 3.25rem;
+      margin-bottom: 1.2rem;
+      place-items: center;
+      border-radius: .85rem;
+      background: var(--peach);
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+    .product-card:nth-child(2) .product-icon { background: var(--mint); }
+    .product-card:nth-child(3) .product-icon { background: var(--lavender); }
+    .product-card:nth-child(4) .product-icon { background: #fff5c8; }
+    .product-card h3 { margin-bottom: .65rem; font-size: 1.12rem; line-height: 1.3; }
+    .product-card p { margin-bottom: 1rem; color: var(--muted); font-size: .9rem; }
+    .product-card .product-highlight {
+      display: inline-block;
+      margin-top: auto;
+      margin-bottom: 1.1rem;
+      padding: .28rem .55rem;
+      border-radius: .3rem;
+      background: var(--mint);
+      color: #155848;
+      font-size: .78rem;
+      font-weight: 750;
+    }
+    .product-card > a {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      font-size: .9rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .product-card > a::after { content: "→"; }
+
+    .feedback-note {
+      margin: 2rem 0 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: .9rem;
+    }
+
+    .step-banner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 2rem;
+      padding: 2.4rem clamp(1.4rem, 4vw, 3rem);
+      border-radius: 1rem;
+      background: var(--ink);
+      color: white;
+    }
+    .step-banner h2 {
+      margin-bottom: .55rem;
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      line-height: 1.15;
+    }
+    .step-banner p { max-width: 620px; margin-bottom: 0; color: #e4e0ed; }
+    .step-banner .button { background: white; color: var(--ink); }
+    .step-banner .button:hover { background: var(--peach); }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.3rem;
+    }
+    .service {
+      padding: 1.35rem;
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      background: white;
+    }
+    .service h3 { margin-bottom: .5rem; font-size: 1.05rem; }
+    .service p { margin-bottom: .8rem; color: var(--muted); font-size: .9rem; }
+    .service a { font-size: .9rem; font-weight: 750; }
+
+    .business-panel {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: clamp(2rem, 6vw, 5rem);
+      padding: clamp(1.5rem, 4vw, 3rem);
+      border-radius: 1rem;
+      background: #f4f2f8;
+    }
+    .business-panel h2 {
+      margin-bottom: .9rem;
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      line-height: 1.12;
+    }
+    .business-panel p { color: var(--muted); }
+    .business-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .business-list li {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: .8rem;
+      align-items: start;
+    }
+    .business-list .row-dot { width: 2.3rem; height: 2.3rem; }
+    .business-list strong { display: block; margin-bottom: .15rem; }
+    .business-list span:last-child { color: var(--muted); font-size: .88rem; }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+    .trust-card {
+      padding: 1.4rem;
+      border-radius: .8rem;
+      background: white;
+      border: 1px solid rgb(32 27 54 / 8%);
+    }
+    .trust-card h3 { margin-bottom: .55rem; font-size: 1.05rem; }
+    .trust-card p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+
+    .split-feature {
+      display: grid;
+      grid-template-columns: minmax(250px, .85fr) minmax(0, 1.15fr);
+      align-items: center;
+      gap: clamp(2rem, 7vw, 6rem);
+      padding-block: 1rem;
+    }
+    .split-feature + .split-feature { margin-top: 4rem; }
+    .split-feature--reverse .feature-image { order: 2; }
+    .feature-image {
+      width: 100%;
+      max-width: 430px;
+      height: auto;
+      margin-inline: auto;
+    }
+    .feature-copy h2 {
+      margin-bottom: .85rem;
+      font-size: clamp(1.8rem, 3.4vw, 2.55rem);
+      line-height: 1.15;
+    }
+    .feature-copy p, .feature-copy li { color: var(--muted); }
+    .feature-copy li { margin-block: .35rem; }
+    .feature-copy p:last-child { margin-bottom: 0; }
+    .feature-copy a { font-weight: 700; }
+
+    .faq-list {
+      max-width: 850px;
+      margin-inline: auto;
+      border-top: 1px solid var(--line);
+    }
+    .faq-list details { border-bottom: 1px solid var(--line); }
+    .faq-list summary {
+      position: relative;
+      padding: 1.15rem 2.7rem 1.15rem 0;
+      cursor: pointer;
+      font-weight: 750;
+      list-style: none;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      position: absolute;
+      top: 50%;
+      right: .3rem;
+      content: "+";
+      color: var(--green);
+      font-size: 1.5rem;
+      font-weight: 500;
+      transform: translateY(-52%);
+    }
+    .faq-list details[open] summary::after { content: "−"; }
+    .faq-answer { max-width: 780px; padding: 0 1rem 1rem 0; color: var(--muted); }
+    .faq-answer p:last-child { margin-bottom: 0; }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+    .news-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: .85rem;
+      background: white;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .news-card:hover h3 { color: var(--green); text-decoration: underline; }
+    .news-card img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: var(--peach);
+    }
+    .news-content { padding: 1.25rem; }
+    .news-content .eyebrow { margin-bottom: .55rem; font-size: .72rem; }
+    .news-content h3 { margin-bottom: .55rem; font-size: 1.15rem; line-height: 1.35; }
+    .news-content p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+    .news-topline {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+    .news-topline h2 { margin: 0; font-size: clamp(1.9rem, 3vw, 2.5rem); }
+    .news-topline a { font-weight: 750; }
+
+    .newsletter-band {
+      padding-block: 3.5rem;
+      background: var(--peach);
+    }
+    .newsletter-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .newsletter-inner h2 { margin-bottom: .45rem; font-size: 2rem; }
+    .newsletter-inner p { max-width: 680px; margin-bottom: 0; color: var(--muted); }
+    .newsletter-inner a { flex: 0 0 auto; }
+
+    .site-footer {
+      padding-block: 3.5rem 2rem;
+      color: #f4f1fa;
+      background: #211d31;
+    }
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgb(255 255 255 / 18%);
+    }
+    .footer-top .brand { color: white; }
+    .footer-top p { max-width: 450px; margin: .7rem 0 0; color: #d6d1df; font-size: .9rem; }
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 2rem;
+      padding-block: 2rem;
+    }
+    .footer-links h2 {
+      margin-bottom: .8rem;
+      font-family: var(--sans);
+      font-size: .92rem;
+      letter-spacing: 0;
+    }
+    .footer-links ul { display: grid; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+    .footer-links a { color: #e4dfeb; font-size: .86rem; text-decoration: none; }
+    .footer-links a:hover { color: white; text-decoration: underline; }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .75rem 2rem;
+      padding-top: 1.2rem;
+      color: #d6d1df;
+      font-size: .82rem;
+    }
+    .footer-bottom a { color: white; }
+
+    @media (max-width: 900px) {
+      .header-row { gap: 1rem; }
+      .main-nav { gap: 1rem; }
+      .main-nav a { font-size: .86rem; }
+      .hero-inner { grid-template-columns: 1.1fr .8fr; gap: 2rem; }
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .product-card { min-height: 270px; }
+      .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 2rem, 560px); }
+      .header-row { min-height: auto; flex-wrap: wrap; padding-block: .85rem; }
+      .main-nav { order: 3; width: 100%; overflow-x: auto; padding: .25rem 0 .35rem; }
+      .main-nav a { flex: 0 0 auto; }
+      .header-actions { margin-left: auto; }
+      .header-actions .button { min-height: 40px; padding: .5rem .8rem; }
+      .hero-inner { grid-template-columns: 1fr; padding-block: 3.5rem 3rem; }
+      .hero-art { min-height: 280px; }
+      .domain-card { max-width: 330px; }
+      .floating-note { right: 0; bottom: 0; }
+      .section { padding-block: 3.5rem; }
+      .section-heading { margin-bottom: 2rem; }
+      .step-banner { grid-template-columns: 1fr; }
+      .step-banner .button { justify-self: start; }
+      .business-panel, .split-feature { grid-template-columns: 1fr; }
+      .split-feature--reverse .feature-image { order: 0; }
+      .feature-image { max-width: 300px; }
+      .split-feature + .split-feature { margin-top: 3rem; }
+      .news-grid { grid-template-columns: 1fr; }
+      .news-card img { height: auto; max-height: 260px; }
+      .newsletter-inner { align-items: flex-start; flex-direction: column; }
+      .footer-top { flex-direction: column; }
+      .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+    }
+
+    @media (max-width: 420px) {
+      .search-row { flex-direction: column; border: 0; box-shadow: none; background: transparent; padding: 0; gap: .55rem; }
+      .search-row input { border: 1px solid #bdb7c2; background: white; }
+      .search-row button { width: 100%; }
+      .included { display: grid; gap: .35rem; }
+      .product-grid, .service-grid, .trust-grid { grid-template-columns: 1fr; }
+      .product-card { min-height: 0; }
+      .news-topline { align-items: flex-start; flex-direction: column; }
+      .footer-links { grid-template-columns: 1fr 1fr; gap: 1.3rem 1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">.footer-top > p > a { color: #a9efd9; }</style></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="wrap header-row">
+<a class="brand" href="https://www.gandi.net/en-US">
+<span aria-hidden="true" class="brand-mark">g</span>
+<span>gandi.net</span>
+</a>
+<nav aria-label="Main navigation" class="main-nav">
+<a href="https://www.gandi.net/en-US/solutions/create-website">Create a website</a>
+<a href="https://www.gandi.net/en-US/domain">Domains</a>
+<a href="https://www.gandi.net/en-US/simple-hosting">Hosting</a>
+<a href="https://www.gandi.net/en-US/corporate">Businesses</a>
+<a href="https://www.gandi.net/en-US/discounts">Discounts</a>
+<a href="https://news.gandi.net/en">Blog</a>
+<a href="https://helpdesk.gandi.net/hc/en-us">Help</a>
+</nav>
+<div class="header-actions">
+<a class="button button--outline" href="https://admin.gandi.net/?locale=en">Log in</a>
+</div>
+</div>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-inner">
+<div>
+<p class="eyebrow">Your project starts here</p>
+<h1 id="hero-title">A domain name for a secure online space</h1>
+<p class="hero-copy">Find a name for your next idea, then bring your websites, email, and hosting together with Gandi.</p>
+<form action="https://shop.gandi.net/en/domain/suggest" class="domain-form" method="get">
+<label for="domain-search">Search for a domain name</label>
+<div class="search-row">
+<input id="domain-search" maxlength="255" name="search" placeholder="Try a word or a domain name" type="text"/>
+<button type="submit">Search domains <span aria-hidden="true">→</span></button>
+</div>
+</form>
+<strong>Included services, free for the first year</strong>
+<ul class="included">
+<li>SSL certificate</li>
+<li>2 custom mailboxes</li>
+<li>Anycast and DNSSEC</li>
+</ul>
+<a class="news-callout" href="https://news.gandi.net/en/2026/09/acme-automate-your-ssl-tls-certificate-renewals/">
+<span>Get ahead of shorter TLS/SSL certificate lifespans with simpler, more secure certificate renewal automation.</span>
+<span aria-hidden="true" class="arrow">→</span>
+</a>
+</div>
+<div aria-hidden="true" class="hero-art">
+<div class="art-halo"></div>
+<div class="domain-card">
+<div class="domain-card-top">
+<span>Your online space</span>
+<span class="secure-label">Protected</span>
+</div>
+<div class="domain-display">youridea<span>.com</span></div>
+<div class="card-rows">
+<div class="card-row"><span class="row-dot">↗</span><span>A name that’s yours</span></div>
+<div class="card-row"><span class="row-dot">@</span><span>Email that matches your domain</span></div>
+<div class="card-row"><span class="row-dot">✓</span><span>Security built in</span></div>
+</div>
+</div>
+<div class="floating-note"><strong>One interface.</strong><br/>All your web projects.</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="products-title" class="section section--peach">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Everything in one place</p>
+<h2 id="products-title">Gather your web projects under a single interface</h2>
+<p>Start with what you need today, and add services as your project grows.</p>
+</div>
+<div class="product-grid">
+<article class="product-card">
+<span aria-hidden="true" class="product-icon">↗</span>
+<h3>50% off your first website</h3>
+<p>Launch a blog, showcase site, or online shop in one click. Get 50% off a yearly website subscription.</p>
+<span class="product-highlight">Your domain is included with hosting</span>
+<a href="https://www.gandi.net/en-US/solutions/create-website">Create a website</a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-icon">@</span>
+<h3>Personalized email</h3>
+<p>Give your online identity a professional touch with secure email based on your domain name.</p>
+<span class="product-highlight">Create addresses using your domain</span>
+<a href="https://www.gandi.net/en-US/domain/email">Create an email address</a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-icon">✓</span>
+<h3>SSL certificates</h3>
+<p>Manage certificates to improve the security and credibility of your website.</p>
+<span class="product-highlight">Free for 1 year with a domain name</span>
+<a href="https://www.gandi.net/en-US/security">Secure your website</a>
+</article>
+<article class="product-card">
+<span aria-hidden="true" class="product-icon">▤</span>
+<h3>VPS and cloud servers</h3>
+<p>Keep control of your web projects with cloud hosting and VPS solutions.</p>
+<span class="product-highlight">VPS starting at $6.00/month</span>
+<a href="https://www.gandi.net/en-US/cloud">Explore cloud solutions</a>
+</article>
+</div>
+<p class="feedback-note">Your feedback helps us improve our products. <a href="https://help.gandi.net/contact/feedback">Share your feedback</a>.</p>
+</div>
+</section>
+<section aria-labelledby="step-title" class="section">
+<div class="wrap">
+<div class="step-banner">
+<div>
+<p class="eyebrow" style="color:#a9efd9">A clear path forward</p>
+<h2 id="step-title">Easily launch your project with Gandi</h2>
+<p>We accompany you step by step as you start your professional web projects.</p>
+</div>
+<a class="button" href="https://www.gandi.net/en-US/solutions/step-by-step-professional-website">Start step-by-step <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="reliable-title" class="section section--lavender">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Made for your projects</p>
+<h2 id="reliable-title">Robust services, with room to grow</h2>
+<p>From everyday essentials to developer tools, manage key parts of your online presence with Gandi.</p>
+</div>
+<div class="service-grid">
+<article class="service">
+<h3>Public API</h3>
+<p>Automate management of your products with an API available across Gandi services.</p>
+<a href="https://www.gandi.net/en-US/solutions/api">Explore the API</a>
+</article>
+<article class="service">
+<h3>Infrastructure as code</h3>
+<p>Deploy servers and manage cloud infrastructure with Terraform.</p>
+<a href="https://www.gandi.net/en-US/cloud">Manage cloud servers</a>
+</article>
+<article class="service">
+<h3>Open-source hosting</h3>
+<p>Deploy WordPress, PrestaShop, and other well-known solutions in a few clicks.</p>
+<a href="https://www.gandi.net/en-US/solutions/create-website">Explore website solutions</a>
+</article>
+<article class="service">
+<h3>Advanced DNS</h3>
+<p>Anycast DNS and DNSSEC help keep your domain secure and available around the world.</p>
+<a href="https://www.gandi.net/en-US/domain/dns">Secure your domain names</a>
+</article>
+<article class="service">
+<h3>Protected email</h3>
+<p>Help prevent unauthorized access to your mailboxes with two-factor authentication.</p>
+<a href="https://www.gandi.net/en-US/domain/email">Protect your mailboxes</a>
+</article>
+<article class="service">
+<h3>Flexible certificates</h3>
+<p>Explore multi-domain, wildcard, and business certificates for your services.</p>
+<a href="https://www.gandi.net/en-US/security">Explore SSL certificates</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="business-title" class="section">
+<div class="wrap business-panel">
+<div>
+<p class="eyebrow">For larger organizations</p>
+<h2 id="business-title">Protect your online identity with personalized service</h2>
+<p>Gandi Corporate Services offers expertise dedicated to protecting brands online.</p>
+<a class="button button--green" href="https://www.gandi.net/en-US/corporate">See business services <span aria-hidden="true">→</span></a>
+</div>
+<ul class="business-list">
+<li><span aria-hidden="true" class="row-dot">✦</span><span><strong>Protect and accompany</strong><span>Benefit from legal and technical expertise with a dedicated account agent.</span></span></li>
+<li><span aria-hidden="true" class="row-dot">◎</span><span><strong>Monitor and defend</strong><span>Monitor your trademark online and block fraudulent websites.</span></span></li>
+<li><span aria-hidden="true" class="row-dot">✓</span><span><strong>Secure</strong><span>Configure domains, DNSSEC, and security options for your account.</span></span></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="guarantees-title" class="section section--peach">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Our commitments</p>
+<h2 id="guarantees-title">Your guarantees with Gandi</h2>
+</div>
+<div class="trust-grid">
+<article class="trust-card">
+<h3>Choice</h3>
+<p>Choose from a catalog of over 800 domain extensions and use domain suggestions to find a name that fits.</p>
+</article>
+<article class="trust-card">
+<h3>Ease of use</h3>
+<p>Bring domain names, hosting, CMS, and email together. Share roles and permissions with your team.</p>
+</article>
+<article class="trust-card">
+<h3>Confidentiality</h3>
+<p>Your website is hosted in France or Luxembourg. Privacy is central to our projects.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Support and commitments" class="section">
+<div class="wrap">
+<article class="split-feature split-feature--reverse">
+<img alt="" class="feature-image" height="360" loading="lazy" src="https://www.gandi.net/static/icon-packs/illustration-pack/contact_yellow.68c0519e8268.svg" width="500"/>
+<div class="feature-copy">
+<p class="eyebrow">Here when you need us</p>
+<h2>Need help? Find the right way to contact us.</h2>
+<p>Browse step-by-step guides, contact customer support, or send us an idea or suggestion.</p>
+<ul>
+<li><a href="https://docs.gandi.net/en/">Read our documentation</a></li>
+<li><a href="https://helpdesk.gandi.net/hc/en-us">Open a support ticket</a></li>
+<li><a href="https://helpdesk.gandi.net/hc/en-us?livechat">Open a chat window</a></li>
+<li><a href="https://helpdesk.gandi.net/hc/en-us/requests/new?ticket_form_id=13618597122204&amp;tf_13618597122204=feedback">Send feedback or a suggestion</a></li>
+</ul>
+</div>
+</article>
+<article class="split-feature">
+<img alt="" class="feature-image" height="360" loading="lazy" src="https://www.gandi.net/static/icon-packs/illustration-pack/support_green.cfa55d99c96e.svg" width="500"/>
+<div class="feature-copy">
+<p class="eyebrow">Expert support</p>
+<h2>In constant contact with the developers</h2>
+<p>Customer support is handled internally by employees located at regional offices on three continents.</p>
+<ul>
+<li>Expert agents who know the products</li>
+<li>Available 24/7 in English, Spanish, Chinese, French, and Japanese</li>
+<li>Support replies, emails, and social media replies are signed by name</li>
+</ul>
+</div>
+</article>
+<article class="split-feature split-feature--reverse">
+<img alt="" class="feature-image" height="360" loading="lazy" src="https://www.gandi.net/static/icon-packs/illustration-pack/engagements_yellow.0f85d70a8cf4.svg" width="500"/>
+<div class="feature-copy">
+<p class="eyebrow">Since December 2000</p>
+<h2>Promises kept for over 20 years</h2>
+<p>Gandi manages over 2.5 million domain names, 780,000 email addresses, and 55,000 SSL certificates, and hosts over 200,000 websites and applications. More than 350,000 active users, 8,000 resellers, and 500 key clients have trusted Gandi.</p>
+</div>
+</article>
+<article class="split-feature">
+<img alt="" class="feature-image" height="360" loading="lazy" src="https://www.gandi.net/static/icon-packs/illustration-pack/integrite_green.ba86a567a421.svg" width="500"/>
+<div class="feature-copy">
+<p class="eyebrow">Clear by design</p>
+<h2>Transparency and integrity</h2>
+<ol>
+<li>Clear rates, without billing surprises.</li>
+<li>Technical incidents are communicated, and responsibility is taken when things go wrong.</li>
+<li>We respect your privacy and protect personal data.</li>
+<li>We build products and services we would like to use ourselves.</li>
+</ol>
+</div>
+</article>
+<article class="split-feature split-feature--reverse">
+<img alt="" class="feature-image" height="360" loading="lazy" src="https://www.gandi.net/static/icon-packs/illustration-pack/web-ouvert_poppy.a482026fefee.svg" width="500"/>
+<div class="feature-copy">
+<p class="eyebrow">An open web</p>
+<h2>We defend a web that is open to everyone</h2>
+<ul>
+<li>We believe domain names and cloud hosting should be accessible to as many people as possible.</li>
+<li>We support net neutrality and oppose an Internet of several speeds.</li>
+<li>We favor open-source solutions that bring transparency and liberty to the web.</li>
+<li><a href="https://www.gandi.net/en-US/gandi-supports">See projects Gandi supports</a>.</li>
+</ul>
+<a class="button button--outline" href="https://www.gandi.net/en-US/no-bullshit">See our promises</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="section section--lavender">
+<div class="wrap">
+<div class="section-heading">
+<p class="eyebrow">Good to know</p>
+<h2 id="faq-title">Frequently asked questions</h2>
+</div>
+<div class="faq-list">
+<details>
+<summary>How do I register a domain name?</summary>
+<div class="faq-answer">
+<p>Choose a name and a domain ending, such as <a href="https://www.gandi.net/en-US/domain/tld/net">.net</a>, <a href="https://www.gandi.net/en-US/domain/tld/fr">.fr</a>, or <a href="https://www.gandi.net/en-US/domain/tld/org">.org</a>. A domain name is registered for a period of 1 to 9 years and can be renewed. Use the <a href="https://shop.gandi.net/domain/suggest">domain search tool</a> to check availability.</p>
+</div>
+</details>
+<details>
+<summary>Who does a domain name belong to?</summary>
+<div class="faq-answer">
+<p>Once registered, a domain name is associated with an owner contact, who holds it for the registration period. If a name is unavailable, someone else has already registered it. You can look for information with the <a href="https://whois.gandi.net/">Whois service</a> or search for alternatives.</p>
+</div>
+</details>
+<details>
+<summary>What is a web host?</summary>
+<div class="faq-answer">
+<p>A web host makes data storage and web servers available to website owners. Hosting providers install, secure, and maintain servers and the technical infrastructure used to make websites available online.</p>
+</div>
+</details>
+<details>
+<summary>Which web hosting solution should I choose?</summary>
+<div class="faq-answer">
+<p>The right solution depends on your project and technical needs. Gandi offers <a href="https://www.gandi.net/en-US/simple-hosting/wordpress">WordPress hosting</a>, <a href="https://www.gandi.net/en-US/simple-hosting/prestashop">PrestaShop hosting</a>, <a href="https://www.gandi.net/en-US/cloud/vps">VPS hosting</a>, and other <a href="https://www.gandi.net/en-US/simple-hosting">web hosting solutions</a>.</p>
+</div>
+</details>
+</div>
+<p style="text-align:center; margin:1.7rem 0 0"><a class="button button--green" href="https://helpdesk.gandi.net/hc/en-us">Get help</a></p>
+</div>
+</section>
+<section aria-labelledby="news-title" class="section">
+<div class="wrap">
+<div class="news-topline">
+<h2 id="news-title">News and sales</h2>
+<a href="https://news.gandi.net/en/">See all news →</a>
+</div>
+<div class="news-grid">
+<a class="news-card" href="https://news.gandi.net/en/2026/04/simplified-email-management-discover-the-new-space-dedicated-to-mailboxes-and-forwarding/">
+<img alt="" height="402" loading="lazy" src="https://news.gandi.net/wp-content/uploads/2026/04/Sans-titre-1200-x-628-px2-768x402.png" width="768"/>
+<div class="news-content">
+<p class="eyebrow">Product news</p>
+<h3>Simplified email management: discover the new space dedicated to mailboxes and forwarding</h3>
+<p>Discover a new menu in your Gandi interface for managing mailboxes and forwarding settings.</p>
+</div>
+</a>
+<a class="news-card" href="https://news.gandi.net/en/2026/08/electronic-invoicing-in-france-prepare-your-gandi-account-before-september-1-2026/">
+<img alt="" height="432" loading="lazy" src="https://news.gandi.net/wp-content/uploads/2026/08/Smarthphone1-768x432.png" width="768"/>
+<div class="news-content">
+<p class="eyebrow">Account information</p>
+<h3>Electronic invoicing in France: prepare your Gandi account before September 1, 2026</h3>
+<p>Information for companies and organizations concerned by the gradual electronic invoicing reform in France.</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="newsletter-title" class="newsletter-band">
+<div class="wrap newsletter-inner">
+<div>
+<h2 id="newsletter-title">Stay in the loop</h2>
+<p>Join over 175,000 subscribers receiving Gandi publications and offers. One email per month; your data is not shared.</p>
+</div>
+<a class="button" href="https://news.gandi.net/en/">Explore Gandi news <span aria-hidden="true">→</span></a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-top">
+<div>
+<a class="brand" href="https://www.gandi.net/en-US">
+<span aria-hidden="true" class="brand-mark">g</span>
+<span>gandi.net</span>
+</a>
+<p>Domain names, hosting, email, and services for your online projects.</p>
+</div>
+<p><a href="https://www.gandi.net/en-US/trust-center">Visit the Gandi Trust Center</a></p>
+</div>
+<nav aria-label="Footer" class="footer-links">
+<section>
+<h2>Products</h2>
+<ul>
+<li><a href="https://www.gandi.net/en-US/domain">Domain names</a></li>
+<li><a href="https://www.gandi.net/en-US/domain/tld">Domain name prices</a></li>
+<li><a href="https://www.gandi.net/en-US/simple-hosting">Web hosting</a></li>
+<li><a href="https://www.gandi.net/en-US/cloud/vps">GandiCloud VPS</a></li>
+<li><a href="https://www.gandi.net/en-US/domain/email">Email</a></li>
+<li><a href="https://www.gandi.net/en-US/security">SSL certificates</a></li>
+<li><a href="https://www.gandi.net/en-US/domain/dns">DNS</a></li>
+</ul>
+</section>
+<section>
+<h2>Services</h2>
+<ul>
+<li><a href="https://www.gandi.net/en-US/corporate">Corporate services</a></li>
+<li><a href="https://www.gandi.net/en-US/reseller">Reseller program</a></li>
+<li><a href="https://www.gandi.net/en-US/solutions/step-by-step-professional-website">Small and medium businesses</a></li>
+<li><a href="https://www.gandi.net/en-US/solutions/api">API</a></li>
+<li><a href="https://whois.gandi.net/en">Whois</a></li>
+</ul>
+</section>
+<section>
+<h2>Help</h2>
+<ul>
+<li><a href="https://helpdesk.gandi.net/hc/en-us">Contact customer care</a></li>
+<li><a href="https://status.gandi.net">Service status</a></li>
+<li><a href="https://docs.gandi.net/en/">Documentation</a></li>
+<li><a href="https://api.gandi.net/docs/">API documentation</a></li>
+</ul>
+</section>
+<section>
+<h2>About and legal</h2>
+<ul>
+<li><a href="https://www.gandi.net/en-US/about-us">About Gandi</a></li>
+<li><a href="https://www.gandi.net/en-US/gandi-supports">Supported projects</a></li>
+<li><a href="https://www.gandi.net/en-US/contracts/terms-of-use">Terms of use</a></li>
+<li><a href="https://www.gandi.net/en-US/contracts/privacy-policy">Privacy policy</a></li>
+<li><a href="https://www.gandi.net/en-US/digital-service-act-transparency-report">Transparency report</a></li>
+</ul>
+</section>
+</nav>
+<div class="footer-bottom">
+<span>© Gandi.net</span>
+<span>Region: <a href="https://www.gandi.net/en">English / EU &amp; worldwide</a> · <a href="https://www.gandi.net/en-US">English / US</a></span>
+<span>Follow Gandi: <a href="https://www.linkedin.com/company/gandi/">LinkedIn</a> · <a href="https://github.com/Gandi">GitHub</a> · <a href="https://www.instagram.com/gandi_net/">Instagram</a></span>
+</div>
+</div>
+</footer>
+</body>
+</html>

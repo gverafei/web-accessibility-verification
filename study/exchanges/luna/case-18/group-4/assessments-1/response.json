@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views are visually identical, preserving the visible event listings, news section, scale metrics, supporting text, and imagery.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and coherently arranged in both views. The cookie notice and floating promotional panel do not materially obstruct the core interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, contact, event, About Us, and cookie-consent controls retain understandable labels and appearance.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots at both supplied scroll positions match exactly and form a coherent reference-target comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s visible headings, event and news content, business metrics, explanatory text, and controls convey a coherent purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image evidence**\n\nI see that we have identical screenshots with matching checksums, and the dimensions are aligned as well! That's good for confirming the evidence's coherence. I need to make sure I'm noting that these images are exact matches. It seems like I'll need to prepare the information in a JSON format. Overall, I think I'm on track with this, but I want to ensure clarity and completeness as I put everything together.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image evidence**\n\nI see that we have identical screenshots with matching checksums, and the dimensions are aligned as well! That's good for confirming the evidence's coherence. I need to make sure I'm noting that these images are exact matches. It seems like I'll need to prepare the information in a JSON format. Overall, I think I'm on track with this, but I want to ensure clarity and completeness as I put everything together.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AG_eI7EYRw0GqI8lvO8OeqxHnR8-bsEbJsJdrzPfrWjcGZ8jwd7v6I0P0daVvFY6rSIZ9j0IvWguBZvi8m7etEdMmwbutE_fWLkZk5mc8zXHSMH2SXCwSERjVfHVYCGcgn2BU7_SN66_g9IjvDNGzXuriMIpph2mwggi1x80mK2F7SFdSXoE7syQwzBI5D_Y5gYSayoJvf7LMc_acgwWhL05i4f9hLHfarOVOXw0Ww39VSRg3jjbb6efM90t2WPaOSf2t2S_CbURQOcU9CeGJ7fCuBlIF-85Q5hUvnTM_mqXgK5JpzQkvz4F7YtCpYjlA5mKVlXAUb_aWeAandbi05vqm0KDauE9Hh_yQds43FtK2BpkGu4bixZybBjmh6VDInzIOmN684RovHwl5dr68jpIgdySJawr-oovn-Kd7jdNxOW1ob4tToBLeSS8miRhbALUWHYi0Qh5jL_fWLawgoHue89_DsgGSdSkWV5cC9ydMjxAXDi0iwPUdkNvugklreynaXYgaPCi8hZZfZWfEDwzuQ0Lnq10DMYYYOTev03moyGI-Wa8fptWu_Ura7zzvjfFVTOMHQXgK3UeRmAgrispu_V1m2-W6P8EZI5buPsOgYMwgHMh_aG8EoNfqwzSigK6u5Wz5jVk1SdakAW-Anbe8i1hYb9Cv60CrkXTxZ5PLgiCemqLvy4LdLoqfcFUGkQ6OgI8MVEMIQGkau5GSYqeTf_mbcW2-Ggt_islYniLedIvX7wNJj39-QnsgufPT68tJnuRdDd73L0IXbPMoUjnAzGIbW6xL7hhvHpMzh-eMOZIufMoAvu7N9UP_mgRxYXAr63HxPW4Ijn9hwf32lD82P_jHEKjmwTzCC8BMJDWOMPfJCc9g6gMuZOIiQxm54sI-ehC2dn1iaviWF54ZtrnN8BoEvPS02G_SQpdhacV3VFzuLipwwRkSLdMG3AoDZPZABa2rnLtIB7Lvb6p8ISGol1DjjfiC_Fbn45ZR5dnTj3axKKL35gnTAoSTsfTqtAaKIcO3T3OIOj22CXYcg1bZqpwueHyZL7AD6o6nO6FU8TSuMqvrmgwBa5zvuzkVD4dxnIqguQAZ9Zqa1dn_EEMYvrncUhbxtCYjhqool9kYESMh8n4jwvudn2vQuUKMXL8bJHH0xXnkekdiI9qq4MKTXVyTUer9xaFc4gf0uRuCC2ZsUJ_DtB_k-ULEotiiBmz48NOGrnkR9ZCMGTPDIMvipnPX5J9AAZJWFsXStVJDG0P4ImyNZaYq9g8cknqFFXUeKe-DI1TtSfgrc4yz6qtifKt987d8jHN-209Yj9fmVOXKmkAnPtRjxtsQQN5IPXaxfTwxipFxmJCypwBzHGsOoCB71x-9F8mYbR6VFpSoXrXSkO3knV63xQcLRq4PA77VrG50pPPBh1lWMBo9lwoYTHzib36YhWSBdLTDQ5Q71ZGAirisqN8GgN8zJ0E8TXIre07fzciolnROpCVMDUuVweUz1iQLHYvQtH8k63tnYOC2IFu4olKh6oHKV3RtaJc-ry2s31VOBTzsRZ-9Stc-VxBFH9KqHiD7KTyrcBERpfsAadGHdcv3t4cGQtvqHVtfaGv5d2hopNToHPI9WYQ2OlL3K3KMr8SH8IGZ81wvYVFgucwZSeCLgcYYL4G_DTow7Ra1HBk9H3PT7vJ6w9D6st93T09VvqatPXI1H0i3FAu9zoPyphTzkmzNuwCRISWnq8XlXwwHbqqPxdopqryE5h_17c7fFmEbvT-89zLVDW6fVYTNNe-Uw_6QaA50J4HeNBbnukV5zT9O95GyracYpB6bHutE99vhnnOZq6siCRaFrW_7c4fq3cyp5Qn-td_eGsQXs19wyYLkTIlcMxedSI3EiE71hg1L-iEuGNeB57KtDemipBobKOydP2uKKdvOY-yRBJQWcEACpkxfVtcSp_l-VIy8a3ZzH3vJkw1D29DXrnBBg06mkP3QySb8GR7qQhO7UXhGJy4ieGZIifvaJpZ2fn7tfQCXT1SMqh4YxuqfvoMMGnwFa4njl-n8v4ZMhRbWhPzfTAtjYZcN00ji5aMBqV3hzY1zakoRE1bQI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08876e603b5d7b50016ae801bd12cc87d197770f5953444ace",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11829,
+    "completion_tokens": 283,
+    "total_tokens": 12112,
+    "cost": 0.00162005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11826,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00162005,
+      "upstream_inference_prompt_cost": 0.00147855,
+      "upstream_inference_completions_cost": 0.0001415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

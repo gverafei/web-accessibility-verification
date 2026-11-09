@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The integration and scale content is preserved, but the target omits the visible annual-letter feature image and much of the book-of-the-week content, including the book cover, title, author, and description.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target has large blank areas where the reference shows the annual-letter carousel imagery and the book feature\u2019s cover and text. The otherwise legible layout does not compensate for these substantial missing content regions.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible actions, including developer docs, GitHub, integration links, carousel arrows, and \u201cRead the letter,\u201d have understandable labels or recognizable icons. No essential control defect is evident in these views.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots and saved component context form a coherent reference/target comparison. The missing content is a localized fidelity and presentation defect, not evidence of mismatched states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Although surrounding text remains coherent, the target\u2019s book feature lacks its identifying book information and description, and the annual-letter visual feature is missing. This materially weakens the meaning conveyed by those sections.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18396,
+    "completion_tokens": 318,
+    "total_tokens": 18714,
+    "cost": 0.002458425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18393,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002458425,
+      "upstream_inference_prompt_cost": 0.002299425,
+      "upstream_inference_completions_cost": 0.000159
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

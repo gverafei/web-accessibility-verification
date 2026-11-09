@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible comparison section and the following browser-comparison heading, descriptions, and cards. The embedded browser imagery and advertising are consistent with the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and cards are legible and coherently arranged; the comparison slider and page sections are not materially obscured.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The comparison tabs and slider handle are recognizable, and the comparison cards have readable action labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show matching page regions and states, providing a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, descriptions, imagery, and labels convey the browser and search comparison purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Clarifying JSON needs**\n\nI need to make sure we have the right JSON structure, including exact image hashes for content fidelity and presentation. It's important to have visible comparison sliders and card links for evidence coherence. I should note that there\u2019s a possibility that image 1 has a clipped header, but the content is essentially the same. I'll provide a concise rationale for these choices to ensure everything's clear and logical.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Clarifying JSON needs**\n\nI need to make sure we have the right JSON structure, including exact image hashes for content fidelity and presentation. It's important to have visible comparison sliders and card links for evidence coherence. I should note that there\u2019s a possibility that image 1 has a clipped header, but the content is essentially the same. I'll provide a concise rationale for these choices to ensure everything's clear and logical.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq5_-_O4QnhDOlBYMyJT6kpEyzNTAV3GcBtjf8mEHATi7gWe3VlnQ-FhLlaAo3zsdV6CCG5w9E-YiMaB-n6BJ0K5HfhKyB5wUVBXqq-2YjlV6rI_Oksc3E6UF3Egbe2jcggAFnd0N7NKLjHIwihDY_d_w7PbexIfwtW1lw1wyD0ebioIddKAIjRMylSQ8FlpINv-EjnNXlALXZhl4UwY3-lJqn8kyrAg6dX1AikzBbZRYc_BPEGyleCiUwWMh8hOVg0u0PAMeOTeNbsaaW8P6HtxGEJyHiSifQfgRUptCwosVDJbdw4fgSr1-zZ92sBKa2syeOWHXUVmwUPzqNy7Q7Tc5MVPD4tBTQfua-iTt4HsKGSirodmM2EnzVpgWSPSrolrtTfYyCQWaAMHjpaR5KJ18yYn9oo-wb0n62pCiuFX7GBMctAq2Egdtz4d19SHptlYeTgHIMQgBgyWVu8PJH0almMxipEpdOCi7EWA7FLDvdAxpFzVrgdUBGMjnMUq3zHZ86GHYZm6khrQFWhOw1qRH1Tw2Crsbkt9j8ib7YL7zuQZQ_LxxIeRwmEH6ajQhfs3UnVqMh_BfAFAYqZLrox221EJRRes6TcuXlQF4qawKhU9O6nLI4Z2U9bVgbuP0Fr-OVK7mTgck9JvHFerXi8j5EdvvLMqxPJ6ZMHaAjZamnoidRJgEwalqqd2HjhHvs0iFGh2PIYRt2sYtrelkJCVxbThqtG6NvyeHgZyfILnJpZ-Ax1Fo80kWoZydM7jnAqku0rOVjIMMBmF6dEMk654uUVCiQFW3v2RLJueAg-EEJbkzrOL2eQ-W8faqJAGVST45IevBFpvSI-zJUhf5LBEdxrUA5ixlGAALKu5JJ75lBC_9Oe-f2tSwfu9nJFqv_7r_2hoerk1zaAi-MRd84rocM2N3AO3uaoGCUP3BgxB-4KT5biShq_PQAfiWECjtrSuqs3Q2jOF2vssayVLaa8iaTsCyg2ql2BQo2e2PWHuhQxxUPiwGlFMSmz_a7eEFAT5zz6oZC1mnuEL6I3cTTTUlPK4KT_MMoJSUFeHbBJT02apjMSlRm4qHrrKw3EkI5CSuifpfRWUPGwCyvHtyjoM8xbsgUjhyDRGnYHesF_n8CbUdbS9_UNkdRgmELNPdamVJn8sTjcwv-6s9HPATBGK-nylDBzu87YHj-xZItGi2JoA-Aiup0JFs1wZkdxoJyBPjcmpGnxWD0wFYL2gtkA9790j7mzMJI9LVyU1Goz-qCjARnjxlQHL1cr-RJBhP06qFo94tuEsMJBYxGp-dgM824wWzf0PV2Vnj1WLtF2LB2ExfF5z9kVqxXGvnssfwY-78sxhxCqIHOiYum1iK7GYsVN8O14g5iN3P9siGPgKBcuw8PA4CcMwEv_elxHMyt0cpp96aTTs4iZaOcPTyitTxB1kqCCa3r8G07WU6950NgZeIFg1hirJL3_mrXl7hdVM21X11ii2J0cTxqFVQ3XgXMVTW5K_x_00u0joGKxybGzdj1sJBRCt7T9OU3pmT5y13KgWxelcUY6RWiuxtNQIEQLAX3dgMIfrhUdZLwmkMfNcY1hGbbIsFx-AqVk56dLz4rMe76bte3d391kQMYkbLh4AhWSjRlyFZusNLGYd6W3FwW6cAUs0ng_IKJrp0NZSMNJmDb1MaFzNPP2qixcmuvejGSQYiiejrUKpwpn82E0alTzfAFFuaFmHgsRIFpr864GmsvEXxI6p4FdZp71HLQ4qnEAmCJFdemGshRM8MB3m23p8hXFhEe4B4iOE96Fjg14pHralpPPkPLsNEXyEwDoWePNtjrboqo4ovOtEJ_iKbfyqKBKeVmnsN4OWbyPt7-DAwy3LgY50WeI0PhIOzVzd7BovWGpM6YBEdc2R3DRv1EdWSvgabgB37sBsYnVGsG2pNg3S1I7EpySerUCJLmxwfAD6ai0rZCYvvjVjbQ4lQ1Vp1HE3EwgVW27z0pDD643MxoFrKBueZm0n7zyhBIt02iivAGd1-K6XhBXiwGGSJgJdD6XO0QKPcLDqcdfrHdN68rZIsrauWNZZysqU9mNw9j-OsuA5o1ti3rXWPtEHn8BYjHh4kZLUXT88h8e0AloFBAGA70lr_H-57a2n1iYAZPXTpZDn2VK9t2RnTwEGXWjW8eOvnfr5FTaWCFD_IG-YLfdG74VeCpv6KEzlQpuG3ffBKAVWNtAyD1BrDigZgxK4gTDD0OcbegAsug2bz75EuH_J1I-mn7s9WXLzYfIw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ac5f857093b9a0e016ae7ffbdbd8087d183f1546f411e5e09",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 15547,
+    "completion_tokens": 283,
+    "total_tokens": 15830,
+    "cost": 0.0020848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 15544,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020848,
+      "upstream_inference_prompt_cost": 0.0019433,
+      "upstream_inference_completions_cost": 0.0001415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

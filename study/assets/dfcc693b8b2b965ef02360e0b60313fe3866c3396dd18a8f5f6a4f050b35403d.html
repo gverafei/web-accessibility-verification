@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Apple</title>
+<meta content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support." name="description"/>
+<link href="https://www.apple.com/" rel="canonical"/>
+<meta content="Apple" property="og:title"/>
+<meta content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support." property="og:description"/>
+<meta content="https://www.apple.com/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<style>
+:root{
+  --black:#000;
+  --ink:#1d1d1f;
+  --muted:#515154;
+  --paper:#f5f5f7;
+  --white:#fff;
+  --blue:#0066cc;
+  --blue-hover:#0055aa;
+  --focus:#0a84ff;
+  --focus-dark:#2997ff;
+  --line:#d2d2d7;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.47;font-size:17px}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--blue)}
+a:hover{color:var(--blue-hover)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:12px;top:-60px;background:#fff;color:var(--ink);padding:10px 14px;border-radius:8px;z-index:100;font-weight:600}
+.skip-link:focus{top:12px}
+.wrap{width:min(1080px,calc(100% - 40px));margin-inline:auto}
+
+/* Locale notice */
+.region-notice{background:#1d1d1f;color:#f5f5f7;font-size:14px}
+.region-notice .wrap{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;padding:12px 0}
+.region-notice p{margin:0;max-width:52ch}
+.region-notice a{color:#2997ff}
+.region-notice a:focus-visible{outline-color:var(--focus-dark)}
+
+/* Global header */
+.site-header{background:rgba(29,29,31,.96);color:#f5f5f7;position:sticky;top:0;z-index:50}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px}
+.brand{color:#f5f5f7;font-weight:600;text-decoration:none;font-size:20px;padding:6px 2px}
+.brand:hover{color:#fff}
+.global-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+.global-nav a{color:#e8e8ed;text-decoration:none;font-size:13px;padding:8px 8px;border-radius:6px;display:inline-block}
+.global-nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.global-nav a:focus-visible{outline-color:var(--focus-dark)}
+.header-tools{display:flex;gap:8px;align-items:center}
+.header-tools a{color:#e8e8ed;text-decoration:none;font-size:13px;padding:8px;border-radius:6px}
+.header-tools a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.header-tools a:focus-visible{outline-color:var(--focus-dark)}
+
+/* Search */
+.search-form{position:relative;display:flex;align-items:center}
+.search-form label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.search-form input[type=search]{width:170px;padding:6px 10px;border-radius:8px;border:1px solid #6e6e73;background:#1d1d1f;color:#f5f5f7;font:inherit;font-size:14px}
+.search-form input[type=search]::placeholder{color:#a1a1a6}
+.search-form input[type=search]:focus-visible{outline:3px solid var(--focus-dark);outline-offset:2px}
+.search-form button{margin-left:6px;padding:6px 12px;border-radius:8px;border:1px solid #6e6e73;background:transparent;color:#f5f5f7;font:inherit;font-size:14px;cursor:pointer}
+.search-form button:hover{background:rgba(255,255,255,.1)}
+.search-form button:focus-visible{outline:3px solid var(--focus-dark);outline-offset:2px}
+
+/* Hero tiles */
+.tile{position:relative;text-align:center;overflow:hidden;padding:56px 20px 0}
+.tile.dark{background:var(--black);color:#f5f5f7}
+.tile.light{background:var(--paper);color:var(--ink)}
+.tile h1,.tile h2,.tile h3{margin:0;font-weight:600;letter-spacing:-.01em}
+.tile h1{font-size:clamp(40px,6vw,64px);line-height:1.08}
+.tile h2{font-size:clamp(34px,5vw,56px);line-height:1.1}
+.tile h3{font-size:clamp(28px,3.6vw,40px);line-height:1.12}
+.tile p.sub{margin:8px 0 0;font-size:clamp(20px,2.4vw,28px);font-weight:400}
+.tile p.callout{margin:10px 0 0;font-size:15px;color:var(--muted)}
+.dark p.callout{color:#a1a1a6}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:22px 0 0}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-size:17px;text-decoration:none;border:1px solid var(--blue);background:var(--blue);color:#fff;font-weight:400}
+.btn:hover{background:var(--blue-hover);color:#fff}
+.btn-outline{background:transparent;color:var(--focus-dark);border-color:var(--focus-dark)}
+.dark .btn-outline{color:#2997ff;border-color:#2997ff}
+.btn-outline:hover{background:rgba(41,151,255,.12);color:#58b0ff}
+.light .btn-outline{color:var(--blue);border-color:var(--blue)}
+.light .btn-outline:hover{background:rgba(0,102,204,.08);color:var(--blue-hover)}
+.tile-media{margin:28px auto 0;max-width:1000px}
+.tile-media img{width:100%;height:auto;object-fit:contain}
+.sup-link{font-size:.6em;vertical-align:super}
+.hero-hairline{height:1px}
+
+/* Split tile */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--black);color:#f5f5f7}
+.split>div{padding:56px 28px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.split>div img{max-height:220px;width:auto}
+.split .media{background:#000;padding:0}
+.split .media img{width:100%;height:100%;object-fit:cover;min-height:280px}
+
+/* Promo grid */
+.promo-section{background:var(--paper);padding:20px 0 56px}
+.promo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.promo{background:#fff;border-radius:18px;overflow:hidden;text-align:center;padding:36px 20px 0;display:flex;flex-direction:column;align-items:center}
+.promo.dark{background:var(--black);color:#f5f5f7}
+.promo h3{margin:0;font-size:clamp(26px,3vw,34px);font-weight:600;line-height:1.15}
+.promo p{margin:6px 0 0;font-size:17px;color:var(--muted)}
+.promo.dark p{color:#c7c7cc}
+.promo .ctas{margin-top:16px}
+.promo img{margin-top:20px;max-height:300px;width:100%;object-fit:contain}
+.promo-wide{grid-column:1/-1}
+
+/* Entertainment */
+.entertainment{background:var(--black);color:#f5f5f7;padding:64px 0}
+.entertainment h2{margin:0 0 8px;font-size:clamp(34px,5vw,52px);font-weight:600;text-align:center;letter-spacing:-.01em}
+.entertainment .lead{text-align:center;color:#a1a1a6;margin:0 0 32px}
+.ent-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.ent-card{background:#1d1d1f;border-radius:16px;overflow:hidden;height:100%}
+.ent-card a{display:flex;flex-direction:column;height:100%;text-decoration:none;color:#f5f5f7;padding:20px}
+.ent-card a:hover{background:#262628}
+.ent-card a:focus-visible{outline-color:var(--focus-dark)}
+.ent-card .tag{font-size:13px;color:#a1a1a6;text-transform:uppercase;letter-spacing:.04em}
+.ent-card .title{font-size:21px;font-weight:600;margin:6px 0 4px}
+.ent-card .desc{color:#c7c7cc;font-size:15px;margin:0 0 14px}
+.ent-card .cta{margin-top:auto;color:#2997ff;font-size:15px}
+
+/* Footnotes */
+.footnotes{background:var(--paper);padding:28px 0;border-top:1px solid var(--line)}
+.footnotes ol{margin:0;padding-left:1.4em;font-size:12px;color:var(--muted);line-height:1.45}
+.footnotes li{margin:0 0 8px}
+.footnotes a{color:var(--muted)}
+
+/* Footer */
+.site-footer{background:#f5f5f7;border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:28px 0 36px}
+.site-footer h2{font-size:12px;font-weight:600;color:var(--ink);margin:0 0 6px}
+.footer-directory{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px 28px;margin:0 0 24px;padding:0}
+.footer-directory ul{list-style:none;margin:0;padding:0}
+.footer-directory li{margin:0 0 6px}
+.footer-directory a{color:var(--muted);text-decoration:none}
+.footer-directory a:hover{color:var(--ink);text-decoration:underline}
+.footer-shop{margin:0 0 16px;padding-bottom:16px;border-bottom:1px solid var(--line);font-size:12px}
+.legal{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.legal ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;flex-wrap:wrap}
+.legal a{color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .global-nav{display:none}
+  .global-nav.open{display:block;width:100%}
+  .site-header .wrap{flex-wrap:wrap}
+  .menu-toggle{display:inline-flex}
+}
+.menu-toggle{display:none;background:transparent;color:#f5f5f7;border:1px solid #6e6e73;border-radius:8px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.menu-toggle:focus-visible{outline:3px solid var(--focus-dark);outline-offset:2px}
+@media (max-width:760px){
+  .promo-grid{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .split .media img{min-height:220px}
+  .search-form input[type=search]{width:120px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+<style data-warp-repair="true">.promo:not(.dark) .ctas a.btn-outline { color: #0066cc; border-color: #0066cc; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside aria-label="Choose country or region" class="region-notice">
+<div class="wrap">
+<p>Choose another country or region to see content specific to your location and to shop online.</p>
+<div>
+<a href="https://www.apple.com/choose-country-region/">Choose your country or region</a>
+      · <a href="https://www.apple.com/mx/" hreflang="es-MX" lang="es-MX">México (Español)</a>
+</div>
+</div>
+</aside>
+<header class="site-header">
+<div class="wrap">
+<a aria-label="Apple home" class="brand" href="https://www.apple.com/">Apple</a>
+<button aria-controls="global-nav-list" aria-expanded="false" class="menu-toggle" id="menu-toggle" type="button">Menu</button>
+<nav aria-label="Global" class="global-nav" id="global-nav">
+<ul id="global-nav-list">
+<li><a href="https://www.apple.com/us/shop/goto/store">Store</a></li>
+<li><a href="https://www.apple.com/mac/">Mac</a></li>
+<li><a href="https://www.apple.com/ipad/">iPad</a></li>
+<li><a href="https://www.apple.com/iphone/">iPhone</a></li>
+<li><a href="https://www.apple.com/watch/">Watch</a></li>
+<li><a href="https://www.apple.com/apple-vision-pro/">Vision</a></li>
+<li><a href="https://www.apple.com/airpods/">AirPods</a></li>
+<li><a href="https://www.apple.com/tv-home/">TV &amp; Home</a></li>
+<li><a href="https://www.apple.com/entertainment/">Entertainment</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+<li><a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a></li>
+</ul>
+</nav>
+<div class="header-tools">
+<form action="https://www.apple.com/us/search" class="search-form" method="get" role="search">
+<label for="search-input">Search apple.com</label>
+<input autocomplete="off" id="search-input" name="q" placeholder="Search apple.com" type="search"/>
+<button type="submit">Search</button>
+</form>
+<a href="https://www.apple.com/us/shop/goto/bag">Shopping Bag</a>
+</div>
+</div>
+</header>
+<main id="main">
+<h1 class="visually-hidden">Apple</h1>
+<section aria-labelledby="hero-title" class="tile dark">
+<h2 class="tile-title" id="hero-title" style="font-size:clamp(40px,6vw,64px);font-weight:600;margin:0;line-height:1.08">iPhone 18 Pro</h2>
+<p class="sub">Pro further.</p>
+<div class="ctas">
+<a aria-label="Learn more about iPhone 18 Pro" class="btn" href="https://www.apple.com/iphone-18-pro/">Learn more</a>
+<a aria-label="Buy iPhone 18 Pro" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_18_pro">Buy</a>
+</div>
+<div class="tile-media">
+<img alt="iPhone 18 Pro, burgundy color (dark red), back exterior, Pro Fusion camera system at top, Apple logo in center, Side exterior, Side button, Camera Control, the word Pro written in large silver colored text and glowing with a blue and pink neon effect" src="https://www.apple.com/v/homepage/images/iphone-18-pro/a/hero_iphone_18_pro__fqe1motd0ymy_large.jpg"/>
+</div>
+</section>
+<section aria-labelledby="duo-title" class="tile light" style="padding-bottom:56px">
+<h2 id="duo-title">iPhone Duo</h2>
+<p class="sub">Hello, hello.</p>
+<p class="callout">Pre-order starting 5:00 a.m. PT on 10.16. Available starting 10.23.</p>
+<div class="ctas">
+<a aria-label="Learn more about iPhone Duo" class="btn" href="https://www.apple.com/iphone-duo/">Learn more</a>
+<a aria-label="View pricing for iPhone Duo" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_duo">View pricing</a>
+</div>
+<div class="tile-media">
+<img alt="iPhone Duo, held by two hands in landscape orientation, unfolded, interior display features Home Screen" src="https://www.apple.com/v/homepage/images/iphone-duo/a/hero_iphone_duo_announce__fh4u8yzndpe2_large.jpg"/>
+</div>
+</section>
+<section aria-labelledby="watch-title" class="split">
+<div>
+<h2 class="visually-hidden" id="watch-title">Apple Watch Series 12</h2>
+<p style="font-size:clamp(34px,4.5vw,50px);font-weight:600;margin:0;line-height:1.1">Apple Watch Series 12</p>
+<p style="margin:12px 0 0;font-size:20px">The most accurate heart rate sensing in a wearable.<sup class="sup-link"><a href="#footnote-1" style="color:#2997ff">1</a></sup></p>
+<div class="ctas">
+<a aria-label="Learn more about Apple Watch Series 12" class="btn" href="https://www.apple.com/apple-watch-series-12/">Learn more</a>
+<a aria-label="Buy Apple Watch Series 12" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_watch/apple_watch_series_12">Buy</a>
+</div>
+</div>
+<div class="media">
+<img alt="Two Apple Watch Series 12 devices, aluminum case, dark bronze color, olive Sport Band, one showing front of watch with Heart Rate app, one showing back of watch with Health Sensing System with glowing green LED lights" loading="lazy" src="https://www.apple.com/v/homepage/images/apple-watch-series-12/a/hero_apple_watch_series_12__n9rln7bzvwya_large.jpg"/>
+</div>
+</section>
+<section aria-label="More from Apple" class="promo-section">
+<div class="wrap">
+<div class="promo-grid">
+<article aria-labelledby="p-ultra" class="promo dark">
+<h3 id="p-ultra">Apple Watch Ultra 4</h3>
+<p>A battery you can’t outrun.</p>
+<div class="ctas">
+<a aria-label="Learn more about Apple Watch Ultra 4" class="btn" href="https://www.apple.com/apple-watch-ultra-4/">Learn more</a>
+<a aria-label="Buy Apple Watch Ultra 4" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_watch/apple_watch_ultra_4">Buy</a>
+</div>
+<img alt="Apple Watch Ultra 4, titanium case, natural color, right exterior, Digital Crown, raised side button, digital watch face, translucent gray Ocean Band" loading="lazy" src="https://www.apple.com/v/homepage/images/apple-watch-ultra-4/a/promo_apple_watch_ultra_4__e4r3qertak2u_large.jpg"/>
+</article>
+<article aria-labelledby="p-mba" class="promo">
+<h3 id="p-mba">MacBook Air</h3>
+<p>Now supercharged by M5.</p>
+<div class="ctas">
+<a aria-label="Learn more about MacBook Air with M5" class="btn" href="https://www.apple.com/macbook-air/">Learn more</a>
+<a aria-label="Buy MacBook Air with M5" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_mac/macbook_air">Buy</a>
+</div>
+<img alt="Two open MacBook Air laptops in sky blue color forming arrow shape, emphasizing narrow profile" loading="lazy" src="https://www.apple.com/v/homepage/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large.jpg"/>
+</article>
+<article aria-labelledby="p-ipad" class="promo">
+<h3 id="p-ipad">iPad Air</h3>
+<p>Now supercharged by M4.</p>
+<div class="ctas">
+<a aria-label="Learn more about iPad Air" class="btn" href="https://www.apple.com/ipad-air/">Learn more</a>
+<a aria-label="Buy iPad Air" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_ipad/ipad_air">Buy</a>
+</div>
+<img alt="iPad Air models floating, back exterior, single-lens camera, front exterior, rounded corners, black display bezel" loading="lazy" src="https://www.apple.com/v/homepage/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large.jpg"/>
+</article>
+<article aria-labelledby="p-airpods" class="promo">
+<h3 id="p-airpods">AirPods Pro 3</h3>
+<p>The world’s best in-ear Active Noise Cancellation.</p>
+<div class="ctas">
+<a aria-label="Learn more about AirPods Pro 3" class="btn" href="https://www.apple.com/airpods-pro/">Learn more</a>
+<a aria-label="Buy AirPods Pro 3" class="btn btn-outline" href="https://www.apple.com/us/shop/goto/buy_airpods/airpods_pro_3">Buy</a>
+</div>
+<img alt="AirPods Pro 3, wireless headphones, white color, silicone tips" loading="lazy" src="https://www.apple.com/v/homepage/images/airpods-pro-3/a/promo_airpods_pro_3__e4755qofhnyq_large.jpg"/>
+</article>
+<article aria-labelledby="p-upgrade" class="promo">
+<h3 id="p-upgrade">Apple Upgrade</h3>
+<p>Love it. Lease it. Upgrade it.<sup class="sup-link"><a href="#footnote-2">2</a></sup></p>
+<div class="ctas">
+<a aria-label="Learn more about Apple Upgrade" class="btn" href="https://www.apple.com/us/shop/goto/apple_upgrade">Learn more</a>
+</div>
+<img alt="iPhone 18 Pro, back exterior, iPhone silhouette fans out from behind into spectrum of purple and red colors" loading="lazy" src="https://www.apple.com/v/homepage/images/apple-upgrade/a/promo_apple_upgrade__jvn6udm4tx2e_large.jpg"/>
+</article>
+<article aria-labelledby="p-card" class="promo">
+<h3 id="p-card">Apple Card</h3>
+<p>Get up to 3% Daily Cash back with every purchase.</p>
+<div class="ctas">
+<a aria-label="Learn more about Apple Card" class="btn" href="https://www.apple.com/apple-card/">Learn more</a>
+<a aria-label="Apply now for Apple Card" class="btn btn-outline" href="https://card.apple.com/apply/application?referrer=cid%3Dapy-200-10000036&amp;start=false">Apply now</a>
+</div>
+<img alt="Apple Card, front, Apple logo in top left, cardholder name in middle left, card chip in middle right." loading="lazy" src="https://www.apple.com/v/homepage/images/apple-card/a/promo_apple_card__d8xz4kd4evwy_large.jpg"/>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="ent-title" class="entertainment">
+<div class="wrap">
+<h2 id="ent-title">Endless entertainment.</h2>
+<p class="lead">Stream, play, and listen with Apple services.</p>
+<ul class="ent-grid">
+<li class="ent-card"><a href="https://tv.apple.com/us/movie/matchbox-the-movie/umc.cmc.31qa8j1tn2cnpyk3fx43w928d?l=en-US?itscg=10000&amp;itsct=atv-apl_hp-stream_now--220622"><span class="tag">Action</span><span class="title">Matchbox The Movie</span><span class="desc">Save the world, bring your friends.</span><span class="cta">Stream now</span></a></li>
+<li class="ent-card"><a href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy?l=en-US?itscg=10000&amp;itsct=atv-apl_hp-stream_now--220622"><span class="tag">Comedy</span><span class="title">Ted Lasso</span><span class="desc">The hit comedy is back and Tedder than ever.</span><span class="cta">Stream now</span></a></li>
+<li class="ent-card"><a href="https://tv.apple.com/us/room/formula-1/uts.room.formula-1?itscg=10000&amp;itsct=atv-apl_hp-stream_now--220622"><span class="tag">Sports</span><span class="title">F1 on Apple TV</span><span class="desc">Every Grand Prix™, live and on demand—all in one place, all year long.</span><span class="cta">Stream now</span></a></li>
+<li class="ent-card"><a href="https://tv.apple.com/us/channel/mls/tvs.sbd.7000?itscg=10000&amp;itsct=atv-apl_hp-stream_now--220622"><span class="tag">Sports</span><span class="title">MLS on Apple TV</span><span class="desc">Watch every club, every match, live—all season long.</span><span class="cta">Stream now</span></a></li>
+<li class="ent-card"><a href="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o?l=en-US?itscg=10000&amp;itsct=atv-apl_hp-stream_now--220622"><span class="tag">Thriller</span><span class="title">Slow Horses</span><span class="desc">MI5’s most unruly spies are back and under attack.</span><span class="cta">Stream now</span></a></li>
+<li class="ent-card"><a href="https://apps.apple.com/us/app/hello-kitty-island-adventure/id1553505132?itscg=10000&amp;itsct=aa-apl_hp-play_now--240326"><span class="tag">Arcade</span><span class="title">Hello Kitty Island Adventure</span><span class="desc">Play now on Apple Arcade.</span><span class="cta">Play now</span></a></li>
+<li class="ent-card"><a href="https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb?itscg=10000&amp;itsct=am-apl_hp-listen_now--240326"><span class="tag">Music</span><span class="title">Today’s Hits</span><span class="desc">Listen to the songs everyone is playing.</span><span class="cta">Listen now</span></a></li>
+<li class="ent-card"><a href="https://fitness.apple.com/us/studio-collection/join-the-team-with-ted-lasso/1673607671?itscg=10000&amp;itsct=afp-apl_hp-watch_now--240326"><span class="tag">Fitness+</span><span class="title">Join the Team with “Ted Lasso”</span><span class="desc">Workouts from the world of Ted Lasso.</span><span class="cta">Watch now</span></a></li>
+</ul>
+</div>
+</section>
+</main>
+<section aria-labelledby="footnotes-title" class="footnotes">
+<div class="wrap">
+<h2 class="visually-hidden" id="footnotes-title">Footnotes</h2>
+<ol>
+<li id="footnote-1">Based on data from an Apple-conducted study of heart rate accuracy, during July and August 2026, utilizing commercially available best-selling wearables available as of June 2026. For more information, visit <a href="https://www.apple.com/HRAccuracy/">apple.com/HRAccuracy</a>.</li>
+<li id="footnote-2">Apple Upgrade is a device leasing program available in the U.S. (excluding U.S. territories). Leases are provided by Klarna: subject to eligibility and credit approval, including final approval at checkout. Device must be in good condition upon return; damage fees may apply. Additional eligibility criteria and exclusions apply.</li>
+<li>A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV.</li>
+<li>Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.</li>
+</ol>
+</div>
+</section>
+<footer aria-labelledby="footer-title" class="site-footer">
+<div class="wrap">
+<h2 class="visually-hidden" id="footer-title">Apple Footer</h2>
+<p class="footer-shop">More ways to shop: <a href="https://www.apple.com/retail/">Find an Apple Store</a> or <a href="https://locate.apple.com/">other retailer</a> near you. Or call <a href="tel:1-800-692-7753">1-800-MY-APPLE</a> (1-800-692-7753).</p>
+<nav aria-label="Apple Directory">
+<div class="footer-directory">
+<div>
+<h2>Shop and Learn</h2>
+<ul>
+<li><a href="https://www.apple.com/us/shop/goto/store">Store</a></li>
+<li><a href="https://www.apple.com/mac/">Mac</a></li>
+<li><a href="https://www.apple.com/ipad/">iPad</a></li>
+<li><a href="https://www.apple.com/iphone/">iPhone</a></li>
+<li><a href="https://www.apple.com/watch/">Watch</a></li>
+<li><a href="https://www.apple.com/apple-vision-pro/">Vision</a></li>
+<li><a href="https://www.apple.com/airpods/">AirPods</a></li>
+<li><a href="https://www.apple.com/tv-home/">TV &amp; Home</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/giftcards">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h2>Account and Wallet</h2>
+<ul>
+<li><a href="https://www.apple.com/wallet/">Wallet</a></li>
+<li><a href="https://www.apple.com/apple-card/">Apple Card</a></li>
+<li><a href="https://www.apple.com/apple-pay/">Apple Pay</a></li>
+<li><a href="https://account.apple.com/">Manage Your Apple Account</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/account">Apple Store Account</a></li>
+<li><a href="https://www.icloud.com">iCloud.com</a></li>
+</ul>
+</div>
+<div>
+<h2>Entertainment</h2>
+<ul>
+<li><a href="https://www.apple.com/apple-one/">Apple One</a></li>
+<li><a href="https://www.apple.com/apple-tv/">Apple TV</a></li>
+<li><a href="https://www.apple.com/apple-music/">Apple Music</a></li>
+<li><a href="https://www.apple.com/apple-arcade/">Apple Arcade</a></li>
+<li><a href="https://www.apple.com/apple-fitness-plus/">Apple Fitness+</a></li>
+<li><a href="https://www.apple.com/apple-news/">Apple News+</a></li>
+<li><a href="https://www.apple.com/apple-podcasts/">Apple Podcasts</a></li>
+<li><a href="https://www.apple.com/apple-books/">Apple Books</a></li>
+<li><a href="https://www.apple.com/app-store/">App Store</a></li>
+</ul>
+</div>
+<div>
+<h2>Apple Store</h2>
+<ul>
+<li><a href="https://www.apple.com/retail/">Find a Store</a></li>
+<li><a href="https://www.apple.com/retail/geniusbar/">Genius Bar</a></li>
+<li><a href="https://www.apple.com/today/">Today at Apple</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/special_deals">Certified Refurbished</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/apple_upgrade">Apple Upgrade</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/trade_in">Apple Trade In</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/payment_plan">Financing</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/order/list">Order Status</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/help">Shopping Help</a></li>
+</ul>
+</div>
+<div>
+<h2>For Business and Education</h2>
+<ul>
+<li><a href="https://www.apple.com/business/">Apple and Business</a></li>
+<li><a href="https://www.apple.com/education/">Apple and Education</a></li>
+<li><a href="https://www.apple.com/healthcare/">Apple and Healthcare</a></li>
+<li><a href="https://www.apple.com/government/">Apple and Government</a></li>
+</ul>
+</div>
+<div>
+<h2>About Apple</h2>
+<ul>
+<li><a href="https://www.apple.com/accessibility/">Accessibility</a></li>
+<li><a href="https://www.apple.com/environment/">Environment</a></li>
+<li><a href="https://www.apple.com/privacy/">Privacy</a></li>
+<li><a href="https://www.apple.com/newsroom/">Newsroom</a></li>
+<li><a href="https://www.apple.com/careers/us/">Career Opportunities</a></li>
+<li><a href="https://www.apple.com/contact/">Contact Apple</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="legal">
+<p style="margin:0">Copyright © 2026 Apple Inc. All rights reserved.</p>
+<ul>
+<li><a href="https://www.apple.com/legal/privacy/">Privacy Policy</a></li>
+<li><a href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a></li>
+<li><a href="https://www.apple.com/us/shop/goto/help/sales_refunds">Sales and Refunds</a></li>
+<li><a href="https://www.apple.com/legal/">Legal</a></li>
+<li><a href="https://www.apple.com/sitemap/">Site Map</a></li>
+<li><a href="https://www.apple.com/choose-country-region/">United States</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+(function(){
+  var btn=document.getElementById('menu-toggle');
+  var nav=document.getElementById('global-nav');
+  if(!btn||!nav)return;
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.textContent=open?'Close':'Menu';
+  });
+})();
+</script>
+</body>
+</html>

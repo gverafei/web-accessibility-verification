@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>PHP: Hypertext Preprocessor</title>
+<meta content="PHP is a popular general-purpose scripting language that powers everything from your blog to the most popular websites in the world." name="description"/>
+<link href="https://www.php.net/index.php" rel="canonical"/>
+<link href="https://www.php.net/releases/feed.php" rel="alternate" title="PHP Release feed" type="application/atom+xml"/>
+<link href="https://www.php.net/feed.atom" rel="alternate" title="PHP: Hypertext Preprocessor" type="application/atom+xml"/>
+<link href="https://www.php.net/favicon.svg?v=2" rel="icon" type="image/svg+xml"/>
+<style>
+  :root {
+    --bg: #2b2d3a;
+    --panel: #f3f4f7;
+    --ink: #1d1f27;
+    --muted: #4a4d5c;
+    --brand: #4f5b93;
+    --brand-dark: #3b4577;
+    --brand-text: #ffffff;
+    --link: #2d4a9e;
+    --focus: #ffbf47;
+    --light-text: #e8e9f0;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--light-text);
+    background: var(--bg);
+  }
+  a { color: var(--link); }
+  .light a { color: var(--link); }
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute; left: 1rem; top: -4rem;
+    background: #fff; color: var(--ink); padding: .5rem 1rem; border-radius: 6px; z-index: 100;
+  }
+  .skip-link:focus { top: 1rem; }
+  .visually-hidden {
+    position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+
+  /* Header */
+  .site-header { background: var(--brand); color: var(--brand-text); }
+  .site-header__inner {
+    max-width: 1200px; margin: 0 auto; padding: .6rem 1rem;
+    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  .brand img { display: block; height: 40px; width: auto; }
+  .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+  .main-nav a { color: var(--brand-text); text-decoration: none; padding: .35rem .5rem; border-radius: 6px; display: inline-block; }
+  .main-nav a:hover, .main-nav a:focus-visible { background: var(--brand-dark); }
+  .main-nav .release img { height: 28px; width: auto; vertical-align: middle; }
+  .search { margin-left: auto; min-width: 220px; flex: 0 1 280px; }
+  .search form { display: flex; align-items: center; background: #3f4a80; border-radius: 8px; padding: 0 .6rem; }
+  .search label { display: flex; }
+  .search input[type="search"] {
+    flex: 1; background: transparent; border: 0; color: #fff; font: inherit; padding: .5rem .4rem; min-width: 0;
+  }
+  .search input::placeholder { color: #d6d9ea; }
+  .search svg { width: 18px; height: 18px; color: #fff; }
+
+  /* Hero */
+  .hero { text-align: center; padding: 2.5rem 1rem 2rem; }
+  .hero__logo { width: 240px; height: auto; max-width: 60%; }
+  .hero__text { font-size: 1.2rem; max-width: 46rem; margin: 1.2rem auto 1.5rem; color: var(--light-text); }
+  .hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: .7rem 1.5rem; border-radius: 999px; text-decoration: none; font-size: 1.1rem; border: 2px solid var(--brand);
+  }
+  .btn--primary { background: var(--brand); color: #fff; }
+  .btn--primary:hover { background: var(--brand-dark); }
+  .btn--secondary { color: #fff; background: transparent; border-color: #8c93bd; }
+  .btn--secondary:hover { background: #3a3d4f; }
+  .versions {
+    list-style: none; margin: 2rem auto 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 0;
+    max-width: 60rem;
+  }
+  .versions li { padding: 0 1rem; border-left: 1px solid #55596e; }
+  .versions li:first-child { border-left: 0; }
+  .versions a.ver { color: #fff; font-weight: 600; }
+  .versions a.sub { color: #c9cde0; font-size: .9rem; }
+
+  /* Layout */
+  .layout {
+    max-width: 1200px; margin: 0 auto; padding: 1rem;
+    display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr); gap: 1.5rem;
+  }
+  .panel-main, .panel-side { background: var(--panel); color: var(--ink); border-radius: var(--radius); }
+  .panel-main { padding: 1.5rem 1.75rem; }
+  .news-item + .news-item { border-top: 1px solid #cfd2dc; margin-top: 1.5rem; padding-top: 1.5rem; }
+  .news-item h2 { font-size: 1.4rem; margin: 0 0 .3rem; font-weight: 500; }
+  .news-item h2 a { color: var(--link); }
+  .news-item time { color: var(--muted); font-size: .95rem; display: block; margin-bottom: .4rem; }
+  .news-item p { margin: .6rem 0; color: var(--ink); }
+  .news-item details summary { cursor: pointer; color: var(--link); font-weight: 600; margin-top: .4rem; }
+  .archive-link { margin-top: 1.5rem; }
+  .archive-link a { font-weight: 600; }
+
+  .panel-side { padding: 1.25rem 1.3rem; align-self: start; }
+  .panel-side section + section { margin-top: 1.5rem; border-top: 1px solid #cfd2dc; padding-top: 1.2rem; }
+  .panel-side h2 { font-size: 1.15rem; margin: 0 0 .5rem; font-weight: 500; }
+  .panel-side ul { padding-left: 1.2rem; margin: .4rem 0; }
+  .btn-donate {
+    display: inline-block; margin-top: .5rem; background: var(--brand); color: #fff; padding: .4rem 1rem; border-radius: 999px; text-decoration: none;
+  }
+  .social a { color: var(--link); }
+
+  /* Footer */
+  footer { background: #1f2029; color: #c9cde0; margin-top: 2rem; padding: 1.5rem 1rem; }
+  footer ul { list-style: none; margin: 0 auto; padding: 0; max-width: 1200px; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+  footer a { color: #e0e4f5; }
+
+  /* Keyboard shortcuts disclosure */
+  .shortcuts dl { margin: .4rem 0 0; display: grid; grid-template-columns: max-content 1fr; gap: .2rem .8rem; }
+  .shortcuts dt kbd { background: #e3e5ec; border-radius: 4px; padding: 0 .3rem; color: var(--ink); }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; }
+    .search { margin-left: 0; width: 100%; flex-basis: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="brand" href="https://www.php.net/">
+<img alt="PHP home" height="40" src="https://www.php.net/images/logos/php-logo-white.svg" width="80"/>
+</a>
+<nav aria-label="Main" class="main-nav">
+<ul>
+<li><a href="https://www.php.net/downloads.php">Downloads</a></li>
+<li><a href="https://www.php.net/docs.php">Documentation</a></li>
+<li><a href="https://www.php.net/get-involved.php">Get Involved</a></li>
+<li><a href="https://www.php.net/support.php">Help</a></li>
+<li><a class="release" href="https://www.php.net/releases/8.5/index.php"><img alt="What's new in PHP 8.5" src="https://www.php.net/images/php8/logo_php8_5.svg"/></a></li>
+</ul>
+</nav>
+<div class="search" role="search">
+<form action="https://www.php.net/manual-lookup.php" method="get">
+<label class="visually-hidden" for="search-input">Search docs</label>
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+<input id="search-input" name="pattern" placeholder="Search docs" type="search"/>
+<input name="scope" type="hidden" value="quickref"/>
+</form>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="intro-title" class="hero">
+<h1 class="visually-hidden" id="intro-title">PHP</h1>
+<img alt="PHP" class="hero__logo" height="120" src="https://www.php.net/images/logos/php-logo-white.svg" width="240"/>
+<p class="hero__text">A <strong>popular general-purpose scripting language</strong> that is especially suited to web development.<br/>Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.</p>
+<div class="hero__actions">
+<a class="btn btn--primary" href="https://www.php.net/releases/8.5/index.php">What's new in 8.5</a>
+<a class="btn btn--secondary" href="https://www.php.net/downloads.php">Download</a>
+</div>
+<ul aria-label="Current supported versions" class="versions">
+<li><a class="ver" href="https://www.php.net/downloads.php?version=8.5">8.5.11</a> · <a class="sub" href="https://www.php.net/ChangeLog-8.php#8.5.11">Changelog</a> · <a class="sub" href="https://www.php.net/migration85">Upgrading</a></li>
+<li><a class="ver" href="https://www.php.net/downloads.php?version=8.4">8.4.26</a> · <a class="sub" href="https://www.php.net/ChangeLog-8.php#8.4.26">Changelog</a> · <a class="sub" href="https://www.php.net/migration84">Upgrading</a></li>
+<li><a class="ver" href="https://www.php.net/downloads.php?version=8.3">8.3.35</a> · <a class="sub" href="https://www.php.net/ChangeLog-8.php#8.3.35">Changelog</a> · <a class="sub" href="https://www.php.net/migration83">Upgrading</a></li>
+<li><a class="ver" href="https://www.php.net/downloads.php?version=8.2">8.2.34</a> · <a class="sub" href="https://www.php.net/ChangeLog-8.php#8.2.34">Changelog</a> · <a class="sub" href="https://www.php.net/migration82">Upgrading</a></li>
+</ul>
+</section>
+<div class="layout">
+<section aria-labelledby="news-heading" class="panel-main">
+<h2 class="visually-hidden" id="news-heading">News</h2>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-10-08-1">PHP 8.6.0 RC3 available for testing</a></h2>
+<time datetime="2026-10-08T15:12:35+00:00">08 Oct 2026</time>
+<p>The PHP team is pleased to announce the first release candidate of PHP 8.6.0, RC3. This continues the PHP 8.6 release cycle, whose rough outline is specified in the <a href="https://wiki.php.net/todo/php86">PHP Wiki</a>.</p>
+<p>Source downloads of PHP 8.6.0 RC3 are available on the <a href="https://downloads.php.net/~svpernova09/">download page</a>.</p>
+<p>Please carefully test this version and report any issues found in the <a href="https://github.com/php/php-src/issues/new?template=bug_report.yml">GitHub Issues</a>.</p>
+<p><strong>Please DO NOT use this version in production, it is an early test version.</strong></p>
+<p>For more information on the new features and other changes, you can read the <a href="https://github.com/php/php-src/blob/php-8.6.0RC3/NEWS">NEWS</a> file, or the <a href="https://github.com/php/php-src/blob/php-8.6.0RC3/UPGRADING">UPGRADING</a> file for a complete list of upgrading notes.</p>
+<p>The next release will be RC4, planned for 22 October 2026.</p>
+</article>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-09-24-5">PHP 8.4.26 Released!</a></h2>
+<time datetime="2026-09-24T15:26:06+00:00">24 Sep 2026</time>
+<p>The PHP development team announces the immediate availability of PHP 8.4.26. This is a security release. All PHP 8.4 users are encouraged to upgrade to this version.</p>
+<p>For source downloads visit our <a href="https://www.php.net/downloads.php">downloads page</a>. Windows source and binaries can also be found <a href="https://www.php.net/downloads.php?os=windows&amp;version=8.4">there</a>. The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.4.26">ChangeLog</a>.</p>
+</article>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-09-24-4">PHP 8.2.34 Released!</a></h2>
+<time datetime="2026-09-24T13:53:04+00:00">24 Sep 2026</time>
+<p>The PHP development team announces the immediate availability of PHP 8.2.34. This is a security release. All PHP 8.2 users are encouraged to upgrade to this version.</p>
+<p>For source downloads visit our <a href="https://www.php.net/downloads.php">downloads page</a>. Windows source and binaries can also be found <a href="https://www.php.net/downloads.php?os=windows&amp;version=8.2">there</a>. The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.2.34">ChangeLog</a>.</p>
+</article>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-09-24-3">PHP 8.5.11 Released!</a></h2>
+<time datetime="2026-09-24T11:40:51+00:00">24 Sep 2026</time>
+<p>The PHP development team announces the immediate availability of PHP 8.5.11. This is a security release. All PHP 8.5 users are encouraged to upgrade to this version.</p>
+<p>For source downloads visit our <a href="https://www.php.net/downloads.php">downloads page</a>. Windows source and binaries can also be found <a href="https://www.php.net/downloads.php?os=windows&amp;version=8.5">there</a>. The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.5.11">ChangeLog</a>.</p>
+</article>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-09-24-2">PHP 8.3.35 Released!</a></h2>
+<time datetime="2026-09-24T09:51:44+00:00">24 Sep 2026</time>
+<p>The PHP development team announces the immediate availability of PHP 8.3.35. This is a security release. All PHP 8.3 users are encouraged to upgrade to this version.</p>
+<p>For source downloads visit our <a href="https://www.php.net/downloads.php">downloads page</a>. Windows source and binaries can also be found <a href="https://www.php.net/downloads.php?os=windows&amp;version=8.3">there</a>. The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.3.35">ChangeLog</a>.</p>
+</article>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-09-24-1">PHP 8.6.0 RC2 available for testing</a></h2>
+<time datetime="2026-09-24T08:21:25+00:00">24 Sep 2026</time>
+<details>
+<summary>Read the full RC2 announcement</summary>
+<p>The PHP team is pleased to announce the first release candidate of PHP 8.6.0, RC2. It is not a typo: a mistake was made while packaging RC1, so RC2 was released instead. For a full explanation, see this <a href="https://scherzer.dev/Blog/20260923-no-php86-rc-1">blog post</a>. This continues the PHP 8.6 release cycle, whose rough outline is specified in the <a href="https://wiki.php.net/todo/php86">PHP Wiki</a>.</p>
+<p>Source downloads of PHP 8.6.0 RC2 are available on the <a href="https://downloads.php.net/~mbeccati/">download page</a>.</p>
+<p>Please carefully test this version and report any issues found in the <a href="https://github.com/php/php-src/issues/new?template=bug_report.yml">GitHub Issues</a>.</p>
+<p><strong>Please DO NOT use this version in production, it is an early test version.</strong></p>
+<p>The next release will be RC3, planned for 8 October 2026.</p>
+</details>
+</article>
+<article class="news-item">
+<h2><a href="https://www.php.net/archive/2026.php#2026-08-25-1">Last Call for the State of PHP Survey</a></h2>
+<time datetime="2026-08-25T08:38:33+00:00">25 Aug 2026</time>
+<p>The <a href="https://surveys.jetbrains.com/s3/phpnet-state-of-php-2026">State of PHP survey</a> is still open, but not for much longer. It asks how PHP is working for you and takes around 15 minutes. The survey is run by <a href="https://thephp.foundation/">The PHP Foundation</a> in partnership with <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a> by JetBrains.</p>
+</article>
+<p class="archive-link"><a href="https://www.php.net/archive/">Older News Entries</a></p>
+</section>
+<aside aria-label="Community and events" class="panel-side">
+<section aria-labelledby="foundation-heading">
+<h2 id="foundation-heading"><a href="https://thephp.foundation/">The PHP Foundation</a></h2>
+<p>The PHP Foundation is a collective of people and organizations, united in the mission to ensure the long-term prosperity of the PHP language.</p>
+<a class="btn-donate" href="https://thephp.foundation/donate/" rel="noopener noreferrer" target="_blank">Donate<span class="visually-hidden"> (opens in a new tab)</span></a>
+</section>
+<section aria-labelledby="cfp-heading">
+<h2 id="cfp-heading"><a href="https://www.php.net/conferences">Conferences calling for papers</a></h2>
+<ul>
+<li><a href="https://www.php.net/conferences/index.php#2026-09-11-1">Dutch PHP Conference 2027</a></li>
+<li><a href="https://www.php.net/conferences/index.php#2026-09-09-1">PHPBenelux Conference 2027, Antwerp Belgium</a></li>
+<li><a href="https://www.php.net/conferences/index.php#2026-07-07-1">PHP Tek 2027</a></li>
+</ul>
+</section>
+<section aria-labelledby="upcoming-heading">
+<h2 id="upcoming-heading"><a href="https://www.php.net/conferences">Upcoming conferences</a></h2>
+<ul>
+<li><a href="https://www.php.net/conferences/index.php#2026-09-09-2">PHPBenelux Conference 2027, Antwerp Belgium</a></li>
+<li><a href="https://www.php.net/conferences/index.php#2026-07-13-1">International PHP Conference Munich 2026</a></li>
+</ul>
+</section>
+<section aria-label="More">
+<p><a href="https://www.php.net/cal.php">User Group Events</a></p>
+<p><a href="https://www.php.net/thanks.php">Special Thanks</a></p>
+</section>
+<section aria-labelledby="social-heading" class="social">
+<h2 id="social-heading">Social media</h2>
+<ul>
+<li><a href="https://twitter.com/official_php" rel="noopener noreferrer" target="_blank">@official_php<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li><a href="https://fosstodon.org/@php" rel="noopener noreferrer" target="_blank">@php@fosstodon.org<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+<li><a href="https://www.linkedin.com/company/phpnet" rel="noopener noreferrer" target="_blank">@phpnet<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+</ul>
+</section>
+<section aria-labelledby="shortcuts-heading" class="shortcuts">
+<details>
+<summary id="shortcuts-heading">Keyboard shortcuts</summary>
+<dl>
+<dt><kbd>/</kbd></dt><dd>Focus search box</dd>
+<dt><kbd>?</kbd></dt><dd>Show help</dd>
+<dt><kbd>g</kbd> <kbd>h</kbd></dt><dd>Go to homepage</dd>
+</dl>
+</details>
+</section>
+</aside>
+</div>
+</main>
+<footer>
+<nav aria-label="Footer">
+<ul>
+<li><a href="https://www.php.net/copyright.php">Copyright © 2001-2026 The PHP Group</a></li>
+<li><a href="https://www.php.net/my.php">My PHP.net</a></li>
+<li><a href="https://www.php.net/contact.php">Contact</a></li>
+<li><a href="https://www.php.net/sites.php">Other PHP.net sites</a></li>
+<li><a href="https://www.php.net/privacy.php">Privacy policy</a></li>
+<li><a href="https://github.com/php/web-php/blob/master/public/index.php">View Source</a></li>
+</ul>
+</nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible editorial stories and page content match across the corresponding regions. The missing \u201cClick to Explore\u201d overlay appears within a banner-like region associated with advertising and is excluded under the materiality policy.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core content is legible and coherently arranged in both target views. The editorial imagery, headlines, and section layout are preserved.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible editorial controls and the archive prompt are present and understandable. The differing banner call-to-action is in an advertising-associated region and is not an essential page control.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views form a coherent reference/target comparison; the localized banner difference does not make the evidence set incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains coherent editorial headlines, imagery, section labeling, and archive-prompt meaning. The banner difference does not undermine the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating banner effectiveness**\n\nI need to assess the images. The first two images are exact, while the third one seems to differ by missing an orange \"Click to Explore\" button on the banner. I'm wondering if that's essential because it appears to be a promotional call to action. The context suggests this is an ad. There's also a screenshot of an artwork showing a CTA that isn't present in the target image, making its purpose unclear. It could be linked to an animated ad creative.**Analyzing advertisement context**\n\nI'm considering the context that labels an advertisement just before the y8000 mark; the image at y9000 likely represents an ad unit with a call to action (CTA). If the CTA is missing, it probably means the advertisement doesn't meet certain criteria. I need to ensure all elements align correctly and that the evidence is coherent. I'll document my findings in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating banner effectiveness**\n\nI need to assess the images. The first two images are exact, while the third one seems to differ by missing an orange \"Click to Explore\" button on the banner. I'm wondering if that's essential because it appears to be a promotional call to action. The context suggests this is an ad. There's also a screenshot of an artwork showing a CTA that isn't present in the target image, making its purpose unclear. It could be linked to an animated ad creative.**Analyzing advertisement context**\n\nI'm considering the context that labels an advertisement just before the y8000 mark; the image at y9000 likely represents an ad unit with a call to action (CTA). If the CTA is missing, it probably means the advertisement doesn't meet certain criteria. I need to ensure all elements align correctly and that the evidence is coherent. I'll document my findings in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgKgj4nsyz1vsu0CqdPJ0Iyo7OigrE53oJQXSuWNhw2KpmBo1iS-OQLxrYLkiRs_G8xpsZsbynQhfHF7wO2kHfGYGATQoIJYiUSIletT0tOuta4igOGuxhK2agP0QEJLLgMP9ECb3rbvIOf9Ko1EBKiOoyFHgEz-CeLN5HvwwABfDqPJ_kwJb9ZSsVZ3Qbw1QJ0tgilGkNt34HkEGc_dT9k-UuRYBxh6ZXvzMQ9dNDNjl2nNdBv1vB3xuTb5OA42Xkere8nDXo3cQE61jJVm6WcNHyPtXXee7byYgel6YSie-Oc3ibExOEAfi9fNBhxbnigHa_HG-pr5gDxpWBoUiLt47wogqmxTKvaL1NetrXCs3dGfaSXacHlrs4oaDzoyMoxOvc1nJ_HpkUlLlonzDyvMcPTWvyugdBLWqr_nCGZ1CpHKy4XLDdYSEXPIvhWa7OrGaR5Fs1bjmQ2-cy5jM5O5Uhsy_4XYNM9qt2Y9IeRyCsmF3Xyf7zpiAFMroDo7nVyjVPSoZ4Hq0E3Gs6pHHhPxlzpyx-n6a5sHkQhyPqnlKrzoCf5-zLWNko2OO-znBJPsOwNDpdEtBQBURV_6tYsBeHC4ruj_wkm8OY-rerhYW1sFJqs143QQHe4c3jX8-eEsdooPv_zPwWlQzm_5Wyx1U68dWsxK5mC0EaI3Nu6-ovcw3SHmp-qs_G0CQQ3G5P0uhJB7FHvLJIx-TQsNYcnVyN6_F2deKoMc8mZoSO3jb0cuLeBIbzP43pYrIxgXtKn4vnbBWCHtLryt45fESk03XjNbK87t1HSpRoEfXhQWg8sW02bobdnwsHXh6sitP88u1yVTvzMfHMuEo4cza3XJaLVzFMKYdlggPwqQ-7q2BH6xlIG--XsEW2NKSRDgPsQ7dqyc4Sn4F2nHdHeZGq5yVCpPZyT17X8wNtlTeiSSiUq-k7iF_1ziq12w5vBsHHZHbwvA08BJ3oqsFYwLC-Znu8SmGpvPlxJLiQfO7-ZO1S4R2B9OKkajtl4IxX5FmV5gh4lynjdjlh397tIar2Uk_TWPrC0Vel6nAzbU_SGKvlGlwbOPtmWM2shZndm2V9sl5oWfdUHQSavQI1ELFZTOOAd_96QtBYOQR_RR-Wbycvl5eN4l4LB71IGN2HUnfmgm_pzyGe642PhCL_5NzIbMnj80KotywlpM36ny8nnQ7cIf9B9dezULDRobu_e5-Q3SEv3vHKtVeOajRfc9p9BYiwkXH3-KDFTSjw6cc0ZxA859fdfu5uHs6rpLnxrMwfFF_n0K2aFlTA4wVG_8JGW_ARJiXnMW5T0MJriyGuGNnngOifdWAcM-Cf8XVrLFXjHj0rITWcG8cUv3MWhLJMYH1vIZ0w200vF4AiMuXilrLyNRd7XfV8s-cl6rndGhYj_dINP3sMFh8z1Q51lbdAU6Yg7aymbPVNykH2EHT0uST_uOGHPx6ZlsAFaKfA8BMH60dN9osrlS6238_UTPqtJzs5tIJiFrxIrOUI5q4GpRzk-c2Pqyx6i5QDvcG2d9HpPUXh4qalsUD8dwxcNUEvfor7vWwWIHEIpAY1Bi7PLnvIngWZTnqGjoveMgUsRaLAA0tDahSagS4SD9vMbCORN749YE3o_CqBRHm9tblwuBmYFDARDSsdeTfi2J6F_ktGTtd9WEeMoZs_Mha8Xf_8zP81R86X5hTNUbLA4u3rXoKieT_WlfIPjxgVoXUC7rPdMS1lK-gu15NazYs5QJFBvHeI9OFVc1216vbxj6z1R0xhvwhnL2evU7G7uTS7BFjGPi2WfRhfz-Buq1go3ygkVZYPIzLpOncHX7QNJ3WDdAzeVhm8Uw4vtkvMRyeoOZi-fg7LpNXgak2XZ0s5pbOZxv7krQkbH7XysidiSK3mOIVB-WJIBZijkqbYTdxuK3-iCPCB3dkofFVC48ndwt491Ec05eMZPQj5_uwRtTmJ1Q2QdoRbU3q8r1gv9Opls8CSimTw8Cetu6cxCY9zMgrKU8eA9HlI2oKl4pYIj4M33OLII0dO5RjdirgImoJaVOA8Grdv4DiYJFaJiJqUt04m9MWRnkECfEWkTuFUS0sQh2lZikmFkve_PsFYCgRTAeJ1QaUZCbxML7pB7Y0k2RqJbVoLuv5bCqQxTqcq5oE95KrhsOLqhXasNU0mrN0gMNtW-QM5QJLn8eKrgE9VFbU5ZqUXSht9mGBEftVX9k92CkkpQED_WfebTZymx-Cf3jXI0P4FbKrlXU_PpZwcBL9ZPgQT__jsTOJDjiQ37VvRJID9HENAB5QcOh1AHQHjhIfBz9_ds7v1MMeurMXQjYUJDvYYLx-LB3Ga1jrUGpdEZGMUZ51HqbUyS5Hn6DWTMEgmvr-YyKrKVaO7SykYkqViIgWRB90UKgMWhXSsOBya0k8Ez6iQEtGWvwc1oLsl5NyMRrfTwzeAGT2wjWl81921f45VkcHoYTr-E2CAiBjLAuuHuYeR6D09nrO4Z7vmtT7grwV24r9MEU1DQMCtT6V1lJPKgCEolwfJhAM17RQTQznsxg9k2Bqq0nPeSJVVO0UAmufVjdWLvalv1QgdVnpzd4OJKg-BHPQ1BpkU4d-up5QQTkGerJbRP0CqZ2_dc7qANsxNnuZX9IYYB2m4pVXziDFVhImo68TFyEzlCm_-Gu9feRgoFDvqgXAdsF827yXcLmY0fmldbMS6YsZ6anMLv9KCqpTT1PMf_yWYRNcbbh--FscVcjMUuFQXiG0NOAnwipIAMrfdV-ZVVMDHyKHKTKdZt7eGx-Ea4SqRCq5DA7vbCc6ex58COgpK-ZLRL62rkEsxbk556LXPPoqhrhPjqeHEVKSkSXtjZo03jN1nlqQGNVXjHoonckxcNe3KJLjH4J-nEinRmBCB_LXcCFD7U1Kz6q--NZF2IFWoEkvoGyzRTEYZ5wIaFJw0rT6AxuE7bcy59Aoea5LZNBW0BBBOh1eAne7FI2zaGa4a1M63usDz61VqjXOm5xLqkZI7hi80Uk0qVg0nfFOQoY_JffHsUF1NMdUTaudAsnUR23AWsX2okPp10kz45cYiIpTGWvzVg2lE7TBYtA5cJGZWbbLXNW51wt0Lt5fUNW6330ome4xQvakZ_TFD1SsmkqmnuT09FzO8cN6AuPyz0YemyKkFnPq5Ep3BHLgrH88q2ATz1HUOvx_I7Ihx6fsqiLrJ4rXeiM7Eu03TjlN3vIwdZOrMuNrJ7i5RLUX68R5irVmLtKqZmTJhac-hZXOZjR7HSwo5NB95A9PCU9ASds733B1bhvmb60xoS_XyJKLQ73q2XXBqtNNnxX3zf6Ll1iVCNYhrmM3D2_OmHdcfW437icYV9nqb4BbcXP4LdMygkmda0vd5NAwlZpuctgJQj2UIdgZ7mGnBQFhL5hbDwTuWQ_VzgYN-R1taO7f7efGb9WLchN57wfo0rfal6NNBWeLRPOPlt1cOdQYb6DMsF4G9BC5YH3yRr_5E4XBwwOv5szywepUs0pqbR9yDVTIb1IBkbwnzDB2D8zXLPLoRtku0NoDr-51VHsFFakkhHyy2M10SUndcZle9qJCC-fQzKEipbdELFe3w5LXTsQOeTvnWZv7Qycz9VRb81fXCIqWg4oh-jO7ySfqZKjZlM1bE8soBTjLYjDqsKlO5xCi8SnQgGrhxPNQqGWkWNQCZ6ttV4rE67Zv53NPkbAyNIq9XsWUgfEcfg-yxyHDM-Ks5yOd1Td-HH43255dZ6MlVNRDWVc8inemGKFhPbmPpUsBTWzBNbiLoiP9fCC_mPxrz1YkXrizpwPixyZr5ElY4kv5SKERDVkU4kI-zpGJBgzEscwd1R_G2hAgB8dUArfV9Av9CsDsgr8yI4dsnErD-EjQqy4eWkZ8hnqw1BGvmpSlQH3d5Plb0LD58-sjpLkP7E3MwdXRw_t9Ake28XEOOduhuepmgqfxoM9CbKUbnhpHVFREXQfnAU-QVPUUC0U0Lq57lAOP_rJ5BSHpecap97Co7iTzae9JapaxRPpFLEVm2yxgNLM5vx4Wu0w6HELqmri_lxsFiYQnVX7Bj9TAHxZgrX_8sd9kD4zx99WtUYgjYP9OKovGhYcwtmuO6E06pErb0usGya_5UzMJknq1Yst7uW-KXQejgGeTrVDYL9Ah_Xr50gfBhn8lXmT6yv2hdV2-JWIIpyBHOE8b4pLlA0klBCr89Tb98zbvpZJGQXyAQQV038v_FFMXWPUnfWP9jkettz6TJcvAeae9WopC1jC6I7EZir5Cz2t3MdYmke_YcYpPgniFPiYj2G9H5LL4e3Hzqh5Kd7jVywF6yDvN4WvfY909h83wJ6vl8qhIkaduGCCCcaJ8DwCWa5qSvP27xK6yDteOe__lB0Wz94DyLcg9MX8PdZpI9hJNmWzZ8Dx_vS-nxwOVfB9ea7ft-fhCXCxt1sQgH1G9RED_8aWH4oKf2NzN0zwgAB6aWCyxZRFM7mEGih57pg1IC63MPYrNLNExKpnaPnddouQg2hvgfxWX9bn809weSgE-5IDm0SbBe7IzHvYLcLaMeacn44oZY3bmSmEkAfNpDI6eh4X_IjnMysB87OpogkYUsUcBW1wEIqd5Ia9fJjJRvxAkWU3tEflAU_cGboxaE-JpXZXpru3Tmu28jYTx_0d2O_GqA-p4vkqbK_vonhEUV4U1Kyq5jCq0qlgJNhqrSd76AD445vieCPEf_O42Pn7B8s74Zi3cjWwCZ3-GO5rMESEcEJ5NDLWBTn4b0kV8ZwWqvj7z2i_9zB7aq5guq1y_OeoXaNpWXbvel5MFWw-W-nLb0LX7vNMBTe4OtiuPckDXwdqhyUnQYebz7rXRw=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_056575e5a34d63d5016ae81805a70887d195b9a51d1d847e3b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18656,
+    "completion_tokens": 523,
+    "total_tokens": 19179,
+    "cost": 0.002593425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18653,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002593425,
+      "upstream_inference_prompt_cost": 0.002331925,
+      "upstream_inference_completions_cost": 0.0002615
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 247,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

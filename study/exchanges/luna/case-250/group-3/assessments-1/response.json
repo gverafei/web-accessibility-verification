@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent Forbes newsletter, games, and footer content. Under the regenerated-page contract, it need not reproduce the reference\u2019s article sections.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, descriptions, game listings, and footer links are legible and arranged coherently; no substantial clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The newsletter button and footer links have readable labels. No essential visible control appears unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form an assessable reference/target comparison. Their differing page sections and layouts are permissible for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The newsletter callout, game descriptions, and footer categories communicate clear meaning and fit the broad purpose of a Forbes site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating content structure**\n\nI\u2019m assessing the window for the newsletter games footer only. The corresponding content for lifestyle and healthcare doesn\u2019t need preservation, as it has been regenerated. I think it\u2019s coherent. But what about the controls? Links or buttons for the newsletter and game text might just be simple links in the footer. Overall, it looks okay, and the content fidelity seems broad enough for Forbes\u2019 purpose, but I still need the JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content structure**\n\nI\u2019m assessing the window for the newsletter games footer only. The corresponding content for lifestyle and healthcare doesn\u2019t need preservation, as it has been regenerated. I think it\u2019s coherent. But what about the controls? Links or buttons for the newsletter and game text might just be simple links in the footer. Overall, it looks okay, and the content fidelity seems broad enough for Forbes\u2019 purpose, but I still need the JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0Z2oiNnMfyZnLjfrAPAqYdLfZBDsuaWIrNnGrfoslNRsnc1oB86e1ejmiDvMZirq-QRVrt2UQja7KkHGAmbtT8KGkbFHzmq0gFFGnPd99N7nqh_IOoQAbV_3E33UueAEKzw6DJTtZgJ31u3bFZqUf_6UYQKbNFYYUBnfxP3718n_SqdWp5Q0MH3LtOYE_PQ9Zpn6Snq6X-tc0Hc3uXqsCZGY4lPhNjzWgqM54dS2R2lV269Swl6VO2nsp_qre9npPwU_eHfyJMVb-s3fgT-sC7RtYNknR-KpECKZbv5oivHv5rAYIUlNKXV4CDN62BT73_bnQGKp325-HQ47qHO-REPUP-oXxXXHGHgBybun0kcVWMODGWdssvt3yu0sJ1tixJlX6j5K9NiO9AAknWxBIFJcGmoktmM_bZ19z_qPHCzFc5iDLLNTaUao1rtt0hp2TdNw_9Ad7HfbazXL6nKrVjN72V4im44Id16EjqWTyajuPNDx9crgVxpCzn1nQQtiZ3B2SjgxWl3WMla4m3lPtx2knfLbTTYoCuCPvfhyh_FdX6N8EzlL1yP1m072Pf0yG9RhjEup41AathVphVovxDRppGyaRPZFXfUxdNQaQqRkd8k5cYGXU968q6a-h6CFSPaO7dd1kw-Zs5iZ0CwvWaX75VQMc6Bs1NhbadQc3KtgZJcBYTL8HzT3l50cZ0QMgAYZ46tqgohNkkANl1dr8KbmChN7cQAPeHOEyv7r1gj09ev7LOfvwV8-DOh9xHBJ9rD8p6xwSB5uPcky9D3ZPhaQn0Pb2e1NFo2gv2lHAzjHok89GZ7bND-7jJWHLAIYCK5wkJFfYpN1e6zbfGkL_tZVb2Y9oE6cksi0ADFOiiZDNval_I0APxwuqPKdLSYwWMh2fY_hFS7HbJVZN8O-mK4yWA9bDBuiMZba0Mva62BfLJeZraPuzcQ4TFYBiARuW_0Fm1p13jlp5zp514v4XthOmioW6czsXlFQTsTbXo1O8wFuKhMa-hUFMgJb-hXjA6loisR7UI_W_gLjd6CAMeN8wGoWnvRrZ8Rzl8XXUEEKklMVA4hB0eN8BkPMRURAlslZb75dWFly0bI7Jg18FWKflJJQmiP2NKgLW61rkQVZwVSGnSCOLWw2kmMOD1x3ldRzJU9Qkm47fM7-bmcFfuS-IZ5dvboj_p7rofApeLRxvQ4E3k4TQN3rDIF8sWWl7-EiW_O79byNpztJVLr-BtV0o535Hwm7lOjvwUucPSBh_GTR0i3sEwnxpguz-sqlzuJl5-gajLJwKCGWgwa_M4z6mAcAl9nPoRsBGzqKtHtVIFn5tDwvXrRAui8e9UeElYV_oJVb0u8q8Ffn0bcXH9QxN3NRuyM7S5-CWw3GwPaNjPq47iWd74InTYYl0mr4J3bEQuWicfaz9Bf5Uu3_DppLDQClgpUbAOYGh3nUOBwkBXjwKudzWbrBYNntYDvmrFSEY43I8nF0h2AiSWfndEMeHH7P1s6VmAb-7cR4oFzHMSb3ndlhv-OISPQomFav1TAw6CjzX2oCQj_vx2r3VEozk3fEquy42yWEB04NvSY-NvzGafhpRniTklL8zkPYu7a5xySvlBgTzBcz7GfK8n0PAcCAzA_3frS16PojK8YLqYltaBM39KK-3l9aYo_1GTrC9tLMRw97p6bKKp9LvxqKZuIDv2nkSDz-CSUwJ7y6_YZOosHIY0ZJjTj6VZd7Y8qYREFiw3pXVu47s5D47xy42p0UZABTXCSEAwymUvA5oxAA2u0hqkdngJUV3WFiYZ-drm-bZY8eGR50lzJ1wfFKFB69qIJ_xdWkMBdhGFv1gWJ8rPRoJNKIIVLFntLuAvQ0N3TloilS_rDqJuPBGUXCWTDGlgAlVK1PKsFGKyA3Y384VPhxIgkCnP2kAlQNQaIpaITOj1Sq5B2V4okbBZvPO9CISwBAPPk1Th5y8_oJ0KZ3cc_ZSMvt0IPXNAuU9aBgBnkjbiZA6KGj6nPlRwJcRfgNuOnprlbbxI84MnoosHbFug19WJIIcK_14N3JQdAfuRaTa3TMku_bH5Yx-y7-9LbYRk2oYx6-l_gz8b6Sn844Ji2ICbLO6WxoA1njg6ArS4cGUV56BLdcTtQg3wYG98Jh_G0eP0D_caPD_kLVxGmP4OQhlxVbB7rivEoYjkoP-Oz0xbv1iWLtBRhSs_33DcxHQiSeVfRy5PhN3C6ys0tLUKqvAh5nBfTPlXZUKN6oZBv9ivYXchY6xLTdFadlhajZYFV20Zv_Sp8p4hNWSwhcdqIPWfvEsobsZByUUvMKjx09HVPnVhuJtqZZr2hTfh7DdSiaWPwvEJ7nx-9cOm4zcPPav3mqUK2gHS2EXr5y4ViMD-EVD0r5J882ZOCt5SqmPeiZn6-nxt5KtQQJRfmc8sCOpuZPlUZeRYY8R29MNEz-EkiSRRSg3eTLob6xbJHgASQip3u4zQXyc2SPL5iH37SWr3giOW81K0OHdB-7FyS6eG67lju0Ab8rvo4nMDG1yPOhi1yH2mhNkZ5X-mWEDOA4xNmYTPcHWwmlMPgiviCM480_lKOjGsHS9PMUZ-TY6qusIVbmhCIPYlKHrq9r6jG3bvUKbVmP7lkD4i2-kaexrj9L_YF-S1khCIM6yHdWiF5ZXZvRhGqEN0FGr_cVKSpd7wvxFOHhyST9Si0BZ-mp-fKa2sY2fq_TUG5221YtGyTudnYSDQQ-ziy_M=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06b871d1af5807b1016ae81d1729b087d18b7ddec5d875108e",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12371,
+    "completion_tokens": 329,
+    "total_tokens": 12700,
+    "cost": 0.0017108,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12368,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017108,
+      "upstream_inference_prompt_cost": 0.0015463,
+      "upstream_inference_completions_cost": 0.0001645
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference shows the testimonial section\u2019s review summary and multiple customer review cards. The target retains the heading but shows only an empty gray bar and blank space, losing the section\u2019s core content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Most of the target testimonial area is blank, with no legible summary or review cards, so the section is not coherently presented for use.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible site navigation and help control remain identifiable. No essential testimonial-specific action control is evident in the reference.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show corresponding DreamHost page regions and form a coherent comparison; the missing testimonial content is a localized target defect, not a mismatched evidence set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s heading identifies the section as testimonials, but the customer reviews and rating information that give it meaning are absent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating web content structure**\n\nI need to assess the webpage\u2019s layout and verify if the testimonials section is functioning properly. It looks like the testimonial cards are missing, and the gray bar could be a placeholder for a Trustpilot iframe. The captured content seems largely absent, which raises concerns about fidelity and presentation. I\u2019m also noticing the absence of visible navigation and help controls. I need to gather more evidence and consider using JSON for a clearer structure.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating web content structure**\n\nI need to assess the webpage\u2019s layout and verify if the testimonials section is functioning properly. It looks like the testimonial cards are missing, and the gray bar could be a placeholder for a Trustpilot iframe. The captured content seems largely absent, which raises concerns about fidelity and presentation. I\u2019m also noticing the absence of visible navigation and help controls. I need to gather more evidence and consider using JSON for a clearer structure.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgTs2SiUMu2RUKg4a_k3lj8yzFmCgGlbYitIihqUfFkUaRa3gDCLZYLNwSpBtWZ5LBr7qj0GPK91teIFj6cwZxhRRuZgnPgV4udahQmDo2g50uhbLe248zY4D8UUa3JFyzB1YGnlE5OAVQlLUYKEzrhVUJ2PULDhKNUZC4WluowPAX51DJ-c7svZNNa7QoCZ0yuy8aQ6uQzMMBAjVz3cSYxHHprVxI7fPzySCcb9tVStOYqEjnc-ELCKtBfKdRX6qRAAUDf-EBoto530VvJMu9THJnqhF2UUPjx2GiFOiJMopQtTrGM7Pth91ZUVKv-_JeKwkqBcBtB6BLAHkG8hf3nCf9JcwB_alw6b5xaa-0B9IISoZb_h9PBYqIauGRhp7eCSq_u1LokiDh1cFer4e9t4bundHqOvex4Vq67TYn81cXhArop66u24QSSj5_W8akB_fpSg3uWBg6mJcI3KkMXx5x5R03fMxg_9GqoSwsEMZuTtdXi686Yilml9IOV4zFryuV5RcOzQ-vjUIsK9Sf3sH42LkxCxCMq8ncElu0ReJXkb3ji7GB60ctFxhcxUbB0t45mHlP_pxrDY30VrPbJKamO76uzxAgHaAezRYnCPoyo7DNKSe4xDlCHmCYz2ieKKIekusEuOTnUYDTvwwFKU_6W3qVl78tEtFjx4BEdzjKKGev8up0uoP5y95usl2xeqr4ROSaAXtfO98NS8Q4t6i4JKv52snZ3x1nxCuRDwdmj1S8c7pbJawMJUW2NGu8onSVBmf3uH5w3Jq0aAx6dJCarQC4ovW3VcRhddfouaAgKytI7XYUwbv2as0Ff5SXYTBO3GghH7ODAgf6ElosKKLuN-jeiUkQOvSHIHe8GKePgqN9gDTXKMRkM-B3ld0l-B-qCm60pVMiVSmRXp_HglCnbzBKvcumD7K6_FjEYR13EpPCdfVtGWPZ8HbfA-pb_uje1nIThR-rML95y9OyIH5e7rWJcE8yYut1tFMHRD6zjb677B3xmPiwwpaHAxoggpUqlSunpzPjQBa1u8Akt_G_ZDz0tfD1mAKOBDQjeAcDU1H2e2O-Uezs_M4M_vIfjGP-AVY65Tzoiy-arhVJbPeYNjE6kjTzwyl1kZ5Bh4CHp0G0Cxj5N33nu73_pFod_GBu1jrYys1bwF2vP_9vslyFv8TAmqt4_YoN65RbS84cSxDvludi5ZQimuIqFSA9ChYVLiPRiJkHjfKd88SJ7RmR6eQCs1Xw9jIcfnTBMnQNr0CCGKfCS4N8-HM5A4ACUEUeU0ZhB6DgTfAlZOHJvw4MB1ik5-ZYjT8_vvsF1ls0jIgx-71w3rEXjqBXjpaZ8QyeCQkf_v187ipnnCIaqJYwR7VnLsTk7vt1obscFqNWNyHLYr_4CfgY7NqIxqYwMqyRDhFJfTSYUCGBN58lIVfF947jPfAYEjiKqVmj-ereiJARP6O0H5HPryFBmKKydKWnR28dggRLx5-00HRHy6-WH09pVhUEmzwV7SXOeLg5S0nIFlYUalHBDLQDHmMRCnxrw8kCz-dfU65Z1L4DjhpAKEYkmYZjvGVZTYL8Oi6cmZ82opeW1yxoyyYhKlvbNhVMEKPKcN91gz6oJQ5BK-jfoG_jp0R6D-L7xr-jWbvLwxikPzMNCnIjm9_TSR8UrO6tu1THzRRPcCDblJ20NpjO8jhFFhx7ysDw42VOwW-mj-ktSYVrUlIOCgTiGUuf3BYusQXq66vZGctyfMjnZR-cngFcDV5ohNfB5ph-qb9w0HYrdeoRfCYjnl_hlvqnviy0a-FkhGj3w_mchcqIQIoS03jSw2_lXBfquFx6mDnr57vZ_LqnagCWMRQ2XL0Y-BZAy8c2Rjo9u63krWmLyri_elu2d1BMyVmMvEe7uc1Zs6s3E-IwSbtvCa7gRRsuy8uddRxzhAWDWQ3qxSGZ7c9famaesu6c_1TrEeXa7moXW8Z4GgIj9B6Fh3ducOLToWSLAlxhTHxTs7lwof0GK-YR1xcnQoBCEjs0zHqJieU3yHAw34DD9sOASQ8xhr1Z2xs31qmL7_Pzu4r4i9EqwvLzdxaIij63WCfQMwQWgj7gLwm2s1yESePrcfZVkHkFAW55n5LfTHKokUzwp1QdRTf9ezL0J9vIvZlGRMKlREEMIzixDt0pXpGI1kAnVAe140OjI3mNgFSqhR4VZ1NDaJSRopZCmCNh7azruOVF370cHp_D2c9VDA5f8iCFwx0hGX3xOwaO1CqpXL2jMT4UrWE4dOOEhQLVwBTi2FHLXD6EdkIJLmno8bBIPiJyPsc3-l6sjTp4cPksxFjwI9HZVm0GCJaLCdyYXpUo2cwglp1pR6aiJkl-ZHCd6iGsQtXhCYj5DNpO8qvHMmpBdi2-Hov9qDIQ_V7st9gsP2xY8ThIIX2t8LsqUZiHdIEwAwHVTQfmAFdz8WzJH3QXqLtU3RnZOaGuiiHAaNDq2TaoqCf1uRxBal1cNNVp_g6PIh7NLBkPjn_GC8EooqgZv8CXPvEjL8bGFZmS1gTTR3V1kWv3LhRJQNkRU5ez-mQifjgh21FhxaUmP8CQcLyFOgXLbNgaOq3S7K2omnemRyMOahotK7-aSltwVZ3LGcZNSWW8p84XyFHO8UM52zm8gsxIvzYaJ30ciPugTzJ1G2rzr5Orr1fhZ5g8gMcOaAsMt9wRKUUf73ggSfnvOy_r1R8ENH5qle2Ei41CMt6kYmPFvvO6nD0MQe-wMp6J5kp08pacWGeFKWCf3fYKFztVu-Fi3T7V92Kbb4156HoERR9S0k_ed6jGQ5-5RY4-q8mtPnPRYF5JleC7nmOVYXHOWUovABAmhPWWjwJHDtvlBiKUL5ae8tX3KWeKtnJ9svCrsxSyIHSJ-D4KziJpYCvDRmOtFJDkPMDBXvNGnvuWA5kxBa4JBPjWcYxLgiyiE5cXwKFC78EX0_cJgB9H0J3Axs-y5eoXxrtykSIwEagCT9DcuAbgBsXTFHqX_jYje6Y_w8hT3DE51glJfcKPCOHt8oTYqlA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0548f8b06b78cc02016ae81810e66487d183f86e2246f01fe6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10912,
+    "completion_tokens": 370,
+    "total_tokens": 11282,
+    "cost": 0.001548925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10909,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001548925,
+      "upstream_inference_prompt_cost": 0.001363925,
+      "upstream_inference_completions_cost": 0.000185
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

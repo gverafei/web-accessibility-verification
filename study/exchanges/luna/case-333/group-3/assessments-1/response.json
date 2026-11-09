@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target\u2019s large dark hero region is nearly empty, showing only a download button and no explanatory content. It leaves a substantial part of the page without meaningful information.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The conspicuous empty dark block interrupts an otherwise readable page and makes the target feel unfinished. The FAQ and footer below are clearly arranged.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, download buttons, FAQ expand indicators, and footer links have understandable labels or recognizable icons. No interaction failure is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots show a coherent comparison of the Brave site; the different layouts and FAQ treatments do not make the evidence mismatched.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The FAQs and business banner convey meaning, but the target\u2019s near-empty hero section provides little context about the browser or the page\u2019s main purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating target interface**\n\nI need to evaluate the target region, which has this huge blank dark area between the header and the business banner, leaving only the \"Get Brave\" button visible. The hero section has some content and illustration, but it seems like the main hero content is missing. At around y4000, there's just the header and this empty dark band. It looks like it\u2019s a material defect, possibly due to missing animation or components. The FAQ section is present, which is valuable.**Assessing target content**\n\nThe blank dark area might be an intentional aesthetic choice, but it\u2019s strange because it leaves only the \"Get Brave\" button and a large empty section that clearly lacks hero content. When comparing to the reference, the hero text and illustration are visible, so it seems the target page has an absent hero due to rendering issues. This feels awkward and suggests a material defect in the core information. The FAQ and business banner are there, but the main hero content is missing. Overall, the controls seem fine, but the core presentation looks off.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target interface**\n\nI need to evaluate the target region, which has this huge blank dark area between the header and the business banner, leaving only the \"Get Brave\" button visible. The hero section has some content and illustration, but it seems like the main hero content is missing. At around y4000, there's just the header and this empty dark band. It looks like it\u2019s a material defect, possibly due to missing animation or components. The FAQ section is present, which is valuable.**Assessing target content**\n\nThe blank dark area might be an intentional aesthetic choice, but it\u2019s strange because it leaves only the \"Get Brave\" button and a large empty section that clearly lacks hero content. When comparing to the reference, the hero text and illustration are visible, so it seems the target page has an absent hero due to rendering issues. This feels awkward and suggests a material defect in the core information. The FAQ and business banner are there, but the main hero content is missing. Overall, the controls seem fine, but the core presentation looks off.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B8cPJqBqvu2f4TUoPa0YO_GaM5bTLiXb56_A1VMzladl6dWjGS0So7zBx2VpTuKouVAUFgHpqLSceKRw_1Q2ER4YKgZaxhOpdLRAQKtPHSwncHrrM-2_6b82eZuLDiLMmA0qRb9kfK7cDul0swxugEwajD1Mc3ToB6tvPf8hx6uQop7zeB7pHAePv06gjXKeC48UvvUOjF_qgR-l2iZBLHUsjlhOiDjUdeYKzFSoVKGRno-4pywzHILWvnB-eRl2Pyu21JH1yjqtQBe0RukgLidEu5qrxUr07FLgUn0yFasZUbTI2a_ojFmVRDviWXhRlZEAjeP7R_dKXQkdPfRjua7dn0MjDRqRn_ITLYvOhuV883lGqLMTHB-_kf4EQUAs5O7Rb0q66QWJW0rFLysAHSqfpyqUALxJh3a6nNFxuKwfpITmdTPc74LrU59dsbIjuVi_23LiBQ-zJal5ZXqhvLn7xuXeKDtD6jAp57Y5wht2c8DPV9bO9zHb7znTIECtiZwfwbr6STDLbfvBJQ4N77GsddRnHKvpELWuG3ni3519xi8ljMI9CTSDAiScWTp8EmXgNItJraHsbLCAvo3UUD26uIc2QsVX5GrVUz25DW2XPsFm1fjZ3w1D0zLFMV0RebFX-aNxl8WUS-hEzVfygKQOoGa4GacnThiuZDv9svK2Fc6TdH8daYagocdHUtJRoei7_5r2b4fXsMKFK1HcLZXVDgPt9raY9ZJIw-rBq-GJU1UCZ5lHCRdSAX0YhQT1niLqVpbhK1oy2RRJ3jiXVQoEMb3bB0cSoVCvL_ilTH6gnp43U6dTjw_QtA4Ig7Gw50dnf-CEZPnumA8GtYs9L6I2u8AqSJJqgOqC4vJAx0dQDfe0c-eWjOZ_xyoe-hu0tWAbaTCEIyaylBmEu_hqoPG9ThwHvPh4cTl0nDV-NfQLOyYyDkGYNbEXlSdI88MqMOq-7tEaAZMEly_svHaiDovdT-Tzmkn7UMyV20eJTx9ciKJzPglpA8BUJr_yUK3sPIO_rvB-PuoWMdM38OSvoGZ06qznp0oCZxa-lA93NeZ-Pn0aGnnDgjJJNCSKXZOAPeh-NWeOeUlLuUad3JN_DCxXjH_jC7srLn0jiPobb4gYcRJ_ZDUaVgaBNDwmqVfAvs_L_mUeD7e56-cis-x_tndxk8Gy-JYqWu1LnQ2OJSMp_66gVLlIENxHzrUroCPpqqZ0DV2T9Zbzjn5QseEBH7YwI03OQQdkSK9_1bJsxXuV_PVEP08rLomRCoP0UaNt5Wo-RSWPtnPZ6rT0BVlNn11kBUOA2_-4gb900lkRzn-idkZ9h0X-fTBi3v8eF9Y-Uy-J2gK6qaazl1bsTK_2_8YUwEpgrYvZDFs-aLluHRlSIhNoCfZfOwCfgBINltBH236aoKiZwp1y0Q4TcN1AYMnzOnS58W6lYAfWGHEDg4SbpGAkhV5DBmpW-0hintJx1slwIzy5mTQGpKmTXwS1JBYTJnmpt8NlT3BowTVSAvpgPvaegScGOx9aa2qwRAzPqNfoB-MnRC-1HqjYtIpilA4E03pbmbZOXuLM9df7Gqmxb6pP_ZDg4mfokLAeoKUxdhsM0qyR_oyV83MyYrVxBq9PdNHVE0BnUYAKu-SDhysjaRYbjIIjJbxK2mEGoj0lldIKLQHxLheWCQtqOCLHMaReS13enR1Ou_FXfPsjbbw3CVA8xU5e8EY_cpIjTEM8KmnWJ-FK9jxHx5c9chJ0cg0Td132u9yWzJtHoq6OcVgb2oG3RkfooXzTYK6X6DKdxM6hpnIEyf7HJkS1dOPgBlDKiwU9FWgkVCdLznpg5uvPPY61N6HzlKPpTSBaxTtLxjdmuM4SZ9s2zkQn57bxtjWP_38nNzb8g5Epof7a0-uPtrTsvw2HwpTEauUgL_YZjIwKQ95oSAEDMcD82UkqhIjsEBUmd0mQKfuJa8Q8VugasTf2rSCG7Ewm52Kxwm-20OdR1_JZxJShLc5oLe72spGXf7q-Vae6ktiyuOWOee1_o6PLxFo6SnA-XtmvlXzdbqqlmdDeXLNwfF0ITVjoQDbq6X0d_068REtIsFdLUj5f1AHKQyTq6-F5w5UdrgAC0wxrcGutaaMETXQnNVVGk-kwZVRXtudxuuudEQJadFGnQiWAdC7L4uWqLe6QVybe0Xeyo5Ijghl4zCR-ZuE7C60nUJWCCLFvCYp_xZGro2kSRWtEluWLBqNB5uj02mmV4_H24H9aPmDWyeAbIq3ZGnA8XzpdtDM8AIe3xBeG--rVQqrZFMgGmH9d1AqxbyiqP7NnHW2_9WXcEFjMlmFmhe1Ua9o3dAntLMrriR-3OdF7iagMv5vnqMtE1Nmxql1T2-jbeIcQgawkYav0y-pxTQVStXuvejV_sqanOQqP4MYmCJa-lpsLQeX0URFtNX8elJ7Orotfl1rVNOsX30hNb0958l3NWkt5lPyOb8rXZ5Kdy4qYe6xOL8-P6YE_2UFr2irSWxIeaR4s-gHB-bgvvJMt2EerfH2TbXK9MSCt_kqWkqEJ9zbzQYfrLMohIMHwjmDGmtYOAv63TrUMJkTBuVe08a1uE9M5yBkc-3ApEhaOacGAseHEy_u9J_NVCxbG5e62bVTVPU_8g3qngOX-MUeNPU0ZtToRkfJtQ_Izn6q0n_-0K2Kyf5vrybhPZ4MqbSCTORpYNEUV2IHsfDr-G1AYJ0FWC6sJzmriNixXW8aPaXth9lc1ofeTk5zmcGXNm0qpIZtTeqRZWIsQM7Yf-rl8XOLk3Llc5j8cjIk51vAJQHs2k16K2TqJG8k-oGEgmjTKHjlM5cUmDC_Dd-_hFOhz0mdkLAh-CAGx-vxRJRoAqVZ9FZ86yoirhZjTSxcnlDKqLsvCMYMbWFskFA2RTjwYOaW8Uq4GtkOdHz-rA0HiwzSbtSl-jtiCJg4YWYcepyTJwvGmj0t7E3PpoMWyS8fPKwEefgoDrZXdFrLrJmuSMI4A_YOmIWlGCqu9atMf3INf8apQLzMc7so5G2dJ2ysnBS-H-YAmq4Z4cAI8CZMk2-mgU-e42Z8MT-fvx_UjjCWVNV4G-YHHM7oNmjkiKZPc6vwC2Yyk0rleIesay3KNHEJhmvYH8GLWhLTPa70vKnFuvym6ixRjkgOZcR7a0T-KqzullvAKGZKBcEgWAFHm0RP0Bf7nJTJAnp_AyFxJPnzhQssDaaH86LXTvdsrOIcO-ZZ7FqiaZ5Ak_6LDaOg5g6W4GJRG1A-Px_u7Lv91dW6hVZs9q7xK5_ADILaCoDo2KfB3B5KxpBuWFxlHko8VOh_LWL6xxU0gYEt8K1qicNBTCjlet3B7fatAu0mC-AaF4hBG5NGQt-y9eG7DmS-aXEHvaSmXP8Nh2sUzEoE4NcvTP5KCGT-kJRGTvr50vqTvB8yyN9qAKIYQMP9SZ9HmdDvqgPcpcWwVr4msZnbFBOsJGCvdGDw_eys69GLRM3NcrrLELGp_ECoxdYgYRLAo0x2KiG5hui0L2VG0hOwbrF-xqrX0D99Oq4U1OaoQr3ydxDqS2JNJxUvCWl1S1UdnufrYGZbdXNURnAuO4E8jbEj6W5cEVkvK_ZBc_ttYl53dS_eihO0i3NQK74QV4Bq8HGV0yDGkIMHvqv1inJrHv--TUffpF-N8YHK3PlnaVtPb021wqU8rHVP86DEM8uIy18tU7XbVuXoL95Y8ulYDiGO85B5bBwjPtARAEPAIcc-Ar6yyIr_xZ3OWGn_g9DX1NufymTlj2Tk8P1c4eaz0f8y0lo2cRvB7j3zx47p9tuFxJjM_T7YNUeky9-0QMP1uWKbV7g_zCH5YKjXRBUqzZB2OnueiHlR09kZOCEK_0z9vP8b4CVRDvGJk25s2Jfnzco6Fkjp-67lUNevyFcwY4-5MeqFSk-mJInDoV2wGwzFxdXi77IsM1OQzodKMywD557a3cmNj_IVHzZp_eq8sHm0RoLgyF4HOUJBX1qfrvjne7wOlxoSuGj-LAKP4kfjs-kSXjddW1CjXvQi9rDBUCqLufBgHAyE0ojAgagFZ34gZQ7ZV12KnMKq1fHJKF96Dy0MS_PvjUHDyYY_VT5Rh9-L04Tb-WRAiSULzuOodc5ndmO9kAB2lFL8yDQLAXm6TBj57PoKxTy6jgUU8GIhRz3kxmKoDs0gttf-OqOuEaK3_Ifx1qdNLOeWr6cYgBgdzteoZ3UcpgIWQUZaD5lXSB2Pt03ze7_301nHlHHC--rcJ6KD_i1RfBu6hj5xQDMpx_rAOz98PVdj5yIZSeUN6WR-REF4dHVFMY3HlHLiR-pvboivxRqa56Cr5QtQgEd6BI4gpOPI_VU37pTXm6VR5MPuT2WIRFkspVvOGa-HEvwCWkPp4hISLwJTJOWCqHkp_NVoOWCQrh529BL-h8VHWR-2QuBkPJhMaOpHeJVPvVRF6ucfr6te6Clf8UZg8Mx1GXw8e7FD9D3DbEeYSSjrQaqboJtJJhTytOxZ-btlKK-tm07RM4f_OHSiJlvBvocc-8QbY5lKbpn54sfRweChcnLpp7_znNXU8ANydEOlIDh-6H-783p3InT8FcSxVdONvNShTCeDviA5iERY0xou5CBLo2y3saBNxlNFbTvgj4JWgLfIP2bbeMzB5vmdcUSa2xJvNkbS4fbgKrwOzNOy17LRFR-icWHyWtANw5Vb20NIx-dNWsbnboKrNbuvYjZPeMPVJOX-zdRmhR6_LxZssQhdUoFgAC2pDOVias2fr1b4k8VTWszT3dzyXU-dgmTX92qBoxtSpd4aEJEryEAUqJDX6KeNGwkz6zYkF0D8AQFIc5Y2F42lzeYXiNmrgPYuI3U77NAb58MDF53FqWzgv2j408WSROqiUMmlpbPVfvPkUpoTZTILjACBIokvBjFhQAAa4MlYFxVkmcXm7iWQWvnrnjwXMCFofN_hKVyvoxS13C_AFSpTh2gUgGoOI84H_JdjB1_mNjdDMQEBCecdpV0gPkgfsU9EzI-cElPg7Bgv53H4GfKj-Xb_emlkZxRPuuauQlWh3ny2-W28EHhDqCoNdflgMrIOCdW7KqCWQBIZhF-B67Qo1s3JYW40hiSrjUPyyvBgmQITaV6QQKgdSmQSCgJAoG4Xyr2c7a8__QTiAmwvWQEiA3bRmdZ1itiKsy1Tko9PJj2n7LnbMesqAjeFWyr2qudhkpPH95JwjPSse3tPRONlcl1saQBYtZTRs_J-3yiKjVCuzGNZzaSsSYyOVS3wrA8En7kAjyoGkKFxwBUTtFkVBovsGLUE0f8sVBtttBAOaKbs_h87JbKPeb-v9vst49PGZPXgcYuPRicHmitSQ34VRqrxSgjlLfBxijsbycFDJe-a703US-aQJNJJycdyMU1PxJ0U9MHN1UFNaaFbEh4qbUqkIVllviDB7i_JcoakPfs22D3FaJVHHQQQm-DVtQhg4r5vQyWvUYiU2DFzdprlNS43NRgzwIok50HJCOOe7nZUEd5_5OFFJb_5tEGOc2f39F8rHsLqNs9XayCVksdSqW-iNPY32CA5W4IQpcmHjnBi7yzlvYm0UaXkPyW5DyjPg4vZL42zPifAiMJmEzg7tCpxdo-Eu4X56kaOEEBn1moQh0SN0Uz-T3jBazJaQJIfxNyWJT5T2kgYlnZgJjw928r_WEDcovw-vMK1H2XAdS3hl9nH6DWcDq5y.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0eb7ccc59c7c08e7016ae81f18491c87d1972ffe673efa5dc8",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10577,
+    "completion_tokens": 510,
+    "total_tokens": 11087,
+    "cost": 0.00157705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10574,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00157705,
+      "upstream_inference_prompt_cost": 0.00132205,
+      "upstream_inference_completions_cost": 0.000255
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 292,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

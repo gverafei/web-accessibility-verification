@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent TIME news homepage with current-story headlines, summaries, and images. It need not reproduce the reference\u2019s exact layout or content inventory.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text and story cards are legible and arranged coherently. The supplied lower target view continues into newsletters and featured content without evident blocking or substantial overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible Ask form has a clear label and Ask button; Subscribe and newsletter sign-up controls are also understandable. No interaction outcome is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target are coherent, assessable views of a TIME news interface. Their layout and content differences are permissible for a regenerated target.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s branding, headlines, summaries, and labeled AI prompt clearly convey a news homepage with an article-question feature.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14462,
+    "completion_tokens": 215,
+    "total_tokens": 14677,
+    "cost": 0.001915175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14459,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001915175,
+      "upstream_inference_prompt_cost": 0.001807675,
+      "upstream_inference_completions_cost": 0.0001075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target matches the reference in both supplied segments, retaining the visible feature lists, imagery, and page content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is coherently arranged and legible; the tracker-settings overlay appears consistently in both reference and target.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Learn more and Contact us links, and tracker-settings controls have understandable labels and are preserved.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target views match in both supplied scroll regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text and imagery convey coherent information about the page content and its features.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing screenshot consistency**\n\nI need to check if the paired references have identical content. It seems there are different images between the y8000 and y9000 on the reference site, possibly due to scrolling offset while looking at the same section. Each screenshot should match with no defects. I\u2019ll structure the output in JSON format, noting that the content remains intact. The cookie modal overlay looks the same, and the controls are identifiable as well.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing screenshot consistency**\n\nI need to check if the paired references have identical content. It seems there are different images between the y8000 and y9000 on the reference site, possibly due to scrolling offset while looking at the same section. Each screenshot should match with no defects. I\u2019ll structure the output in JSON format, noting that the content remains intact. The cookie modal overlay looks the same, and the controls are identifiable as well.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2j6Z4iHwR80OuUEt2bXFRS3vBgXAIozXOxK6LfQzRIuVvuugo6YGxGYKTapNo1FKJRLrjJbeNMj7G50xXYIlUHRZ1uVbX5kNQDnxj6AyLeWtSNqogR5C0Wlvdk4HRRp4GPUVVdva1d2ofOur5Lnn_89783l0vGBxreJ1EWicGicXJCVb9vvF87vVq_hasXcIJ8k94nRubhY_95XTLmtWTxt8oVq1nfW-rAmCDhGIyUVm0fPP2At7ldSLUgjHxqIoKvOXyJw5xPTAGShs1YXjSUqRQp7cetqT_4bww9pn8qPbHageDcmC7y8aPP-Wk8FnoeFq9u83-aDULpmR8Jhg9w6qNWuffDIzerkhWuUCGLjC75xN-jf_5NuTWCsm4WKATd4X6yB2wLRHpvy_XQbmnu9oDI0Pdy97DnDwYfMefS6RuZKUqPGljlDmYswdRsWP5bKtaj5f2IMAoyEPA6ameFwC2dGP1rmvIVjrLHsKNXRjX-os6dh_Uf9mzItsuLnoBqa1O56ZwXXUyPPgJEEVYeBLXexLyQeE7_zKC3LJYnmqJO84YG5ZeZsvDXCx1RQPqxhKVkF-44vZk90IOUCp6bvgOBBLZGyG1ZSYuiW0Lc6mRmuWdPI47MU3Cy0sCVrbGHSkHw7ojOD-Pzxd_7InEkLI-8sXx4NQpNwQ31RF2ycWVflgcOeFlkdkBDqaW8qjssyGEUqK9tEyIqz0tfVWDw6a_0bURvb9xLsT83ft-TJOjm0MnI-S6VJzsBdd5iR4CFpbB_vxmFFWJFq3PshwHri97ZdpXIadnBTd3Aofp5naf_60NvbSi_Ya46bHTJeRey4GE8VCOTAMxwWKsorLSgTbdoDXYFBreCKYsIqznesFhgrlZ5Ko1mwZETHkmeTX-XTu28DsNL2PiUXJIM5Fd6Zz_LnskqAU02c4udNEPsxdd0DQ3uDNZusNhJ1yQmX2VSV4IyFYzPczFQnePkDC7ZcfM15KPPyiz11NB2L61bFCpBhb9cGpbQcSmZpMj8EjAZogc9vTJnhI8eI_ZqYI2bns3qc2wyOPlWnWnzrLf2_VQ-L8eNstAw7BkWincVeKA1v0Gk2TJ5RekVJQ6BH776ZY1ZAcJF_LFlUQ8NCeuTmODyoC3wSwB3u-rxrC_x35XR_z-O-DcUpp8o4LHR-RlDqNI6LHTB7y1f_I1gME2kduH66G6pFAFG5TNu6BbpMvenpPydHwOhBuTx3Uq96z2Ye_rgL8n07b8tC0ZrexSCpA0cEEMvLJ6Z5cq7BJtxCb6nXIGHX5j7SCUg_b4fdETxlYtaQnIo5EcW5kdCrVe2XPX8UmSwa3RJe270oTenu2Xh_QH_rbY37rlVMvA13SwpKoXwLbOMIA92T8Uk1HhkBvQm0_NhS9ma2iusLbwu8La1wIIp2Tq-y2TwlJAWj1ird1AqWyEUuxNJn2m1GyVivWc_5u8Gtsl4qbZ1pWdCmvwseT0Wy3Js7VN4fkO1iJGPiYNvO1xdayn1wP1u-4aexQaOgchyBFV5f3fh0sbCNOfnElPtTF8zq-H0E494T6RNsQTQGkcWwJTE3kUFI_VSgTl9PcdWO8hllrT9LZaX4mK0lqPmJ3KIQB-8tKS8dGCv1gEhEbbbYI0qBg_xWK71C1mpL6DnV4E_1pPoZR6G14Mmj-8Y6djqK2USnORqmYnd-YOOne2rzgbG4hwNQ_dvG8QYl17cQ5NeAbJM8cgkrQNZpotBurqgh4WgwYihbmoBUWsocJanWd2UAoREe-FDTDCB-NNiIXhrxGvIk1tuNGDVt3sTFwNhDyVcoA6wR3l6_owY9iGhBliVaQhjoU3JrzshGwjBxoOX1MrSFRl5y_5KRVxQ4zx9t4BBACu3uds2lgxTbAQAPdkoByy1WhmoaONkkMPbCokBITniARyr-z-QXNE7ptwf74SIWwLWq5bUN0gQTo5D05nJRK7R_IWV-tOBEGE1ZH-ngPoqM5oN51tXTlmA30dVvESEi8DSWV8ZjAgVwTL-uZBPQCxDMUx1iFH5RwgnK4Gj1fnxCTbN-BzOezmYuqhmxm5bj-xIx5GwXhiwBZylsjlDJQ-aITqF9eW-WNBqF4lGUWKk1Dp6zPzoGoDEBq9dLSZGWnajJdsm4ZG9aRsxyXaxL7pnYoVkX49Wff-_st-HSZX0UAqhQLQZenVwcSp8n-oqMvC6zNNAETAOMEBfLXSBiGpyHrUibmn0Il-00jzzBjVs-zABfGrLJKrLhsUrKasVjSmsLXxGSAfVRFAwlVu6ZMOiIa9BA6Ejlyomm4ld04fPYwKXV12yFBWytG2DD8MkMTLomaT2YfejgnFtDgGHjDb43qMg0D6BmnQY8tliic-sewmw3wvLLUO6oeteRf_XhUR3SsKOltl9QST08cYjOp-wKjyQhRd-wP39nLMNxiRKQroQORxZXYEgDzfreirB4-SppoWFXavxT7VHVX_MMx0a7ZekICqojZr0t-bujgEfqpsUFaAcr4VYWInAVmvVCC8jucymI28cti196YMpaZ8frUYkAMbtbYkL9LvZzfnl1-6GjZZ9VTT6B_4LcZqD-7Vdmt_DbAC6izW5D7nKPoJj7AubzjTUwDAWyKSEBs2RSRTpy-YDzWQBTFgwG4GflkoVIdFYxA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_042f5230a9a79816016ae81da20aa087d1b17ac125c088b41d",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10307,
+    "completion_tokens": 300,
+    "total_tokens": 10607,
+    "cost": 0.00025334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10304,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00025334,
+      "upstream_inference_prompt_cost": 0.00010334,
+      "upstream_inference_completions_cost": 0.00015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

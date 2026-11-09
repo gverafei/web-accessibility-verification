@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the same service heading, product cards, descriptions, and action links shown in the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and arranged consistently; no material overlap or clipping is visible.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible calls to action are readable and the chat control remains present.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Reference and target windows align and show the same page state and content.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The service information, labels, and calls to action convey coherent meaning for the page purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11294,
+    "completion_tokens": 155,
+    "total_tokens": 11449,
+    "cost": 0.001489175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11291,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001489175,
+      "upstream_inference_prompt_cost": 0.001411675,
+      "upstream_inference_completions_cost": 7.75e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

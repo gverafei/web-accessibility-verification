@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target shows coherent BBC content, but the visible page organization and featured material differ substantially from the reference: for example, the reference shows a history feature, travel, news categories and sport audio, while the target shows live football and a largely linear recommended-audio list. This is more than a minor temporal or advertising difference.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The target is visibly rendered as a mostly unstyled, narrow left-aligned column with large unused whitespace and a horizontal scrollbar, unlike the structured multi-column reference. This substantially degrades the page\u2019s organization and usability.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible target controls, including the audio carousel arrows and Save buttons, have recognizable icons or readable labels. No essential control in these views is visibly unreadable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied views form a coherent comparison of BBC pages. The differing content and layout are assessable defects, not evidence that the reference and target states are mismatched.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s visible headlines, descriptions, audio categories and durations convey coherent news and podcast content. The presentation and content differences do not make the displayed text meaningless.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating page content**\n\nI need to assess why the target appears as a browser's default unstyled page. It looks like the content is out of sequence compared to the BBC homepage. The target is showing live sports and recommended audio, but the styling seems broken. Is this a presentation defect? Yes, it has a poor layout due to missing CSS, making the content somewhat readable. The target page may have different articles because it is dynamically generated.**Assessing page organization**\n\nI need to evaluate the contract's core information and assess material loss. The content fidelity is compromised due to significant differences in page organization; the target likely displays different homepage sections. The unstyled layout has excessive white space and a horizontal scrollbar. While the essential controls like save buttons are present, navigation seems absent. The layout lost the global header, but the target captures indicate no header because of the absent stylesheet. Despite this, the coherent content looks like the same BBC news site with comparable full-page snapshots.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating page content**\n\nI need to assess why the target appears as a browser's default unstyled page. It looks like the content is out of sequence compared to the BBC homepage. The target is showing live sports and recommended audio, but the styling seems broken. Is this a presentation defect? Yes, it has a poor layout due to missing CSS, making the content somewhat readable. The target page may have different articles because it is dynamically generated.**Assessing page organization**\n\nI need to evaluate the contract's core information and assess material loss. The content fidelity is compromised due to significant differences in page organization; the target likely displays different homepage sections. The unstyled layout has excessive white space and a horizontal scrollbar. While the essential controls like save buttons are present, navigation seems absent. The layout lost the global header, but the target captures indicate no header because of the absent stylesheet. Despite this, the coherent content looks like the same BBC news site with comparable full-page snapshots.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AV57dIUWzTq-1R3p4dPoHE2OfliRrCBAxLeGFc00YpqtBvWblfJtDcYu2ZaLH2W8Ppo-7QhakBtO-lE3OIaAFKeN86PgDOHtbO_LVWm_-ZWctC0geEvV0lZzAxDd9UF4T957TSsi_7GuvItfNwtP6lFRpakLD6lqCUEZbAHDqfWp2zL_27vIXOzzA6kR5NnxZnb0lyz13x9v1EcyDr5zoLPpTU-pjIngv8kCRpYoAqsq65u6njvYIya7UMwOSy-A3S90PnthRI5mFgfpph33C0Jx5HDYChnW-LyN5SdxH9LdMlgRSuSm1cWaJabWbzUMBeWUZiBTflV35Nk-44aIn72iDZ2RjsGYSwExLOCFA67cZ3Q4-MTASqMcmmyWuJsvskWapAnxVQzcYjCCiLbLr38gVDt1rwAiSHomQIUlWIuEoMm6kd9a0mfz7P74RDt_hZkYwXgb4XewV4Gj8L82DpqxJjJAW51NRi40FA6FN86lNhYfGqzh3I9eBe3S2rfHtVCbOxiGDU8-ue6JzHYkI4YtRBiSQAPM3E5FYXBn4nAQeBbG5O3peDlht2INsFUxkQ1Ads2HK8iQp54X1VaUVE2MD0EieeY--8qpYCYWg09Aan7Qk0u6-JJ3qS0laSZgVHCWPzBUJMw40Nnjy-1nO84I7ptE2yCo2K2jKP9ZYfjOSCVdBBM8nYDRCEBCdymOX3IW4nRtHYxIcBKA6vpabnrAN5ycHBdmONZxpofz3Mqq07--WUGBmb12AjRQjnzmcFLMMloo0p68QOK2-IqqlVAG2n_UMRpwD2GaNGQE_WN74SHO2nJwHZHzYebBCI4U_ut_L3duFbemOdnCQoNK7-iL1sNbfauNOdxp85w3UOso1dZA0ZSZhDY6NaRgy9kB1M4rQi2W_JJKaj2yIFnF3C_aQvTxJPoQAwtf4ITc--AK5TsJAlPkae-HxwuqUnEWCUcBbZQ5f-8QShiE-rI2f07N0rojbl6dbiuHAnJ-FkWdq82ynE22zjM1w-TL63lzpu1KHLSsYdB-yufQjn2kgxhfm0rRDYVQYQ5C5J6NyIjC0cDrkdpKvIrWkpNCcRD92FjeSnAQGM4wXQPa_l-4qaTgCmxWOpDJR3HleFoFDZuHiHoA2HnP3cMD22A4BL_PkOsoX0AyrOMhVrH2DDXVpOXBdSciEXneEYW-NzfyqFjFJ5WlMsJnc5iL8O403dwDO0GPoswtMlTX0-Ri-9AD1DjNdL_tbrrJNdasqL3D4e4OisDQvuBVJhxfQanW_ggf3mJVG4H6yVpC_EKcewHR7MVk49Iq6u7NbV8ne_3d0f299N959YWxOkfHeb0X5MsLJ_5LJsaldiVr-h3EXImjxM7ILSmO4Sf5oeO87vN34Qc2PoEmQt_mn-x8Nu7kRvxZnpWim9Ccbqp3lEljBtW5VHGsUPUyS8nUGIWBOR7qggHd3GYqKw02xbjwRDm5Gakf93XVPpnrG4q0PbQxONtic5H5063HkdE9vMJDSxdpNkOZowINgV308hOuuNxd4cu1wAMWOOuXhsEo5byjpDNZTDLtdH2dvUl3tZklm25gUeJ9TSmogUPS_3XbeVYP7lewYGVJ3HkMFW_D_JOfGKRldfD0bT0KpjkuSMANCrbrDlIp3kyLH7z3sKc5OCyy-KFWmpRaiHGBt94yxiS2A97Xj2wZtWs-lbFTJnOEJGtV-jthJ3PiOKN_Dv6jwx6RvJ1G5OJiwd-XMtt5lPHFEKStM4zNqGqw4EtW0X0KApaLG8K_jXL5ubuRJcwSqF2TRTAvaXk8rzhIKjBEB4CUMlN2n__mO_PfIrrv1WNNoMHk1DecOp5KtoDm3J-vODnEgzfoo3Vt9aVs5rEw3YUIioLQexFvdOPIrRikZkJlS3BvzOlLzL06A6iE8RbppcEw5hAESvhNae8yElZP_-iHI8hYa-gTQOaxmyd3kuaUSXM6Gq8g_hmt1-miL_3lG2Zs_PnCEZVkoys7CLpnWLY42DfSUp_VkDLTfRMW672eheNPA1vSy2uH1JQ_RCW2FwUgsFrsji8YWiCZbZocoBU8eLkvuhgRXPSyd552RMQ2oM592f6ObncYfB01KpljAuyglo9SlIO54yC_iXTUxuQCdxyTtu5-u7NEt5A1iCqm15yaFE2XqCMgHC55EKplVC_RadhZXo6KNjFobRHvqp4SMbA7qXRaNR9niDUzlvJoVNh6z-OHoJ4JEnT5cTDSq9ddR3wDSlAjNo-9VTBghlncHrIVFoONIPlgi1pJVtLFH2CV5vDP8SiMJzfc68Ly7X6Tmk23bd3N7bRgUJ2-y2uiYlFuu13FWA4cAm-JydHWGf0R7NIulqXLe37dy1kgCF27i0JW6lv5s8s4KtwohYNAcajECpQtaLO47RRRmDbt02rw9mSGXMM28HQaxY-DQQ8cMUvlLQFX-tZejjFv16kk3p6HbLnpOBzkwNeJddzBSHeyEm0SITigcNtVIx7bEplQIaIuiQH-2eI6qTzO34Pomgv1vmFmtUzHOZkgw__jsGQKFgOTA1T0X4s0Fw_b1lUv_TDGV9TxXBIeg6-3h1hyLIPCO1zkk0wUjpcAYaxIX2fVxppyufkRiABQdXhuRRuI7DApyzmjOMMSoOjYyMwqMAhBCtdcOvoiJgpD359yh9EZMs0BQ9HVhy_Hh9-W8rfFaCgbAqMzeLuQgq3Z8Gc7H0DupMob10ydrhj02AGFWNzGfeCapQd3bzvLEJhInOBEen2nSp8x6Bqgl2txu2_P9eM6v5sOe7VK-1MmMzoTdfsByjBgVPTsSfHmuUh8F826_uqc5627lfy2S1nbks-EjSUvyBiw9ekDIH5LF6J8_ShV5EXslYfQLSbXBcyP2L1O8nRYYE4h9Hy7OGGNtOQCMVsUAkCSohjezbuj_BimZzFe8mLChVyggxz7RU8SMIvkN64prbj8nqnnK2MxcdNXn55hiuy3U7bwmKCSZkYlt1C0ZCexvgMThZJWe4mAVy4T9s14L_YHSifXDU2pj6aQWj-aWJZvlj8glO5BUQGKKIBORVv9jS8zxdELt2pBrLnes0RqW2TvI8XvY8w1VgObSQIjgahc9l02jra_t5VCbYhToBymxMNywykT_s6aKC1qUjYHWhuUmfHVWt-4aMH0YLVgIXn5Q2isfzhjcYLj0NryqxAIGuB5z2-yUJNxkb6ux66dHh_VvFKX60783zBgYKtfoub2a-0q54UNleb-R4znuMtmt0Jg8fAwwc292Je5KbH6zskf7hN3E4-0Let3R92j3UacEs2B2gU0XZqJtLEQiv0diAXqRLx9CeEH-Ta59pn_Bgp9a2RVzNZYOlc6xDYNPdnFs4Z1vVxAfD5md6wR-FIOrRla_4Z9z2t96m0-rxeCOTpV5dZ6he5FqW6hgOOdsjYDBrA6OmnqpAxSnbjk-of1DXok_DyTKuHN2XnXvJ9h9qqR55wj9HBfpiFNQeZdc5ywck0USiKIy7ZdHK8bl6G2rSh7ZrSaByMtBnJvbo3OoCdAj4Lrrmy0VZ2pYWRZRgO08FF-OOsT9cDDuIkTXJ6bGRJY_Ze8E6CNb4E4046St3fB4R_w5KArt9eRc8vHf4bd4wH1mugBEtfXvtOkgcPN9tFCEtR5KHD9itdZfZZVaHGyvu8F1rcQr7O9tdRxuQoMzMkPu7IvUILWIelV9AknuY5cSbO9VCEFeUsSZPEpoud2ETyxzLdczpEnGDOJFIiYNbHAuLP54imejUxUywWPvAyl7OXqmrOmyGbBgJbqGzvo_3XCpjgINVoQWdIiS7tcB9qM0FYeN7PuGY_ivjhGWz9Es2tCjYZb0NCdIpXZgQ_XDhhbc4U0gDzPg2iMOCuBkdcO923YMDd2kAqtVHDat8etL4Z6TbZjmmHwbcA5OOza7XFnQ9y4dhBSKGl2uBuJZiQ3kdr7NEqfVTIqYdJJC3i-n5ZreUaQvIjummzuZEJ6qoRJVYrFd7vSF3LIgAvxO5u5MZAc0uw6cBqUFXCTk-HIs3oiBM_pvoCT9Gv-8_HUV8HWPW-hmJCHkyubbQ60yXMV0qxLBsfsVO1eoZ2kmGfbvi3VtlfUPSrcMTGgV2G0Ks7n8giI-kR_J3vWbc0Sy6dZuSKclyeA0ppnT8fPozjah3N24XYCyw590B_nA0tvXvGUR8FFehC1Qc5hV8XXsoSza73LrGSAN3sNu2jSKeBGNNXHwQy2zXtzjS-O2SoE-ysKfUYGUVBxuugJcko-PsbQVCInx7eFQVZMdj387aEh30AYZlji8KrVJ1rM1XkUHHmXEu8HY_C3Ayifeu1GneHHaQB9tvbQ0a1CM68hgWczTlSXAP7fAJsVTecVIFczNCAmGSCf6Fnl2uNDRdpTTk_yHMNJENPYydgTOodbpA8iJHer_1w8t-pz-IIWLgi0tIuCC-IF3OnPgW6F3aWAEM1YXUG_KCmhYWFmn5qcnC-tPFwKwBbDanAXWon4U6xRuRAyoe5sUS_EDj699gGWzQmgelg52stVdfhZsdbywylIbfQfV6lzzZBGZYU6OdsNrOdNQ1d-TTiA1eOgRdwwQSbieD_ea95DoresaIO6zyoOhNIZgYes5yw7Ad2IHEjVJzgEfLX2jElo2tFyZfsxLXYk_Zn8AIz5j6vAvBNtK_hpyLwoLSSSNEhZzsHJgO6crjnoBGY2KgPgUPX4hA7nmlfefw4h41CVgyIc65cEp7Qzxux096HqFOqPhIddGr4vBL5-SFOf2OYQP5cjmQfglAFNJhZZM70pqiQ_4kDHOukautCzhmYA_zCoNIEn4xJsaZhjigZAWi3tiv8GkABobSXJpyzA_0EJYDGmyfTFr5Fd5Dq5-dyn4A7BeaBLUKdV6jJuCNkW38oZL0sDW5eNrmTmN_dqoa_P6zPG9OD68yO_eHazKSR6fm3hv2ZW4EA7vY0AuGFVmDudqYchx-uIl6GzwVJQO8dNd1p938nhJshXzl8WqRwQeKPArRg5kr4MQlILCB2YvJZlQa3vzbYstC2jB9yAC-PfPevzaErJtHh-HcheRCW8MiUtAnZQiMNSiAdGrnAkbtCTAY3d_XgevOWdI9Z7v4I8sUwsywXxqym30ALgz7hMtqRDZhFBBPmfDR8NO6l-D6-B9HB64MWlSgRIpfZ6d0IFt4Uo58O3xWHelObXCdfarFVG0njjVGYXSh2A33NxIeiBCZSUVzyI23BW_VkA8zYiEi8CnATD0DpS03YGYkuvPaNWhCecc0i1wFMRJkZRA344sj7Zhkkfu3m22D8vRuXI1dgrEFiCd10NLsQnhGRoxO1nQ7glV58YeCPwcRFtD0nGN4vREb06H_9IjlFl6ltpl54L5XgagyeNuEasm3JbhGoe_6WN2Ytzmm8thj0iyar8tBHL31kHUbQcjwg7YkVLV-101IfDHa9zdfuGurrU6o18a7NjmG3aB7S7VL1VHGQpx4tB_XzIsAoVMDJtY4dnr1hevWiuo-E9XZqeI2lHFp4TRgVrXF3.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0a783c60a86f72ed016ae80575821087d18f57aae52e4b6eb5",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18588,
+    "completion_tokens": 545,
+    "total_tokens": 19133,
+    "cost": 0.002595925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18585,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002595925,
+      "upstream_inference_prompt_cost": 0.002323425,
+      "upstream_inference_completions_cost": 0.0002725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 264,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

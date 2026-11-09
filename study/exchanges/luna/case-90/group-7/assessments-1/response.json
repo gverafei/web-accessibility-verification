@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views are visually identical. The climate articles, imagery, footer links, and surrounding page structure are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and arranged coherently in both states. The overlay obscures the same portion of the footer in each.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible category controls and the chat overlay\u2019s input and close controls appear the same and have understandable labels or icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both pairs of supplied views match exactly and form a coherent reference-target comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible article headlines, captions, section labels, and footer text convey coherent meaning; no material semantic difference is apparent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Considering JSON structure**\n\nI need to focus on using JSON effectively. I should ensure that identical screenshots have the same checksums; this is essential for consistency. I must also mention that an overlay might cover some footer elements, but all controls should remain visible, including the chatbot. The header and footer need to match across the board to maintain a consistent user experience. It\u2019s pretty crucial to get this right.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Considering JSON structure**\n\nI need to focus on using JSON effectively. I should ensure that identical screenshots have the same checksums; this is essential for consistency. I must also mention that an overlay might cover some footer elements, but all controls should remain visible, including the chatbot. The header and footer need to match across the board to maintain a consistent user experience. It\u2019s pretty crucial to get this right.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bmdb0lDa99WZPVy7iVCVe7OvDj0IGjNNXSL7NJ348BHjSIOHkVYpwKVikiIsJQk6nCOMHS4zeECL6KGmp35umF3lODLQZoc8sGYYgTaECD6Hur2kD4ZlA4pNjBm3bkOkOIB4oFSW1_Fn19U1iS7QBD-MX_UmmtQUDs9Z9bQvA8hZZlSQchDmip9_7xUKjz1eMQxWG9cLALd5SPS4ji2EmLy74W_ogRs4zKZEFG6MYkkY77KhPuvwChsT95PnXUIN6-aa2st9e9dw5SiRQBpsEU5S3smnHyLPdIKBfgKBRR8W34aDJSrUWXkQkLBQdkRfyvtV237-V2p3vkZ6-B0BXrn6LECVYVfc5PdHMQMJ97MINmXdrrzl6Wnu45ub8I48I7LaZf6JO663EhNs5Lsw1Wraed6JaT2RJRZlrmpB7uC60F-E0bniL2ehHobYbLuGfc2p6eQNdlAwb__6dghcvQJdNQHP53Bo0bp-o_0oFvGfnJGSS4ORjjKrqPYGRY2PDDEtXr3z2kinEIeFcxds443zbW59Q_WYz7Kwero3VJ43TLVhs4jGPcziPtf_eqwJc32u6eNylJsFoFmyL8MsDWP0STIQAWolumnI2Qi5_DW6Oh8PA7HL2YYJQ-1JA34wfZhuNeqCPBOpFkav0B6ZIhfTXXit4dhTLnYJ_91-PS1fd-_q1xuMVZDTxMCDCnAx9iuOyfM-TkKer7NkRS-Gr4F-UDouZjWt854Dr89pfmtSLL9EXUsgSt6q0i1aBKXkVZwtJcWrzl71_C5cEXOB7ZpaHOWq_lAm8TFBVDRSQJqPVdiyFbDg0yynW1IHq8wcHcppVM3rMftFOXYN0vLc-nvQexQg6V3vHxqDqNOexSr-R35vaEYAlm5MWFpeoonblTh1r4VTkaU65ODED2xIWpfVXo8ZilAZ4nzGdVhk060Iv5cyrBCMD-8B6SZvX_M2-yVq2MKO0esCvM61xJidSEkBYvHw_WYk1wMZ9V_2nXiIOXI9EbhGZKgdgWKfG0-5GCXpZ72FaEX5ZV4_lXyAo08ab57fd_qo91IRv4JK5m4-_-1z1aLRtlvT0oSTVFXUd6aMy2qlyY5isLgM-bEVt0UAGoczA7Ye9rP2c-NMnISXCLOMFtmX2l6dESAg9NyQ8i97blPRImIZYRB3Bdn1XoDtU9ya0krQb1NLAVrrx12FxDq4M5TfzEJvEohY-WBjDbcHCZ9m611ZvDkQD99ij4eg5gIAJw4yQmCXe9tsr3lQIITTsFQpSnVPs2vgENgx1e5zaBqDW1ysTaayTWKGkQvtAwGshoyJTBBpUpFJCXsH2E3VYoJOUPv8mtqqvsBWNrIQ7cuXtKp1oS2HWDRs-BVPQNs4_chuhNVaqRZGKTYII_DoWOTMxLSEYbcagRwYPtkIQBsRk-Mgq0vrEop9bgOcXoPoVabKxW9SRVwRECF4FG6SExUzqPOg1zyrhnKDZ5KtLl0AuxKoYnnn66q5ouKbeGy8HOCq975byvBzGvcO5JuHBHCehENYaHRVlsH9KHqnX5wfRlHVjojpDG5vpyLWwb1XnMef8yd8dHtRL2_8n35DDeQJ8iaLu5NdryPUBoY_XKajCtl2fQ6Tw6pmAJvCAfqXysUqmtSqGgQM5SNTFsjY3T268OKroK1ewjNJ_9sPziPYZ-YaR_MI_Aib8kOF4fwJ6ojdVrobWPoERvvLog-LtuOJpheStZM_MGRExTrjuwk_XXVqNLEtvGLTd6dTgOKDIlJyrLRapgxP4x3U2PDwwwL5S5cVaWbo8I1fiJEWXZ_ox88s5uQ2ZLtsNetvFi0fN_n0g2dxcV9C0UDe78P_rpISXraATpQvWAgEFC8QuqUPI5QZRB0hPEwYHFt52ZxvibC67lbFMuykxlM7MkOYaz8Flh-ha9Hz8U1eZB1rX_ufNo4j8Q7pnezw9-dsuQ57Qh8iPec4a3phTiiiU_Au6Ds1x53_CyzLSPULi_0D9Rg8wnaDbKHN8rADSGbqndhMfuEgVP8VV3IqSb5dik=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00675e6484d89a1a016ae8199b737887d1a866044a795e3666",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18620,
+    "completion_tokens": 273,
+    "total_tokens": 18893,
+    "cost": 0.002463925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18617,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002463925,
+      "upstream_inference_prompt_cost": 0.002327425,
+      "upstream_inference_completions_cost": 0.0001365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

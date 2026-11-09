@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents coherent PHP news entries, release information, dates, links, and an older-entries control, consistent with the reference\u2019s news-page purpose. A regenerated layout and different entries are permitted.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible target content is legible and arranged coherently in cards, with a readable documentation panel and footer. No substantial clipping or overlap is evident.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links, the \u201cOlder news entries\u201d button, documentation links, and footer navigation have understandable labels. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"Both images show coherent PHP news-page content in the intended reference/target comparison; their layout differences do not make the evidence mismatched.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s release announcements, survey item, documentation links, and navigation convey a clear meaning appropriate to a PHP site.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6635,
+    "completion_tokens": 221,
+    "total_tokens": 6856,
+    "cost": 0.0009398,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6632,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009398,
+      "upstream_inference_prompt_cost": 0.0008293,
+      "upstream_inference_completions_cost": 0.0001105
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

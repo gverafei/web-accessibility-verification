@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible premium-offerings section and footer information. The supplied views show no material content loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is coherently arranged and legible. The title clipping at the sticky header and cookie banner overlap occur in both reference and target.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible offering links, navigation, and cookie-banner controls have readable labels and recognizable purposes.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target windows depict the same page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page text and labels convey a coherent purpose, including premium offerings and footer navigation.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Parsing image details**\n\nI need to work with JSON here. The images are essentially identical, except for the footer positions and content of image 3 and 4 being the same. Images 1 and 2 have the exact same checksum. The header at y4298 is sticky and cuts the title equally, while the footer and cookie overlay are also the same. Everything seems to meet the requirements, with controls showing visible premium links, navigation, and cookies organized semantically.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Parsing image details**\n\nI need to work with JSON here. The images are essentially identical, except for the footer positions and content of image 3 and 4 being the same. Images 1 and 2 have the exact same checksum. The header at y4298 is sticky and cuts the title equally, while the footer and cookie overlay are also the same. Everything seems to meet the requirements, with controls showing visible premium links, navigation, and cookies organized semantically.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BqbB-5wBuuxXrWNeC9i66MuK5EY__wk98JqSxNY5R2kYp8qoDVDPhsYNF8dJjdnsUFXE8C2kWFxdbNHF8adANMZcHruYqXSuOJCANh6cGy3YPh3YxiKRyAEOtcevJHP2ovHO-lST8GmYwr341xJApVxtqZlOUQGeqAMZL3sxhjQZfpkTb2QeOwM86p8ntgMKLbafIPGd9CTt_QFioubRFj28kwslHLPk5i7cdkABfJJSSHNhUWhYSuMFBBT7Rc9147rAgfSPf4FstKy7VEx82PUhdkf_t0BSmhT_rJK5vhKCaMAlGabORgIgzE6iuePAZWOU65wBPhrX13qD-Hwia2EAMjUk6ySHdIgKPzkAP4ix2gDFUAKcRJuaBFHAWVAgo5hKwazgYHCLSw7NWehNNud4HaBarXFAIdZfEJVecveC2Jf6apR64h0QEqXnE0hNPX7C8s97uP2s-r7yDtsAVO3Od0V9iz6jkbmbV1wMQcIM60nHdHVhrEctR-HY6c9hb5Hu-pDC2QQoWN7Vhv74avNZFI7y6Swac23r_VggNBq7OE7NwXh3vQXdMrDTNKgxMIW8tvLlUdCOHqG7ySodEh1J39F5pKCtzDar2fCP8xmulc0Jt5Hcdfn8s9T_8PvevjQccoU3k2mFFFNxSR2ryDzlPYXcyJQ3epgvbnd4sRBx0dVRGNQPkhsWPAMjdd7gKGCqBKsiQj9e6bwHAx2OfJfihR3gWUkmmRkaA6B-9AZlvjp6cxB9SHOs2P9mQrGcCUhT8zZkbvubzDLcpI6JJpc4e4XLi2IX9BxMO3Bnq-16kKgZT5zCpp3LmoQ64jQPKvj5Cx4d6gfBVt3JMhjTgW3OlwUKVw80em48PrwjNaPN078SScLHn0qcpBLEf2933LphjbvS3t2GzVK0OojkcXHHHpSra883f5QrDLYofYlRTi7B92khCHXWXbiCc9vjw0EnD37gKNxup3_211dPXixXrwY4RsWGtbC_Q-_C661Q3sj6bqub_gOT0Z1T1oNHNVCIZcrFBWw8fDzJRNGJbavVTvGDpvnCls4Wvmv44ZlEtEosJBnHMQ00d6xIe04LGLR-uruBIg6twOixIvxrTnGe4owABBHkRj8dnPI4NWtXQDNg7ybj1ithIxk4nVbq7GpQvYL2N6c5TqOvVzETXrU4KivMZyshjvGSxGacT0hSXbv9lepmAgqbXGevcd2ocLdTkfs-5y2bTK0T8m8mZvGoGPilxQ-oO3tp0oc4__tpwPBYGt8Lbono60u_C-JgHqk0JmTrrPBvkFoD-BBQ682vmzIATerJ6UkPsixTzHJ4h25KGhzvvPSnTLt2NIULh0-yfZ3dBmFGuqDzBo6AUTsToqva-6hWrtCpMbXJlKlQ0OW8O8hxbm1BqpprxvDQDe5rLOPDaHrds0xIAwrMYwG7bTpxIAy8frFAF4BHPE4-hEs9HpJ1rcPv_MiLziSPoFviRoPtSRXmDlhwgqI7ubM4O7zSuIJHYKKzi-tmKWkvPVjfHps0rNoJDK18tFn0ZMu16D_HQqYBa4a09KUtUAIRXe1CgrwOZLMH5JnatTv-pE4m86aDFxqWF_k6ATB0J5CsdgdnNAhV7yXlHHmFSeCFnwhrhoYbVyiP76UVKHYIpJpbqCs30f0mVtmfshV_HJfC1oTINbph3FLefzMp6_ic95ns-zepuibPIE83x3_7pdnoRjX7ryqXz1dzesavxQJWKUXHVHzyst97b32naJNJaueeUi-ibggkXCUUIWxkfBgPZ0RLoohWY1L2J_zCWEw_23Y2IdrKUkvSPCSBAlhk_DPaA5W2OjaOHhxRciVLnYjFLI3Sp7h_iPvnzfG8BrsSEaVDRJEwH2sT-5CnLcUXsDRFYd54FMgijXJ2Yxa8s7M6ah1HHPC5YtYUf0u9v-bQoO0_Zt3p74_WqKO3x3BzsD-u6tH3TxwRrFoS9V0bGwqmWW1EUcoXfhdG7HyWdz0SxGjQCTZZnZFzY12gc39b-2pHolF-Fs009kzmxE7j851wlct3kcKYFomnCe5e9czm-dm2FVX5aCj7CS98345G3XaScpEI_nVRy0Qo6miy1bPHIeFtBfJqqMju9NLPFYZRHeTQTH5Lo34mLSYpVdOlvaLDdugtqrfNX5hVkxfk4n3yDkQhe_3CPx3MynFxqERG_mWgFXGI6wsJt8XQpTVVg5m3AnGMe79t0zxq2oRQffcCThZ0PFLEKBCubc0PgsOrbDLVIo7S3r1_OIL0-pqSIn4BH1Y4rH-f60l_bDQsilMH5r-W2fDTtYbTNWkBvxNbveyKtFDyjwvn6jHXM4FO2FsNooehcc3StzHHU_iWim8QicMv2M56zEPnqGUQiNiOD-237lqTIZse9EYRQkRDQNMW1cfMjLNq4Cc43XRulk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_099a601fd51b99a7016ae81a9a390087d1ab2cb0eefc7abb35",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11456,
+    "completion_tokens": 295,
+    "total_tokens": 11751,
+    "cost": 0.001579425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11453,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001579425,
+      "upstream_inference_prompt_cost": 0.001431925,
+      "upstream_inference_completions_cost": 0.0001475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

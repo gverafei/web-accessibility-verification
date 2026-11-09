@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>AI-Powered Ad Tech for Measurable Performance | PubMatic</title>
+<meta content="Drive measurable advertising performance with PubMatic's AI-powered, agentic platform — built for buyers, publishers, and commerce media across CTV and mobile." name="description"/>
+<link href="https://pubmatic.com/" rel="canonical"/>
+<style>
+  :root {
+    --ink: #0b1a24;
+    --ink-soft: #3d4f5c;
+    --paper: #ffffff;
+    --tint: #f3f7f9;
+    --brand: #0a6e8a;
+    --brand-strong: #074f64;
+    --accent: #4fc8ed;
+    --gold: #e0b43a;
+    --focus: #ffbf47;
+    --dark: #071a24;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--brand-strong); text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+  .skip-link {
+    position: absolute; left: 12px; top: -60px; z-index: 100;
+    background: var(--ink); color: #fff; padding: 10px 16px; border-radius: var(--radius);
+  }
+  .skip-link:focus { top: 12px; }
+  .wrap { width: min(1120px, 92%); margin: 0 auto; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+
+  /* Header */
+  .site-header { background: var(--dark); color: #fff; }
+  .site-header .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 14px 0; flex-wrap: wrap;
+  }
+  .brand-link { color: #fff; font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: -0.02em; }
+  .brand-link span { color: var(--accent); }
+  .main-nav ul { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; flex-wrap: wrap; }
+  .main-nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+  .main-nav a:hover { color: var(--accent); text-decoration: underline; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: var(--radius);
+    font-weight: 700; text-decoration: none; border: 2px solid var(--ink);
+    background: var(--ink); color: #fff;
+  }
+  .btn:hover { background: var(--brand-strong); border-color: var(--brand-strong); color: #fff; }
+  .btn-light { background: transparent; color: #fff; border-color: #fff; }
+  .btn-light:hover { background: #fff; color: var(--dark); }
+  .btn-cyan { background: var(--accent); color: var(--dark); border-color: var(--accent); }
+  .btn-cyan:hover { background: #fff; color: var(--dark); border-color: #fff; }
+
+  /* Hero */
+  .hero { background: var(--dark); color: #fff; padding: 72px 0 80px; }
+  .hero-grid { display: grid; gap: 40px; grid-template-columns: 1.1fr 1fr; align-items: center; }
+  .hero h1 { font-size: clamp(2rem, 4.2vw, 3.2rem); line-height: 1.12; margin: 0 0 20px; letter-spacing: -0.01em; }
+  .hero .rule { width: 120px; height: 4px; background: var(--gold); margin: 0 0 20px; border: 0; }
+  .hero p { font-size: 1.1rem; color: #d7e6ee; max-width: 56ch; }
+  .hero-media img { border: 8px solid var(--accent); border-radius: 4px; }
+  .hero-actions { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* Sections */
+  section { padding: 64px 0; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--brand-strong); font-size: 0.85rem; margin: 0 0 8px; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin: 0 0 16px; }
+  h3 { font-size: 1.25rem; margin: 0 0 8px; }
+  .tint { background: var(--tint); }
+
+  .video-frame { position: relative; padding-top: 56.25%; background: #000; border-radius: var(--radius); overflow: hidden; }
+  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  .cards { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    background: #fff; border: 1px solid #d5e1e7; border-radius: var(--radius);
+    padding: 24px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .card p { margin: 0; color: var(--ink-soft); }
+  .card .btn { align-self: flex-start; margin-top: auto; background: transparent; color: var(--brand-strong); border-color: var(--brand-strong); }
+  .card .btn:hover { background: var(--brand-strong); color: #fff; }
+
+  .case-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .case { border: 1px solid #d5e1e7; border-radius: var(--radius); overflow: hidden; background: #fff; display: flex; flex-direction: column; }
+  .case img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+  .case-body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .case-body p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+  .stat-line { font-weight: 700; color: var(--brand-strong); }
+  .case-body a { margin-top: auto; font-weight: 700; }
+
+  .stats { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin: 24px 0; }
+  .stat strong { display: block; font-size: 2.2rem; color: var(--brand-strong); line-height: 1; }
+  .stat span { color: var(--ink-soft); font-size: 0.95rem; }
+
+  details {
+    border: 1px solid #c8d7de; border-radius: var(--radius); padding: 14px 18px; background: #fff; margin-bottom: 12px;
+  }
+  summary { cursor: pointer; font-weight: 700; color: var(--ink); }
+  details p { color: var(--ink-soft); margin: 10px 0 0; }
+
+  .news-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+  .news-list li { border-top: 2px solid var(--ink); padding-top: 14px; }
+  .news-list time { font-size: 0.9rem; color: var(--ink-soft); }
+  .news-list a { font-weight: 700; font-size: 1.05rem; }
+
+  .events { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .event { background: #fff; border-left: 4px solid var(--gold); padding: 18px 20px; border-radius: var(--radius); }
+  .event a { font-weight: 700; }
+
+  .promo {
+    background: var(--brand-strong); color: #fff; border-radius: var(--radius);
+    padding: 28px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap;
+  }
+  .promo h2 { color: #fff; margin: 0 0 8px; font-size: 1.5rem; }
+  .promo p { margin: 0; }
+  .promo img { width: 200px; border-radius: 4px; }
+
+  /* Footer */
+  .site-footer { background: var(--dark); color: #d7e6ee; padding: 48px 0 28px; font-size: 0.95rem; }
+  .site-footer a { color: #fff; }
+  .footer-grid { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .footer-grid h2 { font-size: 1rem; color: #fff; margin: 0 0 10px; }
+  .legal { margin-top: 32px; padding-top: 20px; border-top: 1px solid #23414f; font-size: 0.85rem; }
+  .legal a { color: #cfe6ef; }
+  .social a { margin-right: 14px; }
+
+  .search-form { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .search-form input[type="search"] {
+    flex: 1 1 240px; padding: 12px; font: inherit; border: 2px solid #fff; border-radius: var(--radius); background: #fff; color: var(--ink);
+  }
+  .search-form button { padding: 12px 18px; font: inherit; font-weight: 700; border-radius: var(--radius); border: 2px solid var(--accent); background: var(--accent); color: var(--dark); cursor: pointer; }
+
+  @media (max-width: 800px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .main-nav ul { gap: 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand-link" href="https://pubmatic.com/">Pub<span>Matic</span><span class="sr-only"> home</span></a>
+<nav aria-label="Primary" class="main-nav">
+<ul>
+<li><a href="https://pubmatic.com/solutions/publishers/">Solutions</a></li>
+<li><a href="https://pubmatic.com/products/">Products</a></li>
+<li><a href="https://pubmatic.com/resources">Resources</a></li>
+<li><a href="https://pubmatic.com/about-us">About</a></li>
+<li><a href="https://pubmatic.com/careers/home/">Careers</a></li>
+<li><a href="https://apps.pubmatic.com/publisher/">Login</a></li>
+</ul>
+</nav>
+<a class="btn btn-cyan" href="https://pubmatic.com/contact-us/">Contact Us</a>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<div>
+<h1 id="hero-title">AI-Powered Advertising Performance for Premium Digital Media</h1>
+<hr class="rule"/>
+<p>PubMatic is the leading AI-powered ad tech company delivering measurable advertising performance through an intelligent, unified platform that connects buyers, publishers, data partners, and commerce media across CTV, mobile app, and omnichannel environments.</p>
+<div class="hero-actions">
+<a class="btn btn-cyan" href="https://pubmatic.com/contact-us/">Contact Us</a>
+<a class="btn btn-light" href="https://pubmatic.com/solutions/agents/">Explore Agentic</a>
+</div>
+</div>
+<div class="hero-media">
+<img alt="A hand touching a glowing point of light in a field of bright blue data particles" src="https://pubmatic.com/wp-content/uploads/2026/04/home-hero-desktop-2880x1446-2026.jpg"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="video-title">
+<div class="wrap">
+<h2 class="sr-only" id="video-title">Product overview video</h2>
+<div class="video-frame">
+<iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" loading="lazy" src="https://player.vimeo.com/video/1179919451?title=0&amp;byline=0&amp;portrait=0" title="PubMatic product overview video"></iframe>
+</div>
+</div>
+</section>
+<section aria-labelledby="solutions-title" class="tint">
+<div class="wrap">
+<p class="eyebrow">Our solutions</p>
+<h2 id="solutions-title">Built for every side of the market</h2>
+<div class="cards">
+<article class="card">
+<h3>For Publishers</h3>
+<p>Maximize ad revenue with AI-powered yield optimization, data monetization control, premium demand access, and transparent insights.</p>
+<a class="btn" href="https://pubmatic.com/solutions/publishers/">Our publisher solutions<span class="sr-only"> for publishers</span></a>
+</article>
+<article class="card">
+<h3>For Buyers</h3>
+<p>Harness AI to unlock smarter media buying, with real-time insights, curated audiences, and full transparency across the open internet.</p>
+<a class="btn" href="https://pubmatic.com/solutions/buyers/">Our buyer solutions<span class="sr-only"> for buyers</span></a>
+</article>
+<article class="card">
+<h3>For Commerce Media</h3>
+<p>Combine core monetization and customer acquisition in a transparent, flexible, and scalable commerce marketplace platform.</p>
+<a class="btn" href="https://pubmatic.com/solutions/commerce-media/">Our commerce media solutions<span class="sr-only"> for commerce media</span></a>
+</article>
+<article class="card">
+<h3>For Agents</h3>
+<p>The first operating system that lets AI agents plan, execute, and optimize media, guided by your strategy.</p>
+<a class="btn" href="https://pubmatic.com/solutions/agents/">Our agent solutions<span class="sr-only"> for agents</span></a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="cases-title">
+<div class="wrap">
+<p class="eyebrow">Proof in market</p>
+<h2 id="cases-title">Customer stories</h2>
+<div class="case-grid">
+<article class="case">
+<img alt="TimeTree case study thumbnail" height="417" loading="lazy" src="https://pubmatic.com/wp-content/uploads/2026/09/Thumb-Case-Study-TimeTree-1.png" width="750"/>
+<div class="case-body">
+<h3>PubMatic's OpenWrap SDK Delivers a 17% CPM Uplift for TimeTree</h3>
+<p class="stat-line">17% CPM uplift in banner revenue; 6% in rectangle revenue</p>
+<a href="https://pubmatic.com/case-studies/pubmatics-openwrap-sdk-delivers-a-17-percent-cpm-uplift-for-timetree/">View Case Study<span class="sr-only"> for TimeTree</span></a>
+</div>
+</article>
+<article class="case">
+<img alt="Klever case study thumbnail" height="417" loading="lazy" src="https://pubmatic.com/wp-content/uploads/2026/08/Thumb-Case-Study-Klever.png" width="750"/>
+<div class="case-body">
+<h3>How Klever Delivered 5x ROAS for Rouge Care via PubMatic's AgenticOS</h3>
+<p class="stat-line">5x ROAS, doubling the target of 2.5x</p>
+<a href="https://pubmatic.com/case-studies/how-klever-delivered-5x-roas-for-rouge-care-via-pubmatics-agenticos/">View Case Study<span class="sr-only"> for Klever</span></a>
+</div>
+</article>
+<article class="case">
+<img alt="Smadex case study thumbnail" height="417" loading="lazy" src="https://pubmatic.com/wp-content/uploads/2026/08/Thumb-Case-Study-Smadex.png" width="750"/>
+<div class="case-body">
+<h3>Smadex &amp; PubMatic Partner To Extend Mobile Precision To Premium CTV Streaming</h3>
+<p>Scaling monthly spend by 80x through a new performance CTV channel.</p>
+<a href="https://pubmatic.com/case-studies/smadex-pubmatic-partner-to-extend-mobile-precision-to-premium-ctv-streaming/">View Case Study<span class="sr-only"> for Smadex</span></a>
+</div>
+</article>
+<article class="case">
+<img alt="Optima case study thumbnail" height="417" loading="lazy" src="https://pubmatic.com/wp-content/uploads/2026/08/Thumb-Case-Study-Optima-3.png" width="750"/>
+<div class="case-body">
+<h3>Optima Grows Revenue 49% With PubMatic Intelligent Yield</h3>
+<p class="stat-line">34% revenue uplift, Q2 2026 vs Q1 2026</p>
+<a href="https://pubmatic.com/case-studies/optima-grows-revenue-49-with-pubmatic-intelligent-yield/">View Case Study<span class="sr-only"> for Optima</span></a>
+</div>
+</article>
+</div>
+<p><a href="https://pubmatic.com/case-studies/">View all customer stories</a></p>
+</div>
+</section>
+<section aria-labelledby="resources-title" class="tint">
+<div class="wrap">
+<h2 id="resources-title">Resources and insights</h2>
+<p>Explore our thought leadership, research, and insights on the technology and trends driving the future of digital advertising.</p>
+<a class="btn" href="https://pubmatic.com/thinking/">Browse resources and insights</a>
+</div>
+</section>
+<section aria-labelledby="events-title">
+<div class="wrap">
+<h2 id="events-title">Upcoming events</h2>
+<p>Connect with our team and learn from our experts at events across the globe.</p>
+<div class="events">
+<div class="event">
+<a href="https://events.pubmatic.com/emeaukvideoweekroadmapnov2026">VIDEOWEEK ROADMAP 2026</a>
+<p>November 12, 2026</p>
+</div>
+<div class="event">
+<a href="https://events.pubmatic.com/emeaukthefutureoftvadvertising">The Future of TV Advertising Global 2026</a>
+<p>Dec 8 – Dec 9</p>
+</div>
+</div>
+<p><a href="https://events.pubmatic.com/">View all events</a></p>
+</div>
+</section>
+<section aria-labelledby="news-title" class="tint">
+<div class="wrap">
+<h2 id="news-title">News and recognition</h2>
+<ul class="news-list">
+<li>
+<time datetime="2026-10-06">October 6, 2026</time>
+<p><a href="https://pubmatic.com/news/sony-pictures-entertainment-names-pubmatic-its-preferred-programmatic-advertising-partner/">Sony Pictures Entertainment Names PubMatic Its Preferred Programmatic Advertising Partner</a></p>
+</li>
+<li>
+<time datetime="2026-09-30">September 30, 2026</time>
+<p><a href="https://pubmatic.com/news/the-media-shop-and-pubmatic-launch-southeast-asias-first-agentic-luxury-campaign/">The Media Shop and PubMatic Launch Southeast Asia’s First Agentic Luxury Campaign</a></p>
+</li>
+<li>
+<time datetime="2026-09-08">September 8, 2026</time>
+<p><a href="https://pubmatic.com/news/pubmatic-increases-investment-in-hong-kong-to-accelerate-buy-side-business-growth/">PubMatic Increases Investment in Hong Kong to Accelerate Buy-side Business Growth</a></p>
+</li>
+</ul>
+<p><a href="https://pubmatic.com/news/">Read all news</a></p>
+</div>
+</section>
+<section aria-labelledby="scale-title">
+<div class="wrap">
+<h2 id="scale-title">Scale that delivers</h2>
+<div class="stats">
+<div class="stat"><strong>2.8T</strong><span>Advertiser bids per day</span></div>
+<div class="stat"><strong>962B</strong><span>Daily ad impressions</span></div>
+<div class="stat"><strong>959</strong><span>Global employees</span></div>
+</div>
+<p>We have built a global infrastructure to maximize customer value and put you in control of your digital advertising business.</p>
+<a class="btn" href="https://pubmatic.com/about-us/">About us</a>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="tint">
+<div class="wrap">
+<h2 id="faq-title">Questions and answers</h2>
+<details>
+<summary>Where can I learn about PubMatic's privacy practices?</summary>
+<p>Read the <a href="https://pubmatic.com/legal/properties-privacy-policy/">Privacy Policy</a> and visit <a href="https://pubmatic.com/legal/your-privacy-choices/">Your Privacy Choices</a>.</p>
+</details>
+<details>
+<summary>How do I contact the PubMatic team?</summary>
+<p>Use the <a href="https://pubmatic.com/contact-us/">Contact Us</a> page to reach our team.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="promo-title">
+<div class="wrap">
+<div class="promo">
+<img alt="Smiling shopper holding a wrapped gift on a city street" src="https://pubmatic.com/wp-content/uploads/2023/11/AP-Featured-Thumb-Holiday-Shoppers.jpg"/>
+<div>
+<h2 id="promo-title">Holiday Auction Package is Live. Secure Your Spot</h2>
+<p><a class="btn btn-cyan" href="https://pubmatic.com/auction-packages/americas/holiday-shoppers-us/">View package</a></p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="search-title" class="tint">
+<div class="wrap">
+<h2 id="search-title">Search PubMatic</h2>
+<form action="https://pubmatic.com/" class="search-form" method="get" role="search">
+<label class="sr-only" for="site-search">What can we help you find?</label>
+<input id="site-search" name="s" placeholder="What can we help you find?" type="search"/>
+<button type="submit">Search</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h2>PubMatic</h2>
+<p>PubMatic maximizes customer value by delivering digital advertising’s supply chain of the future.</p>
+<p class="social">
+<a href="https://www.facebook.com/PubMatic">Facebook</a>
+<a href="https://x.com/PubMatic">X</a>
+<a href="https://www.linkedin.com/company/PubMatic">LinkedIn</a>
+</p>
+</div>
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company</h2>
+<ul>
+<li><a href="https://pubmatic.com/solutions/publishers/">Solutions</a></li>
+<li><a href="https://pubmatic.com/thinking/">Resources</a></li>
+<li><a href="https://pubmatic.com/about-us/">About Us</a></li>
+<li><a href="https://pubmatic.com/careers/">Careers</a></li>
+<li><a href="https://investors.pubmatic.com/">Investor Relations</a></li>
+<li><a href="https://help.pubmatic.com/">Community</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-legal">
+<h2 id="f-legal">Legal</h2>
+<ul>
+<li><a href="https://pubmatic.com/legal/privacy/">Privacy</a></li>
+<li><a href="https://pubmatic.com/legal/your-privacy-choices/">Your Privacy Choices</a></li>
+<li><a href="https://pubmatic.com/legal/pubmatic-legal-policies/">Legal</a></li>
+<li><a href="https://pubmatic.com/legal/texas-registered-data-broker/">Registered data broker (Texas)</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-lang">
+<h2 id="f-lang">Language</h2>
+<ul>
+<li><a href="https://pubmatic.com/" hreflang="en" lang="en">English</a></li>
+<li><a href="https://pubmatic.co.jp/" hreflang="ja" lang="ja">日本語</a></li>
+</ul>
+</nav>
+</div>
+<div class="legal">
+<p>PubMatic is a <a href="https://pubmatic.com/legal/texas-registered-data-broker/">registered data broker</a> in the state of Texas.</p>
+<p>Copyright © 2026 PubMatic, Inc. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are identical in both supplied windows. Visible article listings, newsletter and subscriber sections, and footer content are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content shown is legible and coherently arranged, with no material overlap or clipping. The sparse Partner Center area appears in both reference and target.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible subscription button and footer links are present and understandable in both versions. No control defect is observable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target states match exactly across both supplied windows and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, article titles, newsletter descriptions, and footer labels convey coherent meaning and are preserved in the target.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing screenshots for consistency**\n\nI need to make sure that all the screenshots have identical hashes. This means I should check for absolutely no differences in content. Although the presentation might vary, controls like the subscription button and footer links should be visible. I want to ensure there's coherence in the evidence, so everything should be semantically clear. Additionally, image3 referencing the partner center needs to also be identical, but it seems quite sparse overall. I'll take a closer look at the JSON too.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing screenshots for consistency**\n\nI need to make sure that all the screenshots have identical hashes. This means I should check for absolutely no differences in content. Although the presentation might vary, controls like the subscription button and footer links should be visible. I want to ensure there's coherence in the evidence, so everything should be semantically clear. Additionally, image3 referencing the partner center needs to also be identical, but it seems quite sparse overall. I'll take a closer look at the JSON too.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BxUcu_iRdE5NSRs-rwWIVAegymL0u5xLMY9s6BzsVYDObSPWNcpyg-N2b2lZqMC-KJP14HJwX9nx_zG93euBirqw2LmGMixGM4YW8WkJxUC1_GT5ad6YO26x0r2U324i27sd7WsSFwi40QQbg7s4b1gHIo6xh49lUDluIHrS5xg5ALUqAUpHHuJji3ii62S4x2cCJmpz8b2P-nNE1Otg73Ks-lOs9v4xww6XIsWy1f24Da7EYdTVMLxo43SQbMIGlAjeDDrv77w8TKvDNz8ndU9yTLcqiPOEQfOYB20a-b1U8SOjEbJCdeaH7POYZhJPtQjwTYakslPJUeQ6BWGbFh7PkYD8DNPblaYI6QL3ojeH6YT-Kb_KwX-4v03Z-x9m8YUdEf_DUu7MJEIfq5tOCqU4ZdYYyLx9OkJtpZoLEkoORlPNf2NKQBas7wGSYEBb0eiDvzGCxFBRMxr86A_xWNwELWmlVd-Qj15rswBgeHrKuvlFNhVhIol8TekFupnX3yFoXhtkBRVOM25B6CGWIEjRddixkpuSYZR1O-NHqXAYPrY5GUEPgrvMBMN1UHMNY-nfVmQRkc9gaaMSGXHO0EiUfDw0Z-2IYBa1eVDhXkY8-wsV0c552WjRic634GqyAKhwmJZcrej_mZiV7zf5so5L8y17H1L9YF9SncoOsco3wV79BUwCW0vquqN9or3kLTT9YYJdi2Wcla8TrkIcXgsX-wjXejt6nKv2RnOPemshkzb60MwaE5jTfSsGd38um4f71yBnhRycN35xpPLp0pJ9mvclZaF5ZiMPpldslGw3DVW8g6A_7hAlUUmXxisBmWtUZON6M7o0lqYeER8gAHU74LcGMvN93Hx61ppwyAU_Iv1OX7zwFVUZtuz5HldsbpQJngbrFCDlPLDipXqV18o9bd7IpSdCIyEMfVn7EiSEYU8FpCbrVK3c9bStX_SyR2zudd5K46TkhteLevbtVCYSyBs1W97N0RfJlb_ScZJOym1Hb3qiUvkW30EQNBcdGGCU1YjQweYPOaLUTG2iAO15VJ2hj24ZRQbR3Bm8wmW-OcPFZHU-UiT5aOQNoJ2EQwUPHwRdgaBhOlVlBCMOMxk0AprJvIEq9GNFATD7fPX5tF72uEJXEIFl0wRRkRWFxvTgD9JfMwU6MAfaxJt4gjN_jHqcuBikb4yINmNsqoYuR80wbh1WQKiSMINBJ8tBam3RrOL1EwtWgzHXzJrNcoIrmQlAORpB3NJ4DolGkhPpqVY_tD-ZlmExtaa-8ZVe0T3xjKwfp8F56mLs0TnswsGLWacT46XunopMvES7wJeZWw7z2WToghVEs96MIIP5ELDhEA52_-uQw9dySRFwdvZ9uuLDVZ9xdPGWnqr4CpcgR8IIwiKtM01xJ7aEGHR4hdWV3OjY3Em0tkppSSI3d1Qi6aPnJ1xfloexpdMToFDsvQaC-fCCKU1uRyE1isom9z08Sb3kb-vdYStcySR0fAC5vW-3oR13-FUBsLGVwgo8hZysfbfN3lKz0KZX_Pjxo5GXalgdIlanzsBHrlACMMuxmPqaxi5orx1yNvDlI3DH3XV4P4b-pz_BWd3Y7L0AdRgHHHmxJcePZ5uHbtrHdgGfMVDDdB65YyqRRLVF4Y74QazjaoATS9gzvCm8ZW8Pn4wmG7vLC8aF80mKOd3ib61aCsloR6k74PH9OV5Pln1V1lRknXFksPBLka_k2LekHHyUkbURgluscOF5f_gUar5EK23tRc9s-Jl8ZME47aD5j7Nvn533Qp5bZ1tntVyp5HygPQ8vmyesCzuwqf56C1D2xzsfr-Ixlq6bdRh7mZSfVLp5elFjkTP2WHE3z18gbbyqbB_Sm3StVbwFcV-dpqVflDMtiTb95b9Gm5by-4A55r1EpXWG9s3TI04bPzkE5DWINrNXuPOp2f_awnUpvSIgK4QIbY-FZiMTVH1UaRPPsywp06nqkB6-pTA_LWy-imt82YYWOjQgwSGaSmLbsgol8-kS52XPlAzLewpW4JQs-MptNjwwYS8kb5wRD-WYwQ3CvlUYJy_GC41x0gh4Ot0IQSX0yJnM0Nc4iOKB-Unr8Q6Y42Go1dfQMI1hTyw7MB27DhZAHhNll3jyJv8ZdcDUZmuWQYgnK9rd0QbtDFEM-xfOKJaw_RlR4laIzZTlhwa3ZO49DARun86VdwgfWiiwqmWk2ezyZvIFd0lBoRkjgcpW2Jd6zcrQHIG4PV87nSozohy0g5gUoujrweShIDCgDXKrFpVHQOeN65Fiu_KshlQPoW-v2Ad2YIb7jnKU0xbufFda7Wc_U7JxOsPpQUxaQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03c63f1d162a6a49016ae81c52a6ec87d1bd8e2ad1f440c6da",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12648,
+    "completion_tokens": 298,
+    "total_tokens": 12946,
+    "cost": 0.00027575,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12645,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027575,
+      "upstream_inference_prompt_cost": 0.00012675,
+      "upstream_inference_completions_cost": 0.000149
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

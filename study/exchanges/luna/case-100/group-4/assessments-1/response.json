@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are identical in the supplied regions. Visible article feature, game cards, descriptions, and section heading are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged in both states. The overlapping assistant widget appears the same in reference and target.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible game actions have readable \u201cPLAY NOW\u201d labels, and the other visible controls are understandable. No control differences are apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots show matching page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text and imagery communicate the same TIME Games and Health section context in both states.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image pairs**\n\nI'm considering how to accurately assess identical images in pairs, ensuring they all match. I need to check the controls that are currently visible, including any inputs from the assistant. It's critical to note that there should be no defects in this process. I also need to make sure our target reference is the same for all pairs. Lastly, I need to format the findings in JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image pairs**\n\nI'm considering how to accurately assess identical images in pairs, ensuring they all match. I need to check the controls that are currently visible, including any inputs from the assistant. It's critical to note that there should be no defects in this process. I also need to make sure our target reference is the same for all pairs. Lastly, I need to format the findings in JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BnmE_q893U3Qx1ZfQx039VDN7rho_vIPCnY86iHzdG-yEikbkXfJutzaI1LtJM0VoP2jOhwP9hS4MyM4Ka8y-6xPnjlQL2JZPsP1waQ38abSs1wVyyzlaV8a2UUhQI9u2rcHMOizetotxQnruQ5UD9qtWG4qEdCWKkKiMfw6bILEI44FHytWUvJYGMt5s8499ZEhr2kV-gpbGsrZuA0cLveWOH8hOsSCiNZrCkEvEWuPKo4lz4u4IqzPt_3XAQ49pbYAn0Kd1KfERS893Lv9B1mMypCMPfmMHk63KOg7FHeBGHRq3B6SNu8WDar5VhpFaqcA3cH02wBI6BDRhCZX-erb3reYQLeQaceL2M-n4xLDhaKU1XqrBmfIACGrVSIA35UxdsCdk-N1v3gOJVcREG3YwAHjBK9uYdJMR8VklLtRKi_SsNcXNUjtLvdZ0bM_vYH7cULOTwMOauPiLatfVQMU_ll1voctMvWMF464pbo9xRwLurfL3LZtaNJPLMXWVDk5rICqwFhaUKq9WFqoohAQ2RokDfsPd3nogmUr5uoxGeosDSYaCsfRpgV3XIu9lYNrKS3usUyuEJznzBYSv7ChFeMdhwERw7hvXADbgsWWsgbv-uE2fCIHJvAOTyN2wC6haunh9sRDlSpOnEHWyKlHhFpYogbort0maLD_Q26m91X1EIRj1vLjwoFKdXv_BVnCM3qmxOFm1wHD2xD1KxKGf076EfQDzGZjalyFJhxFU1XlyE-hzJwWiPNRoDd8Af_5cqDOmVPJS4TziGfZ7LC8Fy2odTdEoBWAG0kNSmIjJMSwLvKQRUMsqtdCPLJFum0FPmEm4i_9hCgR8ou3gz9_kCoHVAT2Owt-oGKTBLFFhv0WffUqESOjb0g3AeEsihurgwfPcgatGaQnVHKqG7_XGUL2S6tAKu8tJuH16ZytGjFYfsHTi35hDNPm5HN-KXq2y8iYGz_7ahLB5gK3HgFlRuvxDQyba__NyhbcLGQM-K-sHe9-ijNIbT2SrtVNoJIII3KIZVXM7HIkt92Oie0A1HFZvzePL7_mkmXVO8Ux5IgU-jYZqcDUCrAhwZTJdGSH3Eg3cpL679NB-zWg23a6GgDrH5YV4g0NFhV8o1VUm7JMkkyENDqxgBXmHukwD_IrdqrKVIgZyzIDKksKbxlFzBm4uJVBNgZxFN-gPBJVxZu0OpQcKQ5tg0nyC48yUKmM885RFPKwVAYKR2olYUv_F8cumkoOL3vBTmEnKHMHdQZUIvcnDTYZX_1lNJdSsw24jJSX1KKVnqr3BT5o6Q-w7wBwZxfAu8iO_rIgiGlHv0XUXbxYr3AUGiogaKHiDkzoInypb7foxNROGKt_nvRKOyul6dSY8HERPrarJaPJAdJZmpsrJu4xfE4O-xStEuOd-396UDubaLFIT0X7mUVleLn7et0LpXWvEAoIahOH5N-SyHehw2sOn7BlDcOdR43ETWYU0AUGakSbbtahHIccKkRNPIMUgjRPs8W49e3ajepc4vr2AMHgW7H0loZwPIdUqRM_KNfm2HLYvq_BQRgZHi_fgiM0AiY2KRbyOh0kvsNo6oJqX4JrhxRqiTwGpSZGXMSRnk6Xj2RfSPj5PsHtwEXdHN94RTqN_otl6wSaPk98iQ9-yB0bXIlrynK-37zBDiSV-t0rEYcn5bFG-EuiBg2XR4V4YFvDrxtHrhDK8UyPQmGLARLsTbAhxPr7_hDblrdtMGTrDi6P4sDsYb1jFMfI2ARd6ot9N4-WLHkL6bGJOuAw8csYp1IdUXqYFj8QLGf_btpLM6eGRUPUemS1e0upN6rbWlRwAfPCrQOTkaazGMl3kAsmlB1s8vb_O9yJVz7ZGjJpokDI2Hs5KNh9uunG3pr4_u3qADQ0u-X2SfVyfSdazC3WQ5EtCA-e8ghv1jyrYDT1JGSGbZdvKgrWYxDT1Otf1hBJyV_wkizyK6f-Zz48pKua28SXr058aFWaoMXE7C2eTjH-vETTGuEXQFfeY5yu2uofnf8l_8kC_ANo2lcJ7K1BNNPvNxK0_nf.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_049555efed18ed00016ae819e4d24c87d19e1319d2bef9967b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18623,
+    "completion_tokens": 270,
+    "total_tokens": 18893,
+    "cost": 0.0024628,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18620,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024628,
+      "upstream_inference_prompt_cost": 0.0023278,
+      "upstream_inference_completions_cost": 0.000135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent news stories and a Climate section, consistent with the broad purpose of a news site. Its regenerated content need not match the reference stories.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Story images, headlines, bylines, section heading, and footer are legible and coherently arranged. The viewport cuts and overlap between the two target screenshots reflect scroll context, not a substantial layout defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls such as \u201cMore Climate Stories,\u201d the follow-tags row, and footer links have understandable labels. No essential visible action control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference views form a coherent comparison of news-site pages. Their different stories, sections, and layouts are permissible for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, bylines, section label, and navigation communicate coherent news and site-navigation meaning. Nothing visible makes the page\u2019s purpose unintelligible.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating newspaper layout**\n\nI\u2019m assessing the lower section of the newspaper's webpage, specifically the coherent cards and footer. I notice that it targets climate-related news and includes visible controls for more climate stories and a tags accordion. Overall, it looks good, even though some images are low-resolution but not broken. There\u2019s a normal clipping issue. I'm only referencing the lower windows due to layout regenerations. Everything seems to meet semantic standards, and the JSON structure looks precise.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating newspaper layout**\n\nI\u2019m assessing the lower section of the newspaper's webpage, specifically the coherent cards and footer. I notice that it targets climate-related news and includes visible controls for more climate stories and a tags accordion. Overall, it looks good, even though some images are low-resolution but not broken. There\u2019s a normal clipping issue. I'm only referencing the lower windows due to layout regenerations. Everything seems to meet semantic standards, and the JSON structure looks precise.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B73xTnU0_vfrFkYuTQpZ0aZZWCqjLbSYp0FQu8Ax4YUzqcdwKZObpTUkyEH2GFxxWBdsrRz4UhBCyCzpvCdAaUwUpsSEDJRdTy2rgruHDAfNy6hgTZT-tQaxxXilUMSKSqAE3KZbJ88u7F9XNKcX8DibDrIBlwtcjMvh5nr7ZLoZkgVbr08iBBoTYBhpsmQdv3P-aKGbcbhEfJHRWOrSk8Ok7s5BFzSdGxuMpOfKnrIOAxp5UipiRgDBnwPoR6pioHAP0vlZLzu7W7TiekR8X8G3oGmj04LvJI9lDtRQOsPLIZdP5r0PXEjV0qzH0n7jMFKqtEEDqw1wOh0SOJz1EthcfIVQdAjbQmEOpYbK6x9miEwn_LIJcvVNdGUD0KeIflaWlOP5rNJSt3T0Aqg0jp833wWQAPDziET-QOIpvar-M5rlCAIHeOSkojIvqWOHWHvmuxXw68HlShdUhMPH4cSGhisnqlzwBiA-Z7k2ECoLWnVal2krjhSnND32fNRhGmQHPXg_oBJU5NqAmbOUqaTbPt-gn8ZqLJ04mcKQPlE-WNCtchKqNDLINRWZZftiGMpzqwDZ2u1TqfdsnufSNj_yDYn6QwFcT7kXfEkzZYBjTQ-VaVzx6he9dX52cgpjq0_tV5Cfbh59gNNTGErMb8V7UKMRMPVB4MBOTo8z16FQnLyBcHkXPDM0rjvxLZ0FNIbwrzv6FwPMlnGSn299yuImXyG9Eoz42PAJcND-6wSJUDzbhWK-slp76c5_wop6_MjIvbeRBrPkl1WoHGRhDpyxTY12Wnke-ff949Q7D_VMKhsYAm-ozQi5LDck_YNhO83oTnfT1yH6e-W1aArbS2QETkUYfyatOYxPYOY1F5KI6wzlqLVjeSJilnespFGcmgkZIH-JT8tB77iU6u-TfLLezfmEDTmrFRITO6YRj5A9UURbcMSBqZ5DY-zJqALXRSeGFw1lgTxfr_U4mYACiGbxRUILrToleFPC7ucashQxm3OCSLbKuTAsEILhTh3q4WW7vO0bkGq7RrVUXl-yIYj-XOdf8I-H3pL_Zc4FNSyR2FjPLZUufqyyxOd2ZqH92JJ2w3WwbevF9wtmn3P4bN_rqOODIIvWQs_R5TmCVY-UcUnB7Y8e8GnJc435FjxCWOiZ3wPDmmvFxZffBpHnSAInAb5WpZyQIUXY8k_TUVLL-RE-JLFH8lWiM-6WAW5INIe5-68hkRrSvifrib_i3mkXetg_2cruoV13ocFITWBFC5lPudhgvuTmYwlP9TvYqt2MovpkOEky75lWIWXrPfjdOd91vIO6mauUliR5QdKdIv5WxWXv0sBXAnxCKMLa8e_UWQDFNYC0xWu51BEZmcVaHpyxwiKGLk7UT3G3D2T64YJ5b46oqn9XbXFKR1aktbwF2UXgtsyXJlQCuexWLlo-Iy1iFvzNF2D1Diu30ubPU_KOpNiqmIMv2QF77pW2HmH1W5GR-89OdEhgf2TpQKAqVpPcEQmrYzpwtj52Xnbi1jqJHe6N2MuF3_Wc2aVJnIQ2YvsSfX1q3-9iezVHSQ-SlcCIyrJr7WmdiT2rJ6FjfHZaHCnLmyqdVkpP2sqBGxqMYpAgRpo2c2LZpoi9qS6_e-kVBImf4m9gq4sC6sMU5r_PFQvVt67QaRF0atumIQIoINgDQYNxnKzig30oOo4GgepyP2N4sBwI839TZvVirDrt5_X-JQ5anE0glinB44_AiJKbJ_0pC4SErH606YUG5UhdIJ93dWsuzdIn1vB1H_ypZQl00KFq7duXlbVAIrH9J2B7I62KE0zYXXYTw1rT4gPeNObvE05-XZbBdc6wN-eriwANo14apMSb_8gl48zM1DZYE1PQVssJ3cOdkuTLjeERELyELt0UXd3VNmXZ9lW73W3hMEQO3qI7Yirn2aRoVhZicF64ST8RsZ492A9L6XV4Uc2joXZe3vSJWcvm6zxDKBnHw9439fy2idulkGhhi7LSeYdvld5h5WOPllXXfnzgPWZ3-uw8i8eOwalDgQk8xTuUbK0O7BYnXdhjak9afnMaoq4WAJBdPhz2Hj_SVmDn_ACAIpPFUfbSg3tbL1pvGH3YB4jce58Xt0VW91l1ZvuIUy7zCe70l5VKIXAXG5wYXJlgvleDV1ZQJhcNCCGKaHRLtn5u_sLnDnMNnx0EjgjLCmWe6EA0RevlhNeiqQzUHATxMhurfabJIDxr7EZU6cRtLeBQ3CPHTGCQK8-fbpdodpF8jy1Qdmsk9HyXAMbRDDfazYnCs1Q4Gbj-DNx1LU4kWDn_crKN33ZYwOYpSKE0pQQGWV5WNYY42P2wO1ZVAao6nB_U8Jt-g92X2EfwplJQNZ0iB2PrADbnzSfSI_dM4DINceF778oHNTGngk3CFzhOZwn9hAFT9iCDY07OP7yKdgD9GjEfL5RcZXA65Vk7nyEijS_EOXHf1P8scdxhqsZ_9WJsPV_SQ92Myz8N-LERRxOb028cAmnXJZSVWnbKDd0Eczshec2Fwc_A_nGrqjtvy4-c0unaGlnOx09GSMs3xnajv37DJJRoXAfAJrzBzj8AOtLDmnwJpV3oe97uBdftDhBrMOkmDB-vkCFZV2rYk-3YFPsulSWsqqw.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_066b6b023a2405e9016ae81ef6627487d1b9ba70b6a790cbdd",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14527,
+    "completion_tokens": 367,
+    "total_tokens": 14894,
+    "cost": 0.0019993,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14524,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019993,
+      "upstream_inference_prompt_cost": 0.0018158,
+      "upstream_inference_completions_cost": 0.0001835
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target matches the reference in both supplied windows, retaining the visible article/topic listings, newsletter and podcast sections, subscription call-to-action, and footer information.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible content is legible and coherently arranged. The large blank area above the footer appears in both reference and target.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible links and the \u201cStart my subscription!\u201d button have understandable labels; no essential control difference is visible.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired reference and target windows are identical and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible headings, article titles, newsletter descriptions, and footer labels convey coherent meaning for the page.\"}}",
+        "refusal": null,
+        "reasoning": "**Ensuring image consistency**\n\nI\u2019m thinking we need to use JSON to verify image checksums for identical pairs. All dimensions must match, and I need to mention their identical evidence, focusing on any meaningful sections or footers. There might be an odd blank area in the Partner Center, but as long as the reference is the same, it\u2019s not a defect in the target. I should ensure controls are visible and keep my rationale concise.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Ensuring image consistency**\n\nI\u2019m thinking we need to use JSON to verify image checksums for identical pairs. All dimensions must match, and I need to mention their identical evidence, focusing on any meaningful sections or footers. There might be an odd blank area in the Partner Center, but as long as the reference is the same, it\u2019s not a defect in the target. I should ensure controls are visible and keep my rationale concise.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BxDhg2Of_OOJ-ylkOSpsUL6tIKvfsHbGuQRIYomOOZe9c83UVxHqksivGJqQc5bephGzkbc99Yk5mXHk_pfcri9TDt5Ip0oUcPPvjXxzgAkBlO0-xSMM0AUqJ0UIAG6WoMrK8HDCwaAngQzMdm8J4Pu19qNtCM4zc5KxtDRyz6HkQxmdvnuk00zJIF6qHCahHySA_eY7YhnE4q1VwWocJ0zwYLEqc_pC6pMwkbszePzKjrrP7tFvb1w2EjJeIg-uREgXZ_fZJyDKVT6Fy_X3Y8Fr4voFVuPqu2oxzPgzZLvq55OgGjpEROahl6ZYFDB3LA5-2NeIkP3XLop4o427pU-uTtXoI5QUpCGAs0agdsahV6p8dhw9JcM9ytO1OtEq4FWK5M-sTiiobVbTddzrghAlBYwfmNqdpr7f6Bj8AMXgPJytS8MnrIVXQ8fYRHjJMMCR9eyCjpL_r7w5QutGpOtQz-VRgtwIHWwLuryYYM4tOk_IHsDPBTk_pwsgssqgRXkn-66HyskbgYTeyFVTcsXsAcPQNQPT6hXc2jPhBMRfSTomeDfw-ESnybWMcv-BlrwF_xHvzezPJfOXyq1tBfk3yQrboztNIsOzoQ8jrlog7ifA5LF-6l1FNFluvGMzhNa1T9odivmm8Z854I-WSVDwp14DUFRKWdmR37obzQ4Y5cMwgMbDpMN3Ubo3QNoJA8VaGPaVQSy6AIDShHYsHknhIMRzkyS0Sj1sb1VUFFy-XWgjVV7GdvOJSIEOnwQo4q_uQ0iZksy8uCnI_YGPvDvKx0hzeJTrNs2EQZZVJVEpf2Xv9nPGEUcXkpn6XGj5KW6jg5q_F10xp9Dzea4RM4NPEaiuFBJqFxJOQZ1iprbDglLJdrwNX5Va6dw5s1bFbTg9gvxhqX-ytinuakZ1fBPvOE-gAgWB26q4W-00yiNVjT90VdioUtdnRkotDBvhQFe2C8-J-JBzzbbx1GKq8AfjpRiFjqFwUalmtnFr5lMwh07bDuNG3Idin0n_PGk8xy27aBpXFxt9W2DZ6-DNNTETKphUO0WVVkQQ40F5_TIkV4XYMyc0rx4zPVGokFOO_-N3uXV1tUS8JAfuNNsquolJ102brONaugd3L-FFGqwYItYOCfPfgsZc9_Vca_JvL0vn-udTq7NUdFAi0_psYZz1D6EIK-0Cy9zR25EBAqGPi6pavFHEObCMm0I5VcqHKJ_rPgY8xcBzfNFrLAtroU0jA44BvJOK9AJVc4VB_D2FGxEAC5rfGDscwhBOOH-EKiLcHrvzF9HqZo6MNlPiSq37YTIWRb2XaIjfb-3_woGX673OykhOhb2ySFVPpI1X60WEnGf2WYaqe4Tw79gkRbVtaQ9Dqi8CoGAadYEXTva0lhvwDTLnMWmkA03VjFBi8zMehcov2fFjJ5LK7QbAFhY4tDfoU4IGnUPQxVUu7k8rdKBjy2lteK4Omok34B7ryMFYBFJPtcOyL-0-3tL6U97TMMed7orWD0a-vJilstHlG1mhxpPz8Hhcgy1-r1bVKpmBPzdavYEwceDy9TyME--izXNAjkdCrHA9jm6cNMals0aAQw_FLtOJ0KULju3hO3TzYtxl_jyME230uXVqylrE0U6hx6_yQdQPHf06p3nlDqhu-tC8bMUsnzTaOc6jYT3urKu3waMOTEldOcUuYnaGFd1FscSrOfd7Xmz5xc85wgLugDq-8WL2ULyXlUiD0xs_r0JjOyeJHCwZPN2y2pavC_E3gopNWqvNFWj52uon0H_4FfD-Zjimb6cAoisiO4Lip_2Yvm4gX9jcvz_xsYqPInyCY2ZciUFttnm1AqF5CCNC8BpDxThonzOKEo1SetQelI7jGbuT0yfjWUktGWf0Mz0b06Q4tiywGDLiurtBl_CnonVuHnUaC09IX8EgNGy40u-_njiyu_6BmA1-46ktGiuX52SciM7OdC74kzcoZd0eArnobjAO-Jb4vW3J6o_Mo4DL0xoC0HGg2C0sK3pQr8EGWYvkNKqHmqrSP01gqbQ0Akb_NxZ-bYY2KCVQOxlfDJtw0hpA2jIP1p3vNfcqM2v7HF4Sgqbtre0YTW9TYNntMBAq_BfONrQ2cPeFKR80Q9aYNafLek2lW1Q98a1rkQGJXZKwO546zqwQL59-qhe9bybfvPEsjvhLlMXUg9SAdEYgpCTJVozv1dAWmvvTSbBpmI8T6zncg9aRD-O8TRzG4jeLhwpD5ssgUypZyIty0il9kEeVZWx2rCe3efOqOq_5JpARbiBBErskZgc_lWRRnn6ZLixS1S6twp9U_havrmDPTqqYHlPJbrI3E-OBw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03d0f7cda6e2d832016ae81c41740c87d19567a605d5301361",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12646,
+    "completion_tokens": 238,
+    "total_tokens": 12884,
+    "cost": 0.001699675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12643,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001699675,
+      "upstream_inference_prompt_cost": 0.001580675,
+      "upstream_inference_completions_cost": 0.000119
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

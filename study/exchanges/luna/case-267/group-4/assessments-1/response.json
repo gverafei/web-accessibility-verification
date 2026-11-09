@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible event listings, news section, scale metrics, explanatory copy, image, and About Us call to action are retained. Differences in card/background appearance are cosmetic.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged in both target views. No material overlap or clipping is apparent; viewport-boundary and fixed cookie-banner overlap are shared context.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Contact Us, View All Events, About Us, and cookie-consent controls have understandable labels or recognizable affordances.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views show corresponding regions of the same page, with coherent content and layout.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The text, metrics, event and news listings, and accompanying image communicate a coherent business-page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing visual clarity**\n\nI need to assess how similar the images are, especially checking if the colors align. Maybe there's an issue with reference texts having a lighter overlay due to animation opacity in the bottom section. It's important for event cards to have a clearer white compared to the translucent look from the reference's overlay animation. If there\u2019s no defect, controls should remain the same. I\u2019m seeing that the evidence seems coherent in the JSON, so that's good!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing visual clarity**\n\nI need to assess how similar the images are, especially checking if the colors align. Maybe there's an issue with reference texts having a lighter overlay due to animation opacity in the bottom section. It's important for event cards to have a clearer white compared to the translucent look from the reference's overlay animation. If there\u2019s no defect, controls should remain the same. I\u2019m seeing that the evidence seems coherent in the JSON, so that's good!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B4OVvrKmQkcLQhoaxCxxOAGG1Q_NyaEdO6R_5PIcKp384Zj40Op9pmOPGQsF33ia5fIqgwj6v3i8AEm8eiUZ48vzo3_46iPB3T4KzIKenUBNbjwe1iYfWvO60LwB1mjqfm64cTLLuFk1iLt9u3cvpIrQ78pvJBeTH2r5lM0Y2slEaCTDzJCXw7XvExeAaCvWrzlU-tI5hHUPaGOc6oxFw21adl9m79OmBhXDfEY77vQuWtQc_99pnsTilZgk7YIvmfqbfMEcrqRVW4MiXF-KDf5CCHP7eu7IIfSMJFc3uND0ak6R_szBwa8PtxZc687ttDTcKmk5JvBhGWpAmmkSchTz290b0sW5yPLB7dLKvf17QGNKjWL8t0VjhuqSIFzF5yFisIrWLf7L-wQvgB15dceEfbANqu4SUEMz1qexpMjYPOSLcANNZQq7_G1Zh7WGNg0enDva0K28iCzhju05qtpnIos2HeUNQWr3NT9tosgJGauq4-hS1xYNmDsv5zhqveRP3BvRrq2yUDh0_j0ybhnSD7XY79Kle76SZ7Z7-z091yq-Q0l-_iTPEgcxfbpUrJXXaQgSAGJOwrF1jTOMFzdXW5znNaMdu-03DbmE68Jg2SGJf17MN1rWi27ix5jNiYYx_BUJV-ZtImQtQd3R-XTdr0kJCkXTZQtUNwFi6VE0jikeYYWNluwSpr90kDYSVAiM2-PVlNgqYLu6mY1sFuCk6z20nwpnUFI3W0-zLlJWDggAx_oLs7RLZrNML-6oUGZedFOtnMwIjZTMKHpZ6jDoJz6J9OCwL_UVjIEnK-MObmciAVhrISKV8YbYJ-hvmYBgjqEVUfvB6zKycgo3v23tvQzV5zArB8ZD-0Tsz4FfQnwYTtWKha5aoWYYbFJE46G-YsHpaRFQ1uPrlQSTD4CQuVylyLTvvKbtQQawhJBvQpzjy5v-Gqq1bKEqdjrw3dOi8P6O0EAsQIGwU-Gn7PK7iAYjwPMt7NVz50mmL1rjjb2Nu4KQNXV8tuGUY_ZkBVqPR-05lmZlqoSGvlpzAN6ViazJX7FVxy5fsDy54XURhxvER-N1zcR783Wur0OyJoI7zWVwVHCajoXnHPFRoomn5ZFTG0Vu7G1bQW-FYv7AxmPf0uesp_TmiY9MvyqYz2TLjxNmCaia3exHpy7T37_DPsa2sovHmXbgSX0K4h4ywjKoiGWRD8BlxAruIRt3mfsE2uej7Y2NFdgOjYjg2Om1ZtauI_HG07EuTFigBLVepsUVx_FJmB06Au2BdgGezMYjHl1wy2apg5rPCzpowU90hS3ryg-_sqSMROzHdpr9tFjNdVTCmVLvTw6Iy3N7vq2dyHBV6P07341elGof6LOD3SqCfbHgi5wjkKcSYUIYqKzj-G-IHTAHArqQdwPWw44Nx1l5OIdhDYgDLwghbQETzuOW3vXgQraYXgObDlfZiFcqHUHrC_JLYCBUIwKKuUUnVlFq5epCrJ7lW7gezitLQKBywxiePZ_yUPyLjWLZtCJwmHTFUQfsTdtTmvG-yQ6swrDWxthdyQ0kUQpOs2bbWR8MVqecuJGhY8xuipZCfhGovj_3L-qnMu9ND0eX2whz4Z539AjzN7I6Pf7QN-aw2cxE1H6zkI4YVWd1zLWRyDXeK-LRt4E18yMVomeYTacNqjMlUpt14lkFMDF0LFhedEHt9RP68_KPmA2B8NQss7VetWEs3NI_WLOsqoan0kYJSYn9DHvhNCEI0p-0XtUsefxqFbJlMFpK7qoeZ9vQcTbAvGD_XaXyodOVLiZ8winUgAgciWcsnln-5ss1UUT1h5C59eNxF9XT3XG9FEvX0RKty8lJVRMBClWwxCyefB6K6V3MfBFV_bR3wz-6kkw6HEgAIyn5YBMngzcNt1NQOp-lBEGIgk4YqtTInQXdevJ0u3WyKzf6vNPxTMGLMjra2sGEk_p3Zuj64jZ5GFE-Q1qj3uif2FfhsNs7ceWcd8QGpLERfo-U78Ipctd3D0P6y4r0IjOaK4PZhfczUNwWQKtLReQCI2KbWXriCmQCOyvnfU3G05TyM2INfmHtunQuAp7CCs_SfmLJ3xNC-ThmIdtr4AyVO3qWp-7KifC5QK5nOlQIbV42Ri2PaFBY3RqPvH9938zlyy6YZiwJuxSxGWbUAUteL-8vGAc76ZthAUlpQ8K5in3893hiO_yEJ9-G_Ul946w4nYuIkVDIBL9BoMH8cR-zGvSnrw3Dnr-xRhQE5zikkVpu_9CqYbDzSwTxsQttZQKthJ4mAG4WLP2nsEMoms4sZfsSG5kKerbJ8PxWN6gwdlHobG1XvAmfOPwFoEfJqtDflE09WgmN-UwVrQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0a47212f63c9c660016ae81e0d751c87d1a0d9b8ff1284ace5",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11815,
+    "completion_tokens": 310,
+    "total_tokens": 12125,
+    "cost": 0.0016318,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11812,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016318,
+      "upstream_inference_prompt_cost": 0.0014768,
+      "upstream_inference_completions_cost": 0.000155
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

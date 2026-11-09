@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible cards, headings, descriptions, and surrounding page content shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged; the card carousel is displayed consistently with the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible card actions have readable labels and recognizable arrows, and the carousel navigation controls are present.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show a coherent reference/target comparison of the same page regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Spanish headings, descriptions, and card labels convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating output requirements**\n\nI need to ensure the output is in JSON format, and that the images have identical content. I\u2019ll note that the first hash should be identical, but there may be slight visual differences in segment 3/4. The controls for the card carousel should be positioned at the bottom along with card labels. Overall, everything seems to meet the requirements, confirming coherence and providing a concise rationale.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating output requirements**\n\nI need to ensure the output is in JSON format, and that the images have identical content. I\u2019ll note that the first hash should be identical, but there may be slight visual differences in segment 3/4. The controls for the card carousel should be positioned at the bottom along with card labels. Overall, everything seems to meet the requirements, confirming coherence and providing a concise rationale.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CCx-B2csKS8sUJpm4UUp1VcK3y60wXBLFuedddDO-_tVEm5imvqo_SgqzGOtyvyru3B7MpJHD5oR2yOQh2WxCeVlz01H41rvTzrVO8RGW5r6R_AnrsFk1aShM_osd2NwMEM8AVVkciKkQDZsWKu5zKYho8lsAgCmg715fAhGSgF5LHVImqJGW1Xy-doC-a3QnHFIYo4ZovXtr-gP0smw0MJHQp7a0o5RPYpUcUKQnx7Gq2BI4XjvLu7DZyLTgyLDNsNEbHW7R9OUU-MWIuWGw0P_xyC71QdHDicwlV0JjkBY1SKqFWg6Tyki266mBU9NlCKW02mb-rmS4nVl1MMlwldZgq3J9koLjqfspWF-xABC0YBAJbAW9xywA_ikom1d5hG1kVTFXuZBlZeAOxuiaGPWw1Do6uDae9vSWm0rBXhCL7-5AKmFE6cE3KJtbYdiqGko2Y81OFRbwwtbLn_pJz_wTGepmNADea-SlN5oof_llW24jJq2sMTgkQXc60q4ZoE6Y9GcaaFAB51sw1vYcOLAi1-kG1pUETzgR4pUhOo0kH9f2h4LxnjxbtnCp4wObrarCYdHf6ixc_XQhOLQFTokB4MGG_xzHRLH7-Antao67LY196XKTHRWLP-5JephHzSXefULuZsMFCJL-Zt7fHcizhccEme4gQJyvUd2Qs-_YQGh1m0aNgOI-uMP8MFjj8cdWCYQb-rfu6Fo0bH46YQkra0Arc_b-MRPVCGLPiroUGXa8YXPF_9PFfzpjJ1G8KA60WUmC5-C0jCJPCmIkm0on7JIoBSkcCu5JdjflKrEE9QpdZBJXYKL1yWbavdp6cpnoRu7BhLuqPc-AZayMUQOW9XDI3JcYSee1C5ixKJtUdL1sric1jdkwpvxEsPyiw6dkcS8nFIl5EirZFMsi-xEYo5txePSHFhlZjfsipT6JdkN5x-QqLadjquhUxgi_x-JeGn5jv7LZTnbXHw6xteKtzroiY0jQL146fI-ptKiO0vfMzvKXEmeLpDj9sDh1_19Ef3TciWB73Yh8kXEmXsjPqVbHoP0DHAtnlaEVGZSsCFswQapp4e2lAkIfJ7g9YS3iJJN8nY67llWas4tdodLo21XBDCJjVX7W8SmW5NSfUWjS1GC-szwkFdGCqIDNiDjrDqlMGUgNkToVDeNkvmHgNgp9n9yF0Jv4aDRAUYveJDTngexUvgo-rp1_h56gnijSG6Y7E_8i7B_8c0eyvKqDil90IrngJ9WXjaFLhAS5zZPq5p6lR6iPI1OFZMjOviWhXPCwljlclb4d7aG3c6CCubKsvL4VAOSPkNdkZ5xNtHuwkONElBX5S2XvNR1_UvXWg_2OOMQzKB5HXuBBswTxaMGo-5-azLxJCfMjhG5p9lPvt1m9yQQDILrbYagXs8FwAJRflh9jd-qkRYjwn-HQ3UbVDriPIkO4-QdrbGhX8m-Zv3DIJ9Tv62RPfK6XQq3EefJD702nUVApsK4UlwfGiVBxw-zra8d6cQqaP3tJo578kGWhG1lt5guJVoR2Uapl7Yo4OdS7roM7p3bh1XAmuA0VvIA4DupUKUPF_yl-wMnS-UXQW4PkE9I7Fa8NW3EiwDYs9V5mmhAdse4DkWlfQXOh5KRINYO1V8lPco-Irkm7PYgx43Lel-yJe0L5X0Gsw15V8DvgvCh4qGXmycVNXgjlJCbZCpZ1zpZPpiJzlKFgvdLMD1zLKG1gFB5Vmq38bPXzIVpOgbu053MzSqbVzuDI2Lcbnt1j_AHpclDbfoBtcTHgDw47P_UXMxMxg2slv8_Vu--EOl37nxNZh9iivAURYzM3SPJVvZkeeE4RO3yT51DaMnzv3U0P6WSJsOhzv3s-fGe5EQzmq9vEBsTljAiVaAv4q6xO9NKUddy6FRarRXSNAr5iBCX44IjKlrtZYReiSv0OJld1ri2FXB2nh2eT5vY1YRQLG34Q20RuI6tfUct0qUccPRs2uPehoZJZjBrPr4Syp1aLRluOU4CY8WGRZAzKirGHbi93INQ_W001ONH-oi_UOqHiatm3Z_cLsH9aV4Wq_1y7eUMZcKn_INflbyTfU7yznP-59t-3IoH_nFlCOK4wXBts3Dtod7h_yTtsyQSX8trrtF66egpCZAeRNCfk5dLZPdJDh9jDk2ca9au03m0g07Et32KFEdr-xl-dp4jMsMLMgLwpSv3Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07da8f91e7ddbc02016ae820b0799887d1a419d80281e21084",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14378,
+    "completion_tokens": 263,
+    "total_tokens": 14641,
+    "cost": 0.001928675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14375,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001928675,
+      "upstream_inference_prompt_cost": 0.001797175,
+      "upstream_inference_completions_cost": 0.0001315
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

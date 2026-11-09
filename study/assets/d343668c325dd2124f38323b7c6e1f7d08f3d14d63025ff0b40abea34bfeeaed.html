@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Free Office Suite for Word, Excel, PDF &amp; PPT | Kingsoft WPS Office</title>
+<meta content="WPS Office is a free all-in-one office suite for Microsoft Word, Excel, PowerPoint, and PDF files. Write, edit, convert, and collaborate faster with built-in AI across Windows, Mac, and mobile." name="description"/>
+<link href="https://www.wps.com/" rel="canonical"/>
+<style>
+:root{--blue:#1f69e0;--ink:#1d2129;--muted:#4a4f57;--line:#dfe5ee;--bg:#f6f8fc;--green:#2e7d32;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:16px}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid #ffb300;outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:#fff;padding:8px 12px;z-index:100}
+.skip:focus{left:12px;top:12px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+header.site{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:50}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:20px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand span{color:#d7261e}
+nav.main ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav.main a{display:inline-block;padding:8px 12px;color:var(--ink);text-decoration:none;border-radius:8px;font-size:15px}
+nav.main a:hover{background:#eef2fa}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:16px}
+.btn:hover{background:#1558c8}
+.btn-outline{background:#fff;color:var(--ink);border:1px solid #8a919c}
+.btn-outline:hover{background:#f2f4f8}
+.hero{padding:72px 0 56px;text-align:center;background:linear-gradient(180deg,#eef4ff,#fff 80%)}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.15;margin:0 0 14px;letter-spacing:-.02em;font-weight:700}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero .sub{font-size:clamp(20px,2.6vw,28px);color:var(--blue);font-weight:600;margin:0 0 18px}
+.hero p.lead{max-width:720px;margin:0 auto 28px;color:var(--muted);font-size:17px}
+.hero .cta-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.hero .btn{padding:18px 40px;font-size:20px;border-radius:12px}
+.apps{display:flex;flex-wrap:wrap;justify-content:center;gap:18px 26px;padding:36px 0 8px;list-style:none;margin:0}
+.apps li{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px;color:var(--muted);min-width:64px}
+.app-ico{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+section.block{padding:64px 0}
+section.block h2{font-size:clamp(26px,3.4vw,36px);margin:0 0 12px;letter-spacing:-.01em}
+section.block .intro{color:var(--muted);max-width:760px;margin:0 0 32px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;list-style:none;margin:0;padding:0}
+.features li{background:var(--bg);border-radius:16px;padding:24px}
+.features h3{margin:0 0 8px;font-size:20px}
+.features p{margin:0;color:var(--muted);font-size:15px}
+.trust{border:1px solid var(--line);border-radius:18px;padding:28px 32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.trust p{margin:0;font-weight:700;font-size:20px}
+.trust ul{display:flex;gap:28px;flex-wrap:wrap;list-style:none;margin:0;padding:0;color:#5b616b;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;list-style:none;margin:0;padding:0}
+.cards li{border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.badge{align-self:flex-start;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:#eaf1ff;color:#1e4fae}
+.cards h3{margin:0;font-size:20px}
+.cards p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.cards a{font-weight:600}
+.collab{background:var(--bg)}
+.collab-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+details summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:right;color:var(--blue);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);margin:10px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;list-style:none;padding:0;margin:0}
+.stats li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.stats strong{display:block;font-size:30px;color:var(--ink)}
+.stats span{color:var(--muted);font-size:14px}
+.security{background:#0f1c33;color:#e8eefb}
+.security h2{color:#fff}
+.security .intro{color:#c4cee3}
+.security .features li{background:#17294a}
+.security .features p{color:#c4cee3}
+.security .features h3{color:#fff}
+.final{text-align:center;padding:72px 0;background:linear-gradient(180deg,#fff,#e9eef8)}
+.final h2{font-size:clamp(28px,3.6vw,40px);margin:0 0 10px}
+.final p{color:var(--muted);margin:0 0 24px}
+footer.site{border-top:1px solid var(--line);padding:48px 0 32px;color:var(--muted);font-size:14px}
+footer.site .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+footer.site h2{font-size:14px;color:var(--ink);margin:0 0 12px}
+footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer.site a{color:var(--muted)}
+footer.site .copy{margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:900px){
+ .features,.cards,.stats,.collab-grid{grid-template-columns:1fr}
+ footer.site .cols{grid-template-columns:1fr 1fr}
+ .hero{padding:48px 0 40px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<style data-warp-repair="true">.security > .wrap > .intro { color: #c4cee3; }</style></head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a aria-label="WPS Office home" class="brand" href="https://www.wps.com/">WPS <span>Office</span></a>
+<nav aria-label="Primary" class="main">
+<ul>
+<li><a href="https://www.wps.com/office/">Products</a></li>
+<li><a href="https://www.wps.com/tools/AI-tools/">Explore Tools</a></li>
+<li><a href="https://www.wps.com/download/">Download</a></li>
+<li><a href="https://www.wps.com/buy/">Pricing</a></li>
+<li><a href="https://www.wps.com/blog/">Resources</a></li>
+<li><a href="https://www.wps.com/support/">Support</a></li>
+<li><a href="https://365.wps.com/">Enterprise</a></li>
+</ul>
+</nav>
+<div>
+<a class="btn" href="https://www.wps.com/download/">Free Download</a>
+<a class="btn btn-outline" href="https://www.wps.com/download/" style="margin-left:8px">Sign in</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<h1 id="hero-title">The New <em>AI-Powered</em> Office Suite</h1>
+<p class="sub">Create, Edit, Convert, Collaborate - Anywhere</p>
+<p class="lead">Meet WPS Office, the free Office suite built for everyday work — bringing Writer, Spreadsheet, Presentation, and PDF together with AI Copilot, Cloud Docs, and seamless multi-device sync.</p>
+<div class="cta-row">
+<a class="btn" href="https://www.wps.com/download/">Free Download</a>
+</div>
+<ul aria-label="Included apps and platforms" class="apps">
+<li><span aria-hidden="true" class="app-ico" style="background:#1d70f5">W</span>Docs</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#f5670f">P</span>Slides</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#069e61">S</span>Sheets</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#eb2f3b">F</span>PDF</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#6d5afa">A</span>AI Slides</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#239ff7">W</span>Windows</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#2c2c2c">M</span>Mac</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#2c2c2c">i</span>iOS</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#a4c439">A</span>Android</li>
+<li><span aria-hidden="true" class="app-ico" style="background:#333">L</span>Linux</li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="features-title" class="block">
+<div class="wrap">
+<h2 id="features-title">Built for how you work</h2>
+<p class="intro">Three core strengths that carry through every WPS Office app.</p>
+<ul class="features">
+<li><h3>AI that works where you do</h3><p>Write, summarize, analyze, and create faster with AI built into daily work.</p></li>
+<li><h3>Work better together</h3><p>Share, co-edit, comment, and keep every change synced in real time.</p></li>
+<li><h3>Work across file types</h3><p>Open, edit, and convert MS Office, PDF, and Google Docs files with ease.</p></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="trust-title" class="block">
+<div class="wrap">
+<div class="trust">
+<p id="trust-title">Trusted by Millions</p>
+<ul aria-label="Recognition and partner references">
+<li>Google Play</li><li>CNET</li><li>G2</li><li>Trustpilot</li><li>Forbes</li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="ai-title" class="block">
+<div class="wrap">
+<h2 id="ai-title">WPS AI built into every task</h2>
+<p class="intro">Each AI feature maps to a real moment in your workflow.</p>
+<ul class="cards">
+<li><span class="badge">WPS Docs</span><h3>Go from idea to first draft instantly</h3><p>Start writing with a simple prompt and let AI help you structure, refine, and expand your content as you go.</p><a href="https://www.wps.com/office/writer/">Explore WPS Docs</a></li>
+<li><span class="badge">WPS Slides</span><h3>Turn ideas into ready-to-present slides</h3><p>Create complete presentations from a short description or existing files—fully editable.</p><a href="https://www.wps.com/office/presentation/">Explore WPS Slides</a></li>
+<li><span class="badge">WPS Sheets</span><h3>Make sense of your data instantly</h3><p>Analyze data, generate charts, and summarize insights automatically.</p><a href="https://www.wps.com/office/spreadsheet/">Explore WPS Sheets</a></li>
+<li><span class="badge">WPS PDF</span><h3>Work with PDFs, not against them</h3><p>Summarize documents, ask questions, and extract key information without reading every page.</p><a href="https://www.wps.com/office/pdf/">Explore WPS PDF</a></li>
+<li><span class="badge">WPS Docs, Sheets, Slides</span><h3>Keep your documents clean and consistent</h3><p>Automatically refine layout and formatting so documents look polished and ready to share.</p><a href="https://www.wps.com/office/">Explore all features</a></li>
+<li><span class="badge">WPS AI</span><h3>Understand documents in seconds</h3><p>Ask questions, get summaries, and extract key insights directly from your documents.</p><a href="https://www.wps.com/tools/AI-tools/">Explore AI tools</a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="collab-title" class="block collab">
+<div class="wrap collab-grid">
+<div>
+<h2 id="collab-title">One cloud workspace for team collaboration</h2>
+<p class="intro">Kingsoft WPS Office keeps team documents, feedback, and updates connected in one workspace.</p>
+</div>
+<div>
+<details open=""><summary>Cloud Documents</summary><p>Access your documents anywhere, sync in real time across all devices, and keep everything organized in one shared cloud workspace.</p></details>
+<details><summary>Real-time Co-editing</summary><p>Edit together, follow live cursors, add comments, react with emojis, and track changes instantly in shared documents.</p></details>
+<details><summary>Team Workspace</summary><p>Bring your team together in a unified digital space where projects, files, and communication are all in one place.</p></details>
+<details><summary>Smart Sharing &amp; Permission Control</summary><p>Share documents with precise access controls — set who can view, comment, or edit, and revoke access anytime.</p></details>
+</div>
+</div>
+</section>
+<section aria-labelledby="aio-title" class="block">
+<div class="wrap">
+<h2 id="aio-title">WPS Office: The All-in-One Productivity Suite</h2>
+<p class="intro">Replace scattered software with one lightweight suite covering Writer, Spreadsheet, Presentation, PDF, and Photo.</p>
+<ul class="cards">
+<li><span class="badge">PDF</span><h3>Handle PDFs without extra tools</h3><p>View, edit, convert, and sign PDFs in one place.</p><a href="https://www.wps.com/office/pdf/">Learn more about PDF</a></li>
+<li><span class="badge">Slides</span><h3>Present ideas with confidence</h3><p>Design clean, engaging presentations for meetings, pitches, and classes.</p><a href="https://www.wps.com/office/presentation/">Learn more about Slides</a></li>
+<li><span class="badge">Spreadsheet</span><h3>Turn data into clear decisions</h3><p>Organize data, build charts, and manage budgets effortlessly.</p><a href="https://www.wps.com/office/spreadsheet/">Learn more about Spreadsheet</a></li>
+<li><span class="badge">Writer</span><h3>Write with confidence</h3><p>Write, edit, and collaborate on documents with ease.</p><a href="https://www.wps.com/office/writer/">Learn more about Writer</a></li>
+</ul>
+<p style="margin-top:28px"><a href="https://www.wps.com/office/">Explore all features</a></p>
+</div>
+</section>
+<section aria-labelledby="secure-title" class="block security">
+<div class="wrap">
+<h2 id="secure-title">Your data safety. Our core mission.</h2>
+<p class="intro">Security and privacy practices designed around how your files are created, shared, and stored.</p>
+<ul class="features">
+<li><h3>Secure data protection</h3><p>Protect files with encrypted transfer and secure storage across creation, sharing, and collaboration.</p></li>
+<li><h3>Global compliance standards</h3><p>Support privacy and security practices aligned with international standards such as GDPR and ISO.</p></li>
+<li><h3>Privacy-first AI workflow</h3><p>Keep documents and prompts under your control, never used for AI training without permission.</p></li>
+<li><h3>Reliable cloud infrastructure</h3><p>Keep work accessible and protected with secure cloud storage, backup, and recovery capabilities.</p></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="block">
+<div class="wrap">
+<h2 id="faq-title">Frequently asked questions</h2>
+<details><summary>Is WPS Office free for Windows?</summary><p>Yes, WPS Office is a free office suite fully compatible with Microsoft Office, Google Docs, and LibreOffice.</p></details>
+<details><summary>What features does WPS Office include?</summary><p>WPS Office includes core productivity tools for word processing, spreadsheets, and presentations, as well as integrated PDF tools, cloud storage, templates, and AI-powered features for writing, editing, and document automation.</p></details>
+</div>
+</section>
+<section aria-labelledby="news-title" class="block">
+<div class="wrap">
+<h2 id="news-title">Latest from WPS</h2>
+<p class="intro">Stay updated with features, community events, and productivity tips.</p>
+<ul class="cards">
+<li><span class="badge">What's New</span><h3>Claude in Excel brings AI to spreadsheets</h3><p>Explore how Claude works in Excel and how WPS Spreadsheet offers a built-in AI alternative.</p><a href="https://www.wps.com/blog/claude-in-excel-ai-powered-spreadsheet-assistant-complete-guide/">Read now</a></li>
+<li><span class="badge">Tutorial</span><h3>How to use WPS Copilot</h3><p>Explore key WPS AI features, from AI writing and document analysis to slide creation and Excel formulas.</p><a href="https://www.wps.com/academy/wps-copilot-practical-guide-quick-tutorials-1898623/">Read now</a></li>
+</ul>
+<p style="margin-top:24px"><a href="https://www.wps.com/blog/">View all news</a></p>
+</div>
+</section>
+<section aria-labelledby="final-title" class="final">
+<div class="wrap">
+<h2 id="final-title">An AI office suite for all your work</h2>
+<p>Join millions of teams who use WPS for a focused, unified workspace.</p>
+<a class="btn" href="https://www.wps.com/download/">Free Download</a>
+</div>
+</section>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="cols">
+<div>
+<strong style="color:var(--ink)">WPS SOFTWARE PTE. LTD.</strong>
+<p>6 Raffles Quay #14-06.<br/>Singapore (048580)</p>
+<p>Copyright © Kingsoft Office Software, All Rights Reserved.</p>
+</div>
+<nav aria-labelledby="f-products">
+<h2 id="f-products">Products</h2>
+<ul>
+<li><a href="https://www.wps.com/office/windows/">WPS Office for Windows</a></li>
+<li><a href="https://www.wps.com/office/mac/">WPS Office for Mac</a></li>
+<li><a href="https://www.wps.com/office/android/">WPS Office for Android</a></li>
+<li><a href="https://www.wps.com/office/ios/">WPS Office for iOS</a></li>
+<li><a href="https://www.wps.com/office/linux/">WPS Office for Linux</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company</h2>
+<ul>
+<li><a href="https://www.wps.com/about-us/">About Us</a></li>
+<li><a href="https://www.wps.com/partners-oem/">Partners</a></li>
+<li><a href="https://www.wps.com/privacy-policy/">Privacy Policy</a></li>
+<li><a href="https://www.wps.com/partnership-customer-stories/">Global Trust</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-support">
+<h2 id="f-support">Support</h2>
+<ul>
+<li><a href="https://help.wps.com/">Help Center</a></li>
+<li><a href="https://www.wps.com/academy/">WPS Academy</a></li>
+<li><a href="https://www.wps.com/tech-specs/">Tech Specs</a></li>
+</ul>
+</nav>
+</div>
+<p class="copy">Language: <a href="https://www.wps.com/">English (en)</a> · Other regions: <a href="https://es.wps.com/">Español</a>, <a href="https://br.wps.com/">Português</a>, <a href="https://de.wps.com/">Deutsch</a>, <a href="https://fr.wps.com/">Français</a></p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent TIME-related sections, including TIME100 Next material and identifiable people cards. The visible content is adequate to the broad purpose; different wording, layout, or section selection is not a material loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, captions, and cards are legible and arranged coherently. Images are cropped at viewport boundaries, but the displayed portions remain usable and the crops do not obscure essential information.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links such as \u201cExplore the TIME Vault,\u201d \u201cMEET TIME100 NEXT,\u201d and \u201cMORE IDEAS\u201d have understandable labels. No observed essential control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The evidence shows a coherent comparison of a TIME target page and TIME reference page. Their different layouts and content are consistent with a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The section headings, names, captions, and imagery communicate recognizable editorial content about people and TIME100 Next.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target visuals**\n\nI'm assessing the target in its mid and lower sections, focusing on coherent images, captions, and headings that refer to people and ideas. The purpose seems to differ on the TIME homepage, but I don't see any material defects. The image cropping at the top is normal for the viewport. Some promotional cards are clipped but remain visible. Overall, the images look legitimate, and the controls and links work fine. Now I just need to create JSON rationale for each dimension.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target visuals**\n\nI'm assessing the target in its mid and lower sections, focusing on coherent images, captions, and headings that refer to people and ideas. The purpose seems to differ on the TIME homepage, but I don't see any material defects. The image cropping at the top is normal for the viewport. Some promotional cards are clipped but remain visible. Overall, the images look legitimate, and the controls and links work fine. Now I just need to create JSON rationale for each dimension.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BmwtA2t20dxvPaqrhuVBoVOtmkrh5DnrDz11GxfceAEn7w02XKdpqeuGIGdarquYC0AYFm2zNfG4IK7qXxKlTMSsdka8PBXhHzukWRAUvMMUpei0uJtC0FKGVx5hZHFh9OQHwp4_Mq8WgahfO7RxfTPQoQmLVpUTeYFcZHninTDlSIJyfjr-lIfAgjn3dHbfJED4fBpnRlJUlObIaX2jaYPksoOoPfw4IDQa17ECxkeuzZ0kxdDbNyNndr6-eRJuS4zDzbEbc4nlEHhBzMte1BBTWifLdrRk97sRV2adqzFC9CnXlRzdCrA37mgLO6ANjS0-5LhARRJQdHGQzrMDcLhNU7Wro9sFzWfnujcO5eoyXUjuERbwJ9goR3hMbCnvsKdPe_6Ha8ASYt-_MLpuHYJG69JClg1NM5T1tvyPc7hu94O8Tyz6V_L6dlDvEjNoFa_r5cMY2x2qUkmfCJvpKmTcIBkqJJhydNjiM5hJInQZP6APKSTs6E1x90S5PtQEwyQlS_6twUBRThK2XIH57U9YGPhAN6ooETox_uyD3E4SdRkx5l1YTbZYvvJj5rsVw_vuFrobUvkYQ-MF-DZDePNMKIsisYFyPt95BOhPrg7oE4puOEORkLjJeIQYxPR4pB3JxL-4Dqu0YagjFogwgPemR4xvXCxg2EN2ZJoaRFsEOqMDgE6eFbQGDGiBqyuYUIBQQiWkWyH8PX80fFc6RERKIFmIfz0ruqS5b0IRN4hodEGV2UUVSuCG9h184UzrIISInQBFOChiDsuTu0x3IUziwPU5thvUfyxCRu72C430l30iLRfeWVWeV1fKRjmqqZd0gI8g5qAMr2I2VBUJ_cQRpQfr9PG5CdTR9FHjp_Myf0itYRxbJaecPDztqngDDMWyk2FGY2s8Ju0M_qHIdSOfbDtKFolbEj6rlsXSyJCvF3ai1je6_wovjV-nQtiu0a8VxKs_O-QaiO4k7-z4xly-mGlhdzM7dKw47xF8p0oP_yCCxnfkNnv-wBdWDnWtZoqsPY3j9RjcRWDzscXlE8dYyl9f5RQKwcd52zMskFmLdfi6H4Truq9Yw_a4V8mkap5EMychGNvx4VXBpNyTjnAWxkad1o3XTSINVUANt5xWceF-hANSxgiYwoOZns3O8L6HWVfZX-puuTwg9XD0Gr81OJYXTgO9wnV3hXas11AjyZ7ZN4eMfZnibUH0Lev4JNFy5q65vRJXOu6hsksWnIP1TMWer4xXyJbY09aOvZEUtZ6d-Ik38Apm7rLXmNyPp9odqnHokRMqqccF-DKqcZFoFBsLFJW9Bgs8ekXbBAh5-H9VW4jKWVrkNqjPBsOdgDAUUJU5PxSH9eOiIYeH6gLmUFjTZjYZEVq8GNmnFAQX5EYTUpYpiX9OojNiw6KZZ94PDVGkvnh8OGasAJ92-BwCWxt6Iz5WnT7fKRzcHi-vyEdpVWE2DaMR-95XA5MV2xuUWXZ68aTj6r6Eu7tjKbgFU22vZk-ovoZe1MO9-q_4sp79XgbcSxOHmuIjsX1dGX1xqoSvc3gIrSURV89KM984LsRcbIvcCIrWWKtCDOTNQAqczPzxwFxkwoptK3wSnXBCm66vn-RWjmZLIyu8MyniormtJTzSi6Woc61ICPUUGB9W0XfiH_9h9hiZnh3SiK2cAfCb5640BXdUqRwlMZw0mDoLrwub4qS9Q_w5E_skT93ZNs5XyNhJNrA5xT9lwo-5_IroMERgqtSEj9upsYmEHeZKWeh4LSbmPKryZBM9B3cT87Evktj5uK-_2dEA24gnHa7oXdmtblouD-otKtpSjDaDe6L6n988Xg-G1BqlAJL_ZCQRvGXxaYiOOyUy5wK1s571xXF5qtNwuKRsEoY0d9wxFJdHnyFAJRihU3d6AYICd4jfLnGb7Qv6-BfBz-SnJLk7cdkbK42Kw7KRTBVktWIqm8P2uYS7lvfn9KmbuUs1qM86ehnwc6--RGfQP82LJxANWO2LbhGn6fDdY444VBYT5nNG5zrOLJGITCchOjhtMvKn3iWtlH7lNP_s7PeTxE5mLAfnwKUmUfRVCnGph3KsgR7jAKPdhcIOzfSYgowCCOcLgVQ9O_oKjZDdFvJSNh8jJweBe1JdgT6wkbqxraW1aUFgendvgcj5q37ZpFUMWGuFuO73ujSTCigfOVOF6NasMOTbACqWNCyqURArtlKV0gVsZtQMfHlyoy6j9B47MACZ0EcAmks43rrwnMcUQtA0vEKoT3ZmKDUr8dwUk8-SKcPa-o-y8VPoLAnIX1TghN9WUM0lnsbOd_0WaPIhT-6uLKTMdDIBZJH0U8Qoxpl89RQ4MccCyUeH7hPj0LN_pCxYAtmUtqvAZQ4eug0cnMtorlPe_sT1zYy7_pHTBrd_Y77JhkZ2T5Cozl6WLGBe9nrprFME5m5WAO16lhoG6eE7CY8uj671wzWVNawhdva9pTylkHKaTlb5I1Nah6Cwbgz8YSzb7sHR76HxMaETEOcWJmxnk-LcWhXTkpauZ6sH_nRWn7tr7X20QJqH3U06QyE4fUK4zAtz9HmjtBLE8VBclfWu-JJsJucdfJhyS4Ii6qYtaDOnQhSO4UUOzKaG3RWwZWgVGesnf4_J5ZLki_QlNvmgB-3xVoCtOU8TgYKdtazY7wKg7EAFOhoTDDK9l-Np8YFJ6_a8izq4aVx07WSgqyqqyAAv4VixbGqgSZeGGhei17F_c4s40eb-8MHT7QSmoqsn7bopKHgAj-uY_UZd8ctsoHpXnv8KkcuTzd98y3IVxjhNay8oCcFERXWb1Doop1h3DWIJ7V_VE636KiHsqwHlPLf71ChXgjgEA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ce3462f99a45490016ae819adf95c87d19babeb2b903f9a9b",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14541,
+    "completion_tokens": 380,
+    "total_tokens": 14921,
+    "cost": 0.00200755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14538,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00200755,
+      "upstream_inference_prompt_cost": 0.00181755,
+      "upstream_inference_completions_cost": 0.00019
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

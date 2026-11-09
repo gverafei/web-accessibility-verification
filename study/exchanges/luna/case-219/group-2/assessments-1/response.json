@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible TripLink description and map, awards heading, explanatory text and award graphics, as well as the footer content shown in the corresponding view.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged in both target views. The footer\u2019s slightly different blue shade is cosmetic.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Sign In and privacy-banner controls remain identifiable and understandable; the footer also retains its links and language/region selectors.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views show corresponding portions of the same TripLink page and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text, award imagery and visible labels convey the same coherent page purpose and meaning as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing image similarity**\n\nI need to evaluate the similarities between two images. They look almost identical, but I notice a minor difference in the footer\u2019s blue shade and the globe icon variation. The first and second images are exactly the same, while the third and fourth are nearly identical. Plus, there's a cookie banner present, and the controls appear to be intact. I\u2019ll need to ensure that the JSON schema is exactly as required.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing image similarity**\n\nI need to evaluate the similarities between two images. They look almost identical, but I notice a minor difference in the footer\u2019s blue shade and the globe icon variation. The first and second images are exactly the same, while the third and fourth are nearly identical. Plus, there's a cookie banner present, and the controls appear to be intact. I\u2019ll need to ensure that the JSON schema is exactly as required.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bxj0nPkMsHyvyAwnWsqstYQUSk4653bYQDN7_F4qW1qSqz5MjP9qoT4IUpMKAxSxQzA3hTXLEEyscS8hzbTg6yF2Gzs-iDNT7lV5eLu9lONgnrcYvJ2J_oKY1uP_tpACBwrbPKTzx5iAVW1fAQfFv1whKVOyRELEr7cOmY6OfPDRcvfr_UK_TTQwTPfaXQfmRQT5z7rtPIVHti1SLgOiW_lXW5ca-LllCX59D6u7Wvb70mDqQH54mz163oN5gCjHKnVR0j19YwfRqknI40aChQQ1kFCpqWA8zE1fRUatphR6gYGJL2uNh0x9MQoJzxFYbO4ohS6rggRiUuQpe9y6scpD-TAT3CXm9j7asEr3egaqmxH8y2R4lQF-FPn7tLXfpelviFh99_8APdTn9-vZZuPzWFDN821GwYxdy4N7virJuy4I1XJlJ--vTR1Al91zcSIZECSBiIdFkCqH4Gw5XChx22SQG9hex8lxjp5AaajF2Ad5ayp5vA8VAWgK2E7TxKEbNAuI9lZo72bPDZH2nRThBrfXGW5J4LUknkHFj5_U1wzAm4TpJ5sDt0swBukdxFNgtPd7tFowaMuLaSjrvbc-T684DiZwD2qEYzPVlPw6IjccdOBxc_19znadmKwMhAVwnu-75dG36z3qmg1go37VRXxsBrS8jtAHQLiUBhDGQ1wB2AaBF730n4NlgdXXmepaO9LyrR_M3sK2_4m78WGKS6b85u4Y6TJlehv1xoGaLeih0Zp6yEHCPn6xf5IKFcxkHEZwk1uLNdOof0EOi4afLZQRRTzmjhnsEPEnvn5p8nPIvP10BMJvnqY78q96REZw7XC14xHXkaqSFvmb8p37detiL2IRNBRmqa4WSOlNM1BCRKz8FHNRCfSv8zqaBLjWGa6vsLwo0sQQvCP-ZPW9WqL_EUCS1eFmcfGNpCHaozIy7ieo0XNaeJNz3EI3Wdb8IODnF5saK7wZWYNlyg1LIxmwZVqQ4cEef6EtFwkz0b50Xyx8HSEJ-fOSvqH48QPP8XT0FeA6hE9tT8U6OSybkyjYljzpiwTKHg8xqxa_SsLBKlkm3yNjAxiOK-SRJkh3JKbAbp-OQlMeqiIspk2AW9cJTYXlKc7mDpIqpV6yduKzqj6zjBF2RzCPONbIov-PTsn8OZom8FRzJDUY_ezqbIdkCHJuY6O9VXKjwea9FJcPAwFP-fNOCVlD-f57qtSi9_t98sx-KvVkkplUH8b8-OqIWkDeCY2VqVhZQK12Y-UGo9YxNeUcxeqk9Uw0hyL5gwURHHphTRSbcnOP0TlPzfIKrln-tfjnx7PwMACDq5zAGFBk3pT9HGDAlRv_Mu6An1Qnnrp8zBvwCH_LDMGRGjySunqKDHBfeZI2AZT1igJl4Ie1z098DVSyEiWHC46fVPiCc96GWvRAHNyVjY9L3LnvWm86HEswCRUh5KiA-P6bVbq869E01gR-PX3X4QHNVoE6cZomxUP1QvMqrKrqLAn-BfwYYeLsOyITjsUeLXDHQaoqrBU0BcybkJnNTIg-FxJyX8WRwFbdvE9ZJkg4o8y0RIAze0x8iJrpr-tt_IOOpvRxvBV0bfXibjYKVTzGGLUQ2_Y-lgqjSzJbkPpWD1eLYCTJiKnOTh4FFg1dKluQ6VDHsOFegxV823XcWyEej9BjiGydRpF8x7YYQ42jAdtgigMtOyJH8gprBZ3JHd0RUWL2tC8jf1z4UbEaNnoy4rxccvK11w7PEPhpZ59F6v8xEIzwb5RP1ZS3j5lWAQWZmway4soq9Q6xRQLw7hgxgK4XV6zSRAjjrlM2mPss4oQra1f18WwQRJs6xVjAbnojtoB0EVAEi3K95ifCmpOGEgW8GekuQe05Wggee2M6AL1qIgSc-2LdfkJOGlEJjc2AUs1jM5J8_7GSRufG9d61KJJ_t7KyLT0bz5f3hd2puzG5Beowrqq2eW516Q3tlqWArwu4S_-T1p1lvao6cp51EGajUywkXt9m5hQzGOz7QsEWVqmLqDli7HfDBlzvd0Pd3fRqSAvRuVYbCwh_dCWVqWSwlndCP3raK8OP1BfQ57zPoI79mcOpnF0FyCqSl1-rG1zc22rZwzo0pWXZ8_L.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_02b8b3eb4ed733f4016ae81c621b5c87d199d7a339ed619ac1",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9747,
+    "completion_tokens": 296,
+    "total_tokens": 10043,
+    "cost": 0.0013663,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9744,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013663,
+      "upstream_inference_prompt_cost": 0.0012183,
+      "upstream_inference_completions_cost": 0.000148
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

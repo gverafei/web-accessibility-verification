@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s visible core content and organization are preserved. The changed checkout panel is part of a product demonstration and shows a different coherent state, not missing page information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and coherently arranged. The product-demonstration panel remains understandable in both states.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible page control, \u201cWatch now,\u201d remains clear. The differing payment options and button are inside the demonstrated checkout interface, not essential controls of the surrounding page.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots are coherent corresponding views; the later reference and target views are identical, and the localized demo-state difference is permissible.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s meaning is clear, including its payment-platform content. The alternate checkout-demo state does not undermine that meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Clarifying demo details**\n\nI need to note that the screenshot shows a localized difference in the demo checkout within an animated or mock interface. It references a successful payment receipt and a target order summary with payment controls and a pay button. However, the core page remains unchanged, as it just presents a dynamic state for the animated demo. The mock buttons are part of the visual demo and not actual controls, so there's no issue with coherence in the evidence provided. I'll return this information in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Clarifying demo details**\n\nI need to note that the screenshot shows a localized difference in the demo checkout within an animated or mock interface. It references a successful payment receipt and a target order summary with payment controls and a pay button. However, the core page remains unchanged, as it just presents a dynamic state for the animated demo. The mock buttons are part of the visual demo and not actual controls, so there's no issue with coherence in the evidence provided. I'll return this information in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AJBjkcPkwIcMmmBBs5I6vdGnTXNNHukJpqLaG5JOhgIS0pIHOGLgxqX947CfYb_DQRK1wCEGiWu8R0ikStpRr7Y7GdJb1tqOGRC-OIsKFuKUnOVmA5e-h_rtJXMuxO4A7GBvXEur5rgOcEWzdGgGSjw9n-FeUd79GaqdLvG8J00SRA9JI0FdJPJOXQqGWd7-AihrkGdmVkC4Xhct18FueNCR5-T4qLvZ-kNmk06ggQ_YmRHTIwMZmEqG05XmTWGvOOm-EdJcjKX_ne5_2BdVBYU_ExK6P9zS3EB-GFfozyaHX4Ffl3iXw31FFsn6DdxLTs6qZoyB9H62m-JfJ9xNHUsNU-Y9ERV1wK6SAsDhMpW245WdLnnG8gB4HGlvM1ZDEtriSKWMNW51Uq4kk8yGoSrnCBgddllOlddbUQCIJSza_NBw3OBpyhjchLY_u2TL0TpGq5shPQBI0x69LZBXbJtUWDnfXtStx3uokKb7TG1O1c9tX3CSCzPMT28mFtPkAeKHUsgBQhZNhQTsxxRFbt2E1GEfdxUco8eV5YwZVZthPKnG_SgKPQgbsSNAVPOj7NVzjetNkVD7UXSPZcJZcT5N8Bflg1y00s2rYlA9_SBJFq2cQckHnKEaS4X3iN2IUyMt6duhwuejSn6mDm6C8SQDagQWtGtqX_432Pnzr-iIyg2UVl7bc6OxNaIcmxDGugF4ngc3MhSiNX_Ub8e37r9jGiC4l-sC_BdOUgi45pBJMkzsVYqEJVhiDao2_aYmvdBkT-3usmKGlf1d6P2jjuppM2TRgWvLzNjNi8swDVCAbSASbBmx2GLvRHtzRtrGVkFHKto-OD3ZhSMnXLjN8EFUC4wPW4DaATNv1LfDnzmKIGVmSD69cE9G8X7FudSkW57C5VrxeKkNoZXZCQ-qx5GgMMJAZpsJHcU_KSHHxbmtlf0gxdO345z6Ab4j-gg8LqtId8bQszCn-CQygCPAfI5aJdzghkpK1aK1NTq6EYJIdmga4QFsy_wiQlPrt_Lzd7Ebnf77Nrh-5oRWw0d08t_XQGL35JYmfwD4O_nmx02777WRHG0aqK4zHgZHL8jybMR4Y69QZupServsOt9mG1m9BiBTYnxFVXIRJ0P7XewiJent9y8OlOfxodJ7E8UUPgKrKqCQYtbGsw56aD7wQzxbZ8S_S4uCpesrpQNfcVGRb2XBdbscBlQ_dOmRmi1dS3Lqvv54EDOBj1MLF-DvBs86Ni_NIH2Lph-aXnrXGDYTDlnKGNA34AD5TO_ewoAbtZ5bNGXSVn55JHrLtfCdAH1susZuxP-BH9rhMdPf1yPUdDrhyEbxT-jdkVbUgTQbMVlij_Xnm3B0QlXm6DelkiwzlIXI3WS9uEkZenlEztrJfSTQgvxPimflflNjQeFzNcHTyRzcRI6mbeyK_dWZ6eX7r7OMS9CfCyU2h66LVFXXHHcDE0eEEByh1cAmh9pHj82YkkVLv_RbWXSEAs6SImfgod4pbCppV_9lW4h_7-b3x2FP6x372RL40onclM7m9bNTXCTuQ3bRShkG-TKIRY7lwQuy1yStHclarp3ISsdmwKCn3QX-fSkW8HoBb_2otMd1PoiIJDhFrIEfAYUO9K4rT27UWni8-WxgEr9hiE58217PCfLz1OyLTnB4M1bjVQAEhmFUlDmbCfWhuKWPz45GT2oOoBMxDKhPedsNS9cmWX3ZpybibYuqQFH4UsXtXOGVjnNCvDgFDQYIwcOUsJSlMDLG_7uFbNnq5vI0ULRocgV-ntymXk_XgUhMuGkLt9W233XRcM6qhRVtO0U-3igTKummkz_0L5pPFnyxwxa_pNCyaA9RGzWJ-imcJ36SwkeOjtbkAjoNaljHFJakA2h-ib3PAjm6wbepfTwHhdp4yMlwKqONFBvylN3YEsz1GPRErMUGIYFJ-dB153x5FX4K0lutULEalg8_lGSOl1T-w1vZqKXA-0Sbzc6CkNSHrax5heY5A89uTiVIFyxioIK1f_nhZLeJzYTNKN0KC2y7YnvLG1cqx8m0dtKTuFuLk3HeUT-PWiEIvCVfnruUBwCmuXZE6tn2bcw2NpKKJ_kYzSgfc5Lm1YDvHJCdqQL36qyfPqx7dR-VYcq5KKvOX_M37OhlLjTatnX75C0X7DwvRpt8tYCaQeLYpZkC2pZCDrs7RpOWCEFcUwxqX30BhWnEHMWXTfAWOckidGdtNTcE0cyx4YEGyHULaG1QIgnA-_SQoSwkaZ7olqcuErkDeve3IJ1phATEDqAtTsq5b1yY8V_hmvwD4IBHd2MQ_3MFNMwx9VkiDtdS0tmkxHOYe2Rl-Hen_dfgZ_6-4UDRk8VvfQhFgI7lK6ue33xL-ut0D13aXfLTo1vqzK-9HWAxeIiMK7J9d18Ypc8PMdb5-Gx1ASdr0WIGgkkwMeLEAw4Sdi8drHPfHbWU9ELLlWzpnQVbtKRYbBES3n7FjUw_Jfu18LWXPRUUcjgfxgUDdPBJgEzyuTHAA-wiKJmXquJgw6zKqx6pZBe0JhXRH7tS-U0CvqXwOcmu_YtY197LzZrR032h7nk4uDmjPdiD4aN9QZt6FGhRJLDRQSSb29WJf-hRZPNpIEqW90W7CxmgVRvoBtxePPYZwcfXcY7DlGVUFjhq_UvSoy6m2d1I7HovqBTuysz2bz8PtBsk4O8PmC0cCeCsHh2D7XXhIBL9gPTg3__NXua3ezF-2SAG9daLkgwPc_LDjfwS4i6NJt_TME2UK0QWIKtGYqv9Vl2w-t7Pmx9b5FQEpfDha2zJ4_P6ReIX2KLR3q1TObIBVSOYyqcqKJbI8s7-A8ib4wLNj6wGoP2wBaSXpE0dWHq4lV6kWzEADdaTjWBPcPRJQOwwysCSLnW_jU8bZw7dxSdCo06sbWaTXAWDK9VMPD8kM9CAApuAbLhoqrIi1pzhzHmd5ae-0PLWHE63_PpFvMbX0rrI99UxwRWP9wJ9pEy3Z5xh3CJNgH7bn-9pw1FX1BEOM0sCl5gQJ3iBd8i-KGQ3MCDW609mQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_04b1e3b1aca55d51016ae8023e2c9c87d194e173f988055bd5",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11018,
+    "completion_tokens": 364,
+    "total_tokens": 11382,
+    "cost": 0.001559175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11015,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001559175,
+      "upstream_inference_prompt_cost": 0.001377175,
+      "upstream_inference_completions_cost": 0.000182
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 100,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

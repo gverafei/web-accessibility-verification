@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target footer region are visually identical, preserving the membership prompt, partner logos, social links, copyright, and policy links.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Footer content is legible and coherently arranged in both states, with no material clipping or overlap.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible membership action and footer links retain understandable labels and recognizable icons.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target images show the same coherent page region and state.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The text, logos, and labels convey a coherent organization footer and its membership and navigation purposes.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6564,
+    "completion_tokens": 168,
+    "total_tokens": 6732,
+    "cost": 0.000904425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6561,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000904425,
+      "upstream_inference_prompt_cost": 0.000820425,
+      "upstream_inference_completions_cost": 8.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

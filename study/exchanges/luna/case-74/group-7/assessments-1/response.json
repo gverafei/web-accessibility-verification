@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Stripe news cards, a clear getting-started call to action, and site navigation/footer content. These support the broad purpose; the different content and layout are permitted for a regenerated page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and cards are legible and orderly. The heading is partly beyond the top viewport edge, but this is a viewport boundary rather than evidence of substantial clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible links and primary actions have readable labels and understandable purposes.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied states are coherent evidence of a Stripe website and its regenerated target; their different layouts and content do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, descriptions, calls to action, and navigation convey coherent meaning for a Stripe business website.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating website coherence**\n\nI'm looking at how the target lower page compares to the reference sections. The target consists of a coherent Stripe marketing site with content cards and a CTA footer, whereas the reference has a book, CTA, and footer. The regenerated content seems adequate. The target cards feature news and CTAs that are usable. The top heading is within the viewport, and the controls and links are legible. Overall, the evidence appears coherent and aligns with semantic expectations. I'll need a concise JSON rationale for this assessment.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating website coherence**\n\nI'm looking at how the target lower page compares to the reference sections. The target consists of a coherent Stripe marketing site with content cards and a CTA footer, whereas the reference has a book, CTA, and footer. The regenerated content seems adequate. The target cards feature news and CTAs that are usable. The top heading is within the viewport, and the controls and links are legible. Overall, the evidence appears coherent and aligns with semantic expectations. I'll need a concise JSON rationale for this assessment.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BkVo3_AdEQCAojDZxiXr82GHZICzn0ufWxGX6TQFbsjcGCwaIPtXOr7ZeRh048GISrEqvoafZyqacjQcazGLe1qFI4gKzxuhZdEbm430Ipp0Xp-PNRje9x7G8OTBMT6CtTXJcv2lUluPsnyUPBuQOm-LbEwL0cxdir7umXJE9-P1jhGSAxoR1sXE7id1TgzXSZhOhOEF4_5SMvhX87ozJUgTVVGwETM3I8THBEVyCwY3cRSQQPvzwfTqVvp8J47q68ZNm_TaDqiRLz7kbXrAxRwlt2oOcLx7PCxj2_YU3dXaL4jdYVBZv2Nj2bqXMauUOG0f1KjLmDvtfk216FF937CBJr7dSSZ0MleEyNNHFGKZiQ7vAykIR6MqNCZQv_54lhWkYs1qbi9WuCmHEjTy7LwsBNVlTQV9MMWFjGknDTMP7P_7jdcx-HV7n4yVlekmlmTTOKaMQ-2zR_5pp0xJjL0u0D3xxAQnDspwHAhdVvVJhBpgbGMRFrkYt9gSTj0SerdMuZ3VyWd0bYxJGGs6qxt52ZF3EbtfpBYdFDOFOnpfWTbygdPUdSV3rlX6VdROyMwkxTb901ZyxkvpitSoJSNu2pOz8QM-ZDAL750SeIaYgON_PGjaD4UL1PjpgKrlV8bUBuB-hWx4kV0lXGUmO5nIOQU9O7m8ynMxHV6TIVzDGsWIKGqWQlcoLTja889CQH6USUaHxVdm6oYEsrC3-h2eJKwiA2FxYluS73xiVvDKs69Ygt9h0luY3VVkTtqSCjJRIp9DpngZQRvFgstGYi1r51gp1_-pk0MrdBcnVeTHomKd6NlJXcFzk3j_oykZpzbJV06GHnAg0yOfmyHnSTl4XyufwUGvYs2lV4ZP84NPy-XZe52W1PTnBATcOjzUkDWQSFIhIhq-ME8cR5STpbwbaZESUnVDjqadfHw_ZQEr1ki5D5tTm12lTAST56LopfsEdMPSP9ENQtjx6UXD2nrMbO-k5hf5FoTvxiSY4ammiWoic-bh6JVEgTbvSMtTcbEmpEEKR5KtKNuiDjd6Tfeky56es8aOOnatilo3_ynYlJhI1Hoz-b4h-UypOjbL0akRcReyOGj5Vq7vstdXUZBm3defFZw6J7XO_8cLfj9W9AggdkdlXZs1Yxzd7Tb7cM1yqo7IOqcIXOvT_tb2C55imqNQRf5s33ihbW18WjazuQImSU16x0koRvcO9dcDi-bdhBRH3DTXzfr-KGspREw_xY8xV9rDCEsR4XtPRquA_z6OUzX8cSSqOA7i8xlZ7Xbi32wj9cVunGg2GQ1cz2ZMfVT06vRmgUIa0duwcRa9m0y7kgweUjvEcvfjQDPsSkJHuEydjVUJWM1raZsELGKe1N1JV6WI6bcFhVk6gY9SeF1eccQuxsVXcUqkecoHcE89iolIOCjiWI4XP1iEtO9wfpI8IWJF5n0lJvf3EuehbMNnDJddi3ikU1Xs4NyZcW6mihWvJFLlA5Hx_vvdPraE8pEpOiRsHKgSmycyX7_FTdZYaMCK5srfeU_UD21EGjlwIqN9KD6ry4JHZzEQ_r4iR1wLo5FtO2MWjvYBEB9PuHrQCGv4n5jchwFE1Fx68dS8G7hEZEsIKKEs3wOCSeB296PRAMJlje3E_c5xImFel9R-0xDjp1Yyt9bmFrI9OwgGk3it2mK90dRnGy2juRpuipqtZGjrhj5wGK0so9-7Qe1vKLNbpC_4IRKFRuSUxNlNewTAJSOdfzCVrhzGKuYApMUSCSKI3Oj5sVYfK1q9c1NcLExfgjgH66GFhqx7fp5OpyPsURO1rbSqQ77F3URJXaf3cknk3RVJmaRYuRxWcwbCrPcAPHnJPbIgHOAE-jeREj5Zc_qWyoyfw1U8etfbwQy8itWXkunyvW4xhEZ9Kb22eZkplSCMA2B2JxIEPLnuUq1gyZWYmsl90pBifeQO5qbO-7Kw-YILUz5QhsItgBS57NRnSPqP2Oo5R-y8rBDC3dTCaEa9NQKbW7pBNGTNWzQ_GI2b025ciriZeGiuiB1IJSQ3CJkKva_06I4UzP0Wm8hbC-0FRMWMbKLOHKKBAd_94NBpuW9xe67wcfltPF6jfs1r9eSlhyi1UyNCwmP7ZQJ93Q_0SuXd8ENu-XvNwsF23wETw1lWpEjA4OdTmrVc6zjjkpgFezO1mLx3Wur4ykSL7ZmZaJJ38-s4muRYRZTwMtQzUPjzdhInbIbqTSb6VlehTyc0TbP__w5uad0ER4aQKXs5Go0Jy-7fekasEfbb9b2n5FSE2-jrvh87GAmPtREnOXubZNuGYkMz9PYkRO7u_nRlttm5XRo_m-d3BDgCzymrxRrKtKDY_kSnmZQeQOlGkJKmR2245Sng_G_55hIy941BBWD_p86HoVADqQfYbYF7ZAYPeabZdrsl4YjmJLm_xUI4W-3BGVmvidjRR-erT3-k3S5MPuBKlIygdbW29fjSHMvmUInYa9o8qpYHORzPBmmB90vMVLL0aUY_2tU9f8Xz_cm71c_Edjo1EDY7sSPXahqFe4mso0yV4LtyIZ9t76nunx4gwt3R_-CJhDJkvOC7vetLzjaQk70bnjFOKYRit2p8z2x8kL3qpk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0a6563c93954c8ed016ae81913002887d1b68d23cc814791a2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8693,
+    "completion_tokens": 336,
+    "total_tokens": 9029,
+    "cost": 0.00125455,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8690,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00125455,
+      "upstream_inference_prompt_cost": 0.00108655,
+      "upstream_inference_completions_cost": 0.000168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

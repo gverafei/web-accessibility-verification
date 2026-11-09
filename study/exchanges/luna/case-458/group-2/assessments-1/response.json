@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible Lenovo information, section headings, descriptive text, and solution cards. The compared regions show no material content loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and coherently arranged. The solution-card carousel is presented consistently with the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible card labels and arrows, carousel navigation, and chat control remain identifiable and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows depict corresponding page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, descriptions, and labeled cards convey coherent meaning about Lenovo\u2019s technology and solutions.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image pairs**\n\nI need to assess whether the first pair of images is visually identical, while the second pair appears the same but their hashes differ\u2014maybe just a tiny variation? I'm focusing on images 3 and 4, which have the exact same content and meet the necessary criteria. I should also provide a concise rationale in JSON format to explain my findings clearly. Let\u2019s make sure everything aligns properly!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image pairs**\n\nI need to assess whether the first pair of images is visually identical, while the second pair appears the same but their hashes differ\u2014maybe just a tiny variation? I'm focusing on images 3 and 4, which have the exact same content and meet the necessary criteria. I should also provide a concise rationale in JSON format to explain my findings clearly. Let\u2019s make sure everything aligns properly!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CC5lW5qvgfC6uG6fETTe5CFJExTEAZ5uAWED3ugbvfe7tAwF99l-o3139RZ4SJfFqt97O_CmOfNCAAdA-iLmfkHse7BtaS11zKbQX81zfbL9UQpw_4Q6pguOl2N-CKerbB6i8e7MUhIcaNouZRopU1Toqo3TifjyTumQ7shNbfir0DmPNXZ7ih7cDQ6Gjim1beXIQ-jvTio3AIYtxXw26GUjZc5axjl4ixyGdCSXgBQrHShoucj7BHnm83wNXPjfMzpXVnFalw6sVA-wtNHpzL7kIZiC1UrrgQc7dZfWs6Dd0VxmFrIpwNR8U_YshtiucRIjxb_Bh_ZaiQSptb2piH1Ac6j3H5Rc-l7HdcbiPHej-klItNGUOYUjY1R96SlEv1Yhp0-mOBQzSvK0GZUcxvIHVLn-0GUjz7YLeWw-nU6BwXPxgnswauBgfzOh8FwTjpQV4jlNjVwZbBkgrD-ICxFocj49gC5jaFg3VIPbHh4HhUMKrp-DpucvUasieLpBmJtKMy3ctVGlVOZBuVra46GdHQFLGT255Wnp2OiPdc3D2jmxuoZ2uimsivdohg5isXYpSUS8hFPoZA0PXbvyIcCWy-hzBqoIOMJZKkuZH-vhC4Hl9mNN5LK0qnk4EMP9TWeL_XDRM1FBayRBG3FK-Nn44vgUC1jbHnBrzqZn1WHbp-ZdlHAIZqluYMgppmwVVqtKxa6zL80wDa-S3rO-w74JlZL1ZjuaHxWWWJ1reUOg0x3ujShokeLvzFU9SjmLLXeSXWg8_WWBGOawhEfEFEcdnlMa5b9-EzR6F2tveikAUwFHeAe9otwDEXDgq_MV7OmHokLH_NsC5zFz3j8Brux7bs8qOlpbcMKdpuF5Zb_-az31s-pkYNaxaytLUVStZy6WVMr477RNaMLVJO1D85GIkpwYjOzFw9WmKWeJDl56ZFibNHQRRCgQb8HLELcTEN46R3Q7ohIfPNKNbD5HDwCoiqYnTnebVoCgcJIpM86Q37OYmdqmfNfMcNG_bm4rF6KVDn31EnAOKmmuDRKn1KbK4L7jxf4SF9QxcrMmz8_KepaJEFSxxVR3pbT55XekgcgDKbh_5LMAYtTx34LyR7I4swD5ublsSIpK2jsNC2fXRxeGgFp3mHZITlOPT2dpJIfaggrEkDO6Ad9S4Oslf5tcjyakt8wTswaVDvhV9Eo2iEoLnkJTHJMSMljGVwmAx2OMy7JcfjoCgVvahuQ1VccaaNMvUO8AV2fEmUFqBa6xNQCIrJ5pYKxMT6_CiUp5gkPEgAjUR1SgHMhVaJZEhQtvHU2hjMuofJKXqmNul6mVSGgsvOInhKEKZht7I35jWEzJ85PVQf1qRh0gtoGM2R2ZhAZDs8Bi72z5y_oqBEq7sPN3svF7A4JoiuwlMUGr9eKKJEgpLul0S7IHHWBuGuhB7BxIXRRO32HMrw_A0hqxoBbHCtyO230Si_MK54lCdb6Vkzbmt-dD3KtoYWAV_dOS9hvdqWVDEvGHnRi8MayNbhruJRiBAfPuKJJzxNSh6fCZjUdIMayzzctpTVdSH-eadwfo2ibK_dsj64Z2uAj53Q3eVM6fkTuKjS3qd0e6KDNm0WW_Xq7vZGsQiLqKibVuo7biCnBIKZLoS6jLFppBoNmCenFPKV7xBm30SzeCR3QeosPMKfQt6kQuWJ-y5No-NAruQsD51D03BComaIiKl8fPKmuQqYyZdbk-SSSc0Rnzs91NyuvxzYCo2mMYziZkOe1S1sR-W-GAvAPu6CwwIR-kiHaZ80u9bihOB2fUR6XZPuZgvnc9hDnGS5hBttFSh5-Qrk2-A_hhzcah2WUPZlIBf-1QyIVMD6xhml2HPEfbQjXUOn_vke_v1FM7j8ReMf1kcJYkrdnJAkWVsTOpZ7t0p9qBqxcSj5HarnYpunrTXJsgK25xFRHqTnYxL5yy_aw83glH_DjhVyLXmpvg16IVKshlwb5jJVUk0b3OsczFBboX6nOwg_XL5jra-BxyS62KlUXa_Yw8cJH87FfVi0-XOc2aihqxMtEkLdrLNwnmEerTj2eLplffF_yJ-kM_QWtzIW_lwsH8jNw9Yze_ziYkY59VvVzONSNPmSz-bBe.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f1e1e3414bdb7ab016ae820b89ca887d18607f57de7810d08",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14383,
+    "completion_tokens": 268,
+    "total_tokens": 14651,
+    "cost": 0.0019318,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14380,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019318,
+      "upstream_inference_prompt_cost": 0.0017978,
+      "upstream_inference_completions_cost": 0.000134
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

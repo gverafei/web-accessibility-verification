@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target windows are visually identical. The visible article cards, headlines, images, bylines, and page organization are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The editorial content is legible and coherently arranged in both windows. The large blank region is labeled Advertisement and is excluded from preservation assessment.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible AI prompt, send arrow, and close control appear unchanged and identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target screenshots depict the same corresponding page regions and states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headlines, images, categories, and bylines convey coherent editorial meaning and match between reference and target.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Producing JSON for images**\n\nI need to create a JSON format where each pair of images has identical hashes, ensuring all dimensions match. I should also make sure that controls are visible and align inputs. Everything needs to be coherent, so it\u2019s crucial I explain the exact matches clearly. This way, it can be easily understood and implemented without confusion about what's expected. Let\u2019s ensure everything is precise and easy to follow!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Producing JSON for images**\n\nI need to create a JSON format where each pair of images has identical hashes, ensuring all dimensions match. I should also make sure that controls are visible and align inputs. Everything needs to be coherent, so it\u2019s crucial I explain the exact matches clearly. This way, it can be easily understood and implemented without confusion about what's expected. Let\u2019s ensure everything is precise and easy to follow!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BlyAmP4z_mZvkXNfZ77U_SxtY_LF6djn2mVD_n0KygB1OT3eNPCuLQyluni34Cvjhn7zYx122JPVXmu00dlOGeaxsrVzfgog9hp6U27j4XbYAZS9bwBC75LEUq32iJpLK09xEEYyr6dmRp15PohjDhe-WcVCh7Sh7V35N8zuQl8TZVsOCsKw3S8knZDdgHQpBooyXHgWhoe6ug8fOe_XGtiuAO52sU4r-gyzDOhI2IZaQkhdplH0F6B16416RxDTcISlbwjLH0yA2rhOlp98qNIrB7J0hWb3JfDOL1fAqmGBuk7iIEO1aeQ6fg49R8wDHaOpkY0BqyhUf9sgC1tEpvjUtYbL6MxYyWpbFxDyrwFE2lReFu-67IbzrS6SSDNgAZ7jJRYoou_xtFkmlkssOViXxG7taJHswNMXLzPmCqNWlqYVkY8wNvfmokyIW8J0YXVbKyijxBfes3FvuJfmYUg-rPSzIfJKgS8P7LzccHRKQWOeqxj4W-K3Z7awi14olO-d3bNdTH5grsH4ti50OIRTI_-T7AOrgl1gKaJEC1KJ5FNMeiAoYluAJ3QiehVJK3vFqr15-eRTgXamdSZzKzruLCQOUmQjUirTV6V3JciCrnP1of-RRWrnQbAI1xgSqzXHeZKcp1f0UDo9essHGX6EHARk-pGzXLYrUxl2kAJjpU3sQvD9SHo-E7grSS0yO4lrjeO9PvUubXwZiA0TXg1M4d3NrO8lxpFfKSO0LlMjVKEi_Tl2R5HRKAHqOJPE-KD5GZmsidPlQaNt-cV1BqISM_Gwe9Qky1mAVn0nItpVHW-SYCdJjrsbNnzrGpW3hFzmUjgunYh5nkxeMI80DtnM532QC6JhGNqn3vKFZ4jgQ82ZV3oRgO8rXbY6Wq4LzgNioP69F1Uy7Ot_evoasKOvyMbijknL-DQKzvUm10-r8iZJBHlYKWNG-L5MK_Mr90xzcmNqGLLYcCkCgt1BdvoZ1u8VoH1qSSNG23Hb68EsKk8crMwbaTPfSxwFxzu_-aF_Unjr_2fncLLwR1izgHAqt-An9__h-owHAi9Z-KsrL508NflYyityZX0OuKBaxkXvwyj18vN8QN1zk1ztBHhjc-74VLcD7VJ9sbQw4dM32Z0R4mNjgVo5cPeztHv_JiyqcP9XFDi6hsa-kQjdutROM3EKDr6d1P9cxAy9N0HydwMHZVqp-nu9lR3WZEvr9uTIjRiNqp21BtDnq8ZnnsV-sxGYc0lF-FOqkh4J0Q6FVeLXmsAvOdfTRzJXVT4iMBduGU7ItA1SyfcoaE1CTE7Q-BXUxFglgbaMZSlFBAmJqVZWYelGptZKLbAHO_Jfj_wZTVm7cbZ9I-ikn5O4FenJs2k-w13wwJT2EVoEBNVuNe9zMDBpyYRN6meXaqQaww_Njrp04a6P7CymH4YJkuxWuU6iitOPnT3opLP6V-gf9VibPR7ts4i6poN1Ou0gjhM5u3LxOkL4oTkEaJ5Mqwm5plODGny2HouaxKKMVuwSG4JyL8opijBmnBbP32S1GWVTAJlYVx7VfGHBSfgA_uUZc5Q-X3SvURO_e3jTiRLSrB0EhDcKOewpWN1vqsXnDdlqpM5WOEfafpUMeAUJL29veuFq0Jhd5iNtsrwHximOUUtC7gg-SacihcgS8I6ZyEwuFVvZmeNvtawJLsxVzKcGjwAXBofnOzLnqUwVAjr3c1yqkEJ_1zytrkeq2XX_L227zNMc8luqeocF-CoSqFpthnM_dfKaeNqCVsr6OO-kDGBPEVvy2ZoGsOYe-1B6dL0e8w1kwRUcU4C9f-sBLrNFIH1i7WQ7qqlYvytUAOsR5k4pjmP1Rb5u8TLKii5jeetFA6dBxWZKskhe1bko6S8v_05wjf3UXiy7AfJU30LupZfXX1HdMp8nkh58UDTHF_pR7SS-vFNW04ThTlIPF7jaD2dmwntOqJRuOaIGwVTekksLU55bFn3EFZLDIYnyLAAsBkEZJ91BtSCO-uiA3Cg0seTi1JojQ1pJzhBsPinfem0SpgAzg1Th8Crqom4sBRygbJj_MDdRR3iYzp_urUsxA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f124da78aa49ae3016ae819717bf887d1b788b6934b4c9f5f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18623,
+    "completion_tokens": 271,
+    "total_tokens": 18894,
+    "cost": 0.0024633,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18620,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024633,
+      "upstream_inference_prompt_cost": 0.0023278,
+      "upstream_inference_completions_cost": 0.0001355
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

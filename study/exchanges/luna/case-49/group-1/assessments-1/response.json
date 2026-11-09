@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the reference\u2019s sign-up form, surrounding game artwork, platform links, and footer information. Differences are limited to small layout/position shifts.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The form, labels, artwork, platform links, and footer are legible and coherently arranged. The vertical offset is consistent with the captured scroll context and does not obscure core content.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Birthday selectors, username and password fields, optional gender choices, Sign Up, Log In, platform links, and footer controls remain visibly identifiable and understandable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show coherent corresponding page states across both supplied scroll positions; their layout differences do not undermine the comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s text, imagery, and control labels communicate the same sign-up purpose and supporting site information as the reference.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10114,
+    "completion_tokens": 219,
+    "total_tokens": 10333,
+    "cost": 0.001373675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10111,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001373675,
+      "upstream_inference_prompt_cost": 0.001264175,
+      "upstream_inference_completions_cost": 0.0001095
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

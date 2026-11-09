@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="Electron">
+  <diagram id="judgment_contracts" name="judgment contracts">
+    <mxGraphModel dx="673" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="885" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="v1" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=25;fontColor=#3E82B5;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="Stages 1 + 3 → Stage 4" vertex="1">
+          <mxGeometry height="32" width="550" x="22" y="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="v2" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=25;fontColor=#7854AA;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="Stage 4 → Stage 5" vertex="1">
+          <mxGeometry height="32" width="540" x="675" y="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="v3" parent="1" style="rounded=1;arcSize=5;fillColor=#EAF2F8;strokeColor=#B6C7D8;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="670" width="565" x="20" y="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="v4" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=25;fontColor=#18314D;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="Request excerpt: one image group" vertex="1">
+          <mxGeometry height="35" width="530" x="38" y="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="v5" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Courier New;fontSize=21;fontColor=#18314D;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="&lt;pre style=&quot;margin:0;white-space:pre-wrap;font-family:Courier New;font-size:17px;line-height:1.08;&quot;&gt;{&#10; &amp;quot;model&amp;quot;: &amp;quot;openai/gpt-6-luna-decisions&amp;quot;,&#10; &amp;quot;state&amp;quot;: [&#10;  &amp;quot;contract + image order + DOM context&amp;quot;,&#10;  {&amp;quot;type&amp;quot;: &amp;quot;image_url&amp;quot;, &amp;quot;image_url&amp;quot;: {&#10;    &amp;quot;url&amp;quot;: &amp;quot;data:image/jpeg;base64,...&amp;quot;}},&#10;  {&amp;quot;type&amp;quot;: &amp;quot;image_url&amp;quot;, &amp;quot;image_url&amp;quot;: {&#10;    &amp;quot;url&amp;quot;: &amp;quot;data:image/jpeg;base64,...&amp;quot;}}&#10; ],&#10; &amp;quot;questions&amp;quot;: {&#10;  &amp;quot;presentation&amp;quot;: {&#10;   &amp;quot;type&amp;quot;: &amp;quot;choice&amp;quot;,&#10;   &amp;quot;instructions&amp;quot;: &amp;quot;Is target text legible?&amp;quot;,&#10;   &amp;quot;criteria&amp;quot;: {&#10;    &amp;quot;meets&amp;quot;: &amp;quot;Requirements met.&amp;quot;,&#10;    &amp;quot;material_defect&amp;quot;: &amp;quot;Material failure.&amp;quot;,&#10;    &amp;quot;insufficient&amp;quot;: &amp;quot;Insufficient evidence.&amp;quot;&#10;   }&#10;  }&#10; }&#10;}&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="460" width="530" x="38" y="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="v6" parent="1" style="rounded=1;arcSize=5;fillColor=#FFFFFF;strokeColor=#B6C7D8;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="106" width="529" x="38" y="602" as="geometry"/>
+        </mxCell>
+        <mxCell id="v7" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=19;fontColor=#3E82B5;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="Up to two spatial views per role&#10;Linked temporal views · roles · hashes&#10;Every recorded view is assessed" vertex="1">
+          <mxGeometry height="82" width="500" x="54" y="616" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#3E82B5;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="370"/>
+              <mxPoint x="640" y="215"/>
+            </Array>
+            <mxPoint x="585" y="370" as="sourcePoint"/>
+            <mxPoint x="675" y="215" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#3E82B5;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="370"/>
+              <mxPoint x="640" y="485"/>
+            </Array>
+            <mxPoint x="585" y="370" as="sourcePoint"/>
+            <mxPoint x="675" y="485" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v10" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=16;fontColor=#7854AA;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="Judge" vertex="1">
+          <mxGeometry height="25" width="42" x="590" y="342.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="v11" parent="1" style="rounded=1;arcSize=5;fillColor=#F3EEFB;strokeColor=#BCA9D7;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="300" width="545" x="675" y="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="v12" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=25;fontColor=#7854AA;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="Decisions output: one of five dimensions" vertex="1">
+          <mxGeometry height="35" width="508" x="693" y="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="v13" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Courier New;fontSize=20;fontColor=#18314D;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="&lt;pre style=&quot;margin:0;white-space:pre-wrap;overflow-wrap:break-word;font-family:Courier New;font-size:17px;line-height:1.15;&quot;&gt;{&#10;  &amp;quot;content_fidelity&amp;quot;: {&#10;    &amp;quot;type&amp;quot;: &amp;quot;choice&amp;quot;,&#10;    &amp;quot;choice&amp;quot;: &amp;quot;material_defect&amp;quot;,&#10;    &amp;quot;probabilities&amp;quot;: {&#10;      &amp;quot;meets&amp;quot;: 0.47,&#10;      &amp;quot;material_defect&amp;quot;: 0.53,&#10;      &amp;quot;insufficient&amp;quot;: 0.0&#10;    }&#10;  }&#10;}&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="187" width="508" x="693" y="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="v14" parent="1" style="rounded=1;arcSize=5;fillColor=#F3EEFB;strokeColor=#BCA9D7;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="208" width="545" x="675" y="388" as="geometry"/>
+        </mxCell>
+        <mxCell id="v15" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=25;fontColor=#7854AA;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="Conventional-Luna comparator" vertex="1">
+          <mxGeometry height="34" width="510" x="693" y="406" as="geometry"/>
+        </mxCell>
+        <mxCell id="v16" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Courier New;fontSize=20;fontColor=#18314D;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="&lt;pre style=&quot;margin:0;white-space:pre-wrap;overflow-wrap:break-word;font-family:Courier New;font-size:17px;line-height:1.15;&quot;&gt;{&#10;  &amp;quot;controls&amp;quot;: {&#10;    &amp;quot;choice&amp;quot;: &amp;quot;material_defect&amp;quot;,&#10;    &amp;quot;rationale&amp;quot;: &amp;quot;The target label is unreadable.&amp;quot;&#10;  }&#10;}&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="145" width="510" x="693" y="451" as="geometry"/>
+        </mxCell>
+        <mxCell id="v17" parent="1" style="rounded=1;arcSize=5;fillColor=#EDF6F8;strokeColor=#B6C7D8;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="108" width="545" x="675" y="622" as="geometry"/>
+        </mxCell>
+        <mxCell id="v18" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=23;fontColor=#3E82B5;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="Validate before applying the policy" vertex="1">
+          <mxGeometry height="28" width="508" x="693" y="633" as="geometry"/>
+        </mxCell>
+        <mxCell id="v19" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=18;fontColor=#18314D;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="Five names · allowed choices · probability checks&#10;Ties keep the valid selected choice" vertex="1">
+          <mxGeometry height="53" width="508" x="693" y="667" as="geometry"/>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" style="edgeStyle=none;endArrow=block;endFill=1;strokeColor=#3E82B5;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="947" y="730" as="sourcePoint"/>
+            <mxPoint x="947" y="758" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v21" parent="1" style="rounded=1;arcSize=5;fillColor=#EDF6F8;strokeColor=#B6C7D8;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="101" width="1200" x="20" y="763" as="geometry"/>
+        </mxCell>
+        <mxCell id="v22" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=24;fontColor=#3E82B5;fontStyle=1;align=left;verticalAlign=top;spacing=0;" value="A defect triggers a context check; insufficiency triggers a final two-choice assessment." vertex="1">
+          <mxGeometry height="31" width="1164" x="38" y="768" as="geometry"/>
+        </mxCell>
+        <mxCell id="v23" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;fontFamily=Arial;fontSize=20;fontColor=#18314D;fontStyle=0;align=left;verticalAlign=top;spacing=0;" value="Acquired / patched: preserve meaningful content; allow animation phases and optional external media.&#10;Regenerated: judge target adequacy. Advertising differences alone are not defects." vertex="1">
+          <mxGeometry height="47" width="1160" x="38" y="799" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

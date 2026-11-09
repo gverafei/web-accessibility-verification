@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent news headlines, section labels, author bylines, and site navigation. It is adequate for the broad purpose; differences from the reference\u2019s articles and layout are permitted for a regenerated page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text is legible and arranged into clear article sections and a footer. No substantial clipping, overlap, or unreadable core content is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and the \u201cMore entertainment\u201d link have understandable text labels. No essential visible control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The evidence coherently compares a TIME news reference with a regenerated TIME-style news target. The differing content and presentation do not make the set incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headlines, section names, bylines, and footer labels convey coherent news-site meaning and purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing target layout**\n\nI need to assess the target bottom window, focusing on the footer and cards. It's important to reference the corresponding entertainment and AI articles to ensure a coherent news listing. I\u2019ll check the footer navigation controls as well, but it seems there are no defects.\n\nI aim to ensure that the content includes article headlines and that the footer image possibly reflects the page's end. I'll take note of this reference to the AI section and confirm that all targets align. I should document everything in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing target layout**\n\nI need to assess the target bottom window, focusing on the footer and cards. It's important to reference the corresponding entertainment and AI articles to ensure a coherent news listing. I\u2019ll check the footer navigation controls as well, but it seems there are no defects.\n\nI aim to ensure that the content includes article headlines and that the footer image possibly reflects the page's end. I'll take note of this reference to the AI section and confirm that all targets align. I should document everything in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBH-NZX40zV3S3jTBsG1tP-frKj8wGG7r36-YMYo9ROmtA5J55HPDvyaj3tELGMxJDSR6mhFE2iNdsedGmh-O541eIWIQ0nBAvViLuhBClkoKoH2pkhnlQO5Br4X-O-yYOALLkNaYCeo1LLyaYWkTKwWMIy_pjGBUkzoHI7GDvFmzQrGkx5qTMDPu9StmjSDbRT77g33IqHCtKfov6mXKLjx3DxJQdMknDMc-kSEq96Flp-EgEkVP9YLxE5KKwZvPYK1qNUajQYv7Dae90wxPKU_7sORBkNFCgGL4Jtca8fvP7brIClYAP1g_PzAKxj-p5ggiVRJpkMgtzebkPJs7TAPQFfi0WfzV2wPAKFBiWCohHZ5uf0Or8O0dZVda9gUTPwlGdNoNWdWv7OjG9Q3H1HLG2iWmvUGrURIUeGzWxsiY9YXkqbyG3qAgbq3lGmRf3K7knxNqa3eK5bwznGa1yQvRBjKriMrA00SUPp1x2egGv8N3kyjuSTB02wujLAN77h1Of3PmepdLlg7zx2JgNQ9gjlvw_zrneVfbgViwkoDBwegg35Hi6kWaZsG7oiI5R5HmcBEnNe30dG9GOnf9rkeB-fKF52s1sLMUuupkzfFTNRJBSUflge_dEm04Dy6eot9c9VxZwpUrGaPLjKqua1rVvllHw3xY7-p4N_dCC9aL_9qKJVkRFCIAtllRh9yTIUUUz5sC2W_yYEiXiKu83syucCYQICRraRCDFY5HUDOJp6OV54-hKy7i969fKPTmMgLessxzV3IOjZz9sjjqGLAWcfX-A2VQo7ax9rqfpqfzHqGNr526NUwqFk2VTPOui3G5ET4vut_BXeQKom1ueeUvnCxcizggj29Tx3ts-gvCCXST_FJGyHHo1v0VoUcv1qCP-O35X0Ox-ePCa-8rZenGuojt9BimAZXzI8fw1hR7UaMf-SRPYV0y8QZNPkvD4Bbaxp5ICBH1N8DKf9598yuCUEi3_vM0ZvgZFsUPMKyuohOCkSoJieD4fL4zOVw7lDBUaSYTtwDpskvIwaDFBjk2Ir0TYaYOnHWw5F0l4tPgckzBCVW6bKt6SE3nAznQiyswAA-SQwyFjDDeZS0Z3YjpJAlOzyfYj7wMUvi8xF0ZytwSqHfuhJQbBqAo-455x2V1Mb5n4i9V42qV0bcFbVmtBL-Y5Hqjmb14QHkeK07lR6M4aF-iPaI4j2SNceBOEoDLkYh-dVKi5VEVEcGAorxMp7nJg0anYcdISaN_goyOrRZM1DcZYdSwFcPyZkzcF7YTA49MWwA2YiZelYz8qI17NgJP40NujTItAiX21eTpZT3oCcFfaxPgFz-yhm-IldHJFoMC7r1sJA3nez139C2CTFQpSFjCzVLyIXCoFoi_dqRWVwQXIk3ULun_u-ckfo2mA7jliz-1GcsWpa-Jk1g2PsJx7iMh5kirwUnNP0tGaY63Zlh65RSl8FQ0RQ4gWEagx9V7ySinB3XXCk2kq7d7IIF1gxw7JzswI2HNJCPKGvvkeoZnCUC-Pg7IPlxW6D7Mb3uLMvtjsImT8EYtawGWZBBn7tWQDmypdqoBAvD9u6B3R9b3K2NHkRZzZcK_ZohxBOj7aIjkGlS1F-1e885IihlwKq_B2QpT9XavohuqWIsWIcHn3awhk0gGQW7yNJZZcoh0IrGEJFcXdUJX0SnsHSGICJcpqofwC4_LVZz_-k6iNaDKf4hdb1wRp0eVv1RoUR2RA7Hr7uNoVeQzy8nfZUFBGMdYEJNMCrGsBV0OP017PRa2ZSN6eidmdWbulZ166YnsGrPbeFfr9fuFmWDw1mBFVDykUz1olEkF0-91fT6b6tSXykJvw6QLa71EaG8svpL4SnmavYhRIFc8HFmhsNNuJePPPzTGfywQ3I70R3ogdr6m3yLFar52fdqaPwHY69Di6_YxR9c87OTe7kYllTCwqnsRR5vmRJLDCxrwNWC2aKs6RuUkPRnyWijCBTqQj3OrW-KX3tJ3iquC3surFpELNhVbsPjYuC-xWXMSjqJjbHd7xqocS_jkt7cCBy5OINsh0dTHaJWvMtyrwzl8sgj09ns4yu7UbgdJHGriW-PBnQ0p57Gc9rym8S9W_OInTTXhOuHkjzQAe2zKYRVipyLLmkPnu0JYntqidK_fGACYB0lPYklIFzS3aS6kOpEm2ZVqLxnqnb5p8nR_WZBQIPUuu_N8n3WDip25G0Z-ioSozBai01MqnKIv5MlupOB-990-f-lewdlegRYns2WpzkWFY3Hdiq3Zamu80Bfn-7qzrqoTlSWELqrBjqGhPejFJKaTNn3vkrGmhsNRALc06-9w4gS420OTmKAwzRsMn-NymAAmxkuEs0nX2RnKB0Xajjbb5XRAgRrhZ42enW-gmIk4UbG6W83tgfzBXRPzJnollE1yL_rLZCDfV4pXYKeFN2-P2O8k0InqJHZnq7xqVKV-e4v6jLOPFOMsrlMgHzMOigETwVrUOuukVBnlsMrmHqboB_yECFjLDhM3l8-WiO14TEPmmgjE2FThPEHRf4UxKxnRt7fqADzUDptqKokQ2AoaxH8TGsBPt7HmQXqSPsojK2ID8-roYrUP77wbM71FJXahFe4lBZqDXimLrXM_UlVrmrcne8P_nA_4xzEUjPoUp4yZKyqPwkNaRpQPaGevtp2_1eKyDxRwanPWYO.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0149e797c382214d016ae82045c1c087d1afd1497344a72c46",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12647,
+    "completion_tokens": 348,
+    "total_tokens": 12995,
+    "cost": 0.0017548,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12644,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017548,
+      "upstream_inference_prompt_cost": 0.0015808,
+      "upstream_inference_completions_cost": 0.000174
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

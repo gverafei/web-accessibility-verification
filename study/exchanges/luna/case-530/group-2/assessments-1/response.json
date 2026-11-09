@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible Get involved section, latest-news heading and cards, and footer content. Differences in scroll positions do not indicate lost content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and cards are legible and coherently arranged in both sets of views. No material overlap or clipping is visible; the small footer difference is at the viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible buttons and footer links have understandable labels, and the news cards retain readable titles and content. No essential visible control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent corresponding sections of the same page, with offset scroll positions and matching news-card and footer content.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, descriptions, news cards, and visible labels convey clear meaning consistent with the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content alignment**\n\nI need to assess the references from the year 2000, focusing on involvement and the latest cards. There's mention of web standards and an alignment offset, while for the year 3000, I'm looking at the latest news cards' footer. The content seems similar, but the viewport appears shifted. Comparing footers shows that part of the target copyright is cut off, unlike the full copyright display in the reference. Overall, the coherence and semantics are fine, and I need to create a JSON structure.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content alignment**\n\nI need to assess the references from the year 2000, focusing on involvement and the latest cards. There's mention of web standards and an alignment offset, while for the year 3000, I'm looking at the latest news cards' footer. The content seems similar, but the viewport appears shifted. Comparing footers shows that part of the target copyright is cut off, unlike the full copyright display in the reference. Overall, the coherence and semantics are fine, and I need to create a JSON structure.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B_OSrsi1KQ0Uof3Xig4KGUMmqU21gW9rU352UJYbdy4AcbQCx_rmPp8kKcv5DI4q80pzUQj-ajKs-iSyrEyQBM0Rfr9I62NrPjESx-kFj2F-EMtCzgnMeqhyWcQrou71tYhEGgEJBTH3eku11YdUlYYxwvGjp1ky85PSrlAhfiWehmV4ao9EGJZrqg5wyJvU1FQc5JBILSRPataU8Af2AbUovhnexXlp3gH3DROR1JHhjuhLjrE-hLIK6zOkwqY8_fxc5240zH4tr2xfEIv7C5NUb1osYKF1ozj3Qst8gOe7-5euCg-zTj5Q4T7_TtIqBjbKAwZaYR5fJG-i_faQNX6SS5FX8zcwrFV-Grf5I4gBfEgHVmarwsxs_F9dwgs5IC-Whej6fjEjDHb-GvMLoWCRHWYIHJdGINkD6yz44H8a9b7EgVGrp4sokuZ3s-iGnB9u3nX0O295KiQbIx_IHdhYL7zOjiMNm7wTrQ01NicSRWwrwW6W5ZwPKI56XW8C2vjDYz1lQMbFm_8IZqN-ED_W-LXa8VcMNJldLnjFpbr6RQePwapn50rXUM7lLrgnIBCf_jIJf4w0EtenReEbP5yEeHsT4jdVmMd1SqG-r6ShfZw18EGmmSCCJCsI5jD6k1odYo0cHGp5vFsf6Aq8qzdpcSp74fvByazsiCG5tpWymEP1awU9phT5fzH28jKJQvwVgf9iCQ0TfPd95mRRyiXYAUM0hkd7ISxjVRNkoQPocI9tRk9ImpefbPkStpTYeTg_zGz4CAIYeCCoomjnoVJiJjdunILmcip0EcY-w1VBMbhp8Tp3UohjU87dlTMUC4Hw0w936ZoSG1om8D0tonShLEXFWBAT9lf_psj0usV_0qevqWVPvCoGYY7aC1QQwmIu1hO2t5v7_Xz5oMM-Xfsp2xmmXi8x-DvMKOP9lVLsPLf5cwc5ZBVsbaepct5ZO5wKHfj-ArM1idGmvOmmG9YgCm3gsiG-SY6mCRTFok76qq1BfmH8u9UR_wyPnO2Y_J9QgwmQIUVSFoztQrOVtJbOv0a99K2EhPX4A6M8p0_2hNUF3EY6-OvntXVt6pbXjwFCEEtcBO5f9Oobmt_AhSbkFqa1xFit8jYk5Lssz9YeR4qFF4_Ofdq4y9JlNkj39YZkUOj6seEtBEuQUMqkAFv4cFyeUWixhSizEIh8AnaAvGJ506vSCL-7e7RRenke1mgBC0JjivCzia7dejELO1-lvheXxIy8PAOqmEnKrkDeDXL4BDF7E8PXH6-iPTw7tWE7f9Jx4Ohv74qNkHFOnbuA8OivM0Kaegoz1MaDM5QgGFxnUrCWPWqeqds_c01seikromYhjmrW5OUESMCluaSrNxErXkhniPYm4sW8QVUQkDXuX6OD7mEYu67faq1SWlmoKc_0L5P1r4yfZ_hC7ORxEPDO8eatrJya7nToB_Hpm2W8ZXcZCImE6np4OrGccdLrp5oyK7nTBmRKVoNyhcpY7pUakXRBvNgjzPJamtrmT4RB3wTjOPTHEpTgcO8_LU2LENHIgbJfEAvfoIrfS7bdvVbeUchNQGBZndegQgGZNDwNHoPeg8XV2wonE1GpLEdoqGpLYxCFnUI7qjWFH9nl5-QJAEPTtfyNul6xU3NlJBq-HJowBNwRNAYy2dQdq2nDikA4VbYmkpX5opKv5EVK-Tj3_LnWzDG42S-wJew_trEUNtuHpr0eS_6AOI4FiO6JjLGJRiy5wWc6JEFmy3de-jW3mSujSwGCibusLGOZH7oW2RmXnONiD3h0YwsAmTtzsnf7D_NnL4OsrP_6HCbw70jy9x3br8Hv--ZVMkTOW4x3hddyzotVBQUaiVB0qfvOe0ZiGQuByqN03D-t-ahcV_uh5gep6JKJ0jBcJBdDQC4ym54Y-iC34wFmR_VTOxcxw2k4BabNWpGuoy1HtQl0JF--xW2DiiLtC0HnT_OfHY1UtXYAnhouxDq3v2yXdDNHpqqgapobtYRPCxF2-BorkXSo_KuHQLe4nfM5x1-YKTVboWDB1WDy-hMjVURu_nD50oTSn53gppF9zekS-vT6TI_XxokpDkvQykowOe2jZEvyS3-5NNOrUkfahw_SWUjTjZDHnNjiUYcQRzFgZnB5BwAB6yCGjScyHH8H5wvwb8HwLcFzg_-GXEC876xV2vHKAfTTUOYSAwbiU1la2HShHASxkBTg_cETZ1CDopB_yDJwE1a_agUldkPvXABzJouwgbcnma5O9ErYamtMzYTIntIDehBg6gcmVanTjGLdEzGZyxZWpkRVMdWTeiTqMPh_2kXfj6YL6ElJzybo8-i6r4Tw2fkw5lsnCtFaA3LRunw96hclrbNEkJFVhAfzldgqyCo1ADFwHYapcFV-XjK1x6-dSwqVYSv-0TiWSq1pQ6BNtdcke0uzuZ1BrsKqoyDtXiOD14im8bWDNrS1-s_sjzrW-W1GpSHtrbZcAWADRu3l9PKHtPy8OJJ6OHy3-ISaBK_C3l3Bks7GRn_BqEmbOIwP-JTdSdk4TvPCVLT0D7IKNofuAcojTtVYzRGu90zasum9wPA9fFE3tdPjABNETd--CWtjEDJvvNK0BBMM0Z5_i7FBMNTKyRls6vXvHAXdHg6_Lea0EkCRG6WqeTb7ytbAJ5IGAsnPWvNVp6kdev-IW4g0WTn1kz_3KVNqU9BwWcnw7AYRb5RRKZ4Q5jCPRXk3lC7j1NIa68oDQycyYNZBSiHW_T6mX_OlM__MLhyxUQtx-pKEpTcRvCmaafB91TEA3p-qHIk6Fi2ArYe9X5z_i8NbidopRLRRhFKh6HdrY9NTSZVQXDp3UiWMlyrCHEeGTtcBbO_Pk2q0EIwUlTUG2qm-GSN5ZIW5DDYEEdHkcODmbU143-9EVi7EZzmq5NLAyLkWXq0ws0XH5zwErC4t53RjE94_yMrwnpXMcnjUKhRWiznu8I6BuvI9lVGYj_8cgOlP0i54FwTBEa_5hOEYEF7X_zH-ssYoIdOsN0RGuTPrz5VC1NOiGNOsAgwJGlQFgDxHcWHLfhWqh4HB8MeWttEoUjExb8iNoEBeVOx302c5FViQZxnMD7eT2rmdNfh0cD9pvch9PGrXqNuiGuwyqV0-D6hhXNZ3ynCthJFQSrVTZsaKRtTj7WUcbANwPhK1XhxHmeTrcGlMNwKTzOPrH6Hf30vttBFHDBP75CFqfNpgiuRFlU6Ho54vJU898sx4POgQrfsM4DWs9EAp_G3FLmgz8ZsAaJbLgem4BYhgtFEXdWVbnVdusbNSe13LFVrJNCnvWzKR8PpIouMJa8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_048ee4e081feb206016ae81fcbda3087d1a92154c8dfd339fc",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9867,
+    "completion_tokens": 394,
+    "total_tokens": 10261,
+    "cost": 0.0014303,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9864,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014303,
+      "upstream_inference_prompt_cost": 0.0012333,
+      "upstream_inference_completions_cost": 0.000197
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 128,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

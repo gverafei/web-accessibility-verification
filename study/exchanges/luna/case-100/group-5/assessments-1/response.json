@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show the same article cards and Entertainment section content in both supplied windows, with no meaningful content loss.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The content is legible and consistently arranged; the visible archive prompt overlaps some article imagery in both states, so it is not a target-specific regression.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible category controls and the archive prompt\u2019s input, close, and submit icons are understandable and appear the same in reference and target.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired reference and target windows are visually identical and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Article titles, imagery, labels, and Entertainment section heading convey coherent meaning for the page.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18621,
+    "completion_tokens": 186,
+    "total_tokens": 18807,
+    "cost": 0.00242055,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18618,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00242055,
+      "upstream_inference_prompt_cost": 0.00232755,
+      "upstream_inference_completions_cost": 9.3e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

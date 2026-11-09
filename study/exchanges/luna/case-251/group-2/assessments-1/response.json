@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent news headlines, a markets summary, newsletter signup and footer content, serving the broad purpose of a news homepage. It need not reproduce the particular reference stories or sections.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible cards, market figures, signup area and footer are legible and arranged coherently. No substantial overlap, clipping or repeated broken editorial imagery is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible story links, the newsletter signup button, and footer links have understandable labels. No interaction claims are inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference views form a coherent comparison of a regenerated news homepage; their different layouts and page sections do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, story imagery, market labels and newsletter text convey a clear news-and-information purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating news presentation**\n\nI need to assess the news cards on the lower part of the page, focusing on money and the newsletter footer. It\u2019s important that the sections are coherent and meaningful. The controls for the newsletter signup should be easily understandable, and the links need to be accurate, though I might not do a complete fact-check. The content needs to regenerate a quality news homepage without clipping images at the top. I\u2019ll provide the findings in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating news presentation**\n\nI need to assess the news cards on the lower part of the page, focusing on money and the newsletter footer. It\u2019s important that the sections are coherent and meaningful. The controls for the newsletter signup should be easily understandable, and the links need to be accurate, though I might not do a complete fact-check. The content needs to regenerate a quality news homepage without clipping images at the top. I\u2019ll provide the findings in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0RUcVurk2DJ8ixy7TMJm4x7Zpmy5J9vUa2aCdb7nmcjZ5sosmaGGrbPUtydCi_Uk93kn8xEyImKNwaURrm4S1SmKY6m8vNuTSiu00xKmgldtyZkHgNLbbInAgiz1841-DS7Py1YYzvEDCbbNUlqQlMu-IzgOIci1jDUFocpbl21W3dIgL-ApMpVcCnPGgItXEDgHe4JyDm--0atOMtZQipCOTOFhsdFGELna4UDIyUUH5vD2UQEE0K9D-9PmjFbucKWbe2_z58RxNY2qe_Mwyjx0DOphyKZPsbEtm9NifB9xSxPzLn538baA4qCnFQ_kagibcH1g7f_oSMyfNIN6TKmMylKzLnsY8ZKOOzY-XpthpEn79eNtDGblDgXOchAA36s10YCoHLChfDJW3tUgjI9rbKTUfgomxO2hBXz5GYEkPUgyaahmBK3SgVzz46LlO2P7zYU-5vQAnmSQlkOVTYO8ZncJvA_0C3xzrHe7GTU9lvWye6a38YqlEeR5l43mMIMAqMpb_u18KADyJF9qaypxqC_HdFuB9V4ejQlgxrqq1fqvfXlRwFXZj84KbrR_uOOYKlMcsUVi2IXGHsEeECPX70QHyIlVrwZGP_6ipCtDHOqheASA5UXRk8Nyy5hK74kaE0AdLBqFgzQx8C65RaqeqkECCaKGDoIhsKvaKwlCC13cCEN0kwPijhRBOw2Zfi1h7Yx0rMDGyX2G4QaYJBz4LUlhVApzU9gaQF1rMrgn4mNfvsr5VmisJth8vddY__k_pEP7EbLR-sKjWJMeLgK4K39uqRee945nMPYe3LUCQcy1boUTPPcfmOw_FrGnWrvxPBcU1e3k6u3Og_XuCQiatp47ibfJOMMXDkbY29DD-14r1I7eXHBGymIdMa-amrPpRLuxBEqeiV0UVQHWb1lQVT5ahJgfp5NZCnlsL24l-41w5khapluLukhV_AAaywflLuD_hxFFjWT6lCRbJiLiBiFMzQLvTRyoXp-b1oomgiUWYa4b-ixVh8XPIDBkkwHT_R8k_-Pi7T4nO-dIRmVT4xh2q8YgUSch7oD5xyLZHeoTIu9XAW8WH9q-uzLB3CLO8P63Kv1FjZPTotwQVPWg0WjnneTFQAPY6LklbH64gmNKgmzcGsf40ZNhTFRMjiErMaekeAboNSsP7EegcLUuAKhu307aBylpux0N7Xz-66p23L8yfFVyEfKAmkpW8_ZWeE6jHrxKcRb8IOZE-2rHmJ-w7My7SZ1eCBwO1ar6F1hKxsCqNppChMdAJf9xjs9ax5sEW7xCm9rJfFheWNP5UsMp5D7OwnyZaoQVSokwGKg4-HIHfoLjcs6U9t4a_zVZGF03sHuUYI1MYqESae0LCluZ-1xJXYmx5zgCvEwCffjiHUp2MbMPRULcooW9RBavrGXvKCcN9QWAaRO6QAW0x796yD2MH7A49aSav1wP_PRPAmICedUJjiMg4lXmLXvNhxhOumJwDs9QI1fkTq2eRa4JSgsH1QPwlwdg95PRYpBbDjwUNNPFzLiD7R-nszM0TnFbfCbBR0Zoe2pWMVeqNDJ86-ygy7uHUx2LPlQ0ls55SEM9PZXD0Y5tUowk_bE028-hapmTgs8xIT2sn_v2X9IShyVDQ6QHSE9jsPB6An5uqpXYiuAAfQ2UeFEJRN2F9YDZdk7AE-WvgpQZKLLBlBFMofAb8WerU6Dd2erlaYDXzBicEex2CRpMu8d_61F_jOKoJCruyhDecOZwOaXFBt84VHUTroKKlT5cbgE3XwUV2os-QSqdUbQPq3rDaLx54puZZogeClfhoi7Tjg-hsGXCgtdacw3Uo9G9eQC0O4HRxNHAh_S2mFAV8yVSqRnocU4h_hj-UaEQK-0tx_rGvJTHt31KGhA5kbq3boA5AzZPHXYRuVXsv3AdYkiJO48W9qNnqaGeyXm-cNcami-WzuZxKdAHqI7nFBIoD68hrBym09EtXH8rEru4hJozE-rMNlhAfnmmuTgJnu1WBEK9Zy4pPLcdOIjHA5EQPH33VafdJ98JlxMuoD2DhCaXpuxH-DLWnEvlMCiHwN8vaGyvTnouQ0XJ2Lt0DSZp7A45O-xFpfqdEq02dtPhnZkuxFR1Gm0AOritt5arBMCdgwgzGy-H9fS2uRIVTiLwgZZjG24u4pVxIz8P3zbNM3ksDbll2oVEz_9asJ5epDe8v9vnL706AY6PJz2mkSksSuWmQe0l8fW5b-Gx3zUKy2HTGWey_e0RhLWcgICQXJxjiBQ5HEh69hvR8myHD7osI4wDmYgSKHywPbuEwROj3nOEVR43sOkEyC-wyF7nTXfVMMHrwKGx07RsFTdXYuPy1IMeq-pAgBe-ppU0UULfCJuTOTcOIABZ7Ji_Aqvp6JFGScd5iC_NwSr-96qKjJN6AmyK4GOOC7Ix9pFIsWOIYuv_L6lNRctxW83iCU2RULjziernCyIKBT_HfwkpLdKXTd7E0WrkXJ986beMnpk4N9W8_HD_S0yU5zmXi9iJDCR89jzd-PtDmFXNArd78xkD4lCoKeJVWlciu17ESQ5phSmpkcSwDSXBygOBdPu6RSWxSQjrfUOsa6OWwmjrKanD7b3_9xC7_2ckRQznqDrBnvsbL6xQE-SGRzAa6cVsMYmOkWFp5zBIfghnkMlNvLXK0Gd0uwyLFRWFI6i_TMtYHN2A2OmhVtg3OBdf4S8zTKGMEWVlAqvEKTKIsyKNSFQ1-2_MMlQ3ZO_IQkCSPao14Bbfklcq5NYrZU6oAkw7l0kotJwXFf8ZRZZ4mah2gopfZUsqHns-1WopI7S_NoKaLJizF-.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0340d674930c66df016ae81d0f890487d1a48e8c014f4d5b07",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12352,
+    "completion_tokens": 353,
+    "total_tokens": 12705,
+    "cost": 0.001720425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12349,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001720425,
+      "upstream_inference_prompt_cost": 0.001543925,
+      "upstream_inference_completions_cost": 0.0001765
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 86,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

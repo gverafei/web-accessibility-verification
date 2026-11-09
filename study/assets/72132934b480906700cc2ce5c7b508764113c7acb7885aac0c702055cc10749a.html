@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Docker | Secure Sandboxes for AI Agents</title>
+<meta content="Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain for modern software." name="description"/>
+<style>
+    :root {
+      --ink: #111827;
+      --muted: #374151;
+      --bg: #ffffff;
+      --soft: #f3f6fb;
+      --line: #d1d9e6;
+      --brand: #1d4ed8;
+      --brand-dark: #1e3a8a;
+      --night: #0b1020;
+      --night-2: #141b33;
+      --focus: #ffd33d;
+      --radius: 14px;
+      --max: 1120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--brand); text-underline-offset: 3px; }
+    a:hover { color: var(--brand-dark); }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; left: 12px; top: -60px; z-index: 100;
+      background: #fff; color: var(--ink); padding: 10px 16px; border-radius: 8px;
+      font-weight: 600; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .skip-link:focus { top: 12px; }
+
+    /* Promo banner */
+    .promo {
+      background: var(--night);
+      color: #fff;
+      font-size: .95rem;
+    }
+    .promo .wrap {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      padding-top: 10px; padding-bottom: 10px; position: relative;
+    }
+    .promo a { color: #fff; font-weight: 600; }
+    .promo a:hover { color: #cfe0ff; }
+    .promo button {
+      position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
+      background: transparent; color: #fff; border: 1px solid #5b6b94;
+      border-radius: 6px; padding: 4px 10px; font: inherit; cursor: pointer;
+    }
+    .promo[hidden] { display: none; }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: #fff; border-bottom: 1px solid var(--line);
+    }
+    .nav-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; min-height: 68px; flex-wrap: wrap;
+    }
+    .logo { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 700; text-decoration: none; font-size: 1.1rem; }
+    .logo img { width: 40px; height: 40px; }
+    .primary-nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+    .primary-nav a, .primary-nav summary {
+      display: inline-block; padding: 8px 12px; border-radius: 8px;
+      color: var(--ink); text-decoration: none; font-weight: 500; cursor: pointer; list-style: none;
+    }
+    .primary-nav summary::-webkit-details-marker { display: none; }
+    .primary-nav summary::after { content: " \25BE"; font-size: .8em; }
+    .primary-nav a:hover, .primary-nav summary:hover { background: var(--soft); }
+    .primary-nav details { position: relative; }
+    .dropdown {
+      position: absolute; top: calc(100% + 6px); left: 0; min-width: 300px;
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      box-shadow: 0 12px 32px rgba(17,24,39,.15); padding: 8px; list-style: none; z-index: 60;
+    }
+    .dropdown a { display: block; padding: 10px 12px; }
+    .dropdown small { display: block; color: var(--muted); font-size: .85rem; }
+    .header-actions { display: flex; align-items: center; gap: 8px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 44px; padding: 10px 20px; border-radius: 10px;
+      font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; border: 2px solid transparent;
+    }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-primary:hover { background: var(--brand-dark); color: #fff; }
+    .btn-outline { background: #fff; color: var(--ink); border-color: var(--line); }
+    .btn-outline:hover { border-color: var(--ink); color: var(--ink); }
+    .btn-dark { background: #fff; color: var(--night); }
+    .btn-dark:hover { background: #e6ecf8; color: var(--night); }
+    .btn-ghost-dark { background: transparent; color: #fff; border-color: #fff; }
+    .btn-ghost-dark:hover { background: rgba(255,255,255,.1); color: #fff; }
+
+    /* Search */
+    .search { display: flex; }
+    .search input {
+      font: inherit; min-height: 44px; padding: 8px 12px; width: 180px;
+      border: 1px solid var(--line); border-radius: 10px 0 0 10px;
+    }
+    .search button {
+      min-height: 44px; padding: 8px 14px; border: 1px solid var(--line); border-left: 0;
+      border-radius: 0 10px 10px 0; background: var(--soft); font: inherit; font-weight: 600; cursor: pointer; color: var(--ink);
+    }
+
+    /* Hero */
+    .hero {
+      background:
+        radial-gradient(ellipse at 50% 0%, #22305a 0%, transparent 60%),
+        linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%);
+      color: #fff; text-align: center; padding: 96px 0 88px;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.08; margin: 0 0 20px; letter-spacing: -.02em;
+    }
+    .hero p.lead {
+      font-size: clamp(1.1rem, 2.4vw, 1.35rem); max-width: 640px; margin: 0 auto 32px; color: #e4e9f7;
+    }
+    .hero .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .eyebrow { color: #9fb8ff; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; margin: 0 0 10px; }
+
+    section { padding: 80px 0; }
+    .section-head { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; margin: 0 0 14px; letter-spacing: -.01em; }
+    h3 { font-size: 1.25rem; margin: 0 0 8px; line-height: 1.3; }
+    .section-head p, .intro { color: var(--muted); font-size: 1.1rem; margin: 0; }
+
+    /* Product cards */
+    .cards { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 28px; display: flex; flex-direction: column; gap: 12px;
+    }
+    .card img.icon { width: 96px; height: 96px; border-radius: 14px; background: var(--night); padding: 8px; }
+    .card p { margin: 0; color: var(--muted); flex: 1; }
+    .card a.more { font-weight: 600; }
+
+    /* Band */
+    .band { background: var(--soft); }
+    .split {
+      display: grid; gap: 40px; align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .split p { color: var(--muted); }
+
+    /* Terminal / console mockups */
+    .term {
+      background: #0d1224; color: #e6ecff; border-radius: 12px; padding: 18px 20px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: .92rem; line-height: 1.7; margin: 0; overflow-x: auto; white-space: pre;
+    }
+    .term .ok { color: #7ee2a8; }
+    .term .dim { color: #9aa6c7; }
+    figure { margin: 0; }
+    figcaption { color: var(--muted); font-size: .9rem; margin-top: 10px; }
+    .log-row { display: grid; grid-template-columns: auto auto 1fr; gap: 12px; }
+
+    /* Three-up feature */
+    .trio { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .trio article { border-top: 4px solid var(--brand); background: #fff; padding: 24px; border-radius: 0 0 var(--radius) var(--radius); box-shadow: 0 1px 3px rgba(17,24,39,.08); }
+    .trio p { color: var(--muted); margin: 0; }
+
+    /* Autonomy points */
+    .points { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 8px; }
+    .points div { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+    .points p { color: var(--muted); margin: 0; }
+
+    /* Stats */
+    .stats { background: var(--night); color: #fff; }
+    .stats .section-head p { color: #d6dcef; }
+    .stats-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); text-align: center; }
+    .stat strong { display: block; font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1.1; color: #fff; }
+    .stat span { color: #d6dcef; }
+
+    /* Desktop */
+    .downloads { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .downloads a { display: block; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; font-weight: 600; background: #fff; color: var(--ink); }
+    .downloads a:hover { border-color: var(--brand); color: var(--brand); }
+
+    /* Pricing */
+    .plans { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); align-items: stretch; }
+    .plan { border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; background: #fff; }
+    .plan.featured { border: 2px solid var(--brand); }
+    .badge { align-self: flex-start; background: var(--brand); color: #fff; font-size: .78rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; letter-spacing: .04em; margin-bottom: 10px; }
+    .plan h3 { margin-bottom: 4px; }
+    .price { font-size: 2.3rem; font-weight: 700; line-height: 1.2; margin: 8px 0 0; }
+    .price small { font-size: .95rem; font-weight: 500; color: var(--muted); }
+    .plan p.desc { color: var(--muted); margin: 10px 0 20px; }
+    .plan .links { margin-top: auto; display: grid; gap: 10px; }
+    .plan .links a { text-align: center; }
+    .plan .alt-link { text-align: center; font-weight: 600; }
+    .billing-note { color: var(--muted); font-size: .92rem; text-align: center; margin-top: 20px; }
+
+    /* Hardened images highlight */
+    .hi-band {
+      background: linear-gradient(135deg, #0b1020 0%, #1e3a8a 100%);
+      color: #fff; border-radius: 20px; padding: 48px 40px; margin: 0 auto;
+      display: grid; gap: 28px; grid-template-columns: 1fr; align-items: center; max-width: var(--max);
+    }
+    @media (min-width: 800px) { .hi-band { grid-template-columns: 1.1fr .9fr; padding: 56px; } }
+    .hi-band h2 { color: #fff; font-size: clamp(1.8rem, 3.6vw, 2.4rem); }
+    .hi-band p { color: #e3e9fb; }
+    .hi-band .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+
+    /* Footer */
+    footer.site-footer { background: #0a0f1c; color: #cdd5e8; padding: 64px 0 32px; }
+    footer h2 { font-size: 1rem; color: #fff; margin: 0 0 14px; letter-spacing: 0; }
+    .footer-grid { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+    footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    footer a { color: #cdd5e8; text-decoration: none; }
+    footer a:hover { color: #fff; text-decoration: underline; }
+    .social { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+    .legal {
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid #243052;
+      display: flex; flex-wrap: wrap; gap: 16px 24px; justify-content: space-between; align-items: center; font-size: .92rem;
+    }
+    .legal nav ul { display: flex; gap: 20px; flex-wrap: wrap; }
+
+    /* Mobile */
+    @media (max-width: 860px) {
+      .search input { width: 130px; }
+      .primary-nav ul { flex-direction: column; align-items: stretch; }
+      .primary-nav details, .primary-nav li { width: 100%; }
+      .dropdown { position: static; box-shadow: none; border: 0; min-width: 0; padding-left: 12px; }
+      .nav-bar { flex-direction: column; align-items: stretch; padding: 12px 0; }
+      .header-actions { justify-content: space-between; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="promo" id="promo">
+<div class="wrap">
+<p class="sr-only">Promotion</p>
+<a href="https://www.docker.com/c/sbx-promo/">Get $250 in credits for Cloud Sandboxes. Claim credits</a>
+<button aria-controls="promo" id="promo-close" type="button">Dismiss<span class="sr-only"> promotion</span></button>
+</div>
+</div>
+<header class="site-header">
+<div class="wrap nav-bar">
+<a aria-label="Docker home" class="logo" href="https://www.docker.com/">
+<img alt="" height="40" src="https://www.docker.com/app/uploads/2026/05/docker-mark-deep-blue.svg" width="40"/>
+<span>Docker</span>
+</a>
+<nav aria-label="Main" class="primary-nav">
+<ul>
+<li>
+<details>
+<summary>Products</summary>
+<ul class="dropdown">
+<li><a href="https://www.docker.com/products/docker-sandboxes/">Docker Sandboxes <small>Isolated environments for coding agents</small></a></li>
+<li><a href="https://www.docker.com/products/ai-governance/">AI Governance <small>Govern agents and Claws across every team</small></a></li>
+<li><a href="https://www.docker.com/products/mcp-enterprise-gateway/">MCP Enterprise Gateway <small>Connect and manage MCP tools</small></a></li>
+<li><a href="https://www.docker.com/products/gordon/">Gordon <small>Your AI Agent across Docker</small></a></li>
+<li><a href="https://www.docker.com/products/model-runner/">Docker Model Runner <small>Local-first LLM inference made easy</small></a></li>
+<li><a href="https://www.docker.com/products/hardened-images/">Docker Hardened Images <small>Ship with secure, enterprise-ready images</small></a></li>
+<li><a href="https://www.docker.com/products/docker-scout/">Docker Scout <small>Simplify the software supply chain</small></a></li>
+<li><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop <small>Containerize your applications</small></a></li>
+<li><a href="https://www.docker.com/products/docker-hub/">Docker Hub <small>Discover and share container images</small></a></li>
+<li><a href="https://www.docker.com/products/docker-offload/">Docker Offload <small>Break free of local constraints</small></a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Support</summary>
+<ul class="dropdown">
+<li><a href="https://www.docker.com/support/">Support</a></li>
+<li><a href="https://docs.docker.com/">Documentation</a></li>
+</ul>
+</details>
+</li>
+<li>
+<details>
+<summary>Pricing</summary>
+<ul class="dropdown">
+<li><a href="https://www.docker.com/pricing/">Pricing overview</a></li>
+<li><a href="#pricing">Compare plans on this page</a></li>
+<li><a href="https://www.docker.com/pricing/contact-sales/">Contact sales</a></li>
+</ul>
+</details>
+</li>
+<li><a href="https://www.docker.com/blog/">Blog</a></li>
+<li><a href="https://docs.docker.com/">Docs</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<form action="https://www.docker.com/" class="search" method="get" role="search">
+<label class="sr-only" for="site-search">Search Docker.com</label>
+<input id="site-search" name="s" placeholder="Search" type="search"/>
+<button type="submit">Search</button>
+</form>
+<a class="btn btn-outline" href="https://app.docker.com/login">Sign In</a>
+<a class="btn btn-primary" href="https://www.docker.com/contact-sales/">Contact Sales</a>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Hero -->
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap">
+<h1 id="hero-title">Trust Docker for the Agents You Don’t</h1>
+<p class="lead">Docker securely contains autonomous agents so you can confidently build, ship, and run on trust.</p>
+<div class="cta">
+<a class="btn btn-primary" href="https://www.docker.com/products/docker-sandboxes/">Get started<span class="sr-only"> with Docker Sandboxes</span></a>
+<a class="btn btn-ghost-dark" href="https://www.docker.com/blog/">Learn more<span class="sr-only"> on the Docker blog</span></a>
+</div>
+</div>
+</section>
+<!-- Product highlights -->
+<section aria-labelledby="products-title">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Built for agents</p>
+<h2 id="products-title">Sandboxes, governance, and hardened images</h2>
+</div>
+<div class="cards">
+<article class="card">
+<img alt="" class="icon" height="96" src="https://www.docker.com/app/uploads/2026/06/home-sandboxes.png" width="96"/>
+<h3>Docker Sandboxes</h3>
+<p>MicroVM isolation for every agent session, local or cloud. Network and filesystem locked down at the runtime.</p>
+<a class="more" href="https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/">Read more about our approach<span class="sr-only"> on MicroVM isolation</span></a>
+</article>
+<article class="card">
+<img alt="" class="icon" height="96" src="https://www.docker.com/app/uploads/2026/06/home-governance.png" width="96"/>
+<h3>Docker AI Governance</h3>
+<p>One console for sandbox and MCP policy. Identity-bound audit logs. Zero per-machine setup.</p>
+<a class="more" href="https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/">The case for agent governance<span class="sr-only"> in the Docker blog</span></a>
+</article>
+<article class="card">
+<img alt="" class="icon" height="96" src="https://www.docker.com/app/uploads/2026/06/home-hardened-images.png" width="96"/>
+<h3>Docker Hardened Images</h3>
+<p>Minimal, signed, continuously patched images and MCP servers. SLSA Level 3. Audit-ready by default.</p>
+<a class="more" href="https://www.docker.com/resources/containers-are-the-new-supply-chain-attack-vector-on-demand-webinar/">See why hardened images matter<span class="sr-only"> in the on-demand webinar</span></a>
+</article>
+</div>
+</div>
+</section>
+<!-- Developer and governance views -->
+<section aria-labelledby="invisible-title" class="band">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Introducing Docker AI Governance</p>
+<h2 id="invisible-title">Invisible to developers. Total control for security.</h2>
+<p>A unified foundation for isolation, verified components, and governance that runs anywhere your agents do. Most teams are flying blind, with unsafe execution and no audit trail. Docker brings it all together on the stack you already run.</p>
+</div>
+<div class="split">
+<figure>
+<pre aria-label="Developer view terminal example" class="term"><span class="dim">~/billing-agent</span>
+$ docker agent run billing-bot
+<span class="ok">✓ agent online</span>
+$ </pre>
+<figcaption><strong>Developer view:</strong> your laptop, one command.</figcaption>
+</figure>
+<figure>
+<pre aria-label="Governance console log example" class="term"><span class="dim">14:02:36.04</span>  Allow   policy corp/safe.rego · <span class="ok">14 / 14 pass</span>
+<span class="dim">14:02:36.11</span>  Sign    image sha256:9af2…b314 · <span class="ok">cosign verified</span>
+<span class="dim">14:02:36.16</span>  Scope   identity svc:billing-bot@v1.4 · least priv
+<span class="dim">14:02:36.22</span>  Attest  runtime microVM · SEV-SNP · TEE</pre>
+<figcaption><strong>Governance console:</strong> fourteen checks, every action recorded.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- Runtime -->
+<section aria-labelledby="runtime-title">
+<div class="wrap">
+<div class="section-head">
+<h2 id="runtime-title">The runtime under every agent</h2>
+<p>The foundations that ran the cloud now run the agent era. Same guarantees. Same stack.</p>
+</div>
+<div class="trio">
+<article>
+<h3>Isolation you can trust</h3>
+<p>Containers proved isolation is the foundation of safe execution. microVMs extend that trust to every agent. Secure by default. Scoped by design.</p>
+</article>
+<article>
+<h3>Nothing to rip and replace</h3>
+<p>Your images, registries, and CI already power your AI stack. No new ecosystem. No migration. The trust chain extends to agents on the same rails.</p>
+</article>
+<article>
+<h3>Start local. Scale anywhere.</h3>
+<p>Start on your laptop and move to Cloud Sandboxes for long-horizon tasks. One command either way. Same isolation everywhere.</p>
+</article>
+<article>
+<h3>No lock-in. Ever.</h3>
+<p>Built on open standards from day one. OCI-compliant, platform-independent. That’s not changing for agents.</p>
+</article>
+</div>
+<figure style="margin-top:40px">
+<pre aria-label="Sandbox session example" class="term"><span class="dim">$</span> sbx run claude
+Starting claude agent in sandbox 'claude-ai-project'...
+≡ Mounting workspace: ~/projects/ai-project
+≡ Network policy: deny all, allow 42 hostnames
+
+<span class="dim">› Refactor auth to use JWT</span>
+<span class="ok">✓ Updated src/auth.ts (+38 −24)</span>
+<span class="ok">✓ Tests passing (12/12)</span></pre>
+<figcaption>Example sandbox session: network access is denied except for allowed hostnames.</figcaption>
+</figure>
+</div>
+</section>
+<!-- Autonomy -->
+<section aria-labelledby="autonomy-title" class="band">
+<div class="wrap">
+<div class="section-head">
+<h2 id="autonomy-title">Unlock the Autonomy of Agents, Safely</h2>
+</div>
+<div class="points">
+<div>
+<h3>Lower cost through trusted autonomy.</h3>
+<p>Autonomy only saves money when agents can be trusted to act alone. Built-in isolation, signed components, and runtime policy mean agents do the work, and you don't pay for the cleanup.</p>
+</div>
+<div>
+<h3>Ship faster. Without the breach.</h3>
+<p>Every engineer can run agents and Claude at full speed, without the business inheriting the risk. Output goes up. Audit gaps go to zero. Engineering focuses on product, not plumbing.</p>
+</div>
+<div>
+<h3>Compliant by default.</h3>
+<p>Identity-bound audit. Policy enforced at every step, with every action signed and documented. Evidence your auditors will actually appreciate.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats -->
+<section aria-labelledby="stats-title" class="stats">
+<div class="wrap">
+<div class="section-head">
+<h2 id="stats-title">From the company that secured the developer laptop for the enterprise.</h2>
+</div>
+<div class="stats-grid">
+<div class="stat"><strong>91%</strong><span>of the Fortune 100 already run on Docker</span></div>
+<div class="stat"><strong>20B+</strong><span>pulls a month on Docker Hub</span></div>
+<div class="stat"><strong>20M+</strong><span>developers build on Docker every day</span></div>
+</div>
+</div>
+</section>
+<!-- Desktop -->
+<section aria-labelledby="desktop-title">
+<div class="wrap split">
+<div>
+<p class="eyebrow">Docker Desktop</p>
+<h2 id="desktop-title">Download Docker Desktop</h2>
+<p class="intro">How modern applications get built. Containers and the full dev loop in one place. Go from blank file to running app in minutes, shipped anywhere.</p>
+<ul class="downloads">
+<li><a href="https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Download for Mac - Apple Silicon</a></li>
+<li><a href="https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Download for Mac - Intel Chip</a></li>
+<li><a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Download for Windows - AMD64</a></li>
+<li><a href="https://desktop.docker.com/win/main/arm64/Docker%20Desktop%20Installer.exe?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Download for Windows - ARM64</a></li>
+<li><a href="https://docs.docker.com/desktop/linux/install/">Download for Linux</a></li>
+</ul>
+</div>
+<figure>
+<img alt="Illustration of containers running inside the Docker Desktop application" height="400" src="https://www.docker.com/app/uploads/2025/11/desktop-containers-application.svg" width="560"/>
+</figure>
+</div>
+</section>
+<!-- Pricing -->
+<section aria-labelledby="pricing-title" class="band" id="pricing">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Pricing</p>
+<h2 id="pricing-title">Choose the plan that fits your work</h2>
+</div>
+<div class="plans">
+<article class="plan">
+<h3>Docker Personal</h3>
+<p class="price">$0</p>
+<p class="desc">For individual developers who need the essential tools to build and deploy containers.</p>
+<div class="links">
+<a class="btn btn-outline" href="https://app.docker.com/signup">Get started<span class="sr-only"> with Docker Personal</span></a>
+</div>
+</article>
+<article class="plan featured">
+<span class="badge">MOST POPULAR</span>
+<h3>Docker Pro</h3>
+<p class="price"><s><span class="sr-only">Previously </span>$11</s> $9 <small>per user/month</small></p>
+<p class="desc">For individual professionals who require more advanced features and additional resources.</p>
+<div class="links">
+<a class="btn btn-primary" href="https://app.docker.com/billing/_/subscribe/?cycle=monthly&amp;quantity=1&amp;tier=pro&amp;ref=wwwPricing&amp;refAction=wwwPricingProClicked">Buy now<span class="sr-only"> Docker Pro, monthly billing</span></a>
+<a class="alt-link" href="https://app.docker.com/billing/_/subscribe/?cycle=annual&amp;quantity=1&amp;tier=pro&amp;ref=wwwPricing&amp;refAction=wwwPricingProClicked">Buy annual<span class="sr-only"> Docker Pro, annual billing</span></a>
+</div>
+</article>
+<article class="plan">
+<h3>Docker Team</h3>
+<p class="price"><s><span class="sr-only">Previously </span>$16</s> $15 <small>per user/month</small></p>
+<p class="desc">For small teams that need collaborative tools to make working together more efficient.</p>
+<div class="links">
+<a class="btn btn-primary" href="https://app.docker.com/billing/_/subscribe/?cycle=monthly&amp;quantity=1&amp;tier=team&amp;ref=wwwPricing&amp;refAction=wwwPricingTeamClicked">Buy now<span class="sr-only"> Docker Team, monthly billing</span></a>
+<a class="alt-link" href="https://app.docker.com/billing/_/subscribe/?cycle=annual&amp;quantity=1&amp;tier=team&amp;ref=wwwPricing&amp;refAction=wwwPricingTeamClicked">Buy annual<span class="sr-only"> Docker Team, annual billing</span></a>
+</div>
+</article>
+<article class="plan">
+<h3><a href="https://www.docker.com/products/docker-desktop/business/">Docker Business</a></h3>
+<p class="price">$24 <small>per user/month</small></p>
+<p class="desc">For enterprises desiring robust security, control, and compliance features.</p>
+<div class="links">
+<a class="btn btn-primary" href="https://app.docker.com/billing/_/subscribe/?quantity=1&amp;tier=business&amp;ref=wwwPricing&amp;refAction=wwwPricingBusinessClicked">Buy now<span class="sr-only"> Docker Business</span></a>
+<a class="alt-link" href="https://www.docker.com/pricing/contact-sales/">Contact sales<span class="sr-only"> for Docker Business</span></a>
+</div>
+</article>
+</div>
+<p class="billing-note">Prices shown are per user per month. <a href="https://www.docker.com/pricing/faq/">Read the pricing FAQ</a> or <a href="https://www.docker.com/pricing/premium-support-tam/">explore premium support and TAM</a>.</p>
+</div>
+</section>
+<!-- Hardened images call-to-action -->
+<section aria-labelledby="dhi-title">
+<div class="wrap">
+<div class="hi-band">
+<div>
+<p class="eyebrow" style="color:#9fb8ff">Docker Hardened Images (DHI)</p>
+<h2 id="dhi-title">Secure, minimal container images for every team</h2>
+<p>Free with enterprise features, if needed.</p>
+<div class="btn-row">
+<a class="btn btn-dark" href="https://www.docker.com/products/hardened-images#getstarted">Start Free Trial<span class="sr-only"> for Docker Hardened Images</span></a>
+<a class="btn btn-ghost-dark" href="https://www.docker.com/products/hardened-images/">Learn about hardened images</a>
+</div>
+</div>
+<img alt="" height="326" src="https://www.docker.com/app/uploads/brand/background/incred-bgs-1110x326.png" style="border-radius:12px" width="1110"/>
+</div>
+</div>
+</section>
+<!-- Explore -->
+<section aria-labelledby="explore-title" class="band">
+<div class="wrap">
+<div class="section-head">
+<h2 id="explore-title">Build better, together</h2>
+<p>Explore these premium offerings</p>
+</div>
+<div class="cards">
+<a class="card" href="https://www.docker.com/products/docker-sandboxes/" style="text-decoration:none;color:inherit"><h3>Docker Sandboxes</h3><p>Isolated environments for coding agents.</p></a>
+<a class="card" href="https://www.docker.com/products/ai-governance/" style="text-decoration:none;color:inherit"><h3>Docker AI Governance</h3><p>Govern agents across every team.</p></a>
+<a class="card" href="https://www.docker.com/products/hardened-images/" style="text-decoration:none;color:inherit"><h3>Docker Hardened Images</h3><p>Secure, enterprise-ready images.</p></a>
+<a class="card" href="https://www.docker.com/products/docker-desktop/" style="text-decoration:none;color:inherit"><h3>Docker Desktop</h3><p>Containerize your applications.</p></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<nav aria-labelledby="f-products">
+<h2 id="f-products">Products</h2>
+<ul>
+<li><a href="https://www.docker.com/products/">Products Overview</a></li>
+<li><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a></li>
+<li><a href="https://www.docker.com/products/docker-hub/">Docker Hub</a></li>
+<li><a href="https://www.docker.com/products/docker-scout/">Docker Scout</a></li>
+<li><a href="https://www.docker.com/products/hardened-images/">Docker Hardened Images</a></li>
+<li><a href="https://www.docker.com/products/docker-sandboxes/">Docker Sandboxes</a></li>
+<li><a href="https://www.docker.com/products/ai-governance/">AI Governance</a></li>
+<li><a href="https://www.docker.com/products/mcp-enterprise-gateway/">MCP Enterprise Gateway</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-features">
+<h2 id="f-features">Features</h2>
+<ul>
+<li><a href="https://www.docker.com/products/cli/">Command Line Interface</a></li>
+<li><a href="https://www.docker.com/products/ide/">IDE Extensions</a></li>
+<li><a href="https://www.docker.com/products/container-runtime/">Container Runtime</a></li>
+<li><a href="https://www.docker.com/products/extensions/">Docker Extensions</a></li>
+<li><a href="https://www.docker.com/products/trusted-content/open-source/">Trusted Open Source Content</a></li>
+<li><a href="https://www.docker.com/solutions/security/">Secure Software Supply Chain</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-dev">
+<h2 id="f-dev">Developers</h2>
+<ul>
+<li><a href="https://docs.docker.com/">Documentation</a></li>
+<li><a href="https://www.docker.com/get-started/">Getting Started</a></li>
+<li><a href="https://www.docker.com/resources/trainings">Trainings</a></li>
+<li><a href="https://www.docker.com/developers/sdk/">Extensions SDK</a></li>
+<li><a href="https://www.docker.com/community/">Community</a></li>
+<li><a href="https://www.docker.com/community/open-source/">Open Source</a></li>
+<li><a href="https://www.docker.com/community/get-involved/developer-preview/">Preview Program</a></li>
+<li><a href="https://www.docker.com/newsletter-subscription/">Newsletter</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-pricing">
+<h2 id="f-pricing">Pricing</h2>
+<ul>
+<li><a href="https://www.docker.com/products/personal/">Personal</a></li>
+<li><a href="https://www.docker.com/products/pro/">Pro</a></li>
+<li><a href="https://www.docker.com/products/team/">Team</a></li>
+<li><a href="https://www.docker.com/products/docker-desktop/business/">Business</a></li>
+<li><a href="https://www.docker.com/pricing/premium-support-tam/">Premium Support and TAM</a></li>
+<li><a href="https://www.docker.com/pricing/faq/">Pricing FAQ</a></li>
+<li><a href="https://www.docker.com/pricing/contact-sales/">Contact Sales</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company</h2>
+<ul>
+<li><a href="https://www.docker.com/company/">About Us</a></li>
+<li><a href="https://www.docker.com/resources/what-container/">What is a Container</a></li>
+<li><a href="https://www.docker.com/blog/">Blog</a></li>
+<li><a href="https://www.docker.com/why-docker/">Why Docker</a></li>
+<li><a href="https://www.docker.com/trust/">Trust</a></li>
+<li><a href="https://www.docker.com/customer-success/">Customer Success</a></li>
+<li><a href="https://www.docker.com/partners/">Partners</a></li>
+<li><a href="https://www.docker.com/events/">Events</a></li>
+<li><a href="http://dockerstatus.com/">Docker System Status</a></li>
+<li><a href="https://www.docker.com/company/newsroom/">Newsroom</a></li>
+<li><a href="https://stores.kotisdesign.com/docker">Swag Store</a></li>
+<li><a href="https://www.docker.com/company/newsroom/media-resources/">Brand Guidelines</a></li>
+<li><a href="https://www.docker.com/legal/trademark-guidelines/">Trademark Guidelines</a></li>
+<li><a href="https://www.docker.com/careers/">Careers</a></li>
+<li><a href="https://www.docker.com/company/contact/">Contact Us</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-lang">
+<h2 id="f-lang">Languages</h2>
+<ul>
+<li><a href="https://www.docker.com/" hreflang="en">English</a></li>
+<li><a href="https://www.docker.com/ja-jp/" hreflang="ja">日本語</a></li>
+</ul>
+<h2 id="f-social" style="margin-top:24px">Follow Docker</h2>
+<ul aria-labelledby="f-social" class="social">
+<li><a href="http://twitter.com/docker">Twitter</a></li>
+<li><a href="https://www.linkedin.com/company/docker">LinkedIn</a></li>
+<li><a href="https://www.instagram.com/dockerinc/">Instagram</a></li>
+<li><a href="http://www.youtube.com/user/dockerrun">YouTube</a></li>
+<li><a href="https://www.facebook.com/docker.run">Facebook</a></li>
+<li><a href="https://www.docker.com/blog/feed">Blog RSS feed</a></li>
+</ul>
+</nav>
+</div>
+<div class="legal">
+<p style="margin:0">© 2026 Docker Inc. All rights reserved</p>
+<nav aria-label="Legal">
+<ul>
+<li><a href="https://www.docker.com/legal/docker-terms-use">Terms of Use</a></li>
+<li><a href="https://www.docker.com/legal/privacy">Privacy</a></li>
+<li><a href="https://www.docker.com/legal/">Legal</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</footer>
+<script>
+    (function () {
+      var promo = document.getElementById('promo');
+      var close = document.getElementById('promo-close');
+      if (promo && close) {
+        close.addEventListener('click', function () {
+          promo.hidden = true;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

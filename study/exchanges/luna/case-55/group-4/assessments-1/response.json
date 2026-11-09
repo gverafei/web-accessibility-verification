@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Wired Classics feature, teaser headlines, and video titles correspond in meaning between reference and target. The large blank region and subscribe banner in the reference are advertising-related and need not be preserved; the target footer adds coherent site content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Target typography and spacing differ, and the feature heading is cut by this tile\u2019s top boundary, but the visible text remains legible and the cut is consistent with viewport/scroll positioning rather than demonstrated permanent loss. The video imagery and footer are coherently arranged.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"No essential visible control is shown to be missing or unreadable in these segments. The visible video play controls in the preceding target segment are recognizable; no interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots and saved component context form a coherent comparison of the same Wired page. The differing ad areas and scroll-boundary content do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The feature and video headlines convey coherent editorial meaning, and the target\u2019s footer provides understandable site information. No material semantic loss is evident in the supplied regions.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating style differences**\n\nI need to assess the differences in target styles while keeping the content the same. The window for y6k targets crops the top hero, showing the same image and title but with a huge font size, and adjusts due to vertical alignment. The reference at y6000 shows the full hero starts at 215, while the target crop begins with a partial image, leading to some clipping. The layout differences may account for perceived content clipping at the crop boundary. However, I think the footer in the target may be more meaningful compared to a blank ad banner in the reference.**Assessing presentation elements**\n\nI notice that the presentation target titles in the teaser row are oversized and feel a bit weak compared to the reference, but they are still legible. The hero title might be clipping at the boundary, likely because of layout shifts that align the content. The semantic text in the target remains coherent. I see that video play controls are visible in the previous target but aren't here. Overall, the content fidelity for titles and teasers seems consistent, even if the hero title appears cut at the crop boundary, which might not be permanent.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating style differences**\n\nI need to assess the differences in target styles while keeping the content the same. The window for y6k targets crops the top hero, showing the same image and title but with a huge font size, and adjusts due to vertical alignment. The reference at y6000 shows the full hero starts at 215, while the target crop begins with a partial image, leading to some clipping. The layout differences may account for perceived content clipping at the crop boundary. However, I think the footer in the target may be more meaningful compared to a blank ad banner in the reference.**Assessing presentation elements**\n\nI notice that the presentation target titles in the teaser row are oversized and feel a bit weak compared to the reference, but they are still legible. The hero title might be clipping at the boundary, likely because of layout shifts that align the content. The semantic text in the target remains coherent. I see that video play controls are visible in the previous target but aren't here. Overall, the content fidelity for titles and teasers seems consistent, even if the hero title appears cut at the crop boundary, which might not be permanent.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BlGMW_ZckU9LvueDT9Mi09IhmwiAM3QnERBtqyvMot-eqc2-JhT4XsG7kWUzaaNh2O2DRI43e8owdRlODDFbq_hu8e5fV4oKM6KgBf65ENNJ63khEc_njBXlR8_7iM72eVJ66_SPwS0ll9fxpCZrwictEaieYTieeLDBHLXnA119mMBrB0RguPIsYqWTT5ZYTjXcds6dlB1HopW-mHQ2jFDfqWAWf562kZl5g_dJMP12l9_EihT8F8W3PV6EzsXLbRVTSBwpe0-XW9eBB68TmljPQwlUNUbCnCgcEB1mznsZn8V7CpJuRwIWTgUlPG5w2qjNiw0_rwrBv0vhYpp9C6u175gJJvQlW1bXVbNCX4PXwswkpdgLNH_msY643QdfQr3jzjxR8xEhyvLa0SWvQKwLngHghtQT5E1W5_rYIUmvjLleL26HuTqaaGzuffWaM-mWbxUcFjzTmTDDo41RwBBHP6mL7-cvbZL7UrZohgJGdEoaPUaCCW_eTC-xrGoLKY_Dby539pZhvoAIwb-hQnuIKbAzju7tYGa1z45ddcbW5Px_o8YKhxBZPTTmnPdN28HAoDZujUKjf0_Fc4_cQXNDRhT79xfkgQAqX8xU0Oz2qOCcwLjKVg9m0KxKJp_utfwr7IvkdPTCwrki02STo6X_8MQL9wQMa5c-gkD-QHoaF2zk-wbUFzFkdtx0fNYFP4lQiq3kiTrK2TRNBp7-k5GbWpuvGToMmg8ynFK07YHZRxw2ceR-qFFJPTjxRk50zHQ_HOxTm3-inaTyXuCM4jpg_COIgAIU0qcDWWHv9jZeYXjXWvUS0bTyuItm-VFfjf2LcER_IiGYCaWraS6K87CP7MtAEH-QiAUo0t2ybRlG2UeBeWPRz6GQ1Lf4n2iyS0DmjW4YdC-Oo8aFrGgnLgiZUTKWGEdvWyjiqAQ6s5vMzLKtIfFOrobjol5zASGWKc5EkEEwHgWLGUce0ahXCCbMwm3m2acbMwm-ZiW-4_BsMtIhNysVLh2qInacMHan-n0LvoJbfYScx-X6GACllMFJLeZ3VViLyb-hrfECkV4gCA7-lVtJ2rz9FJwn3Etq7jTVXRSgEt3q9ah33Clk2ZzJJSMasLR75A1XQK36G5DjHjjLD0FF4SfH8h89kGRerQWKvZAZ8ZbQrJA7opB66Bw5IqITxeAkeh39GAHEZ4yhPNg8xQ_0hwfvtbYEc9KFI8bA3p-PHfLUW1fDODob9gC2U5aIJQDlAE_Svx9I5Q3wcQHXHb9boovWQzxFgdmI5f4YsSjHKftR5-hxGeI9HzLbhUI-6qPmetravIDMLSrH2dAHHu-6T24BXb8zp_eIKLwVnaJXje349_x7D9gvQzHJZ1K_8szFkGOc5LvyP4EdZQtDdwaREdbaIO1M5j9lUzXHXHLuFU0WnM6No3eAQ6XQE3UG3fp21KDGWp8-CMuZLjI5h903JjMA5HrcoioH-k_P3amY74kA8RSa48M4TSipYNpBWI6CZU-0GRVrq6YM7vdTwycu0-zpJG6XsBdrYIvMMGbEkizb0BvZviAY9xzCZGDn4OyYUuLrZOzJ0EXf35RC_VUbJg96oJn_XJhU7NC28wOdXg-CZ3ie6HfxzaKEOIk9oAdwq7EcoySgo4awbCUn7XOc_8SFIQaP9AhzI5dywz_fkY8ahayIhDaA9EOrk6_Vt7JDUIhpXg95q1izpMpxDqbdQAHWJObOrZxXc-_hFAYzuukjiOTZl5aebRtPADdhxAzYiiLqh-t1CipG4Jf7KqyCIS4HxL0QOOjR8VVqU6SXaMnsP2qlODRpnLkMLLy2PDfpopC1p2K0FHybOa-2h8Od3uwk9u8J2olEX9iyvORtv8m6aRw752vHBpGpHwKK3gvHj6HUKb6pVLSBvtJlDJSglWiEV9Au-yXAAWORNW5FbFoVLWVwB-MbF5l4o9qKMdeiN2rqU5RBsT2gdaFfUhb5CZ6Hzx-7Pv-R8ow2MPON8st3i7-DWNlcn6pjt4lgtjXMJFf22qi80ZUG-c6IUfExWutBmpMDYqV9rl-2JOvVvECO5-2futuwfRzbt9rccTV2ucq8Aq0xz2LA2DkX6-0QeBBRtJqWGL8EkVAk4HKSAiZUrWqUXruiouiP3Ve34MfxBwvIvCtHLPdPGgliO7HPVJjLIzYccynJ3msuQenODr4vXpNzTYpFjSIRzMVAXe8nEmyW_lW3rDNCfWmJl2frOXtZZBSKXHsHeTyETbWEh1BnlKtivpHXgPN4TI3WEXDQ0LnNWEMXORQzzUZ9fSrf4WsAayYPfKw97E-jveD7OJ2ub6JUHX3C899TKRVRRj0u6fDpg_fspuOBfv2jA5r5kORZcGUN9bcYhpXuPPqesQFSqJpkuWQqXUjOfT1kHyXzB85-JnrBx7eoY7ksD-WqVMjwiukNfCYHuqmNXCRxgFpV1TV7e_YnVRsfFEsWTqQ1KjY6dSBB6sjFUbSU4NM3aor7dsZ-8jiKTeeraNbvaYvYyfW-L2ElulS2-Epd1DcIIu7hO6JJsm6eQTcVYzupK0fWwksTeKpmeXMXVCEHjt8L5FlttuqHj5byobxm6KmEGbh2QKSL9rVkm8qY0fMjFuBtH2_ov1OCeC__6sPUadxvw_tmKGiFBRTr1V-ixQHg0HazvZqyj30SkblKczFeCVWafGi1X26JEHt_wqXk39NbkCasAPFvbZft-rCDT2Cad0yNjwfd920bDDPyWayeNd_pwhqec0LXp9TGgy7bUS0kkpqmE5PugcgQqrk9n-PBy74W3d2ZnFPW9HK55bjSMW3Fh2Nu2QSkgkrHCjJm4ZfSoCsutopnOVo1JJ9miGG-gQtPiPFBsn5BPUFTj2_ItmOFg6WJrlDJInyWerxj5iWVF02aEXzanQyZrsSWZR_0757S3F76NKuHbkmgfCabAOM1nn5mxdsJ-KoSqHxgsFJ0jN2roOuW5O6HU-rco5oxPQCfZJQr18QCl45ezO3pcAXHkw2bpWOX2wBab99uQCyg7dKr4w3nZWQSo3CbnxpvoyWl5Hg_lgdCD3OIRCkQZywkWnjGS1nK-K2vOsdYVpuzh8MMTJ_RQiH59z1DzLGvfKlN00o8-mohqo_wyMOlPlfHAxWarJrGW-YO6zPcd3yCpVm3WGD_3Jm37-2b9RpUaDnK7TZKS_766fbP3UusH_PvlIKDCrbocveCF3O7W-UQFvmbw_WTx1R5h9MXX3ckBpJpoHsNUpB1QXmL9tJbAA5j4pNf4AHjQedXyFGk2iDysSUU2aJS-rPf1m6XnkV87Aok82ZVYOGUByXZ7v40w7ZPSr6MluDQIjsXsvKyDXkbm8Leda6d9ngcEOlSaqU4aM3bDka8WZhTWHWMb5Z_G2ZgSMVeSjTV_W8HaGZWo4XF8CBfL0g8ZZzUCF4SOX7BlGBBJc4mZXuyTbPsWolGVGfstsvFDB1ZvMS-kpibkP6wSm8Ewin3MW-FdCSbm3xUoFJGc9SBggmGaeCoH_yhYvdksZsd8MkYOuhdG1G95nsYlAy65tbaxW5FZvQuxP-Lh7Q6wgw3QoCUiQanBGROD-AdXoXGL_jmB9BnXJY8avjftcgvExkjeOuKH-I3FBhZ01BMoF0vWJahU75DGdyM7qBi3brkGumj5wCfyr4rxdHTU8arhmzzatnNsbSPvShEyKx5Cs_Pwvy70mdfhBJ5_qWI8yNXhwjGftPhxUFFuB25BYNNmofugy4pCqWsAuE9DnM_QE-9tKE7XChjt7fMkCTtnDIjL1c3o6agZRSc5kj6v-GJU9ofUJUVMWXAR4pBArJNMffGzMoiF3pFNxB6hV325OP-PTPdhcWrvXYOyN9Z7ZRv62nJHnSXVkegZFSeYQAN9TMQZehsNL-WgXlfyqY8ZFmDgvij82oP_0KNthFR14RuPnnyoGf2gsngSpd-Y3LHCAlT7x9mhoO3Tnvu1VlNOf2HzCh1RcKKViJU5ljrwi_52fg8tJfZBeytqZ8sTVr5vPCIWr9xqbB3LoR_czlmESeaXMzLM5afLenpAgzQphydzSnl331kMU5pkPsc2H5ThJ-s2ndB2bwhlHsVFgYXyYistaIyecM5UI4oOjg_kc6eNPlJfBEfmjlY9-IId2hhJ07aukYAABfr_Bi2DcOHWcHlTW9LcYW_hHD98Z7MiZpjyj1wHh53HeaNGOmniL5NLgfP8TrZ7SfQx81zDh9SBa3w4eJ36lD7qibTYUu8oo2LC-zyG0583Ix83TNZaIhYpxh5sJKKUpVRP8RnTk3foik06NLfXQICnRvsGkMgkCGScXBcqGVJNPgh1bF9lbksUOpKY8duKWYHSD3TpmM3-2gk_HOhqhRxcKKGGm3FRv8p8zKzhR5rdxTdq4J3a-mbWNxXixLZFl-7kNqrdvCEmSH1rGooV5bGJaj1i2bqI0ILnBYZqK8yqeoJQM5OfH2wq7FJJIBA2pCLcqoumpBo3_3KDtWUgvWz9o86y1nr8CO8gH8CVGShuyRIwgVo6b_kM23UY9ZcFJsBDPtIp3bZ7zVgxwH1eGA07UqepGGLrWIb_VDCuRWoH8Yv2vVb-eNkJWu_GgD-EU9IuiaE8fryg8ymXyexNyOZ715Efakli30Kb7f49n_SoICjZcGDIWDmLONG8XDitr9mIivyaX-8hTFTairgYVrbSof_zTtpoqhRFSlYTLyMKlC1PHQznhXx6CdTM8xbWg9CvBqvrskYaYpxxp0z8Qfv8oQlUC0aT4FoPdomoch9ZMsMlcnrS1l-K6OBHAjIxagIIKSXjlL8aNlr5pL25uL-YDpRBz3cvwip19s3Mk8h_d65Qr3d835lCYnSPoGsAoAviZ-UaaojxSGzZE4MkcBh5zqHTrpmmmv-w4fkCXvK1LmtliMdz-oQksA2OVLUX64Mc95jGDL-vfqMDMwWAZwtqxVQMorCqHuyzqZomCV2KaJrvsP05LqtP3vMYq9OgiRtA78DX2JLu4H4aYKYKDVaKApwkZ1CF2t6WryO68QqVAmS3ptQwWPSq0N0SKaf5pgVJAiQskzgiYBoE1y_eTeB7Vb6iWaYUAJatIxWrbLk1v9I1fcQHT-hCUBzt7DQMVMjwjzXOPCsaXZJMdTAYPqK7IkLbTMxTw8rq0MTeNlOA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0bff3e26f4dce482016ae8194178b487d1b0e9b70e61b0ade0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14803,
+    "completion_tokens": 581,
+    "total_tokens": 15384,
+    "cost": 0.0021408,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14800,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0021408,
+      "upstream_inference_prompt_cost": 0.0018503,
+      "upstream_inference_completions_cost": 0.0002905
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 257,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

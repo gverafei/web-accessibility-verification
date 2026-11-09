@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible TripLink information, awards section and award graphics shown in the reference. The corresponding views are materially consistent.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is legible and coherently arranged. The heading\u2019s overlap with the fixed-looking navigation at the scroll boundary appears in both reference and target, so it is not a target-specific defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Sign In and privacy acknowledgment controls have understandable labels in the supplied views.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views show corresponding, coherent page regions and can be directly assessed.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The awards heading, explanatory text, award graphics and surrounding site navigation convey a coherent page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content structure**\n\nI'm evaluating the content structure, and it seems to be near identical between the two references. The first and second references are exact, so that's good. I'm wondering if the sticky header might cause some overlap issues because they have the same scroll boundary. I need to ensure all JSON fields are present. It seems all requirements are met, and I want to distinguish the awards content to ensure it's readable. I'm also acknowledging the navigation controls for clarity. Overall, the evidence shows coherence.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content structure**\n\nI'm evaluating the content structure, and it seems to be near identical between the two references. The first and second references are exact, so that's good. I'm wondering if the sticky header might cause some overlap issues because they have the same scroll boundary. I need to ensure all JSON fields are present. It seems all requirements are met, and I want to distinguish the awards content to ensure it's readable. I'm also acknowledging the navigation controls for clarity. Overall, the evidence shows coherence.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Be9ERh8ZZC4unmHEtVq7gzLvUSD9R4wQfHiheA5TtDFDp_ituBAif3dJIYWAczPZ8VS5Jn6EPEpLK5eqIi8SrDJVnFx7Lkt7oZVPzj9CD7eDpAjOHm8-ipYGfZ1LIvIS3y6AzySjOwOTQvk0rQWOMalmyursGPB7YX-tsvbpKqNS9YJWCG-CyUmLvfx8LXSpSoHLEx5dJoyi6txOvqyU9dz3E7hsvrdCiEKQJKBdVh2yKhEsrRecOx0-Una4ndmtH1wF22VtqNOsxVkctvyIez7B1tW2HpZQgW9mamgMrzLJBKcTMSMsuvwsnDRy5DRYyviU5Wde5VLvTnVb5n8TV9gd6BPTQ1-XuZLuzr2Nw6nEprYw-BDLPKLTISEOZDZVUuXkAmC7NYG55B0BrtfzyGEyLz6q0a6ubWJdVUSzJUwSSePhMqk15LZUTqBNmzecLyEk6ptF4k9INSVGWIJ_-PPliblCOufQ3ssNjWwv9dgfw7SggH2ry5g8lTf9dPvX25lYaVJxWfQIFsWO3cW_OLDhXep3NtzlsIpIx7lrVxxhwEHp-7Y9r7uYluErsK5PDm8PuuPsETurJTQ2D6kgvA04db_l5yWf_HXIX4HP93vWqoazcR6I6pLRuh5JYiIsqV4aCZN-QzJ2BlUjXB0sH8ecF9RZ3rPPSjO3CQqie3jgdopgSltNdvPMWFKM43aE1g7hpEhOv_b07xT7VCKeO87PQ2W3c-xgKPF4J4Xju5ky4G76R3-xXJ7VNwUOVd9GCkYYYM_6Ck-w20aNO9RRV3GRU148HJhf99fI99TgCsCjjXyEAsY-JoRWHp_XRLWPHI3J1U1TK9Dj1jkc6HtujxZs0yFmuL_BSWFcGIjePY3ZqZOayd7uXXbBuQI3uirGWWf0ENFt0PcJ_fQ9hlw-U2xVvkHoDiZaRSQlf7sOafBS1fxQ8FRn4H1TG2Vojvm9wxRHfATTNmXRvll7q3raNYDzJJz4-4dQBKE-576KPTi83fe3v7Y_pUy1NQ4oN-Oplbdn6PcynP1UFkpybO2YbJ7p6e1vJErd4ZqJHoGpBpIcdwL980z1knLeaDSFpUUicDLitrjs4rGgXt3N-0wfbYyZD-Ibq0utUh70OYrFL_3g8lyuxwhoOCCau69xysOy0mvSBOBWNr1SnApN_YYxRDyP4zGI2Gw9GTUAzLuD__sFkFZ3sFiR_5DQ-wgt2JaoI3WSZbN_8VJRAVl6Ovv1FSxiLR9tfGzw6o6ZC1_5Ayy0vtVjNA7ImTtCmMI13eI-bNioAK1hl8RotyEAkJKuu8BueNmb803-ojhLjn92OCtqPdtI3F8WgtxGsC4MHs24IUTqbkr43trEEvA6G3R_hbtVuofKHxDzP0MpVj_OxYIUhQkxixnXBbp3kFD2hRhEZkcPD0DcSnpcluDQFCx6n9w4frbggHflmhsyIIJZqPqOB6Fl4pvTxr6R6JxM97-BpieKqU4Wt8TJywZ-DUSj0SM-Kp3REHkLwifQdDKYejVXY2kuisFSCiDbJqNTiuZZi-bNJqtgqz2nYva6vhgJpAl-yq7mv6HpYYbcRM5_492sIL0p5UEj0zD4SMUcIqcTgI-mEVvTWBq236rcRS-io4ceYz_4IWXIjCwcxTiEvHdhKGhYT6SbDFhqLo1DT07wTAACXExIekEkBLD42Ut6gv60Q452EzbP9vpkv7lkeX-Na6yFC3uwpV1i5PvaPA9zBiKbwagDFjk9gkPapqjsRMCd0se6n_uuKMyzs2Ez5PfGXzLfNwH0HT9bC-qPWwFfJYkRhxOXEDfkKx93dKXaYIiClNNeS61DmYf_G-VqeZWOan16Is1KQ9XINq41TVoCBvS61oTzMIF2xt0ljcmwNdr0KQpLn5kmlMQq19WYVxjAgxKV11iLVPgSFQo6LOCD9PNti03aYmYce56toxkIUaiy6QsDVAAoNxCN7kJhCAcuBv6XrUJYCs19biFdLJDnwc9aDCenBfNyzT_bZceTjDccJrUTfteVnv4kUjBVM5zT0_7wLowT74SJdKbGDqpVSiTxlrwREnFqmDjX7pyhJisXTjBEcC-jCjTXiSuNoDV8mCT_FWvNwBrqVOqlirEujNXXZRWY_zaMasnicJOubEjuVF8DDjCsA1X0JSSeRN-6QWAHWRvK3VD8fuz56RrzTBAsLkfwgRFq4sseGGmcMnUmdxa9aJlymnMTAbttyqDV7Tau_gO-w1OoDFf-cil24uaznj3GbpstLJQLWhBHBhtA693zU3PRYO4cPlnHhH5J188ERZm-ZHF1MFEU-KfjoA6aT-EWt1jH6IdxYPP5P7QQfe5c5ir9F67JP_eSL6jMtrc026Sp1Rr3C8jCrkNL8nd.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_044b12343556be82016ae817bc37c087d1bac108105c369a35",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9774,
+    "completion_tokens": 304,
+    "total_tokens": 10078,
+    "cost": 0.001373675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9771,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001373675,
+      "upstream_inference_prompt_cost": 0.001221675,
+      "upstream_inference_completions_cost": 0.000152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

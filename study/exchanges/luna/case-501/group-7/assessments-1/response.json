@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent climate-related story cards and a TIME footer, supporting the same broad news-site purpose. No material loss is evident in the supplied region.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Story titles, bylines, images, and footer links are legible and arranged coherently. Viewport clipping at the top is a scroll boundary, not a layout defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and footer links have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference are coherent views of a TIME climate/news page and its footer; their differing layouts are permissible.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The climate story headlines and associated images convey clear editorial meaning, and the footer sections are identifiable.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating climate news layout**\n\nI'm focusing only on the window where the climate news is displayed. The footer is related, with climate news and cards that are coherent and readable. The target does have a more extensive footer, which isn't an issue. The card images are clear, but the snippets at the top might get cut off by the viewport, which seems normal. It looks like I need to include controls for the footer links and gather evidence for coherence and semantics. My next step is to set up the JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating climate news layout**\n\nI'm focusing only on the window where the climate news is displayed. The footer is related, with climate news and cards that are coherent and readable. The target does have a more extensive footer, which isn't an issue. The card images are clear, but the snippets at the top might get cut off by the viewport, which seems normal. It looks like I need to include controls for the footer links and gather evidence for coherence and semantics. My next step is to set up the JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B6BJf4fVC1x-1EJkCLZsomUYCSf6cIZ6ilpu6c1XVxusiux496E1Cep-GsEhRXRQYBjoJH3MEPNEVCTXOZOpfQMWpEqzgj-V9W-5oHKl8u_xc6-mAQ7sD3kWg6K1IJ-NcPlVortLIR1VD5wTx1Adqa-sxYKj73VYNbx70g5FlIAz7AwU5SR6-eVyL0dcabAf6c3N9Is6QCa50Rx18ABcSkbf_dEeMoav7HhaHz2MV_ki7r7Fb2D8us8ONXzmkAL80_AUcJvrDKl52-jbq9TrZpWZ1Mv-hWObOd2M5wdwxDn2JXK7LQYbFQg5Syji8SppHQ7Nmem22yNlvx4aPK2MpNDmK2QBXibbElwgMlZUlsRikuuZqycMs6jYjDte_yYDU7LJYK-EgGTavpmEtRzeM2Zg44v7iDYSCPI0KO3p7STlcO9sWZ7AHbip_CNatOtn3INzxkBoqZLllJlrlvY6_EUWYOZHCQ9nLglKbFFCvKmitAULDQyMW5uS14Vwyozp6aFjk9tvAa6m2bhkPCrpGL6ahca0PX86kvYsH1q1GjEGTl_8vDnAmpWRM5NmgtiYV9qsi7NPOgP-4vUiXMQdpMWkDY4OQGP2FTJNCpBceTY8KUYKCfjM6hiYYMog075j0Qm9QLoDYVzCKjxF3rloUr4n60qznVP7TLeLGWFRob9PmnmasvozUCHiUy6fYjkmXoNaqvY7fMqVXnZYswLHEfHJzzQWwFceJSHj7gzCZoc2j8AK1xpZzyJ17MGnyUFwKc4OfMG0Cgv-3WPRX8-pzrOs8OcFSaojDVQD3XyW6dBaNeJhHO0G676waUNzPTst11hKp7olh3jiuPfrnpAM31UjKuHtE91jLOx0VdBjggYa2JGvUc8W1wFa5gN5Xvo4Ej9UKUnWXY5PbhOMiBr5v-jDcKuRrXeAlPHf15bmXuio_gwRMS9FW9hRxGXTN6ntYLmWrXVHFlM18YjCJtDEjDXzaxe0bv10kAWxpG7hsDdcaYR_nRm4i4foSQH6EX722ddZ1FDh9R9yNufXIUFxZMXJNjjZgWZOgTIOyDfwAAwp5Bd-d6K51K8paBI3ZpP5dzs6h_yyMEGp7FQivH5n8UGihMKkwwz0PH6PcnrqgexnHyQ99590NsOdLjFSaxPdqiCwbLQww6yAWLKB-ws7Z0-n5ZoXx8ByFDMFo7993xkLLYT3g8otTFxjUvfR_mIVfrgjkyac5juyUG8bCpGUiMuk6kISHr9NZ_ytdzV5ECeKweL1fjtmev9TjKJO0AqNVI0AmHaANsic92MdysPQ_QKCIN3KIA9P45kYFIRO43SJQ33NZmrQvx2mSIIsJSljV2AHZdw1aBpQ1qaEwRm71Id106OOc12NOLuHC4MvLirkv6gSuZdKQ2CLx7AvkWYD4q7lUB0JEwiwPAItGWkB2nHF7hEa9oF3YY-0DahwQVV7NR6p5dWrJSj8vArmhw0Uiu8ONT3w1A-5SYOoQThfkU0OcuoOfPsHc3kXlE6hjw8zl-6SmJRRV4QgQOFbkO8rdtmSDmaL_o5XfeuDj91732rU1idysLccqyTY_b3rQJt_H0BSZNpvkt-xIzbPWSkG3uI0uyNZSCyepIOI9peumDcrWriP8OZ4ePcHVb4JGQbOwdsSTryDw9k-N5EXfP6R7qixVCeG6uizhnuwPtRi1xfbub1OB5h8X_qdshqShU3hlKSH2_oyT_TVepnCHkZAgmQtoREhlcB9Umjr7LIfsBl3CmYx4l6F8LveVMNz_soX_qFkMhVTGpOYGbnm1E1JymXTYkjpdsC34Ah4fxhcoPfB_qz_7qcXNyXQxnvoIWfyI67yJIWqdjKVdzveu8RTWakgFLAmJEHyeFCbX-YA5PQvG6Yv8rLAuSSklSYz4Gk_GPpPOltiKrBdQ8wl5A9eIvIZPPHgL2bOej6zkklqlk_QgjfN7VnZZkzkmz_-c6WM-fByFtjiESyZ31y-46EQkus-EllCPZvQ_ypXg6rEZDc-jSTABDCCOfwrMwsAqO9_E7tTJTqiO4fbtV-fop4apv8O832BAI4G6B_CTk31WPlFwOxjhxz4Oe2UlnVgU1sTaToEd6lMbWqy6XOUimZpl3TnNlUGOL1bha2dTBDG4WzOZM7shzREobPF5dQ4gECjN5r9sqxOwjhSDRgZg7cPRLt0O1DR3JYvwBhcdvb54eLPPdN-yoPPZXj72KlfSM0xzUeg6kyEy7-9zn_W5Rfq-QNuBeaBNu0vHsUESwKQr0FXG8dc-hL4KRtDsqlfHS4VzVNwikbKwUbdZhsdB5zcEdBLp63V6pXb3Nn7qEdiMbX7r8cOkEyRs3ArrMZ2KtmpmyD6ly8d0-ptBdXV55kyv9rfRHXlZw8XDhR2XilCx00JUEi7h5NB9T2zgLj0B3PyExWPncYw_N12z6i7P2_Bf7zboLKeK9CAvPnlM1sT3lu6PoZwQmtMZ4YJ27zf-9heec=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0de621e72bc4cf2f016ae81e7fa22887d1a3d2c7967f856a6f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14560,
+    "completion_tokens": 318,
+    "total_tokens": 14878,
+    "cost": 0.001978925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14557,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001978925,
+      "upstream_inference_prompt_cost": 0.001819925,
+      "upstream_inference_completions_cost": 0.000159
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

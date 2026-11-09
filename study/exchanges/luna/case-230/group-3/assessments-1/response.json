@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"Both supplied windows show the same visible page content and organization, including the news/materials area and footer navigation.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The content is legible and coherently arranged in both target windows; the cookie banner and viewport cuts are consistent with the reference.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation links, app-store links, and cookie-banner buttons retain understandable labels and presentation.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The corresponding reference and target windows depict matching regions of the same page and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Visible headings, navigation labels, service links, and app information convey coherent meaning for the page.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12472,
+    "completion_tokens": 177,
+    "total_tokens": 12649,
+    "cost": 0.001647425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12469,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001647425,
+      "upstream_inference_prompt_cost": 0.001558925,
+      "upstream_inference_completions_cost": 8.85e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

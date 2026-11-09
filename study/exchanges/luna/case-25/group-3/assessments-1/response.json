@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target matches the reference in both supplied regions, preserving the visible entertainment listings, descriptions, headings, and links.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and links are legible and coherently arranged in the target, with no material clipping or overlap in these regions.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible linked controls have readable labels and are preserved as shown.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding page regions with matching content and layout.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, titles, descriptions, and link labels convey coherent meaning about the listed franchises and titles.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing JSON Choices**\n\nI need to ensure that all JSON choices are identical. I should make a note explaining the rationale for the exact match and include text links. It's important that these windows have identical hashes. I wonder if we should only assess the visible regions since other windows exist but aren't part of the instructions. I need to state the evidence clearly and coherently. Then, I'll provide the necessary JSON data.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing JSON Choices**\n\nI need to ensure that all JSON choices are identical. I should make a note explaining the rationale for the exact match and include text links. It's important that these windows have identical hashes. I wonder if we should only assess the visible regions since other windows exist but aren't part of the instructions. I need to state the evidence clearly and coherently. Then, I'll provide the necessary JSON data.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BfZ6LRzvvHIQGi1y-hDBF8HvD_d0s0LxuyWFEJZaKRCVtkf-kDlMDKls8VWO1C5XFkhIuYLgRZb5n2IIKRbLAvNka9vCp4HQxrj8sndXXR1njNi0Y49DHlM0-lD5Exu62jc6OVqXE_ukZZY4fMkiSlgVEh_BfKccbsQbcIPdaTbGV-KJC46G-F_7Jxd7aNBwLOfoRcpqfQSSQUUjbGEXMvLvTEW3Zaze88lcCI-YTRspyrd3Irs_mY5d498BTlmctzjD_FNBJOtElEvMH6nZrHy0Bnb7U_A1lhPf_5z8B4Vz75moU83KLkofJ-OMvFVnXpEyY7R_MI9NJrtZDfrQdiqqLggEaAQ0pvGLGOEIfKcMzINB5ECZAVpAsliit9vdg3Lk-7hTlS2_tWmylEznYG0dlOJEFxUpw0xu5ER6xgtHQvCw-R9klQK4itzA-U_TqDLPNtHP_2YPSzmEQsULvLoevw5dMwzjJIvGbx4L7JSHFBH9lXoVn4iKjyacETvMxw-4AxPpXIqrRnwRj_ko6867H8MNLVS1CHf1caaxy--VEpxD99H9GBbx1bzfTymsX7489OJvLZy7tU0NzQgJj1h3VqfOBJRo5FfFC86GqE2Cze7WZB6MVLEE81iUCqqImbvPAx109TooabXenpEePR3HuNAbnTkbYmAbpR2W-CJEwXlqEhXLCq83J5R3RsarqvMZ2C43oHh-Wq3ECgtiyt9ASy_vAofZ6WdEX9K_KW90W9OwMOIxhup7XUOckV0htlH1nE1A8UF0fcdQLZ2hOSKn0KbGjAclhzSi3t3gtlGz6b-zhXFGL_ZYmKQlZ5Y4GFpiv5rLbasU8--q4T8A_ZvQd60wcLb-6oEl6ZiB0ZMhigJEOBhOJcMmYeJADLBWIUD7olZEIK0Jl0m67T-v4CnHY2yv6Wk8oqjbFZjejIZs4mZbz86v802BsfMCxmg93V8aCW860mmm9_YOmD0hFyn6QS-oPLDCJOfUPjpybAKaNfTfem_WMl1EaNqLN7tqLbiSB40iI7-YZnlyOAZxL8paC52gH80KvzPcLv8aZz2G3a8GS-ZZIPv1fBOmhqprBVQj5QH-mb4mmC0df4d2svdfMe6qE1dD3LnQgyshePGRGMfiPvXX5ss2Vy60aJzvF0ZmlIWphZl9S12l1GNGIJ2eGEKnn-fxwYW7q1C97uaHIstkfUnejhIHG8iZ6ZgBNKybeAvesWwxU6w8lnDDT-O4jkF5A4xj2F_dzs1yPkoN0wJUt3XXuByH10jJlufll0Uu8D04P3cwFKI__F07h70_j_OtSUghrC1oskWVa_Rid5JM6tzq1DF536EEMBL5wGtvi2mhbK8rl_3SzjytQjSs63ShAm4tkc7_tCStmHuBe9Jm-GG4NITBZaJQHWnPyyqpaOVtA6kbKXt57-FyejcmO5xFCb6_cWCp-mi28H4NCKYCdUiiF3zfbKgTNEYAQeZ_RexgqRkZqqPcGs1D-wMqYlYlu6PEpOG4xIP5PropfOWui1KOZW9_2fg_Zjgifk_xmNuN6kjc3fVjuVYpoay1PXgRJFYKmELrE86ZMyghfbEBLqNWi8YycPt9iLqkZdahzbTJuhELs2UKoiR2EIpBg4z-J9k6d5-nHDvTbnxgWzjFee9ykX2dKGrxhUF7sYmXlfAQfCMC3ns7DG7YhJJnHSMKihyx9U8izU80EtzICPivugm5Dc2pRI5_Lwk8MNCZwFonxkfthtkN4Hry3W4h_KMmVbcGXU2Y1b_RDJVgigSmEW7TuNpsGsYRCG8SWPeQWFBNtu657YI6EC-0zMiAh0ZzZLDF1fFy1FhjJ_r-MXttcN_UBxfNtM4oHuPA9WQLXDjEsUS0EJTDt7XXjSa5umS2BhCjzf2_ImyV0iQQhF2j9972lljs69ghhmUd3VBzx4yBoIVU1j-jgjYO2haj2hDx5ZjisV-4k18u6oWYyX3ouAo_THAKuCWJH6budAgNxT8plnK_vj_Vega8zXQnZb8jlSY9Bz4_EfINPTzEyNQ21IY8V811uymSJNZg31FQhpfmtg5VRmu-rO3QYKqH9GOt4PcBZio0lukhVgL1yZ8qH-JnEwS3-8eyvsHlZo38EpvC02_GRz5HwNZrkxd2iZzWjSvQ1hyhXe1d5FvX30Q-vh2JLmNVddMTIluBn_8wugMDQ_uHv8xfORCnoTr0U1ul0Zvb7xZDl3Ktv9k54z87oRXgTL9_mUQMTk5ao7G3Iy9QiqIT4mdrq46MYaagXDAe_13Zq_vVLuHSEriJbOVwE_RS2sxxlI3nBP3AdEeVx2HS7lgsg7h31lYqnRN5g==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_002f8b08915d7363016ae817d7b25087d1947d0af4a968a7e0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10818,
+    "completion_tokens": 273,
+    "total_tokens": 11091,
+    "cost": 0.001488675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10815,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001488675,
+      "upstream_inference_prompt_cost": 0.001352175,
+      "upstream_inference_completions_cost": 0.0001365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

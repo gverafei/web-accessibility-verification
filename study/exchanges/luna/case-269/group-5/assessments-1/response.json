@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible page content, including the hero text and figures, image, footer information, and cookie notice. The screenshots show no material content loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and arranged coherently, with no substantial overlap or clipping beyond the shared viewport boundaries.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, contact, About Us, cookie-choice, and close controls retain understandable labels or icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same coherent page state in the corresponding viewport.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text and imagery convey the page\u2019s business and company information coherently.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Gathering requirements for JSON**\n\nI'm looking to gather requirements for a JSON structure. It should include identical screenshots, the footer with a cookie banner, and an ad widget. The content also needs to be exact, with controls visibly included. I want to ensure there\u2019s coherence throughout, and the semantics are properly maintained. Plus, it's important to provide a succinct rationale for everything included in the JSON. This will help ensure clarity and utility moving forward!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Gathering requirements for JSON**\n\nI'm looking to gather requirements for a JSON structure. It should include identical screenshots, the footer with a cookie banner, and an ad widget. The content also needs to be exact, with controls visibly included. I want to ensure there\u2019s coherence throughout, and the semantics are properly maintained. Plus, it's important to provide a succinct rationale for everything included in the JSON. This will help ensure clarity and utility moving forward!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B4XCH9cQirBNb-uh_KaGLnitAT6PMgLXz6w9x0tZ02pPt45ugFYXgR6LMQ_TlpAkvnNxAVZE2OByXhTqC8qvsoDs8s6LV1VN3Pe4PNj23fzGnyBbe-VQjh88IJD2zS0a4ulpSGQj33CCpF2QfpgrlE-UHPf4Dp9WLwqe8UNXlHWQ-wU1FJIA2dpf_-VxdeUKOyuKJccW7wJvE2owk-Z_GKx5R3WHd1Cdk-Wv8kgalfmovqbd580mwcKSs_Zro788t0-OifQb1F4KziEgR0uHrpg8RZubxb1ncB7mlXcnoAVJCLuVwJhg-eEzrNJzivEVVwAPv_IiZYXCeXG2W-8ybOqbumzX-MN7_TsjCz2TLw5sla26h_AU56LrZCqsbGt_h-tifD3Xl-qOvG4e8IFrN4dMr25p3na9PV0nU3B-Z8pjS9iLj17dP144b7dCfziT_qHr0z1VT_5vVavw0t3rQLetjHiEalGbolov1ahXPJyE1eMpRb3RmsCB0O3AS1rOgx3SKe3gvzPbr8vhaqXcPFiy7HR_uZktnDZUU4Ne8aVXk9bzbdPFNJ2KGgfMO2C_sr7S6TzibCL5ucRri_kDgEWba8gQTimrCRJfgN_hID_NgNzmjmDcGxfz_81cMHgBdg9YgjhihzJ4BLWici2f3rbXIuQxh4MMAq6YnlyWMFl2vPXiG05FDJTapOpV0zHFlofr6pTbCpTUTNm2fnGMoEKCK6yO8sJr6jxe7_qUPManPlUKXICYeNfUn3XY1Pk39nWwxA6xO2JJ_iljz1UljtExI6eSkrsayX87k6kJy2HWoOHtcrlsGfr1OMUaQj9fg_Wi3q4V-kO__TVjhDniBGm8Ar5Jcf6YXHNzprsSt-KEvJySQsHPLReGEOOLaUomQ43QWgbUSAw9FqMC46oH66GlA3EoGW6i4WzHM0kYr029qgxmgsn3BiiRixTiQUNDipJKpLvKGBQyDGoVa8mklZ4dme1uJ2TTPUhZ27kVS698jb1c6FKVcZIdmTPns5cBSWxgqA5YfaKEkoU5NGDF2dWp4e6bR_TX7PzWOPRukgjehb007c6TVNVDXmVxa5QiNpolj9o4zmK7BjRejvXLgiUNc06u4wVvozbbQhHtno72toPdsRvs5NV5ioaQveE0dTAyE753YDuqSwLOzs0bjklPkhWtCxSGSXlPcR26blYazPC7C2_h_CedECZPa3RlvbrFdUe03f0Hm9BIsIXPpx5fSLgPjVZKbnvvc799zlJcf7eODt1Kj9wkflwyu04oHt2dE69NYiv_mtaObE6iWHLB9tWDex8vh00XM3u8oMY9dYDYzfukblylyaTHIIZrD_yE6fm0VXyA2rU4AI6D25-LALnzjwnwjogSOP7fQeEFcAuRY_X_ecSBd_9IN074Oye1zInh0mcZP836XhJV9KvKMWVukIMnn3gY66ZHF3QI0qAmPWv-e7NaLOo5D15qjL71TrYkj8DtKO97peTP2t_yPp7EznzprZbhDDDRU7tmJg-VH-6KcRMoAoddHq7BlzIOlIzzuKA86EFxvzvx8IxQYNpumjSHmxZf2MjZcIGiIBfkWo30GpvlI6E_i5TQFnBvUDOUSIFL_CyF6mjqF6WKQcVZwxTmSAOOIPhikkiHFg6IZ1Ki0VJJ4-nvbpdFgdvuVz0CTnPVHIinHnn2GzXgQ7d6Tnlfoe6BVYQunbt8r2lZLVAQ00AhC7SXGNQOuPi26xTHM2scz8BY1m1SVxdhEk81fY8mrEHLp1QYatXoL-SkKJ82WaGOLXhDBIz5m_GmmwJZxDLu7baRNdH0iFdQ2goxAbk1REGg6VdeG5_UuZQXIVrKgmvjBO3i6hTdpSvtLnEXrJzVd6_-LR93Atsalb3dp4y0LUTLIhQne1Z9bNZZ9J6Go5dP1leqKdj8eUXXU0NEH2yQm0P9yIbEnhSZL-AdJ_Kv9K9mux2Rq5NOtupTi-lTPs0HC8NENmJQdsdnx3v3X9-Ewg0NOYVi-bor9G_mLE48qcG6LsN8P620uu6KxxvZX4-vYxiEhlJEsUOlUBFnqRRGrgDWc2GNMm2hA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0dcacb5c23b6e59d016ae81e1605fc87d18a0551970a4d2df1",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8159,
+    "completion_tokens": 267,
+    "total_tokens": 8426,
+    "cost": 0.0011533,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8156,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011533,
+      "upstream_inference_prompt_cost": 0.0010198,
+      "upstream_inference_completions_cost": 0.0001335
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

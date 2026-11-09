@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Go.com is the top-level home on the Internet to the online properties of The Walt Disney Company." name="description"/>
+<title>Go.com | The Walt Disney Company</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17191d;
+      --muted: #515b69;
+      --blue: #003f78;
+      --blue-dark: #00234f;
+      --line: #dce3eb;
+      --paper: #fff;
+      --soft: #f3f7fb;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #00234f url("https://lumiere-a.akamaihd.net/v1/images/go-background_fceebb7d_1_e0fef0f0.jpeg?region=0%2C0%2C4096%2C2304") center top / cover fixed;
+      line-height: 1.6;
+    }
+    a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: #005ea8; text-decoration-thickness: 2px; }
+    a:focus-visible, input:focus-visible, button:focus-visible {
+      outline: 3px solid #f0a900;
+      outline-offset: 3px;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; border-radius: .5rem; background: white; color: var(--ink);
+    }
+    .skip-link:focus { top: 1rem; }
+    .topbar {
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid #e6e9ee;
+    }
+    .nav-wrap {
+      min-height: 68px; max-width: 1200px; margin: auto; padding: 0 26px;
+      display: flex; align-items: center; gap: 34px;
+    }
+    .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
+    .brand img { display: block; width: 91px; height: auto; }
+    nav ul {
+      display: flex; align-items: center; gap: clamp(18px, 3vw, 38px);
+      list-style: none; margin: 0; padding: 0;
+    }
+    nav a { color: #303944; font-size: .94rem; font-weight: 650; text-decoration: none; }
+    nav a:hover { color: var(--blue); text-decoration: underline; }
+    .hero {
+      max-width: 1100px; margin: 34px auto 0; padding: 64px 30px 58px;
+      text-align: center; background: var(--paper);
+      border-radius: 18px 18px 0 0;
+    }
+    .eyebrow {
+      margin: 0 0 8px; color: #45617b; font-size: .78rem; font-weight: 750;
+      letter-spacing: .14em; text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.15; letter-spacing: -.035em; }
+    .hero p:last-child { max-width: 620px; margin: 16px auto 0; color: var(--muted); font-size: 1.08rem; }
+    main {
+      max-width: 1100px; margin: 0 auto; padding: 0 30px 64px;
+      background: var(--paper);
+    }
+    .directory { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 42px; }
+    .directory-nav { align-self: start; position: sticky; top: 20px; padding: 20px 0; }
+    .directory-nav h2 { margin: 0 0 12px; font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; color: #526273; }
+    .directory-nav ul { list-style: none; margin: 0; padding: 0; }
+    .directory-nav li { margin: 0; }
+    .directory-nav a {
+      display: block; padding: 7px 10px; border-left: 2px solid transparent;
+      color: #344458; text-decoration: none; font-size: .94rem;
+    }
+    .directory-nav a:hover { border-color: #3984c5; background: var(--soft); }
+    .sections { min-width: 0; }
+    .category { padding: 26px 0 30px; border-top: 1px solid var(--line); scroll-margin-top: 20px; }
+    .category:first-child { border-top: 0; }
+    .category h2 {
+      margin: 0 0 18px; display: flex; align-items: center; gap: 12px;
+      font-size: 1.45rem; line-height: 1.25; letter-spacing: -.02em;
+    }
+    .category h2::before { content: ""; width: 5px; height: 25px; border-radius: 5px; background: #1680c9; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+    .card {
+      min-height: 110px; padding: 17px 18px; border: 1px solid var(--line);
+      border-radius: 12px; background: #fff; transition: border-color .15s, transform .15s, box-shadow .15s;
+    }
+    .card:hover { border-color: #a8c6df; transform: translateY(-2px); box-shadow: 0 8px 22px #16345112; }
+    .card a { display: inline-block; font-weight: 720; line-height: 1.35; }
+    .card p { margin: 7px 0 0; color: var(--muted); font-size: .91rem; line-height: 1.5; }
+    footer {
+      padding: 34px 24px 28px; color: #fff; text-align: center;
+      background: rgba(0, 25, 59, .88);
+    }
+    .footer-logo { width: 118px; height: auto; margin-bottom: 16px; }
+    footer a { color: #fff; text-underline-offset: 3px; }
+    .footer-links { max-width: 980px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 9px 22px; }
+    .footer-links a { font-size: .9rem; }
+    footer p { margin: 21px 0 0; color: #d8e3ef; font-size: .86rem; }
+    @media (max-width: 760px) {
+      body { background-attachment: scroll; }
+      .nav-wrap { min-height: 62px; padding: 0 18px; gap: 20px; overflow-x: auto; }
+      .brand img { width: 76px; }
+      nav ul { gap: 18px; }
+      nav a { white-space: nowrap; font-size: .88rem; }
+      .hero { margin: 18px 12px 0; padding: 48px 22px 38px; border-radius: 14px 14px 0 0; }
+      main { margin: 0 12px; padding: 0 22px 42px; }
+      .directory { display: block; }
+      .directory-nav { position: static; padding: 20px 0 14px; }
+      .directory-nav ul { display: flex; flex-wrap: wrap; gap: 5px 8px; }
+      .directory-nav a { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: .87rem; }
+      .cards { grid-template-columns: 1fr; }
+      .category { padding: 23px 0; }
+    }
+    @media (max-width: 420px) {
+      .nav-wrap { align-items: flex-start; flex-direction: column; gap: 8px; padding-top: 11px; padding-bottom: 12px; }
+      nav { max-width: 100%; overflow-x: auto; }
+      .hero { padding-top: 38px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="topbar">
+<div class="nav-wrap">
+<a aria-label="Disney home" class="brand" href="https://www.disney.com">
+<img alt="Disney" src="https://lumiere-a.akamaihd.net/v1/images/logo_disney_com_black_10761e1c.png?region=0%2C0%2C400%2C172"/>
+</a>
+<nav aria-label="Explore Disney">
+<ul>
+<li><a href="https://www.disneyplus.com?cid=DTCI-Synergy-Gocom-Site-NA-DisneyPlus-US-DisneyPlus-DisneyPlus-EN-GlobalNav-Desktop">Disney+</a></li>
+<li><a href="https://disneyparks.disney.go.com/?DISCID=DI_sitenav">Parks &amp; Travel</a></li>
+<li><a href="https://movies.disney.com/">Movies</a></li>
+<li><a href="https://www.disneystore.com/?cmp=OTL-Gocom_sitenav_ShpIconB_Shop_EFC28055&amp;efc=280559&amp;att=GocomM_HP_Feed_DSIMobileRedirect_t">Shop</a></li>
+<li><a href="https://d23.com/">D23</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section aria-labelledby="page-title" class="hero">
+<p class="eyebrow">Welcome to Go</p>
+<h1 id="page-title">The Walt Disney Company</h1>
+<p>Explore the stories, experiences, and destinations across Disney’s family of brands.</p>
+</section>
+<main id="main-content">
+<div class="directory">
+<nav aria-label="On this page" class="directory-nav">
+<h2>Explore the directory</h2>
+<ul>
+<li><a href="#parks">Parks &amp; travel</a></li>
+<li><a href="#store">Disney Store</a></li>
+<li><a href="#streaming">Disney+</a></li>
+<li><a href="#marvel">Marvel</a></li>
+<li><a href="#pixar">Pixar</a></li>
+<li><a href="#star-wars">Star Wars</a></li>
+<li><a href="#studios">20th Century Studios</a></li>
+<li><a href="#abc">ABC</a></li>
+<li><a href="#espn">ESPN</a></li>
+</ul>
+</nav>
+<div class="sections">
+<section aria-labelledby="parks-title" class="category" id="parks">
+<h2 id="parks-title">Disney Parks &amp; Travel</h2>
+<div class="cards">
+<article class="card"><a href="https://disneyworld.disney.go.com/guest-services/manage-plans/?DISCID=DI_go_wdw_experiences">My Disney Experience – Walt Disney World</a><p>Discover tools to plan and share your Disney World vacation.</p></article>
+<article class="card"><a href="https://disneyland.disney.go.com/?CMP=AFC-DPFY13Q1DIENT1372B&amp;DISCID=DI_go_dlr">Disneyland Resort</a><p>Imagination is the destination at Disneyland Resort in Anaheim, California.</p></article>
+<article class="card"><a href="https://disneyparks.disney.go.com/?CMP=AFC-DPFY13Q1DIENT1373G&amp;DISCID=DI_go_parks">Disney Parks</a><p>Plan a family vacation to Disney Parks, cruises, and other destinations.</p></article>
+<article class="card"><a href="https://disneycruise.disney.go.com/?CMP=AFC-DPFY13Q1DIENT1375C&amp;DISCID=DI_go_dcl">Disney Cruise Line</a><p>Discover vacations with unique cruise activities for everyone.</p></article>
+<article class="card"><a href="https://www.adventuresbydisney.com/?CMP=AFC-DPFY13Q1DIENT1376D&amp;DISCID=DI_go_abd">Adventures by Disney</a><p>Guided vacations with itineraries around the globe.</p></article>
+<article class="card"><a href="https://resorts.disney.go.com/aulani-hawaii-resort/?CMP=AFC-DPFY13Q1DIENT1377F&amp;DISCID=DI_go_aulani">Aulani: A Disney Resort &amp; Spa</a><p>Discover a Hawaiian paradise with a touch of Disney magic.</p></article>
+<article class="card"><a href="https://disneyvacationclub.disney.go.com/?CMP=AFC-DPFY13Q1DIENT1378E&amp;DISCID=DI_go_dvc">Disney Vacation Club</a><p>Disney vacation ownership and a flexible timeshare program.</p></article>
+<article class="card"><a href="https://disneyland.disney.go.com/events-tours/disneyland/star-wars/?DISCID=DI_go_dlrstarwars">Disneyland Star Wars</a><p>Season of the Force celebrates the Star Wars saga at Disneyland Park.</p></article>
+<article class="card"><a href="https://disneyworld.disney.go.com/destinations/hollywood-studios/toy-story-land/?DISCID=DW_go_dwrtoystory">Toy Story Land</a><p>Shrink to the size of a toy at Disney’s Hollywood Studios.</p></article>
+</div>
+</section>
+<section aria-labelledby="store-title" class="category" id="store">
+<h2 id="store-title">Disney Store</h2>
+<div class="cards">
+<article class="card"><a href="https://www.disneystore.com/?cmp=OTL-Dcom&amp;att=GO%7Csdhome&amp;EFC=280559">Disney Store: Official Online Store</a><p>Shop costumes, clothes, toys, collectibles, décor, movies, and more.</p></article>
+<article class="card"><a href="https://www.disneystore.com/parks/?CMP=OTL-GoCom_ParksMerch">Disney Parks Merchandise</a><p>Bring home merchandise inspired by Disney Parks.</p></article>
+<article class="card"><a href="https://www.disneystore.com/characters/disney/disney-princess/?CMP=OTL-GoCom_PrincessMerch">Disney Princess Merchandise</a><p>Toys, clothing, and more inspired by Disney Princesses.</p></article>
+<article class="card"><a href="https://www.disneystore.com/characters/disney/mickey-mouse/?cmp=OTL-Dcom&amp;att=GO%7Cmic&amp;EFC=280559">Mickey Mouse Merchandise</a><p>Find toys, costumes, apparel, home decorations, and more.</p></article>
+<article class="card"><a href="https://www.disneystore.com/characters/disney/stitch/?cmp=OTL-Gocom&amp;att=GO%7Clas&amp;EFC=280559">Stitch Merchandise</a><p>Find Stitch merchandise from Disney’s Lilo &amp; Stitch.</p></article>
+<article class="card"><a href="https://www.disneystore.com/toys-plush/?cmp=OTL-Dcom&amp;att=GO%7Ctoy&amp;EFC=280559">Toys for Kids</a><p>Explore plush toys, Princess toys, action figures, and more.</p></article>
+<article class="card"><a href="https://www.disneystore.com/franchises/disney/clothing/?cmp=OTL-Dcom&amp;att=GO%7Cclo&amp;EFC=280559">Disney Clothes</a><p>Shop hoodies, shirts, denim, activewear, pajamas, and more.</p></article>
+<article class="card"><a href="https://moviesanywhere.com/">Movies Anywhere</a><p>Enjoy purchased movies together in one collection.</p></article>
+</div>
+</section>
+<section aria-labelledby="streaming-title" class="category" id="streaming">
+<h2 id="streaming-title">On Disney+</h2>
+<div class="cards">
+<article class="card"><a href="https://www.disneyplus.com/browse/entity-e98a054e-f385-44e4-84d8-a86d7870dee7?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-SnowWhite2025-EN-LinkList-NA-NA">Snow White (2025)</a><p>A live-action musical reimagining of Disney’s 1937 classic.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/browse/entity-d376ee33-6f33-48cf-99bb-2132c3d8183f?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-Wish-EN-LinkList-NA-NA">Wish</a><p>Asha’s wish is answered by Star, a little ball of boundless energy.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/series/dancing-with-the-stars/6NjZlDrEDlBw?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-DancingwiththeStars-EN-LinkList-Season32-NA">Dancing with the Stars</a><p>Celebrities and trained ballroom dancers compete in choreographed routines.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/series/american-born-chinese/7ioMVSaWwKh4?cid=DTCI-Synergy-Gocom-Site-Acquisition-Originals-US-DisneyPlus-AmericanBornChinese-EN-LinkList-NA">American Born Chinese</a><p>Jin Wang’s high school life intersects with a battle of mythological gods.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/series/bluey/1xy9TAOQ0M3r?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-Bluey-EN-LinkList-NA">Bluey</a><p>An animated look at modern family life through the eyes of a playful six-year-old dog.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/welcome/disney-hulu-espn-bundle?cid=DTCI-Synergy-Gocom-Site-Acquisition-Bundle-US-DisneyPlus-NA-EN-LinkList-NA">Get the Disney Bundle</a><p>Explore streaming from Disney+, Hulu, and ESPN+.</p></article>
+</div>
+</section>
+<section aria-labelledby="marvel-title" class="category" id="marvel">
+<h2 id="marvel-title">Marvel</h2>
+<div class="cards">
+<article class="card"><a href="https://www.disneyplus.com/browse/page-60f4707d-19bb-4c0c-9390-ab269137be50?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-NA-EN-LinkList-MarvelBrowsePage-NA">Marvel on Disney+</a><p>Browse Marvel movies and television series on Disney+.</p></article>
+<article class="card"><a href="https://www.marvel.com/">Marvel.com</a><p>The official site for Marvel movies, characters, comics, TV shows, and videos.</p></article>
+<article class="card"><a href="https://movies.disney.com/thunderbolts">Thunderbolts*</a><p>Marvel Studios assembles an unconventional team of antiheroes.</p></article>
+<article class="card"><a href="https://www.marvel.com/comics/unlimited">Marvel Unlimited</a><p>Explore Marvel’s digital comic subscription service.</p></article>
+<article class="card"><a href="https://www.marvel.com/characters">Marvel Characters</a><p>Learn about Marvel heroes and villains, including Spider-Man, Iron Man, and Captain Marvel.</p></article>
+<article class="card"><a href="https://www.marvel.com/games">Marvel Games</a><p>Explore Marvel console, online, and mobile games.</p></article>
+<article class="card"><a href="https://www.marvel.com/comics">Marvel Comics</a><p>Explore print and digital comics from Marvel.</p></article>
+<article class="card"><a href="https://www.marvelhq.com/">Marvel HQ</a><p>Activities, videos, books, and comics featuring Marvel characters.</p></article>
+</div>
+</section>
+<section aria-labelledby="pixar-title" class="category" id="pixar">
+<h2 id="pixar-title">Pixar</h2>
+<div class="cards">
+<article class="card"><a href="https://movies.disney.com/elemental">Elemental</a><p>Ember and Wade’s friendship challenges what they believe about their world.</p></article>
+<article class="card"><a href="https://movies.disney.com/lightyear">Lightyear</a><p>An animated sci-fi adventure and origin story of the hero who inspired the toy.</p></article>
+</div>
+</section>
+<section aria-labelledby="star-wars-title" class="category" id="star-wars">
+<h2 id="star-wars-title">Star Wars</h2>
+<div class="cards">
+<article class="card"><a href="https://www.starwars.com/news">Star Wars News</a><p>News from StarWars.com.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/browse/page-b4e74f38-aa35-4b12-965c-93f4a931f78a?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-NA-EN-LinkList-StarWarsBrowsePage-NA">Star Wars on Disney+</a><p>Browse Star Wars movies and shows on Disney+.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/browse/entity-faba988a-a9f5-45f2-a074-0775a7d6f67a?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-Andor-EN-LinkList-Season-NA">Andor: A Star Wars Story</a><p>Follow Cassian Andor’s path toward his rebel destiny.</p></article>
+<article class="card"><a href="https://www.disneyplus.com/browse/entity-e64c22fc-fc7c-4ada-bbec-ab8351b8db97?cid=DTCI-Synergy-Gocom-Site-Awareness-DisneyPlus-US-NA-Ahsoka-EN-LinkList-Season-NA">Ahsoka</a><p>Former Jedi Ahsoka Tano investigates a threat to a vulnerable galaxy.</p></article>
+<article class="card"><a href="https://www.starwars.com/databank">Star Wars Databank</a><p>Explore characters, planets, ships, vehicles, and droids.</p></article>
+<article class="card"><a href="https://www.starwarskids.com/">Star Wars Kids</a><p>Find games, videos, and activities for kids.</p></article>
+<article class="card"><a href="https://www.starwars.com/the-high-republic">Star Wars: The High Republic</a><p>Discover original stories from the High Republic era.</p></article>
+</div>
+</section>
+<section aria-labelledby="studios-title" class="category" id="studios">
+<h2 id="studios-title">20th Century Studios</h2>
+<div class="cards">
+<article class="card"><a href="https://www.disneyplus.com/movies/avatar-the-way-of-water/6hlsDJnhiU30?cid=DTCI-Synergy-Gocom-Site-Acquisition-DisneyPlus-US-NA-AvatarTheWayofWater-EN-LinkList-NA-NA">Avatar: The Way of Water</a><p>James Cameron returns to Pandora in an adventure set more than a decade after the first film.</p></article>
+<article class="card"><a href="https://www.20thcenturystudios.com/movies/a-haunting-in-venice">A Haunting in Venice</a><p>Hercule Poirot returns in a mystery set in postwar Venice.</p></article>
+<article class="card"><a href="https://www.20thcenturystudios.com/movies/the-boogeyman">The Boogeyman</a><p>A supernatural entity preys on the family of a therapist.</p></article>
+<article class="card"><a href="https://www.20thcenturystudios.com/">20th Century Studios</a><p>Explore movies from 20th Century Studios.</p></article>
+<article class="card"><a href="https://family.20thcenturystudios.com/">20th Century Studios Family</a><p>Family-friendly favorites from 20th Century Studios.</p></article>
+</div>
+</section>
+<section aria-labelledby="abc-title" class="category" id="abc">
+<h2 id="abc-title">ABC News &amp; Entertainment</h2>
+<div class="cards">
+<article class="card"><a href="http://abcnews.go.com/">ABC Breaking News</a><p>National and world news, video coverage, and interviews.</p></article>
+<article class="card"><a href="http://abcnews.go.com/us">ABC National News</a><p>News about U.S. politics, education, weather, the economy, and more.</p></article>
+<article class="card"><a href="http://abcnews.go.com/international">ABC International News</a><p>International news and events from around the world.</p></article>
+<article class="card"><a href="http://abcnews.go.com/video">ABC News Videos</a><p>Watch news videos and live coverage online.</p></article>
+<article class="card"><a href="http://abc.go.com/">ABC Network</a><p>Information about ABC daytime and primetime programming.</p></article>
+<article class="card"><a href="http://abc.go.com/shows">ABC TV Shows</a><p>Browse programming, movies, and specials.</p></article>
+<article class="card"><a href="http://abc.go.com/shows/greys-anatomy">Grey’s Anatomy</a><p>The official Grey’s Anatomy page on ABC.</p></article>
+<article class="card"><a href="http://abc.go.com/watch-live">ABC Daytime</a><p>The View, The Chew, General Hospital, and more.</p></article>
+</div>
+</section>
+<section aria-labelledby="espn-title" class="category" id="espn">
+<h2 id="espn-title">ESPN</h2>
+<div class="cards">
+<article class="card"><a href="http://www.espn.com/">ESPN</a><p>Sports news and scores from the Worldwide Leader in Sports.</p></article>
+<article class="card"><a href="http://www.espn.com/video/sportscenter">SportsCenter</a><p>Watch sports video clips and highlights.</p></article>
+<article class="card"><a href="http://www.espn.com/watchespn/">WatchESPN</a><p>Watch live sports, replays, and ESPN programs.</p></article>
+<article class="card"><a href="https://plus.espn.com/">ESPN+ Stream Live Sports</a><p>Watch selected live sports, including MLB, NHL, golf, tennis, and college sports.</p></article>
+<article class="card"><a href="http://www.espn.com/nba/draft/news">NBA Draft</a><p>Get news about the upcoming basketball draft.</p></article>
+<article class="card"><a href="http://www.espn.com/fantasy/football/">Fantasy Football</a><p>Create or join a fantasy football league and follow players and rankings.</p></article>
+<article class="card"><a href="https://andscape.com">Andscape</a><p>News and commentary exploring the intersections of race, sports, and culture.</p></article>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer>
+<a aria-label="Disney home" href="https://www.disney.com/">
+<img alt="Disney" class="footer-logo" src="https://lumiere-a.akamaihd.net/v1/images/nav_logo_2x-25d10ad375dd_13be4150_49e241c4.png?region=0%2C0%2C160%2C66"/>
+</a>
+<nav aria-label="Company and legal links" class="footer-links">
+<a href="https://www.thewaltdisneycompany.com/?ppLink=pp_wdig">About Disney</a>
+<a href="https://help.disney.com/">Disney Help</a>
+<a href="https://jobs.disneycareers.com/">Careers</a>
+<a href="http://disney.go.com/guestservices/">Contact Us</a>
+<a href="https://www.disneyadvertising.com/">Advertise With Us</a>
+<a href="https://disneytermsofuse.com/">Terms of Use</a>
+<a href="https://help.disney.com/articles/en_US/FAQ/Legal-Notices">Additional Content Information</a>
+<a href="https://privacy.thewaltdisneycompany.com/en/">Privacy Policy</a>
+<a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-us-state-privacy-rights/">Your US State Privacy Rights</a>
+<a href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/">Children’s Online Privacy Policy</a>
+<a href="https://privacy.thewaltdisneycompany.com/en/dnssmpi/">Your Privacy Choices</a>
+<a href="https://privacy.thewaltdisneycompany.com/en/privacy-controls/online-tracking-and-advertising/">Interest-Based Ads</a>
+</nav>
+<p>© 2026 Disney and its related entities</p>
+</footer>
+</body>
+</html>

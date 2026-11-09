@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The visible product cards, descriptions, category filters, and footer content match across the corresponding reference and target regions.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged in both supplied segments; the apparent top-edge overlap in the lower segment is shared by reference and target.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible category filters, header navigation, and footer links remain identifiable and unchanged.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target pairs show the same coherent page regions at the same scroll positions.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Product names and descriptions, categories, and footer labels convey coherent meaning and are preserved.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9854,
+    "completion_tokens": 173,
+    "total_tokens": 10027,
+    "cost": 0.001318175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9851,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001318175,
+      "upstream_inference_prompt_cost": 0.001231675,
+      "upstream_inference_completions_cost": 8.65e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

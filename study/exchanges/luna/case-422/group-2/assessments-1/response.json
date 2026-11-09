@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent news-magazine page with readable feature stories, section headlines, bylines, and topical coverage. It need not reproduce the reference\u2019s specific article or layout for the regenerated purpose.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible content is clearly arranged in columns and sections, with legible text and functioning-looking editorial imagery. No substantial clipping or overlap is apparent.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible text links such as \u201cMore health stories,\u201d \u201cMore entertainment stories,\u201d \u201cMore climate stories,\u201d and \u201cAll games\u201d have understandable purposes. No essential visible action control has an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied target and reference states form a coherent comparison of a TIME editorial site. Their different content and page designs are permitted for regeneration.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headlines, bylines, topic labels, images, and game section convey a coherent magazine/news purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14499,
+    "completion_tokens": 231,
+    "total_tokens": 14730,
+    "cost": 0.0019278,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14496,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019278,
+      "upstream_inference_prompt_cost": 0.0018123,
+      "upstream_inference_completions_cost": 0.0001155
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

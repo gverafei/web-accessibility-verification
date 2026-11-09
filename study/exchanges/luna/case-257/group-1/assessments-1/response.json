@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"Reference and target screenshots match exactly in both supplied windows, retaining the visible SysAdmin qualification content, page sections, and tracker notice.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text, imagery, and layout are legible and coherently arranged; the tracker-settings overlay is present in both.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, hero actions, announcement dismissal, and tracker-settings controls are preserved and understandable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target are directly comparable, with identical screenshots at the supplied positions.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible headings, descriptions, links, and labels convey a coherent purpose for the page.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10297,
+    "completion_tokens": 175,
+    "total_tokens": 10472,
+    "cost": 0.00019074,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10294,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00019074,
+      "upstream_inference_prompt_cost": 0.00010324,
+      "upstream_inference_completions_cost": 8.75e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

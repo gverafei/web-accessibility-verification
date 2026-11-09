@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The reference presents a QR code as the main sign-in method, but it is absent from the target despite text instructing users to scan it.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The large blank area where the reference displays the QR code leaves the target's primary sign-in presentation incomplete.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible \u201cOther sign-in options\u201d and \u201cSign up\u201d buttons remain clearly labeled and understandable; no interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots show a coherent comparison of the same VK sign-in page; the missing QR is a localized content defect, not a mismatched evidence set.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The target retains the instruction to scan a QR code but shows no code, so this sign-in guidance is not actionable as presented.\"}}",
+        "refusal": null,
+        "reasoning": "**Analyzing QR code absence**\n\nI need to classify the missing QR code issue. The essential login method is scanning a QR code, but other sign-in options are present. The core information is that the QR code is the main sign-in mechanism, so its absence makes the instruction to scan the code incoherent. While other controls and options are visible, without the QR code, the content feels incomplete. I need to ensure the output is in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing QR code absence**\n\nI need to classify the missing QR code issue. The essential login method is scanning a QR code, but other sign-in options are present. The core information is that the QR code is the main sign-in mechanism, so its absence makes the instruction to scan the code incoherent. While other controls and options are visible, without the QR code, the content feels incomplete. I need to ensure the output is in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BhPIxjNIhwnkMVWSCaRzmiVCl25dBNnm82enY8k55MwbAxxqAaXIVCZf-_SU9dAcrj81HYA8mjdnueBPdlBnhStK297zxN-azLR7Y_TRDO9t8Bo1wbLDfFllUAkQYBWl_q3bgCnul2f7xE5jEUAc06KdMiA3ZjVp62ZBolqyQzP8an7Rpc_zFLCIsCuJzYkR1ujTrOpKcHrMMA567uXkTXR0ellJYs9JuiSW7dsHv0GQQSNsIH_oclFj5zlDy8d2ii0ZrI4K6GHjNbGhr839iK4R2gOuotT5LY8yu1lg4xH0cSey416_p1lcJca9_527Fi_k5ffvNPy_Er8qskFnNV7VpbkpiOc9b9xOJxmkGmG66qJ2BEeWTUMhdJ5qFAXu-JkZK0hV1151XA4JdGzkhqW34GZuR0qhqTq5jyaB5JeNdPvVZsjDWdi-0NYFH3K4QJMGqSHAUTg9ETRBdGAaBE5W-dKS2Vh_P9ghjKvTIJtLkmwcnYXceA-hW3DOjaX4IUNU6JB_QBXmGj_iSZKjZmQ_tcIqiLY7n8Z0utwzn-kLiDOeMoJDflKN-_GPmdA1Nd0-StONorEhTi62plhXU6t0t1qoogNWfRiaooW1UvhPTExk0vpF76fFa2S0Z4t0eQIKvw6uH16J8BOphwJHXbFZ5V-J39N3UuIQKwyanVvPeTxou-fxxL7IEdvKrEWR3pv2n4rn3CwUoGzb1WNbJbfKvPZzdf2Rmhk5TwNgQJjDJ_VLVdwj-bb8x3jY9Fzy8FYegpSQ-b2s-9mvlpQTfYrN1M8iRGyxZDDGX-_9ACtSEWv26UYbSak295m0bdDe77IQN-re4IdLjHmC1sdaH3Vm9ApdQftE8i3VcE5JatjLi8ZPC2KBlYAYAjK7nHACioNvqsenivUvbG_qcNwrgXrMC0ZD-wvUkLrIJAcEcGFgonqlqYppdgdH5ScWCKMCXddAG0BY0oMc87aG_vzCSbX3KdYqT_zaO2Mr5dWmKppBZDNhW8HpW6SOOlzyErYHiP1M04o9UiERljL2gIUD1_VcqErS6khrt4aBb-f3h8D9vX14x5VxLUXmIPYLjkpKumXW7w5ikN4kKVvAcVYyUVYL-ARYlSLcleALSbtGyPFQxPlzn025CtCsl56m2GP5M_qY8yyRhoHTdtBn4C2d-vIWq-7UhCCZSFec0Cwt29ulE6Swr0wX_5ihTI7YNAixBV7Ps-SByNFstYFpWaYPIX9VBrlTqhOxBHuk00CvHSQxbHZf95E7OZlgEe5XrSjcQoKH6yMKP1RKU7EEFb3LOrr6WXSRDg2ajqQL2I8o0ZJ982yK6JbsipKtBAEkJEn2DKkkO5jAm3yovEdO-lyQmfcAgKBc81mKynoK5TB02OX3p9FGt9Q8NkY3IWgt31WZg7Ke3jb8tzDlW1t_hJTXAssv_eaPr_q1i9E1gbhlmu7o-8sNpD6_AWFarzeHztoXpQg4XeZVaaqKuFSkuGrG79_fP33RI9t8H9QjsK2PjY21lsb022VeZI1R702rEU2QEhPVE4eXcXi-AEEaCsDbXFF7a0ntq-y5wGgC57wGBP-78h-sweillum8EfajnLAp7dLBNB4GPaTch4vFDeVghRWnw-Rf4R4leHQHjppgK3iGVc4gmJo_X8vT4VcG_O5jww7CrX32H8cvimb5tNw3QdQ0vTjGk640TTwM9k-xhSPB9IB_XzF9MEeBPJ7xHkG-GtEJK-35OrgXRTV_P0UrSzRZrui0EAl8EzUTmgnpp_dEIz_L8THnvp5KtglJa1MbRK9o4gyb3aOVblAjvz5qJ3Uz3Tpsgx3uFInE-3gn02z8NOdWIIzw8to7TbLjhmabONCn9w-MhgwtDejSFf_oWOCWIDSSOrX8JvguHpF8ubEvcaNLRr2e2drDAbY5ealJHAjXAU37D7Y8zuOH7aMuf8RrhHQQ0xpXdslvuoLzQmI1VsTiBZgwKvSaB6cGedUv-j7oEV6zT2M7gyvBaBFVcumLnOvfCZFw-WP5zjEB_GIS6hcwBXBfn9EdfmSLcYt0mH0__clmGbgpZjNeSYN_f80qe02VErR0LkxxULXpV75yEzsXe9yS5KmLM1eAH4kvc8rZsbfUTNE-IkXJ7S6a7k7iSXd6uI-tqEiescGWNeWkEx4wPH7IkQH0E8moHObdG778j-zV-8PVPt5kgh5x97TT7qV7TleUNjJip6ZWoOn7dw2GOI6lfAK3mh-6bOTJ-Lzaf1HyIFQJGLSdEPUzFCiAZfp5Mpaufm0BkCQqju161wg-ryvRbeeve4fFjY6xMSHHddU_7In7W9IGfL5bLxWKT65iMy_YBH1KJZ29hvv5veytfBFS62MJqN7_pG2HsCnWXO48w-03Zb5QisxpovZwPeaHFRnQLPoz7C5A-44O4K4a49wqngKCfce5LoZy3nNO3Lm6DOSyUyV7cYTxdHyQALpxCCiaqYJRo_JYfjCj19cgpvC7tgcDincuZsZJMlF5V6EVvGaHIonghBlwqhfVC2dzTPVXA2d_I85jRzOtjIhuF9Ko_-VJFfjWIaRiVvsANZYA_aTENSgtOVvkLYgN3-9MYoHvyNiYp5PKVWRlBx39IN1efCsDtz5TAcvYCT8yXGFPuXDIzT-R8HdxCmSQQqkX3mWU0Z1JdWqOCOuJURlPDCZqudUJw-qOh7R70Nf.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_01db4ca81a322d87016ae8184d94f487d1a56bfdad2b661b43",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6999,
+    "completion_tokens": 292,
+    "total_tokens": 7291,
+    "cost": 0.0010208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6996,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010208,
+      "upstream_inference_prompt_cost": 0.0008748,
+      "upstream_inference_completions_cost": 0.000146
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 82,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

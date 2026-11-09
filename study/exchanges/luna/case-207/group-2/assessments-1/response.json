@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target conveys the calling feature and end-to-end encryption purpose through clear headings and explanatory text. The garbled-looking lettering is inside the phone illustration, not the page\u2019s essential explanatory text.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The sections are legible and coherently arranged. The phone illustration\u2019s overlaid text does not prevent understanding the surrounding content, and the partial next section at the bottom is a viewport boundary.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation, Log In, Download, and Learn more about privacy controls have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views show corresponding WhatsApp page sections and form a coherent reference-target comparison. Differences in layout and illustration framing do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target text communicates coherent information about private messaging and calls. The phone-screen illustration does not undermine the page\u2019s meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating image content**\n\nI need to assess the target image for coherence, especially since it has text embedded that's clipped. The reference image is an animated screenshot with an encrypted message overlaid, and part of the animation is preserved. The text seems garbled, potentially due to a temporal frame from a carousel. The core heading and text are coherent, and the UI presentation looks reasonable. I\u2019ll note that the lower section is partially visible within the viewport boundary. Overall, it meets the criteria and matches the intended output. I'll prepare the JSON output now.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image content**\n\nI need to assess the target image for coherence, especially since it has text embedded that's clipped. The reference image is an animated screenshot with an encrypted message overlaid, and part of the animation is preserved. The text seems garbled, potentially due to a temporal frame from a carousel. The core heading and text are coherent, and the UI presentation looks reasonable. I\u2019ll note that the lower section is partially visible within the viewport boundary. Overall, it meets the criteria and matches the intended output. I'll prepare the JSON output now.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AgxJnpEbHZGJlCiax1w3ZQ_BUH7Ywv7eYL3GAjRWFi4qW-CSMfP1qDrzH_BWOEt2j5oJVzIoRKlk_Ze9xOy1oW-GyQtpPXnAjk9RXO3x5rw1YcD9WT8Vy82CFtZaMebZo2KEQmfHinCv14PP7FX8EIV2huJ8Shr7OfW8Euk1KO83wasZm9dUyv6x-sAmfUFrH68TmAbtrm6TDSfRlF3NVqwyXgGpeHV6gHqAaSUJsxsI92CLlVVyc-0GtOwEa92F6bk2Cn1ooudptQAmViPSz8B03it7iGlWxAnEPYFhFp_Av9TRkkiji1FO_UWLQbsQ3YSEnvvP7EcbIMc3QYGh4L79bWvd66pllwbaN3CVng0AO2Y8ueiLd2_en9aOuNbCJL0hwHLB13gfEn2e2aZUsjNb2zDuAwSryPdniNYPln-KqCtR-15dZmPkkPV814A46-UX8LUudBeYGYZS9T8JhgdyzS7CeYe7INo9soAeLuOoZtwEGUIwGKzBE0JRqIj0rksYuiPlPfsZPTc66xFJZ5YUTwi6k7gpUEXZlh4OOYzAzCXOrv3iSv6gLVLeEDkZJpxUjjrJyr2u_EnWjsa8-jro3yA83Mv8RvbCypenTdh2cygJWaP-12IwqKhvjgSK7vw5Yiy8Z9EX5RkpPMHFF5iNTqQhRXBM-M-ktUfMddYyKzcBF8cpDMEXcwnyjJvoXOyXlsYymcsCKYtqu2mmdhecbkLlWB9Ax-3RZGTCp6bg8WStkMjhDiIfLlUDnS15TgVkFVaBUoWRQ4UhBwu8w211GH8BD4w5Cl84_5hdhnk5XeqKj38Y6ehqhY4LxNOVJDB9PXKufN0uRvKqaIxUvyWm5IlmQawC0J8kDU-17RwVkkgtlq1uctDoOk3pfxxo58p5UAPaWJdNyKA2Haz-jWNNWwvbbsNkfoiQR4OaupI4DcoXODF4bkTrNgO6IE1gBgfUdzkOBFlnuEdDwy3hGBvUiA1gp6mdqoWBfr1nI-ZAqPagpn7vAq0-xtkEDKuYED752TYw1FzjBuWevfzjOs89xjZJcr3GZM13i4a7V0s7OmJUYxDLha9YJSoigs3yLZxXZmD3ty3Ac7g82zDyjIR414SKso1M-gHKWIkwF3UH3QXusbm-LP1idDBAM7smdFi8HWqCdq9Y6UwccUyBnstQ5uJU8wZm2SKJU_viYTDeTooFi55ql7LwVXvdHyZRTLY8VcVxp2OD3SWoke7GRCXzkWvQdliPZBwW7c60PpNLAd-8Db7N-eN02ar2ASw_7DJU7nAsMb-08embf4w_i_q7TB8PL3nybI9v-kRGkp1L2oK24Ur01GxfDofr003OHO998qQ_fU7Y__Nsg312VQMVtFzlzq_FmY6hW-I265vqTm39KeA9lwqOzyUvljTe5c0vCoBF1MxIiy_RyuZnYqT_W9ekH0-qa_00sNvbxtO9YaOlnlHfB50wxpsSd-VrphLqd-DRqO_Tjpd8akrkaKxPYl40tQpx-hllPGQ_W6DUJXZGZjSMtI3qbqzPhNezpOyOzZ63lNVLFBPoiFIvCZMRTOSrzp21gsdGQcKRQeaHKCUQN8Yd_HaHYhiZeIg6gP0eMKOWtt-4BH4xcw9AKKtcXD8w3DLxI67AoHajGogr_d-YsNIwWTXT8_PJtzYVNRDv2-GVo5ZMbSSn1fRkO_aSYO4_npvjHZkRcp9v05pEkKj9AT6_aMhMibBEo6adLm9pgH-hpp39beALMHByZ4K-jPwXqO17ohFVelcFWgpCK6q-28Xu3G_H4KVdEitfNyAF5bn6oHLBtCmnkPyrz4kmspngZ5u1YTljhfgv3ODF8b8lvGUFmFaLgC7NwVlyreIPEu8a9am6LCb2pafDr3DnQb3Kf_MHv30MfcxOi6gA3QlHWkEPfEKVXG6UhbstnPvkBzkKTaaO6go82Ri7X-Hnnj0H2r4ZA6qWsLy6CNn56fObDpALWPopq58XhdHWTe568ZSW8GjmIgHSnE-Y_Uvvt41_QkuKjvhHddjtpiEkUTD3ZVOrl5mkLOjOtVwzQyeQtnXZ3XhKrDifXU3ScNjhd2R6bZNgHSIZ9vBgGwktWuQ1BV4L6T0P9cSSQD7lFKgAt3GNDzxI--QPsDawHXjz3r9g5JN-yJt6b0XBJaDIhgD0-rNZqLh-_57I9x37VMJ_2hIuA2gett7-wr8O-bWZacAa3x43IrGqbuBp6yGDE8J8_W1nP6oSm7JPUYzsRkQXTe3wS1vTiGzqGSCEkhl5O6BJWN5OB9aJg8lQIB1YaKV6SGWomyT0xqnuAB_rKoH-yM8h-zcljArEHoBqr76iUnaWS9JWjAM7Nqavg7ODtvDnLDoGmP-TSo9vg3eB4Gg8YXtqm7OY6x1ETaEHwTyhgFVWU64iLyfvbGAbyiKGU5gex51pPhSSukjQI0C21_UiaxvrmGxVdJofYMGPtGEgnUKL1n8oB5VmQNX89psB0wWe0o2OhsKjhI5eTl-5AA4YaqWniPvvmIXZeOJLFfItt_8b_SfwEVctdWhzTm_RYPG6SjK4bQV256fY0SChwqERjIuAmCNZImJmkJQ6mIvK4k--xHeP_ZIcVTe8NEFKdWu0u3U4m0tq3fxYCep57oYeZhS92wr37A-4fEcMpAZJPpbTORGRvtLI5S-t_XEWD2k8-Ai4c9YnsyHWu9WYRS3nPcrEQWuOkD8h_wT4g9SzHk35RSsO5fYsTTlegltJmaxOSP1pLsMznQNxo-vvdyhhVZGvfgavEBbTeUAI0fkEb0Mz0I0YoA7Ol95EwFPWs_mwODmrLvsDhs5tueSxtaN3IOy8LWwRvtPGQN75j2uweFvRY7bvRUVNAU62UnfkcjfoOFyAEXI4UeUbLLQ_pgA4MoM6TygUa44EENox0w6dH5tPa3UgS7HuzYuW0003QyiLC_DfH7CazPIOjxPeKsZKzrSLpCpjiFogCe-8IQCPcLFkPuC12Aby7RhBrawn1Qg8NkLXb3EHVRMb-DYDH2DvcQPqFubpxIus__IWNQWdY6ubPozzaMzxGsQvhsdS1D3HlMfIMLMiLgkqDG0x9xgEij6_jMlXp9wrRk_OG27keE5hyeQA5aLlath_6xgWqDyMm15vqvG94GyDonJPSBU.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0383dd0945873e1c016ae8082ed9ec87d18bc04735ec26793e",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10118,
+    "completion_tokens": 395,
+    "total_tokens": 10513,
+    "cost": 0.001462175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10115,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001462175,
+      "upstream_inference_prompt_cost": 0.001264675,
+      "upstream_inference_completions_cost": 0.0001975
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 111,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

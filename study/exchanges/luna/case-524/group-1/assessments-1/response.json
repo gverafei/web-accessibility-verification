@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent university homepage with a lead university story, news cards, promotional material and an agenda. It need not reproduce the reference\u2019s exact carousel or content ordering.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text and imagery are legible and arranged in usable sections. The lighter rendering of the promotional banner strip is a minor presentation difference, not a material obstacle.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Navigation links, story links, agenda category controls and links to more news or the full agenda have understandable visible labels. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots form a coherent reference-and-regenerated-target comparison of a university homepage; their differing layouts and scroll alignment are permissible.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s Spanish headings, news summaries, event titles and labels communicate a clear university-information purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10577,
+    "completion_tokens": 214,
+    "total_tokens": 10791,
+    "cost": 0.00142905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10574,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00142905,
+      "upstream_inference_prompt_cost": 0.00132205,
+      "upstream_inference_completions_cost": 0.000107
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

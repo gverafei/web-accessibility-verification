@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Stripe news cards, a clear getting-started prompt, and footer information. Its content differs from the reference, but the regenerated-page contract does not require matching source sections.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headings, descriptions, links, CTA buttons, and footer text are legible and arranged without material overlap or obstruction.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible links and \u201cStart now\u201d and \u201cContact sales\u201d buttons have understandable labels and purposes.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots show coherent Stripe site content in the stated reference/target comparison. Their different sections and layouts are permissible for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text and labels convey a consistent business-finance and Stripe-news purpose; nothing shown is materially unintelligible.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating site structure**\n\nI need to assess the lower page against the midpage references to ensure we have a cohesive footer and clear news updates. The call-to-action should stand out, while the reference shows services, startups, and platforms, which we don't need to match exactly. It\u2019s all about clarity and ensuring that the controls are understandable. I have evidence of coherence, so I\u2019ll focus on creating the JSON to match those needs explicitly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating site structure**\n\nI need to assess the lower page against the midpage references to ensure we have a cohesive footer and clear news updates. The call-to-action should stand out, while the reference shows services, startups, and platforms, which we don't need to match exactly. It\u2019s all about clarity and ensuring that the controls are understandable. I have evidence of coherence, so I\u2019ll focus on creating the JSON to match those needs explicitly.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BkAsRs3LBj3dwgeZOj3HeqtMQkBb5e7iL2ocl0zarLQ1_Qt7_qflLeIMTkDb__nRMEEg7xuHMZOXDTaqt_v6yqhyRW_6wmWIty5f4N311aRGINjkjTFzY0b9OpPr1yoJ6aTp42_sRsKOxe9aZBunOsS2-DW01jRLMA3t9e3tRBrbOlwDhZNmivSpUdLMgtaDWlhomFMLhf5cqNt7aHfOeWvwhpNCE1Uwaq8B3vfwdYh40Y6-kKN2c7pzGEIbzU8TYyf8MIM0c19o3imRnRoLDIboaq30qdubvFUeLDVe3QCKJEMCpJqW-x_i2Sgh4PH_D2tf49lr72-fNMekZ2UrM8GGdZNBrLc6eaFQFQ54otCfj1k1blc3d7Mt1ln_gwre6y5hVxvzuwHSYAhf5Gsx9ENgZcm5Yp-xrxJsS8o60dy_iEo3y2FgWDZzjPG3Oddab5vWhMq7t_4aSvVytzr9zXVIZ0tgOJz2VLVvbLsCiksFKgNNmLQ2KRQp-4D9E1Y-cFJr6HFZ4L2ogfUg3LP6J9atYtIb10uOmB8S8Xv41o36_JoM3k_9wLm8vnT6rNKs1xMTaBNrwUPnansq8g844jmopgVM7lPZw_Ou7hL3YjbfXlGRnE_-baeZ6JD7y84xSyH1g-k4A615dfI08YxnBn60lWsxhO1E-yD9hi-We3nnNVcdtvXCLG2KSG8xr6wBJicUSzHnZ8bjy_cypHNFmcNfTI6_UkBa2a4FmhDsQInGGmwCpjIpqeUud1Jf4WpkTUbdm1aDmsQOYQxhG2SEVQJvMSD0diWw22qBdmUOw6-SBOJBXEMFAVkp4X4Oz0QgWhfYpSe8iKtHasbMSEcsRffUUM2fo7ztsm9WMTDePtPu96d-bc-Sixs5xYSSxVYeUUArfl3oAuUQ2SeXZo9uBrgbOhviT7rmvd7NMrC4iMB-GPu2NihK6Zl3N4L04AgceBPGiIJjKOZ2trL1klYgEg1ep_ZPX83irqZ1NQ9YVqtS2YZFw6QnWnpO1W9bwAEp-coF5n2oLsDfMD_CDb2kVkMBVjVaIiyadkLXuTWfOV0nP82n6nxVC3dESE_yRDbk3JYKkAQ1kNH7j7kY4V6ckRsX-XHj1EmRkZNQ50pbYl36oRDLeD_ddxAPl8cTWtEifQO77TK5yhe76cvL4Dlz52-z5fo2JXe99SO7M6jkspS3mA5EpEpGrNzxTzAH_11S5h8cwAOKREqSeY-JeFsheMBHVXaov0xSzqBUO5UkkBNJBnJTc7AUoUpQI9qY0Odn1OyO1EOragzw-8SqvyrgHu-zvQWIngSvwg7jFOXqmdKyfQ7x4Z_STAmm-hYXRzy3hsCN1nGVRgYRhMiB_7qDCr1R0n-5qoeSQ6opPD4fhP_M0wEFEkXd6e4CZwxYGSnJm8ngf7BerRT1xXYsKHhM9eXIP8TQJM4ZWX8VS4r0qzZnmO8D6cEPCxhhnmfzIEdeEiUoP9wKvawhorUzVjYfcGbHTBC_zT4H1nZ4j1-4Rad9LxDfSMmMXw59-XCoOSC32J9SJ0yuvgax2ek1yAJpM9NQKogcYOCHQ9xRF9jwA0sH1ZSBuqrYzwuPQNUdupm-ivw7_jYHDx6kvGIOatCZQQ5YSrA-PibCFEEerzDlhoaNqqV_X43YEalVIPNNcHT_YFjGiZcWbq6iJHVZfvll7i6HVgGNgJRWcwNK5pAnu8Tp_cnB-gcae4bPO73iPteLCcuFR_CItDZ57VrvOJwuEgGpRzDvaaEftfv1X-1fGO5CHG-FlZ19Rz563ZT-QKs-JP3uah6AAe4H_eoNUz92Zis1SlH9C21plH5eOqBEe1TUsOKgd2UsOKVIOFcGD3O7ghQ_SgWxKUr7gk0Wyx7Kb9eskcQMGY4dsRMV1y4Q9ldbEoLGqGHoceTWLGUt6MpfHnRElCwaULfslCDEU0tI0lztBTxJM-WMunr5K5mK8wFfrQHzHc1kDpbSPP6oKboh13YpHo9LRIWbrGjUu8-QhP_c6kyTCI9KrTKoBHjnnb8Yu9hhgC_MExzxETtPgw_gvc-yQz5XBYTmeB3Xr09VQ4N862f4F1WfoOjjrHqD6plXj6oU-BezbMh8Tvde323Kf0YTOQjDqfga6Lb5YZ0y5AgLwb64lamXNim8FDKGJBnh4jyZCHWZLpG2Jg7z6X0MqBB1IvBdVgcxylJy1i84O7VrqcO9IrjRQ_iL3P3Hl-_4g5r47yCvt0_uqymHKuu8GCqTwRCknB4a7yk4G5Ggm2WwQUawsbpIALWC25odFypuiE_2JfWbl2x2ilj5y0WeqjwK3jYFhkEdyQ9pJch4UGmAkuiG_JKA84hRae-pV-KTQc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_010d9bfc1fa6084b016ae818fe59e887d1857dbb3fc408aa0a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8684,
+    "completion_tokens": 316,
+    "total_tokens": 9000,
+    "cost": 0.001243425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8681,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001243425,
+      "upstream_inference_prompt_cost": 0.001085425,
+      "upstream_inference_completions_cost": 0.000158
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

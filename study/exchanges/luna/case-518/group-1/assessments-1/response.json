@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible university homepage content, including the hero, agenda, educational-offer section, and news items, is retained in the target.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The observed content is legible and coherently arranged, with no substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, agenda filters, and action buttons remain present with understandable labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots show corresponding page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, descriptions, event information, imagery, and labels convey a coherent university homepage purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Creating JSON Structure**\n\nI'm thinking we need to create a JSON format. It\u2019s important that the screens are identical, so we have consistency. I need to judge all meetings, ensuring everything is aligned. Action labels should be visible and readable, possibly slightly similar to maintain uniformity. I should note the buttons and make sure they're well-stated and aligned too. Ultimately, it's crucial to provide a concise rationale for each decision made in this structure.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Creating JSON Structure**\n\nI'm thinking we need to create a JSON format. It\u2019s important that the screens are identical, so we have consistency. I need to judge all meetings, ensuring everything is aligned. Action labels should be visible and readable, possibly slightly similar to maintain uniformity. I should note the buttons and make sure they're well-stated and aligned too. Ultimately, it's crucial to provide a concise rationale for each decision made in this structure.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B9uT-XJxg_6PElY9sISSBJV1n_IGCTyRIGMkWeHWC-wxLNFOniLs3uCt_37knS7LRhY-0qkDGMZhBJzBgzWqhNYOvWEdRdaHqm6DYY7TbwrBGTpBxwGcDC3i5vb5yVFXDbwPLVZFR04T8iw_B2I2w_InEcX8jQx_xtugayB3gW-hXhHBDK0nKsScLxSmGj-7Pky3y0xCB8uKcgTOTXWlPy_o9qgKIPXENiVHB6BW45055y2lCIZ3n6IuAHDRwB03rAeYK729fPWy1zQxdzxaf9vL3suMmq2T5Gl_a1mMoscSdls_TMf3121mlsq2qGZ6lSoNcbgWrmaSz7KHOe-1OntGhlsWjywyynZejpjtBFqs1WNgL7LNlQJpACmzCwu_YH7M1hgPtdBEeBXqHcqm7Hm9mqXIhgljXdz3U0G4lpK3mpQCDyb_IaoXHhPrjIodgBHK7tsUWtxfuKNX_iGvTFKSpi9BsW27XeVAlggkiFROT_UOCisOj1H8lwGrXiXIG2071rSdstW1dWBfnRJ_QdshE8zotlr14UdD1T36veSSzm1nTDND8sIIx0hJPmBWUFmxADcA7ax8qOEH1166d0YgQWoTENDLjHdf8GcPLPlrrUKkYnmX58qrkXBvhu3tZWSJ21rBTY3yU8M-5yK-l_osBhiPoG27G-9wUdvpgmlHb3BsM8oJVhuIacljByNWgsHhODP39I5S1BdmXn-0_PCewIAIUf-YTrxZQ8CuVsvAe-Vbekyb0Va3htY8njzrPL5uPFjvKCKxlWzni5oiLoh5O8MC-9azowys4DOFWYzOXi7NQqpxL_3KfqCjt7kphDMi9j-MOeBicLHRpO91Z7iVV7rwcIAoz0hVFaLSqTSgOOn3y5TkcPo3RhOG9vMPKnarQfpF0uXZKMGsljbWxmERAC9rhpsB7Bzns4kTF9KC5ablthAT8DIZ6Ra2KwYx-HKGyxGsy9LiZ5y6DnD2Cs98tur_HX-H-smrpmWdvy2I2NXDH50ildKzpQjDMNhreFxDoE2uEa_7r1IItXqBBN0qzQ95BxPsbJIf8Z9UzBYevbeWJaMWxhQT4E0EBeAOu2T7d7DS3S7PZYPubvX8ly4eqQ3c0rl1g4CNPORrPMWTDcKKNynBjhK0_5tRfAMbnJSsmIrWwvb43kzF5Kx_KcoRY6E9XwI_kq6eeNDJRZz35Ci79KjQz1fU7BfE8JrX5zmw3hFhHqRqr_2pefIroA3HBSie3i-AlYZXiSykjPevZP8PwrLPalT8BJ5PUjNRFdrCa1VGFcxyXUt-8is49LCCy_c_QtmQ9DKGNnBu2KWVQhJIzehDZPTyPSiCT62lMfJyXsdylLRH4BFVs-Apri1amyWOVr63ZZCoyXIcbPZiy29IxT5kn3C38_K3aHDmL9Q_vI3Y81VM-7Afwh0Cke-OOocujK_XNt12IvUj5yHbRL1eP8ci7iT6PYibGiACdgstMWvjhWvwe1O7_0l_AHz4vepd65QKZfiRqyRFz_AwdYcGOvkK7Wbdwnn69bBmPgNNnjf154qv68w6ZYq_WJ6zmZR83JispoKaHK6Etzoez4P9iqFjwl6DkOCe97QWpIPTXk80UKVcQnbe2meZMCdPwd8dD2Wd29cumyBc51-g3mnnSLVaeFk0UB30yTWoee_5Q2lKfyQbjpLFhhKIQ_s_dEh_xtom1lf9vBPk2Rk1PZ-pe22nGSOoQ95WFw7mGacGabPBI9o5wKFblnCCwkZJRi5sua3UW8kmn3QDNP9ZqtdGeHxTB1aR4dtZxPvFGbzXEaz1FW8LQb4cY7SC7YyAb8MCacq3vgJ2zTfkKJUVVBFHTRFIkFgytKGMVZrAb-PuTjk7c4La-X9ErY0p5RmNV0jBKe3vByylrvDeKLLZS7MMDsAdklOoh_F5xq0SadLXR8JzrMst9E3oost1v_U-M5hfR-qLddjmx5chb5ZElud3E_eX1qpOreIHM72uggjl8-U9DhmloslG1k15f4068KQUHibLhIV5fIwkuzH8ZOHyqsdysBMpu0747DB3k4Dji79BvvqY8CCrOmKrWHyaQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f9cbb7ecb12ec82016ae81f6ccc0887d182d6de825ad98d0d",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11037,
+    "completion_tokens": 259,
+    "total_tokens": 11296,
+    "cost": 0.00150905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11034,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00150905,
+      "upstream_inference_prompt_cost": 0.00137955,
+      "upstream_inference_completions_cost": 0.0001295
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

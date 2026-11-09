@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the visible stream cards and their titles, channels, categories, tags, and the Team FPS section shown in the reference. The target views align with those cards despite different scroll positions; no core information loss is demonstrated.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"Target content is rendered as largely unstyled, single-column browser-default elements with substantial unused whitespace, unlike the organized three-column card grid and navigation in the reference. This materially degrades readability and usable page organization.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"The target shows a clipped, overlapping \u201cShow all\u201d area and an isolated arrow where the reference presents clear section-level controls. The degraded layout makes this visible control area difficult to identify and use.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show matching Twitch content, including the same featured stream cards and Team FPS section. They form a coherent comparison; the target\u2019s layout defects belong to presentation and controls.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Stream titles, channel names, categories, tags, and section labels remain readable and convey the page\u2019s live-stream browsing purpose. The visible images are coherent stream previews, not evidence of missing core meaning.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11328,
+    "completion_tokens": 279,
+    "total_tokens": 11607,
+    "cost": 0.001555425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11325,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001555425,
+      "upstream_inference_prompt_cost": 0.001415925,
+      "upstream_inference_completions_cost": 0.0001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

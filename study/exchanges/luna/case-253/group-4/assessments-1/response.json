@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent Forbes-related content, including a live poll prompt, a related-story link, and site footer information. Nothing visible suggests material loss of core information for the broad page purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target content is legible and arranged into distinct sections, with clear separation between the poll, expandable-looking listings, and footer.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links are readable, and the triangle markers beside the \u201cMore From Forbes\u201d items make their apparent control purpose understandable. No essential control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference states form an assessable comparison for a Forbes page. Their layouts and shown sections differ, but that is permitted for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, poll question, related-story link, and footer labels convey coherent meaning consistent with a news-site interface.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target content**\n\nI'm assessing the target content at the footer segment and comparing it to the middle pages. It looks like the footer has a coherent Forbes-like design with elements like a live poll. The target appears to be entirely regenerated. The footer at y3879 shows no defects, with identifiable controls and coherent content. I think we only need one reference view to align offsets. Overall, everything seems to meet the necessary semantic and JSON standards.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target content**\n\nI'm assessing the target content at the footer segment and comparing it to the middle pages. It looks like the footer has a coherent Forbes-like design with elements like a live poll. The target appears to be entirely regenerated. The footer at y3879 shows no defects, with identifiable controls and coherent content. I think we only need one reference view to align offsets. Overall, everything seems to meet the necessary semantic and JSON standards.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B1bc8eGRnjPk7DdkUzQWrixdeIcjcoBsbB3BhHVee0jFZGYWykIwpnnK8kjv2DwJM-kQL--GqSU9pqFJpGfx752dLsVT8lSl3n08dtAWuoHKIM5si4ottAikKdS-Xr2O4a34rXxrle3ahSWFCZGgo7WFjbsyve6-f_etTjSacG1qTMxO-0SbmfevodO3gMx0_JNmpY6FwuAqwDf71Tj_-puDbOyfBS-5PauY86Q7d5K3ceOoSTfOEexMA7FPefxAb5Hnw7voqPzk531rF4iv554CEr87JJtB31ZjhDh7s9_bcAX3gZwAeBKA22H0i5CwGvPAkkoK7WFOu6UEZy3c8IF2Ewt5ic9QQKdSfYPrNSOlWfeqAvZLmZZ6CmVprQ3L1mPJhiDWnY504ciSRGChnWTf92lcHl5Q4PShgGbacFBPx2nfDswXu03IV3z0JElZTI4IE418u-mxIhZIy_O70S-NrYhNodqGDJ2ACa7-2RAlglaPCSfSNl0V3Eb1egfeBYYD3Od2vbCNnxevs0gGPNqRRM7eAKdTpOGCwkccNfVV9ur4EpUM6RweLtdg-_UyyCHZ_Y-c2X8KgacOjN-K1e9qVtBiTxMpSVVmR-suchb9ZU5MFEQTlRhxsftayfLp4ih10rEzA2dYsyyydoGePsuYoUH0URoKq_SPfQVXHs4lzJx1kPoiNJ7VfyoliSEGVLA7wUBkV7I4DP_nBzAcsj0VsCBEiglQ1js4WwkuhD24G8xeJKrG9bCdWTaq1TPtg4V8m3VTlySuagRwdoIYrEC-qRn-CDSwMR2sdToK_hBTY2HWJ-DeuzsdaNwG4Gc3ebYw5HIKxTGuRmZOaRrOtRCPQtUvR1NXT4FqxYCO41YPrUwFW4v19xWze_Rxr1yrky4W_qlwzkn_QQsnAX-2zR6TjEJ3dHEIZceKSESZnNcvOaor2Wim51JOm6X_v42G91QDnmMrfve2ZJ-0hkKNdqG7Re_D2EEEE1ztXOpdjlgZRWhi8ykOuKZ7p-fhnVW49gt0DwbQ_SgG0IkbR52gjd-UHCVjMNOxxncK-wX3jG_XTrNJn_9kRw7C5_SYmhIXE4D8WqS9Bgo0gtbBx8NqNlljtcEU5NrZHVejM3q1hGtWlAGbGcmFjIqYXIv2ULc70c5pLenK08Aint-W93PeSfgVXfiTxYl8E-u1_mYOp8gosBoShhf1jsJPrXVxv6xUXJJ2fD6zeHYEGoMuYNJIGJn2TGIh6jNRPNDRC6MhPsWYOpwP0PRuYObOLbvm-5KppV6rEN6Nyi6Z9aMGGbbKRX4teYfbDaFe3nfVoj3eEvOoFvJbo2D1e4CMLOzB-ePKfqi3vnPLgvLNAM5oFtRy6xc1PIULSM4mbNx6UmpLek_xqAFKjx-wOrj-RTIJrc_vSKi0A1wNALqgL1vqdkzIwIWyuGtEtwAgEshLgV6ogZWqyVcvCU8BLI68V-n_RG3TSQY_JtswJLZSaygA6-tyZONstKJ9L2VmHQDdsQC490Fe0DELyB4RrAruDnIWkE3P6qxQMi8PPjqy8gAgpZSGj2bepwpOKcxKq3KBhSmzBRNYxKrGsIiETIagoggtgYURsCA9DxlrdChg086JNnwZ9nXyZHYBcKOj4TQWeRu_1gehGoQDfS4PIb3acoGyqLWyNPKkdRp7WcfKKOGTZVCFhCmNeVIkKrQtC4cNcPZ_1DNMwQZNY6yR5gcJYroZ6jqa3CUQVTyKBZTJqOAuWuTrk5TGU3-fgXN15YtFYxM-sIaq_ybmGUXV0JLqmTlFJJXLrFijWE11ALxvuRoM5y0hc5bg_CWFcqi5luT1dxfJ-US0UMQByIl565wueQIXobOVny0h_JbdxwV_knuCp34MjB-COQ2k0IXfhX7WoGIwrv_V_2DUxwJd_x__xDDKV97ElW10B48FzEKzJokqUY4dAd5aNmepbrtZS8MvqsNNd0ecKqQ3YIlvbdqESMs7jVaSXu3P-6Fozfw-miNXCG2YtxXznxlnSWLtj4RUoD2l212uZdD3Jb0TqZSCfl8mauwq32sFalzENfF8-hWw4XQ6wvSJmb5bk70Wnpp9M_cXCfVqzqh9N-1h-cBaFNlJb0xfTGSl_spUQweVIa3Vq2XZZVgIQvkcKjc7IirCnNXikBorkAXM64_agm9AEhGo0C8LjjaLVXilnsoGrogh4sMG0SF7blmsaRM-4PcUP6r3_zopbjaqKOEsQR7IQk9HVy0M3aDLsWcFXs-x8jwIomSxGqz6sIW772hwhK3RAFQpLzyjO1T4y2a7fmV8no_H9Q88qwcZyVjqNr6FFjKP8kExYDkDpofbxjAjcUfMnru1oy_q0JnDdHb9hVpCHPz24e4_Tkb3tMjwF_eXTwzQdNPvrYOID_KOfULfZtpDUz1lkwp7_sbrAsNlGSzeKsJPOZuNlVM4-4bUANeJUQM6aBlGfJI-e-9PefgK0pbsnhDCLCJxI_369Oh3-aii6bbLO7W-eSVwCqlayzrQJl1F9j6A9okBZxW_mlKghQe_uNlweTGxS7cEtjR0EFr3SACzRZFQGglA8MEHndODyX2FA4xV_ODlg32FL-g8byZgAI8WkQy5yTceCLeRBFRLHm949YkBXS7qo2-JkU-FcH1SgTBwizR7f2z6qHWAq4uKTnBHYpfCH3bnrSmduGsuYaqi3St63RAAWC-nfAAdShO6hG_Yl56RgtrVRZVVt4z09rTuqTndm9miRgGBhCn3MgSF4Gwa-8_.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0164b6640eda8f3b016ae81d59e50c87d1924d186c665644f6",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12365,
+    "completion_tokens": 367,
+    "total_tokens": 12732,
+    "cost": 0.00172905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12362,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00172905,
+      "upstream_inference_prompt_cost": 0.00154555,
+      "upstream_inference_completions_cost": 0.0001835
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

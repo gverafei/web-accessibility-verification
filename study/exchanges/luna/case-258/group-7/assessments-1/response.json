@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same footer navigation, category links, and tracker-settings notice with no meaningful content loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and links are legible and arranged coherently in both corresponding views.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including Contact us, Manage your tracker settings, Accept all, and the announcement close icon, remain identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target views correspond and are visually identical across the supplied segments.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The footer links and tracker-settings notice convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Organizing JSON Requirements**\n\nI see we need JSON format, and the images have to match exactly with their corresponding elements. It's important to ensure that the target and reference screenshot hashes are identical. The content looks coherent, including footer links and the consent banner, which all seems to be meeting the requirements. I do wonder if the cookie banner overlaps with the footer, but the layout looks consistent with references and targets. The evidence supports this well, keeping everything semantic and concise.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Organizing JSON Requirements**\n\nI see we need JSON format, and the images have to match exactly with their corresponding elements. It's important to ensure that the target and reference screenshot hashes are identical. The content looks coherent, including footer links and the consent banner, which all seems to be meeting the requirements. I do wonder if the cookie banner overlaps with the footer, but the layout looks consistent with references and targets. The evidence supports this well, keeping everything semantic and concise.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AI9b2Z4NMB-qfejkONp-6foDLsmxx-XuVKPFaPekK0SSYK32yEe5pZy3XVpebrGoo-mo3jpolDyp6EgkJEkoWPbecDvTMuBwEdYFqLj2UPUWpXihW-dWDB08eb7cNRlHlZzE4BvTyvJHvpYHgXADycCKZVkf_8xGre9R5wgiS0-nCUJPSELoOeHwNc-PVBgWm5euwsP299zT7BFgDeC2mdBpwTeK1w4oW70hgc1x5c89EC0HFMQtAHhBPBpS3evNKD2LK6j9tBh8vHiHKFjb-40vvAzJXXaGvyhqG7WmyAH8mkSWafwLrALigcFwoSZSwfVvnGJppzgctzMzvfBo6JPJ-TzQvsw-DKYTm9bLOmzTkcDbSN-VLf4zgKFrtZy7QhqIckAXcVzbtZIuD2OxdLuHFbawMfWmUUJOXC6MaNIETO1AQevEKs8Cg0wGfOK9RLLCcwW_ZEFbcibuXnl_I9NFQjC8I34cA7sX8trtTfYP5T_HLbn_eDKH1hVc-2YO-rHTdAoWFcbtqvQ7ugcAaw9nvZCT9vKqbwmw2Y8iSPmFhqyJwUcyTrzCFdd-bYp9s0Vwu8C0nMCzgVxH68SAwdgk6g1sCmuqMnY6KfSKaAjtD6TqVxYgtWvkOtpz6H07rpM5kT6yI2q6_3Jqs8uhtsdQPAaOMkFtQXGvbCmGbScINmkiOsCAC3O74etGIAXdCWB77qRN5S-EtRZE4pBNkYi9eGM9WyTJojgPp5HFtamImoxXG3pEwwlOTkoEp806W7IqIXPaKPw_ogw3rsXNmFVCJRdxfc6G9C1quRKhDn2oponHBB9lPZDiOOs0qEH1zlaNutENDcEUJcz60MyXB48ujQGEM_9EBsIeyW9wdGTSJl7ZiBoNqU58lDQS7PF3FLYssJb9nT1R_6b_jxAmFyO0B7kxizdW6-FfhevscQzHPt4j6xMz72H6mBk8U9cSPIk1sMn4JDESkLAu0U6-GqfDZ5KggSn2jdSts7LeSKh-olidc2WW56TpZVI-mimNXPv_leoVD-QgGnF4KmF32xErz9fidlmiRD2UNYmr0h9m0W7IVFs0VxhOzzHV3hpfH9pOWT1LEmB6iGD7S-7twaeuhpKyzC9XLK-FlKuzc6eyaQYDwUbrcIkBkBO2vxCdOfoQG-__km1cVXI64-Awz_ljmA_t9MKQy8qtcBmaOP1G9_wUW_qnpmIR9Pz1GdRIBLn2B5A4Lmc9C6yoG5EwoCoqqnDuHGa3rDk6wDIfuQyjypqm6QRwfZNmPcyrJ20LQ_Lh7GZzZGXMYw9A35alYEtth-yHienNExMXXzz-XXPiA0fLuGFlGA4D-zSbVtvLomn5HWmnjSuoeIg63SBPmJ3WLpxJwo9KIV4lgd2VUrZW8l7aGSdhyefi9bEwry-44IF98ptPm_Hz2kpCARf7QXde_CLXkUMUbT-yNNvoFtSBnGQxV86y-X8N2T7nK9vRADWHe9UKioLXfg3gNUe-xA0Mbas6y3qOM5pYy1LmGLhwhfWJdilWnJDifjw-1y83MCt0XwYIeRIo6VKZ-Q6ILt3Q4NrP8XeL0DFX5Lsx2ssco9C1ZWo6fmlZSQQIeXyBTwPKOUskYPymlW-5U9et_LNtEJZEO2iPMhmxznwkYgi-5LJrbAWiTRja7zKWa7dx9ihDdAObrKO6VOPgDzkBQsxVnYUZh-0ptvpU-_yLPHKS1SGZfaL57YHIgOcR4gbZCnTt-JncOxGPIEmqViJhG-wqbzeF57E7mws0KNswqGmjrQbdbwhkCJ2_m20QiqLRmMuuyq1odVCH_sJB3wsqcyoL2YbCQwkXNySDOCTp2nlHaqO6PU5tTDouiM7K3qbXQ7zw7sqQx-am1pYqbr7QzUWen3ogIB5i4T2F9HgpUhQqaMRF9YLsKI68Wv8k3LJHO8wThM46NcCy12sdsizaslL4PFDtzt9caN9KN6t8LtCQoburIj0cpaKH_wxme4L5oJk738PuNkW3Fh7b3aI_LmKNR-pgi69MMcq3KK8R8p4xmsNk2Uv_jEZNjkGrbxLf22JWLKOZyX1lGv8EVsjrwLdTDmR2ftYizwfCclrDPq2MKrXVDUP0lGdZvlWF7xEN27k4XDCR8aM3BYGUxeQ0sUqsJ3R4tATuPoE6wbIJerPmhdXyDBEjH4KTl8xSg4caPVQ93zwBvNpJG7dDvvMtD9wjMkiey83wy5Fm6t-A-DXUWiwrxpUEbQ_olOwSItznrTxtsPvvPF3dR7J-e7Y4m6T2dJU4CR_w3Lojp3aKZMEDiu2-zcb2leg3fZa7cheOW2IFnOAiZ5ppc6lMJvfE6-ARUGGHkxMP66LqLP8VoALAHURa4eKMGEltCLH9JK1kQ-9NxAOhPg6cWwqPKuPYVfcI1i3kzClO2gMsSLBbBVmphZuiRX6Q3912NSNxINZMbr8F4e5oCFOssF4E3s2dqrZAh-W8skgyZ7m5sCjYwOWMEo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0b1c3bd090116d84016ae8023b3ba887d188a8b06af0628e90",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10301,
+    "completion_tokens": 282,
+    "total_tokens": 10583,
+    "cost": 0.00142855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10298,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00142855,
+      "upstream_inference_prompt_cost": 0.00128755,
+      "upstream_inference_completions_cost": 0.000141
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

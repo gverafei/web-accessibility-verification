@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target shows the same product cards, descriptions, category filters, and footer content visible in the reference. The additional target view shows adjacent product listings, not a contradiction or loss.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Text and product imagery are legible, and the cards, filters, and footer are coherently arranged. Viewport cuts and differing scroll positions do not make content unreadable.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible category filters, navigation links, and other controls have understandable labels or recognizable icons. No essential control is visibly missing or illegible.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target depict coherent views of the same LINE product-listing page; the supplied target windows align with the reference content.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Product names, descriptions, images, categories, and footer links convey a coherent product-catalog purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating image alignment**\n\nI need to assess how to set a reference for the lower content related to the target image. It looks like image two shows preceding cards and the sidebar aligned correctly after scrolling, which is coherent. The footer is included as well. There are controls represented as ellipses, which might be recognized as card detail controls. I notice that the reference matches and that the target reproduces the expected details. Also, the controls should show visible category filters and links, with those ellipses being recognizable.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating image alignment**\n\nI need to assess how to set a reference for the lower content related to the target image. It looks like image two shows preceding cards and the sidebar aligned correctly after scrolling, which is coherent. The footer is included as well. There are controls represented as ellipses, which might be recognized as card detail controls. I notice that the reference matches and that the target reproduces the expected details. Also, the controls should show visible category filters and links, with those ellipses being recognizable.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bf_zi7BUWwkbVzWpaxb-YVAeU9Foe7FXPlUAALe0rEqLr2w5MFdhNUp2CnReAJa5wFprI7sNPPNYgH5hAD6zNhAY31HZfGT4Om78bbEmCrRVs8yGrE9A-18aIGgJI_2ZMEM1FW-SHhOQIAzoJXcYQ-hyErlfVvrbsrvzco0cx-YXGHPwLHqvE5FF_4AEJCHRnqDxyrkNJVqBS1mr4mZxzzz0PELnvXO_9xKCWkOyx9aYZmbW_mUaM2J0fCEJ0Adn2AfcUwsq-uUUl82bPk9ZGTMBbcHAoJwLh9owEEjQw5uTrKNrXTgFEFArDxswg4R3b4OdR9hcVXpG9yzbbcYBWb8qGFQ4krG3mgrVWi--S6kZXjrX3iT2SO73XmIwZFLZDFjMO6wpgRm2vevYWNsv8E8wMxnCZwryK9JNEZk4QVI-kymB0Kos8VdmILe5Z9tedrHcggVtfeaVkuD5NgUC5oNWxO6DiQukKgE5N9MS6Rw1UbY2hSWRkyeggkBpQ8v3s0kQ2FUtHS7uvfGjJd_qFH3BpoJUiBr6YSiVfo14EYpG-1A_XT1bLApSuI7Ctfn0CgkYTVyEsoxi0WjM9WfCA3A9WLpvTEKCq3gwJJcYAHbECGnbvkNTrIpqUO-WX0FLPTr8qlua_VYvbfxBrggeh1EpNjX49zteevkoIozT2pJSg88ZE8GZHeOiZ_p_DWD_YXlkKLiuhxXnWs_0gtP7c0gKILYxvTVeEMQd1PxQgCQWYJA8uAAL8YQDqdNh1e9JezQAPymDIjOt1UBf20p5mwkYTI5zhF8OmbCC_JDQtesZRw-EVy1dzb4KwSIGyQsV7gDlRJIdd2OUyEmt5xCJwa9FTB7aMP4o2bQXVLBs1WQIr7oEuvQm73GGiJ3ZSIqgjZHTQyIsZ4hM_t_ncTIavbWjAz2QrfvFTfZY3E-lHjglkH5m2Wz1lXsmngTSDJ1IqWAfdjOWNSGIp4dx8nZDLlrHcUAShEDF9Yufy5uPvE7vtMPqUtBr8i85LbWJv-YthQFjaO_rUW-L3xzCh_br8ryuUVdqh2yr_0LAVgxfu8D1iKUUH8g_Y43pqoFZDRex8f8zYvfaQYNh0IgSFQMUSlolC9_cLUTmlA_Vv42E9UaRcawyzUu2rEir34QjPO-uHCodV8ZFXKzgTluOP5HZt1k6AiWe3AnS5Ab9YsIkSIk2I0vFePPVknF8vKKBhcr9oDeSnGf6UGz8HQibRb2_uDO499xx8mYGhcq5cn9zOmp9Cr93BXzcQlff7sAzpMJRQoQaDfT3M2u4-yrXPNTf36mhPlpF0mveO_qA2YzgC0h2g4owhW8gJWdcMOqqHJoq8rrdH7U7lsehbudiMXCtimYFL7UNYGYBEPpo-knGIa8yopekjxpwJmRBcbFMjr1dXdF2FGB1R5GLa-92YWLicpDWvBBc-biMxfCLdXO8GFMstg9JC4JpHWaQnoZmpOFqVvaK54-qZUhR5r8N3W4fWbWQNdZDiBYL6uOiZaqOwRzNepo8tlRiyvMyI8GkJ2A1ghkn91ZbazqoLJDtelZo07VWLJV9ENjOY9M34ZZWLCj8jfR_jSk8szAdwsHAgB0vkk_hMLTi5nql5UbZOfq0QRziufo1SAJDlPmrPB-gB13T80f_NakI7Q7ZfCXISf-SOSf6R_ajLlEBmbDcc8kiM6WmwgMX6Yw7EXrlqsd7Hi7rDorMQSN3WqOfjZ4-litc8n2-apC5IpNBoDgm7bxv6CmzRjZqTVfAws5TxZDM5cEikpoqYSDXrqDmqPtDr-SsvIO8z7QMornsNbKZuqauHCDhUPFUu-boaGi18i9PnoEhDa5I_BZfKvY4Sf_trxd56CwFmakw-0-lTmYK9R1EuA1gb0abET3f4iwE0iC8U12o3S1WBCm65EgSVc39hKBueLwGl0Kuts1aaNYuvm8iNCGM9gdVpgO7d3OdP6N06C1v90sj0FPwl_tmT4EdVGUyhG-W9nXYi3_cVW5yP9ZtxWWRMMhEw4vdeSv-gjxlYpOcFfY5KO-VZ1qXmCsVWJQyWm2U8nAECpMVg2D9kWXwW3VT-oB9lUps5Q4xKSs3Vjji9mqX-zYC1ZneiGyQn6iupY5GTH0KS_Gx5cSqgtgHiAMh5SZs8_MBXywWoXovdyVpbWK_mrOfi5ikNbCbVlGNJAPzGetkj6SHGdq71KbVl0TygY2S82rzNSj9LsbB2tNbdKZKDsHzlSJ4ycjrGfKyjKEpGrmw6N8mRiHgqEEkYveDsjpnOFvqvtb3TGGjsatLlU6qBSkCxiwbsApiwVmJ1kWi0dZpinq9eue-yzoCjr0AEYb6mfFLNDY4cPeAe1FRMFDVQ3FqS99--XpMYjcfPZxZUI-aZfnPY-n1EkhH8zDWoX8SdNWa2tcu3hvoehB53MBkfKuzM3V1UmBPuWFx_wWP8SoN3ncM-bq5o-F651JShujlSWMRv5ipxQOILXoz7y1I-UYbuI84mGL1KtEqxcpWhGawu09lbg0JgDDRtXfLLRc2_ZwQ1qh3cG3WCQvLjAQasuR8tHgQuNISt7WYkUMCRt2vy9cRbqcRvBaC_eDfSvg65GeEfAzqbzwd0NtpdGuOaUTBjN6fSNqB9fmZq0x.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0d556b4acfa76925016ae817fd80a087d1823105d6ad83211c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8050,
+    "completion_tokens": 294,
+    "total_tokens": 8344,
+    "cost": 0.001153175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8047,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001153175,
+      "upstream_inference_prompt_cost": 0.001006175,
+      "upstream_inference_completions_cost": 0.000147
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

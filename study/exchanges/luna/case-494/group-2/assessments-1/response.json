@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent news and magazine homepage. The visible feature story, newsletter, entertainment headlines, and latest covers communicate meaningful editorial content appropriate to that purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and images are legible and arranged coherently. The target\u2019s layout differs from the reference, but no substantial clipping or obstruction is evident in these views.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible actions such as ASK TIME AI, SIGN UP, and READ MORE have understandable labels; the cover section also has clear vault and issue links.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied screenshots show assessable portions of a reference and regenerated target for the same broad TIME homepage purpose. Their layout differences do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, descriptions, byline, newsletter information, and cover captions convey coherent editorial meaning. The visible content supports a magazine/news homepage.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14512,
+    "completion_tokens": 280,
+    "total_tokens": 14792,
+    "cost": 0.001953925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14509,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001953925,
+      "upstream_inference_prompt_cost": 0.001813925,
+      "upstream_inference_completions_cost": 0.00014
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

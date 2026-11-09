@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent TIME news homepage with prominent reporting, headlines, article summaries, and related sections. The regenerated content is adequate for the broad purpose; it need not reproduce the reference\u2019s exact stories or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and arranged in clear news columns and sections. The lower target view continues coherently into newsletter and magazine-cover content; no material clipping or overlap is evident.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Subscribe, newsletter email entry and Sign up, and collection links have understandable labels or purposes. No essential visible control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target are coherent views of a TIME homepage and its news-oriented purpose. Their differing layouts and content do not make the comparison mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, summaries, categories, and section labels convey clear news and magazine meanings consistent with the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating news site structure**\n\nI need to assess a target news site to ensure it has clear content and images. It should also have features like a newsletter, navigation controls, and the option to subscribe or sign up. Usability is important too. I should consider the main image, especially its cropping and alignment with the newsletter content. I have to check that there are no defects and ensure everything is semantically sound, matching the articles to the homepage. Then, I'll output the exact JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating news site structure**\n\nI need to assess a target news site to ensure it has clear content and images. It should also have features like a newsletter, navigation controls, and the option to subscribe or sign up. Usability is important too. I should consider the main image, especially its cropping and alignment with the newsletter content. I have to check that there are no defects and ensure everything is semantically sound, matching the articles to the homepage. Then, I'll output the exact JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CAsKRwpZ0bqHdZ5EinVZpo8oPckJfYTBzVw8zcevqiBU55vGBmmpd7ysSKQ-11Pr-KLnnON7RL_QOXYA_rTO1D5GVT4TM7KqFPI5mV8zs5C5KcPXGYISbojRCeJnwGcbpySzk0gdETk77Vr8_E-FzaPVMeu1yy--VcoFUaJ4lOzKGLz8idlcZPcTPSjpNodG-rAdtxCYf2aCesZXPrIqAU6Ldpv2S4AGpK3XRQa-ncIdVF2q9RriE5Jp97wGHXEy7Q5uzC20XRZdXKHpFrTpid4DIu8PSOyExO-_pjUvEC-zc7hD4ZkQngUqdRh7SiKpib6tEtSQASZdNC2liyloan8H3L4F_gsCHbVa4O7MgBb7N_bs-A2mzOFRXNVYNEs_Myu7903OfLyQm9bSZ8d5COIpnVkNcRBNz0v8JOt1yMLTYg5DB_VfnU2LmgJEKlQY_O-OL9ShU-0Mo-ThqXUxwMCtsfOxoAqDZXR7_FI-F0xgxp1cjXLha2aznk5MEuR60n4gZK3hW6vO3fBNmUzOIRyzxQ9rG2VTAdlGqv1apuKdTtrugjVpb0urXAxdHURXLlFuBAd22Q2BjFvzDqWI50ZZSgfh2wzxmgh3M2fbhIw1Wx2fjBQ_khmsF7bDIx1hqlQMNxArK9fIc2C9oCgnaxwx2cKbgCkpGl6Iplj29xmfjhUGrkcQc0l1VLSKYtcTknzw7NCjhgX2BtVA02YLX8Rr8K9lb04tJlfmAmbfbYIayzcT7B45fI15mjdvhRc9XD-odgxzlvPAwFCcAyqMbU-E0CiH2GUFywmmQZ1ZIbXEZe3K3f_FOHhazkqePfchvdHEhNPEFzm5CotI1KvmzPjLAsTV9ZnuxTwaJuFIt1USk1GHakpjlxCL5-7z_Zb6bvf43wV4ZuEbT-h55MXz5xs1x76xONeydGN1ZDVu2xML8nC86vsi_aYNZKLjscHtGL-bvTA7iuX_2tuaB6W0VRNe9QRfl6Em7rz4zSlEiSfS8O5n1M89Tc45INU4oA1FEHWKQkHtJL2ZhARVApHJeSK8V38W2WY8vIxubQ5vRoIukCTmO4afi1YrLwt7bBHInPTT6V32miANJVNmGS-NYxkcrZxYudYYk6lC2Xj4ZszP4gnySmqEHh6gDl2GVvcS_L3M-ylHMDn8O9pyTP9x0esV4XyMIE6g0fh5nkwbiBr95bHTmJHE3D_JrhbaqNIEFS1a8vjSptJphnIVOiYtioMyQg9eDS-73TTf1Yspkqpzo7gUSUdzVdzj5UDpNNG2_zf-zrl57pLGjJ_dYeEMkELGEdxjC0FW0zPgZJ3CTIT9rna_cbU1YdkgNsMWstP-_fd2b4ijFwYPUKZiyjsWhOdAHm_TFqNLXUBv1qWLge2mj8LWrqkXZ7fBdpKHIzBPmmKoXxzFT1dNZaSccb2YLqC5qitgktg9bb5zh9783rsw7zGvKPovUDTQFTMJ8GubdX1Ne4NyIJDo9X2epz43_HdwGTnW450AVsxbG5aCCPhlJSUmsWESSUlJKUnnOPOrWMsm3aXfJ_YjiYemGzspD3QsCjLpjNu3c6clMwYVaj2HdnoQ2-KRUKzXH2YEh-0tFsOhJ8NVzEflZYfsbecva6RC_d6YX-P6RUm8p4RIgAk0M8CkMKl79KjgqPLTI6XiWUfSSMngaeNPf6VtLxEfLvVvaaFs9NLKE_3djHtHbVcbyQbvnJucmg4MWq680lUO2TmptAQf9x7SGEt5WRy2nfL-FZz5Or-_NlCRYtcW3r__BLuSCWiNWNZSUQivQajvs37JsHIQn-CYjIpPxOhv2LR_mR9gp13V-E-5NHnnuMmyQywD2ndbR3h_8QKcUVrFHgS31hloeb2Bb_logBrrnF-_GBnaPLWQLf6dHWoolYVmyygTfleEPcJZA2fVZUoQNTexTQUOWLcURfPDaUbaMAR8jIZr21FuehKkSPDfEj_iN8Sw_o7DBAotQgbQHCX-AKVODEvX7Rw4gI1Z3MSMHIYsNlJo9P5RyPlrnfwfBGqmjoTtk7oFY23IP3eHTykT9K8-mhZxCKiDqQl0n7ldMeoGowbUoeaSVUVHZASnhn8MM6B2ynnYhR5EIeVuUxMGOhSFuN4HeOZS9MGG7nz1KELNlwDs87gvWjpcjb226VqCJ18GP-U9h4QqG6ZL3YIFwIS_A1QjF2G4wpvLh2X7aS5GUWOMLyvwdYUCaBF2ZaufGq0hwNvFyS5NjYj_AkYNknnAFl93PECJ4Z63nPfpiDwR6Rq9D8Fz7OomQ2sH43qZizJxrql0r5c2wLJVh1BYdHKDSMCBMFKNBIaS6BIBzKZnsS-6iXsqi6dxE2VnEGFYju1BuBoBCHmwbaL03uHk67F_axV-1Godt9DGD9QjsuKxihKC_lypslEhp14fAjrBL1mzmCbwnlhjzTLP_D3AkOZ.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0de033b21157964f016ae8202a23e087d1bb5a243aeb170ff0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14499,
+    "completion_tokens": 356,
+    "total_tokens": 14855,
+    "cost": 0.0019903,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14496,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019903,
+      "upstream_inference_prompt_cost": 0.0018123,
+      "upstream_inference_completions_cost": 0.000178
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

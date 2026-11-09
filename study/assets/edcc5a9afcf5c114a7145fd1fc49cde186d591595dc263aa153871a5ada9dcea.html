@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#fff" name="theme-color"/>
+<meta content="Find tickets to your next unforgettable experience. Browse concerts, workshops, yoga classes, charity events, food and music festivals, and more things to do." name="description"/>
+<title>Eventbrite — Discover the Best Local Events &amp; Things to Do</title>
+<link href="https://www.eventbrite.com/" rel="canonical"/>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #211a2b;
+      --muted: #565064;
+      --line: #e7e4eb;
+      --orange: #c83f25;
+      --orange-dark: #a8321d;
+      --soft: #f8f6fa;
+      --content: 1160px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    a:hover { color: var(--orange-dark); }
+    :focus-visible { outline: 3px solid #1265b0; outline-offset: 3px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; background: #fff; border: 2px solid #1265b0; border-radius: .4rem;
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(var(--content), calc(100% - 2.5rem)); margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .nav {
+      min-height: 76px; display: flex; align-items: center; gap: 1.5rem;
+    }
+    .brand {
+      flex: 0 0 auto; text-decoration: none; color: var(--orange-dark);
+      font-size: 1.55rem; font-weight: 850; letter-spacing: -1.5px;
+    }
+    .brand-mark { color: #241b2b; }
+    .search-form {
+      display: flex; align-items: center; gap: .5rem; flex: 1;
+      max-width: 580px; padding: .35rem; border: 1px solid #c9c5cf;
+      border-radius: 999px; background: #fff;
+    }
+    .search-form input {
+      min-width: 0; width: 100%; border: 0; background: transparent;
+      padding: .65rem .75rem; color: var(--ink); font: inherit;
+    }
+    .search-form input:focus { outline: 0; }
+    .search-form:focus-within { outline: 3px solid #1265b0; outline-offset: 2px; }
+    .search-form .where { border-left: 1px solid var(--line); }
+    .search-form button, .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 0; border-radius: 999px; padding: .72rem 1.1rem;
+      background: var(--orange); color: #fff; font: inherit; font-weight: 750;
+      text-decoration: none; cursor: pointer;
+    }
+    .search-form button:hover, .button:hover { background: var(--orange-dark); color: #fff; }
+    .navlinks { display: flex; gap: 1.15rem; align-items: center; margin-left: auto; }
+    .navlinks a { font-size: .9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .navlinks .create { color: var(--orange-dark); }
+    .hero { padding: 1.25rem 0 1.5rem; }
+    .hero a { display: block; }
+    .hero img {
+      display: block; width: 100%; aspect-ratio: 3.05 / 1; object-fit: cover;
+      border-radius: 16px; background: #251512;
+    }
+    .categories {
+      display: grid; grid-template-columns: repeat(8, minmax(0, 1fr));
+      gap: .5rem; padding: .5rem 0 1.6rem; border-bottom: 1px solid var(--line);
+    }
+    .categories a {
+      min-height: 74px; display: grid; place-items: center; align-content: center;
+      gap: .25rem; border-radius: 12px; text-align: center; text-decoration: none;
+      font-size: .88rem; font-weight: 700; padding: .5rem .25rem;
+    }
+    .categories a:hover { background: var(--soft); }
+    .cat-icon { font-size: 1.4rem; line-height: 1; color: #514661; }
+    .location-row { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+    .location-form { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+    .location-form label { font-size: 1.05rem; font-weight: 750; }
+    .location-form input {
+      width: min(250px, 100%); padding: .55rem .75rem;
+      border: 1px solid #aaa5b1; border-radius: 8px; font: inherit; color: var(--ink);
+    }
+    .location-form button {
+      background: transparent; border: 0; padding: .45rem;
+      color: #244b9b; font: inherit; font-weight: 750; text-decoration: underline; cursor: pointer;
+    }
+    main section { scroll-margin-top: 1rem; }
+    .events { padding: 1.4rem 0 2.5rem; }
+    .section-heading {
+      display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1rem;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: .15rem; font-size: clamp(1.55rem, 3vw, 2rem); letter-spacing: -.04em; }
+    .subhead { margin-bottom: 0; color: var(--muted); }
+    .filters { display: flex; gap: .55rem; margin: 1rem 0 1.25rem; flex-wrap: wrap; }
+    .filters a {
+      padding: .48rem .9rem; border: 1px solid #c9c5cf; border-radius: 999px;
+      text-decoration: none; font-weight: 700; font-size: .9rem;
+    }
+    .filters a[aria-current="page"] { background: #282132; color: #fff; border-color: #282132; }
+    .event-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+    .event-card {
+      min-width: 0; overflow: hidden; border: 1px solid var(--line);
+      border-radius: 14px; background: #fff; box-shadow: 0 2px 7px #20162a0d;
+    }
+    .event-card > a { text-decoration: none; }
+    .event-card img { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; background: #eee; }
+    .event-info { padding: .85rem .9rem 1rem; }
+    .event-info h3 { margin-bottom: .5rem; font-size: 1rem; line-height: 1.35; }
+    .event-info p { margin: .25rem 0; color: var(--muted); font-size: .9rem; }
+    .event-info .price { color: var(--ink); font-weight: 750; }
+    .badge { display: inline-block; margin-bottom: .45rem; color: #6b351f; font-size: .78rem; font-weight: 750; }
+    .more-link { display: inline-block; margin-top: 1.3rem; font-weight: 750; color: #244b9b; }
+    .destinations { padding: 2rem 0; background: var(--soft); }
+    .destinations h2, .footer h2 { font-size: 1.35rem; letter-spacing: -.02em; }
+    .city-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: .75rem; }
+    .city {
+      position: relative; overflow: hidden; min-height: 100px; border-radius: 12px;
+      background: #35303a;
+    }
+    .city img { display: block; width: 100%; height: 100%; min-height: 100px; object-fit: cover; opacity: .76; }
+    .city a {
+      position: absolute; inset: 0; display: flex; align-items: end; padding: .75rem;
+      color: #fff; font-weight: 800; text-decoration: none;
+      background: linear-gradient(transparent 25%, #14101bb8);
+    }
+    .city a:hover { color: #fff; }
+    .footer { padding: 2.25rem 0 1rem; background: #211a2b; color: #fff; }
+    .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .footer h2 { font-size: 1rem; margin-bottom: .8rem; }
+    .footer ul { margin: 0; padding: 0; list-style: none; }
+    .footer li { margin: .38rem 0; }
+    .footer a { color: #f3eff8; font-size: .9rem; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    .legal {
+      display: flex; flex-wrap: wrap; gap: .55rem 1.1rem;
+      padding-top: 1.2rem; margin-top: 1.5rem; border-top: 1px solid #ffffff38;
+      font-size: .85rem;
+    }
+    .legal span { color: #e3deea; }
+    @media (max-width: 950px) {
+      .nav { flex-wrap: wrap; gap: .75rem 1rem; padding: .75rem 0; }
+      .search-form { order: 3; max-width: none; flex-basis: 100%; }
+      .navlinks { gap: .75rem; }
+      .event-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .city-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 1.25rem, var(--content)); }
+      .navlinks { overflow-x: auto; width: 100%; order: 4; padding: .2rem 0; }
+      .hero { padding-top: .75rem; }
+      .hero img { aspect-ratio: 1.5 / 1; }
+      .categories { grid-template-columns: repeat(4, 1fr); }
+      .location-form { align-items: flex-start; }
+      .location-form label { width: 100%; }
+      .event-grid { grid-template-columns: 1fr; }
+      .event-card { display: grid; grid-template-columns: 38% 1fr; }
+      .event-card img { height: 100%; aspect-ratio: auto; min-height: 150px; }
+      .city-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="topbar">
+<div class="wrap nav">
+<a aria-label="Eventbrite home" class="brand" href="https://www.eventbrite.com/"><span class="brand-mark">◆</span> eventbrite</a>
+<form action="https://www.eventbrite.com/" class="search-form" method="get" role="search">
+<label class="visually-hidden" for="event-search">Search events</label>
+<input id="event-search" name="search-autocomplete-input" placeholder="Search events" type="search"/>
+<label class="visually-hidden" for="event-location">Location</label>
+<input class="where" id="event-location" name="location" placeholder="Your Location" type="text"/>
+<button aria-label="Search events" type="submit">Search</button>
+</form>
+<nav aria-label="Main navigation" class="navlinks">
+<a href="https://www.eventbrite.com/product-updates">Updates</a>
+<a href="https://www.eventbrite.com/d/local/events/">Find Events</a>
+<a class="create" href="https://www.eventbrite.com/signin/signup/">Create Events</a>
+<a href="https://www.eventbrite.com/help/en-us/">Help Center</a>
+<a href="https://www.eventbrite.com/signin/signup?referrer=%2Fmytickets">Find my tickets</a>
+<a href="https://www.eventbrite.com/signin/">Sign in</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<section aria-label="Featured music events" class="hero">
+<a aria-label="Explore live music events" href="https://www.eventbrite.com/d/local/music--events--this-week/">
+<picture>
+<source media="(min-width: 803px)" srcset="https://eventbrite-build.s3.amazonaws.com/fe/dist/discover-lib/11.29.24/browser/static/images/home/seasonal/music_desktop-2.webp"/>
+<source media="(min-width: 661px)" srcset="https://eventbrite-build.s3.amazonaws.com/fe/dist/discover-lib/11.29.24/browser/static/images/home/seasonal/music_tablet-2.webp"/>
+<img alt="Featured live music events" src="https://eventbrite-build.s3.amazonaws.com/fe/dist/discover-lib/11.29.24/browser/static/images/home/seasonal/music_mobile-2.webp"/>
+</picture>
+</a>
+</section>
+<nav aria-label="Browse event categories" class="categories">
+<a href="https://www.eventbrite.com/b/local/music"><span aria-hidden="true" class="cat-icon">♫</span>Music</a>
+<a href="https://www.eventbrite.com/b/local/nightlife"><span aria-hidden="true" class="cat-icon">✦</span>Nightlife</a>
+<a href="https://www.eventbrite.com/b/local/arts"><span aria-hidden="true" class="cat-icon">▤</span>Performing &amp; Visual Arts</a>
+<a href="https://www.eventbrite.com/b/local/holiday"><span aria-hidden="true" class="cat-icon">☼</span>Holidays</a>
+<a href="https://www.eventbrite.com/b/local/home-and-lifestyle/dating"><span aria-hidden="true" class="cat-icon">♡</span>Dating</a>
+<a href="https://www.eventbrite.com/b/local/hobbies"><span aria-hidden="true" class="cat-icon">♧</span>Hobbies</a>
+<a href="https://www.eventbrite.com/b/local/business"><span aria-hidden="true" class="cat-icon">▣</span>Business</a>
+<a href="https://www.eventbrite.com/b/local/food-and-drink"><span aria-hidden="true" class="cat-icon">♨</span>Food &amp; Drink</a>
+</nav>
+<section aria-label="Choose event location" class="location-row">
+<form action="https://www.eventbrite.com/" class="location-form" method="get">
+<label for="browse-location">Browsing events in</label>
+<input id="browse-location" name="location" type="text" value="Your Location"/>
+<button type="submit">Update location</button>
+</form>
+</section>
+<section aria-labelledby="events-heading" class="events">
+<div class="section-heading">
+<div>
+<h1 id="events-heading">Events near you</h1>
+<p class="subhead">Find tickets to your next unforgettable experience.</p>
+</div>
+<a class="more-link" href="https://www.eventbrite.com/d/local/events/">Explore all events →</a>
+</div>
+<nav aria-label="Browse events by time" class="filters">
+<a aria-current="page" href="https://www.eventbrite.com/d/local/events/">All events</a>
+<a href="https://www.eventbrite.com/d/local/events/">For you</a>
+<a href="https://www.eventbrite.com/d/local/events/">Today</a>
+<a href="https://www.eventbrite.com/d/local/events/">This weekend</a>
+</nav>
+<div class="event-grid">
+<article class="event-card">
+<a href="https://www.eventbrite.com/e/free-1-week-social-media-challenge-video-going-live-visibility-tickets-2003273793844" rel="noopener" target="_blank">
+<img alt="Artwork for Free 1-Week Social Media Challenge" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1195578093%2F3008044663040%2F1%2Foriginal.20261012-034846?crop=focalpoint&amp;fit=crop&amp;h=230&amp;w=460&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.5&amp;fp-y=0.5&amp;s=a530f04b258bc11bb6c5b5e8c5054648"/>
+<div class="event-info"><span class="badge">Sales end soon · Online</span><h2>Free 1-Week Social Media Challenge - Video, Going Live &amp; Visibility</h2><p>Mon, Oct 12 · 5:00 PM UTC</p><p class="price">Free</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.com.mx/e/arath-herce-aniversario-de-musas-en-mi-1er-concierto-tickets-2002605911189" rel="noopener" target="_blank">
+<img alt="Artwork for ARATH HERCE: aniversario de Musas en Mi" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1194694485%2F264359681189%2F1%2Foriginal.20260930-041122?crop=focalpoint&amp;fit=crop&amp;w=640&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.135&amp;fp-y=0.173&amp;s=7eb2a5b449301d4e815fed580ef3c7e2"/>
+<div class="event-info"><span class="badge">Almost full · Xalapa-Enríquez</span><h2>ARATH HERCE: aniversario de "Musas en Mi" (1.er concierto)</h2><p>Mon, Nov 2 · 8:00 PM</p><p class="price">From $540.55</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.com.mx/e/casa-sotaventina-voces-de-verso-y-madera-tickets-2001764373126" rel="noopener" target="_blank">
+<img alt="Artwork for CASA SOTAVENTINA: voces de verso y madera" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1193941330%2F264359681189%2F1%2Foriginal.20260920-102000?crop=focalpoint&amp;fit=crop&amp;w=640&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.494&amp;fp-y=0.817&amp;s=149bdf67cb2ceaa6c5862db66240076a"/>
+<div class="event-info"><h2>CASA SOTAVENTINA: voces de verso y madera</h2><p>Sat, Oct 24 · 8:00 PM</p><p>Cauz | Foro &amp; Librería</p><p class="price">From $129.73</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.com/e/remembering-who-you-are-tickets-2003284827847" rel="noopener" target="_blank">
+<img alt="Artwork for Remembering Who You Are" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1195589934%2F1069074922933%2F1%2Foriginal.20261012-094841?crop=focalpoint&amp;fit=crop&amp;h=230&amp;w=460&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.08&amp;fp-y=0.493&amp;s=644bb9a6dae5c66b629b179c21232d1d"/>
+<div class="event-info"><span class="badge">Online</span><h2>Remembering Who You Are</h2><p>Tuesday · 4:00 PM UTC</p><p class="price">Free</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.com.mx/e/domingo-aceves-presenta-nunca-en-domingo-stand-up-comedy-veracruz-tickets-1996742237784" rel="noopener" target="_blank">
+<img alt="Artwork for Domingo Aceves stand-up comedy in Veracruz" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1190316026%2F404479006345%2F1%2Foriginal.20260804-195516?crop=focalpoint&amp;fit=crop&amp;w=640&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.071&amp;fp-y=0.435&amp;s=049da9e28aef2028821cfbc71e5f92fa"/>
+<div class="event-info"><h2>Domingo Aceves presenta "Nunca en domingo" | Stand Up Comedy | Veracruz</h2><p>Fri, Oct 23 · 8:00 PM</p><p>Rush Bar</p><p class="price">From $189.19</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.com.mx/e/flor-de-mayo-si-me-cantas-siempre-vivo-y-nunca-muero-tickets-2001763344048" rel="noopener" target="_blank">
+<img alt="Artwork for FLOR DE MAYO" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1193940700%2F264359681189%2F1%2Foriginal.20260920-095056?crop=focalpoint&amp;fit=crop&amp;w=640&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.5&amp;fp-y=0.5&amp;s=19c73bdc27d86fa242e3305f45361749"/>
+<div class="event-info"><h2>FLOR DE MAYO: si me cantas, siempre vivo y nunca muero</h2><p>Thursday · 8:00 PM</p><p>Cauz | Foro &amp; Librería</p><p class="price">From $194.60</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.com.mx/e/simon-moullier-tickets-2003247815141" rel="noopener" target="_blank">
+<img alt="Artwork for SIMÓN MOULLIER" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1195528119%2F264359681189%2F1%2Foriginal.20261010-223747?crop=focalpoint&amp;fit=crop&amp;w=640&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;fp-x=0.476&amp;fp-y=0.272&amp;s=3fc0a7b545d306a96c97b81f7a9ca9e8"/>
+<div class="event-info"><h2>SIMÓN MOULLIER</h2><p>Wed, Nov 4 · 7:00 PM</p><p>Cauz | Foro &amp; Librería</p><p class="price">From $594.61</p></div>
+</a>
+</article>
+<article class="event-card">
+<a href="https://www.eventbrite.co.uk/e/the-claude-code-security-summit-tickets-1997159042458" rel="noopener" target="_blank">
+<img alt="Artwork for The Claude Code Security Summit" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1195063425%2F2993525660508%2F1%2Foriginal.20261005-111146?crop=focalpoint&amp;fit=crop&amp;h=230&amp;w=460&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;s=9b47734f8833578ec1bf36af66d08b86"/>
+<div class="event-info"><span class="badge">Going fast · Online</span><h2>The Claude Code Security Summit</h2><p>Wed, Nov 11 · 2:00 PM UTC</p><p class="price">From $214.19</p></div>
+</a>
+</article>
+</div>
+</section>
+</div>
+<section aria-labelledby="destinations-heading" class="destinations">
+<div class="wrap">
+<h2 id="destinations-heading">Top destinations in the United States</h2>
+<div class="city-grid">
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/ny--new-york.webp"/><a href="https://www.eventbrite.com/d/ny--new-york/events/">New York</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/ca--san-francisco.webp"/><a href="https://www.eventbrite.com/d/ca--san-francisco/events/">San Francisco</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/ca--los-angeles.webp"/><a href="https://www.eventbrite.com/d/ca--los-angeles/events/">Los Angeles</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/il--chicago.webp"/><a href="https://www.eventbrite.com/d/il--chicago/events/">Chicago</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/dc--washington.webp"/><a href="https://www.eventbrite.com/d/dc--washington/events/">Washington, D.C.</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/ga--atlanta.webp"/><a href="https://www.eventbrite.com/d/ga--atlanta/events/">Atlanta</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/tx--houston.webp"/><a href="https://www.eventbrite.com/d/tx--houston/events/">Houston</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/ma--boston.webp"/><a href="https://www.eventbrite.com/d/ma--boston/events/">Boston</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/tx--dallas.webp"/><a href="https://www.eventbrite.com/d/tx--dallas/events/">Dallas</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/tx--austin.webp"/><a href="https://www.eventbrite.com/d/tx--austin/events/">Austin</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/fl--miami.webp"/><a href="https://www.eventbrite.com/d/fl--miami/events/">Miami</a></div>
+<div class="city"><img alt="" src="https://d1n9ior3u0lhlo.cloudfront.net/wa--seattle.webp"/><a href="https://www.eventbrite.com/d/wa--seattle/events/">Seattle</a></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<div class="footer-grid">
+<section><h2>Use Eventbrite</h2><ul>
+<li><a href="https://www.eventbrite.com/organizer/overview/">Create Events</a></li>
+<li><a href="https://www.eventbrite.com/organizer/pricing/">Pricing</a></li>
+<li><a href="https://www.eventbrite.com/organizer/features/event-marketing-platform/">Event Marketing Platform</a></li>
+<li><a href="https://www.eventbrite.com/l/eventbrite-app/">Eventbrite Mobile Ticket App</a></li>
+<li><a href="https://www.eventbrite.com/l/frequently-asked-questions/">FAQs</a></li>
+</ul></section>
+<section><h2>Plan Events</h2><ul>
+<li><a href="https://www.eventbrite.com/organizer/features/sell-tickets/">Sell Tickets Online</a></li>
+<li><a href="https://www.eventbrite.com/organizer/event-industry/performing-arts/">Performing Arts Ticketing Software</a></li>
+<li><a href="https://www.eventbrite.com/organizer/features/event-management-software/">Event Management Software</a></li>
+<li><a href="https://www.eventbrite.com/organizer/event-type/virtual-events-platform/">Virtual Events Platform</a></li>
+<li><a href="https://www.eventbrite.com/organizer/features/post-events/">Post your event online</a></li>
+</ul></section>
+<section><h2>Find Events</h2><ul>
+<li><a href="https://www.eventbrite.com/d/ny--new-york/events/">New York Events</a></li>
+<li><a href="https://www.eventbrite.com/d/il--chicago/events/">Chicago Events</a></li>
+<li><a href="https://www.eventbrite.com/d/ca--los-angeles/events/">Los Angeles Events</a></li>
+<li><a href="https://www.eventbrite.com/d/dc--washington/events/">Washington Events</a></li>
+<li><a href="https://www.eventbrite.com/d/tx--dallas/events--today/">Events in Dallas Today</a></li>
+</ul></section>
+<section><h2>Connect With Us</h2><ul>
+<li><a href="https://www.eventbrite.com/help/en-us/contact-us/">Contact Support</a></li>
+<li><a href="https://www.eventbrite.com/organizer/contact-sales/">Contact Sales</a></li>
+<li><a href="https://www.eventbrite.com/product-updates/">Product Updates</a></li>
+<li><a href="https://www.instagram.com/eventbrite">Instagram</a></li>
+<li><a href="https://www.linkedin.com/company/eventbrite">LinkedIn</a></li>
+</ul></section>
+</div>
+<div class="legal">
+<span>© 2026 Eventbrite</span>
+<a href="https://www.eventbrite.com/about/">About</a>
+<a href="https://www.eventbrite.com/blog/">Blog</a>
+<a href="https://www.eventbrite.com/help/en-us/">Help</a>
+<a href="https://www.eventbrite.com/l/legalterms/">Terms</a>
+<a href="https://www.eventbrite.com/help/en-us/articles/460838/eventbrite-privacy-policy/">Privacy</a>
+<a href="https://www.eventbrite.com/corporate/accessibility/">Accessibility</a>
+<a href="https://www.eventbrite.com/help/en-us/articles/666792/eventbrite-cookie-policy/">Cookies</a>
+</div>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>

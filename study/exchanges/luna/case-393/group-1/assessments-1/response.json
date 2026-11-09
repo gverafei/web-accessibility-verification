@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent legal-information portal with search, client access, trial access, news, products, and legal-service information. Its layout and content differ from the reference, but no material loss of the broad page purpose is evident.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The interface is clearly arranged and its text is legible. In the lower target view, several news titles wrap into a narrow column, which is awkward and makes the list taller, but does not make the content substantially unreadable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls such as search, system login, navigation, and access options have understandable labels. No essential visible control is evidently blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of a legal-information website. The target's regenerated layout and the different content visible at the corresponding scroll region do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headings, descriptions, news items, product labels, and access options communicate a consistent legal-information service purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing news layout**\n\nI need to evaluate the narrow column for news content, as there\u2019s a lot of blank space on the right side because of the layout. The news content is confined within about 735px on the left, while there's no content on the right below 379px. The titles are wrapping awkwardly, which makes readability an issue. The overall presentation seems off, with the narrow column leading to a tall stack of text rather than a coherent design. There are definitely layout constraints I need to figure out.**Evaluating text readability**\n\nI see that while the text is readable, the excessive wrapping creates some issues. It's clear that narrow text can still be read, but it\u2019s less user-friendly. I need to choose a layout that enhances presentation while keeping navigation and search controls visible. The content seems to be meeting its purpose as a legal portal and news resource, and the structure appears coherent in the JSON format. However, I still want to ensure everything is optimized for usability.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing news layout**\n\nI need to evaluate the narrow column for news content, as there\u2019s a lot of blank space on the right side because of the layout. The news content is confined within about 735px on the left, while there's no content on the right below 379px. The titles are wrapping awkwardly, which makes readability an issue. The overall presentation seems off, with the narrow column leading to a tall stack of text rather than a coherent design. There are definitely layout constraints I need to figure out.**Evaluating text readability**\n\nI see that while the text is readable, the excessive wrapping creates some issues. It's clear that narrow text can still be read, but it\u2019s less user-friendly. I need to choose a layout that enhances presentation while keeping navigation and search controls visible. The content seems to be meeting its purpose as a legal portal and news resource, and the structure appears coherent in the JSON format. However, I still want to ensure everything is optimized for usability.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B_WX9tbpoa_QhxPFFEwk2UvQMXYj9_Dz1tmpUJ97q7pyCu-jD_cSdflVTtbm6Xp20lrSNEOY-yVWmdJ46JWDNHRN0Jo3FS_r2x2-vdCiNdXKFJ6R7E-6XmC9BFwAbsGryfyooMak5xVs6d5cacKsNnPkOefccgS_ASH7_mtc611ZqVKHsQxz0xeQ3PY0hmFA1IrecOa8Qqb9QdvmedxyrJ6IhlUgrCRyFC6LdPzPOtHZmEpT5NK5ImWcek76Cx8ZKROlZ4ooAteDxkPuX35zlQiFb4KLdHtyK_X_s56DHqPHwbbjhS9536EYqLDmd9b32JmlqG8SuvoABUUDtIHfEsHex9dLyBOZQqP3mCWtl19g8K83Z3PmTfYnztKEPWC6aij5HFfWaNUKxZyRxoeAEe3_YFCE48olFnLexlrTgEeyJRoMtjb8ifb-LvJUnYbfsLkfwRDz6LBakS7kD0rVGkSar1YE_HyBGIavJEcqmNoHmK7Cvrvd3rKvTLFitFCx8GXYrEhRMYYDb0jJX3yiyvji_JFj-4hBmaRTI_cVG2sHAnV5CnpXmpjg9WglCeG2fUcD7pnVO88swfgADMjx8Mwso1yDp9ScVKwuLoG2WAquAil1yL6ry1oItWeWd24RwmxfPwijyf-2-9I9Bzs5-r-KuUFBt7m2AlQT9C4fcp9Aa1dsuJI7BID8IUvNCJRilVZCZxbV9RN-VwvDQTau_rvfxiIYBfZkDE9kS1ttZAW9WJHerHLHxBkPangdgVQQYYC4B73LPBPcJJ6xuoVh8TZHa3H_7g1mOI2MT4mWNRifufohZ0jTNqe2CvJLrVKz85NfFsYWlRFvu9ECYHPTfzzRukQEi70I9Wy7vgLOXSAoMn6WpBvc3iNRcx63n11qJLGN8EhbuUBCHJXb8b1ETaPlVcvjBX_SMtX-r8y5uJswgfO2Gc7BvJ-W2KOZyoqkELXkRthgadt65JKAYVJl5OPuwR5qZCmURuzTgsfE_8hJm1m2waILGJDGRq0x4G7heIKKUY0n0E_FqYh2I8n_QYjEjugkcjZtGqywlHNpXOKqn3yYs1Rc0-IRwrqeiATLo8-NzcYJs-c5eY_hl8ALJFTcL979E6FS9sTtwCAISru-nB-m7xqSKBfFUM5f_EZRPuidrQgJhHxmhlT62tIDcdBSFdqGT4VBEcmFCh1a2_Sem_xfifEC4YnZkcOUSlJVhghawnFk7_bW6lT6mvtk9PrQwSmR4JJaasUpGeo2f9fLmcUzVWR3dTpXs2Y4NVSvB6yG06HUnDzYoTX_wThdd96PCN2ypcY_PNikA1ew_rh6EVQEkk_PYHXJ_gmhSDQb1V6vRBXyty7kLSIn2QABeZiFTZHAnuUVfR2DlHLhN8Z6I_E3JQAFEaqnMmitnO5yR9oVV4qWSknPUlMxr-SIllAbsEyeBIEGSjrMtEOYyWOcB-O7A2v1Ul4Bw3WrpQXA2jwtvOcIdkDbSBO2TV1QccPWLQHwea1aj0rTYPEPvZyoiEJzXNbuuRBhdw3KsTDvATT84aAIr5dvbRDlS3Ksh8eNq9CGekZNnEeXRpshIZbf82WtglgJ7J6OW461e6NXEN6s6JS5Mg0RM5JezqTBPbw9o2mZb5NLCgM_GaMFUbuIB45wZVqTOSoimLQkz6BCb9bZLMEB12D7OyJ-Rsa04UqjNMz0_XbK5Znzm4SEgnzbyHqKut6WAOOSvHWKi2Y7q1Siy6-9yUKvoL72104xIvHdTuBmnO7nYu16_STq1W7T1AsVjJQ7qPHDAhv2Zpt5WeIglYZnE6fXM9jEKNXjv6Wesu-KnrwXM5HQ5Nc5YcleAbBZFF9ZWbp18SIOb9sa_scdrUKyJYb4wsrxJUoLEzMFdtkIzJ8_DjOzWcIQi46XL3Fn0-dkdk6Ro0Sf1_9aCzbyFZuPaTy-DxcBIpxCngoYdfKfSzSOc-J1gt3DpBJ-EocgGBqGbSW08IiIQUXJoO-fmLT5ozelhQa0YZgOFNQshia0jOpjnm6dD2ZFbd2whF2fUBqxjQIL3i_w6CxSDbwrf_ok9aovIxg1lBk6bsXn3GoWcz2UIXFgKKgin-M62Rv8yPAsim7_r_rHrJ_v9txwjIuolpp5mv7XGKFlwsK2uOWDkaYrK9oRvav3oIKVdkMAoQEAWQgrSybTh3JcQLQ9ldzL_GdRMW_jWcu3p2Xa3maZiVnQHCXwH-FSQo56CD9J_Q2z2BbVqI9325fMSc8gQQBe-aLrNnaOBEWfRkXe6uSgNq-xf4OxmuiOTp77dwwfhv1aoEtu5DelDaj_t2Yc7uWWQmA5cLwRswCJbtKU2PWD8LqGJ6Vczc6zTggQr8y3qLAjzKSSbpFgGcwZUfez7EIBrXZlw2VOhTx6ylY6-OUNz6Bo6rPMvBUnyCsvw8t-twjp_K-9cvKcbNwqlYMN2xH_xCTkTberxYDHh1z1UEf4hQ5KUHbu7Y98HTUJBtYxL_8lelaTRvRGEdF3nAIT8Ngve7QfdvIEsFFzRZzxDmjBD9P1DY6Z8J22ry-uY3z7R4Vn_IJoIneCqikL-UQMcHVC5n0ce78bn8s8dIVmQnm9uSsefwapYwYzgUhu3TQMaNeU9moWnwKEX6QxX4abEshE4-P99wGKLSawHMwqfsrRnxQTOwDRzRKZH6Ar638Sf8MLonoWUZRmCFCCKANOSYWJtKP4CyCsi6bneLtFKZaYKFaGV6DjRrGFzgIx70lORqhMbuvOBbI4IHPgqBFMUFu-qWOBtMFcMJV7c8pCcUyxtmlLVGgVHMeoRhrbIJhLPUfu23om0KfW_QPlfe72nrLzQRvuQFUzE3n0nOn1t1k5gJeiNpERf4VUq_7Pi2I0VU1Q-pxBE_BYqRhKfL0FbK-EztPekIrf3lofPyfZgzpqnC5XrDGT2G9HLlg91gU5e3vXWtaimA-TUwmbZx9kcad5kPhQRwcu2rPZ7f-UYYLuo2jaPLGuZEEKcNAN6AwAAKuVw_YBGubN6PA8ufkdNK2RretYFVvAEC2BHDzHNtWrQjveMdqpR8DHlEf09MoLQd0UA84VVnetyH6TgOsckK98KrJbI9vHwfSJWclGNh0NpyPoBiqADgCAEj_SCpVywqpC18keIFuxeUS3DJLcqCreUTs8LqLg5mlMr5-G1vVpbRtxjo2VtOKYY7FY74ZweRCJk_DfCu0UoJAx164FQRQIoGwts8y5aOk9d-dMYrezHX0lAtcyayubPB4TsLSi9UiJ0N4sRdsdeVMb84eDJmAq8Cz1-hjt1n3zuVEUOJMZov5F_H6Z7zPmXKfTHvqaC9w8GjgHc1u6je8SmcLU7SciCkuEi8HwvLNNNiK7lIv9t56brj_ARJ2v8TiPCPmC4xwMeaMwi6UmKVD0rHFTbfwZoMB1zmEP6T1QS0NZ1RwUzksMoa9ydRJvMNANSqL830oNh2G5FOYB6DCW-BTXLBdM39oWrNjOcV-fqy1fKdlxRJUtN8kKNIgYJut2hTs2swBXrtqdS4S58YhkhpyQf0QalwUrqZuOgN-VjpSRSbBRvdh-kXoDJefJe5gsHBWRQc6x55zhCOXYASn1PlfxWo8gpOj20-YPA9otYbKNOELKsXrjtLSGDF1bNPJJqyrbIjBwFXstjoe0PzkA5lDKvCCG836S5DmXPEF0MWpzE4PGwCbWPjewyehR8Z5k6l48C6cfHAl6Ca8xvfrt-UO-0ea75uX3yyhZqx7Ouh8LLCNMX1MCZ79x4GNCzTTv_hfJx8T3xcELLs8KxjkQD0coRfAAjVNZJNrWNxk1wdFp0e50z-E82_VhfKEM5ox7hWkD7kBfIuKNcU1U4dXuy-3rxNTLIU1COq5HQuJIeiulLUB30G1FH-knzNnol2uqfBL_Y_gOpP2shCMEfnPfZCkmeasj14I2lsjXwd0Y36tqe8_NRY0Xwk6GpkJ-oI8Jt6UJ1BjTmBZGSh3B_kz5IEoObiRJPyboniouTsIzLdgOfn5CVpPJ-HVIlQsGjcX0gXOS28DEAuOn8UwW5Mj_aojC09CIwjvQw1HRyN4X_7WxA2mSbEfU1DRKrCPG_BdXbWUwHZdMJoVw6KwA9W9DYIckxRLENECDPQU8ghRnaePuaix7MjXEZasEsa7lZy3T7ICt-pISfuUHrenLnmjP3AWLXy80APkG5uWidVea2kVswBNpws6L_TsFFxZR6DiVAMQ-nPaEnGEuCPS6SncvOp2F5LYS2eVP7W0DSUp2d8i93ujWGz1wQw7j8dmJk8s3_SIMZdhzURkf7nhFqRXyi63KXZZwKzGQDMPSPbgOeZljYosRQVxL1pndl1dnVpqwR3ER2GAo20o4p0VVY2_NX28tyNuAftEixr6deFmHQryvHAXvrnG3Jz6cwvywELwiQzFY39uAujtlbjRZVmar-YJURFpaymKPjPA3GJylZ8Nt1fz1jpMgil9syOzLZwP-_gaErj52M3osKmdd1_FFOWXTwXaYztoynBH0YAB5tZJPwXRFh2EKrV_57hpvHWfOfuvw8XMCrFd1NRTcSUyD_r9xc1uaAqA-QDdo-uaD1Vf6EqIirAvEDNIwzxfOGHr0HbRUyIDw_SXczve_nbfjlEYsQH-oO_SLTRaHgf6-Oh5ocGXPxkvwQQEa_LAxURZanziFvHvWmZM86KvdrkDINsCP7CsCAUiQt_Pc1si_reiSeSq45b_MN7GrXZQ1M7mG1-87KkHIa8chOYnUhZEPm3fZDXhlRIbb4tY1uEAzGvdGS92OvXTWCuM9PzRyiN7rVYF7RaGwQ6FEGXIl4a75IDHV1uWsWseCvFZYnMD_gRFjYkogn__KuorsQ8MSN94PpAfKdJK28Gw2ELyk4YG6D0logPgXymw3pP_AgfPxHM9s1zgpKdRIqV84LZKiMDmUj3-OdpyDsN995LoXZJYEBF6yi-ARwUN7PblYPtiASb2vmwzZErm5Zl1L7A4FnboFOJ5xlaLJACCfalOS3_DCOSlVuKJilAadxBqq0Dgz3DqnQSQB6hQqErmJ-vPw_eYHG8ULOsw2u8ibV1qStTN206p.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_025712d69cda6c0e016ae81fd1fa6c87d1890e8f55e9eda5c2",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10056,
+    "completion_tokens": 566,
+    "total_tokens": 10622,
+    "cost": 0.001539925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10053,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001539925,
+      "upstream_inference_prompt_cost": 0.001256925,
+      "upstream_inference_completions_cost": 0.000283
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 254,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

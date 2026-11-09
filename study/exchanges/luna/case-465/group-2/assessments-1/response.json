@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible product cards, section headings, feature cards, and footer information shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The content is legible and coherently arranged; no material clipping, overlap, or broken core imagery is visible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links, contact information, and the play icon remain identifiable. No essential visible control appears to have an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target views show a coherent comparison of the same page regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Product descriptions, feature-card text, and footer labels convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Creating JSON Structure**\n\nI'm looking to create a JSON that includes images that are either identical or nearly identical. The footer should also be the same, ensuring that all elements match or are coherent. I need to explain each part clearly. I'll make sure the controls, like visible links and a play icon, are included. The footer text needs to be low contrast yet readable, and I should reference the same target for consistency. Coherence is essential!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Creating JSON Structure**\n\nI'm looking to create a JSON that includes images that are either identical or nearly identical. The footer should also be the same, ensuring that all elements match or are coherent. I need to explain each part clearly. I'll make sure the controls, like visible links and a play icon, are included. The footer text needs to be low contrast yet readable, and I should reference the same target for consistency. Coherence is essential!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CDXbB5co6ntg0dm6dbE2IZMZTUgkqU00xnQf8w02JiJlhRJj8JfG9p928VNmdGbHMQEzarrbCawQ7Ezly4e8B2UibG_GMo6VmhrW8lXpJ3X-gvBwev5keV0OVlkIPN-U1qWMsFhk2UziJ6T6QOIl8t6oYIP_W-bfzmQZ31ektUOO7LDN6J4EqWAeUUATkIw02jiHtgHKPDOoTQ35wjxvGVJDR8LmDqeNAvtP50qITwTJ3e_LcqjFYgzrxsgdXAndPa1GuPbSmoEL15yPxHh48SpWyHElsDZursV3kSltw5pE9Wmse0ujm0isD8CK-A6j0gCJkqmJvNaOoa23eNqq23nyOB9QbID0zry2NOlnYKPJu50kt_kpWA5oXxLen4ubFwNjQxGeo1ESZR3Ydf0h7nxHb4ZI6xJchwf4VXSAZ8BjQ9D9QQ3ukREebZfGZQ0iQPP8ZxQt9dip3M1bfa0deTgNGZqv5Uze7NIgfSzglMIHQR1yiRm1iC67Ai7_DhRINRBI79YwTkOqQlCTF2bmII8gbnMyTwaeaH7gbQFqF1yBpmmYfygRGMMpz9jdObZnfwzRHjFz6l7OATjmWS3G1vFOalwj2-EQcw5JF8wcKeFPqB1tw4eRxECFt9A1js5xvcmaKEyDLjGFh-H2UwpRtevtdvc_6g7aR5RznoQzy4CDLfBNOGuFsdb4xSQc4lZWTh7WG9h6pJgWWZkTDcBSaH3afdXxIFiVYxVi4tCi8GfJIULOQ7HnhgV_cE8ZpOY91x3_L0nypmwwUjcf7_tjmORCa00cRfvqBXKx_bFYiuafmHoKPA2u11ehi5aIu5TFxlux-0SHcq8ovAv1BUdvArgCfMIBnFww6m1TtVwpTa5NtYnzS1bt8wGeUXviDTjgWeSlpRqnUXC2n3Newcsy74a1-fui02chEYcvjrh1N69gb_3dASGb0vxZ6Ci89_mP3RrETkbs3uwCiVOaimTlxIF7aNKifOyonFdSuQpAUo5_0Br11vtDl3-uWM2YeeZ-Q9FEW8l5EFocNkfFvV8svuhL9pTxdbLRI71sT9h5R8RKrW9fi_IIq51VhMVCUnkNMxlzO2dCBphMgBob9sWvJfnM-2MGCUV-ktexgOX7ZEAjQodVcsZ6wfRoTYZaMntUjhTksOy3eHPQtAyyLrw4zDdGsQmvJSHmRelnlJmCPZM65nrdOiZNTJ5JI6bERoIYWw-73s-cbZ1z5uHtRUVawCdb9NDdjhkhDudsTvvTAqBNyF7l17bDoNaa4CItLLr9yMTwcesjdjdCEHPMfa6SMAGffe7AAdTE-OxwB1rzN9wpQV4omboZrMzBvvVhWzQ0Dqvrqruplm4qUlFp6b78PSOidkJbA6BLSvdPS75HE50ZYqsAKn9RRAMGVC3u9FptfhRJtOKHkwM1l0RL6rq4-6zgKsRic7fa2-Yx86N2mWgdv3PQQ1TRYDtyqmCF44HtocMWA0merLKRcBkYh9MGP4v5JHF5EUTlV9EjrEEZHvMpNG_-FeQ-s2-3itU3EgIsybHblhlHXaydkvHA6BuISjTK5T26j_HXJ3MhTDA-vzOXk1O-ryWuMuii56HafuXiAF0beeq9qU81zB1nNd8L2ZajfXeTGXrM0nT6vB4VlK_V8C7gbihwJU4GvGqvj82e81u8QsedfSz32aFF-aAYfEqtY-7fIa0HjktEs9yR5NzF8giOQ7QXjMlWDgtwJUxhy4g9vzK3zRbQmCNUcaZJWg4j1yrGw_QEQOWclHgr8NubrJZ_Y8CX9xNCyrm4WyW8u4crgekTcMxuCiy6MFYzowurdmLCMjSKOoI_hUOemx4QUcYCQDIYQKImsa3d27lJEdFMlg8JwaD2ZPSB4vS0pLv8htl4iGxh7CWixQhnIPAPc_P_Un8qBM9iJRPEcs8GXpP5oYZf4uAXfw4WmRxShnZwEsfhbNH0ERHUfwkdnEQ1yCppH-vRbWYFhangC3H9vbsk51FlPSl0P-rmsu9DpRDKJYAC0MHu8DtstWGHFXismyWiymXmOvUA5RpMLGnhbWal-DApsOGn1aAxp4WAM0NVHnXSaF_M8mXT26sIGQ9g2U9mhBXU5qeIzxMwsv_irycQ73ROWeAwUjg4jLod0EtW7t9h7VQk2uVpVEmg_oNDi6vwLC3bGiVMGDyLWV5rYBcuBZLeYlCKkZT6EnEKglt1L-FyzUVPmE1Rdt2TkQdXGrJNKiuR1xqAWGxj7VlMUC3k8RKvMX5X2kaLPk5uNzpmTx5sT2Ko02xrGDcGC7MTI83Kq0KhDhIwZash7E2X7g4ZfP0T_R4_DG9OdGP_TdNLzcZoDci2oTP6wcFGbFCAEc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03f13eeb317d8c28016ae820d6539487d1bbae15cdb0b8eb50",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9826,
+    "completion_tokens": 287,
+    "total_tokens": 10113,
+    "cost": 0.001371675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9823,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001371675,
+      "upstream_inference_prompt_cost": 0.001228175,
+      "upstream_inference_completions_cost": 0.0001435
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the same cloud collaboration section and product feature cards, including their descriptions, imagery, and links. The visible states are effectively identical.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Core text and product cards are legible and coherently arranged. The headline\u2019s overlap with the fixed navigation and the partial third card at the viewport edge appear in both reference and target.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, download and sign-in buttons, feature links, and carousel arrow are identifiable and readable in both states.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired windows show matching page regions and consistent interface states, providing a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The text, imagery, and labels clearly communicate the page\u2019s productivity-suite and team-collaboration purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Gathering JSON requirements**\n\nI need to create a JSON structure. It looks like the images are essentially identical, but at a certain height like 3000, the headline overlaps the fixed header in both reference and target. I have controls and cards that meet all requirements. I want to make sure to distinguish text clipping correctly on the right viewport while maintaining normal horizontal extent in the carousel. Overall, the page evidence should be coherent.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Gathering JSON requirements**\n\nI need to create a JSON structure. It looks like the images are essentially identical, but at a certain height like 3000, the headline overlaps the fixed header in both reference and target. I have controls and cards that meet all requirements. I want to make sure to distinguish text clipping correctly on the right viewport while maintaining normal horizontal extent in the carousel. Overall, the page evidence should be coherent.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CBTOn70J2D5fkfxcomK1BlMmSx_8uPT2zWkPhSGnVwkjvXAftTVIJq3fcEpmjKWUYtFrxk6OmmIWQ3g0kZOwE53QmFQGDB2hx29j3OCrkqlhVDMQOd-FJyVcfw6YzMwt4Ez0EMUi_2da6hj4jYpFaGmSlHA5bJd2leETE5o9tYM3ntErKnIraqZ-dtOw8QEM9F36XjY5REUj7po9JDDAgorfCQiFNW8RcyMfK9rj3CK7vAa8DaIZrYlYe3hHt_aSjZF8efh49Koh61bYZprghYi8JIJzcvRcNl99GHAtryZn8w9bPGHYUAl275ecP0S4a0dAJySA2vALiPa-4ElD9Pv8J6IpuTweQKzfo28hWZOj5ixTk6Jhw6ukf3AkfTgb5XuGi-XkkxtvixS6fHXNxVzZafHMBv7pYHYA9Lqi2d-XeiheEKrFxL5QDmPylFSrafWv45PkNGoBZYeaGLw2XFO2yP8Prniaop6heFC1UzqZwO72tSf8YvB7TIRdPsBdoxE2MF_DInmo4UCehZOqNSaaxzw3aehvil45LBG8PhQgnOKsvVdu8OD1I_2ggUsqaEAIv5YPlCB0CBz10jGdNMUc6lij8Dyc9Mdo7yHF_reFdeguL88t8jjOxz_9SjxQMhxARhp6D1KL2yON6i4F-7uceWYe2C5lb4cQpyERC3mZn-bmcZTlkdFyRzHffAZq4LSD5i5D33Jytq61tui2PldoXAR6d0H_NhfmHIDiD72hHoMTv6oWqW7r4buiX5XTHJDxJyrAMtCWsosEVt6Ai65JMJX-AAKIJ6aHzP-hTEFW97ClvOk2U-zST4LlQCGHrsqscJhrS2ZP9-N3mQ82jj-kS9ORe4qCmDoWwjyKgEFsfPd7sszJIKAZSJYgnUMLd8Tno9sd5WJ_-MeTe84t-H9t0V8odHdlzmZ-60nsfMDKJ4b32ONpIvvpNqAQEKpznyPDncp1nFnZm73uBjC5AXUpXvU-1QkXd7aKDTd8sp6wgoQOolj4SA3ZheMga6ZfTxYdcv-Z1-v4jgq8GSsurliZxqLj0dy5gIrhvJlP8t_1F7rjr3KMyRQUgGUQvVbPeB2EGGwUNZLWTHXMXL2rIOAwyixZVVN1dGbAdN2d45c7mArzxmkg1n1Nsb2ZVL24uEXbS2nb_HLQWu1RDyIMlcJczsIvW9PdKn_6_wa2NGw5z2ooTA4HcSpWkFn2uZejt5K6_XCuHCqYIfqhSb3kpCLNvm2zjd4Ew7Hln4csUDz1bvIAoEbLV7-eRgC3YgoZ2CiHMz5xrZ7lmMFbWZfaXLX8_DRk6B1fnfFBOZoGgghRnUyVjAjLteKsLHgdSWKyL_Jw1c0iIu6xAAa9V8hAWkyg0dDwMx0dCgatoY25iUiAT-OddNGikl8Be4Mv-7kb7gC16z-FShXV-GNS8vlvweeVsxg72nhgefjFElUwn4raFKqi08yoedX4KL3kxKj65QsuyxNGoHzAfTfe77X8H1wtuOjbyDW2IcsPkaT2W0Jwq0Xbg9v09WqoXroYhGfWWJyQ53_XmJPhEfMRscfapCAPHfpdHPTwWaqpfwN5HMDfRGLkwGRS41rdrHLZL8h1G-cEDK0s-2VSLBUNoZ9_-9Ocjs6ylSF_7OO00wKYm468k3lrsE3d2dIPWDzgL-bg3YuLc57nW3HihP0YfWPg6vaZlwtEd1jrFZGfbKnGuTzVYdJMwMZnApp6egvAa_Zn9sfUtdgkXC0INR3WTdhHJqzMfo93hQ0yLiCX-dFJhUbN0KIfzfeInLkkJddcEw002sp9C_P58qZ8WURmitNX66pu479w-9PJxwZFSWHsJWY8RnMw6XBtpOtB6Q6PWfrYoe99pTI6fil2Xupg59nZK7u2h-lkBp1DoCLQxsXw4Xp7oewe6Ko7Joqo_ueE5QEkF37K-7Qmz7dHMlXCP8KuTrRo4SNRoN5Hbs28n8NIpaCU3ywQiotBJZoIG9fj5P2leTYrnsHKHaGmEqGS2cDk8X0F0C1G2QKq7k-J2yEUtWWHO8pngwGG0n1ikgcO0r_yRm0Z5k3UDFYJGi3xATWLDTLLcU9eyLCTdCOx77_qHBFG7Gx8VrprNBYGdK80MQy0B0pL5XTPiabb-j7kVEourW_18p9hed2-uS0zABc3Q_uvIP7UuP_IlwtkHEj3es4txdWY5RW0OxS21BsKcnVyNP1TuwpTzH4g4jnLQi7lmnG5fnVQKdHkBUPRQYwv0mJsn53u6v-5m7RhGR1hXWH-gwl5rjdHn5l8SH-K-iKU4Pkfqk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07b65d40748a11b5016ae82051f90c87d1900a5e4b5f5f396c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11042,
+    "completion_tokens": 254,
+    "total_tokens": 11296,
+    "cost": 0.001507175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11039,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001507175,
+      "upstream_inference_prompt_cost": 0.001380175,
+      "upstream_inference_completions_cost": 0.000127
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 52,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

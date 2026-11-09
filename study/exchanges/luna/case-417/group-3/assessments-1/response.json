@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Education, Lifestyle, and Healthcare sections retain their headlines, summaries, bylines, and editorial imagery. The large blank areas appear to be ad space and are excluded.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible editorial content is legible and coherently arranged in both target windows. Minor vertical alignment differences do not obscure the content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Forbes header, navigation links, and subscription control are present and understandable; no essential visible control appears lost or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired screenshots show corresponding portions of the same Forbes page, with consistent section content and structure.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, images, and labels convey coherent editorial content and maintain the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Comparing content alignment**\n\nI'm noticing that the two pages look nearly identical, but there are slight offsets in the target page's content, particularly with Image3 in healthcare starting at y241 and the target at y247. Both have similar articles on the left side, but there's a large blank right side, possibly due to ad slots being excluded. The content at the top has minor differences because of scroll alignment, but overall, the controls and header appear the same. I just need to gather this in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Comparing content alignment**\n\nI'm noticing that the two pages look nearly identical, but there are slight offsets in the target page's content, particularly with Image3 in healthcare starting at y241 and the target at y247. Both have similar articles on the left side, but there's a large blank right side, possibly due to ad slots being excluded. The content at the top has minor differences because of scroll alignment, but overall, the controls and header appear the same. I just need to gather this in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CAg7Nn1EaKFYztIfjcAe9wQICnMicBhWEMeYCk50R4vk8m0mbK8WL8__FLlIDiIb9g9ygvgmWgiMaHs3Ef-P3mdbj4AoWqZ33F_TSCQlX4W5bZV6YDyCx_EHqT9iZaUfNk69Ei4fRrcH7CPphMcnxpkPjmc6Ucf3ml3tezErUEklZ4BrP4YjVDarjHN0Jkwve8xqmEhWJ2mvaF2Rhk18rQ0M3R6AO0vxu-IefDrFDngy7mGzG6mLVdcdgrSepiIwuQ1v8wgL1Y8JjGpyAtQ1-nHEdb25X9tH86ZAwVHQimbaCH5mt7M3leLMyDjLRK-H6i2oYr0gRqOyaNtQP8VJ8lKJ8dsfhy0k1LfRtQ25rYThBfDKpQpVbePydcfXMkrPoDh17-PKfoWZHuIeFa2eD-iVWBFJSo1FBXaIQgEyg11v-QZT3VP9kGOxXeYdyl8vA2v_Imx1y8lJhxih_PjULh9turEtrsWM7b1cujk8pQTnefPOuajl-djcCMYFNeefVepjb5Qm8wmYneruTWJrqVSgweHhbYvFh02eTuLgyA0yHT8n8h2wN9Z8H6OVGUhxvlNrc3T10CemxOR1OSEdy9lksoH9COZE2CyCTJYz_Id2AvTz0aFGEa0X45krBbVl4WzGA9mLBatwCSfR2nM_kQdVSJjfRfydRxLPotgeqbPrfTHQvO7QR8f3TNocE5sqgByl03d8UqGrBKAWsSdS2EWpfE3b3_n_6x0Sk5Ai0G9LXMFwsuAl0nKFfpp8oXx9oDsgoNnhacVdJUFnX9ou4hSFkLzL4P4BmRBOFH73A6F77-Z5Tu8OuXnxTncHQi8sR7LGxo76h1ZrhicPkOt6lQVc4fuab9b_Q_-ZJ32_KelYMQGoFfAV6a7cIj9fT7DvLKrzymmf5WeF0m1A7-I5Q4naYAiJcPnVIQ7nBN8wU9--BVNtE43BgcWLHXV17QJisQmj5PLKemTxLVy63jTqHCmeOXwq_XB7u9I5sJZI7Hh9zOdgBgzOyfmWyYO7U_2DdTMAc5latjMpY43M0arLRbuZlzCPv4aWNfhwIZqduigz4v_lFskEhY9Q5vpdRB5sdE2jcGvlxIyG6MYhPrmPgVSbUlKQ4cnZbw2vYwdJTLtZ4gpI9ALkgPY8yTEUbBhrt6rj-V-aFlnG1CXlSgS4XRll8zN2LCCvIAk7ByGNxQqxgj0KTZFe4j0E-KdMW97LRpUwHR3FRaYvhOjv--janwBHLLBF5FYPc6qhqTc_k9ps83VLoo83DA2qAc0EhVadSZAOsiClRIWbf8c0hOs7Nrp8qwOumP9CDNc7I44wpYIwNeY4Bfz04OxUNFEGJXhACQjJJqKVvoIpIbNCp_V1orkyInLnCB9-53-FoeMy_RYw2Tqrlig99J0JzJcJPX6Tb8prRyobRCbKPLhXZijFxhcS0-dmsmLjP1FYTtBpVNGXymWcxyERctI0Oagu1Hix-xB7RT6p1-CAdE1H8JzVxpJY2vUiP9K2YozSa9mEEVbO5519eCM8A6_vWFzVouCTkfct5h52Zopw0wBbpDQtYXvh3LCimvxAMDrXIEUnh7rWn9jXXq3EvJNv7MZB3e24XOPvygviWnXWWnkWuyaa16j2O3JlDHVs6S2wNi8NHQe8YllJts3oMmwpg2YxEmVb59UMGY_C1urqLy6Mh6qQ-lAq3t-ACZALAm6zZHHA3gtDJgqz7kqPxpymlEV4_0pmCc8Cx25Iq3gFtgW5zLslgV5y2E6k-tEk5UJyrGpMS_zdZeLmDCNeB52AOOl4dZAtRjKWKdcM2rIOqgPqG0dD3SFLjyBypUov6MGLJr-ba-wy8q9NSVZ858tfi0op9dD464QvpShf9PnhdMQLtyncl7VfZj-Q3DPw4ALxBfdiRTqLT4Y0cSmDxEZVFWhRMZmiEWTf6lClEoI0c6wQ57eaCM_GDA-_NOjQM_9jWqrmG78ufb4I9ABUGmuT8ai4rY7mf0RaGIyxG6zqX6Hs_hpaIS3Csbj4o3r-__Mxmpteebjg4QOT3i6zqO3Hsg1Kfrlt9TYPW3JTNXsikhzCruh9UJyBD9OBX--xtJGCr26ZOeJc1E1WEP7TJUHar1XyTPece1w_yBkI81uTJIzlCVE-JtP-AyCTbCLXmDUUuYFTGh4dY3hQ4oJNUYX5M3S1PoZ0zLi3jYhw3RgGDX_sinI0EeqfVYchaMFbd23ybZy3R1cHX-MzRzK3AdfyCzRzwzqX47Lil2Ts1oS-nONCMX2V5XwCpP-Dz4ikdOHMCGvvKVgJ8sf8KaTdNhWqHLRPfpLVB1ixUrIngf5ncMyHX_vrhGs8yPgmwIl-AdmIm8lcKXstGF4PceEHPd6SB0wsp0VsmK8mUeorWcola7RsxZwLFAWm5manNSMkTF3MW9AWpfz42xGovJ8fvVi2v2y3ATAJpAJGSZ-MTRrziiQJCgcUkJwAw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f7fed77bc4f9db7016ae8201eb11487d1a3a87f637ec792bd",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18325,
+    "completion_tokens": 316,
+    "total_tokens": 18641,
+    "cost": 0.00244855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18322,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00244855,
+      "upstream_inference_prompt_cost": 0.00229055,
+      "upstream_inference_completions_cost": 0.000158
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

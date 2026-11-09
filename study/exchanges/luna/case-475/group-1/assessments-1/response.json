@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots are visually identical in both supplied windows, preserving the visible HBR homepage headlines, article cards, imagery, and organization.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible content is legible and coherently arranged with no material clipping or overlap; viewport-edge cuts are normal.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, Subscribe, Sign In, search, and other shown controls appear unchanged and identifiable. No unobserved interactions are assumed.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target form a coherent comparison: their screenshots match in both windows, and the recorded component inventories are consistent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible text and imagery communicate a coherent business-publication homepage, with no apparent loss of meaning.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12640,
+    "completion_tokens": 195,
+    "total_tokens": 12835,
+    "cost": 0.001677425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12637,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001677425,
+      "upstream_inference_prompt_cost": 0.001579925,
+      "upstream_inference_completions_cost": 9.75e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

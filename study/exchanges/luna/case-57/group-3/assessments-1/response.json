@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible page content across both supplied regions, including the audience section, introductory call to action, illustrated banner, and footer links.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged, with no material overlap or clipping in the compared views.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, sign-in and join buttons, audience links, get-started button, and footer links retain understandable labels.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target images match exactly in both corresponding viewports and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The text and imagery continue to convey LinkedIn\u2019s professional networking purpose, and the footer information remains meaningful.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11107,
+    "completion_tokens": 185,
+    "total_tokens": 11292,
+    "cost": 0.00020384,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11104,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00020384,
+      "upstream_inference_prompt_cost": 0.00011134,
+      "upstream_inference_completions_cost": 9.25e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

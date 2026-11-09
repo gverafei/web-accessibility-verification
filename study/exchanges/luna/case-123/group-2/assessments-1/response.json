@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target conveys NIST news, the institute\u2019s measurement role, and related resources. Its news titles and explanatory text remain meaningful; a regenerated page need not reproduce every reference item or image.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and links are legible and coherently arranged. Some news cards have blank image areas, but the cards still communicate their titles and do not appear to obstruct the interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and actions, including resource links, newsletter signup, and footer navigation, have readable labels. No essential visible control appears unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views show corresponding news, institute-information, and lower-page regions. Their different layouts are consistent with a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, article titles, institute description, and labeled links convey a coherent meaning for a NIST information site.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target region**\n\nI'm assessing the target region for news cards \u2014 it seems that in some cases, images are absent for two cards. There is a card where the top shows part of an image, but the middle and right sides are blank, which could hint at image issues. The news titles are meaningful, and the main institute image looks good. However, I'm wondering if the empty card areas with no images are acceptable. Overall, the structure seems coherent.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target region**\n\nI'm assessing the target region for news cards \u2014 it seems that in some cases, images are absent for two cards. There is a card where the top shows part of an image, but the middle and right sides are blank, which could hint at image issues. The news titles are meaningful, and the main institute image looks good. However, I'm wondering if the empty card areas with no images are acceptable. Overall, the structure seems coherent.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bp3-L81oCoX63zYRBQZ7SCnom8fleinYfHuPdJhkRBbX7fZJYLPJdMtFyoQecnRcmygBZLuW0CZumsxZQ9xHbioKXCMBtM3kfO9BkXO-YGIjQvoylOe1aHgaNa-_I1I30Et9c_6gxHjnqjfDtRZEY21LcWMyBz5f6jjybM9CPUuN3t9N2rB958FkTdJPdUvcpk4bI0RheDxewgrKexlaqEoCcS-nxCFAA8p6QCuUB8Pi47H7YZGGjEZtbjV-U7CkbhJmNc3GpKbVNZ_DLebYzrqBr1PIZ4JnxzkB4BbaWp56cNu6cV9jdI4uPS3H4K1qfSPnTMqg58w11XwPjFcIK6rHjVkM2CMkdNF1vf51uvFnOzEIPtGgEJey8nVx9Q4qEueycTGdSjyj7ccg6arDMnC9LjVJ-O2GkKWo2TYDCkDDMpjvFaScjb7URACXCZ2cMerFPMHf9uzY_tFyFMXzT4CGkFcZ2egMP7RoL2O6krIuhX3Kf8goiCB_BUhU5XlvcVV_-3gpf150vvRZC-nhMGzrhXJr1PwkDaN2xC9NOP_HOoZa-YZq-nh2ikfYEE_NZKCP5uh4Y9wR6nf6cCL23ViR3wOIuYdK43uzIwsYOLccCuNQ2QAFm2Hhr0_Pl2-gpVZ4EP_NhbHI3lDAU8odpF04_swXlK15RzbEOCJRIQFVVT48vfctxsTJVBz8eSaMw5y6C4ND9EbUc6pEZ8CHSjMRsnsU8QLwDIR2iCCOCNNZX2OgKrMTgqIrbE26uuuMubo7NRQsvbVfbZ_JPqGrs0R4zbyHoDgzpXOzykdvA-4T9Fv7L7W43CM1pOc3qmjq0KtRgQiPlFQ0Nmqw2XiEj5wcaWKRKEukqqgedWnAXdoSu0zosCuKLsMb_vle-Q4JaBaS8ThZhsqZippxP95JJzOW9s4cCCNM1UAE9v2lQdh7m-QL0o52X0FaSl_b5pnCP_mIJ0wIELePd0YxsX_KmsEbmsJ3azqhSGw47bEIf8hL3BtMPZTcxZQhCWUxQwmYoew99rF5kwFhyQ5IdcGKpYVTeMDqQ6Xolw-l-rftYHcD1qmRg1pmYsnE18bAQUmBmdYqzqMBFzS5-CIA7hS8mKA9-KjeiRXl1XC-EkWTpLiWvFztn0Ohxqx_YZrv-M-volFpLFyhHbUQXq0I7prrfqGRB_2rf_xY6t59JI4bGU60nmUq_8yutQLbB6SyTBxrd14S0PQtd9TOQMcJgGX1S6XsmXsIjmqSOWTRWEkSeQEa9hh30HWZOlfO1ox2dPZS1YMP8bw765WxZflcvFldisZs0SXohehyrqzKjOrtLvdS0cKWn5gYjaoSkdLf5Q6TsNTagVp1g43X9R2EeCtAOV3azDYHjlhkljOfZJwQwTrOaRu96K2EdB5EQCwbM-t44LZ3zLPVpCjEUtr_aHdhH8xyG3MwY8LOk-GYhEjqg3DpX3CGsCfNCTq8viLzYPcDUAPTFxvALszwRDtTVpCp38zOLUCWo0izdUM0mvuHyX_57v7OUy2fjnTz4To2OFAw8yMiyqo-RwvE-xNVxCn6w5gINMYICJjBH3qAgh71FDH9Cv8j0F8T-KoMuNjTgMsd5pjA03le8D5e8E6Etjv5zpAy9McHCKVDc29gq31YTbCUXclfrI6OjR8K9iDHkigtTDtrdDuDzH_PPmWFpQxDajueqgzmZOKY3H-3ZhL0x9u_19bZxVMz7s4zFTlMw0ZJWx5oeIQMRo-XqWvH-ZCER8EHxy8dYL34JCWMn1j1dSIh8RONny9zBJDGLgPW5s2qFxBM4s0AcSmzbYb2Nw_hQHp32Ha5HwQOqXM1Vzsn2iTOCG9rm5oq_en3Tff8AI_KUrIvJFMbKqc6TRsBnV00XTquBVfX4hc9uOnvN8iGDKSnQyrYHZoZ6sHmR4JG3XnFm4ap2KP-bEZjUWiXShKksIF4p2d4jOkDEkDLt07TejU7DLGJ9Iv6J8-loE1q8XNKP8u1pnhIcmmHP260BU8zR5uUknwguSinpexT5ALdU4EW-k1LTCRr_-KeqbmdBmRojCh8dj7lnqu5vxx0mpshi8jdf8Ra8DiXf93ybbFQtDlBL8uK-Cy7klHZA2BUxK55VXknNGz48nrbMnEnaS5ngf0NkaDCNekJAjMWJJwe8E_C3m_p0aDgxQF9Oz2d-pV2YztSjjMoo-xpK1hfqxnanJUVtynUy0bR7oqMKV43ohHVu_tFSMsIFkfpLtvIGtjqhhi8xJf7r1g7wwsqLKtsxRAJCdS_9K0BOv8TqKqQItTF2QOCtHrG_uAwK3-2r7379skNK7qnRYHB1riZr22VfOZHApzl3Cs6njI0Pq0QBY9C-2qIycRnuxC3iz7Yap8aN2snS8EoIAHMLHStWNHtQIsIO-s7Wsxi0LHXQkbSn-hMDZo_ZJZwwXt7tOfFKbfdjAT4uCLq7YWISOGFwt5dijv1Xzy0DPYDJMWIzwLBf2GAyDMT5WhKBfU98RKl1QYAW69ByKf44PsPHfIACR86FKtoMhIozRNhxR3RBYe3qIcUKoJaa0MKDs02i0C8M1mwyzM5TUeAj51BqE9ajMsO8XXLe9qlKUB-vE3Sy8GnOq5kXJvEIrfNNly3nqahamx900TdfPAYHAECQiGe8GC-g4trzIG5uJZvWXnICxh9Cu8b_pWmP4KdjDxHMe_9KlFuRCAwovJif7DWIpXnpwOgeZWNDwAZtW96Bz21edOAn1bMJ-kFCjN6-BW03HSqOHE0Kf0AZ_kUt3C6ss1GPqn9AiHsUSuzvW1-ENYY2MUbVImnhIONR3U5RuZlTfJRsoM888xLwWQzSoEgwvenPr1CUmlJGHF-UFojWOn-qQuaNsYurY8d7EK8D-hDtBeJ6heemVBsrdnv_tYnaXgabTc9kh1ehwf1lOWYGmPcDwhjexGwqz69KYcZJWAmAOJoRazUPMeb2c7n4OwWOenuA6_-XKB5qWIyuEVf23wtZnIP2_OfUizQOHsX6idztljwpzDHD6OixRgu8VkskqbdgtE3y-Xs2MI4bu0NQAU0Iep3QUqLAX2x2B2LJ7I5oukR5nmJgdWVbU7D1r_iqeYcGDv2mCdAa4kcoqtbrY75qvTCMlXkDk9TC9SSXHvUSzk7Kz3P4oLjWp8kd3D_PzhHfZHqymufnWl_uNWKn21xZJr95Cp-I71DgSUbPEK1G9cqSqNnQg2sdgR868vvk6jtNsfvXce21LghuZxcCYNZcwyIIq_qWnO2kXHv-orl4eDSbMCEFT_KN6bOYQD757JDjBa_-Uuf0s9liZdiYJWTvXND7lBme9JVUI5bUruVV64T-OZpeMk6K-Dp0U43Cb2RZddLS_wCtgY_S1Lb0DxJEXZSD0NkvQA9jx3frpF1FIrvhSlVA-g4UI5n4Rt-QxLCiZ4QSD6wrpn3VmuisFJiJvOti9Fr3BrVpcqtZeNFCTdDAEsqZDkkzQfpzmDQgJM7Fnr_-SWYGVqgae5ycLQuLMumnl4hIlTFQBcUPX-uNFy3VoSwBRBE37MZSWwgpcTt3Q_uu51xe3UdgkpxChxPkthoIOlKCEgjz5rBh8EkCv6ZRsyN3Ka.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_09502b25afc35664016ae81a74f85487d18806b00d37f6e603",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10194,
+    "completion_tokens": 429,
+    "total_tokens": 10623,
+    "cost": 0.001488675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10191,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001488675,
+      "upstream_inference_prompt_cost": 0.001274175,
+      "upstream_inference_completions_cost": 0.0002145
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 147,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

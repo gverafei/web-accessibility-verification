@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent news content, including readable story headlines and a prominent feature about Shai Gilgeous-Alexander. The different layout and content mix are acceptable for the regenerated page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text is legible and the main feature is arranged coherently. There is substantial whitespace and one broken image with alt text, but neither makes the core interface unreadable or unusable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible \u201cREAD THE STORY\u201d control has a clear, readable label. No essential visible control appears unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views show a coherent regenerated news page and a corresponding news-oriented reference. Differences in layout and scroll position do not make the evidence set incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, bylines, categories, feature image, and story description convey a clear news-page purpose and understandable editorial meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing news page coherence**\n\nI need to evaluate the target news page. It shows one broken image in the top right corner while the main feature image, headline, and cards appear fine. It raises the question of whether this defect with broken imagery affects the material, but since there\u2019s only one broken image, it may not be serious. There is some whitespace that might be related to layout issues. Overall, the key features still communicate well, despite the odd presentation.**Evaluating content fidelity**\n\nI'm assessing the content fidelity for a broad news purpose, and it seems adequate overall. However, I realize that I need to ensure it's presented in JSON format. This will help in organizing the data correctly and making it easier to work with. I'll focus on structuring the content properly while maintaining its integrity and purpose. Overall, I want to ensure everything aligns well with the intended goal.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing news page coherence**\n\nI need to evaluate the target news page. It shows one broken image in the top right corner while the main feature image, headline, and cards appear fine. It raises the question of whether this defect with broken imagery affects the material, but since there\u2019s only one broken image, it may not be serious. There is some whitespace that might be related to layout issues. Overall, the key features still communicate well, despite the odd presentation.**Evaluating content fidelity**\n\nI'm assessing the content fidelity for a broad news purpose, and it seems adequate overall. However, I realize that I need to ensure it's presented in JSON format. This will help in organizing the data correctly and making it easier to work with. I'll focus on structuring the content properly while maintaining its integrity and purpose. Overall, I want to ensure everything aligns well with the intended goal.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BmSl5IJLDLXfRf4eWmArD7q2Gsz75ZAw3Fl8TftZ6UksmlrDIVyisev9aQltIRmLcerJmSW_7fepV48Jhh3xyNe5zhj6x48RwiNvEdpMBLMbd1uu7MZSI5vIVvqROqaBSlt5w3dOowSmhMIu41s_o1jT0HFqwO1A2bj5kq3Ce1lKf-amNs5XjQE8_RS9jZ6P6rCVhLqCsEBZmrIddSZ-QNIQwb_NhiME5mpH5oym96zd_uMY-dcVrCEY0oLziJXQWZ9KUwd4_gXgeizsM2uNKeXAxvx_WyPxhq_pMmA5PWVd3AQWAydEVY42FwZLQ22quhR-lnCC1kPktUOpyQBDPFVTIgxS4G34_7SARgwIkQmyeAb9leNumERSHVT0b8hSoK8baEbvWtjAL9dZy3wCVe-TJ0575wyX12DYUa8iFdv0SK1WIv3aFOOL69Chl7XJpVVwP2zJiqgGsrJV9IY1ejSqrF5Vp2sSP7J8nPnng5eWvY4ScD7-cjhRv9bwocsv7U9aBOIb7iCy4d2c53RpPtA4aJcvuJlMcklv_Z0DeUn4rWBIbnnZlVzkAtLUuruVDGhuprQJi7de6_TattWrOJ_lJJWADTgLbm3McGBGwR2olnpuROOjF9yz2F0pC_51kXWjd5m5hQKDe7vI-a_qPmmB2S1_3YexClPCWZ2PItdZa0Lz-S5l2qqoVI1_qyhuZV-tzh-XdctgCcMPOCQU4nHseH4mf9nRdluiMyR9SJz59fnvPNrf6OY4JiMoynsL3xzUf0ovbGRs3zgxurfGEiIc3CRcfAGvW53R0Pivoj2sanWOLxV7CkIPvGfjCXCFbZRM3rd3241VXpFUYsKmKaE6dNlCTVcN3ZJREWGONx9Avb-RuynGPq_tZp6Lq1iONQI5WwUNNi1u4vazLREws4v1wC58YvUsvjir28BOLQBM-_LByelqhJFIhaKAUPWAMICsYLs4wcX5sIu33Nq1y6ZUpK9x82GSOt2OU7WMe1FgkwCTBnvYmptmFiKpvWU9LQfrw5wAlbEfguriJJDOP4RFW0IGCj479Vcl-T44O9afvO03RANDMFWfgjkhrOl5U6HGwUz-ou3tO4-XJDDKKg5XkEyrGa5mdkrgm36ls_OeosA0ozX9msI_AxAZobpwgQjWGJPmhJt4D3P-Y9MhWCQjHU4slsBytNInD4Jyx3aWojnOOjCsfh2MhfMYhxUgxrZTade0XJgaHATaBFD3fttcLK6no0XQJeawUOm3ATbdeld6_niWNB8b1RTltF5f5CCFQQ0e3P88yqE_W4wtIsVW2wzP7YQz6aZmbp_1cB_G8823p9I29Ond_RNyE_eorMHdtwQBurxCVrmJj_syVaOzRLu945_cunCvU7KpdEOCDO6MGAKlWtXeHARdhGP3AkRmxi3_yOJfNK5NwylZe06In2x3PfII4w33ZSck_pGqDIbbubLtR5mF81iIHZFfYVz7IFGRayRIVpbKo5DO8uZzZ7gb_0kyagnJBOyqqTisxBOKpdWAMY9hIKAL38D5jKbzbMOd7dx-l6T-df31pPFVH2U_IDlLHWX7BpnPPXTQzHEdlAqmrOLYJ4WSN45wfrKis8I60qgb6wBYy3rttZt_TdkRhGbAHLqMJgIj0fh5S9KW1uaoie17lB4JexENUprNzsJT1TuOkDRMxggSW8QydZ91TOSIlf5_a7i1tsjNeSZoPscnATOfxQYm1Agus2dEv6BArDL_EYUmiOMhZu2ZTrqbT69dYfR67O7cYJxHNtYLjuIWCJ3sRPbgkeQAsO9FUGinJTtGARnioV5ublmravRbsoseAdH82T2bUlU8G2NBEq7OJTVp9_kll9krMWw9SSPUC-MOtc5eB8xNlquTbsUYO0vAe6zi2sUZB2S0NunwLSmiqlqUiSU6R2qkvfG9mXQ4oGJEdZfbYniCR9iT4b8sS9IbCHTMe48K7aeoIzfND9yiWLK7g4hf5p1N4vo2Sr_yCRHB6GgHyqR7vsxvNukMMTBVTIhX7Hz5K-BpmGPaSAtRVJKEwYNjFK9tDlUQI7ItGvwl8bBRy67kl2v42Qg1E-BQmy0oh77SGdTmWsAG40fkLjCpBsUYU1rMsKos8S96TT_abHjlnvlmTGkI1wt2qMVsMn8wTPgQqYgPFO2wsYBtBnlNn3R1al5RNVGkWAbsZvPqHrI88Rddeqpqf93mm2d5LU-DZQsoIxWEF48KdSkFCT7jFZZJlR1O0pACUNy845USHY7lWWamhR5_1gGEcwWYfA5AWl83K3iQyVuecHDfX4wLQlVGoeZHRagE9oG0KIccATL8rD-2Y1nSSlA5ksDB7iS8xbMyBcJr1PlL_bKjGWosFnsBNLu2m98tyRUIaVM9TnHQC939JBegQffeOSJrXkeFCgtLcdSC_C6Z4GPPnDS6j0F7kIAhDOrKU4-8O7NTQFwkqUdt399fEw8lylZmhwv56lEPFyFiwSK-y9kVfBVO1_rMEDbaGCAr2UlRJGcpcB4kai_3Sx9gs-B86fJ6wUGq4DwRBN2n3v2WIWObx1qpydzoKFsQGpX2sMwtutDu8vuV6HU66MoYt-YZAHtv6oi-wfylDh_F5RVmWR0z9sC0lGLiiCuv9PnJXiWBKfLh8k5MLu9bIGqzrJRkPJ6Kj5BK2Fgu5U-I5ufFDLvpKF4MeEDQyjTraFfV5oJaaw_Q-l5FouHaJ1gUPLnOrAGqxx2cJ66_DsaZ03UaDn-XmPJe76OywgPI4TIgBcTgc_hmVFB6NIYcjJG3alTpkzuILHXfvAyKzDhOtXxAoq2XloPQ8lmjfUWbV1R_cZsnwfDV31x8QQ11n79NEgvm7bMrmaTReSu58b2RYJI4F96FHDwaM7f0zPkhpmsalVxMVkog_OAwKXM25qGFUxAgDrmOHgkHaMuLurInbnE1qZ3B8nfewHv-nSakskRXB_PNsDeEEry_RLoAuVZEi1JDrxMBjNWtZCOZePfR1i-RLEw2WvcQFASUh1XjmAcxDYs9asFJDRpXg3jGWxlPFNTG2VW_otcOkILAOO-AebsuA-grtRjtv-fBrusjCXJjFrt3BRMcAJ46HeS6sSkwz4K8L2ba4IZU6l42vWHj4WGAwcyOXJ0GWZDbGGegkCWQE3SnT_0-9C7iSD1dtT7nFp-RVONqQoFDuPPj2j_82TYAbN0s22ht3xKCz89M-i_tgHEnbyXAsseWmpZgxf7yx81tZC-f9wMfgD3oPLDHJyWWlB9OubgNJua5BQlLlaB0rxbmZbEeZ9Hv--_p82XorfvjkyW0th3POgcaXBkNJqHN8KSr1uPa2NN-g0gCk0jEf1wg9vAdnnYRJE_GmWmdjwpYfbC6eyHUMq1IkX520fciuMwDZyKkUM0GuOrVK_QK6E-nRRItsaXZ6S2sTwsOOa_Gkwx_5ZVVscdE2xWThfDxFT6UeoCVKcdbG_z3ylCnvuogi8P0d6p8X5J6VEymMQLeTlHMPiAQeylk1m0bBdreRXvzJQTvrogXiT5oIcPyMUaEsKG-MzwgNteJt53LEywF2LV3_eqVu56dBkaLrt1lajAJyAtqbXzNZEVeZEi9EVA8YkbCcC0kUzYNyc-NfMA1U-WMMxVBKHPU01fUNYH9h_8jJbL6gu16KaIUW79YEgQEXaL8BCOm5kNdsD9gOdUZhj3JHs1I_bDj18H_-hFKopjd6nX2OinGB1xh-oozO_esLuQ18w8TkWOtdCC_32gCNqh749u0o5J_yvroz5_phq1nxgdsJUTy07y7FebV_g7R5xB969DC1lPwsVdy5WL8NEpX_EbGDZWuoERHir2CsZvVgm47BzRX6a4puv9wUGrevRiaSMfphbkNdEFkozwryZdGslBNpwd7gmqNBgxQ9rXRtm5YJ_fXdFgTcd9IW0Dvk9xfdb7vhi_QNYvwO1fE6rxpnV7BWjMPsnNzXj5ufEVZLd9iy8545zYxIP4GIZjHCQVlULZbP8CmRhzXoO2oKRITa8vBBRum5elLvFvLz_r3Abjzw2-QHobraOXdAY0gkKTCJ5kVnJB83imC6gHRL1wHbYzZFKgva6aK6Te4XHf-uq4roUakQRVCsfoMJh3onBTKjkM9wTSxtJ5190ZBk3f2SzU4Hhmsxz-uHvhwzB1bzHugHv7itt-zF2YQrlOIZKslDf3bnNe8mYLuu7_kcgGV_3hvYDYf-qUsMY=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_001274ae211de673016ae8198f34d487d1ad027d9b7c8667d1",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14531,
+    "completion_tokens": 473,
+    "total_tokens": 15004,
+    "cost": 0.0020528,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14528,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020528,
+      "upstream_inference_prompt_cost": 0.0018163,
+      "upstream_inference_completions_cost": 0.0002365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 188,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

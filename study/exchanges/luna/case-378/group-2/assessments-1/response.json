@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same city, state, and local-activity sections and footer content in the supplied views.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged; the horizontal lists and footer are presented consistently.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible activity and location links remain identifiable, with no observed loss of essential controls.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target views are coherent and visually identical in the supplied regions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headings, links, and footer labels convey coherent meaning for an events-discovery page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Analyzing image matching**\n\nI'm considering how to assess images that are identical as hashes. It seems important to provide concise rationales for this, mentioning exact matching visible sections and controls. I think using JSON schema could be effective in structuring this information. My focus is on clear and straightforward assessments to ensure everything aligns properly. It's a bit of a technical challenge, but I believe simplifying the process will help in delivering accurate results.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing image matching**\n\nI'm considering how to assess images that are identical as hashes. It seems important to provide concise rationales for this, mentioning exact matching visible sections and controls. I think using JSON schema could be effective in structuring this information. My focus is on clear and straightforward assessments to ensure everything aligns properly. It's a bit of a technical challenge, but I believe simplifying the process will help in delivering accurate results.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-5TkbqRHtCzwh3ywNa68oMLMnx79h71UzOupmKfj8RJmr3Fmz37OnTpUxcL5SSTpDMHrqOhkj-gPT5rAS8Jnw4GTh1C4eTG043c3V80sSSEBEYhGbUykxe6iQcdhXaZLiAIO18jy9_dupPRdP3R5IocJ81UpDX_LdCl-ikFtKa9Kmn60_DNMaf-CN3-LnK0pulQ0tlAm89KtrglhaeTR14ky2aLyYP8iewfTUDoss7AaNXvAkPmSEmqEzsAG7YbokdLvud1vubvv4i_SsEl7g6JXb2Q00gVfmjxvlCyMHeW3JpcB6JK5XY9Ap-e6fBIV752lzKbJJgQR-U8cEe0bbnD_bAaCSAvq9tf4SyiGCA-lrJeHvOSs0UYuhfM02LyarolA4sX91UbVnbsk5TWK6OBk0PEp4qBqjWSPyBP5nVM8ns_KbuSh23VcJWRmdxRBo9cd-X-bMEbmv37D3RjF_X-b2VG9M3hnW3jI70u1vcFpkX23IlVUJAmrkmWRLLx1YsKPoVruQ86D2RDr3yD4x2bqmU73QVBfzqwnQvlFkKirokEnkwtlLNjKGjMbsVQmXhYtYJSi0CdBgw069oZMC9zLI-RM--KOjMwC349j0bougezgduMPK4-uxpX2Om6JXQRs-VJxpJOEikjtZbrwOHK9NvFjq1XEsXUMQyTSobuiMPK7Xh5v6x3LaP-BcoIOq7QuDqKSWH6plCLi8C2L0qKhjr0ykdKv4CPrh_WA1gKsO8esjjyKZz6t23e4DmnQjvuKX_aQ81RG4ZmanLC8fXrdbqB19dnU0NkyLcg1cS49kZcwHJWtqdNd11509zVudNCYJJZm9P1fmsxzxrFei1lDLvDCVP1mMpn4hTBrbwDSNoWfm_JHaVhDmZlqml-s_JUb5gSToKQNvc_SVlmfuG40YY6IdjxJcso6PEJEhHSyXXA3XtD0cV3IkG2GKzRzZ-bJmp8qLURZ1xkibrYaCheYeT_EGYfOWynKecAqnZMmzGGynN-vDb3nnp-rEPhVSytSmUrBzD7L77IpAlQicgQAbP-Rg7px7eXn_gDO4Rt20i2c1CYWFEL6Rjy6I_TaiuqInWoxtCxyR4psU95jjqyPQWiOSdmL6RyfjcGAjykm7pX_ALtMb1GBI8QFepLj7OO_O7XO3PDnbJVX6UZiSm1dHenbWK24Y4njwS8aY0PFPMIB0kmnjZShCTBNSzF7g7LPoorBwDpHsqG8MnqrgpgA1QkUtGd1_FwdUX7qh6cvZ5wAdMARGhBWPPxiYT5rjh_WHpObuqQIS4BS0z6QRzi9vRJjLGcSDZt3LWQNNkvkxSzTkVraXHPqoPFSiHXmvM35UjvINoRjnE6GvFYoUOp-HZOm4kMU_-NclYgl4HDhPxv-oOXicg0wUwO4es8wbngY42_KaK3IRswNF55XFABGsbCpMuETmtFtPBXsOeBZP1Y8_pvNEZV1g5Ouk3kFWMvQ1ve1tuXOK43Vl2AeO_UBuwjRK2kVZz4ETtQO51gYQ7iREUjsrnhvPp6jjJc1O6F-XH1WSexlpROJx8mmMv4NsPcLqLa6YB0rTo1Zf_KnNb04MgKB488KW7kyhz_xnURQ13st83itIiBIqTT7EQ7HzqTdibE2p9nxihAKlItccZaSa9j9IpMhoppFFQi13IqtOHUYVYEVgVxCrzKqd_-0uA_1Dw4bM_s0ND4QEMbSW-ydgmW6GSBn1uJmxAaCUWBgvLhy0DevXnnKIH3tT2kQlV6fsEqleH8NqD-6ufRM-jW77Q8Ox8j6DAG9TJIQfjaK0V5V2BZZtq7J2HvHS4JNOqBaCwki6-hXgy-K3Z5tHNzuFS2iJ2wC9nvVRWnRzMSQ5rudGmnSu2aP-tcYUEoe3_0MOup_FYGEblxnq_ZWrqC2KI5zCqQXzi7FIiaSL83mhsPsboKAOARt8H0aj1ck5ZFgBO99rx00G_kVqUA2A=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0acd315579d5efc2016ae81fb8a64487d1a70ba90e174459b4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11421,
+    "completion_tokens": 246,
+    "total_tokens": 11667,
+    "cost": 0.00155055,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11418,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00155055,
+      "upstream_inference_prompt_cost": 0.00142755,
+      "upstream_inference_completions_cost": 0.000123
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

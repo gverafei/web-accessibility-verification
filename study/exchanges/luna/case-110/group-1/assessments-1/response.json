@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents a coherent news-magazine homepage with a lead story, related news cards, and additional sections. Its stories and imagery align with the visible news-oriented purpose; exact layout and source content need not be reproduced.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible, with a clear hierarchy and orderly card and section layouts. No substantial overlap or unreadable core content is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation and links have understandable labels. No essential visible action control has an empty or unintelligible label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of a TIME news homepage and its regenerated version. The layout differences do not make the evidence mismatched or unassessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Headlines, summaries, categories, and imagery communicate recognizable news and editorial content, supporting the broad purpose of the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing coherence for news pages**\n\nI think I need to evaluate the target for coherence. I'll reference the Time homepage and compare it to this regenerated news homepage to make sure the content is readable. I should check if the images match the stories they accompany, and the layout should prioritize lower content sections with easy navigation. Also, the presentation should be orderly, and the content needs to be semantically adequate. I believe I'll need to format this in JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing coherence for news pages**\n\nI think I need to evaluate the target for coherence. I'll reference the Time homepage and compare it to this regenerated news homepage to make sure the content is readable. I should check if the images match the stories they accompany, and the layout should prioritize lower content sections with easy navigation. Also, the presentation should be orderly, and the content needs to be semantically adequate. I believe I'll need to format this in JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BogNq4TaPDsTazTkrS41uZx81YvtZi6eE2JTP_QlFmKA6h64BUZBXWIBu-h9suMBJjYcS_o_QG4d2Zih9gj01_sZ7EkpH__AOnjpS_F6m3ph6uuwFOBPXDThZAJ7tJB7-T0mk_cidzzufaasf7z7MqllUdRZT3LTW20JLt03fZ9SckNloqZAlily7pCiiSU-B6ch7iGSZZJ1czIWaQtjsB8_4W78VxIZGBWK9WfHoggYIPcfmv6k5SQ69NOHGHpaLM-wkIkuz9b6YgwBNpdIL-1Kmz8bGSRqtuSFG4lrbQ6_FBJAOnsq0dsC0FB2bTYsMccY-oYVFmZfZdLv266UCdAG7lbV-yzCIE5YLPjLqclwwJsETQXtSnlhVmZ3kMr71arkUCcEsKqUJeds2jTkY7NwHY4Dpl10I_3Y-fOsxitdLjLRxuM3ipghj7SJ6BXyf3KfQE8xs8mDi8WuRwestIrR-VPINYS9veOeS8jeSkYUOwzqCaBCJVglkq3QbQRRR3nPMf8oKeaugNYtwZzDwUYwk59SDop03BVzlF4BdaR49jbPpoaC0_jpZPW5OFZCcl5i0GFha4vQa_BHhmhowDQrIqFpQJ-CT1uCUWkI9yoso5TqjnxjFnhkT4h_Sxy54EiO8iCw2PRbL8CTVTXH9-2gKQ8i4JWmxY0lmb-odduugrorBGwrMvGih7cEluz7sUnjEkl_xyGbiGMFt9RhCL03C11eVL68ICh5DWwxc6lbmZAT7CxyRg2EddnC3y7pXEFxt9Rbvc4h2wNrY3V4JyDmWHvfvTNlNEfW0ohGJnHS68ZZkW453XRFbT9pxBtzOedZdp1Use19Ks29_hs0vXAN6FA1HMDBtrf3UO3JcLhiamjje1kVK-q3Z5MqEiOsopbKUc5AA5FYslKeusaEx6BdswpuVPCX1hTBgnkESEd-MiQsIzaaOZRbxdBjvSMFxTsu8GNAreF4KNiFNtEN53bzgdOtJdLS9SutnUsiNZFvy-qcLQV8e3BXkTTCQ2P7qb0x-aYMiq_N-U5qvpu1pwdkz4inRCyJufibO2NzkAkI7DeaY1B1Pco3u9LLVB82oCXJZg91kEUSx5pKAXbR0mL0NLaV4-GZEVmVFYnr1nhIuRalDPCZg_GI4CfRJGQcAWyBbLYjhtnAQhpqMH0wXecCh7B44MtjEwaoUu0yrbsA21ri7j73sK0alCU3X-hoe6yzm8R8uPwAK-hz_Pdc8gMrtC4wnd0J2zeqdLEePc7kjNmjPsF_UFgWXa4u_yWqw24lxCzmRQhYqGKNkIhxcW-w4iguPC4fRHWwl4AbgYyeheqXx24b-wWmn_jsFrrnMPWJCNwNSZHBFXpW38RD7pQuAOK1AmfX-d10dypxfBo0WDEYSl3Y2FzBiOJC5QRNXbWu3wWBQBlewyxjVqsCtNFJPBDD2MamVu9n4Is29FxWIYm6hMBiw57i_1mvgg_PXtRLpAkn9id4n71lTuxVcsen4_bENnkdORLhTZv4UydNjU_pg7J6cEnGC06hCEgmSZEwVzOKpdJY0E7zHVVKezzRn2MZ77n-73Fj-hLZz8-uu5xshyW4dm9DOOx0aKFj2SKR54NwjxJSPkAAHXhZKN_fHYsL3FpfR8EWfLCQw7HsfpKPuh3mdgVBnXlSG5GUbcmfqw5veJaMGii5NaWSM5GwA-JwpohVcVtFO5ihxXLY004HWTYKXxivvL5T4905fiFH9ZKSczU965hZMo13LxjjyIOF7wtBnC1YYLinRzj57p0bkt9owKhxvgGl-s0C13AG1NGGp6KQmCgvh2dVwoIwjoxoUqefr8SJx5R1Rm57Mm-lK4y3OjSYPKm6Oyd1HkM7MCQyewvhNhu3QONY54Bhl_87_AltiwnEawlZxd_l9Em52PZne8VxL8f6hX3t_G6ByVE8ukTSW6vsz42XrdBniYp00sqe2ORwi9_VudKHwo7a8o4Zt3T4cBgNhxZhObhQ4ttiE4cC_S6yQSsN7kasoQGLrlM0LNy5Dm5ThqgqK-o-AhXuBlxouHTmfOmvJ5gXmXZidVePa7u9nySWmYG-Tubu4IW-F81ZgJbkpIoCt_os7TsYh_TSYbHKB1NUGa7xVGay3ZqJPF_iAOhKYTKVHnb61mT7Z4U2Rciq0OtSoJOmo706KBErxoWuQLQR7iLebpTyPASFtlLAbsGdVTZZ-GMwS9RiQrSxOvNAskO0tPBvGNtXy6qZBRqekw9wKgHFWvhFV2OurGnOPxWjn5NHjzAKS2bOBWj_U9mQtDBc9nJPA3qMFD6a6CP3AcnJ6PL6-xRgDZKG4hBMlpkdb_ikHmw_0mtj4umftwaCj6mg5s5K4nkPnbyO6RHvgQD1GNRdDU1xUFCJJCU1-MzXm8bMLWZ8Go8LZxHxW5UMuRKrdU4Df-lVzT5g6ej3Da5GAUq0BBAVMbzJexuKLmSq7--R0YHvAL4uxmUgTyranzC8FGYtVyFWQbVK4RI_rcWkiOI.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0043fa07fa28e1ef016ae81a1e214c87d1a57489a9178b172c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14368,
+    "completion_tokens": 346,
+    "total_tokens": 14714,
+    "cost": 0.001968925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14365,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001968925,
+      "upstream_inference_prompt_cost": 0.001795925,
+      "upstream_inference_completions_cost": 0.000173
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

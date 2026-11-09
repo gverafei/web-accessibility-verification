@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s core content and organization are retained. The changed payment panel is part of an illustrative product mockup, not missing actual-page information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged, with no substantial clipping, overlap, or unreadable core information.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible \u201cWatch now\u201d control remains understandable. The mockup\u2019s checkout controls also have readable labels; no essential actual-page control appears lost.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show coherent corresponding page regions. The mockup\u2019s different payment state does not make the evidence mismatched.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The heading, supporting metrics, and payment-platform imagery continue to communicate the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Considering mockup changes**\n\nI need to note the changes in the mockup content for image 1 and 2. Is that permitted? It references a completed payment panel and the checkout form. It\u2019s an illustrative screenshot for a product demo, not an actual page, which is an important distinction according to policy. The surrounding payment embed is coherent, and the core content seems preserved. All controls might look real, and the action labels are readable without any issues. I\u2019ll need the JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Considering mockup changes**\n\nI need to note the changes in the mockup content for image 1 and 2. Is that permitted? It references a completed payment panel and the checkout form. It\u2019s an illustrative screenshot for a product demo, not an actual page, which is an important distinction according to policy. The surrounding payment embed is coherent, and the core content seems preserved. All controls might look real, and the action labels are readable without any issues. I\u2019ll need the JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bnp_0SCZ8aT0Hp1v9imnMuh0T76f1J6ucKQ1l468zZ5MtdRxud6GSnbXQuKSrz_iS20NmjRxdNA36LkgqA-B5VBbKv_UZvlzlutATtSiH0PksazqtCtW99kvZeyalttzLKL-ybOyJiw4riyS7vPLNyrhrbvlVrrIPZ3F5AveaaUPXWO6jIl7nCVaKtM0NughxkMh7yT8brh5TqPQYgjBugKiC6Pew47CfwobMRfKHhEBeQDSqv_bDvF5f6jrkRpA6dMw2c__nXPq34cEllaEMdTY-hSOk30KFx9CN8wAPOQZG33RZm38WwbJNmNaNuIgis53TifIN7I1BVeXIN4lYQCFVO9iTqBavuOMNhgQ8Mcs9Fhopntv1SgYUZtR-t2EoBSPpWKQaRqtxMrUmLRvA_x8CZnTpFQhpPEN7ajeII5Te7gbG9mR6PF_PEZaL94jBKeGTc65swl7v9NvRxfpRG2H8YkPvcm99WgzLuJDP8dWloKa6fP1mQYXC9ctG9ApNpsoCnHETtST63UaQgl1JZLyZgzf6asKQDdOAOVVH7ygFf-_hAMs2eHp9p-sRiwSRJAJ9PA5SZwZPJ-T6HE6w3wOjAKRHdpumEBKDddFmDKSvudGiXFmoccc_TZiQBkaIvwcMerIionnV9vKWBANlF0rLLOddNGuU5C0CzztNP2tCv4VCupyJ-OLiAdCZeZZbS4AqWJRRUCMVSJv6RV9_TQfNNYCcC_Kf9MIs976GowSaYJ_6UIRpLfAxSyv1bI8JOB6RgLdxohYpG8lTzaBsBf3DpuCclLfPmtO2bZfRtEYdmN3JZZfYQzKXTMdNITOJiZXfNbPrjkyvbDWryF86ODuwkmqaz6YaK4CDnJxDRhLkol-u-65lkgaWPXL9Dq5kcvFKbaKRBoJI3cCF_cU-KQjJKmQdjN8inzb5Ag9hHI0E3C_R-QUEPaFec6O6yJ9i-iXHpUGt9Hh2XZQ_XDGJQtCDzQf2cfJpOLo_qzzW63aDZu6HUM6VoBfHbCnHCOInGuNBpoKy-jxVsrTSfPdqA7vCUpNtwobrPF_aX3kqbA3PhQ4RpFus49027QMTfMdolJuPf04ZpEuNTPFrv-T2mIg9QNyuPjx3DFTh5Ybyzu3vpJhsN0idPf3dCz2YUn2Y9upupp00lsz3paz8D9IlVB66CLChEGONkI2w5JM-ueJA9vl4CiFrcLzhd9TZEsz-B0Y2bwyBIIwL00L8hAM7kmHDCxtQ8l0qwlU5cXf5cBOV1Mi2uTaaXSjFXR5VBtwQmr-GT-aPh1fEEp6AMw-LwBmkfk4MKwf6Vogna8FYgg32CZIdAqDFr7jFq0IQzOonIEt-j4sqQVhqcqry467DviYOkXg57VrgflXv5iTBvJODB65uh_jSX8i-1PfPbjgI9su716bFbrYTTjqXAUapq1S3U31REo3ktwnZPF2k5gutKp68SmMYvtJCR1EYKmb1SGVM7PZCTacWmSg33k6pFrqHZ3N_IghvYVdGY7iC87gLRXETlQK7uCUASlQV0ZUThoLolm_TqYvI_tnNjZZ7ilnUf3ZC2ETRdfQPJM_yh7kPQwhYXVbdssf9cYS1btir7hf9y8y3glzT3v5HQMQf1u4zBRbc3t7u-MwX8FsS76H_iVEahIR38ApYNqHpCSVuB-ufOZtvVy-r6xTS2pjT22J5JCYuHqz6fTYyVQSti8B040lvRUCBT5v6tHoaD0NKmhbzvjYUintG5D-M49ZMpO_tbtqIqKQpaJ8CvYiKQbbTIMZpCVP5yudrM2X50cLjsJF4F5SOBLHZIazBI-81Qb1a94p99qE8QY4J5E1TZQDlspmYdCVgs8LOhW8iC132IvIgrw-OaQoV7I5N-BMJMmmtcu6YL3LL-b26BPMIHOa5IFaHuZaKNLQY1-BDDe0pjR8CLj8no3xJ6gaOdYObi5dHdGzxzqlyXJpP9An2zME1BNWozgbf5s82afWtsCYyAn-l7OADpr6ZisaMPjSx9IT-PqrQ-0f9KMy-8QnpcXNKZ3OleIa1cK_MkuqinMDBdJA0ZZggr0Qps3vJN-afxWey-rFQY8EKTidzXEU2EsgWZQ-1eH-neXbdRRvA0prDKqnLZ2Ce0z5ZXo0oFg3GuJZxCn8C0d6HLrsmAWyyG4Qtqjtq2IzKZay_YI4YdoeN9IoZdWcjWV62-Fn_Xd4AjxLwZTznZdxW0HOfvAJ3QYtivOuvrtGAPCZRAmEHmyZCdJYljo_Bf2ft3PvUGfkDFNEoDD86lcHq4ILxlYYUlBUtzhBZROk_Agli-d_Rc79-as97RpN_9saCGJ5ZkLacH4wfhxaCTGwz8MzC4LHoxCEPOuzqvCO6S228HnTVU9cea-0NOBfTRn0AqW4clnhjgsJw8RQ5u9KwAl35OK0MkHMi-UlCh7mW7JQKtE7YgEZYCumixriTw3TqZDrVXd6V8thTsgJPGXkHm75QcsokE7tk60rO3OHM-BvaW-nIeUTb1SjnFCNUofpIe-Cy15pNdhpkMw9oKfxXoJh7FV74vBfAmIe6J6qoP4gRovqUOZdCl4Z1BrQS8bo_6aO8G1OtXrdXODKJsi-ctUBvMe33W3v4bI7cBZ8jRDeSmAAbinYbGnxJhP3g8FpS-rHCWkjleI7A09MUcJyDLbcRZK4I3Vd2UfVMG4sENmtZwOdtDUfWrtVJpWB5a5qaZy-ClFmwbbBJma8zfI3plBlAP8MKfyiwfU0lCsP-ZKvM-CKGfXyR-34UpFckZYJeE5Wm7T8P4DCW0Ndsy-rPLIh3b7bEBrk1xD0rP5Irk3dx9qz0UV0Uyh.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0bcb34761c140494016ae819e756fc87d1ae604853c6ff2cd9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11023,
+    "completion_tokens": 341,
+    "total_tokens": 11364,
+    "cost": 0.0015483,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11020,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015483,
+      "upstream_inference_prompt_cost": 0.0013778,
+      "upstream_inference_completions_cost": 0.0001705
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 91,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

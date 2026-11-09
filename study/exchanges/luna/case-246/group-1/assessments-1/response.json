@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the visible Forbes homepage structure and core stories, headlines, images, and featured Forbes 250 promotion shown in the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Corresponding content is legible and coherently arranged in both windows. The matching sticky header and viewport cuts do not obscure core content.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, subscription, edition, audio, and story controls retain understandable labels or recognizable icons; no material control defect is apparent.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show corresponding Forbes homepage regions and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible text and imagery convey a coherent news-homepage purpose, with no material semantic loss evident.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18327,
+    "completion_tokens": 188,
+    "total_tokens": 18515,
+    "cost": 0.0023848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18324,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0023848,
+      "upstream_inference_prompt_cost": 0.0022908,
+      "upstream_inference_completions_cost": 9.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

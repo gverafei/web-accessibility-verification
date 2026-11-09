@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain for modern software." name="description"/>
+<meta content="#f8fafc" name="theme-color"/>
+<title>Docker | Secure Sandboxes for AI Agents</title>
+<link href="https://www.docker.com/" rel="canonical"/>
+<link href="https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-32x32.png" rel="icon" sizes="32x32"/>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #101828;
+      --muted: #48566a;
+      --blue: #1d63ed;
+      --blue-dark: #174fbe;
+      --navy: #080d1b;
+      --line: #dce3ed;
+      --surface: #ffffff;
+      --soft: #f2f6fb;
+      --content: 1200px;
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 2rem;
+    }
+
+    body {
+      margin: 0;
+      background: #f8fafc;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #f5b942;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 20;
+      top: 1rem;
+      left: 1rem;
+      padding: .7rem 1rem;
+      transform: translateY(-160%);
+      background: #fff;
+      color: var(--ink);
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .wrap {
+      width: min(var(--content), calc(100% - 3rem));
+      margin-inline: auto;
+    }
+
+    .announcement {
+      background: #080d43;
+      color: #fff;
+      text-align: center;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    .announcement a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      min-height: 40px;
+      padding: .4rem 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .announcement a:hover { text-decoration: underline; }
+
+    .announcement-mark {
+      color: #91b9ff;
+      font-size: 1rem;
+      letter-spacing: .02em;
+    }
+
+    .site-header {
+      position: relative;
+      z-index: 5;
+      background: rgba(255, 255, 255, .97);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      flex: 0 0 auto;
+      color: #071b45;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -.055em;
+      text-decoration: none;
+    }
+
+    .brand img { width: 37px; height: 37px; }
+
+    .primary-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.35rem;
+      margin-left: auto;
+    }
+
+    .primary-nav > a,
+    .nav-disclosure > summary {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      min-height: 44px;
+      color: #263246;
+      font-size: .93rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .primary-nav > a:hover,
+    .nav-disclosure > summary:hover { color: var(--blue-dark); }
+
+    .nav-disclosure > summary::-webkit-details-marker { display: none; }
+
+    .chevron {
+      width: 8px;
+      height: 8px;
+      border-right: 1.7px solid currentColor;
+      border-bottom: 1.7px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+      transition: transform .15s ease;
+    }
+
+    details[open] > summary .chevron { transform: rotate(225deg) translate(-1px, -1px); }
+
+    .menu-panel {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: 50%;
+      width: min(800px, calc(100vw - 3rem));
+      padding: 1.5rem;
+      transform: translateX(-50%);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 0 0 18px 18px;
+      box-shadow: 0 22px 50px rgba(13, 28, 58, .14);
+    }
+
+    .menu-panel h2 {
+      margin: 0 0 .75rem;
+      color: #53627a;
+      font-size: .76rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .4rem 1rem;
+    }
+
+    .menu-grid a {
+      display: block;
+      padding: .7rem .75rem;
+      border-radius: 10px;
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .menu-grid a:hover { background: var(--soft); }
+    .menu-grid a span {
+      display: block;
+      margin-top: .1rem;
+      color: var(--muted);
+      font-size: .8rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      flex: 0 0 auto;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      margin: 0 .25rem;
+    }
+
+    .search-form label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .search-form input {
+      width: 0;
+      min-width: 0;
+      padding: .5rem 0;
+      border: 0;
+      border-bottom: 1px solid transparent;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      transition: width .2s ease, border-color .2s ease, padding .2s ease;
+    }
+
+    .search-form input:focus,
+    .search-form input:not(:placeholder-shown) {
+      width: 150px;
+      padding-inline: .45rem;
+      border-bottom-color: #8b9bb2;
+    }
+
+    .search-form input::placeholder { color: #53627a; opacity: 1; }
+
+    .search-form button {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      border: 0;
+      border-radius: 9px;
+      background: transparent;
+      color: #17233a;
+      cursor: pointer;
+    }
+
+    .search-form button:hover { background: var(--soft); }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      min-height: 46px;
+      padding: .65rem 1.1rem;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      font-size: .92rem;
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color .15s ease, transform .15s ease, border-color .15s ease;
+    }
+
+    .button:hover { transform: translateY(-1px); }
+
+    .button-primary {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .button-primary:hover { background: var(--blue-dark); }
+
+    .button-light {
+      background: #fff;
+      color: #162238;
+    }
+
+    .button-light:hover { background: #edf3ff; }
+
+    .button-outline {
+      background: #fff;
+      border-color: #aab7c9;
+      color: #17233a;
+    }
+
+    .button-outline:hover {
+      background: #f3f7fc;
+      border-color: #7c8ca3;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(4.5rem, 9vw, 7rem) 0 4.5rem;
+      background:
+        radial-gradient(ellipse at 50% 3%, rgba(54, 95, 211, .26), transparent 38%),
+        radial-gradient(ellipse at 50% 100%, rgba(18, 44, 112, .34), transparent 52%),
+        var(--navy);
+      color: #fff;
+      text-align: center;
+      isolation: isolate;
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      pointer-events: none;
+      border: 1px solid rgba(142, 174, 255, .16);
+      border-radius: 50%;
+    }
+
+    .hero::before {
+      width: min(850px, 95vw);
+      height: min(850px, 95vw);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -34%);
+      box-shadow: 0 0 0 56px rgba(105, 142, 232, .025), 0 0 0 120px rgba(105, 142, 232, .02);
+    }
+
+    .hero::after {
+      width: 480px;
+      height: 480px;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -35%);
+      border-style: dashed;
+      border-color: rgba(142, 174, 255, .10);
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      margin: 0 0 1rem;
+      color: #a9c5ff;
+      font-size: .84rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7cb5ff;
+      box-shadow: 0 0 0 5px rgba(124, 181, 255, .14);
+    }
+
+    h1, h2, h3, p { overflow-wrap: break-word; }
+
+    .hero h1 {
+      max-width: 850px;
+      margin: 0 auto 1.15rem;
+      font-size: clamp(2.7rem, 6.8vw, 5.5rem);
+      font-weight: 700;
+      letter-spacing: -.065em;
+      line-height: 1.02;
+      text-wrap: balance;
+    }
+
+    .hero-copy {
+      max-width: 660px;
+      margin: 0 auto;
+      color: #e1e8f5;
+      font-size: clamp(1.06rem, 2vw, 1.25rem);
+      line-height: 1.6;
+      text-wrap: balance;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .8rem;
+      margin-top: 1.75rem;
+    }
+
+    .hero-note {
+      margin: 1.4rem 0 0;
+      color: #bfcae0;
+      font-size: .86rem;
+    }
+
+    .hero-visual {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 1rem;
+      width: min(610px, 100%);
+      margin: 3.5rem auto 0;
+      padding: 1rem 1.2rem;
+      border: 1px solid rgba(194, 211, 255, .2);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .055);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, .22);
+      text-align: left;
+      backdrop-filter: blur(8px);
+    }
+
+    .visual-label {
+      margin: 0 0 .3rem;
+      color: #b8c7e2;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .visual-command {
+      margin: 0;
+      color: #fff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(.78rem, 2vw, .95rem);
+      overflow-wrap: anywhere;
+    }
+
+    .visual-status {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .45rem .65rem;
+      border: 1px solid rgba(143, 232, 185, .3);
+      border-radius: 999px;
+      background: rgba(54, 191, 125, .1);
+      color: #c9f5dc;
+      font-size: .75rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #63df9b;
+    }
+
+    .section {
+      padding: clamp(4rem, 7vw, 6rem) 0;
+    }
+
+    .section-heading {
+      max-width: 750px;
+      margin: 0 auto 2.5rem;
+      text-align: center;
+    }
+
+    .section-kicker {
+      margin: 0 0 .6rem;
+      color: var(--blue-dark);
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2,
+    .split-copy h2,
+    .download-copy h2 {
+      margin: 0 0 .8rem;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 700;
+      letter-spacing: -.055em;
+      line-height: 1.1;
+      text-wrap: balance;
+    }
+
+    .section-heading > p:last-child,
+    .split-copy > p,
+    .download-copy > p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+
+    .products-section {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 100%, rgba(57, 125, 255, .19), transparent 48%),
+        #f3f7fc;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      overflow: hidden;
+      border: 1px solid #dce4ef;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .96);
+      box-shadow: 0 10px 28px rgba(15, 37, 77, .06);
+    }
+
+    .product-image {
+      aspect-ratio: 1.65 / 1;
+      overflow: hidden;
+      background: #e9f0fb;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.4rem 1.5rem 1.5rem;
+    }
+
+    .product-card h3 {
+      margin: 0 0 .55rem;
+      font-size: 1.2rem;
+      letter-spacing: -.025em;
+      line-height: 1.3;
+    }
+
+    .product-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+      line-height: 1.6;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      margin-top: auto;
+      padding-top: 1.35rem;
+      color: #174fbe;
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .text-link:hover { color: #0d357f; }
+
+    .text-link svg { flex: 0 0 auto; }
+
+    .runtime-section { background: #fff; }
+
+    .runtime-intro {
+      display: grid;
+      grid-template-columns: minmax(0, .85fr) minmax(0, 1fr);
+      align-items: end;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .runtime-intro .section-kicker { margin-bottom: .6rem; }
+
+    .runtime-intro h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      letter-spacing: -.055em;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+
+    .runtime-intro p {
+      max-width: 540px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .runtime-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: .9rem;
+    }
+
+    .runtime-card {
+      min-height: 220px;
+      padding: 1.35rem;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(145deg, #fff 25%, #f3f7ff 100%);
+    }
+
+    .runtime-number {
+      display: inline-grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      margin-bottom: 1.1rem;
+      border-radius: 10px;
+      background: #e8f0ff;
+      color: #174fbe;
+      font-size: .8rem;
+      font-weight: 800;
+    }
+
+    .runtime-card h3 {
+      margin: 0 0 .45rem;
+      font-size: 1.05rem;
+      letter-spacing: -.02em;
+      line-height: 1.35;
+    }
+
+    .runtime-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+
+    .governance-section {
+      padding: 0 0 clamp(4rem, 7vw, 6rem);
+      background: #fff;
+    }
+
+    .governance-panel {
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: center;
+      padding: clamp(1.5rem, 4vw, 3.5rem);
+      border-radius: 26px;
+      background: #0c1530;
+      color: #fff;
+    }
+
+    .governance-panel .section-kicker { color: #a9c5ff; }
+
+    .governance-panel h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -.055em;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+
+    .governance-panel p {
+      margin: 0;
+      color: #d5def0;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    .governance-points {
+      display: grid;
+      gap: .8rem;
+      margin: 1.5rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .governance-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: .65rem;
+      color: #edf3ff;
+      font-size: .93rem;
+    }
+
+    .check {
+      display: inline-grid;
+      flex: 0 0 22px;
+      width: 22px;
+      height: 22px;
+      place-items: center;
+      margin-top: 1px;
+      border-radius: 50%;
+      background: #214a8c;
+      color: #cfe1ff;
+      font-size: .8rem;
+      font-weight: 800;
+    }
+
+    .console {
+      overflow: hidden;
+      border: 1px solid #34415e;
+      border-radius: 14px;
+      background: #101827;
+      box-shadow: 0 22px 48px rgba(0, 0, 0, .28);
+    }
+
+    .console-top {
+      display: flex;
+      align-items: center;
+      gap: .45rem;
+      min-height: 43px;
+      padding: 0 1rem;
+      border-bottom: 1px solid #27334a;
+      color: #bcc9e0;
+      font-size: .75rem;
+    }
+
+    .console-top span:last-child { margin-left: auto; }
+
+    .console-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #7786a0;
+    }
+
+    .console-list {
+      margin: 0;
+      padding: .4rem 1rem 1rem;
+      list-style: none;
+    }
+
+    .console-list li {
+      display: grid;
+      grid-template-columns: 70px 68px minmax(0, 1fr);
+      align-items: center;
+      gap: .75rem;
+      padding: .8rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      color: #d6dfef;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .75rem;
+      line-height: 1.45;
+    }
+
+    .console-list li:last-child { border-bottom: 0; }
+
+    .console-time { color: #a7b5cc; }
+
+    .console-tag {
+      display: inline-block;
+      width: max-content;
+      padding: .22rem .5rem;
+      border-radius: 999px;
+      background: #bff1d7;
+      color: #103522;
+      font-family: inherit;
+      font-size: .67rem;
+      font-weight: 800;
+    }
+
+    .console-tag.sign { background: #c5d9ff; color: #142d55; }
+    .console-tag.scope { background: #a9c1ff; color: #10234a; }
+    .console-tag.attest { background: #b5e5e4; color: #123837; }
+
+    .console-list em {
+      color: #fff;
+      font-style: normal;
+    }
+
+    .stats-section {
+      padding: clamp(3.5rem, 6vw, 5rem) 0;
+      background: #f1f5fa;
+    }
+
+    .stats-heading {
+      max-width: 850px;
+      margin: 0 auto 2.25rem;
+      text-align: center;
+    }
+
+    .stats-heading h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+      letter-spacing: -.05em;
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border: 1px solid #d7e0ec;
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .stat {
+      padding: 1.7rem 1rem;
+      text-align: center;
+    }
+
+    .stat + .stat { border-left: 1px solid #d7e0ec; }
+
+    .stat strong {
+      display: block;
+      color: #0e1a33;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 750;
+      letter-spacing: -.06em;
+      line-height: 1.05;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: .55rem;
+      color: var(--muted);
+      font-size: .95rem;
+      line-height: 1.45;
+    }
+
+    .download-section {
+      padding: clamp(4rem, 7vw, 6rem) 0;
+      background: #fff;
+    }
+
+    .download-panel {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .download-copy h2 { font-size: clamp(2.2rem, 4vw, 3.3rem); }
+
+    .download-copy .button { margin-top: 1.5rem; }
+
+    .download-art {
+      overflow: hidden;
+      border: 1px solid #dbe4f0;
+      border-radius: 18px;
+      background: #f3f7fc;
+    }
+
+    .download-art img {
+      width: 100%;
+      height: auto;
+    }
+
+    .download-options {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .75rem;
+      margin-top: 1.25rem;
+    }
+
+    .download-options a {
+      min-height: 44px;
+      padding: .6rem .75rem;
+      border: 1px solid #ccd7e5;
+      border-radius: 9px;
+      background: #fff;
+      color: #1d3d72;
+      font-size: .84rem;
+      font-weight: 650;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .download-options a:hover { background: #f0f5fd; }
+
+    .final-cta {
+      padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+      background:
+        radial-gradient(ellipse at 50% 130%, rgba(80, 133, 250, .38), transparent 55%),
+        #eaf1fd;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      margin: 0 0 .75rem;
+      font-size: clamp(2rem, 4.5vw, 3.3rem);
+      letter-spacing: -.055em;
+      line-height: 1.1;
+    }
+
+    .final-cta p {
+      max-width: 670px;
+      margin: 0 auto 1.5rem;
+      color: #43536c;
+      font-size: 1.05rem;
+    }
+
+    .site-footer {
+      padding: 3.5rem 0 1.5rem;
+      background: #fff;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: minmax(170px, 1.15fr) repeat(3, minmax(0, 1fr));
+      gap: 2rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      max-width: 230px;
+      margin: .85rem 0 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .footer-column h2 {
+      margin: 0 0 .8rem;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .footer-column ul {
+      display: grid;
+      gap: .45rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-column a {
+      color: #43516a;
+      font-size: .87rem;
+      text-decoration: none;
+    }
+
+    .footer-column a:hover {
+      color: #174fbe;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: #526078;
+      font-size: .8rem;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .legal-links a { color: #43516a; }
+
+    @media (max-width: 1000px) {
+      .header-inner { flex-wrap: wrap; padding-block: .7rem; }
+      .primary-nav { order: 3; width: 100%; justify-content: flex-start; margin: 0; }
+      .header-actions { margin-left: auto; }
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .product-card:last-child { grid-column: 1 / -1; }
+      .runtime-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .runtime-intro { grid-template-columns: 1fr; gap: .75rem; }
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: min(100% - 2rem, var(--content)); }
+      .announcement { font-size: .8rem; }
+      .announcement a { min-height: 38px; }
+      .header-inner { gap: .35rem; }
+      .brand { font-size: 1.1rem; }
+      .brand img { width: 33px; height: 33px; }
+      .primary-nav { gap: 1rem; overflow: visible; }
+      .primary-nav > a,
+      .nav-disclosure > summary { font-size: .86rem; }
+      .header-actions .button { min-height: 40px; padding: .5rem .7rem; font-size: .82rem; }
+      .search-form { margin: 0; }
+      .search-form input:focus,
+      .search-form input:not(:placeholder-shown) { width: min(125px, 29vw); }
+      .menu-panel {
+        left: 0;
+        width: calc(100vw - 2rem);
+        padding: 1rem;
+        transform: none;
+      }
+      .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero { padding: 4.2rem 0 3.5rem; }
+      .hero-visual { margin-top: 2.5rem; }
+      .product-grid { grid-template-columns: 1fr; }
+      .product-card:last-child { grid-column: auto; }
+      .product-image { aspect-ratio: 1.8 / 1; }
+      .governance-panel { grid-template-columns: 1fr; }
+      .console-list li { grid-template-columns: 60px 58px minmax(0, 1fr); gap: .45rem; font-size: .68rem; }
+      .console-time { font-size: .65rem; }
+      .download-panel { grid-template-columns: 1fr; }
+      .download-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 440px) {
+      .header-inner { justify-content: space-between; }
+      .header-actions { gap: .35rem; }
+      .header-actions .button-outline { display: none; }
+      .search-form input:focus,
+      .search-form input:not(:placeholder-shown) { width: 105px; }
+      .primary-nav { gap: .8rem; }
+      .primary-nav > a,
+      .nav-disclosure > summary { font-size: .8rem; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: clamp(2.5rem, 12vw, 3.6rem); }
+      .hero-visual { grid-template-columns: 1fr; }
+      .visual-status { justify-self: start; }
+      .runtime-grid { grid-template-columns: 1fr; }
+      .runtime-card { min-height: auto; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .stat + .stat { border-top: 1px solid #d7e0ec; border-left: 0; }
+      .download-options { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 1.5rem; }
+      .footer-brand { grid-column: auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="announcement">
+<a href="https://www.docker.com/c/sbx-promo/">
+<span aria-hidden="true" class="announcement-mark">✦ New</span>
+<span>Get $250 in credits for Cloud Sandboxes. Claim credits <span aria-hidden="true">→</span></span>
+</a>
+</div>
+<header class="site-header">
+<div class="wrap header-inner">
+<a aria-label="Docker home" class="brand" href="https://www.docker.com/">
+<img alt="" height="37" src="https://www.docker.com/app/uploads/2026/05/docker-mark-deep-blue.svg" width="37"/>
+<span>Docker</span>
+</a>
+<nav aria-label="Main navigation" class="primary-nav">
+<details class="nav-disclosure">
+<summary>Products <span aria-hidden="true" class="chevron"></span></summary>
+<div class="menu-panel">
+<h2>Explore Docker products</h2>
+<div class="menu-grid">
+<a href="https://www.docker.com/products/docker-sandboxes/">Docker Sandboxes<span>Isolated environments for coding agents</span></a>
+<a href="https://www.docker.com/products/ai-governance/">AI Governance<span>Govern agents and Claws across every team</span></a>
+<a href="https://www.docker.com/products/mcp-enterprise-gateway/">MCP Enterprise Gateway<span>Connect and manage MCP tools</span></a>
+<a href="https://www.docker.com/products/hardened-images/">Docker Hardened Images<span>Secure, enterprise-ready images</span></a>
+<a href="https://www.docker.com/products/docker-desktop/">Docker Desktop<span>Containerize your applications</span></a>
+<a href="https://www.docker.com/products/docker-hub/">Docker Hub<span>Discover and share container images</span></a>
+<a href="https://www.docker.com/products/docker-scout/">Docker Scout<span>Simplify the software supply chain</span></a>
+<a href="https://www.docker.com/products/gordon/">Gordon<span>Your AI agent across Docker</span></a>
+<a href="https://www.docker.com/products/model-runner/">Docker Model Runner<span>Local-first LLM inference made easy</span></a>
+</div>
+</div>
+</details>
+<details class="nav-disclosure">
+<summary>Resources <span aria-hidden="true" class="chevron"></span></summary>
+<div class="menu-panel">
+<h2>Learn and connect</h2>
+<div class="menu-grid">
+<a href="https://docs.docker.com/">Documentation<span>Find guides for Docker products</span></a>
+<a href="https://www.docker.com/get-started/">Getting Started<span>Learn the Docker basics</span></a>
+<a href="https://www.docker.com/resources/">Resources<span>Explore helpful materials</span></a>
+<a href="https://www.docker.com/resources/trainings/">Training<span>Build your Docker knowledge</span></a>
+<a href="https://www.docker.com/community/">Community<span>Connect with Docker developers</span></a>
+<a href="https://www.docker.com/customer-stories/">Customer Stories<span>See how teams use Docker</span></a>
+</div>
+</div>
+</details>
+<a href="https://www.docker.com/pricing/">Pricing</a>
+<a href="https://www.docker.com/blog/">Blog</a>
+<a href="https://docs.docker.com/">Docs</a>
+</nav>
+<div class="header-actions">
+<form action="https://www.docker.com/" class="search-form" method="get" role="search">
+<label for="site-search">Search Docker</label>
+<input id="site-search" name="s" placeholder="Search Docker" type="search"/>
+<button aria-label="Search Docker" type="submit">
+<svg aria-hidden="true" fill="none" height="21" viewbox="0 0 24 24" width="21">
+<circle cx="10.8" cy="10.8" r="6.4" stroke="currentColor" stroke-width="1.8"></circle>
+<path d="m15.5 15.5 4.2 4.2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</form>
+<a class="button button-outline" href="https://app.docker.com/login">Sign in</a>
+<a class="button button-primary" href="https://www.docker.com/contact-sales/">Contact sales</a>
+</div>
+</div>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-content">
+<p class="eyebrow"><span aria-hidden="true" class="eyebrow-dot"></span> Secure building blocks for the agent era</p>
+<h1 id="hero-title">Trust Docker<br/>for the Agents You Don’t</h1>
+<p class="hero-copy">Docker securely contains autonomous agents so you can confidently build, ship, and run on trust.</p>
+<div class="hero-actions">
+<a class="button button-primary" href="https://www.docker.com/products/docker-sandboxes/">Get started <span aria-hidden="true">→</span></a>
+<a class="button button-light" href="https://www.docker.com/blog/">Learn more</a>
+</div>
+<p class="hero-note">Run AI agents and containers safely, anywhere.</p>
+<div aria-label="Example of a contained agent session" class="hero-visual">
+<div>
+<p class="visual-label">Isolated agent session</p>
+<p class="visual-command">$ docker agent run billing-bot</p>
+</div>
+<span class="visual-status"><span aria-hidden="true" class="status-dot"></span> Runtime protected</span>
+</div>
+</div>
+</section>
+<section aria-labelledby="products-title" class="section products-section" id="products">
+<div class="wrap">
+<div class="section-heading">
+<p class="section-kicker">One trusted foundation</p>
+<h2 id="products-title">Build with confidence. Govern with clarity.</h2>
+<p>Isolation, governance, and secure components help you put autonomous agents to work with confidence.</p>
+</div>
+<div class="product-grid">
+<article class="product-card">
+<div class="product-image">
+<img alt="Docker Sandboxes product illustration" height="523" loading="lazy" src="https://www.docker.com/app/uploads/2026/06/home-sandboxes.png" width="523"/>
+</div>
+<div class="product-card-content">
+<h3>Docker Sandboxes</h3>
+<p>MicroVM isolation for every agent session, local or cloud. Network and filesystem locked down at the runtime.</p>
+<a class="text-link" href="https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/">Read more about our approach <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<article class="product-card">
+<div class="product-image">
+<img alt="Docker AI Governance product illustration" height="523" loading="lazy" src="https://www.docker.com/app/uploads/2026/06/home-governance.png" width="523"/>
+</div>
+<div class="product-card-content">
+<h3>Docker AI Governance</h3>
+<p>One console for sandbox and MCP policy. Identity-bound audit logs. Zero per-machine setup.</p>
+<a class="text-link" href="https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/">The case for agent governance <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<article class="product-card">
+<div class="product-image">
+<img alt="Docker Hardened Images product illustration" height="523" loading="lazy" src="https://www.docker.com/app/uploads/2026/06/home-hardened-images.png" width="523"/>
+</div>
+<div class="product-card-content">
+<h3>Docker Hardened Images</h3>
+<p>Minimal, signed, continuously patched images and MCP servers. SLSA Level 3. Audit-ready by default.</p>
+<a class="text-link" href="https://www.docker.com/resources/containers-are-the-new-supply-chain-attack-vector-on-demand-webinar/">See why hardened images matter <span aria-hidden="true">→</span></a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="runtime-title" class="section runtime-section" id="runtime">
+<div class="wrap">
+<div class="runtime-intro">
+<div>
+<p class="section-kicker">The runtime under every agent</p>
+<h2 id="runtime-title">The foundations that ran the cloud now run the agent era.</h2>
+</div>
+<p>Same guarantees. Same stack. Docker extends the trusted tools and workflows developers already use to autonomous agents.</p>
+</div>
+<div class="runtime-grid">
+<article class="runtime-card">
+<span aria-hidden="true" class="runtime-number">01</span>
+<h3>Isolation you can trust</h3>
+<p>MicroVMs extend secure-by-default isolation to every agent session, with scope designed into the runtime.</p>
+</article>
+<article class="runtime-card">
+<span aria-hidden="true" class="runtime-number">02</span>
+<h3>Nothing to rip and replace</h3>
+<p>Your images, registries, and CI already power your AI stack. No new ecosystem or migration required.</p>
+</article>
+<article class="runtime-card">
+<span aria-hidden="true" class="runtime-number">03</span>
+<h3>Start local. Scale anywhere.</h3>
+<p>Start on your laptop and move to Cloud Sandboxes for long-horizon tasks. One command either way.</p>
+</article>
+<article class="runtime-card">
+<span aria-hidden="true" class="runtime-number">04</span>
+<h3>No lock-in. Ever.</h3>
+<p>Built on open standards from day one. OCI-compliant and platform-independent.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="governance-title" class="governance-section" id="governance">
+<div class="wrap">
+<div class="governance-panel">
+<div>
+<p class="section-kicker">Docker AI Governance</p>
+<h2 id="governance-title">Invisible to developers. Total control for security.</h2>
+<p>A unified foundation for isolation, verified components, and governance that runs wherever your agents do. Docker brings policy and auditability to the stack you already run.</p>
+<ul class="governance-points">
+<li><span aria-hidden="true" class="check">✓</span><span>Enforce policy for sandbox and MCP activity.</span></li>
+<li><span aria-hidden="true" class="check">✓</span><span>Connect identity-bound audit logs to agent activity.</span></li>
+<li><span aria-hidden="true" class="check">✓</span><span>Support signed components and runtime controls.</span></li>
+</ul>
+<a class="button button-light" href="https://www.docker.com/products/ai-governance/" style="margin-top:1.5rem">Explore AI Governance <span aria-hidden="true">→</span></a>
+</div>
+<div aria-label="Illustrative governance activity: policy allowed, image signed, identity scoped, runtime attested" class="console">
+<div class="console-top">
+<span aria-hidden="true" class="console-dot"></span>
+<span aria-hidden="true" class="console-dot"></span>
+<span aria-hidden="true" class="console-dot"></span>
+<span>Governance activity</span>
+<span>Live policy view</span>
+</div>
+<ul class="console-list">
+<li><span class="console-time">14:02:36</span><span class="console-tag">Allow</span><span>policy <em>corp/safe.rego</em> · 14 / 14 pass</span></li>
+<li><span class="console-time">14:02:37</span><span class="console-tag sign">Sign</span><span>image <em>sha256:9af2…b314</em> · verified</span></li>
+<li><span class="console-time">14:02:38</span><span class="console-tag scope">Scope</span><span>identity <em>svc:billing-bot</em> · least privilege</span></li>
+<li><span class="console-time">14:02:39</span><span class="console-tag attest">Attest</span><span>runtime <em>microVM</em> · attested</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="stats-title" class="stats-section">
+<div class="wrap">
+<div class="stats-heading">
+<h2 id="stats-title">From the company that secured the developer laptop for the enterprise.</h2>
+</div>
+<div class="stats-grid">
+<div class="stat"><strong>91%</strong><span>of the Fortune 100<br/>already run on Docker</span></div>
+<div class="stat"><strong>20B+</strong><span>pulls a month on<br/>Docker Hub</span></div>
+<div class="stat"><strong>20M+</strong><span>developers build on<br/>Docker every day</span></div>
+</div>
+</div>
+</section>
+<section aria-labelledby="desktop-title" class="download-section" id="docker-desktop">
+<div class="wrap download-panel">
+<div class="download-copy">
+<p class="section-kicker">Docker Desktop</p>
+<h2 id="desktop-title">How modern applications get built.</h2>
+<p>Containers and the full dev loop in one place. Go from blank file to running app in minutes, shipped anywhere.</p>
+<div aria-label="Docker Desktop downloads" class="download-options">
+<a href="https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Mac · Apple Silicon</a>
+<a href="https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Mac · Intel</a>
+<a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Windows · AMD64</a>
+<a href="https://desktop.docker.com/win/main/arm64/Docker%20Desktop%20Installer.exe?utm_source=docker&amp;utm_medium=webreferral&amp;utm_campaign=dd-smartbutton&amp;utm_location=module">Windows · ARM64</a>
+<a href="https://docs.docker.com/desktop/linux/install/">Linux installation</a>
+</div>
+</div>
+<div class="download-art">
+<img alt="Docker Desktop containers application illustration" height="2816" loading="lazy" src="https://www.docker.com/app/uploads/2025/11/desktop-containers-application.svg" width="4457"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="final-title" class="final-cta">
+<div class="wrap">
+<p class="section-kicker">Build better, together</p>
+<h2 id="final-title">Explore Docker’s agent-ready platform</h2>
+<p>Build with Docker Sandboxes, govern agent workflows, and strengthen your software supply chain with Docker Hardened Images.</p>
+<div class="hero-actions">
+<a class="button button-primary" href="https://www.docker.com/products/docker-sandboxes/">Docker Sandboxes</a>
+<a class="button button-outline" href="https://www.docker.com/products/ai-governance/">AI Governance</a>
+<a class="button button-outline" href="https://www.docker.com/products/hardened-images/">Docker Hardened Images</a>
+<a class="button button-outline" href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-top">
+<div class="footer-brand">
+<a aria-label="Docker home" class="brand" href="https://www.docker.com/">
+<img alt="" height="37" loading="lazy" src="https://www.docker.com/app/uploads/2026/05/docker-mark-deep-blue.svg" width="37"/>
+<span>Docker</span>
+</a>
+<p>Build, share, and run container applications with Docker.</p>
+</div>
+<nav aria-label="Products" class="footer-column">
+<h2>Products</h2>
+<ul>
+<li><a href="https://www.docker.com/products/">Products overview</a></li>
+<li><a href="https://www.docker.com/products/docker-sandboxes/">Docker Sandboxes</a></li>
+<li><a href="https://www.docker.com/products/ai-governance/">AI Governance</a></li>
+<li><a href="https://www.docker.com/products/hardened-images/">Docker Hardened Images</a></li>
+<li><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a></li>
+<li><a href="https://www.docker.com/products/docker-hub/">Docker Hub</a></li>
+</ul>
+</nav>
+<nav aria-label="Developers" class="footer-column">
+<h2>Developers</h2>
+<ul>
+<li><a href="https://docs.docker.com/">Documentation</a></li>
+<li><a href="https://www.docker.com/get-started/">Getting Started</a></li>
+<li><a href="https://www.docker.com/resources/trainings/">Training</a></li>
+<li><a href="https://www.docker.com/developers/sdk/">Extensions SDK</a></li>
+<li><a href="https://www.docker.com/community/">Community</a></li>
+<li><a href="https://www.docker.com/community/open-source/">Open Source</a></li>
+</ul>
+</nav>
+<nav aria-label="Company" class="footer-column">
+<h2>Company</h2>
+<ul>
+<li><a href="https://www.docker.com/company/">About us</a></li>
+<li><a href="https://www.docker.com/blog/">Blog</a></li>
+<li><a href="https://www.docker.com/trust/">Trust</a></li>
+<li><a href="https://www.docker.com/customer-stories/">Customer stories</a></li>
+<li><a href="https://www.docker.com/company/contact/">Contact us</a></li>
+<li><a href="https://www.docker.com/pricing/">Pricing</a></li>
+</ul>
+</nav>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Docker Inc. All rights reserved.</span>
+<div class="legal-links">
+<a href="https://www.docker.com/legal/docker-terms-use">Terms of Use</a>
+<a href="https://www.docker.com/legal/privacy">Privacy</a>
+<a href="https://www.docker.com/legal/">Legal</a>
+<a href="https://www.docker.com/ja-jp/">日本語</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

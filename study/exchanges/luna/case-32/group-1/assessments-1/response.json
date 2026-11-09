@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible header, navigation, news, product links, and lower-page reference lists. The captured content and organization closely match; no material loss is apparent.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core text and images are legible and arranged coherently in both target segments. No substantial clipping or overlap is visible.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible search, navigation, access, and other primary controls have understandable labels and appear preserved. No unobserved interaction is assumed.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding page regions and form a coherent, assessable comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s text, imagery, headings, and labels communicate the same legal-information service purpose as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Gathering design requirements**\n\nI need to ensure I have the JSON ready. I\u2019m looking for nearly exact screenshots while excluding ads. It\u2019s important to keep controls the same for consistency. I want the evidence to be coherent, so I\u2019ll note that the target DOM ads are absent, but they visually appear the same\u2014maybe I can reproduce them statically. I'll aim for everything to be lower and exact. Ensuring concise rationales is essential for clarity.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Gathering design requirements**\n\nI need to ensure I have the JSON ready. I\u2019m looking for nearly exact screenshots while excluding ads. It\u2019s important to keep controls the same for consistency. I want the evidence to be coherent, so I\u2019ll note that the target DOM ads are absent, but they visually appear the same\u2014maybe I can reproduce them statically. I'll aim for everything to be lower and exact. Ensuring concise rationales is essential for clarity.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BfoBU4sq4tLvzCTLjWwdZpcIpVYMOdcUwQ9dAsv_1JUf8NoNm4UjYFiapzRXfeLxwnxuSClGViQZjEK9XZrkjaAZy_UsY6kzANhtkiMg4A9vCemgHsYb6sPqkmszXy8cE22bLIW0cfaQYYVuZOIJiHpMIZelmxwFnhXW9l68Zaf2_DgxYBz1O5lQ-4lic3NUDIgW9N87nJA-rUTELqdLBrYQ5AtyLYDf0mrSLNeJXz52N0lrRTOmqH-2KFOqIXeOYIYcZVgHl-h89fvMloiSmYKxHIkT5jTHI3FuHbHWZDgmhM0wTYe-cwzdtHmXKCWqx9M7JFVXMEDR4dsrCSLL49BD7PRFeBAvqB4AAKFA8Vvm7HwrXWcndFhELkuTwsgw12DL0cAB1stxGpsD8p0eBabIaEHl5M5nfSSgIuJi29L1P79ELkTtO751QV6DUduN2AaRkOujz6SXn5-PK6aMM9kDqlExWZrWlvKBqlyX7krOGsEZrNo4kjnndM0cNJRwraFkG_rvQw7Og9n55LOWEnmIJZbHi-RTRFwpruJqvaBaItQ4aRhmW1pPTJNGGu8faKoknqVfHkQXDTY554q5dmpSIjnEqhcXl4VZwiBxFd9vFmmsKvmKP5wHXO6Da7Jg4u1zI0nXnOXMAkYl080UpbYLI5GsEu4K0xQlXfe1VTKDvNogWKvKAqA-AFnSCfi5jtXMDgkNyFPEzMLCmkNhNvG4W4C1mOhd356l6tUFwK5VuImT41zairnU1weNA1SCao6e7KsM80jYk4JnISqOmGD60410Y0m2at9VlPlvyVssI47SfXM6snZuOP_HKiVe6migomz5iE_eSfzR5pl4TncBZYtUWPK8roYp3nAVecy3p8iCxxaOLlKVlPQlNvBCfItkXugu6dJ6KPHmZnYCkctuOVA6Jj9VLnQApo8j-HnwNRkPTVsxnTHF2QQib25NUGyRCMRKChIBtJKzmnrAYEvnAYpJWPXMJD4JqGKOz1Nk4wEZeP0gdHsxWuxtSkZV_WVx6Jke7tT8aL0v0kPNxshauVHAV25gytrvHn9e-51jkVBaXZNGYEt1t8jV1XyGvw0VR4phusasuVhGvBiExpjIF99NLNjQmkehWkwv3pPYgzSSG_PeR0Au-JVSayvob3Cc6VIeVUhU4icNtT1u2XYEdStFB5dNwwSz2ltOgGDJoc4Jtp5TJAqwJb6P2F8UpP75JwmKunTlEwsubJTtsDCkcfPJ0-SaYmP8Z0d_bHKEfMqFDutu5h6YLGgWWwvVdTtpod26PJ4ZRcI-Su1IAFCtoTRodLBJBmLHUhIK-dHhNG1StMDrRdx9Jj4dcgnHB_Om0kYHB01Ikgwo4XJq775_tzp76DVP2mmguzkXuirEB6-gkscZupzUQaq3-BHa0ieuuOha2RGdk9xoj4GFpqdZ0OdL458y537iMBLRHd1zak_Lwi72TQW_utO-XeRKZ8J_Dxy-RVykDIWj7CHqCqSeFtRtD3_Rd2jL0F1RwotTzW6sMf3kRS5wCa5fGPdky58Unnxm84qL6-Lerng8ktEXcnGESFSeRHGA7XXabf4z168OPzQ0nLRA8UxLfYVTDtZnMOk85OfDvT128re4pwaS_HZiijlEHQ5NAtNRwDdyfceNEFl4YNDOTdCOMoBPGRA3WDKUXIPUhGZpugeXV6HDuHTI5wWOwv1gSlJLZY7wkDy-p_KWrkka2OX_fSykGCIbKjfNYbTV_6GcZcZOisc9Jgb2pfZv5iUc0VO8qbOJQ8R3dqKuoo6iPxgiHHvA4jwMPPlMiZDvbln1uX5SabiX1t-vSCZvyhAI4mcAq63whxy27d9rPgN6jNBjZhonp_gxzq4Ydejxhj_k5mkvT9GG7eGBuIJ-n9SUhEH0gfT4nd8RqqjVi2BFyCfdsBHCEuAJ4d9Ry76JwWl94RiCpJiUTmCIIrnlKAz-Njdmm_jV33nsySrmEeBgIMLuzce_27VHTYc7_xqYfh0WpvwZHsmdZt68VGHpxB_Dojwf-_wL1sia_CH0Iapn88OYZngpC25zWeqZy03C1SJPdlSDKJjLAc_AdfvIkXbqQfNa473DLAY_KbEgQiviF2sscwUcnwMyfjtlGEoiKe40ZbfSKfF6OIAHU3Kk-Z2AUq3yb294vcb7-ZLkvyQmRGbn0hSKt4_.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e0314e8f9f3060e016ae817e6cefc87d1ade8846258838c29",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9975,
+    "completion_tokens": 294,
+    "total_tokens": 10269,
+    "cost": 0.0013938,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9972,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013938,
+      "upstream_inference_prompt_cost": 0.0012468,
+      "upstream_inference_completions_cost": 0.000147
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Связь, тарифы и цифровые сервисы МТС для частных клиентов в Москве и Московской области." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>МТС — связь и цифровые сервисы для частных клиентов</title>
+<link href="https://static.mts.ru/mts_rf/images/favicon-eco/favicon.svg" rel="icon" type="image/svg+xml"/>
+<style>
+    :root {
+      color-scheme: light;
+      --red: #e4002b;
+      --red-hover: #c90027;
+      --ink: #1d2023;
+      --muted: #5d6670;
+      --line: #e3e6eb;
+      --canvas: #f3f4f7;
+      --surface: #fff;
+      --radius: 24px;
+      --page-width: 1280px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    a:hover { color: var(--red-hover); }
+    a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid #006bd6;
+      outline-offset: 3px;
+    }
+    .skip-link {
+      position: absolute;
+      z-index: 10;
+      top: 8px;
+      left: 8px;
+      padding: 10px 14px;
+      transform: translateY(-150%);
+      color: #fff;
+      background: var(--ink);
+      border-radius: 8px;
+    }
+    .skip-link:focus { transform: none; }
+    .wrap { width: min(var(--page-width), calc(100% - 48px)); margin-inline: auto; }
+    .topline { background: #f7f7f8; border-bottom: 1px solid var(--line); }
+    .topline-inner, .mainnav, .nav-links, .header-actions, .section-heading, .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .topline-inner { min-height: 42px; gap: 20px; font-size: 14px; }
+    .audience { display: flex; gap: 22px; flex-wrap: wrap; }
+    .audience a { color: var(--muted); text-decoration: none; }
+    .audience a[aria-current="page"] { color: var(--ink); font-weight: 700; }
+    .region { color: var(--muted); }
+    .mainnav { min-height: 78px; gap: 28px; }
+    .brand { flex: 0 0 auto; display: inline-flex; align-items: center; }
+    .brand img { display: block; width: 86px; height: 38px; object-fit: contain; object-position: left center; }
+    .nav-links { justify-content: flex-start; gap: clamp(14px, 2vw, 30px); flex: 1; }
+    .nav-links a { text-decoration: none; font-size: 15px; font-weight: 700; white-space: nowrap; }
+    .header-actions { gap: 12px; }
+    .button, .button-secondary {
+      display: inline-flex;
+      min-height: 46px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      border: 0;
+      border-radius: 14px;
+      background: var(--red);
+      color: #fff;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button:hover { background: var(--red-hover); color: #fff; }
+    .button-secondary { color: var(--ink); background: #f0f1f4; }
+    .button-secondary:hover { color: var(--ink); background: #e5e7eb; }
+    .search { display: flex; gap: 8px; align-items: center; }
+    .search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    .search input {
+      width: 170px; min-height: 44px; padding: 9px 12px;
+      border: 1px solid #bbc1c8; border-radius: 12px; background: #fff;
+      color: var(--ink); font: inherit;
+    }
+    main { padding-bottom: 64px; }
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 400px;
+      margin-top: 22px;
+      overflow: hidden;
+      border-radius: 30px;
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(19, 24, 45, .90) 0%, rgba(26, 32, 63, .72) 48%, rgba(26, 32, 63, .14) 100%),
+        url("https://static.mts.ru/dpc_upload/contents/608/main_main_banner_5g_ad_background.jpg") center / cover,
+        #25273a;
+    }
+    .hero-art {
+      position: absolute;
+      inset: 0 0 0 auto;
+      width: min(59%, 680px);
+      height: 100%;
+      object-fit: contain;
+      object-position: center right;
+      pointer-events: none;
+    }
+    .hero-copy { position: relative; z-index: 1; max-width: 590px; padding: 52px; }
+    .eyebrow { margin: 0 0 12px; color: #ffd6df; font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 540px; margin-bottom: 14px; font-size: clamp(36px, 5vw, 58px); line-height: 1.04; letter-spacing: -.035em; }
+    .hero-copy > p:not(.eyebrow) { max-width: 460px; margin-bottom: 26px; color: #f3f4f8; font-size: 19px; }
+    .quick-section, .section { margin-top: 54px; }
+    .section-heading { margin-bottom: 22px; gap: 20px; }
+    .section-heading h2 { margin: 0; font-size: clamp(26px, 3vw, 36px); line-height: 1.15; letter-spacing: -.025em; }
+    .text-link { font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .quick-card {
+      display: flex;
+      min-height: 126px;
+      padding: 16px 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .quick-card:hover { color: var(--red-hover); border-color: #f0a1b1; }
+    .quick-icon {
+      display: grid; width: 54px; height: 54px; place-items: center;
+      border-radius: 17px; color: #454e67; background: #eef0f8;
+      font-size: 20px; font-weight: 800;
+    }
+    .split-feature {
+      display: grid;
+      grid-template-columns: 1.3fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .feature-card {
+      position: relative;
+      min-height: 280px;
+      overflow: hidden;
+      padding: 34px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #dfe8ff, #f3e5f0);
+    }
+    .feature-card h3 { max-width: 430px; margin-bottom: 12px; font-size: 28px; line-height: 1.15; }
+    .feature-card p { max-width: 420px; margin-bottom: 22px; color: #414957; }
+    .feature-card img {
+      position: absolute; width: 44%; max-height: 82%; right: 0; bottom: 0;
+      object-fit: contain; object-position: right bottom;
+    }
+    .feature-card .button { position: relative; z-index: 1; }
+    .shortcut-list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .shortcut {
+      display: flex; min-height: 82px; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 16px 18px; border: 1px solid var(--line);
+      border-radius: 16px; background: #fff; text-decoration: none; font-weight: 700;
+    }
+    .shortcut span:last-child { color: var(--red); font-size: 22px; }
+    .support-panel {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .support-panel p { margin-bottom: 18px; color: var(--muted); }
+    .chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      display: inline-flex; align-items: center; min-height: 42px; padding: 8px 14px;
+      border: 1px solid #d9dde3; border-radius: 14px; background: #f5f6f8;
+      text-decoration: none; font-size: 14px; font-weight: 700;
+    }
+    .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+    .news-list { list-style: none; padding: 0; margin: 0; }
+    .news-list li { padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .news-list li:first-child { padding-top: 0; }
+    .news-list a { text-decoration: none; font-size: 17px; font-weight: 700; }
+    .news-list time { display: block; margin-top: 6px; color: var(--muted); font-size: 13px; }
+    .article-link {
+      display: block; padding: 18px 0; border-bottom: 1px solid var(--line);
+      text-decoration: none; font-size: 17px; font-weight: 700;
+    }
+    .article-link small { display: block; margin-top: 6px; color: var(--muted); font-size: 14px; font-weight: 400; }
+    footer { padding: 42px 0 24px; color: #e8eaf0; background: #20232a; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr 2fr; gap: 50px; }
+    footer h2, footer h3 { color: #fff; }
+    footer h2 { font-size: 23px; }
+    footer p { color: #c4c9d1; }
+    .store-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .store-links a { padding: 9px 13px; border: 1px solid #707680; border-radius: 10px; color: #fff; text-decoration: none; }
+    .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 24px; }
+    .footer-links a { color: #e8eaf0; text-decoration: none; }
+    .footer-bottom { margin-top: 35px; padding-top: 20px; border-top: 1px solid #484d56; color: #c4c9d1; font-size: 14px; }
+    details { margin-top: 16px; }
+    summary { cursor: pointer; font-weight: 700; }
+    .city-list { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 12px; }
+    .city-list span { color: var(--muted); }
+    @media (max-width: 900px) {
+      .nav-links { overflow-x: auto; }
+      .search { display: none; }
+      .quick-grid { grid-template-columns: repeat(4, 1fr); }
+      .split-feature { grid-template-columns: 1fr; }
+      .news-grid { gap: 24px; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 32px, var(--page-width)); }
+      .topline-inner { min-height: 40px; }
+      .audience { gap: 12px; font-size: 12px; }
+      .region { display: none; }
+      .mainnav { min-height: 66px; gap: 14px; flex-wrap: wrap; padding-block: 10px; }
+      .brand img { width: 68px; }
+      .nav-links { order: 3; flex-basis: 100%; gap: 20px; padding-bottom: 5px; }
+      .nav-links a { font-size: 13px; }
+      .header-actions { margin-left: auto; }
+      .header-actions .button-secondary { display: none; }
+      .header-actions .button { min-height: 40px; padding: 8px 14px; }
+      .hero { min-height: 470px; margin-top: 12px; align-items: flex-start; border-radius: 22px; }
+      .hero-copy { padding: 30px 24px; }
+      .hero-copy > p:not(.eyebrow) { font-size: 17px; }
+      .hero-art { width: 90%; height: 58%; bottom: 0; top: auto; opacity: .88; }
+      .quick-section, .section { margin-top: 40px; }
+      .quick-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .quick-card { min-height: 105px; }
+      .feature-card { min-height: 320px; padding: 26px 22px; }
+      .feature-card img { width: 58%; max-height: 48%; }
+      .feature-card h3 { max-width: 320px; font-size: 25px; }
+      .shortcut-list { grid-template-columns: 1fr; }
+      .support-panel { padding: 23px 18px; }
+      .news-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 34px; }
+      .footer-links { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header>
+<div class="topline">
+<div class="wrap topline-inner">
+<nav aria-label="Аудитория" class="audience">
+<a aria-current="page" href="https://moskva.mts.ru/personal">Частным лицам</a>
+<a href="https://moskva.mts.ru/business">Бизнесу</a>
+<a href="https://moskva.mts.ru/gos">Госзаказчикам</a>
+</nav>
+<span class="region">Москва и Московская область</span>
+</div>
+</div>
+<div class="wrap mainnav">
+<a aria-label="МТС — главная" class="brand" href="https://moskva.mts.ru/personal">
+<img alt="МТС" src="https://static.mts.ru/mts_rf/images/logo-eco.svg"/>
+</a>
+<nav aria-label="Основная навигация" class="nav-links">
+<a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile-tv-inet">Мобильная связь</a>
+<a href="https://moskva.mts.ru/personal/dom/home-allmts">Для дома</a>
+<a href="https://payment.mts.ru/spa/categories?tab=payments&amp;utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=pereversti_dengi&amp;utm_content=menu_oplata_i_finansy">Оплата и финансы</a>
+<a href="https://shop.mts.ru/">Интернет-магазин</a>
+<a href="https://moskva.mts.ru/personal/servisy/razvlecheniya">Сервисы</a>
+</nav>
+<div class="header-actions">
+<form action="https://moskva.mts.ru/personal/search" class="search" method="get" role="search">
+<label for="site-search">Поиск по сайту</label>
+<input id="site-search" name="q" placeholder="Поиск" type="search"/>
+<button class="button-secondary" type="submit">Найти</button>
+</form>
+<a class="button-secondary" href="https://support.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=support&amp;utm_content=main_footer&amp;utm_term=link_tap">Поддержка</a>
+<a class="button" href="https://united-auth.ssl.mts.ru/account/login?xClientId=MTS&amp;goto=https%3A%2F%2Fmoskva.mts.ru%2Fpersonal">Войти</a>
+</div>
+</div>
+</header>
+<main class="wrap" id="main">
+<section aria-labelledby="hero-title" class="hero">
+<img alt="" aria-hidden="true" class="hero-art" src="https://static.mts.ru/dpc_upload/contents/608/main_main_banner_5g_ad_keyvisual.png"/>
+<div class="hero-copy">
+<p class="eyebrow">Связь нового поколения</p>
+<h1 id="hero-title">Уже 5G</h1>
+<p>Развиваем сеть нового поколения. Переходите на новый уровень скорости.</p>
+<a class="button" href="https://moskva.mts.ru/personal/5-g">Узнать больше</a>
+</div>
+</section>
+<section aria-labelledby="quick-title" class="quick-section">
+<div class="section-heading">
+<h2 id="quick-title">Самое нужное</h2>
+</div>
+<div class="quick-grid">
+<a class="quick-card" href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile"><span aria-hidden="true" class="quick-icon">₽</span>Тарифы</a>
+<a class="quick-card" href="https://moskva.mts.ru/personal/pereyti-v-mts"><span aria-hidden="true" class="quick-icon">М</span>Перейти в МТС</a>
+<a class="quick-card" href="https://moskva.mts.ru/personal/mobilnaya-svyaz/uslugi/mobilnaya-svyaz"><span aria-hidden="true" class="quick-icon">◎</span>Услуги и опции</a>
+<a class="quick-card" href="https://moskva.mts.ru/personal/dom/home-allmts"><span aria-hidden="true" class="quick-icon">⌂</span>Домашний интернет</a>
+<a class="quick-card" href="https://moskva.mts.ru/personal/mobilnaya-svyaz/rouming-i-mezhgorod"><span aria-hidden="true" class="quick-icon">✈</span>Роуминг</a>
+<a class="quick-card" href="https://shop.mts.ru/"><span aria-hidden="true" class="quick-icon">▤</span>Интернет-магазин</a>
+<a class="quick-card" href="https://moskva.mts.ru/personal/5-g"><span aria-hidden="true" class="quick-icon">5G</span>Уже 5G</a>
+<a class="quick-card" href="https://moskva.mts.ru/personal/servisy/semejnaya-gruppa"><span aria-hidden="true" class="quick-icon">♡</span>Семейная группа</a>
+</div>
+</section>
+<section aria-labelledby="switch-title" class="section">
+<div class="section-heading"><h2 id="switch-title">Подключайтесь к МТС</h2></div>
+<div class="split-feature">
+<article class="feature-card">
+<h3>Переходите в МТС со своим номером</h3>
+<p>Зафиксируем цену тарифа.</p>
+<a class="button" href="https://moskva.mts.ru/personal/pereyti-v-mts">Перейти в МТС</a>
+<img alt="" aria-hidden="true" loading="lazy" src="https://static.mts.ru/dpc_upload/contents/757/100926_mnp_banner_main.png"/>
+</article>
+<div aria-label="Другие способы подключения" class="shortcut-list">
+<a class="shortcut" href="https://moskva.mts.ru/personal/esim"><span>Оформить eSIM<small style="display:block;color:#5d6670;font-weight:400">Онлайн — быстро и удобно</small></span><span aria-hidden="true">›</span></a>
+<a class="shortcut" href="https://moskva.mts.ru/personal/krasivyj-nomer-mts"><span>Выбрать красивый номер<small style="display:block;color:#5d6670;font-weight:400">Легко запомнить вам и друзьям</small></span><span aria-hidden="true">›</span></a>
+<a class="shortcut" href="https://moskva.mts.ru/personal/vybrat-nomer#/"><span>Заказать SIM-карту</span><span aria-hidden="true">›</span></a>
+<a class="shortcut" href="https://moskva.mts.ru/personal/chistyj-nomer"><span>Оформить чистый номер</span><span aria-hidden="true">›</span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="support-title" class="section support-panel">
+<div class="section-heading"><h2 id="support-title">Поддержка</h2></div>
+<p>Отвечаем на частые вопросы.</p>
+<div class="chip-list">
+<a class="chip" href="https://support.mts.ru/mts_mobilnaya_svyaz?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=mobilnaya_svayz">Мобильная связь</a>
+<a class="chip" href="https://support.mts.ru/mts_mobilnaya_svyaz/esim/kak-aktivirovat-esim?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=kak_aktivirovat_esim">eSIM</a>
+<a class="chip" href="https://support.mts.ru/mts_mobilnyy_internet/reshenie-problem-s-internetom/chto-delat-esli-ne-rabotaet-mobilnii-internet?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=chto_delat_esli_ne_rabotaet_mobilnii_intern">Не работает интернет</a>
+<a class="chip" href="https://support.mts.ru/mts_mobilnaya_svyaz/blokirovka-nomera-problemi-so-svyazyu/dobrovolnaya-blokirovka-nomera?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=dobrovolnaya_blokirovka">Блокировка номера</a>
+<a class="chip" href="https://support.mts.ru/mts_mobilnaya_svyaz/vosstanovlenie-i-zamena-sim-karti/kak-zamenit-sim-kartu?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=zamena_sim_karti">Замена SIM-карты</a>
+<a class="chip" href="https://support.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=vidget_support&amp;utm_content=main&amp;utm_term=vse_temy">Все темы</a>
+</div>
+</section>
+<section aria-labelledby="news-title" class="section">
+<div class="news-grid">
+<div>
+<div class="section-heading"><h2 id="news-title">Новости</h2><a class="text-link" href="https://moskva.mts.ru/personal/novosti">Все новости</a></div>
+<ul class="news-list">
+<li><a href="https://moskva.mts.ru/personal/novosti/2026-10-16/uzhe-5g--skorostj-vsegda-s-vami">УЖЕ 5G — скорость всегда с вами</a><time datetime="2026-10-16">16.10.2026</time></li>
+<li><a href="https://moskva.mts.ru/personal/novosti/2026-10-15/skidka-na-svyazj-pri-popolnenii-balansa-kartoj-mts-denjgi">Скидка на связь при пополнении баланса картой МТС Деньги</a><time datetime="2026-10-15">15.10.2026</time></li>
+<li><a href="https://moskva.mts.ru/personal/novosti/2026-10-15/riil--vibiraj-svoyu-cenu-na-svyazj">РИИЛ — выбирай свою цену на связь</a><time datetime="2026-10-15">15.10.2026</time></li>
+</ul>
+</div>
+<div>
+<div class="section-heading"><h2>Полезные материалы</h2><a class="text-link" href="https://media.mts.ru/">Все материалы</a></div>
+<a class="article-link" href="https://media.mts.ru/technologies/201202-pdd-dlya-ehlektrosamokatov?utm_source=mtsru&amp;utm_medium=banner&amp;utm_campaign=mtsrumain&amp;utm_term=amts&amp;utm_content=mtsru18">ПДД для владельцев электросамокатов и штрафы за их нарушение<small>Технологии для жизни</small></a>
+<a class="article-link" href="https://media.mts.ru/internet/197001-krasivi-nomer-mts?utm_source=mtsru&amp;utm_medium=banner&amp;utm_campaign=mtsrumain&amp;utm_term=amts&amp;utm_content=mtsru18">Красивые номера МТС: какие бывают и как купить со скидкой<small>Интернет и связь</small></a>
+<a class="article-link" href="https://media.mts.ru/technologies/210911-top-5-prilozhenij-s-oflajn-kartami?utm_source=mtsru&amp;utm_medium=banner&amp;utm_campaign=mtsrumain&amp;utm_term=amts&amp;utm_content=mtsru18">Лучшие картографические приложения без подключения к интернету<small>Технологии для жизни</small></a>
+</div>
+</div>
+</section>
+<details>
+<summary>Ваш город — Москва?</summary>
+<p>Регион сайта: Москва и Московская область.</p>
+<div aria-label="Города Московской области" class="city-list">
+<span>Балашиха</span><span>Бронницы</span><span>Голицыно</span><span>Жуковский</span>
+<span>Ленинский р-н (Видное)</span><span>Лобня</span><span>Мытищи</span><span>Одинцово</span>
+<span>Пушкино</span><span>Раменское</span>
+</div>
+</details>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<section aria-labelledby="app-title">
+<h2 id="app-title">Скачайте Мой МТС</h2>
+<p>Управляйте сервисами МТС, проверяйте баланс, контролируйте расходы, настраивайте тариф и услуги.</p>
+<p><a href="https://www.mts.ru/personal/mymts" style="color:#fff">Узнать больше о приложении</a></p>
+<div aria-label="Скачать приложение" class="store-links">
+<a href="https://mymts.onelink.me/uQ4e/appstore">App Store</a>
+<a href="https://mymts.onelink.me/uQ4e/googleplay">Google Play</a>
+<a href="https://mymts.onelink.me/uQ4e/AppGallery">AppGallery</a>
+<a href="https://www.rustore.ru/catalog/app/ru.mts.mymts">RuStore</a>
+</div>
+</section>
+<nav aria-label="Ссылки сайта" class="footer-links">
+<a href="https://moskva.mts.ru/about">О компании</a>
+<a href="https://support.mts.ru/?utm_source=inhouse&amp;utm_medium=mts_ru&amp;utm_campaign=support&amp;utm_content=main_footer&amp;utm_term=link_tap">Поддержка</a>
+<a href="https://moskva.mts.ru/personal/kontaktu">Контакты</a>
+<a href="https://moskva.mts.ru/personal/vse-akcii">Акции</a>
+<a href="https://moskva.mts.ru/personal/podderzhka/zoni-obsluzhivaniya/offices">Карта салонов МТС</a>
+<a href="https://job.mts.ru/">Карьера в МТС</a>
+<a href="https://moskva.mts.ru/personal/mobilnaya-svyaz/tarifi/vse-tarifi/mobile">Тарифы мобильной связи</a>
+<a href="https://moskva.mts.ru/personal/servisy/semejnaya-gruppa">Семейная группа</a>
+<a href="https://moskva.mts.ru/personal/cookie">Политика обработки cookies</a>
+</nav>
+</div>
+<div class="footer-bottom">
+<span>© 2026 ПАО «МТС». Все права защищены.</span>
+<span>18+</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

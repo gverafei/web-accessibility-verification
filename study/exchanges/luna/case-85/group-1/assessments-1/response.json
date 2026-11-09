@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target communicates a broad shopping purpose through category imagery, labels, and shopping-related navigation. Its regenerated content need not reproduce every reference category.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and coherently arranged. The large blank area in the lower target is sparse, but does not make the remaining interface unreadable or unusable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible search, cart, account, and navigation controls are identifiable. No essential visible action control has an unreadable label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target depict coherent shopping homepage interfaces, and the supplied segments are assessable as the intended comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, category labels, and product imagery convey understandable shopping categories and a clear page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating web design layout**\n\nI need to assess the target layout. There's a big blank area after one category card, and while the reference has multiple category rows, the current design shows only four cards with a home card isolated and a lot of blank space on the right. This makes me wonder if the target coverage is complete. It seems like there are potentially three target views, but only two are visible. That large blank space could suggest a layout defect, even if the visual interface is generally coherent. It's strange to have about 700px of empty space, which might not seem material but could affect usability in broad purpose shopping.**Assessing page layout effectiveness**\n\nThe upper section has hero categories and initial cards, but the lower section has only a home card and a lot of blank space. This could indicate a deficiency in the page layout, but the category contract suggests I should assess the target's usability, not just look for omissions. The blank area does make the page feel sparse, likely just a cosmetic issue rather than anything material. The controls for cart/search and navigation aren't clearly buttons, but everything else seems coherent and meets semantic and content fidelity requirements.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating web design layout**\n\nI need to assess the target layout. There's a big blank area after one category card, and while the reference has multiple category rows, the current design shows only four cards with a home card isolated and a lot of blank space on the right. This makes me wonder if the target coverage is complete. It seems like there are potentially three target views, but only two are visible. That large blank space could suggest a layout defect, even if the visual interface is generally coherent. It's strange to have about 700px of empty space, which might not seem material but could affect usability in broad purpose shopping.**Assessing page layout effectiveness**\n\nThe upper section has hero categories and initial cards, but the lower section has only a home card and a lot of blank space. This could indicate a deficiency in the page layout, but the category contract suggests I should assess the target's usability, not just look for omissions. The blank area does make the page feel sparse, likely just a cosmetic issue rather than anything material. The controls for cart/search and navigation aren't clearly buttons, but everything else seems coherent and meets semantic and content fidelity requirements.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BlDJbP5begDxqmmcCbk_iSITkWI_1gbYIg9jZSlDwuc02aGNcOc4wBNVFB0C0xsDLndtLJIcEzdl7nrtO_fWYx46wDSflEI5lAC3tH78FahVppCMEvw0xwVpbB4q4OgvbM1Je0Xicd_EVagbHf-3zjiNlGMCTaf0zUlEbhQKSVA00Zqf3AK0amvdTrebbhWnJwMOqLH27ae28EthEqNKTlOmNPhcjOe6TuSIRHSVz9AnuXlmfN9wZFBMzBf-1TUTWRjXLdx1fkwoXuwT0TZKCfwf2J5T-GUdSEapUj3Jbqp02LFm6aOv8ixQ1I-G7DMMZYI0HvLKXJ8-ALbh4PEEwbIJW4bm5PhqkoWShoyuzaeZgnu61KlokR5t3040X2vSDl2g5Ex7aUauMJZlJuqHCUth7i7lMqaABA_PVfPR9TkLt-oiJAZJZ25TUuoTp-Fnnb_z6P_-IiK2cy-eUH2hn9wBMmB1LnvkwhgdYFhkqkCvBtxwE6K6SDpeq18xSpFiKmd3Is0NRf0N6TMgOK09ta7_25U4Ju2S7r2Fs8ltvmtfy71IBxSVzCWUAJUjkUM9wxGk3v5_Aawxc4uVFQdPjTqVMFmAAadowHxun0ex8c6J9I5c7vIwneEIuePk404OJUsL5PhtLANHnqs-R7ntHR44RtFttbVPnU6MWYqr1pSzRqFltN5zJ0tAhqn8USD0ZvHXTSvDzlvZzFkVOBuvAH2447o_72riPX495x3uvdO0d2nR9EFvgAn8DS6aBecln-D2NEcKhraoq2VyLRnX-feVmkp_jnwR0xyJIBfJBiBClH4pmDQEVxZcxP4ZtoBQHG6v7aGCv6SkBvpQjRTHkeb01_NUePDEBQIxcMx6C2X_eHGo2eXqtCLvF1y9XG0lgynYoo3MKTUxeChy2wywYxbNxA_IgEK6nryXKXwI30DIyTmguPMIwaHgq5D2r--bsTw9GBYAv4tOGDfLX9IXnYySJ9Za4IflqIBJSq1Cvpjn5QttHsrMyI9gcDaZqLq1SrYW2DBDboraIQ-6Z3Ti2aYhQc3Hju_AD0GZXyKoPTINqpt_bmsRM4nn0eSFwuadOwYwsZRDkcU2VUhlRtxvaFr0kbg9MnXt3KCecm87wUz1A6FzEJb3AciFS2DGr1jhojZKlhHC394_bI5OFdSb5OpCWSL2OlIigbpqiYTianbRZGGBavO8HY23NFgg8ksF37FcVxZBkX1B5aQn6mgGO2b8NKJf-7WkvJwus_hOpyN9LZNlIVbzLRNIowvakZospFvZTuvJullSRJsdhzrY8W8CEl95ngizRoMwnR3-NX58xm9hUhziOQV0PuiFak6IbNMxJAuFwEFhiu1ye64L4gYDphCp6JhISH4WG7RY5cDECR7GUh31I7GBvYEgSsK5S9R_efA8pVF05iOsjkcSjjoFFnGWe_MI-8el9PW4ObVsNr-XlcKvwT8q2zbMu5BEJZEg4qrytaDRdhXf1jmDRdHhyYdoqJDdf2WlvBMP-U-swcvecq8g2zMkEYkALaAp7GXNgfwGaKoauBzfRP5XsdF1sLPU9fJu9kBzeFaxPPX1qkoAmZejfpcQ9KUPC7s1amuhHQj7GEX8JkkZuGOQh4vfMzC_n6ktaEiNWQR2-BzR-maD8Gq9pSPz_GIoQz2_kMy4znK4nYmYzDle39IHit553BySmZtR7fdIpS301vnlWNQDaaL18u5wNJ9cU03MMAlpv04laF4lhhL4vo4FVZpe-haWh7jsxEFZa6TMh8lBVgnoPkZnkugxB4MZuJngwuE2T8WhCqShFbuVi5oZgjBcncb9YZsy8o3HSYSB9rR0CRGZzFVb-teOkSw2GH3yWZhO1O4tBg70GUn4GkwIZpH0MTPEJ06j98Al0JSsdjZRdMSi4XzDJnCorbFIEM6YQc3Tu_e3kEowFdHd03gwfv3Fx-uh0xJNZD44XgTmbteNbgmQPhDBfHrYheZxUi5ifOUQP74VXuUvgVN8n3EnR4bp44_iyrbNC71ToyoaskTWLKcx7dXeILdDbnhTqMslaw3hvsy8AKUgY0CVo5uPcjpzM4qLpCaGIib3Z59SzC71kobuIe7O6k2q-RjEZiLrGP5tXNf8UUiY0MbsxxSGnXXr08pmZgT5MOuSLfQ1NPtJmZd8gPrHDWeVqgoLWRnDwFM8_qQB45ZzSskFlwHFUBcgoycbrB0Z8PiERdWWTnvyePzY1P29JOaWov3ZZEY3BdaB53UfvWWnnL15Fs69gjjzlUdoQB1tHnN-Y4CJeVjPsrE_cocAFAUlwx7CPhCyu2c-e7JSeLDCFqrlBVXYDdU_SxgbZC4Ivrowyb8Sn2oc7NtuwaNBfHdYHkKW5EGVnQJUWIPuoKz2HhKbcrOuZZy_BZK3Dni0cf4LIt5NZOLheUZE33O4P1ylwWUJzOT9LUIpEvkTZm7E5LAnmD-KRkBxmkgbEy1H8ziIa4VBDZhrvsXXrAlrBtAUPSUGFinLKSH161TYB4buup3lpaE0Wb_g3h40PpmkOitnFI-I1gV85Wt9FPAXa0_L03opglFD-mmH-1q4QEAF8LR5h1As2gocHEvAyM7xr7vXgl9rNiDN3MTlzk88c40cDr_MwbAKodnCeTIKBwPwUY75zKZh4qhAmGJIt4LDsWYR94Xuxt4VxUvpOCmX6xrAfOQ1ZgWEPF89C38jWw-J44IKL9nUJi3BsrntqQi2ShF0i1iBGXEsAzdeID5IyUP1s0lkrh5fKYObifrGjThaM_0NH9frqWZ0yiW0a0f1Sy8Wx71iYmQpUKd9o--VdF8dzsC8s-WUzcuqhWpj_eFSSBsPXSDN30RCVZZ5h2LKPQAL0c77oVZUOOzTm6xaFVOz26BNgc4cCo8pnMSxB6C8-jAEumorUGnQaaUJD3mQceyb86Wc7tdyI5Ew8kSwrlfJBYglA7Owm6Wa1-jAmYGchmDrEGQviuxkrzYL2eo1O-UxDdDS0Pzt3wCGnFqeY7LmGRmdcwlgTHgaa4onBejuxz7fF5V9bq_6fQMmAD-S5lg2wFdFmrdmoSlLcbhqqJiqMEXYQC3G8YU5-HIXr-0Fc8XcqQK3MHGW2DF9FZhY51vxxByleigPpghZVxtIJoUibvzKoRXHFwghcDBELbG95IuDzUe8t5sPNpBVBqjr8BQY6K5l-HXMchzcLfDbmgPe7bPXaRQXd9R_q74t7KEufkC0kP1oeHQyqehitz-yfqkld4nfJuboUvS8TML5ARyRWSfMxQzl6CdbQvQwuIyexb79V3n44wzLxcKlIHHkTEkmwlKRd4if07V3Pb1mhpov3Oah5Y92tU5Puq_PL4ytDMyjvOg6FcmOvzWHZj-DVzZLK8ZwxL6ueFctcEFbR0-mPrgS4CzbnorUCHCLznaGGtg9DBN5GnjVHQgkgRdWdR9tqqDhrZWejkJMqRWZS__He503gjVVtIJnsiXQ57AI7p_KlLG_xHUz6mzuNtvSgwaQ4-wBf1zJk8V4fJRLsxNRM_TW7oXWT-1-YMuvwaYskB7rM735RS0aLBDiCLIVejc-8ru-dMA1sdE-dbj0Ovs9h8CgGe_Fsv_xR2tHMS06qtVZuHx1yI2CwjXjlHlVMYXsShdL_4bNLrBey6ge9Y3F-LTJdDYqspHwRre-ZMqXwgKaZcBIU_pGma3BXLAHtebdmiYETJyXaX612hPL4IjrFuw4xXX8GyQStoFtFFkvNDf54Md7Eik_5EzvASxPWq7T9ZaEpjgoyBNh00KmPdVeO8GkuCoOKL-3nhobTlGzUpUIjPFZZqWlLnn0QuLd-90NtLAnktf_Y9E4xMLerAP-IbLqtw6ItYTzHtC0NkCRiBWtIPnQRQBz4OpQJ_Rkay8eJTzvRKvPhemOxaT9gtInGBO84yrVgySXQuFVdctTId-yCR8yvo9mjNxw0x54SUY5hG06XFADqD_Mh0umrofu7DPAJw-Wbvl6mr26TQaEILfnW8wTv6-mR1lbE0gdRcg8wAjrMACT0KExBQtqZIw3BPWB4OnQ06P6g4N3O3LFbqXzoFIlmHsi0A9o2zoLFYRTtQ4cN1vZIPhfdeMqo-nQDtX7_qCshq7E7QGUwCKumDMWmNrhKShpvWeQogv6dUIQ4BjdfqQoiFjrHXw8ekZJbK_fqoruconoR_UG41J0Bt3xbxYM0I-eEDc_nAbNVI-BlnzLrW8t4kxuDpqRXYZzgb6ebF_OT4MYPC8tU6qaJXjlCPqp5gYJbS2BnBear7NSFW70vr9A1d_zGywCRgdvacYgRk3z3C228BRALm10OZRaNBhml7obmP6Xc3WMSUIJoeljh3f1P4Lg6pPALbj7Xlg6pmtqc4mNuf0OqClVpQZGjKPWQ2JmS5ZufHofrekkcaHaC5rQLBm1Ieud_2l7HoBB6aPP2wKnpfyMpsxbAHMXZxjfThC7Ro6vCofAePDKt-N2jRvff1IOuMcpjvCaTo-CAfazker1-2SD7kDAxq2Wzl3mMUY4l4AchVUWFm2q3vtSrqyHi-DlR_oxiShQAYzNdH3LYgs_jyfwqKWCTGXmAqQm3HmuXG72jvS-jJ9Qm2m02gp24DD8JzWKsT2EQeU3xb3x4w0PEqgKhJfEvBW6Ae1pqGlcDFyfZKcQdEuoyCvCtvBNZMVnyLnM0gDy_JDZn8hXmhnzXMJyxHpBfQUYTi1yvbyxCQPeUiineYUCLFXOVIOXX7bWuflh7CKOPE8jQdSZkNXJvhAoyrTL852R_QgT0k-59W6wCYWNGh0hXjmdTpMXdIJmFEHZIhOaog1Odet2N2JaXAdpjVd5_DXxHE1T4frVM0NjO-0PdTvkiNvAFS0R1YKM7I3N7pmMV-FcyvyDFv-570XYTWt_CqY7sgDPwVh9D9V22jTyHh_GYQESLRZ8-qMs_qXB3325nnEV90PdPTt9ooIPjVjlqWvhM7AuU1GzrDxtVfi1mD8EzA13kbW8GQzsiyuk6uII2HaHWUQq4ke6t-cNyJ5lf5u0GLBGfDUGnVpbYM8_4DFPzEEN3vy6C2loTyXpjzh90yJtU6XiKI4WopTHvriBVewzim_9IqtBzeES6bNW2urYfdgKGP77KKQDQO6fu8yTRxaog-yFbgr.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0be7083a6ce042da016ae8193e5dc887d18297d512fbdcf311",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10308,
+    "completion_tokens": 506,
+    "total_tokens": 10814,
+    "cost": 0.001541425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10305,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001541425,
+      "upstream_inference_prompt_cost": 0.001288425,
+      "upstream_inference_completions_cost": 0.000253
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 248,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

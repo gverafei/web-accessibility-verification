@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show the same newsletter callout, sign-up control, feedback area, and footer information.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible content is legible and coherently arranged; the screenshots appear identical.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible Sign Up, page-helpfulness, Feedback, social, and back-to-top controls are retained and identifiable.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target are matching, coherent views of the same page region.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The newsletter message, footer details, and visible control labels convey a coherent purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6617,
+    "completion_tokens": 166,
+    "total_tokens": 6783,
+    "cost": 0.00014944,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 6614,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00014944,
+      "upstream_inference_prompt_cost": 6.644e-05,
+      "upstream_inference_completions_cost": 8.3e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

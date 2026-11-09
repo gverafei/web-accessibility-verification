@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The climate section and footer content shown are preserved. The differing/empty banner region is advertising and excluded from preservation assessment.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core text, images, and footer columns remain legible and coherently arranged. The large empty ad slot is a permitted advertising difference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible climate category controls and archive prompt controls remain understandable; no essential visible control appears lost.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired windows show corresponding regions of the same page. The advertising difference does not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The climate stories, labels, and footer navigation communicate coherent meaning for the page. The absent advertisement does not impair that purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating ad visibility**\n\nI need to assess the window for any differences. The only thing missing is the ad banner, which is excluded from my analysis. The main content remains identical. In image1, the top banner shows a partial ad, while in image3, the ad is fully visible with a blank target ad region. I\u2019ll exclude that from my evaluation. The dimensions are all there, and the controls are the same too. The evidence feels coherent, so I'll document this in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating ad visibility**\n\nI need to assess the window for any differences. The only thing missing is the ad banner, which is excluded from my analysis. The main content remains identical. In image1, the top banner shows a partial ad, while in image3, the ad is fully visible with a blank target ad region. I\u2019ll exclude that from my evaluation. The dimensions are all there, and the controls are the same too. The evidence feels coherent, so I'll document this in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BgWTrPHC4666Re1X8EihXW5qbYzUzMpo1Qqy1LMtlDQ9s6ytd-h4U2NRZaP0MSIbqyKR-nCfnWFwQszPN0qPwO7hfGnuo-Ob8B1f36XpC2dwJ_IT_9zD9M5IIfIuxYSywlg3okkxBrmgYgFTd_1o-KJ05PuID2-WYZVoPWz5pX7kQtr_BpAaPeOdcyCVGt8mITfKW1eO2tHIpHZlBIYjaBMnj3dRB3IDmlVk-eBuwQRpO2iaAL7BD7JxYXItaolE82_rgDRGEW8tETapaluXrGI2pdGde5IkXYiVHmzXJoKcTH6EoO_dI0xPY4hi0q7w_qOolGxqhoJMF1VFVedmhgAhgNb-YpNd3L3KwECyq_7Fwcb30crZ4kt-LpLBOJLjrRPWPLHUDMJNU4EjqUV46QXGWssr01A2s0r3ntpBvonTOxcKyRWSL0QnrBXmWTW_hNIm8hXI1aX8tN32_tQ3OfodHfdIY9kv4nBYbirQ45rCjj8x-Cawe43inhgv_bR-8d60qrIsZecl5z_g4Ol5ENsLm8pZq05fZ7pDzFG8BoItOkK0PO99LB1AMykTMhcrZdn78UOKAOoiS2eO06ZKEqrqhvPq-VHBKmA_20N5Z__8cSCB3pg2Ufpx86W4KLHNcW8VELyeLoY4pUUcIU1rLFuMAA950MK1Xx2gYnj8JkAhiEZPI7jbuGHosXWpFKXaZc0nM4HeusO8TKPokv7oCoTZDlkIbSfeCkV-0vgtzJZ4DK1GUBHYZd3HksiSD_TmbehcQovtU8Lvsy9k01kgaVRqdBbpK3b2QIF4V79fb5IZC3Ygt0Cr16F63X_eY0ft7nWQMwQtEhvvRkHlKwwuriUUbBanLBkNlsMOPS77AWwhXWkn09bx7yJdU2XKvKYymyiRM7xxKhnA9hrjFv7W5l4THsxa_Wxf2xTEN2aHoXMXxUJDGYavaLOM9w15Jdwu42Eu8bNE8JR7BCNQqT0kKtn_rtP6gY9Omn9tJGWGiiVHZFt5JcBnIwT5nvSQrIuByX8FoGooxfKN02gsARrhVc2pHJpAhxOPZ6VM6nmc-vpzo6gAzxkgpOMa9MFhJYArKUK1kJMDW_NkjMX6sDr7voD-poHXZ5RmET1eZWXPatb-TUtGnmMItzQyhfH8Jkt5kMio5eKuY0gzQDyLnhPloV5bVpMynqtLwEUBVRAM_rOBtCrK8-HwPsemoGmhPfMehWXrTFD0xwkCYIzDSfxiu80qXU5msI69xEr_-TVjCvlv2S5w2mzbGD3XtIE4Ni7XO5XdNe9BdaMiiGeM8r-mRQeiMj3WQxhBwZW-bDmxhS8Cf55LSM-LDPfP-LiqjFLawkPGcXkjDEqUQLCJVBoPKW52AjZi5CrNer2QLdGTkHiFAtUQaCwSAFziA0hTZW-gK-8g2MDBXF3Z-z6IneO2_CWQIs1v1WAgXnCnfop-qi2dU66bcvh6sCoCqC4OFtU_SkSzLedB_-qL_y-IRhebULST_4XK9pzRUwtiQNCyfIf-wL1DW5o4F774K_69T0LbV3QD6s88uO1ibJ2mw1AtxgQCbsgJ65zfSwgpA-o-EhNbIQxyOBqUi2qZzLhbdikST9Y3bHAnvq4TY9NNUjzTqI8v0igKJgRUpStaYA6I2FLgp87-vrL-EcJNRUHDFFgZIY1cXbTc-JKyVBURSsTXfZVpGZ-ad88KQPa1nVCku8oZC6e3y74L2VSuyHhID2XjRF_4mKOQWItxKY5HR3hLSC4jEeV7NJyvjP-Nyth1lxuK1zMkcTJOrP55X_8y20uR_9lOIvkJwUeL-iJEHQ1QDoBYrW6wqpPaEbnZsO_iNrvKh43nekjh23jFRialKIiSM0Mxj_vT_o45j0px_I_qOX5DzNapTo-m0khvah7jMGMpkhUXHWbptogEcRJyknBmYmy9EnKZ3a_Ixys69J16TVYlXo5zDMNGbxWyN9qi3SA6qd4wrH7jxZ8ScPzvQBqmzBkszdJWPuh_GKzbSbw3LZq7QViCVtORvThHNqtU6xz63t6oMU5rU0E1BFzB6jCBl2usa-E6aEAfGSNGAcr99L5oDUakgiKp_rHqDTCW20dgjrQrKywDz2tWFhfDJSr9EHazNOgHuFxP3TmpOlgmhs0R72GtbNTZRQgzJSYGKM9D_-UaiRt9cRO7cZFCXr510lA31t8He1eZ_Tz7fGAqgqIe1WnI1D75HLZnWIEI08m_PxmkMPdklW8f8lCfPN1FZjfRXw3BogLnrxNEaxrY3opF9YDFTN0-wLVu6RopSXSQ4yowO7zDAj9HY6RALfapJX-.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0af7e7dca97c4aa5016ae81815446487d1b42c8ed7a69bd7a4",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18652,
+    "completion_tokens": 300,
+    "total_tokens": 18952,
+    "cost": 0.002481425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18649,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002481425,
+      "upstream_inference_prompt_cost": 0.002331425,
+      "upstream_inference_completions_cost": 0.00015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

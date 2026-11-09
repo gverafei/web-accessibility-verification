@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible Forbes homepage content and organization, including the lead tax story, news cards, and Forbes 250 feature.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged, with no material clipping or overlap. The supplied views match closely.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, subscription, edition, and audio-player controls are present and understandable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views show coherent corresponding page states and matching content.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, imagery, labels, and page structure convey the same clear news-homepage purpose as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating JSON output**\n\nI need to produce a JSON output and assess if the elements of the reference and target segments are nearly identical down to the pixel level. It\u2019s important that navigation controls, play buttons, and other features match exactly. I want to ensure that everything is consistent. The rationale behind this should be concise, so I'll focus on making it clear and straightforward while confirming that all details align. Let's proceed carefully with that!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating JSON output**\n\nI need to produce a JSON output and assess if the elements of the reference and target segments are nearly identical down to the pixel level. It\u2019s important that navigation controls, play buttons, and other features match exactly. I want to ensure that everything is consistent. The rationale behind this should be concise, so I'll focus on making it clear and straightforward while confirming that all details align. Let's proceed carefully with that!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzzMoxj-lboxai8LN7yeNBudR0NFf-TqvQsJCK4jbY__NoR72FzZ8GmklI3dMfOj2UnQ3SDCQ3zYWUq0UkPeGw_MklQe9rQrEjap6X80a_VlSGoAPqMeeHZErIyvPNvfJKfXrlC1DAUdpUK-8rVcMKFuShrQYo3Hjm4tRRzVym03ho6WpPVqEg5Dyccpw-R_8mF0eXyqk-6hSreLE9BQp9yK4K0atK1sNJ1bs9EEsdY93VU1attAzKibizqi3LkOoOldfMmhHR0DNr-GBx3cQJTnD-mX_HAyTNetyO7HJxG60cObZxE1H4unNBqZCSKA0ywa2WgKQsU32OXwvFbo9TWI7T3etfLa8W7l96j0V71Ym6p7tgsOVAntNA5cFddQYaH7nTS6fTIwzzmoUtkapefzjjR9QxpfpuabqqeL9eo2mdbllkNg1myisvW6ScTZST4sttkRJCuPTsIJY2CQXqJiWABUnMUqdPauOC3rd5DjryRbUoGVcjg7eAa1IT4XOBtaH1guI4zwepADGHlySOUIIn8SJP3rAnn5oNCGk_9oOMAaISFT4egBkvVKfzA7ZBd9-0WGBzgGMmGNbSnD2Jj6Ew2bMaPfpZjQalrcxbcske8Qc6AQWSLV2AivYa8On9vjtYQQoSbp4_34-Nf1I4TQTxZic037Toi8p4Htq-iovs0hVXv5XUvJ6YtBL563KGF_yos1BYDt7aSNPZJn1ZqepWFW1kElOsWr5Mx6jcOYs2NuD0a7fkuDTXEAWKBDj7Ekhcb5Yx06_IbRKm8AkeQl9MBStoJxmKTJRMh7geJB_HJko5EmX35w-dDafE0wH-NQ_zXiDMW_0XJ1VxG_hZF9NxMXkh1Pj2DiN2pBp_1pRaNnuYMrnev6fPOPFgTQh4FyzgUTHCzRr_QjKoJfVtHmCSwcmwbNHUD-J-7P-7s0AzIcHZs6J9cVhyKK3WXD2yG7M71ySwGATxs5R7ZDe4AzeqWNgCqUf0mObQc7WJrr9ujcmWHHTeZj9P-kZjAV5srhJFeFpGTFsDfBEKRDesY_SLjiEmlHKeQ-hdIOFaHxEFLYRTeJsrDojFOESjNLBYdhK4TT1dyYgnAfq_Brs4swTLfYC7IfxJWAk3DpIL5t8ZRt39you3l4aE3oJgxgn1Qf_dDIjRVpYHd13M-QcvMrOej7bWfOEXsZZRSb8htqNWrhyrjcOq2TFFfeMj72swYjdBF7DjhGnMUi7YTEzkkVLBfvZaPQvxgP-D3yShTvWrtKz9XYLJNdGM4iEQEFke5WOBPhETpgkmtYWUbz1t8aqnA8BegfmDkjf9cIAAvC0CnZ5kGQhpT0WD_HDOjk9RQVvyrecBESQGVqo8IqxWUoUpxJnUHc5uOdDZQUzKUaWVU57EFG663th_6JxDFWiGhHWrKJ7IGp_gSkw8nnzXBF5o5lCJ_42_a9jKYPqSiCkSQ9SfAlFuRnr5UhIVTqsrvh8d9k8kgDoOoHplf-6o53FVHuLH6c5pdknCE5n8xZzd4C_Y_vTe6avHamvk9NC_yWGFaj_ef0hVgILzqli2xBzQOgoeR182UZAn3FJRbHDyKGRUuClajbh8faviK0hYX6jazzRZtVEuJCKDF3oGAShKBURuLYS5skrU13-hlK3_FoHlTGdJScX0XfszW_HkIhjkGI3bd-FFSSpAFNFc2xR8bwNFhiEnRvhb-1A7Zfz6JYhz5Od0RAzBBfY5-GV-Wa7SZWgO4g1YxkLghpoNBbIQKbU2lrdRvwok0O1ol87u997ZUdyqrjWiPnSHXy5cxWocw4mhJKu9BWdyG7ax4iGCOt08qLGQBeWMJkLAylgKPErD2F2rzqZtegqO5Tk4HSv88eqYo-6iPfIinWxNkcnXT0BvPFiBwmDHJ1lLg8_GY7MNCRQEJqTSZRpZw8GdAqcFk3Bald8f-WH9sy5pC7aSgUiu1OnmHAc6EVIjVWpB-QE66PZ6PsEpoPxp-zRsQ5-UnaAV3A2wzkx1Nbpo6BawVmvKT8v-I2MOuUwQKUYVeXoVglqR69BLXnHLBMsZs4Wp666j4g8lQoaXgeR0VTxcJMHYBnMubgReK7b0Wd77AokU2XGr2IitbYaDicVmU.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c4aedc4fc99d895016ae81cf17d8887d19c7267da8c4f7016",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18323,
+    "completion_tokens": 270,
+    "total_tokens": 18593,
+    "cost": 0.0024253,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18320,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024253,
+      "upstream_inference_prompt_cost": 0.0022903,
+      "upstream_inference_completions_cost": 0.000135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

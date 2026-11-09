@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target provides a coherent news homepage with current-story headlines, summaries, bylines, categories, and prominent editorial imagery. Its specific layout and story selection differ from the reference, but the core news purpose is well served.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible target content is legible and arranged in a clear hierarchy: navigation, page heading, lead story, and supporting headlines. The lower AI section is also visibly structured and readable.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Menu, Subscribe, navigation links, and clearly labeled example-prompt control are understandable. No observed essential control has an unreadable or ambiguous label.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The screenshots form a coherent reference-and-target comparison for a news homepage. The target's regenerated layout and content differences do not make the evidence mismatched or unassessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's headlines, summaries, categories, and labels convey a clear news-publishing purpose. The observed text and imagery are coherent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14520,
+    "completion_tokens": 297,
+    "total_tokens": 14817,
+    "cost": 0.001963425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14517,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001963425,
+      "upstream_inference_prompt_cost": 0.001814925,
+      "upstream_inference_completions_cost": 0.0001485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target retains the main payment illustration and section, but the explanatory copy at the lower left is overlaid by additional text, obscuring part of the information shown clearly in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"In the lower target view, the explanatory text and the button beneath it are visibly superimposed, making this part of the interface substantially less readable than the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The visible \u201cEnviar pago\u201d action is overlapped by another label in the target and is not clearly readable, unlike the reference button.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired views show corresponding regions of the same payment section. The localized overlap is a target presentation defect, not evidence of a mismatched comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target\u2019s overlapping copy and action label make the meaning of the lower-left text and button less clear, though the broader payment purpose remains apparent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B_Wr9MeHw8WCUfsiKBSQpE_ujQA5nsEwQY_yiyUoKUmw1FDN3P6cn6X6CdasYje_fIEfGrS_Fvwx6ZTMuYpxyd84nCUnvUOt7TWlki-u9OCgqf-tI8pV-MKKgFiWJ46UijCc_qjD513eY0MkaoYSTrO3e1jYltnr9p4a4XX-VgffGe737rEEpFfDVwTmyBS1xRdY6jFE5Dq4vkzyBc_XcQQ31zAGm4wjoMZMlZAZiHFj_4fTTP4TX69z2uu8AE64sX2zKmUd_WkSTQz0DrnN7FwbNezSN0Rj8YoYpRb67ZMwHt17mkiG5J86ZqRUwXDnYt2ZVbhGJeXl8UdLnYVR-OFFyqHxw6tK_YWGUOBf4ltgAUcGO8OmmQWFfxYfHUHA4mu72SSZt51GFi8tiWxhwTcjIG6oWeWBQTkTYtxSelwLjFojrjowAfUcJus152L7DPJtYG20owcqHxFl0KPuJmBVumjVMxOWdDf2ycttKNiyqd8IZloJcSCI6Lkr96uED5M7vNj8frKMu9tJNt7npe8CUKJMhX-2D8a6HYjeUJ9VmG5hm_KXYO48bVxFr-Qr_HVREUZp_tI6lwXuQmCgLm4IDNOzDR5YNMlHl6h6IE55jMwe27PwW3255r4cdF5cXTlWkjk0nTk4rNHr9MVZgvS4yvpHUiLqT-S19cF4wD3S7BQ8KQuMvxyORi9ZH9ue-yqPXoSKnVQD-9ga3l9qSIl03OvDN8VBDKfHqWlPueHYkgTh_mLRLTX67tCqDQc7qmKNi-6tcv-RMDxVD38H0Y1knJAKzZ5RV2nyUknu8whAxN_Eju1ruJjcNsTAzhf6AAXoHonHdRwq8HlGsv4uFP2c9O7vPSUAGLKHA9CuCsMc5byzjMIkYniu6fhWKlienfaFN63QGYAS4s66g1OaM40ev1odCUmu6TihfRdfZFhOjdUvOI2Weyr2_C_tqBMSZ2o5lvPF7gckgIEmiTnMsGLZxI3gI_8Fqqqj2lhO53ft3DT5Dhzl3md-ED6_JxGu4ZIMzXPzRzCVtncgkGUc7nVqV1Sa5rLeqvr6vhRdtCNqcqNPHOJht9v1hAa_rEvwG6z1ypZ5Hr3kN0DD7NSdb__44vuh5YqElWjLxcJeJ_K432jcHerbfqUGauDqZX8UFvYUGHQM5C_x6WuasThAnblGjSlquY1uNkLaJ0ZIbk-7j4jBzahzWCcbAfBMIHj1bfdq5QMuQNm2EgP_f_TtNYWVjy_8h5D31sUj2W3q7TI5T5ETiTOq7_vrqCuohA1ufDjA3SjJ72R4h_lojpU4HxMJ2wP8CrAaLvQ3IuoCUwhEEWQzbq-ovxzaCVLlxRm0j50B7ridNHo1YObKbdrn9qDufWw7PEwjIJy-zrjjGI6DcBpe6jAXOOmh42X3QFCxryCFl6hBElWyWViUlBxTPW809VVCKJKunDQe7Tjiu8aTZirfTScPva-lP5oTpDw88AXqnuGDcOJXZd_OJ-6I5H39HqFWJKEMjJOZRBVaP2pyG614s4MvQHzjcslQdQb6BEbr8IT0bNBOiQ5hwc-6tfwg0foInZy5VROPtikfR-OmtcuRLf6Q8ApIdvCO1IIgiGLeU0FL7TB_C2ptAq0agvex0H_9muMHHF7lenRvkzqBZRIdR-sdCFV2LWeeup_TYNOHeE9LglCO0_NiYPo_eqpLDAT78IumXof_aODz8ss1d7jUCcX5J01hZRUHssAf-4PoKnsookCgohWXNP2AkWaHnjsBppIhkknyoA_JkrffmtwEkC_WxdbLoTf-Wf_rTc1ZW9GFBjpJSNc_QXhxrrTMli5Mi4tfC571Sey_oTbMT3JX15MwLQZKBiyGahFhKn53bH6Rbc0PJZLKAca1WEOHi8vtDlq9SYSSUX3pmVw5yi0M0ezjpX6OBisyj2QSZKJjralfZiIpNsOq4pYpmrmEFwHDijIHkwfsZN7pj0OOMCTGtv__PT001KIEd5xqmnjETSP7rlr564_S4k2Ji7Pzf5w0w8XcSRLt5nmZOBpuyqF6wGprFicgKno0YPlG7Y5Rr9tLRyIJDzwhsfbhQt8UJlb94ApfJM4EOVH9emcXtufHWKseSd3TOvx-Zc59yRz1huATAcoCJpMTU0_cbRaCr6Aql7raokCJ_H_gWxMek-bZ-IQIbUpT-KrhDlxgwbxD6rNvNjSU7437dtvpDAuKdXininRC2_-BQKNDEHW8HnCsYdwt7hf6EJPy1GtgOpakRCiv12uGvlNcbL2UwQkC7QjpN_4hx0HYLtPCAdNWHi686dqjjy9hK7wmzdTX9pewA-K4KTxNSzVLj3cE2feNQT3HwwsO-G7VQXq3MPqZ7NTjqc93G0aq_gsln1RsjzUqrISAqpmPunV8Ygs1k0anWo_Za0sS1MVJe38bL8JJmKvSpx86Lm9D7ws1FaQqCG5VJ-2SLBXFv_JBejVpVyGZef2ggCf6BMjO--xVlULxFvTpoJsW1RkrqqIiieCPI6GqCRLmNLB5z9KfW7Pw-eYBbyCcpT2QCjOQUWozODmze1Sq-qxzZApZ0RdoDfys-WgN8EyIh6AwdVJdla9TAT4T5ttAuxh--REjN81MDs38UPBu9EVLgiX2zTrLScS4BgPGMgjVUGFdtA9B4yfJlIAalu5hW1-RHmSureuJQI8p1lSKWI0Z7iLTyGGFBtLCb7Oq3dU2EEHnCwOnUyakg9WK2OSH3ewmvaEsvdctiSx8f1LVmPBYjW0aEoXx0IXsilipvwgvZUBSaf1XEWrN0pb_-no54lRuBb_nAk7OzAsA_cfIRNjixtBWnrYWl02Iwhtryd0XJCHaFBFO6576uaWu6cZHgP_xWRu-AQgVhBPYHs9tm6TxZtOM2iyXbuiR0-jGm5pF-gOcm23YPNWKGteflbRkSqu9ofMRkBsopxxHpZHoY0aeg6qN4e7sdf9WV_KJTXcTHD_4cLCaaB18dbsVclPW_kv916ioOO_A0za3hu-zU54_A8pdzdTMt2X7qOBalGu9HRerRKOR0JMt0UdpwcnApahNZm4XZrD3KyKkpuNFkKmqAXuIpFHTCS19Es7w3lWti3ok2tqvzTeg0tD1GjVmjZ0zmHUBJvtHkywdcGAt9M1_xITwLUi5iphWmLMNHFBCX35DLoXbW7Yzddczupf_WLlXXMJbsZDzAOx9-lGH3CQngXTAs2gSFSt8GtxZhKkbXqInB9TYTO50aq_HgO4Pug7QLpc9lLdSvtb-es4U0_BxSNxQVQ_ju3pvSEg4jY-yQTd_Z5LIR09Z5F2SUXjZARL7yYhYhzDAVu6u2VAsMoYCG96JvKO1tkALxXawDz3arPPfwrQggIQ3J9B79sx4tNHXMwo3cbkqRVWL-kPi9_4FL8tVyhePta7g7QR_ncp3BnbDuoEXj5W_FbgcXtKAun8mP0HSSOMmlKqyFDghT2HaNdDtYV05J0ORyPfGjiC0_t3k1DEMNP3W0NlvH5Zq9CgpDtWsnilsFo-oXMJh__XdQoOJonhRJo-cE9w0BksRg5JES_yiRnbJ-4CsW12sZfRv9mRmDzKYQ5O9Xck2JZYUN0s0GgDwIHhDTjtQjeVDbTwgSmXoDBjboWNsKLq4AcmsaaFRtmvNJOeiNycM-NhIEeL16ch0GoPP9ClrVjnvldKbVQLcXw1PRvwhkQKMk3B835pY-ZDNgEFcQrnG5nmGeotlctCdfDdo1fNmNwkrKdFBvuUsEDyHxbQp25f6xOZIzXB66_NiCVdQFq7-J7DurwSnfonXtKGq0vtEZ3Tjb05heWtQxhtvpx1OjTsj26er5ayov4AvXHoD_dggg41DtoBGb7lZD-JI6Y180ULIZiUzmrGHWa75Hu62ZAfbjv8zdmSh_d81DdPO65dv9e5tMKLSsFbMhUR18Th3FVOE--9HIr_q_mm-PfbkQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_015e741a077ca6a9016ae81fd47bd487d1bcb5f543cf7f14d0",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10487,
+    "completion_tokens": 447,
+    "total_tokens": 10934,
+    "cost": 0.0015343,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10484,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015343,
+      "upstream_inference_prompt_cost": 0.0013108,
+      "upstream_inference_completions_cost": 0.0002235
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 162,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

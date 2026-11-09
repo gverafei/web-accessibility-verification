@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible reference content, including the Cloudflare hero, primary message and CTA, globe graphic, feature summaries, and Fortune 500 section.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding screenshots are visually identical. Content is legible and arranged coherently; the overlap near the top of the scrolled view appears in both.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, account and contact controls, search, and the hero CTA retain understandable labels or recognizable icons.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target provide matching views of the same page regions, and the supplied evidence is sufficient for comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s purpose and meaning are conveyed by the preserved headings, supporting text, feature descriptions, imagery, and labels.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Analyzing image coherence**\n\nIt seems like the images are identical. I\u2019m noticing that the DOM target navigation has opacity set to 0, yet the screenshot shows the navigation remaining the same in both. The scroll view has overlay text overlapping in both instances, which makes sense. I should note that the evidence aligns well, as the screenshots' checksums match and are coherent. Controls for navigation and call-to-action are visible. JSON seems to be at play here too.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing image coherence**\n\nIt seems like the images are identical. I\u2019m noticing that the DOM target navigation has opacity set to 0, yet the screenshot shows the navigation remaining the same in both. The scroll view has overlay text overlapping in both instances, which makes sense. I should note that the evidence aligns well, as the screenshots' checksums match and are coherent. Controls for navigation and call-to-action are visible. JSON seems to be at play here too.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6ABRpBiXeDvSVCy0nXjfpwMw3NWtg4biK2HuiUaFdtKNbvxBWC37RsjBCPUEhz-v07cgWj3jCYta-zwUlgi47PXKhHcCv_Rq_axGnwoQFuqkLESeVtxVHeBGZC4lLZ3twXb8tltd1GfHFZWPWjI_WCUug9NaBnOIBnszlAcMErCfS3hDPspxTvGSUpJ7w76cgjt5fvMLrOFEbA9vZUtCBFk0h2xGFf9S0JYsDRYuv8gO1HbjJl8so_LepPKuKIevEAyfcjvd5pcI6kRTYWIcE_BhJAyM4PrjT5P_3up7tL4ZzZutW21WSDWVzOmYmOOm6CaqjESGCMl211PfgfikD85XvmgviQjezhN4eThsNVuTxBZzqglte8Lc2cr5KlOhuqzqm4GEpn6uwLecs3K2D897V64SOwoYMpS-REkUZyzaF6qtCRlSRIxIrfPMCkoT9q9dLu5g8SjY_4zGoyBYNbG998rNzq-XhDwojDUhEughiglJggjjSA9fUDmfjnEG80rrGLlkcBuX0G0gx_4I2KWEXLqVpxeRWZkVrjEvdjkBtDT63LwaJsFGGhjAoYnQxE1rNLU8oi4FawbTLD14eCGRans6aufKf1m-8Y69F0IswjKx4VeYqn9UJe0N4CDqdZT7ILosKoa8fkq82uLNN61zmfT4EXS_odlH6n5gJ5i-QdOJB6qMXWymGtNP4veyc_WntZwHqiZdUNjMCGRPqBydqvpNESX0XWddqRKgsxsU0iI4DJxQtiBygispEYdTDh2NNtHn8QyMpXuPD4r5fZEj9YOCv-GKDmlCx9jrW7zAj0GD-1gZgxPcmZbxfM5ZJv2IJiNv9L_R8_yjINiLJEwjzFtSxs58azB9s_4ajPMWZK68HkWiII0XDM3FpNO-xONKfaB532_hyq5r1D7cZjAzDW9Wnv61eVZpKpYSd0pplk_s6lYq3hVJqthDEkxOYCxvh7HQgCybPum9gsgasIxVLv3HGAmboraoub02ZsZ9KrkQQSVRvWWzVhknIUdKDR2sndLFitgpU08m1wKvCZe9xiyzT5h2_jPOtccnQpy3Xi5rt-d_jQsO2Kg_ovDWvDELIsaunMgfT6mi2QpoVbDTs1-aeSU4BGRVBcPLBTb59G2dYbfU6EYj6nOpCtHqVv2dVtovep6BjykcMRF5Ym8VKD036BJOwbTvuPij2gw0PlIqH4JV5vfAK-W2l56wnrwbpzT1xUVp91stp0iCxal0FgsKtaeJ6413pt3WObHyAb_raapbpVuT3BN4ZVRGMBn-hTjtIHaSTVIfQcrTAHFUiliOhR10qcqYw3Hc1FNaQW_ajXCi10hMvou7JUhrISwmnl3wvoSN6aBoan8enygnyyassAe9hq6PG8j9x5XCi-lpXQtNh6z0YRxaIRyQMaH0rWOQSi7PsjyXpLswHpUNV73GzUOX9Lp7Ok83FQAZPN9kHWy8MUnyHJMvs1b-sOpb4v0penwFIDo63vYlOQWOldUWvusqegqQ9iCC8GDkddJrPtq63LdRQz2RkE_cKP0YHZnQerkMVsYIhes0VvXqsWFzbVAwOUdnPXjuT8EJP2MCSoVjoWFXwkk_bMP-CXklfNF23ku6MJcZxYBZBhnQN1SrHxnjUILwZrma0Z1mUGCARtmjCjXB8N1o4F6NgiDVoXtphfbDo-voCjvvDILgJBcLi01D4aBi9sF-I--__AVE9G95J0_hTp9cQlth2asDkQq9PzJHT6HaubaoFpBauJEHf5uFif3NDJY0BZpCnga7nGUlS1W29Rl0pJ1LdwYcrcv017LYnZWcPv1YhDqh4L56pAR2xls-RFqNoAJEYd_tWUrhIJRa2HJQuc-DaVnN83wsIBTuAxyQvOksJPuCS0LzXz6vCmZTjGwz0vqCIYJB_MD7xBM-t4BEg9vsIaWrW9vNylMBsv8NwMzF53RZhywvQncXl-aWVhSvjKAxdDa-yZfGexHUdaEYNd2QdH843V05qxsyHo_breqfE5X4M5QI78ZqzCeRq2qlYGQznN4ENp5Q1OUUSS5bXG8-9pF-z-ArdikTyZdw8z_EjAJX0i7y1_D8EPSsXj8dwh87iRoiFaVHcBqMy9F0SnhUXS4BVlqCCn_2myvg9RYau55tr1v7jnzVAGPab02e06CjinCAK4jkFk2rJR6isN070-KgKPoWGNPnCtpWnaQvxYqJFkWGUP5h6nOg6c_FFQSoFK1CwuB1CXA8BrzY__FizKH_.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08845e6728bcf806016ae8004f1e5087d1940f7f76e6b01d00",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12449,
+    "completion_tokens": 303,
+    "total_tokens": 12752,
+    "cost": 0.00170755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12446,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00170755,
+      "upstream_inference_prompt_cost": 0.00155605,
+      "upstream_inference_completions_cost": 0.0001515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

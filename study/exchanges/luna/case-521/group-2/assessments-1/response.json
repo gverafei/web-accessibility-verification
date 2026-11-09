@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent university information, including institutional statistics, regional campus locations, and risk-management information. The content is adequate for the broad purpose; it need not reproduce the reference wording or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and imagery are legible and arranged coherently. The statistics, campus cards, risk-management section, and footer are not substantially clipped or obscured.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible calls to action and links have understandable text, including \u201cConsultar m\u00e1s cifras,\u201d regional links, and risk-management links. No essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views form a coherent comparison of university website content. Their different layouts and section arrangements are compatible with the regenerated-page contract.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s Spanish headings, descriptions, statistics, campus labels, and risk-management content convey a clear and consistent university-site meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing target content**\n\nI need to assess the regenerated UV site for coherence, comparing target stats and regions while focusing on the risk section. The content seems adequately faithful, with readable presentation. I\u2019ll check links and buttons for proper controls. The evidence appears coherent and semantically relevant. I notice that target image 3 has a suitable risk title and description, and reference image 4 presents a risk section title and text that's similar. Perhaps I'll also consider the footer. Finally, I'll produce a JSON answer.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing target content**\n\nI need to assess the regenerated UV site for coherence, comparing target stats and regions while focusing on the risk section. The content seems adequately faithful, with readable presentation. I\u2019ll check links and buttons for proper controls. The evidence appears coherent and semantically relevant. I notice that target image 3 has a suitable risk title and description, and reference image 4 presents a risk section title and text that's similar. Perhaps I'll also consider the footer. Finally, I'll produce a JSON answer.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-L6pEKYvE3KduONzAvwRscZjmipNEh0gTmJeQjXqobS5nduqHphMMEnB-a1mgnm1cGTyUXUWveCQKgkmGUxKtU47KcyvZIStD_Y3sOslEFyCrsgKJawaiE5WXL-yk8cuLTVYXnyPd-S6uLaUTe5gWN7gkOI-0A3wV29MWaW62xPll0tKaMN7mOD3RUArvVPNUijbnK4H66nW6JpbrEk4SsdJGZqDsww_CUQUhAwZJWgbQjXlAndpUqNfmEy36r3WTwBgzv_7Dbm2PRPP3OuVCL8ubE-_nDU6OZFaPDMF1L3w7q0_52tLG_PF4o9P2Xh0UOO2-x-_T7f8oMTS8hcOmBpj6B57rUhxNHfqZoxVxqKTJvt8bILqOGHiyLK6hAC7Kq3t8p57A8GmU5GLT0tzuss-7BfBfa5c3Ws5tzYQY0W1IFf3KyZtGaKMMzPf4Tcg_4v00_BP4Gkoy-2mhtcXj_D8doRb0ThKCQLX8Ga1twRgxI5hCEZTdDMyGS0-dlfOc02hl0r4013VrODIS6QTfIhReVxK-2957RAf0Flv_dIL6pSIeVw3Re7gc5J1XLngM4AwbPNIPFoo0U43JSNsySoma3CuZnH-fcns9HFYIQg5c2mNlrrJbey2XMgkb40MRi9PeJ2bOsUTF-lGvNLEHLU0JLt084-gkCFLdwP9CK9Fvj8D3Dr2bYTTetHN6XvrZ2PH0OE5B7_t9Oc-17T1Vjr2jONi4UFu6PqtLHK4qSNOOxXXQMNQdLz5pm0utY9OYAHNS1WM2cKdyyufBXnLtFDO3qgeITygWGohV_XAQGLU45ztz-9Tsgz9jqUlBBg94K5WPrbHI1X1JUeqnHk_FQnMQpggrdyFSdWg0_q0KfdJmG6GmzAy9m8wcN3KUgv7M7pw1Rjc9goD5y8xbGg899cCDrrbN7q4rpv1gKXGc3qta_vaSd3bEM2fB-pRR0Vmab3jtzdicgAL33yCL23Mz2s0x8Z6HVS0BZ4AKzqBDZRwAaZn3ASmiCM1l_jfA-zexcM33IhEhBNb5YKglokj-c4QD7k99buqEmnb_vQEazEGpoxy72sEPHSppZkTRCoOXL_51KFgzYeg2OPGL0SPil7Kc4ZUwSsoNTdLYjZeIFI4rlFUHij9fqxZWpLrM_mh0X1zUXv0lflW3Z5KjK0hc3uv1BvJabSO6JKq-jdjtAeVdAbLGFei73BT851AZGJ76f1d9EbW4WCd4ThDvrN8gs0JafLjj0MGxrzvHoTpVv6AXQhemjBcvbvdazLBM-PB5zgZpwS75p6ZOziX7gscSolbyWSUuqeUhl9aZjm13vMOgRS6wVW3Y8eDRUMqM01zBeq27wr8pF4iBT8ycswcBRw5b8tgH3pkPS7Z9Y4AUeo1byBget6QpvbvmgVFN-pS8DXPyczr1C9rIL9YSdFK7Ykn5X-_7TwNgP_yCTjYEESU5w7r-iVBQF3BRzADpZx0yUzVdd8Gz9R3wPtm_Z0irDUHGjMVbM0eIco7bpaPZZmpr-g6daW6taopQ0CI3o8ADNE61MaezswMxTKYccKzsBGTo5gv2sr-HWcsMP0rVA-pna5--TLunibWEdIpSqwACw83eDCYSi1DMk6fOcD-jsbDZphT3uLdwSGafxIENA907AlK9wgOdBN_oBW7fUjS_WGZdLnXsL6q0laL6mI0qzGylkRxmQByMCTcmUGSyZv4PG_MNQOAdrTbtXhLAbNNJf3hESzGmfhPB--AnlkgooTAI7-xIkGIoD4B3ivVYwQwCVXlrVgphlXwH5NTYiwIOgDEINTMYzH7Qn65seSZqrsaZor1ZuIEjo3QPPjQkez7O8GTWQtsseQ3r3_tlXIlthJdnYFYmM_3ZJtsoaluidT2RXtTePf0zuAZKS_83qoJC0U6IathyFUCjqsRnMkKCEkHaAcOIbNXNPqwba6q-29EaU1C8d-bFcpeLbXg6Yqr5_f8YIL-TjY_GchGFEgt9YOH_pvl96XAGw5YyTpOMmarkq2pFGpxYXaZvcJugVRUG6VroShArqnxldG27MxaCRtzXgP5iUmFIbmZCq9ibFaT0Z9f_a-mom7hKyBNK26lRTKdHIniaRHV--nAccOdjcNEFnI3v_csPfDCXe4RLhfqKz7rvyIFm4ILBU3lkF4eVWzemnzqF5_pbK5vUuylaEtU_NjbVfB_UxVNlnigA-vmm5kjw4HQPcSd_I9jsU6_hiE8RtSXGokbsV5BZWcfd75y203Jzwa77kpe6NthpJATlCXn_FfFnnaWcKQHDzT8P1jNOfArbnNhzTYJ4q9nICq_ZNcwOUZUsdoeA03gsm8Uoi_asbc9hFUQwUGD27zHs-RBUPFKiwwfcjsdmudX5sktOfqKdaZ9ukH66ASXfXqO-4zrsJ430wrGZ6jevYd5jhSTYqIvvw0Cfu3B8jx9XngjOBHgsioMuNRZHaG0c2TzcGqrdaOva7FCUvKvNKt63dlTYetjNMlFXQK7ik_VZRcMuMkfFDEiL8z8Hjcnc93Mx7ftLyDsNzUfA2PHSBGhXVR1VxYQjd7HQBPGNXPzlu.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08b7fc7c0fb860ec016ae81f8949ac87d1a2dd1e9eeb148e37",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10605,
+    "completion_tokens": 357,
+    "total_tokens": 10962,
+    "cost": 0.00150405,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10602,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00150405,
+      "upstream_inference_prompt_cost": 0.00132555,
+      "upstream_inference_completions_cost": 0.0001785
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

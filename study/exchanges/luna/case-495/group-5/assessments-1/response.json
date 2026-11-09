@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent news-topic lists, including AI and Climate, followed by site navigation and subscription links. This is meaningful content for a news site; the regenerated target need not reproduce the reference\u2019s specific stories or layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and links are legible, grouped into clear sections, and arranged without material overlap or clipping in the observed window.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible article links and footer navigation have understandable text labels. No essential action control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference are coherent examples of a news publication, despite their different designs and content.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s topic headings, article titles, author names, and site-navigation labels communicate recognizable news and publication meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer categories**\n\nI need to assess the lower footer category that's been regenerated. At the bottom, there are coherent lists, although the styling is a bit plain, it remains usable. When I compare it to reference pages on news sites, the target page does present clear category lists, including climate and other topics in its footer. Overall, this target page seems complete and its links are legible. I\u2019ll need to prepare a concise rationale in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer categories**\n\nI need to assess the lower footer category that's been regenerated. At the bottom, there are coherent lists, although the styling is a bit plain, it remains usable. When I compare it to reference pages on news sites, the target page does present clear category lists, including climate and other topics in its footer. Overall, this target page seems complete and its links are legible. I\u2019ll need to prepare a concise rationale in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2DJHL_GE6hcV80LmjZakC2QJ-fywjw4qzJnhD4vjR1qq7rlNHoJJLfmClGHPbir1ffj7-0riBljIwQu57I0siQJnctXBi5jWuV7rkFv7-d8e5gq3lzf8FNIjSE_BO-1R121V9Jq46YJoHFMxhpO-tci0UYWWw9dB5BqqGp5R0J8Y5Q-cbPmD2Upid2aH8Zci5QHql4vNTZOx_LKUZyjYlgl6MXpZpxrw8HRpWXTbiBhuTHd4XjV4mqyk0bip189FmOFO3Kd8_vR9yMUZG6tKoxqlH2hqd7HxQNd1W8_UdIEWIxYGEfb5HZdPbSVprYb3d5etpdPT3SeyTJ2Aeg4Ffyse9jF_ZcggfnwAq8oyZh5eZCQzek1t0S_htCfJEkGzVrJKThOShDeS30kZd4azuTn9ZpKr494ikwQtYU_vX8ldXntLJpZ8ndJeGGyxzsYjsIvWnfRve62bpTTInaO88rftHJF4xIzpoh2nuIOjTP5YCE-6FkDg_jcYO6EglIynkvwdYd35QZJmu1XBnRaKJ0WYV4txmOaiuOkotkmASlLCeKAPiVPgS7vD080pqIhN9zlrIsl0sKd-t4LTDL_9NvmO_bbLZ0eLkg3jKs8oN_TEsgF0SjNkJSbefghzIIcp6k6xxRvRhYSq3nuwX2mqUOA-G6yHUoxLge8SjnZ1srO0xCuD6-PZ7sr3-Z_hTyRhzr1152oq2IdEB201CWmyDp0M55cd_YqpI0XUsQbS7SBGyp5XYKVKvJ26pzCmmPyLvoJOpMi0O4NNJ4JT3euxWZJ6KYn28evpBtU-e8mQdpdjTZquKLlCVQt5wX2xoxzGoLU7NDc93qRMFOZCLtH9d2iGiyRCbnG7yhDabSGGa74NuVzVQdTTwW9zkQTQMIvGkw_sFTbvHhDmebyKE--hbB1lm9kf4aLjzQprVer8mSWBVFOI3c5a5YwPkpaWC3noWZKfISsJmKxxTKVhFTsAoY6c7w3LIl1oGcKpLodIESKz5ihHxPc_SSAhPu1TjdY_G4je6bkavEQfyGo-dgTMANzJ-wOwv4IRGUvQWzlzoBHAsik499rOYXqUmxb9yuY4y1OF1eIUNr9o5WhPlHqw7cC0KRsRyF3QoTnolgqi4YBWAcTQSsILnhQykUzCf5L2Rip4EuGuYtJR01gMu_RsUkJRr3Rqejawpg4V54DEItzZ3NdOA6tzM1AElbftAELgIsjs1hCijKT0T88GYWuc6k4vBHOgLk4H7ifaWWm_RLo1UkPKZ7_2NgtUZKVYA5klW_0UtJPSGdcbo9k5z4kOscOI0K8B-KnXL9r-EPJcwAs2U0i0RK5nbiOusWhIol9MW08c6Si_fQaPYAW9vCycZufalBg7o2lmntvx2fV42Q3EAVUI-26VUHvaKociKRUV8gJ5Wogr7ry-bYmszYVl8ulWXQyM0COaClq66TWqqUKbP6BOx-hMLf3LbQrzOJ7FlYLIURJkRH1RHnIZgakLbEcAHZlmY1s4drIXCvjbebTnQCRnZTrTsP435jkUdpA2z_-ifMcBVv1KxsbJYYvtylRv6Z4QAL7aG_xclLcnstFbGstQiOavIgxEuf2bgj114ArB2fzutDypLSET_mUbRxWuv-T3vYtUtt6FLDdpjMoxDtmbMKAT3dDrbzfXcJxDTnfu8Y_jeRH2zFrPLyRrTID1JcQO1UtQKScoE4zOpKgokW3bseKOo9gR_UkciCXUD91Njxg90_4ozCjvHIvdOLxqCB52BoFl3i4QlrEHbzRExTNGRlJ5GClXiaBZxx4nVPsyHodU6zuMRmFBkgnPJyHE57n8uQk14ReM7ivd6mOZlQP76waT7KSTOMKwBJEspwhaqjKSXUNb3Hs3x-Q-OoNmYJxv9TPxFN9SI3yriRN1W9NxSnbYAA9m9vaA_57HM94Jcqpoqbua9UF3zGXq30WVlIGg1ntV5-EhbHQT9hHs1nyiHrayekcIr5411vlTP6wpWUiHVRb_S6_G2MqgqNO8QlOM3Tkzm3cSJ5AH8L1c826g55zB-rOLzsexowU_e6iX_gAddFD87RgGqX1daAOvKC14JheEcGws3VqZUcUdKwsnT60OsyKkFScRil4CkEJplBt4CCdyZvVqbK5t8_KS12Mryx3d_4iqqliK6LnPA99P7JG2fiF08aOMJMHo9h5EuXa_105W6krp86qLoavXxLsOrD38LGJCCcUh5LzzmAPbrIjkBneoVAF4109XOR14JhgTWFLqwMm8DrsqEf032QcTMFxAhHvWPHBLS6hM1etnMve30UD-xb9BmNmYqVXmki-kkCHjd9XJu_waS-zsFeaQZ5gGnaDPuTTSYLXI0WeRDV_O9Mi1F2DsjwPZQ6-7mEiADT9AxC3KEUi0zypE7Rp-fJ7sFT-QO3s4FrE2TCUDIl5POLD9iGEAPRtmbVXBc3JrC2Y-vrb3pEeyZjtgnnuSJWOmJX5x_xg5TaWG-kM7bN1Okv7WJzT1bWeLap6H1T3X2CRhc8_sI7blARfYwRa-pSGrJUQGqqcP1Ts-IE7er3Tsq6x-i_0XuQyhY7zsnZ2V8MAgmSv4tpIwbKo3bsa58chRw7pCQcZAV8T0dCD7T5mlpCvBLGxAn2IuXCQ_eCRO69UkpJ6EZCuXILehPPWgnbnJR1qH3lXqoqxPQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0f5f57805ea1a1b3016ae81d816f6087d181071e7599519bbc",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12629,
+    "completion_tokens": 338,
+    "total_tokens": 12967,
+    "cost": 0.00174755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12626,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00174755,
+      "upstream_inference_prompt_cost": 0.00157855,
+      "upstream_inference_completions_cost": 0.000169
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

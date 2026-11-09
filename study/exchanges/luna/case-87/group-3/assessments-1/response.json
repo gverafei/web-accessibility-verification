@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows a coherent shopping-page end section with recommendations, browsing-history information, and footer navigation. Different footer links or organization are permitted for a regenerated page.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and footer sections are legible and arranged coherently. The partial category row at the top is a viewport boundary, not a material presentation defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible Sign in button and links have understandable labels; footer navigation is also readable. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both images show coherent Amazon page end sections, and their layout differences are consistent with the regenerated-page contract.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, explanatory text, links, and footer labels convey a clear shopping and site-navigation purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing footer elements**\n\nI need to assess the target footer, checking for coherence and the text, as well as the sign-in recommendation and the category strip at the top. The reference footer includes extra marketplace links that aren\u2019t in the target, but it reflects a broader purpose for an Amazon footer rather than a source checklist. I'll make sure the controls are visible and understandable. The content fidelity, presentation, coherence, and semantics all seem to meet the requirements. I still need the exact JSON schema and a concise rationale.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing footer elements**\n\nI need to assess the target footer, checking for coherence and the text, as well as the sign-in recommendation and the category strip at the top. The reference footer includes extra marketplace links that aren\u2019t in the target, but it reflects a broader purpose for an Amazon footer rather than a source checklist. I'll make sure the controls are visible and understandable. The content fidelity, presentation, coherence, and semantics all seem to meet the requirements. I still need the exact JSON schema and a concise rationale.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Blad8FobcndHXGE4RbCP3FHbAePoaETXlDbh-obZyQkQd2G-_rFlV3rFStjBfsSydZruX4v75-DO3_qjWhGQthYy49RDiurYWTzXLx90y2U40QFB8bwG-7Y2NbXHm9ovx5blillTv5QpBzQXjikM8wRLKefUi94C9OcYXGZCUpgeZK3s5-brXQMaCetedFE-04lKcQpvup6k28sA23c43tjKyJRQDgg3t8c6SZ8HF2bZWVVGccKmxcU7zR9Sv_mbUfj-vFzxAl90frEN_yUgPUUJV-A4Vdxq4o9S_9dpr4rd2fx-ymkmhLFFXvs3HsmdAgZcztQoL9SR0E4YrjEnyT_whxJESXPIYdBfnaWcefsjE5NPtsOBcUEzZIaFMhzCyFdEkqHHmC9X5WPMZAmuS4Y8iQ4Zn7bzTEHeCXFLRRIxRPLbCPqKq-rwWqxsFMKZdPoSSEAxXp7VbX4Mo72dK3Nyz16RWGajX-3KT29Jolgj37VNSzIwl7ZxzxqSakIn302e8Pb4YZ6bJjW9W9kLQSnRCXaiOax7vYLnFF5w_C86LCnU9Rs8JFqrVKR1akqwmLLUJZ0lvGqjDWeCY8fV16BUbw5SrIBzqnz-e4ENMiS9ffvoj7E4ceQiw7kQIZz55eyZK45eiBKQWxqgFVvJvIvSERI3JDGxjN_jcr85Un4Iw3pgClLJh5T6hmAACK1P5sORQqWOkro0bgNaLukd77rdqXjQkLF9v6nfksUW8dmhpgfINUe8cSW3mLZX1l6ZIQVhpZHNd6dmlMqLQsSPhPLycViGx-5eqrIW-9UffCH3xLKeUIJuS2ZkwzqoHG0BN-1Z9oQ1ypxvwq0psVdzAnVCCQ1vNejsnDpx39sCuLgB_W55mUNy2ObvHcvF09sUFkBiBmw0VHfaTs5JSC2URcuNd3xAn5HtJnayYDi6_L-6lwpX4Mx6zznQLMTA21rhQArq4E7aGrfLcmp-_HSfc0np0jaguLkv3d_yrzgk5J3AIwpNRAP6cB2q7AKDC18apLEGq5kTcglcEm0ZnvMIw7PKdiTGt6SYEo3lqla7hgkww13pPFSTnV1nR_cgDnP9XuHqfIsSAjA0Hcq01elHl1Ao3WQCEE4lpqh1H_XYjB8xfTaBMPY4Vb8j_Q4iZkyjLPNCV7eCCVIpBDl4c7wnYLC_JsBRVMwmjE1BLYe-drlroVtwzaaw79WVIeHbZEfp8FgVkaxLHPGBcaAswC7mpVFoX0nAD1R-_dsE7xFvvdxwoyqwif2fIzlFxP8kSsM6gmboKOubevfCkKOp8gVs5Weymdf8IVaY7Wz_WbIaQJqmXczC-8V_vsyLfJ8rUNZ8BX7x5Wgw0Ehnr_-dZJZQ-k6vUkLKlAY5_fkXB-b4BOm1deG5ODvXPtvsfl7xs-T-C2V8kVX12aennqDgCINL-eftgzK-HTod2hevnvQVdSMc2DZvc4rVR7wgEjSmwEqORO-bfvblRrtSN6nw_lWogaHzkCkheJz9ZLI2a5J4teMK4OjKKKQj479PASNbi1tE9-wymV1hjvVF-LGDDRIsag_JRBapyhf0Jicgg9vCNR_l0Wkuyeq9mxkVgLJM74YMBcaP_wi0Oo8y7xoX0ob0MNCpfCyZbqC1DB-6VcnRXl0zy9ANqi_FUiQGvqPE9sq7E8mBwk7LoKagXGEJPUpH9AaFZYyyvfa1PQWvkTt_QFNmbVdmDcBILGy8cmYAFGH9CU2h5pyCnmZb9lqNscPP8yHgQ9s4fYl4CzUm7Y8yPZJWV6HGYbRcIf7T9H0h_H32AnIEk69ENzsNJc6yjU83lcV83rI3U4OQYN-JvYlVr3nfKaWineMUQiR0Yp5JsA_ILVmGJFxqaUrUsSp99AwRJk9e3Ya09jUGUKcEdJByOWNyBbn0vsl4fbTRMhzCfqBHcXRZQuDKLq-hw4oqYkZg7N639Uec1vHqz1gIpOOaI5blDURvtuMGiGAgexc0XQXEA_2c_l8yuksX8B6jBdhsYsMuJCWTtCcl1vSTz7Vy1wXnfbm16pJ0xvU97vAeCL8DidTbxA8nFYzSJJPhpk0QSKSiGVIv_HlKfTGAmuJ-TZY_ITzuU4YJfAFx9EFJARI9BeAQjnkk-E32yxIaQAUYc9Pjo4diyE933ChZcySMIyRAe1bo_MzOPhgD-SwbknelcdelpZzZ42QAxZJ1pbn6ZkP1dI9Cxn3Sq64uUBF1iclQhq13-vBTsUVK7kgYzx5_TUbLTQsguLdM7RKeKhY78XC_LXrL5KxsIVFeKOKQ4bFXDLUGa_a03U9mqy3uKdsAa6_AcCSaOQvVZS1EcTj--e8CZgrSNwjIryrAF4_DCEpFNwzYcWpWqLBgfsSZXWyrE_qoQ4SMJW_pF3qMQXju8EqChRQai6KHQZ310EOQADtZGn5ET1objTE_GLZi7r8CrFTvA4wHUQgaT1-yXp1j8dB3Hu1oFOzN8bLSdllB24Oka5GMdWv7XPN_iT792UT1BkN2Mu1CbQaTDrp6OekToXxI2IX4kTY5-pGqIUuOEperSRVSUaJvMJ-BSg0GTiJ-7m1KqRblCXDELeZkNdKBnykCsxZNWTwmO_q709UmyunvYg=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_07d5bd042ea50458016ae819584a7887d18a5b321247e05622",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6640,
+    "completion_tokens": 326,
+    "total_tokens": 6966,
+    "cost": 0.000992925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6637,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000992925,
+      "upstream_inference_prompt_cost": 0.000829925,
+      "upstream_inference_completions_cost": 0.000163
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

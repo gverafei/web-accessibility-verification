@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show the same product recommendations, prices, story section, images, and labels.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged in both views, with no material overlap or clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible carousel navigation controls and product/story items are preserved and identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows are matching, coherent comparison states.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Product and story imagery, headings, labels, and pricing convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Ensuring output accuracy**\n\nI\u2019m focusing on producing output in JSON format. It\u2019s essential that the images all have identical checksums so they\u2019re exactly the same. I need to ensure that the controls for carousel arrows and product cards are uniform, which keeps everything semantic. I also want to double-check that the image references and targets match perfectly. Having concise rationale behind each step will help clarify the purpose of the output. I want to get this done right!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Ensuring output accuracy**\n\nI\u2019m focusing on producing output in JSON format. It\u2019s essential that the images all have identical checksums so they\u2019re exactly the same. I need to ensure that the controls for carousel arrows and product cards are uniform, which keeps everything semantic. I also want to double-check that the image references and targets match perfectly. Having concise rationale behind each step will help clarify the purpose of the output. I want to get this done right!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BuBVJWHIYGOMxb_5vP6K2e2Gf3IjZkdQMXOfJtmFwA6mSH39by7yk_KcccAnRIP44VHAHidkCyHx9sAIDStUd8IvycnwAYv0MGOeDt97FFO6sr1ORwtfZCb2r_Lezy6IJWzMnR1hZretKqoh-7Y2Fj0g0r-cyuzIrfSh3EICNHA-jBXfygC8-AeOtmQsxJnBS4NYHM-bHDMM265CI5G1F7iutQOnuDGfRL2R--3SX5mvgQ12wl4br6jE1TKlMZbUJXBjHCigXr17L6trWExgs5wpgzeadJzMvgHHXZ-F8jXcxP2XHvr98T4D-Lg33EB6Jhi530ZrMQTnxHbfeJUOfe_udg1IINXQoihb2GJFW5Uld7a-xqAtKaqAbTtlLjGL7Y4wqwb4CD42o5y5E0y4-YSgA6QyxD_-kzCvgVUngyY1V84pv33Ljadqt_KcvTQ5SGCDmnvv1zp8QpFBseh04mVE4HjmcRg_sbPjc71F3Ves_Fgkqw0nVdI5gaM1v0mRV6dfIxA1wnyJSJAsgzv3TVXXCirdiIPSWrBkYDkdjScz10UqtHyurymMeqgmlQZY6PNrvyaJ6vzY4nOOZ40YTrTAIcdFf5SuPMsUiKaKIWZUICG81qMGJbhtYLjO_pFETeytABCx1dhqR2I8yEOKyDtsDVftYITPjSjyVp-k_SbgU7KGCeE6mAt1SF4_95VBEZy3WWDhXwg8usP3aacny3ZX5KhZaDA9BABdeDNQ3iWVusSYzNK9IK9zLbSOczLGu4x8i0p3w43S4UOI2TEjMQfix8Eu62_eFI4vAIsIGjQpWXNKmELueAl2Y1-IfAJjOCZ4BN75HGdpfxZmI1wZfDVJDkxMZ4Tu9h_qA-tWp8G8rO9M6Jqh8rO4kakj2Lw9JMskQZc7Dq59Tl6sW_Ted6Tfdmt6w-M6a-JAiZajFGa1o7qmRHLYqPKq3dILk8MFtT-Cvt-qAEylavCaZ3yfurDNGJomCTtDBNNMRHBGKU9BuFgbx7RH3RfecJ4e3HZrNyf1-U62RspWvDD6Pp1KPyr5hQyLm67EhoYN8zcWB09cYaq3ff9w72UBZ2LDhDgs5RXIYmLlVMcKfDMIyim1emtJ3MGnD0X47oNgmyxwWd58NahJsPT6O50kyx7PovjsZ4rEVwjn7onyrZQcndJgsQjl1waNPabIrMNqUr8Q9IOwxwn9TyM5PrkvpK_nbZ-2hsBfQaVMkawpEKndV2iK-sCr73IBBorcwwgeYXYcst8msUFFA_BRcLT5Ldsh_TT6HIbZZrZ25aScT7AG08ueiPpS_4CPMTNfkxm2PLYii2Xi52xsx-qw3cVHXvi5ygxjXb5X7ipGFdOh_XcM-f4oJ2tOnCSQppFATNFmuDElagmW0Tk9lqU4zMWiLGLmofnN8Cek7iXDYU4J7BLb8ZBuMO0UHk1nbXmWR72Hp4Q7kntYTc_u575tN-JDZyOSW5XjaUOtAR6E0T2TwCDDO4y68jCHzqk8oaK5cGLHYbdD9UJlyaboHUu4nM_DMnTXMBFwjcqXtlTnDknR7Ljs8U5zhTGwTZN4hxaI7hEuL68yBarwPrV7lankVPMROR204EDutCpyMBeCxEo-7ERPC6CeV1YYWAbii5zzWgO58nZ3pqBmD7rE2Mqq90Oi-8K8jwL8Pn9jSNazhGayvog6cSFX0naUmfWNJIQ82JFwb-Ew96TgE-Put7pgOFm-1miEs9uvPFrp-KufmPr1lz7M2J7P-xP0iOcMsHz_1Z2Pesgmqtqf1M4KlUZeb5Vew0GTB-W3cPdbzumx_ST_dkOvMx-ReICrITRLCqICeAaAd5ADGRo4YZr5oXRCgR0SR4ajA46XAMYSQW6-vDoblPDBWi5Lg8E0NQKkEXDXtp2UH_H24EfeUFo0ofNDKzJZImQrLlTa6vB0zcSY069KZEU2fmV498Oyv7c45Yrkk7K7v5NrY2XWLR-yogqI7OdZCeQMlA6HZl5JY2vQpDMKI6fyvmm7eQQLLj-J5qy7HY_NiXPpDpn_bxCvWmBiigB4ICg7s29Kac2shybgrTN_zXYx0MOzYDimF9Dd0B0Amlnm0LNIofc1WRSyE4w1bFYVG92Tha3dcvu.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_04d6147a15257f73016ae81b7fe69087d1b38c7691ef24f3de",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12166,
+    "completion_tokens": 249,
+    "total_tokens": 12415,
+    "cost": 0.001645175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12163,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001645175,
+      "upstream_inference_prompt_cost": 0.001520675,
+      "upstream_inference_completions_cost": 0.0001245
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

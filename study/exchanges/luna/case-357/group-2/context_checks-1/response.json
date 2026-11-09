@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target preserves many artwork titles and creator names, but numerous visible art cards have broken images. Artwork is central to an art-discovery page, so this repeated loss materially weakens the core content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target is generally arranged clearly, but repeated large, blank card-image areas with broken-image indicators make the artwork grid substantially less usable as a visual-discovery interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, login/join, and promotional controls have understandable labels or recognizable icons. No essential control defect is evident.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied windows show a coherent reference/target comparison for the same broad DeviantArt home-page purpose. Their different layouts do not make the evidence incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The text and labels are coherent, but the many failed artwork images remove much of the visual meaning expected from the page\u2019s primary art-discovery content.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content quality**\n\nI need to assess the regenerated target and check for broken editorial images. It seems there are repeated issues with resources being broken, which impacts content fidelity and presentation. I should ensure that controls like headings and buttons are understandable. Titles need to be preserved as well, but broken images hinder the core purpose of art discovery. It appears that content loss occurs due to repeated broken editorial images, affecting both semantic adequacy and overall coherence. I\u2019ll need to examine the JSON for accuracy.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content quality**\n\nI need to assess the regenerated target and check for broken editorial images. It seems there are repeated issues with resources being broken, which impacts content fidelity and presentation. I should ensure that controls like headings and buttons are understandable. Titles need to be preserved as well, but broken images hinder the core purpose of art discovery. It appears that content loss occurs due to repeated broken editorial images, affecting both semantic adequacy and overall coherence. I\u2019ll need to examine the JSON for accuracy.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-AYOXR6X1GLmClVcPs8c_Wi8-BGF5fOj5CcoLDQb3n8Mz6xHRQ3xDBX7kyY5YjR-iaOUFY0KD_59O6-XlcZtBVW8epdhm2b5N7ZD-foh-g3KxyhIBSdPaWv9kefHGBXITv_oqd8DD3g6nAI2DcJZPrHy0qv5y69_GEcKZcfIR1_hglPjiSK4CPrcpOADdXaJHGcRnK0fen3Ibs8zpQzrwIJ_PCMr_WKBfm4aV9--rgL4YDirQ4fyqqZEM8tW43wpboSRgq--yFljF5wvCKZrABLoSRi_H4VLOZjHy0yx0_u5GYJUg5oU5mDxsZenkeaflvB1S_VNTOvkb3SjihE3ZKLu3JR6tDJXLumughrwEpsVwTGbmhp-2yB_zKmNnpWWnUrXydehulTXFQWFjqwkTfxpDwoACOnBTl2JQLwCf4sNsLtH2F4BeY3bhsJa7x2c-vZKqq8d_guIkLkZ_wBqg3YYIErNT1HJNbNhJe6Y4dp9z4KA5mVt925rQebl5cb5asQyeWlkrHB52lm0sReKTDZ-PgK2Gf3AlRHEJzj7q94LuWL1FytrHaGwX4AEckazGvw3rHG6MwwIid6Sdz5gdmpdna4DZ0C1Ni31i66eJYGZEbcUebKf_vOB27XhOl_c5VIwYzsRtUwZlGvxom7yxzRv2ou5hhnV6GnizkOyNWuRSJT2EypkBOJYafoc0K4xjlXKGRqV4l3oltyPfQIJuuzQQwlI8miV1e76FUvp8yG_jQoLoODS-DccFi8HIhzI9QcS1vQEWjDh5qVpsNglzdTkGzHIjQPLIR-83vu7I1f5ia39-2xrPcFYbgcoPhB1ssxND59TpUL3jrsF2WEUIiHe6D3aiDy_qeiRk7jLvcPzfNITsIzCW0USdXb3w6Fd6Pr5IRbOIgOcJrh33iUmPzB0tQ9vjFTYB5PDx8HYw2R6aNQNUQSlL0bUmYDoRqP17EQOrLGuq5YvdKMaR0wP8Fyd4wqLVMRcZdVcmt6g0n66XoudalZyoADmxYF9u0r27yuOViWH1jFpEGO3uA3YK5VzGENCTfDZ2pFRj-Z3GDRkZ3QNTlXXtPFcw-C7h6taa5BH6BiFXDunLFXXeobhHQSfRdTe5VNA7IDvFN2M6kUfwgN8XPsLagYe8H6zP8DEuHroqC19_lPDl-uLVOo5Kg_C6RJXdmv_LlDC8HqPTIbCO8A-GNA9PxjJDBCDtQ2KNfpXHtwEA43aTBvOeMXm9uY3yIEUzDxrWcPjpuRCKdni-NlpInnmo1Z8B5urlZuT1noQLUnOe7ellSBzQsJCz3JlShGaIrFm1PUbQ4qVAyWAYh3085eLaM-mrXnsS_3IOcuTci_agxMlrbVH1_aytr7S_aQFed2Fdly26Yg6FV8s4iVrHfhzdm4MzQv7_Wj-2hFU8YX935lqVOgoL8bLX1opsztqDfZBNR9hh2dhiS4IKKU9EQ5LczjXv5f5tGEe4NiT7sqRQHBCGOBv0Xh9wGUFKsrRVYspyww1ZcVyYWKU6zt_pF_l6KzBGXE-RNaogznhfzlnzQJL_6g4ZpyEHQN3lXg7mwD1-7uRvbuil1zCDXDXOAojN-72iU4o68vkQdXs1BoP_JzB4ySsKGGQE3GTv8TpkiP-hXyv7iwRisEYISi3RTP89lNOONchl-tosErdrWyNITELFA_z_Ww0ai2zS3izy3vddHzA1gyalad6AlnqEPSQ0zuyrgJERHpSIVIW4fN1qO4Yqj8FgeieBjwdNeYbpHk-7XTC5U8UWBjcRy8q4fuz9gTvwgxlrSmjT3GIQuKsDlvQ0jOxIJue-7cCy-KoxGWS-6C9_5yxcSbWcDpzHkxAgYmvDxoYyIzahZewoVRkjrmYftDR2EH0I-aUaR1g21WMIa8m8iEGbym-PfZlQzceiZtFBy1HkoI7uNtx-GvRsJ-PxOAqbVDAymcZzhSlNYnd2pjp-hnbpPGRXBxs80gKV9rJ-gTiKVoeamcd9LYOgyQM6rzAeAQNUVh0xHxxTmWNKJ8xC6KZ2s7JItL4lUFsbwTEYZaIq7f_KWGKt6WQjHHK8lT25OHrBhGnzT4ydPVQhOZkGEqt4OvaTzCtG3DAwYUFzBzNewwf1jYVODINkOnAX-8vpVITZfulDOaWeM_or-8esoo64SZmiTgzKSmDytOOpDSrCaXUGmScqcwOR_50c0hW8sRNV-H678VpGDi-WHhUZwERcWNmrdNtewc1wzmGbs5omgG6673fUuQfRrw0aB6XxLH4wJc-XUjQJHhFI6vMPQjHVD91dsnosC65NveroxDBc8MVJAXcTOmkX4L38PzE4Ho-6bLqvTG9acVxTCQ_KZisFFgGgcbEa0_sJIcFbF0u6dA1TGQkeQnJvitUNDkAPoGk8SHM4BizHfzUbUuqBgZBK29miLDfe-cG17zrJ8to7Y6Ud5-lqUlEuJ0Tmq7hWW59axt0LLhK28ZlWT68b4_QYgoZpABUVqCm4UJ0tIGITEScA6wktpQ7zVf7eOACNvH-ge-Uvsbk9CGHYd4HJvAflkexeqSzSg9ne_fMwZ7ROsOSmd_VCswLMGzE6wtOjHmG9YIsakNyh0OLUoClLEwIhxf-K0KP14mwZMnByTJFOiw4aJj261Zr8wHHJ_wkXigsihElgQVbW5TdZwaXudWJQB2o2BkZ7FIXvd4FqXUytG6WsUqL2g8VtdSj5_cSEKFeKIkLVLVfpIVGpCsRy7p-B48QReatZK884qEzaCOa6SfFOZVgk9isUPBGBpTe2HNFhnjhYR5auh8v2Nkko1iOvn80BN3d4r5G0feEiALC8zrIW_9GxbvJPzVeh7xkKBaD_y0B-xoil6iQwq_wBukxe2LWXUYaBSXVBmFe5H-zAvi1O32sMG0XRMeKYrdf0YpEYdpRNER1jghbOZo7wnXTn4SB5mrK8PQxAfTaCLIV2Z_PyNeb44mNJEXSEfpM0q-UkqiPuxqlD3w04j6ZfFcBfpCd0=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_081a0b01447b28b1016ae81f7f027c87d19de156821737f62d",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17935,
+    "completion_tokens": 381,
+    "total_tokens": 18316,
+    "cost": 0.0024323,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 17932,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024323,
+      "upstream_inference_prompt_cost": 0.0022418,
+      "upstream_inference_completions_cost": 0.0001905
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 91,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

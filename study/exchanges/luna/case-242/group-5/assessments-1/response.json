@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows are visually identical. The Forbes Shorts cards and the Reviews, Leadership, and Careers content shown are retained.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged in both corresponding windows, with no material overlap or clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including the subscription button, video play icons, and video link, appear unchanged and identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both reference/target pairs show matching regions at the corresponding scroll positions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, article titles, images, and labels communicate coherent Forbes homepage content; no material loss of meaning is apparent.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Clarifying output requirements**\n\nI need to ensure that the output is in JSON format and that the checksums for identical images are exactly the same. I have to note that the first window has some distinctly weird content, even though it references the same target. So, I\u2019ll need to explain that part properly. Additionally, I should include controls for cards and video play, and there should be a subscribe header to make everything coherent in the evidence.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Clarifying output requirements**\n\nI need to ensure that the output is in JSON format and that the checksums for identical images are exactly the same. I have to note that the first window has some distinctly weird content, even though it references the same target. So, I\u2019ll need to explain that part properly. Additionally, I should include controls for cards and video play, and there should be a subscribe header to make everything coherent in the evidence.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BzKrPK-etbjQ9q3J6B09WjCXZaLuOvz0_CBE-5bCGmhvKTbsH-38caaOM9se_oynW2G1E4FNm_7aO0c__8PRo8pOaP8_p2WszktikMkbPwhAQrhRZ9RFh7e3DHWfvtIowD-ZupcD4NEPfwVO3Su1ApR7F_ojAXCW9aGiCOQwVovaS6n7QCeupDlexPT5SbQYGtvbzvg5k60IZY5wF02GZJqohekxh6VHl1bLqoqH1oCtcldoZE-SbhGsQEt7YB0tBwAETwL73iyEgMgA1EF9n9Zwab8Vndv5X_nUsxd7K41gHPnW2xcEwJ2htruiUEqg7qrh6ohjK8pnkuF2Fw9AJFxKEWTksDE1iN9BRir3ps-AHuHdQgpIVZwpLzW2sBO0reUEPDm0kQ_DnoqngqBusuKm59I_CyqQuvnFb9W9ppeb91RnODdGKjrbXzid-vpCR8w3161sVZkxyJsMHytiaGhC8-ZCYk7qtCf9IGUHjhcEe3_wskyPgaJd8Wax1Ht1N3QhH19494UDyyr92QczeDXLjAr8t3LsjvAcJQokbCauzvSxIcg316p3Ng7KdghWqa5Adf5LZ04xzlKAUDUDsAmFD0s_V86VhB4ZVh71uI9xpjDrnxBKiVeytIFuDd10PJ-ZnOYiLqk8IqwLUbu9HpYbsAhX2oNSuNqQuK4G2MFzcw9mWX2icJDJr_KO3bp4YrwYOgbLl0vi3oBl6e1oho29Z1HjB5vDuxz4CxSjslxfeqXFg6y0hhXqiF9-cYD0I7SC645jmHR_wQNbCpencEhlcAYqsXlS_oycVT4SlZ_0DhxQxkjoU_wBDdKNa6uZkDvsIvd5LoTmw0CA1hRR-g8CuRqmlVzBy6qPhB3MehGRIjqOud7gS5pB346gUC9FsLnzeRRJct_UdSK9j3piBIWhiHSkOlEkD9UJQMunLE5qK_plBjIT_P3VWHmTye6lGyW4Tp-oPZSaC97dzXW-kQyZTwaaz2ZPOch7lu3tgTfd8F_x-Xf75nOuJWPeH-OmK8uw2vgcQSuELiqbrEDOXoXLSbzKqB-OeEeBoxeQ5vxAEFdQuTxgBnepe1Wnr99BkEjyiljoEa3Wc9dBvnN8XTj7v0t2UMKIWTaUDKvIDVuhra_8Nm6YPnOYNHhKtwz79zN-MA47eetmD4NSajlbdjgRYYZFzsTSv0oZCkBc_SBF7ThJDkwRkpjFGLh0kv44jaSqQfssC3cnSuRFETNwwEKgmpilFx21HLEbFdMRqmZZeUk1Ht3ukGayvENDpmKc327eenTp_IJ9ssiPAxteceoM0cYP050F6eMlL1CzcRaFhIuQMbTYGmm-EAPuHEEe5FVvUdx734wQbS0EfVeVtWWbyv-nWU_eO1JbPhsSzI-M6nLIJ7hON2vNb8C5O1sAQa27VNYZleAKAz84jjn7Crd9Pi4FMqSDRLTRRaDiJoDd1-DN8nuV4hQZmHvvukKnMsPgFsxaHWdQSGEaf9VVF-gBKEyWDP4SEbXSeRL69iQxp9xd8bCgzk8-WiyMfRkQi60hz3_JPzq6oF-hNI1lXrQg64Fy3f8sQAYA1RFMEZEhlnrkYTx2k_16kaMZXcU3LqiO376wGdYyEoFFrtuRcRUnIvsKEufBH2Kkv1iJifY9W8LdQIXxfk2us9IY2cJ4-TzvlNSbTVMIOnmu11JsTap6Elu8mocL_IwcdNXSriV7CBXKjxuuViORhPlNYozu8aC4EjegTwFl5i0lXkDFFzhDXWIufkN9VgceR3YUV3pcnaYKat63rbQs1BpZ5KEQjaimZo41CpzTeedZ0P2L53vnIVmExEWhAXHrP7y0Xx61rFhF9pu0prMrHTbU7NIeDFDKqtlANYW8X199Q0xwEkXeok54BLZKiTm-e2lRBqGIDcEzpQm99gPe6zvIS1rmoYsSpPE8FJK25rPhTNitP3aLvk4vp-nwS1ymzpi_8sldCaIW_Y-N1lQSlVO8m4GEaH720lg1BNYn0vyrx4qHfh6YCPh56gWISHQPmaNdfglYGJWmixPr1BAIoG9uRjWEjrHSm2MiS2Y8OOSnaHMnBZ29m85A6bUd1XdT68lvKrJd_6lnZ7nDDRdYK62iEwOEXi-a-4hpmN6xRCils9unOjt7y-HblGYsCRWLoAv3aRTfJrc7Ll6OqKobGl3SRCrlbHbftlE5ObVdV4MzQLJX4OJsg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ff5ee45e6d1add5016ae81cc8e1d487d181e1829462332f4d",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18331,
+    "completion_tokens": 285,
+    "total_tokens": 18616,
+    "cost": 0.0024338,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18328,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024338,
+      "upstream_inference_prompt_cost": 0.0022913,
+      "upstream_inference_completions_cost": 0.0001425
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

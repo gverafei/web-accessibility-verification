@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target clearly serves event discovery, with a live-music feature, event categories, and a coherent set of event listings with titles, dates, locations, and prices. Its regenerated layout and wording need not reproduce the reference exactly.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible content is legible and arranged coherently across the supplied views. Event images and listing details are readable; sparse category artwork does not materially impair usability.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible search, navigation, category, and event-exploration controls have understandable labels or recognizable icons. No essential visible action has an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target both depict an event-discovery interface, and the supplied views form a coherent comparison. Their different layouts are permitted for a regenerated target.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s headings, category labels, event descriptions, and listing details communicate a clear event-browsing purpose.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing event details**\n\nI need to assess the target on Eventbrite, focusing first on the top view, which has a hero section, an explanatory heading, and category cards. I noticed some icons are blank, specifically for nightlife and holidays but with their respective labels still visible. The event list shows well, serving its purpose in navigation. It seems the event cards are coherent, but some category icons are missing, although the labels make it acceptable. I\u2019ll prepare the output in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing event details**\n\nI need to assess the target on Eventbrite, focusing first on the top view, which has a hero section, an explanatory heading, and category cards. I noticed some icons are blank, specifically for nightlife and holidays but with their respective labels still visible. The event list shows well, serving its purpose in navigation. It seems the event cards are coherent, but some category icons are missing, although the labels make it acceptable. I\u2019ll prepare the output in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B-79qTnvaRzpRJSEmgjYmlHYC6HxAiH4IH2MpibiqdJk7iEKqekFBoWhB2IULkZW7ze99RHQLXa82AwOMsZrsXdAf6rDgzbj9IDG-hEHDHzqM1koUq5AMAYtD7BYilTWZb5YizMUDKBPryC0qY-pOCiOY3Gc5eutJbPLdv0-DpDwK4S8ZTszUuIF3X6HfuTXFEBszYZiSJ4Ipqw-nFH7aVNnzQryNY9nRtwAfM-ciK6q9C1xU2jyPELqUbV3VQmH_PwAPEkKMFXhFynEw9Q2o8HPHmi7oCAcKepQ7qKN1VmiVZKZlI9gKlEiqi0ah6H0Gh3syO7OoMU1uIcp7j1NOQsW-WOzUHrPpwLEA30JtCYhvwxpk2JDucggVexW7JcyrkhKbD-D1JfGvbxH__aQBU436fNRxclwcG4wpaNbuf1YDsvhAQvb07f8znViwA1df8bvXrEi8g-A2fx5RWRdmvMukKnP8QUB29l8hvj-Nkx5guHnZa789Nbdi2Td9127OikS3V0K6jvOwz6U5KQLDYomhMx5Cwio4iL6sjWW9bQFPwTlYNBDAzjEugTawXDE8FJPRH2EzdWVOZWrKftBD-a15MDRFB2B4r5n0ieVd1tCd5Pod8Gq_sH1imf1cTsTxgXZcyjRLefUKQ17_yexemo7SaVrCTrbjN77S_FTtE92PJxebl-UDIk-OItqnbNOral5g0pIuzpxR7lBfc0DZ62Uipqa7DFii8X5wtKZ8dTdUUX1INMRlpOd_1OX1flFh42j76FXt6cE32lcn7nR06HP1nwKyclwWjpvLa48s6Fx9_8Z7Au-n47_vuHGYCdb5KQnIYRAwTFpT1d-gv011g7GPN31tIJkDO9akMm_OtBb9OF79WmGr2TVns_iZ9nDe7GnusoWhdlyn8vyIKGBI1jZ_ZLnyOawdfyUG4vH8iJbRjyTW1JQ-Geyux5KBMSzeaevDxh_vjZd7wi7M2NVivA09wXFhtSYrKS4AV_QYpEFAsrRGF4-C0r9GKMyYMDLfq9mRWsVDvJpsJRyKLDcbKZ7rXp1gHT3toxEyIH1aeu9Z2Lk_5v98AJuccKxD4FDjeXfMRPkhyhAjzaUu-nswzzCUWatgZKEghaSp6q0th9Dz8Z-ubxQV1mKkVdLPcbodTkXcQ6dAvEybnJftlBB7GJO5SsQ69aTyxH5EL0BwFr3iyaJv8AWgu-IRnc7FMcAypn_RC9jmxxX4t84HiaAyNcZbfnAGYkhgvWnVX_6aKR74EORvS553lzaQWIHvBWLL4lB4gBeKvKIE40UcJarsPdalupiJ4RvAY57wCpdcwqIAc8s0U3oVA1Kiv2OxfltE9d-OvMDevGOvz1moj7fVqXk3089HXr59TsOrXbSO2x-dm2E9N2YYHrKJcZCzfq7Ag2U8N0mE31vGdtwyPicfn-qbZEHeop6d93N8yNxKRkhzYZuxTtLLrFNGRJx4ufPMdzHbxEj9D4cIF7KW0mIDsljEX8CkpYSp3oG_TmX0sQ8JZIhPV_3iWG8i1zjvCAUfhOUunazmF7XI2KeG_k7TWWwnWD3xawO7aG7mkbYVsSgJUJJxfylDxGMo3_yR2WmMOu0wqVXU_o9wsj1YEOaUEK6ZcnDrDukn2fLO_5wGvyg3TD-LxnFS2HgGwoSaI37bEyZuHcDT71s7xpdPfzlSHoNkvaA2Pq8eeolK6a_ci69oAv7SD-sEEsPIkp99jVr_4c8csrGZOm3rdu7RjKk661i2oW2pKfnBwGTDeHg7it_kK2eFKpYK-8sEO9HDkhN_8Q8PGXgyM2yyjye-mc2Jh1UeayfRaEnxVJKKQS8bKWFps_HQqnXNzaMFp0vqD_pHdPgCIYGz77NshjvZg75nyAMHokkOowXHVTa2XwR46LfH1NnV-4ZBFfncQt9NoGYnknJ72PTJaFPeOmU8cpgbJ4KrnKOgYg8LUp8kf_6lvuRiErVdUdzA7n_EAEWptFNg6v0a4YGD_oKNkk0zaqZJzKD-RMMwiGFECCdNo9WQ6stzCOkcua-73j3PEzhbQ8NEF00b1tkbCyIUe9XlXDjGMLc3EODNcru291_lo8cUktr0QQD29LxlcAYLPSX6_CPaCpjl24FX9Uwc9N7iUMSkSiJYDrNWWDRLtirLtX1Y_6NRp8nefmZfhhDkswN6xju11UmBlcxJWsZWX0R22eKNbwJcj0peZB5Mrm-Li8fCoIYxM2g60vbBQ7dJ9RcDTJkriFodX9FRoNl5BksN-mOSj9ocSUioxSFSdkdGBKbmThm92vWvjSBDolwOabJYNwboCuQuWkPno5w4NrI-nMN2GlSWIGwon8_hUfVeqiBEl_Los8Uo4QCLpwm-VW29-PGAdAuZ8rcuVjQi-GDXt0_-rU5U8sZ5-4s1Q0wcp8vCY-u66lIN7AZt6_xPJyrbbfvCGbO-D6UvSmxHpouOAEpfxiksiOhGu0wH1auh348Z5kNRFXOBvvsHib_a0Ic7C6qEwM0wxb0dGUl_Eat0DjjNXu91LRDna65DkWt45XefAolrTqHpBBcv58QTbhwTulh2JJA2Ay0GS-LpnqlBzk_BV068f6Jbc9SusyaXSpYg0ILNpSMmLIlKGmWoIOPmI01mFH7-O8WlbJnte6dJBePG_0-SzMUXpVoY_ZmjHHiWFjCmbrPyvWZCUG7IvrBazOUqcxrzF1eG_pW-rEJg97TdjsdwwDM-sozwOJ-E3CnlKpyNSTiz8s9eG9HeJEeaRjmB_cBmUmwYaNB8shf_ph4mHEJQxd02QAkdwS4KpedBRg_GJGP8f-9QXYyt_kpiG4cky9u2oZ4AJN96n8mhNWqpQOX4a-MVfbMqY7JKRpDjBkw-tuML76BdFbML1wNlyp2jL_zay7pHZ5lPZXkuSVPIVmuiX_mp7vb0mOMFfeElLFha92jcwsxT3Z9B7DZEsEUAHh.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0c963d1d31e09ea3016ae81fb9223c87d1a9e358c3e957562c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10775,
+    "completion_tokens": 335,
+    "total_tokens": 11110,
+    "cost": 0.0015143,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10772,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015143,
+      "upstream_inference_prompt_cost": 0.0013468,
+      "upstream_inference_completions_cost": 0.0001675
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 98,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

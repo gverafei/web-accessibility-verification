@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target match in the supplied windows. The visible testimonial/CTA area and footer content are retained; the cookie notice is also identical.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text and page regions are legible and coherently arranged in both states. The cookie overlay dims the page in both, without a target-specific obstruction or unreadable content.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation, cookie choices, carousel arrows, and CTA controls appear the same and have understandable labels or icons. No interaction beyond the screenshots is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied reference and target windows are directly aligned and visually identical, forming a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible page text, footer information, and control labels convey coherent meaning for the business page; no material semantic loss is apparent.\"}}",
+        "refusal": null,
+        "reasoning": "**Considering image output requirements**\n\nI need to prepare the output in JSON format, ensuring that identical pairs of images are captured across all dimensions. The cookie overlay may obscure some parts, but the images should meet the requirements. I have to ensure the evidence is limited to these regions and that they have an identical checksum. Also, I must confirm that controls, footer links, and other elements are visible and that there are no defects in the output.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Considering image output requirements**\n\nI need to prepare the output in JSON format, ensuring that identical pairs of images are captured across all dimensions. The cookie overlay may obscure some parts, but the images should meet the requirements. I have to ensure the evidence is limited to these regions and that they have an identical checksum. Also, I must confirm that controls, footer links, and other elements are visible and that there are no defects in the output.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CCkT-dhdfuaQXAJvDtT0g9gvyK1d0QYFtVPx5KRGWbLlA1XY2JpUj7T8BErmHrKdFRswmoABSmp4G9FfqW2jwLtEByRDT9odFqTkWLcUNWjTofUHxCaNv0kpSrV4i7v_WSf2lsmU9nmDwCI4DQx3zxWBMTA0TOzw9UpwKJeLt9YGJBKFvlgUPcf6GEO1y_t1KZxkHIBsxKXgY-gLB-GUbEOJIRRlclEyCKdIJfz64bBi0WtMg6zgY_HQfUtGl0MscgzflUqtj3cU4Swf_G15GGZCAbJa7IiX-cSraPq4h7XvkUDJeNMKqCW9S3AQ2AHkejbqGpxorV6Gcbe3wj4askigWO67c87SbSI3C7N2z7GwHhwSyw2c76SRpupSbA7nyapCcZwC_LN2xUhw5LECzYTKbwjQAhAGbfjCOsfSvb9tS6aeWz-YBSnzadtOfgefxLJe5LM60b7Z-f7HLd_meTq6WWzw9B40fzmVfVz1qbW8lacT9i7UqSO5pROYfkXz8L6FciDS1_aAV1LhGyRmnW07-eImzCHLBAA8yqAAs41NMjolJsypB19oK-Tw2gcyZUzseaPbROpokEVc_35nEChsA87-siIVi-WRLHHF1Cc4jyf8gfKpy0f3lHyP7qqK1IiDSP0UEL_SklYe7-_9vXU0hu7Y6sHyumWTbG2ucdB_EAPu5kugd2FSIgTpUBagKfiaPW7Nx-Tw8yB6hWG3WpfytOJ-twInkpxVYah4I3PCmT2S9dpASlrE6kjyRHQcyUDZ9iOdvu5pmPrzbfGWG76Tyg9BQ-WODY_zWobCHWEztmz58BhQMyPvQDYZaNEK3a08WVCD-abuwUqRIt2KxUDECvfKMHxHEIbm4o4NjE1yDW4TIuzkXKn-vbqYS17aAGU7m4SomysNV1nJuZQhgCC69fb1M9zdbbxoq74CRPgK1OinZG62W-_XV0Ua5JcNaUOtI_Xesnhhayj4UHzjBEoC4cx60KVmDSIblKEogND6OW9rf51Mpye-wamjk-LVxJj8VN8cHKBceGiNeQ2DgQrtTtlhOuhmRxkygc38DX9l611GdHlg1XeRGoxGJc9rv430FeszpV7oBCTf-IECHNnnwDF1wsMxvQdmccLQSeJXCxOGe0Krjt3BnZB1G4RDMDBNgcsSfkblaCZjtWy0U6boHs4EmGs98AKDOOsn7ZFUcG0l_21GCnXHvNAflP20sa8jBk_n6iBkFVauqqzgwaE3pMW6Y3keyypyC2_K9Uaeey023-nB6c29qblkfkePs9u1zmH2XC51FEEeZ6VKMwu5tKLxbB374u-xKG-bjVqQVZOpeh3Qx-YMqJav9GWL0t8qzmmE2u7rZCgwrJNs8v9sMskRBBXeDp8aUI8F99xhwU9e9HfknrS4v5wDujfytKgUwt9WmZjRAk5iCwwYdpd3p87Uv9fseYYJV9OeXPsxD6KSEzyXKR6pU8abB-IFtZVut73icp4lJrP2E1MmyfKweURSILItd3sZexhhisxwEZgVQ4nLQY6GS_lmGJYEexpTMtJQEaDbJ-oNl60sanBQyqUjCZpLbpPEivgEwKsPt7KGfs-wXoFVlm8Q5LJppwroMocxgilvhBYtIobUGEh3zoq5vfEwYaoRPzamNKjsLY_u8ss5I-rnCNLBsC5stI8KhDK2JNQWQCsv9dxaP83j7aPTL4oF2c2270yzg9u1yIgL0miliE5rDUfLHRmhR2KZ6JZkEN96ZHx74uCy7d4BZKNbVc0RCLqSQr5f2pZJ1vpallX3PdcRk_ukjEGEqFXAV5ZEGTMJ1KQKjnjZIZcFluTfvFgcz2v6xm8rM8rrR8Yd_kwHJRnoSmanOxCk8ONCDT2nN7-lQ350qOHZZWxTmu7NjtOE0N6mgm8gGdfuuJ0DGCaKQGr0CaVK3YUV7Y-qrx2ZKGiOdFV3xeMtr8lIcH-_Vd_0Rgd8unGfBtdGGz8kl8RGEc_Fb9m4Ulc89jJ28sjpZZ1NVKwelmkS04d5NF93bytT2J90BpJPECPa1VCZCHFLGE9K7TDEaMfo64xdX_3OC6rB1n4azLAdVAZ5ot5BR63yvyJrsXvCmyzrqbgH0lve0S55f-l-kAihxYOjn2PGclYvVopFNWcWerzBuAseJPb0R77wmiM44bVoGFU9PVboJCtM0v58pT2fPXG2xulCKsrWM6fsHilqDdUNdM2pUJWuMRiJSZsxvE51akq7Mk6QRYt4woq0-EGrkpcGZy4vB_u8DPeNmvg2ZK8N__B29QBxRL_sofBDTHQnRObABAH58nYvCZzxojs6ZWGt3ENNiZzzpn9a0CeR4iPKA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00caca510b3a71f4016ae820a2cdec87d1b74433c76e2c0f1a",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10013,
+    "completion_tokens": 268,
+    "total_tokens": 10281,
+    "cost": 0.00138555,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10010,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00138555,
+      "upstream_inference_prompt_cost": 0.00125155,
+      "upstream_inference_completions_cost": 0.000134
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

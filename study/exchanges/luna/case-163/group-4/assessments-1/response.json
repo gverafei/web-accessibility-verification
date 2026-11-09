@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows coherent PHP release and survey news content, an older-entries link, and relevant site footer information. Its regenerated content need not reproduce the reference entries.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and links are legible and arranged in distinct news and footer sections, with no substantial overlap or clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and the keyboard-shortcuts disclosure have readable labels and recognizable purposes. No essential visible control appears unusable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target and reference both show lower-page PHP news content; their different entries and layouts are coherent with a regenerated interface comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s release announcements, survey item, navigation links, and footer convey a clear PHP site purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content structure**\n\nI need to focus on assessing the window, specifically targeting the footer and news entries at the bottom while referencing the news entries in the middle. It\u2019s important that the content is coherent, with readable controls and a clear disclosure for keyboard shortcuts. I also want to compare the current references with older news to ensure everything meets the standards. The semantic target for the PHP news should provide coherent evidence, and I need the JSON to be exact.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content structure**\n\nI need to focus on assessing the window, specifically targeting the footer and news entries at the bottom while referencing the news entries in the middle. It\u2019s important that the content is coherent, with readable controls and a clear disclosure for keyboard shortcuts. I also want to compare the current references with older news to ensure everything meets the standards. The semantic target for the PHP news should provide coherent evidence, and I need the JSON to be exact.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BtJH4gRXS7zJ4EnomD21MrICbv-6Lh1bNbUSAONahRFohqNMrvTtZ4T_wHGwjg6DB_CZUEyG_nlegMeI0p3BCPIsxE2vcsNm9e8GFPMJhA4ftv5p-tdC12omaIh0IArAo6kaoPni3eAV_R9RLSZbL8CX4-5Jr2RstzSnfHtjvI0dpn1r7HQndb9wahFNHzFUAbBxRPEXQGS2etJOjtGMOgNijMBXUz-f608ytJ4WFQAHk66lxMbNzpc1PRW5jYXpYdHLjii7gWQVfyayx4XmqAIWmkUgWDCjyqb7CKVCzVKAtG5HoqF4OOsqjLZgZdeK-rqkUT8YY-mKAO7Oicj8o4RFvq9zDIliQLgZg1fiO-sRxP5EMAmVyNTgPkrc_61FOM2bz_8imacH1l57TuLp7tunn1aAwc75L4JGCPu9kHtsJv1MLsI9sUQBy71o9h0YYbRxM16VaW1z_pcLV5jSbUEQYJ58aD0r1z51sDwX7yQDCv_LCkbWHNDWbSRMx1oe5hAOgWJvx0e6ouMd3kCllwXZIfUV4KjRlm9Oc639Kd-SRX31R2UF9ECJcHHUb1iS1bhQApIB1HhnfZs2Wm4OduMUHUZ0sWVmnqtHEWICI2mHjLYpdT3rkh8yKBAd8vc3qJs3TPv6Pevcqkrp6dfBAQTrUAuWKF1KtToHa3SSEVjQTRIA5TPtoKXXdaF-JMAZ9gB09m5DzUpa1LFJBxTe3WTz440QQZB02DVooFtfA6Dcb_Z6w9ycZz31oe0aDqHKbtg35p6u5F7CiLD4tISqdEOYSY9XhlB-vwgzahmwuit0OoXq7Nizgbl4AdYw8XomuUlAhUMjS4zCA2jA1DlXj5YKdhj4Kc_w0HtA_3g1f0Z1tTM7CSA6fDGaSerok2pA0JsOrMTdKqWpS-B5NoNVMoTTePX4v5FCeCl2TD3TcmPXxUahXrkTwHIyqwA8QDBqrdxWWF7VGvps3eplzFSwUjxWO0qBvMac5hz38sz-u7mImARf-Pd_a2MdQv_0Oku6v4bHPXEcxD_X1xcHM_gxNgsmOn59eo9zguYdxH8-sU5vZHu_DjuK1SqoQN00SxNw813AATlOqfxErDtZMqB4dVGW6BgjJaXPtA7hBlXV49LbRwctbFJxyhHRmuW_Jo7DKLpOrSw8U5IOsTLfr-YRewBV-9-ZWYER_2z_G1UqNfz24MN8UMI1jNjpdLtin-gXEWulLvksnVcicmxE0yL1xAe8xSW7q-27FCcp85tjslQM1c_sVtauRN3oP17FAMmO49-qaCwyECCqsgBRV5gjKuL8WeS94BA14GqDOmBDwSUsGrr2gCexdlv4ocS_yVmekx32jKlRIYW2UV7gHtR3RNSF6Vd_WGMasGWOfejBnelo7MJE7GmendTqXYxwWDiGhiXDONzudrFKGtYHimr0jzndIcHTHYk6Z1jgQF6j-97x9V_D5NeQ3YoYbUcMzn5tUZkMggel21CJuBBzhHbBoiTCy6XsG4iNDdGQNVV0fuh28tKiipv5_Wpv3EUMFddZ5c00oMiwYla9E9eEkIdZ0ASB_sMEygNMUihQlc-WqfcUJ2FxRlWm0QmxMdEuGLXVhNPR1jy7zyAsfHIo93m_0wPUETTC6x-gERkUpnbtTunEIkcT4CVmcAS4V5vSwOYRnx6xdv80QnVyVHr5MGvFz6bsIQ1LiLy_dXn97CkItdhjkMXXYA-f2pP1Gb8U04H0tCfAi-AlovraSxqAaothqDG17Hisf6rOEefdJm3Twd-L5H-bawSAkxIpDm0ZwVscBJ17cOM7IqIIVeDpYtSY0PmpIjPeN1L8LuTlhJvayj4nFlgTLwzhFL-cM6pv2uHqzCxetgINu9j7rqXtfQFnr27Sxih4BW-ayDcrzIU-NTQ7neKEzFJgh6LkvcuosmpPPnX-l3-nsMngA1a7867nNN00bYyzZWjw4_F4gaHRlTe0s9ZCm37rMayViNxXU9hALF4178Istyf4bIHaTm84bKjlVRpUyT_lRrU18fW0Qo1QYT4KKFUMGJr-Q7ZnCsVOwcXSkLA4QAMrUwOBPfpZ9SIQiMAl-wpPVfJ7EKrKdbg_Jj3cqy4XLpmkZ-aDP3KEig-3fRg8NbU2eoHyt5qxuFM16CVfhWkPe88pK6ewhTVIdHCUF_Ot4LUUJ0zpgzmSgpZM7hiYQzBGEQbUNAovxhn33EZg9kk1O0IYcMlEn7EcPS3dBm4rNkLSgPO4gkB3V1sfN7s78wXJ6GYSO7ehUWe-A6JSvR77GDAf5PwvBUFOots1tb2apTod2k3mTer1WQ3v3KlVXEcT0hpSFT0JRb1opWnqjtf7aAMFrHDFtboyAo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00b4c3cd667f750a016ae81b4798bc87d1ad2ff1731868e88f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8438,
+    "completion_tokens": 306,
+    "total_tokens": 8744,
+    "cost": 0.001207675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8435,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001207675,
+      "upstream_inference_prompt_cost": 0.001054675,
+      "upstream_inference_completions_cost": 0.000153
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

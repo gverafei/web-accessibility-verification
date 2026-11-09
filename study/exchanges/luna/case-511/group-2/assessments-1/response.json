@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target matches the reference in both supplied regions, preserving the QNX hero content, footer navigation, and cookie notice.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core text and imagery are legible and coherently arranged; the footer links and hero card are not materially clipped or obscured.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible QNX, carousel pause, and cookie settings/confirmation controls have understandable labels or recognizable icons, matching the reference.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are corresponding, matching states, and the supplied DOM context is consistent with the displayed page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The QNX headline and supporting text communicate the page\u2019s embedded-solutions purpose, with coherent footer navigation and visible control labels.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14014,
+    "completion_tokens": 246,
+    "total_tokens": 14260,
+    "cost": 0.001874675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14011,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001874675,
+      "upstream_inference_prompt_cost": 0.001751675,
+      "upstream_inference_completions_cost": 0.000123
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

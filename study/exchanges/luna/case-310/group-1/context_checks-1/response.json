@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target broadly serves the TP-Link product-homepage purpose and retains meaningful product names and descriptions, but all three visible product-promotion cards show broken image resources. Repeated broken product imagery is an observable material loss under the stated policy.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The page is otherwise legible and coherently arranged, but the three prominent product cards have large blank image areas with broken-image icons and alt text, materially impairing their presentation.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, product links, and calls to action have understandable labels. No essential visible control is shown with an unreadable or unclear purpose.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target states form a coherent comparison of TP-Link Mexico homepage interfaces. The differences are consistent with a regenerated layout, and the broken images are localized defects rather than evidence of a mismatched set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, product names, descriptions, categories, and navigation convey a coherent meaning for a networking and smart-home product site despite the broken images in the promotional cards.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating content fidelity**\n\nI\u2019m thinking about how broken imagery impacts presentation and content fidelity. The core information needs preservation, and image loss definitely counts as a material defect. It seems I\u2019d mark that as affecting content fidelity. The text can convey product details, but without proper imagery, the semantic information gets reduced, even if the labels remain clear. The policy about broken imagery suggests rejection. I need to ensure the final outcome is still coherent, so I'll work toward valid JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating content fidelity**\n\nI\u2019m thinking about how broken imagery impacts presentation and content fidelity. The core information needs preservation, and image loss definitely counts as a material defect. It seems I\u2019d mark that as affecting content fidelity. The text can convey product details, but without proper imagery, the semantic information gets reduced, even if the labels remain clear. The policy about broken imagery suggests rejection. I need to ensure the final outcome is still coherent, so I'll work toward valid JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B69ckPBkqJ6-Sjj5CaFdAw18iwYbDhdk-0B3GDKG6ALMs8x9tHtTT8SHStbGdkOXcgBO7s2QuwZna8rgZKOeoIVTszh-_NGewyhCvqxklWqLK3qDXTFwnlhOeDnCyGGXyDcltrmJXvH9qIhX_H9-SSynL8e9-iHuHbth5ImMvNpDkyWurEWtvUOoE1dKY3IRbScKpsyT2Q0CwVam2b9UDL-vqmac7A-_q3lsLplA6bFhXV5ofAPIZDAZ_Hd3kLzmbzwUJH7uwntpMQbOLzuIua_9xXYexsTY5mrHUq7CvHnMa70QDr5ey8Dh5jLr9mxz0ceKWptDpzztbGy3ETvWCHj_pcn1jP2bl7DieNDgaEabplijGZ9Ozp5nomvW3QVT-FrO6bhdGMWfzEnXOBbGtFAE0Kdu0vzVwOmNgj-UYwpRROHIUFLU8JGK-Z8YFrLS0BspfGXGJuPLOX01HiAh9mC1QeanBy8q2arlw-2APDlKMts_bceASKJp0mCblvjKrpuqEQA_fIngKEvC4XsY5Ha7mFnhN4WLwSxI7XPFXWmXRdgo1aMMrWsATkJRfSBnTZL2Y0oo9_-1QzLZ8ZpbdKj5IeZ-23BZ7eA-BNbou66Ry6GkyKvX6ZO1Kd_263lpalvwzpxLlY0hSaRBKpP816aADgU--k4gWPnSswli5ELKHL_IfQhj9iay5xAYgR_jPcU5Y_lq0x_1P9qNBh_P5HfOCbbf85vRqEoDksMPJ2RKy92oj6LCp0tiVsN3kcp5LvmioQoEm7-gYoxlhyt-XFXnCOCcqkdZS-R-IEU0E95vShuFbhEm9Uaz2qh2gsvQ73F1Yt4jADSjONUh5Bs1mzD4WeO57WDccVD_rlXQJuqWb49rmcsAoPE3xL4WKIPoz1QmBxG13dwn14IGNeSL9JwhpFNfcmZjd464XtjLI3aSPXnYLd1TPSET6HBx4o7hy7Zw1WYXY029wVuoLvFxTriW7npOH7ejMzHFUZgWS5lvUadMejEh3iK7-ZTywOfksAh6ori6reflqelrV4sjaiw3BZUq5n6TeYyVcB94hie_PBN9qQ-9e8AypUe25duW11sSwob_3hrmDo5TZctYeSJtVpzZunAMJBjWbiirHkDnddCNiKBKMo7zvqLB6NTq3fcifQU2CqWFFRwnsHaW1HcuwOdx6BZjtffIpkyE22HUqJjPm4Lw1aSbDnosjDDuFUnTav9RRzhfIB0vUtTDfV_xeOCddcUDDKFaztLdE47Eb3ebPC23gjYDDNfJTU0w_02F1OyLzq8jWm9QaITixNvv8LcyTqeMTm_mLY_snvQFsh22nhzdv3RLhCHSa25KRDaqHpR7VOO2-9fNvMRpXDnCOoBqZzpcoI5Mq4Hvuo9ivS1hkYcHDSq_byfuZuLVKg4zlh6KBGLjqGZJlTdtoZweHOL7q3kRcRfFWWSWv08AeBw4Hlj0aT2DmfLo72kI5IaQDbwd4AhcXvjQL_-mXrQm_x3CVSdhiyjymiJm5uswPJkcVyDE9p7xgQA6shYNJHWfIwpMbGmUCQ8t8GatkZWpVHzNliiXbQ2sPjtjeUEUl6hlgQdVyaZ0BLjUoROX5Tn6u8JJS_-pYXuhhH73gLeuI_ZLUUXvNCz7-k0USTWWBI9dpW7XozvqPQWOl-KjQL6T-6wBCJIEBZco1IBB6ZiWYnJTpKcr1Th7lyUIdYn8fhcb0HO2FTT-3RFvjjkTaZZ-pZWeAO9DKmK9ZD7_SB6forxqekeI5QDNIdm93YYSuBHVcwcwcYe4zjNp8miDz-qGQVBY3kgaZXFq-VaKFFqPxjfULwvAQXX_iYAb5-S1X6181OnGmCnR9409am5Nvblhn6bdmDDMJdemFFjpPVqK-sjOPq0Ar-okZ61wrJ_0xZ82Mz93mWQcgBBSVmBxiysqkWRSeJ8a5C9oyx8yER9v_wiH74Q313k-qze8elIC_nO41FRCcIAQIPn5SywRrR0yqorAec_0BYRImO3JsmLKFXWoTFKvvCOMMij7uXj8cSh3UDaO5J5ooKYsJ_MYtbz8DF-gz_273Q_270V9x1IVxk6QwrGkra67SfrcOYu0oPmzqF-IbScYzbdzfQDysN9mrpgnH0sifjfu5Buh_97RFOR_AZIRTchVUAHTAqkZowbJUgL0pD-PzfpLEOmFM9IWI93Z6G-dedriuDOGFGVehy88V3AU0MOFag8iKkrRoYtiRnDLKjlxuT9OzYXcTmI3O4KZjEjySFHql0ekpPhooBkL1TCz6EYCNsVRzXP5UA3TY4zvmDbncopV9Rt5JCxPbV4SP_gzIrxafkLruzdLkhCDnXdGjAGVrJX4cY68ZVHnWS8giLhwpodrWFjQapcwD3op6RrUNVXBfhpIWswgdHiKuNJowReARTgAtrmBlSCa3cKOh6DJcmazNoXjK4gbAWxC5cY7EncSm0oLLWCgTdh3ZB2994zrUoQ1LMkp-V3AGjdIhZ1qbe6edfQm-6lddXwppxyJGoRk-W-FsDkBnguW73wzxfEKXyyVjGDLRV72DyckdmVdJtqM8owPjRFaERx75kE47J9UX3m9jNcLBG5Hw47hxGGWng1RITsaO_10P5aIsKgVBxJb7BGl88WpLcoj__g1wK4RoVHPUHmBtThNbTIqGj8swThoU5YJTkeLdA-K9kwHCKOLu4UvP8XrAveyu1SQ2_xMyzZKN04lC6yAwo5Bdo7ZETrzxk1saNGRBjB_iYXnqj68kx-R-J2EfLoiaw7DhEto5D3g8U-ZlG43Eff4eUNVdtyi7nSElWFRevyZVScPwBYbmxQV4DmUjS8ZjOj_pzfZg5yo3ZvHOfmmL19uuQ8mvbkwzk0AOpQeiF8o_2cabue11xosdYzRl7ukKBAaeBU2sLV_hssdqsUA3O72AVSW4dpr2eUA6S7FiVZrOR5AeL3YmyWNyO2GW6IolX0bhfpRyOHCHUDSHl6k-65fF3HM2rXP0U9pznIFw8CI1ISqsD5P5llNJdvIEz-LRfuPGXg_ftuO6KWT60CImb-mm2ve_mGZSCcSMSS4q8HHjj8eDV_vvrADd9QqxG7P1VTO2y56ay57jHxAC1ECIMhkIGwdLX3GWyFjUis2SnjZ__vWei6xwvVmwZoemWe9sP8TbXF23aNRpbZZp_fPPVAL5vrcnWRswen_Ls96tme9wLIFhMDKShSyRn7MqmYTGclJmQUD3AR7uzrC5krU_PUjpd6uMoONgHn13xOVGok12WYP3qk89TQNGaPBVPEZyn0b1rSEJ_lZOrC8mjGnM7ahc2BYLypyxDpQhNBTz2kIPztkj-VnLmMyoTkkffPs8lPjT1WsvXoD6KTEsXzp7iiA1P71g55H2reLdBlYQFf38vz6Brkm026fpivB8AIh06oFlYHTdwWQkLGJzORjRCCxeiISesUsNctSYEbjUJDZYUTAWeE7DwTDoqRUGeqR9gHKsfKAcFIpGB5lR7DanQGqTC2hfXJHRTo6oiqGEQe-htBAQSQcCKlX3GvBjjXvEU8U5zP5_XX37JDeEfqEk51sJAYbwWXwMMZ4zXwXahNnsaJMoQqnsPNadALthsiktrP96xOtmFWBmOGyjV1kQGjux98-kaJOsG_4sXaG6TMDpnrCyZqlRr_WMdYYvNUBshAirkO-UsBelRBx7XrlLIH1TxG0g6nB9ohFATwu_-8JS4x_Ph1rRL2K5aQQHiQj2yI9-ckhFWmWP7uyoouQDcnt5-fJKzxQ6gqULtqz3HWsPM-kwqdmkrnXV2lQZnp1U_DnN5doe8D86blII33p3Ok_cU5YbN0V02uV12sx5TukqFBHRhj0cbjfX22WBFEbNyDhWJTFFewQ0FatP_4OI8Ue_bWqAZQINPz5-yPEUT1pqH8m78uJRmcoydVTWZbnwq9vdttIxdQyr6A_3K7db06yPxypKeOe7hJ0gEPEeVROvubAuzVK38zpF5F6aKI5Jd5DFFHY40c6p5O33C24BRfxzvCGX8XRt2mPO7qUOQ67g7YTYHhkzyRvtTiO6nwlJS6ZNU8v-Bbxw-bQmFfBkRE_MlsD0TLLqD6f4QeadnC6GAO3GJO73AWANJXrFHP9M0Vdx7w8I_iNFLGmM0T20dqjIIYBFsjNb4CUpqfHaMH0lkOoALbmwM-FXr7YEa053e-z2iLbrw2EZEcLQf2g4z_s14K1Qwz_7gEppOaua1P9NM8kVz3mX0YrVl_hreyagqWkZatpX4998xIAmROcVDSe55jbu7jRSBJSXmGz6Z6HF_rHTDSi_PCMG3HfV1IgFvmdjSN623D6XiNcsqOJd2RZm1QJLFxZzY0T7tEGGjMM_36q4m9504fIYL8-RVYj9sijx7h9PdfnxVMCvZrCoXx0Z0nIHK6x4vKp-H3RA9w9V1lsNcLtkqZa0lCxfOd73WvHUoDH-sraJgcAWPDRzDBaZrXQ5fX-GBMKKnvlkyb2Rk_a4b_DfjpENmJ_WVqi2kZPwrgu5Ja5jrRdcH0ctx3d_QL4uQSZd5BlLMVcgRw4D4xXqXPKGo_zYYVv5fCGR7u7aQTpnG1u_0uZkKCkXVseXPQYk3FTR-b0VpcU_IBkJTBe2v4Bugq3IgDL-M4XhNg5a4dHshnErv_qE4YMmSjUT4gv4pvKxDO8NRHslHtAjCnT2dqTPubCNOW5oJf7TvR3GiH6Vnt2TBnfo4y4prXw2s8muaGhSYvA_9Q29_GWltvq-nYOBmEz5N7HqpQYIunRP9MLJmLeZOvZ_Babs2O5fU6zf3RS4m9NNWN8tIuFNJkX73U_8kv1-9ukJd_euTVUPFvU26Vx8g0VW6SHPl-majA6ImznqLoMWSG5Bca6M5pyNS6H4xpncY9kA4hRkYZO7lbnydOn80kzP2hrJCKR7mMkYFdTaRZlwvG8hAyRyQK7DA0hJtH1VpO3XBJ0m5h7-YSKVvYSlqlsKE7ppkC_sIe3HmnWIpkeaLq-Xz2kJn7JJvnlVjcUL8ETzG8JmdNegZVEWFADuzrzTyQ8hJ0OozGhO68gHhamNsW_0G2P5NScYRAYVZtsu4h01S0TafpCRhvnZhnlAmt3ZWZxqLroOLkjOUJiCk-cmlaHLeJd7IFOErBgoRrrXi3vI4S5SxUHgyZJRjQVGUpmTClyvh5T6HW7aT5wVOpppgY2RNlLJj1JcrodeuL887m6PT0xVxwrBg0S66ZnzPox27OHInjYt2wR_sc56nUTb0HH1e4uWV3KObgzP9xJ6m94U2b6qNUO81ziYFSANSaq08ImIw07uyHUgxvuBjLd9VzvLOd8v2kp3ZY-jWA5s05U98fUPAfBfaPuBdEOG_RX_4J3GhL-eX_qaWigBRP3DC034WOAGiQq-Sc1Dky8SgKQPrC77RnQ-BxU1W-ayE1DeNXr2Ft5VY_BSnSEXmKjz3mlhlpRogJmVIANdaoRFxEHBgAv5KVbEJTZz7vKUMKOEx_rLlVy91muooaPV0cklDAbCHCQ43rnslRMnixmjhktOf-JcXPiOA05yKXEgkiVA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_01f1efef271aebc0016ae81eb9623887d1851436c222d4c2c3",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16695,
+    "completion_tokens": 582,
+    "total_tokens": 17277,
+    "cost": 0.0023778,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 16692,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0023778,
+      "upstream_inference_prompt_cost": 0.0020868,
+      "upstream_inference_completions_cost": 0.000291
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 264,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target presents a coherent shopping homepage with department cards, product-category imagery, and readable labels. It serves the broad purpose; differences in content and layout are permitted for a regenerated page.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text and imagery are legible and arranged into usable cards. The large empty area in the lower target view does not obscure the remaining page content or make the interface unusable.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Search, navigation, account/cart, alert actions, category cards, and lower-page links or disclosure are visibly identifiable. No essential control has an unreadable label in the supplied views.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots show coherent reference and target shopping-page states across corresponding upper and lower regions. The regenerated layout and different scroll positions do not make the evidence incoherent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The target's headings, category labels, imagery, and shopping-navigation text convey a clear retail purpose. No essential meaning is visibly unintelligible.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10315,
+    "completion_tokens": 243,
+    "total_tokens": 10558,
+    "cost": 0.0014108,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10312,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014108,
+      "upstream_inference_prompt_cost": 0.0012893,
+      "upstream_inference_completions_cost": 0.0001215
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

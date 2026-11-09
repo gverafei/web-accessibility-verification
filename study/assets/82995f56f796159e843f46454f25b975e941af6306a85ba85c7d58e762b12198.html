@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>LINE｜always at your side.</title>
+<meta content="More than just a messenger app. LINE is new level of communication and the very infrastructure of your life." name="description"/>
+<meta content="LINE｜always at your side." property="og:title"/>
+<meta content="More than just a messenger app. LINE is new level of communication and the very infrastructure of your life." property="og:description"/>
+<meta content="https://line.me/static/img/og.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://www.line.me/static/img/favicon-32x32.png" rel="icon" sizes="32x32"/>
+<link href="https://www.line.me/static/img/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #4a4a4a;
+    --bg: #ffffff;
+    --soft: #f4f7f4;
+    --brand: #06c755;
+    --brand-dark: #037a36;
+    --focus: #0b57d0;
+    --line: #dcdcdc;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  a { color: var(--brand-dark); }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  .skip-link {
+    position: absolute; left: 8px; top: -60px;
+    background: #fff; color: var(--ink); padding: 10px 14px; z-index: 100;
+    border: 2px solid var(--focus);
+  }
+  .skip-link:focus { top: 8px; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: #fff; border-bottom: 1px solid var(--line);
+  }
+  .header-inner {
+    max-width: 1120px; margin: 0 auto; padding: 0 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    min-height: 64px; flex-wrap: wrap;
+  }
+  .logo { display: inline-flex; align-items: center; font-weight: 800; font-size: 1.5rem; letter-spacing: .04em; color: var(--ink); text-decoration: none; }
+  .logo img { height: 16px; width: auto; }
+  .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 24px; flex-wrap: wrap; }
+  .site-nav a {
+    color: var(--ink); text-decoration: none; font-weight: 600; padding: 6px 2px;
+    border-bottom: 3px solid transparent;
+  }
+  .site-nav a:hover { border-bottom-color: var(--brand); }
+  .site-nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+  .lang details { position: relative; }
+  .lang summary {
+    list-style: none; cursor: pointer; font-weight: 700; padding: 6px 10px;
+    border: 1px solid var(--line); border-radius: 6px; color: var(--ink);
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang ul {
+    position: absolute; right: 0; top: calc(100% + 6px); list-style: none; margin: 0; padding: 6px;
+    background: #fff; border: 1px solid var(--line); border-radius: 8px; min-width: 130px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  }
+  .lang li a { display: block; padding: 8px 10px; color: var(--ink); text-decoration: none; border-radius: 4px; }
+  .lang li a:hover { background: var(--soft); }
+  .lang li a[aria-current="true"] { font-weight: 700; }
+
+  /* Hero */
+  .hero {
+    position: relative; color: #fff; min-height: 80vh;
+    display: flex; align-items: center; overflow: hidden;
+    background: #3a3a3a;
+  }
+  .hero img.bg {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.25) 100%);
+  }
+  .hero-inner { position: relative; max-width: 1120px; margin: 0 auto; padding: 72px 20px; width: 100%; }
+  .hero h1 { font-size: clamp(2.6rem, 8vw, 5.5rem); line-height: 1.05; margin: 0 0 12px; font-weight: 800; }
+  .hero .tagline { font-size: clamp(1.25rem, 3vw, 2rem); margin: 0 0 32px; font-weight: 400; }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px;
+    border-radius: 999px; font-weight: 700; text-decoration: none; border: 2px solid #fff; color: #fff;
+  }
+  .btn:hover { background: rgba(255,255,255,.15); }
+  .btn-solid { background: var(--brand); border-color: var(--brand); color: #003d19; }
+  .btn-solid:hover { background: #20d86a; }
+  .hero .btn-solid:focus-visible, .hero .btn:focus-visible { outline-color: #fff; }
+  .hero-note { margin-top: 20px; color: #fff; }
+
+  /* Sections */
+  section.block { padding: 72px 20px; }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  section h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 8px; line-height: 1.2; }
+  .lead { color: var(--muted); font-size: 1.1rem; max-width: 720px; margin: 0 0 32px; }
+  .alt { background: var(--soft); }
+
+  .cards { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card {
+    background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .card .media { aspect-ratio: 16 / 10; background: #eee; }
+  .card .media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .body { padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .card h3 { margin: 0; font-size: 1.5rem; }
+  .card .sub { font-weight: 700; color: var(--brand-dark); margin: 0; }
+  .card p { margin: 0; color: var(--muted); }
+  .card .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 8px; }
+  .card .links a {
+    display: inline-block; padding: 10px 16px; border: 2px solid var(--ink); border-radius: 8px;
+    color: var(--ink); text-decoration: none; font-weight: 700;
+  }
+  .card .links a:hover { background: var(--ink); color: #fff; }
+
+  .features { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); list-style: none; padding: 0; margin: 0; }
+  .features li { background: #fff; border-left: 5px solid var(--brand); padding: 20px; border-radius: 6px; }
+  .features h3 { margin: 0 0 6px; font-size: 1.2rem; }
+  .features p { margin: 0; color: var(--muted); }
+
+  .mv-pair { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; margin-top: 40px; }
+  .mv-pair img { width: 100%; height: auto; border-radius: 10px; display: block; }
+
+  .banner a {
+    display: block; text-decoration: none; color: #fff; background: #1f2a24; border-radius: 14px;
+    padding: 32px; font-size: 1.6rem; font-weight: 700; text-align: center;
+  }
+  .banner a:hover { background: #2c3d34; }
+
+  .product-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .product-links a {
+    display: block; padding: 18px; background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    color: var(--ink); text-decoration: none; font-weight: 600;
+  }
+  .product-links a:hover { border-color: var(--brand); }
+
+  details.faq { border-bottom: 1px solid var(--line); padding: 14px 0; max-width: 820px; }
+  details.faq summary { cursor: pointer; font-weight: 700; font-size: 1.1rem; }
+  details.faq p { color: var(--muted); margin: 10px 0 0; }
+
+  /* Footer */
+  footer.site-footer { background: #111; color: #fff; padding: 48px 20px; }
+  footer.site-footer a { color: #fff; }
+  .foot-grid { max-width: 1120px; margin: 0 auto; display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .foot-grid h2 { font-size: 1rem; margin: 0 0 8px; }
+  .copy { max-width: 1120px; margin: 32px auto 0; color: #d6d6d6; font-size: .9rem; }
+
+  @media (max-width: 720px) {
+    .mv-pair { grid-template-columns: 1fr; }
+    .hero { min-height: 70vh; }
+    .hero-inner { padding: 56px 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="LINE home" class="logo" href="https://www.line.me/">
+<img alt="LINE" height="16" src="https://www.line.me/static/img/icon-title-pc_1.png" width="43"/>
+</a>
+<nav aria-label="Main" class="site-nav">
+<ul>
+<li><a aria-current="page" href="#mainService">Life on LINE</a></li>
+<li><a href="#communication">Messenger APP</a></li>
+<li><a href="#allProduct">Services</a></li>
+</ul>
+</nav>
+<nav aria-label="Language" class="lang">
+<details>
+<summary>Language: EN</summary>
+<ul>
+<li><a aria-current="true" href="https://www.line.me/en/" lang="en">English (EN)</a></li>
+<li><a href="https://www.line.me/ja/" lang="ja">日本語 (JP)</a></li>
+<li><a href="https://www.line.me/ko/" lang="ko">한국어 (KR)</a></li>
+<li><a href="https://www.line.me/tw/" lang="zh-Hant">繁體中文 (TW)</a></li>
+<li><a href="https://www.line.me/th/" lang="th">ไทย (TH)</a></li>
+<li><a href="https://www.line.me/id/" lang="id">Indonesia (ID)</a></li>
+</ul>
+</details>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<img alt="A person relaxing on a cushion while holding a phone that shows the green LINE app." class="bg" src="https://www.line.me/static/img/mv01_w1920.jpg"/>
+<div class="hero-inner">
+<h1 id="hero-title">Life on LINE</h1>
+<p class="tagline">LINE—always at your side.</p>
+<p class="hero-note">Download LINE for your device</p>
+<div class="btn-row">
+<a class="btn btn-solid" href="https://itunes.apple.com/jp/app/line/id443904275" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only"> (opens in a new tab)</span></a>
+<a class="btn" href="https://play.google.com/store/apps/details?id=jp.naver.line.android" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only"> (opens in a new tab)</span></a>
+<a aria-label="LINE for PC and Mac (current page)" class="btn" href="https://www.line.me/en/">PC / Mac</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="service-title" class="block" id="mainService">
+<div class="wrap">
+<h2 id="service-title">Life on LINE</h2>
+<p class="lead">More than just a messenger app. LINE is new level of communication, and the very infrastructure of your life.</p>
+<div class="cards">
+<article aria-labelledby="news-title" class="card">
+<div class="media">
+<img alt="LINE NEWS feature preview" loading="lazy" src="https://vos.line-scdn.net/landpress-content-v2-tqq6mwxs5qlx5cg0nutma2bg/ee9a5b88ea844eab88490f8e99ad1921.png?updatedAt=1752486068000"/>
+</div>
+<div class="body">
+<h3 id="news-title">LINE NEWS</h3>
+<p class="sub">Keep current with the latest news on LINE.</p>
+<p>LINE NEWS is the most popular news content curation service in Asia and aims to deliver valuable content that enrich your everyday life.</p>
+<div class="links">
+<a href="http://news.line.me/about/" rel="noopener noreferrer" target="_blank">More details about LINE NEWS<span class="sr-only"> (opens in a new tab)</span></a>
+</div>
+</div>
+</article>
+<article aria-labelledby="music-title" class="card">
+<div class="media">
+<img alt="LINE MUSIC feature preview" loading="lazy" src="https://vos.line-scdn.net/landpress-content-v2-tqq6mwxs5qlx5cg0nutma2bg/c4d8d59ed999402fa2b5f454f45de03f.png?updatedAt=1752563464000"/>
+</div>
+<div class="body">
+<h3 id="music-title">LINE MUSIC</h3>
+<p class="sub">Listen, Watch and Sing along.</p>
+<p>LINE MUSIC is a music streaming service in Japan with over 100 million songs, both Japanese and foreign. Users can listen to trending songs, watch music videos and enjoy the sing-along feature.</p>
+<div class="links">
+<a href="https://music.line.me/top/" rel="noopener noreferrer" target="_blank">More details about LINE MUSIC<span class="sr-only"> (opens in a new tab)</span></a>
+<a href="https://apps.apple.com/jp/app/linemusic/id966142320" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only"> for LINE MUSIC (opens in a new tab)</span></a>
+<a href="https://play.google.com/store/apps/details?id=jp.linecorp.linemusic.android" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only"> for LINE MUSIC (opens in a new tab)</span></a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="comm-title" class="block alt" id="communication">
+<div class="wrap">
+<h2 id="comm-title">Messenger APP</h2>
+<p class="lead">A new communication app that lets you make FREE voice calls and send FREE messages whenever and wherever you are, 24 hours a day.</p>
+<ul class="features">
+<li><h3>Free messages</h3><p>Send messages to friends and family at no extra charge.</p></li>
+<li><h3>Free voice calls</h3><p>Talk with people anywhere, using your phone's data connection.</p></li>
+<li><h3>Available around the clock</h3><p>Stay in touch whenever and wherever you are.</p></li>
+</ul>
+<div class="mv-pair">
+<img alt="Friends using the LINE app together on their phones." loading="lazy" src="https://www.line.me/static/img/mv02_w1920.jpg"/>
+<img alt="A phone displaying the LINE app in a relaxed setting." loading="lazy" src="https://www.line.me/static/934a804ce9643bf673711c7f1a4f2b05/1a900/mv01.jpg"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="biz-title" class="block banner">
+<div class="wrap">
+<h2 class="sr-only" id="biz-title">Business</h2>
+<a href="https://www.linebiz.com/jp-en/" rel="noopener noreferrer" target="_blank">Corporate services<span class="sr-only"> (opens in a new tab)</span></a>
+</div>
+</section>
+<section aria-labelledby="products-title" class="block" id="allProduct">
+<div class="wrap">
+<h2 id="products-title">Services</h2>
+<p class="lead">Explore more services connected to LINE.</p>
+<ul class="product-links">
+<li><a href="http://news.line.me/about/" rel="noopener noreferrer" target="_blank">LINE NEWS<span class="sr-only"> (opens in a new tab)</span></a></li>
+<li><a href="https://music.line.me/top/" rel="noopener noreferrer" target="_blank">LINE MUSIC<span class="sr-only"> (opens in a new tab)</span></a></li>
+<li><a href="https://www.linebiz.com/jp-en/" rel="noopener noreferrer" target="_blank">Corporate services<span class="sr-only"> (opens in a new tab)</span></a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="faq-title" class="block alt">
+<div class="wrap">
+<h2 id="faq-title">Getting started</h2>
+<details class="faq">
+<summary>Where can I download LINE?</summary>
+<p>LINE is available on the App Store and Google Play. Use the download buttons at the top of this page.</p>
+</details>
+<details class="faq">
+<summary>Can I choose a different language?</summary>
+<p>Yes. Use the language menu in the header to switch between English, Japanese, Korean, Traditional Chinese, Thai and Indonesian.</p>
+</details>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="foot-grid">
+<nav aria-labelledby="f1">
+<h2 id="f1">Explore</h2>
+<ul>
+<li><a href="#mainService">Life on LINE</a></li>
+<li><a href="#communication">Messenger APP</a></li>
+<li><a href="#allProduct">Services</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f2">
+<h2 id="f2">Download</h2>
+<ul>
+<li><a href="https://itunes.apple.com/jp/app/line/id443904275" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only"> (opens in a new tab)</span></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=jp.naver.line.android" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only"> (opens in a new tab)</span></a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f3">
+<h2 id="f3">Languages</h2>
+<ul>
+<li><a href="https://www.line.me/en/">English</a></li>
+<li><a href="https://www.line.me/ja/">日本語</a></li>
+<li><a href="https://www.line.me/ko/">한국어</a></li>
+<li><a href="https://www.line.me/tw/">繁體中文</a></li>
+<li><a href="https://www.line.me/th/">ไทย</a></li>
+<li><a href="https://www.line.me/id/">Indonesia</a></li>
+</ul>
+</nav>
+</div>
+<p class="copy">LINE｜always at your side.</p>
+</footer>
+</body>
+</html>

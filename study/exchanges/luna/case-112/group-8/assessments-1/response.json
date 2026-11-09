@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s visible pricing FAQs and footer provide coherent content for a Stripe pricing page. The reference shows a different portion of the footer, and the regenerated-page contract does not require matching its link inventory.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text and footer columns are legible and coherently arranged. No substantial clipping, overlap, or unreadable core content is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The FAQ rows have understandable question labels and plus icons, and the visible navigation and footer links are readable. No interaction behavior is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Both screenshots show coherent Stripe site content in footer regions; their different layout and amount of visible footer material are consistent with a regenerated page and differing scroll positions.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s pricing heading, FAQ questions, navigation, and footer labels convey clear meaning relevant to the page\u2019s purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating webpage elements**\n\nI need to assess the target footer and pricing FAQs against the reference footer. The goal is to create a coherent regenerated Stripe pricing page that compares the main content, particularly pricing and FAQs. I should also look closely at the sticky header overlays since they appear after scrolling, and they're fine as a dark horizontal line. The FAQs should have clear labels and icons, while footer links need coherence with the Stripe website. I\u2019ll also take screenshots for evidence.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating webpage elements**\n\nI need to assess the target footer and pricing FAQs against the reference footer. The goal is to create a coherent regenerated Stripe pricing page that compares the main content, particularly pricing and FAQs. I should also look closely at the sticky header overlays since they appear after scrolling, and they're fine as a dark horizontal line. The FAQs should have clear labels and icons, while footer links need coherence with the Stripe website. I\u2019ll also take screenshots for evidence.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bpku-O9mJORHT7dTrokD1ZNq9RPLFZ4C5EU8q7pGNE975qAE1dDbHS7YQFVvSPkumEUpfKO-jzX7NNJl7SJKVJE9WmfZUr5h4WmcV7jPpMB7BJHqTVzTmo-t3MvJ6B9VFNIzz7_gnUTpwgyk38FQRU2r9ppWu3jHhJRijahgpdIngRRo782_-CSZ2dchajNTcZG3MDTphuaOUXWx-A2fjXsnwjykTq_XsCIYNiaXf3EIWo18WLoMoTAH2SKem2ihzdkMVS7WUYTJNrt5hyRE_ctwnICGZIKndZ6nhdVlW2syJ1_CKdoDg-l_ffdL0iOi640WRW5xRk_d8y0tpAfkg7Fy6hDjxNNWZR3d-6fXv2K_r8FUVnq_RhnRciCGZV9oOm6_8sGBj6c-z5h3c3QHgXGIHbYVLzfMU9CcY3DDhtBlM_qThs-V4XBaZvTLLFH4SPUyd2BTRXdpt_KZ1WQAK4MijsPHk4oOoaMgDefvdPDgvUpEd1RASCOFdNjysIIZOy6B0ah-1oSZ6t13ESsmVuxt_iVDZs6G1Y72ZPs67-WKP-__Ip9QyhTkOXx8Qbc0JY8HY-TyGcUa-S9MPVnNHI9OyA4eE4Sg0ryI1pAc0q0t-WaOO45DWspuDHJu6qlOxWMxbNs-7g5JyDvU189wmrYRFIrRjQrd5xKJA_SMAwpbfnq5i8kmULshBy_Uk9w7mXIyjJBdHHipWD7PUb6jwJyJy3aFCAS-mwKnXGQ3wvz64r2A2qI0uiD2AlbWab1VuTDbuSo2UNJzk0XmbKVtXtaC9UaFcnt0YmBMqCCZfo8vO0JMdL6pLDeaIYUNUt3bD9kN3ztYQfS77mUO_LiKRWym-fT57yVvQ2mDwSZfuGqUjNlPM17Hr9tjic_wL25Lv6L-t1mU2V1D6R7P8VgM-vaqmy-rwejoX5EFSEKtV9Wdd9xozy4uj_Vg2ZGCqcAoJCjR5eKo1ylNu6KtuGWwAEIBK5djixEll1b8Yu86Py8jzmCeCox3FNi8NAcXJ_AVPdjHTTMlW0uc569kUWbQM4UksYmtvIQ51HCHAFXhmmWgsGb2r-l9uv-msc3vTW2X8RpAGqIWn3mPk2doi6Qd35mVacnFTb9iTppr2MH1ss1rmK39mJVnR_TEJCujK8n4-2cmd7u4heGs2Gcrg7w0aun85NuVpxEy83WH9mz3sHf7GF4qmiP0jU-K_jI4JCSAIn2X-8goiQqgQizIy-rVQwdXrYbfzFMv5eDztVR71RcRIaDAQEQaK0Jwix12UrqWaltDvQBcqvQ1LlWyUzYaxWnLryeIrj4laFad6xNYrmpUzaLRrqqHLQ4yUfWzqhNApddgnP6W_2p0nff-rWT4IPy9UwJuzBMZABR2C9NynC6eb6isNDw9DKoN0J8rha-qtBMlhmXm3FSUsdXNbBsHTyTiw0vzAkTn1vNcDhHHRYlPkOia8muvos86_XrtZivpdqdOow2vsaUOaLoSOGpeM6vEBDn_8zuzIJxTINUYGjmNjHyfr7UOozgGx4lPMxrPgQqd535C_vVwIFnOBPbE2-Sjmni-27AjsP8nb9fWiCUe7nZrG_miCJrOpAiWSGcWgkfy9YNnUPpnnX7SHQRSNj94d8Mt6-mC84tPFrGIXc5gWqgS6hG_MQR0oAV5FYlfLviohAq6ZMZBPYByJ78vzyYrA1CogY2f5sy1-IeOHDs95PtZhuq6MOW7wtYOSB8OfpCtwZqUmBkQrwshLhBKq90D0s02AT19K4-wnWEEo4SxmrRpeqRrQG2IbFV4qv8kPO4bWuh7gwfa6mjZCc6wFoBHlHNu9a7AtsKXf7AddzK-3eZJI6Jqdg73LRztGzmrlsb1Hbf0cMDM6gHAjBkYQPIC2hFcy83wWn7ESextiO2V-Se_18NPGuSKsez9fbEbUlySjh-ZKMICYb5cUkXCZd-JKARgnwNO7SCGo43SRxHGvIx2npsGj8JtOa2E9xKX-hGxyOtPJdacysg4hZHCc8o1jhEraqVFY7VHFOU-5fviGnK2yLJBH7dhSsN6OudeMr_hqHg5CyRvKkvgEf8MtJD9hFmYho57oyL8rPghnQtx44DIaRUK35w0TMvdeU2UImEKF7XqpPn-l8gRdg_jzrDHYvOWfBaUDOFRGrljcOUGbZgK0GWNzPmFpFTca4ddMwPja1GDt2PovJ6dhpNMQHwzKuHfWQuJ82ha5x7neWJAGtD9WuPrkagLHNzIDPPQVWH3BoJnqvF1V44JVNvF-ouI88XtJENH4gQBOw_Q-elWspub9bz0mcCAtkHg1QLG4FGmW-jxVmKlbsIcegnvuG6Z1IY9dAtLSepz-oTqB9iIjqWu0ym7x-Ty9DPIQnNR4qmS5nSpu5oLb2e_tl5jk25oESz589xGftkHHVNB2H4wWV6GGa2KyWumYb0_EbomuT10845JjC5FhT6UfNAFDgTFND1zjZGqWp8A_Sh_7XP25vT5i_Kjp7IPiZHgRttiboUhhUfbUoEwUjXOyy7bV4zs-tFGPC76rYgOVM3bPesAgk5HE11LPBoIaq52F2NNcnUB31OgBYUIXlScilgHYbPMWmSAssJO_77JlhFdVDS0Nj7a1KNTjWNa9jzWTU9zmnJvv0-oEy8xA2abxXzqcaldcrOU2zE32C8aCW4RIsaKjPNOf_0ve8m8b3DgsWjUek2GdyJzOPFdHMzCxb8EK90LPnyIczzebxfBAPE2cz53wJo6riWOJ3qdPrtprgU5yCYdfkrIuWEr6mY62oSaw10RAvbL__tOR8NqIsqAVctuEDba5iAcBF2SQdQ0mLsA6N_mEeb7Go-s0j-jLL4LV-XPMVzmiV65JqztcUdvefPe6uIxGz4Ow3n53CLf-qifTRLWE8fxYkp1_srkzQidpJocQTjgG9OA7K-B2EzKQHuKQrUaQNIuUPsrzS9VxsIkIjv3hjAAMwPpXhvAobud5dWzLr3b7hTH1IK2pFAtIGe7I0=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ed4d0cfe4885713016ae81a61e5d887d1ab586f7cae3edb1f",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6946,
+    "completion_tokens": 376,
+    "total_tokens": 7322,
+    "cost": 0.001056175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6943,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001056175,
+      "upstream_inference_prompt_cost": 0.000868175,
+      "upstream_inference_completions_cost": 0.000188
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 100,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

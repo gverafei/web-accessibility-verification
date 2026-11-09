@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target screenshots are identical in both supplied regions. The Ubuntu Core information, product imagery, and surrounding page content are preserved.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Content is legible and coherently arranged in the target. The tracker-settings panel and viewport boundaries appear the same as in the reference.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, tracker settings, and acceptance controls are present with understandable labels, matching the reference.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target regions are identical and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The page\u2019s visible text and imagery convey the same coherent Ubuntu Core and product-related meaning as the reference.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating checksums and visuals**\n\nI\u2019m thinking about how there are identical checksums within matching segments, which is great because it means everything aligns perfectly. I want to return JSON that confirms all these checksums meet the requirements. I should also mention the same visual evidence to ensure coherence, making sure that controls are visible in the tracker or navigation. Having everything clear and organized will be important for comprehension!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating checksums and visuals**\n\nI\u2019m thinking about how there are identical checksums within matching segments, which is great because it means everything aligns perfectly. I want to return JSON that confirms all these checksums meet the requirements. I should also mention the same visual evidence to ensure coherence, making sure that controls are visible in the tracker or navigation. Having everything clear and organized will be important for comprehension!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CAlLPwjjqn-iGP1Ra4x4FGAckc7diOScrP7xra8apFMXihk8_OKyzT5LV8JlbGXC4UfyJCwaHcrtWhD9XYvlcYeBs_Jo3zxg25NigghG6kh_86uFviyXgxEyntmX-r7A2ZUfP9anuGmn8Mjz-R1JLTPJmsI_-L7Ey6sXa3_wSRu6MUyDgixthm8nZ6T5cxEID8hrrZo0T746buMRWLJ25JhGzeG9_MHeBkRxY2WZmLgQxrm0GlUVGqUobm1yrqwTdkwlaNHXIQrMXHAdQCm-olXIGd301QnYuP860m-tPHMQIqtsRW23pxSRqaSDasWEd4ltEXXewL2wmDRT09isWdxtjxqTuEF2GFrpev4MK5feY8VyfTgyAWAT6BD7wt993t2tAsIc7y22aoNf_O5yqDmDmV9GX4jdgt5DbZzQuQKM625LevwR_2u40zqHoWttmgQHKElFJD5UVvUVLzfxZbNuWB4oTkcPEMgio1F8jQNUSvsAq3LAD66TicPA_3nvkuVRv0wfvLPJw8WjQInjrInDyFb9wwlfrMb5Z3yUsW6h5lPAqVFFQK1IBAyCF_3Fvl9LI62D8hoQwoMLxzf-To1-a-WBug-1daKNR92YtJgENR8UsMhi1yj_FWTnGHu7N1DYmuJCDrodx3SqS_LXYgTuQhvsc7GwblhRG1-18PKJ3UMHM3bl1fZXoqr4FznRmSiE9s1qMaPRwQypOqWC_nWw6ELKS-N3GCrPh_FaJWqN_3p6bO0AXbjlJ6DBSPxwrj1H5pCQr1IrbwSKEvgopphEO3gJ-c3qLZuFd5jkJk7IIPWqwOgQ2KeqdotpZXTOz1FhOz2W-h1MbPq8eHfq6e5BSq3o5FaQODnHsA52Q1EMUnYyb5PSRqIExGaXJ5OuPZSBAJGj_IfYBtNbhVgOiO0Zap_pIw5Mbgcc86WXKQOECx_nKW891DQJEfmWXPkA0onjaInV110lDq1ZUYHnSw1tHe1KW3Y0AbHFL9htrKTdF5PHDGMa5qiIco49xnYtH3neTrPJe_c_YIBELkwOoTdl_9js51sOkn9ZzEqm4XJ78fS9reNy48VhWMEBzWkuLCZPlr4qG5h8f-yxao7gCsc8sqwyweXbZy128eaqg0RxvdL0eVP0Xh4G9fma2YU5zoD1eHihbk1JULtincIs8QhCK1Ve_nPhB5nJ5M4YudtTpHkNw2KkbFn-ZFEbVSaS4Sh9h1R_Kcw5Ij0sRf_5qO9k8e6GeUeU8GdG9PfQ5PrKrpNWrI4iFIxPWI3mi3KP9AmQKr4wCV8nzCJQlJ8X2FI1bAjpiKvqo8IOATFaEmjyGIoe2f3bYHdl7qgyaq-elP1Ac99xdQWrBmo_8fOUQgUzgrYg_X5dLzM1dFsBt9M4dZ-9Mu-EJXsnRERqXy1t-pBJ7zjfrkYAyPOwhw3bYcaz2_hV8BnMlpmFHdaEhy_fnf-uQj1yCx7YJWhgvI179iA-TlXlLklFsKbuUfr5oeHLKZCZw8ZFZPtlUr7Qf8JtdfD0NETAtkR1IUDKuUILmcvUI4z5L5TY7sxTr21QLunJpPjSY0yYJzvLEpU4v1RzVlW5bBUMVQqoaqNthMFysHcToLxDYxF7paaxS7Ytmh7yA0nFYuyMhEuLHCMLzRRQOkPytRmyYgcT4dlIrkGkR4AMUO_pmfmzn0q03y6UxzkXkI-QMsil_mO-ODanB0B_s8dmHtvaFU15SkMAhCxgaRfktzR_m575n8c0nB3VVYAPjUMLQ6116nwZZfJujWWUD3DSDPzJcOVDl1mKOXV5_vqn3MHhz0tAeYL9Vu24wBUuL5Dm_Z4j4jwHE_gqcobXLpRRPSTPE7LyWds2B3tlL2MxznT6PxQ3C6Xob4S6JHaBhzOvk7jop9znj5EVKfP_ZFHXdPHsC3Z-W5FlLPj9APAxto3ergpHF83lHSQRmQhZxmKWY42Lydn3MH9hGi-yqAq68zytC93KCUOPtxCnooKAPwjWQNIHvuE9_N4U45EPw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0ef4edc1d47cac9c016ae82023eaa087d1bacda8272856a9b5",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10301,
+    "completion_tokens": 266,
+    "total_tokens": 10567,
+    "cost": 0.00142055,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10298,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00142055,
+      "upstream_inference_prompt_cost": 0.00128755,
+      "upstream_inference_completions_cost": 0.000133
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

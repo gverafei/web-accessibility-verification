@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Stripe pricing and getting-started FAQ content, followed by relevant site navigation. Its regenerated content need not reproduce the reference\u2019s infrastructure and news sections.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible FAQ rows and footer are legible, clearly separated, and arranged coherently. No substantial clipping or overlap is apparent.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The FAQ questions have visible plus indicators, and the header and footer show understandable navigation and action labels.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference states form an assessable comparison of Stripe-related pages. Their different layouts and content reflect regeneration, not mismatched evidence.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s pricing FAQ, navigation, and account or sales actions convey a coherent meaning for a Stripe business interface.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating footer pricing**\n\nI need to assess the target footer pricing by referring to the Stripe homepage's lower content, which has a wide purpose. The regenerated target is the Stripe pricing page footer, and I\u2019m checking if it's coherent and usable, including the accordion questions and footer. I\u2019m considering if the content is adequate and if the target segment aligns with the broad product information and the latest carousel. Overall, the presentation seems fine, and now I need to format this in JSON.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating footer pricing**\n\nI need to assess the target footer pricing by referring to the Stripe homepage's lower content, which has a wide purpose. The regenerated target is the Stripe pricing page footer, and I\u2019m checking if it's coherent and usable, including the accordion questions and footer. I\u2019m considering if the content is adequate and if the target segment aligns with the broad product information and the latest carousel. Overall, the presentation seems fine, and now I need to format this in JSON.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BpZxEjj8OsbdioS8xmZxJUyJYOvXApM7r8TORT0irUs_4kHO4Bx4TFUPtxeqB7AsYqshKNQQIzfIucLGXmt7f2r7mAeVSk8i4eTkD6AYS01breQMcQLkhW_rXm4rc4dw69J__-_BB5Cz0aUIUwgArqjcjgaeeYgNU8o2yIKNA4_zf9IeBEZrUVP3hCf-s89isPDl9ZBI5pG5ia_FPYIK6Qa8P4ljEl5zXnpjj_HyuMDJZolmCPTC1d7UY_JrGQdftg24CDwHWOahPsJXNgAejp_wyEttocmEZ3n35BVdy74YzNSrn4JBVAw-I8iiKZTmZEnx8XrHi3F9bXIUNx68bOulr74YB6gNk3mD7gIqAqTpILbke6sYOmG2idYG8dJ1ITxewnP4ohyFZT9_qPR66c-YvGJYZLTREMiPUMBnjieBRck7jAGJHSGHdvozo9TEyKZTv7M3FIGLqMyIY3c0_369NJXaJFYX5TOdFyd6zdUt4jvlq2_ZM21xoU4J3Lm6tEcKIkG3bgTDeT3RCDpSB9yW0ZU8HQ90sHNRxn57cE_KYlJf0XRK4px5UC2q7zICRRTTU7mbnKxjsqCT0EAIX8QHMHPqf1FZzJJUekUBJAxI06d1p8MiAqAESdsTRW3T2imZZ2FDM4OU65ApiQBbALxuQWKx89lCPekshA2i-XzxGAaMjGljH7sklQ5tBxYX5jvoAXA0ModggDcSRDzVCT91wE2xdb2znjDe9WUnMgfkJyPWG61gNhwEHHZeJriecgPaBc1B2nPKtWvBeZHPpyD7QaMgYblfbli8UAjpVff3IMzHD2TVxd_xgxMTHYBrTXVrRIjAMSNRL4J0vDPN2DyUROAyS-Rds279bUha0Dp51XYV9pbSS5Rp60lPRUj9cwLke7a065_eggxWlVOlSFLh-Z2jZOsH-0vy6J7-C5kIRCbFZDYLvCXYpdAybNXRpekzuvs29BzvVtXaCgmwVeACXCs_m0O0bzOa_IqBg4W-LIUfOw8djTF6-R0WBj7Rpufg21sTSnRhJsjh_Uv0su1K0Yf1LvoS_GUXNWntbLU830UEjN4hVvC-bQrh6KS4V4tAGzTHsHrxQIEKE-sc0NkGoK-o8Fa_bEXvfciDzPHjtFUIGDaaI7obNf31kzf8t55hiG8xanHjOG84Jdueu78odyUBGclR1hHFwFNSwGQ6jkUf9NMP5mGzu7AnlkeOn_Urt4ahhvmrr71713YPzcKy_YQRKfvOFL4NTKDpMdPCVM2ZCwFIfitu6XNtL0eVQXgcqTn6pHjv3y0DZUwWZUWEPxU_0mArIqbRG0YqWg_j-BblL73dFLiBXy-lROWkofpFQ590aW2mArIKnZQW8J7mbbJ-sDd1CbtbX9faJ7hcJGwQ7oNQZggJK7A87kWRHFll-6za0D_JaLLds5bOBVCsDO6zC-hTNzPVtG3UWClGW-AyZcarP04EgUHVu6hgSDb1zvIZEM2g7ceO-o4RXS6K01uBxULI6r2Qj7Rv9UhwJQSMy4ZjtZVbpUuoOAzm4DXAM79vLoBXAlgTzpOPsu0_49P6Yq7nwpy66rEDr4e95QRr-Qb6x1vL-4vFBREaHZH0RDbvlrkPo_t3uVOes5HKAjC_WaN01PCKi2mEzB8I2TU2RkJK8-p-vOVlHiF79I07aIFWeuo_HWy3H7BsY_wg9DI0GyQL9Dq78Rn4xSZuaF5EeIRCo6s632OW-MavLDW-7PEEC0y53D937iEsr49xmJOb7mw8RyYM-U5DpjbAPM7tKVRVNDqguc8ecNRYRAemZbfYWh7aT4NkYUQdgC8OOJ1tOkP2jWmXEes1oaRSJ_egNTzG6jOGVGJU4NGuXDqptjHzoVBxhNfRDGH_Uhv-SPjcttP4hRfCS3kWC_JASIHCwVJ3bEBfHt_xS3rd250gbKlOXuaOWgncFJlSgFsTW8q_iotsdx-w2IqmtaElPe-QXbd5he4qZFeTF6QJzMP1NpVe7tyHmNny9OZhqZPPNgBb0M6hOdO8uwW5HCq0HXlcsX-H4Z7yXXl3B-_V5nA7NR504OB4clhSFcZm0u-YRf8d-rj_P295LY_Pz8_frSH6YmUl2Y6vkDy14z7uJPE0WguJ5XmyFmWOKARIteYdXNa4PdyVtVU0xMwu46So2Ujd1Zdis6V3WGbDBoBrEE5Th6afaBVR_O4sc5XY43ErjiJclX5FNRUJP36Kzjmyq2FS2bpYbHDd4UYGZr0IZFREKfTwqHPi9Bfz8IyPgNEz1xuZ5ZlBVNdslAzuB_jRcFHPTNRrvMB58E6ivCrZ26BPjUd1us1eyDIb5XB-JI28MK2Ggcr9hGRVdoC4KgMzxMPSygy7wV8RkuQvI5vYEZpq22EfHAEWhi_BJuYcIGAmWRDbH5yyw3F5vZjlSQZZKtV44bj-9PAj_9fxhWOvt6VYDgbXXvf9-Tiedz1_xnvo74Hp6V-ObDwGnDoKdrXbr2zZAXWWlQCx8XMu6WgLT5eBB9jYIZqZb_bMRqm9QQZz7__8TySC0c-Zy80MNTdckPgPbzY9Fc3nhlW_BPCMS7dlyk5QDoIIhSMNPVfVvPFS6-Y7uoixS7gJMiqd3ggd7rWiwUYLXzN1lo7S6nBNs5_qxm3Q5mAF9vUSVY9tyTpy1kx96w7G-oA1a_FMxVknBnPWlTL0LB6NvKkjDIriBmox_bQO4Evz2eF1yBIZa2vyzydd-fQnZr9jJutWhheKlWsV8rneOjYhbP_gjhr2h00Z27Kap9BujsO8-jjKrpE-aogGkx_AyFiN8USpIpnjIfK2Ekoow3E5iM7wtobMoPvusFqqMrlBmchAMJ4agFbKts0VpvR9rifgn2Vlvrrpm468Xhofy1TJgiAx7BcZosYD7W3P011rRqtLRqf3CizY0T2ps3I9QMXK77adR9x58nFvwqCvUgh379tp8hW3W1kTKLx8Q-RBq1sAI7DrGbvpldBAxlPb1DjfSpINcJjDGWzTwdjrYfQ63MACnWotv6OjRbR8mpW_-npASeAU-og5lmZRieh1ZF7masYfwtSb_Gfw1BuzRmxYBGR0Tu7eBoAnqTsDZ-7LaYrXCh3faOKKw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0d5093eeff6ddaa4016ae81a571ab887d1853cca32a9c69467",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8781,
+    "completion_tokens": 362,
+    "total_tokens": 9143,
+    "cost": 0.00127855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8778,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00127855,
+      "upstream_inference_prompt_cost": 0.00109755,
+      "upstream_inference_completions_cost": 0.000181
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 105,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

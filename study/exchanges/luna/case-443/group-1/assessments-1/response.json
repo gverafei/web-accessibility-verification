@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the reference\u2019s visible homepage content and organization, including the hero, category links, event listings, and destination section.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible content is legible and arranged coherently. The second segment matches exactly, and the first shows no material presentation differences.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible search, navigation, category, event-card, and carousel controls remain identifiable with readable labels or recognizable icons.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show coherent corresponding states of the same page; the supplied segments align and are assessable.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The headings, event details, imagery, and labels convey the page\u2019s event-discovery purpose coherently.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11422,
+    "completion_tokens": 189,
+    "total_tokens": 11611,
+    "cost": 0.001522175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11419,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001522175,
+      "upstream_inference_prompt_cost": 0.001427675,
+      "upstream_inference_completions_cost": 9.45e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

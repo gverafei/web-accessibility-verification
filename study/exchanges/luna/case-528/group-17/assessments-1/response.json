@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference segment shows site navigation, a large blank region and the BBC footer; the target segments show readable BBC Arts and Earth stories. The reference does not show the target\u2019s lower-page content, so its absence there is not evidence of lost core information.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The target\u2019s article headings, summaries and imagery are legible and arranged in recognizable sections. The large image and horizontal overflow are noticeable, but do not make the visible content substantially unreadable.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible section links and story headlines have understandable text and are identifiable as links. No essential visible control is shown to have an unreadable label.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The screenshots form a coherent comparison of BBC page states. Their different scroll positions and the reference\u2019s blank region do not make the evidence incoherent.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The Arts and Earth headings, story titles, summaries and imagery convey coherent editorial meaning.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing page layout**\n\nI'm evaluating a target page against a reference, but the reference only has a blank footer, likely ads, and the main content area for BBC. The target has deep content in the Arts section, but the reference viewport shows the header and footer at the end of the page. The layout presents issues like large images causing horizontal overflow and default browser styles. Still, while the presentation isn\u2019t perfect, the content remains readable and coherent.**Evaluating page dimensions**\n\nI need to determine if the target article dimensions meet the expected standards. The target has a large art image that causes significant horizontal overflow, with a region showing a partial banner cut off at the top. The image width is 1417 pixels, likely exceeding the viewport width. There's a horizontal scrollbar at the bottom, indicating the page size extends beyond the visible area. The text is still readable, but the reference sample shows a blank ad slot and footer, while the target region seems unrelated due to offsets.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing page layout**\n\nI'm evaluating a target page against a reference, but the reference only has a blank footer, likely ads, and the main content area for BBC. The target has deep content in the Arts section, but the reference viewport shows the header and footer at the end of the page. The layout presents issues like large images causing horizontal overflow and default browser styles. Still, while the presentation isn\u2019t perfect, the content remains readable and coherent.**Evaluating page dimensions**\n\nI need to determine if the target article dimensions meet the expected standards. The target has a large art image that causes significant horizontal overflow, with a region showing a partial banner cut off at the top. The image width is 1417 pixels, likely exceeding the viewport width. There's a horizontal scrollbar at the bottom, indicating the page size extends beyond the visible area. The text is still readable, but the reference sample shows a blank ad slot and footer, while the target region seems unrelated due to offsets.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AJv1BkykUoefbJloV_EaoL096r-EwhiwD9TFfB2QB3mUyBQ6WcewTFfrQiO4Fifgws-VHUr2-_eV9UOqiuC8zSk-mW4zGJdx2ntzFZ9p-LOTaCR7EtZrsdO6cAbamaAFtdfoWRVkK_utS8zgACl61vGsai70DKrAfxsOaS33ySW-PeNDxIHcRWIyBkbSGPZNJImyFNN-WGULUBe1in8sIlsZqRduNGbpUmuLmynIIp_Mor7DirNV3HeJaAdivNat8Xkd_IkdnacdYi9uCCfEArQC28LVnEAXdtHZvEJNxEf9hsLHLX43jALHxH6lvCXN2w1nwImtiegYCWYuwPF6AULsu5CTlow822Qwvb2ZKtceBDlm8ovy4rr-N2ENVgPmxr__7vlZ3TXj24EfVOMvQ3Z5AbCHjsAsI2OzyaAskW48iJQnIjlHkV3Tn1bwhYykD44382CeUVFFEJQzIkDf9zjNPnKA9qdzb5fCUOeZWykaIeAOXP3iqJeXEUrUGaUui58pQCc8DEq3V_gED3U2JhexpO1sIOvVDNPszI_CaL7OnTCnZpFZffVO6CQYXLgGfUAMixw8bnZMCARopkkdS6OdZDxBA9S7CpFxlVx_FFjD4btSZ0l9ui49hAieMN1W2MJkAW4DuzAUcFFJHA_VId_OTbIIrnvCtwJT2D5qohr7RrPX3N2Xb2HQSKZDIdJjBod_GDCA1Ucc7279QzoWSN1ijOmIqXDV4BTRkqi72TJfQqxmaqKv1LVmpvTZJ_UIpVV0nTuanZxH2MhSdYQsJxtiL196oTpIwLgzrdIHmqRxbUigzxraGz8mxQpDcjJa2xiSBSN3WKH3AKDjD0PogN7rYD_NOmoSlCHlBCH4CimfnWctm08i7ZY2Ld6hZNj1EIpTepzhd6Bgv3pG7HXj9vWu7U_F2ls4QRhA5koI1pj-2fEpHYTPrLafKIBmqw-3uLhyCTcsFdEFkbN6RwFukssFpHiLmMuziCwZyC0vn0sOeRBTunEnwFXO8xzw50yGO4IijC3rUr0odmQ-0KPdGM6jtTN8TrCRbNyc-GYusYmHZtcBzrVuJ9zROsG6uHzY2GG4b7sjKidQeunIsH6a6KHvUe5DgCKsLjRQ7nKeHU6rys9ymmRjY9jE9LpdyR9Q-fruI26DvGomyRYLTpcyG39ll58VgAtZFgMgQpsN3PwE0VS9NulSNuSKoouN5TJ3LlTbMd7z91Hh6Zt_Jp7c5a1PI9Kakf4ZyxfzwN5cnTlY5Kh-72oyeltm_yjGlHJeE_8MBgMlLHNo-kpj618N6Gh_7S57God2mXlaiGTY3OZNXjlgCfCkbI4CZFKm37qG8Cxq4tMzJJGXg0DYb_-2abONUhfmrI98LpxcBQxs_YAtG88a1wG5Jn8K-iNFSeK1tXXjXwymvYi431emEhEJarU82-GnFcbcdQdzSG31Z830DzpEc08lp_wyxCRbAWbiMK1gK1jlxX2twZT3X6LVO3agEtXzBxtUTk8sSmbqpsyP58MO827WY47z0nmx6luzSetdUiP0IqlpEyOvs4KtABaFPZyKsfTsQ_1bsJMYPdSSXSNOBJoGeI56CizbPZX_vN1HMBA-t8QIVnYtHuW07AO_IamgbuMqD--EEscwzvAsfwV82Up2BUqci1eXUpMabrui4-xJFvWbfo9idPtuGGRB2B-5xYuGAH4hZtjE1eJ-tmIK4hUFDHFCVP03gy-H0TDtepJtyOcxz_Sl-P6tUGRVOvuKRUVpIoMgiAoISpfiBUjNHxWwq_POA77P3sNnrHyM_5ql0N1M8Tpnfk5lsMMahY6sCYMCdUQHaC3WmE4IFk4tmv0a3Kl5CT8pVXjsbekzm3_6FdkNtvJAr7H-YuSpaZZXxPDN8RIjqnrSF3MrHRyIdpdZNXMvAazgleM9fCWxb8lzQLP3qJv8mf-sCEAHVc-V7p2efzKtOy72fVzZRBUpY4T-LO41vjKfDcvz1tAOKw0cH1bR2BUcaEHOxd2WPI8bIn192cdCejPunwGfzvxQ3-UD23tViypoVd1e5oZQdBguzkPK6PD4pTX_3R1hmPc6BngsAc91PyfJDUfMe7usBu38hZ1SChFKVnjGHefChXCcdz3kVUlaKEBNRJcTqHJAdxkgZHqNWhVQQxnj0JB2k8qrgkR1w8vpRbxIms9y8IEptkQW6_-hm9PTsMBxcKTT80ktiIx_jg5aCPOvXlVJo0PxzJZy55mx-GLNMZpdpZoyvnGV9Jv_buYUqGOMnJiAC6QtbXAKvZKZ9wztnUrQtY-WKX7XHHdjYSQbz057j5K-1iVfnS33q-Qf2e9A3y94TQTDHRAIf1jWQkk8bIcUwg6NlPSJ452go-riNEDQdEvIehxHZLkFNDupYTUOF3tX4B9XdqBGkGkcj7IgkZqJYHOwdrapaQwlgjm8GOmxR9jbO2Q2C6ZsvgqYsWVeYtWImljdWaamjZFUUVaMgkdKVUbhKyN1oFeWOl6JSJXd3qRz-QqFAptVeSdD9Ly0dshoe_0PPg6K1fxy5GrHDhoXcQNzD5QpJRXjP7VdIAZtFHWSeuq3jCfFc7tzhbeRCt-hkobG0b7AejFNiXg3r4e3J9gO2ws3IMx2Btgx8twkaWxZufk7UCXqSh5VDcduti2BI5u--Z9r8zGrv0pZ-iWY43BZfAU5D7sh5J__4OI_LNcuq6lyr7PBaZy_D5iBEwtJb60MFB78ciXvE89Zetdkmqmzh7wwZgmQhvPeYgAmu8j9d6kYV_I45gE2bEo_QfFQpGROpRUJssYrf4XKn8t73m6RFrwwq3DYBmbjcMtIEFrLqMeF7e378ma7Gl2wLwekpr54xkU_XlgV2xzwn-RmsnprNc0PV6ev6ceaX2znTnWB_l5cmOw1a0xbcakYYS7adDKqr7LdymjVv1R2tpbZbwTOtUgR2lbkVHQK7Lm4AIw65_glxtP-6q4ki7vnouEMiL3cO9N97lH4Mg-vNuTH62_ZmGJ4Nd9gb7X1MA9stxMaJNhM2NF7E1ZLvh8Z6gXwH0MsJqq8m2BuN_8gmM0R0bH-dKcO9CjWrVbPVLzfWSpytxRdY5ZoOR7h6ATlzkxusyibS-NCnRliRTseSCdCuMoW5q3IGqXQ8SG9_4xxM4BrSmVu4sTBZq6G_VkTzmNErmkxZgb8hbtJcR_AIVx5ri8wmCs3eC71nD06zUBHvIaJaVahryLp13bSc6_eSpEfocx-bdyH204ToGNWJ2Kl2WnHEqZwcpn7WiuMEfcMFuwjReJu85nOTsQzYy5Bw7Hgl26S9Aag-orli489p1Nt0K7lLKoMg3nO1ukRzPK776X2-rgu9nh1fYCMjZVWT8NTc1XYvoiFkHmz_meFVaDQZI8qcztoZNSyTMM1wTp3Q5rfUxl2LKXewtzlbLKarALINEMYkyOBNc_gl-BvNXIjHEsrsun8JmpwicyhtGThKLv6GMpZCo9dIfhPfngFWJtAKad-7T_S3GMbumyakmS5ri9HnpWPaFiOwcQFnSEPUolGLYn14kzUEBwGy4LQ06EwK_Jia_lssDg_CfxQCLpN0XDauJCNOdiad6eDj_E5GGHaVi_tSaBjgeEIoyo_XomsOEet9dV0BLv9vIxN_BKc8hDwWX77CVjpYsrdwIKnlDBI-5PrRTKQYtCRKwqg3JrZIAIGlpApeT6yCAJCTh-nMwMdDoYlHrF6a0l6ZqNRMew2gYahfDgmuM8jvDslqsXFv0zevF7j0plPrY1CPdgj2pag5ywefHigA4RPBdx4jL9KLpshbtJU8TXuSlIiJogaNp1UsCAySsbicsoDiOS98KlVzdm5KRNu9wJextttdO1E1JMXhmdl1SobcEXmjwz9J8y9aW-dooigoglNjUTNoEyykpZEtcWlU0ORMgoMWMofYPTzEe_kVBLivz0G86GZj2SAm5W_UusU6U-7tYvBEVjf6Et0vDxlN8N5ta20U3bVyyIVTNYBhUR7ChDL-NyXNynCRs_n6RO_P8m-oX3xOlVDeZbmt5Nx-VAk0LMZwn3D2CBndoEWE928GL3ypaUTmBBGQj1gnkMB8pTlvgDyHOSDSL4Mt5iCOXc9vZLT_tDZYUhjplRICCjO5SHfjyAFvqOGmHVz357_nB4DLOKjnKnJ1TXMkUdnbknnXPtZ_zjdtVE5ptAYG67ISsGZdt4TbC3q9phiK9oD6BsnMnTJzH5g9PigE2OL8GnjW5TKO9fDmjpLojKUzXAq2glyqzzpmOEYR6mTNiAeHVhwG3cfKDVBgtSn95IJX33kmpfp5mDY_Pif3LKNzqBPVHtYVhGskQFlrws4eP96_uwqh8eq9vpOrkOD8qarSx6PJrSL1yhFNDp8PUGKxIgkTF-TNdj1eY4xNLJzOmPyORrt5372KojBbKiCf244jdLe3SwI8vI7DSiTmh5ANPdKUCUUqfRaWzNzcU0xOFBaaz3zWQIFV3nX5YP537lbJ8PoWFdrN7pptZAcc4b2tCkGzzNAW0e7OZkzJAQgQ67-SYDLSwigidh_iKil0CaeU0ydkc_g9rUrP_NcBiptHSUlbE646GlvC_XN13tuVCgYfFjlXqgtoqDJZeO5YufBfEcy53AAHWtfMOMp44ETkQ1ZMP9krqiC8lRKM93f7HzyWcENs12E7y4Gnvs79dZBZJiKrbJTopqG1oonDN0VgHoxk9qtohJL3QEHbjROR-5k9HuNcu8eVIHQGY0J9SVhckoWb8TYWIDnQ1EoR_NOYm7fnLbSeohlxdn9rWmylGG0RIpe05dIgE1DlLrCbFCue_da9IbiDhciaTh9Yf3dNfru9GKnozWpH-QP--5WLS5YN9IYGpajrgQDH_YJHfi83_6-PN_lr2yD1LbURIb7MIXz_mwzC0_oN758jkTY8-eqvBQRvDQpQjmpw9kIcwtWSlh0As2Zwjpz5Ohwhgky19QliAunBC73kwGLEI5Mr4pdx19LoKjz7060LadMOYZVgwSgOnj_0EJFMkllmi2aa8qU6NbF1kSGmwjJ2fciBKw8k2XgbEu27sDfA3QIuAUc58kraGr6PNWOENFzl9dq4EmsAy4e1A40jPgjVTwYrGzoXMTDzs0jofrDZpAv7WSkRxFNtc2p4NbLveEBfdVajpyjxerymK5Wy05Zpnbef-xIbVOT7p__pSyLfYAiFvCMcmS3MHYiyJgWCsxY84SE3TetnOFyKS7GqY-ZcZyG0juVK4WUgZmpgZqwTk0NiN8GpYDrKttUKLf9W4dT0o65tXJIjQg5ASIUe42W87TkN0mtSs-1DXxPnTu-hsK18dqvVkSKzoXhV7RJmhRg24HmnrSoeUiOF6PzD_DU7zGz67GpwE6nOJcF3J3XzLhyxEM7vUbMequ54QFWFdmgePQnCzf5SXtdrfrlHBJPhrGQD8OQOOk9DDDQ1_k2VmHD8dtgzpOFZb5.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_08fe36e9df5367c2016ae8026a0f8487d19f4db5cb35620498",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9392,
+    "completion_tokens": 517,
+    "total_tokens": 9909,
+    "cost": 0.001432425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9389,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001432425,
+      "upstream_inference_prompt_cost": 0.001173925,
+      "upstream_inference_completions_cost": 0.0002585
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 279,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

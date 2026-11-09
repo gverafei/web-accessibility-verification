@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent news and magazine content, including climate stories, a sports feature, and a newsletter. Its regenerated content need not reproduce the reference stories.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible headlines, images, article descriptions, and newsletter content are legible and arranged coherently. The viewport cuts off portions of the page naturally, without obscuring the shown content.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls have understandable labels, including \u201cMORE CLIMATE STORIES,\u201d \u201cREAD MORE,\u201d the newsletter email field, and \u201cSIGN UP.\u201d\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference are coherent editorial/news pages. Their different layouts and stories are appropriate for a regenerated target.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headlines, categories, bylines, newsletter prompt, and associated imagery convey clear editorial meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing content coherence**\n\nI need to assess the window target at the bottom of the homepage and look at coherent cards for the content. I\u2019m referencing the editorial page and the TIME homepage, especially focusing on an image related to climate, sports, and the newsletter/footer. Everything seems to look good! The controls are visible, making it easy to read more and understand the newsletter email/signup. I\u2019ll be comparing this to generic news magazine content. Also, I need to prepare JSON for all this, ensuring it\u2019s adequate semantically. I\u2019ll keep an eye on the newsletter signup button label, aiming for clarity.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing content coherence**\n\nI need to assess the window target at the bottom of the homepage and look at coherent cards for the content. I\u2019m referencing the editorial page and the TIME homepage, especially focusing on an image related to climate, sports, and the newsletter/footer. Everything seems to look good! The controls are visible, making it easy to read more and understand the newsletter email/signup. I\u2019ll be comparing this to generic news magazine content. Also, I need to prepare JSON for all this, ensuring it\u2019s adequate semantically. I\u2019ll keep an eye on the newsletter signup button label, aiming for clarity.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bz7c7PU6Ms0Czc4i3KEWr3WqRip1d1L7LV2QNf2njATwzRpFZErRpeuZPWs9hsRanMA8Ze6nyT60YwoJFbvWuv_1_aykZSgAlM8ujBaFugaTbNKl2BivkcAZeVjc5YHsR5oPov4AKzKQIxhqfZTOmumhe7kRsrZREtYNT6UD78TrudtHwRxsk94atl-BS_by7cOoxVbm7GXraE8hOroKF9XpSV3jCrhF4lXCJJgukyqhffHFfounLi8NrfI2xgIUtu7RyvmQctis2I7NZD8Rhh2OB3JjNKSgOIp35a0CKj7crtFgCZiHYT3nNIZNOZYTLcJ0U5BC6Rvh6YJaFHc3aJMT9nSnY5oGuwU0fwkcCowxEkIpssqxLotH9wpGN-nXIt0t1JPyaH-43XuZ3s7oK_wuwxkgNhNMXw2mzs6e8oCZ_9eT2NfqHp4MnAKSjp1fVX2HrEV4P-qIiw8VLXyCjhC3OMMCCbV0OEVgls3wd39dMDJfjuOPaqa4dYVr4v6THpXCSUrGt-gXdVqhBY6ZBuB0dR6oSstqheMgvlwS7uyxCUOP_w-CD0tWyheQymmiZyBtFtGkjVxaYh0Ygkumr4F0fcjV2plsUj-tiBRJzuo89aN22J-0BBPHS_USx8VtaiSVeiloKm2zCZrkcsd5zVJ1np5ZsT-JoXvz5kT82vZbQiIYSe0eSR5BMUz9YuCke6-_rdQ-8xXJ_7OysqK657MSN9k1Xb4zp1Yh-PsalrCLGmjOvoIrYm_ocDSuFrOKTk9F_kwZyG7V1gJ45ZECDBTsp68u8HYyvXqOb8_kaKa0-4DWaQ-7xC2lYtSnK5TflmXLmmaRKlmcVL152KO_FZ-Q9VhCeNoUAxIMj70G9YOcuoE_X12KtJf-hMOicXyOfG9Q52vIAI3NRQPDB6Dh_WqNONygqF2XLWiTNAlQXrMnfNJVB3YW9ehRv6mlz1n8zu6m_6-iarKsvaWgGyDynumuJOYQYOeyS6XUeJW9o29FvC3EsyOV1LYaFtflng7Ewb8AQcCvmyUIUYqyueVd4ECwVcilJl2aYO55duByEWdg9RClSpW1mgcRVTVtvLspp6Eqw4vYxZzdbGJ6hY3VwxhisDjGuX2iUtzuU67R4OFqfUMUTgXbWYVxyRkQ2qYXJ4gX-2mw2yvcIVSW8rgXsLzET3byCfs123dFtjlK_tDCTMf-IqEaa4WyLMC5_7CRv-XxJa4FBXUT6SVeoy3dMsWGi3zhrZQqBur05Ds7AMShXLpMuzlXGkRmRfLNxImg-MScoa2IbPd511-eQpfMkVzNgnlqUKWCpF_NZk39RX2LgQ0fnJP4ADeGfeE5CXJCdOCNACpgSZUyvupHx4QbEFWizWdpycTZa7Xd8ywGbWmySmAY4mYfaF6oarbAuQxqVNRw6EMnbW1hrB9xE4OCW8qPXItAmYOl6hL9IqjcmOomDZIuWLSNpAgKOZGkQbXh14jKtAGOI58TQP4F0xI58hbwNLjPJlOIgoFZ_IJ3EO-ls7Dlr7J4iIW3yY_TUIBB8dpl79-ocm1g7zFa8qlp3O5FsSyTwOF7ezTaiV_uqJeJk83PTvCiWmbY6wypPn7omYsWmqxVjkMtM9dtd_eQo289jyXZlji_DcZiELhhpnjgX64yW7pNwiZHl3ymXf57e3YJEWPX9BWFceKGQKUWi_6yFZyjs6PEVduiweHs-5bVlXGIMAKkqeNO5l2Ud3eTT0N6cCxKmm8Fd_HRn7OU8bAhXKAcfsXe6nmAkeBc8EFMbWO9iAbvm-D5OsKR0XhWW7Pt3KR5odPuJBZKUDK17NbuJ_IR51sI-oA4jB68IJmwxYdHfzcQ9F2kpbulvubI36wI1wfwM3Dzf7eFQLwK2bNqBL7hvR27sIum-Laxg1Pz9JPhA_gSBAyi-eguO6CJZldutnWRZSLCLOnPN2if-qvZOeINxzqS7mWWBNfJD4HLIRm7xvOkAOv6M6ofm5uOBUJE9KerG9UuHRkosKBmD-GMKkCaAUNV_zK8Wg0jXWjALcoeRz4AN7W322KU-IfxtF8xRK0V3Y0kHC8aA9HwP-B7u8L2PtMx0ofozVL-v8Rgc2GPpq527xGJ6zQzG06xvV4CONp_34ZyuSuwzHl-d8wzR9Uxgt2pBYLY7zVD0xQc8l6cOfOUyLZCzKJA4SXV5cQplUFSeIXIWn8iPXTNlTrsq3DK5GsBYwvkB6l8Sjyw0P2hStZsHdwQ7-OLLDphUXY0VR9eyfF6Yp8VPahMyQbg2cDhNC74MQ63nMUQ33yukhQ0WFQQ4hBPQu97giGWEKp7aJjeOXKBorwSyHJhDHNFqubN893AeHuKYtdEP_YtoXusm4ulfRV_Ov3tOonf8t_2vB2eMMPkYPs6UpiDinCYhLXFXDbtOSPt_jXTNmJ_y6OKseXgrAdSnKef26D_9r2xy_JgCqFbO7KvTx4A8h98IP7FNX5_ZMAqrnOROPWeH3Hezfeiv9ZFo5Cy3kMYErPY8pYJ2L__FsPAnLBIF3qXx9q-rj1AcPrQFBI0TcygnRj_A_uEe7TO4ZerjlFvmh3VNOmk6VEF1I1q9ORvRyAWDU8O3mAAaKbAgPs9vvamfPgshv54W7kBBvXhvXuH7ZD5vY_5Y3F3jf8UE8BbLFqGszms7xJFKPJkjSHqUrOofsxEmxc_oQZZ2LI4fIEPnkklbEGxY-TyvexYUSaTP264_oZJJ6_secydGA0VreGGzTepfVNY2Hgac8QEcA9aIVy.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_007049a9385b7c74016ae81cf9e68487d18cd764b49a55fc8c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14493,
+    "completion_tokens": 349,
+    "total_tokens": 14842,
+    "cost": 0.00198605,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14490,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00198605,
+      "upstream_inference_prompt_cost": 0.00181155,
+      "upstream_inference_completions_cost": 0.0001745
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 84,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

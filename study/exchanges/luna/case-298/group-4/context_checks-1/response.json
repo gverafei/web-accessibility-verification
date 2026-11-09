@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target communicates the contact purpose with a clear heading, explanatory text, email field, and Submit button. The different contact-section design preserves the broad purpose.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible content is generally legible and coherently arranged. The heading clipped beneath the sticky header at a scroll boundary is not, by itself, evidence of permanent unreadability.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"A separate prominent white pill-shaped control below the email form is visible but has no readable label or recognizable icon, so its purpose is unclear.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied views consistently show the reference and target contact/footer regions. Their layout differences are coherent for a regenerated page.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The contact heading, instructions, email label, and Submit label convey a coherent contact flow; the unlabeled pill is a localized control defect.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating button issues**\n\nI need to examine the bottom target, a blank white pill that might be an unexplained button. At the contact section, the submit email link is readable, but the button label seems to be missing, which is essential. It could be a control issue per policy since there\u2019s no visible action label. The image shows it at the lower center without labels. Although the content is generally coherent, this blank button is visually odd, marking it as a material defect in presentation. The semantic information remains intact, though.**Assessing semantic adequacy**\n\nI'm looking at the semantic adequacy of the core target text and labels, considering how blank control labels might impact semantics and legibility. It seems like the text labels likely meet the adequacy requirements, and the evidence appears coherent. However, there's an issue where the top sticky header cuts off the heading at the scroll boundary, which might fall under policy guidelines. The reference contact section includes a useful call-to-action for the email form, so that's a positive note. JSON is also included here.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating button issues**\n\nI need to examine the bottom target, a blank white pill that might be an unexplained button. At the contact section, the submit email link is readable, but the button label seems to be missing, which is essential. It could be a control issue per policy since there\u2019s no visible action label. The image shows it at the lower center without labels. Although the content is generally coherent, this blank button is visually odd, marking it as a material defect in presentation. The semantic information remains intact, though.**Assessing semantic adequacy**\n\nI'm looking at the semantic adequacy of the core target text and labels, considering how blank control labels might impact semantics and legibility. It seems like the text labels likely meet the adequacy requirements, and the evidence appears coherent. However, there's an issue where the top sticky header cuts off the heading at the scroll boundary, which might fall under policy guidelines. The reference contact section includes a useful call-to-action for the email form, so that's a positive note. JSON is also included here.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B6omiTKKiypQVKTVl1XNkxZDHpmKBPfI39ed8CIdkHmKBf9_G_ofOfgc47FqB4qSRFJsgFkIQKxPKa2joYCAmO8eeqn5AfnqITTImDk07uby1EQtskcLwOP87EVoGOj8GMusaTL9R1utRnHsSNCZE21LN9Whn-vxxTYe_OI4lQHfw9QWg3utWfpXmUFvJHYndzl_gdRsARnGP-hh_hnA-fk7p2W1TLKYXQSa93QjQ4oTW5vW8kBFfUN34Lo2-5Q-G2UyzlyAfVXsU3ZvsojqiaaXffUKNnTSKOLv7dLVOoPw9XjX9FRQU30hdbcCq9QZfhoXyc2BziQtelAJuJFb8DfidNOcB2i9QrIljy0XyLe-97NdidklxHwcmUJsHw6NzWpnNcuFrKDv4gZCx4FIEDZOb6T_sRIwszRJQf12DgSxrv6ztWwUDGdg64Iy6s2bon3f8GGxiDoGTYjGi6l4X9YAZpoAewDd6N6VWTD_cwN-6iVfBdCHlA_uxjTg96ppf9NLAAx5iIz_RVZLUScb8_dJzzqj_VE78HEkGy5wG7J6rjTBy8y81QWbPMrqcLak54xZZ7dj31XCkitvUjXqY_crXEAUqE26QDIFXxbVTaZpG_C0rYLKmHX1GBMSOXF5z5jwH6BnolKCyaFptm-iL6voaQBHYKEn8YR5O_m9cOu-DD_OVsdZCSUHggDYOn7Q6VhErbLZ9ocZoNFrq6g60sgv1z7Iy_zqejtuNjdE7uLkLh7TleWUePw-JAfQzkr6Xt8cGX0pf5RKuOEcuWvIZLgDhEWSkCxtfnR5qs-xu3CD_tgqpjqC-bm4iZ03wYGUG0gfIB8-TtABEt_9jQctHx9Y6SiMrUi_rl3gUkho86AA_22UdXRv-jSAz1ObxoZrozrpcnma-Q0nAxWVUPnf-h7eayBB7wFaDMWRZhpF-f_Ia6uTTFwMX1bu8SYUqYUj9iKk2zQ0ENKzZoDLN6AAeP9G3MlnGCkzvVNHsNgbUkYo-gaCy722m7OtbA7CNezaZ06PIQfXBnPrL8Zr6kLpNonJqYkz8pWNMHNXztyQxjI21fPrDuOd4bcfNerVy8VmasJej4ZKJpp5E84WLPHhXWAyHVxNKStSnraBp7EwISmk8tK1DvE32j9f6rJg6nmoRZIOXGrc5YyVf9D5krYITKLszC10fRfgSXyOQ-X3K7p-QUcv7nTs7y8fkjbC_oHYZDU7dYb00Ywitrl5wZPhumXthI0IyQ__QZ4NTUd3wIF8FcDLUL-gmVp79wjzPEFOxEsWVFTsqCyPJo7qYH-7HDQGKdyoo0KcU_m2dCrTQLBzlc9hD08gp1AbcojTuG20_7419E50pwkXpQv-lF4sPKcPRr9yUN_Om0s8u6FTB_UCgzV1cu8sYTJBabT5XNpZFef285ZL0zMbevJ7aEimITK1Y1_-JhmiYBcLH0JKwuZLEZfQY41R-WjCmM70YlzPQmBgqXqMFcK8QvTHFl5djIGsZ0966KswZkXSbFm_gCkLX0Hlwx85hTxgcDAkwa-NeZP6QFaK95lPyLkBzoE2aS2UQdroSgIWJk2yTL7ZzCy4eGQOVXeecIuWrwV1fz3AA9bHAYHLu1NV8deazTDd88kqj9AXGgODUDV7OJ2vBM9R7XRmCENWcC2Aq8FWYUvNwGJMaPSnyfpwv7VbRqynV77vsEoA3hSN-4wV5PvYcwXSBUygIcgBwX_WJBlDU5zmYRBS_Sz0fPnWNhyAYX_iPn-IAh1i07IAaQBuj6xMo69hss-uBbna1dFELrM4u21fG6iN-Rh34N0nJt1UgDmVoFhusojwhcJtHakYuAPrfTnYGyvgf7vNnARz0N5VHWLs6t_C-Kj8TMb2G0LgsG50L1pQQkLVDJRLpMpDqb3ZrRcNkc5r0r1VqRPQ6nLxGw8d5aKz3HDNwAoFcjd-BKlW5J9JOthaMDUmCwp5HWFpzL87xREEPedXlVEgKqIxeKTLuLjFsvoOpSZc5ukt9BTuJFnWputTkYbPrJ8lNY7BxutbCLV8LDBwN7uIH4dnMCCIHiu5u-RVPB9ZjiL6Z_votSYgIFYS0eZAT8lJzxTnf9emGDFNInEnpBwLO86YYH13YIymaN7kLrnRGLzq5vsj_Kb6TSoJFMb-9_fOTGpUh41Nj4QRl77HC1ESHUYe6nHoah1m14CD6sCrqy5C7g_kUeHQuRkJcrdokLzWrrF-5AISDPgwR5RJYd_-oZLTt2mOU_V-4ivwrr9TqM0WSWK9a1EJDcqJLqN8LwQgKnwIdq6lGFXPQlXGMZPiWlxleRWdYICUOAml3bQ5zVM4NnOL6XIxNs3y8c9bELctxc9-2p0-r07w8j08tWFlbTzBncobMsSnoVyr0tM5A0SQkCMjYOS94mtlV8ostnhD0CV-KRx2PF8mxLkI_mkWQ5u7Ku0GYdDyumqu7BLVoWXi1cW2YKCs3JBBQs_nLp9dFSre106N2QoV0tBPXIrXrwA86SiO9zcPNfn79Kf8lGNzjtbDqIM_kATQADS-QTRMjxd9jIKa9UUuVeawXv0l6VGBz4XWBQZY-46rMB4o-inCexKollnx5PiTQQpPKb7zfDPfHeWteTNY3CA_wO1kKBBGJNA2e0gyYNgvtVPYQuUK4DpeyqEoTPCegDBZectDDMoZ90H2-P1ityhwd6PCqe5-WTtDOn_b3b04nLkongM4QDGhu-nsLMg7wGekRsevE_L_QkdDWA8_1JfB5tLvjNKovPQCtI3o1GCgNIq8ey3QO2AX8W5VvaEoBclYlIb2t9gsnVSpN6vb_HwgwUuVkm5RIG93V-MYhvjpfybYxB8v81MRA3hN0jsAzGWnjyV5po8za6fxtGdMP5RckocusQaJnjJTtmYneMI5RZSovXRLNNMqKqY1EHfijVDz8xEWo-92a5rCbLT5OOV-0htAo_SniRm2GSOGWS99GAIjUogDAXPk4ilrosiOS42AWbYoLDM5vF7HS5cQEMkY19yyv1D12vaRVR53eHogKBz4oFlKEchQh1XGoYbrCkzf4n8Xe_jPCpXtUX8omZwq73Hd-aXafGeI4tVhQ3qCApL0Gz0FPiMWcitTemC64AkiwMqkrblXPQE6VWuWjYh_GpMhtz0KQz3msfDL7IQAu03zxVP9huTeys_BwVkcmWPwJfxk7gTM4oKNYHcbNpZXav52eP4ylaFfjXBzlpdR_OEA19PQdp6TI0N7MtTGQycRmNWnSVx79Ucmtici3c5f1OsUzC5wc5J4Q-fSbseeFzrg1O-n15P1ORb68uSQqlFZ4txq8eOAEPa1L93y7BVBjLUwyODmzsaWy3ZoX2d9GK9HDnhqXZHwOoEeUlNG1SDp8kiMQ2xdDQx4pPAuBxTLJ-a_8LM5oXk3Kf_66iXEDaJWsy7PNCqUDgZWcvgZTh67gzRVOydkzWo2PLpa3LZ5cArP2gDa1aZVeGgnEabsT8SqBL3dxHjEmT1-dAkMUCsWPo7jfwwLess1AzL0YkoE7QbSHAiwof_w4ySe-4zLL5Dqpaowy3omAyZQUCFT3Dm-OVsFFXP6ruXYv7tF8gIvMo9L9UMx9Qh5gb7Dbqjp6xg9Bo6ZRxfxoerTGvjvyngWzHcxWzqt6zO6GncJpNdo3Pox77CiFlBD3CuboJwTIkRmKyuv10rZ_XxP-Alm7_Y5qWl7lVq1Nf6i0w3WMclDfgzI4VIU6qRrDyvsoxe3SdNPpmkdxk2mi99GecHdXDujVgAf54pOrN9bSWbToPERvp94M8Emfce_zOj6e6tiQMvfHxXDnOq437aX_H4BPoNwzUDFnljS_soummuDeZE8hvAa5vEVk0LWGiBMSr_uMS6UaMiD0ymaFODPWCn6zmaYV0nBdd_KgH_AO-OIdinjCfJE2-EAOHByFOXqzeJsW6e_eDSz0TsmRwwB6UY0yGVoOfvKxpHSdgYW7S5uuJIp3FbUcEqUB3QzvglcR-IvinXmOBfJWdgpeqiKnI8v2zaK4Wm-jDGB91PY2fIKi0y8ggOuDt-1yGiWJpSAvaxixwgX-WVtzY7q1oKdBLTHxDp9MRbwNDORSFxOE0-CFMOBJk_jN2huBqmu8OagzK-FGNpUNJRjTy42SHfOEcqp4xI6r9fpvsee5qzEN128wwV7mowUsiQLsBsRC30z8JnVWUiybx-LBMuFkSpQHPgC4EtoGr0uXfnC75zOLRx3P1dxr7mjPeOirscfyF_X5xQUsEf_KapTZzWq9FN88wPRgKTuNIyp_2mkCAdAenmdcrqNuLf-ilCy8CfSaO5eE2EZv4SvvkE34yyDT8WKoM3VwAYQcTGInzLIltFJIOUuw4Mw4j3qR5E9z1K7hoGGVkpbf0EwqfGH5F3q_MhbSATFFFCYupf3pmmBuBGi8Azcugn2NyOTXyVQOv7dL5QFM6jM2GEau69B7s-GtFOlylS-etjnDicmFPzXVf_10bLo54KBq5hHaG1JIcMtbys3xzQ-lQXX3oBZrHlRAfSzosAMrc9Su99RJ-OjSUaI5X1LvcQlrAajBBT9gk9Ype3ziIXTbijoMkfMk9q6pvPEnwmc7GmXvsw3822H3sngXgBfruKxy01nQoLB-TdkQlsgt35TF43NXanXwCIIX2R4yU70hDvoxPBhgLzvRUvwBRn8wkn-W5cvOKcT-dm5mQBjvztJ57hjJA_ySIW5c5nW4jakW_MekFzNvtb1IlEx44hQtHDDlNczuPPgxYLdj6SFCRqEmDfzscqs85dM7kqtCJiIxr356vhrxuFNVkxUN2i6Aw8j6Z0kyZDyk6DnGgfWCyFtkw9VaPd47FRgktfdKC-IWSgpgxBv0-s92he-24=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_01aede6fff1f0211016ae81ea4ddd887d1b9061db41fe511b9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11085,
+    "completion_tokens": 493,
+    "total_tokens": 11578,
+    "cost": 0.00163205,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11082,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00163205,
+      "upstream_inference_prompt_cost": 0.00138555,
+      "upstream_inference_completions_cost": 0.0002465
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 221,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

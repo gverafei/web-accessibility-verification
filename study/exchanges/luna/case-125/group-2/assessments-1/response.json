@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target communicates NIST\u2019s role as the national measurement institute and includes supporting links. Its news content and footer also appear coherent; the regenerated layout need not reproduce the reference\u2019s exact card inventory or arrangement.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target text and imagery are legible and arranged coherently. The news section is partly outside the viewport in one window, but the later target view shows the lower page and footer; the viewport boundary is not evidence of a layout defect.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links such as \u201cRead the story,\u201d \u201cSee NIST News,\u201d the informational links, and \u201cSign up\u201d have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target windows show corresponding NIST page regions, including the national measurement institute section. Their differing layouts are consistent with a regenerated page and remain assessable.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s headings, explanatory text, imagery, news links, newsletter area, and institutional footer convey a coherent purpose and meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating regenerated layout**\n\nI need to assess the regenerated layout to ensure it\u2019s meaningful and coherent. There\u2019s an image in the upper news section that\u2019s partially cut off due to a window, but it includes story text. The main national institute section looks good as the image is intact. I also need to check the footer for newsletter sign-up and links. I\u2019m working towards getting the JSON to match exactly while maintaining recognizable controls.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating regenerated layout**\n\nI need to assess the regenerated layout to ensure it\u2019s meaningful and coherent. There\u2019s an image in the upper news section that\u2019s partially cut off due to a window, but it includes story text. The main national institute section looks good as the image is intact. I also need to check the footer for newsletter sign-up and links. I\u2019m working towards getting the JSON to match exactly while maintaining recognizable controls.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BqC7wsXVOAIl2z8kaYO2-o-AAbvPhuvR6QhowRZd25N_XURsHLuEzHfFS14-PdHebpoF23HNoJ2oAUeoQShiKoEK2mKrFAOM1qqkjeejes0qhITMogu5Na6z4qX-geZFVKzfgy1LZ3b_UYpw38JB9Q8kDFTb7bV5sVBiZPEIidEywjWSYBREv0eFtQb_mGAv5tx525URhGTzI9g0yGOPL9I330bj7GwRrUrZfDywFyOXekVAxKwRZlRnXAAFPist-bgcP03zQs_WQs6C2Uvz8vIHf0BK733TqfCxJacmyqOd63wea-YfyPdzAlYv-xkDu-GUPXQ7tNtDtJbEwB34D_2fxch8a4xklz6nETtxiNKYxVZ2-Xd4PXtUaqSCU67BL6gAISqX-L0ppM1WnpcDQiJALtdB5MO1NwSObPAme_9XXxsjMLOUsu_T22KjT0tAAUaQlcjLfRN7xF2V3nqQciCFHx7A26U21wh59_YCEEYph4gtZY6mCBA7DNG6J1LtJ2VXq4RxFgBAKc_BY2kvaPrwA4zl4R3Am-5wsAprhrKAmgQz68_aCqXGYnbihbwYgarH88AJH3uPIzvfc7ixtpHv7weSBFBkz8I2jixmyk3SL8EydECnIaMtA3fYI5KouMPv1BTfHujW5WcoP-auzWQc27sUNEb6iIpKam_V3TFQv-h0aRFIZxYqHflYj3JGW-pSj93duwpiTi4os3FS8Q1ZVm5uGcDxZ5i2EIB6TR0xvpKYK6NqnG_XDPXu9Lwfe4EyZVQa8ljDkDAyb0AjmAD4rtY8VyhURtPj_DOD1BdMtLbwrP7EK3g3UiUAfBGeQ7CcdfI6Ux26vLmCii1esQ7YRqG0YnXW4a7AmgVSkRl4RBZoGp_LQAGpXWqNGW0PzdKeV9dgZCM77pgK8xxR-RYWyg6nYhBzp_peWF2PifMbVtGfF6dT2foS-rFlwCVBatH1emKF0a6ykWmv87OYSpoGs2_-bhGg9CuYXeTDVpGzabvb73iwoCi5eBw8gExQgOoxp8Jy31h2E7O0smeKcJ3VXbCDNRhwN2Tl-4pHXh_Qjmx4EOX0-c0xspVJsUr00vOqf0JbmJlbQmSY4JhHcfAAjIRzc0CONcbV_OJJry4st0vlrvpSB4-UJAapfZ2fU5ECpDhVz-6ji0-m_SITSCOpUsmUu2iKc4PVqAsL_Zps_KNVTPXd2fxT8qbsgic-UzEAmfmym2XlRUud4D3w6ov86qxBnPNJkG7BIylfeWI2ZPMsmT-mB6dkXWz_D9DbatDilp4B4kO8AkXylEA3_KLg-f0kMPUgIMO37S4FOnx1CCw7v9tGe-U1ehS7yb5FW-B5s8r6mNO_uaHnUdQNJ-S7XxUOgIvXqy_gvGUlKQlwRdZqQ6Yqwok7g_6i5mv9BzO-YD2gPxlUEGjXnqSD5ItFePg6EMTOfHhu08w7cjaSwu5BVbEjDbOYIg4qPeFzJ1bF8RvKvwQfVkhCWzLkgxbMryGofrHs-7_lWV7bXIUZcccP941m1JmT4o6gs4MieOvY36U-0DTm-34Hew0FJJKVoQGNaZmxfp1q0EAB-sVqTeQIB6mS-3ZKm7ZUQVVo7_kyL2LOmQ9Hhg62XEffwQ41rmUa7q-SH6JCZfgcFtHcL0RchHGSSdpKAV-sS4QDgef4h4y590Ok2ulKu2EJeCNzzlA3JOdK6kk6GzjT3kjg0xWWALyL1CtUEZ-JaiNicxwZAD92-Usd9NLv6oGj0qHwVhlixSIVDConmkE5p7DVICY7zKoXv1Fugcl6BL-TOGLOhP0g7bFinvev9u9nCDR0tRlrn1v9VcWI-DvUL8gKormonOTQzK0zM0ZXk8t05YqH4E411SZgl1005ZljdHU4_dPUv9uNs1YGydf6TSHADWCqp3ghGAMBFQGsPexFNxyPPxleDA9kGEgcnROIkkY1BzeexfTEWa5M18SsvVucExRI-em9fTWsqyPbXB0G1cZ4O4kqr00rjJm0H1YShzhAz1To4HRHasBmfreSWXaJmN28dIgJvhN8ZoY6HziRyUsJ0WjVu3ddEQMJqUaJLh8BzU5HIkT6rNx_AH8U4Krvin7VyoN0VsuIbaRS9V1tTntaIquuSDmYF-U94EeeHyAj7p4BETy5HQg88SDkTmvvijJiE49XfAMfKiyprgtTlFEqGQcHN1AyFLDyLphGjscwIHgYCh-sVLiSciy0EfRuwBDf_ZJAm1fq-okjVlBiylho1er2CAiq5ZdiAN2xmK2Wer34LEihCJY6DVrI1v5m_T7iMy_HskswvPAEOjcw-beAsIpmrq36tIj445KkBng0OceFxLa8_dHs-Ppdrz29_PE8JFQIYop1RTa-OQSOMqY1mHGvom4CmvC1pVa1w6QajGx9ObLVJ-uiCarLGtp8QUaiEPnqpfZHqPKTt12u9j5y2Jvcst0YYqU5LnrJ-W3RRhH7w3zyVDAzbsA0lUohY7cdXvy0iRVhNXJ-3NfqcxM5wdRnNj5Nl-ggjsDjEybAbnWJ_A_mcNVa80TzSWQ4XI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_03d13171f7b15dbc016ae81a8066c887d1bafdc2e9b6235e7e",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10203,
+    "completion_tokens": 381,
+    "total_tokens": 10584,
+    "cost": 0.0014658,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10200,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014658,
+      "upstream_inference_prompt_cost": 0.0012753,
+      "upstream_inference_completions_cost": 0.0001905
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

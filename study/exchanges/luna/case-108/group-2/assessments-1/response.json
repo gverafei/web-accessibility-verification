@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents coherent Apple product, upgrade, card, entertainment, and shopping information appropriate to the storefront purpose. Differences in layout and wording do not materially impair the core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible cards and footer are legible and arranged coherently. Some content passes beneath the sticky header at the viewport boundary, but there is no substantial unreadability or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, search, and card action labels are understandable. No essential visible control appears blank or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target views are coherent evidence of the same broad Apple storefront purpose; the regenerated layout and content differences are permissible.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Product and service headings, descriptions, and action labels convey coherent meaning for the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating website layout**\n\nI'm assessing the website layout. The target at y2000 shows that product cards have lower visuals, and there's an Apple upgrade card. For y3000, I see entertainment cards and a footer. The header wraps and could overlay the content. At y3000, the sticky header partially obscures card text, but the boundary is normal. The text behind the fixed header appears at y50, and the target content seems coherent overall. I'm noticing alignment issues with the product card images at y2000.**Analyzing content fidelity**\n\nI'm looking into the search and shopping bag aspects across all categories. The content seems to meet a broad standard of adequacy, which is good. There's perhaps an issue where the presentation has a header that overlaps the content, but it looks normal within the sticky boundary, so it\u2019s not substantial. The controls are functioning well, and the semantics are clear. Overall, I see coherent evidence, so I'll generate the output in JSON format according to the schema.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating website layout**\n\nI'm assessing the website layout. The target at y2000 shows that product cards have lower visuals, and there's an Apple upgrade card. For y3000, I see entertainment cards and a footer. The header wraps and could overlay the content. At y3000, the sticky header partially obscures card text, but the boundary is normal. The text behind the fixed header appears at y50, and the target content seems coherent overall. I'm noticing alignment issues with the product card images at y2000.**Analyzing content fidelity**\n\nI'm looking into the search and shopping bag aspects across all categories. The content seems to meet a broad standard of adequacy, which is good. There's perhaps an issue where the presentation has a header that overlaps the content, but it looks normal within the sticky boundary, so it\u2019s not substantial. The controls are functioning well, and the semantics are clear. Overall, I see coherent evidence, so I'll generate the output in JSON format according to the schema.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BoZMUPeL4a2aO1irOIphHphzaea5cilOqJp_LCoDxggc3-aUH-tTtPR4Xiq-B181ZG3lDZ8m4RpAZMyrrctsWUogeOlym7vX7eGJmxQp7WBGUEI2bJJHXlH2s8BjVVqsJwtkhI56hk0_FhOacPF2Jl7t6DDX9BpRXLyYnW1fdLXDUZk2FqpxzGNrhwBKx1KoBxN3BpR3fc5djTpz5Peg5PA0GBscqt62eMOEq8mk5E8Rj_CjjO-SPVoVwVG-8-AtkN4UIsFUl4DpBfB8vEJL4reylUp8Hl6Yfpc4uOpfEX90quE4XFsnyjYYN7sLo6F-tCU53Y8T2D35MNiHqiKe6PYkWMD05dulInUVh_8Urdqejh0NRxBBY4k9_Isqc3tdq_w_H8fzEZoY4T-wWZsnAarQCfrPMb3NRHqcg9sPa7JjRfWQSr0PYN78cKqHOwvRoUUFn55FGkxdAhc2NZIz92TOCZZYcq5DhbhwRo_rKKAtH2yRmRaVXhxcdbuiF4ekcHsN8-GqPEk2dqRPon1Se4KrubHXhCg7gOpS487CXzwx-ycRaPbmQK7cbnlgi7VAGdPhSmWRXVsb8vHYzHo1aIOcY_PClJ4sNXdFdt4Ilrmy_3wYJeYgTpS2mrvMY3sO5tVVWOmZIaX5RWFZK6qJqk-c9zZeaCBZiIVrcBgrXrk-ZgnwKQvHbes8vJfonKRC57gkhwayfmsoCrLXMmFN3IbiswtY-jm6-zymbUfoSBJvwJce6FtZx7b5XyezaLhjtFhqf3D9gCga9exLbGDjOArDD4i8kqyXHRjrUg_v2ZwTZbGP2mTQUZSSos1B8tE1DvgI5qfKwnnDEs_Bx3p76mWqhqLohoNGmV4dAx1Gq8O-mGctwkSPS2ecAOBvsdVIzw5tmWghgdnnBPBxhjl8jiVf4wXuQ56kQCKFciculETo5qgF6QMkqXkg-JGYM9neXNpsIDYCCAwclP4Ps0dVpxSKGVHkKxSmf9sR8lhDAwIjl9bRe3NeBTqd5mrfkUJ-F0izAMvsmdFcLrR5aVNZrH7KpsaX3146JOP7qrxv9_VYLaFGEgUEtx5agTpDxU7wRGzPpaoDDvSpH_ehGYHObieN4MChqrJP28wkBJwLF74jdksQt3Tp88Bo1s9t_HMdlugVBGdsmKZnjUAO9la4LOSRHpZbq_LOLqvXgUsLYHdkN1lglZLLipd-oLSN17yl1t3DOVG1AKB3tU58napJdTeQEy1Cp5kLxe5B6WhcY_W6D3AqmwknH3kto8kEO1t1HqiD1cvTw8RSMPVDksAJxAYWla3lwQsNnKwSiY4wVc5FbjfgQN_E_3tZNuMbZ5sk_V-KX-Xi7a6X3Tfx9JerfMt5wd3cGFyV0xUrJ2rkQQUw2vpyF_zznvg_bGS3JhTaIFqzDy8h0zcNK7T-tpWonFIGHSbSAlYKA4v2cSl2QkVgAQjA0uUOZjqYLrpofCunD9X5UnMTC_1Tt55LhL1RjcPz3t6hEpILcLM2lKdkV3fvfTqOtydPpz1-OzA7Nj-MVvedj8MrzrFjypCN5Q8FTMI6Pn1G_8kgTNM-otUC7FeGBbOQK6Ht4SkkwRwHWjeKY-0kr5I1QfQ5-eSDMEqxX5GqzNmbtWbcvnszafaRBmSHEm9BjsIfdj3asl9aZ_75jIT2AZekNV190_aUr1hBTDdiYwbDNOUpmMsQILA6IxYvHGgQqgJs4h1WVxkNSDnlLxBUvMC_AdwREy-9Oow6JIo6GOoO0rv0KXGGEipfMHRvci0EEpy2ym4J55RtL2t-FQ1DO_L6dvss62C1yzmECNsuDohEHph6AmAE_qmZvu3050v-o15GACydSrbYqiXmryAM14C8O_XbBAJY8WB-4cd08hHieFcjfJDUutyGxEnbPvXUxntQbvGQ4Svv8_abLQeigoVPFgNao9D3ahdcS1odefzLF1a0spuP_aVxPK7zoFetkRuQHGUtArpkqXm4aVol_2wgGaECzLO7qJqQkBx3lG8mPhhxAD0A0M5DowRxknSjzyJBp3XFPgDzI9wqrjVUUy-5X5wjd4lHKaannWT-ksdnxXN81xJSV1DhltNqG4UmcuqRRztvc4vlv5cHoOVHdlz8cHXHc6O8vK4Kdq2vL-3_KyzzG_4SqKAJqJwEeqBnFxyLxI1OnAWyuXfqnwsStxrlKGKbYK20XV-MF7FGMMjeyxknYvhue4Dc04rmfTqsTZqJUttPHpi1qB3WBeN9UlY6SbcMZlF58WeYMOY-zojJqido3JYzKH3ikV6JToNc-1pBqEzFIHzhpTpHkLC-x-uOk6MJZ_gm5yh1-7Gb8P-jKTUxTahBvPBEA6JU3fI43wbQ2-AU0d_nV4iVzaifLpCYCC90DXPTTQW6dHE_7bidv4NTDQ0fWFVeBmDqFWBcziX1FLpiMPrplLCwpL-WJCRXQHayAWWiE-NeU_X_hi-T5Pcb4ijKHIcsV9VsvmmC00Rq3JQj8Z2LDzdf8Urh5MNd3WrVNAp8WDihgXc-qYT7XuuAedjTGazbiLFkHLq79Fh7vBMsr4jiOIJuw5tWjUQtsjoyUykutkTjIgwIao6TjfzImv7iqGjge6owGL3PFVquY1m5bEigTi5eyY4Rea6ozs8x5r7reCd81EfZXfhgvLnFiZ3QnauBp7X9MVbN9SAaE2Ikdtpcmy_pgATw1n0wsqh6wUVItB2cSW76DpowUi6dQqhFkR3FLblCb05rFLIXFB49nBqPx8jUNHpXG9G3Unvut75ZriTQh5iTT7doE2asQEBlI4BbTGAmEealR0wuw9pn5Zk_YNqsWgm33mveRbG1XUSRUswaczTTFenaMYRiCTyMQkgsKIXkuQ6WFsbiJ1I1jyO3eCwwIIvbb4RTZttlbGhHYm_H7DnJTU0zirPaA93F0RsUptIttxRdKMnVrQMA4V1K02_Peq7EF1DUeXoDBSwXWGS1OY-1m3HE5d815yogDtXso4cOdtmb-53nr_dbxNROYx0OjuWv0N7NZ5gWfMRCgrATfZd72lRE_S3WlA8GMDwit26Nvyx7c5UXZB7vzwrpoAUQEhZYZqu5ftC9wZDOyUkkLcDb7ngFbfCjxIF-6b1_53P_5obXf7bFucO2u-NuJByka-TsVYlQirUupCA25EG-qmTvVvkwcGt-4B9a1GDeicnoezjOqbPWSzdN4TTvHm3lMLC8zhw-e3hBin17Ym7oGJALSNsxCD5cniHNrHCT3d2n0ZwWE6xngfjZQili8qmzlacX5lvgy2MQrdVie9xrbyEvu_hGWCXvdrYm4D4RCtChd1SWup9nXjtwnMVfmM7_7M0M9PGx_Hn8-44nN8pPI0V1M_w_yyQ_a5vLtXiPnpEWByVcz8b9VxjpM9U_w7YzDiP3jagrrexXmcPy_wMpCx5uR-lkE7aCepuGa7jS7R-eKrHA6eYNzFv3AEJoYR9ryaPIJ0udnoJZYxxwNL6bbYajv3a-0brrv3FTVfCDPMcPBsMFGF4hW7uj-nkGqslOnfkrpGAnQHK_N40v785_MyRpjAeDA1nmeuNtQODalfxRWeweDmsoq4BngGCquedUetvpqaNA2JHvskCFSNB2z_oxKeVMKrfaE9ZPqh0RzyY4yoVYKNC0CnItX_RyEQ3V4qp-umgZneQySftDjkZikHyh9D7F64CtyjY0inu-iTO_LalZa2DZwcWuXGarWmHvTBrDMExG4tD72Ig32wlPx09ZEzSDHAGb-35qq2I5FBaaEnFty4H9DceN4-UkiT4zK9nOGCi8V3h9DCIiz5SLzr8sgXfaa8h_SRI5V5Z15mdA_Lym5TMujyrwmCdLKAQZOh2inlAXoDkyPxQ49nLMzpj92cnFejimw40-8NT2d4aV19Eyig_o1AHariuePAkjriHp_z8f4ztdE5oBcyYpQOO6ldTPBAdyrfnqtmPNXmVG9TKwR-I2J-pfhwjoBH5pE3tyeqnjbz1V3jYglBztW7WA5p-kFLqp-Zfiq5zs1pisP2rIT_erF3Rth7MJrNMNahxhFtN3D2wwN8i1K7JpXa9FZ4OWnwQEJg16rS-d5_WXgGUQ7P0130b3exQDnmo3EkfTW8hYdbSVlZdKuagMIS7Ca3O4lu0ncCOZkGDYeuMX2fsG9Ur7AMz2JSM5ka5A1EjlkLjiB6LHaeWJtvRk7JlUUjukuoNKVAlMmhOhQdEyOFLIIrlzLQCjut7cWL3xfM_uTPuCwgnJB4IYR1bR1QbLvmafBUFUTo-A9Vq4gOcRKQci8w8K75-wUPbiHiAwfCSHaSUT9nRaamzgFXU7ELOy6X0GD7ftWlfRKK1TEAP4OJl7F1idGhEyTfwxW5oM1YI8O9R0M5A9yGXObbb2blmmIzZWrhCPAiZCnVOPOsHYiYKn_a0ibDBPEMw70LDP9X9UdUdq-f5MI7FoN5943gPncjoV-E-DzCNeQLstdHb-4DGewlISLWhJaqVBeUXGNH39myLAZy-qxvHiikwmzA-jVPGW69pK6dwj4Z0rAPonK9iX5na6AdKwaE-jVLk-aYTgVOCiTZ0eGK3K_8PZJJQMR5NXeLthpDX52VZBsevhP73ty4Ktc63ZPD54QNRaPug9mnudNbEW7ywd9LGTE0tYs5R002n4STV5dWId5KIC2DZYFy20F62EXCm230PqH5rrLl-Z3IIwVg2-2fg2JQncA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_00f25efc321b605d016ae81a14bd7c87d1ac36273f81255170",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10182,
+    "completion_tokens": 492,
+    "total_tokens": 10674,
+    "cost": 0.001518675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10179,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001518675,
+      "upstream_inference_prompt_cost": 0.001272675,
+      "upstream_inference_completions_cost": 0.000246
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 230,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

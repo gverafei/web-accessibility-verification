@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="MikroTik makes networking hardware and software, used in nearly all countries of the world. Our mission is to make existing Internet technologies faster, more powerful and affordable to a wider range of users." name="description"/>
+<meta content="#10220e" name="theme-color"/>
+<title>MikroTik · Routers and Wireless</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17221b;
+      --muted: #526157;
+      --line: #dce3dc;
+      --paper: #fff;
+      --wash: #f3f6f2;
+      --green: #183c25;
+      --lime: #c4e576;
+      --max: 1200px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid #f1b92c; outline-offset: 4px; }
+    .skip {
+      position: absolute; left: 1rem; top: -5rem; z-index: 20;
+      padding: .75rem 1rem; background: white; color: #14251a;
+    }
+    .skip:focus { top: 1rem; }
+    .wrap { width: min(var(--max), calc(100% - 3rem)); margin-inline: auto; }
+    header {
+      position: relative; z-index: 2;
+      background: #10220e; color: white;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+    }
+    .bar {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: .65rem;
+      color: white; text-decoration: none; font-size: 1.2rem;
+      font-weight: 750; letter-spacing: .2em;
+    }
+    .brand-mark {
+      width: 31px; height: 31px; display: grid; place-items: center;
+      border: 2px solid currentColor; border-radius: 8px;
+      font-size: 1.15rem; line-height: 1; letter-spacing: 0;
+    }
+    nav ul { display: flex; align-items: center; gap: clamp(.8rem, 2.2vw, 2rem); list-style: none; margin: 0; padding: 0; }
+    nav a {
+      color: white; text-decoration: none; text-transform: uppercase;
+      letter-spacing: .08em; font-size: .75rem; font-weight: 650;
+      padding: .7rem 0; border-bottom: 2px solid transparent;
+    }
+    nav a:hover { border-color: var(--lime); }
+    .hero {
+      color: white; background-color: #163119;
+      background-image: linear-gradient(90deg, rgba(7,24,9,.52), rgba(7,24,9,.82)),
+        url("https://cdn.mikrotik.com/web-assets/website/assets/widgets/products-carousel/background/RDS_bg_1.webp");
+      background-size: cover; background-position: center;
+    }
+    .hero-inner {
+      min-height: 620px; padding-block: 4rem 3rem;
+      display: grid; grid-template-columns: 1.08fr .92fr;
+      align-items: center; gap: clamp(2rem, 6vw, 5.5rem);
+    }
+    .product-visual { display: grid; place-items: center; min-height: 300px; }
+    .product-visual img {
+      display: block; width: min(100%, 540px); max-height: 440px;
+      object-fit: contain; filter: drop-shadow(0 22px 30px rgba(0,0,0,.28));
+    }
+    .eyebrow {
+      margin: 0 0 .75rem; color: var(--lime); font-size: .76rem;
+      letter-spacing: .16em; text-transform: uppercase; font-weight: 750;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 1rem; font-size: clamp(2.4rem, 5vw, 4.25rem); line-height: 1.04; letter-spacing: -.04em; }
+    .hero-copy { max-width: 560px; color: #f5f7f2; font-size: 1.05rem; }
+    .specs { list-style: none; padding: 0; margin: 1.6rem 0 2rem; display: grid; gap: .55rem; }
+    .specs li { display: flex; align-items: center; gap: .75rem; color: #fff; }
+    .specs li::before {
+      content: "✓"; width: 1.55rem; height: 1.55rem; flex: 0 0 1.55rem;
+      display: grid; place-items: center; border: 1px solid #c8dfaa;
+      border-radius: 50%; color: var(--lime); font-weight: 800; font-size: .85rem;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 46px; padding: .65rem 1.1rem; border: 1px solid white;
+      color: white; text-decoration: none; font-weight: 700; font-size: .9rem;
+    }
+    .button.primary { background: white; color: #15311d; }
+    .button:hover { background: var(--lime); border-color: var(--lime); color: #14251a; }
+    main section { padding-block: clamp(3.5rem, 7vw, 6rem); }
+    .section-head { max-width: 740px; margin-bottom: 2.5rem; }
+    .section-head .eyebrow { color: #426433; }
+    h2 { margin-bottom: .6rem; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -.035em; }
+    .section-head p { color: var(--muted); font-size: 1.05rem; }
+    .categories {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+    }
+    .category {
+      min-height: 230px; position: relative; overflow: hidden;
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding: 1.2rem; background: var(--wash); border: 1px solid var(--line);
+      text-decoration: none; transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .category:hover { transform: translateY(-3px); box-shadow: 0 12px 28px #17221b18; }
+    .category img { width: 100%; height: 145px; object-fit: contain; }
+    .category span { font-weight: 750; font-size: 1.05rem; }
+    .more-link { display: inline-block; margin-top: 1.7rem; font-weight: 750; color: #28552d; }
+    .software {
+      background: #14291a; color: white;
+    }
+    .software .section-head .eyebrow { color: var(--lime); }
+    .software .section-head p { color: #e0e8df; }
+    .software-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .software-card {
+      padding: 1.5rem; border: 1px solid #ffffff50;
+      background: #ffffff0b; min-height: 180px;
+    }
+    .software-card h3 { margin-bottom: .45rem; font-size: 1.25rem; }
+    .software-card p { color: #e0e8df; margin-bottom: 1rem; }
+    .software-card a { color: var(--lime); font-weight: 700; }
+    .training {
+      display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem;
+      background: var(--wash); border-top: 1px solid var(--line);
+    }
+    .training p { max-width: 720px; color: var(--muted); margin-bottom: 0; }
+    footer { padding-block: 3.5rem 2rem; background: #101b14; color: white; }
+    .footer-top { display: flex; justify-content: space-between; gap: 2rem; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid #ffffff38; }
+    .footer-links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding-block: 2rem; }
+    .footer-links h2 { font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; }
+    .footer-links ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .45rem; }
+    .footer-links a { color: #e0e8e0; font-size: .9rem; text-decoration: none; }
+    .footer-links a:hover { text-decoration: underline; }
+    .legal { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid #ffffff38; padding-top: 1.25rem; color: #d3ddd4; font-size: .87rem; }
+    @media (max-width: 850px) {
+      .bar { align-items: flex-start; flex-direction: column; padding-block: 1rem; gap: .5rem; }
+      nav { width: 100%; overflow-x: auto; }
+      nav ul { width: max-content; gap: 1.25rem; }
+      .hero-inner { grid-template-columns: 1fr; min-height: 0; padding-block: 3.5rem; gap: 1rem; }
+      .product-visual { min-height: 220px; }
+      .product-visual img { max-height: 300px; }
+      .categories { grid-template-columns: repeat(2, 1fr); }
+      .footer-links { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 2rem, var(--max)); }
+      .brand { font-size: 1rem; }
+      nav a { font-size: .68rem; }
+      .hero-inner { padding-block: 2.8rem; }
+      .categories, .software-grid { grid-template-columns: 1fr; }
+      .category { min-height: 205px; }
+      .training { grid-template-columns: 1fr; }
+      .footer-top, .legal { align-items: flex-start; flex-direction: column; }
+      .footer-links { gap: 1.5rem 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">main#main > section.training > div.wrap > a.button { color: #15311d; }</style></head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<div class="wrap bar">
+<a class="brand" href="https://mikrotik.com/">
+<span aria-hidden="true" class="brand-mark">M</span><span>MikroTik</span>
+</a>
+<nav aria-label="Main navigation">
+<ul>
+<li><a href="https://mikrotik.com/hardware">Hardware</a></li>
+<li><a href="https://mikrotik.com/software/all">Software</a></li>
+<li><a href="https://mikrotik.com/buy">Distributors</a></li>
+<li><a href="https://mikrotik.com/support">Support</a></li>
+<li><a href="https://mikrotik.com/training">Training</a></li>
+<li><a href="https://mikrotik.com/aboutus/company">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-inner">
+<div class="product-visual">
+<img alt="MikroTik ROSE Data Server rack-mount storage and networking system" src="https://cdn.mikrotik.com/web-assets/rb_images/2438_lg.png"/>
+</div>
+<div>
+<p class="eyebrow">Featured hardware · Storage &amp; networking</p>
+<h1 id="hero-title">ROSE Data Server</h1>
+<p class="hero-copy">A high-performance, all-in-one storage, 100G networking, and container platform designed for enterprise environments. Featuring 20 U.2 NVMe storage slots and a special RouterOS Edition for Storage &amp; Compute (ROSE).</p>
+<ul class="specs">
+<li>20 × U.2 NVMe storage slots</li>
+<li>100G high-speed networking</li>
+<li>16-core 2 GHz ARM CPU and 32 GB DDR4 RAM</li>
+<li>Container-ready with dual hot-swappable power supplies</li>
+</ul>
+<div class="actions">
+<a class="button primary" href="https://mikrotik.com/product/rds2216">Product details</a>
+<a class="button" href="https://mikrotik.com/buy">Find a retailer</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="hardware-title">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Hardware</p>
+<h2 id="hardware-title">Build a network that fits</h2>
+<p>Routers, switches, and wireless systems for home offices, small businesses, and carrier-grade ISP infrastructure—with options for networks of every scale and budget.</p>
+</div>
+<div class="categories">
+<a class="category" href="https://mikrotik.com/products/group/ethernet-routers"><span>Ethernet routers</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/ethernet_routers_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/switches"><span>Switches</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/switches_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/wireless-systems"><span>Wireless systems</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/wireless_systems_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/indoor-wireless"><span>Indoor wireless</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/wireless_home_office_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/lte-5g-products"><span>LTE / 5G</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/LTE_5G_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/iot-products"><span>IoT products</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/IoT_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/60-ghz-products"><span>60 GHz products</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/60GHz_600.webp"/></a>
+<a class="category" href="https://mikrotik.com/products/group/routerboard"><span>RouterBOARD</span><img alt="" loading="lazy" src="https://cdn.mikrotik.com/web-assets/website/assets/widgets/categories-preview/routerboard_600.webp"/></a>
+</div>
+<a class="more-link" href="https://mikrotik.com/hardware">Explore all hardware <span aria-hidden="true">→</span></a>
+</div>
+</section>
+<section aria-labelledby="software-title" class="software">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Software</p>
+<h2 id="software-title">Tools to manage your network</h2>
+<p>Discover MikroTik software and resources for configuring, maintaining, and extending your network.</p>
+</div>
+<div class="software-grid">
+<article class="software-card">
+<h3>RouterOS</h3>
+<p>Explore the MikroTik network operating system.</p>
+<a href="https://mikrotik.com/software">Explore RouterOS →</a>
+</article>
+<article class="software-card">
+<h3>Downloads</h3>
+<p>Find software downloads and changelogs.</p>
+<a href="https://mikrotik.com/download">Browse downloads →</a>
+</article>
+<article class="software-card">
+<h3>WinBox</h3>
+<p>Use the MikroTik desktop app for network configuration.</p>
+<a href="https://mikrotik.com/winbox">Discover WinBox →</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="training-title" class="training">
+<div class="wrap training">
+<div>
+<p class="eyebrow">Learn with MikroTik</p>
+<h2 id="training-title">MikroTik Certified Training</h2>
+<p>Training sessions are organized by MikroTik Training Centers around the world for network engineers, integrators, and managers learning to configure wired and wireless networks with MikroTik RouterOS.</p>
+</div>
+<a class="button" href="https://mikrotik.com/training">View training schedule</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-top">
+<a class="brand" href="https://mikrotik.com/">
+<span aria-hidden="true" class="brand-mark">M</span><span>MikroTik</span>
+</a>
+<a class="button" href="https://mikrotik.com/notifications">Subscribe to our newsletter</a>
+</div>
+<div class="footer-links">
+<div><h2>Hardware</h2><ul>
+<li><a href="https://mikrotik.com/products/group/new">New products</a></li>
+<li><a href="https://mikrotik.com/products">Product search</a></li>
+<li><a href="https://mikrotik.com/products/group/switches">Switches</a></li>
+<li><a href="https://mikrotik.com/products/group/wireless-systems">Wireless systems</a></li>
+</ul></div>
+<div><h2>Software</h2><ul>
+<li><a href="https://mikrotik.com/download">Downloads</a></li>
+<li><a href="https://mikrotik.com/download/changelogs">Changelogs</a></li>
+<li><a href="https://mikrotik.com/mobile_app">Mobile apps</a></li>
+<li><a href="https://mikrotik.com/connectivity">Connectivity</a></li>
+</ul></div>
+<div><h2>Support</h2><ul>
+<li><a href="https://manual.mikrotik.com/">Documentation</a></li>
+<li><a href="https://forum.mikrotik.com/">Forum</a></li>
+<li><a href="https://mikrotik.com/consultants">Consultants</a></li>
+<li><a href="https://mikrotik.com/warranty">Warranty</a></li>
+</ul></div>
+<div><h2>Company</h2><ul>
+<li><a href="https://mikrotik.com/aboutus">Contacts</a></li>
+<li><a href="https://mikrotik.com/aboutus/company">About MikroTik</a></li>
+<li><a href="https://mikrotik.com/training">Training</a></li>
+<li><a href="https://mikrotik.com/buy">Find a distributor</a></li>
+</ul></div>
+</div>
+<div class="legal">
+<span>MikroTik · Routers and Wireless</span>
+<a href="https://mikrotik.com/privacy">Privacy policy</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target conveys an art-community purpose and gives artwork titles and artist names, but many featured artwork images are visibly broken. Artwork imagery is core to browsing and discovering art, so this is a material loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The repeated broken-image icons and underlined alt text interrupt the main gallery and make its artwork cards substantially less usable as a visual browsing interface. Other sections are legible and coherently arranged.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible controls, including search, category filters, navigation, and submission and account buttons, have understandable labels. No essential control defect is apparent.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target are coherent views of an art-community homepage. Their different layouts do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The headings and card text communicate the site\u2019s purpose, but repeated missing artwork imagery materially weakens the meaning of a page centered on exploring visual art.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating broken images**\n\nI\u2019m looking at the issue with broken images on editorial cards. The target includes these broken icons, alt labels, and a problem with presentation and semantics. It seems that while content titles may maintain some fidelity to the art community, the absence of images hampers browsing. This breakdown could lead to information loss and semantic issues, especially since imagery is crucial for art discovery. I\u2019ll need to gather this in JSON format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating broken images**\n\nI\u2019m looking at the issue with broken images on editorial cards. The target includes these broken icons, alt labels, and a problem with presentation and semantics. It seems that while content titles may maintain some fidelity to the art community, the absence of images hampers browsing. This breakdown could lead to information loss and semantic issues, especially since imagery is crucial for art discovery. I\u2019ll need to gather this in JSON format.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B9yLjE1mI_iPY3qYOjQlR2ig7cWMLvz5HTHnarAI8g5WcLHtPbTgRoijKe8dTF2vk86NkrYnWZ3y3ttXr11XsdKo0fG0wdDP3fFkX3ySMtV9_pBZedcCc9lrmwLSjAHJ8oPpLm6RyNOH1Ci84p9OkHLahQtZXE4jxN39OIJXTXFu1ywz8NHYlOCBjII39u7R03lLKb4OJmtXAW4L0BGsE7z8NtJGbVUTvxs4O_mY9PDhtKgWGymeYOLPxkejkjbXDgyf9IP1HT6p7lBQ2YhQSKisSSBKjhHa0m149mw9Ofuz3D7tFlKDbP6xvmN8_oxBVtNsyq_RL0Q1Z-6j3TacwaA64AF0XEZ-xtwY_834YTYBsWbQPrftqoJkcTYmaSnN6wf058AOGAOKXQECyr5f25tzewJNV5DNPVf8o9r7eJG0g8SIBtigUb6N9OuiWSWc21urJ4u5MuB5GbaZ2Jvn7opsZQ0KCTLPk6Fi4aCn0JZBWHQtyXfDUYuPPiAV8xEWzyia8Z6Vs6KbPpGTkwcxWu-mXUt3VWGT8RgYrLETZRgNc2Qq19gcM-RS_qOjbcMAXIXYOJBD3iN3mT-zNCwONDmKrT_LfcKSrM8IcxDWVLIomZtH-fFVvPLJglH_HBdRUnnu3RI9si-SxQE_atbBtB8zl3n2EUQQXMW_xt25YlSLXpI0Z5_XA2m69VwcvUkRoKAKWgPbaxctcR26-1JRsV1YQ1vxg3oTxWFKPEv_l6lls_cYrzjM380Bf2zQYfAbuIe9RpXsfXf_ND1rUC02jZyNBy4oG7G4ZD5RUuBmzx5Mwvph0xE7Su1DPbwTawe9clrlF8fj1XNNV2PPFeMQq1ijy4uO20aXtWGwSQ1qdASdo3HtiYVUxG683vBXMnCX08q5kxMYZ6gH4vApBV_2xR5ajqAyjEtPS5b44Yg59QNXy6JjfZKHycdSIeaPedHr9YbrLpEkMMMUsCLHt9Zw6rPYhdJFtJ1TOvF5w5YwNkfAWqQU1s6Hjxdf9pk_ltyhUirOp9EhtX0AqjqbQLJ2IecccvCH4P4K2P_ef59_wr4zanLy6ExqX4S3gQnFLVpqJLSxRPapE8qtld1Hsr1MazpPTZ9pUiZKq0SnIRiiu7g43ohOwk91Zf0sxDULGxXKV5Rt5iUjt-4SbnHBWLGswVOW8A0JAWN-ScOSp-RjGBOYQnA6gfCCUM3bx66jIrjv5-eQnq5whrJuCAqMddd5LIsJHxdoqO36oFnZQw4yxaUiu3SORLT7IWT44EL3j5h_CgsSPevyH17iUElsGJHSHMFcaDJa9OxgrgaKExXBxnuc3jfqo7AGUqM2QYpxIHNzt0HLn4d9zPGfXwLERpvkKH3HJ3vkFXfZbiORRX9G21uLUT6pkcgA9j5qjHvpaRsqH-otmDwH8peRc9dAP3cVebYTMmwJigKQ1w4x2OXT-twLV1UPQsQDvz0W1H4DUhBQd4TKT0TLdXH5G-1JBiBdCC7fYhaTmdQDV8NNQ3sXgPZr8lLkq6aGBNUm6EgPPTlgwp5XQ3Wvg8lpl8UesBzJZrqpT2jKi2jwbYdlOd_8ZRSEcc-VdFaZgOnJyO9LBhv8_ozCLZ3n1oh7eDuVQ9WDoPtjobzkoLGIAtXtsCPy9vVXRawyDJJ9y7gOLgdzFCUP_gRmRNJrPntKOlKcS8QTvtuTFsGyNXCSxTrjE4a__vWNOJGyKbUyGJmmoFaS3rYSwc8wmVqpwhlFZRsxa8Uxb0YXGyzddo5CjSuX6DNdvmLCBa4II-kSyN9DEbSx_oKSULWfVCdc2aJ9kP2FGL31l-xXBVDX2uhrIj7NNpwIF_BD-1Mdwyd8jodJHYkNvFl6tQSYG0ZvaMfnV7UZoWcJf77tRamMz3sPse_FWuXzJgvVHKZPiNh82Mh1_x8udo0w9rAFEJQ35DIPoZIoGLM_tJqVqjF1_2JuxTV4H5SjmOL_Ygj_Hb0CwxFcvZN9q2f4gs32MtgpLIlDQ8Ob_JUbXR_KRdynP43R_rIWMRiABYaYRsVCVlDlMAVoKlGMzyfxdqC1rnpz9ioewTGxrJJKA5t8YK8KV2IM-JkzNLNrjvMZBimQB2uZTEXwB0lYgZ1RVUWr4Xtihlm_Q76NcDCpHnaRkiYSvWrGuYpr89eun2fyh1DqlkJuEn_vmrbYSJxyZRD3oPih2Lb1eK3HNzFspFyTbibBmmtD99DyvcQTPyL4Coe-yZ5fGoyOEobUzckpwielsKC4-g3qgQrVMJ_g3IJ9082_7jGVlNG5VAbTTqVLizJNwG1EquFpPVOHYBNzwp-El62HmPiX-NK9ndW5cFY4u4NnpP52TCA2iEbeP8a3suFrbDSQBWANcCSr-X5ey8ybBfLvCZhPa9afbicCywAEzPFyo5t0s6RqO4zDq50nA6K2U2KRT16SMGMilzLl0RaECclxLmvu1Ts8hX0NM-fwi1olHBWeep9H6Km5kUo6CD9dRLJI-UlHn1MCBdfRLGKQ0i10Tc62JBa0hQRSgxIbhRXPMokWKoPsYtim541MfF9OWiXGsZaDuFC9jpWnxe4JiyyMdfCHZlbmQyGxkXC3wACMQYZSbkjGEVAIqpl0OuGJkk71LVBgZhhCks6456l6dXg9lNWsC10hauTYOTRtCO4ebHbZ8Az1kJh-vbX14Un66Vkvr3-t3oytr77_V5n9n4daFd_UiajyXN7OMelDxF6jX_GzntudPwJNYVZxZlPMeIItZaVRsD5ilyvkQuqyD9V9kCIQ-UPYHAC9VHDy8Tqu2Qo6Kiz8K2HFvYD96JH5yT_av0T64YZqR1uZBjMEO_4yJUE4P7OymShYIED4_nqbjB76NQ8tsiyZwlGSO_p_IqThuDpoDv7ZN92fuiLYo3mWIkS9bXc7rL1pHmf8Mc-qYTvSA0XNtueufmkjuhG7gECtGdvct0b39fMOk1UEowcelDxmdKpAwiXT3JO28ufaRuQMRmYncxLCM9inOU0lghAqh28nusUSPfIMT-BpgY0q284pY4gYxACACAqm4dWcDuylH6KLZgEwXmSzvYtVsYRpPu8lWhA54p_hEwj0AOC8tkZJWY1-AGlzrrKh03CU-0yCmd4IQI6J3-eyECLVgOe1FrxqgjmIXav3_TlFcgcm27JMWK7tXXhm2sMrl8tNj4G8LYlWQw1nlF3sKtwgJ707GvyRoW2tSM3RXlvxUM9JDDzwG3JsyO8Q9gqKbwKOrJIilhQRq8djZRrafj4CsZuQvyD66YcKHfUa3b2RvHi7sNg0immzHij4Y3tsh87s8vglFl4aNIuuMyDYGOOA-FgcuVQnOb3G208MMznzfR3aotdr9gs7gwe1q69agb06e_jrtllMRRPFWhUAXOtB8_BJt7djwvQw0ycgojW.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e7940e9cde5851f016ae81f6fec2487d1baba8bfe78b0e83c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10002,
+    "completion_tokens": 410,
+    "total_tokens": 10412,
+    "cost": 0.001455175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9999,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001455175,
+      "upstream_inference_prompt_cost": 0.001250175,
+      "upstream_inference_completions_cost": 0.000205
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 120,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible target presents coherent WPS tools, AI-related articles and tutorials, a download call to action, and company/support information appropriate to the site\u2019s purpose. Differences from the reference are permitted for a regenerated layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and sections are legible and orderly. The partial cards at the top are consistent with the viewport boundary, not evidence of substantial clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible actions such as \u201cExplore AI tools,\u201d \u201cRead the article,\u201d \u201cRead the guide,\u201d and \u201cFree Download\u201d have understandable labels. No essential visible control appears unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target views coherently show lower-page sections of a WPS Office site; their differing layouts do not make the comparison incoherent.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The headings, descriptions, links, download call to action and footer labels convey clear meaning relevant to an office-suite website.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing page coherence**\n\nI need to evaluate the target page for coherence. The screenshot shows that cards are clipped at the top and the call-to-action (CTA) footer at the bottom isn't fully visible, which could affect readability. I should compare this to the reference purpose WPS website. The target content cards and footer should have clear, visible links. However, there's a potential language issue with the footer being only in English. I believe the evidence aligns with the WPS site and that the semantic structure is adequate. I\u2019ll need the exact JSON too.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing page coherence**\n\nI need to evaluate the target page for coherence. The screenshot shows that cards are clipped at the top and the call-to-action (CTA) footer at the bottom isn't fully visible, which could affect readability. I should compare this to the reference purpose WPS website. The target content cards and footer should have clear, visible links. However, there's a potential language issue with the footer being only in English. I believe the evidence aligns with the WPS site and that the semantic structure is adequate. I\u2019ll need the exact JSON too.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CB1yqVDpt59G64rYzXBhibnjT3SJEXFVHwncfTED19nfhBl64X9_viGnBI43TFGZnjGB3NzTBYskavNF70RkAToY4eoLlv-UPXsLMWSB-qQs6RjLeRnDge6quAd71lWa4wIvAGn4_O0pKppvEIZ6TKC_uD6ytwr0sFyzAqnNTsVNwcjIZWevZf8XnX8wViJ-nPeZIX-dt5xC1Dts5xA4mmruijmThDVfmGFIbTQ4YR8PMT-A-F1Gbjsnff2eVF6Ap3hJtsYz3tIZL0FPxzQZ5j15jZF80kT49y3bxf7BEuf1jSIMhAfrfCzaczbW0q1rSgdzIAo6Y3YGbNGUDJcImOegBO6B1ThsiDFsSRfkj8kFvMK0jrjBOT_Z06IBLUWkH5PHv5qUc0of_qMElxys9qjoFELwR2sC7h-yRVQv05QEUgUrZia2sdIdTZCQll2NFHIxeOcnzw2UPpOOFJoL-g1BUzvzrl29051GewA6kg75-Mp9EdcqAadyl4JJpAbJfxN--ac_3tZjZss66SeLjA9lPZfYc7gOMjjUX58GkOlmrkz-vncYUSrzNSLDe6MWQjfzSyO6QQazETHFh8Dk3kJtJ72VlQI0WjwtrVNjkG0fTpxCxKj96hX--RM7ILL8RzoGRj3GA0Dm4qbOhinoSPwbMuBFL-o8v6u3K3WbVlrLW3ANQ7UMhZyEhpERBed_FWnpc_YIbQyGEgAZuj_vC7ULsKjeX5vb3WlU2QdbncyiS_rmloaQzEtknOV934xq6GAe3_buKeCMoutYh23ShZ5EkbI7vO-p-dR3AKpBTWpmTK6_rqNXKev5I9XVlLQ5bMiLkIwj5z9VF16jy095DzWAHbJEq9hAbO38BF2JTAnHbJyn0X4_lr-iTrUbyUIfCbc2bvazEcUkl5wcwdd2hlrhK2-slQuZ7wNG-DXauU_dMZLXdBpZZ-f53AF_YYhhaziDJ1H3z05VhBmMh3u-t9vV8JPEpNZ3STqksK8Yw4CCwvdKxhAL5acmQuKC9ZfOemBzoOouezpO6VIXnBTIU1tAQXnehJ3MeNjbdvZ0vNIkIGEXzqDIOQ3GPx4Ui8-VU3Bm1VIJwc3MAtCK-8Py_IDbgfVoe1pfvW6tKB29HM0bCNClnHv7hu2HMU-cLVgOwgSE2c7FvqAKXKvqEvP9EP1kI55Lcvp2b3xSPnATzllWBEwWdH62Aq9foAEl5oV7QlBGVYB4FKY5yJW2F1pXKUKpvrh6nsG3WKQYgitKO10WdzA60mokV3B0m8xYyF4ahFGzLrGG_aeDSFTQ7ksze_QZiiJHoWkgeLWmT8AuLfUDXcfrcVsPQcJoHxJpM2cbQ6PQXVMR6hKHkkdtM-EPZwajurkmkszYqbXR5YuyeO8li7Y_zEUhcva0vyM4aJmvV7VfAVjRFTbiaaCGnmAEtFYsBig8SWZgHrrv1xk8MSHNJL8Du41q-3DMwg-GOsF-Z-QtvJb7jEuwMmEsifCM4yREDkg_NDb1bwt6sq2GJ8sozpXOU7aEfQWzuBTG3IqQXeBcVgM5MQ36GxoC2ZHDtUgiUIB8Z2Z8NHBJn_RoCY8LRQQcdZLKhxNv0k2TmFbclr1Az4KpaF49Yxhwqj1koXCChM7J3pSbClOjlIM3bESIcS2RUMLwjK1Fg-A3-xmvi1JDay4uE2t_-HuqdSCSlEj6baLewvtQcbu2Lrnn7GAQbupzsKewMdjrFZEbkRLwMZih8e7y80aeIdZ04Frj2wijMrk3iTees6O4rK8X-Rct1_dc5dxpvMFwo3ch3aE3SdYLmK-cIdrU3CrQc4H6n01MhtIc6lmCksq5p8qc510bgZfOR-bbGl1Cospzp7Di5nhycB6xQbeLc3Vfh-6e2z8AMWFsJI2gIVZifpjXM2yjNDbv0pcq-EwlI-CifG1lKuQoOVOvzjGfuE5t9Iy_P4RJcay_ywLl9SBGpEQ4n2riZ0911EukoX9GmwyqODFzxXx2EKtEaAN6vv6_-b9WApnHOylEXZYorUKEInyHyN5zluxZzGjMjzsd8vfzZJFZKNSANlFkHbnrXlHePyuFGYNciyj9xsO6LWLKyg13vmgWC3nhisAU-sNdtwIvRWBNnrueuQ8GQbiQIZFdOXFmORhftr7da6hbzerMNX7T4RiHjHWq3b24N8EbghIcdK0OJOZ9EEbSsz0qH_-g2jAeBtIlzptu11MgqCwXUTbUWPKX_DMd1qm59VgXGoXvjr_73WjLCJyP4soAXA6uiMVsY8pWiVlbheSD2zHfunavaAHYyrDFDBa6tS_tn2liFKqjYa-aAv1gMgLfkwqon6Ps8Ea9BIzr3f_s6KcmXqG2MW8MZqCsRsq7fbUjC6Coy3uI_OVyi5-moEjIvaLPoKyQ0fjk-rYRCECFipR5Ojkp_U8-Dc9LFRRqsMN6x3mVzfM4GL4rFV-i7kbNfIPOceFbw5wGtYk8gpMD-kCAVptF874Gm1n5o9VIOdKXCZuuPOe2-5ZsrQa1mB4sjNWoTFLRG7cEZbWHOan4q4G2_Zo2aNd_Xk36NdBHTOQffQkehxiw6rDtBkspBSnaIjvWlxdHsynFA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06b8de7435784e83016ae82072ff7087d1b4a3447012b175d0",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8867,
+    "completion_tokens": 362,
+    "total_tokens": 9229,
+    "cost": 0.0012893,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8864,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012893,
+      "upstream_inference_prompt_cost": 0.0011083,
+      "upstream_inference_completions_cost": 0.000181
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

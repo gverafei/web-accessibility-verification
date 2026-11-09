@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The reference shows a populated \u201cWhat\u2019s happening\u201d section with multiple news images, while the corresponding target area is entirely blank. The heading and arrows remain, but the section\u2019s visible editorial content is missing.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"A large, otherwise empty area replaces the reference\u2019s visible carousel cards, leaving this section materially incomplete in the observed view.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The carousel\u2019s visible left and right arrow controls remain recognizable. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired views show corresponding regions of the same page; the missing target content is a localized defect, not a mismatched evidence set.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"The target retains the section heading but omits the visible news content that gives the section its meaning.\"}}",
+        "refusal": null,
+        "reasoning": "**Evaluating the logo carousel issue**\n\nI'm noticing that there's only the logo-carousel saved in context, with no documented news carousel. It seems like the image target for the entire carousel is blank, which might indicate it\u2019s missing image assets. The contract warns against assuming all broken image animations are resolutions. However, I wonder if the lower sections are outside of the viewport, which might explain the blank area. This definitely needs attention!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating the logo carousel issue**\n\nI'm noticing that there's only the logo-carousel saved in context, with no documented news carousel. It seems like the image target for the entire carousel is blank, which might indicate it\u2019s missing image assets. The contract warns against assuming all broken image animations are resolutions. However, I wonder if the lower sections are outside of the viewport, which might explain the blank area. This definitely needs attention!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BjFHHr8pyA26IDKYLHW8xhYRBlHk1FzX2Wofz0E6pRrHAtm3bPFALevwJbu0gEx2slE1QZtygRvpLRosvGpQlaIM9E9WH10R7ITSkxjDGahxVLZ7T-GzkpuYVqklxXE1u0APLY7GsSAFSuQM8wsymGB84df-aUyeil-YnJNZ3XMDNWXr6GrvLNSjukJTzfSO9eSDz04NIM6VUUsT9TcuBzAN2GOXHZ1MCusphL6s5j9t-Qz9S21aOFSH-N98VQ1pIYm_Ax1H2oJ5G9Hn48H8MHklKXfkriTsUY1-PNrtSBSWxUFO2-vF4m_KasgbFsdtwJbfX83wK3K242LsML5JNTnYnAkLBl-AtsxV_GIgj8ZQBYMJbyRJGXRgtmmJ01HnZLD6USIguK12-pZizIhp8vY7yEJ6Me03XeQYk9Wi8BoOLLhYVeSNGL69p__pnx3Y85laIhn2M6WgbOOhytnXGhjBXSu2oWrzvv0Z1DoNxRGyTMh8RWUf_qkKCXAWg_ctLaIyXnyZvS0hK3OG3qaAFfS2dtU6pC3m5DVqMAzyWFcvk7U0XReQuJ41WKKje0uVqqn7YokLpiQvT7W8wp4r0lX5GGFC1zWExuC-abAJzvulTon4W_qOQUeB_-lX-EW3KJLaEk5vFwRLL6zxMVR2opkj8FB9v-aBvmDPH6V4_2VKQ8vl9UGg_OeQrTpchhTiz-LXIEr6MYUGck4h72kjxCRjdOQIA0NiGukWYnAidy85XN1wKN3b50GKiAQA_QwM5X-V7kVYr02OTmM4K3UYuQhsHrCJX1r305-xwfhpkZWQOerQ1JCsq08Qv7uv6PCDkxUnsoEZHbAyMb4OljqrcV9Pnr_JTWt5xtDS7OPtbya0uHhOaNfVCvzyZZGYznIviuJwE-2kD3aTM7PAauP8GxRrwzjIkMNpcAGvW34uGbe02QQdr20Hmg4Bs44wFoqXPmjzqIi8xqkFr-PjOfYIrEpU5kFGd2k-wZj4C3vwldttVycDB6IK0g_tlNzVOuh3UDlaUbB56HUyByGsA2WCZ6_NDLRdwMoABvvzRQWw4NCwrkJbk37fDewFsb9ikySRh_gCL227LoMww20iL7-523Rz-MmL0FWR-VLruf4AcOYTfZdITxTG6Iy2OvnqfyWtaEFHVBRYCz7V6rYxlfW1Ah2fMy6vvkGJyoyZLqUfHjbTywWWCaQXlSbk9quoYjeCZW8o-g2PG_uwwccc-bPP0OwRz5L4ozP5ecaSJ06SAzGT2noNtESyqzCWsEj3km5JwacBD5BQJ_HO_7eg-VJXdU-UNcRjKiulzDiffJppBlpE9H692Yk-rcEvuMzs6hUQVObTHnR-cTKvdUlKQSe__J_YRBKYo27tnZg6Q7CDN3D09fIeuwJo6t1f1XVmwhSxKwCcuKLtGhW53fKFoLYUAZJvgPEhgafpEThaqE1ISrRhHhWvsNIVyeWDsfh3hF0_ANdqnf3GdCFBjOirTyuSa89aZrK21hZdpqn0oso15gguCwlK1ujdh-yRAbtOggT-A0WcABfsXQ6N97AVnC57MmeQKuhRCNr-KS-smAuWhQ0yZF5QSlVxqRRLArarLOL_HCOSRc9FoKBiW3aj4FjS9fNS_oLx9lLgG78wDMg1JcSEagpR3woGNGFABDQ1HHMVfLQH7H4hdMKRKr02Vc8poHA93sZF-GNt4lXVtNUY2d-uqTtccdcF8ALkpfa70K1spIshLSPNFz5TjSWphS99HUfIjAf_XAfGu0vWahMQu0hYcU74vnMTMBZfX_Ldc3xhxgpWsGNJY5CtDiTvZkifAzDT4k71v3IuYMmc6k2P_7BGZ6KFCi1a70CpIM5ADKNUkD93_5OHjuPnGsn-DfpCzVJ4F7AFkOwp6yByhKiKqv_Vo3yrwkIDiPIIHHWcRoCHf_AAmQiGzn3jJyduVhZUA0aYiEFYE3WArAPpyvUGKvFOTB032ADnRexo9uL219Mom-6Bpxd2ZG1gKRpDmufjw0RExKr21d3UDQy6jl8wTHZ0ELtpBLSQoUiFGX2G1nQ7kSffNhBY_Mrv2K5tpM49cBVUa9v1M_jVrSqjKr5QMQj6it5N5uw5NQonorCMtQrqppM9gGzdtslTUiEvOtYlesrVn6ld__AwjFhCFVqWTEU4sIiFtUAAlpRcvpwgVfDEmSipTSX-MYX-1376qLN83jb8Q8gQAJExKhERP60jvnKsld5kYLcrcSJst_lKezg1MEJ5oButHinWDsrztg6aNJkyMVarmwmJXRDPV6DVCwdc-BXBVaiFnXjT92NMfmX9GhgF-cIbPlByrlk_wmN2rmokzgCk7YaAAHQFaFcS0tDzHIG9obhmfiL0zr78ji9ui_wVGhQeacO7bjb7PqmeZlMf3rA2b_yBhetP96HYLVNKWw0rTn2ArZygv-48Uao4MxuWhTT9VIv5jk0cOS7HPhla9fFrrAqP4W9-HaHD-pIDeEci6J2m2c16g9mIwGMVSQmINRwDGHPoYRlHvDvl-8lkvwO5EivEKjZNtj5Ya5GmXNhO4d4kysNTKAl1I5ia0qikIQNVMcku3wg7uv3moILoxoFSJZ6TFh54yVdNJ0JvApRqpTTy-ow9dkvYV1ejA_tmC0zqwOfoTJMl6aXqrSvQ83-Zfy9DOSk6ACnvcHps4hjecbb0aJumj-LXFD5YByN9WHK6qAnH1JjwBS5zDv4GhDCMC2nvD7i-FUoDys0olNbmSKNpKCIFxMWQm61W-MwOAGdVZfJ6m2zUNZ-5Ku_HddEutUuu4lzxf11wuV35IVzdactprrLobbRt16TUOA-hbX31-nl95PG5lkYL152Gn5JRrEfdX9-FMtqco_NisJyucOeNazubfLOazunfsQMDVMkeiKRMB0ApWI46vkAZYnEn7wTIEKhdUgK1azlOfEWQl70xnAoRl60sC2yEjyg_WDjzQu8oCBiA5eKXD_q3tSESYQGUcFR50fPR1eo4NkoJq5dRkgzGCQpp4zZl4W-Aw9mscXtl6KvTUoyAdMIkBWp7SYi1jct63sAfNkqgwm8cTMz70FX9OYbJuGpdwfAFcbGp3R7Jb6kVHuGNxA3PiDaHW1JkLdhWiun4tGeKaXJwJgvO95JUUqFX4H1hKYZ0k6YwSb4ysKWY4407SeJqUAVzwnNfdjkVkwdCwGFa01u1OYWksdzlBZEFkQquf11lFJpzIG3JMF1yKmduaJnfNmPSXA1EnaRO7x0DyDNYPqU4LqLzRJG8pmRPwPqWVOIiBbSGfWzAUp8GGivnZjNvsDQE3tIbu6419e5HYNSsbSTVa90i9oJLRHua5y9XUreVtw3wk38xuDix0hzUgefZibaf4QW3BfUCkjnmM_x-TTPPJaaEueG6V96EvTwbKOjozQM57Q8I423VYStrTM2bU1cFLoFKU4gcaTqF7A-Uw6cFZn4soofEo5P1B_CCZt7_vaTMd90vVWV7ZOF6rdlzbPa7XP1hP8OINEyYOTOY56p9waY4TzGKXl0QUx6S_zUPxIVRSBmuMOnTbsNK0vfuASbXp04LnuZcxhigBnqDrN691-r0lW16eKjyNQbwGJgLoPkLA66UpWwgwEfyca5UIXihsccblbkZXj3Q4Wr4rF4yTM2FYt_bSfZOiGApzLraleySykkwoE30rxqvDoBrXsldnOdknkNNJw86pdHo1PRGHC8NL9aaEjPPiQDnp7YqwNTsc4ri7XqHC9dDWKndiYtBA0VeJGHPQsp0ZMe7jWRFKKIPCEn97vcWI6bXi8CqXHdNbF_FX9sKm9BRYdJKLBgDGST9VEPbk52ySDro9e4V6ygJffAWlvFoFbSn9Z8skNqb1XRVTMGcwosbBjhYWeTbbXYs3Zi2X6irg15bD3MfkWGfnxp0ZHlrXWW6XC2FgULqWK1OoHuesGCSZmRuYwM9_60GD1B22rkG5wDEL4wEyqCv_SP50YFiKz0R5HdFKY37agw5hsRbW4HAxpNvkyBfonStFn-0iglfeByKpmvw5QIh8bC3woCPVLn4A-c1kNAnfmv82QPyVTsIx7HzDMfw0nzLpawb5gvKunAAOujR_djrAWRtXUOcmlLXrmat87jVs_1rNyS8-jV7tcCeQYGT7MSRf8rKvUBtnyBq67zgnArwWNVEzddiEMOEZsEJ8kERVwLuxgbnK0HhVOKjyXWFGc76JZClewUqI1wrNw6Iu_2ZotrvKpqe3YinYY411aWVdy7LZFen8eFo30xRzfhqVZPcDnFhWGvGI2xftxQy3Cr-QpLL0CQO3Ixj4RwLCOcPjK3zk-s-3WXF3bMfwn1XHgYw5pyMu3iy7ig3sxoViZHBUIY_P66Z5V3W6RhR-ax-PMI0UrlimbK6jQwkqzvK_gJ9WQqJC5GQMpnKpkFDNTnoICpj4ciCGuKrFw1Vq1mFPugsxyM0AzfKcCLqQD_voScRU_f7S1dvBKEbsUH-Somxnnst8oIDStZs8de4CHpG_pygQI9s7zqPYHmkfh8RkrMskwyd4D3Sd94BKLgVq2z82ZuYFNlRSkSTaTJw4q-1B4p1EFGwnf0chlu3cBPtgXa_LhfJXFVeXQoW6Vomb0RSMAPtVGZouFkq70xHiDlVtEaOZcpoas4zAMMpxX8DopuIQpH58H45QYdq7KVaOhLCHVIDDYYa89sYQwOh-KQAj6qqQjauhheM0EY8bQQA5bJ4UZL_qZ9vX9ZzsnG3f9Sxe-mXi67cVGobQ_vUdRDaakVaUs2DeBejzC20Zd9JcpyS_s355IUF4sDGSBj_HTuYI-Dw2rFJcLg_z5K_7eQY6_IgHGpaIRLH3lWjTM9gsLk7K41VU6iDMRa3X0vCIbkEXanxih9eSOy_Up7.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_098905f189f9c719016ae818c1531c87d18926c762f41cf8b9",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11010,
+    "completion_tokens": 436,
+    "total_tokens": 11446,
+    "cost": 0.001594175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11007,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001594175,
+      "upstream_inference_prompt_cost": 0.001376175,
+      "upstream_inference_completions_cost": 0.000218
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 228,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

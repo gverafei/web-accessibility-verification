@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target presents popular event-search links and the familiar Eventbrite footer, which is coherent for the event-discovery purpose. The regenerated page need not reproduce the reference\u2019s state and city link layout.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The search links and footer columns are clearly arranged and readable. The differing colors and spacing are not material defects.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible navigation and event-search links have readable labels; no essential control is visibly obscured or unintelligible.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target both show an Eventbrite event-discovery page\u2019s lower-page search and footer context. Their layout differences are consistent with regeneration.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s heading, popular event searches, and footer labels communicate a coherent event-discovery purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7142,
+    "completion_tokens": 257,
+    "total_tokens": 7399,
+    "cost": 0.001021175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 7139,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001021175,
+      "upstream_inference_prompt_cost": 0.000892675,
+      "upstream_inference_completions_cost": 0.0001285
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

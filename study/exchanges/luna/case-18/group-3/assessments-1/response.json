@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The corresponding reference and target windows show the same customer story, case-study content, resource prompt, imagery, and cookie notice. The identical view at y=4000 is a captured state; the later matching view shows the content continuing coherently.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible content is legible and arranged coherently in both matching views. The large white area in the first window is also present in the reference and is not evidence of target-only loss.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible controls, including Contact Us, View Case Study, Browse Resources and Insights, and the cookie choices, retain readable labels and appear the same in reference and target.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots correspond exactly in the supplied windows, and the saved component inventories are consistent with the comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The case-study text and image and the resource call to action communicate a coherent page purpose; no material semantic loss is visible in the target.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11847,
+    "completion_tokens": 243,
+    "total_tokens": 12090,
+    "cost": 0.0016023,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11844,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016023,
+      "upstream_inference_prompt_cost": 0.0014808,
+      "upstream_inference_completions_cost": 0.0001215
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

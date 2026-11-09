@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible News Break, games, and Politics content is retained, including the quote, billionaire updates, poll, article headlines, imagery, and descriptions. Small spacing and scroll-position differences do not remove core information.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text and editorial imagery are legible and arranged coherently in both target views. The minor vertical offsets and differences at the sticky-header boundary are not substantial clipping or overlap.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible poll options and submit button, quote link, and game Play Now buttons remain identifiable and understandable. No interaction outcome is inferred.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding Forbes page sections and coherent states. The target differences are consistent with local layout and scroll-boundary variation.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target's quote, poll, games, and Politics headlines, descriptions, and imagery convey coherent meaning consistent with the page purpose.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating layout adjustments**\n\nI need to produce JSON for some layout adjustments. There are minor vertical offsets to consider, particularly for the politics content which remains the same. The header's sticky behavior at a certain position overlaps slightly with the top games, and the scroll alignment needs fine-tuning. The news break layout shows no defects, and the controls for polls remain consistent, with games being easily readable now. Overall, the evidence appears coherent and meets the semantic requirements.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating layout adjustments**\n\nI need to produce JSON for some layout adjustments. There are minor vertical offsets to consider, particularly for the politics content which remains the same. The header's sticky behavior at a certain position overlaps slightly with the top games, and the scroll alignment needs fine-tuning. The news break layout shows no defects, and the controls for polls remain consistent, with games being easily readable now. Overall, the evidence appears coherent and meets the semantic requirements.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B0AMIJCeriWQhdEAlrNLChWX7T0cLgqimI9VbdlwZMdhJSybjL__7CS74pajjoIMpoXA3-oUewx04ZdTgCWQWPeFN3gdW_9boJVSQnzq0ElHAtEuZT3K5mn4fUjdfUvYNRMQs_fFH9WTVvubuGuviKicEMBOJs0J-8UUncIk-cJEqOHN1BIGQ5xin2Cd6S8F-DzzHEsSY0V98cEL9MgQ88iXaFHAoqSdA4KUsKOxsASrz240XL6Xm_EvbNV8Yu5y0Y5laX51OxPNjLdRitRAEoF2HloYFQWNjy3qbmu6ZKUaxKSFCjPDjhg9CePv61M1_MWkQ_kv0bSmiwAyaJRT1vOmU_EKRjFPsTSec5mgNfPb2WeSmkeAOgbAkyXDYvxZw-pxwtD7SsP7x3VY5qJityigzb_7wmGVNgDDM7kNwRWnUiWarlOOLuSbHR4lXBlTvG5jtXgLycMVRAOSf1LBnOyJWP0Z-2IiDv8vLBe-8wutS7nX-9bjmC1rCQPx-AFFsyTKOjwrXKIrslXU2bVEi8i0o90vktuWGy-SyUaP_uay0oGIlwhM8VGipTmV6-2Sc_oC4mcYGBTHQR3faV2mh7EmXIbOxQM3njn0pRyJO-J6L5agGbNXRMrTHXPBFbS5usiC1JzHzlM1Obstsb6KbMdDL7YUC4QlZf-ScsFBGLRdfiIh7aR0jUt5ctWwdUtvNPcbdN8TPLIWTFen4ZsBGCuvDFl8kNfDVMQ2EYX5ZeXZ2xd0nTRNJ3EdX2qI3nIcV0RwYh3hHE6amE0SBh7P7gI2gskH0qgMFvrK__nWnSnFcwFz1H6cKPa2_sPpbOaPM7l_GdgyQhbTDhvYMySnNjVgW5PA9uSZmWXhGhQPfc6_0PMyx5CwQVsVwubl5zaOPtJObT30uPBAecNJoBZPNVYI0w4sUk_upbp_Xz6zpyrp9el2PLo0dizoc2M9W6_mucZl6qB05lnGkfpBh1f1NIVXysSVNXB1BZO26y6RyrNxudtLVnyeop2CnKcSpKCasLEtvdXAsJbyniK6p2bkcFTFRVQ5BfjrVtIU02Gj1gqKr5Md1IOrso4mr3-aoMYnhiIEe3uKK5kbKbnjjm_7WKo3lNxIZYvD_DmM_R7m_H2CwM-qSpnKEpoaw70kC7-bzNc2NrJCIF8HK0xL2f2vOKc2Lt_mBrAdn_-3kYjOJAmNsz_mKDiFnDcNIWFIacn0COSDCDXRk_nvdKeJIEUAWS0_j2TlNOgXekP6c6VAbHN15S3bZBB_UVdTLI2o5n2lQXmumWS43iKhql6ksa_nY6zN0EGYRofDkHLrcyAtA3ZjzFcczOEs6RMTKlH0fe1BvpoqNVHmwYBuuRUo2PtrGTbq9gGShk6YLB8BtU33FCj_Thv7BWvPJ-qTscSnUWSX05F6giwHcIxo28PnFucW37pND_dY9wpwdo5dQck4UUzdt3-5YStd3iruhYSGWTX1yT-BY6vl_gEM_dfDE6huq9cawFhJ2plQModjDgBIi-Z2fKMAdkkpI637nPX5hG4xsduM-Vw9IWxfO8NO80GbQJSBNxukeUNrn-fXUoVwrVVoKq1Elo5JXYxMRquGROp9lTa-8dTxJzP5VupwDWV3JJnn9HDUbVnlnWj5VxvGhTyOzCxtWShi7sRq_UXdWJtlqoxYX8pTofI-KcDmd1MvT9GPTC-DJPKievzxbswIY6MySZubzkvoSN6QBlpQivuu2tKqk9kxq12YFcQbjCWq8AXS5fGxQLOx0-BkA73FbiQFMTjLS1y_1C9zEwrAq4vR_ReLRA7F1a10QVdHKdGqV1hbrMALtNcpPGzeEVRmYse2tE71n04CwIJhYyZ0sjusNAp21QTxxjXwqSXbJ6V_8E3YHMkcfUXPvgpDLzgatE7UrjRpQaq_QO1bvwWdbuvrrNLEbEpMkHJQNgQtL0_JHMMhdUYbPaiXIuHoBDWgYOKY-4T8-woBd3g890D-sE_arKEe1_Y3F68_3rPiGFdso3idM1gtfTfNc5xlm-adsEHEV_s5mJn79yYcNg_o3JQIIzd0HRhDusY-oSCb70EOUBMKMZMjELgTRvMW3t2tZPcQTRW2bEto1JGv1hvV0POIktJv4WpZLjjorWhXYZ0BBQfJQyth7DbJ8UrndfkbQu6NF61WxW2_Rtrz_BhVN942KcyH3VLmtRoIq6L1TXPpzDKvli8OL96-RDUfEIuh4GWh4slm4EIbwMeS7lBI9zbUQ6-8lorooQh8RUmnoUXhW_328HSBvDIrlpJ9WLYHc59t6kvpGgrcmHowzkx28oeIv1vU39F9igcMPyyU6pOBSD9WDJuU1spQRT9TaZ6l8GDWDuCq3Frj8JGvVSOhT87ztpfznSc4TzlhvhxvzF-Lt_4WMz5luIuARU36VMcuMo7bWuSGALVZRRBECpwmN_MxPJXMJhrUjPa53VbtFTAFrEQ9mivETkM6GQoDAWAoAf948JQ8zFWhow_wBHDXiFXTz8QmnZOPNLGhycBXCOK0Ak11w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0e1a3fa119955d70016ae81cfe98d487d18a96ddfe28b01178",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18327,
+    "completion_tokens": 350,
+    "total_tokens": 18677,
+    "cost": 0.0024658,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18324,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024658,
+      "upstream_inference_prompt_cost": 0.0022908,
+      "upstream_inference_completions_cost": 0.000175
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target omits the reference\u2019s book feature content: the book cover, title/author, and descriptive text are absent from the large feature panel. This is substantive editorial information, not an advertising or documented animation difference.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The book feature\u2019s large image and text areas render as blank blocks in the target, leaving that section materially incomplete despite the surrounding page remaining legible.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"The reference shows publication links within the book feature, while the corresponding target panel is blank and does not preserve those visible controls.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied images are coherent, corresponding states of the same page and show assessable aligned regions. The localized missing book feature is a defect, not a mismatch in the evidence set.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"Without the book title, cover, author, or description, the target\u2019s book feature no longer conveys the specific content and meaning shown in the reference.\"}}",
+        "refusal": null,
+        "reasoning": "**Assessing missing book content**\n\nI need to evaluate a book image and see if the text panel is completely blank in contrast to the actual editorial content. I'm focusing on identifying if there\u2019s any defect in material, presentation, or semantics, especially with the large blank cards. It seems any action links or controls might be unseen due to this missing content. I need to consider the essential controls and whether they are present or not in the editorial card.**Identifying material defects**\n\nI might label a material defect due to the missing action controls on the book card. The screen reference shows publisher buttons at the bottom, yet there\u2019s no card text at all. It raises questions about whether the book card is supposed to be clickable, which may link to Stripe Press and Works in Progress. Additionally, target image 1 is missing a creative banner, but some text and buttons remain dynamic. The book cover and description are completely absent, which feels substantial.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing missing book content**\n\nI need to evaluate a book image and see if the text panel is completely blank in contrast to the actual editorial content. I'm focusing on identifying if there\u2019s any defect in material, presentation, or semantics, especially with the large blank cards. It seems any action links or controls might be unseen due to this missing content. I need to consider the essential controls and whether they are present or not in the editorial card.**Identifying material defects**\n\nI might label a material defect due to the missing action controls on the book card. The screen reference shows publisher buttons at the bottom, yet there\u2019s no card text at all. It raises questions about whether the book card is supposed to be clickable, which may link to Stripe Press and Works in Progress. Additionally, target image 1 is missing a creative banner, but some text and buttons remain dynamic. The book cover and description are completely absent, which feels substantial.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6AJiXw85ewy2FpgTuYLrdV3bgM8cUKuhRhJNwtIUi5AklCDnQrx4mZHiomj09EM-PQIgk0dLMOwKYyNJ8vprDUSBhZ8iFSKpEW290Q7M6tsST0ecDzfnSOgNXastYw3ZmKn0IPas9TcK76gV0SWabawC489nUFPx_WIxrwrbfBn1wFLy-tSa_umwT53HE_I5RRhTeZGynbCpPwO7Oflsz1sNUaSiKR1Goua3zRN76Y4fFGvwzZFhE42HU2Ks6rpOEiRs0KKovW60rNj79voFj3C0_pSVA6Swm3bbB5Bcab3jiaressUfHiZ4ydYqTvUGpQ-2A9ijX7z1K9D78Lqj2Ohle2mY7Qr0fQgWdv7fEwe_lo5ThhVotQFrHojWEuQgpbkmwRljU0hVlhiK553GoQj2zIFhDGTKYCRSwWK6vAZdud5XqWhNdsEF_hww_UumUGm4H6h_AxKVoTU2TDgbRAfI9OYKceIESLkKmGUzLVdkUMoCNobq5nDLy-m5YgP37o3B293giorFfXIKPDdFEXBcWriOLrcM2PUG7Yk-A-lZcW-lyxg4EFADD21HgeQRA3HIi4v2cup513GVaNZgQyIMnvcEzcDgphfUMPtsyM-db84Xoe-t8I0za3WDDk8A4SvroXUCt7kJextWWN51142YaHXuMJ5PXqf9MgA_uAIIALvZxm--TZX1ZglKvZKDxwSbfyS2J6Ia2JQ2ToPiWmUYWStWvx57VWi1rkRSLlbM-zJso0pACa8UT8CuSDmz3m9pjOQqxkc_OeerhuRT6K64NSBrAyeF-czsgWDcbi0sDRifywOr7IsIE__1g8ayKuYk79NhICkIJlH5XWtkINmSyA2nHiAEB1ZLPOh_RU2zUD-4Rz5s2nkuQ_dqpvyPk_kkjlJWI6XA-8d-wspx5FzHuNaxIQMWheE_VBolXYxOyHOK31hP_W-l-VSu_a5P6XzzTxSgaqdhsH2fbn0DNZ6_q7KMO0lrG3ho0bcVW40_vLFus2ViMRPLU5iwVwYaVOaD1tMj9pOcMd4Na-l3miHDlqj6IdzBsljayoqFsBLtp_m5jEYBYl1HltZuwEHTO_M5Kf9Q2VWso7RcfPm5UONn9grDAcE3QYk9zoCVmykv1l1TDQZky__Wmhzf6t_mYSwSdyxgjk4M5EYJR-P3qkNC9UtHGNd6VvGqrjBQX5gQO41Vd718DLLizXyI8nXkM8MORLh9NzD0SiXlBKm8n9u5z6dEmdRASOlJptAcFBvzqN7akYL1yGvFDVcQxzSpCZah9mqMjE5gKW64QmK6kH9kYMT1ZeXheLnovkPU1UrPXtUKBpoQLgqmPoreg-_8kG9H-hndi0Vw829wLnLC7K9shm-VMhCa_qB60EWlZWgx8J-67H0SKv_RTwkcGTcPxSu2ZooovzFtE4jrg6JhWRlwU2iDnVSQq6OpOH4cvcD3LhFjJ2EVGQd0hd1GwF1x7plKz0EkiL5sc_zahUP508Zax1AhHQQEZFulYsDk9NKynNOPQyd_1BFzxAwfgvfP5dbFQxG4pYqkzqOxl1ktvHPWVgoibCm7Y9AkWHmZFDco7bvgjSznyF_K0Zsvw1z-hBTrwEwv6zeEXKC5b0ux8t5vlkB2gPJokXulSU1S0-BZSHDh69dkIoeGvPtq1u9Znjz96mXZ9GMHIy2pknGVLHKEdfnqF6Ezxa24KToG_lTP57jfSfYbJMLL8X-Vq_vB9fs34zTPYCEuHzl4xx2bvOfYHvyCGPg9hnSlBoyE8TCoGGUP4sEuOKaIPBxrBhy8oS0Diwm1VJJRYaElKLXazs861jAH9Zxiks0UmFfc7_49uLlwgZdkrXbcGCuFWcZPV29eVWEJDt-R022LZMZ7DHLmNB53knAZzFOzVJKAaCSXiGGd7GtpNn8dE7noP7ZgxFct4mWm0u_-RHJvnmG5shrW9-1jQeUOo7wDc7vk-c03noT21X_9o3TRMTmq4SpSbrtQ_BwVLosvBwC2Wu7al2TK-z5xrMWgHDqywDq2USXrZqAejviM6X_MoVJ3-DTeeEN-j37QsAuX2DFEbfveeb4-Mf4WI-ekZwc0uCqkUVHF3MWglf67kney5mWy5EswkF1YGkNjqdqc0LiJugHe_yA2EraaCMnLoKWnxAydjIQePAq1X7Z82fUe2jz2nkLn_Z3-ytxPUnNleDjSJZacZpyM4ieEJVfywCxzo7dnt4hXs8I73QHbj4qulN_pRSh4jeMlW_ZQtbMjbfwxn51dImBTlvk7ty-_E6KGCGF3o01Rw4BB9wphQAgYAZo4ET4zIMvw6j3SYtEufBWAMtbGTRb7kWKxVM8b-qHU4quVzD-lhtNV_Q94j03AjbTjbdft0oY2_NY4Lu4e9BhCcZjk9Kmf2myF0QKphCDkk7t-bVn1241TMU_T2fey6SSLSoKh_Hda4BQimhoF9mX-Q4C4n7xSOzLT8K6QAEyenrgNXEpAZn57xACnetGw7eWBhawRWCv1HFmAcIWLvxL9YsSH-zYGmxjkCtiT20vaF7Py5gFVnXyv_2phd9AU9IpvOBO4HoMz5Jdcfc1nDS4l9XmYuHMz58zv_HqJfiWUEy_QVTA36EbPzvjoWbnjv2Q5ETTOU294tmjBPr5isuymzcEC5WVvxEjaQrFLxlBeg0AEqJVz2ptOkLeeYk2wVlqzpKUDeJrvMAHgYso2TFA5GFYargBl9LffAaYPkqT3budaHc2iVmyvuLCeoGNtovh8xxoHrV8TTF6thuiWODftNnn6myw3S5q5sRtwhd40zJmnJsmKPflRcAcv0NRWK5j7z0iWmibuiQNT6KQ5dmFH4BJLJQaUJqoP2L0woxEmCiYYba3eRhI7tyvp14cBB1mU8pjI1M-2n4ueYmCyg_5tRl4cmY4jo6kkpgtnXcWL0SYrIKLWhamr-bGbi9hiREYQvYNtWPTQHaE9rlGkxPuvNkuMzfO7ybhW6tQyM9gdeDCmlJHbQItZturGxufjE8Q9gjOrt4qSv7CH3TGa6QjYqLTRkrIBUsn4W9pmPsbiAFkRwMA-69DGaY9epaPv5S88sRfoBoQ1pvI7Iy5NX480Zo8gcvP8whnafj3wEG3d6hqTv0KTxJfhDDwg-hdE3Zca_JUKDGgv7YWWJufohzLjO_XS7LB6WXk_ynulmo8Ov-8fNlkOko7ecIVkrZgTh581s1QHj0SGnivKJO6cLYbYW6rbgNE7ny7kpOEpKforVbIU-IN-YvLxtC813_WfsYSiI6Tw7enuceDOEV4oJgvQ15wKfOpbGB1U-O0GeHhodlIfGZBm8Yyzvx41jgHqonOaW9RaFFpluQYaIJFwPBwkTjqfAr3qDgJl7iN_-S7fxSZ-lJkV64WqFkjtTTJTjeigTK1lDzzjR1IeQbW7z8078p_uTu_5Ylzk722Nw8y71dlmGPW8o9rLPeFQJUOzMKOxhmfTwEDUCFXvx4JPkxB3MJgaFabe8l7hu8IDgeA-X8tN8PgNTpT-CJHYol8FUId0YsljSZXtNgd9P3DscSvdH7iMcXsk03CfWIq7OJf_AfhDXgYZYAzTdaU3sknpay0i5dtMldC5PwOH6JpWToKMSx_tE6mjfxpJszgKLSjvKEUJ6iHNxZI2yIy3TBtpfx3IWLVNPwndqCKDCE7KnxnRYPttF5Q5wFGjHA93L0dXDmi-xaaqwb3Btkx3xp5jxPWbgolcd0SbmIfSiwnobXc7MKvZw6LIKmLt7kD6GoQuxO1TthZ4b-ai3GMGoQS5Y0zDxuL9j25G_39LZ6RVrrdF3W8wrLZR9S_GQYp-pfko_6rNb94EVHzBVl61uavm2qXijNa2gIfULYsAOc_bIESAUDVk_TyzaC-ez3QwrL4U_cck01YBwV4bSOY3JYP_32G1O1ovmYc9rYchpPrnEbsYxAIIpCTW5Nm_4nKaWMTqlpzXUPIolGDHQiNClZg78B8vf-nUpF7eJ5biMJw88GvgS7Oa2LbyEfaggg8nFcOjZ9tEAN0lxBwshYc5v1tYzbiStZnblbY6aw7lNqzxoK4xKtnJpV_BoxQcOMi-MF2AitxzIHMAXEKd7uc3ewhjliM1RvzUJ2CGeGwHMU1qPIlxGUMGiyOwxXdROahmUehD6fdrt69xu9PEio-_mdZSyA0ICnyomQD-TFgbdMyEB0EsoJW8Q1blMrj1cPHvco-KXsEMHMKu7RUiCcfo9KYXwYFlYIMeemV3yv_B7DKT92K2EbDF_N7-iqyp3kB9mNe7s9J6FeaDMYe-tII5oWqvpewlOzrsidM0scgMcUMlIo-iGP2y9gUek9f4ZhswH199p1ulInnphf-jhoD4sdk3haspJelCf7Qi1f3yS5kmXLQb2sEkQ9c5w6qtpY9W7ne4CAQqudbBuM1mYLJcAGDr4fFRm3nMlLy3sEhO3wFE_uVXcl7ogyRSON-7x_QqH5s4lNpTqWbxNXWUI7qTp_cb6T6oiHCPO2z8RHXHPn2nQAzB_kZDPzQGW72Q-xfLiljX7hwVpX4gvI9rL5vsfShOrPvRBHpI2oPOfi51re1R1KVeC9gwe07Z79jJptpFylGiagaWiGxL80w6pW03iZn8eIohnOAlTbgu2Bp_O9nnncFFoikSik597hAtv95_Am1RfQU6HnmEhjqgsHxRBw1du2I8QlgvQslgt_9yBEg7IJ24cYeA6YIfZls4qKOmwQj53VFZmrHjWNNUfU1fdCrL2TeFEB5evUWQkbhgBqAGpvCljYp7q7ZZvxQDWhVnRdJRa6WQPH_Rzh5LdW9DQv_7Kq4Cdn9K1fds5sImbenPr8fAvM5EpwTVjL4gDmFiCNvWu5tioAF1vATP6gjFtYMWpMR0lckAiCQBvgVVwwrwFtAJeLVx4xU3zpFAlMa-hPbr_L-BxUZY_gcK74uTIsxciKAdGsnWuO8LJ-cqsLOFjyt8NxvyWwnqZ48TwX7BYW_qlF8iW5xCu956lsqdyw2DPNFrKy-SBly8_-pKzp8SE-ZwoJVTcPUn4bweJ63utgHSrB_Ax9Qe7M_uOJhs-0ETlpW7VA-dK6WfYDiS8ZDJjE2J_4S22qzFYjCq5dfAt9psfXanDCaQ8y-0tPGWElSYDn6roVZr9JDTQFoeIb__N5Bywo3dmmyVVbtOB8K8xdG-Z7JDNZ8LauMXm7LrvVC6Q7E-0_iydu4aVvzSQoUFGO1INxhFqf1Q5z1gHIj05ixieVMv20eqaLZ9rOc7whiDC8HbIzGxEgUQK3btRguNFJ9aDc810VeXDgoY3KbxSilI9PyWr5PRyEpmn8GK1CoQgbyvtN3nEJTY4HDdNNVAkfBvZYmhpRjKsHXlgtoa8JyRAYKkw7yMegVXJC8rDNh4dlx50SwJnvsOERn0xGDmddemVjkt1C04evQ_8iPQ7Ch65mrbUVvbk8MblMvbVjrqLkwaxtBfFDRQo5t1i6ZborNf0zXcGEjioHGf6PHMViF-M7d22Lfsx_r8xyNJ1ywzL8mPBvXqCxwg82av_o-BOV9NyaD6KqQ8hKyjU-dk3U4jnB75iGepugUZ-maBDE4cnYUjPFPr3nY5.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0572c7e5731b757d016ae8025c660087d182eb217f0d1162e7",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11035,
+    "completion_tokens": 525,
+    "total_tokens": 11560,
+    "cost": 0.0016418,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11032,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016418,
+      "upstream_inference_prompt_cost": 0.0013793,
+      "upstream_inference_completions_cost": 0.0002625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 281,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

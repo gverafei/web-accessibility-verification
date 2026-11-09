@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target shows a coherent TIME-style news-site footer, including newsletter signup and section, about, and subscription links. The reference\u2019s different editorial and games content does not require a matching inventory under the regenerated-page contract.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible text and footer sections are legible and arranged clearly, with no substantial overlap or clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The email field, clearly labeled newsletter button, and footer links are identifiable. No unobserved interaction behavior is assumed.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied target and reference views form a coherent comparison of a regenerated news-site interface; their differing layouts and scroll positions are permitted.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target\u2019s newsletter invitation, email field, and labeled site links convey clear meaning appropriate to a news-site footer.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating target footer content**\n\nI'm focusing on judging the target footer in comparison to the reference midsections while considering scrolling. I need to verify that the footer contains coherent and relevant content, which seems to align with the purpose of broad TIME news. I'll look at how it includes references to games and health, along with newsletter controls and links. It appears that the content is coherent and meets the requirements, so I need to ensure to format this in JSON accurately.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating target footer content**\n\nI'm focusing on judging the target footer in comparison to the reference midsections while considering scrolling. I need to verify that the footer contains coherent and relevant content, which seems to align with the purpose of broad TIME news. I'll look at how it includes references to games and health, along with newsletter controls and links. It appears that the content is coherent and meets the requirements, so I need to ensure to format this in JSON accurately.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6Bo3tDXwomtjDXRWXSGNx3dAq6cvF2B9lvmaWjt_d5SOAryXn31Vzw0fI_i6P-qBqI2sbCLNVSGlk2GP18H7IHgngCqKpg7Jsg3HufBjmypjEHg8QZ9hjUfPFn1h8pdhZuupuZQnGwY2C1PElfh3Kw-y25-B2QE5u18PuyOh29bS1kkjPFzIbHg4HO8cb40UqB-i5q89zZSpOsFp8qoCiDXrPOhKk79TTeP1HhNxoOyCO4r9Oyh5b_-1VoXfNi2PDSgPKoclFqRec44UlSrJ-63b82bprUdqofXpruVMoCi9QAN8uUmkY392G2vGNJ3wuE3-y31I3XFf2PiJ2JzLefrA_ghJ4_OmpY8U1f42M7c1d_l6wfkhEckzPBdc6vB09PO19NUhO1Sm_sSQQ8-qMTjVVq_b6u9iws0x165Kb3qZUAk-tsJc9IxEMbxmx0Dc8NcLijBAPgUN0IWkxP3S8R2VOvtohSFuwmbHg2FWrooiJ7kyK_4n8wlWV1JB1n6v7Lh1WF_BDTf1cXsyVb9aw8HKSGlHxC41fIMymHA98GS4tabyxG5ttA6NcIELHU9repV9NqEg2jWfCs-7cp2ZKkYpmCifYgWXu-BoKOORn1oRBC4Z-QUjxdYYTYUOua2ih6SFR0kJk0eOEg2YOrhjXH97hWWNSGgRSMx3ouxk394L_iKk6QxRnFR0_rKLqvVTXcQm-D7bXOnlvRKKElg-2HqZ5iRMlwKGfcYkih-pMJumNa3aRWwYkAvieIEYD8PoPF2zykLdFQEBALmMyDBxGL6sW0Upn2xgSF8Dgcx8vc_7MCjLnjqiS1KV9JNs6VtJTiPCXXuxSBqNUemlIRn1aWLDoaAZ3u-3qaN-pOGZ4cGurxNifx0Qea56dWy1WpCY5lrjByVBnkOqegxtn21op8AkTzQMgzxXWyUULt51h8_OATWjGrmtabs6opmXNOhdorAZawEBmfaIUwqUyt3YlxhWa61MYxfwWKS3Dw0tJrsHEU84xc_VcLdGcaa0DnI3UKJD0Wdqgk_B3C18xINkEYHPvKIiG_fpno0AhrZaWh1uRpgd7PlFBufcTN-xcftz9Muj_Lxuvn4f_RhdAegl8oDMy2dREHsYClwVfOv4I2KkGePAH_rPS2ye2HAcMTD923jbfJBl1cKHMvhO84mH9HJIX1qJ5Vvm4rZTmD020D6Ydnr4dwbJqW4UwIiybOCsWfuHA80yRoiTXiROCzlqm36Z79Vf-9FzFw6mFFCTZr4fDasugN8HzMHKVJsjRyCkb1iF1sjSf9Kxowpd4Az4ld2reb3OQoJZiw6oAac6_y6OLGtQWIdf0-HlVqRM_LuI96N5E_DdZnCKBKjKX-JOpMyms6g1ZSPzmsESr4tnQAC9CvQLkH2u1mFulftBiOW1ZAfUVxP6TQ-eGsK3VgCWuQBSEfup_VYDR0hZEMm24nO1aTCgmTmv1s57apBL3pkk1bK2mvoO-rKkVv4FQhapfIDzhnaGZDomjBW4zsZMZeOEbFxEj_QSm4L05dOnTDy4b3jU4Sp1hl5_EO6cOxQUNls-XfeU314swvkJmwacC-2V595MBIVr7n6blQwCeGfjwTkqUBtrXsLntDp1zaHzqJ7MvWnGzigf9bdKqdc-o5MDYr9CkmqZSaqAesJy5eAdkL-FJIzERCj2r6Jt3EEOv627LS2Bfa1QpffO3OUVdwptyJt4NJaiKRbJHOMGCKWYx2ydGnL0-DgwIF24I1IWeHkMoGInRhRN1-vV5Fa4uYx231MWfmhJLnNmdGRd9kNtGGbMItpyzzWHJYkVfmyOkHjarpt17UyaL9_aKeDkmaqr7OMq773kzGqpeEVRM-wgmb4c6yllK7niFb5cQu7Mg7FF16m0SPa_kBueH6RpABjDS-p47y0AGD15AQBwTnL_p6rFfmunBwtp46TL2H5klUYfdofnmID01OwlduyIvPkMjsto80CzzLhObC4NM6omhgxGEsDGL-qy_fbC_iDO9tIm2_vbCX-FRIjad0jmiRJyp9Xfr7SY2gw7rOWFlpNnt92VNrq4iwt7q7iq5LSpxAJglqRTkhQXRweTT678J5JDbP8XPeFiU6rlHWu7GgX0d_rre98bFwm9E5ouP2ZcvsEtIFg_F8ugz5l8_Qh_zdyBiXZAC-WAE1E4Tzz8iBLi6w7FsjqcnxKaRnX8nNYH4lllfS1XoYmtw78gqKtKPh_JS31fyzj0PCAdNzaik-m7Nhdfb4WcCVK0ceyvx6vuDWi9R0K20Pwf9SE6S0xZ-v3D-ttNYfi9y4Km-56kOEmJ4ut7ssjUzp5lqMk-4XtO23FV3pZ5ts5tahCk3Gl41jERlwiNu6h-ZzJ58OOoZ5V3tlu3kLfpWLqdnPiJ59jTzMYV3c3RjwvAjYTbQRIx6UzxX6CrTMiZGQHi-n1BpHe8Cm9AjUKsODId4KHIFG59dZ5iN-4aoU5mQTbeCKdxHNSS1y7y2fIgUT4HxxCxKv4fZe6vQJVFoYPqaoR_xzvETG_wR7QDevaUfNR4ywbrIrKlyNh9K_4f1Sfw8NBRgz1MLOSLOerB0fJXxmnPJkMDc3x7FdC5C4Q5_2EMkvnBwX13ouJDoMw0OXq9EBcO9PpQHk6ZNrmmuGR6UuHH4NQ77Hr25jrM1dQZp_8qZRjBQOboZuRCKNURkSYHPNZzjfwIyD0l4O0nOd7hgRKvgVtQEsFMsA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0bda91a0b94466d4016ae81a35549887d1a3f488e820504576",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12537,
+    "completion_tokens": 339,
+    "total_tokens": 12876,
+    "cost": 0.00173655,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12534,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00173655,
+      "upstream_inference_prompt_cost": 0.00156705,
+      "upstream_inference_completions_cost": 0.0001695
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

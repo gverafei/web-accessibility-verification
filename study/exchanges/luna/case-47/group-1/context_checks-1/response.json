@@ -1,0 +1,49 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The target retains the page heading, server list, and auxiliary tools, but the main bandwidth-test interface shown in the reference is replaced by a failed embedded frame, losing the central task content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"A large gray failed-frame area occupies the bandwidth-test panel in both target views, making the primary interface unavailable rather than merely changing its appearance.\"\n  },\n  \"controls\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"The reference visibly provides a labeled Start control for the primary speed-test task; the target's failed frame shows no such control.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target depict the same OVHcloud speed-test page and corresponding scroll regions. The failed target frame is an assessable localized defect, not a mismatched evidence set.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"material_defect\",\n    \"rationale\": \"Although the surrounding text and auxiliary tools remain meaningful, the target no longer presents the primary bandwidth-test interface or explains its results through the visible test panel.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BhFwAof-WjAIlIpHMITP4h4T-4V-tDkkBJkb_fNa1mI_nbQ2KepEScoLrr-2SIZhI3z_Zjp8h6EJEOyRx7vxHPno-dDGgDvox24bzeP4VrQsbdqpvs5MckPuee6NvHfWCAXstas4r7sg3yrfVKq0UYw4dafXdCNt6HPaDnUqmO8ZxUxZI7_ArV1FKD1bui4aHGKmEFb9wK3KderjWZewJlb9ZDR-TQhb6Q984ud7ThOEBv0J5F1XgNlJHWMg0yP-0Omg5HB5EMmvaIv9GpBF-eXt7Iw42POe5_wMOvsPeizMXnNztf2OMPU5tgP_lN2VWp3KiLZ_U8EoRILhje_ccJL_qvcglxUa0NBC73BJxPGeULeLNAJywszGGLM2JBskGeaVE9MXGNoOi34HMEpQ7BQ-HH2Bngkbw86bkfHCa-kTbfCiknLBjiPbCk4ERLSEr-CNPc9a1OAKkqW5y7_Yu5_3hg5fXjKGo0PtFJ1RTe7BMz7H_KqN8jF5_5xdT296gFNrVk9eGky7P991RVICwHIOkGBY_kv1Fx1QZ_eynr1CDCz6uxCvAmvknek7DD5mVCJfg9xLsHoMdHHZyDeaKYjXvdOoFsDadLHeHjjQ2dFchR1QxaXqvi6ZOi2pM32719s8osnkYslqG2ALDpJ3ZXOyWL4kSe3mD6O_ePuG1x-VTpHRiIDqdUQZvgUM8XFlfGKYdzt1l4cy1y3lkZaUVHChFDxVU3bbRLHV2-BYa8kRWvhcoxporKnCt6jtUPe9bILFo47QwsEYU62fXpnh0x_3K_erVzljgCCLRIcLLaBqaXST0tideqCDlbRg7bbax-5Bo1Rg5ipI-yqTyIcEZoY4yBRW1tpE2XBiG-muOFMl-GzDt-AWra7U2iqRlBYkKzMOu3VByEzWuXh9D4bBPbBeMIV8A75J5Ivv4jt4tuzvtdosSZ2vYcOliuRuXnrzc46E59ZV-7_C7jn-Mr0H2lTSr9b10wc2JGIB2PwZyhOXuKM7zc2I2YYTYEdk4LBD3gIT3Rg_Z59mHspYDfv31jVP6YzncHK_563K91fDtOguIxowDEzzf2hA0yXDzppcsXt11Ql0X4OzrwGiaGouNKNTn2JUl5m4WQcle0-8P37yiV7xs3SQl7bgf6DHhfzcUlf1ZrMtfFXp6z5YUMPbY5yhyPpoYxDoL_wy5T1sRVj7RtLeWDM5uuiKWdxIZZOiOeQRVLCTeHWAr1eT7M_iNVfFEKnE4-u4TrxBLIP6DHNPAQe6I6NayLFSC0LqlS-tSLK9cNsf_mQXXjGKKOcQ9sglxS4FbNKurk3qdQyaBQbkQffNPi7408ImeqBO2m2xzQ2vdPpctemPpKwNH_2ca6etNGVndq9NgPLiz6f8dv12wgsg8EX-8KNqI33vN9t9eWN3_2Rmgy7L6S9CXEyRSjdbzFTWwUXl8eLqFp4GruKaCJ5oPEKF5ajKjBGWlhZgxPegM5pI1ZZXTdZ03jlctG7mknqUpfHXw8iUm79Xh4hYuScLsKX9N4xfpX5p6q8ChCKCCTjKtPRPWJfuMzEGA2yHiQShRAT2fL04B0Q9SVE2llFM-cqf83KKeFj_3edo22annOQEy1qHYTg5_qYspNthMUAj0giIUMzSqCoqsnAAlmm8ZgYhaT78O4hv5mDYE-MLPZfahI9a4FyrPeWevcIGK_Sr-au4NFUoWNM4ZZot1DtLRFn7ZymEjdvHy6_QnLXe7KiKwrH2RH0de-ATqHqe-UQEZ1Kb1tK2l1D6_osvjHKIdgI3PG3R-vwyfOYEtWIiVoWj3e-l_GH0y9tby4y0UZ3sRGmIxulyBtxsiyretjqEMz2W0Da-EpIElfMJD6GpuK1KBaK1-80zYd4fcpyArjSB86l9wJTcooEB07RYM1nghMlEFJV12C9ltXwxp8Jxu3711GtW3_5BR-D_xkhVeGeNsm98zORi50BWgXYBGgK_DiV1qMiNI3NvszudUvfxAoduhbLmpEpjz8PLCgAy4K6AT0lbF8_WjKqtnQ3Q_05TaT544wWBeDH3TPucYAfl32n3P9-VKQ2qqcMwtbXiv8fU2BZWQ76tXomwHbk_lC6ncm6d27jtBJ1ESsllIpqm7slf4b3HGSuGOKWnIsxT9u6uqg_rpcozr1qwjj6FGescVaRRrMRNC806nUvDo8mV10pTFOETeEln53OTjHAD59Dadkuw75qtmL7eg4B4KJFzJN-uAuhVTnVux6ImGJNk4FC-cqr1iUpz0_2rZeU_Typ2UAEbUB2ri03fRmiTwGIACO2YUUjvGay5Zbn17WdwXWNPnRz7cHHvLzUKY2LMVk3fYlR-PKlcXm3LfT9zu0drtz-G7WSmbpzm0ybb4rKtOyxP3GEAGZVqhYuGWW-TGZaCc9_npNiGCTsG5-eNv28a78nbPsvDefNHsmZORNJsrqGJ191S0u4DxUOeRxQmh1d8Q6Z7Nu6xbRynve9rjA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_051415829ecde967016ae8184429b487d1a544d2942fd65f57",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9912,
+    "completion_tokens": 347,
+    "total_tokens": 10259,
+    "cost": 0.001412425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9909,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001412425,
+      "upstream_inference_prompt_cost": 0.001238925,
+      "upstream_inference_completions_cost": 0.0001735
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

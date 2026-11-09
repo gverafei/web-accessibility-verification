@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Stripe | Financial Infrastructure to Grow Your Revenue</title>
+<meta content="Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement." name="description"/>
+<link href="https://stripe.com/en-mx" rel="canonical"/>
+<style>
+    :root {
+      --ink: #0a2540;
+      --ink-soft: #425466;
+      --brand: #533afd;
+      --brand-dark: #4434d4;
+      --surface: #ffffff;
+      --surface-alt: #f6f9fc;
+      --border: #e3e8ee;
+      --focus: #0a2540;
+      --radius: 8px;
+      --max: 1152px;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--surface);
+      line-height: 1.5;
+      font-size: 17px;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--brand-dark); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--ink); }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+    .container { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 100;
+      background: var(--ink); color: #fff; padding: .6rem 1rem; border-radius: var(--radius);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    /* Header */
+    .site-header { border-bottom: 1px solid var(--border); background: #fff; position: sticky; top: 0; z-index: 50; }
+    .site-header .container { display: flex; align-items: center; gap: 1.5rem; min-height: 64px; flex-wrap: wrap; padding-block: .5rem; }
+    .logo { font-weight: 700; font-size: 1.9rem; letter-spacing: -.04em; color: var(--ink); text-decoration: none; }
+    .primary-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .primary-nav a { color: var(--ink); text-decoration: none; font-size: .95rem; padding: .25rem 0; }
+    .primary-nav a:hover { text-decoration: underline; }
+    .header-actions { margin-left: auto; display: flex; gap: .75rem; flex-wrap: wrap; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .7rem 1.1rem; border-radius: var(--radius);
+      font-weight: 600; font-size: .95rem; text-decoration: none; border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-primary:hover { background: var(--brand-dark); color: #fff; }
+    .btn-secondary { background: #fff; color: var(--brand-dark); border-color: #b9b5f5; }
+    .btn-secondary:hover { background: var(--surface-alt); color: var(--ink); }
+    .btn-ghost { background: #fff; color: var(--ink); border-color: var(--border); }
+
+    /* Hero */
+    .hero { padding: 5rem 0 4rem; background: linear-gradient(120deg, #f6f9fc 0%, #ffffff 55%, #f1eeff 100%); }
+    .eyebrow { font-size: .95rem; color: var(--ink-soft); margin: 0 0 1rem; }
+    .eyebrow strong { color: var(--ink); }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.12; letter-spacing: -.02em; margin: 0 0 1.5rem; max-width: 22ch; font-weight: 500; }
+    .hero p.lead { font-size: 1.25rem; color: var(--ink-soft); max-width: 46ch; margin: 0 0 2rem; }
+    .actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+
+    /* Customer strip */
+    .logo-strip { border-block: 1px solid var(--border); padding: 1.25rem 0; background: #fff; }
+    .logo-strip h2 { font-size: .9rem; font-weight: 500; color: var(--ink-soft); margin: 0 0 .75rem; text-align: center; }
+    .logo-strip ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem 1.5rem; }
+    .logo-strip a { color: var(--ink); font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+    .logo-strip a:hover { text-decoration: underline; }
+
+    /* Sections */
+    section.block { padding: 5rem 0; }
+    section.block.alt { background: var(--surface-alt); }
+    .section-head { max-width: 46rem; margin-bottom: 2.5rem; }
+    h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); line-height: 1.2; letter-spacing: -.01em; margin: 0 0 .75rem; font-weight: 500; }
+    h3 { font-size: 1.2rem; margin: 0 0 .5rem; font-weight: 600; }
+    .section-head p { color: var(--ink-soft); margin: 0; font-size: 1.1rem; }
+
+    .grid { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .grid.cols-2 { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 960px) {
+      .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .card {
+      background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1.5rem; display: flex; flex-direction: column; gap: .5rem;
+    }
+    .card p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
+    .card a.card-link { font-weight: 600; margin-top: auto; padding-top: .5rem; }
+    .card a.card-title { color: var(--ink); text-decoration: none; }
+    .card a.card-title:hover { text-decoration: underline; }
+
+    /* Stats */
+    .stats { display: grid; gap: 1.5rem; grid-template-columns: 1fr 1fr; margin: 0; }
+    @media (min-width: 900px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+    .stats div { border-top: 2px solid var(--brand); padding-top: 1rem; }
+    .stats dt { order: 2; color: var(--ink-soft); font-size: .98rem; }
+    .stats dd { order: 1; margin: 0; font-size: 2.4rem; font-weight: 500; letter-spacing: -.02em; }
+    .stats div { display: flex; flex-direction: column; }
+
+    /* Disclosure */
+    details.story {
+      background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem;
+    }
+    details.story + details.story { margin-top: .75rem; }
+    details.story summary {
+      cursor: pointer; font-weight: 600; font-size: 1.05rem; list-style: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    details.story summary::-webkit-details-marker { display: none; }
+    details.story summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--brand-dark); }
+    details.story[open] summary::after { content: "–"; }
+    details.story[open] summary { margin-bottom: .75rem; }
+    details.story p { margin: 0 0 .75rem; color: var(--ink-soft); }
+    details.story ul { margin: 0 0 .75rem; padding-left: 1.2rem; color: var(--ink-soft); }
+
+    /* Dark developer band */
+    .dark { background: #0a2540; color: #e6ebf1; }
+    .dark h2, .dark h3 { color: #fff; }
+    .dark .section-head p, .dark p { color: #c1cedb; }
+    .dark a { color: #b6b0ff; }
+    .dark .card { background: #102f52; border-color: #234a72; }
+    .dark .card a.card-title { color: #fff; }
+    .dark .card p { color: #c1cedb; }
+
+    /* CTA band */
+    .cta-band { padding: 4.5rem 0; text-align: left; }
+    .cta-band .actions { margin-top: 1.5rem; }
+
+    /* Footer */
+    .site-footer { background: var(--surface-alt); border-top: 1px solid var(--border); padding: 3.5rem 0 2rem; font-size: .95rem; }
+    .footer-grid { display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; }
+    @media (min-width: 900px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
+    .footer-grid h2 { font-size: .95rem; font-weight: 600; margin: 0 0 .75rem; }
+    .footer-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+    .footer-grid a { color: var(--ink); text-decoration: none; }
+    .footer-grid a:hover { text-decoration: underline; }
+    .footer-bottom { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+    .footer-bottom a { color: var(--ink-soft); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+<style data-warp-repair="true">.dark > .container > .actions > .btn-primary.btn { color: #ffffff; }</style><style data-warp-repair="true">.actions > a[href$="stripe"] { color: #4434d4; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container">
+<a aria-label="Stripe homepage" class="logo" href="https://stripe.com/en-mx">stripe</a>
+<nav aria-label="Primary" class="primary-nav">
+<ul>
+<li><a href="https://stripe.com/en-mx/products">Products</a></li>
+<li><a href="https://stripe.com/en-mx/enterprise">Solutions</a></li>
+<li><a href="https://docs.stripe.com/development">Developers</a></li>
+<li><a href="https://stripe.com/en-mx/blog">Resources</a></li>
+<li><a href="https://stripe.com/en-mx/pricing">Pricing</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="btn btn-ghost" href="https://dashboard.stripe.com/login">Sign in</a>
+<a class="btn btn-primary" href="https://stripe.com/en-mx/contact/sales">Contact sales</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="container">
+<p class="eyebrow">Global GDP running on Stripe: <strong>1.73102825%</strong></p>
+<h1 id="hero-title">Financial infrastructure to grow your revenue.</h1>
+<p class="lead">Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.</p>
+<div class="actions">
+<a class="btn btn-primary" href="https://dashboard.stripe.com/register">Get started</a>
+<a class="btn btn-secondary" href="https://dashboard.stripe.com/login/oauth/google/init">Sign up with Google</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="customers-title" class="logo-strip">
+<div class="container">
+<h2 id="customers-title">Trusted by businesses building on Stripe</h2>
+<ul>
+<li><a href="https://stripe.com/en-mx/customers/amazon">Amazon</a></li>
+<li><a href="https://stripe.com/en-mx/newsroom/news/nvidia-collaboration-with-stripe">NVIDIA</a></li>
+<li><a href="https://stripe.com/en-mx/customers/cursor">Cursor</a></li>
+<li><a href="https://stripe.com/en-mx/newsroom/news/google-and-stripe">Google</a></li>
+<li><a href="https://stripe.com/en-mx/customers/shopify">Shopify</a></li>
+<li><a href="https://stripe.com/en-mx/customers/ramp">Ramp</a></li>
+<li><a href="https://stripe.com/en-mx/customers/figma">Figma</a></li>
+<li><a href="https://stripe.com/en-mx/customers/anthropic">Anthropic</a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="solutions-title" class="block">
+<div class="container">
+<div class="section-head">
+<h2 id="solutions-title">Flexible solutions for every business model.</h2>
+<p>Grow your business with a comprehensive set of payments and financial tools, designed to work individually or together.</p>
+</div>
+<div class="grid cols-3">
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/payments">Accept and optimize payments globally</a></h3>
+<p>Simplify checkout, expand your reach, and boost conversion online and in person.</p>
+<a class="card-link" href="https://stripe.com/en-mx/payments">Explore Payments</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/billing">Enable any billing model</a></h3>
+<p>Launch fast with billing software that supports many pricing strategies and payment methods.</p>
+<a class="card-link" href="https://stripe.com/en-mx/billing">Explore Billing</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/use-cases/agentic-commerce">Monetize through agentic commerce</a></h3>
+<p>Make your products shoppable through AI agents while remaining the merchant of record.</p>
+<a class="card-link" href="https://stripe.com/en-mx/use-cases/agentic-commerce">Explore agentic commerce</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/issuing">Create a card issuing program</a></h3>
+<p>Offer commercial or consumer cards to create new revenue streams.</p>
+<a class="card-link" href="https://stripe.com/en-mx/issuing">Explore Issuing</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/use-cases/crypto">Move money with stablecoins and crypto</a></h3>
+<p>Integrate stablecoin payments and payouts and move money globally.</p>
+<a class="card-link" href="https://stripe.com/en-mx/use-cases/crypto">Explore stablecoins and crypto</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/connect">Embed payments in your platform</a></h3>
+<p>Add payment capabilities to your platform and simplify global expansion.</p>
+<a class="card-link" href="https://stripe.com/en-mx/connect">Explore Connect</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="stats-title" class="block alt">
+<div class="container">
+<div class="section-head">
+<h2 id="stats-title">The backbone of global commerce</h2>
+</div>
+<dl class="stats">
+<div><dd>135+</dd><dt>currencies and payment methods supported</dt></div>
+<div><dd>$1.9T</dd><dt>in payments volume processed in 2025</dt></div>
+<div><dd>99.999%</dd><dt>historical uptime for Stripe services (<a href="https://status.stripe.com">status page</a>)</dt></div>
+<div><dd>200M+</dd><dt>active subscriptions managed on Stripe Billing</dt></div>
+</dl>
+</div>
+</section>
+<section aria-labelledby="enterprise-title" class="block">
+<div class="container">
+<div class="section-head">
+<h2 id="enterprise-title">Powering businesses of all sizes.</h2>
+<p>Enterprise teams and startups use Stripe to grow, from expanding internationally to reimagining the customer experience.</p>
+</div>
+<details class="story" open="">
+<summary>Hertz unifies commerce with Stripe.</summary>
+<p>Hertz uses Stripe across 160 countries and more than 11,000 locations globally.</p>
+<p><a href="https://stripe.com/en-mx/customers/hertz">Read the Hertz story</a></p>
+</details>
+<details class="story">
+<summary>URBN consolidates $5 billion in online and in-store revenue onto Stripe.</summary>
+<p>URBN brings together more than five consumer brands and over 700 store locations.</p>
+<p><a href="https://stripe.com/en-mx/customers/urbn">Read the URBN story</a></p>
+</details>
+<details class="story">
+<summary>Instacart powers online grocery delivery with Stripe.</summary>
+<p>Instacart serves more than 600,000 shoppers with 1,800 retail partners.</p>
+<p><a href="https://stripe.com/en-mx/customers/instacart">Read the Instacart story</a></p>
+</details>
+<details class="story">
+<summary>Le Monde improves local and international payments with Stripe.</summary>
+<p>Le Monde reports that all of its digital and print payments run on Stripe.</p>
+<p><a href="https://stripe.com/en-mx/customers/le-monde">Read the Le Monde story</a></p>
+</details>
+<div class="actions" style="margin-top:1.5rem">
+<a class="btn btn-secondary" href="https://stripe.com/en-mx/enterprise">Stripe for enterprises</a>
+<a class="btn btn-ghost" href="https://stripe.com/en-mx/professional-services">Professional services</a>
+<a class="btn btn-ghost" href="https://stripe.com/en-mx/support-plans">Support plans</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="startups-title" class="block alt">
+<div class="container">
+<div class="section-head">
+<h2 id="startups-title">Build a foundation for your startup.</h2>
+<p>From stablecoin pioneers to leading AI companies, Stripe helps startups build on easy-to-integrate financial infrastructure.</p>
+</div>
+<div class="grid cols-3">
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/startups#application">Stripe Startups program</a></h3>
+<p>Access financial benefits, a focused community, and expert resources.</p>
+<a class="card-link" href="https://stripe.com/en-mx/startups#application">Apply now</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/atlas">Stripe Atlas</a></h3>
+<p>Incorporate and get what you need to fundraise, bank, and accept payments.</p>
+<a class="card-link" href="https://stripe.com/en-mx/atlas">Start your company</a>
+</article>
+<article class="card">
+<h3><a class="card-title" href="https://stripe.com/en-mx/customers/lovable">Lovable grows with Stripe</a></h3>
+<p>A vibe-coding platform scales its payments on Stripe.</p>
+<a class="card-link" href="https://stripe.com/en-mx/customers/lovable">Read Lovable’s story</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="platforms-title" class="block">
+<div class="container">
+<div class="section-head">
+<h2 id="platforms-title">Make your SaaS platform a complete financial operating system.</h2>
+<p>Vertical SaaS platforms use Stripe to add embedded payments and financial services to their products.</p>
+</div>
+<div class="grid cols-3">
+<article class="card">
+<h3>Get to market faster</h3>
+<p>Launch and scale payments products with embedded components and no-code tools.</p>
+<a class="card-link" href="https://stripe.com/en-mx/guides/best-practices-for-launching-and-scaling-platform-payments">Read the guide</a>
+</article>
+<article class="card">
+<h3>Grow new lines of revenue</h3>
+<p>Monetize platform transactions, including payments, card interchange, and financing fees.</p>
+<a class="card-link" href="https://stripe.com/en-mx/guides/introduction-to-monetizing-payments">Read the guide</a>
+</article>
+<article class="card">
+<h3>Manage platform risk</h3>
+<p>Use tools for compliance, credit risk, fraud prevention, and account security.</p>
+<a class="card-link" href="https://stripe.com/en-mx/guides/introduction-to-risk-management">Read the guide</a>
+</article>
+</div>
+<div class="actions" style="margin-top:1.5rem">
+<a class="btn btn-secondary" href="https://stripe.com/en-mx/use-cases/platforms">Stripe for platforms</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="developers-title" class="block dark">
+<div class="container">
+<div class="section-head">
+<h2 id="developers-title">Reliable, extensible infrastructure for every stack.</h2>
+<p>Adapt Stripe to your business needs with flexible integration options.</p>
+</div>
+<div class="grid cols-3">
+<article class="card">
+<h3>Connect to existing systems</h3>
+<p>Orchestrate payments across processors and connect to third parties with APIs, partner apps, or prebuilt integrations.</p>
+<a class="card-link" href="https://marketplace.stripe.com/">App Marketplace</a>
+</article>
+<article class="card">
+<h3>Scale with confidence</h3>
+<p>Handle thousands of transactions per second, including over 500 million API requests per day.</p>
+<a class="card-link" href="https://docs.stripe.com/api">API reference</a>
+</article>
+<article class="card">
+<h3>Choose an integration path</h3>
+<p>From no-code payment links to building your own integration with SDKs and APIs.</p>
+<a class="card-link" href="https://docs.stripe.com/development">Get started</a>
+</article>
+</div>
+<div class="actions" style="margin-top:2rem">
+<a class="btn btn-primary" href="https://docs.stripe.com/development">View developer docs</a>
+<a class="btn btn-secondary" href="https://github.com/stripe">View Stripe’s GitHub</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="events-title" class="block">
+<div class="container">
+<div class="section-head">
+<h2 id="events-title">What’s happening</h2>
+<p>See the latest from Stripe.</p>
+</div>
+<div class="grid cols-3">
+<article class="card">
+<h3>Businesses on Stripe generated $1.9T in 2025.</h3>
+<p>Our annual letter explores the trends defining the internet economy.</p>
+<a class="card-link" href="https://stripe.com/en-mx/annual-updates/2025">Read the letter</a>
+</article>
+<article class="card">
+<h3>Stripe Sessions</h3>
+<p>See how Stripe is building the economic infrastructure for AI.</p>
+<a class="card-link" href="https://stripe.com/en-mx/sessions">Visit Sessions</a>
+</article>
+<article class="card">
+<h3>Read the Stripe blog</h3>
+<p>Product news, guides, and ideas from the Stripe team.</p>
+<a class="card-link" href="https://stripe.com/en-mx/blog">Go to the blog</a>
+</article>
+</div>
+</div>
+</section>
+</main>
+<section aria-labelledby="cta-title" class="cta-band alt" style="background:var(--surface-alt)">
+<div class="container">
+<h2 id="cta-title">Ready to get started?</h2>
+<p style="color:var(--ink-soft);font-size:1.1rem;max-width:44rem;margin:0">Create an account instantly, or contact us to design a custom package for your business.</p>
+<div class="actions">
+<a class="btn btn-primary" href="https://dashboard.stripe.com/register">Start now</a>
+<a class="btn btn-secondary" href="https://stripe.com/en-mx/contact/sales">Contact sales</a>
+<a class="btn btn-ghost" href="https://stripe.com/en-mx/pricing">See pricing details</a>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<nav aria-labelledby="f-products">
+<h2 id="f-products">Products</h2>
+<ul>
+<li><a href="https://stripe.com/en-mx/pricing">Pricing</a></li>
+<li><a href="https://stripe.com/en-mx/billing">Billing</a></li>
+<li><a href="https://stripe.com/en-mx/connect">Connect</a></li>
+<li><a href="https://stripe.com/en-mx/payments">Payments</a></li>
+<li><a href="https://stripe.com/en-mx/issuing">Issuing</a></li>
+<li><a href="https://stripe.com/en-mx/tax">Tax</a></li>
+<li><a href="https://stripe.com/en-mx/terminal">Terminal</a></li>
+<li><a href="https://stripe.com/en-mx/treasury">Treasury</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-solutions">
+<h2 id="f-solutions">Solutions</h2>
+<ul>
+<li><a href="https://stripe.com/en-mx/enterprise">Enterprises</a></li>
+<li><a href="https://stripe.com/en-mx/startups">Startups</a></li>
+<li><a href="https://stripe.com/en-mx/use-cases/ecommerce">Ecommerce</a></li>
+<li><a href="https://stripe.com/en-mx/use-cases/marketplaces">Marketplaces</a></li>
+<li><a href="https://stripe.com/en-mx/use-cases/saas">SaaS</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-developers">
+<h2 id="f-developers">Developers</h2>
+<ul>
+<li><a href="https://docs.stripe.com/">Documentation</a></li>
+<li><a href="https://docs.stripe.com/api">API reference</a></li>
+<li><a href="https://status.stripe.com/">API status</a></li>
+<li><a href="https://docs.stripe.com/development">Libraries and SDKs</a></li>
+<li><a href="https://stripe.dev/">Developer blog</a></li>
+</ul>
+</nav>
+<nav aria-labelledby="f-company">
+<h2 id="f-company">Company and support</h2>
+<ul>
+<li><a href="https://stripe.com/en-mx/about">About</a></li>
+<li><a href="https://stripe.com/en-mx/careers">Careers</a></li>
+<li><a href="https://stripe.com/en-mx/newsroom">Newsroom</a></li>
+<li><a href="https://support.stripe.com/">Get support</a></li>
+<li><a href="https://stripe.com/en-mx/privacy">Privacy and terms</a></li>
+<li><a href="https://stripe.com/en-mx/sitemap">Sitemap</a></li>
+</ul>
+</nav>
+</div>
+<div class="footer-bottom">
+<p style="margin:0">© 2026 Stripe, LLC.</p>
+<p style="margin:0"><a href="https://stripe.com/en-mx">Mexico (English)</a></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

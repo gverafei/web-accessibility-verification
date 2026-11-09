@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target matches the reference in both supplied windows, retaining the visible LINE service cards, descriptions, and organization.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible cards and text are legible and coherently arranged; no material overlap or clipping is apparent.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible navigation and card affordances appear preserved and understandable. No interaction behavior is inferred.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots form a coherent comparison and are visually identical in the supplied regions.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The displayed service names, imagery, and descriptions convey coherent meaning consistent with the page\u2019s service-directory purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9837,
+    "completion_tokens": 172,
+    "total_tokens": 10009,
+    "cost": 0.00131555,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9834,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00131555,
+      "upstream_inference_prompt_cost": 0.00122955,
+      "upstream_inference_completions_cost": 8.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

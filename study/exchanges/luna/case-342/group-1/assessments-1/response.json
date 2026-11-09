@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The reference and target screenshots are visually identical in both supplied regions, retaining the page heading, Disney Parks content, links, descriptions, and Disney Store section.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Visible text and links are legible and arranged consistently; no material overlap or clipping is apparent.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation and content links retain readable labels and recognizable purposes.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The paired reference and target states match exactly across both supplied windows and form a coherent comparison.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The page\u2019s purpose and the meaning of its visible sections, descriptions, and links remain clear.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10796,
+    "completion_tokens": 172,
+    "total_tokens": 10968,
+    "cost": 0.001435425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10793,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001435425,
+      "upstream_inference_prompt_cost": 0.001349425,
+      "upstream_inference_completions_cost": 8.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

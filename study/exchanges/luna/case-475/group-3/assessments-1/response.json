@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target match in both supplied windows, retaining the visible article, newsletter, subscriber, podcast, and footer content.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged in both windows; the large blank area is present in both.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible links and the \u201cStart my subscription!\u201d control are clearly labeled and preserved.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The paired reference and target screenshots show matching content at corresponding page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible headings, article titles, descriptions, and footer labels convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Checking JSON output**\n\nI need to ensure we produce the output in JSON format. I'm focusing on matching the exact same hash screenshots and checking if everything aligns. There\u2019s a big blank area in the Partner Center that\u2019s identical in both versions. I'm wondering if it's likely related to advertising or embedding, but since they're both the same, I want to make sure the controls are visible, the footer is intact, and subscriptions are accounted for. Good!",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Checking JSON output**\n\nI need to ensure we produce the output in JSON format. I'm focusing on matching the exact same hash screenshots and checking if everything aligns. There\u2019s a big blank area in the Partner Center that\u2019s identical in both versions. I'm wondering if it's likely related to advertising or embedding, but since they're both the same, I want to make sure the controls are visible, the footer is intact, and subscriptions are accounted for. Good!",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BwBnib8HbecWKhCnsWjtsmhp_bxyktspgmPz95vq_juXUTUlYoMtDegTb7P0EI_-tdMoPigHaFiCQu6TNNRrpZ9YaAk5tEs2Ms1EGSoTumiW8iPDGDYuM9Rj54lvG1m3jGqPoPXYPqsKkXWtJcV453aQ3FVa10-4GIyLzSCNIeM04_SrVCwRuOkAh55_VwIcg8Y8ErAHf9Tm8RyZFL1qp44HREb4kdnyJTkWb29fsi7GnPopM6SqyUuewHB0LkLPX2MdBBu-E_zRFZUicQbjaLrjbDulGB2nhZhw4ODLDYqgGcstKACRTPA8BUJQ4NdqWByz0la1y8801f5tA0v5aDbUyBco-5I3Vc_AxKJW40cpDjHTfF-7fpp3_iCSsP0cWUFNFllg6lby3YUvboSI74wtWn6Zlkxm4V9itUK1ky2wIIUfVZm1isKFKrIfihTL8R5sH1-_f2YLG6hdcZCcM9MzzV83pAWGp48DafQZpgr05qfEF6mMkCzYvQ5MjQfUUjtSlzOvHP2kMDs2IoWDXv3TTtz4xWCJc76eYPTThXtYIHNjyxEDaZ0Ff7fROSDlQfn5viVafI-3qOPChgtQ3DkDHh6V4zH6D4EtvD_r0hlcnNvRIGlYhmkxWHPhIPOq_PU2ZAol9TBti0L-xTN0-GVdmjkAm9FSjx4U8iQKlapo4uFdGKa-0r4He-UlYfvPwbtLspflibJdd9da_Ihpq3aFICGbb3SzutENkDFLrYF4Vp875e-XASCWLPYB-nNDDO6KGiLOWoZHvYrNUtc9l87W-3vBrcO5zQkMCFiuZR_coKVV6WrPge33I-dFSIWihsom4VuatsU4JazXv7h6EFyhJGIry-DwvX72umMbC1hi9aHCbyZ6aZtgacFRHSnns5QKO0jEeKV6XWJVe8pi5ZqGaQe51XyqsDT5wn10jw-WdSJzzqw9lfshZW926zCWJHBuyLSlzhMG5Bryy0Q0AscEthjwBhGZBMS-A873opT39HIaF-Q_G3ZirNaHjxKYooTA98LbIwU4007iWEk_aDAN6yZu1A9_RGOUaPJlz5mclKWDs24Vf2fAipP_g9aCWZjr6KDxf1r9mAR8bySrGq3hr3kq9bsk58nZr9hemBcczKi1Oy0Qh3ToKvJrXJLDNXZkRMEB7bsGK6gENwAagf0Rs6WH7JmAMGZ54dVqeDIYNh25Ha3DtWSibfhETuBzHDZRfovG67VtyFrnAG9lL0UH2dFUTJIqBceROWrzAzWJUExGxtXuv5xaGdkc8fMLoj31R250epIvyqxxyWyUd9L9bxIgophCNaz_yUinaGH0iJXQm5ugQBW8BkBXf35rDkON5R4hQjm9cFd8Ki3QFPt_QoFb6eKVFIgdr251hA2m6nBKjUihfSBKK4TITfcOxK7LvFDCcN4kFORjtgoGr5sQiPOHZCpZ59H3t3WU298je7nTUX0fyCPQsu0OHaLgaGWju86Py9gDHyveoxsXzgPDxWLh84kxDu0vNX4SdX04ij144xqKJzl8mDoMrczr2x1v2jaRCfecTEq16QbP1k19lRDrNZjhjk3XJjDisITgJUsSVtvsEsCL-OQ0ktqMmAwQnUmTKQYfSJyJYrr-R2fUREGoeeTeFA_SLywzBp2VPWC1HVyomWtQ8U-Yoiu2YkAulZL63s9SpL1Lk4yNFevTdewlic3J1Fq-VBVdz6pU1TxeTv21pPk9jomPIPXnODRv2iUPaF3skFGsoR4ExBZIE03ZA73KuxGui3vo0E1SSirsAyjMcxZhniYwKFZcnh1rxe1RYdjZbKHNF7_8VMVGtckrCd22t819QkwcB52f4tzEj2thSvrYGv0HLkl-XQ85saQ3j-a2qNjiHbL8zUkHj3rAP1z3kMQn5EVkzE20H37M1y7UBUYbpjGPSC2feocXQquUN1mwLyUZkJ1KqPfcqGgZaKoWFpAkalecrBJpgGyGFF_hyd-Kh2IfkRcUmpbl5i5wxtFkgipEQ--Hfj_MKBVCOo5A8wq4LY2X1Yr10doikNRcF4oLL4dDZZk3biLHauRLhNsY9Z_IWD4DRDA0r1trD_vyWV4FWYiWUx2-wteC8pFF3hS4R1zJ5lqpaNpRObacNeQqDnlST0kuCOMk-SIEfzmygbmcu0JK-Cu2BRl-VP5Ju0C2v5lCghyQo9_.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_06cf82fa2a44fa0c016ae81bffe8ec87d1a1eb20845038f966",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12648,
+    "completion_tokens": 273,
+    "total_tokens": 12921,
+    "cost": 0.001717425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12645,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001717425,
+      "upstream_inference_prompt_cost": 0.001580925,
+      "upstream_inference_completions_cost": 0.0001365
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

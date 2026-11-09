@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+
+<html lang="en-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models with Stripe." name="description"/>
+<title>Stripe | Financial Infrastructure to Grow Your Revenue</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #101b36;
+      --muted: #506078;
+      --purple: #635bff;
+      --purple-dark: #4e46d9;
+      --line: #e3e8f1;
+      --pale: #f6f8fc;
+      --cyan: #bce9f4;
+      --max: 1160px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; }
+
+    a {
+      color: var(--purple-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: #372fb8; }
+
+    :focus-visible {
+      outline: 3px solid #f28b37;
+      outline-offset: 4px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 20;
+      top: 8px;
+      left: 8px;
+      padding: 10px 14px;
+      color: white;
+      background: var(--ink);
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: relative;
+      z-index: 10;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid rgba(16,27,54,.08);
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 38px;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      color: #0a2540;
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      line-height: 1;
+      text-decoration: none;
+    }
+
+    .primary-nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex: 1;
+    }
+
+    .primary-nav > a,
+    .nav-menu > summary {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      color: #26344d;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .nav-menu { position: relative; }
+
+    .nav-menu > summary {
+      list-style: none;
+      gap: 8px;
+    }
+
+    .nav-menu > summary::-webkit-details-marker { display: none; }
+
+    .nav-menu > summary::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: calc(100% + 5px);
+      left: -18px;
+      z-index: 12;
+      width: 280px;
+      padding: 18px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 18px 48px rgba(16,27,54,.14);
+    }
+
+    .menu-panel p {
+      margin: 0 0 9px;
+      color: #68778d;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .menu-panel a {
+      display: block;
+      padding: 8px 0;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 550;
+      text-decoration: none;
+    }
+
+    .menu-panel a:hover { color: var(--purple-dark); }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 11px 18px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      color: white;
+      background: var(--purple);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-decoration: none;
+      transition: background .15s ease, transform .15s ease;
+    }
+
+    .button:hover {
+      color: white;
+      background: var(--purple-dark);
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      color: var(--ink);
+      background: white;
+      border-color: #cbd3e0;
+    }
+
+    .button-secondary:hover {
+      color: var(--ink);
+      background: #f4f6fb;
+    }
+
+    .button-small {
+      min-height: 39px;
+      padding: 9px 15px;
+      font-size: 13px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 85% 20%, rgba(255,137,91,.30), transparent 32%),
+        radial-gradient(ellipse at 75% 72%, rgba(204,89,242,.23), transparent 37%),
+        linear-gradient(120deg, #fff 15%, #f6f9ff 64%, #f8f5ff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-art {
+      position: absolute;
+      inset: 0 0 0 auto;
+      width: min(55%, 780px);
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: .72;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.96) 37%, rgba(255,255,255,.2) 88%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      min-height: 535px;
+      display: flex;
+      align-items: center;
+      padding-block: 66px 72px;
+    }
+
+    .hero-copy { max-width: 790px; }
+
+    .eyebrow {
+      margin: 0 0 22px;
+      color: #35435c;
+      font-size: 14px;
+      font-weight: 650;
+      letter-spacing: .01em;
+    }
+
+    .eyebrow strong {
+      margin-left: 6px;
+      color: var(--muted);
+      font-weight: 550;
+    }
+
+    h1, h2, h3, p { overflow-wrap: break-word; }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(2.7rem, 6vw, 5.15rem);
+      font-weight: 630;
+      letter-spacing: -.065em;
+      line-height: 1.04;
+    }
+
+    .hero-description {
+      max-width: 710px;
+      margin: 23px 0 29px;
+      color: #43546c;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      line-height: 1.55;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .google-mark {
+      display: inline-grid;
+      width: 17px;
+      height: 17px;
+      place-items: center;
+      border-radius: 50%;
+      color: #4285f4;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .trust-strip {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .trust-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 23px;
+    }
+
+    .trust-label {
+      max-width: 130px;
+      color: #647188;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .customer-names {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 14px 24px;
+    }
+
+    .customer-names a {
+      color: #35445b;
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: -.03em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .customer-names a:nth-child(2n) { color: #536682; }
+    .customer-names a:hover { color: var(--purple-dark); }
+
+    .section {
+      padding-block: 96px;
+    }
+
+    .section-soft { background: var(--pale); }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 38px;
+    }
+
+    .kicker {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--purple-dark);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.45rem);
+      font-weight: 620;
+      letter-spacing: -.055em;
+      line-height: 1.1;
+    }
+
+    .section-heading > p {
+      max-width: 650px;
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+
+    .solution-card {
+      position: relative;
+      min-height: 250px;
+      overflow: hidden;
+      padding: 25px;
+      background: white;
+      border: 1px solid #e3e8f0;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(21,41,80,.035);
+    }
+
+    .solution-card.featured {
+      grid-column: span 3;
+      min-height: 330px;
+      background: #f1f6ff;
+    }
+
+    .solution-card.half { grid-column: span 2; }
+
+    .solution-card h3 {
+      position: relative;
+      z-index: 1;
+      max-width: 380px;
+      margin: 0 0 12px;
+      font-size: 21px;
+      font-weight: 650;
+      letter-spacing: -.035em;
+      line-height: 1.3;
+    }
+
+    .solution-card p {
+      position: relative;
+      z-index: 1;
+      max-width: 380px;
+      margin: 0;
+      color: #56667d;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .solution-card a {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      margin-top: 17px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .solution-art {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 54%;
+      max-height: 58%;
+      object-fit: contain;
+      object-position: right bottom;
+    }
+
+    .solution-art.full {
+      width: 100%;
+      height: 54%;
+      object-fit: cover;
+      object-position: center;
+      opacity: .85;
+    }
+
+    .solution-card.with-art h3,
+    .solution-card.with-art p,
+    .solution-card.with-art a { max-width: 52%; }
+
+    .mini-ui {
+      position: absolute;
+      right: 20px;
+      bottom: 18px;
+      width: 42%;
+      padding: 16px;
+      background: #fff;
+      border: 1px solid #e2e6ee;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(25,46,80,.10);
+      color: #52627b;
+      font-size: 11px;
+    }
+
+    .mini-ui strong {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .meter {
+      height: 6px;
+      margin-top: 7px;
+      overflow: hidden;
+      background: #e9edf5;
+      border-radius: 10px;
+    }
+
+    .meter span {
+      display: block;
+      width: 68%;
+      height: 100%;
+      background: var(--purple);
+      border-radius: inherit;
+    }
+
+    .product-card-icon {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 32px;
+      place-items: center;
+      border-radius: 12px;
+      color: #4c46c8;
+      background: #eeedff;
+      font-size: 20px;
+      font-weight: 750;
+    }
+
+    .stats-section {
+      color: white;
+      background: #101b36;
+    }
+
+    .stats-section .kicker { color: #a9a5ff; }
+    .stats-section h2 { max-width: 650px; }
+    .stats-section .section-heading > p { color: #c1cadd; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid rgba(255,255,255,.2);
+      border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+    .stat {
+      min-height: 150px;
+      padding: 27px 24px 27px 0;
+    }
+
+    .stat + .stat {
+      padding-left: 24px;
+      border-left: 1px solid rgba(255,255,255,.2);
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 7px;
+      color: white;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 650;
+      letter-spacing: -.06em;
+      line-height: 1.1;
+    }
+
+    .stat span {
+      display: block;
+      max-width: 210px;
+      color: #c1cadd;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .data-visual {
+      display: block;
+      width: min(100%, 860px);
+      max-height: 360px;
+      margin: 38px auto 0;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .audience-card {
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .audience-card-copy { padding: 28px 30px 30px; }
+
+    .audience-card h3 {
+      margin: 0 0 11px;
+      font-size: 24px;
+      font-weight: 650;
+      letter-spacing: -.04em;
+      line-height: 1.25;
+    }
+
+    .audience-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .audience-card .button {
+      margin-top: 20px;
+    }
+
+    .case-study {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, .8fr);
+      align-items: center;
+      gap: 30px;
+      padding: 26px;
+      background: #f4f6fb;
+      border-top: 1px solid var(--line);
+    }
+
+    .case-study h4 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -.03em;
+      line-height: 1.35;
+    }
+
+    .case-study-image {
+      display: block;
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .case-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 17px 0;
+    }
+
+    .case-stats strong {
+      display: block;
+      font-size: 18px;
+      letter-spacing: -.04em;
+    }
+
+    .case-stats span {
+      display: block;
+      color: #647188;
+      font-size: 12px;
+    }
+
+    .text-link {
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .service-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .service-item {
+      padding: 23px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .service-item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      letter-spacing: -.025em;
+    }
+
+    .service-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .service-item a {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .startup-intro {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .startup-intro .section-heading { margin: 0; }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .story-card {
+      display: flex;
+      min-height: 280px;
+      flex-direction: column;
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+
+    .story-card:hover {
+      color: var(--ink);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(20,37,72,.09);
+    }
+
+    .story-card img {
+      width: 100%;
+      height: 148px;
+      object-fit: cover;
+      background: #f3f5fa;
+    }
+
+    .story-card span {
+      display: block;
+      padding: 16px 17px 18px;
+      font-size: 14px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+
+    .startup-program {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 25px;
+      margin-top: 20px;
+      overflow: hidden;
+      background: #f0efff;
+      border-radius: 15px;
+    }
+
+    .startup-program-copy { padding: 30px; }
+
+    .startup-program h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+      letter-spacing: -.04em;
+    }
+
+    .startup-program p {
+      margin: 0;
+      color: #4e5b72;
+      font-size: 14px;
+    }
+
+    .startup-program a {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .startup-program img {
+      display: block;
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .platform-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      align-items: center;
+      gap: 44px;
+    }
+
+    .platform-layout .section-heading { margin: 0; }
+
+    .platform-panel {
+      position: relative;
+      min-height: 360px;
+      overflow: hidden;
+      padding: 26px;
+      background: #eef3ff;
+      border-radius: 16px;
+    }
+
+    .platform-panel > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .18;
+    }
+
+    .dashboard {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 530px);
+      margin: 15px auto;
+      padding: 20px;
+      background: white;
+      border: 1px solid #dfe5ef;
+      border-radius: 12px;
+      box-shadow: 0 14px 38px rgba(26,45,83,.12);
+    }
+
+    .dashboard-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .balance-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-block: 14px;
+    }
+
+    .balance-box {
+      padding: 12px;
+      background: #f6f8fc;
+      border-radius: 8px;
+    }
+
+    .balance-box span {
+      display: block;
+      color: #67768b;
+      font-size: 10px;
+    }
+
+    .balance-box strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 16px;
+    }
+
+    .table-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 12px;
+      padding: 9px 2px;
+      border-bottom: 1px solid #edf0f5;
+      color: #586980;
+      font-size: 10px;
+    }
+
+    .table-row:first-child {
+      color: #697890;
+      font-weight: 700;
+    }
+
+    .integration-section { background: #f7f8fc; }
+
+    .integration-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .integration-card {
+      padding: 27px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .integration-card h3 {
+      margin: 0 0 9px;
+      font-size: 21px;
+      letter-spacing: -.035em;
+    }
+
+    .integration-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .integration-card img {
+      display: block;
+      width: 100%;
+      height: 185px;
+      margin-top: 22px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #f3f6fb;
+    }
+
+    .integration-card .button {
+      margin-top: 18px;
+    }
+
+    .developer-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      margin-top: 23px;
+    }
+
+    .developer-metrics strong {
+      display: block;
+      color: var(--ink);
+      font-size: 23px;
+      letter-spacing: -.04em;
+    }
+
+    .developer-metrics span {
+      color: #68778c;
+      font-size: 12px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .news-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      background: #f0f3fa;
+    }
+
+    .news-card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 18px;
+    }
+
+    .news-card h3 {
+      margin: 0 0 10px;
+      font-size: 17px;
+      font-weight: 650;
+      letter-spacing: -.03em;
+      line-height: 1.35;
+    }
+
+    .news-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .news-card .text-link { margin-top: auto; }
+
+    .book-section {
+      padding-block: 74px;
+      background: #f6f8fc;
+    }
+
+    .book-card {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      align-items: center;
+      gap: 30px;
+      max-width: 920px;
+      margin-inline: auto;
+      padding: 28px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .book-card img {
+      width: 190px;
+      max-height: 250px;
+      object-fit: contain;
+    }
+
+    .book-card h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    .book-card p {
+      margin: 0 0 13px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .book-card .book-author {
+      color: #26344d;
+      font-weight: 650;
+    }
+
+    .final-cta {
+      padding-block: 76px;
+      color: white;
+      background: linear-gradient(112deg, #1d2554, #302780 60%, #5446d5);
+    }
+
+    .final-cta-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .final-cta h2 {
+      max-width: 680px;
+      font-size: clamp(2.2rem, 4.5vw, 3.7rem);
+    }
+
+    .final-cta p {
+      max-width: 620px;
+      margin: 13px 0 0;
+      color: #e2e4ff;
+    }
+
+    .final-cta .button-secondary { border-color: white; }
+
+    .cta-links {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      min-width: 205px;
+    }
+
+    .cta-links a {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .cta-links span {
+      display: block;
+      color: #e2e4ff;
+      font-size: 12px;
+      font-weight: 450;
+    }
+
+    .site-footer {
+      padding-block: 58px 25px;
+      background: #f6f8fc;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(4, 1fr);
+      gap: 28px;
+      padding-bottom: 38px;
+    }
+
+    .footer-brand p {
+      margin: 12px 0 0;
+      color: #647188;
+      font-size: 13px;
+    }
+
+    .footer-column h2 {
+      margin: 0 0 14px;
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .01em;
+    }
+
+    .footer-column a {
+      display: block;
+      width: fit-content;
+      margin: 8px 0;
+      color: #4d5b71;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .footer-column a:hover { color: var(--purple-dark); }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 19px;
+      border-top: 1px solid #dfe4ed;
+      color: #68768a;
+      font-size: 12px;
+    }
+
+    .footer-bottom a {
+      color: #4d5b71;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .header-inner { gap: 22px; }
+      .primary-nav { gap: 14px; }
+      .primary-nav > a, .nav-menu > summary { font-size: 13px; }
+      .solution-card.half { grid-column: span 3; }
+      .story-grid, .news-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(3, 1fr); }
+      .platform-layout { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 680px) {
+      html { scroll-padding-top: 18px; }
+
+      .container { width: min(100% - 36px, var(--max)); }
+
+      .header-inner {
+        min-height: 66px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        padding-block: 11px;
+      }
+
+      .wordmark { font-size: 25px; }
+
+      .primary-nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        border-top: 1px solid #edf0f5;
+      }
+
+      .primary-nav > a,
+      .nav-menu > summary {
+        min-height: 40px;
+        font-size: 12px;
+      }
+
+      .menu-panel {
+        position: fixed;
+        top: 111px;
+        left: 18px;
+        width: min(330px, calc(100vw - 36px));
+      }
+
+      .header-actions { gap: 8px; }
+      .header-actions .button { min-height: 37px; padding: 8px 10px; font-size: 12px; }
+
+      .hero-art {
+        width: 100%;
+        opacity: .39;
+        object-position: 62% center;
+      }
+
+      .hero::after {
+        background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.75));
+      }
+
+      .hero-content {
+        min-height: 515px;
+        padding-block: 58px;
+      }
+
+      h1 { font-size: clamp(2.65rem, 12vw, 4.2rem); }
+
+      .hero-description { font-size: 17px; }
+
+      .trust-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 20px;
+      }
+
+      .trust-label { max-width: none; }
+      .customer-names { justify-content: flex-start; gap: 12px 22px; }
+
+      .section { padding-block: 68px; }
+
+      .section-heading { margin-bottom: 28px; }
+      .section-heading > p { font-size: 16px; }
+
+      .solution-grid { grid-template-columns: 1fr; }
+      .solution-card.featured,
+      .solution-card.half { grid-column: auto; }
+      .solution-card.featured { min-height: 300px; }
+      .solution-card.half { min-height: 220px; }
+
+      .solution-card.with-art h3,
+      .solution-card.with-art p,
+      .solution-card.with-art a { max-width: 60%; }
+
+      .solution-art { width: 48%; }
+      .mini-ui { width: 45%; right: 14px; }
+
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat { min-height: 128px; padding: 21px 12px 18px 0; }
+      .stat + .stat { padding-left: 16px; }
+      .stat:nth-child(3) { border-left: 0; }
+      .stat:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,.2); }
+
+      .audience-grid,
+      .integration-grid { grid-template-columns: 1fr; }
+
+      .case-study {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px;
+      }
+
+      .case-study-image { height: 190px; }
+      .service-row { grid-template-columns: 1fr; }
+
+      .startup-intro {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .story-grid, .news-grid { grid-template-columns: 1fr; }
+      .story-card { min-height: 250px; }
+      .story-card img { height: 175px; }
+
+      .startup-program {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .startup-program img { height: 190px; }
+
+      .platform-panel { min-height: 315px; padding: 14px; }
+      .dashboard { padding: 14px; }
+      .table-row { gap: 5px; font-size: 9px; }
+
+      .book-card {
+        grid-template-columns: 1fr;
+        justify-items: start;
+        gap: 16px;
+        padding: 22px;
+      }
+
+      .book-card img { width: 150px; max-height: 190px; }
+
+      .final-cta-inner { grid-template-columns: 1fr; }
+      .cta-links { min-width: 0; }
+
+      .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 26px 18px; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+<style data-warp-repair="true">.dashboard .balance-box > span { color: #5f6f83; }</style><style data-warp-repair="true">footer.site-footer .footer-bottom > span:nth-child(-n+2) { color: #5f6f83; }</style><style data-warp-repair="true">.footer-bottom > span:nth-child(3) { color: #647188; }</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Stripe home" class="wordmark" href="https://stripe.com/en-mx">stripe</a>
+<nav aria-label="Main navigation" class="primary-nav">
+<details class="nav-menu">
+<summary>Products</summary>
+<div class="menu-panel">
+<p>Products</p>
+<a href="https://stripe.com/en-mx/payments">Payments</a>
+<a href="https://stripe.com/en-mx/billing">Billing</a>
+<a href="https://stripe.com/en-mx/connect">Connect</a>
+<a href="https://stripe.com/en-mx/terminal">Terminal</a>
+<a href="https://stripe.com/en-mx/products">See all products</a>
+</div>
+</details>
+<details class="nav-menu">
+<summary>Solutions</summary>
+<div class="menu-panel">
+<p>Solutions</p>
+<a href="https://stripe.com/en-mx/enterprise">Enterprises</a>
+<a href="https://stripe.com/en-mx/startups">Startups</a>
+<a href="https://stripe.com/en-mx/use-cases/platforms">Platforms</a>
+<a href="https://stripe.com/en-mx/use-cases/agentic-commerce">Agentic commerce</a>
+</div>
+</details>
+<details class="nav-menu">
+<summary>Developers</summary>
+<div class="menu-panel">
+<p>Build with Stripe</p>
+<a href="https://docs.stripe.com/">Documentation</a>
+<a href="https://docs.stripe.com/api">API reference</a>
+<a href="https://docs.stripe.com/development">Libraries and SDKs</a>
+<a href="https://github.com/stripe">Stripe on GitHub</a>
+</div>
+</details>
+<details class="nav-menu">
+<summary>Resources</summary>
+<div class="menu-panel">
+<p>Resources</p>
+<a href="https://stripe.com/en-mx/guides">Guides</a>
+<a href="https://stripe.com/en-mx/customers">Customer stories</a>
+<a href="https://stripe.com/en-mx/blog">Blog</a>
+<a href="https://stripe.com/en-mx/sessions">Sessions</a>
+</div>
+</details>
+<a href="https://stripe.com/en-mx/pricing">Pricing</a>
+</nav>
+<div class="header-actions">
+<a class="button button-secondary button-small" href="https://dashboard.stripe.com/login">Sign in</a>
+<a class="button button-small" href="https://stripe.com/en-mx/contact/sales">Contact sales</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<img alt="" aria-hidden="true" class="hero-art" src="https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/wave-fallback-desktop-1x.fba6fa88.webp"/>
+<div class="container hero-content">
+<div class="hero-copy">
+<p class="eyebrow">Global GDP running on Stripe:<strong>1.73102825%</strong></p>
+<h1 id="hero-title">Financial infrastructure to grow your revenue.</h1>
+<p class="hero-description">Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.</p>
+<div class="button-row">
+<a class="button" href="https://dashboard.stripe.com/register">Get started <span aria-hidden="true">→</span></a>
+<a class="button button-secondary" href="https://dashboard.stripe.com/login/oauth/google/init"><span aria-hidden="true" class="google-mark">G</span> Sign up with Google</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Businesses using Stripe" class="trust-strip">
+<div class="container trust-inner">
+<span class="trust-label">Building with Stripe</span>
+<div class="customer-names">
+<a href="https://stripe.com/en-mx/customers/amazon">Amazon</a>
+<a href="https://stripe.com/en-mx/customers/shopify">Shopify</a>
+<a href="https://stripe.com/en-mx/customers/figma">Figma</a>
+<a href="https://stripe.com/en-mx/customers/anthropic">Anthropic</a>
+<a href="https://stripe.com/en-mx/customers/ramp">Ramp</a>
+<a href="https://stripe.com/en-mx/customers/woo">Woo</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="solutions-title" class="section" id="solutions">
+<div class="container">
+<div class="section-heading">
+<span class="kicker">One platform, many possibilities</span>
+<h2 id="solutions-title">Flexible solutions for every business model.</h2>
+<p>Grow your business with a comprehensive set of payments and financial tools, designed to work individually or together.</p>
+</div>
+<div class="solution-grid">
+<article class="solution-card featured with-art">
+<h3>Accept and optimize payments globally—online and in person</h3>
+<p>Offer customers a smooth way to pay across channels and markets.</p>
+<a href="https://stripe.com/en-mx/payments">Explore payments <span aria-hidden="true">→</span></a>
+<img alt="Stripe Terminal payment device" class="solution-art" src="https://images.stripeassets.com/fzn2n1nzq965/1Vf8oT9Fm6dEwpnEx5PgK1/055956f38d7fd8b0cc7419692ef29778/bento-terminal.png?w=308&amp;q=90"/>
+</article>
+<article class="solution-card featured">
+<h3>Enable any billing model</h3>
+<p>Build recurring, usage-based, and flexible pricing into your business.</p>
+<a href="https://stripe.com/en-mx/billing">Explore Billing <span aria-hidden="true">→</span></a>
+<div aria-label="Example usage billing dashboard" class="mini-ui">
+<strong>Usage meter</strong>
+              Tokens used in the last 30 days
+              <div aria-hidden="true" class="meter"><span></span></div>
+<p style="margin-top:9px">1,500,000,000 units</p>
+</div>
+</article>
+<article class="solution-card half with-art">
+<h3>Monetize through agentic commerce</h3>
+<p>Make it easier for customers to discover and buy through AI platforms.</p>
+<a href="https://stripe.com/en-mx/use-cases/agentic-commerce">Explore agentic commerce <span aria-hidden="true">→</span></a>
+<img alt="" aria-hidden="true" class="solution-art" src="https://images.stripeassets.com/fzn2n1nzq965/2rL4pJabxq9Yo0haXwK2HO/83c05122b463c882c8c89111154d77ec/shirt-blue.png?w=160&amp;q=90"/>
+</article>
+<article class="solution-card half with-art">
+<span aria-hidden="true" class="product-card-icon">▰</span>
+<h3>Create a card issuing program</h3>
+<p>Build and manage card programs for your business or customers.</p>
+<a href="https://stripe.com/en-mx/issuing">Explore Issuing <span aria-hidden="true">→</span></a>
+<img alt="" aria-hidden="true" class="solution-art" src="https://images.stripeassets.com/fzn2n1nzq965/1zneiFjZyS8cGQvki2cGqz/35294f1866720bec6d80fb2532270258/card-placeholder_2x.png?w=447&amp;q=90"/>
+</article>
+<article class="solution-card half with-art">
+<span aria-hidden="true" class="product-card-icon">↗</span>
+<h3>Move money across borders</h3>
+<p>Access borderless money movement with stablecoins and crypto.</p>
+<a href="https://stripe.com/en-mx/use-cases/crypto">Explore crypto <span aria-hidden="true">→</span></a>
+<img alt="" aria-hidden="true" class="solution-art" src="https://images.stripeassets.com/fzn2n1nzq965/7dwxc06fkzWOmlwBs9GezW/667c1af2d03a023fc61ea4cec995204d/money-movement-fallback_2x.png?w=447&amp;q=90"/>
+</article>
+<article class="solution-card featured with-art">
+<h3>Embed payments in your platform</h3>
+<p>Give businesses the financial tools they need, built right into your software.</p>
+<a href="https://stripe.com/en-mx/use-cases/platforms">Explore platforms <span aria-hidden="true">→</span></a>
+<img alt="" aria-hidden="true" class="solution-art full" src="https://images.stripeassets.com/fzn2n1nzq965/3NcSrMqMgaKe75QNr8wZI8/46d520dfc48c5b9f1c59dcde9460b58c/connect-bento-card-background-image.jpg?w=1232&amp;q=90"/>
+</article>
+<article class="solution-card featured">
+<h3>Bring your business online with tools that fit</h3>
+<p>Choose flexible ways to integrate, from prebuilt options to a custom build.</p>
+<a href="https://docs.stripe.com/get-started">Explore integration options <span aria-hidden="true">→</span></a>
+<span aria-hidden="true" class="product-card-icon" style="position:absolute;right:26px;bottom:22px;margin:0;width:66px;height:66px;font-size:28px">⌘</span>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="proof-title" class="section stats-section" id="proof">
+<div class="container">
+<div class="section-heading">
+<span class="kicker">Scale with confidence</span>
+<h2 id="proof-title">The backbone of global commerce.</h2>
+<p>Businesses use Stripe to reach customers, manage revenue, and move money around the world.</p>
+</div>
+<div class="stats-grid">
+<div class="stat">
+<strong>135+</strong>
+<span>currencies and payment methods supported</span>
+</div>
+<div class="stat">
+<strong>$1.9T</strong>
+<span>in payments volume processed in 2025</span>
+</div>
+<div class="stat">
+<strong>99.999%</strong>
+<span><a href="https://status.stripe.com" style="color:#c9c7ff">historical uptime</a> for Stripe services</span>
+</div>
+<div class="stat">
+<strong>200M+</strong>
+<span>active subscriptions managed on Stripe Billing</span>
+</div>
+</div>
+<img alt="Illustrative data visualization representing commerce and activity across the Stripe platform" class="data-visual" src="https://images.stripeassets.com/fzn2n1nzq965/63zO5Z4CABvFl3pLLhnu3l/a9c12c883f820dc29d29fa0b9dcb0814/DatavizStatic3x.png?w=768&amp;q=90"/>
+</div>
+</section>
+<section aria-labelledby="businesses-title" class="section section-soft">
+<div class="container">
+<div class="section-heading">
+<span class="kicker">Made for your next chapter</span>
+<h2 id="businesses-title">Powering businesses of all sizes.</h2>
+<p>Run your business on a reliable platform that adapts to your needs.</p>
+</div>
+<div class="audience-grid">
+<article class="audience-card">
+<div class="audience-card-copy">
+<h3>Transform your enterprise with agile financial infrastructure</h3>
+<p>50% of Fortune 100 companies have used Stripe to grow their businesses—from expanding internationally to reimagining the customer experience.</p>
+<a class="button button-small" href="https://stripe.com/en-mx/enterprise">Stripe for enterprises <span aria-hidden="true">→</span></a>
+</div>
+<div class="case-study">
+<div>
+<h4>Hertz unifies commerce with Stripe.</h4>
+<div class="case-stats">
+<div><strong>160</strong><span>countries</span></div>
+<div><strong>11K+</strong><span>locations globally</span></div>
+</div>
+<p style="margin:0;color:#58677d;font-size:13px">Payments, Terminal, Connect, Radar, and Stripe Sigma</p>
+<a class="text-link" href="https://stripe.com/en-mx/customers/hertz">Read the story →</a>
+</div>
+<img alt="Aerial view of a street intersection where crosswalks form a Stripe-inspired parallelogram" class="case-study-image" src="https://images.stripeassets.com/fzn2n1nzq965/24BNV3GGtvCprFLrYovyaa/b2eac20a1d5ec75e4bff3888b998d163/enterprise-accordion-hertz.png?w=296&amp;q=90"/>
+</div>
+</article>
+<article class="audience-card">
+<div class="audience-card-copy">
+<h3>Build a foundation for your startup that enables faster growth</h3>
+<p>From stablecoin pioneers to 88% of the Forbes AI 50, Stripe helps startups build what’s next on easy-to-integrate financial infrastructure.</p>
+<a class="button button-small" href="https://stripe.com/en-mx/startups">Stripe for startups <span aria-hidden="true">→</span></a>
+</div>
+<div class="case-study">
+<div>
+<h4>Gamma expands to $100M ARR and 70 million users with Stripe.</h4>
+<p style="margin:0 0 10px;color:#58677d;font-size:13px">See how growing companies use Stripe to support their next stage.</p>
+<a class="text-link" href="https://stripe.com/en-mx/customers/gamma">Read Gamma’s story →</a>
+</div>
+<img alt="Gamma customer story artwork" class="case-study-image" src="https://images.stripeassets.com/fzn2n1nzq965/2QjRFO1cRvocACDtyA7g9e/44245671788d6e086ab7d82b37937450/Gamma.png?w=432&amp;q=90"/>
+</div>
+</article>
+</div>
+<div aria-label="Enterprise support resources" class="service-row">
+<article class="service-item">
+<h3>Professional services</h3>
+<p>Get tailored guidance from Stripe on implementation, complex integrations, or major migrations.</p>
+<a href="https://stripe.com/en-mx/professional-services">View services →</a>
+</article>
+<article class="service-item">
+<h3>Stripe-certified experts</h3>
+<p>Work with a Stripe consulting partner that can integrate and deploy solutions on your behalf.</p>
+<a href="https://stripe.com/en-mx/partners">View partners →</a>
+</article>
+<article class="service-item">
+<h3>Support plans</h3>
+<p>Get ongoing assistance and day-to-day support for technical questions.</p>
+<a href="https://stripe.com/en-mx/support-plans">View plans →</a>
+</article>
+</div>
+<div class="startup-program">
+<div class="startup-program-copy">
+<span class="kicker">Support for founders</span>
+<h3>Stripe Startups program</h3>
+<p>Access financial benefits, a focused community, and expert resources to help you grow your business.</p>
+<a href="https://stripe.com/en-mx/startups#application">Apply to the program →</a>
+<p style="margin-top:12px">Incorporate and get everything you need to fundraise, bank, and accept payments in two business days with <a href="https://stripe.com/en-mx/atlas">Stripe Atlas</a>.</p>
+</div>
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/1DZkp4Ce0kiwj2F2Z0kJ16/fcb4904fd728f49521385059618245b9/card_startups.png?w=585&amp;q=90"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="platform-title" class="section">
+<div class="container platform-layout">
+<div class="section-heading">
+<span class="kicker">For software platforms</span>
+<h2 id="platform-title">Make your SaaS platform a complete financial operating system.</h2>
+<p>From the Fortune 100 to the Forbes Cloud 100, vertical SaaS platforms use Stripe to expand their product offerings with embedded payments and financial services.</p>
+<a class="button button-small" href="https://stripe.com/en-mx/use-cases/platforms">Stripe for platforms <span aria-hidden="true">→</span></a>
+<p style="margin-top:22px"><strong>Get to market faster.</strong> Launch and scale payments products with lower operational overhead using embedded components and no-code tools.</p>
+<a class="text-link" href="https://stripe.com/en-mx/guides/best-practices-for-launching-and-scaling-platform-payments">Read the guide →</a>
+</div>
+<div class="platform-panel">
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/5dQAw5oJf3TOO1Jt6IKDRH/f391594c11f38d821259acdd3412a7a6/platform-graphic-background_2x.png?w=296&amp;q=90"/>
+<div aria-label="Illustrative connected account dashboard" class="dashboard">
+<div class="dashboard-top"><span>Zenflow</span><span>Connected accounts</span></div>
+<div class="balance-row">
+<div class="balance-box"><span>Total balance</span><strong>MX$13,949.52</strong></div>
+<div class="balance-box"><span>Available to pay out</span><strong>MX$5,810.60</strong></div>
+</div>
+<div class="table-row"><span>Account</span><span>Country</span><span>Volume (MXN)</span></div>
+<div class="table-row"><span>Vital Flow</span><span>Canada</span><span>MX$1,216,570</span></div>
+<div class="table-row"><span>Daybreak Yoga</span><span>United States</span><span>MX$150,943</span></div>
+<div class="table-row"><span>Sacred Space</span><span>UK</span><span>MX$417,674</span></div>
+<div class="table-row"><span>Jackson Hot Yoga</span><span>Australia</span><span>MX$214,936</span></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="integration-title" class="section integration-section" id="developers">
+<div class="container">
+<div class="section-heading">
+<span class="kicker">Built for your stack</span>
+<h2 id="integration-title">Reliable, extensible infrastructure for every stack.</h2>
+<p>Adapt Stripe to your business needs with flexible integration options, rich documentation, and built-in tools.</p>
+<div class="button-row" style="margin-top:20px">
+<a class="button button-small" href="https://docs.stripe.com/development">View developer docs</a>
+<a class="button button-secondary button-small" href="https://github.com/stripe">View Stripe’s GitHub</a>
+</div>
+</div>
+<div class="integration-grid">
+<article class="integration-card">
+<h3>Connect to existing systems.</h3>
+<p>Orchestrate payments across multiple processors, build custom workflows, and connect to third parties using APIs, partner apps, or prebuilt integrations.</p>
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/1lk5Hfstc9dnE8xVFz1HeC/0dec8f2dde7f904eade36d8390d81c69/developer-wave-wide_2x.png"/>
+<a class="text-link" href="https://marketplace.stripe.com/">Explore the App Marketplace →</a>
+</article>
+<article class="integration-card">
+<h3>Scale with confidence.</h3>
+<p>Handle high transaction volumes with consistent speed and reliability, even during peak traffic periods.</p>
+<div class="developer-metrics">
+<div><strong>500M+</strong><span>API requests per day</span></div>
+<div><strong>10K+</strong><span>API requests per second</span></div>
+<div><strong>150K+</strong><span>transactions per minute</span></div>
+</div>
+</article>
+<article class="integration-card">
+<h3>Don’t code?</h3>
+<p>Set up billing, take in-person payments, or share a payment link—right from the Stripe Dashboard, no code required.</p>
+<a class="button button-secondary button-small" href="https://docs.stripe.com/no-code">Explore no-code</a>
+</article>
+<article class="integration-card">
+<h3>Use a pre-integrated platform.</h3>
+<p>Browse our directory of platforms that integrate Stripe with website-building tools.</p>
+<a class="button button-secondary button-small" href="https://marketplace.stripe.com/">See directory</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="news-title" class="section" id="news">
+<div class="container">
+<div class="section-heading">
+<span class="kicker">Ideas, news, and updates</span>
+<h2 id="news-title">What’s happening.</h2>
+<p>Explore the latest from Stripe and the businesses building on our platform.</p>
+</div>
+<div class="news-grid">
+<article class="news-card">
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/yqIFyZRGU5zDwdUsWtUyM/25b9f23c748c4d54079a09016fde59d8/annual-letter-mobile.png?w=336&amp;q=90"/>
+<div class="news-card-content">
+<h3>Businesses on Stripe generated $1.9T in 2025.</h3>
+<p>Our annual letter explores the trends defining the internet economy, from international expansion to agentic commerce.</p>
+<a class="text-link" href="https://stripe.com/en-mx/annual-updates/2025">Read the letter →</a>
+</div>
+</article>
+<article class="news-card">
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/6yE6G454SGCJnJgEYsS2MB/70b405a1dce904bc0c6f2698223fb966/the-happenings-bfcm-mobile.png?w=336&amp;q=90"/>
+<div class="news-card-content">
+<h3>150K+ users have their best day ever on Stripe.</h3>
+<p>From Black Friday through Cyber Monday 2025, Stripe processed more than $40B for businesses while maintaining 99.9999% uptime.</p>
+<a class="text-link" href="https://stripe.com/en-mx/newsroom/news/bfcm2025">See the numbers →</a>
+</div>
+</article>
+<article class="news-card">
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/33xcv8eCmXzMzWXicVQ4cF/83d91fa419ff8d1b9466739b4ecdcb1d/the-happenings-tidemark-mobile.png?w=336&amp;q=90"/>
+<div class="news-card-content">
+<h3>Tidemark’s vertical and SMB SaaS benchmark report.</h3>
+<p>Learn what’s driving growth in vertical SaaS in 2025—going multiproduct, embedding fintech, and integrating AI.</p>
+<a class="text-link" href="https://stripe.com/en-mx/lp/vertical-saas-benchmark-2025?utm_medium=owned-surfaces&amp;utm_source=33d6&amp;utm_campaign=GLOBAL_4250&amp;utm_content=819a&amp;utm_term=a6a6d7b23e01">Get the data →</a>
+</div>
+</article>
+<article class="news-card">
+<img alt="" aria-hidden="true" src="https://images.stripeassets.com/fzn2n1nzq965/1k7ckFceNFlxqF47hWJUlM/eaa4d8b3f8e4b76ba3dd7df7da88e099/the-happenings-agentic-mobile.png?w=336&amp;q=90"/>
+<div class="news-card-content">
+<h3>Make your products shoppable through AI platforms.</h3>
+<p>Learn how the Agentic Commerce Protocol can help businesses accept purchases from AI platforms.</p>
+<a class="text-link" href="https://stripe.com/en-mx/blog/introducing-our-agentic-commerce-solutions">Read more →</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="book-title" class="book-section">
+<div class="container">
+<div class="book-card">
+<img alt="Cover of The Gales of November: The Untold Story of the Edmund Fitzgerald by W. W. Norton" src="https://images.stripeassets.com/fzn2n1nzq965/6o4yAiNuPELRvPYWL3x8rA/04cc49168186809a6b57feaaf0cdb8a7/The_Gales_of_November__The_Untold_Story_of_the_Edmund_Fitzgerald.png?w=296&amp;q=90"/>
+<div>
+<span class="kicker">Book of the week</span>
+<h2 id="book-title">Entrepreneurship starts with ideas.</h2>
+<p class="book-author">The Gales of November: The Untold Story of the Edmund Fitzgerald — John U. Bacon</p>
+<p>For three decades following World War II, the Great Lakes overtook Europe as the epicenter of global economic strength. This book explores the role Great Lakes shipping played in America’s economic boom, the lives of the sailors, and the ship’s legacy.</p>
+<a class="text-link" href="https://wwnorton.com/books/9781324094647">Explore the book →</a>
+<p style="margin-top:16px">More ideas on economic progress and technological advancement: <a href="https://press.stripe.com/">Stripe Press</a> and <a href="https://worksinprogress.co/">Works in Progress</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="cta-title" class="final-cta">
+<div class="container final-cta-inner">
+<div>
+<h2 id="cta-title">Ready to get started?</h2>
+<p>Create an account instantly, or contact us to design a custom package for your business.</p>
+<div class="button-row" style="margin-top:23px">
+<a class="button" href="https://dashboard.stripe.com/register">Start now <span aria-hidden="true">→</span></a>
+<a class="button button-secondary" href="https://stripe.com/en-mx/contact/sales">Contact sales</a>
+</div>
+</div>
+<div class="cta-links">
+<a href="https://stripe.com/en-mx/pricing">See what you’ll pay <span>Integrated per-transaction pricing with no hidden fees.</span></a>
+<a href="https://docs.stripe.com/get-started">Start building <span>Get up and running with Stripe in as little as 10 minutes.</span></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a aria-label="Stripe home" class="wordmark" href="https://stripe.com/en-mx">stripe</a>
+<p>Financial infrastructure to grow your revenue.</p>
+</div>
+<div class="footer-column">
+<h2>Products</h2>
+<a href="https://stripe.com/en-mx/pricing">Pricing</a>
+<a href="https://stripe.com/en-mx/payments">Payments</a>
+<a href="https://stripe.com/en-mx/billing">Billing</a>
+<a href="https://stripe.com/en-mx/connect">Connect</a>
+<a href="https://stripe.com/en-mx/terminal">Terminal</a>
+<a href="https://stripe.com/en-mx/issuing">Issuing</a>
+<a href="https://stripe.com/en-mx/atlas">Atlas</a>
+<a href="https://stripe.com/en-mx/products">All products</a>
+</div>
+<div class="footer-column">
+<h2>Solutions</h2>
+<a href="https://stripe.com/en-mx/enterprise">Enterprises</a>
+<a href="https://stripe.com/en-mx/startups">Startups</a>
+<a href="https://stripe.com/en-mx/use-cases/agentic-commerce">Agentic commerce</a>
+<a href="https://stripe.com/en-mx/use-cases/ecommerce">Ecommerce</a>
+<a href="https://stripe.com/en-mx/use-cases/global-businesses">Global businesses</a>
+<a href="https://stripe.com/en-mx/use-cases/platforms">Platforms</a>
+<a href="https://stripe.com/en-mx/use-cases/saas">SaaS</a>
+</div>
+<div class="footer-column">
+<h2>Developers</h2>
+<a href="https://docs.stripe.com/">Documentation</a>
+<a href="https://docs.stripe.com/api">API reference</a>
+<a href="https://status.stripe.com/">API status</a>
+<a href="https://docs.stripe.com/development">Libraries and SDKs</a>
+<a href="https://marketplace.stripe.com/">App Marketplace</a>
+<a href="https://github.com/stripe">GitHub</a>
+<a href="https://stripe.dev/">Developer blog</a>
+</div>
+<div class="footer-column">
+<h2>Resources &amp; company</h2>
+<a href="https://stripe.com/en-mx/guides">Guides</a>
+<a href="https://stripe.com/en-mx/customers">Customer stories</a>
+<a href="https://stripe.com/en-mx/blog">Blog</a>
+<a href="https://stripe.com/en-mx/sessions">Sessions</a>
+<a href="https://stripe.com/en-mx/about">About</a>
+<a href="https://stripe.com/en-mx/careers">Careers</a>
+<a href="https://stripe.com/en-mx/newsroom">Newsroom</a>
+<a href="https://stripe.com/en-mx/contact/sales">Contact sales</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>Mexico (English)</span>
+<span>© 2026 Stripe, LLC.</span>
+<span>
+<a href="https://stripe.com/en-mx/privacy">Privacy and terms</a>
+           · 
+          <a href="https://stripe.com/en-mx/cookie-settings">Cookie settings</a>
+           · 
+          <a href="https://support.stripe.com/">Get support</a>
+</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

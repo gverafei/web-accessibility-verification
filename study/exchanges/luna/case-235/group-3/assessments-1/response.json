@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target retains the same visible service links, news and materials, footer navigation, service categories, app-download information, QR code, and cookie notice as the reference.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"The visible content is legible and coherently arranged, with no material layout or clipping differences beyond the cookie notice overlay also present in the reference.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"Visible navigation links, footer buttons, app-store links, and cookie notice actions have understandable labels or recognizable icons. No essential control defect is apparent.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The corresponding reference and target windows show matching page regions and coherent states.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"The visible Russian text, service categories, and app-download details communicate a coherent telecom-company page purpose.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12479,
+    "completion_tokens": 198,
+    "total_tokens": 12677,
+    "cost": 0.0016588,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 12476,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016588,
+      "upstream_inference_prompt_cost": 0.0015598,
+      "upstream_inference_completions_cost": 9.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

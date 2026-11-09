@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target preserves the visible feature lists, calls to action, imagery, navigation and tracker-settings content in the corresponding reference regions.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding views are visually identical; content is legible and coherently arranged. The tracker-settings panel overlays both reference and target.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, Learn more, Contact us and tracker-settings controls have understandable labels in both views.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Each supplied reference-target pair has matching visible content and forms a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, imagery and labels convey coherent meaning and remain preserved in the target.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing image matches**\n\nI\u2019m looking at images that have identical pairs based on their coordinate hashes, and I'm checking if they match content naturally changes between the y windows. Between y8000, I expect features and images from a data center, while y9000 should show logos and wind turbines. Both images are the same, and I need to consider a cookie overlay. I\u2019ll assess if everything matches, and I need the JSON formatted exactly for the rationale on matched results.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing image matches**\n\nI\u2019m looking at images that have identical pairs based on their coordinate hashes, and I'm checking if they match content naturally changes between the y windows. Between y8000, I expect features and images from a data center, while y9000 should show logos and wind turbines. Both images are the same, and I need to consider a cookie overlay. I\u2019ll assess if everything matches, and I need the JSON formatted exactly for the rationale on matched results.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6B2foVjCzKdLhre_tFksuHhG5cxMBYjoQvaVnAluP4_xpYuleoEpl5LKG_tZjHXT-qCrT_Zr-LNmDMMT3ds7RKui8e6G9xI4NUsENpMEFHAxnm-SEGJWLoRK-ffq68HmGwR0bpXA98dH9xaR3JF7ZPmJxDFdWh9QujNbJVhhxyFe3vqUQpnWWJGxP6oMjElI-hDwUWKsqAIs51b8VC2JvWLM4U8KF5SIX6AeyJmjEKhGWqixZDug3FH6-FQxLxnvILZiZI83BjOvbbarl3bPc195nGG_PP78r36Zz_gBSQ4x0z09ibAyLdKO_8gUMiJjLerX9s8jbVumOFtYSGSmZwL__KYEnYoYTBmwjGkHuKVskBt8fqDjjDgQIAcYy03WvUWPTZOpm-EQQsKJR-pUKPPOWAK9LMMsKLgGd5pPEr6d9fwWp4tb_ipeGu0xViZjtdB6WlekbDYnIqQpb1SxiTN0G0GDJCEX2MCKa3BPYcRascWAzU_jbDMsA0Rzk1i_7F699VgmOR4iQSI9fMpCcCfk-PCIChoyg-03E2lQrVq258ZzScyKVwvB_-4X5mIta9kpuzSTs_AYYswQzNy3bMDlWyh98KcYITQsnTkrVNIFXUQwOgwhZ-rJK1EMTN1wJRnxRUyOa-4srtyz3h_-v2f8gzn4xxJorkWq5Y1FtV676agxU2w_mzkuCaJ6BV5pwi1ZDywOOJi36S5hPmrpaw9HgC8lGkdd7Rd3L3kx7mJGlCr7FDi6lj871de5gxh9KjNH22IkgHMx3jyAVxO152QOMAzhF_QnryZqGg5QfbLD2HopxPmmnDXN_l7wAhQXEl4CVMuqHv7aCATr2An5GXP-ykHZJpg5f12faTmd_7C2IOtHs8rfL7-y63BKLm408B8VoHxzLB3rXHT5zsTF2DSfP4lWjSkIDkSR-n3SsM8f6YDUqAGllB-CcCoCj_XJyOvt0W_1-VXdYZGn2HCmEkoRM__4bVU-OvYmUS5-swBEPWjICYstPm4rLefzr17oq5fDlx4MH2bwSdBjUr6BPY3BIZSc9WOA2A4-HGEtlRmOOGnDpy7NdSkNSAA1ThjOA5Zxhj0h_-aH6THbJ-oR-jwn33BV2RepLUqUj-6kl8ytvwtzRrWXymfuxscnREEi28xNREOHxvFxL-wcEMIS3VSj4OVTNhIS71Pl8ZjeTVEEAUBme4LagllnwauK017rcXhqujzZHLfzz1L8BcS19JZSlcc0PgjRE_KKs_J2kZXaS14oMkHfo8SQwmr4ZALgr9bVeLepCdfBhQnX_KcQ92LT16kfTQQl6lKb4uf1QW8m-Z706xkbZAYo_0JTwC_ADWeMaP5i_vNUJ7YfGXrveH6bD2TlM12edh-UFaLIh_wlaae-OYby0XKHZsKVJCZSL7DSJ9HCr52AQpCaGLPMu99eajPwnXYvvBe1yIVJ2Jlra4OAlM1oMTHBtwft1srg8reN-m1IEDqMJr_97nat9V1GRtbfx_IaIy9sINfHmtIoZDspykyha5rsyCIcrfQBSjm4xkEXD64RoSCjKBT58U8Fq7ND2ELBSeLbzZd_B0OUjOmLC3SQqgrXgGbqKWaC6bju3IKW1rxIfXYE2R9RT-AUb2Xl0KVrI0COiOOQqLYoLGhuNbN7nWV4KfRESNShiuPWBlvpSdJGGiK7sXJcgKpbqC3NMALfOKn9kqqeG6FGnGGwPJ667fYJQ5E_KDSddfeYrpNPAmJQghQtl4FDe3n0azhbFcNQzRGVYgesOe5iYRuitaw5OuKSoZIp32A2zao_xdn5GV8LbmDWU0Rik1LEKFT-wiwdlwGKooHH7rW1MB7K5cFSJr1hdCG1mbWd9hr9fBQJZ75OLhzJ9kpJ_TW4M6VSxRrM3TzbmWBU1QdgPxlRrrba4Qpg6llCLMYijuY6QWkMJ1dpJyzuNNW89U5mNGlhNV829zK1bGyUrmGHMBqmks9Ka9Tq3fltIfdABEoFT0ZVTQq5q361849KkZNWyAFi0vB8CkTPnIHC5Ab15LhBFh3Rjk0X82ZuDJNuQwXUB9OLHhhdqWtiFld43ORwKC5NaErYwwRqn5Mg-AYQzr3wIdML68979hZzX9FVz9WQMhDDjkF1T1JgkSZ4UKuTGHbSghkjJMXSPpvLqBJLZHWcvWgO3AimPgc0-7pAAOCobbu_dq2bVJ5NeB3OII3Er3Fluj8IS0MjQku96npVU0neh4eSZ87ZbKY3LNIl-EVEF0et8eCPAnURRU0QSShzU0kqJ3HM0O2NkzXvGzkNOdnnoiRYqd0sQg2c52fY-vMAyDJ75sbOPKVQAWx6MsVdgpFME9q-iHKpJk0iE2SC73TSzYSZ8y0E7mCLmkAByhmE.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_0187e3e2ac601474016ae81d9dee3c87d1a965d2aa85865698",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10307,
+    "completion_tokens": 288,
+    "total_tokens": 10595,
+    "cost": 0.00024734,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10304,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00024734,
+      "upstream_inference_prompt_cost": 0.00010334,
+      "upstream_inference_completions_cost": 0.000144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

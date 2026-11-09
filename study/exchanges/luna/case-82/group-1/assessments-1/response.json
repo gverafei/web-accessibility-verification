@@ -1,0 +1,40 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"meets\",\"rationale\":\"The target preserves the reference\u2019s visible Amazon shopping content, category cards, imagery, and organization. The only notable difference is a minor header rendering change; no core information is lost.\"},\"presentation\":{\"choice\":\"meets\",\"rationale\":\"Content is legible and coherently arranged across both supplied segments. The lower segment matches exactly, and the small header difference does not impair readability or use.\"},\"controls\":{\"choice\":\"meets\",\"rationale\":\"The visible search, account, cart, carousel, and category controls remain identifiable; no essential control has an unreadable label or purpose.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The reference and target show coherent corresponding states of the same shopping page, with consistent content across the lower segment.\"},\"semantic_adequacy\":{\"choice\":\"meets\",\"rationale\":\"Headings, category labels, and product imagery communicate the shopping page\u2019s purpose and remain coherent.\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10555,
+    "completion_tokens": 208,
+    "total_tokens": 10763,
+    "cost": 0.0014233,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10552,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014233,
+      "upstream_inference_prompt_cost": 0.0013193,
+      "upstream_inference_completions_cost": 0.000104
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

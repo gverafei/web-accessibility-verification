@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>LinkedIn: Log In or Sign Up</title>
+<meta content="Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities." name="description"/>
+<style>
+  :root {
+    --blue: #0a66c2;
+    --blue-dark: #004182;
+    --ink: #1d2226;
+    --muted: #4a5258;
+    --line: #d0d7de;
+    --surface: #f3f2ef;
+    --white: #ffffff;
+    --focus: #ffb000;
+    --radius-pill: 999px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { color: var(--blue-dark); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+  .wrap { width: min(1128px, 100% - 32px); margin-inline: auto; }
+
+  .skip-link {
+    position: absolute; left: 8px; top: -60px; z-index: 100;
+    background: var(--ink); color: var(--white); padding: 10px 16px; border-radius: 6px;
+  }
+  .skip-link:focus { top: 8px; }
+
+  /* Header */
+  .site-header { border-bottom: 1px solid var(--line); background: var(--white); }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; flex-wrap: wrap; }
+  .brand { display: inline-flex; align-items: center; color: var(--blue); font-weight: 700; font-size: 1.6rem; text-decoration: none; letter-spacing: -0.02em; }
+  .brand span.mark { background: var(--blue); color: #fff; border-radius: 3px; padding: 0 5px; margin-left: 4px; font-size: 1.2rem; }
+  .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
+  .main-nav a { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 10px; color: var(--muted); text-decoration: none; font-size: 0.8rem; border-radius: 6px; min-width: 64px; }
+  .main-nav a:hover { color: var(--ink); background: #f0f0f0; }
+  .main-nav .ico { font-size: 1.2rem; line-height: 1; }
+  .header-actions { display: flex; gap: 8px; align-items: center; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 44px; padding: 10px 20px; border-radius: var(--radius-pill);
+    border: 1px solid var(--blue); font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+    background: var(--white); color: var(--blue); transition: background .15s;
+  }
+  .btn:hover { background: #eef3f8; color: var(--blue-dark); }
+  .btn-primary { background: var(--blue); color: var(--white); }
+  .btn-primary:hover { background: var(--blue-dark); color: var(--white); }
+  .btn-block { width: 100%; }
+  .btn-google { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .btn-google:hover { background: var(--blue-dark); color: #fff; }
+  .g-badge { background: #fff; color: #1a73e8; border-radius: 50%; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
+  .btn-ms { background: #fff; color: #1d2226; border-color: #8c8f93; }
+  .btn-ms:hover { background: #f3f3f3; color: #1d2226; }
+
+  /* Hero */
+  .hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; padding: 48px 0 56px; }
+  .hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.25rem); line-height: 1.12; margin: 0 0 24px; font-weight: 400; letter-spacing: -0.02em; }
+  .auth-stack { display: grid; gap: 12px; max-width: 360px; }
+  .auth-stack form { margin: 0; }
+  .legal { font-size: 0.8rem; color: var(--muted); max-width: 360px; margin: 18px 0; text-align: center; }
+  .join-line { max-width: 360px; text-align: center; margin: 0; }
+  .hero-art img { border-radius: 12px; width: 100%; }
+
+  /* Sections */
+  section.band { padding: 56px 0; }
+  section.band.tinted { background: var(--surface); }
+  .split { display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px; align-items: start; }
+  h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.2; margin: 0 0 12px; font-weight: 600; }
+  h3 { font-size: 1.1rem; margin: 0 0 12px; font-weight: 600; }
+  .lead { color: var(--muted); margin: 0; }
+  .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .chips a {
+    display: inline-block; padding: 10px 18px; border: 1px solid #8c8f93; border-radius: var(--radius-pill);
+    color: var(--ink); text-decoration: none; font-weight: 600; background: var(--white); font-size: 0.95rem;
+  }
+  .chips a:hover { background: #eef3f8; border-color: var(--blue); color: var(--blue-dark); }
+  .chips.compact a { font-weight: 400; }
+  .chips a.show-all { border-color: var(--blue); color: var(--blue); }
+  details.more { margin-top: 12px; }
+  details.more summary {
+    display: inline-flex; min-height: 44px; align-items: center; padding: 10px 18px; cursor: pointer;
+    border: 1px solid #8c8f93; border-radius: var(--radius-pill); font-weight: 600; color: var(--ink); list-style: none;
+  }
+  details.more summary::-webkit-details-marker { display: none; }
+  details.more summary:hover { border-color: var(--blue); color: var(--blue); }
+  details.more[open] summary { display: none; }
+  details.more .chips { margin-top: 10px; }
+  .sub { color: var(--muted); margin: 4px 0 0; }
+
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; list-style: none; padding: 0; margin: 0; }
+  .cards li { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .cards a { color: var(--ink); text-decoration: none; font-weight: 600; display: block; }
+  .cards a:hover { color: var(--blue); text-decoration: underline; }
+  .cards small { display: block; color: var(--muted); font-weight: 400; margin-top: 4px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .two-col img { border-radius: 12px; }
+  .intent-list { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; }
+  .intent-list a { display: block; padding: 14px 18px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--blue); font-weight: 600; }
+  .intent-list a:hover { border-color: var(--blue); background: #eef3f8; }
+
+  .join-band { text-align: center; background: var(--blue); color: #fff; padding: 56px 0; }
+  .join-band h2 { color: #fff; }
+  .join-band .btn { background: #fff; color: var(--blue-dark); border-color: #fff; }
+  .join-band .btn:hover { background: #eef3f8; }
+
+  /* Footer */
+  .site-footer { background: #f9fafb; border-top: 1px solid var(--line); padding: 48px 0 24px; font-size: 0.92rem; }
+  .directory { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 28px; }
+  .directory h3 { font-size: 0.95rem; color: var(--ink); }
+  .directory ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .directory a { color: var(--muted); text-decoration: none; }
+  .directory a:hover { color: var(--blue); text-decoration: underline; }
+  .legal-links { display: flex; flex-wrap: wrap; gap: 8px 18px; list-style: none; padding: 0; margin: 32px 0 16px; border-top: 1px solid var(--line); padding-top: 20px; }
+  .legal-links a { color: var(--muted); }
+  .copy { color: var(--muted); margin: 0; }
+  details.lang { margin-top: 24px; }
+  details.lang summary { cursor: pointer; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; color: var(--ink); }
+  details.lang ul { list-style: none; padding: 0; margin: 12px 0 0; columns: 3 180px; gap: 16px; }
+  details.lang li { margin-bottom: 6px; }
+  details.lang a { color: var(--muted); }
+
+  @media (max-width: 860px) {
+    .hero .wrap, .split, .two-col { grid-template-columns: 1fr; }
+    .hero-art { order: -1; }
+    .main-nav a { min-width: 52px; padding: 6px; }
+  }
+  @media (max-width: 560px) {
+    .main-nav .ico { font-size: 1rem; }
+    .main-nav span.label { font-size: 0.72rem; }
+    .header-actions .btn { padding: 8px 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="wrap">
+<a aria-label="LinkedIn home" class="brand" href="https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo">Linked<span aria-hidden="true" class="mark">in</span></a>
+<nav aria-label="Primary" class="main-nav">
+<ul>
+<li><a href="https://www.linkedin.com/top-content?trk=guest_homepage-basic_guest_nav_menu_topContent"><span aria-hidden="true" class="ico">🚀</span><span class="label">Top Content</span></a></li>
+<li><a href="https://www.linkedin.com/pub/dir/+/+?trk=guest_homepage-basic_guest_nav_menu_people"><span aria-hidden="true" class="ico">👥</span><span class="label">People</span></a></li>
+<li><a href="https://www.linkedin.com/learning/search?trk=guest_homepage-basic_guest_nav_menu_learning"><span aria-hidden="true" class="ico">🎬</span><span class="label">Learning</span></a></li>
+<li><a href="https://www.linkedin.com/jobs/search?trk=guest_homepage-basic_guest_nav_menu_jobs"><span aria-hidden="true" class="ico">💼</span><span class="label">Jobs</span></a></li>
+<li><a href="https://www.linkedin.com/games?trk=guest_homepage-basic_guest_nav_menu_games"><span aria-hidden="true" class="ico">🧩</span><span class="label">Games</span></a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="btn" href="https://www.linkedin.com/login?fromSignIn=true&amp;trk=guest_homepage-basic_nav-header-signin">Sign in</a>
+<a class="btn btn-primary" href="https://www.linkedin.com/signup?trk=guest_homepage-basic_nav-header-join">Join now</a>
+</div>
+</div>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero band">
+<div class="wrap">
+<div>
+<h1 id="hero-title">Welcome to your professional community</h1>
+<div class="auth-stack">
+<!-- Source contract: Google one-tap submit to login-submit -->
+<form action="https://www.linkedin.com/uas/login-submit" method="post">
+<input name="loginCsrfParam" type="hidden" value="6705c88f-efee-4a9c-862f-656a84b207a1"/>
+<input name="trk" type="hidden" value="guest_homepage-basic_google-one-tap-submit"/>
+<button class="btn btn-google btn-block" type="submit"><span aria-hidden="true" class="g-badge">G</span> Continue with Google</button>
+</form>
+<!-- Source contract: Microsoft auth submit to login-submit -->
+<form action="https://www.linkedin.com/uas/login-submit" method="post">
+<input name="loginCsrfParam" type="hidden" value="6705c88f-efee-4a9c-862f-656a84b207a1"/>
+<input name="trk" type="hidden" value="guest_homepage-basic_microsoft-auth-submit"/>
+<button class="btn btn-ms btn-block" type="submit">Continue with Microsoft</button>
+</form>
+<a class="btn btn-block" href="https://www.linkedin.com/login">Sign in with email</a>
+</div>
+<p class="legal">By clicking Continue to join or sign in, you agree to LinkedIn’s <a href="https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement">User Agreement</a>, <a href="https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy">Privacy Policy</a>, and <a href="https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy">Cookie Policy</a>.</p>
+<p class="join-line">New to LinkedIn? <a href="https://www.linkedin.com/signup"><strong>Join now</strong></a></p>
+</div>
+<figure class="hero-art" style="margin:0">
+<img alt="Welcome to your professional community" height="480" src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" width="640"/>
+</figure>
+</div>
+</section>
+<section aria-labelledby="top-content-title" class="band tinted">
+<div class="wrap split">
+<div>
+<h2 id="top-content-title">Explore top LinkedIn content</h2>
+<p class="lead">Discover relevant posts and expert insights — curated by topic and in one place.</p>
+</div>
+<ul aria-label="Top content topics" class="chips">
+<li><a href="https://www.linkedin.com/top-content/career/">Career</a></li>
+<li><a href="https://www.linkedin.com/top-content/productivity/">Productivity</a></li>
+<li><a href="https://www.linkedin.com/top-content/finance/">Finance</a></li>
+<li><a href="https://www.linkedin.com/top-content/soft-skills-emotional-intelligence/">Soft Skills &amp; Emotional Intelligence</a></li>
+<li><a href="https://www.linkedin.com/top-content/project-management/">Project Management</a></li>
+<li><a href="https://www.linkedin.com/top-content/education/">Education</a></li>
+<li><a href="https://www.linkedin.com/top-content/technology/">Technology</a></li>
+<li><a href="https://www.linkedin.com/top-content/leadership/">Leadership</a></li>
+<li><a href="https://www.linkedin.com/top-content/ecommerce/">Ecommerce</a></li>
+<li><a class="show-all" href="https://www.linkedin.com/top-content/">Show all</a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="jobs-title" class="band">
+<div class="wrap">
+<h2 id="jobs-title">Find the right job or internship for you</h2>
+<ul aria-label="Job categories" class="chips compact">
+<li><a href="https://www.linkedin.com/jobs/engineering-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Engineering</a></li>
+<li><a href="https://www.linkedin.com/jobs/business-development-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Business Development</a></li>
+<li><a href="https://www.linkedin.com/jobs/finance-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Finance</a></li>
+<li><a href="https://www.linkedin.com/jobs/administrative-assistant-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Administrative Assistant</a></li>
+<li><a href="https://www.linkedin.com/jobs/retail-associate-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Retail Associate</a></li>
+<li><a href="https://www.linkedin.com/jobs/customer-service-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Customer Service</a></li>
+<li><a href="https://www.linkedin.com/jobs/operations-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Operations</a></li>
+<li><a href="https://www.linkedin.com/jobs/information-technology-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Information Technology</a></li>
+<li><a href="https://www.linkedin.com/jobs/marketing-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Marketing</a></li>
+<li><a href="https://www.linkedin.com/jobs/human-resources-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Human Resources</a></li>
+</ul>
+<details class="more">
+<summary>Show more job categories</summary>
+<ul aria-label="More job categories" class="chips compact">
+<li><a href="https://www.linkedin.com/jobs/healthcare-services-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Healthcare Service</a></li>
+<li><a href="https://www.linkedin.com/jobs/sales-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Sales</a></li>
+<li><a href="https://www.linkedin.com/jobs/program-and-project-management-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Program and Project Management</a></li>
+<li><a href="https://www.linkedin.com/jobs/accounting-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Accounting</a></li>
+<li><a href="https://www.linkedin.com/jobs/arts-and-design-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Arts and Design</a></li>
+<li><a href="https://www.linkedin.com/jobs/community-and-social-services-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Community and Social Services</a></li>
+<li><a href="https://www.linkedin.com/jobs/consulting-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Consulting</a></li>
+<li><a href="https://www.linkedin.com/jobs/education-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Education</a></li>
+<li><a href="https://www.linkedin.com/jobs/entrepreneurship-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Entrepreneurship</a></li>
+<li><a href="https://www.linkedin.com/jobs/legal-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Legal</a></li>
+<li><a href="https://www.linkedin.com/jobs/media-and-communications-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Media and Communications</a></li>
+<li><a href="https://www.linkedin.com/jobs/military-and-protective-services-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Military and Protective Services</a></li>
+<li><a href="https://www.linkedin.com/jobs/product-management-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Product Management</a></li>
+<li><a href="https://www.linkedin.com/jobs/purchasing-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Purchasing</a></li>
+<li><a href="https://www.linkedin.com/jobs/quality-assurance-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Quality Assurance</a></li>
+<li><a href="https://www.linkedin.com/jobs/real-estate-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Real Estate</a></li>
+<li><a href="https://www.linkedin.com/jobs/research-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Research</a></li>
+<li><a href="https://www.linkedin.com/jobs/support-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Support</a></li>
+<li><a href="https://www.linkedin.com/jobs/administrative-jobs-jalapa-ver?trk=homepage-basic_suggested-search">Administrative</a></li>
+</ul>
+</details>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta">Post a job</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="tools-title" class="band tinted">
+<div class="wrap split">
+<div>
+<h2 id="tools-title">Discover the best software tools</h2>
+<p class="lead">Connect with buyers who have first-hand experience to find the best products for you.</p>
+</div>
+<ul aria-label="Software categories" class="chips">
+<li><a href="https://www.linkedin.com/products/categories/e-commerce-platforms">E-Commerce Platforms</a></li>
+<li><a href="https://www.linkedin.com/products/categories/customer-relationship-management-software">CRM Software</a></li>
+<li><a href="https://www.linkedin.com/products/categories/human-resources-management-systems">Human Resources Management Systems</a></li>
+<li><a href="https://www.linkedin.com/products/categories/recruiting-software">Recruiting Software</a></li>
+<li><a href="https://www.linkedin.com/products/categories/sales-intelligence-software">Sales Intelligence Software</a></li>
+<li><a href="https://www.linkedin.com/products/categories/project-management-software">Project Management Software</a></li>
+<li><a href="https://www.linkedin.com/products/categories/help-desk-software">Help Desk Software</a></li>
+<li><a href="https://www.linkedin.com/products/categories/social-networking-software">Social Networking Software</a></li>
+<li><a href="https://www.linkedin.com/products/categories/desktop-publishing-software">Desktop Publishing Software</a></li>
+<li><a class="show-all" href="https://www.linkedin.com/products/home">Show all</a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="games-title" class="band">
+<div class="wrap">
+<h2 id="games-title">Keep your mind sharp with games</h2>
+<p class="lead">Take a break and reconnect with your network through quick daily games.</p>
+<ul class="cards" style="margin-top:20px">
+<li><a href="https://www.linkedin.com/games/patches/">Patches</a></li>
+<li><a href="https://www.linkedin.com/games/zip/">Zip</a></li>
+<li><a href="https://www.linkedin.com/games/mini-sudoku/">Mini Sudoku</a></li>
+<li><a href="https://www.linkedin.com/games/queens/">Queens</a></li>
+<li><a href="https://www.linkedin.com/games/tango/">Tango</a></li>
+<li><a href="https://www.linkedin.com/games/pinpoint/">Pinpoint</a></li>
+<li><a href="https://www.linkedin.com/games/crossclimb/">Crossclimb</a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="open-title" class="band tinted">
+<div class="wrap two-col">
+<div>
+<h2 id="open-title">Let the right people know you’re open to work</h2>
+<p class="lead">With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.</p>
+</div>
+<img alt="" height="400" src="https://static.licdn.com/aero-v1/sc/h/dbvmk0tsk0o0hd59fi64z3own" width="560"/>
+</div>
+</section>
+<section aria-labelledby="conversations-title" class="band">
+<div class="wrap two-col">
+<div>
+<h2 id="conversations-title">Conversations today could lead to opportunity tomorrow</h2>
+<p class="lead">Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career.</p>
+</div>
+<section aria-labelledby="updates-title">
+<h2 id="updates-title" style="font-size:1.4rem">Stay up to date on your industry</h2>
+<p class="lead">From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry.</p>
+</section>
+</div>
+</section>
+<section aria-labelledby="people-title" class="band tinted">
+<div class="wrap two-col">
+<div>
+<h2 id="people-title">Connect with people who can help</h2>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://www.linkedin.com/pub/dir/+/+?trk=homepage-basic">Find people you know</a>
+</div>
+</div>
+<img alt="" height="400" src="https://static.licdn.com/aero-v1/sc/h/43h6n82li4xu0q23s8jqizk6j" width="560"/>
+</div>
+</section>
+<section aria-labelledby="learning-title" class="band">
+<div class="wrap">
+<h2 id="learning-title">Learn the skills you need to succeed</h2>
+<p class="lead">Choose a topic to learn about.</p>
+<div class="cards" role="list" style="margin-top:24px">
+<a aria-hidden="true" class="sr-only-anchor" hidden="" href="#" tabindex="-1"></a>
+</div>
+<ul aria-label="Learning topics" class="cards" style="margin-top:20px">
+<li><a href="https://www.linkedin.com/learning/topics/business-analysis-and-strategy?trk=homepage-basic_learning-cta">Business Analysis and Strategy<small>2,180+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/business-software-and-tools?trk=homepage-basic_learning-cta">Business Software and Tools<small>3,280+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/career-development-5?trk=homepage-basic_learning-cta">Career Development<small>750+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/customer-service-3?trk=homepage-basic_learning-cta">Customer Service<small>330+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/diversity-equity-and-inclusion-dei?trk=homepage-basic_learning-cta">Diversity, Equity, and Inclusion (DEI)<small>340+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/finance-and-accounting?trk=homepage-basic_learning-cta">Finance and Accounting<small>420+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/human-resources-3?trk=homepage-basic_learning-cta">Human Resources<small>920+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/leadership-and-management?trk=homepage-basic_learning-cta">Leadership and Management<small>2,890+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/marketing-2?trk=homepage-basic_learning-cta">Marketing<small>1,260+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/professional-development?trk=homepage-basic_learning-cta">Professional Development<small>2,820+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/project-management?trk=homepage-basic_learning-cta">Project Management<small>810+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/sales-3?trk=homepage-basic_learning-cta">Sales<small>390+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/small-business-and-entrepreneurship?trk=homepage-basic_learning-cta">Small Business and Entrepreneurship<small>440+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/training-and-education?trk=homepage-basic_learning-cta">Training and Education<small>390+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/aec?trk=homepage-basic_learning-cta">AEC<small>1,560+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/animation-and-illustration?trk=homepage-basic_learning-cta">Animation and Illustration<small>1,880+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/audio-and-music?trk=homepage-basic_learning-cta">Audio and Music<small>430+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/graphic-design?trk=homepage-basic_learning-cta">Graphic Design<small>1,170+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/motion-graphics-and-vfx?trk=homepage-basic_learning-cta">Motion Graphics and VFX<small>930+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/photography-2?trk=homepage-basic_learning-cta">Photography<small>1,190+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/product-and-manufacturing?trk=homepage-basic_learning-cta">Product and Manufacturing<small>1,560+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/user-experience?trk=homepage-basic_learning-cta">User Experience<small>720+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/2015-54?trk=homepage-basic_learning-cta">Video<small>730+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/visualization-and-real-time?trk=homepage-basic_learning-cta">Visualization and Real-Time<small>1,370+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/web-design?trk=homepage-basic_learning-cta">Web Design<small>590+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/artificial-intelligence?trk=homepage-basic_learning-cta">Artificial Intelligence (AI)<small>690+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/cloud-computing-5?trk=homepage-basic_learning-cta">Cloud Computing<small>1,950+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/security-3?trk=homepage-basic_learning-cta">Cybersecurity<small>1,510+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/data-science?trk=homepage-basic_learning-cta">Data Science<small>2,080+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/database-management?trk=homepage-basic_learning-cta">Database Management<small>660+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/devops?trk=homepage-basic_learning-cta">DevOps<small>720+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/hardware?trk=homepage-basic_learning-cta">Hardware<small>120+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/it-help-desk-5?trk=homepage-basic_learning-cta">IT Help Desk<small>440+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/mobile-development?trk=homepage-basic_learning-cta">Mobile Development<small>520+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/network-and-system-administration?trk=homepage-basic_learning-cta">Network and System Administration<small>1,420+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/software-development?trk=homepage-basic_learning-cta">Software Development<small>3,800+ courses</small></a></li>
+<li><a href="https://www.linkedin.com/learning/topics/web-development?trk=homepage-basic_learning-cta">Web Development<small>2,210+ courses</small></a></li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="intent-title" class="band tinted">
+<div class="wrap two-col">
+<div>
+<h2 id="intent-title">Who is LinkedIn for?</h2>
+<p class="lead">Anyone looking to navigate their professional life.</p>
+<ul class="intent-list">
+<li><a href="https://www.linkedin.com/pub/dir/+/+?trk=homepage-basic_brand-discovery_intent-module-firstBtn">Find a coworker or classmate</a></li>
+<li><a href="https://www.linkedin.com/jobs/jobs-in-jalapa-ver?trk=homepage-basic_brand-discovery_intent-module-secondBtn">Find a new job</a></li>
+<li><a href="https://www.linkedin.com/learning/search?trk=homepage-basic_brand-discovery_intent-module-thirdBtn">Find a course or training</a></li>
+</ul>
+</div>
+<img alt="Who is LinkedIn for?" height="400" src="https://static.licdn.com/aero-v1/sc/h/292yd0en6qdvkbezeuj71yu4y" width="560"/>
+</div>
+</section>
+<section aria-labelledby="join-title" class="join-band">
+<div class="wrap">
+<h2 id="join-title">Join your colleagues, classmates, and friends on LinkedIn</h2>
+<a class="btn" href="https://www.linkedin.com/signup?trk=homepage-basic_join-cta">Get started</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<nav aria-label="Footer directory">
+<div class="directory">
+<div>
+<h3>General</h3>
+<ul>
+<li><a href="https://www.linkedin.com/signup?trk=guest_homepage-basic_directory">Sign Up</a></li>
+<li><a href="https://www.linkedin.com/help/linkedin?lang=en&amp;trk=homepage-basic_directory_helpCenterUrl">Help Center</a></li>
+<li><a href="https://about.linkedin.com/?trk=homepage-basic_directory_aboutUrl">About</a></li>
+<li><a href="https://press.linkedin.com/?trk=homepage-basic_directory_pressMicrositeUrl">Press</a></li>
+<li><a href="https://blog.linkedin.com/?trk=homepage-basic_directory_blogMicrositeUrl">Blog</a></li>
+<li><a href="https://www.linkedin.com/company/linkedin/jobs?trk=homepage-basic_directory_careersUrl">Careers</a></li>
+<li><a href="https://developer.linkedin.com/?trk=homepage-basic_directory_developerMicrositeUrl">Developers</a></li>
+</ul>
+</div>
+<div>
+<h3>Browse LinkedIn</h3>
+<ul>
+<li><a href="https://www.linkedin.com/learning/?trk=homepage-basic_directory_learningHomeUrl">Learning</a></li>
+<li><a href="https://www.linkedin.com/jobs?trk=homepage-basic_directory_jobsHomeUrl">Jobs</a></li>
+<li><a href="https://www.linkedin.com/games?trk=homepage-basic_directory_gameHubUrl">Games</a></li>
+<li><a href="https://members.linkedin.com/apps?trk=homepage-basic_directory_mobileMicrositeUrl">Mobile</a></li>
+<li><a href="https://www.linkedin.com/services?trk=homepage-basic_directory_servicesHomeUrl">Services</a></li>
+<li><a href="https://www.linkedin.com/products?trk=homepage-basic_directory_productsHomeUrl">Products</a></li>
+<li><a href="https://www.linkedin.com/hubs/top-companies/?trk=homepage-basic_directory_topCompaniesHubHomeUrl">Top Companies</a></li>
+<li><a href="https://www.linkedin.com/hubs/top-startups/?trk=homepage-basic_directory_topStartupsHubHomeUrl">Top Startups</a></li>
+<li><a href="https://www.linkedin.com/hubs/top-colleges/?trk=homepage-basic_directory_topCollegesHubHomeUrl">Top Colleges</a></li>
+</ul>
+</div>
+<div>
+<h3>Business Solutions</h3>
+<ul>
+<li><a href="https://business.linkedin.com/talent-solutions?src=li-footer&amp;utm_source=linkedin&amp;utm_medium=footer&amp;trk=homepage-basic_directory_talentSolutionsMicrositeUrl">Talent</a></li>
+<li><a href="https://business.linkedin.com/marketing-solutions?src=li-footer&amp;utm_source=linkedin&amp;utm_medium=footer&amp;trk=homepage-basic_directory_marketingSolutionsMicrositeUrl">Marketing</a></li>
+<li><a href="https://business.linkedin.com/sales-solutions?src=li-footer&amp;utm_source=linkedin&amp;utm_medium=footer&amp;trk=homepage-basic_directory_salesSolutionsMicrositeUrl">Sales</a></li>
+<li><a href="https://learning.linkedin.com/?src=li-footer&amp;trk=homepage-basic_directory_learningMicrositeUrl">Learning</a></li>
+</ul>
+</div>
+<div>
+<h3>Directories</h3>
+<ul>
+<li><a href="https://www.linkedin.com/directory/people?trk=homepage-basic_directory_peopleDirectoryUrl">Members</a></li>
+<li><a href="https://www.linkedin.com/directory/jobs?trk=homepage-basic_directory_jobSearchDirectoryUrl">Jobs</a></li>
+<li><a href="https://www.linkedin.com/directory/companies?trk=homepage-basic_directory_companyDirectoryUrl">Companies</a></li>
+<li><a href="https://www.linkedin.com/directory/featured?trk=homepage-basic_directory_featuredDirectoryUrl">Featured</a></li>
+<li><a href="https://www.linkedin.com/directory/learning?trk=homepage-basic_directory_learningDirectoryUrl">Learning</a></li>
+<li><a href="https://www.linkedin.com/directory/posts?trk=homepage-basic_directory_postsDirectoryUrl">Posts</a></li>
+<li><a href="https://www.linkedin.com/directory/articles?trk=homepage-basic_directory_articlesDirectoryUrl">Articles</a></li>
+<li><a href="https://www.linkedin.com/directory/schools?trk=homepage-basic_directory_schoolsDirectoryUrl">Schools</a></li>
+<li><a href="https://www.linkedin.com/directory/news?trk=homepage-basic_directory_newsDirectoryUrl">News</a></li>
+<li><a href="https://www.linkedin.com/directory/newsletters?trk=homepage-basic_directory_newslettersDirectoryUrl">News Letters</a></li>
+<li><a href="https://www.linkedin.com/directory/services?trk=homepage-basic_directory_servicesDirectoryUrl">Services</a></li>
+<li><a href="https://www.linkedin.com/directory/products?trk=homepage-basic_directory_productsDirectoryUrl">Products</a></li>
+<li><a href="https://www.linkedin.com/directory/people-search?trk=homepage-basic_directory_peopleSearchDirectoryUrl">People Search</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav aria-label="Legal and policies">
+<ul class="legal-links">
+<li><a href="https://about.linkedin.com?trk=homepage-basic_footer-about">About</a></li>
+<li><a href="https://www.linkedin.com/accessibility?trk=homepage-basic_footer-accessibility">Accessibility</a></li>
+<li><a href="https://www.linkedin.com/legal/user-agreement?trk=homepage-basic_footer-user-agreement">User Agreement</a></li>
+<li><a href="https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_footer-privacy-policy">Privacy Policy</a></li>
+<li><a href="https://www.linkedin.com/legal/cookie-policy?trk=homepage-basic_footer-cookie-policy">Cookie Policy</a></li>
+<li><a href="https://www.linkedin.com/legal/copyright-policy?trk=homepage-basic_footer-copyright-policy">Copyright Policy</a></li>
+<li><a href="https://brand.linkedin.com/policies?trk=homepage-basic_footer-brand-policy">Brand Policy</a></li>
+<li><a href="https://www.linkedin.com/psettings/guest-controls?trk=homepage-basic_footer-guest-controls">Guest Controls</a></li>
+<li><a href="https://www.linkedin.com/legal/professional-community-policies?trk=homepage-basic_footer-community-guide">Community Guidelines</a></li>
+</ul>
+</nav>
+<p class="copy">LinkedIn © 2026</p>
+<details class="lang">
+<summary>Language</summary>
+<ul>
+<li><a href="https://www.linkedin.com/" lang="en">English (en-US)</a></li>
+<li><a href="https://ar.linkedin.com/" lang="es-AR">Español (Argentina)</a></li>
+<li><a href="https://de.linkedin.com/" lang="de">Deutsch (German)</a></li>
+<li><a href="https://fr.linkedin.com/" lang="fr">Français (French)</a></li>
+<li><a href="https://it.linkedin.com/" lang="it">Italiano (Italian)</a></li>
+<li><a href="https://pt.linkedin.com/" lang="pt">Português (Portuguese)</a></li>
+<li><a href="https://br.linkedin.com/" lang="pt-BR">Português (Brasil)</a></li>
+<li><a href="https://jp.linkedin.com/" lang="ja">日本語 (Japanese)</a></li>
+<li><a href="https://kr.linkedin.com/" lang="ko">한국어 (Korean)</a></li>
+<li><a href="https://cn.linkedin.com/" lang="zh-CN">简体中文 (Chinese, Simplified)</a></li>
+<li><a href="https://tw.linkedin.com/" lang="zh-TW">正體中文 (Chinese, Traditional)</a></li>
+<li><a href="https://ru.linkedin.com/" lang="ru">Русский (Russian)</a></li>
+<li><a href="https://tr.linkedin.com/" lang="tr">Türkçe (Turkish)</a></li>
+<li><a href="https://ua.linkedin.com/" lang="uk">Українська (Ukrainian)</a></li>
+<li><a href="https://vn.linkedin.com/" lang="vi">Tiếng Việt (Vietnamese)</a></li>
+</ul>
+</details>
+</div>
+</footer>
+</body>
+</html>

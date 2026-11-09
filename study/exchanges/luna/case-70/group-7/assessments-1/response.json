@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"content_fidelity\":{\"choice\":\"material_defect\",\"rationale\":\"The target retains the annual-letter summary and CTA, but the book-of-the-week card is largely blank: its book cover, title, author, description, and related publication links shown in the reference are absent. This is a material loss of editorial content.\"},\"presentation\":{\"choice\":\"material_defect\",\"rationale\":\"The book card\u2019s large empty image and text areas leave that section visibly incomplete, rather than merely reflecting a viewport cut or documented dynamic component.\"},\"controls\":{\"choice\":\"material_defect\",\"rationale\":\"The reference shows publication links within the book card, but that card content and its links are absent in the target. Other visible footer and call-to-action controls remain legible.\"},\"evidence_coherence\":{\"choice\":\"meets\",\"rationale\":\"The supplied windows form a coherent comparison of corresponding page regions. The localized blank book card is a defect in the target, not evidence that the comparison set is mismatched.\"},\"semantic_adequacy\":{\"choice\":\"material_defect\",\"rationale\":\"Without the book title, author, description, and cover, the target does not convey the meaning of the reference\u2019s book-of-the-week feature.\"}}",
+        "refusal": null,
+        "reasoning": "**Analyzing presentation issues**\n\nIt seems like the book is missing all the card text and the cover, which can be pretty confusing. The DOM context only shows a logo carousel, and that makes me think we might be missing some crucial material. The presentation target looks like a large slab in the book card, which works coherently, but something is definitely missing. I think there's evidence for coherence, but the semantics seem off and defective in this case.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing presentation issues**\n\nIt seems like the book is missing all the card text and the cover, which can be pretty confusing. The DOM context only shows a logo carousel, and that makes me think we might be missing some crucial material. The presentation target looks like a large slab in the book card, which works coherently, but something is definitely missing. I think there's evidence for coherence, but the semantics seem off and defective in this case.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BjMKOTMbNwxChXgyjXLgj6gpjugeSoaQtRwyQrYF18RpqjZTGoN57rpUbo98U1_rbOp0sycEcOJiTSJ3HZ45aVDiXxPl9MNPMwoHUUqXuMPWHKyy4zQ7p1D4cnZIqpGCGg0LzAK6kBrkkyBG0dOEJvTNBpZmHvANJQqpZ07ZiWzKa4_AI7BP2BDQjW8rzLJRKm4dva0gBFYZE110V1oBTDZbK81iuucQ7sQD5sETrrUpf4eTtqFAXBm6I0KaFlqA4cd7ZiIDYSookiSWPLa0nZ2EpmOlN85Z7K8TxUlbiOeBptKluGH_DvJA7oHXOzwLJzwyRNCnZeQUT3suJAyWusobobo3vZKAmbEgdTvnkMwxUN13CgTAtY8RGGs3msuZzTln_0p5lVK3cdZxR3CvZ0FNe8JdvE9P9dFjWONS71KflT2DZp6cLdiMHJaOO1VXRG0b4VBWamxtViB94y6GNgbVWwY5aoFcxZOK2siwPhar5JrA8QNKRj9F9W-nF33mBvpKtm874kEtyykLIJrRwqFTCdxkiLQRZWf-IrEOlon39E0MVXzNZUbwHV3YfKf1qm_XidGy9s2TRJLmvrk9YtPz9ItK_9lwmcDDCWB6Ah-3G7poNhjmyp-HYfMpAJkbbPpbuRP8Il4pFK1JiN_-xPOZWCCHuLsqbGciHvyq72fC0h_2twRR45P6jXFpUf7OBav73msoY9o5zCru03X7LvTGJGc70w-Ch95JpYqLm-076lUSkoN1f9TJh9kNOqSN0p4klQTFptVooly96CNfZgqZny7Bt2qzo-s5r2haY7H_xgASa4FSiB-oxnUwa-P9sGsd7Oaq-2KYaMNH4r8z-2cQyzei64EVgBtnvEiUF9ewmNh9T_Iwn4hi5eMsjZVmG1QMW5kAivMmVefMLn5gUU1TGLR-joUeKZeRRnUvXpg-aXB49K1yLdhxFZDxWsdz0XYjh9QRlsF5HNHa6cy9ZjKp_dAmt34gipbVneMzFeDPFWqRkWCuBXKMgtxXzLQvn5V4nB8vBliUvPAFyyYawW0ZrZIcoVxJDVsUSwgKzMlOUeThbIr3iEuCMPfZqqy4_PbGbi7rhb4uPhECMcvLCqwaaGypc6uQuqtjy53bLuBa5qFVQ5d-IvUhnMDKYgxUQ5e2w5mrCMU0VtJg27DFm4VN31XtO0sOtyN1APVl7JYnwmobvSQ9bc9txc0Wp9e3Qlb0qRj3B9HlPWyvQUTZhELYrzyZ068-IycF8HaYBrZp4v6T-ME6K5duICz7oY4baorUgkmHTwEfJtriZZlwNWJqHsA5DZco5gE31OJGcgczm4fNOnu3OC2jexQtB9nFzSGp5RGKowBv0rBmtdhPbcVesSP-IYIMc0lqS-hOfGbb3az-pcZOR-0N2zOOFsagcbIhjLneB3OmBrK1pLTNBC6BAi0j3cbDDoSfnn3Hs_etbxIngy1v-onKtrVbTtLR-zr3Rt3PlR9wv6kC-BJVZaUL3_0f_VdCxHtNjNz7RVDyFqnnzDmCwL8Q1zBV-tpeDALBt1hasvD0s_HfbqHBtokilTL9S0wIuGEFBK2dzFbpYNKtapgPyQHPP4G7GY_3PPb-mdDs4lr7cLqlKZRUGrG1RhRzsfahDBTgsVdMhAzX68tASJ7-A8WtOtFAGYfUd8ZvahZRhMDx64jkJhvE-rEdvwypYFJk1ZElopu3ye3us4kYF1FdN9mNdYnNW1MD-OAwjZ7bbOG3sGJzbjVb4SRcZKqgOD-70c4I1ZwxcskUKYNkdwrwFckgToICEUhRxc5CmvphgQbEa38q74YVAVeT_oo7ivNKgjULsRAIFDLEts_V3gGJS05LLamdMtf_Yxiz7Ut2I6dv61RloRM8A4mfouH9h1DoVaQaRcmta1rjhX517o7YO3f5nIO57uRGw18mCbwAlNA632gKoIaiCmYldyg2qvcwjkbZVxwn7_LlHHMApJJNj-fpx4MzTlCeZ77pbJAmxUc-dAvVWnKjehhsq0rf7Dvboev_ukPQQ6qoJK-fU6ShVId5IazBELkUWaCwN0VNlF8J8L1hkn9z_Oy55-0cB87QDzlivobQobIrMCrDacD7sFiKxX15fVtA2qZ2KNPxPW8j4lsBmgG28IggbNbzPZ0gAtG9PhkAj4qXK9sU181tQKthH0Ep6smvb9Pp8DEF6rugVwDNBDLRLwLJoHgiCwlaaFRcNVj0M079PPKAc-Li_mZY21PJ0RJmYf2ptj-FUdKYf8ThSFOSH-1HAs_8tk5GQCEqJ57RXgm21RmsFPzLqbA-fupdV5YDJYglmluI3fePA6m_FGQOZYIWswOYgmqviK1aReEVipkTnnN5jKj4ck6KSDwPHuXZcaQRI25wvojPqEV9XGKzJs3I6vriqJZ7RjXFNIjtcK0FFVabs2jCI1yz_mnEzMm-FoXsFs6Pjd_n1iZBzW-UoiSqjM-6UsAhs9GqhAyzs7rxL1RuMnNf6fxnNRLxyqu1QuKme2pTU0IEsaFbIL-tCRJTSQfKPHYwg2oZvjXsDES7wfBTmULi5YD1QTZDJxrres3haZWMgMEq7T9wIe-pq0d1SZqaQ6c7KXgaCNAGjJDlMHJnKfL1w-puV5cSrFiWf3Y0oCm3t1HADwblcmKyzipDFdAoHGaikdvtlLc1ge9xnPKeN80Z_wr1mMRmUnBozSyc1J8DANX5-PWDADhOXOwEZap4UrD-gn1K_94_as_b7NdS3kv5vDrGFUDC1FTsEjF8M7P0I-6Vwp-ESXZYATEKnWmCOu0vRuOhir7qYtJUBv_GIiP3wu7KrLzrTKRRoZyWWE2Sr94MtXvZEiJ2tO8ah976X1--64PEksL34Wq1BIqMLU7pcSGpzmKNFuzneWhRY6pIwHbDNBcFU62oB4COrciqXBPD-JMG6Se-Y12Xec-c8I3Pmx7Y-Sal7Zrr04QkTxmpeNxySVd5gZ1BuqnDcxt7YD9SLUpSO_piuo8SDqlihdl8gjOOW758pQBgK6__SXiy-wwhb433kbJzfhLKjJcxWNqfgK-Wd8zQ8ihMF2j2iMsVf4SKfcxj5NZrdF0rMepuNtRQTNrO23LaUwT1x4soga9Q5VK2q-7qLHAB9VoIapqx9QrXlzF8dh7l7_ai5_s7BU-K70vj6aa_r2U3Y8vJIhjrcyzoLKAKQjCDtAp6ZW6FRGs9J5OoKyZPni7om0dV9Mx3Mc5ejyG_OFaHGbiCXVghkyzwlF_nFz6_djLvXpEaA6-F66r8jNw7opTdKqjnhZet79nSAcQ8eQhS0RIaVwhfh7xJ7Nojm5CZvuK2bZE0IxLnRXjFtB4VXb3nozPe_VSYHhwfDiGYfPeEnjKGeRWk5YnwQy5wgkycMNPwkxyMs4ZcaGE46qdDlAt11Rot3jZ-fau2RYLuMbIsu5T2LdXxb3llZCuXgig65m_GH4ujck59lUXvhAMhtyirCRh8Nnt2l8VEOjrosoFq2FVAZz28n9bgQQ0AB4wBpEpXHWdNLoW6BLnD9koP9iFWKm9A8r_WlVZMPD3CmByzWbMXVCnyhWfmNim9N07Le5tBp0OPDRO9zr8EU9DSK-vEZJ1YTuDYEQGh2GNlarTwMn0ZSZHkSXt6_xiE3DPcsoF3fJ80WD7AtNZpH9jjkFJbIRVrWD9LQv9wchuw9C-mIK-jeklJbyu_VCaabBDW0KxgD2DG7zeQElAr0HcWDXn6NRZtnWiy89oy4KZCoZhdXuxefp8YrqL7ovjJbhtafjinI8N0mEL--6Q_-Uf1el0O_obbZKEs799W56aNIAN1wEA5cBmInXKhBcBwDPI1MjAwTUkYzNLdeRJZDAwpEJC_4xDGIxhGI3tfsac_6Al9tf-lgrRmUw5nmeTTilnZKzz-s5Rl73wEMYGUETs2s8tVpDO3kl_15Mzqu72zBLMDwcgxoUbgR7a9SHRxnLdIANh66XW_iK-RGnlubSKXAlT35c3eTMdubzdMVV0j2xXe7SifoCVyYWBd7akhie_Bh1PidMYVxxDM3W37egRT11TPLdkIL3toYOJIcWlLVEm9Hm5-AvPEw_Q8DrJAQdbUnj-s9_7Xo2-HeG605PHzNDQpbuWpXD8TbPJAvUcNIMiAX6TCeDwjS7hZ1yvMFvjp6So5yfOo47sOmKWIPtJr5b8K3EAl2CFSPHP0Do8bR3968-jtPTbuiz84bwLpUhhee1Anhu8d_ecq7_1ieoU36n3oyQAge2Bo9g7DJDgBiaebs8JpTmD9bTI8Ujads7XqaR7vhXsKDP0jLUQohaxYWYE8fYJ9cC22uOPv588gHOEKa03_qrJjxL3ZRStoFwVr-gEYsaIBFF8saB5_WXoj2AuEW-eivAJAhhEJ-GKeCxJ90M5wTZ6Q1BL31C9YahR67Me7qBZqT-H8tMJkcidBSRQIhRXDw0oiTQI_EFQznAsIXyMJaWob0tCKeKME7BwSfAIqd1WzYDXnWJUen_CO2wBQBaBXvrc_HziGCyO9a67Tlk209eGmeFb0Xh8MrsysBxAK1zoQTFyMbeEMYqQIs1zqshPJZz2uweU1P1JjbZ4X8ZkBcRtFGlHMAymhooGUep2mWhQehZ2lv0xlVOR9wVfD-mx9cQTiOP7DWgHo8FXdNDsh9D3HFUXOWkNSelhA1qX3OBi9SY7Ilg4J6bdHFd0goETfBCSCU0cQHB9ufoy5n52p6TYPQ-JirnxVDAihG4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_05784285dbee19dd016ae818c90b4c87d19b477c5361d563df",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11033,
+    "completion_tokens": 475,
+    "total_tokens": 11508,
+    "cost": 0.00161655,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 11030,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00161655,
+      "upstream_inference_prompt_cost": 0.00137905,
+      "upstream_inference_completions_cost": 0.0002375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 219,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

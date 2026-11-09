@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The target retains the visible headings, explanatory text, feature cards, images, and labels shown in the reference.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible content is legible and coherently arranged. The partially shown card at the right edge is consistent with the carousel layout, not substantial clipping.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Card action labels and carousel arrows are visible and understandable; no essential visible control appears lost or unreadable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The corresponding reference and target segments show the same page regions and form a coherent comparison.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The Spanish headings, descriptions, imagery, and card labels convey a coherent technology and solutions page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating output requirements**\n\nI need to ensure that our output is in JSON format. The images should be identical, with the first and second being almost exact but with different hashes. I want the references to be the same too. The cards are clipped intentionally at the right for a carousel viewport. I need to verify that the controls, like arrows and card labels, are clearly visible and functional. Everything should be coherent and consistent, especially regarding the visuals.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating output requirements**\n\nI need to ensure that our output is in JSON format. The images should be identical, with the first and second being almost exact but with different hashes. I want the references to be the same too. The cards are clipped intentionally at the right for a carousel viewport. I need to verify that the controls, like arrows and card labels, are clearly visible and functional. Everything should be coherent and consistent, especially regarding the visuals.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CCzh8dNrJkEgSSxOJTRe02FRx_GoICXdMLu8tpk8_MrmbRrJEeqwO2SagjwKv9_iJsfzbaxQk7ie91jrFxcRK03W8s3MaSWrwT4hn0leXty4VLWHWVd6uK3tWByxDmuwcGFvKspdRnp2roBmX92oKrfXbHZuc1JfWT_ovBe0lO9_87YmkNX7hSwHbzoeAaGRW6YGMQROomb7PZKcnODWIFVqW8365YAw7qjf4bzZI0jqUqi7ThEkTdHB9j1v8am96-DLi41v-jD3uPZNeNqsqFY_O4K693mkDq3XWrpSjowLJooKF9v62iXO2jVP92F8-Ibd_Wq9pdBv33wuuP_CrROuBLlrI5GeJ1m0l-lqo7zj5aNLuOELzxpHT0tbc3nJTrRBBN3eTs1SdhtVpc03P158d2K1QKRYItUbfH7m5TwYlmF1N_6PEqTkCffPcmmZfKJ8Iuy5d5QDwokHtoh25ZnVhWrrXl2lK2tICDZkU8V4Tk3XsgO1rMuL0ui4LNCBq92uLGbeKs9ov6rztbOs7_kMEoOlOQTgIqCbaLTpzThSi-toBLOqRaCf9tGyEfHuOaJTf8AZspSJZRvaIusBSvHbn0n6RFo1-JmKco1FoJzBiijTlb3vq6J97mHg28nQlFSz0tVNU9uzVxCHyv6Hooag6gs-quuB0UHsb49X7HgfexF_TZZSgSshDeZjcHrPO96g25KB9EE8zCk2Vc-l1Ke5uc3-_XpqRdiF5jQeCrhyvG2nkHWBoDomxzQPykzJrvhgbo4I5eI2qsybNe8hi5l2Dmz_RhnmvrgLYq9VhJuuDBiK-Qph6kgtDPCn8Z5Faov3FQ6gSkK_j1t5yWemBvNLC0cvHqS71uxW9Y_NHSpQTr9_vuQ1lvSQezZjGxWIvhrdLm8NiOhrpVFpAz33_UPpbgZQqGgl2DZGEX-vNDyB3EGHB1_pZQs2mozIgtzdvOFSZRvkPty3tAv6gBwtywZr9GsXgeYtZ56ylqwG27bM7crZKInBw-wXYzezdH5bRC3_mLLwrmn7UktsJvr8i1G9sBhvpiWTaXTrjBQDhVgjF2QC4CCC4QXgH_U469GNDGzosonm3rD2BOy3etKek92FMKi9kyxP2DTuhD6N9gsDF7EAqCYgTBkkMMgWvWcuRBSQ0JpmwBJf_HcJHAPQG68gHtmcgPwGB0CG94RTB0-YaQz0tT9aEUXW7v7WbZQcojW2Gj7kZtuBzIuTspZfUX2ZpDg2o9udo7ZyzOuh-GWG7StBIt7jIykB2rqXBSPZLAFZ0oDQU11kVJSRyraGWZdFZ3wGL4xIn_CqFPN7DZOofNq3-__BOTpPeIrOPSE5Xb8b4ahIJ82MbwK7_5plb6UwPThIScFBRPJAPhN2iGpzybns5MlSFHG62j7baklL00gB04onqWm2erbfhO6RYayHf9QjTdc0s1xCD6K1rmOCCNLb2t1E1VpDCU93J6oDqBw9N6GcFIGsLN0EyJU-6WRqEZ2t8NGnmYJEBw4wKx7ZbEdGWR8iQ0Mzs9txmxT1qtpvUTzFEZgz0uK4saFtaAV2d7FzGod3kNizhlF5grMicIHOKWX4xTjqWkikoqmFlIqKYqf-qeJ29qB9Gzug1k3EaV91vwRNNEwTzYaqMmTQgEN0irGa1cgxaK5lA5FctMlow9Raj88otR0UISxZ6MEXEBLoOvEhLZs7KbsFBI_c7zIKTwgG-w1Q5AU7Ke1EIu8COS0e7I1rq1ZFmnif8_R9FQ4Im-LIE5hStAS0ba76mm5fvsshFVPISsz7r2HcVFtqLElxasdoISLfF0qJuLL8WxcPVZV1Zlg0uqX3SoyiHlS4D84aMz-w-ameR05f0UIh4E4jugeKSx4_2xhNkVE9ilfuxLKslJ7L3-UdzA1jpXXILCMP02jGEaAogqx2mtRtnMfcHCMigQ4Jct8Tz4vjAj3pOdNzZBw22F7Vxb0db893IPFNIxMG74l_-JvYw5fizcwK-I_s3r5ca_Xb_mKDdsM3lzRn820wU_CF8-Odqg9MscdaEGgVjszTH5lD0AApswEO2a3eJiCbYiKuT1hLOb_Dw6VTcj_Eg3H77Sg4RvRwBSexTmgYFYcHTfpDMOf3jk9esOeGlWCmMd4l2WNeKxUxa50k6e6nnW_-kCUAJgbQ0VMXfNd7p40-iq3FYFFeVzRZ8uA6Z-y2obptZXtbCcFyay3rUMxLgL-qNWgQO3x6JFH5I2aFbsuEjrVIhh9VV44hOp9LB2EFjm7E0LKj0SbJ2-tn-TFSzUwbmi5cF4kIIpobxtxg5doOx7oOUhjCWnsz_KTl9gPKWuv6MZBBekKVK1rewDR5EuodsFTF-5XsQaBmwjTbez674rZNi7PrCoDp97beSX75-wZJOsUyXk0VMRIVMt_L1okzlQafJ55BFpndR8bUeSo8iotpY3zetYdJnEvZilF5wvrL5Dvt-Pas8-3pqNjNArFrl065iroo5RtMKwB0SKlAOgGJBkJSSnEEZi1q5Rh0q-i4wyUmZGO1tKuuc8kF1Xs8sflUB4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_015f724d0170b5dd016ae820b19bc087d1b294fea9c1b730e8",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14380,
+    "completion_tokens": 302,
+    "total_tokens": 14682,
+    "cost": 0.001948425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14377,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001948425,
+      "upstream_inference_prompt_cost": 0.001797425,
+      "upstream_inference_completions_cost": 0.000151
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

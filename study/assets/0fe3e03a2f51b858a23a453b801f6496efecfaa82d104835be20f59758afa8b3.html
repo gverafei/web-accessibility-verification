@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="We help brands and publishers leverage the best of programmatic, to achieve their goals across every screen." name="description"/>
+<title>Media.net | The Sell Side Platform for Greater Outcomes</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17151c;
+      --muted: #5c5963;
+      --paper: #f6f5f8;
+      --white: #fff;
+      --plum: #3c209d;
+      --pink: #d9165b;
+      --line: #e7e4eb;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid #ef4380;
+      outline-offset: 4px;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10;
+      padding: .7rem 1rem; color: #fff; background: var(--plum);
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { width: min(calc(100% - 3rem), var(--max)); margin-inline: auto; }
+    .site-header { padding: 1rem 0; background: rgba(255,255,255,.94); }
+    .nav {
+      min-height: 60px; display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem;
+    }
+    .brand { display: inline-flex; text-decoration: none; align-items: center; font-weight: 800; font-size: 1.55rem; letter-spacing: -.08em; }
+    .brand .dot { color: var(--pink); }
+    .nav-links { display: flex; align-items: center; gap: clamp(1.1rem, 3vw, 2.5rem); }
+    .nav-links a { text-decoration: none; font-size: .94rem; font-weight: 600; }
+    .nav-links a:hover, footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+    .hero { background: #e9e7ed; overflow: hidden; }
+    .hero-inner {
+      min-height: 600px; padding-block: 5.5rem 4.5rem;
+      display: grid; grid-template-columns: 1fr 1.08fr; align-items: center; gap: 3rem;
+    }
+    .eyebrow { color: var(--plum); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 620px; margin: .7rem 0 1.3rem; font-size: clamp(3.1rem, 6.2vw, 5.8rem); line-height: .99; letter-spacing: -.065em; }
+    .accent { color: var(--pink); }
+    .hero-copy { max-width: 490px; color: #393640; font-size: 1.08rem; }
+    .hero-image { position: relative; }
+    .hero-image::before {
+      content: ""; position: absolute; width: 75%; height: 75%;
+      right: -10%; bottom: -10%; border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink), #5925b4);
+    }
+    .hero-image img {
+      position: relative; display: block; width: 100%; aspect-ratio: 1.12;
+      object-fit: cover; border-radius: 42px; box-shadow: 0 20px 60px #211a3428;
+    }
+    .band { color: #fff; background: var(--plum); }
+    .band-inner { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-block: 1.2rem; }
+    .band p { margin: 0; font-size: 1.05rem; font-weight: 600; }
+    .button {
+      display: inline-flex; min-height: 48px; padding: .65rem 1.2rem;
+      align-items: center; justify-content: center; gap: .8rem;
+      border: 1px solid currentColor; border-radius: 999px;
+      color: inherit; font-weight: 700; text-decoration: none; white-space: nowrap;
+      transition: background .18s ease, transform .18s ease;
+    }
+    .button:hover { background: #ffffff1c; transform: translateY(-1px); }
+    .button .arrow { font-size: 1.25rem; line-height: 1; }
+    .section { padding-block: clamp(4rem, 8vw, 7rem); }
+    .section-heading { max-width: 740px; margin: 0 auto 3rem; text-align: center; }
+    h2 { margin-bottom: .8rem; font-size: clamp(2.1rem, 4vw, 3.4rem); line-height: 1.12; letter-spacing: -.045em; }
+    .section-heading p, .intro { color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .card {
+      min-height: 240px; padding: 1.6rem; border: 1px solid var(--line);
+      border-radius: 18px; background: linear-gradient(150deg, #fff 55%, #f5f0fa);
+    }
+    .card-number { color: var(--pink); font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
+    .card h3 { margin: 2rem 0 .65rem; font-size: 1.18rem; line-height: 1.3; }
+    .card p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .audience { background: var(--paper); }
+    .audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .audience-copy h2 { margin-bottom: 1rem; }
+    .audience-copy ul { display: grid; gap: .9rem; padding: 0; margin: 1.6rem 0 2rem; list-style: none; }
+    .audience-copy li { position: relative; padding-left: 1.8rem; color: #44404a; }
+    .audience-copy li::before { position: absolute; left: 0; content: "✓"; color: var(--pink); font-weight: 800; }
+    .audience-image { width: 100%; display: block; border-radius: 28px; }
+    .button-dark { color: #fff; background: var(--plum); border-color: var(--plum); }
+    .button-dark:hover { background: #2c167e; }
+    .partners { border-top: 1px solid var(--line); }
+    .partner-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+    .partner-group h3 { font-size: .95rem; margin-bottom: 1rem; }
+    .partner-group p { color: var(--muted); font-size: .9rem; margin: 0; }
+    .contact { color: #fff; background: #241456; }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .contact h2 { max-width: 540px; }
+    .contact p { color: #e2dff0; }
+    .contact-form { display: flex; gap: .7rem; align-items: end; flex-wrap: wrap; }
+    .field { flex: 1 1 230px; }
+    .field label { display: block; margin-bottom: .45rem; font-size: .9rem; font-weight: 700; }
+    .field input {
+      width: 100%; min-height: 50px; padding: .7rem .9rem;
+      color: var(--ink); background: #fff; border: 2px solid transparent; border-radius: 8px;
+      font: inherit;
+    }
+    .field input:focus-visible { outline-color: #ff8bb3; }
+    .contact-form button {
+      min-height: 50px; padding: .7rem 1.25rem; color: #241456; background: #fff;
+      border: 0; border-radius: 8px; font: inherit; font-weight: 800; cursor: pointer;
+    }
+    footer { padding-block: 3rem 2rem; color: #e9e6f1; background: #171225; }
+    .footer-top { display: grid; grid-template-columns: 1.2fr 2fr; gap: 3rem; padding-bottom: 2.5rem; }
+    .footer-brand { color: #fff; }
+    .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .footer-links h3 { color: #fff; font-size: .85rem; margin-bottom: .8rem; }
+    .footer-links a { display: block; width: fit-content; margin: .45rem 0; color: #d2cedc; font-size: .88rem; text-decoration: none; }
+    .footer-bottom { padding-top: 1.5rem; border-top: 1px solid #ffffff24; display: flex; justify-content: space-between; gap: 1rem; color: #c4bfce; font-size: .85rem; }
+    @media (max-width: 850px) {
+      .hero-inner { min-height: auto; grid-template-columns: 1fr; padding-block: 4rem; }
+      .hero-copy { max-width: 650px; }
+      .hero-image { max-width: 650px; }
+      .cards { grid-template-columns: repeat(2, 1fr); }
+      .audience-grid { gap: 2rem; }
+      .partner-groups { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+    @media (max-width: 600px) {
+      .wrap { width: min(calc(100% - 2rem), var(--max)); }
+      .nav { align-items: flex-start; flex-direction: column; gap: .8rem; }
+      .nav-links { width: 100%; justify-content: space-between; gap: .5rem; }
+      .nav-links a { font-size: .85rem; }
+      .hero-inner { gap: 2rem; padding-block: 3.2rem; }
+      h1 { font-size: clamp(3rem, 15vw, 4.3rem); }
+      .hero-image img { border-radius: 26px; }
+      .band-inner { align-items: flex-start; flex-direction: column; gap: 1rem; }
+      .cards { grid-template-columns: 1fr; }
+      .card { min-height: 190px; }
+      .card h3 { margin-top: 1.2rem; }
+      .audience-grid, .contact-inner { grid-template-columns: 1fr; }
+      .audience-image { order: 2; }
+      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-links { grid-template-columns: repeat(2, 1fr); }
+      .footer-bottom { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap nav">
+<a aria-label="Media.net home" class="brand" href="https://www.media.net/">media<span class="dot">.</span>net</a>
+<nav aria-label="Main navigation" class="nav-links">
+<a href="https://www.media.net/publishers">Publishers</a>
+<a href="https://www.media.net/advertiser">Advertisers</a>
+<a href="https://www.media.net/aboutus">About Us</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-inner">
+<div>
+<div class="eyebrow">The sell side platform for greater outcomes</div>
+<h1 id="hero-title">Closing in on your outcomes. <span class="accent">Conversions.</span></h1>
+<p class="hero-copy">Scale of the open web. Performance opportunities of the walled gardens. And a stellar team that helps you succeed across every screen.</p>
+</div>
+<div class="hero-image">
+<img alt="Shopper sees a contextually relevant ad on a mobile phone while in a grocery store" fetchpriority="high" src="https://s31073.pcdn.co/wf-assets/images/conversion-compress.jpg"/>
+</div>
+</div>
+</section>
+<aside aria-label="Curated deals" class="band">
+<div class="wrap band-inner">
+<p>Power performance across the holiday season and Q4’s biggest moments with Media.net’s curated deals.</p>
+<a class="button" href="#contact">Learn more <span aria-hidden="true" class="arrow">→</span></a>
+</div>
+</aside>
+<section aria-labelledby="outcomes-title" class="section">
+<div class="wrap">
+<div class="section-heading">
+<div class="eyebrow">Built around results</div>
+<h2 id="outcomes-title">What it takes to be an outcome-first SSP<span class="accent">.</span></h2>
+</div>
+<div class="cards">
+<article class="card">
+<span class="card-number">01 / AUDIENCES</span>
+<h3>A purpose-built audience graph</h3>
+<p>Unifies SearchSignals with first- and third-party audience data to reach consumers when they are likely to engage.</p>
+</article>
+<article class="card">
+<span class="card-number">02 / MEASUREMENT</span>
+<h3>Verification and measurement partnerships</h3>
+<p>Measure ad effectiveness, incrementality, and return on ad spend.</p>
+</article>
+<article class="card">
+<span class="card-number">03 / FORMATS</span>
+<h3>Formats made for how people consume content</h3>
+<p>Drive performance in the context-rich open web.</p>
+</article>
+<article class="card">
+<span class="card-number">04 / EXPERTISE</span>
+<h3>A scaled global team</h3>
+<p>Get granular inventory insights, analytics, and recommendations to optimize toward your goals.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Solutions for advertisers and publishers" class="section audience">
+<div class="wrap">
+<div class="audience-grid">
+<div class="audience-copy">
+<div class="eyebrow">For advertisers</div>
+<h2><span class="accent">Advertisers,</span> get on the shortest path to premium inventory.</h2>
+<p class="intro">Target and reach the right audiences, in the right context, at every stage of the marketing funnel.</p>
+<ul>
+<li>Unlock 1:1 access to premium curated supply with audiences geared to your KPIs.</li>
+<li>Optimize outcomes with pre- and post-auction campaign insights.</li>
+</ul>
+<a class="button button-dark" href="https://www.media.net/advertiser">Explore advertiser solutions <span aria-hidden="true" class="arrow">→</span></a>
+</div>
+<div class="audience-copy">
+<div class="eyebrow">For publishers</div>
+<h2><span class="accent">Publishers,</span> unlock exclusive revenue with industry-best solutions.</h2>
+<p class="intro">Tap into unique demand and choose monetization solutions customized to your needs.</p>
+<ul>
+<li>Access advertising budgets available only to Media.net publishers.</li>
+<li>Rely on engineering and yield management teams invested in your long-term growth.</li>
+</ul>
+<a class="button button-dark" href="https://www.media.net/publishers">Explore publisher solutions <span aria-hidden="true" class="arrow">→</span></a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="partners-title" class="section partners">
+<div class="wrap">
+<div class="section-heading">
+<div class="eyebrow">Working together</div>
+<h2 id="partners-title">Intentional with our partnerships &amp; people<span class="accent">.</span></h2>
+<p>We work with industry partners who share our vision of a better digital advertising ecosystem—making advertising more efficient and publishing more profitable.</p>
+</div>
+<div class="partner-groups">
+<div class="partner-group"><h3>DSP partners</h3><p>Criteo · Display &amp; Video 360 · The Trade Desk · DeepIntent · Epsilon · Yahoo! Advertising</p></div>
+<div class="partner-group"><h3>Publisher partners</h3><p>Time · New York Post · Everyday Health · Yahoo! · WebMD · The Weather Channel</p></div>
+<div class="partner-group"><h3>Technology partners</h3><p>Fiducia · Adelaide · SEEN THIS · Jounce Media · HUMAN · Scope3 · Sertify · Experian</p></div>
+</div>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="section contact" id="contact">
+<div class="wrap contact-inner">
+<div>
+<div class="eyebrow" style="color:#f497b9">Let’s connect</div>
+<h2 id="contact-title">Let’s talk about what Media.net can do for you.</h2>
+<p>Tell us where to reach you, or visit our contact page to get in touch.</p>
+<a class="button" href="https://www.media.net/contact">Get in touch <span aria-hidden="true" class="arrow">→</span></a>
+</div>
+<form action="https://www.media.net/" class="contact-form" method="get">
+<div class="field">
+<label for="email">Email address</label>
+<input autocomplete="email" id="email" name="Email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footer-top">
+<a aria-label="Media.net home" class="brand footer-brand" href="https://www.media.net/">media<span class="dot">.</span>net</a>
+<div class="footer-links">
+<div>
+<h3>Company</h3>
+<a href="https://www.media.net/aboutus">About Us</a>
+<a href="https://www.media.net/resources">Press Room</a>
+</div>
+<div>
+<h3>Solutions</h3>
+<a href="https://www.media.net/publishers">For Publishers</a>
+<a href="https://www.media.net/advertiser">For Advertisers</a>
+<a href="https://www.media.net/contact">Contact Us</a>
+</div>
+<div>
+<h3>Legal &amp; choices</h3>
+<a href="https://www.media.net/legal/tos/">Terms of Service</a>
+<a href="https://www.media.net/legal/inventorypolicies/">Inventory Policy</a>
+<a href="https://www.media.net/ad-quality-policy/">Ad Quality Policy</a>
+<a href="https://www.media.net/privacy-policy/">Privacy Policy</a>
+<a href="https://www.media.net/optout/">Opt Out</a>
+<a href="https://www.media.net/preferences/">Preferences</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Media.net</span>
+<span>Making advertising more efficient and publishing more profitable.</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

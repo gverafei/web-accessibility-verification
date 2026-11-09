@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#101311" name="theme-color"/>
+<title>DeviantArt — Discover art and community</title>
+<style>
+    :root {
+      color-scheme: dark;
+      --page: #101311;
+      --surface: #191e1b;
+      --surface-raised: #202722;
+      --line: #343d37;
+      --text: #f4f7f4;
+      --muted: #b1bbb4;
+      --green: #16e59a;
+      --green-dark: #062d20;
+      --purple: #b77aff;
+      --content: 1420px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    a:hover { color: var(--green); }
+    a:focus-visible, input:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid #b7ffdb;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    img { max-width: 100%; }
+    .skip-link {
+      position: fixed;
+      z-index: 20;
+      top: 8px;
+      left: 8px;
+      padding: 10px 14px;
+      transform: translateY(-150%);
+      background: white;
+      color: #111;
+      font-weight: 700;
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .wrap { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
+    .site-header { border-bottom: 1px solid var(--line); background: #111512; }
+    .topbar {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      text-decoration: none;
+    }
+    .brand img { display: block; width: 138px; height: auto; }
+    .topbar > .shop-link {
+      padding-left: 22px;
+      border-left: 1px solid var(--line);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .search-form {
+      display: flex;
+      flex: 1 1 320px;
+      max-width: 480px;
+      min-width: 175px;
+      height: 42px;
+      border: 1px solid #48524b;
+      border-radius: 8px;
+      background: #191e1b;
+      overflow: hidden;
+    }
+    .search-form input {
+      width: 100%;
+      min-width: 0;
+      padding: 0 13px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+    }
+    .search-form input::placeholder { color: #a8b1aa; }
+    .search-form button {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      flex: 0 0 46px;
+      border: 0;
+      border-left: 1px solid #48524b;
+      background: #252d27;
+      color: var(--text);
+      cursor: pointer;
+    }
+    .search-form button:hover { background: #344138; }
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .header-tools a { text-decoration: none; font-weight: 650; }
+    .header-tools .video-link { color: #d5a0ff; }
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 17px;
+      border: 1px solid #667168;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color .15s ease, transform .15s ease;
+    }
+    .button:hover { color: var(--text); background: #263029; }
+    .button.primary {
+      border-color: var(--green);
+      background: var(--green);
+      color: #072319;
+    }
+    .button.primary:hover { background: #52f5b6; }
+    .network-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 52px;
+      border-top: 1px solid #252d28;
+    }
+    .network-nav a {
+      padding: 7px 12px;
+      border-radius: 6px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 600;
+    }
+    .network-nav a[aria-current="page"] { background: #1d2821; color: var(--green); }
+    .network-nav a:hover { background: #222b25; color: var(--text); }
+
+    main { padding-bottom: 76px; }
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(250px, .9fr);
+      align-items: center;
+      gap: 28px;
+      min-height: 310px;
+      margin-top: 28px;
+      padding: clamp(28px, 5vw, 62px);
+      overflow: hidden;
+      border: 1px solid #35463b;
+      border-radius: 18px;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(22,229,154,.2), transparent 38%),
+        radial-gradient(ellipse at 60% 100%, rgba(150,76,255,.16), transparent 46%),
+        linear-gradient(125deg, #1c2620 0%, #18201b 55%, #1b2024 100%);
+    }
+    .hero::after {
+      position: absolute;
+      right: 5%;
+      bottom: -140px;
+      width: 370px;
+      height: 370px;
+      border: 1px solid rgba(185,255,218,.13);
+      border-radius: 50%;
+      box-shadow: 0 0 0 34px rgba(185,255,218,.025), 0 0 0 72px rgba(185,255,218,.02);
+      content: "";
+      pointer-events: none;
+    }
+    .hero-copy, .hero-art { position: relative; z-index: 1; }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 700px;
+      margin-bottom: 13px;
+      font-size: clamp(2.15rem, 5vw, 4.1rem);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+    }
+    .hero-copy > p:not(.eyebrow) {
+      max-width: 600px;
+      margin-bottom: 22px;
+      color: #d1d9d3;
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
+    .hero-art {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 204px;
+    }
+    .hero-art figure {
+      position: relative;
+      width: min(100%, 325px);
+      margin: 0;
+      transform: rotate(2deg);
+    }
+    .hero-art img {
+      display: block;
+      width: 100%;
+      max-height: 255px;
+      border: 5px solid rgba(255,255,255,.9);
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
+    }
+    .hero-art figcaption {
+      margin-top: 10px;
+      color: #e0e8e2;
+      font-size: .9rem;
+      text-align: right;
+    }
+
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 30px;
+    }
+    .quick-actions a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-height: 60px;
+      padding: 13px 16px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--surface);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .quick-actions a::after { content: "↗"; color: var(--green); font-size: 1.15rem; }
+    .quick-actions a:hover { border-color: #5b7765; background: var(--surface-raised); }
+
+    .section { margin-top: 42px; }
+    .section-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 17px;
+    }
+    .section-heading h2 { margin-bottom: 3px; font-size: clamp(1.5rem, 2.7vw, 2rem); letter-spacing: -.025em; }
+    .section-heading p { margin-bottom: 0; color: var(--muted); }
+    .category-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 23px;
+      padding: 0;
+      list-style: none;
+    }
+    .category-list a {
+      display: inline-flex;
+      min-height: 37px;
+      align-items: center;
+      padding: 7px 12px;
+      border: 1px solid #3a443d;
+      border-radius: 7px;
+      background: #1a201c;
+      color: #e3e9e4;
+      font-size: .88rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .category-list a:hover, .category-list a[aria-current="page"] {
+      border-color: #44a97b;
+      background: #153326;
+      color: #a7ffd3;
+    }
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      align-items: start;
+      gap: 17px;
+    }
+    .art-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid #303932;
+      border-radius: 10px;
+      background: var(--surface);
+    }
+    .art-card > a:first-child { display: block; overflow: hidden; background: #232a25; }
+    .art-card .art-image {
+      display: block;
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      transition: transform .3s ease;
+    }
+    .art-card > a:first-child:hover .art-image { transform: scale(1.035); }
+    .art-caption { padding: 13px 14px 14px; }
+    .art-caption h3 { margin: 0 0 5px; font-size: 1rem; line-height: 1.35; }
+    .art-caption h3 a { text-decoration: none; }
+    .art-caption p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .art-caption p a { color: #d7e0d9; text-decoration: none; }
+    .art-caption p a:hover { color: var(--green); text-decoration: underline; }
+
+    .challenge-section {
+      margin-top: 54px;
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid #3a443d;
+      border-radius: 14px;
+      background: linear-gradient(115deg, #1b211d, #171b19);
+    }
+    .challenge-section .art-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .challenge-section .art-card .art-image { height: 190px; }
+    .challenge-section .art-card { background: #202622; }
+
+    .artist-feature {
+      display: grid;
+      grid-template-columns: minmax(220px, .8fr) minmax(0, 1.8fr);
+      gap: 25px;
+      align-items: center;
+      margin-top: 52px;
+      padding: clamp(20px, 3vw, 32px);
+      border: 1px solid #35423a;
+      border-radius: 14px;
+      background: #171d19;
+    }
+    .artist-intro { display: flex; gap: 15px; align-items: center; }
+    .artist-intro img {
+      width: 64px;
+      height: 64px;
+      border: 2px solid #425147;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .artist-intro h2 { margin: 0 0 2px; font-size: 1.45rem; }
+    .artist-intro h2 a { text-decoration: none; }
+    .artist-intro p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .artist-stats { margin: 13px 0 0; color: #d4ded6; font-size: .9rem; }
+    .artist-works {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+      gap: 10px;
+      align-items: center;
+    }
+    .artist-works a { display: block; }
+    .artist-works img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+    .artist-works .see-all {
+      padding: 8px;
+      color: var(--green);
+      font-size: .9rem;
+      font-weight: 700;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .join-panel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 54px;
+      padding: clamp(24px, 4vw, 38px);
+      border-radius: 14px;
+      background: linear-gradient(110deg, #123c2b, #173328 58%, #29203a);
+    }
+    .join-panel h2 { margin-bottom: 7px; font-size: clamp(1.45rem, 2.6vw, 2rem); }
+    .join-panel p { max-width: 720px; margin-bottom: 0; color: #d4e2d9; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: #111512;
+      color: var(--muted);
+    }
+    .footer-inner { padding-top: 35px; padding-bottom: 30px; }
+    .footer-top {
+      display: grid;
+      grid-template-columns: minmax(230px, 1.3fr) 2fr;
+      gap: 40px;
+      padding-bottom: 27px;
+      border-bottom: 1px solid var(--line);
+    }
+    .footer-about img { width: 128px; height: auto; margin-bottom: 12px; }
+    .footer-about p { max-width: 560px; margin: 0; font-size: .9rem; }
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .footer-links h2 { margin-bottom: 10px; color: var(--text); font-size: .95rem; }
+    .footer-links ul { margin: 0; padding: 0; list-style: none; }
+    .footer-links li + li { margin-top: 7px; }
+    .footer-links a { font-size: .88rem; text-decoration: none; }
+    .social-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
+    .social-links a { text-decoration: none; }
+    .copyright { margin: 22px 0 0; font-size: .82rem; }
+
+    @media (max-width: 1000px) {
+      .topbar { gap: 15px; }
+      .header-tools { gap: 12px; }
+      .header-tools .video-link { display: none; }
+      .art-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .challenge-section .art-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .art-card .art-image { height: 240px; }
+    }
+    @media (max-width: 700px) {
+      .wrap { width: min(100% - 30px, var(--content)); }
+      .topbar { min-height: 65px; flex-wrap: wrap; gap: 12px; padding-block: 12px; }
+      .brand img { width: 112px; }
+      .topbar > .shop-link { padding-left: 12px; }
+      .search-form { order: 3; flex-basis: 100%; max-width: none; }
+      .header-tools { gap: 10px; }
+      .header-tools > a:first-child { display: none; }
+      .header-tools .button { min-height: 38px; padding: 6px 11px; }
+      .network-nav { overflow-x: auto; white-space: nowrap; }
+      .hero { grid-template-columns: 1fr; gap: 8px; margin-top: 18px; padding: 26px 23px; }
+      .hero-art { min-height: 150px; justify-content: flex-start; }
+      .hero-art figure { width: min(72%, 270px); }
+      .hero-art img { max-height: 175px; }
+      .hero-art figcaption { text-align: left; }
+      .quick-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin: 15px 0 25px; }
+      .quick-actions a { min-height: 54px; padding: 10px; font-size: .9rem; }
+      .art-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+      .art-card .art-image { height: 220px; }
+      .challenge-section .art-grid { gap: 10px; }
+      .challenge-section .art-card .art-image { height: 165px; }
+      .artist-feature { grid-template-columns: 1fr; gap: 18px; }
+      .artist-works { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .artist-works .see-all { grid-column: 1 / -1; padding: 2px 0; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+    }
+    @media (max-width: 430px) {
+      .wrap { width: calc(100% - 24px); }
+      .topbar { gap: 9px; }
+      .brand img { width: 98px; }
+      .topbar > .shop-link { padding-left: 9px; font-size: .9rem; }
+      .header-tools { gap: 7px; }
+      .header-tools .button { padding-inline: 9px; font-size: .86rem; }
+      .art-card .art-image { height: 185px; }
+      .challenge-section { padding: 15px; }
+      .challenge-section .art-card .art-image { height: 135px; }
+      .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="wrap topbar">
+<a aria-label="DeviantArt home" class="brand" href="https://www.deviantart.com/">
+<img alt="DeviantArt" src="https://st.deviantart.net/eclipse/promos/seasonal/halloween/logo-dark.png"/>
+</a>
+<a class="shop-link" href="https://www.deviantart.com/shop">Shop</a>
+<form action="https://www.deviantart.com/search" class="search-form" method="get" role="search">
+<label class="visually-hidden" for="site-search">Search DeviantArt</label>
+<input id="site-search" name="q" placeholder="Search art, artists, and more" type="search"/>
+<button aria-label="Search" type="submit">
+<svg aria-hidden="true" fill="none" focusable="false" height="18" viewbox="0 0 24 24" width="18">
+<circle cx="10.8" cy="10.8" r="6.6" stroke="currentColor" stroke-width="2"></circle>
+<path d="m16 16 4.5 4.5" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</button>
+</form>
+<nav aria-label="Account and creation" class="header-tools">
+<a class="video-link" href="https://www.deviantart.com/studio/video">Create a video</a>
+<a href="https://www.deviantart.com/users/login">Log In</a>
+<a class="button primary" href="https://www.deviantart.com/join/">Join</a>
+</nav>
+</div>
+<nav aria-label="DeviantArt destinations" class="network-nav wrap">
+<a aria-current="page" href="https://www.deviantart.com/">Home</a>
+<a href="https://www.deviantart.com/dailychallenges">Daily Challenges</a>
+<a href="https://www.deviantart.com/dreamup">DreamUp</a>
+<a href="https://www.deviantartsupport.com/en/">Help Center</a>
+</nav>
+</header>
+<main class="wrap" id="main-content">
+<section aria-labelledby="welcome-heading" class="hero">
+<div class="hero-copy">
+<p class="eyebrow">A home for art and artists</p>
+<h1 id="welcome-heading">Where art and community thrive.</h1>
+<p>Explore work from artists around the world, find new inspiration, and connect with people who love what you love.</p>
+<div class="hero-actions">
+<a class="button primary" href="https://www.deviantart.com/join/">Join DeviantArt</a>
+<a class="button" href="#gallery">Explore the gallery</a>
+</div>
+</div>
+<div class="hero-art">
+<figure>
+<a href="https://www.deviantart.com/jemgirl/art/Poolside-Tile-1384279921">
+<img alt="Poolside Tile by jemgirl" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c4755ee-1fe8-4d7a-a844-0d8afbed122b/dmw5x81-5b47c3d5-c2c0-4f70-820a-dc57bc92f40a.jpg/v1/fill/w_333,h_250,q_70,strp/poolside_tile_by_jemgirl_dmw5x81-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJwYXRoIjoiL2YvNmM0NzU1ZWUtMWZlOC00ZDdhLWE4NDQtMGQ4YWZiZWQxMjJiL2RtdzV4ODEtNWI0N2MzZDUtYzJjMC00ZjcwLTgyMGEtZGM1N2JjOTJmNDBhLmpwZyIsImhlaWdodCI6Ijw9OTAwIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.PFZ0RruNSd8b2JcvWJCk33EMbnQawIKVEXZieroqlxE"/>
+</a>
+<figcaption>Discover work from the DeviantArt community</figcaption>
+</figure>
+</div>
+</section>
+<nav aria-label="Create and sell" class="quick-actions">
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_submit&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fstudio%3Fnew%3D1&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">Submit Your Art</a>
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_du&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fdreamup&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">Create AI Art</a>
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_vc&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fstudio%2Fvideo&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">Try Video Creator</a>
+<a href="https://www.deviantart.com/join/?joinpoint=anon_desktop_home_banner_sell&amp;referer=https%3A%2F%2Fwww.deviantart.com%2Fshop%2Fsell&amp;cancel=https%3A%2F%2Fwww.deviantart.com%2F">Sell Your Art</a>
+</nav>
+<section aria-labelledby="gallery-heading" class="section" id="gallery">
+<div class="section-heading">
+<div>
+<h2 id="gallery-heading">Art from the community</h2>
+<p>Photography, illustration, fantasy, fan art, and more.</p>
+</div>
+</div>
+<nav aria-label="Browse art by category">
+<ul class="category-list">
+<li><a aria-current="page" href="https://www.deviantart.com/">All</a></li>
+<li><a href="https://www.deviantart.com/tag/imp">Imp</a></li>
+<li><a href="https://www.deviantart.com/tag/digitalart">Digital Art</a></li>
+<li><a href="https://www.deviantart.com/tag/fanart">Fan Art</a></li>
+<li><a href="https://www.deviantart.com/tag/photography">Photography</a></li>
+<li><a href="https://www.deviantart.com/tag/fantasyart">Fantasy</a></li>
+<li><a href="https://www.deviantart.com/tag/anime">Anime and Manga</a></li>
+<li><a href="https://www.deviantart.com/tag/cosplay">Cosplay</a></li>
+<li><a href="https://www.deviantart.com/tag/adoptable">Adoptables</a></li>
+<li><a href="https://www.deviantart.com/tag/characterdesign">Character Design</a></li>
+<li><a href="https://www.deviantart.com/tag/comic">Comics</a></li>
+<li><a href="https://www.deviantart.com/tag/conceptart">Concept Art</a></li>
+<li><a href="https://www.deviantart.com/tag/game">Game Art</a></li>
+<li><a href="https://www.deviantart.com/tag/scifi">Science Fiction</a></li>
+<li><a href="https://www.deviantart.com/tag/superhero">Superheroes</a></li>
+<li><a href="https://www.deviantart.com/tag/traditionalart">Traditional Art</a></li>
+<li><a href="https://www.deviantart.com/tag/3d">3D Art</a></li>
+</ul>
+</nav>
+<div class="art-grid">
+<article class="art-card">
+<a href="https://www.deviantart.com/ericklopezfoto/art/Xy8a6314-1010795089">
+<img alt="Xy8a6314" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/facffb06-b43d-49be-93cb-34dfee0c4f01/dgpsuhd-d31b90d1-fd87-4705-9215-13116c19705e.jpg/v1/fit/w_375,h_250,q_70,strp/xy8a6314_by_ericklopezfoto_dgpsuhd-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTY4MyIsInBhdGgiOiIvZi9mYWNmZmIwNi1iNDNkLTQ5YmUtOTNjYi0zNGRmZWUwYzRmMDEvZGdwc3VoZC1kMzFiOTBkMS1mZDg3LTQ3MDUtOTIxNS0xMzExNmMxOTcwNWUuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kZ1G6Tk-QLjUuPYJv7j8EeRyOHX2lJJj3K2mNqc3JP4"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/ericklopezfoto/art/Xy8a6314-1010795089">Xy8a6314</a></h3><p>by <a href="https://www.deviantart.com/ericklopezfoto">ErickLopezFoto</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/skekla/art/DRUID-BEAR--Commission-1380413312">
+<img alt="DRUID BEAR- Commission" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22f0ea7d-253e-4899-9dc2-84c5430cc205/dmtv1q8-09130e1f-7682-46b6-b54d-6152c8894266.jpg/v1/fill/w_179,h_250,q_70,strp/druid_bear_commission_by_skekla_dmtv1q8-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJwYXRoIjoiL2YvMjJmMGVhN2QtMjUzZS00ODk5LTlkYzItODRjNTQzMGNjMjA1L2RtdHYxcTgtMDkxMzBlMWYtNzY4Mi00NmI2LWI1NGQtNjE1MmM4ODk0MjY2LmpwZyIsImhlaWdodCI6Ijw9MTI1NyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzIyZjBlYTdkLTI1M2UtNDg5OS05ZGMyLTg0YzU0MzBjYzIwNS9za2VrbGEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX19.qr0YZJ8cKtHw53WI7foPGWxiWoAMbMAIFF3weAczUTo"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/skekla/art/DRUID-BEAR--Commission-1380413312">DRUID BEAR- Commission</a></h3><p>by <a href="https://www.deviantart.com/skekla">SkekLa</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/shakhbatadesign/art/Gateway-to-the-Mind-%7C-Surreal-Dimensional-Portal-1371220683">
+<img alt="Gateway to the Mind, a surreal dimensional portal" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9972d5e5-03fd-43a2-9e34-3013e950b6ec/dmoe0nf-1b526e4d-57b9-4648-b917-67877e6c070c.png/v1/crop/w_166,h_250,x_0,y_0,scl_0.16324535679374,q_70,strp/gateway_to_the_mind_surreal_dimensional_portal_by_shakhbatadesign_dmoe0nf-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJwYXRoIjoiL2YvOTk3MmQ1ZTUtMDNmZC00M2EyLTllMzQtMzAxM2U5NTBiNmVjL2Rtb2Uw bmYtMWI1MjZlNGQtNTdiOS00NjQ4LWI5MTctNjc4NzdlNmMwNzBjLnBuZyIsImhlaWdodCI6Ijw9MTM1MyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzk5NzJkNWU1LTAzZmQtNDNhMi05ZTM0LTMwMTNlOTUwYjZlYy9zaGFraGJhdGFkZXNpZ24tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX19.fIiJxGHgTNktUwX6dtzzywyMGF7lSNqdOa7PU-Nj6mI"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/shakhbatadesign/art/Gateway-to-the-Mind-%7C-Surreal-Dimensional-Portal-1371220683">Gateway to the Mind</a></h3><p>by <a href="https://www.deviantart.com/shakhbatadesign">ShakhbataDesign</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/allisonchinart/art/Coral-Tower-1385651169">
+<img alt="Coral Tower" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0dce719a-cfab-4cbd-b5f0-6305626028e6/dmwzba9-d4b67e79-a197-4a4b-a05d-a92b2ecbdd58.png/v1/fill/w_200,h_250/coral_tower_by_allisonchinart_dmwzba9-250t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTEzNTAiLCJwYXRoIjoiL2YvMGRjZTcxOWEtY2ZhYi00Y2JkLWI1ZjAtNjMwNTYyNjAyOGU2L2Rtd3piYTktZDRiNjdlNzktYTE5Ny00YTRiLWEwNWQtYTkyYjJlY2JkZDU4LnBuZyIsIndpZHRoIjoiPD0xMDgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.KKlflXrWGEfH59zmm1nEEiTyDYh5tNxd_4EiSV70rM4"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/allisonchinart/art/Coral-Tower-1385651169">Coral Tower</a></h3><p>by <a href="https://www.deviantart.com/allisonchinart">allisonchinart</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/inkgladiator/art/Pieberry---Witch-Spring-R-1011004883">
+<img alt="Pieberry - Witch Spring R" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/365378ff-c8e4-467c-b14d-aaf8ce1f6c10/dgpxccz-6f7d6e66-cd18-40a0-9127-1d6b1dc4c15b.png/v1/fill/w_295,h_350/pieberry_witch_spring_r_by_inkgladiator_dgpxccz-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTUxMzEiLCJwYXRoIjoiL2YvMzY1Mzc4ZmYtYzhlNC00NjdjLWIxNGQtYWFmOGNlMWY2YzEwL2RncHhjY3otNmY3ZDZlNjYtY2QxOC00MGEwLTkxMjctMWQ2YjFkYzRjMTViLnBuZyIsIndpZHRoIjoiPD00MzIwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.VwYhrhD2AO2A_5Gcj2q4t4GqAC91nM3MlsMJAtCcn9Q"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/inkgladiator/art/Pieberry---Witch-Spring-R-1011004883">Pieberry - Witch Spring R</a></h3><p>by <a href="https://www.deviantart.com/inkgladiator">InkGladiator</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/akemidl/art/Fish-Rain-1384204642">
+<img alt="Fish Rain" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f8c16bf2-be70-4543-8500-04d2f6d10f4e/dmw4b4y-5a8e687a-b6d9-4c4d-a352-4dbf3a2a5e34.png/v1/fill/w_279,h_350,q_70,strp/fish_rain_by_akemidl_dmw4b4y-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTE2MDQiLCJwYXRoIjoiL2YvZjhjMTZiZjItYmU3MC00NTQzLTg1MDAtMDRkMmY2ZDEwZjRlL2RtdzRiNHktNWE4ZTY4N2EtYjZkOS00YzRkLWEzNTItNGRiZjNhMmE1ZTM0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.vqF6pC7zaAKb57uiVfnEKFUZzM_tTt8er-SBB5J5nx8"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/akemidl/art/Fish-Rain-1384204642">Fish Rain</a></h3><p>by <a href="https://www.deviantart.com/akemidl">AkemiDL</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/shiroku96/art/Betta---Recoloured-2026-1387327264">
+<img alt="Betta - Recoloured 2026" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bb995442-f106-40c5-b9ec-57c0881b0c8f/dmxz8kg-afcec1a7-8b31-4b14-9921-dd581094b51d.jpg/v1/crop/w_262,h_350,x_0,y_0,scl_0.15720263000598,q_70,strp/betta_recoloured_2026_by_shiroku96_dmxz8kg-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTE3MDciLCJwYXRoIjoiL2YvYmI5OTU0NDItZjEwNi00MGM1LWI5ZWMtNTdjMDg4MWIwYzhmL2RteHo4a2ctYWZjZWMxYTctOGIzMS00YjE0LTk5MjEtZGQ1ODEwOTRiNTFkLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.Dfbl0A-xlDXNhqAlxEoxngap2I_qYAJRkMnlGSf51Q0"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/shiroku96/art/Betta---Recoloured-2026-1387327264">Betta - Recoloured 2026</a></h3><p>by <a href="https://www.deviantart.com/shiroku96">Shiroku96</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/vielo/art/The-crow-1383483860">
+<img alt="The crow" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be29865a-f070-4fc4-b9f8-91f0a1d2ab18/dmvouz8-1c0cca60-eb41-4897-932c-f6dffeacb1de.jpg/v1/fit/w_414,h_293,q_70,strp/the_crow_by_vielo_dmvouz8-414w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJwYXRoIjoiL2YvYmUyOTg2NWEtZjA3MC00ZmM0LWI5ZjgtOTFmMGExZDJhYjE4L2Rtdm91ejgtMWMwY2NhNjAtZWI0MS00ODk3LTkzMmMtZjZkZmZlYWNiMWRlLmpwZyIsImhlaWdodCI6Ijw9OTA1Iiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtL2JlMjk4NjVhLWYwNzAtNGZjNC1iOWY4LTkxZjBhMWQyYWIxOC92aWVsby00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.__CEFqzI8ikjSp_E4pEc83IPFMoA1rceDGdRjtB56wk"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/vielo/art/The-crow-1383483860">The crow</a></h3><p>by <a href="https://www.deviantart.com/vielo">Vielo</a></p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="challenge-heading" class="challenge-section">
+<div class="section-heading">
+<div>
+<h2 id="challenge-heading">Explore: Best of ArtTober's Deviations</h2>
+<p>More art and ideas from the community.</p>
+</div>
+<a class="button" href="https://www.deviantart.com/dailychallenges">See Daily Challenges</a>
+</div>
+<div class="art-grid">
+<article class="art-card">
+<a href="https://www.deviantart.com/quiryuz/art/Cthulhu-%7C-ArtTober-2026-13%21-1393674954">
+<img alt="Cthulhu, ArtTober 2026 number 13" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3693bbfc-b3cf-4ca6-b815-74956811b6b4/dn1rah6-f0369761-f064-43d6-81a2-429c6e24bd3b.png/v1/fit/w_375,h_188,q_70,strp/cthulhu_arttober_2026_13__by_quiryuz_dn1rah6-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTE3NTAiLCJwYXRoIjoiL2YvMzY5M2JiZmMtYjNjZi00Y2E2LWI4MTUtNzQ5NTY4MTFiNmI0L2RuMXJhaDYtZjAzNjk3NjEtZjA2NC00M2Q2LTgxYTItNDI5YzZlMjRiZDNiLnBuZyIsIndpZHRoIjoiPD0zNTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.U7gbuj1GuxZNDSmcezZjd8c_WAAwpx2H5ipPDHqAeRg"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/quiryuz/art/Cthulhu-%7C-ArtTober-2026-13%21-1393674954">Cthulhu | ArtTober 2026 #13!</a></h3><p>by <a href="https://www.deviantart.com/quiryuz">Quiryuz</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/snowyzoe97/art/Eye-of-the-Spellbook-1391282972">
+<img alt="Eye of the Spellbook" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/579550f1-ca47-40b8-9d79-b1ca23b85273/dn0c0t8-b4809740-6fa6-4579-a48c-cbe923dd4631.jpg/v1/fill/w_262,h_350,q_70,strp/eye_of_the_spellbook_by_snowyzoe97_dn0c0t8-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTEzODIiLCJwYXRoIjoiL2YvNTc5NTUwZjEtY2E0Ny00MGI4LTlkNzktYjFjYTIzYjg1MjczL2RuMGMwdDgtYjQ4MDk3NDAtNmZhNi00NTc5LWE0OGMtY2JlOTIzZGQ0NjMxLmpwZyIsIndpZHRoIjoiPD0xMDM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.QwgMZsIQZTkeMzKMbcevx_JxWjg0A5EY80DfSS5bMuw"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/snowyzoe97/art/Eye-of-the-Spellbook-1391282972">Eye of the Spellbook</a></h3><p>by <a href="https://www.deviantart.com/snowyzoe97">SnowyZoe97</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/usfsforester/art/Haunted-House-1390200788">
+<img alt="Haunted House" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/269f6612-6430-427d-925d-633f6a555bf1/dmzotsk-fc397116-bc68-4bac-86d4-3751c23298e8.png/v1/fill/w_300,h_195,q_70,strp/haunted_house_by_usfsforester_dmzotsk-200h.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTEyNTIiLCJwYXRoIjoiL2YvMjY5ZjY2MTItNjQzMC00MjdkLTkyNWQtNjMzZjZhNTU1YmYxL2Rtem90c2stZmMzOTcxMTYtYmM2OC00YmFjLTg2ZDQtMzc1MWMyMzI5OGU4LnBuZyIsIndpZHRoIjoiPD0xOTIwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.O-sQwKB2txQxWaduufNplkcH-i058QM8YsEo8HemWUc"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/usfsforester/art/Haunted-House-1390200788">Haunted House</a></h3><p>by <a href="https://www.deviantart.com/usfsforester">usfsforester</a></p></div>
+</article>
+<article class="art-card">
+<a href="https://www.deviantart.com/weissglut/art/bright-Autumn-1391748221">
+<img alt="bright Autumn" class="art-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/622da247-f013-4dc7-8f9a-830954a425ea/dn0lzst-03d3e941-939a-4cd1-b1a5-d1202ce26aa9.jpg/v1/fill/w_292,h_200,q_70,strp/bright_autumn_by_weissglut_dn0lzst-200h.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTEzMTQiLCJwYXRoIjoiL2YvNjIyZGEyNDctZjAxMy00ZGM3LThmOWEtODMwOTU0YTQyNWVhL2RuMGx6c3QtMDNkM2U5NDEtOTM5YS00Y2QxLWIxYTUtZDEyMDJjZTI2YWE5LmpwZyIsIndpZHRoIjoiPD0xOTIwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMifX0.xnUkwiR-8GBO0HVJHS4eIN-0g_ttAlTbtmgKnfE4Ouc"/>
+</a>
+<div class="art-caption"><h3><a href="https://www.deviantart.com/weissglut/art/bright-Autumn-1391748221">bright Autumn</a></h3><p>by <a href="https://www.deviantart.com/weissglut">Weissglut</a></p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="artist-heading" class="artist-feature">
+<div>
+<div class="artist-intro">
+<a href="https://www.deviantart.com/jemgirl">
+<img alt="jemgirl's avatar" src="https://a.deviantart.net/avatars-big/j/e/jemgirl.jpg?4"/>
+</a>
+<div>
+<h2 id="artist-heading"><a href="https://www.deviantart.com/jemgirl">jemgirl</a></h2>
+<p>Jhoy E. Meade</p>
+</div>
+</div>
+<p class="artist-stats">4K Deviations <span aria-hidden="true">·</span> 1K Watchers</p>
+</div>
+<div aria-label="Selected works by jemgirl" class="artist-works">
+<a href="https://www.deviantart.com/jemgirl/art/Balance-1398527146">
+<img alt="Balance" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c4755ee-1fe8-4d7a-a844-0d8afbed122b/dn4naga-67fc4b42-1ee2-4dd6-b919-e568668c52c7.jpg/v1/fit/w_150,h_150,q_70,strp/balance_by_jemgirl_dn4naga-150.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTkwMCIsInBhdGgiOiIvZi82YzQ3NTVlZS0xZmU4LTRkN2EtYTg0NC0wZDhhZmJlZDEyMmIvZG40bmFnYS02N2ZjNGI0Mi0xZWUyLTRkZDYtYjkxOS1lNTY4NjY4YzUyYzcuanBnIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.nmFXTToAQLiAAq1MgbFWPigNw2B_WHUWbWumT8xQUX8"/>
+</a>
+<a href="https://www.deviantart.com/jemgirl/art/The-Sleeping-Mechanism-1396358397">
+<img alt="The Sleeping Mechanism" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c4755ee-1fe8-4d7a-a844-0d8afbed122b/dn3ct19-993a0cd4-2824-4607-bdb1-ff8ed2303685.jpg/v1/fit/w_150,h_150,q_70,strp/the_sleeping_mechanism_by_jemgirl_dn3ct19-150.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTcwMCIsInBhdGgiOiIvZi82YzQ3NTVlZS0xZmU4LTRkN2EtYTg0NC0wZDhhZmJlZDEyMmIvZG4zY3QxOS05OTNhMGNkNC0yODI0LTQ2MDctYmRiMS1mZjhlZDIzMDM2ODUuanBnIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.y_OiUD-ButmL1uLBQuO9IJ8wzyd-RyZioyyG_wGs29c"/>
+</a>
+<a href="https://www.deviantart.com/jemgirl/art/Folding-Metal-1391758276">
+<img alt="Folding Metal" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c4755ee-1fe8-4d7a-a844-0d8afbed122b/dn0m7k4-131c2767-19fd-44dd-961c-79c5100a0ece.jpg/v1/fit/w_150,h_150,q_70,strp/folding_metal_by_jemgirl_dn0m7k4-150.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTkwMCIsInBhdGgiOiIvZi82YzQ3NTVlZS0xZmU4LTRkN2EtYTg0NC0wZDhhZmJlZDEyMmIvZG4wbTdrNC0xMzFjMjc2Ny0xOWZkLTQ0ZGQtOTYxYy03OWM1MTAwYTBlY2UuanBnIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.bNOz-segY6hHZqkBroaz0mtwNssoqo1eqcav23NE0_g"/>
+</a>
+<a href="https://www.deviantart.com/jemgirl/art/Chaos-Behind-The-Calm-1390090586">
+<img alt="Chaos Behind The Calm" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c4755ee-1fe8-4d7a-a844-0d8afbed122b/dmzmgre-19ac2b66-e550-485a-8016-2152d43753ec.jpg/v1/fit/w_150,h_150,q_70,strp/chaos_behind_the_calm_by_jemgirl_dmzmgre-150.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwib2JqIjpbeyJoZWlnaHQiOiI8PTcwMCIsInBhdGgiOiIvZi82YzQ3NTVlZS0xZmU4LTRkN2EtYTg0NC0wZDhhZmJlZDEyMmIvZG16bWdyZS0xOWFjMmI2Ni1lNTUwLTQ4NWEtODAxNi0yMTUyZDQzNzUzZWMuanBnIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4CC7YDpKNks_4mIVJ169N7K8c8RcDuXg_J8wQ0IqXjw"/>
+</a>
+<a class="see-all" href="https://www.deviantart.com/jemgirl/gallery">See all</a>
+</div>
+</section>
+<section aria-labelledby="join-heading" class="join-panel">
+<div>
+<h2 id="join-heading">Join 100 million creators and art lovers.</h2>
+<p>Share your work, discover new favorites, find your people, draw in your browser, and explore creative tools.</p>
+</div>
+<a class="button primary" href="https://www.deviantart.com/join/">Join DeviantArt</a>
+</section>
+</main>
+<footer>
+<div class="wrap footer-inner">
+<div class="footer-top">
+<div class="footer-about">
+<a href="https://www.deviantart.com/">
+<img alt="DeviantArt home" src="https://st.deviantart.net/eclipse/promos/seasonal/halloween/logo-dark.png"/>
+</a>
+<p>Founded in 2000, DeviantArt is a community for artists and art lovers, with over 100 million registered members and more than 650 million pieces of art. In 2025, tens of thousands of artists sold on DeviantArt for over $23 million.</p>
+<nav aria-label="DeviantArt social media" class="social-links">
+<a href="https://www.facebook.com/deviantart/">Facebook</a>
+<a href="https://twitter.com/DeviantArt">X</a>
+<a href="https://www.instagram.com/deviantart/">Instagram</a>
+<a href="https://www.youtube.com/@DeviantArt">YouTube</a>
+</nav>
+</div>
+<nav aria-label="More information" class="footer-links">
+<div>
+<h2>DeviantArt</h2>
+<ul>
+<li><a href="https://www.deviantart.com/about">About</a></li>
+<li><a href="https://www.deviantartsupport.com/en/article/how-do-i-contact-deviantart">Contact</a></li>
+<li><a href="https://www.deviantart.com/core-membership">Core Membership</a></li>
+<li><a href="https://www.deviantart.com/shop/sell">Sell Your Art</a></li>
+<li><a href="https://www.deviantart.com/developers">Developers</a></li>
+<li><a href="https://www.deviantart.com/team/journal/Careers-at-DeviantArt-855261915">Careers</a></li>
+</ul>
+</div>
+<div>
+<h2>Community</h2>
+<ul>
+<li><a href="https://www.deviantart.com/team">Team</a></li>
+<li><a href="https://www.deviantart.com/community">Community</a></li>
+<li><a href="https://www.deviantartsupport.com/en/">Help Center</a></li>
+<li><a href="https://www.deviantart.com/dailychallenges">Daily Challenges</a></li>
+</ul>
+</div>
+<div>
+<h2>Policies</h2>
+<ul>
+<li><a href="https://www.deviantart.com/about/policy/service">Terms of Service</a></li>
+<li><a href="https://www.deviantart.com/about/policy/copyright/">Copyright Policy</a></li>
+<li><a href="https://www.deviantart.com/about/policy/privacy">Privacy Policy</a></li>
+<li><a href="https://www.deviantart.com/about/policy/etiquette">Etiquette</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<p class="copyright">We use cookies to remember site settings and preferences. Read the <a href="https://www.deviantart.com/about/policy/privacy">Privacy Policy</a>. © 2026 DeviantArt. All rights reserved.</p>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</body>
+</html>

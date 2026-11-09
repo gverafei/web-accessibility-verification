@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible article cards and footer content, including subscription and social sections, are retained. Differences in viewport offsets do not indicate content loss.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Text, cards, footer links, logos, and controls are legible and coherently arranged. The footer aligns at the same page position when the differing viewport origins are accounted for.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The subscription field and registration button, social icons, footer links, and language selector are visibly identifiable.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The reference and target show corresponding portions of the same page footer and article area; the target views are consistent with each other.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible Spanish article titles, footer headings, link labels, and subscription text convey coherent meaning for the page.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Evaluating window footer position**\n\nI need to assess the window footer; it looks nearly identical to the reference. There are minor vertical offsets to consider. The reference footer starts at y637, while the target is at y629. So, comparing the footer heights, there's an 8-pixel offset, making them identical. The target image has a footer at y599, giving a consistent reference point. I'll also check the controls for subscriptions and social elements. The content appears coherent, including the JSON dimensions.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Evaluating window footer position**\n\nI need to assess the window footer; it looks nearly identical to the reference. There are minor vertical offsets to consider. The reference footer starts at y637, while the target is at y629. So, comparing the footer heights, there's an 8-pixel offset, making them identical. The target image has a footer at y599, giving a consistent reference point. I'll also check the controls for subscriptions and social elements. The content appears coherent, including the JSON dimensions.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6CAGhdq5JNgOzTs8I3melNjcUJbWWFy0wvzTaBvWbcfma0G9a2J6M-WqUeBv8uIoWSGblx53rWMQtlMlYLgEQmfExWVepTWq-O4OSnKjlArekuzdjgbLTxo2IKE3Z6ifDNKi1Zwh1pesyFe0D_BW0KwrPkylA5vfBPjdkZmnLQd8F6KTPzAS_Y6PlJ3V-AExlJOIBjaETqKfdGHBy8yPZxpNOvW_PTj7KpVum_UYpCh3vMNewH-vbOuWnJoHuk5-Z6-CZumyTy4V0YfdwNfXaGXnN1RWRDWKbBRD7dBx0Ugri-h-kX3beRRwcarg6ltT9KpI22QcWlmcO5SCknBDVeVY2bflD2aYQitNJ5VIyfDcJDYR8yOjqipIc7ZyuGqlMmc2ywvuk4mxQq8vVXIZym46IGHmcIsYqRf3_mYJ6EC5-e7dQOPywGCK2sMZh3D3LOuWQDwepX3kRxHiT0zlvG96qRaAk8eep0g_wpjHBNYyQYuqH_JqWtwVCrfkzThYyW-KDwkS5J-ZB5xG3A61qhfFB1UJj29yTMkf1IqN9nG_0CoH0bnSqBAOSTLUl8acdGV7olbRRXAShDPOolyGS5HU6Eww0VwZL1WEeDPmp8rdsaDn1ehJorSbiirEVIlchdXIq0V6NApz4aEwvoNUr_b8aM7njonNlKxmOIC-QxJAH3H2wKamtdTl0F-OrPYLWsFN6es5_TFQIA8_Y4eUvipMMCACiW5tmiDNXgXFpxwUnPMXKcuc6XagPSdNXDmwcGWIoTgaw_mvpVefaWUgJ9IUNqiJROwhKs77kW7GQIQKhhdWMIm2HOkLAgvh2J_C6jfXSt6_wFsDZNA789Y2CuJRQhwp1_mkAl4UssEKZ751gY2iP-ed-_B2MK6qfMar_R82gvc9c148bHYAX60dhxcRc-QJEagfFij3I0tHJbc9sL49CMLwHOJqcRFUq2EsHQKSx2aedtuI6BqDY7PMhelvecZan-nY6f8ofhM28iXjrhaKiXM7MwXtz9wxRD-lzoSIyM8VxP_oB0-jj0e1Uxa37t7kP8ghy2M12DlfV6ekY1R6iPf0hmoCDEdgASTO5rM6cDxun9hFPCLQ_XvMeMZynDisntlhqRr94Mkfn8zcz6fRcsXYJGwGD3tTkYdfbzOhrocSZqmEvRqtUxyGI7Z6rrixkjsJhwtz1S7jdsbBFfZNWMt_A_JMzreP3E4pX3x-0oGKA5q5b1GwqS_ty8A7eownHCV7OOhO1iaf_Sj76g_6Z-JlWsyPCudodF6Ak-Av7vJ743N7v5oi2jECYbzsze9YI-MXB4b5RWOmWMKTgtnkTozPYwuWxVTQluNLq3_vGEPLYezGcNMgnJD2ORIPGamUCRpw6V83oJ-Ti4y6a1UqRYKSgzYegVte2r24oEE0ZZblIcvlYA3CF9NHDCM6MhaaVXQp-_h_Qba3jg24_Q8AmbzqO8Tj4CYmpe8csL7JKuXlNJKXBy-Y_7LVRrC_F794K_AXxIHGQUKGVRqJXXLngfzV-UUNpvUyMHVA5pw385Q5RdmeqMplykZNqCiKHYOzsbAr1D7ODeQADSCpJxAK8UUZz00Rkf2g2fte-tFhsO8oFVo_AvfOhlf4mynf0vMecM3mDgdyiZ4pwYII7gJhX-LMRG_TGWdTGhjtNA_4oMpj3M42oV2-zGNjc6IMnWdKdLp5MVhPBO5-2bIeA4FYUaCWVbdzMgke0x4LqvB8NrFGwnUSTPEbfL0cmwEOetp78yrsV1Fw0k9pk7mLIZzuR86nsxBCU8a23fuLseFsUsjT33YUXTWL73k_nbntSWeBhZjAEeWEZNSdjfKXroFQIrdKh_LfbJ5UIQTjlyXtn-aa1EvWZK7Je50M7jBln0rCNrLjOnBcFkCeTtXEtNUc6EMJzsyEiqg8V-FskzeWxjva3XLWV4iUvh6RkxyMPpdDzJI2juheURUTgyvZ7qmgVihbGNqG4tLt1qSNeFguEIy1Zljy1YOUgrMbib6R0ufSYWQn85aqP3gjTMUigNtr-fc9BwJt6NSWBDuD7-IanyL-LcPF4fq7FtOh3OrX1whQOeC25FTPSGh-InvchUBPM2oBxrRUnJueXVps1DPlUJp6hwEIh3Aaxut6lEyyeiE_CZ9kFDPwMZKXo3EkYKCNXq5lmPwnRmD8nUobVEIkS82p8-G8Dl-R-jlc2Q1dVbZKPCGd09Md-8eoal3vep5WozveUJdeL27KpNTEW_NhWqIbafYAByqdoDOB60Oe_YT5_p5sZ2nCTioSg7YkXhLf4fOECLNKHrlFcrTUwPvYpB4QuH_ZmCTGG-oik8SPWWBIwdy0roHAWhrMHJqGJ9oTUxF8ILrI04o7R1VC046yTz9iGcm4zdYP1mwbSd8RDAZYUYuJDbVbF-qpVL_EipuiD_Wf0kdn_DjxcJHnm3M25jhpaGyhqUfsrUb0LcO6pRwTrU0npON1gsbtrcze8k24JFXVLwRr5TttZKVw15WQc-cV2KZX999JdqfTP6pS18cadhxE6VRMBfEeKRMWpLUZ9UxsRJLC6dsR-rFPM-2qLCiQV3pGM7ihzLcq9nKTD5nbXHrNMGvKqOQ-CtXNaN-RlvAaXVLwZV2whwo9vBVbk-KfKAwG0Ot6VrrKVWm1lNCyjhO4vXv82NLXwVuGAEAFyIjicrzZeK9dRm073wSlcWXEm5qle_3ehlsVZwjxDYGJhPEsBt0xQRrUyajRPXaMTVGFpbc6Lr2kzTK2cWgzqv6X9GMNrW578S7T5IO6EYJCFW3vkXxxISfgg76s0S66rLCJYe9VUYPKO4rjNn1NHtGWB5Y5-MXb0sUqXCHWPw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_013ba49b5c0b924a016ae820043bdc87d18bf5ea7a6a58fe5c",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8087,
+    "completion_tokens": 358,
+    "total_tokens": 8445,
+    "cost": 0.0011898,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8084,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011898,
+      "upstream_inference_prompt_cost": 0.0010108,
+      "upstream_inference_completions_cost": 0.000179
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

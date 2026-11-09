@@ -1,0 +1,55 @@
+{
+  "model": "openai/gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_fidelity\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible reference and target content matches, including the TIME header, lead stories, article headlines, and lower-page story links. The empty advertisement region is excluded.\"\n  },\n  \"presentation\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Core content is legible and coherently arranged in both states. Viewport cuts and the blank ad slot do not obscure or disrupt the interface.\"\n  },\n  \"controls\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"Visible navigation, subscription/account controls, and the chatbot input and close controls are present and understandable in the target.\"\n  },\n  \"evidence_coherence\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The supplied reference and target segments form a coherent comparison; their visible content and layout match.\"\n  },\n  \"semantic_adequacy\": {\n    \"choice\": \"meets\",\n    \"rationale\": \"The visible text, imagery, and labels convey a coherent news homepage and retain the reference\u2019s meaning.\"\n  }\n}",
+        "refusal": null,
+        "reasoning": "**Assessing window evidence**\n\nI need to assess the entire window and ensure all visible elements are identical. I\u2019ll check the visible menu, the chatbot text input, and the close button. It seems like the page articles and headings are cut off at the viewport's normal level. I'll exclude the lower ads and widgets to focus on the coherence of the evidence. Everything should align semantically in the JSON structure I\u2019m reviewing.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Assessing window evidence**\n\nI need to assess the entire window and ensure all visible elements are identical. I\u2019ll check the visible menu, the chatbot text input, and the close button. It seems like the page articles and headings are cut off at the viewport's normal level. I'll exclude the lower ads and widgets to focus on the coherence of the evidence. Everything should align semantically in the JSON structure I\u2019m reviewing.",
+            "format": "openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABq6BlmwKREA_Q3uftaEtDdZF9_9G4vmmhBQF-XyyjnwtKF_xx3HjNRNqXPEtt1-dmZykRpknWJu1dSKoniWUc7oEoveR8iCUptBjrk5SL0fuSmlLMNjk960eZPdKY0uvPqHepkFW10b-TWCbcGjlH20yjnzPeicZEtLpoz-6WHOMT7nQMNzPcckBjlRdXkaeBFHFd2C98HyLYOBe8dDsbTmCYY2NI0L8xt0oHwv-24IpLjTkqZhS8I2whCmf1J1z_cjUn5xdZHiVrSf69q6WEFtIs5DyrYMzgEidVJSmRntqMXVHyjxeD-66Sd0PU9ccv-Q0R48zaJdt-yD7nkTIMfHKjRaNutefF_-357etkalzTi68-bimPvimTGVsLYjqHIwilrPN6lqRaYrvb0KqwuU_LNkkYVapWIXxLj1gWOa0DBkNU1bcRq-I893B9gUJlWzLqYG-3BvkFxm3q4RUc8I01-zoTGS32jLDelilvNSC1GvT6Nm3YWxsYz42SsfdhFMiWGttw9mZGXXM1Yi8ruax-EaSJg6eFi7sgqsuLutrDOrvh6ydtVskRSdaku2FDL1r2QersYOwOSgG_W5_PxbJLdzB_Qec5PC6Sb5hc2l3xZ8no6o3VbrQnJrKe45cv6PwUaXUwNe0TlxYtIBsJ1nq8bV5XeCaaNcIc4FhMyV_GDVqcIVgvrQkGtLV3bJD-9YwzSeMPZ3De_A2GnUA9EWLjCU1kHhmqUbiEzckz3K3zzkRlQdIz7Dunupxsr03to-BMUmrJr9f4ynq6hD1cqrVW67Pbjwz_79NpuswWoQ_O72HnVuswUxCYw6i8MguSBp3ICOjtZ30wdeVYAaMgIB5GrSIpN6dojvTSA4SrVb2Mu2w9mdn5TbrXcA-uq2jszROz7C9qAYis74G1_nTwvuXelkRh5rgHChLbZrqvZYTn_f0ijaOPsOHZU5Y56gfgUqXZTF4cHZ1H2MJs7Z24VK9mwxFS-GyeM1id_jz_DmAYI0cj34uvGqiWye6U5P0sGF14SKk58wcEMwl7Koy4i9dIPR0rxe3oPrbx9fO_YaS5_hp_0DUZGKQeZ1JQdPXSi4Li7rxcW0wv56UAMwPytCvU_S4S7WOBD9_nkPLd-6g-xot9HMm59nsqIAdv6KI4Vu_6kMyulQOxIiv3ZgW1-vLnhjUJz9Si_HqTC5i-H0LEvphwxeh82XIjtZ-5N9-I3ndTA8IjOw5ipSYuwILvaw8nQ8lIBJWGAvvCBz0ow3PJjl--V_q47SSNIPv6VmbRLVX0ILPscdTFAD3of18FA35a2yMEzbe9V7ETN95kBtL8S7VOkVIIMCkUbQ3iRIyIRLtB-w_58f9cLMsKF1I1IIrnRFkx_3G2ssmV8UGrr5X9iki1US4ygwFXx5nkSE8oUhyB4lzSNA4ZVCOphOcdxJkAlZzlBiJ0idv_vS8HMKSa8Yi1QU2KSC7YgL8BeyMnHJwGBi4nfNMJzmQZHX4KbxoWh0kyvLPvy6zPD4e-V3pXeXqICClG8ml2IM0_4520Ymmb6T3kfOHhnjjcN91HBVacUici7_68nIHZ8LgYkvuhAmTz7UNJ5mRMbdvrQ7MKQaqOcW-rrU4YXPbowW-fH-XIHP_7vYLumcLznicNhUBcpxPUXLd9jj0HrlGRUupSWJ8ni2wuOOlYfFXE8nZl2h_JhTFbItGq24ToTBj58E8z1rj6Pq7q2hOmFUqAWFAIitsmpnFpBNouUJCULTAa2vm2gX4eyNnBrb-Bbn_TBTxmE1tMI0Lsr0ZjSqWaLwqSXwPcPV9ejHKoekFewB8-BZpZJvZ8BnTX3LzLgmHwMRXER0Ir2aFLYVWo-tIvs3Yw5bNdewrhYp7xx9klHDwRK2Dzbsze6XHU_l3VVB7qmHCNUkb7Mz5WhwZ7xurhe24o2YrDcdfA4mbCJKeln-P3DA77UFGZI-92tgk4a074UK4VkwbyZU0-3zgk9mtuFPJl5zBD5fBJKQHRDgQqJxm7kkAQlgCvszKOzn4OrS8r4xjomoqCfalcJscDZ15nN3R3dXxyE2KrNaWspYoEguQHt7s6vATYGJ6uMRsztH3Ai3g2Znm0ZyT3oQX7ENA9x187GEPvEgB7NgslI5JrS9bvMi04Q8dEnuJv7F35WdbvzTO3yWpiOLmWCSR_08XxMIoPagewcNla8ZvdayCbSCCou1P-D5Oilqeegob0-40Op2AsiVHw-AgbWmTlMKIs05_wQAwaRtbRISJR-GHcDyeWMCobhUu_kcjVGJ6Atb8hu9bMKdSA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+            "format": "openai-responses-v1",
+            "id": "rs_09d6429d8f602bab016ae819645d2087d1a4453b68d9391437",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18617,
+    "completion_tokens": 301,
+    "total_tokens": 18918,
+    "cost": 0.00247755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18614,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00247755,
+      "upstream_inference_prompt_cost": 0.00232705,
+      "upstream_inference_completions_cost": 0.0001505
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

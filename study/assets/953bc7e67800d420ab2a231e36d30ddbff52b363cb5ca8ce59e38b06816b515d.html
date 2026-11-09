@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#131921" name="theme-color"/>
+<title>Amazon.com. Spend less. Smile more.</title>
+<style>
+    :root {
+      color-scheme: light;
+      --ink: #17212b;
+      --muted: #53616d;
+      --nav: #131921;
+      --nav-light: #232f3e;
+      --accent: #febd69;
+      --link: #176b78;
+      --page: #e9edef;
+      --card: #fff;
+      --line: #d8dee2;
+      --focus: #ffb42e;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:hover { color: #0c4852; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      position: relative;
+      z-index: 2;
+    }
+    .skip-link {
+      position: absolute;
+      top: -5rem;
+      left: 1rem;
+      z-index: 10;
+      padding: .7rem 1rem;
+      background: #fff;
+      color: #111;
+      border-radius: .35rem;
+    }
+    .skip-link:focus { top: .75rem; }
+    .site-header { color: #fff; background: var(--nav); }
+    .topbar {
+      width: min(1540px, 100%);
+      margin: auto;
+      min-height: 68px;
+      padding: 10px 20px;
+      display: grid;
+      grid-template-columns: 148px 150px minmax(230px, 1fr) 56px 145px 112px 92px;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand {
+      display: inline-flex;
+      position: relative;
+      width: fit-content;
+      padding: 2px 8px 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: -1.8px;
+      line-height: 1;
+    }
+    .brand::after {
+      content: "";
+      position: absolute;
+      left: 17px;
+      bottom: 2px;
+      width: 47px;
+      height: 8px;
+      border-bottom: 3px solid #ff9900;
+      border-radius: 0 0 70% 70%;
+      transform: rotate(-5deg);
+    }
+    .delivery, .top-action {
+      display: block;
+      min-width: 0;
+      padding: 5px 7px;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      line-height: 1.2;
+    }
+    .delivery:hover, .top-action:hover, .brand:hover { color: #fff; border-color: #fff; }
+    .small-label { display: block; color: #d2d7dc; font-size: 11px; }
+    .strong-label { display: block; font-size: 13px; font-weight: 700; }
+    .search-form {
+      display: flex;
+      min-width: 0;
+      height: 42px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: #fff;
+    }
+    .search-form select {
+      width: 142px;
+      min-width: 94px;
+      padding: 0 10px;
+      color: #28323b;
+      background: #f0f2f2;
+      border: 0;
+      border-right: 1px solid #d4d9dc;
+      font-size: 13px;
+    }
+    .search-form input[type="search"] {
+      flex: 1;
+      min-width: 0;
+      padding: 0 13px;
+      border: 0;
+      font: inherit;
+      color: #111;
+    }
+    .search-form button {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      flex: 0 0 46px;
+      color: #18212a;
+      background: var(--accent);
+      border: 0;
+      cursor: pointer;
+    }
+    .search-form button:hover { background: #f3a847; }
+    .search-form svg { width: 22px; height: 22px; }
+    .language {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px 5px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+    }
+    .language:hover { border-color: #fff; color: #fff; }
+    .cart { text-align: right; font-weight: 700; white-space: nowrap; }
+    .cart-icon { font-size: 22px; vertical-align: -2px; margin-right: 3px; }
+    .subnav {
+      background: var(--nav-light);
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+    .subnav-inner {
+      width: min(1540px, 100%);
+      margin: auto;
+      padding: 0 19px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+    .subnav a {
+      padding: 9px 11px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+    }
+    .subnav a:hover { border-color: #fff; color: #fff; }
+    .international-note {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      width: min(1540px, calc(100% - 32px));
+      margin: 14px auto 0;
+      padding: 13px 16px;
+      color: #29343d;
+      background: #fff8e8;
+      border: 1px solid #ebd9ac;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #18212a12;
+    }
+    .international-note p { margin: 0; }
+    .international-note a { font-weight: 700; }
+    .note-actions { display: flex; gap: 9px; flex: 0 0 auto; align-items: center; }
+    .note-actions button, .note-actions a {
+      padding: 7px 12px;
+      color: #22303a;
+      font: inherit;
+      font-size: 14px;
+      text-decoration: none;
+      background: #fff;
+      border: 1px solid #aab4bb;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .note-actions a { background: #ffd36e; border-color: #e9bb4e; }
+    .note-actions button:hover, .note-actions a:hover { filter: brightness(.96); color: #17212b; }
+    main {
+      width: min(1500px, calc(100% - 32px));
+      margin: 24px auto 42px;
+    }
+    .intro { margin: 0 0 18px; }
+    .intro h1 { margin: 0 0 5px; font-size: clamp(1.65rem, 2.5vw, 2.2rem); line-height: 1.15; letter-spacing: -.035em; }
+    .intro p { margin: 0; color: var(--muted); max-width: 760px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .feature {
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      color: var(--ink);
+      background: var(--card);
+      border: 1px solid #d7dcdf;
+      border-radius: 11px;
+      text-decoration: none;
+      box-shadow: 0 2px 7px #26384712;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .feature:hover {
+      color: var(--ink);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px #26384720;
+    }
+    .feature img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 0.73;
+      object-fit: cover;
+      background: #f4f5f3;
+    }
+    .feature-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      min-height: 54px;
+      padding: 11px 12px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .arrow { color: var(--link); font-size: 20px; flex: 0 0 auto; }
+    .shelves { margin-top: 34px; display: grid; gap: 22px; }
+    .shelf {
+      background: var(--card);
+      padding: 21px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      box-shadow: 0 2px 7px #2638470d;
+    }
+    .shelf-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .shelf-heading h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.2; }
+    .shelf-heading a { font-weight: 700; }
+    .thumb-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .thumb { min-width: 0; text-align: center; color: #37434d; font-size: 14px; }
+    .thumb img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      padding: 8px;
+      background: #f5f7f6;
+      border-radius: 8px;
+    }
+    .thumb span { display: block; padding: 7px 4px 0; }
+    .signin-panel {
+      margin: 34px 0 0;
+      padding: 26px 16px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      text-align: center;
+    }
+    .signin-panel h2 { margin: 0 0 8px; font-size: 1.3rem; }
+    .signin-panel p { margin: 0 0 12px; color: var(--muted); }
+    .button-link {
+      display: inline-block;
+      padding: 9px 30px;
+      color: #17212b;
+      text-decoration: none;
+      font-weight: 700;
+      background: #ffd36e;
+      border: 1px solid #e6b94d;
+      border-radius: 7px;
+      box-shadow: 0 2px 4px #00000012;
+    }
+    .button-link:hover { color: #17212b; background: #f4c45c; }
+    .signin-panel .new-customer { margin: 10px 0 0; font-size: 13px; }
+    .history-note {
+      margin: 25px auto 0;
+      padding: 17px;
+      max-width: 760px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid #cbd3d7;
+    }
+    .history-note p { margin: 0 0 7px; }
+    .site-footer { color: #fff; background: #232f3e; }
+    .back-top {
+      display: block;
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      background: #37475a;
+      font-size: 14px;
+    }
+    .back-top:hover { color: #fff; background: #46586d; }
+    .footer-main {
+      width: min(1120px, calc(100% - 36px));
+      margin: auto;
+      padding: 42px 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 36px;
+    }
+    .footer-main h2 { margin: 0 0 13px; font-size: 16px; }
+    .footer-main ul { margin: 0; padding: 0; list-style: none; }
+    .footer-main li { margin: 0 0 9px; }
+    .footer-main a { color: #e4e9ed; font-size: 14px; text-decoration: none; }
+    .footer-main a:hover { text-decoration: underline; }
+    .footer-lower {
+      padding: 24px 18px 30px;
+      text-align: center;
+      border-top: 1px solid #3a4551;
+      color: #d8dee3;
+      font-size: 13px;
+    }
+    .footer-lower p { margin: 13px 0 0; }
+    .footer-prefs { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+    .footer-prefs a, .legal a { color: #e4e9ed; }
+    .legal { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px 24px; margin-top: 18px; }
+    @media (max-width: 1120px) {
+      .topbar { grid-template-columns: 130px 125px minmax(190px, 1fr) 48px 130px 100px 78px; gap: 5px; padding-inline: 12px; }
+      .search-form select { width: 112px; }
+      .hero-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .feature img { aspect-ratio: .9; }
+    }
+    @media (max-width: 760px) {
+      .topbar {
+        grid-template-columns: 1fr auto auto;
+        gap: 6px;
+        padding: 9px 12px;
+      }
+      .brand { grid-column: 1; grid-row: 1; }
+      .delivery { grid-column: 2; grid-row: 1; }
+      .cart { grid-column: 3; grid-row: 1; }
+      .search-form { grid-column: 1 / -1; grid-row: 2; }
+      .topbar .language, .topbar .account, .topbar .orders { display: none; }
+      .search-form select { width: 115px; }
+      .subnav-inner { padding-inline: 8px; }
+      .subnav a { padding-inline: 9px; }
+      .international-note { align-items: flex-start; flex-direction: column; gap: 10px; }
+      main { width: min(100% - 22px, 600px); margin-top: 20px; }
+      .hero-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .feature img { aspect-ratio: .82; }
+      .feature-label { min-height: 51px; padding: 9px; font-size: 14px; }
+      .shelf { padding: 15px; }
+      .thumb-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .thumb img { aspect-ratio: 1.16; }
+      .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 20px; }
+    }
+    @media (max-width: 390px) {
+      .delivery { font-size: 12px; }
+      .delivery .strong-label { font-size: 12px; }
+      .brand { font-size: 26px; }
+      .search-form select { width: 92px; min-width: 84px; padding-inline: 5px; }
+      .search-form button { width: 42px; flex-basis: 42px; }
+      .feature-label { font-size: 13px; }
+      .footer-main { grid-template-columns: 1fr 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header aria-label="Amazon" class="site-header">
+<div class="topbar">
+<a aria-label="Amazon.com home" class="brand" href="https://www.amazon.com/ref=nav_logo">amazon</a>
+<a aria-label="Delivery destination: Mexico" class="delivery" href="https://www.amazon.com/">
+<span class="small-label">Deliver to</span>
+<span class="strong-label">Mexico</span>
+</a>
+<form action="https://www.amazon.com/s/ref=nb_sb_noss" class="search-form" method="get" role="search">
+<label class="visually-hidden" for="department">Choose a department</label>
+<select id="department" name="url">
+<option value="">All</option>
+<option value="search-alias=aps">All Departments</option>
+<option value="search-alias=arts-crafts">Arts &amp; Crafts</option>
+<option value="search-alias=automotive">Automotive</option>
+<option value="search-alias=baby-products">Baby</option>
+<option value="search-alias=beauty">Beauty &amp; Personal Care</option>
+<option value="search-alias=stripbooks">Books</option>
+<option value="search-alias=computers">Computers</option>
+<option value="search-alias=electronics">Electronics</option>
+<option value="search-alias=garden">Home &amp; Kitchen</option>
+<option value="search-alias=mobile-apps">Apps &amp; Games</option>
+<option value="search-alias=pets">Pet Supplies</option>
+<option value="search-alias=sporting">Sports &amp; Outdoors</option>
+<option value="search-alias=toys-and-games">Toys &amp; Games</option>
+<option value="search-alias=fashion">Women's Fashion</option>
+</select>
+<label class="visually-hidden" for="search">Search Amazon</label>
+<input id="search" name="field-keywords" placeholder="Search Amazon" type="search"/>
+<button aria-label="Search Amazon" type="submit">
+<svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<circle cx="10.8" cy="10.8" r="6.7" stroke="currentColor" stroke-width="2.2"></circle>
+<path d="m16 16 5 5" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path>
+</svg>
+</button>
+</form>
+<a aria-label="Language: English" class="language" href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&amp;preferencesReturnUrl=%2F&amp;ref_=topnav_lang_ais">EN</a>
+<a class="top-action account" href="https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+<span class="small-label">Hello, sign in</span><span class="strong-label">Account &amp; Lists</span>
+</a>
+<a class="top-action orders" href="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first">
+<span class="small-label">Returns</span><span class="strong-label">&amp; Orders</span>
+</a>
+<a aria-label="Cart, 0 items" class="top-action cart" href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart"><span aria-hidden="true" class="cart-icon">🛒</span>0 Cart</a>
+</div>
+<nav aria-label="Shopping and services" class="subnav">
+<div class="subnav-inner">
+<a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Today's Deals</a>
+<a href="https://www.amazon.com/coupons?ref_=nav_cs_coupons">Coupons</a>
+<a href="https://www.amazon.com/Amazon-Video/b/?ie=UTF8&amp;node=2858778011&amp;ref_=nav_cs_prime_video">Prime Video</a>
+<a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&amp;node=2238192011&amp;ref_=nav_cs_gc">Gift Cards</a>
+<a href="https://www.amazon.com/gp/browse.html?node=16115931011&amp;ref_=nav_cs_registry">Registry</a>
+<a href="https://www.amazon.com/b/?_encoding=UTF8&amp;ld=AZUSSOA-sell&amp;node=12766669011&amp;ref_=nav_cs_sell">Sell</a>
+<a href="https://www.amazon.com/gp/help/customer/accessibility">Disability Customer Support</a>
+</div>
+</nav>
+</header>
+<aside aria-label="International shopping notice" class="international-note" id="international-note">
+<p><strong>International shopping:</strong> We’re showing items that ship to <strong>Mexico</strong>. To see items that ship to a different country, change your delivery address.</p>
+<div class="note-actions">
+<button id="dismiss-notice" type="button">Dismiss</button>
+<a href="https://www.amazon.com/customer-preferences/country?ref_=icp_lop_mop_chg_ais&amp;preferencesReturnUrl=/">Change Address</a>
+</div>
+</aside>
+<main id="main-content">
+<section aria-labelledby="welcome-heading">
+<div class="intro">
+<h1 id="welcome-heading">Amazon.com. Spend less. Smile more.</h1>
+<p>Find low prices and great deals across everyday essentials, home, fashion, beauty, electronics, books, toys, and more.</p>
+</div>
+<div aria-label="Featured shopping" class="hero-grid">
+<a class="feature" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=kitchen%20appliances&amp;pd_rd_w=UqSdx&amp;content-id=amzn1.sym.cdf8fb5e-177e-4368-bc95-7557f8d45baa&amp;pf_rd_p=cdf8fb5e-177e-4368-bc95-7557f8d45baa&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Kitchen appliances and countertop essentials" fetchpriority="high" src="https://m.media-amazon.com/images/I/51l7ZOsRo7L._AC_AIweblab1431263,T1_SF1282.5,2052_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-label">Shop kitchen must-haves <span aria-hidden="true" class="arrow">›</span></span>
+</a>
+<a class="feature" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=beauty&amp;pd_rd_w=NOaLE&amp;content-id=amzn1.sym.56d10b2b-d2c6-4e80-902e-2dc7a11e218d&amp;pf_rd_p=56d10b2b-d2c6-4e80-902e-2dc7a11e218d&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Beauty products and makeup arranged on a pink background" loading="lazy" src="https://m.media-amazon.com/images/I/61Ld77LHXQL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-label">Shop all things beauty <span aria-hidden="true" class="arrow">›</span></span>
+</a>
+<a class="feature" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=fashion%20clothing&amp;pd_rd_w=2rZhY&amp;content-id=amzn1.sym.8d76d45e-337c-4c9e-b68f-9db0a3be5fa0&amp;pf_rd_p=8d76d45e-337c-4c9e-b68f-9db0a3be5fa0&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="A rail of clothing in neutral colors" loading="lazy" src="https://m.media-amazon.com/images/I/61R7G24e7dL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-label">Start looking sharp <span aria-hidden="true" class="arrow">›</span></span>
+</a>
+<a class="feature" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=toys&amp;pd_rd_w=AXq1Q&amp;content-id=amzn1.sym.8b52b913-ce78-41cf-ae72-7f73aa57759f&amp;pf_rd_p=8b52b913-ce78-41cf-ae72-7f73aa57759f&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="A basket of plush toys and colorful play blocks" loading="lazy" src="https://m.media-amazon.com/images/I/61upHi2gzaL._AC_AIweblab1431263,T1_SF1282.5,2052_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-label">Toys for little ones <span aria-hidden="true" class="arrow">›</span></span>
+</a>
+<a class="feature" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=pc&amp;pd_rd_w=31U4K&amp;content-id=amzn1.sym.13a0f6ed-f664-46bf-b0b3-347680dd2799&amp;pf_rd_p=13a0f6ed-f664-46bf-b0b3-347680dd2799&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="A laptop computer on a pink and blue surface" loading="lazy" src="https://m.media-amazon.com/images/I/714RPvHc4LL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-label">Level up your PC <span aria-hidden="true" class="arrow">›</span></span>
+</a>
+<a class="feature" href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=good%20books&amp;pd_rd_w=02ei7&amp;content-id=amzn1.sym.eeefb0a7-3a05-4e5a-b6de-9999066c4ff2&amp;pf_rd_p=eeefb0a7-3a05-4e5a-b6de-9999066c4ff2&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=NfbSw&amp;pd_rd_r=887c10e9-37bd-4979-bfc4-ae92766fd6a0&amp;ref_=pd_hp_d_r_atf_unk">
+<img alt="Books ready to browse" loading="lazy" src="https://m.media-amazon.com/images/I/613fnGHLTYL._AC_AIweblab1431263,T1_SF1282.5,1981.5_QL80_.jpg?aicid=homepage-single-creative-card"/>
+<span class="feature-label">Discover books you can't put down <span aria-hidden="true" class="arrow">›</span></span>
+</a>
+</div>
+</section>
+<div class="shelves">
+<section aria-labelledby="electronics-heading" class="shelf">
+<div class="shelf-heading">
+<h2 id="electronics-heading">Plug in with our electronics</h2>
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=Best%20sellers%20in%20electronics&amp;pd_rd_w=zscb0&amp;content-id=amzn1.sym.a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_p=a64ac9fc-2717-4051-ae96-b2a9a2a6b039&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Shop electronics</a>
+</div>
+<div class="thumb-grid">
+<div class="thumb"><img alt="Headphones" loading="lazy" src="https://m.media-amazon.com/images/I/417NhPd56zL._SR210,210_.jpg"/><span>Headphones</span></div>
+<div class="thumb"><img alt="Tablets" loading="lazy" src="https://m.media-amazon.com/images/I/41dMYqsSuGL._SR210,210_.jpg"/><span>Tablets</span></div>
+<div class="thumb"><img alt="Gaming equipment" loading="lazy" src="https://m.media-amazon.com/images/I/41gk0-eoy4L._SR210,210_.jpg"/><span>Gaming</span></div>
+<div class="thumb"><img alt="Speakers" loading="lazy" src="https://m.media-amazon.com/images/I/41uuEMle6TL._SR210,210_.jpg"/><span>Speakers</span></div>
+</div>
+</section>
+<section aria-labelledby="home-heading" class="shelf">
+<div class="shelf-heading">
+<h2 id="home-heading">Fantastic finds for home</h2>
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=home%20and%20kitchen&amp;pd_rd_w=JhLCb&amp;content-id=amzn1.sym.53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_p=53b730e4-44b4-4dd8-9d16-33dad482496e&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Shop home &amp; kitchen</a>
+</div>
+<div class="thumb-grid">
+<div class="thumb"><img alt="Kitchen essentials" loading="lazy" src="https://m.media-amazon.com/images/I/41opB3I6bHL._SR210,210_.jpg"/><span>Kitchen</span></div>
+<div class="thumb"><img alt="Home decor" loading="lazy" src="https://m.media-amazon.com/images/I/31zR9dINh6L._SR210,210_.jpg"/><span>Home décor</span></div>
+<div class="thumb"><img alt="Dining items" loading="lazy" src="https://m.media-amazon.com/images/I/41bvMGlDk4L._SR210,210_.jpg"/><span>Dining</span></div>
+<div class="thumb"><img alt="Smart home devices" loading="lazy" src="https://m.media-amazon.com/images/I/314AasupNAL._SR210,210_.jpg"/><span>Smart home</span></div>
+</div>
+</section>
+<section aria-labelledby="beauty-heading" class="shelf">
+<div class="shelf-heading">
+<h2 id="beauty-heading">Unveil your radiance</h2>
+<a href="https://www.amazon.com/s/?_encoding=UTF8&amp;k=beauty%20and%20personal%20care&amp;rh=n%3A3760911&amp;s=beauty&amp;ds=v1%3Age3EU%2FLbea9a%2Bjt2rQDcZgHxVXWk00w%2B7Wv%2BvLGnyOI&amp;crid=2V81F8U4XHNWU&amp;qid=1711570639&amp;rnid=2941120011&amp;sprefix=beauty%20and%20personal%20care%2Caps%2C294&amp;ref=sr_nr_n_1&amp;pd_rd_w=oXhrO&amp;content-id=amzn1.sym.7fc6b5fc-038f-40e2-b1fc-4ac8e7f5520f&amp;pf_rd_p=7fc6b5fc-038f-40e2-b1fc-4ac8e7f5520f&amp;pf_rd_r=XB98SNFSF93GQ4J0S9AS&amp;pd_rd_wg=FIJso&amp;pd_rd_r=f2e2b5b5-8bf0-4dd0-9191-cca318780f7f&amp;ref_=pd_hp_d_r_btf_unk">Shop beauty &amp; personal care</a>
+</div>
+<div class="thumb-grid">
+<div class="thumb"><img alt="Hair care products" loading="lazy" src="https://m.media-amazon.com/images/I/41+i4d+1YXL._SR210,210_.jpg"/><span>Hair care</span></div>
+<div class="thumb"><img alt="Fragrances" loading="lazy" src="https://m.media-amazon.com/images/I/4115ssxY8RL._SR210,210_.jpg"/><span>Fragrances</span></div>
+<div class="thumb"><img alt="Make-up" loading="lazy" src="https://m.media-amazon.com/images/I/51F8Stay1iL._SR210,210_.jpg"/><span>Make-up</span></div>
+<div class="thumb"><img alt="Skin care" loading="lazy" src="https://m.media-amazon.com/images/I/41hBTWbTOvL._SR210,210_.jpg"/><span>Skin care</span></div>
+</div>
+</section>
+</div>
+<section aria-labelledby="signin-heading" class="signin-panel">
+<h2 id="signin-heading">See personalized recommendations</h2>
+<p>Sign in to see recommendations tailored to you.</p>
+<a class="button-link" href="https://www.amazon.com/ap/signin?openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&amp;openid.assoc_handle=usflex&amp;openid.pape.max_auth_age=0">Sign in</a>
+<p class="new-customer">New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&amp;openid.assoc_handle=usflex">Start here.</a></p>
+</section>
+<div class="history-note">
+<p>After viewing product detail pages, look here to find an easy way to navigate back to pages you are interested in.</p>
+<a href="https://www.amazon.com/gp/history">View or edit your browsing history</a>
+</div>
+</main>
+<footer class="site-footer">
+<a class="back-top" href="#top">Back to top</a>
+<div class="footer-main">
+<section aria-labelledby="footer-about">
+<h2 id="footer-about">Get to Know Us</h2>
+<ul>
+<li><a href="https://www.amazon.jobs">Careers</a></li>
+<li><a href="https://blog.aboutamazon.com/?utm_source=gateway&amp;utm_medium=footer">Blog</a></li>
+<li><a href="https://www.aboutamazon.com/?utm_source=gateway&amp;utm_medium=footer">About Amazon</a></li>
+<li><a href="https://www.amazon.com/ir">Investor Relations</a></li>
+<li><a href="https://www.amazon.science">Amazon Science</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-sell">
+<h2 id="footer-sell">Make Money with Us</h2>
+<ul>
+<li><a href="https://services.amazon.com/sell.html?ld=AZFSSOA&amp;ref_=footer_soa">Sell products on Amazon</a></li>
+<li><a href="https://developer.amazon.com">Sell apps on Amazon</a></li>
+<li><a href="https://affiliate-program.amazon.com/">Become an Affiliate</a></li>
+<li><a href="https://advertising.amazon.com/?ref=ext_amzn_ftr">Advertise Your Products</a></li>
+<li><a href="https://www.amazon.com/b/?node=18190131011&amp;ld=AZUSSOA-seemore&amp;ref_=footer_seemore">See More Make Money with Us</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-pay">
+<h2 id="footer-pay">Amazon Payment Products</h2>
+<ul>
+<li><a href="https://www.amazon.com/dp/B07984JN3L?plattr=ACOMFO&amp;ie=UTF-8">Amazon Business Card</a></li>
+<li><a href="https://www.amazon.com/gp/browse.html?node=16218619011&amp;ref_=footer_swp">Shop with Points</a></li>
+<li><a href="https://www.amazon.com/dp/B0CHTVMXZJ?th=1?ref_=footer_reload_us">Reload Your Balance</a></li>
+<li><a href="https://www.amazon.com/gp/browse.html?node=388305011&amp;ref_=footer_tfx">Amazon Currency Converter</a></li>
+</ul>
+</section>
+<section aria-labelledby="footer-help">
+<h2 id="footer-help">Let Us Help You</h2>
+<ul>
+<li><a href="https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya">Your Account</a></li>
+<li><a href="https://www.amazon.com/gp/css/order-history?ref_=footer_yo">Your Orders</a></li>
+<li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468520&amp;ref_=footer_shiprates">Shipping Rates &amp; Policies</a></li>
+<li><a href="https://www.amazon.com/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns &amp; Replacements</a></li>
+<li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&amp;ref_=footer_gw_m_b_he">Help</a></li>
+</ul>
+</section>
+</div>
+<div class="footer-lower">
+<div class="footer-prefs">
+<a href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&amp;preferencesReturnUrl=%2F&amp;ref_=footer_lang">English</a>
+<a href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&amp;ref_=footer_cop&amp;preferencesReturnUrl=%2F">MX$ MXN - Mexico Peso</a>
+<a href="https://www.amazon.com/customer-preferences/country?ie=UTF8&amp;preferencesReturnUrl=%2F&amp;ref_=footer_icp_cp">United States</a>
+</div>
+<div class="legal">
+<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&amp;ref_=footer_cou">Conditions of Use</a>
+<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&amp;ref_=footer_privacy">Privacy Notice</a>
+<a href="https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&amp;nodeId=TnACMrGVghHocjL8KB&amp;ref_=footer_consumer_health_data_privacy">Consumer Health Data Privacy Disclosure</a>
+<a href="https://www.amazon.com/privacyprefs?ref_=footer_iba">Your Ads Privacy Choices</a>
+</div>
+<p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+</div>
+</footer>
+<style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+<script>
+    document.getElementById("dismiss-notice").addEventListener("click", function () {
+      document.getElementById("international-note").hidden = true;
+    });
+  </script>
+</body>
+</html>
